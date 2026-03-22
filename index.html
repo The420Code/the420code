@@ -102,6 +102,27 @@ a:hover{text-decoration-thickness:2px}
 .entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
 .entry-card-desc{font-size:16px;display:block;opacity:.7}
 
+.physics{margin:2.5rem 0 0;padding:2.5rem 0;border-top:1px solid var(--bk);border-bottom:1px solid var(--bk)}
+.physics h2{font-size:26px;font-weight:700;margin:0 0 .5rem}
+.physics-intro{font-size:18px;font-weight:700;margin:0 0 .5rem}
+.physics-sub{font-size:16px;color:var(--g5);margin:0 0 2rem}
+.physics-grid{display:grid;grid-template-columns:1fr;gap:0;margin:0 0 2rem}
+.physics-card{display:flex;align-items:baseline;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--g1);gap:1rem}
+.physics-card:last-child{border-bottom:none}
+.p-name{font-size:16px;font-weight:700;flex:1}
+.p-error{font-size:22px;font-weight:700;white-space:nowrap}
+.p-detail{font-size:14px;color:var(--g5);margin:2px 0 0}
+.p-source{font-size:13px;color:var(--g4)}
+.formula{font-size:16px;margin:0 0 .75rem;padding:.5rem 0;font-style:italic;color:var(--g6)}
+.three-constants{font-size:16px;font-weight:700;margin:1.5rem 0;padding:1rem 0;border-top:1px solid var(--g2);border-bottom:1px solid var(--g2)}
+.also-derived{margin:1.5rem 0}
+.also-derived p{font-size:16px;font-weight:700;margin:0 0 .5rem}
+.also-derived ul{list-style:none;padding:0}
+.also-derived li{font-size:16px;color:var(--g6);padding:.2rem 0 .2rem 1rem;position:relative}
+.also-derived li::before{content:"·";position:absolute;left:0;font-weight:700}
+.confirm-link{margin:2rem 0 0;font-size:18px}
+.confirm-link a{font-weight:700;text-underline-offset:3px}
+@media(max-width:600px){.physics-card{flex-wrap:wrap;gap:.25rem}.p-error{font-size:18px}}
 .verify-wrap{position:relative;margin:1.5rem 0 0;max-width:80%}
 .verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem 1.25rem 1.25rem;overflow-x:auto;font-size:13px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
 .copy-btn{position:absolute;top:8px;right:8px;padding:5px 14px;font-family:var(--f);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:var(--bk);color:var(--wh);border:none;cursor:pointer}
@@ -177,6 +198,45 @@ a:hover{text-decoration-thickness:2px}
   <li>Kindness is not a commandment. Kindness is a derivation.</li>
   <li>Don't be a cunt. Be kind.</li>
 </ol>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE PHYSICS                              -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="physics" id="physics">
+  <h2>The Physics</h2>
+  <p class="physics-intro">One measured input. Zero fitted parameters. Everything else derived.</p>
+  <p class="physics-sub">The fine-structure constant α ≈ 1/137 is the one number measured from experiment. From that single input and four axioms, the following results are derived — not fitted, not adjusted, not tuned.</p>
+
+  <div class="physics-grid">
+    <div class="physics-card"><div><div class="p-name">Proton-electron mass ratio</div><div class="p-detail">Predicted 1836.15267344 · Measured 1836.15267343</div><div class="p-source">AP30</div></div><div class="p-error">5 ppb</div></div>
+    <div class="physics-card"><div><div class="p-name">Gravitational constant G</div><div class="p-detail">Predicted 6.721 × 10⁻¹¹ · Measured 6.674 × 10⁻¹¹</div><div class="p-source">AP28</div></div><div class="p-error">0.69%</div></div>
+    <div class="physics-card"><div><div class="p-name">Neutron-proton mass difference</div><div class="p-detail">Predicted 2.53099 mₑ · Measured 2.53099 mₑ</div><div class="p-source">AP30</div></div><div class="p-error">2 ppm</div></div>
+    <div class="physics-card"><div><div class="p-name">MOND acceleration a₀</div><div class="p-detail">a₀ = αcH₀/(2π) · Parameter-free</div><div class="p-source">AP18</div></div><div class="p-error">0.3%</div></div>
+    <div class="physics-card"><div><div class="p-name">Dark sector partition</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source">AP42</div></div><div class="p-error">0.06%</div></div>
+  </div>
+
+  <p class="formula">m<sub>p</sub>/m<sub>e</sub> = 21² × 4 + 21 × 3 + 3² + α × 21 × (1 − 1/(84π)) + O(α²)</p>
+  <p class="formula">G = α<sup>21</sup> × (1 + 1/π) × ℏc/m<sub>e</sub>²</p>
+  <p class="formula">a₀ = α · c · H₀ / (2π) &emsp; where α = 2 ln(sec ½ + tan ½)</p>
+
+  <p class="three-constants">Three constants, three axioms: c ↔ Constraint · ℏ ↔ Break · G ↔ Record</p>
+
+  <div class="also-derived">
+    <p>Also derived:</p>
+    <ul>
+      <li>N = 3 spatial dimensions (AP10)</li>
+      <li>Einstein's field equations (AP08)</li>
+      <li>The Born rule (AP25)</li>
+      <li>Standard Model gauge group SU(3) × SU(2) × U(1) (AP15/16/19/27)</li>
+      <li>Chiral coupling — unexplained since 1956, now derived (AP16)</li>
+      <li>Flat rotation curves without dark matter particles (AP17)</li>
+      <li>Bell inequality S = 2√2 from structure (AP23)</li>
+    </ul>
+  </div>
+
+  <p class="confirm-link"><strong>Confirm it yourself.</strong> <a href="#confirm-the-math">Run the code →</a></p>
+</div>
 
 <!-- ════════════════════════════════════════ -->
 <!-- 2. THE ARCHITECTURE / THREE DOORS       -->
@@ -293,12 +353,12 @@ a:hover{text-decoration-thickness:2px}
 
 <h2 style="font-size:26px;font-weight:700;margin:0 0 .25rem">The 42 Artist's Proofs</h2>
 <p style="font-size:16px;color:var(--g5);margin:0 0 .5rem">The formal proofs of The 420 Code — from axiom to ethic.</p>
-<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">One measured input (α<sub>em</sub>). Zero fitted parameters. Over a million words. 42 papers. 252 kill switches.</p>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">One measured input (α<sub>em</sub>). Zero fitted parameters. Over a million words. 42 papers. 258 kill switches.</p>
 
 <div class="stats">
   <div><span class="stat-num">42</span><span class="stat-label">Artist's Proofs</span></div>
   <div><span class="stat-num">252</span><span class="stat-label">Kill switches</span></div>
-  <div><span class="stat-num">16</span><span class="stat-label">Open debts</span></div>
+  <div><span class="stat-num">4</span><span class="stat-label">Open debts</span></div>
   <div><span class="stat-num">5 ppb</span><span class="stat-label">Proton mass</span></div>
 </div>
 
@@ -436,7 +496,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="part" id="p5"><div class="part-dot"></div>
 <div class="part-header" onclick="togglePart(this)"><span class="part-num">Part V</span><span class="part-name">Particles & Matter</span><span class="part-desc">The building blocks the break produces. The proton mass ratio to five parts per billion, antimatter segregation, and the baryon asymmetry of the universe.</span><span class="part-count">3 papers</span></div>
 <div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">The Resistance</span><span class="ap-tag">Mass</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Proton mass ratio: predicted 1836.15266 vs measured 1836.15267. Five parts per billion.</p><div class="ap-meta"><span>Requires: AP06, AP12, AP24, AP28</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">The Resistance</span><span class="ap-tag">Mass</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Proton mass ratio: predicted 1836.15267344 vs measured 1836.15267343. Five parts per billion.</p><div class="ap-meta"><span>Requires: AP06, AP12, AP24, AP28</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP22</span><span class="ap-title">The Ledger</span><span class="ap-tag">Antimatter</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Baryogenesis, the σ-involution, and the topological segregation of antimatter.</p><div class="ap-meta"><span>Requires: AP09, AP11, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP26</span><span class="ap-title">The Surplus</span><span class="ap-tag">Baryon Asymmetry</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Why more matter than antimatter — the ash of the break.</p><div class="ap-meta"><span>Requires: AP09, AP22</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 </div></div>
@@ -492,7 +552,7 @@ a:hover{text-decoration-thickness:2px}
 
 <!-- CONFIRM THE MATH -->
 <div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Confirm the Math</h2>
+  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Confirm the Math</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">One measured input. Zero fitted parameters. The code below reproduces every headline result from a single number — the fine-structure constant α ≈ 1/137. Copy it. Paste it into any Python environment. Run it. If the numbers match, the derivations hold. If they don't, the argument has a problem and you've found it.</p>
   <div class="verify-wrap">
     <button class="copy-btn" onclick="copyCode()">Copy</button>
