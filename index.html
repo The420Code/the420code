@@ -142,7 +142,7 @@ a:hover{text-decoration-thickness:2px}
 
 <div class="hero">
   <h1>Can ethics be derived from physics?</h1>
-  <p class="lead">The 420 Code says yes.</p>
+  <p class="lead">The 420 Code says <b>yes</b>.</p>
   <p style="margin-top:1rem">One record exists — and from that single fact, all of physics and one ethic are derived.</p>
 </div>
 
@@ -466,7 +466,13 @@ function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
 
   document.addEventListener('click',function(e){
     var a=e.target.closest('a[href$=".pdf"]');
-    if(!a)return;
+    if(!a) a=e.target.closest('.ap-meta a, .dl-list a');
+    if(!a) return;
+    var href=a.getAttribute('href');
+    if(!href||href==='#') return;
+    // Force immediate download
+    if(!a.hasAttribute('download')) a.setAttribute('download','');
+    // Increment counter
     fetch(counter,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
       el.textContent=d.count.toLocaleString();
     });
