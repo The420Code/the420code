@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the 420 code — ethics derived from physics</title>
+<meta name="description" content="Can ethics be derived from physics? The 420 Code says yes. 42 Artist's Proofs. 1,111,420 words. One measured input. Zero fitted parameters. Copyleft. Free forever.">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#000;--wh:#fff;--g1:#f5f5f5;--g2:#e8e8e8;--g3:#ccc;--g4:#999;--g5:#666;--g6:#333;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:15px;line-height:1.65;color:var(--bk);background:var(--wh);-webkit-font-smoothing:antialiased}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+.nav{position:sticky;top:0;background:var(--wh);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:baseline;padding:1rem 0;border-bottom:1px solid var(--bk);margin:0 0 3rem}
+.nav-title{font-size:14px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
+.nav a:not(.nav-title){font-size:13px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+
+.section-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+
+.hero{margin:0 0 3rem}
+.hero h1{font-size:32px;font-weight:700;line-height:1.15;margin:0 0 1.5rem}
+.hero .lead{font-size:17px;font-style:italic;margin:0 0 .5rem}
+
+.steps{margin:1.5rem 0 2rem;padding:0;counter-reset:step}
+.steps li{list-style:none;padding:0 0 0 2rem;position:relative;margin:0 0 .35rem;font-size:14px}
+.steps li::before{counter-increment:step;content:counter(step)".";position:absolute;left:0;font-weight:700;color:var(--g4);font-size:13px}
+
+.doors{margin:2rem 0 0;padding:2rem 0;border-top:1px solid var(--g2);border-bottom:1px solid var(--g2)}
+.doors h2{font-size:20px;font-weight:700;margin:0 0 .25rem}
+.doors .sub{font-size:14px;color:var(--g5);font-style:italic;margin:0 0 1.5rem}
+.door{margin:0 0 1.25rem}
+.door h3{font-size:16px;font-weight:700;margin:0 0 .15rem}
+.door h3 a{text-decoration:none}
+.door h3 a:hover{text-decoration:underline}
+.door p{font-size:14px;color:var(--g6);margin:0 0 .25rem}
+.door .hint{font-size:13px;color:var(--g4);font-style:italic}
+.voices{margin:.75rem 0 0}
+.voice{margin:0 0 .4rem}
+.voice b{font-size:14px}
+.voice span{font-size:13px;color:var(--g5)}
+
+.read-block{margin:0 0 1.5rem;padding:2rem;border:1px solid var(--g2);background:var(--g1)}
+.read-block p{font-size:14px;font-style:italic;color:var(--g5);margin:0}
+
+.cat-section{margin:0 0 2.5rem}
+.cat-title{font-size:16px;font-weight:700;margin:0 0 .15rem}
+.cat-desc{font-size:14px;color:var(--g5);margin:0 0 .5rem}
+.cat-hint{font-size:13px;font-style:italic;color:var(--g4);margin:0 0 .75rem}
+.dl-list{margin:0;padding:0}
+.dl-list li{list-style:none;padding:.4rem 0;border-bottom:1px solid var(--g1);font-size:14px}
+.dl-list li:last-child{border-bottom:none}
+.dl-list a{text-decoration:none;display:flex;justify-content:space-between;align-items:center}
+.dl-list a:hover{text-decoration:underline}
+.dl-list .fmt{font-size:11px;color:var(--g4);flex-shrink:0;margin-left:.5rem}
+
+.spine{position:relative;padding-left:32px}
+.spine::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--bk)}
+.part{position:relative;margin:0 0 2.5rem}
+.part-dot{position:absolute;left:-32px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--bk);z-index:1}
+.part-header{cursor:pointer;user-select:none;padding:0 0 .5rem}
+.part-header:hover .part-name{text-decoration:underline}
+.part-num{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g4);display:block;margin:0 0 1px}
+.part-name{font-size:20px;font-weight:700;display:block;line-height:1.2}
+.part-desc{font-size:13px;color:var(--g5);font-style:italic;display:block;margin:2px 0 0}
+.part-count{font-size:12px;color:var(--g4);margin:4px 0 0;display:block}
+.ap-list{margin:.75rem 0 0;overflow:hidden;transition:max-height .4s ease}
+.ap-list.collapsed{max-height:0!important;margin:0}
+.ap-row{border-top:1px solid var(--g2)}
+.ap-row:last-child{border-bottom:1px solid var(--g2)}
+.ap-header{display:flex;align-items:baseline;gap:.75rem;padding:.6rem 0;cursor:pointer;user-select:none;transition:background .1s}
+.ap-header:hover{background:var(--g1);margin:0 -.5rem;padding-left:.5rem;padding-right:.5rem}
+.ap-number{font-size:12px;font-weight:700;color:var(--g4);min-width:32px;flex-shrink:0}
+.ap-title{font-size:15px;font-weight:700;flex:1}
+.ap-tag{font-size:12px;color:var(--g5);border:1px solid var(--g2);padding:1px 8px;border-radius:2px;white-space:nowrap;flex-shrink:0}
+.ap-arrow{font-size:12px;color:var(--g4);transition:transform .2s;flex-shrink:0}
+.ap-row.open .ap-arrow{transform:rotate(90deg)}
+.ap-detail{display:none;padding:0 0 1rem;padding-left:32px}
+.ap-row.open .ap-detail{display:block}
+.ap-detail p{font-size:14px;line-height:1.6;margin:0 0 .5rem;color:var(--g6)}
+.ap-meta{font-size:12px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
+
+.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 2rem}
+.stat-num{font-size:32px;font-weight:700;line-height:1;display:block}
+.stat-label{font-size:12px;color:var(--g5);display:block;margin-top:2px}
+
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
+.entry-card{border:1px solid var(--bk);padding:.75rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block}
+.entry-card:hover{background:var(--bk);color:var(--wh)}
+.entry-card-label{font-size:12px;font-weight:700;display:block;margin:0 0 2px}
+.entry-card-desc{font-size:12px;display:block;opacity:.7}
+
+.results{margin:2rem 0;padding:2rem 0;border-top:1px solid var(--bk);border-bottom:1px solid var(--bk)}
+.results-title{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0 0 1.25rem}
+.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.35rem 0;font-size:14px;border-bottom:1px solid var(--g1)}
+.result-row:last-child{border-bottom:none}
+.result-label{color:var(--g5)}
+.result-value{font-weight:700;text-align:right}
+
+.constraint{margin:2rem 0;padding:1.5rem 0;border-top:1px solid var(--g2)}
+.constraint p{font-size:14px;margin:0 0 .25rem}
+
+.footer{margin:3rem 0 0;padding:2rem 0 0;border-top:1px solid var(--bk);font-size:13px;color:var(--g4)}
+.footer p{margin:0 0 .25rem}
+
+@media(max-width:600px){
+  .c{padding:2rem 1rem 3rem}
+  .hero h1{font-size:24px}
+  .stats{gap:1.5rem}
+  .stat-num{font-size:26px}
+  .ap-header{flex-wrap:wrap;gap:.25rem .5rem}
+  .ap-tag{order:3;margin-left:32px}
+  .entry-grid{grid-template-columns:1fr 1fr}
+  .nav{gap:.75rem;padding:.75rem 0}
+}
+</style>
+</head>
+<body>
+<div class="c">
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-title">the 420 code</a>
+  <a href="#read">read</a>
+  <a href="#library">library</a>
+  <a href="#proofs">proofs</a>
+  <a href="#about">about</a>
+</nav>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1. THE QUESTION                         -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="hero">
+  <h1>Can ethics be derived from physics?</h1>
+  <p class="lead">The 420 Code says yes.</p>
+  <p style="margin-top:1rem">One record exists — and from that single fact, all of physics and one ethic are derived.</p>
+</div>
+
+<ol class="steps">
+  <li>One record exists.</li>
+  <li>One record requires four conditions: symmetry, break, record, constraint.</li>
+  <li>From those four conditions, all physics is derived.</li>
+  <li>The cracking and the seeing are the same event.</li>
+  <li>The inside is singular.</li>
+  <li>Every aware being is a window in one building.</li>
+  <li>The line between self and other is a tool mistaken for a measurement.</li>
+  <li>Any ethics derived from an authority external to the structure of reality is manipulable. Manipulable systems collapse into violence.</li>
+  <li>Kindness is not a commandment. Kindness is a derivation.</li>
+  <li>Don't be a cunt. Be kind.</li>
+</ol>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 2. THE ARCHITECTURE / THREE DOORS       -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="doors">
+  <h2>The Architecture</h2>
+  <p class="sub">One argument. Three doors. Every door opens onto the same room.</p>
+  <p style="font-size:14px;margin:0 0 1rem">The 420 Code is not a book. It is a corpus — over one million words saying one thing in every way it can be said. The argument never changes. The voice does.</p>
+  <p style="font-size:14px;margin:0 0 1.5rem">You do not need to read everything. You need to find the door that opens.</p>
+
+  <div class="door">
+    <h3><a href="#library">The Rosin</a></h3>
+    <p>The complete summaries of The 420 Code. Five books. Five teachers. The entire framework — from axiom to ethic — walked through by a teacher who assumes you know nothing and respects you completely.</p>
+    <p class="hint">Start here if you want to learn.</p>
+  </div>
+
+  <div class="door">
+    <h3><a href="#read">The Illusion of the Other</a></h3>
+    <p>The argument wearing a story. Structure dressed as narrative. These do not argue. They do not teach. They show.</p>
+    <p class="hint">Start here if you want to feel the architecture before you see the blueprints.</p>
+  </div>
+
+  <div class="door">
+    <h3><a href="#library">The Voices</a></h3>
+    <div class="voices">
+      <div class="voice"><b>Voice 1 — The Prose.</b> <span>Story, image, rhythm. Start here if you think in pictures.</span></div>
+      <div class="voice"><b>Voice 2 — The Conversation.</b> <span>Question, answer, challenge, refinement. Start here if you think by arguing.</span></div>
+      <div class="voice"><b>Voice 3 — The Metaphor.</b> <span>Coins, gardens, rivers, buildings. Start here if you want the intuition before the machinery.</span></div>
+      <div class="voice"><b>Voice 4 — The Nursery Rhymes.</b> <span>The bones with nothing on them. Start here if you want it simple.</span></div>
+      <div class="voice"><b>Voice 5 — The Proofs.</b> <span>Axioms, theorems, kill switches. Start here if you need to see the machinery before you trust the output.</span></div>
+    </div>
+  </div>
+
+  <p style="font-size:14px;margin:1rem 0 0"><b>How to read.</b> Pick a door. If it grips you, go deeper. If it doesn't, try another. The argument is the same in all of them. The door that opens is the right door.</p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 3. READ — THE ILLUSION OF THE OTHER     -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="section-label" id="read">Read</div>
+
+<h2 style="font-size:24px;font-weight:700;margin:0 0 .5rem">The Illusion of the Other</h2>
+<p style="font-size:14px;color:var(--g5);margin:0 0 1rem">Record 01 — ~8,000 words — the clearest statement of the argument</p>
+<div class="read-block">
+  <p>Full text renders here. No registration. No paywall. No email gate. Just the text.</p>
+</div>
+<p style="font-size:13px;color:var(--g4);margin:0 0 0">Download: <a href="#">PDF</a> · <a href="#">DOCX</a></p>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 4. LIBRARY — THE CATALOGUES             -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="section-label" id="library">Library</div>
+
+<h2 style="font-size:24px;font-weight:700;margin:0 0 .25rem">The Catalogues</h2>
+<p style="font-size:14px;color:var(--g5);margin:0 0 .25rem">Everything. Organised. Free.</p>
+<p style="font-size:14px;margin:0 0 2rem">The library is large — over one million words across five voices. Texts are published as they are ready.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Prose</h3>
+  <p class="cat-desc">Every document written in narrative voice. The story of the argument from beginning to end.</p>
+  <p class="cat-hint">Start here if you want to read it the way you read a book.</p>
+  <ul class="dl-list">
+    <li><a href="#">The Illusion of the Other <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Rosin — Prose <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Editions — Prose <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Prose <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Conversations</h3>
+  <p class="cat-desc">Every document written as dialogue. The argument built through exchange — question, push-back, resolution.</p>
+  <p class="cat-hint">Start here if you learn by watching two minds wrestle with one idea.</p>
+  <ul class="dl-list">
+    <li><a href="#">The Rosin — Conversations <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Editions — Conversations <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Conversations <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Metaphor</h3>
+  <p class="cat-desc">Every analogy. Every image. The coins, the gardens, the rivers, the buildings, the windows, the grains of sand.</p>
+  <p class="cat-hint">Start here if you want the picture before the proof.</p>
+  <ul class="dl-list">
+    <li><a href="#">The Rosin — Metaphor <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Editions — Metaphor <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Metaphor <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Nursery Rhymes</h3>
+  <p class="cat-desc">The simplest version of every idea. Stripped to the bone. A child could follow it. An adult should.</p>
+  <p class="cat-hint">Start here if you have ten minutes and want to know whether this is worth ten hours.</p>
+  <ul class="dl-list">
+    <li><a href="#">The Rosin — Nursery Rhymes <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Editions — Nursery Rhymes <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Nursery Rhymes <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Proofs</h3>
+  <p class="cat-desc">Every formal derivation. Every axiom. Every theorem. Every kill switch.</p>
+  <p class="cat-hint">If you can break it, it deserves to break.</p>
+  <ul class="dl-list">
+    <li><a href="#">The Rosin — Proofs <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Editions — Proofs <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Proofs — Volume I <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Proofs — Volume II <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Proofs — Volume III <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Proofs — Volume IV <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Proofs — Volume V <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Proofs — Volume VI <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Proofs — Volume VII <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Notebooks — Proofs — Volume VIII <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Records</h3>
+  <p class="cat-desc">Every Record. The raw material. Where the thinking happened before the writing cleaned it up.</p>
+  <p class="cat-hint">Start here if you want to see how the sausage was made.</p>
+  <ul class="dl-list">
+    <li><a href="#">The Scissors <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Wind <span class="fmt">PDF</span></a></li>
+    <li><a href="#">The Body Cannot Absorb This <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Don't Be a Cunt, Be Kind <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Fuck You, Leave Me-I Alone <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 5. PROOFS — THE 42 ARTIST'S PROOFS      -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="section-label" id="proofs">Proofs</div>
+
+<h2 style="font-size:24px;font-weight:700;margin:0 0 .25rem">The 42 Artist's Proofs</h2>
+<p style="font-size:14px;color:var(--g5);margin:0 0 .5rem">The formal proofs of The 420 Code — from axiom to ethic.</p>
+<p style="font-size:13px;color:var(--g4);margin:0 0 2rem">One measured input (α<sub>em</sub>). Zero fitted parameters. 265,000 words. 42 papers. 144 kill switches.</p>
+
+<div class="stats">
+  <div><span class="stat-num">42</span><span class="stat-label">Artist's Proofs</span></div>
+  <div><span class="stat-num">144</span><span class="stat-label">Kill switches</span></div>
+  <div><span class="stat-num">16</span><span class="stat-label">Open debts</span></div>
+  <div><span class="stat-num">5 ppb</span><span class="stat-label">Proton mass</span></div>
+</div>
+
+<p style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0 0 .75rem">Where to start</p>
+<div class="entry-grid">
+  <a class="entry-card" href="#p7"><span class="entry-card-label">General reader</span><span class="entry-card-desc">AP39 → AP34 → AP02</span></a>
+  <a class="entry-card" href="#p4"><span class="entry-card-label">Physicist</span><span class="entry-card-desc">AP28 → AP30 → AP25</span></a>
+  <a class="entry-card" href="#p1"><span class="entry-card-label">Philosopher</span><span class="entry-card-desc">AP40 → AP29 → AP41</span></a>
+  <a class="entry-card" href="#p8"><span class="entry-card-label">AI researcher</span><span class="entry-card-desc">AP31 → AP29 → AP02</span></a>
+</div>
+
+<!-- THE SPINE -->
+<div class="spine">
+
+<div class="part" id="p1"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part I</span><span class="part-name">The Premise</span><span class="part-desc">One record exists. Everything else is consequence.</span><span class="part-count">3 papers</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">The Irrational</span><span class="ap-tag">Mathematics</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The axiom 1:1 + 1×ε is structurally irrational — and true. Irrationality as the foundation of the rational. Choice as irrational coupling capacity.</p><div class="ap-meta"><span>Requires: —</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP01</span><span class="ap-title">The Actualization State</span><span class="ap-tag">Foundations</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The spine. 31,000 words. Papers A–D derive the actualization state, viability geometry, agency, and coupled corridors.</p><div class="ap-meta"><span>Requires: —</span><span>31,000 words</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">The Proof</span><span class="ap-tag">Logic</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The Embedding Hypothesis as theorem. Axioms proved unconditional. All downstream results inherit.</p><div class="ap-meta"><span>Requires: AP01</span></div></div></div>
+</div></div>
+
+<div class="part" id="p2"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part II</span><span class="part-name">Spacetime</span><span class="part-desc">The arena the break creates.</span><span class="part-count">4 papers</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP03</span><span class="ap-title">The Ratio</span><span class="ap-tag">Relativity</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>c derived as the conjugacy of propagation and resistance.</p><div class="ap-meta"><span>Requires: AP01</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">The Break</span><span class="ap-tag">Symmetry Breaking</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>From axiom to structure. The first crack — how symmetry breaks and physics begins.</p><div class="ap-meta"><span>Requires: AP01</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP10</span><span class="ap-title">The Dimension</span><span class="ap-tag">Dimensionality</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Why three spatial dimensions — four axioms, four degrees of freedom; one is time; three remain as space.</p><div class="ap-meta"><span>Requires: AP01, AP20</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP08</span><span class="ap-title">The Identity</span><span class="ap-tag">General Relativity</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Einstein's field equations derived from the record algebra via Lovelock's theorem.</p><div class="ap-meta"><span>Requires: AP01, AP03, AP10</span></div></div></div>
+</div></div>
+
+<div class="part" id="p3"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part III</span><span class="part-name">Quantum Mechanics</span><span class="part-desc">The measurement structure of the break.</span><span class="part-count">7 papers</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP09</span><span class="ap-title">The Break — Empty Set</span><span class="ap-tag">Quantum Foundations</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>QM from the empty set — superposition, measurement, entanglement, Schrödinger equation.</p><div class="ap-meta"><span>Requires: AP01, AP20</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP07</span><span class="ap-title">The Record Measure</span><span class="ap-tag">Hilbert Space</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The complex Hilbert space derived from the axiom structure.</p><div class="ap-meta"><span>Requires: AP01</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP11</span><span class="ap-title">The Spin</span><span class="ap-tag">Spin</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Fermions, bosons, and the exclusion principle from the two-sector structure.</p><div class="ap-meta"><span>Requires: AP09, AP10, AP20</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP12</span><span class="ap-title">The Limit</span><span class="ap-tag">Uncertainty</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ℏ derived via Stone's theorem. The uncertainty principle from Axiom B.</p><div class="ap-meta"><span>Requires: AP09, AP11, AP20</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP13</span><span class="ap-title">The Grain</span><span class="ap-tag">Decoherence</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Decoherence from the record algebra. The classical world emerges through environmental coupling.</p><div class="ap-meta"><span>Requires: AP09, AP12</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP25</span><span class="ap-title">The Measure</span><span class="ap-tag">Born Rule</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The Born rule derived via Gleason's theorem. "The sound the axioms make when they land on Hilbert space."</p><div class="ap-meta"><span>Requires: AP07, AP10, AP20, AP23</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP23</span><span class="ap-title">The Single Record</span><span class="ap-tag">Entanglement</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Entanglement, Bell inequality, single-record constraint. S = 2√2 from structure alone.</p><div class="ap-meta"><span>Requires: AP07, AP09, AP25</span></div></div></div>
+</div></div>
+
+<div class="part" id="p4"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part IV</span><span class="part-name">Forces & Constants</span><span class="part-desc">The interactions the break permits.</span><span class="part-count">8 papers</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP06</span><span class="ap-title">The Leakage Constant</span><span class="ap-tag">Fine Structure</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε = α<sub>em</sub> ≈ 1/137. The one measured input.</p><div class="ap-meta"><span>Requires: AP01, AP03</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP15</span><span class="ap-title">The Connection</span><span class="ap-tag">Electromagnetism</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>EM as non-disconnection on a local manifold. U(1) derived.</p><div class="ap-meta"><span>Requires: AP08, AP09</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">The Harmonics</span><span class="ap-tag">Gauge Structure</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) from the two-sector axiom.</p><div class="ap-meta"><span>Requires: AP09, AP15</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">The Break — Electroweak</span><span class="ap-tag">Electroweak</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Electroweak unification, Higgs, chiral coupling derived. KS-63 closed — unexplained since 1956.</p><div class="ap-meta"><span>Requires: AP06, AP15, AP27</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">The Direction</span><span class="ap-tag">Strong Force</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / QCD from the gauge freedom of the break direction.</p><div class="ap-meta"><span>Requires: AP09, AP11, AP15</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP24</span><span class="ap-title">The Residual</span><span class="ap-tag">Unification</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε in every equation. Six faces of one object. All constants are projections of a single break.</p><div class="ap-meta"><span>Requires: AP03, AP06, AP28, AP30</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP14</span><span class="ap-title">The Correction</span><span class="ap-tag">Quantum Gravity</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The first quantum correction to gravity from the record algebra.</p><div class="ap-meta"><span>Requires: AP08, AP09, AP12</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP28</span><span class="ap-title">The Constant</span><span class="ap-tag">Gravity</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>G = ε² × ℏc/m<sub>e</sub>². Hierarchy dissolved. Within 0.69% of CODATA.</p><div class="ap-meta"><span>Requires: AP06, AP10, AP24</span></div></div></div>
+</div></div>
+
+<div class="part" id="p5"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part V</span><span class="part-name">Particles & Matter</span><span class="part-desc">The building blocks the break produces.</span><span class="part-count">3 papers</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">The Resistance</span><span class="ap-tag">Mass</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Proton mass ratio: predicted 1836.15266 vs measured 1836.15267. Five parts per billion.</p><div class="ap-meta"><span>Requires: AP06, AP12, AP24, AP28</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP22</span><span class="ap-title">The Ledger</span><span class="ap-tag">Antimatter</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Baryogenesis, the σ-involution, and the topological segregation of antimatter.</p><div class="ap-meta"><span>Requires: AP09, AP11, AP20</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP26</span><span class="ap-title">The Surplus</span><span class="ap-tag">Baryon Asymmetry</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Why more matter than antimatter — the ash of the break.</p><div class="ap-meta"><span>Requires: AP09, AP22</span></div></div></div>
+</div></div>
+
+<div class="part" id="p6"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part VI</span><span class="part-name">Cosmology</span><span class="part-desc">The universe the break inhabits.</span><span class="part-count">6 papers</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP21</span><span class="ap-title">The Web</span><span class="ap-tag">Structure Formation</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The cosmic web from the global tension field.</p><div class="ap-meta"><span>Requires: AP08, AP15, AP28</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP17</span><span class="ap-title">The Room</span><span class="ap-tag">Rotation Curves</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Galactic rotation curves from the tension field. The lines always close.</p><div class="ap-meta"><span>Requires: AP08, AP21</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP18</span><span class="ap-title">The Floor</span><span class="ap-tag">Acceleration Scale</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>a₀ = αcH₀/(2π) — the MOND scale derived to 0.3%. Parameter-free.</p><div class="ap-meta"><span>Requires: AP17, AP20</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP41</span><span class="ap-title">The Loop</span><span class="ap-tag">Cosmology</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Fusion as the ongoing Big Bang. The splinter is us. Truth as a resolution problem.</p><div class="ap-meta"><span>Requires: AP03, AP04, AP06, AP10, AP28, AP29, AP30</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP42</span><span class="ap-title">The Clock</span><span class="ap-tag">Dark Energy</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The 68/27/5 partition derived. The dark sector is a clock reading.</p><div class="ap-meta"><span>Requires: AP04, AP10, AP20, AP28, AP41</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP04</span><span class="ap-title">The Loop Hypothesis</span><span class="ap-tag">Cyclic Cosmology</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Black holes as doors. The loop closes. Conjectural. Nine kill switches guard it.</p><div class="ap-meta"><span>Requires: AP01, AP03</span></div></div></div>
+</div></div>
+
+<div class="part" id="p7"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part VII</span><span class="part-name">Consciousness & The Ethic</span><span class="part-desc">The observer the break contains, and the ethic the break forces.</span><span class="part-count">4 papers</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">The Actualization Proof</span><span class="ap-tag">Consciousness</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Awareness as the interior of irreversible record-writing. One crack, one interior, many windows.</p><div class="ap-meta"><span>Requires: AP01, AP09, AP20</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP02</span><span class="ap-title">The Operator</span><span class="ap-tag">Agency</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Budget, drift, corridor, sovereignty, exit. The human-scale physics. Nine theorems.</p><div class="ap-meta"><span>Requires: AP01</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP39</span><span class="ap-title">The Scaffold</span><span class="ap-tag">Religion</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Gold standard. The structural instability of authority-based ethics. The five-stage forcing chain. The blade in the text.</p><div class="ap-meta"><span>Requires: AP01, AP29</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP38</span><span class="ap-title">The Exit</span><span class="ap-tag">Death</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>On death, dignity, and the compassionate closing of a window.</p><div class="ap-meta"><span>Requires: AP02, AP29, AP32, AP33</span></div></div></div>
+</div></div>
+
+<div class="part" id="p8"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part VIII</span><span class="part-name">Applications</span><span class="part-desc">The ethic applied to civilisation.</span><span class="part-count">7 papers</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">The Alignment</span><span class="ap-tag">AI Alignment</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The alignment problem dissolved. Build the interior, not the fence.</p><div class="ap-meta"><span>Requires: AP01, AP02, AP06, AP29, AP30</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">The Correction</span><span class="ap-tag">Justice</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Five correction levels. The building grieves every closed window. The genocide brake.</p><div class="ap-meta"><span>Requires: AP01, AP02, AP29, AP30, AP31</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">The Boundary</span><span class="ap-tag">Bioethics</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Life as agency. Below ε, you are sovereign. Above ε, the organism has jurisdiction.</p><div class="ap-meta"><span>Requires: AP01, AP02, AP06, AP29, AP31, AP32</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP34</span><span class="ap-title">The Inversion</span><span class="ap-tag">Drug Policy</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Cannabis kills zero. Alcohol kills 2.6 million. Correct the inversion.</p><div class="ap-meta"><span>Requires: AP31, AP32, AP33</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">The First Boundary</span><span class="ap-tag">The Body</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The body as operator. Defend the first boundary.</p><div class="ap-meta"><span>Requires: AP01, AP02, AP32, AP33, AP36</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">The Ledger</span><span class="ap-tag">Economics</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The Ledger always balances. Crashes are audits. Inequality fills the buffer.</p><div class="ap-meta"><span>Requires: AP01, AP02, AP06, AP20, AP29, AP31</span></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">The Feed</span><span class="ap-tag">Biology</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Chemistry that learned to record itself. Control is not deprivation. Control is supply.</p><div class="ap-meta"><span>Requires: AP01, AP02, AP06, AP20, AP31, AP35</span></div></div></div>
+</div></div>
+
+</div><!-- /spine -->
+
+<!-- HEADLINE RESULTS -->
+<div class="results">
+  <div class="results-title">Headline results</div>
+  <div class="result-row"><span class="result-label">Proton mass ratio</span><span class="result-value">5 ppb (AP30)</span></div>
+  <div class="result-row"><span class="result-label">Gravitational constant G</span><span class="result-value">0.69% of CODATA (AP28)</span></div>
+  <div class="result-row"><span class="result-label">MOND acceleration a₀</span><span class="result-value">0.3%, parameter-free (AP18)</span></div>
+  <div class="result-row"><span class="result-label">Neutron-proton mass difference</span><span class="result-value">2 ppm (AP30)</span></div>
+  <div class="result-row"><span class="result-label">Visible matter fraction</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
+  <div class="result-row"><span class="result-label">Chiral coupling</span><span class="result-value">Derived, KS-63 closed (AP16)</span></div>
+  <div class="result-row"><span class="result-label">Three constants, three axioms</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
+  <div class="result-row"><span class="result-label">Born rule</span><span class="result-value">Derived (AP25)</span></div>
+  <div class="result-row"><span class="result-label">N = 3 spatial dimensions</span><span class="result-value">Derived (AP10)</span></div>
+  <div class="result-row"><span class="result-label">Einstein's field equations</span><span class="result-value">Derived (AP08)</span></div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ABOUT + CONSTRAINT + FOOTER             -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="constraint" id="about">
+  <p><b>Artist:</b> G · Studio G, Strand, Cape Town</p>
+  <p><b>Duration:</b> 30+ years · <b>Corpus:</b> 1,111,420 words across 23 volumes</p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<div class="footer">
+  <p style="font-weight:700">Don't be a cunt. Be kind.</p>
+  <p>the420code.org · Copyleft 2026</p>
+</div>
+
+</div>
+
+<script>
+function toggleAP(r){r.classList.toggle('open')}
+function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
+</script>
+</body>
+</html>
