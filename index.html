@@ -105,6 +105,8 @@ a:hover{text-decoration-thickness:2px}
 
 .footer{margin:3rem 0 0;padding:2rem 0 0;border-top:1px solid var(--bk);font-size:16px;color:var(--g4)}
 .footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
 
 @media(max-width:600px){
   .c{padding:2rem 1rem 3rem}
@@ -465,12 +467,24 @@ function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
     el.textContent=d.count.toLocaleString();
   }).catch(function(){el.textContent='0'});
 
+  var toast=document.createElement('div');
+  toast.className='toast';
+  toast.textContent='Publishing Soon';
+  document.body.appendChild(toast);
+  var toastTimer;
+
   document.addEventListener('click',function(e){
     var a=e.target.closest('a[href$=".pdf"]');
     if(!a) a=e.target.closest('.ap-meta a, .dl-list a');
     if(!a) return;
     var href=a.getAttribute('href');
-    if(!href||href==='#') return;
+    if(!href||href==='#'){
+      e.preventDefault();
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
+      return;
+    }
     // Force immediate download
     if(!a.hasAttribute('download')) a.setAttribute('download','');
     // Increment counter
