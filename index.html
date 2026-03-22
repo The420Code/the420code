@@ -824,7 +824,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 function toggleAP(r){r.classList.toggle('open')}
 function copyCode(){var code=document.querySelector('.verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('.copy-btn');btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},2000)}
 function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
-function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'})},100)}
+function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
 
 // Download counter
 (function(){
