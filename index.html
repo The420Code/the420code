@@ -413,7 +413,7 @@ a:hover{text-decoration-thickness:2px}
   <div class="result-row"><span class="result-label">Open debts</span><span class="result-value">4 — cannot be tested until upstream work is complete</span></div>
   <div class="result-row"><span class="result-label">Global kill switch</span><span class="result-value">KS-V.1 — if it fires, everything dies</span></div>
 
-  <p style="font-size:16px;margin:1.25rem 0 0"><a href="Master_Kill_Switch_Registry.pdf" style="text-decoration:none;font-weight:700">Download the complete Kill Switch Registry — <span class="fmt">PDF</span></a></p>
+  <p style="font-size:16px;margin:1.25rem 0 0"><a href="Master_Kill_Switch_Registry.pdf" download style="text-decoration:none;font-weight:700">Download the complete Kill Switch Registry — <span class="fmt">PDF</span></a></p>
 </div>
 
 <!-- EMAIL SIGNUP -->
@@ -440,6 +440,7 @@ a:hover{text-decoration-thickness:2px}
   <p><b>Artist:</b> G · Studio G, Strand, Cape Town</p>
   <p><b>Duration:</b> 30+ years · <b>Corpus:</b> over a million words across 23 volumes</p>
   <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+  <p style="margin-top:1rem;font-size:14px;color:var(--g4)"><span id="dl-count">—</span> downloads</p>
 </div>
 
 <div class="footer">
@@ -453,6 +454,24 @@ a:hover{text-decoration-thickness:2px}
 <script>
 function toggleAP(r){r.classList.toggle('open')}
 function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
+
+// Download counter
+(function(){
+  var counter='/.netlify/functions/download-counter';
+  var el=document.getElementById('dl-count');
+
+  fetch(counter).then(function(r){return r.json()}).then(function(d){
+    el.textContent=d.count.toLocaleString();
+  }).catch(function(){el.textContent='0'});
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href$=".pdf"]');
+    if(!a)return;
+    fetch(counter,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
+      el.textContent=d.count.toLocaleString();
+    });
+  });
+})();
 </script>
 
 <script>
