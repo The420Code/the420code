@@ -67,6 +67,8 @@ a:hover{text-decoration-thickness:2px}
 .part-name{font-size:22px;font-weight:700;display:block;line-height:1.2}
 .part-desc{font-size:16px;color:var(--g5);font-style:italic;display:block;margin:1rem 0 0}
 .part-count{font-size:16px;color:var(--g4);margin:4px 0 0;display:block}
+.part-read{display:inline-block;margin-top:.5rem;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--bk);text-decoration:none;border-bottom:1px solid var(--bk)}
+.part-read:hover{text-decoration:none;border-bottom-width:2px}
 .ap-list{margin:.75rem 0 0;overflow:hidden;transition:max-height .4s ease}
 .ap-list.collapsed{max-height:0!important;margin:0}
 .ap-row{border-top:1px solid var(--g2)}
@@ -297,7 +299,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="spine">
 
 <div class="part" id="p1"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part I</span><span class="part-name">The Premise</span><span class="part-desc">One record exists. Everything else is consequence. The axiom, its logical proof, and the four conditions that any record requires.</span><span class="part-count">3 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Part I</span><span class="part-name">The Premise</span><span class="part-desc">One record exists. Everything else is consequence. The axiom, its logical proof, and the four conditions that any record requires.</span><span class="part-count">3 papers</span><a href="/proofs/part-1" class="part-read" onclick="event.stopPropagation()">Read Part I</a></div>
 <div class="ap-list">
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">The Irrational</span><span class="ap-tag">Mathematics</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The axiom 1:1 + 1×ε is structurally irrational — and true. Irrationality as the foundation of the rational. Choice as irrational coupling capacity.</p><div class="ap-meta"><span>Requires: —</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP01</span><span class="ap-title">The Actualization State</span><span class="ap-tag">Foundations</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The spine. Papers A–D derive the actualization state, viability geometry, agency, and coupled corridors.</p><div class="ap-meta"><span>Requires: —</span><span>Over a million words</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
@@ -480,6 +482,7 @@ function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
     var href=a.getAttribute('href');
     if(!href||href==='#'){
       e.preventDefault();
+      e.stopPropagation();
       toast.classList.add('show');
       clearTimeout(toastTimer);
       toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
@@ -491,7 +494,7 @@ function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
     fetch(counter,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
       el.textContent=d.count.toLocaleString();
     });
-  });
+  },true);
 })();
 </script>
 
