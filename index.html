@@ -209,11 +209,11 @@ a:hover{text-decoration-thickness:2px}
   <p class="physics-sub">The fine-structure constant α ≈ 1/137 is the one number measured from experiment. From that single input and four axioms, the following results are derived — not fitted, not adjusted, not tuned.</p>
 
   <div class="physics-grid">
-    <div class="physics-card"><div><div class="p-name">Proton-electron mass ratio</div><div class="p-detail">Predicted 1836.15267344 · Measured 1836.15267343</div><div class="p-source"><a href="#ap30">AP30</a></div></div><div class="p-error">5 ppb</div></div>
-    <div class="physics-card"><div><div class="p-name">Gravitational constant G</div><div class="p-detail">Predicted 6.721 × 10⁻¹¹ · Measured 6.674 × 10⁻¹¹</div><div class="p-source"><a href="#ap28">AP28</a></div></div><div class="p-error">0.69%</div></div>
-    <div class="physics-card"><div><div class="p-name">Neutron-proton mass difference</div><div class="p-detail">Predicted 2.53099 mₑ · Measured 2.53099 mₑ</div><div class="p-source"><a href="#ap30">AP30</a></div></div><div class="p-error">2 ppm</div></div>
-    <div class="physics-card"><div><div class="p-name">MOND acceleration a₀</div><div class="p-detail">a₀ = αcH₀/(2π) · Parameter-free</div><div class="p-source"><a href="#ap18">AP18</a></div></div><div class="p-error">0.3%</div></div>
-    <div class="physics-card"><div><div class="p-name">Dark sector partition</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42">AP42</a></div></div><div class="p-error">0.06%</div></div>
+    <div class="physics-card"><div><div class="p-name">Proton-electron mass ratio</div><div class="p-detail">Predicted 1836.15267344 · Measured 1836.15267343</div><div class="p-source"><a href="#ap30" onclick="event.preventDefault();scrollToAP('ap30')">AP30</a></div></div><div class="p-error">5 ppb</div></div>
+    <div class="physics-card"><div><div class="p-name">Gravitational constant G</div><div class="p-detail">Predicted 6.721 × 10⁻¹¹ · Measured 6.674 × 10⁻¹¹</div><div class="p-source"><a href="#ap28" onclick="event.preventDefault();scrollToAP('ap28')">AP28</a></div></div><div class="p-error">0.69%</div></div>
+    <div class="physics-card"><div><div class="p-name">Neutron-proton mass difference</div><div class="p-detail">Predicted 2.53099 mₑ · Measured 2.53099 mₑ</div><div class="p-source"><a href="#ap30" onclick="event.preventDefault();scrollToAP('ap30')">AP30</a></div></div><div class="p-error">2 ppm</div></div>
+    <div class="physics-card"><div><div class="p-name">MOND acceleration a₀</div><div class="p-detail">a₀ = αcH₀/(2π) · Parameter-free</div><div class="p-source"><a href="#ap18" onclick="event.preventDefault();scrollToAP('ap18')">AP18</a></div></div><div class="p-error">0.3%</div></div>
+    <div class="physics-card"><div><div class="p-name">Dark sector partition</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42" onclick="event.preventDefault();scrollToAP('ap42')">AP42</a></div></div><div class="p-error">0.06%</div></div>
   </div>
 
   <p class="confirm-link"><strong>Confirm it yourself.</strong> <a href="#confirm-the-math">Run the code →</a></p>
@@ -824,6 +824,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 function toggleAP(r){r.classList.toggle('open')}
 function copyCode(){var code=document.querySelector('.verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('.copy-btn');btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},2000)}
 function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
+function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'})},100)}
 
 // Download counter
 (function(){
