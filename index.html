@@ -98,10 +98,12 @@ a:hover{text-decoration-thickness:2px}
 .stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
 
 .entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
-.entry-card{border:1px solid var(--bk);padding:.4rem .75rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:flex;align-items:baseline;position:relative}
+.entry-card{border:1px solid var(--bk);padding:.75rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
 .entry-card:hover{background:var(--bk);color:var(--wh)}
-.entry-card-label{font-size:12px;font-weight:700;position:absolute;top:4px;right:6px;opacity:.4}
-.entry-card-desc{font-size:16px;display:block;text-align:left}
+.entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
+.entry-card-desc{font-size:16px;display:block;opacity:.7}
+.jump-card .entry-card-label{font-size:22px;font-weight:700;margin:0 0 2px}
+.jump-card .entry-card-desc{font-size:14px}
 
 .physics{margin:2.5rem 0 0;padding:2.5rem 0}
 .physics h2{font-size:26px;font-weight:700;margin:0 0 .5rem}
@@ -354,14 +356,14 @@ a:hover{text-decoration-thickness:2px}
 
 <p style="font-size:16px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:2rem 0 .75rem">Jump to Part</p>
 <div class="entry-grid">
-  <a class="entry-card" href="#p1" onclick="event.preventDefault();document.getElementById('p1').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">I</span><span class="entry-card-desc">The Premise</span></a>
-  <a class="entry-card" href="#p2" onclick="event.preventDefault();document.getElementById('p2').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">II</span><span class="entry-card-desc">Spacetime</span></a>
-  <a class="entry-card" href="#p3" onclick="event.preventDefault();document.getElementById('p3').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">III</span><span class="entry-card-desc">Quantum Mechanics</span></a>
-  <a class="entry-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">IV</span><span class="entry-card-desc">Forces & Constants</span></a>
-  <a class="entry-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">V</span><span class="entry-card-desc">Particles & Matter</span></a>
-  <a class="entry-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">VI</span><span class="entry-card-desc">Cosmology</span></a>
-  <a class="entry-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">VII</span><span class="entry-card-desc">Consciousness & Ethic</span></a>
-  <a class="entry-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">VIII</span><span class="entry-card-desc">Applications</span></a>
+  <a class="entry-card jump-card" href="#p1" onclick="event.preventDefault();document.getElementById('p1').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">I</span><span class="entry-card-desc">The Premise</span></a>
+  <a class="entry-card jump-card" href="#p2" onclick="event.preventDefault();document.getElementById('p2').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">II</span><span class="entry-card-desc">Spacetime</span></a>
+  <a class="entry-card jump-card" href="#p3" onclick="event.preventDefault();document.getElementById('p3').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">III</span><span class="entry-card-desc">Quantum Mechanics</span></a>
+  <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">IV</span><span class="entry-card-desc">Forces<br>& Constants</span></a>
+  <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">V</span><span class="entry-card-desc">Particles<br>& Matter</span></a>
+  <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">VI</span><span class="entry-card-desc">Cosmology</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">VII</span><span class="entry-card-desc">Consciousness<br>& Ethic</span></a>
+  <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-label">VIII</span><span class="entry-card-desc">Applications</span></a>
 </div>
 
 <!-- THE SPINE -->
