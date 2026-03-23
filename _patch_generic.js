@@ -62,9 +62,19 @@ LANGS.forEach(lang => {
   const essayTag = '<div class="ap-essay">';
   const essayStart = h.indexOf(essayTag, h.indexOf(startMarker));
   const contentStart = h.indexOf('\n', essayStart);
-  const metaMarker = '</div><div class="ap-meta"><span>' + requiresStr + '</span>';
-  const contentEnd = h.indexOf(metaMarker, contentStart);
-
+  // Try both English and translated "Requires:" labels
+  let metaMarker = '</div><div class="ap-meta"><span>' + requiresStr + '</span>';
+  let contentEnd = h.indexOf(metaMarker, contentStart);
+  if (contentEnd === -1) {
+    // Try with translated Requires label
+    const reqLabels = {es:'Requiere',fr:'Requiert',de:'Erfordert',pt:'Requer',nl:'Vereist',it:'Richiede',zh:'依赖',ja:'前提',ko:'필요',ru:'Требует',ar:'يتطلب',hi:'आवश्यक'};
+    const localReq = reqLabels[lang];
+    if (localReq) {
+      const localRequiresStr = requiresStr.replace('Requires', localReq);
+      metaMarker = '</div><div class="ap-meta"><span>' + localRequiresStr + '</span>';
+      contentEnd = h.indexOf(metaMarker, contentStart);
+    }
+  }
   if (contentStart === -1 || contentEnd === -1) {
     console.log('  ' + lang + ' — ' + apNumber + ' could not find essay boundaries, skipping');
     return;
