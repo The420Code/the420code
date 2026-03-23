@@ -17,8 +17,9 @@ const requiresStr = args[2];
 
 // Load translations
 const src = fs.readFileSync(translationFile, 'utf8');
-// Extract the array by evaluating the const declaration
-const match = src.match(/const \w+ = (\[[\s\S]*\]);/);
+// Extract the array — support both "const X = [...];" and "module.exports = [...];"
+let match = src.match(/const \w+ = (\[[\s\S]*\]);/);
+if (!match) match = src.match(/module\.exports = (\[[\s\S]*\]);/);
 if (!match) { console.error('Could not parse translation array'); process.exit(1); }
 const translations = eval(match[1]);
 
