@@ -1,0 +1,12 @@
+node_modules
+.git
+.claude
+output
+*.bak
+_patch_flags.js
+_patch_pdfs.js
+build-i18n.js
+translations_shell.js
+index_en.html
+package.json
+package-lock.json
