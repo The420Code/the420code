@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://the420code.org/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-03-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://the420code.org/es/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/fr/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/de/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/pt/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/nl/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/it/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/zh/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/ja/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/ko/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/ru/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/ar/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/hi/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
+</urlset>
