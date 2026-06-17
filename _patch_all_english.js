@@ -10,19 +10,19 @@ const LANGS = ['es','fr','de','pt','nl','it','zh','ja','ko','ru','ar','hi'];
 const T = {
   // Proofs subtitle
   proofs_subtitle: {
-    en:'One measured input (α<sub>em</sub>). Zero fitted parameters. 42 papers. 258 kill switches.',
-    es:'Una entrada medida (α<sub>em</sub>). Cero parámetros ajustados. 42 artículos. 258 interruptores letales.',
-    fr:'Une entrée mesurée (α<sub>em</sub>). Zéro paramètre ajusté. 42 articles. 258 interrupteurs de mort.',
-    de:'Eine gemessene Eingabe (α<sub>em</sub>). Null angepasste Parameter. 42 Arbeiten. 258 Kill Switches.',
-    pt:'Uma entrada medida (α<sub>em</sub>). Zero parâmetros ajustados. 42 artigos. 258 interruptores letais.',
-    nl:'Eén gemeten invoer (α<sub>em</sub>). Nul aangepaste parameters. 42 artikelen. 258 kill switches.',
-    it:'Un input misurato (α<sub>em</sub>). Zero parametri aggiustati. 42 articoli. 258 kill switch.',
-    zh:'一个测量输入（α<sub>em</sub>）。零拟合参数。42篇论文。258个灭杀开关。',
-    ja:'測定入力1つ（α<sub>em</sub>）。フィッティングパラメータ0。論文42本。キルスイッチ258個。',
-    ko:'측정 입력 1개(α<sub>em</sub>). 맞춤 매개변수 0개. 논문 42편. 킬 스위치 258개.',
-    ru:'Один измеренный параметр (α<sub>em</sub>). Ноль подогнанных параметров. 42 статьи. 258 переключателей уничтожения.',
-    ar:'مُدخل مُقاس واحد (α<sub>em</sub>). صفر معاملات مُعدَّلة. 42 بحثًا. 258 مفتاح إيقاف.',
-    hi:'एक मापित इनपुट (α<sub>em</sub>)। शून्य फ़िट किए गए पैरामीटर। 42 पत्र। 258 किल स्विच।'
+    en:'One measured input (α<sub>em</sub>). Zero fitted parameters. 42 papers. 285 kill switches.',
+    es:'Una entrada medida (α<sub>em</sub>). Cero parámetros ajustados. 42 artículos. 285 interruptores letales.',
+    fr:'Une entrée mesurée (α<sub>em</sub>). Zéro paramètre ajusté. 42 articles. 285 interrupteurs de mort.',
+    de:'Eine gemessene Eingabe (α<sub>em</sub>). Null angepasste Parameter. 42 Arbeiten. 285 Kill Switches.',
+    pt:'Uma entrada medida (α<sub>em</sub>). Zero parâmetros ajustados. 42 artigos. 285 interruptores letais.',
+    nl:'Eén gemeten invoer (α<sub>em</sub>). Nul aangepaste parameters. 42 artikelen. 285 kill switches.',
+    it:'Un input misurato (α<sub>em</sub>). Zero parametri aggiustati. 42 articoli. 285 kill switch.',
+    zh:'一个测量输入（α<sub>em</sub>）。零拟合参数。42篇论文。285个灭杀开关。',
+    ja:'測定入力1つ（α<sub>em</sub>）。フィッティングパラメータ0。論文42本。キルスイッチ285個。',
+    ko:'측정 입력 1개(α<sub>em</sub>). 맞춤 매개변수 0개. 논문 42편. 킬 스위치 285개.',
+    ru:'Один измеренный параметр (α<sub>em</sub>). Ноль подогнанных параметров. 42 статьи. 285 переключателей уничтожения.',
+    ar:'مُدخل مُقاس واحد (α<sub>em</sub>). صفر معاملات مُعدَّلة. 42 بحثًا. 285 مفتاح إيقاف.',
+    hi:'एक मापित इनपुट (α<sub>em</sub>)। शून्य फ़िट किए गए पैरामीटर। 42 पत्र। 285 किल स्विच।'
   },
 
   // "Requires:" label

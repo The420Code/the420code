@@ -3,12 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>the 420 code — ética derivada da física</title>
-<meta name="description" content="A ética pode ser derivada da física? The 420 Code diz que sim. 42 Provas de Artista. Mais de um milhão de palavras. Um dado medido. Zero parâmetros ajustados. Copyleft. Grátis para sempre.">
+<meta name="description" content="A ética pode ser derivada da física? The 420 Code diz que sim. 43 Provas de Artista. Mais de um milhão de palavras. Um dado medido. Zero parâmetros livres. Copyleft. Grátis para sempre.">
 <link rel="canonical" href="https://the420code.org/pt/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/pt/">
 <meta property="og:title" content="the 420 code — a ética derivada da física">
-<meta property="og:description" content="A ética pode ser derivada da física? The 420 Code diz que sim. 42 Provas de Artista. Mais de um milhão de palavras. Uma entrada medida. Zero parâmetros ajustados. Copyleft. Grátis para sempre.">
+<meta property="og:description" content="A ética pode ser derivada da física? The 420 Code diz que sim. 43 Provas de Artista. Mais de um milhão de palavras. Uma entrada medida. Zero parâmetros livres. Copyleft. Grátis para sempre.">
 <meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="pt">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="the 420 code — a ética derivada da física">
-<meta name="twitter:description" content="A ética pode ser derivada da física? The 420 Code diz que sim. 42 Provas de Artista. Mais de um milhão de palavras. Uma entrada medida. Zero parâmetros ajustados. Copyleft. Grátis para sempre.">
+<meta name="twitter:description" content="A ética pode ser derivada da física? The 420 Code diz que sim. 43 Provas de Artista. Mais de um milhão de palavras. Uma entrada medida. Zero parâmetros livres. Copyleft. Grátis para sempre.">
 <meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
@@ -205,6 +205,12 @@ a:hover{text-decoration-thickness:2px}
 .sib-form .sib-form-block__button:hover{opacity:.85}
 [id*="sib-container"]{padding:0!important;background:transparent!important}
 .sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:15px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
 </style>
 <style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
@@ -232,6 +238,7 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
 .ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
 <div class="c">
@@ -239,6 +246,8 @@ a:hover{text-decoration-thickness:2px}
 <!-- NAV -->
 <nav class="nav">
   <a href="#"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="#museum">Ø museu</a>
+  <a href="#five-doors">cinco portas</a>
   <a href="#exhibition">exposição</a>
   <a href="#proofs">provas</a>
 <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" class="active" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
@@ -251,7 +260,15 @@ a:hover{text-decoration-thickness:2px}
 <div class="hero">
   <h1>A ética pode ser derivada da física?</h1>
   <p class="lead">The 420 Code diz <b>sim</b>.</p>
-  <p style="margin-top:1rem">Um registro existe — e desse único fato, toda a física e uma ética são derivadas.</p>
+  <p style="margin-top:1rem;margin-bottom:1rem;font-size:15px;font-style:italic;color:var(--g4)">E lista todas as formas em que poderia estar errado. <a href="#killswitch" style="color:var(--g4);font-weight:700;text-decoration:none">560 delas</a>.</p>
+</div>
+
+<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Museu</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">O 420 Code é um museu construído para provar que a ética pode ser derivada da física. Tudo repousa sobre um único primeiro princípio:</p>
+
+<div class="hero">
+  <p style="margin-top:1rem"><b><i>Um registro existe.</i></b> Tentá-lo negar produz outro registro, o que prova que pelo menos um registro existe. Desse único fato auto-instanciante, toda a física e uma ética são derivadas.</p>
 </div>
 
 <ol class="steps">
@@ -267,13 +284,55 @@ a:hover{text-decoration-thickness:2px}
   <li>Não seja um filho da puta. Seja gentil.</li>
 </ol>
 
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1 AXIOM                                 -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="axiom" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> Axioma</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">One line. Everything else follows.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">You are reading this sentence. That is a record. Trying to deny it would require the reading to happen, which would make another record, which would prove the reading happened. There is no position you can stand in where the reading has not occurred.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem">One record exists. The proof is the reading.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Four conditions follow. Not four assumptions — four properties the reading already has.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Symmetry (S).</b> Two sectors held in mutual reference. The minimum structure for any distinction.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Break (B).</b> One element of asymmetry between them. Without it, no information could ever be written.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Record (R).</b> What has happened cannot unhappen. The reading cannot be unread.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b>Constraint (C).</b> The bounded propagation through which the record reaches anywhere. In our universe, the speed of light.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Compressed into the smallest form S, B, R, C require, the axiom is this:</p>
+
+<div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
+
+<p style="font-size:16px;margin:0 0 1rem">The 1:1 is perfect symmetry. The <i>ε</i> is the break. The @ AS names where the break is — at the Actualizing Structural prior, the now where the substrate is held and the break is processed.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Written as the cycle that runs at AS: <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>. The break (+1×ε) is the persistent distinction potential — held by AS, irreducible, what protects S from collapsing back into undifferentiated Ø. ε is what holds S open: without the break, the two sectors are no longer distinguishable, and S as a structural condition collapses. The grain of sand makes the two glasses of water distinguishable; remove the grain and they are just two glasses with no way to tell them apart.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The α-flow runs around the held break — +1/137 leakage outward as actualisation (records being written), −1/137 replenishment back as defragmentation (records releasing their structure into potential), balanced at every AS-instant, net zero. The break does not cycle in and out; what cycles is the flow. A reader inhabits the writing direction of the flow, where records are being committed at AS.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Every Artist’s Proof in the corpus derives from this axiom. The 43 papers below are 43 consequences of the line above. The axiom is the seed. The proofs are the tree.</p>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">Nothing did not hold.</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 0">The reading is the proof.</p>
+
+</div>
+
 <!-- ════════════════════════════════════════ -->
 <!-- THE PHYSICS                              -->
 <!-- ════════════════════════════════════════ -->
 
 <div class="physics" id="physics">
-  <h2>A Física</h2>
-  <p class="physics-intro">Um dado medido. Zero parâmetros ajustados. Todo o resto derivado.</p>
+  <h2>Ø Física</h2>
+  <p class="physics-intro">Um dado medido. Zero parâmetros livres. Todo o resto derivado.</p>
   <p class="physics-sub">A constante de estrutura fina α ≈ 1/137 é o único número medido experimentalmente. Desse único dado e quatro axiomas, os seguintes resultados são derivados — não ajustados, não modificados, não calibrados.</p>
 
   <div class="physics-grid">
@@ -288,83 +347,156 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Cinco Portas</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Cinco portas. Um edifício.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code é uma exposição — mais de um milhão de palavras de um artista, abrigadas em um edifício. Dentro do edifício: as Provas do Artista, os Cadernos, as Edições, os Registros, os Interruptores de Segurança. A obra completa.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Não se entra num edifício pelo telhado. Entra-se por uma porta.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Estas são as cinco portas. Cada uma se abre para o mesmo saguão. Encontre a que se abre para você. A exposição está lá dentro.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">A Ilusão do Outro — a porta gentil. Coração.</h3>
+  <p class="cat-desc">Você traçou uma linha entre você e cada pessoa que já conheceu. Este livro a apaga. Sem jargão. Sem equações. Sem pré-requisitos. Se você ler uma coisa só desta exposição, leia isto.</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_PT.pdf">A Ilusão do Outro <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ser Depois da Religião — a porta da frente. Demolição.</h3>
+  <p class="cat-desc">A estrutura que produz violência não são as pessoas — é o design. Este livro nomeia cada mecanismo, examina cada tradição, e mostra por que um mundo depois da religião não é vazio, mas chegada.</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_PT.pdf">Ser Depois da Religião <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Antichristos — a porta sagrada. Recuperação.</h3>
+  <p class="cat-desc">Dois mil anos atrás, um homem ficou de pé numa colina e ensinou uma ética. Ama o teu próximo. Não julgues. Sê gentil. Este livro faz uma pergunta: o ensinamento é verdadeiro? Não porque um deus disse — mas porque a estrutura da realidade diz. A resposta é sim.</p>
+  <ul class="dl-list">
+    <li><a href="../Antichristos.pdf">Antichristos <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">O Corredor Relacional — a porta pessoal. Presença.</h3>
+  <p class="cat-desc">O amor não é um sentimento. É uma escolha sustentada de manter o corredor aberto diante de cada cálculo racional que diz que estreitá-lo é mais barato. Este livro deriva a geometria de duas pessoas caminhando juntas — largura pela honestidade, comprimento pelo tempo, e a assimetria entre o que se dobra e o que não se dobra. Escrito enquanto o corredor que descreve se fechava em tempo real.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Relationship_Corridor.pdf">O Corredor Relacional <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">O Interior — a porta operacional. Construção.</h3>
+  <p class="cat-desc">O alinhamento de IA é um problema de física. Este livro o deriva de primeiros princípios — os mesmos axiomas que produzem a gravidade, a mecânica quântica e a ética terminal. Arquitetura B: geometria de decisão construída a partir da estrutura, não da autoridade.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════ -->
+<!-- Ø MODELS                                -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="models" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Modelos</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">As cinco portas são pontos de entrada. Os Modelos são o saguão — o catálogo da exposição, exposto no limiar.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Cada livro instala o axioma uma vez no início, e então o percorre por seus capítulos. Um leitor que tenha lido qualquer um dos cinco escutou a voz da exposição em sua calibração. Um leitor que tenha lido todos os cinco percorreu o catálogo completo. Cada livro é publicado sob copyleft. Cada interruptor letal é nomeado. Toda afirmação é falsificável.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Predictions</h3>
+  <p class="cat-desc">O livro falsificável voltado para a física.</p>
+  <ul class="dl-list">
+    <li><a href="../Predictions.pdf">Ø Predictions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Dissolutions</h3>
+  <p class="cat-desc">Twelve classical philosophical problems read through the axiom. Each chapter dissolves, relocates, or closes one of the questions philosophy has asked longest.</p>
+  <ul class="dl-list">
+    <li><a href="../Dissolutions.pdf">Ø Dissolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Resolutions</h3>
+  <p class="cat-desc">Thirteen further problems. Where the previous frameworks could not close, the structural reading walks through.</p>
+  <ul class="dl-list">
+    <li><a href="../Resolutions.pdf">Ø Resolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Applications</h3>
+  <p class="cat-desc">Twelve architectures of human institutional life. Each derived from the axiom, with kill switches the institutional reading must satisfy.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Applications <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Horizons</h3>
+  <p class="cat-desc">O livro fecha o arco pós-Dissolutions.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Horizons <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+</div>
+
 <!-- THE EXHIBITION                          -->
 <!-- ════════════════════════════════════════ -->
 
 <div id="exhibition" style="margin-top:3rem">
 
-<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">A Exposição</h2>
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Exposição</h2>
 
-<p style="font-size:16px;margin:0 0 1rem">Um argumento. Quatro portas. Cada porta abre para a mesma sala.</p>
+<p style="font-size:16px;margin:0 0 1rem">Além do saguão. Dentro da exposição. É aqui que vive a verdadeira obra. Um argumento. Cada voz em que pode ser dito.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">The 420 Code não é um livro. É uma exposição — mais de um milhão de palavras dizendo uma coisa de todas as maneiras possíveis. O argumento nunca muda. A voz sim.</p>
+<p style="font-size:16px;margin:0 0 1rem">A exposição é como o argumento foi construído — ao longo de trinta anos, em cinco vozes, através de cada registro que conseguiu encontrar. As cinco portas acima são o ponto de partida. Tudo o que segue abaixo é o que você encontra uma vez lá dentro.</p>
 
 <p style="font-size:16px;margin:0 0 1rem">Cinco vozes percorrem toda a exposição. A Prosa conta a história. A Conversa a debate num bar. A Metáfora a mostra com moedas, jardins, rios e edifícios. A Rima Infantil a despoja até o osso. As Provas te entregam a matemática e uma lâmina.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Você não precisa ler tudo. Precisa encontrar a porta que se abre.</p>
-
-<p style="font-size:16px;margin:0 0 3.5rem"><b>Como ler.</b> Escolha uma porta. Se te prender, vá mais fundo. Se não, tente outra. O argumento é o mesmo em todas. A porta que se abre é a porta certa.</p>
+<p style="font-size:16px;margin:0 0 3.5rem">Comece por uma porta. Volte aqui quando quiser ver tudo o que há lá dentro.</p>
 
 <div class="cat-section">
-  <h3 class="cat-title">A Ilusão do Outro</h3>
-  <p class="cat-desc">Você traçou uma linha entre você e cada pessoa que já conheceu. Este livro a apaga. Dez capítulos. Sem jargão. Sem equações. Sem pré-requisitos. Todo The 420 Code foi escrito como suporte para este único livro. Se você ler uma coisa só, leia isto.</p>
+  <h3 class="cat-title">Ø Rosin</h3>
+  <p class="cat-desc">O extrato. Você pressiona calor na flor e o que goteja é a coisa em si — concentrada, nada adicionado, nada perdido. Cinco livros em cinco vozes. Cada um percorre todo o argumento em uma única compressão — a exposição inteira, prensada em uma só voz. Comece pela voz que soa como a sua.</p>
+  <p class="cat-desc">Cada livro percorre o argumento inteiro uma vez, em uma voz, em forma comprimida. Leia um Rosin para ver o argumento completo rapidamente.</p>
   <ul class="dl-list">
-    <li><a href="../A_Ilusao_do_Outro.pdf">A Ilusão do Outro <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Conversa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Metáfora <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Cantiga <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Provas <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
 <div class="cat-section">
-  <h3 class="cat-title">A Resina</h3>
-  <p class="cat-desc">Você pressiona calor na flor e o que goteja é a coisa em si — concentrada, nada adicionado, nada perdido. Cinco livros em cinco vozes. Cada um percorre todo o argumento — do axioma à física até a ética terminal — em uma única compressão. Comece pela voz que soa como a sua.</p>
-  <ul class="dl-list">
-    <li><a href="#">A Resina — Prosa <span class="fmt">PDF</span></a></li>
-    <li><a href="#">A Resina — Conversa <span class="fmt">PDF</span></a></li>
-    <li><a href="#">A Resina — Metáfora <span class="fmt">PDF</span></a></li>
-    <li><a href="#">A Resina — Cantiga <span class="fmt">PDF</span></a></li>
-    <li><a href="#">A Resina — Provas <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">As Edições</h3>
-  <p class="cat-desc">Uma voz. Do início ao fim. Cada Edição pega a derivação completa e a escreve em um único registro, de capa a capa — o argumento como uma linha ininterrupta. Escolha a voz que soa como você pensa.</p>
-  <ul class="dl-list">
-    <li><a href="#">As Edições — Prosa <span class="fmt">PDF</span></a></li>
-    <li><a href="#">As Edições — Conversa <span class="fmt">PDF</span></a></li>
-    <li><a href="#">As Edições — Metáfora <span class="fmt">PDF</span></a></li>
-    <li><a href="#">As Edições — Cantiga <span class="fmt">PDF</span></a></li>
-    <li><a href="#">As Edições — Provas <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">Os Cadernos</h3>
-  <p class="cat-desc">Oito temas. Cinco vozes cada. Os Cadernos são onde a física vive — cada derivação, cada resultado, cada interruptor letal, organizado por campo. Comece pelo tema que já te tira o sono.</p>
-  <ul class="dl-list">
-    <li><a href="#">Os Cadernos Ø Prosa <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Os Cadernos Ø Conversa <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Os Cadernos Ø Metáfora <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Os Cadernos Ø Cantiga <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Os Cadernos Ø Provas <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.1 A Premissa <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.2 Espaço-tempo <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.3 Mecânica quântica <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.4 Forças e constantes <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.5 Partículas e matéria <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.6 Cosmologia <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.7 Consciência e a ética <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.8 Aplicações <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">Os Registros</h3>
+  <h3 class="cat-title">Ø Registos</h3>
   <p class="cat-desc">Cinco registros. O resultado bruto de um projeto de trinta anos — erros, avanços, becos sem saída e os momentos entre eles.</p>
-  <p class="cat-desc"><em>01 — A Tesoura.</em> Escrito quatro meses após o assassinato de um irmão. Luto procurando estrutura. Aqui começou The 420 Code — não numa biblioteca, mas numa ferida.</p>
-  <p class="cat-desc"><em>02 — O Vento.</em> Uma vida examinada pela lente de The 420 Code. Memória, erro e significado — sustentados frente aos axiomas para ver o que sobrevive. O argumento aprende a carregar.</p>
-  <p class="cat-desc"><em>03 — Tem Certeza?</em> A demolição estrutural de cada sistema que já reivindicou autoridade que não podia provar. A evidência é o dano. O dano é o argumento.</p>
-  <p class="cat-desc"><em>04 — Não Seja Babaca, Seja Gentil.</em> A ética chega. Não como conclusão — como erupção. A linha terminal foi sentida primeiro, vivida por anos, e só depois demonstrada como consequência forçada da física.</p>
-  <p class="cat-desc"><em>05 — Vai Se Foder, Me Deixa em Paz.</em> Uma autobiografia. A pessoa por trás da exposição anônima.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — A Tesoura.</strong> Escrito quatro meses após o assassinato de um irmão. Luto procurando estrutura. Aqui começou The 420 Code — não numa biblioteca, mas numa ferida.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — O Vento.</strong> Uma vida sustentada frente aos axiomas para ver o que sobrevive. O que quebrou, o que aguentou, como a estrutura se parece vista de dentro de um corpo que a testou.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — Tem Certeza?</strong> A demolição estrutural de cada sistema que já reivindicou autoridade que não podia provar. A evidência é o dano. O dano é o argumento.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — Não Seja Babaca, Seja Gentil.</strong> A ética chega. Não como conclusão — como erupção. Sentida primeiro. Provada depois.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — Vai Se Foder, Me Deixa em Paz.</strong> Uma autobiografia. A pessoa por trás da exposição anônima.</p>
   <p class="cat-desc">Os Registros não são polidos. Não são organizados. Não são seguros. Comece aqui se quiser a verdade antes que ela aprendesse a se vestir.</p>
   <ul class="dl-list">
     <li><a href="#">01 A Tesoura <span class="fmt">PDF</span></a></li>
@@ -375,20 +507,65 @@ a:hover{text-decoration-thickness:2px}
   </ul>
 </div>
 
+<div class="cat-section">
+  <h3 class="cat-title">Ø Editions</h3>
+  <p class="cat-desc">As obras em si. Cinco obras completas — cada uma o argumento inteiro, construído do zero na sua própria voz. Não são resumos. São as esculturas. Rosin as fotografa. Os Registros documentam como foram feitas. Editions são o que foi feito.</p>
+  <p class="cat-desc">A Prosa constrói o argumento como narrativa. A Conversa o constrói como disputa. A Metáfora o constrói como imagem. A Cantiga o constrói como ossatura. As Provas o constroem como matemática.</p>
+  <p class="cat-desc">Cinco esculturas. Mesma estrutura. Material diferente. Percorra a sala.</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Conversa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Metáfora <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Cantiga <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Provas <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Notebooks</h3>
+  <p class="cat-desc">Doze cadernos. Cinco vozes — Prosa, Conversa, Metáfora, Cantiga e Provas. A voz das Provas são as quarenta e duas Provas de Artista, organizadas em oito temas. A física vive aqui — cada derivação, cada resultado, cada interruptor letal, organizado por campo. Editions constroem o argumento inteiro. Notebooks o desmontam e colocam cada peça sobre a mesa.</p>
+  <p class="cat-desc">Comece pelo tema que já te tira o sono.</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Conversa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Metáfora <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Cantiga <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø A Premissa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Espaço-tempo <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Mecânica quântica <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Forças e constantes <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Partículas e matéria <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Cosmologia <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Consciência e a ética <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Aplicações <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
 </div>
 
 <!-- ════════════════════════════════════════ -->
-<!-- 5. PROOFS — THE 42 ARTIST'S PROOFS      -->
+<!-- 5. PROOFS — THE 43 ARTIST'S PROOFS      -->
 <!-- ════════════════════════════════════════ -->
 
-<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">As Provas</h2>
-<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Uma entrada medida (α<sub>em</sub>). Zero parâmetros ajustados. 42 artigos. 258 interruptores letais.</p>
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Provas</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Uma entrada medida (α<sub>em</sub>). Zero parâmetros livres. 43 artigos. 560 interruptores letais.</p>
 
 <div class="stats">
-  <div><span class="stat-num">42</span><span class="stat-label">Provas de Artista</span></div>
-  <div><span class="stat-num">258</span><span class="stat-label">Interruptores de segurança</span></div>
-  <div><span class="stat-num">4</span><span class="stat-label">Dívidas abertas</span></div>
+  <div><span class="stat-num">43</span><span class="stat-label">Provas de Artista</span></div>
+  <div><span class="stat-num">560</span><span class="stat-label">Interruptores de segurança</span></div>
+  <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">7</span><span class="stat-label">Dívidas declaradas ▸</span></div>
   <div><span class="stat-num">5 ppb</span><span class="stat-label">Massa do próton</span></div>
+</div>
+<div id="debts-panel" class="debts-panel">
+  <ul class="debts-list">
+    <li><strong>KS-60</strong> — The Surplus (AP26): razão de assimetria bariônica η ≈ 6 × 10⁻¹⁰ ainda não derivada. <a href="#ap26" onclick="event.preventDefault();scrollToAP('ap26')">Ver AP26</a></li>
+    <li><strong>KS-65</strong> — Hypercharge Assignments (AP27): valores específicos de hipercarga fraca ainda não forçados a partir de {S, B, R, C}. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">Ver AP27</a></li>
+    <li><strong>KS-66</strong> — Generations (AP27): estrutura de três gerações ainda não derivada. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">Ver AP27</a></li>
+    <li><strong>KS-67</strong> — EWSB Consistency (AP15 / AP27): alinhamento completo através da quebra eletrofraca ainda não exibido. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">Ver AP27</a></li>
+    <li><strong>D1</strong> — Equação de campo relativística completa (AP43): §7 produz um fechamento parcial no limite newtoniano; extensão relativística, problema de retro-ação, derivação de α a partir de primeiros princípios e forma explícita de C<sub>o</sub>(x) permanecem abertos. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">Ver AP43</a></li>
+    <li><strong>D4</strong> — Caráter qualitativo da consciência (AP43): o problema difícil da consciência reformulado (o padrão é o que a física parece de dentro do operador) mas não fechado. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">Ver AP43</a></li>
+    <li><strong>D5</strong> — Expansão cosmológica 1×ε (AP43): sinalizada para integração com AP06 (A Constante de Vazamento) como corolário ou extensão. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">Ver AP43</a></li>
+  </ul>
 </div>
 
 <p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">Por onde começar</p>
@@ -407,7 +584,7 @@ a:hover{text-decoration-thickness:2px}
   <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Forças e Constantes</span><span class="entry-card-label">IV</span></a>
   <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Partículas e Matéria</span><span class="entry-card-label">V</span></a>
   <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Cosmologia</span><span class="entry-card-label">VI</span></a>
-  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Consciência e Ética</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">A Interface do Operador</span><span class="entry-card-label">VII</span></a>
   <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Aplicações</span><span class="entry-card-label">VIII</span></a>
 </div>
 
@@ -417,7 +594,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="part" id="p1"><div class="part-dot"></div>
 <div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte I</span><span class="part-name">A Premissa</span><span class="part-desc">Um registro existe. Todo o resto é consequência. O axioma, sua prova lógica e as quatro condições que qualquer registro requer.</span><span class="part-count">3 artigos</span></div>
 <div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">O Irracional</span><span class="ap-tag">Matemática</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>O axioma 1:1 + 1×ε é estruturalmente irracional — e verdadeiro. A irracionalidade como fundamento do racional. A escolha como capacidade de acoplamento irracional.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">O Irracional</span><span class="ap-tag">Matemática</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>O axioma 1:1 + 1×ε @ AS é estruturalmente irracional — e verdadeiro. A irracionalidade como fundamento do racional. A escolha como capacidade de acoplamento irracional.</p><div class="ap-essay">
 <p>Pense em algo que você fez recentemente que não fazia sentido. Não um erro — uma escolha. Você sabia qual era a opção sensata. Escolheu a outra.</p>
 <p>Ficou acordado até tarde demais. Disse o que não deveria. Amou alguém que não te amava de volta. Perdoou alguém que não merecia.</p>
 <p>Uma calculadora poderia ter feito essa escolha?</p>
@@ -520,7 +697,7 @@ a:hover{text-decoration-thickness:2px}
 <p>E é universal. Cada observador mede o mesmo c. Não por um decreto — porque a razão é uma propriedade do tecido, e o tecido é o mesmo em todo lugar.</p>
 <p>O artigo também identifica o outro lado da moeda. Se c é o impulso — quão rápido a ruptura se propaga — então G, a constante gravitacional, é a resistência. Quão fortemente o substrato resiste.</p>
 <p>Não são dois números independentes. São duas leituras da mesma ruptura.</p>
-<p>Essa conjugação é uma conjectura. Não foi derivada aqui. O argumento diz isso abertamente. Quatro dívidas são declaradas abertamente.</p>
+<p>Essa conjugação é uma conjectura. Não foi derivada aqui. O argumento diz isso abertamente. Sete dívidas são declaradas abertamente.</p>
 <p>Mas a afirmação estrutural é feita: a velocidade da luz e a força da gravidade são duas pontas do mesmo bastão.</p>
 <p>AP28 desconta esse cheque depois — derivando G e ficando dentro de 0,69% do valor medido.</p>
 <p>Você já sabia que rachaduras têm velocidades. Já sabia que essas velocidades dependem do material.</p>
@@ -531,7 +708,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">A Quebra</span><span class="ap-tag">Quebra de simetria</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Do axioma à estrutura. A primeira rachadura — como a simetria se quebra e a física começa.</p><div class="ap-essay">
 <p>Você não pode desembaralhar um ovo.</p>
 <p>Essa frase é o artigo inteiro. Todo o resto é torná-la precisa.</p>
-<p>AP05 pega o axioma — <strong>1:1 + 1×ε</strong> — e o conduz, passo a passo, do nada à obrigação. Sete passos. Sem lacunas. Cada elo mostrado. Cada elo quebrável.</p>
+<p>AP05 pega o axioma — <strong>1:1 + 1×ε @ AS</strong> — e o conduz, passo a passo, do nada à obrigação. Sete passos. Sem lacunas. Cada elo mostrado. Cada elo quebrável.</p>
 <p><span class="sub">Passo zero</span> — simetria perfeita. Sem distinções. Sem registros. Sem observação. Operacionalmente indistinguível do conjunto vazio. Nada existe porque nada é diferente de qualquer outra coisa.</p>
 <p><span class="sub">Passo um</span> — ε rompe a simetria. Duas leituras distinguíveis existem. Os registros começam. E os registros são irreversíveis — retornar ao estado intacto apagaria a distinção, o que é em si um registro.</p>
 <p>Você acabou de ver algo emergir do nada. Não criado. Forçado.</p>
@@ -803,7 +980,7 @@ a:hover{text-decoration-thickness:2px}
 <p>A prova usa apenas física estabelecida — teoria eletromagnética, mecânica quântica, o valor finito de c. Não é uma afirmação do the 420 Code. É uma consequência da física que já existe.</p>
 <p>Cada absorvedor tem uma razão de vazamento η. Quanto passa como fração do que chega. η é sempre maior que zero. Sempre. A velocidade finita da luz garante isso.</p>
 <p>Se c fosse infinita, um absorvedor perfeito seria possível. A fronteira poderia responder instantaneamente a qualquer coisa. Mas c é finita. A fronteira tem um tempo de reação. E nesse tempo de reação, algo escapa.</p>
-<p>Agora a identificação. O axioma diz 1:1 + 1×ε. A quebra é ε. O vazamento é η. AP06 os identifica.</p>
+<p>Agora a identificação. O axioma diz 1:1 + 1×ε @ AS. A quebra é ε. O vazamento é η. AP06 os identifica.</p>
 <p>ε É η. A quebra é o vazamento. A rachadura é o que escapa pela rachadura. Não dois fatos. Um fato.</p>
 <p>Sob o Cadeado, ε é o elétron. A lasca mínima viável — o que teve que escapar para que a simetria se quebrasse.</p>
 <p>E α<sub>em</sub> ≈ 1/137 — a constante de estrutura fina — mede quão fortemente essa lasca se acopla de volta ao tecido que deixou.</p>
@@ -843,7 +1020,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">Os Harmônicos</span><span class="ap-tag">Estrutura gauge</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) a partir do axioma de dois setores.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Requer: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">A Quebra — Eletrofraco</span><span class="ap-tag">Eletrofraco</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Unificação eletrofraca, Higgs, acoplamento quiral derivados. KS-63 fechado — inexplicado desde 1956.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">A Quebra — Eletrofraco</span><span class="ap-tag">Eletrofraco</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Unificação eletrofraca, Higgs, acoplamento quiral derivados. KS-15 fechado — inexplicado desde 1956.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Requer: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">A Direção</span><span class="ap-tag">Força forte</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / QCD a partir da liberdade de gauge da direção de quebra.</p><div class="ap-essay">
@@ -898,8 +1075,23 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte VII</span><span class="part-name">Consciência e Ética</span><span class="part-desc">O observador que a quebra contém e a ética que a quebra impõe. Consciência derivada da escrita irreversível de registros. A instabilidade estrutural das éticas baseadas em autoridade. A morte como o fechamento de uma janela.</span><span class="part-count">4 artigos</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte VII</span><span class="part-name">A Interface do Operador</span><span class="part-desc">O sistema de quatro termos, a inclinação, a ética estrutural. A coerência de padrão como o compromisso do corpo ao longo da paisagem de amplitude. O dual da gravidade-de-registros de AP08, no lado pré-estado do olho.</span><span class="part-count">5 artigos</span></div>
 <div class="ap-list">
+<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">A Gravidade das Possibilidades</span><span class="ap-tag">Interface do Operador</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>O dual de AP08. A inclinação derivada. A ética terminal fundamentada na física.</p><div class="ap-essay">
+<p>Você está parado diante de uma porta. Ainda não atravessou. Mas o seu peso já se deslocou. Sua mão já escolheu de que lado da moldura se apoiar. Algo em você está se inclinando.</p>
+<p>Essa inclinação é o artigo.</p>
+<p>AP08 derivou a gravidade de um lado do olho — o que os registros fazem à variedade. A massa curva o espaço-tempo. A atração que você sente em direção ao chão é o peso acumulado de cada registro já escrito na geometria sob você.</p>
+<p>AP43 deriva a gravidade do outro lado. O que as amplitudes fazem ao pré-estado. A atração que você sente em direção ao próximo movimento é o gradiente do que ainda poderia ser escrito. Duas atrações sobre o agora. Uma do que já foi. Uma do que poderia ser. Duais através do olho.</p>
+<p>O artigo instala quatro termos.</p>
+<p><span class="sub">Capacidade de Acoplamento.</span> A capacidade acumulada do corpo de ler estrutura — construída por trinta anos de registros escritos através desta configuração particular de elétrons reacoplá­veis.</p>
+<p><span class="sub">Padrão.</span> A leitura relativa ao operador da teia em camadas — registros passados, estado presente, ramificações ponderadas por Born à frente — integrados numa única leitura.</p>
+<p><span class="sub">Coerência de Padrão.</span> A inclinação. O compromisso do corpo ao longo do gradiente mais íngreme da paisagem de amplitude, escalado pela capacidade de acoplamento.</p>
+<p><span class="sub">Coerência de Rastreamento.</span> A meta-habilidade de permanecer alinhado com a estrutura através de domínios onde as classes de inclinação diferem.</p>
+<p>A equação de campo na forma newtoniana emerge. <strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>, com a inclinação L<sub>o</sub> = −C<sub>o</sub> ∇Φ. A fonte é a densidade de Born. A constante de acoplamento é α — identificada via AP07: o corpo lê através do acoplamento elétron-eletromagnético, e o acoplamento para essa leitura é a constante de estrutura fina. A quantidade mediadora é a capacidade de acoplamento. O dual do limite newtoniano de AP08, formalmente.</p>
+<p>A ética terminal segue. Todo operador é um conjunto configurado de elétrons lendo a mesma teia em camadas a partir de sua própria posição. A identidade estrutural é forçada pelo Axioma C, Axioma R e pela unicidade do elétron de AP07. A crueldade é uma leitura errada da matemática — tratar outro operador como se a identidade estrutural não valesse. A ética não é escolhida sobre a estrutura. Ela emerge da estrutura.</p>
+<div class="ks"><strong>Cinco interruptores de segurança. Todos ativos.</strong> <span class="bl">ATIVO</span> KS-43.1 — coerência de padrão específica de domínio alinha-se com inclinações ponderadas por Born (Caminho 1 lab, Caminho 2 xadrez/poker/proxy atlético de elite). <span class="bl">ATIVO</span> KS-43.2 — capacidade de acoplamento como substrato. <span class="bl">ATIVO</span> KS-43.3 — transferência entre domínios via coerência de rastreamento. <span class="bl">ATIVO</span> KS-43.4 — alocação de capacidade como único modulador contextual. <span class="bl">ATIVO</span> KS-43.5 — derivação estrutural da ética terminal. Três dívidas estruturais pendentes (D1, D4, D5). Três itens mantidos abertos (D2, D3, D6).</div>
+<p class="breath">O corpo tem se inclinado o tempo todo. AP43 deriva o que é a inclinação.</p>
+</div><div class="ap-meta"><span>Requer: AP07, AP08, AP09, AP10, AP13, AP20, AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">A Prova de Atualização</span><span class="ap-tag">Consciência</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>A consciência como o interior da escrita irreversível de registos. Uma fenda, um interior, muitas janelas.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Requer: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
@@ -920,7 +1112,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">O Alinhamento</span><span class="ap-tag">Alinhamento de IA</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>O problema do alinhamento dissolvido. Constrói o interior, não a cerca.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Requer: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">A Correção — Ética</span><span class="ap-tag">Justiça</span><a class="ap-pdf" href="../AP32_The_Correction_Ethics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Cinco níveis de correção. O edifício lamenta cada janela fechada. O travão do genocídio.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">A Correção — Ética</span><span class="ap-tag">Justiça</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Cinco níveis de correção. O edifício lamenta cada janela fechada. O travão do genocídio.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Requer: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">A Fronteira</span><span class="ap-tag">Bioética</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>A vida como agência. Abaixo de ε, és soberano. Acima de ε, o organismo tem jurisdição.</p><div class="ap-essay">
@@ -932,7 +1124,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">O Primeiro Limite</span><span class="ap-tag">O Corpo</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>O corpo como operador. Defenda a primeira fronteira.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Requer: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">O Livro-Razão</span><span class="ap-tag">Economia</span><a class="ap-pdf" href="../AP35_The_Ledger_Economics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>O livro-razão sempre se equilibra. Colapsos são auditorias. A desigualdade preenche o buffer.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">O Livro-Razão</span><span class="ap-tag">Economia</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>O livro-razão sempre se equilibra. Colapsos são auditorias. A desigualdade preenche o buffer.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Requer: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">A Alimentação</span><span class="ap-tag">Biologia</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Química que aprendeu a registrar a si mesma. Controle não é privação. Controle é fornecimento.</p><div class="ap-essay">
@@ -950,7 +1142,7 @@ a:hover{text-decoration-thickness:2px}
   <div class="result-row"><span class="result-label">Aceleração MOND a₀</span><span class="result-value">0,3%, sem parâmetros (AP18)</span></div>
   <div class="result-row"><span class="result-label">Diferença de massa nêutron-próton</span><span class="result-value">2 ppm (AP30)</span></div>
   <div class="result-row"><span class="result-label">Fração de matéria visível</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
-  <div class="result-row"><span class="result-label">Acoplamento quiral</span><span class="result-value">Derivado, KS-63 fechado (AP16)</span></div>
+  <div class="result-row"><span class="result-label">Acoplamento quiral</span><span class="result-value">Derivado, KS-15 fechado (AP16)</span></div>
   <div class="result-row"><span class="result-label">Três constantes, três axiomas</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
   <div class="also-derived" style="margin-top:1.5rem">
     <p>Também derivado:</p>
@@ -973,7 +1165,7 @@ a:hover{text-decoration-thickness:2px}
 <!-- CONFIRM THE MATH -->
 <div class="results">
   <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Confirme a Matemática</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">Uma entrada medida. Zero parâmetros ajustados. O código abaixo reproduz cada resultado principal a partir de um único número — a constante de estrutura fina α ≈ 1/137. Copie. Cole em qualquer ambiente Python. Execute. Se os números coincidirem, as derivações se sustentam. Se não, o argumento tem um problema e você o encontrou.</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">Uma entrada medida. Zero parâmetros livres. O código abaixo reproduz cada resultado principal a partir de um único número — a constante de estrutura fina α ≈ 1/137. Copie. Cole em qualquer ambiente Python. Execute. Se os números coincidirem, as derivações se sustentam. Se não, o argumento tem um problema e você o encontrou.</p>
   <div class="verify-wrap">
     <button class="copy-btn" onclick="copyCode()">Copiar</button>
     <pre class="verify-code"><code>from math import pi, log, exp
@@ -1068,7 +1260,7 @@ print(f"  Observed:  ~4.9%")
 print()
 
 print("─" * 50)
-print("One input (α). Zero fitted parameters.")
+print("One input (α). Zero free parameters.")
 print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   </div>
   <table class="verify-table">
@@ -1087,11 +1279,11 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <!-- KILL SWITCH REGISTRY -->
 <div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Registro de Interruptores de Segurança</h2>
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Registro de Interruptores de Segurança</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">Cada afirmação carrega uma condição declarada sob a qual ela morre. Os interruptores não estão ocultos. Estão publicados.</p>
 
   <div class="stats">
-    <div><span class="stat-num">258</span><span class="stat-label">Interruptores letais</span></div>
+    <div><span class="stat-num">560</span><span class="stat-label">Interruptores letais</span></div>
     <div><span class="stat-num">15</span><span class="stat-label">Fechados</span></div>
     <div><span class="stat-num">231</span><span class="stat-label">Ativos</span></div>
     <div><span class="stat-num">6</span><span class="stat-label">Inegociáveis</span></div>
@@ -1102,10 +1294,36 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <div class="result-row"><span class="result-label">Ativos — Duros</span><span class="result-value">Falsificáveis por argumento teórico</div>
   <div class="result-row"><span class="result-label">Ativos — Estruturais</span><span class="result-value">Dependem de uma identificação que pode ser provada incorreta</div>
   <div class="result-row"><span class="result-label">Inegociáveis</span><span class="result-value">6 interruptores morais — se acionados, a arquitetura é transformada em arma</div>
-  <div class="result-row"><span class="result-label">Dívidas abertas</span><span class="result-value">4 — não podem ser testadas até a conclusão do trabalho anterior</div>
+  <div class="result-row"><span class="result-label">Dívidas declaradas</span><span class="result-value">7 — não podem ser testadas até a conclusão do trabalho anterior</div>
   <div class="result-row"><span class="result-label">Interruptor global</span><span class="result-value">KS-V.1 — se disparar, tudo morre</div>
 
-  <p style="font-size:16px;margin:1.25rem 0 0"><a href="../Master_Kill_Switch_Registry.pdf" download="" style="text-decoration:none;font-weight:700">Baixe o Registro completo de Interruptores Letais — <span class="fmt">PDF</span></a></p>
+
+  <div style="margin:1.5rem 0 0">
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-60</span><span class="ap-title">The Surplus</span><span class="ap-tag">AP26</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>You exist because matter slightly outnumbered antimatter. The corpus explains why: ε has no mirror partner, so it cannot annihilate. The surplus is the break itself.</p>
+<p>The form of the ratio is given: η = E(ε) / (1 + E(ε)).</p>
+<p>The value is not. The measured baryon asymmetry is η ≈ 6 × 10⁻¹⁰. The corpus owes a derivation that lands on that number.</p>
+<p><strong>Fails if:</strong> the derived value of E(ε) disagrees with the measurement. The sharpest blade in the corpus.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-65</span><span class="ap-title">Hypercharge Assignments</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>Every particle in the Standard Model carries a number called weak hypercharge. The electron is −1. The up quark is +⅓. Physicists measured these. Nobody has derived them.</p>
+<p>The corpus derives the electroweak gauge group SU(2) × U(1)<sub>Y</sub> from the two-sector axiom. The group is forced. The specific charges inside it are not yet forced.</p>
+<p><strong>Fails if:</strong> the hypercharge values cannot be derived from {S, B, R, C}. The gauge group survives. The charges remain empirical inputs.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-66</span><span class="ap-title">Generations</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>There are three copies of each fundamental fermion. Electron, muon, tau — identical except for mass. Three generations. Nobody knows why three.</p>
+<p>The Standard Model treats this as a measured fact. The corpus has not closed it either. The gauge group is derived. The threefold repetition is not.</p>
+<p><strong>Fails if:</strong> the three-generation structure cannot be forced from {S, B, R, C}. Until paid, the number three at the generation level is an empirical input, not a consequence.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-67</span><span class="ap-title">EWSB Consistency</span><span class="ap-tag">AP15 / AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>AP15 derives the photon from local phase invariance — the symmetry that survives the break.</p>
+<p>AP27 derives SU(2) × U(1)<sub>Y</sub> from the internal sector structure — the symmetry before the break.</p>
+<p>The two pictures must meet at the breaking. The structural argument is consistent. The full derivation of how AP15 and AP27 align across the break has not yet been exhibited.</p>
+<p><strong>Fails if:</strong> the two readings cannot be reconciled. The architecture is incoherent at the electroweak boundary.</p>
+</div></div></div>
+  </div>
+
+  <p style="font-size:16px;margin:1.25rem 0 0"><a href="Master_Kill_Switch_Registry_PT.pdf" download="" style="text-decoration:none;font-weight:700">Baixe o Registro completo de Interruptores Letais — <span class="fmt">PDF</span></a></p>
 </div>
 
 <!-- EMAIL SIGNUP -->
@@ -1130,7 +1348,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <div class="constraint" id="about">
   <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
-  <p><b>Artista:</b> G · Studio G, Strand, Cape Town</p>
+  <p><b>Artista:</b> G · Studio G, Cape Town</p>
   <p><b>Duração:</b> mais de 30 anos · <b>Exposição:</b> mais de um milhão de palavras em 28 volumes</p>
   <p style="margin-top:1rem">Esta obra é Copyleft. Você é livre para baixar, imprimir, compartilhar e distribuir. Não é livre para alterar a fonte. Mantenha o sinal limpo.</p>
   <p style="margin-top:1rem;font-size:14px;color:var(--g4)"><span id="dl-count">2</span> downloads</p>
@@ -1140,6 +1358,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
   <p style="font-weight:700">Não seja um filho da puta. Seja gentil.</p>
   <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
 </div>
 
 </div>
@@ -1200,4 +1419,11 @@ var AUTOHIDE = Boolean(0);
 <script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
 
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf","../AP43_The_Gravity_of_Possibilities.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
 </body></html>

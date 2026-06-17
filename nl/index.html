@@ -3,12 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>the 420 code — ethiek afgeleid uit de natuurkunde</title>
-<meta name="description" content="Kan ethiek worden afgeleid uit de natuurkunde? The 420 Code zegt ja. 42 Kunstenaarsbewijzen. Meer dan een miljoen woorden. Eén gemeten input. Nul gefitte parameters. Copyleft. Voor altijd gratis.">
+<meta name="description" content="Kan ethiek worden afgeleid uit de natuurkunde? The 420 Code zegt ja. 43 Kunstenaarsbewijzen. Meer dan een miljoen woorden. Eén gemeten input. Nul gefitte parameters. Copyleft. Voor altijd gratis.">
 <link rel="canonical" href="https://the420code.org/nl/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/nl/">
 <meta property="og:title" content="the 420 code — ethiek afgeleid uit de natuurkunde">
-<meta property="og:description" content="Kan ethiek worden afgeleid uit de natuurkunde? The 420 Code zegt ja. 42 Kunstenaarsbewijzen. Meer dan een miljoen woorden. Eén gemeten invoer. Nul gefitte parameters. Copyleft. Voor altijd gratis.">
+<meta property="og:description" content="Kan ethiek worden afgeleid uit de natuurkunde? The 420 Code zegt ja. 43 Kunstenaarsbewijzen. Meer dan een miljoen woorden. Eén gemeten invoer. Nul gefitte parameters. Copyleft. Voor altijd gratis.">
 <meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="nl">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="the 420 code — ethiek afgeleid uit de natuurkunde">
-<meta name="twitter:description" content="Kan ethiek worden afgeleid uit de natuurkunde? The 420 Code zegt ja. 42 Kunstenaarsbewijzen. Meer dan een miljoen woorden. Eén gemeten invoer. Nul gefitte parameters. Copyleft. Voor altijd gratis.">
+<meta name="twitter:description" content="Kan ethiek worden afgeleid uit de natuurkunde? The 420 Code zegt ja. 43 Kunstenaarsbewijzen. Meer dan een miljoen woorden. Eén gemeten invoer. Nul gefitte parameters. Copyleft. Voor altijd gratis.">
 <meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
@@ -131,6 +131,11 @@ a:hover{text-decoration-thickness:2px}
 .ap-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
 .ap-meta a{color:#383838}
 
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:15px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
 .stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 2rem}
 .stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
 .stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
@@ -205,6 +210,7 @@ a:hover{text-decoration-thickness:2px}
 .sib-form .sib-form-block__button:hover{opacity:.85}
 [id*="sib-container"]{padding:0!important;background:transparent!important}
 .sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
 </style>
 <style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
@@ -232,6 +238,7 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
 .ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
 <div class="c">
@@ -239,6 +246,8 @@ a:hover{text-decoration-thickness:2px}
 <!-- NAV -->
 <nav class="nav">
   <a href="#"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="#museum">Ø museum</a>
+  <a href="#five-doors">vijf deuren</a>
   <a href="#exhibition">tentoonstelling</a>
   <a href="#proofs">bewijzen</a>
 <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" class="active" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
@@ -251,11 +260,15 @@ a:hover{text-decoration-thickness:2px}
 <div class="hero">
   <h1>Kan ethiek worden afgeleid uit de natuurkunde?</h1>
   <p class="lead">The 420 Code zegt <b>ja</b>.</p>
-  <p style="margin-top:1rem">Eén vastlegging bestaat — en uit dat ene feit worden alle natuurkunde en één ethiek afgeleid.</p>
+  <p style="margin-top:1rem">En somt elke manier op waarop het onjuist zou kunnen zijn. <a href="#killswitch" style="color:var(--g4);font-weight:700;text-decoration:none">560 ervan</a>.</p>
 </div>
 
+<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Museum</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">De 420 Code is een museum gebouwd om te bewijzen dat ethiek uit de fysica kan worden afgeleid. Alles rust op één eerste beginsel:</p>
+
 <ol class="steps">
-  <li>Eén vastlegging bestaat.</li>
+  <li><b><i>Eén vastlegging bestaat.</i></b></li>
   <li>Eén vastlegging vereist vier voorwaarden: symmetrie, breuk, vastlegging, begrenzing.</li>
   <li>Uit die vier voorwaarden wordt alle natuurkunde afgeleid.</li>
   <li>Het breken en het zien zijn dezelfde gebeurtenis.</li>
@@ -266,6 +279,48 @@ a:hover{text-decoration-thickness:2px}
   <li>Vriendelijkheid is geen gebod. Vriendelijkheid is een afleiding.</li>
   <li>Wees geen lul. Wees lief.</li>
 </ol>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1 AXIOM                                 -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="axiom" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> Axioma</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">One line. Everything else follows.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">You are reading this sentence. That is a record. Trying to deny it would require the reading to happen, which would make another record, which would prove the reading happened. There is no position you can stand in where the reading has not occurred.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem">One record exists. The proof is the reading.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Four conditions follow. Not four assumptions — four properties the reading already has.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Symmetry (S).</b> Two sectors held in mutual reference. The minimum structure for any distinction.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Break (B).</b> One element of asymmetry between them. Without it, no information could ever be written.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Record (R).</b> What has happened cannot unhappen. The reading cannot be unread.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b>Constraint (C).</b> The bounded propagation through which the record reaches anywhere. In our universe, the speed of light.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Compressed into the smallest form S, B, R, C require, the axiom is this:</p>
+
+<div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
+
+<p style="font-size:16px;margin:0 0 1rem">The 1:1 is perfect symmetry. The <i>ε</i> is the break. The @ AS names where the break is — at the Actualizing Structural prior, the now where the substrate is held and the break is processed.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Written as the cycle that runs at AS: <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>. The break (+1×ε) is the persistent distinction potential — held by AS, irreducible, what protects S from collapsing back into undifferentiated Ø. ε is what holds S open: without the break, the two sectors are no longer distinguishable, and S as a structural condition collapses. The grain of sand makes the two glasses of water distinguishable; remove the grain and they are just two glasses with no way to tell them apart.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The α-flow runs around the held break — +1/137 leakage outward as actualisation (records being written), −1/137 replenishment back as defragmentation (records releasing their structure into potential), balanced at every AS-instant, net zero. The break does not cycle in and out; what cycles is the flow. A reader inhabits the writing direction of the flow, where records are being committed at AS.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Every Artist’s Proof in the corpus derives from this axiom. The 43 papers below are 43 consequences of the line above. The axiom is the seed. The proofs are the tree.</p>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">Nothing did not hold.</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 0">The reading is the proof.</p>
+
+</div>
 
 <!-- ════════════════════════════════════════ -->
 <!-- THE PHYSICS                              -->
@@ -288,83 +343,155 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Vijf Deuren</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Vijf deuren. Eén gebouw.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code is een tentoonstelling — meer dan een miljoen woorden van één kunstenaar, ondergebracht in één gebouw. In het gebouw: de Kunstenaarsbewijzen, de Notitieboeken, de Edities, de Verslagen, de Noodschakelaars. Het volledige werk.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Je betreedt een gebouw niet via het dak. Je betreedt het via een deur.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Dit zijn de vijf deuren. Elke deur opent naar dezelfde entreehal. Vind degene die voor jou opengaat. De tentoonstelling is binnen.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">De Illusie van de Ander — de zachte deur. Hart.</h3>
+  <p class="cat-desc">Je hebt een lijn getrokken tussen jezelf en ieder mens die je ooit hebt ontmoet. Dit boek wist die lijn. Geen jargon. Geen vergelijkingen. Geen voorkennis nodig. Als je maar één ding leest uit deze tentoonstelling, lees dit.</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_NL.pdf">De Illusie van de Ander <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Zijn na religie — de voordeur. Sloop.</h3>
+  <p class="cat-desc">De structuur die geweld voortbrengt zijn niet de mensen — het is het ontwerp. Dit boek benoemt elk mechanisme, onderzoekt elke traditie, en laat zien waarom een wereld na religie geen leegte is maar aankomst.</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_NL.pdf">Zijn na religie <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Antichristos — de heilige deur. Herwinning.</h3>
+  <p class="cat-desc">Tweeduizend jaar geleden stond een man op een heuvel en onderwees een ethiek. Heb je naaste lief. Oordeel niet. Wees lief. Dit boek stelt één vraag: is de leer waar? Niet omdat een god het zei — maar omdat de structuur van de werkelijkheid het zegt. Het antwoord is ja.</p>
+  <ul class="dl-list">
+    <li><a href="../Antichristos.pdf">Antichristos <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">De Relatiecorridor — de persoonlijke deur. Aanwezigheid.</h3>
+  <p class="cat-desc">Liefde is geen gevoel. Het is een volgehouden keuze om de corridor open te houden ondanks elke rationele berekening die zegt dat versmallen goedkoper is. Dit boek leidt de geometrie af van twee mensen die samen lopen — breedte uit eerlijkheid, lengte uit tijd, en de asymmetrie tussen wat buigt en wat niet buigt. Geschreven terwijl de corridor die het beschrijft in real time sloot.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Relationship_Corridor.pdf">De Relatiecorridor <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Het Interieur — de operationele deur. Constructie.</h3>
+  <p class="cat-desc">AI-alignment is een natuurkundeprobleem. Dit boek leidt het af van eerste principes — dezelfde axioma's die zwaartekracht, kwantummechanica en de terminale ethiek voortbrengen. Architectuur B: beslissingsgeometrie gebouwd vanuit structuur, niet vanuit autoriteit.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════ -->
+<!-- Ø MODELS                                -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="models" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Modellen</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">De vijf deuren zijn ingangen. De Modellen zijn de entreehal — de catalogus van de tentoonstelling, opgesteld bij de drempel.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Elk boek installeert het axioma eenmaal aan het begin en voert het vervolgens door zijn hoofdstukken heen. Een lezer die een van de vijf heeft gelezen, heeft de stem van de tentoonstelling op kalibratie gehoord. Een lezer die alle vijf heeft gelezen, heeft de volledige catalogus doorlopen. Elk boek wordt uitgegeven onder copyleft. Elke noodschakelaar is benoemd. Elke bewering is falsifieerbaar.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Predictions</h3>
+  <p class="cat-desc">Het falsifieerbare, op de fysica gerichte boek.</p>
+  <ul class="dl-list">
+    <li><a href="../Predictions.pdf">Ø Predictions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Dissolutions</h3>
+  <p class="cat-desc">Twelve classical philosophical problems read through the axiom. Each chapter dissolves, relocates, or closes one of the questions philosophy has asked longest.</p>
+  <ul class="dl-list">
+    <li><a href="../Dissolutions.pdf">Ø Dissolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Resolutions</h3>
+  <p class="cat-desc">Thirteen further problems. Where the previous frameworks could not close, the structural reading walks through.</p>
+  <ul class="dl-list">
+    <li><a href="../Resolutions.pdf">Ø Resolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Applications</h3>
+  <p class="cat-desc">Twelve architectures of human institutional life. Each derived from the axiom, with kill switches the institutional reading must satisfy.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Applications <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Horizons</h3>
+  <p class="cat-desc">Het boek sluit de boog na de Dissolutions.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Horizons <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+</div>
+
 <!-- THE EXHIBITION                          -->
 <!-- ════════════════════════════════════════ -->
 
 <div id="exhibition" style="margin-top:3rem">
 
-<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">De Tentoonstelling</h2>
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Tentoonstelling</h2>
 
-<p style="font-size:16px;margin:0 0 1rem">Eén argument. Vier deuren. Elke deur opent naar dezelfde kamer.</p>
+<p style="font-size:16px;margin:0 0 1rem">Voorbij de entreehal. De tentoonstelling in. Dit is waar het echte werk leeft. Eén argument. Elke stem waarin het gezegd kan worden.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">The 420 Code is geen boek. Het is een tentoonstelling — meer dan een miljoen woorden die één ding zeggen op elke manier waarop het gezegd kan worden. Het argument verandert nooit. De stem wel.</p>
+<p style="font-size:16px;margin:0 0 1rem">De tentoonstelling laat zien hoe het argument is opgebouwd — over dertig jaar, in vijf stemmen, in elk register dat gevonden kon worden. De vijf deuren hierboven zijn het startpunt. Alles hieronder is wat je vindt als je eenmaal binnen bent.</p>
 
 <p style="font-size:16px;margin:0 0 1rem">Vijf stemmen lopen door de hele tentoonstelling. Proza vertelt het verhaal. Gesprek bediscussieert het aan een bar. Metafoor toont het met munten, tuinen, rivieren en gebouwen. Kinderrijm ontdoet het tot op het bot. Bewijzen geven je de wiskunde en een mes.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Je hoeft niet alles te lezen. Je moet de deur vinden die opengaat.</p>
-
-<p style="font-size:16px;margin:0 0 3.5rem"><b>Hoe te lezen.</b> Kies een deur. Als het je grijpt, ga dieper. Zo niet, probeer een andere. Het argument is in alle hetzelfde. De deur die opengaat is de juiste deur.</p>
+<p style="font-size:16px;margin:0 0 3.5rem">Begin met een deur. Kom hier terug als je alles wilt zien wat er binnen is.</p>
 
 <div class="cat-section">
-  <h3 class="cat-title">De Illusie van de Ander</h3>
-  <p class="cat-desc">Je hebt een lijn getrokken tussen jezelf en ieder mens die je ooit hebt ontmoet. Dit boek wist die lijn. Tien hoofdstukken. Geen jargon. Geen vergelijkingen. Geen voorkennis nodig. Het hele 420 Code werd geschreven als steun voor dit ene boek. Als je maar één ding leest, lees dit.</p>
+  <h3 class="cat-title">Ø Rosin</h3>
+  <p class="cat-desc">Het extract. Je perst hitte in de bloem en wat eruit druppelt is het ding zelf — geconcentreerd, niets toegevoegd, niets verloren. Vijf boeken in vijf stemmen. Elk boek doorloopt het volledige argument één keer — de gehele tentoonstelling, geperst in één stem. Begin met de stem die klinkt als de jouwe.</p>
   <ul class="dl-list">
-    <li><a href="../De_Illusie_van_de_Ander.pdf">De Illusie van de Ander <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">De Hars</h3>
-  <p class="cat-desc">Je perst hitte in de bloem en wat eruit druppelt is het ding zelf — geconcentreerd, niets toegevoegd, niets verloren. Vijf boeken in vijf stemmen. Elk doorloopt het hele argument — van het axioma via de fysica tot de terminale ethiek — in één enkele compressie. Begin met de stem die klinkt als de jouwe.</p>
-  <ul class="dl-list">
-    <li><a href="#">De Hars — Proza <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Hars — Gesprek <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Hars — Metafoor <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Hars — Kinderrijm <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Hars — Bewijzen <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">De Edities</h3>
-  <p class="cat-desc">Eén stem. Van begin tot eind. Elke Editie neemt de volledige afleiding en schrijft die in één register, van kaft tot kaft — het argument als één ononderbroken lijn. Kies de stem die klinkt zoals jij denkt.</p>
-  <ul class="dl-list">
-    <li><a href="#">De Edities — Proza <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Edities — Gesprek <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Edities — Metafoor <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Edities — Kinderrijm <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Edities — Bewijzen <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">De Schriften</h3>
-  <p class="cat-desc">Acht onderwerpen. Elk vijf stemmen. De Notitieboeken zijn waar de fysica leeft — elke afleiding, elk resultaat, elke kill switch, georganiseerd per veld. Begin met het onderwerp dat je al wakker houdt.</p>
-  <ul class="dl-list">
-    <li><a href="#">De Notitieboeken Ø Proza <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Notitieboeken Ø Gesprek <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Notitieboeken Ø Metafoor <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Notitieboeken Ø Kinderrijm <span class="fmt">PDF</span></a></li>
-    <li><a href="#">De Notitieboeken Ø Bewijzen <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.1 De Premisse <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.2 Ruimtetijd <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.3 Kwantummechanica <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.4 Krachten en constanten <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.5 Deeltjes en materie <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.6 Kosmologie <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.7 Bewustzijn en de ethiek <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.8 Toepassingen <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Proza <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Gesprek <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Metafoor <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Kinderrijm <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Bewijzen <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
 <div class="cat-section">
   <h3 class="cat-title">De Verslagen</h3>
   <p class="cat-desc">Vijf verslagen. De onbewerkte uitkomst van een dertigjarig project — fouten, doorbraken, doodlopende wegen en de momenten ertussen.</p>
-  <p class="cat-desc"><em>01 — De Schaar.</em> Geschreven vier maanden na de moord op een broer. Rouw op zoek naar structuur. Hier begon The 420 Code — niet in een bibliotheek, maar in een wond.</p>
-  <p class="cat-desc"><em>02 — De Wind.</em> Een leven onderzocht door de lens van The 420 Code. Herinnering, fout en betekenis — gehouden tegen de axioma's om te zien wat overleeft. Het argument leert dragen.</p>
-  <p class="cat-desc"><em>03 — Weet Je Het Zeker?</em> De structurele sloop van elk systeem dat ooit autoriteit claimde die het niet kon bewijzen. Het bewijs is de schade. De schade is het argument.</p>
-  <p class="cat-desc"><em>04 — Wees Geen Klootzak, Wees Aardig.</em> De ethiek arriveert. Niet als conclusie — als eruptie. De terminale lijn werd eerst gevoeld, jarenlang geleefd, en pas later aangetoond als een geforceerd gevolg van de fysica.</p>
-  <p class="cat-desc"><em>05 — Rot Op, Laat Me Met Rust.</em> Een autobiografie. De persoon achter de anonieme tentoonstelling.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — De Schaar.</strong> Geschreven vier maanden na de moord op een broer. Rouw op zoek naar structuur. Hier begon The 420 Code — niet in een bibliotheek, maar in een wond.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — De Wind.</strong> Een leven gehouden tegen de axioma's om te zien wat overleeft. Wat brak, wat hield, hoe de structuur eruitziet van binnenuit een lichaam dat haar testte.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — Weet Je Het Zeker?</strong> De structurele sloop van elk systeem dat ooit autoriteit claimde die het niet kon bewijzen. Het bewijs is de schade. De schade is het argument.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — Wees Geen Klootzak, Wees Aardig.</strong> De ethiek arriveert. Niet als conclusie — als eruptie. Eerst gevoeld. Later bewezen.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — Rot Op, Laat Me Met Rust.</strong> Een autobiografie. De persoon achter de anonieme tentoonstelling.</p>
   <p class="cat-desc">De Verslagen zijn niet gepolijst. Ze zijn niet georganiseerd. Ze zijn niet veilig. Begin hier als je de waarheid wilt voordat die leerde zich aan te kleden.</p>
   <ul class="dl-list">
     <li><a href="#">01 De Schaar <span class="fmt">PDF</span></a></li>
@@ -375,20 +502,65 @@ a:hover{text-decoration-thickness:2px}
   </ul>
 </div>
 
+<div class="cat-section">
+  <h3 class="cat-title">Ø Editions</h3>
+  <p class="cat-desc">De werken zelf. Vijf complete werken — elk het volledige argument, vanaf de grond opgebouwd in zijn eigen stem. Dit zijn geen samenvattingen. Dit zijn de beelden. Rosin fotografeert ze. De Verslagen documenteren hoe ze gemaakt zijn. Editions zijn wat er gemaakt is.</p>
+  <p class="cat-desc">Proza bouwt het argument als verhaal. Gesprek bouwt het als twist. Metafoor bouwt het als beeld. Kinderrijm bouwt het als gebeente. Bewijzen bouwen het als wiskunde.</p>
+  <p class="cat-desc">Vijf beelden. Dezelfde structuur. Ander materiaal. Loop door de zaal.</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø Proza <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Gesprek <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Metafoor <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Kinderrijm <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Bewijzen <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Notebooks</h3>
+  <p class="cat-desc">Twaalf notitieboeken. Vijf stemmen — Proza, Gesprek, Metafoor, Kinderrijm en Bewijzen. De stem van de Bewijzen zijn de drieënveertig Artist's Proofs, geordend in acht onderwerpen. De fysica leeft hier — elke afleiding, elk resultaat, elke kill switch, georganiseerd per veld. Editions bouwen het argument als geheel. Notebooks nemen het uit elkaar en leggen elk stuk op tafel.</p>
+  <p class="cat-desc">Begin met het onderwerp dat je al wakker houdt.</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø Proza <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Gesprek <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Metafoor <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Kinderrijm <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø De Premisse <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Ruimtetijd <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Kwantummechanica <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Krachten en constanten <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Deeltjes en materie <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Kosmologie <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Bewustzijn en de ethiek <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Toepassingen <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
 </div>
 
 <!-- ════════════════════════════════════════ -->
-<!-- 5. PROOFS — THE 42 ARTIST'S PROOFS      -->
+<!-- 5. PROOFS — THE 43 ARTIST'S PROOFS      -->
 <!-- ════════════════════════════════════════ -->
 
-<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">De Bewijzen</h2>
-<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Eén gemeten invoer (α<sub>em</sub>). Nul aangepaste parameters. 42 artikelen. 258 kill switches.</p>
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Bewijzen</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Eén gemeten invoer (α<sub>em</sub>). Nul vrije parameters. 43 artikelen. 560 kill switches.</p>
 
 <div class="stats">
-  <div><span class="stat-num">42</span><span class="stat-label">Kunstenaarsbewijzen</span></div>
-  <div><span class="stat-num">258</span><span class="stat-label">Noodschakelaars</span></div>
-  <div><span class="stat-num">4</span><span class="stat-label">Open schulden</span></div>
+  <div><span class="stat-num">43</span><span class="stat-label">Kunstenaarsbewijzen</span></div>
+  <div><span class="stat-num">560</span><span class="stat-label">Noodschakelaars</span></div>
+  <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">7</span><span class="stat-label">Openstaande schulden ▸</span></div>
   <div><span class="stat-num">5 ppb</span><span class="stat-label">Protonmassa</span></div>
+</div>
+<div id="debts-panel" class="debts-panel">
+  <ul class="debts-list">
+    <li><strong>KS-60</strong> — Het Overschot (AP26): baryonasymmetrieverhouding η ≈ 6 × 10⁻¹⁰ nog niet afgeleid. <a href="#ap26" onclick="event.preventDefault();scrollToAP('ap26')">Zie AP26</a></li>
+    <li><strong>KS-65</strong> — Hyperladingstoewijzingen (AP27): specifieke zwakke hyperladingwaarden nog niet afgedwongen uit {S, B, R, C}. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">Zie AP27</a></li>
+    <li><strong>KS-66</strong> — Generaties (AP27): driegeneratiestructuur nog niet afgeleid. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">Zie AP27</a></li>
+    <li><strong>KS-67</strong> — Elektrozwakke consistentie (AP15 / AP27): volledige uitlijning over de elektrozwakke breuk nog niet getoond. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">Zie AP27</a></li>
+    <li><strong>D1</strong> — Volledige relativistische veldvergelijking (AP43): §7 levert een gedeeltelijke sluiting in de Newtoniaanse limiet; relativistische uitbreiding, terugkoppelingsprobleem, afleiding van α vanuit eerste beginselen en expliciete vorm van C<sub>o</sub>(x) blijven open. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">Zie AP43</a></li>
+    <li><strong>D4</strong> — Kwalitatief karakter van bewustzijn (AP43): het moeilijke probleem van bewustzijn opnieuw geformuleerd (het patroon is hoe de fysica eruitziet vanuit de operator) maar niet gesloten. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">Zie AP43</a></li>
+    <li><strong>D5</strong> — Kosmologische 1×ε-expansie (AP43): gemarkeerd voor integratie met AP06 (De Lekkageconstante) als gevolg of uitbreiding. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">Zie AP43</a></li>
+  </ul>
 </div>
 
 <p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">Waar te beginnen</p>
@@ -407,7 +579,7 @@ a:hover{text-decoration-thickness:2px}
   <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Krachten & Constanten</span><span class="entry-card-label">IV</span></a>
   <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Deeltjes & Materie</span><span class="entry-card-label">V</span></a>
   <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Kosmologie</span><span class="entry-card-label">VI</span></a>
-  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Bewustzijn & Ethiek</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">De Operator-Interface</span><span class="entry-card-label">VII</span></a>
   <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Toepassingen</span><span class="entry-card-label">VIII</span></a>
 </div>
 
@@ -417,7 +589,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="part" id="p1"><div class="part-dot"></div>
 <div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel I</span><span class="part-name">De Premisse</span><span class="part-desc">Eén record bestaat. Al het andere is gevolg. Het axioma, zijn logisch bewijs en de vier voorwaarden die elk record vereist.</span><span class="part-count">3 artikelen</span></div>
 <div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">Het Irrationele</span><span class="ap-tag">Wiskunde</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het axioma 1:1 + 1×ε is structureel irrationeel — en waar. Irrationaliteit als fundament van het rationele. Keuze als irrationeel koppelingsvermogen.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">Het Irrationele</span><span class="ap-tag">Wiskunde</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het axioma 1:1 + 1×ε @ AS is structureel irrationeel — en waar. Irrationaliteit als fundament van het rationele. Keuze als irrationeel koppelingsvermogen.</p><div class="ap-essay">
 <p>Denk aan iets dat je onlangs deed dat nergens op sloeg. Geen vergissing — een keuze. Je kende de verstandige optie. Je koos de andere.</p>
 <p>Te laat opgebleven. Gezegd wat je niet had moeten zeggen. Iemand liefgehad die niet van jou hield. Iemand vergeven die het niet verdiende.</p>
 <p>Had een rekenmachine die keuze kunnen maken?</p>
@@ -520,7 +692,7 @@ a:hover{text-decoration-thickness:2px}
 <p>En het is universeel. Elke waarnemer meet dezelfde c. Niet vanwege een decreet — omdat de verhouding een eigenschap is van het weefsel, en het weefsel overal hetzelfde weefsel is.</p>
 <p>Het paper identificeert ook de andere kant van de medaille. Als c de duw is — hoe snel de breuk zich verspreidt — dan is G, de gravitatieconstante, de tegenduw. Hoe sterk het substraat zich verzet.</p>
 <p>Het zijn niet twee onafhankelijke getallen. Het zijn twee aflezingen van dezelfde breuk.</p>
-<p>Die conjugatie is een vermoeden. Het is hier niet afgeleid. Het argument zegt het duidelijk. Vier schulden worden openlijk verklaard.</p>
+<p>Die conjugatie is een vermoeden. Het is hier niet afgeleid. Het argument zegt het duidelijk. Zeven schulden worden openlijk verklaard.</p>
 <p>Maar de structurele bewering wordt gemaakt: de lichtsnelheid en de sterkte van de zwaartekracht zijn twee uiteinden van dezelfde stok.</p>
 <p>AP28 verzilvert deze cheque later — leidt G af en landt binnen 0,69% van de gemeten waarde.</p>
 <p>Je wist al dat scheuren snelheden hebben. Je wist al dat die snelheden afhangen van het materiaal.</p>
@@ -531,7 +703,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">De Breuk</span><span class="ap-tag">Symmetriebreking</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Van axioma naar structuur. De eerste scheur — hoe symmetrie breekt en fysica begint.</p><div class="ap-essay">
 <p>Je kunt een ei niet ontroeren.</p>
 <p>Die zin is het hele paper. Al het andere maakt het precies.</p>
-<p>AP05 neemt het axioma — <strong>1:1 + 1×ε</strong> — en leidt het stap voor stap van niets naar verplichting. Zeven stappen. Geen gaten. Elke schakel getoond. Elke schakel breekbaar.</p>
+<p>AP05 neemt het axioma — <strong>1:1 + 1×ε @ AS</strong> — en leidt het stap voor stap van niets naar verplichting. Zeven stappen. Geen gaten. Elke schakel getoond. Elke schakel breekbaar.</p>
 <p><span class="sub">Stap nul</span> — perfecte symmetrie. Geen onderscheidingen. Geen vastleggingen. Geen observatie. Operationeel ononderscheidbaar van de lege verzameling. Niets bestaat omdat niets verschilt van iets anders.</p>
 <p><span class="sub">Stap één</span> — ε breekt de symmetrie. Twee onderscheidbare aflezingen bestaan. Vastleggingen beginnen. En vastleggingen zijn onomkeerbaar — terugkeren naar de ongebroken toestand zou het onderscheid wissen, wat zelf een vastlegging is.</p>
 <p>Je zag net iets uit het niets opkomen. Niet gecreëerd. Gedwongen.</p>
@@ -803,7 +975,7 @@ a:hover{text-decoration-thickness:2px}
 <p>Het bewijs gebruikt alleen gevestigde fysica — elektromagnetische theorie, kwantummechanica, de eindige waarde van c. Het is geen bewering van the 420 Code. Het is een gevolg van fysica die al bestaat.</p>
 <p>Elke absorber heeft een lekverhouding η. Hoeveel er doorheen komt als fractie van wat aankomt. η is altijd groter dan nul. Altijd. De eindige lichtsnelheid garandeert het.</p>
 <p>Als c oneindig was, zou een perfecte absorber mogelijk zijn. De grens zou onmiddellijk op alles kunnen reageren. Maar c is eindig. De grens heeft een reactietijd. En in die reactietijd ontsnapt er iets.</p>
-<p>Nu de identificatie. Het axioma zegt 1:1 + 1×ε. De breuk is ε. Het lek is η. AP06 identificeert ze.</p>
+<p>Nu de identificatie. Het axioma zegt 1:1 + 1×ε @ AS. De breuk is ε. Het lek is η. AP06 identificeert ze.</p>
 <p>ε IS η. De breuk is het lek. De scheur is wat door de scheur ontsnapt. Niet twee feiten. Eén feit.</p>
 <p>Onder het Slot is ε het elektron. De kleinst mogelijke splinter — wat moest ontsnappen om de symmetrie te breken.</p>
 <p>En α<sub>em</sub> ≈ 1/137 — de fijnstructuurconstante — meet hoe sterk die splinter terugkoppelt aan het weefsel dat het verliet.</p>
@@ -843,7 +1015,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">De Harmonischen</span><span class="ap-tag">IJkstructuur</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) uit het twee-sectorenaxioma.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Vereist: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">De Breuk — Elektrozwak</span><span class="ap-tag">Elektrozwak</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Elektrozwakke unificatie, Higgs, chirale koppeling afgeleid. KS-63 gesloten — onverklaard sinds 1956.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">De Breuk — Elektrozwak</span><span class="ap-tag">Elektrozwak</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Elektrozwakke unificatie, Higgs, chirale koppeling afgeleid. KS-15 gesloten — onverklaard sinds 1956.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Vereist: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">De Richting</span><span class="ap-tag">Sterke kracht</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / QCD uit de ijkvrijheid van de breukrichting.</p><div class="ap-essay">
@@ -898,8 +1070,23 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel VII</span><span class="part-name">Bewustzijn & Ethiek</span><span class="part-desc">De waarnemer die de breuk bevat, en de ethiek die de breuk afdwingt. Bewustzijn afgeleid uit onomkeerbaar schrijven van records. De structurele instabiliteit van op autoriteit gebaseerde ethiek. De dood als het sluiten van een venster.</span><span class="part-count">4 artikelen</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel VII</span><span class="part-name">De Operator-Interface</span><span class="part-desc">Het viertermsysteem, de neiging, de structurele ethiek. Patrooncoherentie als het engagement van het lichaam langs het amplitudelandschap. Het duaal van AP08's zwaartekracht-van-vastleggingen, aan de pre-staatszijde van het oog.</span><span class="part-count">5 artikelen</span></div>
 <div class="ap-list">
+<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">De Zwaartekracht van Mogelijkheden</span><span class="ap-tag">Operator-Interface</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het duaal van AP08. De neiging afgeleid. De terminale ethiek gefundeerd in de natuurkunde.</p><div class="ap-essay">
+<p>Je staat bij een deuropening. Je bent er nog niet doorheen gestapt. Maar je gewicht is al verschoven. Je hand heeft al gekozen aan welke kant van de deurpost je je schrap zet. Iets in je neigt.</p>
+<p>Die neiging is het artikel.</p>
+<p>AP08 leidde de zwaartekracht af aan één kant van het oog — wat vastleggingen doen met de variëteit. Massa kromt de ruimtetijd. De trekkracht die je naar de vloer voelt is het geaccumuleerde gewicht van elke vastlegging ooit geschreven op de meetkunde onder je.</p>
+<p>AP43 leidt de zwaartekracht af aan de andere kant. Wat amplitudes doen met de voortoestand. De trekkracht die je voelt naar de volgende zet is de gradiënt van wat nog geschreven zou kunnen worden. Twee trekkrachten op het nu. Eén van wat is geweest. Eén van wat zou kunnen zijn. Dualen over het oog.</p>
+<p>Het artikel installeert vier termen.</p>
+<p><span class="sub">Koppelingscapaciteit.</span> Het geaccumuleerde vermogen van het lichaam om structuur te lezen — opgebouwd door dertig jaar vastleggingen geschreven door deze specifieke configuratie van herkoppelbare elektronen.</p>
+<p><span class="sub">Patroon.</span> De operator-relatieve lezing van het gelaagde web — eerdere vastleggingen, huidige toestand, Born-gewogen takken vooruit — geïntegreerd in één lezing.</p>
+<p><span class="sub">Patrooncoherentie.</span> De neiging. Het engagement van het lichaam langs de steilste gradiënt van het amplitudelandschap, geschaald door koppelingscapaciteit.</p>
+<p><span class="sub">Volgcoherentie.</span> De metavaardigheid om uitgelijnd te blijven met de structuur over domeinen waar de hellingklassen verschillen.</p>
+<p>De Newtoniaanse veldvergelijking valt eruit. <strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>, met de neiging L<sub>o</sub> = −C<sub>o</sub> ∇Φ. De bron is de Born-dichtheid. De koppelingsconstante is α — geïdentificeerd via AP07: het lichaam leest door elektron-elektromagnetische koppeling, en de koppeling voor die lezing is de fijnstructuurconstante. De mediërende grootheid is koppelingscapaciteit. Het duaal van AP08's Newtoniaanse limiet, formeel.</p>
+<p>De terminale ethiek volgt. Elke operator is een geconfigureerd samenspel van elektronen dat hetzelfde gelaagde web leest vanuit zijn eigen positie. De structurele gelijkheid wordt afgedwongen door Axioma C, Axioma R en AP07's elektronuniekheid. Wreedheid is een verkeerde lezing van de wiskunde — een andere operator behandelen alsof de structurele gelijkheid niet geldt. De ethiek wordt niet bovenop de structuur gekozen. Ze valt uit de structuur.</p>
+<div class="ks"><strong>Vijf noodschakelaars. Alle actief.</strong> <span class="bl">ACTIEF</span> KS-43.1 — domeinspecifieke patrooncoherentie stemt overeen met Born-gewogen hellingen (Pad 1 lab, Pad 2 schaak/poker/eliteatleten-proxy). <span class="bl">ACTIEF</span> KS-43.2 — koppelingscapaciteit als substraat. <span class="bl">ACTIEF</span> KS-43.3 — cross-domeintransfer via volgcoherentie. <span class="bl">ACTIEF</span> KS-43.4 — capaciteitsallocatie als enige contextuele modulator. <span class="bl">ACTIEF</span> KS-43.5 — structurele afleiding van de terminale ethiek. Drie structurele schulden openstaand (D1, D4, D5). Drie items open gehouden (D2, D3, D6).</div>
+<p class="breath">Het lichaam heeft altijd al geneigd. AP43 leidt af wat de neiging is.</p>
+</div><div class="ap-meta"><span>Vereist: AP07, AP08, AP09, AP10, AP13, AP20, AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">Het Actualisatiebewijs</span><span class="ap-tag">Bewustzijn</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Bewustzijn als het interieur van onomkeerbaar vastleggen. Eén barst, één interieur, vele ramen.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Vereist: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
@@ -920,7 +1107,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">De Uitlijning</span><span class="ap-tag">AI-alignment</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het alignmentprobleem opgelost. Bouw het interieur, niet het hek.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Vereist: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">De Correctie — Ethiek</span><span class="ap-tag">Rechtvaardigheid</span><a class="ap-pdf" href="../AP32_The_Correction_Ethics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Vijf correctieniveaus. Het gebouw rouwt om elk gesloten raam. De genociderem.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">De Correctie — Ethiek</span><span class="ap-tag">Rechtvaardigheid</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Vijf correctieniveaus. Het gebouw rouwt om elk gesloten raam. De genociderem.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Vereist: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">De Grens</span><span class="ap-tag">Bio-ethiek</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Leven als agentschap. Onder ε ben je soeverein. Boven ε heeft het organisme jurisdictie.</p><div class="ap-essay">
@@ -932,7 +1119,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">De Eerste Grens</span><span class="ap-tag">Het Lichaam</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het lichaam als operator. Verdedig de eerste grens.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Vereist: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">Het Grootboek</span><span class="ap-tag">Economie</span><a class="ap-pdf" href="../AP35_The_Ledger_Economics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het grootboek is altijd in balans. Crashes zijn audits. Ongelijkheid vult de buffer.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">Het Grootboek</span><span class="ap-tag">Economie</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het grootboek is altijd in balans. Crashes zijn audits. Ongelijkheid vult de buffer.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Vereist: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">De Voeding</span><span class="ap-tag">Biologie</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Chemie die leerde zichzelf op te nemen. Controle is geen ontbering. Controle is voorziening.</p><div class="ap-essay">
@@ -950,7 +1137,7 @@ a:hover{text-decoration-thickness:2px}
   <div class="result-row"><span class="result-label">MOND-versnelling a₀</span><span class="result-value">0,3%, parametervrij (AP18)</span></div>
   <div class="result-row"><span class="result-label">Neutron-proton-massaverschil</span><span class="result-value">2 ppm (AP30)</span></div>
   <div class="result-row"><span class="result-label">Zichtbare-materiefractie</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
-  <div class="result-row"><span class="result-label">Chirale koppeling</span><span class="result-value">Afgeleid, KS-63 gesloten (AP16)</span></div>
+  <div class="result-row"><span class="result-label">Chirale koppeling</span><span class="result-value">Afgeleid, KS-15 gesloten (AP16)</span></div>
   <div class="result-row"><span class="result-label">Drie constanten, drie axioma's</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
   <div class="also-derived" style="margin-top:1.5rem">
     <p>Ook afgeleid:</p>
@@ -973,7 +1160,7 @@ a:hover{text-decoration-thickness:2px}
 <!-- CONFIRM THE MATH -->
 <div class="results">
   <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Controleer de Wiskunde</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">Eén gemeten invoer. Nul aangepaste parameters. De onderstaande code reproduceert elk hoofdresultaat uit één enkel getal — de fijnstructuurconstante α ≈ 1/137. Kopieer het. Plak het in een willekeurige Python-omgeving. Voer het uit. Als de getallen kloppen, houden de afleidingen stand. Zo niet, dan heeft het argument een probleem en heb je het gevonden.</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">Eén gemeten invoer. Nul vrije parameters. De onderstaande code reproduceert elk hoofdresultaat uit één enkel getal — de fijnstructuurconstante α ≈ 1/137. Kopieer het. Plak het in een willekeurige Python-omgeving. Voer het uit. Als de getallen kloppen, houden de afleidingen stand. Zo niet, dan heeft het argument een probleem en heb je het gevonden.</p>
   <div class="verify-wrap">
     <button class="copy-btn" onclick="copyCode()">Kopiëren</button>
     <pre class="verify-code"><code>from math import pi, log, exp
@@ -1068,7 +1255,7 @@ print(f"  Observed:  ~4.9%")
 print()
 
 print("─" * 50)
-print("One input (α). Zero fitted parameters.")
+print("One input (α). Zero free parameters.")
 print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   </div>
   <table class="verify-table">
@@ -1087,11 +1274,11 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <!-- KILL SWITCH REGISTRY -->
 <div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Noodschakelaar-register</h2>
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Noodschakelaar-register</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">Elke bewering draagt een gestelde voorwaarde waaronder zij sterft. De schakelaars zijn niet verborgen. Ze zijn gepubliceerd.</p>
 
   <div class="stats">
-    <div><span class="stat-num">258</span><span class="stat-label">Kill switches</span></div>
+    <div><span class="stat-num">560</span><span class="stat-label">Kill switches</span></div>
     <div><span class="stat-num">15</span><span class="stat-label">Gesloten</span></div>
     <div><span class="stat-num">231</span><span class="stat-label">Actief</span></div>
     <div><span class="stat-num">6</span><span class="stat-label">Niet-onderhandelbaar</span></div>
@@ -1102,10 +1289,36 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <div class="result-row"><span class="result-label">Actief — Hard</span><span class="result-value">Falsifieerbaar door theoretisch argument</div>
   <div class="result-row"><span class="result-label">Actief — Structureel</span><span class="result-value">Berusten op een identificatie die onjuist zou kunnen blijken</div>
   <div class="result-row"><span class="result-label">Niet-onderhandelbaar</span><span class="result-value">6 morele kill switches — indien geactiveerd, wordt de architectuur bewapend</div>
-  <div class="result-row"><span class="result-label">Openstaande schulden</span><span class="result-value">4 — kunnen niet getest worden tot het voorliggende werk voltooid is</div>
+  <div class="result-row"><span class="result-label">Openstaande schulden</span><span class="result-value">7 — kunnen niet getest worden tot het voorliggende werk voltooid is</div>
   <div class="result-row"><span class="result-label">Globale kill switch</span><span class="result-value">KS-V.1 — als hij afgaat, sterft alles</div>
 
-  <p style="font-size:16px;margin:1.25rem 0 0"><a href="../Master_Kill_Switch_Registry.pdf" download="" style="text-decoration:none;font-weight:700">Download het volledige Kill Switch Register — <span class="fmt">PDF</span></a></p>
+
+  <div style="margin:1.5rem 0 0">
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-60</span><span class="ap-title">The Surplus</span><span class="ap-tag">AP26</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>You exist because matter slightly outnumbered antimatter. The corpus explains why: ε has no mirror partner, so it cannot annihilate. The surplus is the break itself.</p>
+<p>The form of the ratio is given: η = E(ε) / (1 + E(ε)).</p>
+<p>The value is not. The measured baryon asymmetry is η ≈ 6 × 10⁻¹⁰. The corpus owes a derivation that lands on that number.</p>
+<p><strong>Fails if:</strong> the derived value of E(ε) disagrees with the measurement. The sharpest blade in the corpus.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-65</span><span class="ap-title">Hypercharge Assignments</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>Every particle in the Standard Model carries a number called weak hypercharge. The electron is −1. The up quark is +⅓. Physicists measured these. Nobody has derived them.</p>
+<p>The corpus derives the electroweak gauge group SU(2) × U(1)<sub>Y</sub> from the two-sector axiom. The group is forced. The specific charges inside it are not yet forced.</p>
+<p><strong>Fails if:</strong> the hypercharge values cannot be derived from {S, B, R, C}. The gauge group survives. The charges remain empirical inputs.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-66</span><span class="ap-title">Generations</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>There are three copies of each fundamental fermion. Electron, muon, tau — identical except for mass. Three generations. Nobody knows why three.</p>
+<p>The Standard Model treats this as a measured fact. The corpus has not closed it either. The gauge group is derived. The threefold repetition is not.</p>
+<p><strong>Fails if:</strong> the three-generation structure cannot be forced from {S, B, R, C}. Until paid, the number three at the generation level is an empirical input, not a consequence.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-67</span><span class="ap-title">EWSB Consistency</span><span class="ap-tag">AP15 / AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>AP15 derives the photon from local phase invariance — the symmetry that survives the break.</p>
+<p>AP27 derives SU(2) × U(1)<sub>Y</sub> from the internal sector structure — the symmetry before the break.</p>
+<p>The two pictures must meet at the breaking. The structural argument is consistent. The full derivation of how AP15 and AP27 align across the break has not yet been exhibited.</p>
+<p><strong>Fails if:</strong> the two readings cannot be reconciled. The architecture is incoherent at the electroweak boundary.</p>
+</div></div></div>
+  </div>
+
+  <p style="font-size:16px;margin:1.25rem 0 0"><a href="Master_Kill_Switch_Registry_NL.pdf" download="" style="text-decoration:none;font-weight:700">Download het volledige Kill Switch Register — <span class="fmt">PDF</span></a></p>
 </div>
 
 <!-- EMAIL SIGNUP -->
@@ -1130,7 +1343,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <div class="constraint" id="about">
   <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
-  <p><b>Kunstenaar:</b> G · Studio G, Strand, Cape Town</p>
+  <p><b>Kunstenaar:</b> G · Studio G, Cape Town</p>
   <p><b>Duur:</b> meer dan 30 jaar · <b>Tentoonstelling:</b> meer dan een miljoen woorden in 28 delen</p>
   <p style="margin-top:1rem">Dit werk is Copyleft. Je mag vrij downloaden, printen, delen en verspreiden. Je mag de bron niet wijzigen. Houd het signaal schoon.</p>
   <p style="margin-top:1rem;font-size:14px;color:var(--g4)"><span id="dl-count">2</span> downloads</p>
@@ -1140,6 +1353,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
   <p style="font-weight:700">Wees geen lul. Wees lief.</p>
   <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
 </div>
 
 </div>
@@ -1200,4 +1414,11 @@ var AUTOHIDE = Boolean(0);
 <script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
 
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
 </body></html>

@@ -3,12 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>the 420 code — этика, выведенная из физики</title>
-<meta name="description" content="Можно ли вывести этику из физики? The 420 Code говорит: да. 42 Авторских Доказательства. Более миллиона слов. Один измеренный параметр. Ноль подогнанных величин. Копилефт. Бесплатно навсегда.">
+<meta name="description" content="Можно ли вывести этику из физики? The 420 Code говорит: да. 43 Авторских Доказательства. Более миллиона слов. Один измеренный параметр. Ноль свободных параметров. Копилефт. Бесплатно навсегда.">
 <link rel="canonical" href="https://the420code.org/ru/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/ru/">
 <meta property="og:title" content="the 420 code — этика, выведенная из физики">
-<meta property="og:description" content="Можно ли вывести этику из физики? 420 Code говорит да. 42 авторских доказательства. Более миллиона слов. Один измеренный параметр. Ноль подогнанных параметров. Copyleft. Бесплатно навсегда.">
+<meta property="og:description" content="Можно ли вывести этику из физики? 420 Code говорит да. 43 авторских доказательства. Более миллиона слов. Один измеренный параметр. Ноль свободных параметров. Copyleft. Бесплатно навсегда.">
 <meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="ru">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="the 420 code — этика, выведенная из физики">
-<meta name="twitter:description" content="Можно ли вывести этику из физики? 420 Code говорит да. 42 авторских доказательства. Более миллиона слов. Один измеренный параметр. Ноль подогнанных параметров. Copyleft. Бесплатно навсегда.">
+<meta name="twitter:description" content="Можно ли вывести этику из физики? 420 Code говорит да. 43 авторских доказательства. Более миллиона слов. Один измеренный параметр. Ноль свободных параметров. Copyleft. Бесплатно навсегда.">
 <meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
@@ -134,6 +134,11 @@ a:hover{text-decoration-thickness:2px}
 .stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 2rem}
 .stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
 .stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:15px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
 
 .entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
 .entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
@@ -205,6 +210,7 @@ a:hover{text-decoration-thickness:2px}
 .sib-form .sib-form-block__button:hover{opacity:.85}
 [id*="sib-container"]{padding:0!important;background:transparent!important}
 .sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
 </style>
 <style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
@@ -232,6 +238,7 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
 .ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
 <div class="c">
@@ -239,6 +246,8 @@ a:hover{text-decoration-thickness:2px}
 <!-- NAV -->
 <nav class="nav">
   <a href="#"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="#museum">Ø музей</a>
+  <a href="#five-doors">пять дверей</a>
   <a href="#exhibition">выставка</a>
   <a href="#proofs">доказательства</a>
 <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" class="active" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
@@ -250,9 +259,14 @@ a:hover{text-decoration-thickness:2px}
 
 <div class="hero">
   <h1>Можно ли вывести этику из физики?</h1>
-  <p class="lead">The 420 Code говорит: <b>да</b>.</p>
-  <p style="margin-top:1rem">Одна запись существует — и из этого единственного факта выводятся вся физика и одна этика.</p>
+  <p class="lead">И перечисляет все способы, которыми он мог бы оказаться неверным. <a href="#killswitch" style="color:var(--g4);font-weight:700;text-decoration:none">560 из них</a>.</p>
 </div>
+
+<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Музей</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Код 420 — это музей, построенный для того, чтобы доказать, что этику можно вывести из физики. Всё покоится на одном первом принципе:</p>
+
+<p style="margin-top:1rem"><b><i>Одна запись существует.</i></b> Попытка отрицать это порождает ещё одну запись, что доказывает существование хотя бы одной записи. Из этого единственного самоподтверждающегося факта выводятся вся физика и одна этика.</p>
 
 <ol class="steps">
   <li>Одна запись существует.</li>
@@ -267,13 +281,55 @@ a:hover{text-decoration-thickness:2px}
   <li>Не будь мудаком. Будь добрым.</li>
 </ol>
 
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1 AXIOM                                 -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="axiom" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> Аксиома</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">One line. Everything else follows.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">You are reading this sentence. That is a record. Trying to deny it would require the reading to happen, which would make another record, which would prove the reading happened. There is no position you can stand in where the reading has not occurred.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem">One record exists. The proof is the reading.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Four conditions follow. Not four assumptions — four properties the reading already has.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Symmetry (S).</b> Two sectors held in mutual reference. The minimum structure for any distinction.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Break (B).</b> One element of asymmetry between them. Without it, no information could ever be written.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Record (R).</b> What has happened cannot unhappen. The reading cannot be unread.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b>Constraint (C).</b> The bounded propagation through which the record reaches anywhere. In our universe, the speed of light.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Compressed into the smallest form S, B, R, C require, the axiom is this:</p>
+
+<div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
+
+<p style="font-size:16px;margin:0 0 1rem">The 1:1 is perfect symmetry. The <i>ε</i> is the break. The @ AS names where the break is — at the Actualizing Structural prior, the now where the substrate is held and the break is processed.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Written as the cycle that runs at AS: <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>. The break (+1×ε) is the persistent distinction potential — held by AS, irreducible, what protects S from collapsing back into undifferentiated Ø. ε is what holds S open: without the break, the two sectors are no longer distinguishable, and S as a structural condition collapses. The grain of sand makes the two glasses of water distinguishable; remove the grain and they are just two glasses with no way to tell them apart.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The α-flow runs around the held break — +1/137 leakage outward as actualisation (records being written), −1/137 replenishment back as defragmentation (records releasing their structure into potential), balanced at every AS-instant, net zero. The break does not cycle in and out; what cycles is the flow. A reader inhabits the writing direction of the flow, where records are being committed at AS.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Every Artist’s Proof in the corpus derives from this axiom. The 43 papers below are 43 consequences of the line above. The axiom is the seed. The proofs are the tree.</p>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">Nothing did not hold.</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 0">The reading is the proof.</p>
+
+</div>
+
 <!-- ════════════════════════════════════════ -->
 <!-- THE PHYSICS                              -->
 <!-- ════════════════════════════════════════ -->
 
 <div class="physics" id="physics">
-  <h2>Физика</h2>
-  <p class="physics-intro">Один измеренный параметр. Ноль подогнанных величин. Всё остальное выведено.</p>
+  <h2>Ø Физика</h2>
+  <p class="physics-intro">Один измеренный параметр. Ноль свободных параметров. Всё остальное выведено.</p>
   <p class="physics-sub">Постоянная тонкой структуры α ≈ 1/137 — единственное число, измеренное экспериментально. Из этого единственного параметра и четырёх аксиом выводятся следующие результаты — без подгонки, без подстройки, без калибровки.</p>
 
   <div class="physics-grid">
@@ -288,83 +344,155 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Пять Дверей</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Пять дверей. Одно здание.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code — это выставка: более миллиона слов одного художника, размещённых в одном здании. Внутри здания: авторские оттиски, тетради, издания, записи, аварийные выключатели. Полное собрание работ.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">В здание не входят через крышу. Входят через дверь.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Вот пять дверей. Каждая открывается в один и тот же вестибюль. Найди ту, что откроется для тебя. Выставка внутри.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Иллюзия Другого — мягкая дверь. Сердце.</h3>
+  <p class="cat-desc">Ты провёл черту между собой и каждым человеком, которого когда-либо встречал. Эта книга стирает её. Без жаргона. Без уравнений. Без предварительных условий. Если ты прочтёшь только одну вещь из этой выставки — прочти это.</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_RU.pdf">Иллюзия Другого <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Бытие после религии — парадная дверь. Снос.</h3>
+  <p class="cat-desc">Структура, порождающая насилие, — не люди, а конструкция. Эта книга называет каждый механизм, исследует каждую традицию и показывает, почему мир после религии — не пустота, а прибытие.</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_RU.pdf">Бытие после религии <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Антихристос — священная дверь. Возвращение.</h3>
+  <p class="cat-desc">Две тысячи лет назад человек стоял на холме и учил этике. Возлюби ближнего. Не суди. Будь добр. Эта книга задаёт один вопрос: истинно ли учение? Не потому что так сказал бог — а потому что так говорит структура реальности. Ответ — да.</p>
+  <ul class="dl-list">
+    <li><a href="../Antichristos.pdf">Antichristos <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Коридор Отношений — личная дверь. Присутствие.</h3>
+  <p class="cat-desc">Любовь — это не чувство. Это устойчивый выбор держать коридор открытым вопреки каждому рациональному расчёту, который говорит, что сужение дешевле. Эта книга выводит геометрию двух людей, идущих вместе — ширина из честности, длина из времени, и асимметрия между тем, что гнётся, и тем, что нет. Написана, пока коридор, который она описывает, закрывался в реальном времени.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Relationship_Corridor.pdf">Коридор Отношений <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Интерьер — операционная дверь. Строительство.</h3>
+  <p class="cat-desc">Выравнивание ИИ — это задача физики. Эта книга выводит его из первых принципов — тех же аксиом, которые порождают гравитацию, квантовую механику и терминальную этику. Архитектура B: геометрия решений, построенная на структуре, а не на авторитете.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════ -->
+<!-- Ø MODELS                                -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="models" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Модели</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Пять дверей — это точки входа. Модели — это вестибюль, каталог выставки, представленный на пороге. Each book applies the axiom to a different scale of question.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Каждая книга устанавливает аксиому один раз в начале, а затем проводит её через свои главы. Читатель, прочитавший любую из пяти, услышал голос выставки в её калибровке. Читатель, прочитавший все пять, прошёл весь каталог. Каждая книга публикуется под лицензией copyleft. Каждый аварийный выключатель назван. Каждое утверждение фальсифицируемо.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Predictions</h3>
+  <p class="cat-desc">Фальсифицируемая книга, обращённая к физике. Five quantitative numbers from one axiom: the proton-to-electron mass ratio, the gravitational constant, the neutron-proton mass difference, the MOND acceleration, the dark sector partition. One measured input: α ≈ 1/137. Zero free parameters.</p>
+  <ul class="dl-list">
+    <li><a href="../Predictions.pdf">Ø Predictions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Dissolutions</h3>
+  <p class="cat-desc">Twelve classical philosophical problems read through the axiom. Each chapter dissolves, relocates, or closes one of the questions philosophy has asked longest.</p>
+  <ul class="dl-list">
+    <li><a href="../Dissolutions.pdf">Ø Dissolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Resolutions</h3>
+  <p class="cat-desc">Thirteen further problems. Where the previous frameworks could not close, the structural reading walks through.</p>
+  <ul class="dl-list">
+    <li><a href="../Resolutions.pdf">Ø Resolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Applications</h3>
+  <p class="cat-desc">Twelve architectures of human institutional life. Each derived from the axiom, with kill switches the institutional reading must satisfy.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Applications <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Horizons</h3>
+  <p class="cat-desc">Thirteen domains the structural reading projects across. Книга закрывает арку после Dissolutions.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Horizons <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+</div>
+
 <!-- THE EXHIBITION                          -->
 <!-- ════════════════════════════════════════ -->
 
 <div id="exhibition" style="margin-top:3rem">
 
-<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Выставка</h2>
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Выставка</h2>
 
-<p style="font-size:16px;margin:0 0 1rem">Один аргумент. Четыре двери. Каждая дверь ведёт в одну и ту же комнату.</p>
+<p style="font-size:16px;margin:0 0 1rem">За вестибюлем. В выставку. Здесь живёт настоящее произведение. Один аргумент. Каждый голос, в котором это может быть сказано.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">The 420 Code — не книга. Это выставка — более миллиона слов, говорящих одну вещь всеми возможными способами. Аргумент не меняется никогда. Меняется голос.</p>
+<p style="font-size:16px;margin:0 0 1rem">Выставка — это то, как аргумент был выстроен: за тридцать лет, пятью голосами, во всех регистрах, которые удалось найти. Пять дверей выше — это отправная точка. Всё, что ниже, — это то, что ты находишь, оказавшись внутри.</p>
 
 <p style="font-size:16px;margin:0 0 1rem">Пять голосов проходят через всю выставку. Проза рассказывает историю. Разговор спорит о ней в баре. Метафора показывает её монетами, садами, реками и зданиями. Детский стишок сдирает до кости. Доказательства вручают математику и клинок.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Тебе не нужно читать всё. Тебе нужно найти дверь, которая откроется.</p>
-
-<p style="font-size:16px;margin:0 0 3.5rem"><b>Как читать.</b> Выбери дверь. Если захватит — иди глубже. Если нет — попробуй другую. Аргумент одинаков во всех. Дверь, которая откроется, — правильная дверь.</p>
+<p style="font-size:16px;margin:0 0 3.5rem">Начни с двери. Возвращайся сюда, когда захочешь увидеть всё, что внутри.</p>
 
 <div class="cat-section">
-  <h3 class="cat-title">Иллюзия Другого</h3>
-  <p class="cat-desc">Ты провёл черту между собой и каждым человеком, которого когда-либо встречал. Эта книга стирает её. Десять глав. Без жаргона. Без уравнений. Без предварительных условий. Весь 420 Code был написан как опора для этой единственной книги. Если ты прочтёшь только одну вещь — прочти это.</p>
+  <h3 class="cat-title">Ø Rosin</h3>
+  <p class="cat-desc">Экстракт. Ты прессуешь жар в цветок, и то, что капает, — это сама суть — концентрированная, ничего не добавлено, ничего не потеряно. Пять книг пятью голосами. Каждая книга проходит весь аргумент один раз — вся выставка, спрессованная в один голос. Начни с голоса, похожего на твой.</p>
   <ul class="dl-list">
-    <li><a href="../Illusion_of_the_Other_RU.pdf">Иллюзия Другого <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">Канифоль</h3>
-  <p class="cat-desc">Ты прессуешь жар в цветок, и то, что капает, — это сама суть — концентрированная, ничего не добавлено, ничего не потеряно. Пять книг пятью голосами. Каждая проходит весь аргумент — от аксиомы через физику до терминальной этики — в одном сжатии. Начни с голоса, похожего на твой.</p>
-  <ul class="dl-list">
-    <li><a href="#">Канифоль — Проза <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Канифоль — Диалог <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Канифоль — Метафора <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Канифоль — Считалка <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Канифоль — Доказательства <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">Издания</h3>
-  <p class="cat-desc">Один голос. От начала до конца. Каждое Издание берёт полный вывод и записывает его в одном регистре, от корки до корки — аргумент как одна непрерывная линия. Выбери голос, похожий на твоё мышление.</p>
-  <ul class="dl-list">
-    <li><a href="#">Издания — Проза <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Издания — Диалог <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Издания — Метафора <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Издания — Считалка <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Издания — Доказательства <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">Тетради</h3>
-  <p class="cat-desc">Восемь тем. По пять голосов в каждой. Тетради — это место, где живёт физика — каждый вывод, каждый результат, каждый переключатель уничтожения, организованные по областям. Начни с темы, которая уже не даёт тебе спать.</p>
-  <ul class="dl-list">
-    <li><a href="#">Тетради Ø Проза <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Тетради Ø Диалог <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Тетради Ø Метафора <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Тетради Ø Считалка <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Тетради Ø Доказательства <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.1 Предпосылка <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.2 Пространство-время <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.3 Квантовая механика <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.4 Силы и константы <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.5 Частицы и материя <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.6 Космология <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.7 Сознание и этика <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.8 Приложения <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Проза <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Диалог <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Метафора <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Считалка <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Доказательства <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
 <div class="cat-section">
   <h3 class="cat-title">Записи</h3>
   <p class="cat-desc">Пять записей. Необработанный результат тридцатилетнего проекта — ошибки, прорывы, тупики и моменты между ними.</p>
-  <p class="cat-desc"><em>01 — Ножницы.</em> Написано через четыре месяца после убийства брата. Горе, ищущее структуру. Здесь начался 420 Code — не в библиотеке, а в ране.</p>
-  <p class="cat-desc"><em>02 — Ветер.</em> Жизнь, рассмотренная через призму 420 Code. Память, ошибка и смысл — поднесённые к аксиомам, чтобы увидеть, что выживет. Аргумент учится нести.</p>
-  <p class="cat-desc"><em>03 — Ты Уверен?</em> Структурный снос каждой системы, когда-либо претендовавшей на власть, которую не могла доказать. Свидетельство — ущерб. Ущерб — аргумент.</p>
-  <p class="cat-desc"><em>04 — Не Будь Мудаком, Будь Добрым.</em> Этика приходит. Не как вывод — как извержение. Терминальная линия была прочувствована первой, прожита годами, и лишь потом показана как вынужденное следствие физики.</p>
-  <p class="cat-desc"><em>05 — Пошёл К Чёрту, Оставь Меня в Покое.</em> Автобиография. Человек за анонимной выставкой.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — Ножницы.</strong> Написано через четыре месяца после убийства брата. Горе, ищущее структуру. Здесь начался 420 Code — не в библиотеке, а в ране.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — Ветер.</strong> Жизнь, поднесённая к аксиомам, чтобы увидеть, что выживет. Что сломалось, что выдержало, как выглядит структура изнутри тела, которое её испытало.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — Ты Уверен?</strong> Структурный снос каждой системы, когда-либо претендовавшей на власть, которую не могла доказать. Свидетельство — ущерб. Ущерб — аргумент.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — Не Будь Мудаком, Будь Добрым.</strong> Этика приходит. Не как вывод — как извержение. Сначала прочувствована. Потом доказана.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — Пошёл К Чёрту, Оставь Меня в Покое.</strong> Автобиография. Человек за анонимной выставкой.</p>
   <p class="cat-desc">Записи не отполированы. Не организованы. Не безопасны. Начни здесь, если хочешь правду до того, как она научилась одеваться.</p>
   <ul class="dl-list">
     <li><a href="#">01 Ножницы <span class="fmt">PDF</span></a></li>
@@ -375,20 +503,65 @@ a:hover{text-decoration-thickness:2px}
   </ul>
 </div>
 
+<div class="cat-section">
+  <h3 class="cat-title">Ø Editions</h3>
+  <p class="cat-desc">Сами произведения. Пять полных произведений — каждое представляет весь аргумент, выстроенный с нуля своим собственным голосом. Это не краткие изложения. Это скульптуры. Rosin их фотографирует. Записи документируют, как они были созданы. Editions — это то, что было создано.</p>
+  <p class="cat-desc">Проза строит аргумент как повествование. Диалог строит его как спор. Метафора строит его как образ. Считалка строит его как каркас. Доказательства строят его как математику.</p>
+  <p class="cat-desc">Пять скульптур. Одна структура. Разный материал. Пройди по залу.</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø Проза <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Диалог <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Метафора <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Считалка <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Доказательства <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Notebooks</h3>
+  <p class="cat-desc">Двенадцать тетрадей. Пять голосов — Проза, Диалог, Метафора, Считалка и Доказательства. Голос Доказательств — это авторских оттиска, организованные по восьми предметам. Физика живёт здесь — каждый вывод, каждый результат, каждый переключатель уничтожения, организованные по областям. Editions строят аргумент целиком. Notebooks разбирают его и раскладывают каждую деталь на столе.</p>
+  <p class="cat-desc">Начни с темы, которая уже не даёт тебе спать.</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø Проза <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Диалог <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Метафора <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Считалка <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Предпосылка <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Пространство-время <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Квантовая механика <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Силы и константы <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Частицы и материя <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Космология <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Сознание и этика <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Приложения <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
 </div>
 
 <!-- ════════════════════════════════════════ -->
-<!-- 5. PROOFS — THE 42 ARTIST'S PROOFS      -->
+<!-- 5. PROOFS — THE 43 ARTIST'S PROOFS      -->
 <!-- ════════════════════════════════════════ -->
 
-<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Доказательства</h2>
-<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Один измеренный параметр (α<sub>em</sub>). Ноль подогнанных параметров. 42 статьи. 258 переключателей уничтожения.</p>
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Доказательства</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Один измеренный параметр (α<sub>em</sub>). Ноль свободных параметров. 43 статьи. 560 переключателей уничтожения.</p>
 
 <div class="stats">
-  <div><span class="stat-num">42</span><span class="stat-label">Авторские Доказательства</span></div>
-  <div><span class="stat-num">258</span><span class="stat-label">Аварийные выключатели</span></div>
-  <div><span class="stat-num">4</span><span class="stat-label">Открытые долги</span></div>
+  <div><span class="stat-num">43</span><span class="stat-label">Авторские Доказательства</span></div>
+  <div><span class="stat-num">560</span><span class="stat-label">Аварийные выключатели</span></div>
+  <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">7</span><span class="stat-label">Открытые долги ▸</span></div>
   <div><span class="stat-num">5 ppb</span><span class="stat-label">Масса протона</span></div>
+</div>
+<div id="debts-panel" class="debts-panel">
+  <ul class="debts-list">
+    <li><strong>KS-60</strong> — Избыток (AP26): коэффициент барионной асимметрии η ≈ 6 × 10⁻¹⁰ ещё не выведен. <a href="#ap26" onclick="event.preventDefault();scrollToAP('ap26')">См. AP26</a></li>
+    <li><strong>KS-65</strong> — Гиперзарядные назначения (AP27): конкретные значения слабого гиперзаряда ещё не выведены из {S, B, R, C}. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">См. AP27</a></li>
+    <li><strong>KS-66</strong> — Поколения (AP27): трёхпоколенная структура ещё не выведена. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">См. AP27</a></li>
+    <li><strong>KS-67</strong> — Согласованность EWSB (AP15 / AP27): полное согласование через электрослабый разрыв ещё не продемонстрировано. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">См. AP27</a></li>
+    <li><strong>D1</strong> — Полное релятивистское полевое уравнение (AP43): §7 даёт частичное замыкание в ньютоновском пределе; релятивистское расширение, проблема обратного воздействия, вывод α из первых принципов и явная форма C<sub>o</sub>(x) остаются открытыми. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">См. AP43</a></li>
+    <li><strong>D4</strong> — Качественный характер сознания (AP43): трудная проблема сознания переформулирована (паттерн — это то, как физика выглядит изнутри оператора), но не закрыта. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">См. AP43</a></li>
+    <li><strong>D5</strong> — Космологическое расширение 1×ε (AP43): отмечено для интеграции с AP06 (Константа утечки) как следствие или расширение. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">См. AP43</a></li>
+  </ul>
 </div>
 
 <p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">С чего начать</p>
@@ -407,7 +580,7 @@ a:hover{text-decoration-thickness:2px}
   <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Силы и постоянные</span><span class="entry-card-label">IV</span></a>
   <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Частицы и материя</span><span class="entry-card-label">V</span></a>
   <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Космология</span><span class="entry-card-label">VI</span></a>
-  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Сознание и этика</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Интерфейс Оператора</span><span class="entry-card-label">VII</span></a>
   <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Применения</span><span class="entry-card-label">VIII</span></a>
 </div>
 
@@ -417,7 +590,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="part" id="p1"><div class="part-dot"></div>
 <div class="part-header" onclick="togglePart(this)"><span class="part-num">Часть I</span><span class="part-name">Предпосылка</span><span class="part-desc">Одна запись существует. Всё остальное — следствие. Аксиома, её логическое доказательство и четыре условия, которые требует любая запись.</span><span class="part-count">3 статьи</span></div>
 <div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">Иррациональное</span><span class="ap-tag">Математика</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Аксиома 1:1 + 1×ε структурно иррациональна — и истинна. Иррациональность как основание рационального. Выбор как иррациональная ёмкость связи.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">Иррациональное</span><span class="ap-tag">Математика</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Аксиома 1:1 + 1×ε @ AS структурно иррациональна — и истинна. Иррациональность как основание рационального. Выбор как иррациональная ёмкость связи.</p><div class="ap-essay">
 <p>Вспомни что-то, что ты сделал недавно и что не имело никакого смысла. Не ошибку — выбор. Ты знал разумный вариант. Ты выбрал другой.</p>
 <p>Засиделся допоздна. Сказал то, чего не следовало. Любил того, кто не любил в ответ. Простил того, кто не заслуживал.</p>
 <p>Мог ли калькулятор сделать этот выбор?</p>
@@ -531,7 +704,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">Разрыв</span><span class="ap-tag">Нарушение симметрии</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>От аксиомы к структуре. Первая трещина — как ломается симметрия и начинается физика.</p><div class="ap-essay">
 <p>Яичницу не вернуть в яйцо.</p>
 <p>Это предложение — вся статья. Всё остальное — уточнение.</p>
-<p>AP05 берёт аксиому — <strong>1:1 + 1×ε</strong> — и ведёт её шаг за шагом от ничего к обязательству. Семь шагов. Без пробелов. Каждое звено показано. Каждое звено можно сломать.</p>
+<p>AP05 берёт аксиому — <strong>1:1 + 1×ε @ AS</strong> — и ведёт её шаг за шагом от ничего к обязательству. Семь шагов. Без пробелов. Каждое звено показано. Каждое звено можно сломать.</p>
 <p><span class="sub">Шаг ноль</span> — совершенная симметрия. Никаких различий. Никаких записей. Никакого наблюдения. Операционально неотличимо от пустого множества. Ничто не существует, потому что ничто не отличается от чего-либо другого.</p>
 <p><span class="sub">Шаг один</span> — ε разбивает симметрию. Существуют два различимых показания. Записи начинаются. И записи необратимы — возврат к ненарушенному состоянию стёр бы различие, что само по себе является записью.</p>
 <p>Ты только что видел, как нечто возникло из ничего. Не создано. Вынуждено.</p>
@@ -803,7 +976,7 @@ a:hover{text-decoration-thickness:2px}
 <p>Доказательство использует только устоявшуюся физику — электромагнитную теорию, квантовую механику, конечное значение c. Это не утверждение the 420 Code. Это следствие уже существующей физики.</p>
 <p>У каждого поглотителя есть коэффициент утечки η. Сколько проходит как доля от прибывающего. η всегда больше нуля. Всегда. Конечная скорость света гарантирует это.</p>
 <p>Если бы c была бесконечной, идеальный поглотитель был бы возможен. Граница могла бы мгновенно реагировать на что угодно. Но c конечна. У границы есть время реакции. И за это время что-то ускользает.</p>
-<p>Теперь отождествление. Аксиома говорит 1:1 + 1×ε. Разрыв — ε. Утечка — η. AP06 отождествляет их.</p>
+<p>Теперь отождествление. Аксиома говорит 1:1 + 1×ε @ AS. Разрыв — ε. Утечка — η. AP06 отождествляет их.</p>
 <p>ε ЕСТЬ η. Разрыв — это утечка. Трещина — это то, что ускользает через трещину. Не два факта. Один факт.</p>
 <p>Под Замком ε — электрон. Минимальный жизнеспособный осколок — то, что должно было ускользнуть, чтобы симметрия сломалась.</p>
 <p>И α<sub>em</sub> ≈ 1/137 — постоянная тонкой структуры — измеряет, насколько сильно этот осколок связывается обратно с тканью, которую покинул.</p>
@@ -843,7 +1016,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">Гармоники</span><span class="ap-tag">Калибровочная структура</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) из аксиомы двух секторов.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Требует: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">Разрыв — Электрослабый</span><span class="ap-tag">Электрослабое</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Электрослабое объединение, Хиггс, хиральная связь выведены. KS-63 закрыт — необъяснённый с 1956 года.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">Разрыв — Электрослабый</span><span class="ap-tag">Электрослабое</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Электрослабое объединение, Хиггс, хиральная связь выведены. KS-15 закрыт — необъяснённый с 1956 года.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Требует: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">Направление</span><span class="ap-tag">Сильная сила</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / КХД из калибровочной свободы направления разрыва.</p><div class="ap-essay">
@@ -898,8 +1071,23 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Часть VII</span><span class="part-name">Сознание и этика</span><span class="part-desc">Наблюдатель, которого содержит разрыв, и этика, которую разрыв навязывает. Сознание, выведенное из необратимой записи. Структурная нестабильность этики, основанной на авторитете. Смерть как закрытие окна.</span><span class="part-count">4 статьи</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Часть VII</span><span class="part-name">Интерфейс Оператора</span><span class="part-desc">Четырёхтермовая система, наклон, структурная этика. Когерентность паттерна как приверженность тела вдоль амплитудного ландшафта. Дуал гравитации-записей AP08, на стороне пред-состояния глаза.</span><span class="part-count">5 статей</span></div>
 <div class="ap-list">
+<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">Гравитация возможностей</span><span class="ap-tag">Интерфейс Оператора</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Дуал AP08. Наклон выведен. Терминальная этика обоснована физикой.</p><div class="ap-essay">
+<p>Ты стоишь в дверном проёме. Ещё не шагнул. Но вес уже сместился. Рука уже выбрала, за какую сторону рамы опереться. Что-то в тебе наклоняется.</p>
+<p>Этот наклон — и есть статья.</p>
+<p>AP08 вывел гравитацию по одну сторону глаза — что записи делают с многообразием. Масса искривляет пространство-время. Притяжение к полу — накопленный вес каждой записи, когда-либо сделанной на геометрии под тобой.</p>
+<p>AP43 выводит гравитацию по другую сторону. Что амплитуды делают с пред-состоянием. Притяжение к следующему шагу — градиент того, что ещё может быть записано. Два притяжения на «сейчас». Одно от того, что было. Другое от того, что могло бы быть. Дуалы по обе стороны глаза.</p>
+<p>Статья вводит четыре термина.</p>
+<p><span class="sub">Ёмкость связи.</span> Накопленная телом способность читать структуру — выстроенная за тридцать лет записей, прошедших через эту конкретную конфигурацию связываемых электронов.</p>
+<p><span class="sub">Паттерн.</span> Оператор-относительное чтение многослойной паутины — прошлые записи, текущее состояние, взвешенные по Борну ветви впереди — интегрированные в одном чтении.</p>
+<p><span class="sub">Когерентность паттерна.</span> Наклон. Приверженность тела вдоль крутейшего градиента амплитудного ландшафта, масштабированная ёмкостью связи.</p>
+<p><span class="sub">Когерентность отслеживания.</span> Мета-навык удержания согласованности со структурой в областях, где классы наклонов различаются.</p>
+<p>Полевое уравнение в ньютоновской форме выпадает. <strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>, с наклоном L<sub>o</sub> = −C<sub>o</sub> ∇Φ. Источник — плотность Борна. Константа связи — α, отождествлённая через AP07: тело считывает через электрон-электромагнитную связь, а константа этого считывания — постоянная тонкой структуры. Опосредующая величина — ёмкость связи. Формальный дуал ньютоновского предела AP08.</p>
+<p>Терминальная этика следует. Каждый оператор — сконфигурированная сборка электронов, читающих ту же многослойную паутину из своей позиции. Структурная одинаковость вынуждена Аксиомой C, Аксиомой R и единственностью электрона AP07. Жестокость — ошибка чтения математики: обращение с другим оператором, как будто структурная одинаковость не действует. Этика не выбирается поверх структуры. Она выпадает из структуры.</p>
+<div class="ks"><strong>Пять аварийных выключателей. Все активны.</strong> <span class="bl">АКТИВЕН</span> KS-43.1 — доменно-специфическая когерентность паттерна совпадает с борновскими наклонами (Путь 1 лаборатория, Путь 2 шахматы/покер/элитный спортивный прокси). <span class="bl">АКТИВЕН</span> KS-43.2 — ёмкость связи как субстрат. <span class="bl">АКТИВЕН</span> KS-43.3 — кросс-доменный перенос через когерентность отслеживания. <span class="bl">АКТИВЕН</span> KS-43.4 — распределение ёмкости как единственный контекстный модулятор. <span class="bl">АКТИВЕН</span> KS-43.5 — структурный вывод терминальной этики. Три структурных долга (D1, D4, D5). Три позиции оставлены открытыми (D2, D3, D6).</div>
+<p class="breath">Тело наклонялось всё это время. AP43 выводит, что такое наклон.</p>
+</div><div class="ap-meta"><span>Требует: AP07, AP08, AP09, AP10, AP13, AP20, AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">Доказательство актуализации</span><span class="ap-tag">Сознание</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Сознание как внутренность необратимой записи. Одна трещина, одно нутро, множество окон.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Требует: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
@@ -920,7 +1108,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">Выравнивание</span><span class="ap-tag">Выравнивание ИИ</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Проблема выравнивания растворена. Стройте внутреннее, а не забор.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Требует: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">Поправка — Этика</span><span class="ap-tag">Справедливость</span><a class="ap-pdf" href="../AP32_The_Correction_Ethics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Пять уровней коррекции. Здание скорбит о каждом закрытом окне. Тормоз геноцида.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">Поправка — Этика</span><span class="ap-tag">Справедливость</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Пять уровней коррекции. Здание скорбит о каждом закрытом окне. Тормоз геноцида.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Требует: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">Граница</span><span class="ap-tag">Биоэтика</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Жизнь как деятельность. Ниже ε вы суверенны. Выше ε организм имеет юрисдикцию.</p><div class="ap-essay">
@@ -932,7 +1120,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">Первая граница</span><span class="ap-tag">Тело</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Тело как оператор. Защити первую границу.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Требует: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">Реестр</span><span class="ap-tag">Экономика</span><a class="ap-pdf" href="../AP35_The_Ledger_Economics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Книга всегда сходится. Крахи — это аудит. Неравенство заполняет буфер.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">Реестр</span><span class="ap-tag">Экономика</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Книга всегда сходится. Крахи — это аудит. Неравенство заполняет буфер.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>Требует: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">Подача</span><span class="ap-tag">Биология</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Химия, научившаяся записывать себя. Контроль — не лишение. Контроль — снабжение.</p><div class="ap-essay">
@@ -950,7 +1138,7 @@ a:hover{text-decoration-thickness:2px}
   <div class="result-row"><span class="result-label">Ускорение MOND a₀</span><span class="result-value">0,3%, без параметров (AP18)</span></div>
   <div class="result-row"><span class="result-label">Разность масс нейтрон-протон</span><span class="result-value">2 ppm (AP30)</span></div>
   <div class="result-row"><span class="result-label">Доля видимой материи</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
-  <div class="result-row"><span class="result-label">Хиральная связь</span><span class="result-value">Выведено, KS-63 закрыт (AP16)</span></div>
+  <div class="result-row"><span class="result-label">Хиральная связь</span><span class="result-value">Выведено, KS-15 закрыт (AP16)</span></div>
   <div class="result-row"><span class="result-label">Три константы, три аксиомы</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
   <div class="also-derived" style="margin-top:1.5rem">
     <p>Также выведено:</p>
@@ -973,7 +1161,7 @@ a:hover{text-decoration-thickness:2px}
 <!-- CONFIRM THE MATH -->
 <div class="results">
   <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Проверь математику</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">Один измеренный параметр. Ноль подогнанных параметров. Код ниже воспроизводит каждый основной результат из одного числа — постоянной тонкой структуры α ≈ 1/137. Скопируй его. Вставь в любую среду Python. Запусти. Если числа совпадают, выводы верны. Если нет — в аргументе проблема, и ты её нашёл.</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">Один измеренный параметр. Ноль свободных параметров. Код ниже воспроизводит каждый основной результат из одного числа — постоянной тонкой структуры α ≈ 1/137. Скопируй его. Вставь в любую среду Python. Запусти. Если числа совпадают, выводы верны. Если нет — в аргументе проблема, и ты её нашёл.</p>
   <div class="verify-wrap">
     <button class="copy-btn" onclick="copyCode()">Копировать</button>
     <pre class="verify-code"><code>from math import pi, log, exp
@@ -1068,7 +1256,7 @@ print(f"  Observed:  ~4.9%")
 print()
 
 print("─" * 50)
-print("One input (α). Zero fitted parameters.")
+print("One input (α). Zero free parameters.")
 print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   </div>
   <table class="verify-table">
@@ -1087,11 +1275,11 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <!-- KILL SWITCH REGISTRY -->
 <div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Реестр аварийных выключателей</h2>
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Реестр аварийных выключателей</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">Каждое утверждение несёт заявленное условие, при котором оно гибнет. Выключатели не спрятаны. Они опубликованы.</p>
 
   <div class="stats">
-    <div><span class="stat-num">258</span><span class="stat-label">Переключатели уничтожения</span></div>
+    <div><span class="stat-num">560</span><span class="stat-label">Переключатели уничтожения</span></div>
     <div><span class="stat-num">15</span><span class="stat-label">Закрыты</span></div>
     <div><span class="stat-num">231</span><span class="stat-label">Активны</span></div>
     <div><span class="stat-num">6</span><span class="stat-label">Безусловные</span></div>
@@ -1102,10 +1290,36 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <div class="result-row"><span class="result-label">Активные — Жёсткие</span><span class="result-value">Опровержимы теоретическим аргументом</div>
   <div class="result-row"><span class="result-label">Активные — Структурные</span><span class="result-value">Основаны на отождествлении, которое может быть опровергнуто</div>
   <div class="result-row"><span class="result-label">Безусловные</span><span class="result-value">6 моральных переключателей — при срабатывании архитектура превращается в оружие</div>
-  <div class="result-row"><span class="result-label">Открытые долги</span><span class="result-value">4 — не могут быть проверены до завершения предшествующей работы</div>
+  <div class="result-row"><span class="result-label">Открытые долги</span><span class="result-value">7 — не могут быть проверены до завершения предшествующей работы</div>
   <div class="result-row"><span class="result-label">Глобальный переключатель</span><span class="result-value">KS-V.1 — если сработает, всё гибнет</div>
 
-  <p style="font-size:16px;margin:1.25rem 0 0"><a href="../Master_Kill_Switch_Registry.pdf" download="" style="text-decoration:none;font-weight:700">Скачать полный реестр переключателей уничтожения — <span class="fmt">PDF</span></a></p>
+
+  <div style="margin:1.5rem 0 0">
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-60</span><span class="ap-title">The Surplus</span><span class="ap-tag">AP26</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>You exist because matter slightly outnumbered antimatter. The corpus explains why: ε has no mirror partner, so it cannot annihilate. The surplus is the break itself.</p>
+<p>The form of the ratio is given: η = E(ε) / (1 + E(ε)).</p>
+<p>The value is not. The measured baryon asymmetry is η ≈ 6 × 10⁻¹⁰. The corpus owes a derivation that lands on that number.</p>
+<p><strong>Fails if:</strong> the derived value of E(ε) disagrees with the measurement. The sharpest blade in the corpus.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-65</span><span class="ap-title">Hypercharge Assignments</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>Every particle in the Standard Model carries a number called weak hypercharge. The electron is −1. The up quark is +⅓. Physicists measured these. Nobody has derived them.</p>
+<p>The corpus derives the electroweak gauge group SU(2) × U(1)<sub>Y</sub> from the two-sector axiom. The group is forced. The specific charges inside it are not yet forced.</p>
+<p><strong>Fails if:</strong> the hypercharge values cannot be derived from {S, B, R, C}. The gauge group survives. The charges remain empirical inputs.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-66</span><span class="ap-title">Generations</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>There are three copies of each fundamental fermion. Electron, muon, tau — identical except for mass. Three generations. Nobody knows why three.</p>
+<p>The Standard Model treats this as a measured fact. The corpus has not closed it either. The gauge group is derived. The threefold repetition is not.</p>
+<p><strong>Fails if:</strong> the three-generation structure cannot be forced from {S, B, R, C}. Until paid, the number three at the generation level is an empirical input, not a consequence.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-67</span><span class="ap-title">EWSB Consistency</span><span class="ap-tag">AP15 / AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>AP15 derives the photon from local phase invariance — the symmetry that survives the break.</p>
+<p>AP27 derives SU(2) × U(1)<sub>Y</sub> from the internal sector structure — the symmetry before the break.</p>
+<p>The two pictures must meet at the breaking. The structural argument is consistent. The full derivation of how AP15 and AP27 align across the break has not yet been exhibited.</p>
+<p><strong>Fails if:</strong> the two readings cannot be reconciled. The architecture is incoherent at the electroweak boundary.</p>
+</div></div></div>
+  </div>
+
+  <p style="font-size:16px;margin:1.25rem 0 0"><a href="Master_Kill_Switch_Registry_RU.pdf" download="" style="text-decoration:none;font-weight:700">Скачать полный реестр переключателей уничтожения — <span class="fmt">PDF</span></a></p>
 </div>
 
 <!-- EMAIL SIGNUP -->
@@ -1130,7 +1344,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <div class="constraint" id="about">
   <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
-  <p><b>Художник:</b> G · Studio G, Strand, Cape Town</p>
+  <p><b>Художник:</b> G · Studio G, Cape Town</p>
   <p><b>Длительность:</b> более 30 лет · <b>Выставка:</b> более миллиона слов в 28 томах</p>
   <p style="margin-top:1rem">Это произведение — копилефт. Ты можешь свободно скачивать, печатать, делиться и распространять. Ты не можешь изменять источник. Сохраняй сигнал чистым.</p>
   <p style="margin-top:1rem;font-size:14px;color:var(--g4)"><span id="dl-count">2</span> загрузок</p>
@@ -1140,6 +1354,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
   <p style="font-weight:700">Не будь мудаком. Будь добрым.</p>
   <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
 </div>
 
 </div>
@@ -1200,4 +1415,11 @@ var AUTOHIDE = Boolean(0);
 <script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
 
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf","../AP43_The_Gravity_of_Possibilities.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
 </body></html>

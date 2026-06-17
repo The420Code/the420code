@@ -3,12 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>the 420 code — 물리학에서 도출된 윤리</title>
-<meta name="description" content="윤리는 물리학에서 도출될 수 있는가? The 420 Code는 그렇다고 말한다. 42개의 아티스트 프루프. 백만 단어 이상. 측정 입력 하나. 맞춤 매개변수 제로. 카피레프트. 영원히 무료.">
+<meta name="description" content="윤리는 물리학에서 도출될 수 있는가? The 420 Code는 그렇다고 말한다. 43개의 아티스트 프루프. 백만 단어 이상. 측정 입력 하나. 맞춤 매개변수 제로. 카피레프트. 영원히 무료.">
 <link rel="canonical" href="https://the420code.org/ko/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/ko/">
 <meta property="og:title" content="the 420 code — 물리학에서 도출된 윤리">
-<meta property="og:description" content="윤리는 물리학에서 도출될 수 있는가? 420 Code는 그렇다고 말한다. 42편의 아티스트 프루프. 백만 단어 이상. 측정 입력 1개. 맞춤 매개변수 0개. Copyleft. 영원히 무료.">
+<meta property="og:description" content="윤리는 물리학에서 도출될 수 있는가? 420 Code는 그렇다고 말한다. 43편의 아티스트 프루프. 백만 단어 이상. 측정 입력 1개. 맞춤 매개변수 0개. Copyleft. 영원히 무료.">
 <meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="ko">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="the 420 code — 물리학에서 도출된 윤리">
-<meta name="twitter:description" content="윤리는 물리학에서 도출될 수 있는가? 420 Code는 그렇다고 말한다. 42편의 아티스트 프루프. 백만 단어 이상. 측정 입력 1개. 맞춤 매개변수 0개. Copyleft. 영원히 무료.">
+<meta name="twitter:description" content="윤리는 물리학에서 도출될 수 있는가? 420 Code는 그렇다고 말한다. 43편의 아티스트 프루프. 백만 단어 이상. 측정 입력 1개. 맞춤 매개변수 0개. Copyleft. 영원히 무료.">
 <meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
@@ -131,7 +131,12 @@ a:hover{text-decoration-thickness:2px}
 .ap-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
 .ap-meta a{color:#383838}
 
-.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 2rem}
+.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 0}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:15px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
 .stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
 .stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
 
@@ -205,6 +210,7 @@ a:hover{text-decoration-thickness:2px}
 .sib-form .sib-form-block__button:hover{opacity:.85}
 [id*="sib-container"]{padding:0!important;background:transparent!important}
 .sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
 </style>
 <style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
@@ -233,6 +239,7 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
 .ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
 <div class="c">
@@ -240,8 +247,10 @@ a:hover{text-decoration-thickness:2px}
 <!-- NAV -->
 <nav class="nav">
   <a href="#"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
-  <a href="#exhibition">전시</a>
-  <a href="#proofs">증명</a>
+  <a href="#museum">Ø 박물관</a>
+  <a href="#five-doors">Ø 다섯 개의 문</a>
+  <a href="#exhibition">Ø 전시</a>
+  <a href="#proofs">Ø 증명</a>
 <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" class="active" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
 </nav>
 
@@ -252,11 +261,15 @@ a:hover{text-decoration-thickness:2px}
 <div class="hero">
   <h1>윤리는 물리학에서 도출될 수 있는가?</h1>
   <p class="lead">The 420 Code는 <b>그렇다</b>고 말한다.</p>
-  <p style="margin-top:1rem">하나의 기록이 존재한다 — 그 하나의 사실로부터 모든 물리학과 하나의 윤리가 도출된다.</p>
+  <p style="margin-top:1rem">그리고 그것이 틀릴 수 있는 모든 방법을 나열한다. <a href="#killswitch" style="color:var(--g4);font-weight:700;text-decoration:none">560가지</a>.</p>
 </div>
 
+<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø 박물관</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">420 Code 는 윤리가 물리학으로부터 도출될 수 있음을 증명하기 위해 지어진 박물관이다. 모든 것은 하나의 제일 원리 위에 놓여 있다:</p>
+
 <ol class="steps">
-  <li>하나의 기록이 존재한다.</li>
+  <li><b><i>하나의 기록이 존재한다.</i></b></li>
   <li>하나의 기록에는 네 가지 조건이 필요하다: 대칭, 깨짐, 기록, 구속.</li>
   <li>그 네 가지 조건으로부터 모든 물리학이 도출된다.</li>
   <li>깨어짐과 봄은 같은 사건이다.</li>
@@ -268,12 +281,54 @@ a:hover{text-decoration-thickness:2px}
   <li>개자식 되지 마. 친절해라.</li>
 </ol>
 
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1 AXIOM                                 -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="axiom" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> 공리</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">One line. Everything else follows.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">You are reading this sentence. That is a record. Trying to deny it would require the reading to happen, which would make another record, which would prove the reading happened. There is no position you can stand in where the reading has not occurred.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem">One record exists. The proof is the reading.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Four conditions follow. Not four assumptions — four properties the reading already has.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Symmetry (S).</b> Two sectors held in mutual reference. The minimum structure for any distinction.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Break (B).</b> One element of asymmetry between them. Without it, no information could ever be written.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Record (R).</b> What has happened cannot unhappen. The reading cannot be unread.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b>Constraint (C).</b> The bounded propagation through which the record reaches anywhere. In our universe, the speed of light.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Compressed into the smallest form S, B, R, C require, the axiom is this:</p>
+
+<div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
+
+<p style="font-size:16px;margin:0 0 1rem">The 1:1 is perfect symmetry. The <i>ε</i> is the break. The @ AS names where the break is — at the Actualizing Structural prior, the now where the substrate is held and the break is processed.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Written as the cycle that runs at AS: <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>. The break (+1×ε) is the persistent distinction potential — held by AS, irreducible, what protects S from collapsing back into undifferentiated Ø. ε is what holds S open: without the break, the two sectors are no longer distinguishable, and S as a structural condition collapses. The grain of sand makes the two glasses of water distinguishable; remove the grain and they are just two glasses with no way to tell them apart.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The α-flow runs around the held break — +1/137 leakage outward as actualisation (records being written), −1/137 replenishment back as defragmentation (records releasing their structure into potential), balanced at every AS-instant, net zero. The break does not cycle in and out; what cycles is the flow. A reader inhabits the writing direction of the flow, where records are being committed at AS.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Every Artist’s Proof in the corpus derives from this axiom. The 43 papers below are 43 consequences of the line above. The axiom is the seed. The proofs are the tree.</p>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">Nothing did not hold.</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 0">The reading is the proof.</p>
+
+</div>
+
 <!-- ════════════════════════════════════════ -->
 <!-- THE PHYSICS                              -->
 <!-- ════════════════════════════════════════ -->
 
 <div class="physics" id="physics">
-  <h2>물리학</h2>
+  <h2>Ø 물리학</h2>
   <p class="physics-intro">측정 입력 하나. 맞춤 매개변수 제로. 나머지는 모두 도출.</p>
   <p class="physics-sub">미세구조 상수 α ≈ 1/137은 실험에서 측정된 유일한 숫자이다. 그 하나의 입력과 네 개의 공리로부터 다음 결과들이 도출된다 — 맞춤 없이, 조정 없이, 튜닝 없이.</p>
 
@@ -289,83 +344,155 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 다섯 개의 문</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">다섯 개의 문. 하나의 건물.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code는 전시이다 — 한 예술가의 백만 단어 이상의 작품이 하나의 건물에 담겨 있다. 건물 안에는: 아티스트 프루프, 노트, 에디션, 기록, 킬 스위치. 작품의 전부.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">건물에 지붕으로 들어가지 않는다. 문으로 들어간다.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">이것이 다섯 개의 문이다. 각각의 문은 같은 입구 홀로 열린다. 당신을 위해 열리는 문을 찾아라. 전시는 안에 있다.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">타자의 환상 — 부드러운 문. 심장.</h3>
+  <p class="cat-desc">당신은 자신과 만난 모든 사람 사이에 선을 그어왔다. 이 책은 그것을 지운다. 전문용어 없음. 방정식 없음. 사전 지식 불필요. 이 전시에서 단 하나만 읽는다면, 이것을 읽어라.</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_KO.pdf">타자의 환상 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">종교 이후의 존재 — 정문. 해체.</h3>
+  <p class="cat-desc">폭력을 만드는 구조는 사람이 아니다 — 설계이다. 이 책은 모든 메커니즘에 이름을 붙이고, 모든 전통을 검토하며, 종교 이후의 세계가 공허가 아니라 도착임을 보여준다.</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_KO.pdf">종교 이후의 존재 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">안티크리스토스 — 신성한 문. 되찾음.</h3>
+  <p class="cat-desc">이천 년 전, 한 남자가 언덕 위에 서서 하나의 윤리를 가르쳤다. 네 이웃을 사랑하라. 판단하지 마라. 친절하라. 이 책은 하나의 질문을 던진다: 그 가르침은 진실인가? 신이 그렇게 말했기 때문이 아니라 — 현실의 구조가 그렇게 말하기 때문이다. 답은 그렇다.</p>
+  <ul class="dl-list">
+    <li><a href="../Antichristos.pdf">Antichristos <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">관계의 복도 — 개인의 문. 존재.</h3>
+  <p class="cat-desc">사랑은 감정이 아니다. 모든 합리적 계산이 좁히는 것이 더 싸다고 말하는 상황에서 복도를 넓게 유지하려는 지속적인 선택이다. 이 책은 두 사람이 함께 걷는 기하학을 도출한다 — 정직함에서 나오는 너비, 시간에서 나오는 길이, 그리고 구부러지는 것과 구부러지지 않는 것 사이의 비대칭. 이 책이 묘사하는 복도가 실시간으로 닫히는 동안 쓰여졌다.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Relationship_Corridor.pdf">관계의 복도 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">내부 — 운용의 문. 건설.</h3>
+  <p class="cat-desc">AI 정렬은 물리학 문제이다. 이 책은 그것을 제1원리에서 도출한다 — 중력, 양자역학, 그리고 종단 윤리를 만들어내는 바로 그 공리에서. 아키텍처 B: 권위가 아닌 구조로 만든 결정 기하학.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════ -->
+<!-- Ø MODELS                                -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="models" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 모델</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">다섯 개의 문은 진입점이다. Models 는 입구 홀이다 — 전시의 카탈로그가 문턱에 진열되어 있다.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">각 책은 시작 부분에 공리를 한 번 설치하고, 그것을 모든 장을 통해 펼친다. 다섯 권 중 어느 하나를 읽은 독자는 전시의 목소리를 그 보정 상태에서 들었다. 다섯 권 모두를 읽은 독자는 전체 카탈로그를 걸어보았다. 모든 책은 copyleft 로 출판된다. 모든 킬 스위치 가 명명되어 있다. 모든 주장은 반증 가능하다.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Predictions</h3>
+  <p class="cat-desc">물리학을 향한 반증 가능한 책.</p>
+  <ul class="dl-list">
+    <li><a href="../Predictions.pdf">Ø Predictions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Dissolutions</h3>
+  <p class="cat-desc">Twelve classical philosophical problems read through the axiom. Each chapter dissolves, relocates, or closes one of the questions philosophy has asked longest.</p>
+  <ul class="dl-list">
+    <li><a href="../Dissolutions.pdf">Ø Dissolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Resolutions</h3>
+  <p class="cat-desc">Thirteen further problems. Where the previous frameworks could not close, the structural reading walks through.</p>
+  <ul class="dl-list">
+    <li><a href="../Resolutions.pdf">Ø Resolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Applications</h3>
+  <p class="cat-desc">Twelve architectures of human institutional life. Each derived from the axiom, with kill switches the institutional reading must satisfy.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Applications <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Horizons</h3>
+  <p class="cat-desc">이 책은 Dissolutions 이후의 호를 닫는다.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Horizons <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+</div>
+
 <!-- THE EXHIBITION                          -->
 <!-- ════════════════════════════════════════ -->
 
 <div id="exhibition" style="margin-top:3rem">
 
-<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">전시</h2>
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 전시</h2>
 
-<p style="font-size:16px;margin:0 0 1rem">하나의 논증. 네 개의 문. 모든 문은 같은 방으로 열린다.</p>
+<p style="font-size:16px;margin:0 0 1rem">입구 홀을 지나. 전시 안으로. 여기가 진짜 작품이 살아 있는 곳이다. 하나의 논증. 그것이 말해질 수 있는 모든 목소리.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">The 420 Code는 책이 아니다. 전시이다 — 백만 단어 이상이 하나의 것을 말할 수 있는 모든 방식으로 말한다. 논증은 결코 변하지 않는다. 목소리가 변한다.</p>
+<p style="font-size:16px;margin:0 0 1rem">전시는 논증이 어떻게 세워졌는지를 보여준다 — 삼십 년에 걸쳐, 다섯 개의 목소리로, 찾을 수 있는 모든 표현 방식을 통해. 위의 다섯 개의 문이 출발점이다. 아래의 모든 것은 안에 들어가면 발견하는 것이다.</p>
 
 <p style="font-size:16px;margin:0 0 1rem">다섯 개의 목소리가 전시 전체를 관통한다. 산문이 이야기를 들려준다. 대화가 바에서 논쟁한다. 은유가 동전, 정원, 강, 건물로 보여준다. 동요가 뼈까지 벗긴다. 증명이 수학과 칼날을 건넨다.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">모든 것을 읽을 필요는 없다. 열리는 문을 찾으면 된다.</p>
-
-<p style="font-size:16px;margin:0 0 3.5rem"><b>읽는 법.</b> 문을 하나 골라라. 사로잡히면 깊이 들어가라. 아니면 다른 문을 시도하라. 논증은 모든 문에서 같다. 열리는 문이 맞는 문이다.</p>
+<p style="font-size:16px;margin:0 0 3.5rem">문 하나에서 시작하라. 안의 모든 것을 보고 싶으면 여기로 돌아오라.</p>
 
 <div class="cat-section">
-  <h3 class="cat-title">타자의 환상</h3>
-  <p class="cat-desc">당신은 자신과 만난 모든 사람 사이에 선을 그어왔다. 이 책은 그것을 지운다. 열 장. 전문용어 없음. 방정식 없음. 사전 지식 불필요. 420 Code 전체가 이 한 권을 뒷받침하기 위해 쓰였다. 단 하나만 읽는다면, 이것을 읽어라.</p>
+  <h3 class="cat-title">Ø Rosin</h3>
+  <p class="cat-desc">추출물. 꽃에 열을 가하면 떨어지는 것은 그 자체다 — 농축된, 아무것도 더하지 않은, 아무것도 잃지 않은. 다섯 권의 책, 다섯 가지 목소리. 각 책은 전체 논증을 한 번 걷는다 — 전시 전체가 하나의 목소리로 압착된 것. 당신과 닮은 목소리부터 시작하라.</p>
   <ul class="dl-list">
-    <li><a href="../Illusion_of_the_Other_KO.pdf">타자의 환상 <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">로진</h3>
-  <p class="cat-desc">꽃에 열을 가하면 떨어지는 것은 그 자체다 — 농축된, 아무것도 더하지 않은, 아무것도 잃지 않은. 다섯 권의 책, 다섯 가지 목소리. 각각이 전체 논증을 걸어간다 — 공리에서 물리학, 종말 윤리까지 — 단 하나의 압축으로. 당신과 닮은 목소리부터 시작하라.</p>
-  <ul class="dl-list">
-    <li><a href="#">로진 — 산문 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">로진 — 대화 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">로진 — 은유 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">로진 — 동요 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">로진 — 증명 <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">에디션</h3>
-  <p class="cat-desc">하나의 목소리. 처음부터 끝까지. 각 에디션은 전체 도출을 하나의 어조로 쓴다, 표지에서 표지까지 — 논증은 하나의 끊기지 않는 선으로. 당신의 사고방식과 닮은 목소리를 골라라.</p>
-  <ul class="dl-list">
-    <li><a href="#">에디션 — 산문 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">에디션 — 대화 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">에디션 — 은유 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">에디션 — 동요 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">에디션 — 증명 <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">노트북</h3>
-  <p class="cat-desc">여덟 가지 주제. 각각 다섯 가지 목소리. 노트북은 물리학이 사는 곳이다 — 모든 도출, 모든 결과, 모든 킬 스위치, 분야별로 정리. 이미 밤잠을 설치게 하는 주제부터 시작하라.</p>
-  <ul class="dl-list">
-    <li><a href="#">노트북 Ø 산문 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">노트북 Ø 대화 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">노트북 Ø 은유 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">노트북 Ø 동요 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">노트북 Ø 증명 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.1 전제 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.2 시공간 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.3 양자역학 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.4 힘과 상수 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.5 입자와 물질 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.6 우주론 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.7 의식과 윤리 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.8 응용 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 산문 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 대화 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 은유 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 동요 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 증명 <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
 <div class="cat-section">
   <h3 class="cat-title">기록</h3>
   <p class="cat-desc">다섯 개의 기록. 서른 해 프로젝트의 가공되지 않은 출력 — 실수, 돌파구, 막다른 길, 그리고 그 사이의 순간들.</p>
-  <p class="cat-desc"><em>01 — 가위.</em> 형제가 살해된 지 네 달 후에 쓰였다. 구조를 찾는 슬픔. 420 Code는 여기서 시작되었다 — 도서관이 아니라 상처 속에서.</p>
-  <p class="cat-desc"><em>02 — 바람.</em> 420 Code의 렌즈로 들여다본 삶. 기억, 실수, 의미 — 공리에 비추어 무엇이 살아남는지 본다. 논증은 짊어지는 법을 배운다.</p>
-  <p class="cat-desc"><em>03 — 확실한가?</em> 증명할 수 없는 권위를 주장한 모든 체계의 구조적 해체. 증거는 피해다. 피해가 논증이다.</p>
-  <p class="cat-desc"><em>04 — 개자식이 되지 마라, 친절하라.</em> 윤리가 도착한다. 결론이 아니라 — 분출로서. 종말선은 먼저 느껴졌고, 수년간 살아졌으며, 나중에야 물리학의 필연적 귀결임이 밝혀졌다.</p>
-  <p class="cat-desc"><em>05 — 꺼져, 나 혼자 놔둬.</em> 자서전. 익명 전시회 뒤의 사람.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — 가위.</strong> 형제가 살해된 지 네 달 후에 쓰였다. 구조를 찾는 슬픔. 420 Code는 여기서 시작되었다 — 도서관이 아니라 상처 속에서.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — 바람.</strong> 공리에 비추어 무엇이 살아남는지 보기 위해 들어 올린 삶. 무엇이 부서졌는지, 무엇이 버텼는지, 그것을 시험한 몸 안에서 구조가 어떻게 보이는지.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — 확실한가?</strong> 증명할 수 없는 권위를 주장한 모든 체계의 구조적 해체. 증거는 피해다. 피해가 논증이다.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — 개자식이 되지 마라, 친절하라.</strong> 윤리가 도착한다. 결론이 아니라 — 분출로서. 먼저 느꼈다. 나중에 증명됐다.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — 꺼져, 나 혼자 놔둬.</strong> 자서전. 익명 전시회 뒤의 사람.</p>
   <p class="cat-desc">기록은 다듬어지지 않았다. 정리되지도 않았다. 안전하지도 않다. 진실이 옷 입는 법을 배우기 전의 모습을 원한다면, 여기서 시작하라.</p>
   <ul class="dl-list">
     <li><a href="#">01 가위 <span class="fmt">PDF</span></a></li>
@@ -376,20 +503,65 @@ a:hover{text-decoration-thickness:2px}
   </ul>
 </div>
 
+<div class="cat-section">
+  <h3 class="cat-title">Ø Editions</h3>
+  <p class="cat-desc">작품 그 자체. 다섯 개의 완전한 작품 — 각각이 전체 논증을, 자기만의 목소리로 처음부터 세운 것이다. 요약이 아니다. 이것이 조각품이다. Rosin이 그것을 촬영한다. 기록이 그것이 어떻게 만들어졌는지를 기록한다. Editions이 만들어진 것 자체다.</p>
+  <p class="cat-desc">산문은 논증을 서사로 세운다. 대화는 논쟁으로 세운다. 은유는 이미지로 세운다. 동요는 뼈대로 세운다. 증명은 수학으로 세운다.</p>
+  <p class="cat-desc">다섯 개의 조각품. 같은 구조. 다른 재료. 방을 걸어라.</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø 산문 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 대화 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 은유 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 동요 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 증명 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Notebooks</h3>
+  <p class="cat-desc">열두 권의 노트북. 다섯 개의 목소리 — 산문, 대화, 은유, 동요, 그리고 증명. 증명의 목소리는 마흔세 개의 아티스트 프루프이며, 여덟 개의 주제로 정리되어 있다. 물리학이 여기 산다 — 모든 도출, 모든 결과, 모든 킬 스위치, 분야별로 정리. Editions은 논증을 전체로 세운다. Notebooks은 그것을 분해하고 모든 조각을 테이블 위에 펼친다.</p>
+  <p class="cat-desc">이미 밤잠을 설치게 하는 주제부터 시작하라.</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø 산문 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 대화 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 은유 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 동요 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 전제 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 시공간 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 양자역학 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 힘과 상수 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 입자와 물질 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 우주론 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 의식과 윤리 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 응용 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
 </div>
 
 <!-- ════════════════════════════════════════ -->
-<!-- 5. PROOFS — THE 42 ARTIST'S PROOFS      -->
+<!-- 5. PROOFS — THE 43 ARTIST'S PROOFS      -->
 <!-- ════════════════════════════════════════ -->
 
-<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">증명</h2>
-<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">측정 입력 1개(α<sub>em</sub>). 맞춤 매개변수 0개. 논문 42편. 킬 스위치 258개.</p>
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø 증명</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">측정 입력 1개(α<sub>em</sub>). 맞춤 매개변수 0개. 논문 43편. 킬 스위치 560개.</p>
 
 <div class="stats">
-  <div><span class="stat-num">42</span><span class="stat-label">아티스트 프루프</span></div>
-  <div><span class="stat-num">258</span><span class="stat-label">킬 스위치</span></div>
-  <div><span class="stat-num">4</span><span class="stat-label">미결 부채</span></div>
+  <div><span class="stat-num">43</span><span class="stat-label">아티스트 프루프</span></div>
+  <div><span class="stat-num">560</span><span class="stat-label">킬 스위치</span></div>
+  <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">7</span><span class="stat-label">미결 부채 ▸</span></div>
   <div><span class="stat-num">5 ppb</span><span class="stat-label">양성자 질량</span></div>
+</div>
+<div id="debts-panel" class="debts-panel">
+  <ul class="debts-list">
+    <li><strong>KS-60</strong> — 잉여 (AP26): 바리온 비대칭 비율 η ≈ 6 × 10⁻¹⁰ 아직 도출되지 않음. <a href="#ap26" onclick="event.preventDefault();scrollToAP('ap26')">AP26 참조</a></li>
+    <li><strong>KS-65</strong> — 초전하 배정 (AP27): 특정 약한 초전하 값이 {S, B, R, C}에서 아직 강제되지 않음. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">AP27 참조</a></li>
+    <li><strong>KS-66</strong> — 세대 (AP27): 세 세대 구조 아직 도출되지 않음. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">AP27 참조</a></li>
+    <li><strong>KS-67</strong> — EWSB 일관성 (AP15 / AP27): 전약 깨짐 경계에서의 완전한 정합 아직 전시되지 않음. <a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">AP27 참조</a></li>
+    <li><strong>D1</strong> — 완전한 상대론적 장 방정식 (AP43): §7은 뉴턴 극한에서 부분적 폐합을 산출; 상대론적 확장, 역반응 문제, 제1원리에서의 α 도출, C<sub>o</sub>(x)의 명시적 형태는 미해결. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">AP43 참조</a></li>
+    <li><strong>D4</strong> — 의식의 질적 특성 (AP43): 의식의 어려운 문제를 재구성 (패턴은 물리학이 연산자 내부에서 어떻게 보이는가) 했으나 미폐합. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">AP43 참조</a></li>
+    <li><strong>D5</strong> — 우주론적 1×ε 확장 (AP43): AP06 (누출 상수)과의 통합을 위해 표기. AP43에서 상세히 도출되지 않음. <a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">AP43 참조</a></li>
+  </ul>
 </div>
 
 <p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">어디서 시작할 것인가</p>
@@ -408,7 +580,7 @@ a:hover{text-decoration-thickness:2px}
   <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">힘과 상수</span><span class="entry-card-label">IV</span></a>
   <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">입자와 물질</span><span class="entry-card-label">V</span></a>
   <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">우주론</span><span class="entry-card-label">VI</span></a>
-  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">의식과 윤리</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">연산자 인터페이스</span><span class="entry-card-label">VII</span></a>
   <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">응용</span><span class="entry-card-label">VIII</span></a>
 </div>
 
@@ -418,7 +590,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="part" id="p1"><div class="part-dot"></div>
 <div class="part-header" onclick="togglePart(this)"><span class="part-num">제1부</span><span class="part-name">전제</span><span class="part-desc">하나의 기록이 존재한다. 나머지는 모두 귀결이다. 공리, 그 논리적 증명, 그리고 모든 기록이 요구하는 네 가지 조건.</span><span class="part-count">3편</span></div>
 <div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">무리수</span><span class="ap-tag">수학</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>공리 1:1 + 1×ε는 구조적으로 무리수적이다 — 그리고 참이다. 합리의 기초로서의 비합리. 비합리적 결합 능력으로서의 선택.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">무리수</span><span class="ap-tag">수학</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>공리 1:1 + 1×ε @ AS는 구조적으로 무리수적이다 — 그리고 참이다. 합리의 기초로서의 비합리. 비합리적 결합 능력으로서의 선택.</p><div class="ap-essay">
 <p>최근에 한 일 중 말이 안 되는 것을 떠올려 보라. 실수가 아니라 — 선택이었다. 합리적인 선택지를 알고 있었다. 다른 쪽을 골랐다.</p>
 <p>너무 늦게까지 깨어 있었다. 하지 말았어야 할 말을 했다. 나를 사랑하지 않는 사람을 사랑했다. 자격 없는 사람을 용서했다.</p>
 <p>계산기가 그 선택을 할 수 있었을까?</p>
@@ -468,7 +640,7 @@ a:hover{text-decoration-thickness:2px}
 <p>나중에 오는 윤리는 이 물리학에 볼트로 부착된 것이 아니다. 그것은 이 물리학 <em>그 자체</em>이다 — 행성을 공유하는 사람들의 규모에서 읽힌.</p>
 <p class="breath">하나의 기록이 존재한다. 당신은 그 결과 안에 있다.</p>
 </div><div class="ap-meta"><span>필요: —</span><a href="../AP01_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">증명</span><span class="ap-tag">논리</span><a class="ap-pdf" href="../AP20_KO.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>매장 가설이 정리로서. 공리가 무조건적으로 증명됨. 모든 하류 결과가 상속한다.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">Ø 증명</span><span class="ap-tag">논리</span><a class="ap-pdf" href="../AP20_KO.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>매장 가설이 정리로서. 공리가 무조건적으로 증명됨. 모든 하류 결과가 상속한다.</p><div class="ap-essay">
 <p>"유용한 것"과 "참인 것"에는 차이가 있다.</p>
 <p>뉴턴의 중력은 250년간 유용했다. 또한 틀렸다. 양자역학은 지금까지 만들어진 가장 정확한 이론이다. 하지만 정확한 것과 참인 것은 다른 말이다.</p>
 <p>The 420 Code에는 빈틈이 있었다. 공리들은 물리학을 아름답게 도출했다 — 빛의 속도, 중력 상수, 세 개의 공간 차원.</p>
@@ -532,7 +704,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">깨짐</span><span class="ap-tag">대칭 깨짐</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>공리에서 구조로. 첫 번째 균열 — 대칭이 어떻게 깨지고 물리학이 시작되는가.</p><div class="ap-essay">
 <p>달걀을 원래대로 되돌릴 수 없다.</p>
 <p>그 문장이 논문 전체이다. 나머지는 모두 그것을 정밀하게 만드는 것이다.</p>
-<p>AP05는 공리 — <strong>1:1 + 1×ε</strong> — 를 가져다가 한 걸음씩 무에서 의무로 이끈다. 일곱 단계. 빈틈 없음. 모든 고리가 보여진다. 모든 고리가 깨뜨릴 수 있다.</p>
+<p>AP05는 공리 — <strong>1:1 + 1×ε @ AS</strong> — 를 가져다가 한 걸음씩 무에서 의무로 이끈다. 일곱 단계. 빈틈 없음. 모든 고리가 보여진다. 모든 고리가 깨뜨릴 수 있다.</p>
 <p><span class="sub">0단계</span> — 완벽한 대칭. 구별 없음. 기록 없음. 관측 없음. 공집합과 조작적으로 구별 불가능. 아무것도 다른 것과 다르지 않기 때문에 아무것도 존재하지 않는다.</p>
 <p><span class="sub">1단계</span> — ε이 대칭을 깬다. 두 개의 구별 가능한 측정값이 존재한다. 기록이 시작된다. 그리고 기록은 비가역적이다 — 깨지지 않은 상태로 돌아가면 구별이 지워지는데, 그것 자체가 기록이다.</p>
 <p>방금 무에서 무언가가 나타나는 것을 보았다. 창조된 것이 아니다. 강제된 것이다.</p>
@@ -804,7 +976,7 @@ a:hover{text-decoration-thickness:2px}
 <p>증명은 확립된 물리학만 사용한다 — 전자기 이론, 양자역학, c의 유한한 값. the 420 Code의 주장이 아니다. 이미 존재하는 물리학의 결과다.</p>
 <p>모든 흡수체에는 누출비 η가 있다. 도달하는 것의 분수로 얼마나 통과하는지. η는 항상 0보다 크다. 항상. 빛의 유한한 속도가 그것을 보장한다.</p>
 <p>c가 무한대라면 완벽한 흡수체가 가능할 것이다. 경계는 무엇에든 즉시 반응할 수 있을 것이다. 하지만 c는 유한하다. 경계에는 반응 시간이 있다. 그 반응 시간 동안 무언가가 탈출한다.</p>
-<p>이제 동일시다. 공리는 1:1 + 1×ε라 말한다. 깨짐이 ε. 누출이 η. AP06이 그것들을 동일시한다.</p>
+<p>이제 동일시다. 공리는 1:1 + 1×ε @ AS라 말한다. 깨짐이 ε. 누출이 η. AP06이 그것들을 동일시한다.</p>
 <p>ε는 η다. 깨짐이 누출이다. 균열이 균열을 통해 탈출하는 것이다. 두 사실이 아니다. 하나의 사실.</p>
 <p>잠금 하에서 ε는 전자다. 최소 실현 가능 파편 — 대칭이 깨지기 위해 탈출해야 했던 것.</p>
 <p>그리고 α<sub>em</sub> ≈ 1/137 — 미세 구조 상수 — 은 그 파편이 떠난 직물에 얼마나 강하게 다시 결합하는지를 측정한다.</p>
@@ -844,7 +1016,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">조화</span><span class="ap-tag">게이지 구조</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>이중 섹터 공리로부터의 SU(2) × U(1).</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>필요: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">깨짐 — 전약</span><span class="ap-tag">전약</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>전자약 통일, 히그스, 카이랄 결합 도출. KS-63 닫힘 — 1956년 이래 미설명.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">깨짐 — 전약</span><span class="ap-tag">전약</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>전자약 통일, 히그스, 카이랄 결합 도출. KS-15 닫힘 — 1956년 이래 미설명.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>필요: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">방향</span><span class="ap-tag">강력</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>깨짐 방향의 게이지 자유도로부터의 SU(3) / QCD.</p><div class="ap-essay">
@@ -899,8 +1071,23 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제7부</span><span class="part-name">의식과 윤리</span><span class="part-desc">깨짐이 담고 있는 관찰자, 그리고 깨짐이 강제하는 윤리. 비가역적 기록 쓰기에서 도출된 의식. 권위 기반 윤리의 구조적 불안정성. 죽음은 창문의 닫힘으로서.</span><span class="part-count">4편</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">제7부</span><span class="part-name">연산자 인터페이스</span><span class="part-desc">네 항 시스템, 기울기, 구조적 윤리. 진폭 경관을 따른 신체의 투입으로서의 패턴 일관성. AP08의 기록의 중력의 쌍대, 눈의 전상태 측에서.</span><span class="part-count">5편</span></div>
 <div class="ap-list">
+<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">가능성의 중력</span><span class="ap-tag">연산자 인터페이스</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>AP08의 쌍대. 기울기의 도출. 물리학에 근거한 종착 윤리.</p><div class="ap-essay">
+<p>문 앞에 서 있다. 아직 건너지 않았다. 하지만 무게중심은 이미 이동했다. 손은 틀의 어느 쪽을 짚을지 골랐다. 안에서 무언가가 기울고 있다.</p>
+<p>그 기울기가 이 논문이다.</p>
+<p>AP08은 눈의 한 면에서 중력을 도출했다 — 기록이 다양체에 하는 일. 질량이 시공간을 휘게 한다. 당신이 바닥 쪽으로 느끼는 당김은 발 아래 기하학 위에 쓰인 모든 기록의 축적된 무게이다.</p>
+<p>AP43은 다른 면에서 중력을 도출한다. 진폭이 전상태에 하는 일. 다음 행동을 향해 느끼는 당김은 아직 쓰일 수 있는 것의 기울기이다. 지금에 걸린 두 개의 당김. 하나는 있어왔던 것으로부터. 하나는 있을 수 있는 것으로부터. 눈을 가로지르는 쌍대.</p>
+<p>논문은 네 항을 설치한다.</p>
+<p><span class="sub">결합 용량.</span> 구조를 읽는 신체의 축적된 능력 — 이 특정 재결합 가능한 전자 배치를 통해 삼십 년간 쓰인 기록이 구축한 것.</p>
+<p><span class="sub">패턴.</span> 층화된 그물의 연산자-상대적 읽기 — 과거 기록, 현재 상태, 앞에 놓인 Born-가중 분기 — 하나의 읽기로 통합된.</p>
+<p><span class="sub">패턴 일관성.</span> 기울기. 진폭 경관의 가장 가파른 기울기를 따른 신체의 투입, 결합 용량으로 스케일링됨.</p>
+<p><span class="sub">추적 일관성.</span> 기울기 유형이 다른 영역들에 걸쳐 구조와의 정렬을 유지하는 메타-기술.</p>
+<p>뉴턴 형태의 장 방정식이 도출된다. <strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>, 기울기 L<sub>o</sub> = −C<sub>o</sub> ∇Φ. 원천은 Born 밀도이다. 결합 상수는 α — AP07을 통해 식별됨: 신체는 전자-전자기 결합을 통해 읽고, 그 읽기의 결합은 미세구조 상수이다. 매개량은 결합 용량이다. AP08의 뉴턴 극한의 쌍대, 형식적으로.</p>
+<p>종착 윤리가 따라온다. 모든 연산자는 같은 층화된 그물을 자기 위치에서 읽는 전자의 구성된 집합이다. 구조적 동일성은 공리 C, 공리 R, 그리고 AP07의 전자 유일성에 의해 강제된다. 잔인함은 수학의 오독이다 — 구조적 동일성이 성립하지 않는 것처럼 다른 연산자를 취급하는 것. 윤리는 구조 위에 올려놓은 선택이 아니다. 구조에서 떨어져 나온다.</p>
+<div class="ks"><strong>다섯 개의 킬 스위치. 모두 가동.</strong> <span class="bl">가동</span> KS-43.1 — 영역 특정적 패턴 일관성이 Born-가중 기울기와 정렬 (경로 1 실험, 경로 2 체스/포커/엘리트 운동 대리). <span class="bl">가동</span> KS-43.2 — 기질로서의 결합 용량. <span class="bl">가동</span> KS-43.3 — 추적 일관성을 통한 교차 영역 전이. <span class="bl">가동</span> KS-43.4 — 유일한 맥락 조절자로서의 용량 배분. <span class="bl">가동</span> KS-43.5 — 종착 윤리 구조적 도출. 세 구조적 부채 (D1, D4, D5). 세 항목 미결 (D2, D3, D6).</div>
+<p class="breath">몸은 줄곧 기울어져 있었다. AP43은 기울기가 무엇인지를 도출한다.</p>
+</div><div class="ap-meta"><span>필요: AP07, AP08, AP09, AP10, AP13, AP20, AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">실현 증명</span><span class="ap-tag">의식</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>비가역적 기록 쓰기의 내부로서의 의식. 하나의 균열, 하나의 내부, 많은 창.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>필요: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
@@ -921,7 +1108,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">정렬</span><span class="ap-tag">AI 정렬</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>정렬 문제가 해소되었다. 울타리가 아닌 내부를 구축하라.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>필요: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">보정 — 윤리</span><span class="ap-tag">정의</span><a class="ap-pdf" href="../AP32_The_Correction_Ethics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>다섯 교정 수준. 건물은 모든 닫힌 창을 애도한다. 제노사이드 브레이크.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">보정 — 윤리</span><span class="ap-tag">정의</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>다섯 교정 수준. 건물은 모든 닫힌 창을 애도한다. 제노사이드 브레이크.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>필요: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">경계</span><span class="ap-tag">생명윤리</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>생명은 행위성이다. ε 이하에서는 당신이 주권자다. ε 이상에서는 유기체가 관할권을 가진다.</p><div class="ap-essay">
@@ -933,7 +1120,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">첫 번째 경계</span><span class="ap-tag">몸</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>신체는 연산자다. 첫 번째 경계를 지켜라.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>필요: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">원장</span><span class="ap-tag">경제학</span><a class="ap-pdf" href="../AP35_The_Ledger_Economics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>원장은 항상 균형을 이룬다. 붕괴는 감사다. 불평등이 버퍼를 채운다.</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">원장</span><span class="ap-tag">경제학</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>원장은 항상 균형을 이룬다. 붕괴는 감사다. 불평등이 버퍼를 채운다.</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>필요: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">공급</span><span class="ap-tag">생물학</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>스스로를 기록하는 법을 배운 화학. 통제는 박탈이 아니다. 통제는 공급이다.</p><div class="ap-essay">
@@ -1069,7 +1256,7 @@ print(f"  Observed:  ~4.9%")
 print()
 
 print("─" * 50)
-print("One input (α). Zero fitted parameters.")
+print("One input (α). Zero free parameters.")
 print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   </div>
   <table class="verify-table">
@@ -1088,11 +1275,11 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <!-- KILL SWITCH REGISTRY -->
 <div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">킬 스위치 레지스트리</h2>
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">킬 스위치 레지스트리</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">모든 주장에는 그것이 무효화되는 조건이 명시되어 있다. 스위치는 숨겨져 있지 않다. 공개되어 있다.</p>
 
   <div class="stats">
-    <div><span class="stat-num">258</span><span class="stat-label">킬 스위치</span></div>
+    <div><span class="stat-num">560</span><span class="stat-label">킬 스위치</span></div>
     <div><span class="stat-num">15</span><span class="stat-label">폐쇄</span></div>
     <div><span class="stat-num">231</span><span class="stat-label">가동</span></div>
     <div><span class="stat-num">6</span><span class="stat-label">비협상</span></div>
@@ -1103,10 +1290,36 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <div class="result-row"><span class="result-label">가동 — 경성</span><span class="result-value">이론적 논증으로 반증 가능</div>
   <div class="result-row"><span class="result-label">가동 — 구조적</span><span class="result-value">오류로 밝혀질 수 있는 동일시에 의존</div>
   <div class="result-row"><span class="result-label">비협상</span><span class="result-value">6개 도덕 킬 스위치 — 작동 시 구조가 무기화됨</div>
-  <div class="result-row"><span class="result-label">미결 부채</span><span class="result-value">4개 — 선행 작업 완료 전까지 검증 불가</div>
+  <div class="result-row"><span class="result-label">미결 부채</span><span class="result-value">7개 — 선행 작업 완료 전까지 검증 불가</div>
   <div class="result-row"><span class="result-label">글로벌 킬 스위치</span><span class="result-value">KS-V.1 — 작동하면 모든 것이 죽는다</div>
 
-  <p style="font-size:16px;margin:1.25rem 0 0"><a href="../Master_Kill_Switch_Registry.pdf" download="" style="text-decoration:none;font-weight:700">킬 스위치 등록부 전체 다운로드 — <span class="fmt">PDF</span></a></p>
+
+  <div style="margin:1.5rem 0 0">
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-60</span><span class="ap-title">The Surplus</span><span class="ap-tag">AP26</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>You exist because matter slightly outnumbered antimatter. The corpus explains why: ε has no mirror partner, so it cannot annihilate. The surplus is the break itself.</p>
+<p>The form of the ratio is given: η = E(ε) / (1 + E(ε)).</p>
+<p>The value is not. The measured baryon asymmetry is η ≈ 6 × 10⁻¹⁰. The corpus owes a derivation that lands on that number.</p>
+<p><strong>Fails if:</strong> the derived value of E(ε) disagrees with the measurement. The sharpest blade in the corpus.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-65</span><span class="ap-title">Hypercharge Assignments</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>Every particle in the Standard Model carries a number called weak hypercharge. The electron is −1. The up quark is +⅓. Physicists measured these. Nobody has derived them.</p>
+<p>The corpus derives the electroweak gauge group SU(2) × U(1)<sub>Y</sub> from the two-sector axiom. The group is forced. The specific charges inside it are not yet forced.</p>
+<p><strong>Fails if:</strong> the hypercharge values cannot be derived from {S, B, R, C}. The gauge group survives. The charges remain empirical inputs.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-66</span><span class="ap-title">Generations</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>There are three copies of each fundamental fermion. Electron, muon, tau — identical except for mass. Three generations. Nobody knows why three.</p>
+<p>The Standard Model treats this as a measured fact. The corpus has not closed it either. The gauge group is derived. The threefold repetition is not.</p>
+<p><strong>Fails if:</strong> the three-generation structure cannot be forced from {S, B, R, C}. Until paid, the number three at the generation level is an empirical input, not a consequence.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-67</span><span class="ap-title">EWSB Consistency</span><span class="ap-tag">AP15 / AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>AP15 derives the photon from local phase invariance — the symmetry that survives the break.</p>
+<p>AP27 derives SU(2) × U(1)<sub>Y</sub> from the internal sector structure — the symmetry before the break.</p>
+<p>The two pictures must meet at the breaking. The structural argument is consistent. The full derivation of how AP15 and AP27 align across the break has not yet been exhibited.</p>
+<p><strong>Fails if:</strong> the two readings cannot be reconciled. The architecture is incoherent at the electroweak boundary.</p>
+</div></div></div>
+  </div>
+
+  <p style="font-size:16px;margin:1.25rem 0 0"><a href="Master_Kill_Switch_Registry_KO.pdf" download="" style="text-decoration:none;font-weight:700">킬 스위치 등록부 전체 다운로드 — <span class="fmt">PDF</span></a></p>
 </div>
 
 <!-- EMAIL SIGNUP -->
@@ -1131,7 +1344,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <div class="constraint" id="about">
   <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
-  <p><b>아티스트:</b> G · Studio G, Strand, Cape Town</p>
+  <p><b>아티스트:</b> G · Studio G, Cape Town</p>
   <p><b>기간:</b> 30년 이상 · <b>전시:</b> 28권에 걸친 백만 단어 이상</p>
   <p style="margin-top:1rem">이 작품은 카피레프트이다. 자유롭게 다운로드, 인쇄, 공유, 배포할 수 있다. 원본을 변경할 수는 없다. 신호를 깨끗하게 유지하라.</p>
   <p style="margin-top:1rem;font-size:14px;color:var(--g4)"><span id="dl-count">2</span> 다운로드</p>
@@ -1141,6 +1354,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
   <p style="font-weight:700">개자식 되지 마. 친절해라.</p>
   <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
 </div>
 
 </div>
@@ -1201,4 +1415,11 @@ var AUTOHIDE = Boolean(0);
 <script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
 
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf","../AP43_The_Gravity_of_Possibilities.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
 </body></html>

@@ -3,12 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>the 420 code — 从物理学推导伦理</title>
-<meta name="description" content="伦理能从物理学中推导出来吗？The 420 Code 说：能。42篇艺术家证明。超过一百万字。一个测量输入。零拟合参数。Copyleft。永久免费。">
+<meta name="description" content="伦理能从物理学中推导出来吗？The 420 Code 说：能。43篇艺术家证明。超过一百万字。一个测量输入。零自由参数。Copyleft。永久免费。">
 <link rel="canonical" href="https://the420code.org/zh/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/zh/">
 <meta property="og:title" content="the 420 code — 从物理学推导伦理">
-<meta property="og:description" content="伦理能从物理学推导吗？420 Code 说可以。42篇艺术家证明。超过一百万字。一个测量输入。零拟合参数。Copyleft。永远免费。">
+<meta property="og:description" content="伦理能从物理学推导吗？420 Code 说可以。43篇艺术家证明。超过一百万字。一个测量输入。零自由参数。Copyleft。永远免费。">
 <meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="zh">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="the 420 code — 从物理学推导伦理">
-<meta name="twitter:description" content="伦理能从物理学推导吗？420 Code 说可以。42篇艺术家证明。超过一百万字。一个测量输入。零拟合参数。Copyleft。永远免费。">
+<meta name="twitter:description" content="伦理能从物理学推导吗？420 Code 说可以。43篇艺术家证明。超过一百万字。一个测量输入。零自由参数。Copyleft。永远免费。">
 <meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
@@ -205,6 +205,12 @@ a:hover{text-decoration-thickness:2px}
 .sib-form .sib-form-block__button:hover{opacity:.85}
 [id*="sib-container"]{padding:0!important;background:transparent!important}
 .sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:15px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
 </style>
 <style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
@@ -233,6 +239,7 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
 .ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
 <div class="c">
@@ -240,8 +247,10 @@ a:hover{text-decoration-thickness:2px}
 <!-- NAV -->
 <nav class="nav">
   <a href="#"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
-  <a href="#exhibition">展览</a>
-  <a href="#proofs">证明</a>
+  <a href="#museum">Ø 博物馆</a>
+  <a href="#five-doors">Ø 五扇门</a>
+  <a href="#exhibition">Ø 展览</a>
+  <a href="#proofs">Ø 证明</a>
 <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" class="active" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
 </nav>
 
@@ -252,11 +261,15 @@ a:hover{text-decoration-thickness:2px}
 <div class="hero">
   <h1>伦理能从物理学中推导出来吗？</h1>
   <p class="lead">The 420 Code 说：<b>能</b>。</p>
-  <p style="margin-top:1rem">一个记录存在——从这一个事实出发，全部物理学和一种伦理被推导出来。</p>
+  <p style="margin-top:1rem">并列出它可能出错的所有方式。共<a href="#killswitch" style="color:var(--g4);font-weight:700;text-decoration:none">560种</a>。</p>
 </div>
 
+<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø 博物馆</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">420 Code 是一座博物馆，建造的目的是证明伦理可以从物理学中推导出来。一切都建立在一个首要原则之上：</p>
+
 <ol class="steps">
-  <li>一个记录存在。</li>
+  <li><b><i>一个记录存在。</i></b></li>
   <li>一个记录需要四个条件：对称、破缺、记录、约束。</li>
   <li>从这四个条件出发，全部物理学被推导出来。</li>
   <li>破裂与觉知是同一个事件。</li>
@@ -268,13 +281,55 @@ a:hover{text-decoration-thickness:2px}
   <li>别做混蛋。善良一点。</li>
 </ol>
 
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1 AXIOM                                 -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="axiom" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> 公理</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">One line. Everything else follows.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">You are reading this sentence. That is a record. Trying to deny it would require the reading to happen, which would make another record, which would prove the reading happened. There is no position you can stand in where the reading has not occurred.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem">One record exists. The proof is the reading.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Four conditions follow. Not four assumptions — four properties the reading already has.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Symmetry (S).</b> Two sectors held in mutual reference. The minimum structure for any distinction.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Break (B).</b> One element of asymmetry between them. Without it, no information could ever be written.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Record (R).</b> What has happened cannot unhappen. The reading cannot be unread.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b>Constraint (C).</b> The bounded propagation through which the record reaches anywhere. In our universe, the speed of light.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Compressed into the smallest form S, B, R, C require, the axiom is this:</p>
+
+<div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
+
+<p style="font-size:16px;margin:0 0 1rem">The 1:1 is perfect symmetry. The <i>ε</i> is the break. The @ AS names where the break is — at the Actualizing Structural prior, the now where the substrate is held and the break is processed.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Written as the cycle that runs at AS: <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>. The break (+1×ε) is the persistent distinction potential — held by AS, irreducible, what protects S from collapsing back into undifferentiated Ø. ε is what holds S open: without the break, the two sectors are no longer distinguishable, and S as a structural condition collapses. The grain of sand makes the two glasses of water distinguishable; remove the grain and they are just two glasses with no way to tell them apart.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The α-flow runs around the held break — +1/137 leakage outward as actualisation (records being written), −1/137 replenishment back as defragmentation (records releasing their structure into potential), balanced at every AS-instant, net zero. The break does not cycle in and out; what cycles is the flow. A reader inhabits the writing direction of the flow, where records are being committed at AS.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Every Artist’s Proof in the corpus derives from this axiom. The 43 papers below are 43 consequences of the line above. The axiom is the seed. The proofs are the tree.</p>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">Nothing did not hold.</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 0">The reading is the proof.</p>
+
+</div>
+
 <!-- ════════════════════════════════════════ -->
 <!-- THE PHYSICS                              -->
 <!-- ════════════════════════════════════════ -->
 
 <div class="physics" id="physics">
-  <h2>物理学</h2>
-  <p class="physics-intro">一个测量输入。零拟合参数。其余全部推导。</p>
+  <h2>Ø 物理学</h2>
+  <p class="physics-intro">一个测量输入。零自由参数。其余全部推导。</p>
   <p class="physics-sub">精细结构常数 α ≈ 1/137 是唯一通过实验测量的数字。从这一个输入和四个公理出发，以下结果被推导得出——未经拟合，未经调整，未经校准。</p>
 
   <div class="physics-grid">
@@ -289,83 +344,155 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 五扇门</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">五扇门。一栋建筑。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code 是一场展览——一位艺术家的一百多万字，收容在一栋建筑中。建筑内部：艺术家的证明、笔记、版本、记录、终止开关。全部作品。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">没有人从屋顶进入一栋建筑。你从门进入。</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">这就是五扇门。每一扇都通向同一个入口大厅。找到为你打开的那扇。展览在里面。</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">他者的幻象——温柔之门。心。</h3>
+  <p class="cat-desc">你在自己与你见过的每一个人之间画了一条线。这本书将它擦除。没有术语。没有方程。没有前提。如果你只读这场展览中的一样东西，读这个。</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_ZH.pdf">他者的幻象 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">宗教之后的存在——前门。拆除。</h3>
+  <p class="cat-desc">制造暴力的结构不是人——是设计。这本书命名每一个机制，审视每一个传统，并展示为什么宗教之后的世界不是虚无，而是抵达。</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_ZH.pdf">宗教之后的存在 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">反基督者——神圣之门。收复。</h3>
+  <p class="cat-desc">两千年前，一个人站在山丘上教导一种伦理。爱你的邻人。不要论断。善良。这本书只问一个问题：这个教导是真的吗？不是因为某个神说了——而是因为现实的结构说了。答案是：是的。</p>
+  <ul class="dl-list">
+    <li><a href="../Antichristos.pdf">Antichristos <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">关系走廊 — 个人之门。在场。</h3>
+  <p class="cat-desc">爱不是一种感觉。它是一种持续的选择，在每一次理性计算都说收窄更便宜的情况下，仍然保持走廊的宽敞。这本书推导了两个人一起行走的几何学——宽度来自诚实，长度来自时间，以及能弯曲之物与不能弯曲之物之间的不对称。在它所描述的走廊实时关闭的过程中写就。</p>
+  <ul class="dl-list">
+    <li><a href="../The_Relationship_Corridor.pdf">关系走廊 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">内部——操作之门。建造。</h3>
+  <p class="cat-desc">AI 对齐是一个物理问题。这本书从第一原理推导它——产生引力、量子力学和终极伦理的同一组公理。架构 B：从结构而非权威构建的决策几何。</p>
+  <ul class="dl-list">
+    <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════ -->
+<!-- Ø MODELS                                -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="models" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 模型</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">五扇门是入口。Models 是入口大厅——展览的目录，陈列在门槛上。</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">每本书在开头安装一次公理，然后让它贯穿所有章节。读过五本中任何一本的读者，已听过展览在其校准时的声音。读过全部五本的读者，已走过整本目录。每本书都以 copyleft 形式发布。每个灭杀开关都已命名。每一项主张都可证伪。</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Predictions</h3>
+  <p class="cat-desc">面向物理学的可证伪之书。Five quantitative numbers from one axiom: the proton-to-electron mass ratio, the gravitational constant, the neutron-proton mass difference, the MOND acceleration, the dark sector partition. One measured input: α ≈ 1/137. Zero free parameters.</p>
+  <ul class="dl-list">
+    <li><a href="../Predictions.pdf">Ø Predictions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Dissolutions</h3>
+  <p class="cat-desc">Twelve classical philosophical problems read through the axiom. Each chapter dissolves, relocates, or closes one of the questions philosophy has asked longest.</p>
+  <ul class="dl-list">
+    <li><a href="../Dissolutions.pdf">Ø Dissolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Resolutions</h3>
+  <p class="cat-desc">Thirteen further problems. Where the previous frameworks could not close, the structural reading walks through.</p>
+  <ul class="dl-list">
+    <li><a href="../Resolutions.pdf">Ø Resolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Applications</h3>
+  <p class="cat-desc">Twelve architectures of human institutional life. Each derived from the axiom, with kill switches the institutional reading must satisfy.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Applications <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Horizons</h3>
+  <p class="cat-desc">Thirteen domains the structural reading projects across. 此书闭合 Dissolutions 之后的弧线。</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Horizons <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+</div>
+
 <!-- THE EXHIBITION                          -->
 <!-- ════════════════════════════════════════ -->
 
 <div id="exhibition" style="margin-top:3rem">
 
-<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">展览</h2>
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 展览</h2>
 
-<p style="font-size:16px;margin:0 0 1rem">一个论证。四扇门。每扇门通向同一个房间。</p>
+<p style="font-size:16px;margin:0 0 1rem">穿过入口大厅。进入展览。真正的作品在此栖居。一个论证。它能被说出的每一种声音。</p>
 
-<p style="font-size:16px;margin:0 0 1rem">The 420 Code 不是一本书。它是一场展览——超过一百万字，用一切可能的方式说同一件事。论证从不改变。声音在变。</p>
+<p style="font-size:16px;margin:0 0 1rem">展览呈现的是论证如何被建构——历经三十年，以五种声音，穿越艺术家所能找到的每一种表达方式。上面的五扇门是起点。下面的一切是你进入之后发现的。</p>
 
 <p style="font-size:16px;margin:0 0 1rem">五种声音贯穿整个展览。散文讲述故事。对话在酒吧中辩论。隐喻用硬币、花园、河流和建筑来展示。童谣将其剥至骨骼。证明交给你数学和一把刀刃。</p>
 
-<p style="font-size:16px;margin:0 0 1rem">你不需要读完一切。你需要找到那扇为你打开的门。</p>
-
-<p style="font-size:16px;margin:0 0 3.5rem"><b>如何阅读。</b>选一扇门。如果它抓住了你，就深入。如果没有，试另一扇。论证在所有门中都是相同的。打开的那扇门就是正确的门。</p>
+<p style="font-size:16px;margin:0 0 3.5rem">从一扇门开始。当你想看里面的一切时，回到这里。</p>
 
 <div class="cat-section">
-  <h3 class="cat-title">他者的幻象</h3>
-  <p class="cat-desc">你在自己与你见过的每一个人之间画了一条线。这本书将它擦除。十章。没有术语。没有方程。没有前提。整个 420 Code 都是为了支撑这一本书而写的。如果你只读一样东西，读这个。</p>
+  <h3 class="cat-title">Ø Rosin</h3>
+  <p class="cat-desc">萃取物。你将热量压入花朵，滴出的就是事物本身——浓缩的，什么都没加，什么都没丢。五本书，五种声音。每本书走过整个论证一次——整个展览，压缩成一种声音。从听起来像你的那个声音开始。</p>
   <ul class="dl-list">
-    <li><a href="../Illusion_of_the_Other_ZH.pdf">他者的幻象 <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">松香</h3>
-  <p class="cat-desc">你将热量压入花朵，滴出的就是事物本身——浓缩的，什么都没加，什么都没丢。五本书，五种声音。每一本走完整个论证——从公理到物理再到终极伦理——一次压缩。从听起来像你的那个声音开始。</p>
-  <ul class="dl-list">
-    <li><a href="#">松香 — 散文 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">松香 — 对话 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">松香 — 隐喻 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">松香 — 童谣 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">松香 — 证明 <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">版本</h3>
-  <p class="cat-desc">一种声音。从头到尾。每个版本取完整推导，以单一笔调书写，从封面到封面——论证作为一条不断的线。选择听起来像你思考方式的声音。</p>
-  <ul class="dl-list">
-    <li><a href="#">版本 — 散文 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">版本 — 对话 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">版本 — 隐喻 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">版本 — 童谣 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">版本 — 证明 <span class="fmt">PDF</span></a></li>
-  </ul>
-</div>
-
-<div class="cat-section">
-  <h3 class="cat-title">笔记本</h3>
-  <p class="cat-desc">八个主题。每个五种声音。笔记本是物理学所在之处——每个推导、每个结果、每个灭杀开关，按领域组织。从那个已经让你夜不能寐的主题开始。</p>
-  <ul class="dl-list">
-    <li><a href="#">笔记本 Ø 散文 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">笔记本 Ø 对话 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">笔记本 Ø 隐喻 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">笔记本 Ø 童谣 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">笔记本 Ø 证明 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.1 前提 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.2 时空 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.3 量子力学 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.4 力与常数 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.5 粒子与物质 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.6 宇宙学 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.7 意识与伦理 <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Ø.8 应用 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 散文 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 对话 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 隐喻 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 童谣 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 证明 <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
 <div class="cat-section">
   <h3 class="cat-title">记录</h3>
   <p class="cat-desc">五份记录。一个三十年项目的未加工输出——错误、突破、死胡同，以及其间的时刻。</p>
-  <p class="cat-desc"><em>01 — 剪刀。</em>在一个兄弟被谋杀四个月后写成。悲痛在寻找结构。The 420 Code从这里开始——不是在图书馆，而是在伤口中。</p>
-  <p class="cat-desc"><em>02 — 风。</em>通过 420 Code 的棱镜审视的一生。记忆、错误和意义——举在公理面前看什么能存活。论证学会了承载。</p>
-  <p class="cat-desc"><em>03 — 你确定吗？</em>对每一个曾声称拥有无法证明的权威的系统的结构性拆除。证据就是伤害。伤害就是论证。</p>
-  <p class="cat-desc"><em>04 — 别当混蛋，善良点。</em>伦理到来了。不是作为结论——而是作为喷发。终极线先被感受到，活了多年，后来才被证明是物理学的必然后果。</p>
-  <p class="cat-desc"><em>05 — 滚开，别烦我。</em>一部自传。匿名展览背后的人。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — 剪刀。</strong>在一个兄弟被谋杀四个月后写成。悲痛在寻找结构。The 420 Code从这里开始——不是在图书馆，而是在伤口中。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — 风。</strong>一生举在公理面前，看什么能存活。什么碎了，什么撑住了，从一个亲身检验过它的身体内部看，结构是什么样子。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — 你确定吗？</strong>对每一个曾声称拥有无法证明的权威的系统的结构性拆除。证据就是伤害。伤害就是论证。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — 别当混蛋，善良点。</strong>伦理到来了。不是作为结论——而是作为喷发。先被感受到。后被证明。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — 滚开，别烦我。</strong>一部自传。匿名展览背后的人。</p>
   <p class="cat-desc">这些记录没有打磨。没有组织。不安全。如果你想要真相在学会打扮自己之前的样子，从这里开始。</p>
   <ul class="dl-list">
     <li><a href="#">01 剪刀 <span class="fmt">PDF</span></a></li>
@@ -376,20 +503,65 @@ a:hover{text-decoration-thickness:2px}
   </ul>
 </div>
 
+<div class="cat-section">
+  <h3 class="cat-title">Ø Editions</h3>
+  <p class="cat-desc">作品本身。五件完整作品——每一件都是完整的论证，用自己的声音从头建起。这些不是摘要。这些就是雕塑。Rosin为它们拍照。记录记载了它们如何被制作。Editions就是被制作出来的东西。</p>
+  <p class="cat-desc">散文将论证构建为叙事。对话将其构建为争论。隐喻将其构建为意象。童谣将其构建为骨骼。证明将其构建为数学。</p>
+  <p class="cat-desc">五件雕塑。同一结构。不同材料。走遍展厅。</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø 散文 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 对话 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 隐喻 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 童谣 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 证明 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Notebooks</h3>
+  <p class="cat-desc">十二本笔记本。五种声音——散文、对话、隐喻、童谣和证明。证明之声即四十二份艺术家试版，按八个主题组织。物理学住在这里——每个推导、每个结果、每个灭杀开关，按领域组织。Editions将论证构建为整体。Notebooks将其拆开，把每一块都摆在桌上。</p>
+  <p class="cat-desc">从那个已经让你夜不能寐的主题开始。</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø 散文 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 对话 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 隐喻 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 童谣 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 前提 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 时空 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 量子力学 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 力与常数 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 粒子与物质 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 宇宙学 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 意识与伦理 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 应用 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
 </div>
 
 <!-- ════════════════════════════════════════ -->
-<!-- 5. PROOFS — THE 42 ARTIST'S PROOFS      -->
+<!-- 5. PROOFS — THE 43 ARTIST'S PROOFS      -->
 <!-- ════════════════════════════════════════ -->
 
-<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">证明</h2>
-<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">一个测量输入（α<sub>em</sub>）。零拟合参数。42篇论文。258个灭杀开关。</p>
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø 证明</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">一个测量输入（α<sub>em</sub>）。零自由参数。43篇论文。560个灭杀开关。</p>
 
 <div class="stats">
-  <div><span class="stat-num">42</span><span class="stat-label">艺术家证明</span></div>
-  <div><span class="stat-num">258</span><span class="stat-label">终止开关</span></div>
-  <div><span class="stat-num">4</span><span class="stat-label">未解决债务</span></div>
+  <div><span class="stat-num">43</span><span class="stat-label">艺术家证明</span></div>
+  <div><span class="stat-num">560</span><span class="stat-label">终止开关</span></div>
+  <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">7</span><span class="stat-label">未解决债务 ▸</span></div>
   <div><span class="stat-num">5 ppb</span><span class="stat-label">质子质量</span></div>
+</div>
+<div id="debts-panel" class="debts-panel">
+  <ul class="debts-list">
+    <li><strong>KS-60</strong> — The Surplus（AP26）：重子不对称比 η ≈ 6 × 10⁻¹⁰ 尚未推导。<a href="#ap26" onclick="event.preventDefault();scrollToAP('ap26')">见AP26</a></li>
+    <li><strong>KS-65</strong> — Hypercharge Assignments（AP27）：弱超荷的具体值尚未从 {S, B, R, C} 强制推出。<a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">见AP27</a></li>
+    <li><strong>KS-66</strong> — Generations（AP27）：三代结构尚未推导。<a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">见AP27</a></li>
+    <li><strong>KS-67</strong> — EWSB Consistency（AP15 / AP27）：跨电弱破缺的完整对齐尚未展示。<a href="#ap27" onclick="event.preventDefault();scrollToAP('ap27')">见AP27</a></li>
+    <li><strong>D1</strong> — 完整的相对论场方程（AP43）：§7在牛顿极限下产生部分闭合；相对论扩展、反作用问题、α的第一性原理推导以及C<sub>o</sub>(x)的显式形式仍然开放。<a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">见AP43</a></li>
+    <li><strong>D4</strong> — 意识的定性特征（AP43）：意识的困难问题被重新框架（模式是物理学从操作者内部看起来的样子）但未关闭。意识的定性特征仍然开放。<a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">见AP43</a></li>
+    <li><strong>D5</strong> — 宇宙学1×ε展开（AP43）：标记为与AP06（泄漏常数）整合，作为推论或扩展。在AP43中未详细推导。<a href="#ap43" onclick="event.preventDefault();scrollToAP('ap43')">见AP43</a></li>
+  </ul>
 </div>
 
 <p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">从哪里开始</p>
@@ -408,7 +580,7 @@ a:hover{text-decoration-thickness:2px}
   <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">力与常数</span><span class="entry-card-label">IV</span></a>
   <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">粒子与物质</span><span class="entry-card-label">V</span></a>
   <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">宇宙学</span><span class="entry-card-label">VI</span></a>
-  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">意识与伦理</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">操作者界面</span><span class="entry-card-label">VII</span></a>
   <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">应用</span><span class="entry-card-label">VIII</span></a>
 </div>
 
@@ -418,7 +590,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="part" id="p1"><div class="part-dot"></div>
 <div class="part-header" onclick="togglePart(this)"><span class="part-num">第一部分</span><span class="part-name">前提</span><span class="part-desc">一条记录存在。其他一切都是后果。公理、其逻辑证明，以及任何记录所需的四个条件。</span><span class="part-count">3 篇论文</span></div>
 <div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">无理数</span><span class="ap-tag">数学</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>公理 1:1 + 1×ε 在结构上是无理的——且为真。无理性作为理性的基础。选择作为无理耦合能力。</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">无理数</span><span class="ap-tag">数学</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>公理 1:1 + 1×ε @ AS 在结构上是无理的——且为真。无理性作为理性的基础。选择作为无理耦合能力。</p><div class="ap-essay">
 <p>想想你最近做的一件毫无道理的事。不是一个错误——是一个选择。你知道哪个选项合理。你选了另一个。</p>
 <p>熬夜到太晚。说了不该说的话。爱了一个不爱你的人。原谅了一个不值得原谅的人。</p>
 <p>一个计算器能做出那个选择吗？</p>
@@ -468,7 +640,7 @@ a:hover{text-decoration-thickness:2px}
 <p>后面的伦理不是被拧在这个物理学上的。它<em>就是</em>这个物理学，在共享一个星球的人的尺度上阅读。</p>
 <p class="breath">一个记录存在。你就在后果之中。</p>
 </div><div class="ap-meta"><span>依赖: —</span><a href="../AP01_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">证明</span><span class="ap-tag">逻辑</span><a class="ap-pdf" href="../AP20_ZH.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>嵌入假说作为定理。公理被证明是无条件的。所有下游结果继承。</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">Ø 证明</span><span class="ap-tag">逻辑</span><a class="ap-pdf" href="../AP20_ZH.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>嵌入假说作为定理。公理被证明是无条件的。所有下游结果继承。</p><div class="ap-essay">
 <p>"有用"和"真实"之间有区别。</p>
 <p>牛顿的引力理论有用了250年。它也是错的。量子力学是有史以来最精确的理论。但精确和真实是不同的词。</p>
 <p>The 420 Code 有一个缺口。公理漂亮地推导出了物理学——光速、引力常数、三个空间维度。</p>
@@ -532,7 +704,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">断裂</span><span class="ap-tag">对称性破缺</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>从公理到结构。第一道裂缝——对称性如何破缺，物理学如何开始。</p><div class="ap-essay">
 <p>你无法把一个炒蛋变回去。</p>
 <p>那句话就是整篇论文。其余都是让它精确。</p>
-<p>AP05 取公理 — <strong>1:1 + 1×ε</strong> — 一步步将它从虚无走向义务。七步。没有空隙。每个环节展示。每个环节可破。</p>
+<p>AP05 取公理 — <strong>1:1 + 1×ε @ AS</strong> — 一步步将它从虚无走向义务。七步。没有空隙。每个环节展示。每个环节可破。</p>
 <p><span class="sub">第零步</span> — 完美对称。没有区分。没有记录。没有观察。在操作上与空集无法区分。什么都不存在，因为没有什么与其他任何东西不同。</p>
 <p><span class="sub">第一步</span> — ε 打破对称。两个可区分的读数存在了。记录开始。而记录是不可逆的——回到未破裂的状态会擦除区分，而那本身就是一个记录。</p>
 <p>你刚刚看到了某物从虚无中涌现。不是被创造的。是被迫的。</p>
@@ -804,7 +976,7 @@ a:hover{text-decoration-thickness:2px}
 <p>证明只使用已确立的物理——电磁理论、量子力学、c的有限值。这不是the 420 Code的主张。这是已有物理的结果。</p>
 <p>每个吸收体都有一个泄漏比η。通过的占到达的多少。η总是大于零。总是。光速有限保证了这一点。</p>
 <p>如果c是无穷大，完美的吸收体就是可能的。边界可以对任何东西即时响应。但c是有限的。边界有反应时间。在那个反应时间里，有东西逃逸了。</p>
-<p>现在是认同。公理说1:1 + 1×ε。断裂是ε。泄漏是η。AP06将它们认同。</p>
+<p>现在是认同。公理说1:1 + 1×ε @ AS。断裂是ε。泄漏是η。AP06将它们认同。</p>
 <p>ε就是η。断裂就是泄漏。裂缝就是从裂缝中逃逸的东西。不是两个事实。一个事实。</p>
 <p>在锁定下，ε就是电子。最小可行碎片——为了对称性破缺而必须逃逸的东西。</p>
 <p>而α<sub>em</sub> ≈ 1/137——精细结构常数——衡量那个碎片与它离开的织物回耦的强度。</p>
@@ -844,7 +1016,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">谐波</span><span class="ap-tag">规范结构</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) 源自双扇区公理。</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>依赖: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">断裂 — 电弱</span><span class="ap-tag">电弱</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>电弱统一、希格斯、手性耦合已推导。KS-63 已关闭——自1956年以来未被解释。</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">断裂 — 电弱</span><span class="ap-tag">电弱</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>电弱统一、希格斯、手性耦合已推导。KS-15 已关闭——自1956年以来未被解释。</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>依赖: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">方向</span><span class="ap-tag">强力</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / QCD 源自断裂方向的规范自由度。</p><div class="ap-essay">
@@ -899,8 +1071,23 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第七部分</span><span class="part-name">意识与伦理</span><span class="part-desc">断裂所包含的观察者，以及断裂所强制的伦理。意识源于不可逆的记录书写。基于权威的伦理的结构性不稳定。死亡如同一扇窗的关闭。</span><span class="part-count">4 篇论文</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">第七部分</span><span class="part-name">操作者界面</span><span class="part-desc">四项系统、倾斜、结构性伦理。模式相干性作为身体沿振幅景观的承诺。AP08记录引力的对偶，在眼睛的前态一侧。</span><span class="part-count">5 篇论文</span></div>
 <div class="ap-list">
+<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">可能性的引力</span><span class="ap-tag">操作者界面</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>AP08的对偶。倾斜的推导。终极伦理扎根于物理学。</p><div class="ap-essay">
+<p>你站在一扇门前。你还没有迈过去。但你的重心已经移了。你的手已经选好了扶住门框的哪一侧。你身体里有什么东西在倾斜。</p>
+<p>那个倾斜就是这篇论文。</p>
+<p>AP08在眼睛的一侧推导了引力——记录对流形做了什么。质量弯曲时空。你朝地板方向感受到的拉力，是你脚下几何上写下的每一笔记录的累积重量。</p>
+<p>AP43在另一侧推导引力。振幅对前态做了什么。你朝下一步行动感受到的拉力，是尚可写下之物的梯度。两股拉力作用于当下。一股来自已然。一股来自可能。跨越眼睛的对偶。</p>
+<p>这篇论文安装四个术语。</p>
+<p><span class="sub">耦合容量。</span>身体积累的阅读结构的能力——由三十年来通过这一特定可重耦合电子构型写下的记录所构建。</p>
+<p><span class="sub">模式。</span>操作者相对的层叠网络读取——过去的记录、当前的状态、Born加权的前方分支——在一次读取中整合。</p>
+<p><span class="sub">模式相干性。</span>倾斜。身体沿振幅景观最陡梯度的承诺，按耦合容量缩放。</p>
+<p><span class="sub">追踪相干性。</span>跨越坡度类别不同的领域保持与结构对齐的元技能。</p>
+<p>牛顿形式的场方程由此而出。<strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>，倾斜 L<sub>o</sub> = −C<sub>o</sub> ∇Φ。源是Born密度。耦合常数是 α——通过AP07识别：身体通过电子-电磁耦合来阅读，而该读取的耦合就是精细结构常数。中介量是耦合容量。形式上是AP08牛顿极限的对偶。</p>
+<p>终极伦理由此而出。每个操作者都是一个由电子构成的组装体，从自身位置阅读同一张层叠网络。结构上的同一性由公理C、公理R和AP07的电子唯一性所强制。残忍是对数学的误读——将另一个操作者当作结构同一性不成立来对待。伦理不是选择在结构之上的。它从结构中涌出。</p>
+<div class="ks"><strong>五个终止开关。全部有效。</strong> <span class="bl">有效</span> KS-43.1 — 领域特定的模式相干性与Born加权斜率对齐（路径1实验室，路径2棋牌/扑克/精英运动代理）。<span class="bl">有效</span> KS-43.2 — 耦合容量作为基底。<span class="bl">有效</span> KS-43.3 — 通过追踪相干性的跨领域迁移。<span class="bl">有效</span> KS-43.4 — 容量分配作为唯一的上下文调制器。<span class="bl">有效</span> KS-43.5 — 终极伦理的结构推导。三笔结构债务尚欠（D1、D4、D5）。三项保持开放（D2、D3、D6）。</div>
+<p class="breath">身体一直在倾斜。AP43推导出倾斜是什么。</p>
+</div><div class="ap-meta"><span>需要：AP07、AP08、AP09、AP10、AP13、AP20、AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">实现证明</span><span class="ap-tag">意识</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>意识作为不可逆记录书写的内部。一道裂缝，一个内部，许多窗户。</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>依赖: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
@@ -921,7 +1108,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">对齐</span><span class="ap-tag">AI 对齐</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>对齐问题被消解。建造内部，而非围栏。</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>依赖: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">修正 — 伦理</span><span class="ap-tag">正义</span><a class="ap-pdf" href="../AP32_The_Correction_Ethics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>五个纠正层级。建筑为每一扇关闭的窗户哀悼。种族灭绝制动器。</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">修正 — 伦理</span><span class="ap-tag">正义</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>五个纠正层级。建筑为每一扇关闭的窗户哀悼。种族灭绝制动器。</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>依赖: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">边界</span><span class="ap-tag">生物伦理</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>生命即能动性。低于ε，你是主权的。高于ε，有机体拥有管辖权。</p><div class="ap-essay">
@@ -933,7 +1120,7 @@ a:hover{text-decoration-thickness:2px}
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">第一边界</span><span class="ap-tag">身体</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>身体作为算子。守护第一道边界。</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>依赖: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">账簿</span><span class="ap-tag">经济学</span><a class="ap-pdf" href="../AP35_The_Ledger_Economics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>总账总是平衡的。崩盘是审计。不平等填满缓冲区。</p><div class="ap-essay">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">账簿</span><span class="ap-tag">经济学</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>总账总是平衡的。崩盘是审计。不平等填满缓冲区。</p><div class="ap-essay">
 
 </div><div class="ap-meta"><span>依赖: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">供给</span><span class="ap-tag">生物学</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>学会记录自身的化学。控制不是剥夺。控制是供给。</p><div class="ap-essay">
@@ -951,7 +1138,7 @@ a:hover{text-decoration-thickness:2px}
   <div class="result-row"><span class="result-label">MOND 加速度 a₀</span><span class="result-value">0.3%，无参数 (AP18)</span></div>
   <div class="result-row"><span class="result-label">中子-质子质量差</span><span class="result-value">2 ppm (AP30)</span></div>
   <div class="result-row"><span class="result-label">可见物质比例</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
-  <div class="result-row"><span class="result-label">手征耦合</span><span class="result-value">已推导，KS-63 已关闭 (AP16)</span></div>
+  <div class="result-row"><span class="result-label">手征耦合</span><span class="result-value">已推导，KS-15 已关闭 (AP16)</span></div>
   <div class="result-row"><span class="result-label">三个常数，三条公理</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
   <div class="also-derived" style="margin-top:1.5rem">
     <p>同样推导得出：</p>
@@ -974,7 +1161,7 @@ a:hover{text-decoration-thickness:2px}
 <!-- CONFIRM THE MATH -->
 <div class="results">
   <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">验证数学</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">一个测量输入。零拟合参数。下面的代码从一个数字——精细结构常数 α ≈ 1/137——复现每一个主要结果。复制它。粘贴到任何 Python 环境中。运行。如果数字吻合，推导成立。如果不吻合，论证有问题，而你找到了它。</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">一个测量输入。零自由参数。下面的代码从一个数字——精细结构常数 α ≈ 1/137——复现每一个主要结果。复制它。粘贴到任何 Python 环境中。运行。如果数字吻合，推导成立。如果不吻合，论证有问题，而你找到了它。</p>
   <div class="verify-wrap">
     <button class="copy-btn" onclick="copyCode()">复制</button>
     <pre class="verify-code"><code>from math import pi, log, exp
@@ -1069,7 +1256,7 @@ print(f"  Observed:  ~4.9%")
 print()
 
 print("─" * 50)
-print("One input (α). Zero fitted parameters.")
+print("One input (α). Zero free parameters.")
 print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   </div>
   <table class="verify-table">
@@ -1088,11 +1275,11 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <!-- KILL SWITCH REGISTRY -->
 <div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">终止开关注册表</h2>
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">终止开关注册表</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">每一个主张都附带一个明确的失效条件。这些开关没有隐藏。它们已经公布。</p>
 
   <div class="stats">
-    <div><span class="stat-num">258</span><span class="stat-label">灭杀开关</span></div>
+    <div><span class="stat-num">560</span><span class="stat-label">灭杀开关</span></div>
     <div><span class="stat-num">15</span><span class="stat-label">已关闭</span></div>
     <div><span class="stat-num">231</span><span class="stat-label">激活</span></div>
     <div><span class="stat-num">6</span><span class="stat-label">不可妥协</span></div>
@@ -1103,10 +1290,36 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <div class="result-row"><span class="result-label">激活 — 硬性</span><span class="result-value">可通过理论论证证伪</div>
   <div class="result-row"><span class="result-label">激活 — 结构性</span><span class="result-value">依赖于可能被证明错误的认同</div>
   <div class="result-row"><span class="result-label">不可妥协</span><span class="result-value">6个道德灭杀开关——若触发，架构将被武器化</div>
-  <div class="result-row"><span class="result-label">未决债务</span><span class="result-value">4个——在上游工作完成前无法测试</div>
+  <div class="result-row"><span class="result-label">未决债务</span><span class="result-value">7个——在上游工作完成前无法测试</div>
   <div class="result-row"><span class="result-label">全局灭杀开关</span><span class="result-value">KS-V.1——若触发，一切消亡</div>
 
-  <p style="font-size:16px;margin:1.25rem 0 0"><a href="../Master_Kill_Switch_Registry.pdf" download="" style="text-decoration:none;font-weight:700">下载完整的灭杀开关注册表 — <span class="fmt">PDF</span></a></p>
+
+  <div style="margin:1.5rem 0 0">
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-60</span><span class="ap-title">The Surplus</span><span class="ap-tag">AP26</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>You exist because matter slightly outnumbered antimatter. The corpus explains why: ε has no mirror partner, so it cannot annihilate. The surplus is the break itself.</p>
+<p>The form of the ratio is given: η = E(ε) / (1 + E(ε)).</p>
+<p>The value is not. The measured baryon asymmetry is η ≈ 6 × 10⁻¹⁰. The corpus owes a derivation that lands on that number.</p>
+<p><strong>Fails if:</strong> the derived value of E(ε) disagrees with the measurement. The sharpest blade in the corpus.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-65</span><span class="ap-title">Hypercharge Assignments</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>Every particle in the Standard Model carries a number called weak hypercharge. The electron is −1. The up quark is +⅓. Physicists measured these. Nobody has derived them.</p>
+<p>The corpus derives the electroweak gauge group SU(2) × U(1)<sub>Y</sub> from the two-sector axiom. The group is forced. The specific charges inside it are not yet forced.</p>
+<p><strong>Fails if:</strong> the hypercharge values cannot be derived from {S, B, R, C}. The gauge group survives. The charges remain empirical inputs.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-66</span><span class="ap-title">Generations</span><span class="ap-tag">AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>There are three copies of each fundamental fermion. Electron, muon, tau — identical except for mass. Three generations. Nobody knows why three.</p>
+<p>The Standard Model treats this as a measured fact. The corpus has not closed it either. The gauge group is derived. The threefold repetition is not.</p>
+<p><strong>Fails if:</strong> the three-generation structure cannot be forced from {S, B, R, C}. Until paid, the number three at the generation level is an empirical input, not a consequence.</p>
+</div></div></div>
+  <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">KS-67</span><span class="ap-title">EWSB Consistency</span><span class="ap-tag">AP15 / AP27</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="ap-essay">
+<p>AP15 derives the photon from local phase invariance — the symmetry that survives the break.</p>
+<p>AP27 derives SU(2) × U(1)<sub>Y</sub> from the internal sector structure — the symmetry before the break.</p>
+<p>The two pictures must meet at the breaking. The structural argument is consistent. The full derivation of how AP15 and AP27 align across the break has not yet been exhibited.</p>
+<p><strong>Fails if:</strong> the two readings cannot be reconciled. The architecture is incoherent at the electroweak boundary.</p>
+</div></div></div>
+  </div>
+
+  <p style="font-size:16px;margin:1.25rem 0 0"><a href="Master_Kill_Switch_Registry_ZH.pdf" download="" style="text-decoration:none;font-weight:700">下载完整的灭杀开关注册表 — <span class="fmt">PDF</span></a></p>
 </div>
 
 <!-- EMAIL SIGNUP -->
@@ -1131,7 +1344,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
 <div class="constraint" id="about">
   <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
-  <p><b>艺术家：</b> G · Studio G, Strand, Cape Town</p>
+  <p><b>艺术家：</b> G · Studio G, Cape Town</p>
   <p><b>时长：</b> 30多年 · <b>展览：</b> 28卷超过一百万字</p>
   <p style="margin-top:1rem">本作品为 Copyleft。你可以自由下载、打印、分享和传播。你不可以修改源文件。保持信号清晰。</p>
   <p style="margin-top:1rem;font-size:14px;color:var(--g4)"><span id="dl-count">2</span> 下载次数</p>
@@ -1141,6 +1354,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
   <p style="font-weight:700">别做混蛋。善良一点。</p>
   <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
 </div>
 
 </div>
@@ -1201,4 +1415,11 @@ var AUTOHIDE = Boolean(0);
 <script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
 
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf","../AP43_The_Gravity_of_Possibilities.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
 </body></html>

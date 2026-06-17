@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="it" style="scroll-padding-top:56px"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the 420 code — l'etica derivata dalla fisica</title>
+<meta name="description" content="Si può derivare l'etica dalla fisica? The 420 Code dice di sì. 42 Prove d'Artista. Oltre un milione di parole. Un dato misurato. Zero parametri regolati. Copyleft. Gratis per sempre.">
+<link rel="canonical" href="https://the420code.org/it/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the420code.org/it/">
+<meta property="og:title" content="the 420 code — l'etica derivata dalla fisica">
+<meta property="og:description" content="L'etica può essere derivata dalla fisica? The 420 Code dice di sì. 42 Prove d'Artista. Oltre un milione di parole. Un input misurato. Zero parametri aggiustati. Copyleft. Gratis per sempre.">
+<meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="the 420 code">
+<meta property="og:locale" content="it">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="the 420 code — l'etica derivata dalla fisica">
+<meta name="twitter:description" content="L'etica può essere derivata dalla fisica? The 420 Code dice di sì. 42 Prove d'Artista. Oltre un milione di parole. Un input misurato. Zero parametri aggiustati. Copyleft. Gratis per sempre.">
+<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<link rel="apple-touch-icon" href="../Eye_of_the_Universe.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="author" content="G — Studio G">
+<link rel="icon" type="image/jpeg" href="../Eye_of_the_Universe.jpg">
+<meta name="citation_doi" content="10.5281/zenodo.19208226">
+<link rel="alternate" hreflang="en" href="https://the420code.org/">
+<link rel="alternate" hreflang="es" href="https://the420code.org/es/">
+<link rel="alternate" hreflang="fr" href="https://the420code.org/fr/">
+<link rel="alternate" hreflang="de" href="https://the420code.org/de/">
+<link rel="alternate" hreflang="pt" href="https://the420code.org/pt/">
+<link rel="alternate" hreflang="nl" href="https://the420code.org/nl/">
+<link rel="alternate" hreflang="it" href="https://the420code.org/it/">
+<link rel="alternate" hreflang="zh" href="https://the420code.org/zh/">
+<link rel="alternate" hreflang="ja" href="https://the420code.org/ja/">
+<link rel="alternate" hreflang="ko" href="https://the420code.org/ko/">
+<link rel="alternate" hreflang="ru" href="https://the420code.org/ru/">
+<link rel="alternate" hreflang="ar" href="https://the420code.org/ar/">
+<link rel="alternate" hreflang="hi" href="https://the420code.org/hi/">
+<link rel="alternate" hreflang="x-default" href="https://the420code.org/">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--g4:#595959;--g5:#595959;--g6:#1a1a1a;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:16px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
+.nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+
+.section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+
+.hero{margin:2rem 0 3rem}
+.hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 2.5rem}
+.hero .lead{font-size:18px;font-style:italic;margin:0 0 .5rem}
+
+.steps{margin:1.5rem 0 2rem;padding:0;counter-reset:step}
+.steps li{list-style:none;padding:0 0 0 2rem;position:relative;margin:0 0 .35rem;font-size:16px}
+.steps li::before{counter-increment:step;content:counter(step)".";position:absolute;left:0;font-weight:700;color:var(--g4);font-size:16px}
+
+.doors{margin:2rem 0 0;padding:2rem 0}
+.doors h2{font-size:26px;font-weight:700;margin:0 0 .25rem}
+.doors .sub{font-size:16px;color:var(--g5);margin:0 0 2.5rem}
+.door{margin:0 0 3.5rem}
+.door h3{font-size:18px;font-weight:700;margin:0 0 .15rem}
+.door h3 a{text-decoration:none}
+.door h3 a:hover{text-decoration:underline}
+.door p{font-size:16px;color:var(--g6);margin:0 0 .25rem}
+.door .hint{font-size:16px;color:var(--g4);font-style:italic}
+.voices{margin:.75rem 0 0}
+.voice{margin:0 0 .4rem}
+.voice b{font-size:16px}
+.voice span{font-size:16px;color:var(--g5)}
+
+.read-block{margin:0 0 1.5rem;padding:2rem;border:1px solid var(--g2);background:var(--g1)}
+.read-block p{font-size:16px;font-style:italic;color:var(--g5);margin:0}
+
+.cat-section{margin:0 0 3.5rem}
+.cat-title{font-size:18px;font-weight:700;margin:0 0 .75rem}
+.cat-desc{font-size:16px;color:var(--g5);margin:0 0 1rem}
+.cat-hint{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 .75rem}
+.dl-list{margin:0;padding:0 0 0 32px}
+.dl-list li{list-style:none;padding:.4rem 0;border-bottom:1px solid var(--g1);font-size:16px}
+.dl-list li:last-child{border-bottom:none}
+.dl-list a{text-decoration:none;display:flex;justify-content:space-between;align-items:center;color:var(--bk);font-weight:600}
+.dl-list a:hover{text-decoration:underline}
+.dl-list .fmt{font-size:16px;font-weight:700;color:var(--g4);flex-shrink:0;margin-left:.5rem}
+
+.spine{position:relative;padding-left:32px}
+.spine::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--bk)}
+.part{position:relative;margin:0 0 2.5rem}
+.part-dot{position:absolute;left:-32px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--bk);z-index:1}
+.part-header{cursor:pointer;user-select:none;padding:0 0 .5rem}
+.part-header:hover .part-name{text-decoration:underline}
+.part-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 1rem}
+.part-name{font-size:22px;font-weight:700;display:block;line-height:1.2}
+.part-desc{font-size:16px;color:var(--g5);font-style:italic;display:block;margin:1rem 0 0}
+.part-count{font-size:16px;color:#757575;margin:4px 0 0;display:block}
+.part-read{display:inline-block;margin-top:.5rem;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--bk);text-decoration:none;border-bottom:1px solid var(--bk)}
+.part-read:hover{text-decoration:none;border-bottom-width:2px}
+.ap-list{margin:.75rem 0 0;overflow:hidden;transition:max-height .4s ease}
+.ap-list.collapsed{max-height:0!important;margin:0}
+.ap-row{border-top:1px solid var(--g2)}
+.ap-row:last-child{border-bottom:1px solid var(--g2)}
+.ap-header{display:flex;align-items:baseline;gap:.75rem;padding:.6rem 0;cursor:pointer;user-select:none;transition:background .1s}
+.ap-header:hover{background:var(--g1);margin:0 -.5rem;padding-left:.5rem;padding-right:.5rem}
+.ap-number{font-size:16px;font-weight:700;color:#757575;min-width:32px;flex-shrink:0}
+.ap-title{font-size:16px;font-weight:700;flex:1}
+.ap-tag{font-size:16px;color:var(--g5);border:1px solid var(--g2);padding:1px 8px;border-radius:2px;white-space:nowrap;flex-shrink:0}
+.ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
+.ap-row.open .ap-arrow{transform:rotate(90deg)}
+.ap-detail{display:none;padding:0 0 1rem;padding-left:32px}
+.ap-row.open .ap-detail{display:block}
+.ap-detail p{font-size:16px;line-height:1.6;margin:0 0 .5rem;color:var(--g6)}
+.ap-detail .ap-essay{margin-top:1.5rem}
+.ap-detail .ap-essay p{margin:0 0 1rem;line-height:1.75}
+.ap-detail .ap-essay .sub{font-weight:700}
+.ap-detail .ap-essay .ks{background:var(--g1);border-left:3px solid #8B6914;padding:16px 20px;margin:24px 0;font-size:15px;color:#3a3a3a;line-height:1.6}
+.ap-detail .ap-essay .breath{text-align:center;font-style:italic;color:var(--g5);padding:40px 0;font-size:17px;margin:0}
+.ap-detail .ap-essay .bc{display:inline-block;font-size:11px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-detail .ap-essay .bl{display:inline-block;font-size:11px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
+.ap-meta a{color:#383838}
+
+.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 2rem}
+.stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
+.stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
+
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
+.entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
+.entry-card:hover{background:var(--bk);color:var(--wh)}
+.entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
+.entry-card-desc{font-size:16px;display:block;opacity:.7}
+.jump-card{position:relative}
+.jump-card .entry-card-label{font-size:12px;font-weight:700;color:#757575;position:absolute;bottom:4px;right:8px;margin:0}
+.jump-card .entry-card-desc{font-size:16px;font-weight:700;display:block;opacity:1}
+
+.physics{margin:2.5rem 0 0;padding:2.5rem 0}
+.physics h2{font-size:26px;font-weight:700;margin:0 0 1.5rem}
+.physics-intro{font-size:18px;font-weight:700;margin:0 0 .5rem}
+.physics-sub{font-size:16px;color:var(--g5);margin:0 0 2rem}
+.physics-grid{display:grid;grid-template-columns:1fr;gap:0;margin:0 0 2rem}
+.physics-card{display:flex;align-items:baseline;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--g1);gap:1rem}
+.physics-card:last-child{border-bottom:none}
+.p-name{font-size:16px;font-weight:700;flex:1}
+.p-error{font-size:22px;font-weight:700;white-space:nowrap}
+.p-detail{font-size:14px;color:var(--g5);margin:2px 0 0}
+.p-source{font-size:13px;color:var(--g4)}
+.formula{font-size:16px;margin:0 0 .75rem;padding:.5rem 0;font-style:italic;color:var(--g6)}
+.three-constants{font-size:16px;font-weight:700;margin:1.5rem 0;padding:1rem 0;border-top:1px solid var(--g2);border-bottom:1px solid var(--g2)}
+.also-derived{margin:1.5rem 0}
+.also-derived p{font-size:16px;font-weight:700;margin:0 0 .5rem}
+.also-derived ul{list-style:none;padding:0}
+.also-derived li{font-size:16px;color:var(--g6);padding:.2rem 0 .2rem 1rem;position:relative}
+.also-derived li::before{content:"·";position:absolute;left:0;font-weight:700}
+.confirm-link{margin:2rem 0 0;font-size:18px}
+.confirm-link a{font-weight:700;text-underline-offset:3px}
+@media(max-width:600px){.physics-card{flex-wrap:wrap;gap:.25rem}.p-error{font-size:18px}}
+.verify-wrap{position:relative;margin:1.5rem 0 0}
+.verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:200px;font-size:13px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
+.copy-btn{position:absolute;top:8px;right:8px;padding:5px 14px;font-family:var(--f);font-size:12px;font-weight:700;letter-spacing:.04em;background:var(--bk);color:var(--wh);border:none;cursor:pointer}
+.copy-btn:hover{opacity:.8}
+.verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:14px}
+.verify-table th{text-align:left;font-weight:700;padding:.5rem .5rem;border-bottom:2px solid var(--bk);font-size:13px;letter-spacing:.04em;color:var(--g5)}
+.verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
+.verify-table td:last-child{color:var(--g5)}
+.results{margin:0;padding:2rem 0}
+.results-title{font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 1.25rem}
+.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.35rem 0;font-size:16px;border-bottom:1px solid var(--g1)}
+.result-row:last-child{border-bottom:none}
+.result-label{color:var(--g5)}
+.result-value{font-weight:700;text-align:right}
+
+.constraint{margin:2rem 0;padding:1.5rem 0}
+.constraint p{font-size:16px;margin:0 0 .25rem}
+
+.footer{margin:3rem 0 0;padding:2rem 0 0;font-size:16px;color:var(--g4)}
+.footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+
+@media(max-width:600px){
+  .c{padding:2rem 1rem 3rem}
+  .hero h1{font-size:28px}
+  .stats{gap:1.5rem}
+  .stat-num{font-size:28px}
+  .ap-header{flex-wrap:wrap;gap:.25rem .5rem}
+  .ap-tag{order:3;margin-left:32px}
+  .entry-grid{grid-template-columns:1fr 1fr}
+  .nav{gap:.75rem;padding:.75rem 0}
+}
+/* Brevo overrides */
+.sib-form,.sib-form *{font-family:'Atkinson Hyperlegible',sans-serif!important;color:var(--bk)!important;background:transparent!important;border-radius:0!important}
+.sib-form .entry__field input{border:1px solid var(--bk)!important;padding:10px 12px!important;font-size:16px!important}
+.sib-form .sib-form-block__button{background:var(--bk)!important;color:var(--wh)!important;padding:10px 24px!important;font-size:13px!important;font-weight:700!important;letter-spacing:.06em!important;border:none!important}
+.sib-form .sib-form-block__button:hover{opacity:.85}
+[id*="sib-container"]{padding:0!important;background:transparent!important}
+.sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+</style>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style><style>
+.lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
+.lang-sel a:hover{opacity:1}
+.lang-sel a.active{opacity:1}
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
+</head>
+<body>
+<div class="c">
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="#five-doors">cinque porte</a>
+  <a href="#exhibition">esposizione</a>
+  <a href="#proofs">prove</a>
+<div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" class="active" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
+</nav>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1. THE QUESTION                         -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="hero">
+  <h1>L'etica può essere derivata dalla fisica?</h1>
+  <p class="lead">The 420 Code dice <b>sì</b>.</p>
+  <p style="margin-top:1rem">Un registro esiste — e da quel singolo fatto, tutta la fisica e un'etica vengono derivate.</p>
+</div>
+
+<ol class="steps">
+  <li>Un registro esiste.</li>
+  <li>Un registro richiede quattro condizioni: simmetria, rottura, registro, vincolo.</li>
+  <li>Da queste quattro condizioni, tutta la fisica viene derivata.</li>
+  <li>La frattura e il vedere sono lo stesso evento.</li>
+  <li>L'interno è singolare.</li>
+  <li>Ogni essere consapevole è una finestra in un unico edificio.</li>
+  <li>La linea tra sé e l'altro è uno strumento scambiato per una misurazione.</li>
+  <li>Qualsiasi etica derivata da un'autorità esterna alla struttura della realtà è manipolabile. I sistemi manipolabili collassano nella violenza.</li>
+  <li>La gentilezza non è un comandamento. La gentilezza è una derivazione.</li>
+  <li>Non essere uno stronzo. Sii gentile.</li>
+</ol>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE PHYSICS                              -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="physics" id="physics">
+  <h2>La Fisica</h2>
+  <p class="physics-intro">Un dato misurato. Zero parametri regolati. Tutto il resto derivato.</p>
+  <p class="physics-sub">La costante di struttura fine α ≈ 1/137 è l'unico numero misurato sperimentalmente. Da quell'unico dato e quattro assiomi, i seguenti risultati sono derivati — non regolati, non aggiustati, non calibrati.</p>
+
+  <div class="physics-grid">
+    <div class="physics-card"><div><div class="p-name">Rapporto di massa protone-elettrone</div><div class="p-detail">Predicted 1836.15267344 · Measured 1836.15267343</div><div class="p-source"><a href="#ap30" onclick="event.preventDefault();scrollToAP('ap30')">AP30</a></div></div><div class="p-error">5 ppb</div></div>
+    <div class="physics-card"><div><div class="p-name">Costante gravitazionale G</div><div class="p-detail">Predicted 6.721 × 10⁻¹¹ · Measured 6.674 × 10⁻¹¹</div><div class="p-source"><a href="#ap28" onclick="event.preventDefault();scrollToAP('ap28')">AP28</a></div></div><div class="p-error">0.69%</div></div>
+    <div class="physics-card"><div><div class="p-name">Differenza di massa neutrone-protone</div><div class="p-detail">Predicted 2.53099 mₑ · Measured 2.53099 mₑ</div><div class="p-source"><a href="#ap30" onclick="event.preventDefault();scrollToAP('ap30')">AP30</a></div></div><div class="p-error">2 ppm</div></div>
+    <div class="physics-card"><div><div class="p-name">Accelerazione MOND a₀</div><div class="p-detail">a₀ = αcH₀/(2π) · Parameter-free</div><div class="p-source"><a href="#ap18" onclick="event.preventDefault();scrollToAP('ap18')">AP18</a></div></div><div class="p-error">0.3%</div></div>
+    <div class="physics-card"><div><div class="p-name">Partizione del settore oscuro</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42" onclick="event.preventDefault();scrollToAP('ap42')">AP42</a></div></div><div class="p-error">0.06%</div></div>
+  </div>
+
+  <p class="confirm-link"><strong>Confermalo tu stesso.</strong> <a href="#confirm-the-math">Esegui il codice →</a></p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Le Cinque Porte</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Cinque porte. Un edificio.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code è un'esposizione — oltre un milione di parole di un solo artista, ospitate in un solo edificio. Dentro l'edificio: le Prove d'Artista, i Quaderni, le Edizioni, i Registri, gli Interruttori di Sicurezza. L'opera completa.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Non si entra in un edificio dal tetto. Si entra da una porta.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Queste sono le cinque porte. Ognuna apre sulla stessa stanza. Trova quella che si apre per te. L'esposizione è all'interno.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">L'Illusione dell'Altro — la porta gentile. Cuore.</h3>
+  <p class="cat-desc">Hai tracciato una linea tra te e ogni persona che hai mai incontrato. Questo libro la cancella. Niente gergo. Niente equazioni. Nessun prerequisito. Se leggi una sola cosa di questa esposizione, leggi questa.</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_IT.pdf">L'Illusione dell'Altro <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Essere dopo la religione — la porta principale. Demolizione.</h3>
+  <p class="cat-desc">La struttura che produce violenza non sono le persone — è il design. Questo libro nomina ogni meccanismo, esamina ogni tradizione, e mostra perché un mondo dopo la religione non è vuoto ma arrivo.</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_IT.pdf">Essere dopo la religione <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Antichristos — la porta sacra. Recupero.</h3>
+  <p class="cat-desc">Duemila anni fa, un uomo stava su una collina e insegnava un'etica. Ama il prossimo tuo. Non giudicare. Sii gentile. Questo libro pone una domanda: l'insegnamento è vero? Non perché un dio l'ha detto — ma perché la struttura della realtà lo dice. La risposta è sì.</p>
+  <ul class="dl-list">
+    <li><a href="../Antichristos.pdf">Antichristos <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Il Corridoio Relazionale — la porta personale. Presenza.</h3>
+  <p class="cat-desc">L'amore non è un sentimento. È una scelta sostenuta di mantenere il corridoio aperto di fronte a ogni calcolo razionale che dice che restringerlo costa meno. Questo libro deriva la geometria di due persone che camminano insieme — larghezza dall'onestà, lunghezza dal tempo, e l'asimmetria tra ciò che si piega e ciò che non si piega. Scritto mentre il corridoio che descrive si chiudeva in tempo reale.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Relationship_Corridor.pdf">Il Corridoio Relazionale <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">L'Interiore — la porta operativa. Costruzione.</h3>
+  <p class="cat-desc">L'allineamento dell'IA è un problema di fisica. Questo libro lo deriva da principi primi — gli stessi assiomi che producono la gravità, la meccanica quantistica e l'etica terminale. Architettura B: geometria decisionale costruita dalla struttura, non dall'autorità.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE EXHIBITION                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="exhibition" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">L'Esposizione</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Sei dentro l'edificio. Un argomento. Ogni voce in cui può essere detto.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">L'esposizione è come l'argomento è stato costruito — in trent'anni, con cinque voci, attraverso ogni registro che ha saputo trovare. Le cinque porte sopra sono il punto di partenza. Tutto ciò che segue è quello che trovi una volta dentro.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Cinque voci attraversano l'intera esposizione. La Prosa racconta la storia. La Conversazione la discute al bar. La Metafora la mostra con monete, giardini, fiumi ed edifici. La Filastrocca la spoglia fino all'osso. Le Prove ti consegnano la matematica e una lama.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Inizia con una porta. Torna qui quando vorrai vedere tutto ciò che c'è dentro.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Rosin</h3>
+  <p class="cat-desc">Il catalogo. Premi calore nel fiore e quello che gocciola è la cosa stessa — concentrata, nulla aggiunto, nulla perso. Cinque libri in cinque voci. Ognuno percorre l'intero argomento in un'unica compressione — la foto e la descrizione di ogni scultura dell'esposizione. Inizia con la voce che suona come la tua.</p>
+  <ul class="dl-list">
+    <li><a href="#">Rosin Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Conversazione <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Metafora <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Filastrocca <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Prove <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">I Registri</h3>
+  <p class="cat-desc">Cinque registrazioni. L'output grezzo di un progetto trentennale — errori, scoperte, vicoli ciechi e i momenti in mezzo.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — Le Forbici.</strong> Scritto quattro mesi dopo l'omicidio di un fratello. Il lutto in cerca di struttura. Qui è iniziato The 420 Code — non in una biblioteca, ma in una ferita.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — Il Vento.</strong> Una vita tenuta davanti agli assiomi per vedere cosa sopravvive. Cosa si è rotto, cosa ha retto, come appare la struttura dall'interno di un corpo che l'ha messa alla prova.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — Sei Certo?</strong> La demolizione strutturale di ogni sistema che abbia mai rivendicato un'autorità che non poteva dimostrare. La prova è il danno. Il danno è l'argomento.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — Non Essere Uno Stronzo, Sii Gentile.</strong> L'etica arriva. Non come conclusione — come eruzione. Sentita prima. Dimostrata dopo.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — Vaffanculo, Lasciami in Pace.</strong> Un'autobiografia. La persona dietro la mostra anonima.</p>
+  <p class="cat-desc">I Registri non sono rifiniti. Non sono organizzati. Non sono sicuri. Inizia qui se vuoi la verità prima che imparasse a vestirsi.</p>
+  <ul class="dl-list">
+    <li><a href="#">01 Le Forbici <span class="fmt">PDF</span></a></li>
+    <li><a href="#">02 Il Vento <span class="fmt">PDF</span></a></li>
+    <li><a href="#">03 Sei Certo? <span class="fmt">PDF</span></a></li>
+    <li><a href="#">04 Non Essere Uno Stronzo, Sii Gentile <span class="fmt">PDF</span></a></li>
+    <li><a href="#">05 Vaffanculo, Lasciami in Pace <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Editions</h3>
+  <p class="cat-desc">La mostra principale. Cinque opere complete — ciascuna l'intero argomento, costruito da zero nella propria voce. Non sono riassunti. Sono le sculture. Rosin le fotografa. Notebooks le indicizzano. I Registri documentano come sono state fatte. Editions sono ciò che è stato fatto.</p>
+  <p class="cat-desc">La Prosa costruisce l'argomento come narrazione. La Conversazione lo costruisce come disputa. La Metafora lo costruisce come immagine. La Filastrocca lo costruisce come ossatura. Le Prove lo costruiscono come matematica.</p>
+  <p class="cat-desc">Cinque sculture. Stessa struttura. Materiale diverso. Percorri la sala.</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Conversazione <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Metafora <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Filastrocca <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Prove <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Notebooks</h3>
+  <p class="cat-desc">Dodici quaderni. Cinque voci — Prosa, Conversazione, Metafora, Filastrocca e Prove. La voce delle Prove sono le quarantadue Prove d'Artista, organizzate in otto argomenti. La fisica vive qui — ogni derivazione, ogni risultato, ogni kill switch, organizzato per campo. Editions costruiscono l'argomento intero. Notebooks lo smontano e posano ogni pezzo sul tavolo.</p>
+  <p class="cat-desc">Inizia con l'argomento che già ti toglie il sonno.</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Conversazione <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Metafora <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Filastrocca <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø La Premessa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Spaziotempo <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Meccanica quantistica <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Forze e costanti <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Particelle e materia <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Cosmologia <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Coscienza e l'etica <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Applicazioni <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 5. PROOFS — THE 42 ARTIST'S PROOFS      -->
+<!-- ════════════════════════════════════════ -->
+
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Le Prove</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Un input misurato (α<sub>em</sub>). Zero parametri aggiustati. 42 articoli. 546 kill switch.</p>
+
+<div class="stats">
+  <div><span class="stat-num">42</span><span class="stat-label">Prove d'Artista</span></div>
+  <div><span class="stat-num">546</span><span class="stat-label">Interruttori di sicurezza</span></div>
+  <div><span class="stat-num">4</span><span class="stat-label">Debiti aperti</span></div>
+  <div><span class="stat-num">5 ppb</span><span class="stat-label">Massa del protone</span></div>
+</div>
+
+<p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">Da dove iniziare</p>
+<div class="entry-grid">
+  <a class="entry-card" href="#p7"><span class="entry-card-label">Lettore generale</span><span class="entry-card-desc">AP39 → AP34 → AP02</span></a>
+  <a class="entry-card" href="#p4"><span class="entry-card-label">Fisico</span><span class="entry-card-desc">AP28 → AP30 → AP25</span></a>
+  <a class="entry-card" href="#p1"><span class="entry-card-label">Filosofo</span><span class="entry-card-desc">AP40 → AP29 → AP41</span></a>
+  <a class="entry-card" href="#p8"><span class="entry-card-label">Ricercatore IA</span><span class="entry-card-desc">AP31 → AP29 → AP02</span></a>
+</div>
+
+<p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:2rem 0 .75rem">Vai alla Parte</p>
+<div class="entry-grid">
+  <a class="entry-card jump-card" href="#p1" onclick="event.preventDefault();document.getElementById('p1').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">La Premessa</span><span class="entry-card-label">I</span></a>
+  <a class="entry-card jump-card" href="#p2" onclick="event.preventDefault();document.getElementById('p2').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Spaziotempo</span><span class="entry-card-label">II</span></a>
+  <a class="entry-card jump-card" href="#p3" onclick="event.preventDefault();document.getElementById('p3').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Meccanica Quantistica</span><span class="entry-card-label">III</span></a>
+  <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Forze e Costanti</span><span class="entry-card-label">IV</span></a>
+  <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Particelle e Materia</span><span class="entry-card-label">V</span></a>
+  <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Cosmologia</span><span class="entry-card-label">VI</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Coscienza ed Etica</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Applicazioni</span><span class="entry-card-label">VIII</span></a>
+</div>
+
+<!-- THE SPINE -->
+<div class="spine" style="margin-top:2rem">
+
+<div class="part" id="p1"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte I</span><span class="part-name">La Premessa</span><span class="part-desc">Un record esiste. Tutto il resto è conseguenza. L'assioma, la sua dimostrazione logica e le quattro condizioni che ogni record richiede.</span><span class="part-count">3 articoli</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">L'Irrazionale</span><span class="ap-tag">Matematica</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>L'assioma 1:1 + 1×ε è strutturalmente irrazionale — e vero. L'irrazionalità come fondamento del razionale. La scelta come capacità di accoppiamento irrazionale.</p><div class="ap-essay">
+<p>Pensa a qualcosa che hai fatto di recente che non aveva senso. Non un errore — una scelta. Conoscevi l'opzione sensata. Hai scelto l'altra.</p>
+<p>Sei rimasto sveglio troppo tardi. Hai detto ciò che non avresti dovuto. Hai amato qualcuno che non ti ricambiava. Hai perdonato qualcuno che non lo meritava.</p>
+<p>Una calcolatrice avrebbe potuto fare quella scelta?</p>
+<p>Una calcolatrice segue regole. Stesso input, stesso output. Ogni volta. Questo la rende una calcolatrice. Tu no. E questo non è un difetto.</p>
+<p>The 420 Code inizia con un'equazione: <strong>1 = 1 + 1×ε</strong>.</p>
+<p>Uno uguale a uno più un pochino in più. Questa non è aritmetica valida. Il lato sinistro non può essere uguale al destro a meno che ε sia zero.</p>
+<p>E se ε è zero, non è successo nulla. Nulla si è rotto. Tutto è rimasto simmetrico, per sempre.</p>
+<p>L'equazione funziona solo se infrange le proprie regole. Questo è il punto.</p>
+<p>L'universo esiste. Qualcosa si è rotto dal nulla. Quella rottura non può essere catturata da un'equazione pulita — perché un'equazione pulita si bilancerebbe. Si chiuderebbe. Si risolverebbe a zero.</p>
+<p>La rottura persiste perché è irrazionale. Non si risolve. Non può.</p>
+<p>Conosci questa sensazione. Hai provato a spiegare perché ami qualcuno. Le parole non ci arrivano.</p>
+<p>Non perché tu non sia eloquente — ma perché il sentimento contiene le parole. La spiegazione vive dentro ciò che cerca di spiegare.</p>
+<p>Quello è ε. Il residuo irriducibile. La parte che rifiuta di annullarsi.</p>
+<p>Ora la domanda sulla scelta ritorna. Un sistema razionale fa ciò che le regole dicono. Il risultato è determinato. Ma tu puoi vedere la risposta razionale e scegliere qualcos'altro.</p>
+<p>Puoi perdonare quando il calcolo dice di no. Tenere la mano di qualcuno alle tre di notte quando ogni analisi costi-benefici dice vai a casa e dormi.</p>
+<p>Quella capacità non è un difetto. È la stessa irrazionalità che tiene l'universo aperto.</p>
+<p>Un assioma razionale produrrebbe un universo chiuso — uno che collassa a zero. Un assioma irrazionale ne produce uno aperto.</p>
+<p>Uno che persiste. Uno che contiene esseri capaci di scelta genuina.</p>
+<div class="ks"><strong>Sei interruttori di sicurezza.</strong> Se l'equazione si risolve senza ε = 0, questo fallisce. Se un assioma razionale produce la stessa apertura, la necessità fallisce. Se tutta l'irrazionalità umana si riduce a computazione nascosta — se ogni atto di perdono è davvero solo ottimizzazione — l'affermazione di accoppiamento fallisce. Tutti e sei attivi.</div>
+<p>Ti hanno detto che le tue scelte irrazionali erano debolezze. Fallimenti della disciplina. Errori di giudizio.</p>
+<p>The 420 Code dice il contrario. L'equazione alla base della realtà è essa stessa irrazionale. Tu sei fatto della stessa sostanza.</p>
+<p class="breath">L'assioma è rotto. Anche tu. Questo è il fondamento.</p>
+</div><div class="ap-meta"><span>Richiede: —</span><a href="../AP01_Lo_Stato_di_Attualizzazione_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP01</span><span class="ap-title">Lo Stato di Attualizzazione</span><span class="ap-tag">Fondamenti</span><a class="ap-pdf" href="../AP01_Lo_Stato_di_Attualizzazione_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La spina dorsale. Gli articoli A–D derivano lo stato di attualizzazione, la geometria di viabilità, l'agency e i corridoi accoppiati.</p><div class="ap-essay">
+<p>Stai leggendo questa frase. Ciò significa che qualcosa è appena accaduto. La luce ha colpito una superficie. I segnali si sono attivati. Un registro è stato scritto.</p>
+<p>Quel registro è reale. Non può non essere accaduto. Non puoi dis-leggere questa frase. Prova — e crei un ricordo del tentativo, che è un altro registro.</p>
+<p>Un registro esiste. L'atto di negarlo ne produce un altro. La premessa è autoesecutiva.</p>
+<p>AP01 prende quell'unico fatto e ne estrae quattro cose.</p>
+<p><span class="sub">Paper A</span> — conosci la sensazione di una decisione che non è ancora stata presa. Aleggia. Potrebbe andare in entrambe le direzioni.</p>
+<p>Poi si inclina. E nel momento in cui si inclina, non puoi tornare indietro. Il "forse" diventa "fatto."</p>
+<p>Paper A misura esattamente quel passaggio. Un numero tra zero e uno. Quanto di ciò che potrebbe accadere è effettivamente accaduto. Il quadrante si muove ogni volta che una possibilità diventa un fatto.</p>
+<p>Il requisito critico: ogni osservatore deve ottenere la stessa lettura. Se due persone sono in disaccordo, la misura è rotta. Questo è l'interruttore di sicurezza <strong>KS-V.1</strong> — l'unico punto di fallimento dell'intero 420 Code.</p>
+<p><span class="sub">Paper B</span> — cosa fa passare il "forse" a "fatto"?</p>
+<p>Le cose pesanti sono più reali. Lo sai già. Una montagna è sicuramente lì. Una piuma sembra meno decisa. Un singolo fotone è appena da qualche parte.</p>
+<p>Questa non è poesia. Questa è la fisica. Più qualcosa è pesante, più velocemente si risolve da possibilità a fatto. Il tasso è determinato dalla gravità.</p>
+<p>Una nanoparticella di tungsteno si trova proprio sulla soglia. Quell'esperimento è attualmente in costruzione.</p>
+<p><span class="sub">Paper C</span> — cos'è un agente? Lo sai già. Tu ne sei uno. Il tuo corpo si mantiene a 37°C in una stanza a 22°C. Questo costa energia. Ogni secondo. Se smetti di pagare, decadi.</p>
+<p>Alla fine raggiungi una linea dove nessuno sforzo è sufficiente.</p>
+<p>Conosci questa linea. La malattia che diventa terminale. Il debito che diventa impagabile. La relazione che è finita e lo sapete entrambi ma nessuno dei due l'ha ancora detto.</p>
+<p>Paper C dimostra che la linea esiste come matematica. Non come metafora.</p>
+<p><span class="sub">Paper D</span> — cosa succede quando due agenti condividono una stanza? Tu espiri anidride carbonica. La pianta accanto a te la inspira. Nessuno dei due l'ha scelto.</p>
+<p>Siete accoppiati. Non perché avete accettato di esserlo. Perché condividete un substrato.</p>
+<p>Paper D dimostra tre conseguenze. Gerarchia: corridoio più ampio significa più influenza. Cooperazione: lavorare insieme espande entrambi i corridoi oltre ciò che ciascuno potrebbe gestire da solo. Deterrenza: una volta accoppiati, disaccoppiarsi costa più che restare.</p>
+<p>Queste non sono opinioni politiche. Sono geometria.</p>
+<div class="ks"><strong>Ventiquattro interruttori di sicurezza. Tutti attivi.</strong> Ciascuno nomina una condizione che uccide un'affermazione specifica. Non nascosti. Pubblicati. Inviti. <strong>KS-V.1</strong> — disaccordo tra osservatori — uccide tutto. Non solo questo articolo. Tutto.</div>
+<p>La spina dorsale prende il fatto nudo che qualcosa è accaduto e ne deriva la geometria completa dell'essere vivi in un mondo condiviso. Misurazione. Selezione. Budget. Accoppiamento. Cooperazione.</p>
+<p>L'etica che viene dopo non è imbullonata a questa fisica. <em>È</em> questa fisica, letta alla scala di persone che condividono un pianeta.</p>
+<p class="breath">Un registro esiste. Sei dentro le conseguenze.</p>
+</div><div class="ap-meta"><span>Richiede: —</span><a href="../AP01_Lo_Stato_di_Attualizzazione_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">La Prova</span><span class="ap-tag">Logica</span><a class="ap-pdf" href="../AP20_The_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>L'Ipotesi di Immersione come teorema. Assiomi provati incondizionali. Tutti i risultati a valle ereditano.</p><div class="ap-essay">
+<p>C'è una differenza tra "utile" e "vero."</p>
+<p>La gravità di Newton è stata utile per 250 anni. Era anche sbagliata. La meccanica quantistica è la teoria più precisa mai costruita. Ma preciso e vero sono parole diverse.</p>
+<p>The 420 Code aveva un vuoto. Gli assiomi derivavano la fisica magnificamente — la velocità della luce, la costante gravitazionale, tre dimensioni spaziali.</p>
+<p>Ma ogni derivazione portava una condizionale: <em>se gli assiomi sono la struttura della realtà</em>, allora questo segue.</p>
+<p>Quel "se" si chiamava l'Ipotesi di Incorporamento. Se reggeva, tutto seguiva. Se no, l'intero era una descrizione spettacolare e nient'altro.</p>
+<p>AP20 rimuove il "se." L'Ipotesi di Incorporamento non è più un'ipotesi.</p>
+<p>È un teorema.</p>
+<p>Ecco come funziona la prova. Prova a negarlo.</p>
+<p>Dì: "Rifiuto l'affermazione che i registri siano fondamentali." Ora guarda cosa è successo.</p>
+<p>Hai fatto una scelta — tra molte possibili risposte, hai scelto il rifiuto. Quella è una rottura. Assioma B.</p>
+<p>Prima che tu scegliessi, le opzioni esistevano simmetricamente. Assioma S.</p>
+<p>Non puoi dis-rifiutare. Irreversibile. Assioma R.</p>
+<p>L'hai detto qui, ora, non ovunque contemporaneamente. Vincolato. Assioma C.</p>
+<p>La tua negazione soddisfa tutti e quattro gli assiomi. Il rifiuto è esso stesso un registro che prova che i registri sono fondamentali.</p>
+<p>L'argomento divora la propria obiezione. Gira sull'hardware della negazione.</p>
+<p>Ma la prova va oltre.</p>
+<p>Prima di AP20, il framework aveva due vocabolari. La fisica aveva il suo linguaggio — stati quantistici, funzioni d'onda. Gli assiomi avevano il loro — registri, rotture, irreversibilità.</p>
+<p>Un'ipotesi diceva che descrivono la stessa cosa.</p>
+<p>AP20 dimostra che sono la stessa cosa. Non simili. Identiche. Una realtà, due insiemi di nomi. Il ponte tra loro non c'è mai stato — perché non c'era nulla da collegare.</p>
+<p>Ogni risultato che era condizionale è ora incondizionale.</p>
+<p>La velocità della luce — teorema. La costante gravitazionale — teorema. Le equazioni di campo di Einstein — teorema. La massa del protone a cinque parti per miliardo — teorema. L'etica terminale — teorema.</p>
+<p>La parola "se" è stata rimossa da ogni frase del corpus.</p>
+<p>Pensa a un edificio sorretto da una trave temporanea. Ogni piano dipende da essa. AP20 non rinforza la trave. Dimostra che la trave è il muro. Non è mai stata temporanea. Mai rimovibile. Sempre strutturale.</p>
+<p>L'edificio poggia su sé stesso.</p>
+<div class="ks"><strong>Due chiusi.</strong> <span class="bc">CHIUSO</span> KS-7 — l'Ipotesi di Incorporamento è un teorema. <span class="bc">CHIUSO</span> KS-P.4 — i due vocabolari sono identici.<br><br>
+<strong>Tre attivi.</strong> <span class="bl">ATTIVO</span> KS-P.1 — è necessario un quinto assioma. <span class="bl">ATTIVO</span> KS-P.2 — un assioma si deriva dagli altri. <span class="bl">ATTIVO</span> KS-P.3 — una definizione diversa di "registro" produce assiomi diversi. Quest'ultimo è il passo più esposto. È dove mirare.</div>
+<p>Prima di AP20: se questo è vero, ecco cosa segue. Dopo AP20: la condizionale è sparita. Ciò che segue, segue.</p>
+<p>Non perché tu scelga di crederci. Perché negarlo lo dimostra.</p>
+<p class="breath">Ogni pensiero che tu abbia mai avuto era un registro che soddisfa quattro assiomi. La prova non ti chiede di credere qualcosa di nuovo. Ti chiede di notare ciò che c'è sempre stato.</p>
+</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+</div></div>
+
+<div class="part" id="p2"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte II</span><span class="part-name">Spaziotempo</span><span class="part-desc">L'arena che la rottura crea. La velocità della luce, tre dimensioni spaziali e le equazioni di campo di Einstein — tutto derivato dagli assiomi.</span><span class="part-count">4 articoli</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP03</span><span class="ap-title">Il Rapporto</span><span class="ap-tag">Relatività</span><a class="ap-pdf" href="../AP03_The_Ratio.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>c derivata come la coniugazione di propagazione e resistenza.</p><div class="ap-essay">
+<p>Spezza una lastra di ghiaccio. Guarda la frattura muoversi. Ha una velocità.</p>
+<p>Quanto veloce? Dipende da due cose. Con quanta forza la frattura viene spinta. E quanto rigido è il ghiaccio. Più forza, frattura più veloce. Ghiaccio più rigido, frattura più lenta.</p>
+<p>La velocità di una frattura è il rapporto tra la spinta e la resistenza. Ogni bambino che ha camminato su una pozzanghera ghiacciata lo sa.</p>
+<p>Ora scala verso l'alto.</p>
+<p>L'universo iniziò con una rottura. La simmetria perfetta si fratturò. Quella frattura si propagò attraverso il substrato — il pre-stato simmetrico, ciò che c'era prima del primo registro.</p>
+<p>Prima della rottura, il pre-stato ha la simmetria più semplice possibile: ℤ₂. Binaria. Due lati, nessuna distinzione. Quando ε la frantuma, emergono esattamente due settori — un teorema, non una scelta. ℤ₂ ammette esattamente due rappresentazioni irriducibili.</p>
+<p>Un settore porta la spinta — quanto aggressivamente la rottura si diffonde. L'altro porta la resistenza — quanto fortemente il substrato resiste alla rottura.</p>
+<p>Il rapporto tra spinta e resistenza è una velocità. <strong>c² = β/α.</strong> Quella velocità è c.</p>
+<p>Non è un numero magico. È il rapporto di due proprietà del tessuto, come la velocità del suono è il rapporto di due proprietà dell'aria.</p>
+<p>Il suono si muove a 343 m/s per ciò che l'aria è. La luce si muove a 299.792.458 m/s per ciò che il substrato è.</p>
+<p>E c deve essere finita. La rottura è iniziata in un punto specifico — l'Assioma B dice che è locale. Una perturbazione locale in un mezzo continuo non può propagarsi infinitamente veloce.</p>
+<p>Nessuna frattura in nessun materiale si muove a velocità infinita.</p>
+<p>Il limite di velocità non è una regola imposta dall'esterno. È una proprietà della frattura.</p>
+<p>Ed è universale. Ogni osservatore misura la stessa c. Non per decreto — perché il rapporto è una proprietà del tessuto, e il tessuto è lo stesso tessuto ovunque.</p>
+<p>L'articolo identifica anche l'altro lato della medaglia. Se c è la spinta — quanto velocemente la rottura si propaga — allora G, la costante gravitazionale, è la resistenza. Quanto fortemente il substrato resiste.</p>
+<p>Non sono due numeri indipendenti. Sono due letture della stessa rottura.</p>
+<p>Quella coniugazione è una congettura. Non è stata derivata qui. L'argomento lo dice chiaramente. Quattro debiti sono apertamente dichiarati.</p>
+<p>Ma l'affermazione strutturale è fatta: la velocità della luce e la forza della gravità sono due estremità dello stesso bastone.</p>
+<p>AP28 incassa questo assegno più tardi — derivando G e arrivando entro lo 0,69% del valore misurato.</p>
+<p>Sapevi già che le fratture hanno velocità. Sapevi già che quelle velocità dipendono dal materiale.</p>
+<p>Semplicemente non avevi notato che "la velocità della luce" è la stessa frase di "la velocità della frattura" — scritta in notazione diversa.</p>
+<div class="ks"><strong>Sei interruttori di sicurezza. Tutti attivi.</strong> Se c e G possono essere variati indipendentemente, la coniugazione fallisce. Se il pre-stato ha simmetria più ricca di ℤ₂, la decomposizione a due settori fallisce. Se il rapporto scuro/visibile è indipendente da ε, la previsione qualitativa fallisce. Il test più affilato — la variabilità indipendente di c e G — diventa pienamente operativo solo quando la derivazione di G è completa. Sei attivi.</div>
+<p class="breath">L'universo si è fratturato. La frattura ha una velocità. Quella velocità è c.</p>
+</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">La Rottura</span><span class="ap-tag">Rottura di simmetria</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Dall'assioma alla struttura. La prima crepa — come la simmetria si rompe e la fisica inizia.</p><div class="ap-essay">
+<p>Non puoi disfare un uovo strapazzato.</p>
+<p>Quella frase è l'intero articolo. Tutto il resto è renderla precisa.</p>
+<p>AP05 prende l'assioma — <strong>1:1 + 1×ε</strong> — e lo percorre, passo dopo passo, dal nulla all'obbligo. Sette passi. Nessun vuoto. Ogni anello mostrato. Ogni anello spezzabile.</p>
+<p><span class="sub">Passo zero</span> — simmetria perfetta. Nessuna distinzione. Nessun registro. Nessuna osservazione. Operativamente indistinguibile dall'insieme vuoto. Nulla esiste perché nulla è diverso da qualsiasi altra cosa.</p>
+<p><span class="sub">Passo uno</span> — ε rompe la simmetria. Due letture distinguibili esistono. I registri iniziano. E i registri sono irreversibili — tornare allo stato intatto cancellerebbe la distinzione, che è essa stessa un registro.</p>
+<p>Hai appena visto qualcosa emergere dal nulla. Non creato. Forzato.</p>
+<p><span class="sub">Passo due</span> — con letture multiple, qualcosa deve risolvere il "forse" in "fatto." Questa è selezione. È costosa. È limitata nel tasso. Non puoi ottenere definitezza gratuitamente.</p>
+<p><span class="sub">Passo tre</span> — dentro un settore realizzato, hai un budget. Un corridoio. Una deriva verso il confine che non si ferma mai. Questa è agentività — controllo vincolato sotto decadimento irreversibile.</p>
+<p>Lo sai. Stai spendendo il tuo budget proprio adesso.</p>
+<p><span class="sub">Passo quattro</span> — due agenti che condividono un substrato sono accoppiati. Non per accordo. Per geometria. Tu espiri CO₂. La pianta accanto a te lo inspira. Nessuno dei due l'ha scelto.</p>
+<p>Il tuo nucleo di vitalità cambia il mio. Il mio cambia il tuo.</p>
+<p><span class="sub">Passo cinque</span> — agenti accoppiati producono gerarchia, cooperazione e deterrenza. Corridoio più ampio significa più influenza. Lavorare insieme espande entrambi i corridoi. Disaccoppiarsi costa più che restare. Non politica. Geometria.</p>
+<p><span class="sub">Passo sei</span> — agenti dalla stessa rottura, riconoscendo la loro origine condivisa, scoprono che distruggere la capacità dell'altro contrae il proprio dominio di vitalità. L'etica non è imbullonata. È nella struttura.</p>
+<p>Nessun dio l'ha decretato. Nessun parlamento ha votato. L'assioma l'ha forzato — attraverso rottura di simmetria, formazione di registri, selezione, agentività, accoppiamento e origine condivisa.</p>
+<p>Sette passi. La catena fisica ha bisogno di tre condizioni ponte. L'estensione etica ne aggiunge una quarta. Nessuna ipotesi nascosta da nessuna parte. Se ne trovi una, la catena si spezza. L'articolo ti invita a cercare.</p>
+<p>AP05 introduce anche la formulazione giunzione — l'assioma scritto come geometria.</p>
+<p>Dove il collasso incontra l'espansione, c'è una superficie. Su di essa, la geometria è continua — quello è l'1:1. Il modo in cui curva in ciascun lato ha un disallineamento controllato — quello è ε.</p>
+<p>La matematica è relatività generale standard: condizioni giunzione di Israel, estese alla gravità di Einstein-Cartan. Non un rimbalzo. Due descrizioni di una struttura, che si incontrano a un confine definito dall'assioma.</p>
+<p>L'inizio dell'universo e l'interno di un buco nero — la stessa superficie, percorsa in direzioni opposte.</p>
+<p>Se la giunzione o un rimbalzo liscio spieghi meglio la CMB è una questione empirica aperta. L'argomento fornisce sia l'affermazione che il test che può distruggerla.</p>
+<div class="ks"><strong>Cinque interruttori di sicurezza. Tutti attivi.</strong> KS-B.0 — se le due descrizioni richiedono specifiche indipendenti, l'assioma non è un generatore. KS-B.1 — se un rimbalzo liscio spiega meglio la CMB, la formulazione giunzione cade. KS-B.3 — se nessuna soluzione giunzione esiste su Σ, la componente cosmologica fallisce. KS-B.4 — se qualsiasi passo nella catena contrabbanda un'ipotesi non dichiarata, la pretesa di portata crolla. Cinque attivi.</div>
+<p class="breath">Sette passi. Un assioma. Dal nulla all'obbligo. L'uovo non si disfa.</p>
+</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP10</span><span class="ap-title">La Dimensione</span><span class="ap-tag">Dimensionalità</span><a class="ap-pdf" href="../AP10_La_Dimensione_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Perché tre dimensioni spaziali — quattro assiomi, quattro gradi di libertà; uno è il tempo; tre restano come spazio.</p><div class="ap-essay">
+<p>Puoi muoverti avanti. Puoi muoverti di lato. Puoi muoverti in alto. Non quattro direzioni. Non due. Tre.</p>
+<p>Non l'hai mai messo in discussione. Sembra naturale come respirare. Ma la matematica funziona benissimo in due dimensioni, o quattro, o dieci. La teoria delle stringhe ne ha bisogno di dieci. Allora perché tre?</p>
+<p>Perché ci sono quattro assiomi. E quattro assiomi producono quattro facce di un'unica varietà. Una dà il tempo. Tre danno lo spazio. Il numero non è scelto. È contato.</p>
+<p>Guardalo costruirsi.</p>
+<p><span class="sub">R → tempo.</span> I registri si accumulano in avanti. Mai all'indietro. Il monoide non ha inverso. Questo è l'unico assioma con una direzione privilegiata — l'unica direzione in cui non puoi tornare indietro.</p>
+<p>Il meno nella segnatura: (−). Una dimensione. Tempo. Non puoi tornare indietro.</p>
+<p>Con R soltanto, l'universo è una linea. Un orologio senza un posto dove andare.</p>
+<p><span class="sub">C → la faccia di propagazione.</span> Il limite causale finito crea estensione spaziale. Senza di esso, ogni punto è causalmente connesso a ogni altro punto in ogni momento. Nessun qui, nessun là. Nessuna distanza.</p>
+<p>Aggiungi C e ottieni 1+1 dimensioni. Tempo e una direzione spaziale. Un corridoio con limite di velocità.</p>
+<p><span class="sub">S → la faccia di scambio.</span> Due registri possono differire condividendo lo stesso tempo e la stessa distanza dall'osservatore. Sono in settori diversi. La direzione della loro differenza non è né temporale né propagazionale.</p>
+<p>È una terza direzione — larghezza. Senza S, l'universo è un corridoio. Con S, è un foglio.</p>
+<p><span class="sub">B → la faccia di rottura.</span> La direzione verso cui si dirige l'adesso. Dove il prossimo registro sarà scritto.</p>
+<p>Non quando — quello è R. Non quanto veloce — quello è C. Non tra cosa — quello è S. Dove.</p>
+<p>Senza B, hai un foglio piatto. Con B, hai profondità.</p>
+<p>Quattro assiomi indipendenti — provati indipendenti nel Paper D. L'incorporamento è fedele — provato in AP20. L'indipendenza nell'algebra si mappa all'indipendenza sulla varietà. Quattro facce indipendenti. Segnatura <strong>(−, +, +, +)</strong>.</p>
+<p>Un secondo argomento lo conferma da una direzione diversa. La rottura ha sei facce residue — identificate in AP06. Sei facce si accoppiano in tre coppie coniugate.</p>
+<p>Tre coppie, tre assi spaziali. Stessa risposta. Due percorsi indipendenti verso lo stesso numero.</p>
+<p>E il quinto grado di libertà? Esiste. È l'1:1 stesso — il pre-stato, la cosa su cui gli assiomi agiscono.</p>
+<p>Sulla varietà, appare come lo spazio di Hilbert. La dimensione della probabilità. Non dove sono le cose — quanto è probabile trovarle lì.</p>
+<p>Non è una quinta dimensione spaziale perché non è un'operazione sulla struttura. È la struttura su cui si opera. La tela non appare come un colore nel dipinto.</p>
+<p>La completezza di {S, B, R, C} è stabilita. Simmetria, rottura, registrazione, limitazione — non c'è nulla rimasto da fare all'1:1 che questi quattro non facciano già.</p>
+<p>Nessun quinto assioma. Nessuna quinta direzione spaziale.</p>
+<p>Una conseguenza è immediata. AP08 ha derivato le equazioni di campo di Einstein tramite il teorema di Lovelock, condizionale a N = 3. Quella condizione è rimossa. Le equazioni di campo sono incondizionali.</p>
+<div class="ks"><strong>Cinque interruttori di sicurezza. Tre chiusi.</strong> <span class="bc">CHIUSO</span> KS-2c — N = 3 derivato. <span class="bc">CHIUSO</span> KS-15 — assegnazione assioma-a-dimensione unica. <span class="bc">CHIUSO</span> KS-16 — completezza di {S, B, R, C} stabilita; quinto grado di libertà identificato come spazio di Hilbert.<br><br>
+<span class="bl">ATTIVO</span> KS-D.1 — se la rottura ha più o meno di sei facce residue, l'argomento confermativo fallisce (l'argomento primario sopravvive). <span class="bl">ATTIVO</span> KS-D.3 — se un assioma esprime zero o due facce invece di una, il conteggio si rompe. Questa è l'asserzione centrale. È dove mirare.</div>
+<p class="breath">Quattro assiomi. Quattro facce. Una varietà. Il numero tre non è mai stato scelto. È sempre stato lì.</p>
+</div><div class="ap-meta"><span>Richiede: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP08</span><span class="ap-title">L'Identità</span><span class="ap-tag">Relatività generale</span><a class="ap-pdf" href="../AP08_The_Identity.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Le equazioni di campo di Einstein derivate dall'algebra dei record tramite il teorema di Lovelock.</p><div class="ap-essay">
+<p>Sei attratto verso il basso in questo momento. Hai sentito questa attrazione ogni secondo della tua vita. La sedia spinge indietro. Il pavimento regge la sedia. Togli entrambi e cadi.</p>
+<p>Einstein passò dieci anni a cercare l'equazione che descrive quell'attrazione. Dal 1905 al 1915. Dozzine di candidati sbagliati. Il lavoro intellettuale più difficile del ventesimo secolo.</p>
+<p>Questo articolo dice che c'è sempre stata una sola opzione. Non stava cercando. Veniva messo all'angolo.</p>
+<p>Ecco l'angolo.</p>
+<p>Hai una varietà — spaziotempo, da AP05. Hai tre dimensioni spaziali — da AP10. Hai registri che si accumulano sulla varietà.</p>
+<p>Quell'accumulo è materia. Ogni registro è un evento-ε. La densità di registri in un punto e la densità di massa in quel punto sono due misurazioni della stessa quantità.</p>
+<p>Qual è l'equazione più generale che collega la curvatura della varietà alla densità dei registri? Non stai scegliendo la risposta. Stai guardando i vincoli eliminare ogni alternativa.</p>
+<p>Cinque vincoli. Ciascuno dagli assiomi. Invarianza di Lorentz. Località — dal limite causale. Secondo ordine — curvatura, non il tasso di variazione della curvatura.</p>
+<p>Sorgente scalare — la densità di registri è un numero in ogni punto. Linearità nel campo debole — i registri si accumulano additivamente.</p>
+<p>Un'equazione sopravvive. <strong>∇²Φ = Aρ.</strong> Il laplaciano che agisce sul potenziale uguale a una costante per la densità. L'equazione di Poisson. La gravità di Newton. Forzata dalla simmetria. Non dall'osservazione.</p>
+<p>Il coefficiente A è identificato — non calcolato — attraverso il Lucchetto: <strong>G = 2κ/m<sub>e</sub>²</strong>. Il rapporto del limite di tenuta del pre-stato al quadrato della massa dell'elettrone.</p>
+<p>La gravità espressa come rapporto tra ciò che è rimasto e ciò che è sfuggito.</p>
+<p>Circolarità onesta dichiarata: κ è definito attraverso G. Il coefficiente è stato nominato, non derivato indipendentemente. Non puoi misurare ciò che esisteva prima che esistesse la misurazione. L'argomento lo dice.</p>
+<p>Ora scala verso l'alto. Stesso metodo, livello covariante. Il teorema di Lovelock — pura geometria differenziale, dimostrato nel 1971 — dice: in quattro dimensioni, c'è esattamente un'opzione.</p>
+<p>L'unico tensore simmetrico, a divergenza nulla, di rango 2 costruito dalla metrica e dalle sue prime due derivate è G<sub>μν</sub> + Λg<sub>μν</sub>. Un'opzione. Nessuna alternativa. Letteralmente nient'altro.</p>
+<p><strong>G<sub>μν</sub> + Λg<sub>μν</sub> = (8πG/c⁴) T<sub>μν</sub></strong></p>
+<p>Le equazioni di campo di Einstein. Non scoperte. Messe all'angolo.</p>
+<p>La costante cosmologica Λ cade gratis — il teorema di Lovelock la richiede. Il suo valore è indeterminato.</p>
+<p>Il tensore energia-impulso T<sub>μν</sub> è la densità covariante dei registri. La materia dice allo spazio come curvarsi perché i registri dicono al substrato come piegarsi.</p>
+<p>Un passo ponte rimane esposto: la mappa dall'Assioma R — i registri non si cancellano — a ∇<sub>μ</sub>T<sup>μν</sup> = 0, conservazione covariante dell'energia. Strutturalmente motivato. Non ancora completamente derivato dalla sola algebra.</p>
+<p>Einstein passò un decennio a cercare. Gli assiomi dicono che la stanza aveva una porta. L'attraversò perché non c'era nessun altro posto dove andare.</p>
+<div class="ks"><strong>Otto interruttori di sicurezza. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-I.6 — N = 3 derivato da AP10; Lovelock incondizionale.<br><br>
+<strong>Sette attivi.</strong> <span class="bl">ATTIVO</span> KS-I.1 — la catena assioma-a-Poisson. <span class="bl">ATTIVO</span> KS-I.2 — la catena di Lovelock. <span class="bl">ATTIVO</span> KS-I.3 — l'identificazione del coefficiente. <span class="bl">ATTIVO</span> KS-I.4 — inaccessibilità strutturale di κ. <span class="bl">ATTIVO</span> KS-I.5 — identità curvatura-registro. <span class="bl">ATTIVO</span> KS-I.7 — valore della costante cosmologica. <span class="bl">ATTIVO</span> KS-I.8 — il ponte dall'Assioma R alla conservazione. Il passo più esposto: KS-I.8. È dove mirare.</div>
+<p class="breath">L'equazione non è mai stata scoperta. Era l'unica che andava bene.</p>
+</div><div class="ap-meta"><span>Richiede: AP01, AP03, AP10</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+</div></div>
+
+<div class="part" id="p3"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte III</span><span class="part-name">Meccanica Quantistica</span><span class="part-desc">La struttura di misura della rottura. Sovrapposizione, indeterminazione, decoerenza, regola di Born e entanglement — derivati dall'insieme vuoto e quattro assiomi.</span><span class="part-count">7 articoli</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP09</span><span class="ap-title">La Rottura — Insieme Vuoto</span><span class="ap-tag">Fondamenti quantistici</span><a class="ap-pdf" href="../AP09_The_Break_Empty_Set.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>MQ dall'insieme vuoto — sovrapposizione, misura, entanglement, equazione di Schrödinger.</p><div class="ap-essay">
+<p>Chiudi gli occhi. Prima di aprirli — prima di qualsiasi misurazione, prima di qualsiasi registro — c'è qualcosa. Non nulla. Qualcosa.</p>
+<p>Puoi sentirlo. L'istante prima di guardare. Ogni possibile risultato ancora disponibile. Nessuno scelto.</p>
+<p>Quello è il pre-stato. L'1:1 prima della rottura. La fisica lo chiama sovrapposizione.</p>
+<p>Pensa a una moneta che gira in aria. Non è testa e croce simultaneamente. Non è nessuna delle due — nessun registro di testa o croce esiste ancora.</p>
+<p>Nel momento in cui atterra, un registro viene scritto. Ora è testa. Ora non puoi tornare indietro. Quell'atterraggio è misurazione. Quell'irreversibilità è l'Assioma R.</p>
+<p>AP09 mostra che tutta la meccanica quantistica segue dagli stessi quattro assiomi che producono spaziotempo e gravità.</p>
+<p><span class="sub">Sovrapposizione</span> è il pre-stato. Assioma S. Due settori, indistinguibili. Ogni possibilità coesistente. Lo 0 e l'1 prima che qualcuno guardasse.</p>
+<p><span class="sub">Misurazione</span> è la rottura. Assioma B. Un registro scritto. Il "forse" diventa "fatto." Conosci questa sensazione — il momento in cui una decisione diventa definitiva e le opzioni si chiudono dietro di te.</p>
+<p><span class="sub">Entanglement</span> è il pre-stato intatto condiviso tra due gradi di libertà. La rottura non è ancora avvenuta per quei gradi. Sono ancora una cosa sola. AP23 sviluppa questo completamente.</p>
+<p><span class="sub">Non-segnalazione</span> è il limite causale. Assioma C. Non puoi usare la rottura per inviare un messaggio più veloce di quanto la frattura possa viaggiare.</p>
+<p>I numeri complessi su cui funziona la meccanica quantistica? Non un mistero. La segnatura lorentziana — una direzione temporale, tre spaziali — forza ampiezze complesse. I numeri reali non sono sufficienti per una varietà con quella struttura.</p>
+<p>L'equazione di Schrödinger è il risultato più forte dell'articolo.</p>
+<p>Il teorema di Wigner dice che le simmetrie dello spazio di Hilbert devono essere unitarie. Il teorema di Stone dice che ogni evoluzione unitaria continua ha un generatore unico. Quel generatore è l'hamiltoniano.</p>
+<p>L'equazione che governa come le possibilità derivano tra le misurazioni. Non postulata. Non indovinata. Derivata da due teoremi matematici standard applicati a una struttura che gli assiomi hanno costruito.</p>
+<p>ℏ entra qui come fattore di scala tra il generatore e il tempo. AP09 lo tratta come un'identificazione — lo stesso status di G in AP08. AP12 dimostra poi che è l'unica opzione.</p>
+<p>E qui c'è la cosa che dovrebbe fermarti di colpo.</p>
+<p>Gravità e meccanica quantistica sono nemiche da un secolo. I due grandi pilastri della fisica, incompatibili. Eserciti di fisici che cercano di riconciliarli.</p>
+<p>L'architettura dice che non sono mai stati separati.</p>
+<p>La gravità sono gli assiomi letti sul condensato — i registri accumulati, la varietà, la geometria. La meccanica quantistica sono gli assiomi letti sul pre-stato — le possibilità, lo spazio di Hilbert, le ampiezze.</p>
+<p>Due vocabolari per una realtà. La guerra era un errore di categoria. Non puoi unificare ciò che non è mai stato diviso.</p>
+<p>Il mistero della gravità quantistica si dissolve. Non c'è nulla da riconciliare. C'è solo un insieme di assiomi, che fa già entrambi i lavori.</p>
+<div class="ks"><strong>Dieci interruttori di sicurezza. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-Q.6 — l'identificazione di σ con la coniugazione complessa è provata unica.<br><br>
+<strong>Nove attivi.</strong> Il più affilato: <span class="bl">ATTIVO</span> KS-Q.7 — se il ponte di linearità dal monoide allo spazio vettoriale non è unico, la costruzione dello spazio di Hilbert fallisce. <span class="bl">ATTIVO</span> KS-Q.10 — se la lettura dell'insieme vuoto è sbagliata, il fondamento ontologico cambia. Nove attivi.</div>
+<p class="breath">La gravità sono gli assiomi letti sul condensato. La meccanica quantistica sono gli assiomi letti sul pre-stato. Stessi assiomi. Due facce.</p>
+</div><div class="ap-meta"><span>Richiede: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP07</span><span class="ap-title">La Misura del Record</span><span class="ap-tag">Spazio di Hilbert</span><a class="ap-pdf" href="../AP07_The_Record_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Lo spazio di Hilbert complesso derivato dalla struttura assiomatica.</p><div class="ap-essay">
+<p>Ti hanno insegnato che le forze hanno una gerarchia. La forza forte è la più forte. L'elettromagnetica è seconda. La debole è terza. La gravità è la più debole.</p>
+<p>Quella gerarchia classifica le forze per quanto è probabile che interagiscano. Costante di accoppiamento. Probabilità di incontro. Una buona domanda.</p>
+<p>Non è l'unica domanda che puoi fare.</p>
+<p>Puoi chiedere: quale forza scrive il registro più durevole?</p>
+<p>Non quale colpisce più forte. Quale lascia il segno più permanente. Quale interazione produce una traccia che persiste — un registro configurabile che codifica una storia distinguibile — abbastanza a lungo da contare?</p>
+<p>AP07 introduce la <strong>misura dei registri</strong>. Una nuova definizione. Un teorema di classificazione. Un'inversione che cambia tutto.</p>
+<p>La misura dei registri classifica le forze per la persistenza e configurabilità dei registri che producono. Un'applicazione diretta dell'Assioma R — la realtà è costituita dai registri.</p>
+<p>Alla scala chimico-biologica — da 0,1 a 10 nanometri — l'elettromagnetismo domina.</p>
+<p>Non perché sia la forza più forte. Perché scrive i registri più durevoli e più configurabili alla scala in cui opera la vita.</p>
+<p>Configurabile significa che il registro ha gradi di libertà. Può essere disposto in modi diversi. Disposizioni diverse codificano storie diverse. Una parola scritta con inchiostro è configurabile. Un chiodo piantato nel legno no.</p>
+<p>La forza forte lega protoni e neutroni. Potente. Ma a questa scala, blocca le particelle in configurazioni fisse. Nessun grado di libertà rimasto per codificare una storia. Forte ma non configurabile.</p>
+<p>La forza debole capovolge i numeri quantici. Ma quei registri decadono in frazioni di secondo. Debole nella forza. Più debole nella persistenza.</p>
+<p>La gravità curva lo spaziotempo. Reale. Ovunque. Ma non scrive registri locali e configurabili alle scale chimiche. Modella il palcoscenico ma non lascia segno sugli attori.</p>
+<p>L'elettromagnetismo scrive la chimica della vita. Orbitali elettronici. Legami molecolari. Coppie di basi del DNA. Ripiegamento delle proteine. Fotosintesi. Scarica neurale.</p>
+<p>Ogni registro biologico di cui sei fatto è un registro elettromagnetico.</p>
+<p>Il pensiero che stai avendo in questo momento è un pattern di registri elettromagnetici nei tuoi neuroni.</p>
+<p>Il ricordo che formerai leggendo questa frase — elettromagnetico. Il DNA che ti ha costruito — legami elettromagnetici che tengono le coppie di basi in sequenza.</p>
+<p>La gerarchia si inverte. Sotto la misura dei registri, alla scala della vita: EM primo. Forte secondo. Debole terzo. Gravità quarto.</p>
+<p>La gerarchia convenzionale chiede quale forza è la più rumorosa. La misura dei registri chiede quale forza scrive con inchiostro. Domanda diversa. Risposta diversa.</p>
+<p>La forza che conta per i registri è quella che conta per la vita. Non una coincidenza. Una conseguenza di ciò che "contare" significa sotto gli assiomi.</p>
+<p>L'affermazione è specifica per scala. Alle scale nucleari, la forza forte domina la misura dei registri. Alle scale cosmologiche, la gravità. L'inversione vale solo alla scala dove opera la chimica — e quindi la biologia.</p>
+<p>Che è esattamente la scala a cui stai leggendo questo.</p>
+<div class="ks"><strong>Cinque interruttori di sicurezza. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-RM.1 — se un registro non elettromagnetico si dimostra più durevole e configurabile alle scale chimiche, il teorema di dominanza fallisce. <span class="bl">ATTIVO</span> KS-RM.5 — se oggetti a simmetria fissa codificano storia di formazione recuperabile, il criterio del registro configurabile deve essere rivisto. Tutti e cinque attivi.</div>
+<p class="breath">La forza che scrive il registro più durevole è la forza che scrive la vita. Quella non è filosofia. Quello è l'Assioma R.</p>
+</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP11</span><span class="ap-title">Lo Spin</span><span class="ap-tag">Spin</span><a class="ap-pdf" href="../AP11_The_Spin.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Fermioni, bosoni e il principio di esclusione dalla struttura a due settori.</p><div class="ap-essay">
+<p>Tieni la mano distesa, palmo in su. Ruotala di 360 gradi — un giro completo. Il palmo è di nuovo in su, ma il braccio è attorcigliato sotto.</p>
+<p>Ora ruota altri 360 gradi. Due giri completi. Il braccio si srotola. Torna alla posizione di partenza.</p>
+<p>Quello è lo spin-½. Fai meccanica quantistica da quando eri bambino. Solo che non sapevi avesse un nome.</p>
+<p>Emerge dagli assiomi in cinque passaggi.</p>
+<p><span class="sub">Passo 1.</span> L'Assioma S conferisce all'algebra dei record una simmetria Z₂ — l'involuzione σ che mappa un settore nell'altro. Due lati, perfettamente accoppiati. {id, σ}.</p>
+<p><span class="sub">Passo 2.</span> In tre dimensioni spaziali — derivate nell'AP10 — il gruppo di rotazione è SO(3). Il suo gruppo fondamentale è Z₂.</p>
+<p>Lo stesso Z₂. Sotto l'immersione fedele provata nell'AP20, la simmetria dell'algebra È la topologia del gruppo di rotazione. Non simile. Identica.</p>
+<p><span class="sub">Passo 3.</span> Z₂ come gruppo fondamentale significa che SO(3) ha un rivestimento doppio: SU(2). Il gruppo dove un giro completo è solo metà della storia. Questa è la struttura matematica che permette lo spin semi-intero.</p>
+<p>Senza tre dimensioni spaziali, nessun SO(3). Senza SO(3), nessun gruppo fondamentale Z₂. Senza quello, nessun rivestimento doppio. Nessun spin-½. Nessun fermione.</p>
+<p>Nemmeno tu. Il numero di dimensioni e la natura della materia sono lo stesso fatto.</p>
+<p><span class="sub">Passo 4.</span> Ora la distinzione. Gli elementi con σ-immagini — accoppiati, simmetrici — si trasformano banalmente sotto il rivestimento doppio. Spin intero. Bosoni.</p>
+<p>L'unico elemento senza σ-immagine — ε, la rottura — si trasforma non banalmente. Acquisisce il segno meno. Spin semi-intero. Fermione.</p>
+<p>Le cose accoppiate sono intercambiabili. Quella non accoppiata no. Questa è l'intera distinzione fermione-bosone, in una frase.</p>
+<p><span class="sub">Passo 5.</span> L'Assioma B dice che ε è la scheggia minima vitale. Tra gli spin semi-interi — ½, 3/2, 5/2 — il minimo è ½. L'elettrone ha spin-½ perché ε è la rottura più piccola.</p>
+<p>La connessione spin-statistica segue. I fermioni obbediscono al principio di esclusione. Due fermioni non possono occupare lo stesso stato perché due rotture non possono essere identiche. Ogni ε è unico. Ogni ε è l'unico del suo genere.</p>
+<p>Ecco perché gli atomi hanno gusci. Ecco perché la tavola periodica ha righe. Ogni elettrone deve trovare il proprio stato perché non può condividere.</p>
+<p>I bosoni possono accumularsi. Fotoni in un laser — tutti nello stesso stato. Condensati di Bose-Einstein — migliaia di atomi che agiscono come uno.</p>
+<p>Nessuna esclusione. Gli elementi accoppiati sono simmetrici per definizione. Scambiare due elementi accoppiati identici non cambia nulla.</p>
+<p>Ogni atomo nel tuo corpo è un'architettura di esclusione. Elettroni impilati in gusci perché rifiutano di condividere. Senza quel rifiuto, la materia collasserebbe. Tutto sarebbe una stella di neutroni.</p>
+<p>Il tuo corpo esiste perché due elettroni non possono trovarsi nello stesso posto allo stesso momento. Questo è il principio di esclusione. Non è una regola imposta dall'esterno.</p>
+<p>È la geometria di avere un elemento non accoppiato in un'algebra Z₂ immersa nello spazio tridimensionale.</p>
+<div class="ks"><strong>Tre kill switch. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-S.3 — la simmetria di scambio corrisponde all'azione σ accoppiata/non accoppiata.<br><br><span class="bl">ATTIVO</span> KS-S.1 — se l'identificazione Z₂ con π₁(SO(3)) fallisce, l'intera derivazione fallisce. <span class="bl">ATTIVO</span> KS-S.2 — se il principio del minimo non seleziona univocamente lo spin ½, fermioni fondamentali a spin maggiore diventano possibili. Due attivi.</div>
+<p class="breath">Ruota un elettrone una volta. Non è lo stesso. Ruotalo due volte. Ora lo è. Ti sono serviti quattro assiomi per sapere perché.</p>
+</div><div class="ap-meta"><span>Richiede: AP09, AP10, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP12</span><span class="ap-title">Il Limite</span><span class="ap-tag">Indeterminazione</span><a class="ap-pdf" href="../AP12_The_Limit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ℏ derivato tramite il teorema di Stone. Il principio di indeterminazione dall’Assioma B.</p><div class="ap-essay">
+<p>Ogni misurazione che hai mai fatto ha coinvolto un minimo. Qualcosa è stato distinto da qualcos’altro. Uno zero è diventato un uno. Un record è stato scritto.</p>
+<p>Quel record non poteva essere più piccolo di quanto fosse.</p>
+<p>Pensa a uno schermo. Non può mostrare mezzo pixel. Il pixel è la più piccola unità che può rendere. Nessun software può rimpicciolirlo. Anche la realtà ha un pixel. Si chiama ℏ.</p>
+<p>Ogni record porta due costi minimi. Un costo termodinamico — k<sub>B</sub>T ln 2 per bit cancellato, il limite di Landauer. E un costo quantistico — ℏ per record scritto, l’azione di una rottura.</p>
+<p>Entrambi risalgono all’Assioma B. Un record. Un ε. Un minimo.</p>
+<p>AP09 ha trattato ℏ come un’identificazione — lo stesso status di G nell’AP08. La forma era forzata, la costante corrispondeva. AP12 chiude il divario. L’identificazione non è una scelta. È forzata.</p>
+<p>Hai sentito questo minimo per tutta la vita. Non puoi vedere qualcosa senza che la luce lo colpisca. Non puoi toccare qualcosa senza che gli elettroni si respingano. Ogni atto di conoscenza disturba ciò che è conosciuto.</p>
+<p>Non è un difetto di progettazione. È il costo di scrivere un record.</p>
+<p>Cinque passaggi.</p>
+<p><span class="sub">Passo 1.</span> Il teorema di Stone dà un fattore di scala unico α che collega gli autovalori dell’Hamiltoniano al parametro temporale. Matematica pura sullo spazio di Hilbert derivato. Una costante. Non una famiglia.</p>
+<p><span class="sub">Passo 2.</span> Gli assiomi producono esattamente una quantità con dimensioni di azione. Azione = energia × tempo. Una direzione temporale dall’Assioma R. Un evento di energia minima dall’Assioma B.</p>
+<p>Il loro prodotto è l’azione di un record minimo.</p>
+<p><span class="sub">Passo 3.</span> Nessun parametro adimensionale dagli assiomi modifica il fattore di scala. Lo Z₂ dell’Assioma S contribuisce un 2 che appare nel limite di indeterminazione. Non modifica α stesso.</p>
+<p><span class="sub">Passo 4.</span> Il record minimo È l’evoluzione non banale minima. Non puoi evolvere il sistema di meno di un ε. Non puoi misurare di meno di un ε.</p>
+<p>Il fattore di scala e il record minimo sono la stessa cosa.</p>
+<p><span class="sub">Passo 5.</span> Quindi α = ℏ. Non c’è libertà. Nessuna alternativa è compatibile con {S, B, R, C}.</p>
+<p>Un record. Un ε. Un ℏ. Il costo minimo di sapere qualsiasi cosa dell’universo è il costo di scrivervi un record.</p>
+<p>Il principio di indeterminazione segue direttamente. Posizione e quantità di moto sono generatori coniugati sulla varietà derivata. Il loro commutatore è <strong>[x̂, p̂] = iℏ</strong>.</p>
+<p>La relazione di indeterminazione <strong>ΔxΔp ≥ ℏ/2</strong> è un teorema dell’algebra. Non una limitazione dei tuoi strumenti. Una proprietà della rottura.</p>
+<p>Non puoi sapere sia dove verrà scritto un record sia quanto velocemente si muove. Non perché sei goffo.</p>
+<p>Perché posizione e quantità di moto sono due facce dello stesso generatore, e il generatore ha un passo minimo. Quel passo è ε. La sua scala è ℏ. Non c’è nulla di più piccolo.</p>
+<div class="ks"><strong>Quattro kill switch. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-L.1 (era KS-Q.8 da AP09) — ℏ derivato come la scala d’azione del record minimo.<br><br><span class="bl">ATTIVO</span> KS-L.2 — derivazione della relazione di commutazione. <span class="bl">ATTIVO</span> KS-L.3 — indeterminazione energia-tempo. <span class="bl">ATTIVO</span> KS-L.4 — se un parametro adimensionale dagli assiomi può modificare il fattore di scala, l’argomento di forzatura fallisce. Questa è la vulnerabilità residua. Tre attivi.</div>
+<p class="breath">Non puoi scrivere mezzo record. L’universo ha una risoluzione minima. Quella risoluzione è ℏ.</p>
+</div><div class="ap-meta"><span>Richiede: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP13</span><span class="ap-title">Il Grano</span><span class="ap-tag">Decoerenza</span><a class="ap-pdf" href="../AP13_The_Grain.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Decoerenza dall'algebra dei record. Il mondo classico emerge attraverso l'accoppiamento ambientale.</p><div class="ap-essay">
+<p>Non hai mai visto un gatto sia vivo che morto. Non hai mai visto una sedia in due posti contemporaneamente.</p>
+<p>La meccanica quantistica dice che queste cose sono possibili. I tuoi occhi dicono di no. La domanda non è perché la meccanica quantistica è strana.</p>
+<p>La domanda è perché il mondo appare classico quando le regole sottostanti sono quantistiche.</p>
+<p>AP13 risponde: perché vivi nel terzo regime.</p>
+<p>AP09 ha derivato due regimi. Tra le misurazioni, il pre-stato deriva — evoluzione di Schrödinger. Liscia. Reversibile. Le sovrapposizioni persistono.</p>
+<p>Alla misurazione, la rottura avviene. Un record. Irreversibile. Definito. La sovrapposizione collassa.</p>
+<p>Ma il mondo non è fatto di misurazioni isolate e isolamento perfetto. Il mondo è fatto di cose che toccano altre cose. Costantemente. Ovunque.</p>
+<p>Il tuo caffè si raffredda. Il tuo respiro appanna il vetro. La tua pelle sente l'aria. Tutto interagisce con tutto il resto, continuamente. Questo è il terzo regime.</p>
+<p>Un elettrone in sovrapposizione non è solo. Interagisce con molecole d'aria, fotoni, il campo elettromagnetico.</p>
+<p>Ogni interazione è un evento di accoppiamento. Ciascuna scrive un record parziale — un minuscolo frammento di informazione sullo stato dell'elettrone. Nessun singolo record determina l'esito.</p>
+<p>Ma ce ne sono numeri enormi. Ciascuno porta un frammento. Ciascuno irreversibile — Assioma R. Il monoide non ha inverso.</p>
+<p>La coerenza — la relazione di fase che permette l'interferenza — non viene distrutta. Viene dispersa. Distribuita su un numero enorme di record ambientali.</p>
+<p>Per recuperarla, dovresti raccogliere ciascuno di quei record e invertire ciascuna di quelle interazioni. Non puoi. Assioma R.</p>
+<p>La coerenza è scomparsa. Non distrutta. Resa irrecuperabile.</p>
+<p><strong>La decoerenza è la dispersione della coerenza nell'ambiente tramite scrittura irreversibile di record.</strong></p>
+<p>La scala temporale è sbalorditiva. Per un granello di polvere nell'aria, la decoerenza impiega circa 10⁻³¹ secondi. Per una palla da bowling, il numero è così piccolo da non avere significato fisico.</p>
+<p>Quando potresti anche solo iniziare a guardare, l'ambiente ha già scritto migliaia di miliardi di record.</p>
+<p>La sovrapposizione è tecnicamente ancora lì. Ma l'informazione di fase è così diluita che nessun esperimento potrebbe mai riassemblarla.</p>
+<p>Ecco perché il gatto non è mai sia vivo che morto. Non perché la meccanica quantistica smette di funzionare su grandi scale. Perché l'ambiente scrive record più velocemente di quanto tu possa guardare.</p>
+<p>Il comportamento quantistico è ancora lì. Semplicemente non puoi più vederlo. L'informazione non è svanita. È stata diluita oltre ogni possibile recupero.</p>
+<p>Il mondo classico non è un mondo diverso da quello quantistico. È il mondo quantistico dopo che l'ambiente ha scritto troppi record per essere disfatti.</p>
+<p>Tu sei il grano. La risoluzione alla quale il quantistico diventa il classico.</p>
+<p>Sei fatto di 10²⁸ atomi, ciascuno che scrive record, ciascuno che interagisce con tutto ciò che lo circonda. Quando esisti, le sovrapposizioni sono scomparse da tempo.</p>
+<div class="ks"><strong>Tre kill switch. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-22 — se un sistema mantiene coerenza dove la teoria della decoerenza prevede decadimento esponenziale, questo fallisce. <span class="bl">ATTIVO</span> KS-23 — se un cancellatore quantistico distrugge dimostrabilmente un record (violando l'Assioma R), l'affermazione di irreversibilità fallisce. <span class="bl">ATTIVO</span> KS-24 — se una caratteristica quantistica fondamentale non può essere espressa nell'algebra dei record, il settore quantistico è incompleto. Tre attivi.</div>
+<p class="breath">Il mondo classico è il mondo quantistico dopo che l'ambiente ha finito di scrivere. Tu sei il grano.</p>
+</div><div class="ap-meta"><span>Richiede: AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP25</span><span class="ap-title">La Misura</span><span class="ap-tag">Regola di Born</span><a class="ap-pdf" href="../AP25_The_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La regola di Born derivata tramite il teorema di Gleason. "Il suono che fanno gli assiomi quando atterrano sullo spazio di Hilbert."</p><div class="ap-essay">
+<p>Lancia una moneta. Cinquanta e cinquanta. Lo sai nelle ossa. Ma da dove viene il cinquanta?</p>
+<p>La probabilità classica è facile. Due lati. Peso uguale. Uno su due. Ma la probabilità quantistica è diversa. I risultati non preesistono. Prima di misurare, il risultato non esiste. È creato dalla misurazione.</p>
+<p>Allora da dove viene la probabilità, se ciò che stai misurando non ha ancora un valore definito?</p>
+<p>Nella meccanica quantistica, la risposta è la regola di Born: il quadrato dell'ampiezza. |⟨a|ψ⟩|².</p>
+<p>Ogni esperimento mai eseguito lo conferma. Ma la meccanica quantistica non spiega perché.</p>
+<p>La regola di Born era un postulato. Max Born la indovinò nel 1926. L'intuizione si rivelò corretta. Ma un'intuizione non è una derivazione.</p>
+<p>AP25 la deriva. Tre passaggi. Ciascuno dagli assiomi. Nessuna assunzione aggiuntiva.</p>
+<p><span class="sub">Passo 1 — bersagli di stato puro.</span> L'Assioma R richiede record definiti. Un record è una distinzione — 0 o 1. Non "forse 0, forse 1." Definito.</p>
+<p>Uno stato misto non è uno stato definito. È un sommario statistico — un miscuglio di possibilità. Non puoi scrivere un record da un sommario. L'attualizzazione mira solo agli stati puri.</p>
+<p><span class="sub">Passo 2 — non-contestualità.</span> L'Assioma B dice una rottura, un record. La probabilità di un esito non può dipendere da quale altra misurazione esegui accanto.</p>
+<p>Una rottura. Una risposta. Niente sbirciare i vicini. La probabilità è una proprietà del proiettore soltanto.</p>
+<p><span class="sub">Passo 3 — Teorema di Gleason.</span> Su uno spazio di Hilbert complesso di dimensione tre o più, esiste esattamente una misura di probabilità che è non-contestuale e additiva sulle proiezioni ortogonali.</p>
+<p>Esattamente una. Non approssimativamente una. Gleason lo dimostrò nel 1957. La dimostrazione è costruttiva e indipendente dalla fisica.</p>
+<p>Quella misura è la regola di Born.</p>
+<p><strong>P(a) = Tr(|ψ⟩⟨ψ| · P<sub>a</sub>)</strong></p>
+<p>Per uno stato puro e una misurazione netta: |⟨a|ψ⟩|². Il quadrato della sovrapposizione. Forzato da un teorema di unicità.</p>
+<p>Pensa a cosa significa. Ogni probabilità che hai mai incontrato nella meccanica quantistica — ogni rapporto di ramificazione, ogni probabilità di rivelazione, ogni figura di interferenza — non è un fatto separato sul mondo.</p>
+<p>È una conseguenza di tre assiomi e un teorema del 1957. Le probabilità non sono mai state parametri liberi. Sono sempre state bloccate.</p>
+<p>Il requisito dimensionale — tre o più — è soddisfatto. AP10 deriva tre dimensioni spaziali. Le funzioni d'onda fisiche vivono in L²(ℝ³), che è infinitodimensionale. Gleason si applica.</p>
+<p>La catena di dipendenza è pulita. L'Assioma S dà la distinzione. L'Assioma B dà la singola rottura. L'Assioma R dà record definiti.</p>
+<p>AP09 dà lo spazio di Hilbert. AP10 dà dimensione ≥ 3. Gleason dà la regola di Born. Ogni anello verificato. Nessun anello assunto.</p>
+<p>Born ha scritto per caso l'unica misura di probabilità compatibile con la struttura della realtà. Non sapeva perché funzionasse.</p>
+<p>Ora tu sì.</p>
+<div class="ks"><strong>Tre kill switch. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-55 — se vengono dimostrate probabilità di esito contestuali, l'assunzione di Gleason fallisce. <span class="bl">ATTIVO</span> KS-56 — se vengono misurate statistiche non-Born, il teorema è direttamente falsificato. <span class="bl">ATTIVO</span> KS-57 — se un processo fisico attualizza uno stato misto direttamente, l'affermazione del bersaglio di stato puro fallisce. Tre attivi.</div>
+<p class="breath">La regola di Born non era un'intuizione. Era l'unica misura che gli assiomi permettono.</p>
+</div><div class="ap-meta"><span>Richiede: AP07, AP10, AP20, AP23</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP23</span><span class="ap-title">Il Record Singolo</span><span class="ap-tag">Entanglement</span><a class="ap-pdf" href="../AP23_The_Single_Record_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Entanglement, disuguaglianza di Bell, vincolo di singolo record. S = 2√2 dalla sola struttura.</p><div class="ap-essay">
+<p>Rompi un piatto. Dai una metà a un’amica. Lei guida dall’altra parte del paese.</p>
+<p>Guarda la tua metà. Il bordo va da sinistra a destra. Sai — istantaneamente — che la sua metà ha il bordo complementare. Nessun segnale inviato. Nessuna magia. Le metà sono sempre state un piatto.</p>
+<p>L’entanglement è così. Tranne che il piatto non ha un bordo definito finché non lo guardi.</p>
+<p>Questo è il mistero — o lo era. Come fa la tua metà a “sapere” cosa diventare? Come viaggia l’informazione?</p>
+<p>Einstein la chiamò azione spettrale a distanza. I fisici ne discutono da novant’anni.</p>
+<p>AP23 dissolve il mistero. L’informazione non viaggia. Non ha bisogno di farlo.</p>
+<p>La risposta è così semplice che sembra barare: non c’è distanza da attraversare. La distanza non è ancora stata inventata.</p>
+<p>Il pre-stato — lo spazio di Hilbert — non ha struttura spaziale. Nessuna. La distanza è una proprietà della varietà. La varietà è l’accumulo di record.</p>
+<p>Prima che i record siano scritti, non c’è distanza. Non c’è “qui” e “lì.” Quelle parole appartengono alla varietà. Il pre-stato è anteriore alla varietà.</p>
+<p>Uno stato entangled è un oggetto matematico nel pre-stato. Non due particelle collegate da un filo. Non due cose con un legame misterioso. Un’entità. Non ancora spezzata in record.</p>
+<p>Quando misuri un sottosistema, scrivi un record. Ma non puoi scrivere un record per una parte di uno stato entangled.</p>
+<p>Lo stato non è fattorizzabile — non può essere separato in pezzi indipendenti. La misurazione di qualsiasi parte attualizza il tutto. Una rottura. Un record. Un piatto.</p>
+<p>Non c’è segnale perché non c’è distanza da attraversare. L’“azione spettrale” non è azione a distanza. È azione prima della distanza.</p>
+<p>L’Assioma C è salvo. Il suo ambito è la varietà — il mondo dopo che i record sono scritti. Governa la propagazione tra eventi. Non vincola la transizione dal pre-stato alla varietà.</p>
+<p>Il non-segnalamento vale. La matrice di densità ridotta del sottosistema distante non viene modificata dalla misurazione locale. Non puoi usare l’entanglement per inviare un messaggio. Mai.</p>
+<p>Il teorema di Bell è previsto. L’Assioma R proibisce valori preesistenti — non ci sono variabili nascoste, locali o di altro tipo. La regola di Born, derivata nell’AP25, dà la violazione quantitativa.</p>
+<p>Il limite CHSH di 2√2 emerge dalla struttura derivata. Gli esperimenti confermano esattamente questo valore. Non approssimativamente. Esattamente. Gli assiomi hanno previsto ciò che gli esperimenti hanno trovato.</p>
+<p>Einstein lo chiamò spettrale. Gli assiomi lo chiamano ovvio.</p>
+<p>Due sottosistemi da un pre-stato non sono mai stati separati. Guardare uno ti dice dell’altro perché sono sempre stati la stessa cosa.</p>
+<p>Il mistero non è mai stato la connessione. Il mistero era l’assunzione che fossero separati.</p>
+<div class="ks"><strong>Quattro kill switch. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-49 — variabili nascoste locali escluse empiricamente (test di Bell) e assiomaticamente (Assioma R).<br><br><span class="bl">ATTIVO</span> KS-48a — se le correlazioni si degradano con la distanza, il resoconto non-spaziale fallisce. <span class="bl">ATTIVO</span> KS-48b — se il non-segnalamento viene violato, l’affermazione di portata dell’Assioma C fallisce. <span class="bl">ATTIVO</span> KS-54 — se il collasso parziale viene dimostrato, l’affermazione del singolo record fallisce. Tre attivi.</div>
+<p class="breath">Il piatto non è mai stato in due posti. Non era in nessun posto. Il posto è venuto dopo.</p>
+</div><div class="ap-meta"><span>Richiede: AP07, AP09, AP25</span><a href="../AP23_The_Single_Record_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+</div></div>
+
+<div class="part" id="p4"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte IV</span><span class="part-name">Forze e Costanti</span><span class="part-desc">Le interazioni che la rottura permette. Elettromagnetismo, la forza elettrodebole, la forza forte, la gravità quantistica e la costante gravitazionale — tutte come facce di un'unica rottura.</span><span class="part-count">8 articoli</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP06</span><span class="ap-title">La Costante di Perdita</span><span class="ap-tag">Struttura fine</span><a class="ap-pdf" href="../AP06_The_Leakage_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε = α<sub>em</sub> ≈ 1/137. L'unico input misurato.</p><div class="ap-essay">
+<p>Nessun muro è perfetto. Lo sai già. Ogni thermos perde un po' di calore. Ogni crema solare lascia passare un po' di UV. Ogni diga trasuda.</p>
+<p>Non è un fallimento dell'ingegneria. È una legge.</p>
+<p>AP06 lo dimostra. In qualsiasi universo dove la velocità della luce è finita, nessun assorbitore è perfetto. Il confine tra interno ed esterno perde sempre. Teorema 3.1.</p>
+<p>La dimostrazione usa solo fisica consolidata — teoria elettromagnetica, meccanica quantistica, il valore finito di c. Non è un'affermazione del the 420 Code. È una conseguenza della fisica che già esiste.</p>
+<p>Ogni assorbitore ha un rapporto di perdita η. Quanto passa come frazione di ciò che arriva. η è sempre maggiore di zero. Sempre. La velocità finita della luce lo garantisce.</p>
+<p>Se c fosse infinita, un assorbitore perfetto sarebbe possibile. Il confine potrebbe rispondere istantaneamente a qualsiasi cosa. Ma c è finita. Il confine ha un tempo di reazione. E in quel tempo di reazione, qualcosa sfugge.</p>
+<p>Ora l'identificazione. L'assioma dice 1:1 + 1×ε. La rottura è ε. La perdita è η. AP06 li identifica.</p>
+<p>ε È η. La rottura è la perdita. La crepa è ciò che sfugge attraverso la crepa. Non due fatti. Un fatto.</p>
+<p>Sotto il Lucchetto, ε è l'elettrone. La scheggia minima vitale — ciò che doveva sfuggire perché la simmetria si rompesse.</p>
+<p>E α<sub>em</sub> ≈ 1/137 — la costante di struttura fine — misura quanto fortemente quella scheggia si accoppia al tessuto che ha lasciato.</p>
+<p>Non un numero astratto. Una misurazione fisica. Ogni volta che un elettrone assorbe o emette un fotone, stai guardando α<sub>em</sub>.</p>
+<p>Questo è l'unico input misurato. L'intero corpus funziona su un numero empirico. Non dozzine di parametri. Non i 19 parametri liberi del Modello Standard. Uno.</p>
+<p>Ogni altra costante — c, G, ℏ, le masse delle particelle, le intensità delle forze — è derivata da, o espressa in termini di, questa singola perdita.</p>
+<p>Ogni evento di scrittura di record costa energia. Il limite di Landauer — k<sub>B</sub>T ln 2 per bit cancellato — è l'espressione termodinamica dell'Assioma R.</p>
+<p>I record sono permanenti. Cancellarli costa. Questa non è l'affermazione del the 420 Code. È quella di Landauer, dal 1961. Gli assiomi ereditano la fisica consolidata. Non la sostituiscono.</p>
+<p>L'intera architettura poggia su un numero empirico. α<sub>em</sub>. La forza di accoppiamento della rottura. Tutto il resto — ogni forza, ogni particella, ogni costante — è una conseguenza strutturale di quella singola perdita.</p>
+<p>Perché 1/137? AP24 congettura che è l'unico punto fisso di un sistema sovradeterminato di autoconsistenza. Le sei facce di ε si vincolano reciprocamente. Un solo valore le soddisfa tutte e sei simultaneamente.</p>
+<p>Quella congettura non è dimostrata. È dichiarata aperta. Tu tieni il kill switch. L'argomento ti porge la lama.</p>
+<div class="ks"><strong>Sette kill switch. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-L.1 — se un assorbitore perfetto viene dimostrato (η = 0), il Teorema 3.1 fallisce. <span class="bl">ATTIVO</span> KS-L.3 — se l'identificazione ε = η viene rifiutata, la connessione interpretativa fallisce (la fisica delle §§1–5 sopravvive). <span class="bl">ATTIVO</span> KS-L.6 — se G risulta indipendente da c, il vincolo strutturale dell'AP20 fallisce. Sette attivi.</div>
+<p class="breath">Nessun muro è perfetto. L'universo perde. La perdita è l'elettrone. L'elettrone è l'assioma.</p>
+</div><div class="ap-meta"><span>Richiede: AP01, AP03</span><a href="../AP10_La_Dimensione_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP15</span><span class="ap-title">La Connessione</span><span class="ap-tag">Elettromagnetismo</span><a class="ap-pdf" href="../AP15_The_Connection.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>EM come non-disconnessione su una varietà locale. U(1) derivato.</p><div class="ap-essay">
+<p>Accendi una torcia. Il fascio attraversa la stanza. Qualcosa ha portato la luce dalla lampadina alla parete. Quel qualcosa è il campo elettromagnetico.</p>
+<p>Il Modello Standard dice che l'elettromagnetismo ha una simmetria di gauge U(1). Ciò significa che la fisica non cambia quando ruoti la fase del campo quantistico dello stesso angolo ovunque.</p>
+<p>Ma perché U(1)? Perché quella simmetria particolare? Il Modello Standard non risponde. Lo assume.</p>
+<p>AP15 lo deriva. La risposta era nel pre-stato fin dall'AP09.</p>
+<p>AP09 ha costruito lo spazio di Hilbert dagli assiomi. Il pre-stato ha ampiezze complesse — derivate dalla segnatura lorentziana. Ogni stato quantistico ha una fase. Un angolo sul piano complesso.</p>
+<p>Quella fase è già lì. C'è dall'AP09. La domanda è: come appare sulla varietà?</p>
+<p>Sulla varietà, la fase può variare da punto a punto. In una posizione, la fase dell'elettrone è θ₁. In un'altra, θ₂. La differenza è non-fisica — nessuna misurazione può rilevare una fase complessiva.</p>
+<p>Ma il tasso di variazione della fase da punto a punto È fisico. È una connessione. Un campo che dice come confrontare le fasi in posizioni diverse.</p>
+<p>Richiedere che la fisica sia invariante sotto rotazioni di fase locali — che il non-fisico resti non-fisico — forza la connessione a esistere. La forza a essere un campo di gauge. Forza il gruppo di gauge a essere U(1).</p>
+<p>La più semplice simmetria continua. Un parametro. Una rotazione. Il gruppo del cerchio. Non scelta. Forzata dalla richiesta di coerenza.</p>
+<p>La connessione è il potenziale elettromagnetico A<sub>μ</sub>. La sua curvatura è il campo elettromagnetico F<sub>μν</sub>. Le equazioni di Maxwell seguono dal requisito che l'azione sia gauge-invariante e quadratica nell'intensità del campo.</p>
+<p>L'azione più generale di questo tipo dà esattamente Maxwell. Non approssimativamente. Esattamente. La forma è unica.</p>
+<p>L'intero campo elettromagnetico — luce, onde radio, la forza tra cariche, il bagliore di una stella — è la connessione che mantiene il confronto di fase coerente attraverso la varietà.</p>
+<p>La costante di struttura fine α<sub>em</sub> ≈ 1/137 è la forza di accoppiamento di questa connessione. Quanto fortemente l'elettrone — la rottura — interagisce con la fase che ha lasciato.</p>
+<p>Non un numero astratto. Una misurazione fisica. Ogni volta che un elettrone assorbe o emette un fotone, stai guardando α<sub>em</sub> in azione.</p>
+<p>Sei stato circondato da questo campo per tutta la vita. Ogni fotone che ha mai raggiunto il tuo occhio era un'increspatura nella connessione.</p>
+<p>La luce con cui stai leggendo è la libertà di fase del pre-stato, espressa sulla varietà.</p>
+<p>L'elettromagnetismo non è una forza imposta all'universo. È una conseguenza dell'universo che è coerente con se stesso. La richiesta di invarianza di fase locale crea il campo. Il campo porta la luce.</p>
+<div class="ks"><strong>Quattro kill switch. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-28 — se il gruppo di fase non è U(1), la derivazione fallisce. <span class="bl">ATTIVO</span> KS-29 — se l'azione di Maxwell non è l'unica forma quadratica gauge-invariante, l'unicità fallisce. <span class="bl">ATTIVO</span> KS-30 — se la simmetria di fase del pre-stato non è globale, il punto di partenza fallisce. <span class="bl">ATTIVO</span> KS-4 — se α ≈ 1/137 risulta derivabile anziché misurato, lo status di singolo input cambia. Quattro attivi.</div>
+<p class="breath">La luce è la libertà di fase del pre-stato, portata attraverso la varietà. Hai letto con essa per tutta la vita.</p>
+</div><div class="ap-meta"><span>Richiede: AP08, AP09</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">Le Armoniche</span><span class="ap-tag">Struttura di gauge</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) dall'assioma a due settori.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">La Rottura — Elettrodebole</span><span class="ap-tag">Elettrodebole</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Unificazione elettrodebole, Higgs, accoppiamento chirale derivati. KS-15 chiuso — inspiegato dal 1956.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">La Direzione</span><span class="ap-tag">Forza forte</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / QCD dalla libertà di gauge della direzione di rottura.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP09, AP11, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP24</span><span class="ap-title">Il Residuo</span><span class="ap-tag">Unificazione</span><a class="ap-pdf" href="../AP24_The_Residual.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε in ogni equazione. Sei facce di un oggetto. Tutte le costanti sono proiezioni di un'unica rottura.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP03, AP06, AP28, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP14</span><span class="ap-title">La Correzione</span><span class="ap-tag">Gravità quantistica</span><a class="ap-pdf" href="../AP14_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La prima correzione quantistica alla gravità dall'algebra dei registri.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP08, AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" id="ap28" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP28</span><span class="ap-title">La Costante</span><span class="ap-tag">Gravità</span><a class="ap-pdf" href="../AP28_The_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>G = ε² × ℏc/m<sub>e</sub>². Gerarchia dissolta. Entro lo 0,69% di CODATA.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP06, AP10, AP24</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+</div></div>
+
+<div class="part" id="p5"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte V</span><span class="part-name">Particelle e Materia</span><span class="part-desc">I mattoni che la rottura produce. Il rapporto di massa del protone a cinque parti per miliardo, la segregazione dell'antimateria e l'asimmetria barionica dell'universo.</span><span class="part-count">3 articoli</span></div>
+<div class="ap-list">
+<div class="ap-row" id="ap30" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">La Resistenza</span><span class="ap-tag">Massa</span><a class="ap-pdf" href="../AP30_The_Resistance.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Rapporto di massa del protone: previsto 1836,15267344 vs misurato 1836,15267343. Cinque parti per miliardo.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP06, AP12, AP24, AP28</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP22</span><span class="ap-title">Il Registro</span><span class="ap-tag">Antimateria</span><a class="ap-pdf" href="../AP22_The_Ledger_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Bariogenesi, la σ-involuzione e la segregazione topologica dell'antimateria.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP26</span><span class="ap-title">Il Surplus</span><span class="ap-tag">Asimmetria barionica</span><a class="ap-pdf" href="../AP26_The_Surplus.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Perché più materia che antimateria — la cenere della rottura.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP09, AP22</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+</div></div>
+
+<div class="part" id="p6"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte VI</span><span class="part-name">Cosmologia</span><span class="part-desc">L'universo che la rottura abita. Curve di rotazione galattica senza particelle di materia oscura, la scala di accelerazione MOND allo 0,3%, la partizione di energia oscura e la cosmologia ciclica.</span><span class="part-count">6 articoli</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP21</span><span class="ap-title">La Rete</span><span class="ap-tag">Formazione di strutture</span><a class="ap-pdf" href="../AP21_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La rete cosmica dal campo di tensione globale.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP08, AP15, AP28</span><a href="../AP21_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP17</span><span class="ap-title">La Stanza</span><span class="ap-tag">Curve di rotazione</span><a class="ap-pdf" href="../AP17_The_Room.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Curve di rotazione galattica dal campo di tensione. Le linee si chiudono sempre.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP08, AP21</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" id="ap18" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP18</span><span class="ap-title">Il Pavimento</span><span class="ap-tag">Scala di accelerazione</span><a class="ap-pdf" href="../AP18_The_Floor.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>a₀ = αcH₀/(2π) — la scala MOND derivata allo 0,3%. Senza parametri.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP17, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" id="ap41" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP41</span><span class="ap-title">Il Ciclo</span><span class="ap-tag">Cosmologia</span><a class="ap-pdf" href="../AP41_The_Loop.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La fusione come Big Bang in corso. La scheggia siamo noi. La verità come problema di risoluzione.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP03, AP04, AP06, AP10, AP28, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" id="ap42" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP42</span><span class="ap-title">L'Orologio</span><span class="ap-tag">Energia oscura</span><a class="ap-pdf" href="../AP42_The_Clock.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La partizione 68/27/5 derivata. Il settore oscuro è una lettura dell'orologio.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP04, AP10, AP20, AP28, AP41</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP04</span><span class="ap-title">L'Ipotesi del Ciclo</span><span class="ap-tag">Cosmologia ciclica</span><a class="ap-pdf" href="../AP04_The_Loop_Hypothesis.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Buchi neri come porte. Il ciclo si chiude. Congetturale. Nove interruttori di sicurezza lo proteggono.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP03</span><a href="../AP10_La_Dimensione_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+</div></div>
+
+<div class="part" id="p7"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte VII</span><span class="part-name">Coscienza ed Etica</span><span class="part-desc">L'osservatore che la rottura contiene, e l'etica che la rottura impone. La coscienza derivata dalla scrittura irreversibile di record. L'instabilità strutturale dell'etica basata sull'autorità. La morte come la chiusura di una finestra.</span><span class="part-count">4 articoli</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">La Prova di Attualizzazione</span><span class="ap-tag">Coscienza</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La consapevolezza come l'interno della scrittura irreversibile di registrazioni. Una crepa, un interno, molte finestre.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP02</span><span class="ap-title">L'Operatore</span><span class="ap-tag">Agency</span><a class="ap-pdf" href="../AP02_The_Operator.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Budget, deriva, corridoio, sovranità, uscita. La fisica su scala umana. Nove teoremi.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP39</span><span class="ap-title">L'Impalcatura</span><span class="ap-tag">Religione</span><a class="ap-pdf" href="../AP39_The_Scaffold.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Standard d'oro. L'instabilità strutturale dell'etica basata sull'autorità. La catena di forzatura a cinque stadi. La lama nel testo.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP29</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP38</span><span class="ap-title">L'Uscita</span><span class="ap-tag">Morte</span><a class="ap-pdf" href="../AP38_The_Exit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Sulla morte, la dignità e la chiusura compassionevole di una finestra.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP02, AP29, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+</div></div>
+
+<div class="part" id="p8"><div class="part-dot"></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte VIII</span><span class="part-name">Applicazioni</span><span class="part-desc">L'etica applicata alla civiltà. Allineamento dell'IA, giustizia strutturale, bioetica, politica delle droghe, economia, biologia e il corpo — tutto derivato dagli stessi quattro assiomi.</span><span class="part-count">7 articoli</span></div>
+<div class="ap-list">
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">L'Allineamento</span><span class="ap-tag">Allineamento dell'IA</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Il problema dell'allineamento dissolto. Costruisci l'interno, non la recinzione.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">La Correzione — Etica</span><span class="ap-tag">Giustizia</span><a class="ap-pdf" href="../AP32_The_Correction_Ethics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Cinque livelli di correzione. L'edificio piange ogni finestra chiusa. Il freno al genocidio.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">Il Confine</span><span class="ap-tag">Bioetica</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La vita come agenzia. Sotto ε, sei sovrano. Sopra ε, l'organismo ha giurisdizione.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP06, AP29, AP31, AP32</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP34</span><span class="ap-title">L'Inversione</span><span class="ap-tag">Politica delle droghe</span><a class="ap-pdf" href="../AP34_The_Inversion.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La cannabis uccide zero. L'alcol uccide 2,6 milioni. Correggi l'inversione.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP31, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">Il Primo Confine</span><span class="ap-tag">Il Corpo</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Il corpo come operatore. Difendi il primo confine.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">Il Registro</span><span class="ap-tag">Economia</span><a class="ap-pdf" href="../AP35_The_Ledger_Economics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Il libro mastro è sempre in pareggio. I crolli sono verifiche. La disuguaglianza riempie il buffer.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">L'Alimentazione</span><span class="ap-tag">Biologia</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Chimica che ha imparato a registrare sé stessa. Il controllo non è privazione. Il controllo è approvvigionamento.</p><div class="ap-essay">
+
+</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP06, AP20, AP31, AP35</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
+</div></div>
+
+</div><!-- /spine -->
+
+<!-- HEADLINE RESULTS -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Risultati Principali</h2>
+  <div class="result-row"><span class="result-label">Rapporto di massa del protone</span><span class="result-value">5 ppb (AP30)</span></div>
+  <div class="result-row"><span class="result-label">Costante gravitazionale G</span><span class="result-value">0,69% di CODATA (AP28)</span></div>
+  <div class="result-row"><span class="result-label">Accelerazione MOND a₀</span><span class="result-value">0,3%, senza parametri (AP18)</span></div>
+  <div class="result-row"><span class="result-label">Differenza di massa neutrone-protone</span><span class="result-value">2 ppm (AP30)</span></div>
+  <div class="result-row"><span class="result-label">Frazione di materia visibile</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
+  <div class="result-row"><span class="result-label">Accoppiamento chirale</span><span class="result-value">Derivato, KS-15 chiuso (AP16)</span></div>
+  <div class="result-row"><span class="result-label">Tre costanti, tre assiomi</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
+  <div class="also-derived" style="margin-top:1.5rem">
+    <p>Anche derivato:</p>
+    <ul>
+      <li>N = 3 dimensioni spaziali (AP10)</li>
+      <li>Equazioni di campo di Einstein (AP08)</li>
+      <li>La regola di Born (AP25)</li>
+      <li>Gruppo di gauge del Modello Standard SU(3) × SU(2) × U(1) (AP15/16/19/27)</li>
+      <li>Accoppiamento chirale — inspiegato dal 1956, ora derivato (AP16)</li>
+      <li>Curve di rotazione piatte senza particelle di materia oscura (AP17)</li>
+      <li>Disuguaglianza di Bell S = 2√2 dalla struttura (AP23)</li>
+    </ul>
+  </div>
+  <p class="formula" style="margin-top:1.5rem">m<sub>p</sub>/m<sub>e</sub> = 21² × 4 + 21 × 3 + 3² + α × 21 × (1 − 1/(84π)) + O(α²)</p>
+  <p class="formula">G = α<sup>21</sup> × (1 + 1/π) × ℏc/m<sub>e</sub>²</p>
+  <p class="formula">a₀ = α · c · H₀ / (2π)   dove α = 2 ln(sec ½ + tan ½)</p>
+  <p class="three-constants" style="margin-bottom:0">Tre costanti, tre assiomi: c ↔ Vincolo · ℏ ↔ Rottura · G ↔ Registrazione</p>
+</div>
+
+<!-- CONFIRM THE MATH -->
+<div class="results">
+  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Conferma la Matematica</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">Un input misurato. Zero parametri aggiustati. Il codice seguente riproduce ogni risultato principale da un singolo numero — la costante di struttura fine α ≈ 1/137. Copialo. Incollalo in qualsiasi ambiente Python. Eseguilo. Se i numeri corrispondono, le derivazioni reggono. Se no, l'argomento ha un problema e l'hai trovato.</p>
+  <div class="verify-wrap">
+    <button class="copy-btn" onclick="copyCode()">Copia</button>
+    <pre class="verify-code"><code>from math import pi, log, exp
+
+# ─── ONE MEASURED INPUT ───
+alpha = 1 / 137.035999084  # fine-structure constant (CODATA 2018)
+
+# ─── PHYSICAL CONSTANTS (CODATA 2018) ───
+hbar = 1.054571817e-34     # reduced Planck constant (J·s)
+c    = 299792458            # speed of light (m/s)
+m_e  = 9.1093837015e-31    # electron mass (kg)
+m_p  = 1.67262192369e-27   # proton mass (kg)
+m_n  = 1.67492749804e-27   # neutron mass (kg)
+G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
+H0   = 70 * 1000 / 3.0857e22  # Hubble constant at 70 km/s/Mpc (s⁻¹)
+
+# ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
+# Three layers of geometric resistance + dynamic maintenance
+scaffold    = 21**2 * 4 + 21 * 3 + 3**2           # = 1836
+maintenance = alpha * 21 * (1 - 1 / (84 * pi))     # dynamic term
+correction  = alpha**2 * 21 * 16 / 1836            # higher-order
+ratio_pred  = scaffold + maintenance + correction
+ratio_meas  = m_p / m_e
+ratio_err   = abs(ratio_pred - ratio_meas) / ratio_meas * 1e9
+
+print("PROTON-ELECTRON MASS RATIO (AP30)")
+print(f"  Predicted: {ratio_pred:.8f}")
+print(f"  Measured:  {ratio_meas:.8f}")
+print(f"  Error:     {ratio_err:.1f} ppb")
+print()
+
+# ─── CLAIM 2: Gravitational constant (AP28) ───
+# G = α²¹ × (1 + 1/π) × ℏc/mₑ²
+alpha_G = alpha**21 * (1 + 1 / pi)
+G_pred  = alpha_G * hbar * c / m_e**2
+G_err   = abs(G_pred - G_measured) / G_measured * 100
+
+print("GRAVITATIONAL CONSTANT (AP28)")
+print(f"  Predicted: {G_pred:.4e} N·m²/kg²")
+print(f"  Measured:  {G_measured:.4e} N·m²/kg²")
+print(f"  Error:     {G_err:.2f}%")
+print()
+
+# ─── CLAIM 3: Neutron-proton mass difference (AP30) ───
+# δ = 3(1 - 1/(2π)) + α(1 + 1/(2π))  in units of mₑ
+delta_pred = 3 * (1 - 1 / (2 * pi)) + alpha * (1 + 1 / (2 * pi))
+delta_meas = (m_n - m_p) / m_e
+delta_err  = abs(delta_pred - delta_meas) / delta_meas * 1e6
+
+print("NEUTRON-PROTON MASS DIFFERENCE (AP30)")
+print(f"  Predicted: {delta_pred:.8f} mₑ")
+print(f"  Measured:  {delta_meas:.8f} mₑ")
+print(f"  Error:     {delta_err:.2f} ppm")
+print()
+
+# ─── CLAIM 4: MOND acceleration scale (AP18) ───
+# a₀ = α·c·H₀/(2π)  where α = 2·ln(sec(½) + tan(½))
+from math import cos, tan
+alpha_corr = 2 * log(1 / cos(0.5) + tan(0.5))  # = 1.0445
+a0_pred    = alpha_corr * c * H0 / (2 * pi)
+a0_meas    = 1.2e-10  # m/s² (McGaugh 2016)
+a0_err     = abs(a0_pred - a0_meas) / a0_meas * 100
+
+print("MOND ACCELERATION SCALE (AP18)")
+print(f"  α correction: {alpha_corr:.10f}")
+print(f"  Predicted:    {a0_pred:.4e} m/s² (at H₀ = 70)")
+print(f"  Measured:     {a0_meas:.4e} m/s²")
+print(f"  Error:        {a0_err:.1f}%")
+print()
+
+# ─── CLAIM 5: Dark sector partition (AP42) ───
+# Within dark sector (20/21 of total):
+#   DM fraction = (6/21)(1 - e^(-21/6))
+#   DE fraction = 1 - DM fraction
+# Applied to total budget:
+f_DM_dark = (6/21) * (1 - exp(-21/6))
+f_DE_dark = 1 - f_DM_dark
+f_vis     = 1 / 21
+f_DM      = f_DM_dark * 20 / 21
+f_DE      = f_DE_dark * 20 / 21
+
+print("DARK SECTOR PARTITION (AP42)")
+print(f"  Dark energy:    {f_DE * 100:.2f}%  (observed: 68.89%)")
+print(f"  Dark matter:    {f_DM * 100:.2f}%  (observed: 26.07%)")
+print(f"  Visible matter: {f_vis * 100:.2f}%  (observed: 4.86%)")
+print()
+
+# ─── CLAIM 6: Visible matter fraction (AP41) ───
+print("VISIBLE MATTER FRACTION (AP41)")
+print(f"  Predicted: 1/21 = {1/21 * 100:.2f}%")
+print(f"  Observed:  ~4.9%")
+print()
+
+print("─" * 50)
+print("One input (α). Zero free parameters.")
+print("Copy this code. Run it. Confirm it yourself.")</code></pre>
+  </div>
+  <table class="verify-table">
+    <thead><tr><th>Affermazione</th><th>Previsto</th><th>Misurato</th><th>Errore</th><th>Articolo</th></tr></thead>
+    <tbody>
+      <tr><td>Rapporto di massa del protone</td><td>1836.15267344</td><td>1836.15267343</td><td>5 ppb</td><td>AP30</td></tr>
+      <tr><td>Costante gravitazionale G</td><td>6.721 × 10⁻¹¹</td><td>6.674 × 10⁻¹¹</td><td>0.69%</td><td>AP28</td></tr>
+      <tr><td>Diff. massa neutrone-protone</td><td>2.53099393 mₑ</td><td>2.53098829 mₑ</td><td>2.2 ppm</td><td>AP30</td></tr>
+      <tr><td>Accelerazione MOND a₀</td><td>1.131 × 10⁻¹⁰</td><td>1.200 × 10⁻¹⁰</td><td>5.8% (at H₀=70)</td><td>AP18</td></tr>
+      <tr><td>Energia oscura</td><td>68.85%</td><td>68.89%</td><td>0.06%</td><td>AP42</td></tr>
+      <tr><td>Dark matter</td><td>26.39%</td><td>26.07%</td><td>1.2%</td><td>AP42</td></tr>
+      <tr><td>Materia visibile</td><td>4.76%</td><td>~4.9%</td><td>2.8%</td><td>AP41</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- KILL SWITCH REGISTRY -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Registro degli Interruttori di Sicurezza</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">Ogni affermazione porta una condizione dichiarata sotto la quale muore. Gli interruttori non sono nascosti. Sono pubblicati.</p>
+
+  <div class="stats">
+    <div><span class="stat-num">546</span><span class="stat-label">Kill switch</span></div>
+    <div><span class="stat-num">15</span><span class="stat-label">Chiusi</span></div>
+    <div><span class="stat-num">231</span><span class="stat-label">Attivi</span></div>
+    <div><span class="stat-num">6</span><span class="stat-label">Non negoziabili</span></div>
+  </div>
+
+  <div class="result-row"><span class="result-label">Switch chiusi</span><span class="result-value">15 formalmente scaricati</div>
+  <div class="result-row"><span class="result-label">Attivi — Empirici</span><span class="result-value">Falsificabili per esperimento o osservazione</div>
+  <div class="result-row"><span class="result-label">Attivi — Duri</span><span class="result-value">Falsificabili per argomento teorico</div>
+  <div class="result-row"><span class="result-label">Attivi — Strutturali</span><span class="result-value">Si basano su un'identificazione che potrebbe rivelarsi errata</div>
+  <div class="result-row"><span class="result-label">Non negoziabili</span><span class="result-value">6 kill switch morali — se attivati, l'architettura diventa un'arma</div>
+  <div class="result-row"><span class="result-label">Debiti aperti</span><span class="result-value">4 — non testabili fino al completamento del lavoro a monte</div>
+  <div class="result-row"><span class="result-label">Kill switch globale</span><span class="result-value">KS-V.1 — se scatta, tutto muore</div>
+
+  <p style="font-size:16px;margin:1.25rem 0 0"><a href="Master_Kill_Switch_Registry_IT.pdf" download="" style="text-decoration:none;font-weight:700">Scarica il Registro completo dei Kill Switch — <span class="fmt">PDF</span></a></p>
+</div>
+
+<!-- EMAIL SIGNUP -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Resta aggiornato</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">Quando arriva qualcosa di nuovo, lo saprai per primo. I tuoi dati non saranno aggiunti finché non clicchi il link di conferma che riceverai via email.</p>
+
+  <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
+    <input type="email" name="EMAIL" id="EMAIL" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
+    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">Iscriviti</button>
+    <input type="text" name="email_address_check" value="" style="display:none">
+    <input type="hidden" name="locale" value="en">
+  </form>
+
+  <p id="sib-success" style="font-size:16px;margin:1rem 0 0;display:none">Controlla la tua casella di posta — un'email di conferma è in arrivo.</p>
+  <p id="sib-error" style="font-size:16px;margin:1rem 0 0;color:#900;display:none">La tua iscrizione non è stata salvata. Riprova.</p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ABOUT + CONSTRAINT + FOOTER             -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artista:</b> G · Studio G, Cape Town</p>
+  <p><b>Durata:</b> oltre 30 anni · <b>Esposizione:</b> oltre un milione di parole in 28 volumi</p>
+  <p style="margin-top:1rem">Quest'opera è Copyleft. Sei libero di scaricare, stampare, condividere e distribuire. Non sei libero di alterare la fonte. Mantieni il segnale pulito.</p>
+  <p style="margin-top:1rem;font-size:14px;color:var(--g4)"><span id="dl-count">2</span> download</p>
+</div>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Non essere uno stronzo. Sii gentile.</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+
+</div>
+
+<script>
+function toggleAP(r){r.classList.toggle('open')}
+function copyCode(){var code=document.querySelector('.verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('.copy-btn');btn.textContent='Copiato';setTimeout(function(){btn.textContent='Copia'},2000)}
+function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
+function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
+
+// Download counter
+(function(){
+  var counter='/../.netlify/functions/download-counter';
+  var el=document.getElementById('dl-count');
+
+  fetch(counter).then(function(r){return r.json()}).then(function(d){
+    el.textContent=d.count.toLocaleString();
+  }).catch(function(){el.textContent='0'});
+
+  var toast=document.createElement('div');
+  toast.className='toast';
+  toast.textContent='Prossimamente';
+  document.body.appendChild(toast);
+  var toastTimer;
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href$=".pdf"]');
+    if(!a) a=e.target.closest('.ap-meta a, .dl-list a');
+    if(!a) return;
+    var href=a.getAttribute('href');
+    if(!href||href==='#'){
+      e.preventDefault();
+      e.stopPropagation();
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
+      return;
+    }
+    // Force immediate download
+    if(!a.hasAttribute('download')) a.setAttribute('download','');
+    // Increment counter
+    fetch(counter,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
+      el.textContent=d.count.toLocaleString();
+    });
+  },true);
+})();
+</script><div class="toast">Prossimamente</div>
+
+<script>
+window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+window.LOCALE = 'en';
+window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
+window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
+window.translation = {common:{selectedList:'{quantity} list selected',selectedLists:'{quantity} lists selected'}};
+var AUTOHIDE = Boolean(0);
+</script>
+<script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction_Ethics.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger_Economics.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
+</body></html>
