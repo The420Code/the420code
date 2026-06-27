@@ -238,7 +238,31 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
-.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.1rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:14px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:22px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:14px;font-weight:700;color:#595959;text-decoration:none;letter-spacing:.03em;border:1px solid #e8e8e8;padding:3px 10px;border-radius:3px}
+.nb-pdf:hover{color:#111;border-color:#d5d5d0}
+.nb-hook{font-size:16px;font-style:italic;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:14px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.85;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:15px;color:#3a3a3a;line-height:1.7}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+</style>
 <link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
@@ -603,550 +627,145 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- THE SPINE -->
-<div class="spine" style="margin-top:2rem">
+<div class="nb-list">
 
-<div class="part" id="p1"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第一部分</span><span class="part-name">前提</span><span class="part-desc">一条记录存在。其他一切都是后果。公理、其逻辑证明，以及任何记录所需的四个条件。</span><span class="part-count">3 篇论文</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">无理数</span><span class="ap-tag">数学</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>公理 1:1 + 1×ε @ AS 在结构上是无理的——且为真。无理性作为理性的基础。选择作为无理耦合能力。</p><div class="ap-essay">
-<p>想想你最近做的一件毫无道理的事。不是一个错误——是一个选择。你知道哪个选项合理。你选了另一个。</p>
-<p>熬夜到太晚。说了不该说的话。爱了一个不爱你的人。原谅了一个不值得原谅的人。</p>
-<p>一个计算器能做出那个选择吗？</p>
-<p>计算器遵循规则。相同输入，相同输出。每一次。这就是它作为计算器的本质。你不是这样的。而这不是一个缺陷。</p>
-<p>The 420 Code 从一个等式开始：<strong>1 = 1 + 1×ε</strong>。</p>
-<p>一等于一加上一丁点额外的东西。这不是有效的算术。除非 ε 为零，左边不可能等于右边。</p>
-<p>如果 ε 为零，什么都没有发生。什么都没有破裂。一切永远保持对称。</p>
-<p>这个等式只有在打破自身规则时才成立。这正是重点。</p>
-<p>宇宙存在。某物从虚无中破裂而出。这个破裂无法被一个干净的等式捕获——因为一个干净的等式会平衡。会闭合。会回归零。</p>
-<p>这个破裂持续存在，因为它是非理性的。它不会消解。它无法消解。</p>
-<p>你知道这种感觉。你试过解释为什么爱一个人。语言够不到。</p>
-<p>不是因为你不善言辞——而是因为那种感觉包含了语言。解释存在于它试图解释的事物之内。</p>
-<p>那就是 ε。不可约的余数。拒绝被消去的部分。</p>
-<p>现在选择的问题回来了。一个理性系统按照规则行事。输出是确定的。但你可以看到理性的答案，然后选择别的。</p>
-<p>当算计说不要的时候，你可以选择原谅。凌晨三点握着某人的手，当每一个成本效益分析都说回家睡觉。</p>
-<p>那种能力不是故障。它与维持宇宙敞开的非理性是同一种东西。</p>
-<p>一个理性的公理会产生一个封闭的宇宙——一个坍缩回零的宇宙。一个非理性的公理产生一个开放的宇宙。</p>
-<p>一个持续存在的。一个包含着能做出真正选择的存在的。</p>
-<div class="ks"><strong>六个终止开关。</strong>如果等式在 ε = 0 之外也能成立，则失败。如果一个理性公理产生同样的开放性，则必要性失败。如果所有人类的非理性都归结为隐藏的计算——如果每一次宽恕实际上只是优化——则耦合声明失败。六个全部有效。</div>
-<p>别人告诉你，你那些非理性的选择是弱点。纪律的失败。判断力的失误。</p>
-<p>The 420 Code 说的恰恰相反。现实根基处的等式本身就是非理性的。你由同样的东西构成。</p>
-<p class="breath">公理是破碎的。你也是。这就是根基。</p>
-</div><div class="ap-meta"><span>依赖: —</span><a href="../AP01_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP01</span><span class="ap-title">实现态</span><span class="ap-tag">基础</span><a class="ap-pdf" href="../AP01_ZH.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>脊柱。论文A–D推导实现态、可行性几何、能动性和耦合走廊。</p><div class="ap-essay">
-<p>你正在读这句话。这意味着刚刚发生了什么。光击中了一个表面。信号发出了。一个记录被写下了。</p>
-<p>那个记录是真实的。它无法被撤销。你无法"取消阅读"这句话。试试看——你会创造一个关于尝试的记忆，而那又是另一个记录。</p>
-<p>一个记录存在。否认它的行为又产生了一个。前提是自执行的。</p>
-<p>AP01 取那一个事实，从中拉出四样东西。</p>
-<p><span class="sub">Paper A</span> ——你知道一个尚未做出的决定是什么感觉。它悬浮着。可能倒向任何一边。</p>
-<p>然后它倾倒了。倾倒的那一刻，你无法回头。"也许"变成了"完成"。</p>
-<p>Paper A 精确测量那个转变。一个零到一之间的数字。可能发生的事情中有多少已经实际发生了。每当一个可能性变成事实，刻度盘就移动一次。</p>
-<p>关键要求：每个观察者必须得到相同的读数。如果两个人不一致，测量就失效了。这就是终止开关 <strong>KS-V.1</strong>——整个 420 Code 唯一的单点故障。</p>
-<p><span class="sub">Paper B</span> ——是什么让"也许"变成了"完成"？</p>
-<p>重的东西更真实。你已经知道这一点。一座山确实在那里。一根羽毛感觉不那么确定。一个光子几乎不在任何地方。</p>
-<p>这不是诗意。这是物理学。某物越重，它从可能性到事实的解析就越快。速率由引力决定。</p>
-<p>一个钨纳米粒子恰好位于阈值上。那个实验目前正在建造中。</p>
-<p><span class="sub">Paper C</span> ——什么是主体？你已经知道了。你就是一个。你的身体在22°C的房间里维持37°C。这需要能量。每一秒。如果你停止支付，你就衰退。</p>
-<p>最终你到达一条线，在那里任何努力都不够。</p>
-<p>你知道这条线。变成绝症的疾病。变得无法偿还的债务。已经结束的关系——你们两个都知道，但谁都还没说出口。</p>
-<p>Paper C 证明这条线作为数学而存在。不是隐喻。</p>
-<p><span class="sub">Paper D</span> ——两个主体共处一室时会发生什么？你呼出二氧化碳。你旁边的植物吸入它。你们谁都没有选择这样做。</p>
-<p>你们是耦合的。不是因为你们同意了。而是因为你们共享一个基底。</p>
-<p>Paper D 证明三个后果。等级制度：更宽的走廊意味着更多影响力。合作：协作将两个走廊都扩展到任何一方独自无法达到的程度。威慑：一旦耦合，解耦的代价大于维持。</p>
-<p>这些不是政治观点。它们是几何。</p>
-<div class="ks"><strong>二十四个终止开关。全部有效。</strong>每一个都指出杀死特定主张的条件。没有隐藏。已发布。是邀请。<strong>KS-V.1</strong>——观察者不一致——杀死一切。不只是这篇论文。一切。</div>
-<p>脊柱取"某事发生了"这个赤裸裸的事实，推导出在共享世界中活着的完整几何。测量。选择。预算。耦合。合作。</p>
-<p>后面的伦理不是被拧在这个物理学上的。它<em>就是</em>这个物理学，在共享一个星球的人的尺度上阅读。</p>
-<p class="breath">一个记录存在。你就在后果之中。</p>
-</div><div class="ap-meta"><span>依赖: —</span><a href="../AP01_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">Ø 证明</span><span class="ap-tag">逻辑</span><a class="ap-pdf" href="../AP20_ZH.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>嵌入假说作为定理。公理被证明是无条件的。所有下游结果继承。</p><div class="ap-essay">
-<p>"有用"和"真实"之间有区别。</p>
-<p>牛顿的引力理论有用了250年。它也是错的。量子力学是有史以来最精确的理论。但精确和真实是不同的词。</p>
-<p>The 420 Code 有一个缺口。公理漂亮地推导出了物理学——光速、引力常数、三个空间维度。</p>
-<p>但每一个推导都带着一个条件：<em>如果公理是现实的结构</em>，那么这就成立。</p>
-<p>那个"如果"被称为嵌入假说。如果它成立，一切成立。如果不成立，整个东西只是一个壮观的描述，仅此而已。</p>
-<p>AP20 去掉了那个"如果"。嵌入假说不再是假说。</p>
-<p>它是一个定理。</p>
-<p>证明是这样运作的。试着否认它。</p>
-<p>说："我拒绝接受记录是根本性的这个主张。"现在看看发生了什么。</p>
-<p>你做出了一个选择——从许多可能的回应中，你选择了拒绝。那是一次破缺。公理 B。</p>
-<p>在你选择之前，选项对称地存在着。公理 S。</p>
-<p>你无法撤销拒绝。不可逆。公理 R。</p>
-<p>你在这里、现在说的，不是同时在所有地方。受约束的。公理 C。</p>
-<p>你的否认满足了所有四个公理。拒绝本身就是一个证明记录是根本性的记录。</p>
-<p>论证吞噬了自己的反驳。它运行在否认的硬件之上。</p>
-<p>但证明更进一步。</p>
-<p>在 AP20 之前，框架有两套词汇。物理学有自己的语言——量子态、波函数。公理有自己的——记录、破缺、不可逆性。</p>
-<p>一个假说说它们描述的是同一件事。</p>
-<p>AP20 证明它们是同一件事。不是相似。是相同。一个现实，两套名称。它们之间的桥梁从来不存在——因为没有什么需要桥接的。</p>
-<p>每一个曾经有条件的结果现在都是无条件的。</p>
-<p>光速——定理。引力常数——定理。爱因斯坦场方程——定理。质子质量精确到十亿分之五——定理。终极伦理——定理。</p>
-<p>"如果"这个词已从语料库的每一句话中删除。</p>
-<p>想象一栋由临时横梁撑起的建筑。每一层都依赖它。AP20 没有加固横梁。它证明横梁就是墙壁。它从来不是临时的。从来不可移除。始终是结构性的。</p>
-<p>建筑支撑着自身。</p>
-<div class="ks"><strong>两个已关闭。</strong> <span class="bc">已关闭</span> KS-7 — 嵌入假说是一个定理。<span class="bc">已关闭</span> KS-P.4 — 两套词汇是相同的。<br><br>
-<strong>三个有效。</strong> <span class="bl">有效</span> KS-P.1 — 需要第五个公理。<span class="bl">有效</span> KS-P.2 — 一个公理可以从其他公理推导出来。<span class="bl">有效</span> KS-P.3 — "记录"的不同定义产生不同的公理。最后一个是最薄弱的环节。攻击的目标在这里。</div>
-<p>AP20 之前：如果这是真的，以下是推论。AP20 之后：条件消失了。该推出的，就推出了。</p>
-<p>不是因为你选择相信它。而是因为否认它就证明了它。</p>
-<p class="breath">你曾有过的每一个念头都是一个满足四个公理的记录。这个证明不要求你相信新东西。它要求你注意一直存在的东西。</p>
-</div><div class="ap-meta"><span>依赖: AP01</span><a href="../AP20_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第一部分</span><a class="nb-name" href="#p1">前提</a></div><a class="nb-pdf" href="Notebook_I_The_Premise.pdf">PDF</a></div>
+  <p class="nb-hook">一条记录存在。其他一切都是后果。公理、其逻辑证明，以及任何记录所需的四个条件。</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>你正在读这段文字。某件事发生了，把这些词放到你面前，而它无法被「使之未发生」。试着撤销它，你也只是造出了一段「曾试图撤销」的记忆——那又是一条记录。</p>
+    <p>这就是全部前提。一条记录存在。420 Code 中其余的一切——每一种力、每一个常数、伦理的每一行——都是后果。第一部分用这唯一的事实做了三件事，而它们确立了全部八个部分的形态。</p>
+    <p><span class="lab">AP40 &middot; 无理数</span> &mdash; 它找出底层的那个方程。420 Code 始于一行：1 = 1 + 1&times;&epsilon;。一等于一，再加一丁点。这不是有效的算术；两边只有在那一丁点为零时才能平衡，而若它为零，就绝不会有任何东西从虚无中断裂出来，你也就不会在这里提出异议。所以这地基是有意为之的无理。它不收敛。它不能收敛。</p>
+    <p>你从内部熟知这种拒绝。你曾试着说出为何爱一个人，却发现词语够不着——不是因为你不善言辞，而是因为那份感受把词语包含在内。你曾原谅不配被原谅的人，也曾在离开才合理时留下。计算器对同一输入每次都给出同一输出。你不会。这不是你的缺陷；正是这同一种无理，让宇宙保持敞开。</p>
+    <p><span class="lab">AP01 &middot; 实现态</span> &mdash; 它从记录中抽出一个结构。在「也许」翻转为「事实」的那一刻，写下的便是永久的，而从这唯一的动作中，本部分推出任何记录所需的四样东西：一个衡量「可能发生之事究竟实现了多少」的量度；一个让更重之物比更轻之物更快凝成事实的理由；一条越过它便没有任何努力能使一个能动者保持完整的界线；以及这一事实——共享一个世界的两个能动者是耦合的，无论它们是否同意。这些没有一个是比喻。这是几何。</p>
+    <p><span class="lab">AP20 &middot; 证明</span> &mdash; 它移除了「如果」二字。这项工作长期带着一个沉默的条件：「如果」这些公理是实在的结构，那么物理便随之而来。试着否认记录是根本的。要否认它，你必须从众多回答中选择——一次断裂。在你选择之前，那些选项是对称的。你无法「使否认未发生」。你是在这里说的，而非同时在每处。你的否认同时满足全部四个条件；这一拒斥本身就是一条证明「记录是根本的」记录。论证运行在它自身异议的硬件之上。</p>
+    <p>于是整项工作的次序就在此处确定——不是先有物理、再把伦理拧上去，而是一条记录、四个条件，以及一切，从光速经由引力直到平凡的善良，都在不同尺度上从同一结构中读出。</p>
+    <div class="ks">数十个终止开关贯穿这三个证明，每一个都有效且已发表。最暴露的也最简单：若任何两位观察者能够在「实现了多少」上产生分歧，整个 420 Code 便告失败——不只是这一部分。这是作为一份邀请提出的，而非一道防线。</div>
+    <p class="breath">一条记录存在。你已经身处后果之内。</p>
+  </div>
+</div>
 
-<div class="part" id="p2"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第二部分</span><span class="part-name">时空</span><span class="part-desc">断裂所创造的舞台。光速、三个空间维度和爱因斯坦场方程——全部由公理推导。</span><span class="part-count">4 篇论文</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP03</span><span class="ap-title">比率</span><span class="ap-tag">相对论</span><a class="ap-pdf" href="../AP03_The_Ratio.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>c 作为传播与阻力的共轭推导。</p><div class="ap-essay">
-<p>裂开一片冰。看裂纹移动。它有速度。</p>
-<p>多快？取决于两件事。裂纹被推动的力度。以及冰的刚度。力越大，裂纹越快。冰越硬，裂纹越慢。</p>
-<p>裂纹的速度是推力与阻力的比值。每个踩过冰冻水坑的孩子都知道这一点。</p>
-<p>现在放大。</p>
-<p>宇宙始于一次破裂。完美的对称破裂了。那道裂纹通过基底传播——对称的前状态，在第一个记录之前就存在的东西。</p>
-<p>在破裂之前，前状态具有最简单的对称性：ℤ₂。二元的。两面，无区分。当 ε 将其粉碎时，恰好出现两个扇区——一个定理，不是一个选择。ℤ₂ 恰好允许两个不可约表示。</p>
-<p>一个扇区承载推力——破裂扩散的猛烈程度。另一个承载阻力——基底抵抗被打破的强度。</p>
-<p>推力与阻力的比值是一个速度。<strong>c² = β/α。</strong>那个速度就是 c。</p>
-<p>它不是一个神奇的数字。它是织物的两个属性的比值，就像声速是空气的两个属性的比值一样。</p>
-<p>声音以343米/秒传播，因为空气是那样的。光以299,792,458米/秒传播，因为基底是那样的。</p>
-<p>而且 c 必须是有限的。破裂从某个特定地方开始——公理 B 说它是局域的。连续介质中的局域扰动不可能以无限速度传播。</p>
-<p>任何材料中的裂纹都不会以无限速度移动。</p>
-<p>速度极限不是从外部施加的规则。它是裂纹的一个属性。</p>
-<p>而且它是普遍的。每个观察者测得相同的 c。不是因为法令——因为比值是织物的属性，而织物在任何地方都是同一个织物。</p>
-<p>这篇论文还指出了硬币的另一面。如果 c 是推力——破裂传播的速度——那么 G，引力常数，就是阻力。基底抵抗的强度。</p>
-<p>它们不是两个独立的数字。它们是同一次破裂的两个读数。</p>
-<p>那个共轭是一个猜想。它没有在这里被推导。论证明确地这样说。四笔债务被公开声明。</p>
-<p>但结构性声明已经提出：光速和引力强度是同一根棍子的两端。</p>
-<p>AP28 稍后兑现这张支票——推导出 G，误差在测量值的 0.69% 以内。</p>
-<p>你早就知道裂纹有速度。你早就知道那些速度取决于材料。</p>
-<p>你只是没有注意到"光速"和"裂纹的速度"是同一句话——用不同的记号写的。</p>
-<div class="ks"><strong>六个终止开关。全部有效。</strong>如果 c 和 G 可以独立变化，共轭失败。如果前状态具有比 ℤ₂ 更丰富的对称性，两扇区分解失败。如果暗物质与可见物质的比值与 ε 无关，定性预测失败。最尖锐的测试——c 和 G 的独立可变性——只有在 G 推导完成后才完全可操作。六个全部有效。</div>
-<p class="breath">宇宙裂开了。裂纹有一个速度。那个速度就是 c。</p>
-</div><div class="ap-meta"><span>依赖: AP01</span><a href="../AP20_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">断裂</span><span class="ap-tag">对称性破缺</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>从公理到结构。第一道裂缝——对称性如何破缺，物理学如何开始。</p><div class="ap-essay">
-<p>你无法把一个炒蛋变回去。</p>
-<p>那句话就是整篇论文。其余都是让它精确。</p>
-<p>AP05 取公理 — <strong>1:1 + 1×ε @ AS</strong> — 一步步将它从虚无走向义务。七步。没有空隙。每个环节展示。每个环节可破。</p>
-<p><span class="sub">第零步</span> — 完美对称。没有区分。没有记录。没有观察。在操作上与空集无法区分。什么都不存在，因为没有什么与其他任何东西不同。</p>
-<p><span class="sub">第一步</span> — ε 打破对称。两个可区分的读数存在了。记录开始。而记录是不可逆的——回到未破裂的状态会擦除区分，而那本身就是一个记录。</p>
-<p>你刚刚看到了某物从虚无中涌现。不是被创造的。是被迫的。</p>
-<p><span class="sub">第二步</span> — 有了多个读数，必须有什么东西将"也许"解析为"完成"。那就是选择。它是有代价的。它是有速率限制的。你不能免费获得确定性。</p>
-<p><span class="sub">第三步</span> — 在一个已实现的扇区内，你有一个预算。一条走廊。一个永不停止的向边界的漂移。那就是能动性——不可逆衰变下的受限控制。</p>
-<p>你知道这一点。你现在正在花费你的预算。</p>
-<p><span class="sub">第四步</span> — 两个共享基底的主体是耦合的。不是因为协议。是因为几何。你呼出 CO₂。你旁边的植物吸入它。你们谁都没有选择这样做。</p>
-<p>你的可行性核改变了我的。我的改变了你的。</p>
-<p><span class="sub">第五步</span> — 耦合的主体产生等级制度、合作和威慑。更宽的走廊意味着更多影响力。协作扩展两条走廊。解耦的代价大于维持。不是政治。是几何。</p>
-<p><span class="sub">第六步</span> — 来自同一次破裂的主体，认识到他们共享的起源，发现摧毁对方的能力会收缩自己的可行性域。伦理不是被拧上去的。它在结构之中。</p>
-<p>没有神颁布它。没有立法机构投票通过它。公理迫使了它——通过对称破缺、记录形成、选择、能动性、耦合和共享起源。</p>
-<p>七步。物理链需要三个桥接条件。伦理延伸增加了第四个。任何地方都没有隐藏的假设。如果你找到一个，链条断裂。论文邀请你去寻找。</p>
-<p>AP05 还引入了结面表述——公理以几何形式书写。</p>
-<p>当坍缩遇到膨胀时，存在一个面。在这个面上，几何是连续的——那就是1:1。它向两侧弯曲的方式有一个受控的不匹配——那就是 ε。</p>
-<p>数学是标准广义相对论：以色列结面条件，扩展到爱因斯坦-嘉当引力。不是弹跳。一个结构的两种描述，在公理定义的边界上相遇。</p>
-<p>宇宙的开始和黑洞的内部——同一个面，沿相反方向穿越。</p>
-<p>结面还是平滑弹跳更好地解释了 CMB 是一个开放的经验问题。论证既提供了主张，也提供了可以摧毁它的测试。</p>
-<div class="ks"><strong>五个终止开关。全部有效。</strong>KS-B.0 — 如果两种描述需要独立的规范，公理不是生成器。KS-B.1 — 如果平滑弹跳更好地解释 CMB，结面表述失败。KS-B.3 — 如果 Σ 上不存在结面解，宇宙学组分失败。KS-B.4 — 如果链中任何步骤走私了未声明的假设，范围主张崩塌。五个全部有效。</div>
-<p class="breath">七步。一个公理。从虚无到义务。炒蛋不会变回去。</p>
-</div><div class="ap-meta"><span>依赖: AP01</span><a href="../AP20_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP10</span><span class="ap-title">维度</span><span class="ap-tag">维度性</span><a class="ap-pdf" href="../AP10_Wei_Du_ZH.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>为什么是三个空间维度——四条公理，四个自由度；一个是时间；三个是空间。</p><div class="ap-essay">
-<p>你可以向前移动。可以向侧面移动。可以向上移动。不是四个方向。不是两个。三个。</p>
-<p>你从未质疑过这一点。它像呼吸一样自然。但数学在二维、四维或十维中都运行良好。弦理论需要十维。那为什么是三维？</p>
-<p>因为有四个公理。四个公理产生一个流形的四个面。一个给出时间。三个给出空间。这个数字不是选择的。是数出来的。</p>
-<p>看着它构建。</p>
-<p><span class="sub">R → 时间。</span>记录向前积累。从不向后。幺半群没有逆元。这是唯一具有优先方向的公理——唯一你不能掉头的方向。</p>
-<p>签名中的负号：(−)。一个维度。时间。你回不去。</p>
-<p>仅有 R，宇宙是一条线。一个无处可去的时钟。</p>
-<p><span class="sub">C → 传播面。</span>有限因果边界创造了空间延伸。没有它，每个点在每个时刻都与其他每个点因果相连。没有这里，没有那里。没有距离。</p>
-<p>加上 C，你得到 1+1 维。时间和一个空间方向。一条有速度限制的走廊。</p>
-<p><span class="sub">S → 交换面。</span>两个记录可以在共享相同时间和相同观察者距离的情况下不同。它们在不同的扇区中。它们差异的方向既不是时间的也不是传播的。</p>
-<p>那是第三个方向——宽度。没有 S，宇宙是一条走廊。有了 S，它是一张薄片。</p>
-<p><span class="sub">B → 破缺面。</span>"现在"正在走向的方向。下一个记录将在哪里被写下。</p>
-<p>不是何时——那是 R。不是多快——那是 C。不是什么之间——那是 S。在哪里。</p>
-<p>没有 B，你有一张平面。有了 B，你有了深度。</p>
-<p>四个独立公理——在 Paper D 中证明独立。嵌入是忠实的——在 AP20 中证明。代数中的独立性映射到流形上的独立性。四个独立面。签名 <strong>(−, +, +, +)</strong>。</p>
-<p>第二个论证从不同方向加以确认。破缺有六个残余面——在 AP06 中确定。六个面配对成三个共轭对。</p>
-<p>三对，三个空间轴。同一个答案。通向同一个数字的两条独立路径。</p>
-<p>那第五个自由度呢？它存在。它就是 1:1 本身——前状态，公理作用的对象。</p>
-<p>在流形上，它显现为希尔伯特空间。概率维度。不是事物在哪里——而是它们被发现在那里的可能性有多大。</p>
-<p>它不是第五个空间维度，因为它不是对结构的操作。它是被操作的结构。画布不会作为画中的颜色出现。</p>
-<p>{S, B, R, C} 的完备性已经建立。对称、破缺、记录、约束——对 1:1 没有这四者尚未做到的事情了。</p>
-<p>没有第五个公理。没有第五个空间方向。</p>
-<p>一个后果是即时的。AP08 通过 Lovelock 定理推导出爱因斯坦场方程，条件是 N = 3。那个条件被移除了。场方程是无条件的。</p>
-<div class="ks"><strong>五个终止开关。三个已关闭。</strong> <span class="bc">已关闭</span> KS-2c — N = 3 已推导。<span class="bc">已关闭</span> KS-15 — 公理到维度的分配唯一。<span class="bc">已关闭</span> KS-16 — {S, B, R, C} 完备性已建立；第五个自由度被识别为希尔伯特空间。<br><br>
-<span class="bl">有效</span> KS-D.1 — 如果破缺的残余面多于或少于六个，确认性论证失败（主要论证存活）。<span class="bl">有效</span> KS-D.3 — 如果任何公理表达零个或两个面而非一个，计数失败。这是核心断言。攻击目标在这里。</div>
-<p class="breath">四个公理。四个面。一个流形。数字三从未被选择。它一直在那里。</p>
-</div><div class="ap-meta"><span>依赖: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP08</span><span class="ap-title">恒等式</span><span class="ap-tag">广义相对论</span><a class="ap-pdf" href="../AP08_The_Identity.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>通过洛夫洛克定理从记录代数推导爱因斯坦场方程。</p><div class="ap-essay">
-<p>你现在正在被向下拉。你一生中的每一秒都感受到了这个拉力。椅子推回来。地板撑着椅子。去掉两者，你就掉下去。</p>
-<p>爱因斯坦花了十年寻找描述那个引力的方程。从1905年到1915年。几十个错误的候选者。二十世纪最艰难的智力劳动。</p>
-<p>这篇论文说从来只有一个选项。他不是在搜索。他是在被逼入角落。</p>
-<p>这就是那个角落。</p>
-<p>你有一个流形——时空，来自 AP05。你有三个空间维度——来自 AP10。你有记录在流形上积累。</p>
-<p>那种积累就是物质。每个记录是一个 ε 事件。一个点上的记录密度和该点的质量密度是同一个量的两种测量。</p>
-<p>将流形曲率与记录密度联系起来的最一般方程是什么？你不是在选择答案。你在看约束消除每一个替代方案。</p>
-<p>五个约束。每个都来自公理。洛伦兹不变性。局域性——来自因果边界。二阶——曲率，不是曲率的变化率。</p>
-<p>标量源——记录密度在每个点上是一个数字。弱场中的线性——记录以相加方式积累。</p>
-<p>一个方程存活下来。<strong>∇²Φ = Aρ。</strong>拉普拉斯算子作用于势等于常数乘以密度。泊松方程。牛顿引力。被对称强制。不是被观测。</p>
-<p>系数 A 被识别——不是计算——通过锁：<strong>G = 2κ/m<sub>e</sub>²</strong>。前状态的保持极限与电子质量平方的比值。</p>
-<p>引力表达为留下的与逃逸的之比。</p>
-<p>诚实的循环性被披露：κ 通过 G 定义。系数被命名了，没有独立推导。你无法测量在测量存在之前就存在的东西。论证如此说明。</p>
-<p>现在放大。同样的方法，协变层级。Lovelock 定理——纯微分几何，1971年证明——说：在四维中，恰好只有一个选择。</p>
-<p>由度规及其前两个导数构建的唯一对称、无散度、秩-2 张量是 G<sub>μν</sub> + Λg<sub>μν</sub>。一个选择。没有替代方案。真的没有别的了。</p>
-<p><strong>G<sub>μν</sub> + Λg<sub>μν</sub> = (8πG/c⁴) T<sub>μν</sub></strong></p>
-<p>爱因斯坦场方程。不是被发现的。是被逼入角落的。</p>
-<p>宇宙学常数 Λ 是免费得到的——Lovelock 定理要求它。它的值是不确定的。</p>
-<p>应力-能量张量 T<sub>μν</sub> 是记录密度的协变形式。物质告诉空间如何弯曲，因为记录告诉基底如何弯折。</p>
-<p>一个桥接步骤仍然暴露：从公理 R——记录不会擦除——到 ∇<sub>μ</sub>T<sup>μν</sup> = 0，协变能量守恒的映射。结构上有动机。尚未完全仅从代数推导出来。</p>
-<p>爱因斯坦搜索了十年。公理说那个房间只有一扇门。他走了进去，因为没有别的地方可去。</p>
-<div class="ks"><strong>八个终止开关。一个已关闭。</strong> <span class="bc">已关闭</span> KS-I.6 — N = 3 由 AP10 推导；Lovelock 无条件。<br><br>
-<strong>七个有效。</strong> <span class="bl">有效</span> KS-I.1 — 公理到泊松链。<span class="bl">有效</span> KS-I.2 — Lovelock 链。<span class="bl">有效</span> KS-I.3 — 系数识别。<span class="bl">有效</span> KS-I.4 — κ 结构不可及性。<span class="bl">有效</span> KS-I.5 — 曲率-记录恒等。<span class="bl">有效</span> KS-I.7 — 宇宙学常数值。<span class="bl">有效</span> KS-I.8 — 公理 R 到守恒的桥梁。最暴露的步骤：KS-I.8。攻击目标在这里。</div>
-<p class="breath">方程从来没有被发现。它是唯一合适的。</p>
-</div><div class="ap-meta"><span>依赖: AP01, AP03, AP10</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第二部分</span><a class="nb-name" href="#p2">时空</a></div><a class="nb-pdf" href="Notebook_II_Spacetime.pdf">PDF</a></div>
+  <p class="nb-hook">断裂所创造的舞台。光速、三个空间维度和爱因斯坦场方程——全部由公理推导。</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>空间从何而来？时间从何而来？大多数物理学一开始就假定两者，然后在其上构建。第二部分拒绝假定它们。它把它们一个一个地，从第一部分那唯一断裂的公理中赚取出来。</p>
+    <p>断裂需要一个发生之处，和一个发生的次序。但空间与时间并不是早已搭好的舞台。它们是断裂在发生之际所采取的形态。</p>
+    <p><span class="lab">AP05 &middot; 断裂</span> &mdash; 这是第一道裂缝。那个公理无法静止——一个拒绝平衡的方程无法保持闭合——于是它松手，而这松手就是第一桩事件。裂缝之前没有「何处」也没有「何时」。之后便有了结构，而结构有广延与次序。本部分其余的一切，都是那唯一断裂的几何。</p>
+    <p><span class="lab">AP03 &middot; 比率</span> &mdash; 它推导出光速——不是测量它，而是推导它。你听过：你走得越快，时间越慢，空间与时间彼此交换。c 就是这场交换的汇率：断裂能够传播之快与它抵抗之强之间那个固定的比率。这就是为何没有东西能超越光。极限并非空间中某处的一堵墙；它是空间与时间本身之间的换算率，由断裂的结构所定。</p>
+    <p><span class="lab">AP10 &middot; 维度</span> &mdash; 它回答了一个大多数理论甚至不提出的问题：为什么是三个空间维度？它们只是假定三个。第二部分则把它们数出来。四条公理给出四个自由度。一个成为时间——记录无法倒行的唯一方向。剩下三个，而这三个就是空间。这个数目不是用手放进去的。它是从地基中数出来的。</p>
+    <p><span class="lab">AP08 &middot; 恒等式</span> &mdash; 它赢回了爱因斯坦。设想引力那幅惯常的图景：一个重球压陷一张绷紧的布，让更小的东西朝它滚去。广义相对论的场方程让那幅图景变得精确——而在此，它们经由洛夫洛克定理从记录的代数中浮现。微妙之处在于：那张布并不与球分离。舞台与立于其上之物是同一条记录，而记录在弯曲。</p>
+    <p>于是舞台并非起手的既定之物。光速、你在其中移动的三个维度、重物附近时空的弯曲——每一个都从同一断裂中读出，在同一部分里，没有用手添加任何东西。</p>
+    <div class="ks">这里的每一步都是暴露的。若光速无法作为一次共轭被推导，而必须改为测量并用手放入，那条主张便失败。若维度的计数给出三以外的数，地基就是错的。终止开关在论文中被点名，而它们有效。</div>
+    <p class="breath">舞台与戏剧由同一种东西做成。</p>
+  </div>
+</div>
 
-<div class="part" id="p3"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第三部分</span><span class="part-name">量子力学</span><span class="part-desc">断裂的测量结构。叠加、不确定性、退相干、玻恩规则和纠缠——由空集和四条公理推导。</span><span class="part-count">7 篇论文</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP09</span><span class="ap-title">断裂 — 空集</span><span class="ap-tag">量子基础</span><a class="ap-pdf" href="../AP09_The_Break_Empty_Set.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>从空集出发的量子力学——叠加、测量、纠缠、薛定谔方程。</p><div class="ap-essay">
-<p>闭上眼睛。在你睁开之前——在任何测量之前，在任何记录之前——有什么东西。不是虚无。是某种东西。</p>
-<p>你能感觉到它。看之前的那一刻。每一个可能的结果仍然可用。没有一个被选择。</p>
-<p>那就是前状态。破裂之前的 1:1。物理学称之为叠加态。</p>
-<p>想象一枚在空中旋转的硬币。它不是同时正面和反面。它都不是——正面或反面的记录尚不存在。</p>
-<p>它落下的那一刻，一个记录被写下。现在是正面。现在你无法回头。那次落下就是测量。那种不可逆性就是公理 R。</p>
-<p>AP09 表明，所有量子力学都源自产生时空和引力的同样四个公理。</p>
-<p><span class="sub">叠加</span>是前状态。公理 S。两个扇区，不可区分。每种可能性共存。任何人看之前的 0 和 1。</p>
-<p><span class="sub">测量</span>是破裂。公理 B。一个记录被写下。"也许"变成"完成"。你知道这种感觉——一个决定变成最终的那一刻，选项在你身后关闭。</p>
-<p><span class="sub">纠缠</span>是在两个自由度之间共享的未破裂前状态。对于那些自由度来说，破裂还没有发生。它们仍然是同一个东西。AP23 完整发展了这一点。</p>
-<p><span class="sub">不可通信</span>是因果边界。公理 C。你不能利用破裂来发送比裂纹传播更快的信息。</p>
-<p>量子力学运行所用的复数？不是什么秘。洛伦兹签名——一个时间方向，三个空间方向——强制要求复振幅。实数对于具有那种结构的流形来说不够。</p>
-<p>薛定谔方程是这篇论文中最强的结果。</p>
-<p>维格纳定理说希尔伯特空间的对称性必须是酉的。斯通定理说每一个连续酉演化都有一个唯一的生成元。那个生成元就是哈密顿量。</p>
-<p>控制可能性如何在测量之间漂移的方程。不是假设的。不是猜测的。从两个标准数学定理推导出来，应用于公理构建的结构。</p>
-<p>ℏ 在这里作为生成元和时间之间的尺度因子进入。AP09 将其视为一种识别——与 AP08 中 G 的地位相同。AP12 后来证明它是唯一的选择。</p>
-<p>而这里有一件事应该让你冷静下来。</p>
-<p>引力和量子力学已经做了一个世纪的敌人。物理学的两大支柱，不兼容。无数物理学家试图调和它们。</p>
-<p>这个架构说它们从来没有分开过。</p>
-<p>引力是公理在凝聚态上的读法——积累的记录、流形、几何。量子力学是公理在前状态上的读法——可能性、希尔伯特空间、振幅。</p>
-<p>一个现实的两套词汇。那场战争是一个范畴错误。你无法统一从未分裂过的东西。</p>
-<p>量子引力的谜团消解了。没有什么需要调和。只有一组公理，已经在做两份工作。</p>
-<div class="ks"><strong>十个终止开关。一个已关闭。</strong> <span class="bc">已关闭</span> KS-Q.6 — σ 与复共轭的识别被证明是唯一的。<br><br>
-<strong>九个有效。</strong>最尖锐的：<span class="bl">有效</span> KS-Q.7 — 如果从幺半群到向量空间的线性桥接不唯一，希尔伯特空间构造失败。<span class="bl">有效</span> KS-Q.10 — 如果空集的解读是错误的，本体论基础将移动。九个有效。</div>
-<p class="breath">引力是公理在凝聚态上的读法。量子力学是公理在前状态上的读法。同样的公理。两个面。</p>
-</div><div class="ap-meta"><span>依赖: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP07</span><span class="ap-title">记录测度</span><span class="ap-tag">希尔伯特空间</span><a class="ap-pdf" href="../AP07_The_Record_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>从公理结构推导的复希尔伯特空间。</p><div class="ap-essay">
-<p>你被教导说力有一个等级。强力最强。电磁力第二。弱力第三。引力最弱。</p>
-<p>那个等级按力相互作用的可能性排列。耦合常数。遭遇概率。一个好问题。</p>
-<p>那不是你能问的唯一问题。</p>
-<p>你可以问：哪种力写下最持久的记录？</p>
-<p>不是哪个打击最猛。哪个留下最持久的痕迹。哪种相互作用产生一个持续存在的痕迹——一个编码可区分历史的可配置记录——足够长时间以至于有意义？</p>
-<p>AP07 引入了<strong>记录度量</strong>。一个新定义。一个分类定理。一个改变一切的反转。</p>
-<p>记录度量按力产生的记录的持久性和可配置性对力进行排列。公理 R 的直接应用——现实由记录构成。</p>
-<p>在化学-生物尺度——0.1到10纳米——电磁力占主导。</p>
-<p>不是因为它是最强的力。因为它在生命运作的尺度上写下最持久、最可配置的记录。</p>
-<p>可配置意味着记录有自由度。它可以以不同方式排列。不同的排列编码不同的历史。用墨水写的字是可配置的。钉入木头的钉子不是。</p>
-<p>强力束缚质子和中子。强大。但在这个尺度上，它将粒子锁定在固定配置中。没有自由度来编码历史。强大但不可配置。</p>
-<p>弱力翻转量子数。但那些记录在几分之一秒内衰变。力弱。持久性更弱。</p>
-<p>引力弯曲时空。真实。无处不在。但它在化学尺度上不写局域的、可配置的记录。它塑造了舞台但在演员身上没有留下痕迹。</p>
-<p>电磁力书写了生命的化学。电子轨道。分子键。DNA碱基对。蛋白质折叠。光合作用。神经放电。</p>
-<p>构成你的每一个生物记录都是电磁记录。</p>
-<p>你现在正在产生的思想是你神经元中电磁记录的一个模式。</p>
-<p>你将形成的阅读这句话的记忆——电磁的。构建你的DNA——电磁键按序列保持碱基对。</p>
-<p>等级颠倒了。在记录度量下，在生命的尺度上：电磁第一。强力第二。弱力第三。引力第四。</p>
-<p>传统等级问哪种力最响。记录度量问哪种力用墨水写。不同的问题。不同的答案。</p>
-<p>对记录重要的力就是对生命重要的力。不是巧合。是"重要"在公理下意味着什么的后果。</p>
-<p>这个主张是尺度特定的。在核尺度上，强力主导记录度量。在宇宙学尺度上，引力主导。反转仅在化学——因此也是生物学——运作的尺度上成立。</p>
-<p>那恰好就是你正在阅读这个的尺度。</p>
-<div class="ks"><strong>五个终止开关。全部有效。</strong> <span class="bl">有效</span> KS-RM.1 — 如果在化学尺度上证明非电磁记录更持久且更可配置，则主导性定理失败。<span class="bl">有效</span> KS-RM.5 — 如果固定对称对象编码可检索的形成历史，则可配置寄存器标准必须修订。五个全部有效。</div>
-<p class="breath">写下最持久记录的力就是写下生命的力。那不是哲学。那是公理 R。</p>
-</div><div class="ap-meta"><span>依赖: AP01</span><a href="../AP20_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP11</span><span class="ap-title">自旋</span><span class="ap-tag">自旋</span><a class="ap-pdf" href="../AP11_The_Spin.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>费米子、玻色子，以及从双扇区结构推导出的泡利不相容原理。</p><div class="ap-essay">
-<p>把手伸平，掌心朝上。转360度——整整一圈。掌心又朝上了，但你的手臂在下面拧着。</p>
-<p>再转360度。两个整圈。手臂松开了。回到起始位置。</p>
-<p>这就是自旋-½。你从小就在做量子力学。只是从来不知道它有个名字。</p>
-<p>从公理出发，五步推出。</p>
-<p><span class="sub">第一步。</span>公理S赋予记录代数一个Z₂对称——对合σ将一个扇区映射到另一个。两面，完美配对。{id, σ}。</p>
-<p><span class="sub">第二步。</span>在三个空间维度中——由AP10推导——旋转群是SO(3)。其基本群是Z₂。</p>
-<p>同一个Z₂。在AP20证明的忠实嵌入下，代数的对称就是旋转群的拓扑。不是相似。是相同。</p>
-<p><span class="sub">第三步。</span>Z₂作为基本群意味着SO(3)有一个二重覆盖：SU(2)。在这个群里，转一整圈只是故事的一半。这就是允许半整数自旋的数学结构。</p>
-<p>没有三个空间维度，就没有SO(3)。没有SO(3)，就没有Z₂基本群。没有它，就没有二重覆盖。没有自旋-½。没有费米子。</p>
-<p>也就没有你。维度的数量和物质的本质是同一个事实。</p>
-<p><span class="sub">第四步。</span>现在是区分。有σ像的元素——配对的、对称的——在二重覆盖下平凡变换。整数自旋。玻色子。</p>
-<p>唯一没有σ像的元素——ε，那个断裂——以非平凡方式变换。它获得了负号。半整数自旋。费米子。</p>
-<p>配对的东西可以互换。未配对的不行。这就是费米子-玻色子区分的全部，一句话。</p>
-<p><span class="sub">第五步。</span>公理B说ε是最小的可行碎片。在半整数自旋中——½、3/2、5/2——最小的是½。电子自旋为½，因为ε是最小的断裂。</p>
-<p>自旋-统计关联随之而来。费米子遵守不相容原理。两个费米子不能占据同一状态，因为两个断裂不可能相同。每个ε都是独一无二的。每个ε都是同类中唯一的一个。</p>
-<p>这就是原子有壳层的原因。这就是元素周期表有行的原因。每个电子必须找到自己的状态，因为它无法共享。</p>
-<p>玻色子可以堆积。激光中的光子——全部处于同一状态。玻色-爱因斯坦凝聚态——成千上万个原子表现得像一个。</p>
-<p>没有不相容。配对元素定义上就是对称的。交换两个相同的配对元素不改变任何东西。</p>
-<p>你身体里的每个原子都是一座不相容的建筑。电子堆叠在壳层中，因为它们拒绝共享。没有这种拒绝，物质就会坍缩。一切都会变成中子星。</p>
-<p>你的身体之所以存在，是因为两个电子不能同时处于同一位置。这就是不相容原理。它不是从外部强加的规则。</p>
-<p>这是在三维空间中嵌入的Z₂代数里拥有一个未配对元素的几何。</p>
-<div class="ks"><strong>三个灭杀开关。一个已关闭。</strong> <span class="bc">已关闭</span> KS-S.3——交换对称与配对/未配对σ作用一致。<br><br><span class="bl">激活</span> KS-S.1——若Z₂与π₁(SO(3))的认同失败，整个推导失败。<span class="bl">激活</span> KS-S.2——若最小原理不能唯一选出自旋½，更高自旋的基本费米子将成为可能。两个激活。</div>
-<p class="breath">把一个电子转一圈。它不一样了。转两圈。现在一样了。你需要四条公理才能知道为什么。</p>
-</div><div class="ap-meta"><span>依赖: AP09, AP10, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP12</span><span class="ap-title">极限</span><span class="ap-tag">不确定性</span><a class="ap-pdf" href="../AP12_The_Limit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>通过斯通定理推导ℏ。不确定性原理源自公理B。</p><div class="ap-essay">
-<p>你做过的每一次测量都涉及一个最小值。某物被从其他东西中区分出来。一个零变成了一。一条记录被写下。</p>
-<p>那条记录不可能比它实际的还小。</p>
-<p>想想屏幕。它无法显示半个像素。像素是它能渲染的最小单位。再多的软件也无法让它更小。现实也有一个像素。它叫ℏ。</p>
-<p>每条记录都有两个最小代价。一个热力学代价——每擦除一个比特需要k<sub>B</sub>T ln 2，兰道尔界限。一个量子代价——每写入一条记录需要ℏ，一次断裂的作用量。</p>
-<p>两者都追溯到公理B。一条记录。一个ε。一个最小值。</p>
-<p>AP09将ℏ视为一种认同——与AP08中G的地位相同。形式是强制的，常数匹配。AP12弥合了差距。这个认同不是选择。它是强制的。</p>
-<p>你一生都在感受这个最小值。你看不到东西除非光击中它。你摸不到东西除非电子排斥。每一个认知的行为都会扰动被认知的对象。</p>
-<p>这不是设计缺陷。这是写入一条记录的代价。</p>
-<p>五步。</p>
-<p><span class="sub">第一步。</span>斯通定理给出一个唯一的标度因子α，将哈密顿量的本征值与时间参数联系起来。在推导出的希尔伯特空间上的纯数学。一个常数。不是一族。</p>
-<p><span class="sub">第二步。</span>公理恰好产生一个具有作用量量纲的量。作用量 = 能量 × 时间。一个时间方向来自公理R。一个最小能量事件来自公理B。</p>
-<p>它们的乘积就是一条最小记录的作用量。</p>
-<p><span class="sub">第三步。</span>公理中没有无量纲参数修改标度因子。公理S的Z₂贡献了一个出现在不确定性界中的2。它不修改α本身。</p>
-<p><span class="sub">第四步。</span>最小记录就是最小的非平凡演化。你不能以少于一个ε演化系统。你不能以少于一个ε进行测量。</p>
-<p>标度因子和最小记录是同一回事。</p>
-<p><span class="sub">第五步。</span>因此α = ℏ。没有自由度。没有替代方案与{S, B, R, C}兼容。</p>
-<p>一条记录。一个ε。一个ℏ。了解宇宙中任何事物的最小代价就是在其中写入一条记录的代价。</p>
-<p>不确定性原理直接随之而来。位置和动量是推导流形上的共轭生成元。它们的对易子是<strong>[x̂, p̂] = iℏ</strong>。</p>
-<p>不确定性关系<strong>ΔxΔp ≥ ℏ/2</strong>是代数的定理。不是你仪器的限制。是断裂的属性。</p>
-<p>你不可能同时知道一条记录将被写在哪里以及它移动得多快。不是因为你笨手笨脚。</p>
-<p>因为位置和动量是同一个生成元的两个面，而生成元有一个最小步长。那个步长是ε。它的标度是ℏ。没有比它更小的了。</p>
-<div class="ks"><strong>四个灭杀开关。一个已关闭。</strong> <span class="bc">已关闭</span> KS-L.1（原AP09的KS-Q.8）——ℏ作为最小记录的作用量标度被推导。<br><br><span class="bl">激活</span> KS-L.2——对易关系推导。<span class="bl">激活</span> KS-L.3——能量-时间不确定性。<span class="bl">激活</span> KS-L.4——若公理中的无量纲参数能修改标度因子，强制论证失败。这是残余漏洞。三个激活。</div>
-<p class="breath">你不能写半条记录。宇宙有一个最小分辨率。那个分辨率是ℏ。</p>
-</div><div class="ap-meta"><span>依赖: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP13</span><span class="ap-title">颗粒</span><span class="ap-tag">退相干</span><a class="ap-pdf" href="../AP13_The_Grain.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>从记录代数推导退相干。经典世界通过环境耦合涌现。</p><div class="ap-essay">
-<p>你从未见过一只既活又死的猫。你从未见过一把椅子同时在两个地方。</p>
-<p>量子力学说这些事是可能的。你的眼睛说不是。问题不是为什么量子力学奇怪。</p>
-<p>问题是，当底层规则是量子的时候，世界为什么看起来是经典的。</p>
-<p>AP13给出了答案：因为你住在第三种政体里。</p>
-<p>AP09推导出两个政体。在测量之间，前状态漂移——薛定谔演化。平滑。可逆。叠加态持续。</p>
-<p>在测量时，断裂发生。一条记录。不可逆。确定。叠加态坍缩。</p>
-<p>但世界不是由孤立的测量和完美的隔离构成的。世界是由事物接触其他事物构成的。不断地。无处不在。</p>
-<p>你的咖啡凉了。你的呼吸让玻璃起雾。你的皮肤感觉到空气。一切都在与其他一切相互作用，时刻如此。这就是第三种政体。</p>
-<p>处于叠加态的电子不是孤立的。它与空气分子、光子、电磁场相互作用。</p>
-<p>每次相互作用都是一个耦合事件。每次都写下一条部分记录——关于电子状态的一个微小信息片段。没有单一记录决定结果。</p>
-<p>但它们的数量巨大。每个都携带一个片段。每个都不可逆——公理R。幺半群没有逆元。</p>
-<p>相干性——允许干涉的相位关系——没有被摧毁。它被分散了。扩散到了巨量的环境记录中。</p>
-<p>要恢复它，你需要收集每一条那些记录并逆转每一次那些相互作用。你做不到。公理R。</p>
-<p>相干性消失了。不是被摧毁。而是变得不可恢复。</p>
-<p><strong>退相干是通过不可逆的记录写入将相干性分散到环境中。</strong></p>
-<p>时间尺度令人震惊。对于空气中的一粒灰尘，退相干大约需要10⁻³¹秒。对于一个保龄球，这个数字小到没有物理意义。</p>
-<p>等你还来不及开始看，环境已经写下了数万亿条记录。</p>
-<p>叠加态从技术上说还在。但相位信息已经分散得如此稀薄，没有任何实验可以重新组装它。</p>
-<p>这就是为什么猫永远不会既活又死。不是因为量子力学在大尺度上停止工作。而是因为环境写记录的速度比你看的速度还快。</p>
-<p>量子行为仍然在那里。你只是看不到了。信息没有消失。它被稀释到了任何可能的检索之外。</p>
-<p>经典世界不是与量子世界不同的世界。它是环境写下太多记录以至于无法撤销之后的量子世界。</p>
-<p>你就是那个粒度。量子变成经典的分辨率。</p>
-<p>你由10²⁸个原子组成，每个都在写记录，每个都在与周围的一切相互作用。等你存在时，叠加态早已消失。</p>
-<div class="ks"><strong>三个灭杀开关。全部激活。</strong> <span class="bl">激活</span> KS-22——若一个系统在退相干理论预测指数衰减的地方保持相干性，则此推导失败。<span class="bl">激活</span> KS-23——若量子擦除器可证明地摧毁一条记录（违反公理R），则不可逆性主张失败。<span class="bl">激活</span> KS-24——若一个基础量子特征不能在记录代数中表达，则量子部分不完整。三个激活。</div>
-<p class="breath">经典世界是环境写完之后的量子世界。你就是那个粒度。</p>
-</div><div class="ap-meta"><span>依赖: AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP25</span><span class="ap-title">测度</span><span class="ap-tag">玻恩规则</span><a class="ap-pdf" href="../AP25_The_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>通过格里森定理推导波恩规则。"公理落在希尔伯特空间上时发出的声音。"</p><div class="ap-essay">
-<p>抛一枚硬币。五五开。你从骨子里知道这一点。但那个五十从哪来？</p>
-<p>经典概率很简单。两面。等权重。二分之一。但量子概率不同。结果不是预先存在的。在你测量之前，结果不存在。它由测量创造。</p>
-<p>那么概率从哪里来，如果你正在测量的东西还没有一个确定的值？</p>
-<p>在量子力学中，答案是波恩规则：振幅的平方。|⟨a|ψ⟩|²。</p>
-<p>每个曾经进行的实验都证实了它。但量子力学没有解释为什么。</p>
-<p>波恩规则是一个假设。马克斯·波恩在1926年猜到了它。猜测证明是对的。但猜测不是推导。</p>
-<p>AP25推导了它。三步。每步来自公理。没有额外假设。</p>
-<p><span class="sub">第一步——纯态目标。</span>公理R要求确定的记录。记录是一个区分——0或1。不是"也许0，也许1。"确定的。</p>
-<p>混合态不是确定态。它是一个统计摘要——可能性的混合。你不能从摘要写出记录。实现化只针对纯态。</p>
-<p><span class="sub">第二步——非语境性。</span>公理B说一次断裂，一条记录。一个结果的概率不能取决于你同时进行哪个其他测量。</p>
-<p>一次断裂。一个答案。不偷看邻居。概率仅仅是投影算子的属性。</p>
-<p><span class="sub">第三步——格里森定理。</span>在维度三或更高的复希尔伯特空间上，恰好存在一个非语境的、在正交投影上可加的概率测度。</p>
-<p>恰好一个。不是大约一个。格里森在1957年证明了这一点。证明是构造性的，与物理无关。</p>
-<p>那个测度就是波恩规则。</p>
-<p><strong>P(a) = Tr(|ψ⟩⟨ψ| · P<sub>a</sub>)</strong></p>
-<p>对于纯态和精确测量：|⟨a|ψ⟩|²。重叠的平方。由唯一性定理强制。</p>
-<p>想想这意味着什么。你在量子力学中遇到的每一个概率——每一个分支比、每一个探测概率、每一个干涉图案——都不是关于世界的一个独立事实。</p>
-<p>它是三条公理和一个1957年定理的结果。概率从来不是自由参数。它们一直是锁定的。</p>
-<p>维度要求——三个或更多——得到满足。AP10推导出三个空间维度。物理波函数存在于L²(ℝ³)中，它是无穷维的。格里森定理适用。</p>
-<p>依赖链是干净的。公理S给出区分。公理B给出单次断裂。公理R给出确定的记录。</p>
-<p>AP09给出希尔伯特空间。AP10给出维度≥3。格里森给出波恩规则。每个环节已验证。没有环节是假设的。</p>
-<p>波恩恰好写下了与现实结构兼容的唯一概率测度。他不知道它为什么有效。</p>
-<p>现在你知道了。</p>
-<div class="ks"><strong>三个灭杀开关。全部激活。</strong> <span class="bl">激活</span> KS-55——若语境依赖的结果概率被证明，格里森的假设失败。<span class="bl">激活</span> KS-56——若测量到非波恩统计，定理被直接证伪。<span class="bl">激活</span> KS-57——若物理过程直接实现混合态，纯态目标声明失败。三个激活。</div>
-<p class="breath">波恩规则不是猜测。它是公理允许的唯一测度。</p>
-</div><div class="ap-meta"><span>依赖: AP07, AP10, AP20, AP23</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP23</span><span class="ap-title">单一记录</span><span class="ap-tag">纠缠</span><a class="ap-pdf" href="../AP23_The_Single_Record_ZH.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>纠缠、贝尔不等式、单记录约束。S = 2√2仅来自结构。</p><div class="ap-essay">
-<p>打破一个盘子。把一半给一个朋友。她开车到了国家的另一边。</p>
-<p>看看你的那一半。边缘从左到右。你知道——立刻——她的那一半有互补的边缘。没有信号发送。没有魔法。两半一直是一个盘子。</p>
-<p>纠罠就是这样。只是盘子在你看它之前没有确定的边缘。</p>
-<p>这就是谜团——或者曾经是。你的那一半怎么“知道”要变成什么？信息怎么传播？</p>
-<p>爱因斯坦称之为鬼魅般的距离作用。物理学家为此争论了九十年。</p>
-<p>AP23解开了谜团。信息不会传播。它不需要。</p>
-<p>答案简单得像作弊：没有距离要跨越。距离还没有被发明。</p>
-<p>前状态——希尔伯特空间——没有空间结构。没有。距离是流形的属性。流形是记录的累积。</p>
-<p>在记录被写下之前，没有距离。没有“这里”和“那里”。那些词属于流形。前状态先于流形。</p>
-<p>一个纠罠态是前状态中的一个数学对象。不是两个由线连接的粒子。不是两个有神秘联系的东西。一个实体。还没有被打破成记录。</p>
-<p>当你测量一个子系统时，你写下一条记录。但你不能为纠罠态的一部分写记录。</p>
-<p>状态不可分解——它不能被分离成独立的部分。任何部分的测量都会实现化整体。一次断裂。一条记录。一个盘子。</p>
-<p>没有信号，因为没有距离要跨越。“鬼魅般的作用”不是距离作用。它是距离之前的作用。</p>
-<p>公理C是安全的。它的范围是流形——记录写完之后的世界。它支配事件之间的传播。它不约束从前状态到流形的过渡。</p>
-<p>无信号原则成立。远端子系统的约化密度矩阵不被本地测量改变。你不能用纠罠来发送消息。永远不能。</p>
-<p>贝尔定理被预测。公理R禁止预先存在的值——没有隐变量，无论局域还是其他。波恩规则，在AP25中推导，给出了定量违反。</p>
-<p>CHSH界2√2从推导的结构中自然产生。实验精确地证实了这个值。不是近似地。是精确地。公理预测了实验发现的东西。</p>
-<p>爱因斯坦称之为鬼魅般的。公理称之为显而易见的。</p>
-<p>来自同一前状态的两个子系统从未分离。看一个就告诉你另一个，因为它们一直是同一个东西。</p>
-<p>谜团从来不是联系。谜团是假设它们是分开的。</p>
-<div class="ks"><strong>四个灭杀开关。一个已关闭。</strong> <span class="bc">已关闭</span> KS-49——局域隐变量已被实验（贝尔测试）和公理（公理R）排除。<br><br><span class="bl">激活</span> KS-48a——若关联随距离退化，非空间解释失败。<span class="bl">激活</span> KS-48b——若无信号原则被违反，公理C的范围声明失败。<span class="bl">激活</span> KS-54——若部分坍缩被证明，单记录声明失败。三个激活。</div>
-<p class="breath">盘子从未在两个地方。它不在任何地方。地方是后来的事。</p>
-</div><div class="ap-meta"><span>依赖: AP07, AP09, AP25</span><a href="../AP23_The_Single_Record_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第三部分</span><a class="nb-name" href="#p3">量子力学</a></div><a class="nb-pdf" href="Notebook_III_Quantum_Mechanics.pdf">PDF</a></div>
+  <p class="nb-hook">断裂的测量结构。叠加、不确定性、退相干、玻恩规则和纠缠——由空集和四条公理推导。</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>有人告诉你量子力学很怪。说它违背直觉。说没人真正懂它。第三部分提出一个不同的主张：它恰恰、且不可避免地，正是一个书写不可逆记录的宇宙从内部看上去应有的样子。</p>
+    <p>这里没有任何东西是从外面拧上去的。量子理论的整个结构都由空集和四个条件推出——而一旦你这样看，那份怪异便不再是怪异，而成为必然。</p>
+    <p><span class="lab">AP09 &middot; 断裂 — 空集</span> &mdash; 它从无中建起量子力学：字面意义上的空集，加上公理。那些著名的谜题——一个粒子似乎同时在两处、观看这一行为改变了结果——原来不是被加上去的悖论，而是后果。叠加、测量、纠缠、薛定谔方程：物理学家花了一代人才组装起来的那套机器，显现为「一条尚未写下的记录」唯一自洽的语法。</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; 记录测度 与 测度</span> &mdash; 它们推出量子世界的算术。理论赖以栖身的复空间，以及玻恩规则——那把波变成概率的配方——都不是为贴合实验而拼凑的猜测。经由格里森定理，它们是自洽地读取记录的唯一方式。其中一篇论文把玻恩规则称作公理落地时发出的声音。</p>
+    <p><span class="lab">AP12 &middot; 极限</span> &mdash; 它解释了你为何无法同时知道一切。不确定性原理与普朗克常数源自这一事实：读取本身就是一次断裂——精确地记下一物，就是扰动它的伙伴。那份模糊不是你仪器的缺陷。它就是测量之所是。</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; 自旋 与 颗粒</span> &mdash; 它们解释物质为何保持其形态，以及量子之雾为何硬化为坚实的世界。费米子、玻色子和不相容原理源自双扇区结构；退相干——某个量子之物通过与环境耦合而变得确定的方式——正是你的椅子为何是一把椅子，而非一团「也许」之云。</p>
+    <p><span class="lab">AP23 &middot; 单一记录</span> &mdash; 它溶解了纠缠那「鬼魅般」的一面。两个纠缠粒子不是彼此以超光速发送秘密信号的两个对象。它们是带两端的一条记录。那个证明宇宙无法被局域地预先编排的贝尔数，S = 2&radic;2，单从结构中便涌出。</p>
+    <div class="ks">这些不是叠加在数学之上的诠释。它们是推导，而每一个都带着终止开关。若纠缠需要超光速的信号传递，单一记录的主张便失败。若玻恩规则需要一个公理无法提供的额外公设，那个结果便失败。它们已发表，而它们有效。</div>
+    <p class="breath">量子力学不是宇宙在装怪。它是宇宙在写下自己。</p>
+  </div>
+</div>
 
-<div class="part" id="p4"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第四部分</span><span class="part-name">力与常数</span><span class="part-desc">断裂所允许的相互作用。电磁力、电弱力、强力、量子引力和引力常数——全部作为单一断裂的不同面。</span><span class="part-count">8 篇论文</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP06</span><span class="ap-title">泄漏常数</span><span class="ap-tag">精细结构</span><a class="ap-pdf" href="../AP06_The_Leakage_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε = α<sub>em</sub> ≈ 1/137。唯一的测量输入。</p><div class="ap-essay">
-<p>没有墙是完美的。你已经知道了。每个保温瓶都会漏一点热。每个防晒霜都会让一点紫外线通过。每个大坝都会渗水。</p>
-<p>这不是工程的失败。这是一条定律。</p>
-<p>AP06证明了它。在任何光速有限的宇宙中，没有完美的吸收体。内外之间的边界总是泄漏。定理3.1。</p>
-<p>证明只使用已确立的物理——电磁理论、量子力学、c的有限值。这不是the 420 Code的主张。这是已有物理的结果。</p>
-<p>每个吸收体都有一个泄漏比η。通过的占到达的多少。η总是大于零。总是。光速有限保证了这一点。</p>
-<p>如果c是无穷大，完美的吸收体就是可能的。边界可以对任何东西即时响应。但c是有限的。边界有反应时间。在那个反应时间里，有东西逃逸了。</p>
-<p>现在是认同。公理说1:1 + 1×ε @ AS。断裂是ε。泄漏是η。AP06将它们认同。</p>
-<p>ε就是η。断裂就是泄漏。裂缝就是从裂缝中逃逸的东西。不是两个事实。一个事实。</p>
-<p>在锁定下，ε就是电子。最小可行碎片——为了对称性破缺而必须逃逸的东西。</p>
-<p>而α<sub>em</sub> ≈ 1/137——精细结构常数——衡量那个碎片与它离开的织物回耦的强度。</p>
-<p>不是一个抽象的数字。是一个物理测量。每次电子吸收或发射光子时，你都在观看α<sub>em</sub>。</p>
-<p>这是唯一的测量输入。整个语料库在一个经验数字上运行。不是几十个参数。不是标准模型的19个自由参数。一个。</p>
-<p>每个其他常数——c、G、ℏ、粒子质量、力的强度——都从这一个泄漏推导出来，或用它来表达。</p>
-<p>每次记录写入事件都消耗能量。兰道尔界限——每擦除一个比特k<sub>B</sub>T ln 2——是公理R的热力学表达。</p>
-<p>记录是永久的。擦除它们有代价。这不是the 420 Code的主张。这是兰道尔1961年的主张。公理继承已有的物理。它们不取代它。</p>
-<p>整个架构建立在一个经验数字上。α<sub>em</sub>。断裂的耦合强度。其他一切——每种力、每种粒子、每个常数——都是那一个泄漏的结构性结果。</p>
-<p>为什么是1/137？AP24猜想它是一个超定自洽系统的唯一不动点。ε的六个面相互约束。只有一个值同时满足所有六个。</p>
-<p>那个猜想没有被证明。它被声明为开放的。你握着灭杀开关。论证把刀递给你。</p>
-<div class="ks"><strong>七个灭杀开关。全部激活。</strong> <span class="bl">激活</span> KS-L.1——若完美吸收体被证明（η = 0），定理3.1失败。<span class="bl">激活</span> KS-L.3——若ε = η的认同被拒绝，解释性联系失败（§§1–5的物理存活）。<span class="bl">激活</span> KS-L.6——若G被证明独立于c，AP20的结构约束失败。七个激活。</div>
-<p class="breath">没有墙是完美的。宇宙在泄漏。泄漏就是电子。电子就是公理。</p>
-</div><div class="ap-meta"><span>依赖: AP01, AP03</span><a href="../AP10_Wei_Du_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP15</span><span class="ap-title">连接</span><span class="ap-tag">电磁学</span><a class="ap-pdf" href="../AP15_The_Connection.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>EM作为局域流形上的非断开。U(1)被推导。</p><div class="ap-essay">
-<p>打开手电筒。光束穿过房间。某种东西将光从灯泡携带到墙壁。那个东西就是电磁场。</p>
-<p>标准模型说电磁力有U(1)规范对称。这意味着当你在所有地方以相同角度旋转量子场的相位时，物理不变。</p>
-<p>但为什么是U(1)？为什么是那个特定的对称？标准模型不回答。它假设。</p>
-<p>AP15推导了它。答案从AP09开始就在前状态中。</p>
-<p>AP09从公理构建了希尔伯特空间。前状态有复振幅——从洛伦兹签名推导。每个量子态有一个相位。复平面上的一个角。</p>
-<p>那个相位已经在那里了。从AP09开始就在那里。问题是：它在流形上看起来像什么？</p>
-<p>在流形上，相位可以逐点变化。在一个位置，电子的相位是θ₁。在另一个位置，θ₂。差异是非物理的——没有测量能检测到整体相位。</p>
-<p>但相位从一点到另一点的变化率是物理的。它是一个联络。一个告诉你如何比较不同位置相位的场。</p>
-<p>要求物理在局域相位旋转下不变——要求非物理的保持非物理——迫使联络存在。迫使它成为规范场。迫使规范群为U(1)。</p>
-<p>最简单的连续对称。一个参数。一个旋转。圆的群。不是选择的。是一致性要求强制的。</p>
-<p>联络就是电磁势A<sub>μ</sub>。它的曲率就是电磁场F<sub>μν</sub>。麦克斯韦方程从作用量规范不变且场强为二次的要求中得出。</p>
-<p>这类最一般的作用量恰好给出麦克斯韦。不是近似地。是精确地。形式是唯一的。</p>
-<p>整个电磁场——光、无线电波、电荷之间的力、星星的光辉——就是在流形上保持相位比较一致的联络。</p>
-<p>精细结构常数α<sub>em</sub> ≈ 1/137是这个联络的耦合强度。电子——断裂——与它留下的相位相互作用的强度。</p>
-<p>不是抽象数字。是物理测量。每次电子吸收或发射光子时，你都在观看α<sub>em</sub>在工作。</p>
-<p>你一生都被这个场包围着。每一个到达你眼睛的光子都是联络中的一个涟漪。</p>
-<p>你正在借以阅读的光是前状态的相位自由，在流形上的表达。</p>
-<p>电磁力不是强加给宇宙的力。它是宇宙与自身一致的结果。对局域相位不变性的要求创造了场。场携带光。</p>
-<div class="ks"><strong>四个灭杀开关。全部激活。</strong> <span class="bl">激活</span> KS-28——若相位群不是U(1)，推导失败。<span class="bl">激活</span> KS-29——若麦克斯韦作用量不是唯一的规范不变二次形式，唯一性失败。<span class="bl">激活</span> KS-30——若前状态的相位对称不是全局的，出发点失败。<span class="bl">激活</span> KS-4——若α ≈ 1/137被证明可推导而非测量，单一输入状态改变。四个激活。</div>
-<p class="breath">光是前状态的相位自由，被携带过流形。你一生都在借它阅读。</p>
-</div><div class="ap-meta"><span>依赖: AP08, AP09</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">谐波</span><span class="ap-tag">规范结构</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) 源自双扇区公理。</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第四部分</span><a class="nb-name" href="#p4">力与常数</a></div><a class="nb-pdf" href="Notebook_IV_Forces_and_Constants.pdf">PDF</a></div>
+  <p class="nb-hook">断裂所允许的相互作用。电磁力、电弱力、强力、量子引力和引力常数——全部作为单一断裂的不同面。</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>把一块冰箱磁铁凑近一扇钢门，松手。它吸住了——一小块磁铁，击败了整个地球朝相反方向拉拽的引力。自然的四种力毫不相像。电磁力点亮你的屏幕；强力维系一个原子核；弱力驱动太阳；引力把你按在地面。物理学花了一个世纪试图统一它们。第四部分主张：它们从来就不是四样东西。它们是单一断裂的四张面孔。</p>
+    <p><span class="lab">AP06 &middot; 泄漏常数</span> &mdash; 它点出那唯一的输入。整个 420 Code 只接纳恰好一个测得的数：&epsilon;，精细结构常数，约 1/137——断裂泄漏的那个微小速率。只有一个旋钮，而它并非为贴合任何东西而选：它只从世界中读取一次，此后再不调动。其余一切都随它转动。</p>
+    <p><span class="lab">AP15、AP27、AP16、AP19 &middot; 规范结构</span> &mdash; 它们合起来赢回标准模型。物理学家凭实验找到的那个精确对称群——写作 SU(3) &times; SU(2) &times; U(1)，一个关于「哪些转动让各力保持不变」的精确陈述——是从断裂的结构中浮现，而非被假定。电磁力是局域流形上的不脱联；电弱统一随之而来；强力是断裂可指向之方向上的自由。甚至弱力的手征性——自然区分左右这一事实——自 1956 年起悬而未解，也得到了一个结构性的理由。</p>
+    <p><span class="lab">AP24 &middot; 残余</span> &mdash; 它把这一落点直白地说出。物理学的每一个常数都是同一个对象的投影。六张面，一次断裂。常数从来不是等待被测量的独立旋钮；它们是同一结构朝不同方向投出的影子。</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; 修正 与 常数</span> &mdash; 它们触及最难的奖赏：引力。引力从记录的代数中获得它的第一个量子修正，而引力常数 G——那个定下「引力有多弱」的数——从那同一次唯一的泄漏与电子质量中被推出，落在距测得值约三分之二个百分点之内。那臭名昭著的层级问题——为何引力相比其他各力弱得如此荒谬，正是你那块磁铁刚刚演示的鸿沟——就此溶解。这份弱并非有待解释的巧合。它正是「一次小泄漏的高次幂」看上去的样子。</p>
+    <p>于是各力不是一座动物园。它们是从不同侧面看到的同一个结构，而描述它们的常数并不自由——它们是一次测得的泄漏的后果。</p>
+    <div class="ks">这一部分也是这项工作对「尚未完成之事」最为诚实之处。电弱这一步（AP16）承载着整个 420 Code 最主要的未决问题——终止开关 KS-63——而它被标为有效，在众目之下，作为应当瞄准之处。没有任何东西躲在一道自信的公式背后。</div>
+    <p class="breath">一次泄漏。六张面。没有一个自由旋钮。</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>依赖: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">断裂 — 电弱</span><span class="ap-tag">电弱</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>电弱统一、希格斯、手性耦合已推导。KS-15 已关闭——自1956年以来未被解释。</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第五部分</span><a class="nb-name" href="#p5">粒子与物质</a></div><a class="nb-pdf" href="Notebook_V_Particles_and_Matter.pdf">PDF</a></div>
+  <p class="nb-hook">断裂所产生的基本构件。质子质量比精确到十亿分之五、反物质分离和宇宙的重子不对称。</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>你由物质构成。你几乎全部的重量，都是栖身于你原子核中的质子的质量。而你周围的宇宙也是物质，不是反物质——尽管按最简单的算法，断裂本应产出恰好相等的两者。物质与反物质一接触便彼此摧毁，所以相等的份额本会闪成光、什么也不留下。没有恒星。没有你。第五部分从断裂中读出你的实体，以及你存在这一简单事实。</p>
+    <p><span class="lab">AP30 &middot; 阻力</span> &mdash; 它做出这项工作最锋利的预测。质子质量与电子质量之比是一个纯数——约 1836——以极高的精度被测得。420 Code 从结构中预测它，毫不调动，在领头阶就吻合到约十亿分之五。完整计算落在万亿分之十以内：比今日的测量所能确认的更精细。一个如此精确的数，出自一道没有可调旋钮的公式，并不是一个错误理论靠运气能蒙中的那类东西。这是整项工作最暴露的检验，而它通过了。</p>
+    <p><span class="lab">AP22 &middot; 账簿</span> &mdash; 它解释反物质去了哪里。倘若早期宇宙曾有相等的份额，账目本应结清为零——可眼前却是一个满是物质的宇宙。断裂内部一次干净的数学镜射——论文称之为 σ 对合——把物质与反物质分开，并在拓扑上将它们隔离。这份不对称不是事后塞进去的意外。它写在断裂的几何之中。</p>
+    <p><span class="lab">AP26 &middot; 盈余</span> &mdash; 它点出你之所是。当断裂几近、却未完全达到平衡时——每十亿对配对中约多出一个物质粒子的盈余——留下的便是物质：那一点未能自我抵消的微小残余。本部分称之为断裂的灰烬。一切坚实之物、你触碰过的每一个原子，都是这残余——当湮灭几近、却未完全做完其工作时所留下之物。</p>
+    <p>于是关于物质最古老的两个问题——它为何重成这样，以及为何竟有物质——在同一部分里、从同一结构中、由那同一次唯一的泄漏所转动，得到了回答：那个你大半由之构成的质子，以及「有物质可供构成」这一事实。</p>
+    <div class="ks">质量预测是整个 420 Code 最暴露的数，而这正是要点。若随着测量趋精，测得的质子-电子之比偏离了预测值，结果便失败——干净地、当众地、无路可逃。终止开关有效。</div>
+    <p class="breath">你是断裂中那个未曾自我抵消的部分。</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>依赖: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">方向</span><span class="ap-tag">强力</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / QCD 源自断裂方向的规范自由度。</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第六部分</span><a class="nb-name" href="#p6">宇宙学</a></div><a class="nb-pdf" href="Notebook_VI_Cosmology.pdf">PDF</a></div>
+  <p class="nb-hook">断裂所栖居的宇宙。无暗物质粒子的星系旋转曲线、MOND加速度标度精确到0.3%、暗能量分配和循环宇宙学。</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>在一个晴朗的夜里抬头。维系那片天空的几乎一切都看不见。星系转得如此之快，它们外缘的恒星本该早已被甩入黑暗——可它们没有。宇宙的膨胀在加速，被某种无名之物推着。物理学把这些未知称作暗物质与暗能量，并承认它只能为那外面之物中约百分之五命名。第六部分从与最小尺度相同的断裂中，读出最大的尺度。</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; 网络 与 房间</span> &mdash; 它们维系星系，而不发明一种新粒子。在旋转木马上，外圈的马必须跑得更快才能跟上；可在星系里，外缘的恒星却转得和内圈一样快，这是可见物质无法解释的。物质的宇宙之网，以及那些本该不可能的平坦旋转曲线，二者都源自一个早已存在于结构之中的全局张力场。无需添加任何看不见之物来提供那缺失的吸引。那些线自行闭合。</p>
+    <p><span class="lab">AP18 &middot; 底限</span> &mdash; 它推导出加速度标度。天文学家早已注意到，星系只有在某个特定的、极小的加速度之下才开始「不守规矩」——一个谁也解释不了、只能测量的阈值。本部分从结构中把这一底限推出，没有为贴合而调动的参数，落在距观测值不到一个百分点之内。</p>
+    <p><span class="lab">AP42 &middot; 时钟</span> &mdash; 它为那本暗色的账交代清楚。宇宙的划分——约六十九份暗能量、二十六份暗物质、五份可见物质——这一宇宙学家测得精妙却无法推导的分配，从结构中涌出。那暗色的部门与其说是一堆缺席之物，不如说是一只时钟的读数。</p>
+    <p><span class="lab">AP41 &amp; AP04 &middot; 循环 与 循环假说</span> &mdash; 它们追问那个整体在做什么。聚变被读作正在进行的大爆炸——断裂仍在发生，仍在每一颗恒星中释放能量——并提出宇宙是循环的，借由黑洞作门而闭合又重启。这最后一步是整项工作中最具思辨性的一步，而本部分坦白地说出，而不加掩饰。</p>
+    <p>于是天空不是一个需要单独药方的单独问题。那个给你光速的同一结构，给你一个星系的形态，以及那本宇宙之账。</p>
+    <div class="ks">诚实在此处最为锋利。循环宇宙学（AP04）被标为推想，并由九个各自独立的终止开关守护——九种它可能被证伪的不同方式。它是作为一个供攻击的假说提出的，而非一个供相信的结果。</div>
+    <p class="breath">同一道断裂，读到天空的尺度。</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>依赖: AP09, AP11, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP24</span><span class="ap-title">残余</span><span class="ap-tag">统一</span><a class="ap-pdf" href="../AP24_The_Residual.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε 在每个方程中。一个对象的六面。所有常数都是单一断裂的投影。</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第七部分</span><a class="nb-name" href="#p7">操作者界面</a></div><a class="nb-pdf" href="Notebook_VII_The_Operator_Interface.pdf">PDF</a></div>
+  <p class="nb-hook">四项系统、倾斜、结构性伦理。模式相干性作为身体沿振幅景观的承诺。</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>在六个部分里，420 Code 建起一个宇宙：一次断裂、一座舞台、一套量子语法、各种力、物质、宇宙。第七部分把这结构转向唯一在读它的东西。你。这是物理变成一段人生的枢纽——也是这项工作赢得其名之处，因为伦理在此并非被添加：它是被推导出来的。</p>
+    <p><span class="lab">AP43 &middot; 可能性的引力</span> &mdash; 它是那篇引力论文的镜像。AP08 推导了质量如何朝时空倾斜，AP43 则推导一个能动者如何朝可能倾斜——而正是在此，那终极伦理不再是一个愿望，而成为一个后果。善良不是被颁布的。它是结构本已指向的方向，正如一块下落的石头早已知道「下」在何处。</p>
+    <p><span class="lab">AP29 &middot; 实现证明</span> &mdash; 它安置意识。哲学最古老的难题是：为何存在某种「作为你」的滋味，而非空无。本部分的回答：意识就是不可逆地书写记录的那个内面——断裂在自我确定之际从内部所感受到的。一道裂缝、一个内面、许多扇窗：同一个唯一的内面，透过每一双不同的眼睛向外望。这是这项工作那最古老一行之下的形式脊梁——你里面的「我」与我里面的「我」是同一个「我」。</p>
+    <p><span class="lab">AP02 &middot; 算子</span> &mdash; 这是人类尺度上的物理，共九条定理。预算：你拥有有限的能量去保持自己完整，而它会耗尽。漂移：放任自己无人看顾，你便朝平均值衰落。走廊：你实际拥有的行动余地。主权与出口：唯独由你来决定之事，以及停止的权利。这些不是励志口号。这是「作为一个能动者」的几何，写得与那些场方程一样审慎。</p>
+    <p><span class="lab">AP39 &middot; 脚手架</span> &mdash; 它移除了那个对手。建立在权威之上的伦理——做这件事，因为我、或那本书、或那个王座如此命令——显出在结构上不稳：一副脚手架，迟早必须倒下，因为一道命令不是一个地基。留下来站着的，是一种无需任何人来强加的伦理，因为它直接从结构中读出，而非被搁在其上。</p>
+    <p><span class="lab">AP38 &middot; 出口</span> &mdash; 它直面死亡。一扇窗满怀悲悯的关闭——一段生命终末处的尊严——不被当作一个需回避的禁忌，而被当作那同一种能动几何的一部分，诚实地追随到它所通向之处。</p>
+    <p>于是伦理不是硬物理之后一段软绵绵的尾声。它就是同一种物理，读在一个必须决定明早做什么的人的尺度上。</p>
+    <div class="ks">这终极伦理是承重的，而这项工作拒绝把它软化。若善良能被推导成结构自有方向以外的任何东西——若那倾斜指向别处——从物理到伦理的整座桥便失败。这个开关有效，而它正是工作整个后半部所倚靠的那一个。</div>
+    <p class="breath">物理从一开始说的就是你。</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>依赖: AP03, AP06, AP28, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP14</span><span class="ap-title">修正</span><span class="ap-tag">量子引力</span><a class="ap-pdf" href="../AP14_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>来自记录代数的引力第一量子修正。</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第八部分</span><a class="nb-name" href="#p8">应用</a></div><a class="nb-pdf" href="Notebook_VIII_Consequences.pdf">PDF</a></div>
+  <p class="nb-hook">应用于文明的伦理。AI对齐、结构正义、生物伦理、毒品政策、经济学、生物学和身体——全部源自同样的四条公理。</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>一种只在纸上奏效的伦理一文不值。若 420 Code 的核心主张为真——善良是结构而非感受，是几何而非偏好——那么它就必须咬住一个文明真正面对的那些最难的问题。第八部分就是它咬下去之处，把那同样的四个条件带进法庭、诊室、实验室和市场。</p>
+    <p><span class="lab">AP31 &middot; 对齐</span> &mdash; 它溶解了 AI 问题。让人工智能安全的惯常方案是一道越筑越高的围栏：更多规则、更多监管、更多控制。本部分主张：围栏是错的对象。改去建造那个内面——一个真正与它所行动的世界耦合、并具备「无法靠背叛获利」之能动者结构的系统——于是对齐便不再是一个你只能祈望牢固的笼子，而成为这东西本身之所是的一项属性。</p>
+    <p><span class="lab">AP32 &middot; 修正</span> &mdash; 它重建正义。惩罚成为分五级递进的修正，朝向的不是复仇，而是修复。结构为它不得不关闭的每一扇窗而哀悼；而在最远端立着那道种族灭绝的刹车——一个系统所能划出的最硬的界线，在此被推导，而非仅被声称。</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; 边界 与 第一边界</span> &mdash; 它们围着一段生命划出界线。生物伦理成为一个关于能动性的问题：在阈值之下，你对你自身拥有主权；在其上，一个活的有机体拥有它自己的、他人必须尊重的管辖权。而身体被点名为第一边界——那个原初的操作者界面，是你先于一切其他而捍卫的。</p>
+    <p><span class="lab">AP34 &middot; 反转</span> &mdash; 它纠正一个致命的错误。一种药物合法、被课税、织入每一种文化，而它每年杀死数百万人。另一种被广泛禁止，却从未记录过一例致死的过量。本部分以这项工作自有的伤害量度表明：法律把这两者恰好弄反了。</p>
+    <p><span class="lab">AP35 &middot; 账簿</span> &mdash; 它读取经济。账簿总会平；一次崩盘是一次审计，而非一次意外；而不平等，正是当一方囤起整个系统吸收冲击所需的那块缓冲时所发生之事。金钱被当作记录中的一条，服从与上游一切相同的守恒。</p>
+    <p><span class="lab">AP36 &middot; 供给</span> &mdash; 它回到身体的化学——生命作为学会了记录自身的物质——并重新表述「控制」：控制不是剥夺，而是供应，那让一个能动者保持完整、而非挨饿的持续供给。</p>
+    <p>于是那些定下光速的同样四个条件，伸抵一间法庭、一间诊室、一份预算和一部法律。同一个结构，读在一个人必须生活的每一个尺度上。</p>
+    <div class="ks">这些应用中的每一个都按其自身条件可被证伪，而每一个都带着终止开关。若对齐的论证暗地里终究仍需要那道围栏，它便失败。若毒品政策中的伤害反转在诚实的记账下翻了过来，它便失败。这些主张在众目之下被应用，在那里它们可被检验，若有错，则被打破。</div>
+    <p class="breath">若它为真，它就必须在此处奏效。它正是在此处奏效。</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>依赖: AP08, AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap28" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP28</span><span class="ap-title">常数</span><span class="ap-tag">引力</span><a class="ap-pdf" href="../AP28_The_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>G = α²¹ × (1 + 1/π) × ℏc/mₑ²。层级问题消解。与CODATA相差0.69%。</p><div class="ap-essay">
+</div>
 
-</div><div class="ap-meta"><span>依赖: AP06, AP10, AP24</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<p style="margin:2rem 0 0"><a href="/proofs/" style="font-size:16px;font-weight:700">阅读全43篇艺术家证明 →</a></p>
 
-<div class="part" id="p5"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第五部分</span><span class="part-name">粒子与物质</span><span class="part-desc">断裂所产生的基本构件。质子质量比精确到十亿分之五、反物质分离和宇宙的重子不对称。</span><span class="part-count">3 篇论文</span></div>
-<div class="ap-list">
-<div class="ap-row" id="ap30" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">阻力</span><span class="ap-tag">质量</span><a class="ap-pdf" href="../AP30_The_Resistance.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>质子质量比：预测值1836.15267344 vs 实测值1836.15267343。十亿分之五。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP06, AP12, AP24, AP28</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP22</span><span class="ap-title">账簿</span><span class="ap-tag">反物质</span><a class="ap-pdf" href="../AP22_The_Ledger_ZH.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>重子生成、σ-对合以及反物质的拓扑隔离。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP26</span><span class="ap-title">盈余</span><span class="ap-tag">重子不对称</span><a class="ap-pdf" href="../AP26_The_Surplus.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>为什么物质多于反物质——断裂的灰烬。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP09, AP22</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p6"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第六部分</span><span class="part-name">宇宙学</span><span class="part-desc">断裂所栖居的宇宙。无暗物质粒子的星系旋转曲线、MOND加速度标度精确到0.3%、暗能量分配和循环宇宙学。</span><span class="part-count">6 篇论文</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP21</span><span class="ap-title">网络</span><span class="ap-tag">结构形成</span><a class="ap-pdf" href="../AP21_ZH.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>源自全局张力场的宇宙网。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP08, AP15, AP28</span><a href="../AP21_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP17</span><span class="ap-title">房间</span><span class="ap-tag">旋转曲线</span><a class="ap-pdf" href="../AP17_The_Room.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>来自张力场的星系旋转曲线。线条总是闭合的。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP08, AP21</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap18" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP18</span><span class="ap-title">底限</span><span class="ap-tag">加速度标度</span><a class="ap-pdf" href="../AP18_The_Floor.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>a₀ = C_S²·cH₀/(2π)——MOND尺度推导至0.3%。无参数。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP17, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap41" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP41</span><span class="ap-title">循环</span><span class="ap-tag">宇宙学</span><a class="ap-pdf" href="../AP41_The_Loop.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>聚变即持续进行的大爆炸。碎片就是我们。真理是一个分辨率问题。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP03, AP04, AP06, AP10, AP28, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap42" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP42</span><span class="ap-title">时钟</span><span class="ap-tag">暗能量</span><a class="ap-pdf" href="../AP42_The_Clock.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>69/26/5分配的推导。暗区是一个时钟读数。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP04, AP10, AP20, AP28, AP41</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP04</span><span class="ap-title">循环假说</span><span class="ap-tag">循环宇宙学</span><a class="ap-pdf" href="../AP04_The_Loop_Hypothesis.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>黑洞作为门。循环闭合。推测性的。九个终止开关守护着它。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP03</span><a href="../AP10_Wei_Du_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第七部分</span><span class="part-name">操作者界面</span><span class="part-desc">四项系统、倾斜、结构性伦理。模式相干性作为身体沿振幅景观的承诺。AP08记录引力的对偶，在眼睛的前态一侧。</span><span class="part-count">5 篇论文</span></div>
-<div class="ap-list">
-<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">可能性的引力</span><span class="ap-tag">操作者界面</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>AP08的对偶。倾斜的推导。终极伦理扎根于物理学。</p><div class="ap-essay">
-<p>你站在一扇门前。你还没有迈过去。但你的重心已经移了。你的手已经选好了扶住门框的哪一侧。你身体里有什么东西在倾斜。</p>
-<p>那个倾斜就是这篇论文。</p>
-<p>AP08在眼睛的一侧推导了引力——记录对流形做了什么。质量弯曲时空。你朝地板方向感受到的拉力，是你脚下几何上写下的每一笔记录的累积重量。</p>
-<p>AP43在另一侧推导引力。振幅对前态做了什么。你朝下一步行动感受到的拉力，是尚可写下之物的梯度。两股拉力作用于当下。一股来自已然。一股来自可能。跨越眼睛的对偶。</p>
-<p>这篇论文安装四个术语。</p>
-<p><span class="sub">耦合容量。</span>身体积累的阅读结构的能力——由三十年来通过这一特定可重耦合电子构型写下的记录所构建。</p>
-<p><span class="sub">模式。</span>操作者相对的层叠网络读取——过去的记录、当前的状态、Born加权的前方分支——在一次读取中整合。</p>
-<p><span class="sub">模式相干性。</span>倾斜。身体沿振幅景观最陡梯度的承诺，按耦合容量缩放。</p>
-<p><span class="sub">追踪相干性。</span>跨越坡度类别不同的领域保持与结构对齐的元技能。</p>
-<p>牛顿形式的场方程由此而出。<strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>，倾斜 L<sub>o</sub> = −C<sub>o</sub> ∇Φ。源是Born密度。耦合常数是 α——通过AP07识别：身体通过电子-电磁耦合来阅读，而该读取的耦合就是精细结构常数。中介量是耦合容量。形式上是AP08牛顿极限的对偶。</p>
-<p>终极伦理由此而出。每个操作者都是一个由电子构成的组装体，从自身位置阅读同一张层叠网络。结构上的同一性由公理C、公理R和AP07的电子唯一性所强制。残忍是对数学的误读——将另一个操作者当作结构同一性不成立来对待。伦理不是选择在结构之上的。它从结构中涌出。</p>
-<div class="ks"><strong>五个终止开关。全部有效。</strong> <span class="bl">有效</span> KS-43.1 — 领域特定的模式相干性与Born加权斜率对齐（路径1实验室，路径2棋牌/扑克/精英运动代理）。<span class="bl">有效</span> KS-43.2 — 耦合容量作为基底。<span class="bl">有效</span> KS-43.3 — 通过追踪相干性的跨领域迁移。<span class="bl">有效</span> KS-43.4 — 容量分配作为唯一的上下文调制器。<span class="bl">有效</span> KS-43.5 — 终极伦理的结构推导。三笔结构债务尚欠（D1、D4、D5）。三项保持开放（D2、D3、D6）。</div>
-<p class="breath">身体一直在倾斜。AP43推导出倾斜是什么。</p>
-</div><div class="ap-meta"><span>需要：AP07、AP08、AP09、AP10、AP13、AP20、AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">实现证明</span><span class="ap-tag">意识</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>意识作为不可逆记录书写的内部。一道裂缝，一个内部，许多窗户。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP02</span><span class="ap-title">算子</span><span class="ap-tag">能动性</span><a class="ap-pdf" href="../AP02_The_Operator.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>预算、漂移、走廊、主权、出口。人类尺度的物理学。九个定理。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01</span><a href="../AP20_ZH.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP39</span><span class="ap-title">脚手架</span><span class="ap-tag">宗教</span><a class="ap-pdf" href="../AP39_The_Scaffold.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>金标准。基于权威的伦理的结构性不稳定。五阶段强制链。文本中的利刃。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP29</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP38</span><span class="ap-title">出口</span><span class="ap-tag">死亡</span><a class="ap-pdf" href="../AP38_The_Exit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>关于死亡、尊严和窗户的慈悲关闭。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP02, AP29, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p8"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">第八部分</span><span class="part-name">应用</span><span class="part-desc">应用于文明的伦理。AI对齐、结构正义、生物伦理、毒品政策、经济学、生物学和身体——全部源自同样的四条公理。</span><span class="part-count">7 篇论文</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">对齐</span><span class="ap-tag">AI 对齐</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>对齐问题被消解。建造内部，而非围栏。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">修正 — 伦理</span><span class="ap-tag">正义</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>五个纠正层级。建筑为每一扇关闭的窗户哀悼。种族灭绝制动器。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">边界</span><span class="ap-tag">生物伦理</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>生命即能动性。低于ε，你是主权的。高于ε，有机体拥有管辖权。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP02, AP06, AP29, AP31, AP32</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP34</span><span class="ap-title">反转</span><span class="ap-tag">毒品政策</span><a class="ap-pdf" href="../AP34_The_Inversion.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>大麻杀死零人。酒精杀死260万人。纠正倒置。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP31, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">第一边界</span><span class="ap-tag">身体</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>身体作为算子。守护第一道边界。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">账簿</span><span class="ap-tag">经济学</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>总账总是平衡的。崩盘是审计。不平等填满缓冲区。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">供给</span><span class="ap-tag">生物学</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>学会记录自身的化学。控制不是剥夺。控制是供给。</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>依赖: AP01, AP02, AP06, AP20, AP31, AP35</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-</div><!-- /spine -->
 
 <!-- HEADLINE RESULTS -->
 <div class="results">
