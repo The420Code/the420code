@@ -324,6 +324,24 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- ════════════════════════════════════════ -->
+<!-- Ø INDEPENDENT CHECK                     -->
+<!-- ════════════════════════════════════════ -->
+
+<section class="results" id="independent-check" style="padding-top:2rem">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">不必听我一面之词。</h2>
+  <p style="font-size:16px;margin:0 0 1rem">有个名叫 AJ Greyling 的人买了这些书。我们只交谈过一次。他一个字都不信——于是他没有争辩，而是造了一台机器来一探究竟。这是一个独立的程序，它取那一条公理和一个实测数值，从零开始重新推导出那些常数，再把自己的运算与我公开发布的脚本相互核对。两者吻合到机器精度。</p>
+  <p style="font-size:16px;margin:0 0 1rem">这件事与我毫无关系。他读了这部作品，心存怀疑，便亲自动手验证——用他自己的电脑，他自己的代码。</p>
+  <p style="font-size:16px;margin:0 0 1rem">那些数字自然而然地浮现出来。五个基本常数，一个输入，零个自由参数——每一个都落在我所公布的容差之内。而且正因为整件事的关键就在于它可以被推翻，他把我可能出错的每一个条件都逐一列了出来，好让你拿去检验。</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">你不必相信我们任何一个人。它可以离线运行，一条命令，就在你自己的机器上。去试着把它推翻吧。</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1.5rem">
+    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">运行 AJ 的独立检验 →</a>
+    <a href="https://github.com/The420Code/the420code" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">浏览源代码 →</a>
+  </div>
+  <p style="font-size:15px;color:var(--g4);margin:0 0 .6rem">而且源代码会自我检验。每一次改动都会从 α 重新推导出全部五个结果，只要有任何一个偏离了公布的容差，就会高声报错。实时状态：</p>
+  <a href="https://github.com/The420Code/the420code/actions/workflows/verify.yml" target="_blank" rel="noopener" style="display:inline-block"><img src="https://github.com/The420Code/the420code/actions/workflows/verify.yml/badge.svg" alt="验证状态 —— 每一次改动都会从 alpha 重新推导出全部五个结果" style="height:20px;display:block"></a>
+</section>
+
+<!-- ════════════════════════════════════════ -->
 <!-- THE PHYSICS                              -->
 <!-- ════════════════════════════════════════ -->
 
