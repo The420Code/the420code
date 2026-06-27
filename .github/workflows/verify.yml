@@ -1,0 +1,24 @@
+name: Verify
+
+# Re-derives the five headline results from the single axiom and one measured
+# input (the fine-structure constant alpha) on every push and pull request.
+# Green badge = the published derivations still hold within their stated tolerances.
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run the 420 Code verification suite
+        run: python verify.py
