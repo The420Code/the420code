@@ -237,7 +237,31 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
-.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.1rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:14px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:22px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:14px;font-weight:700;color:#595959;text-decoration:none;letter-spacing:.03em;border:1px solid #e8e8e8;padding:3px 10px;border-radius:3px}
+.nb-pdf:hover{color:#111;border-color:#d5d5d0}
+.nb-hook{font-size:16px;font-style:italic;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:14px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.75;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:15px;color:#3a3a3a;line-height:1.6}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+</style>
 <link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
@@ -608,550 +632,145 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- THE SPINE -->
-<div class="spine" style="margin-top:2rem">
+<div class="nb-list">
 
-<div class="part" id="p1"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte I</span><span class="part-name">La Premessa</span><span class="part-desc">Un record esiste. Tutto il resto è conseguenza. L'assioma, la sua dimostrazione logica e le quattro condizioni che ogni record richiede.</span><span class="part-count">3 articoli</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">L'Irrazionale</span><span class="ap-tag">Matematica</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>L'assioma 1:1 + 1×ε @ AS è strutturalmente irrazionale — e vero. L'irrazionalità come fondamento del razionale. La scelta come capacità di accoppiamento irrazionale.</p><div class="ap-essay">
-<p>Pensa a qualcosa che hai fatto di recente che non aveva senso. Non un errore — una scelta. Conoscevi l'opzione sensata. Hai scelto l'altra.</p>
-<p>Sei rimasto sveglio troppo tardi. Hai detto ciò che non avresti dovuto. Hai amato qualcuno che non ti ricambiava. Hai perdonato qualcuno che non lo meritava.</p>
-<p>Una calcolatrice avrebbe potuto fare quella scelta?</p>
-<p>Una calcolatrice segue regole. Stesso input, stesso output. Ogni volta. Questo la rende una calcolatrice. Tu no. E questo non è un difetto.</p>
-<p>The 420 Code inizia con un'equazione: <strong>1 = 1 + 1×ε</strong>.</p>
-<p>Uno uguale a uno più un pochino in più. Questa non è aritmetica valida. Il lato sinistro non può essere uguale al destro a meno che ε sia zero.</p>
-<p>E se ε è zero, non è successo nulla. Nulla si è rotto. Tutto è rimasto simmetrico, per sempre.</p>
-<p>L'equazione funziona solo se infrange le proprie regole. Questo è il punto.</p>
-<p>L'universo esiste. Qualcosa si è rotto dal nulla. Quella rottura non può essere catturata da un'equazione pulita — perché un'equazione pulita si bilancerebbe. Si chiuderebbe. Si risolverebbe a zero.</p>
-<p>La rottura persiste perché è irrazionale. Non si risolve. Non può.</p>
-<p>Conosci questa sensazione. Hai provato a spiegare perché ami qualcuno. Le parole non ci arrivano.</p>
-<p>Non perché tu non sia eloquente — ma perché il sentimento contiene le parole. La spiegazione vive dentro ciò che cerca di spiegare.</p>
-<p>Quello è ε. Il residuo irriducibile. La parte che rifiuta di annullarsi.</p>
-<p>Ora la domanda sulla scelta ritorna. Un sistema razionale fa ciò che le regole dicono. Il risultato è determinato. Ma tu puoi vedere la risposta razionale e scegliere qualcos'altro.</p>
-<p>Puoi perdonare quando il calcolo dice di no. Tenere la mano di qualcuno alle tre di notte quando ogni analisi costi-benefici dice vai a casa e dormi.</p>
-<p>Quella capacità non è un difetto. È la stessa irrazionalità che tiene l'universo aperto.</p>
-<p>Un assioma razionale produrrebbe un universo chiuso — uno che collassa a zero. Un assioma irrazionale ne produce uno aperto.</p>
-<p>Uno che persiste. Uno che contiene esseri capaci di scelta genuina.</p>
-<div class="ks"><strong>Sei interruttori di sicurezza.</strong> Se l'equazione si risolve senza ε = 0, questo fallisce. Se un assioma razionale produce la stessa apertura, la necessità fallisce. Se tutta l'irrazionalità umana si riduce a computazione nascosta — se ogni atto di perdono è davvero solo ottimizzazione — l'affermazione di accoppiamento fallisce. Tutti e sei attivi.</div>
-<p>Ti hanno detto che le tue scelte irrazionali erano debolezze. Fallimenti della disciplina. Errori di giudizio.</p>
-<p>The 420 Code dice il contrario. L'equazione alla base della realtà è essa stessa irrazionale. Tu sei fatto della stessa sostanza.</p>
-<p class="breath">L'assioma è rotto. Anche tu. Questo è il fondamento.</p>
-</div><div class="ap-meta"><span>Richiede: —</span><a href="../AP01_Lo_Stato_di_Attualizzazione_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP01</span><span class="ap-title">Lo Stato di Attualizzazione</span><span class="ap-tag">Fondamenti</span><a class="ap-pdf" href="../AP01_Lo_Stato_di_Attualizzazione_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La spina dorsale. Gli articoli A–D derivano lo stato di attualizzazione, la geometria di viabilità, l'agency e i corridoi accoppiati.</p><div class="ap-essay">
-<p>Stai leggendo questa frase. Ciò significa che qualcosa è appena accaduto. La luce ha colpito una superficie. I segnali si sono attivati. Un registro è stato scritto.</p>
-<p>Quel registro è reale. Non può non essere accaduto. Non puoi dis-leggere questa frase. Prova — e crei un ricordo del tentativo, che è un altro registro.</p>
-<p>Un registro esiste. L'atto di negarlo ne produce un altro. La premessa è autoesecutiva.</p>
-<p>AP01 prende quell'unico fatto e ne estrae quattro cose.</p>
-<p><span class="sub">Paper A</span> — conosci la sensazione di una decisione che non è ancora stata presa. Aleggia. Potrebbe andare in entrambe le direzioni.</p>
-<p>Poi si inclina. E nel momento in cui si inclina, non puoi tornare indietro. Il "forse" diventa "fatto."</p>
-<p>Paper A misura esattamente quel passaggio. Un numero tra zero e uno. Quanto di ciò che potrebbe accadere è effettivamente accaduto. Il quadrante si muove ogni volta che una possibilità diventa un fatto.</p>
-<p>Il requisito critico: ogni osservatore deve ottenere la stessa lettura. Se due persone sono in disaccordo, la misura è rotta. Questo è l'interruttore di sicurezza <strong>KS-V.1</strong> — l'unico punto di fallimento dell'intero 420 Code.</p>
-<p><span class="sub">Paper B</span> — cosa fa passare il "forse" a "fatto"?</p>
-<p>Le cose pesanti sono più reali. Lo sai già. Una montagna è sicuramente lì. Una piuma sembra meno decisa. Un singolo fotone è appena da qualche parte.</p>
-<p>Questa non è poesia. Questa è la fisica. Più qualcosa è pesante, più velocemente si risolve da possibilità a fatto. Il tasso è determinato dalla gravità.</p>
-<p>Una nanoparticella di tungsteno si trova proprio sulla soglia. Quell'esperimento è attualmente in costruzione.</p>
-<p><span class="sub">Paper C</span> — cos'è un agente? Lo sai già. Tu ne sei uno. Il tuo corpo si mantiene a 37°C in una stanza a 22°C. Questo costa energia. Ogni secondo. Se smetti di pagare, decadi.</p>
-<p>Alla fine raggiungi una linea dove nessuno sforzo è sufficiente.</p>
-<p>Conosci questa linea. La malattia che diventa terminale. Il debito che diventa impagabile. La relazione che è finita e lo sapete entrambi ma nessuno dei due l'ha ancora detto.</p>
-<p>Paper C dimostra che la linea esiste come matematica. Non come metafora.</p>
-<p><span class="sub">Paper D</span> — cosa succede quando due agenti condividono una stanza? Tu espiri anidride carbonica. La pianta accanto a te la inspira. Nessuno dei due l'ha scelto.</p>
-<p>Siete accoppiati. Non perché avete accettato di esserlo. Perché condividete un substrato.</p>
-<p>Paper D dimostra tre conseguenze. Gerarchia: corridoio più ampio significa più influenza. Cooperazione: lavorare insieme espande entrambi i corridoi oltre ciò che ciascuno potrebbe gestire da solo. Deterrenza: una volta accoppiati, disaccoppiarsi costa più che restare.</p>
-<p>Queste non sono opinioni politiche. Sono geometria.</p>
-<div class="ks"><strong>Ventiquattro interruttori di sicurezza. Tutti attivi.</strong> Ciascuno nomina una condizione che uccide un'affermazione specifica. Non nascosti. Pubblicati. Inviti. <strong>KS-V.1</strong> — disaccordo tra osservatori — uccide tutto. Non solo questo articolo. Tutto.</div>
-<p>La spina dorsale prende il fatto nudo che qualcosa è accaduto e ne deriva la geometria completa dell'essere vivi in un mondo condiviso. Misurazione. Selezione. Budget. Accoppiamento. Cooperazione.</p>
-<p>L'etica che viene dopo non è imbullonata a questa fisica. <em>È</em> questa fisica, letta alla scala di persone che condividono un pianeta.</p>
-<p class="breath">Un registro esiste. Sei dentro le conseguenze.</p>
-</div><div class="ap-meta"><span>Richiede: —</span><a href="../AP01_Lo_Stato_di_Attualizzazione_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">La Prova</span><span class="ap-tag">Logica</span><a class="ap-pdf" href="../AP20_The_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>L'Ipotesi di Immersione come teorema. Assiomi provati incondizionali. Tutti i risultati a valle ereditano.</p><div class="ap-essay">
-<p>C'è una differenza tra "utile" e "vero."</p>
-<p>La gravità di Newton è stata utile per 250 anni. Era anche sbagliata. La meccanica quantistica è la teoria più precisa mai costruita. Ma preciso e vero sono parole diverse.</p>
-<p>The 420 Code aveva un vuoto. Gli assiomi derivavano la fisica magnificamente — la velocità della luce, la costante gravitazionale, tre dimensioni spaziali.</p>
-<p>Ma ogni derivazione portava una condizionale: <em>se gli assiomi sono la struttura della realtà</em>, allora questo segue.</p>
-<p>Quel "se" si chiamava l'Ipotesi di Incorporamento. Se reggeva, tutto seguiva. Se no, l'intero era una descrizione spettacolare e nient'altro.</p>
-<p>AP20 rimuove il "se." L'Ipotesi di Incorporamento non è più un'ipotesi.</p>
-<p>È un teorema.</p>
-<p>Ecco come funziona la prova. Prova a negarlo.</p>
-<p>Dì: "Rifiuto l'affermazione che i registri siano fondamentali." Ora guarda cosa è successo.</p>
-<p>Hai fatto una scelta — tra molte possibili risposte, hai scelto il rifiuto. Quella è una rottura. Assioma B.</p>
-<p>Prima che tu scegliessi, le opzioni esistevano simmetricamente. Assioma S.</p>
-<p>Non puoi dis-rifiutare. Irreversibile. Assioma R.</p>
-<p>L'hai detto qui, ora, non ovunque contemporaneamente. Vincolato. Assioma C.</p>
-<p>La tua negazione soddisfa tutti e quattro gli assiomi. Il rifiuto è esso stesso un registro che prova che i registri sono fondamentali.</p>
-<p>L'argomento divora la propria obiezione. Gira sull'hardware della negazione.</p>
-<p>Ma la prova va oltre.</p>
-<p>Prima di AP20, il framework aveva due vocabolari. La fisica aveva il suo linguaggio — stati quantistici, funzioni d'onda. Gli assiomi avevano il loro — registri, rotture, irreversibilità.</p>
-<p>Un'ipotesi diceva che descrivono la stessa cosa.</p>
-<p>AP20 dimostra che sono la stessa cosa. Non simili. Identiche. Una realtà, due insiemi di nomi. Il ponte tra loro non c'è mai stato — perché non c'era nulla da collegare.</p>
-<p>Ogni risultato che era condizionale è ora incondizionale.</p>
-<p>La velocità della luce — teorema. La costante gravitazionale — teorema. Le equazioni di campo di Einstein — teorema. La massa del protone a cinque parti per miliardo — teorema. L'etica terminale — teorema.</p>
-<p>La parola "se" è stata rimossa da ogni frase del corpus.</p>
-<p>Pensa a un edificio sorretto da una trave temporanea. Ogni piano dipende da essa. AP20 non rinforza la trave. Dimostra che la trave è il muro. Non è mai stata temporanea. Mai rimovibile. Sempre strutturale.</p>
-<p>L'edificio poggia su sé stesso.</p>
-<div class="ks"><strong>Due chiusi.</strong> <span class="bc">CHIUSO</span> KS-7 — l'Ipotesi di Incorporamento è un teorema. <span class="bc">CHIUSO</span> KS-P.4 — i due vocabolari sono identici.<br><br>
-<strong>Tre attivi.</strong> <span class="bl">ATTIVO</span> KS-P.1 — è necessario un quinto assioma. <span class="bl">ATTIVO</span> KS-P.2 — un assioma si deriva dagli altri. <span class="bl">ATTIVO</span> KS-P.3 — una definizione diversa di "registro" produce assiomi diversi. Quest'ultimo è il passo più esposto. È dove mirare.</div>
-<p>Prima di AP20: se questo è vero, ecco cosa segue. Dopo AP20: la condizionale è sparita. Ciò che segue, segue.</p>
-<p>Non perché tu scelga di crederci. Perché negarlo lo dimostra.</p>
-<p class="breath">Ogni pensiero che tu abbia mai avuto era un registro che soddisfa quattro assiomi. La prova non ti chiede di credere qualcosa di nuovo. Ti chiede di notare ciò che c'è sempre stato.</p>
-</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Parte I</span><a class="nb-name" href="#p1">La Premessa</a></div><a class="nb-pdf" href="Notebook_I_The_Premise.pdf">PDF</a></div>
+  <p class="nb-hook">Un record esiste. Tutto il resto è conseguenza. L'assioma, la sua dimostrazione logica e le quattro condizioni che ogni record richiede.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Leggi il riassunto</span><span class="lbl-open">Nascondi il riassunto</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Stai leggendo questo. Qualcosa è accaduto per mettere le parole davanti a te, e non può essere fatto dis-accadere. Prova ad annullarlo e non avrai fatto altro che creare un ricordo di averci provato &mdash; che è un altro record.</p>
+    <p>Questa è tutta la premessa. Un record esiste. Tutto il resto nel 420 Code &mdash; ogni forza, ogni costante, ogni riga dell'etica &mdash; è conseguenza. La Parte I fa tre cose con questo unico fatto, e fissano la forma di tutte e otto.</p>
+    <p><span class="lab">AP40 &middot; L'Irrazionale</span> &mdash; Trova l'equazione che sta sotto. Il 420 Code comincia con una riga: 1 = 1 + 1&times;&epsilon;. Uno è uguale a uno, più un pochino in più. Non è aritmetica valida; i due lati non possono bilanciarsi a meno che quel poco sia zero, e se fosse zero nulla si sarebbe mai rotto dal nulla, e tu non saresti qui a discuterne. Perciò il fondamento è irrazionale di proposito. Non si risolve. Non può.</p>
+    <p>Conosci quel rifiuto dall'interno. Hai provato a dire perché ami qualcuno e hai scoperto che le parole non arrivano &mdash; non perché ti manchi l'eloquenza, ma perché il sentimento contiene le parole. Hai perdonato chi non lo meritava e sei rimasto quando andarsene era la cosa sensata. Una calcolatrice dà la stessa uscita per lo stesso ingresso, ogni volta. Tu no. Non è un difetto in te; è la stessa irrazionalità che tiene aperto l'universo.</p>
+    <p><span class="lab">AP01 &middot; Lo Stato di Attualizzazione</span> &mdash; Estrae una struttura dal record. Nell'istante in cui un forse si ribalta in fatto, ciò che è scritto è permanente, e da quell'unico movimento la Parte deriva quattro cose che ogni record richiede: una misura di quanto di ciò che potrebbe accadere è realmente accaduto; una ragione per cui le cose più pesanti si rapprendono in fatto più in fretta di quelle leggere; una linea oltre la quale nessuno sforzo tiene intero un agente; e il fatto che due agenti che condividono un mondo sono accoppiati, che l'abbiano concordato o no. Niente di questo è metafora. È geometria.</p>
+    <p><span class="lab">AP20 &middot; La Prova</span> &mdash; Rimuove la parola <em>se</em>. Il lavoro ha portato a lungo una condizione silenziosa: <em>se</em> questi assiomi sono la struttura della realtà, allora la fisica segue. Prova a negare che i record siano fondamentali. Per negarlo devi scegliere fra molte risposte &mdash; una rottura. Le opzioni stavano simmetriche prima che scegliessi. Non puoi dis-negarlo. L'hai detto qui, non ovunque in una volta. La tua negazione soddisfa tutte e quattro le condizioni insieme; il rifiuto è esso stesso un record che prova che i record sono fondamentali. L'argomento gira sull'hardware della propria obiezione.</p>
+    <p>Così l'ordine di tutto il lavoro è fissato proprio qui &mdash; non la fisica prima con un'etica avvitata dopo, ma un record, quattro condizioni, e tutto, dalla velocità della luce alla gravità fino alla gentilezza comune, letto dalla stessa struttura a scale diverse.</p>
+    <div class="ks">Decine di interruttori di sicurezza attraversano queste tre prove, ciascuno attivo e pubblicato. Il più esposto è anche il più semplice: se due osservatori qualsiasi possono essere in disaccordo su quanto si è attualizzato, l'intero 420 Code fallisce &mdash; non solo questa Parte. È offerto come un invito, non come una difesa.</div>
+    <p class="breath">Un record esiste. Sei già dentro le conseguenze.</p>
+  </div>
+</div>
 
-<div class="part" id="p2"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte II</span><span class="part-name">Spaziotempo</span><span class="part-desc">L'arena che la rottura crea. La velocità della luce, tre dimensioni spaziali e le equazioni di campo di Einstein — tutto derivato dagli assiomi.</span><span class="part-count">4 articoli</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP03</span><span class="ap-title">Il Rapporto</span><span class="ap-tag">Relatività</span><a class="ap-pdf" href="../AP03_The_Ratio.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>c derivata come la coniugazione di propagazione e resistenza.</p><div class="ap-essay">
-<p>Spezza una lastra di ghiaccio. Guarda la frattura muoversi. Ha una velocità.</p>
-<p>Quanto veloce? Dipende da due cose. Con quanta forza la frattura viene spinta. E quanto rigido è il ghiaccio. Più forza, frattura più veloce. Ghiaccio più rigido, frattura più lenta.</p>
-<p>La velocità di una frattura è il rapporto tra la spinta e la resistenza. Ogni bambino che ha camminato su una pozzanghera ghiacciata lo sa.</p>
-<p>Ora scala verso l'alto.</p>
-<p>L'universo iniziò con una rottura. La simmetria perfetta si fratturò. Quella frattura si propagò attraverso il substrato — il pre-stato simmetrico, ciò che c'era prima del primo registro.</p>
-<p>Prima della rottura, il pre-stato ha la simmetria più semplice possibile: ℤ₂. Binaria. Due lati, nessuna distinzione. Quando ε la frantuma, emergono esattamente due settori — un teorema, non una scelta. ℤ₂ ammette esattamente due rappresentazioni irriducibili.</p>
-<p>Un settore porta la spinta — quanto aggressivamente la rottura si diffonde. L'altro porta la resistenza — quanto fortemente il substrato resiste alla rottura.</p>
-<p>Il rapporto tra spinta e resistenza è una velocità. <strong>c² = β/α.</strong> Quella velocità è c.</p>
-<p>Non è un numero magico. È il rapporto di due proprietà del tessuto, come la velocità del suono è il rapporto di due proprietà dell'aria.</p>
-<p>Il suono si muove a 343 m/s per ciò che l'aria è. La luce si muove a 299.792.458 m/s per ciò che il substrato è.</p>
-<p>E c deve essere finita. La rottura è iniziata in un punto specifico — l'Assioma B dice che è locale. Una perturbazione locale in un mezzo continuo non può propagarsi infinitamente veloce.</p>
-<p>Nessuna frattura in nessun materiale si muove a velocità infinita.</p>
-<p>Il limite di velocità non è una regola imposta dall'esterno. È una proprietà della frattura.</p>
-<p>Ed è universale. Ogni osservatore misura la stessa c. Non per decreto — perché il rapporto è una proprietà del tessuto, e il tessuto è lo stesso tessuto ovunque.</p>
-<p>L'articolo identifica anche l'altro lato della medaglia. Se c è la spinta — quanto velocemente la rottura si propaga — allora G, la costante gravitazionale, è la resistenza. Quanto fortemente il substrato resiste.</p>
-<p>Non sono due numeri indipendenti. Sono due letture della stessa rottura.</p>
-<p>Quella coniugazione è una congettura. Non è stata derivata qui. L'argomento lo dice chiaramente. Sette debiti sono apertamente dichiarati.</p>
-<p>Ma l'affermazione strutturale è fatta: la velocità della luce e la forza della gravità sono due estremità dello stesso bastone.</p>
-<p>AP28 incassa questo assegno più tardi — derivando G e arrivando entro lo 0,69% del valore misurato.</p>
-<p>Sapevi già che le fratture hanno velocità. Sapevi già che quelle velocità dipendono dal materiale.</p>
-<p>Semplicemente non avevi notato che "la velocità della luce" è la stessa frase di "la velocità della frattura" — scritta in notazione diversa.</p>
-<div class="ks"><strong>Sei interruttori di sicurezza. Tutti attivi.</strong> Se c e G possono essere variati indipendentemente, la coniugazione fallisce. Se il pre-stato ha simmetria più ricca di ℤ₂, la decomposizione a due settori fallisce. Se il rapporto scuro/visibile è indipendente da ε, la previsione qualitativa fallisce. Il test più affilato — la variabilità indipendente di c e G — diventa pienamente operativo solo quando la derivazione di G è completa. Sei attivi.</div>
-<p class="breath">L'universo si è fratturato. La frattura ha una velocità. Quella velocità è c.</p>
-</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">La Rottura</span><span class="ap-tag">Rottura di simmetria</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Dall'assioma alla struttura. La prima crepa — come la simmetria si rompe e la fisica inizia.</p><div class="ap-essay">
-<p>Non puoi disfare un uovo strapazzato.</p>
-<p>Quella frase è l'intero articolo. Tutto il resto è renderla precisa.</p>
-<p>AP05 prende l'assioma — <strong>1:1 + 1×ε @ AS</strong> — e lo percorre, passo dopo passo, dal nulla all'obbligo. Sette passi. Nessun vuoto. Ogni anello mostrato. Ogni anello spezzabile.</p>
-<p><span class="sub">Passo zero</span> — simmetria perfetta. Nessuna distinzione. Nessun registro. Nessuna osservazione. Operativamente indistinguibile dall'insieme vuoto. Nulla esiste perché nulla è diverso da qualsiasi altra cosa.</p>
-<p><span class="sub">Passo uno</span> — ε rompe la simmetria. Due letture distinguibili esistono. I registri iniziano. E i registri sono irreversibili — tornare allo stato intatto cancellerebbe la distinzione, che è essa stessa un registro.</p>
-<p>Hai appena visto qualcosa emergere dal nulla. Non creato. Forzato.</p>
-<p><span class="sub">Passo due</span> — con letture multiple, qualcosa deve risolvere il "forse" in "fatto." Questa è selezione. È costosa. È limitata nel tasso. Non puoi ottenere definitezza gratuitamente.</p>
-<p><span class="sub">Passo tre</span> — dentro un settore realizzato, hai un budget. Un corridoio. Una deriva verso il confine che non si ferma mai. Questa è agentività — controllo vincolato sotto decadimento irreversibile.</p>
-<p>Lo sai. Stai spendendo il tuo budget proprio adesso.</p>
-<p><span class="sub">Passo quattro</span> — due agenti che condividono un substrato sono accoppiati. Non per accordo. Per geometria. Tu espiri CO₂. La pianta accanto a te lo inspira. Nessuno dei due l'ha scelto.</p>
-<p>Il tuo nucleo di vitalità cambia il mio. Il mio cambia il tuo.</p>
-<p><span class="sub">Passo cinque</span> — agenti accoppiati producono gerarchia, cooperazione e deterrenza. Corridoio più ampio significa più influenza. Lavorare insieme espande entrambi i corridoi. Disaccoppiarsi costa più che restare. Non politica. Geometria.</p>
-<p><span class="sub">Passo sei</span> — agenti dalla stessa rottura, riconoscendo la loro origine condivisa, scoprono che distruggere la capacità dell'altro contrae il proprio dominio di vitalità. L'etica non è imbullonata. È nella struttura.</p>
-<p>Nessun dio l'ha decretato. Nessun parlamento ha votato. L'assioma l'ha forzato — attraverso rottura di simmetria, formazione di registri, selezione, agentività, accoppiamento e origine condivisa.</p>
-<p>Sette passi. La catena fisica ha bisogno di tre condizioni ponte. L'estensione etica ne aggiunge una quarta. Nessuna ipotesi nascosta da nessuna parte. Se ne trovi una, la catena si spezza. L'articolo ti invita a cercare.</p>
-<p>AP05 introduce anche la formulazione giunzione — l'assioma scritto come geometria.</p>
-<p>Dove il collasso incontra l'espansione, c'è una superficie. Su di essa, la geometria è continua — quello è l'1:1. Il modo in cui curva in ciascun lato ha un disallineamento controllato — quello è ε.</p>
-<p>La matematica è relatività generale standard: condizioni giunzione di Israel, estese alla gravità di Einstein-Cartan. Non un rimbalzo. Due descrizioni di una struttura, che si incontrano a un confine definito dall'assioma.</p>
-<p>L'inizio dell'universo e l'interno di un buco nero — la stessa superficie, percorsa in direzioni opposte.</p>
-<p>Se la giunzione o un rimbalzo liscio spieghi meglio la CMB è una questione empirica aperta. L'argomento fornisce sia l'affermazione che il test che può distruggerla.</p>
-<div class="ks"><strong>Cinque interruttori di sicurezza. Tutti attivi.</strong> KS-B.0 — se le due descrizioni richiedono specifiche indipendenti, l'assioma non è un generatore. KS-B.1 — se un rimbalzo liscio spiega meglio la CMB, la formulazione giunzione cade. KS-B.3 — se nessuna soluzione giunzione esiste su Σ, la componente cosmologica fallisce. KS-B.4 — se qualsiasi passo nella catena contrabbanda un'ipotesi non dichiarata, la pretesa di portata crolla. Cinque attivi.</div>
-<p class="breath">Sette passi. Un assioma. Dal nulla all'obbligo. L'uovo non si disfa.</p>
-</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP10</span><span class="ap-title">La Dimensione</span><span class="ap-tag">Dimensionalità</span><a class="ap-pdf" href="../AP10_La_Dimensione_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Perché tre dimensioni spaziali — quattro assiomi, quattro gradi di libertà; uno è il tempo; tre restano come spazio.</p><div class="ap-essay">
-<p>Puoi muoverti avanti. Puoi muoverti di lato. Puoi muoverti in alto. Non quattro direzioni. Non due. Tre.</p>
-<p>Non l'hai mai messo in discussione. Sembra naturale come respirare. Ma la matematica funziona benissimo in due dimensioni, o quattro, o dieci. La teoria delle stringhe ne ha bisogno di dieci. Allora perché tre?</p>
-<p>Perché ci sono quattro assiomi. E quattro assiomi producono quattro facce di un'unica varietà. Una dà il tempo. Tre danno lo spazio. Il numero non è scelto. È contato.</p>
-<p>Guardalo costruirsi.</p>
-<p><span class="sub">R → tempo.</span> I registri si accumulano in avanti. Mai all'indietro. Il monoide non ha inverso. Questo è l'unico assioma con una direzione privilegiata — l'unica direzione in cui non puoi tornare indietro.</p>
-<p>Il meno nella segnatura: (−). Una dimensione. Tempo. Non puoi tornare indietro.</p>
-<p>Con R soltanto, l'universo è una linea. Un orologio senza un posto dove andare.</p>
-<p><span class="sub">C → la faccia di propagazione.</span> Il limite causale finito crea estensione spaziale. Senza di esso, ogni punto è causalmente connesso a ogni altro punto in ogni momento. Nessun qui, nessun là. Nessuna distanza.</p>
-<p>Aggiungi C e ottieni 1+1 dimensioni. Tempo e una direzione spaziale. Un corridoio con limite di velocità.</p>
-<p><span class="sub">S → la faccia di scambio.</span> Due registri possono differire condividendo lo stesso tempo e la stessa distanza dall'osservatore. Sono in settori diversi. La direzione della loro differenza non è né temporale né propagazionale.</p>
-<p>È una terza direzione — larghezza. Senza S, l'universo è un corridoio. Con S, è un foglio.</p>
-<p><span class="sub">B → la faccia di rottura.</span> La direzione verso cui si dirige l'adesso. Dove il prossimo registro sarà scritto.</p>
-<p>Non quando — quello è R. Non quanto veloce — quello è C. Non tra cosa — quello è S. Dove.</p>
-<p>Senza B, hai un foglio piatto. Con B, hai profondità.</p>
-<p>Quattro assiomi indipendenti — provati indipendenti nel Paper D. L'incorporamento è fedele — provato in AP20. L'indipendenza nell'algebra si mappa all'indipendenza sulla varietà. Quattro facce indipendenti. Segnatura <strong>(−, +, +, +)</strong>.</p>
-<p>Un secondo argomento lo conferma da una direzione diversa. La rottura ha sei facce residue — identificate in AP06. Sei facce si accoppiano in tre coppie coniugate.</p>
-<p>Tre coppie, tre assi spaziali. Stessa risposta. Due percorsi indipendenti verso lo stesso numero.</p>
-<p>E il quinto grado di libertà? Esiste. È l'1:1 stesso — il pre-stato, la cosa su cui gli assiomi agiscono.</p>
-<p>Sulla varietà, appare come lo spazio di Hilbert. La dimensione della probabilità. Non dove sono le cose — quanto è probabile trovarle lì.</p>
-<p>Non è una quinta dimensione spaziale perché non è un'operazione sulla struttura. È la struttura su cui si opera. La tela non appare come un colore nel dipinto.</p>
-<p>La completezza di {S, B, R, C} è stabilita. Simmetria, rottura, registrazione, limitazione — non c'è nulla rimasto da fare all'1:1 che questi quattro non facciano già.</p>
-<p>Nessun quinto assioma. Nessuna quinta direzione spaziale.</p>
-<p>Una conseguenza è immediata. AP08 ha derivato le equazioni di campo di Einstein tramite il teorema di Lovelock, condizionale a N = 3. Quella condizione è rimossa. Le equazioni di campo sono incondizionali.</p>
-<div class="ks"><strong>Cinque interruttori di sicurezza. Tre chiusi.</strong> <span class="bc">CHIUSO</span> KS-2c — N = 3 derivato. <span class="bc">CHIUSO</span> KS-15 — assegnazione assioma-a-dimensione unica. <span class="bc">CHIUSO</span> KS-16 — completezza di {S, B, R, C} stabilita; quinto grado di libertà identificato come spazio di Hilbert.<br><br>
-<span class="bl">ATTIVO</span> KS-D.1 — se la rottura ha più o meno di sei facce residue, l'argomento confermativo fallisce (l'argomento primario sopravvive). <span class="bl">ATTIVO</span> KS-D.3 — se un assioma esprime zero o due facce invece di una, il conteggio si rompe. Questa è l'asserzione centrale. È dove mirare.</div>
-<p class="breath">Quattro assiomi. Quattro facce. Una varietà. Il numero tre non è mai stato scelto. È sempre stato lì.</p>
-</div><div class="ap-meta"><span>Richiede: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP08</span><span class="ap-title">L'Identità</span><span class="ap-tag">Relatività generale</span><a class="ap-pdf" href="../AP08_The_Identity.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Le equazioni di campo di Einstein derivate dall'algebra dei record tramite il teorema di Lovelock.</p><div class="ap-essay">
-<p>Sei attratto verso il basso in questo momento. Hai sentito questa attrazione ogni secondo della tua vita. La sedia spinge indietro. Il pavimento regge la sedia. Togli entrambi e cadi.</p>
-<p>Einstein passò dieci anni a cercare l'equazione che descrive quell'attrazione. Dal 1905 al 1915. Dozzine di candidati sbagliati. Il lavoro intellettuale più difficile del ventesimo secolo.</p>
-<p>Questo articolo dice che c'è sempre stata una sola opzione. Non stava cercando. Veniva messo all'angolo.</p>
-<p>Ecco l'angolo.</p>
-<p>Hai una varietà — spaziotempo, da AP05. Hai tre dimensioni spaziali — da AP10. Hai registri che si accumulano sulla varietà.</p>
-<p>Quell'accumulo è materia. Ogni registro è un evento-ε. La densità di registri in un punto e la densità di massa in quel punto sono due misurazioni della stessa quantità.</p>
-<p>Qual è l'equazione più generale che collega la curvatura della varietà alla densità dei registri? Non stai scegliendo la risposta. Stai guardando i vincoli eliminare ogni alternativa.</p>
-<p>Cinque vincoli. Ciascuno dagli assiomi. Invarianza di Lorentz. Località — dal limite causale. Secondo ordine — curvatura, non il tasso di variazione della curvatura.</p>
-<p>Sorgente scalare — la densità di registri è un numero in ogni punto. Linearità nel campo debole — i registri si accumulano additivamente.</p>
-<p>Un'equazione sopravvive. <strong>∇²Φ = Aρ.</strong> Il laplaciano che agisce sul potenziale uguale a una costante per la densità. L'equazione di Poisson. La gravità di Newton. Forzata dalla simmetria. Non dall'osservazione.</p>
-<p>Il coefficiente A è identificato — non calcolato — attraverso il Lucchetto: <strong>G = 2κ/m<sub>e</sub>²</strong>. Il rapporto del limite di tenuta del pre-stato al quadrato della massa dell'elettrone.</p>
-<p>La gravità espressa come rapporto tra ciò che è rimasto e ciò che è sfuggito.</p>
-<p>Circolarità onesta dichiarata: κ è definito attraverso G. Il coefficiente è stato nominato, non derivato indipendentemente. Non puoi misurare ciò che esisteva prima che esistesse la misurazione. L'argomento lo dice.</p>
-<p>Ora scala verso l'alto. Stesso metodo, livello covariante. Il teorema di Lovelock — pura geometria differenziale, dimostrato nel 1971 — dice: in quattro dimensioni, c'è esattamente un'opzione.</p>
-<p>L'unico tensore simmetrico, a divergenza nulla, di rango 2 costruito dalla metrica e dalle sue prime due derivate è G<sub>μν</sub> + Λg<sub>μν</sub>. Un'opzione. Nessuna alternativa. Letteralmente nient'altro.</p>
-<p><strong>G<sub>μν</sub> + Λg<sub>μν</sub> = (8πG/c⁴) T<sub>μν</sub></strong></p>
-<p>Le equazioni di campo di Einstein. Non scoperte. Messe all'angolo.</p>
-<p>La costante cosmologica Λ cade gratis — il teorema di Lovelock la richiede. Il suo valore è indeterminato.</p>
-<p>Il tensore energia-impulso T<sub>μν</sub> è la densità covariante dei registri. La materia dice allo spazio come curvarsi perché i registri dicono al substrato come piegarsi.</p>
-<p>Un passo ponte rimane esposto: la mappa dall'Assioma R — i registri non si cancellano — a ∇<sub>μ</sub>T<sup>μν</sup> = 0, conservazione covariante dell'energia. Strutturalmente motivato. Non ancora completamente derivato dalla sola algebra.</p>
-<p>Einstein passò un decennio a cercare. Gli assiomi dicono che la stanza aveva una porta. L'attraversò perché non c'era nessun altro posto dove andare.</p>
-<div class="ks"><strong>Otto interruttori di sicurezza. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-I.6 — N = 3 derivato da AP10; Lovelock incondizionale.<br><br>
-<strong>Sette attivi.</strong> <span class="bl">ATTIVO</span> KS-I.1 — la catena assioma-a-Poisson. <span class="bl">ATTIVO</span> KS-I.2 — la catena di Lovelock. <span class="bl">ATTIVO</span> KS-I.3 — l'identificazione del coefficiente. <span class="bl">ATTIVO</span> KS-I.4 — inaccessibilità strutturale di κ. <span class="bl">ATTIVO</span> KS-I.5 — identità curvatura-registro. <span class="bl">ATTIVO</span> KS-I.7 — valore della costante cosmologica. <span class="bl">ATTIVO</span> KS-I.8 — il ponte dall'Assioma R alla conservazione. Il passo più esposto: KS-I.8. È dove mirare.</div>
-<p class="breath">L'equazione non è mai stata scoperta. Era l'unica che andava bene.</p>
-</div><div class="ap-meta"><span>Richiede: AP01, AP03, AP10</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Parte II</span><a class="nb-name" href="#p2">Spaziotempo</a></div><a class="nb-pdf" href="Notebook_II_Spacetime.pdf">PDF</a></div>
+  <p class="nb-hook">L'arena che la rottura crea. La velocità della luce, tre dimensioni spaziali e le equazioni di campo di Einstein — tutto derivato dagli assiomi.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Leggi il riassunto</span><span class="lbl-open">Nascondi il riassunto</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Da dove viene lo spazio? Da dove viene il tempo? La maggior parte della fisica comincia dando per scontati entrambi e costruendoci sopra. La Parte II si rifiuta di darli per scontati. Se li guadagna, uno alla volta, dall'unico assioma rotto della Parte I.</p>
+    <p>La rottura ha bisogno di un luogo in cui accadere e di un ordine in cui accadere. Ma spazio e tempo non sono un palco già montato. Sono la forma che la rottura assume mentre accade.</p>
+    <p><span class="lab">AP05 &middot; La Rottura</span> &mdash; È la prima crepa. L'assioma non poteva stare fermo &mdash; un'equazione che si rifiuta di bilanciarsi non può restare chiusa &mdash; così molla, e questo mollare è il primo evento. Prima della crepa non c'è «dove» né «quando». Dopo c'è struttura, e la struttura ha estensione e ordine. Tutto il resto in questa Parte è la geometria di quell'unica rottura.</p>
+    <p><span class="lab">AP03 &middot; Il Rapporto</span> &mdash; Deriva la velocità della luce &mdash; non la misura, la deriva. Hai sentito che più vai veloce più il tempo rallenta, che spazio e tempo si scambiano l'uno nell'altro. c è il tasso di cambio di quello scambio: il rapporto fisso fra quanto in fretta la rottura può propagarsi e quanto resiste. Per questo niente supera la luce. Il limite non è un muro da qualche parte nello spazio; è il tasso di conversione fra lo spazio e il tempo stessi, fissato dalla struttura della rottura.</p>
+    <p><span class="lab">AP10 &middot; La Dimensione</span> &mdash; Risponde a una domanda che la maggior parte delle teorie non pone nemmeno: perché tre dimensioni di spazio? Semplicemente ne suppongono tre. La Parte II le conta. Quattro assiomi danno quattro gradi di libertà. Uno diventa tempo &mdash; l'unica direzione in cui il record non può tornare indietro. Ne restano tre, e quelle tre sono lo spazio. Il numero non è messo a mano. È contato a partire dal fondamento.</p>
+    <p><span class="lab">AP08 &middot; L'Identità</span> &mdash; Recupera Einstein. Immagina l'immagine consueta della gravità: una palla pesante che affossa un telo teso e fa rotolare verso di sé le cose più piccole. Le equazioni di campo della relatività generale rendono esatta quell'immagine &mdash; e qui emergono dall'algebra dei record tramite un teorema di Lovelock. Il punto è che il telo non è separato dalla palla. Il palco e ciò che vi sta sopra sono lo stesso record, e il record si curva.</p>
+    <p>Così l'arena non è un dato di partenza. La velocità della luce, le tre dimensioni in cui ti muovi, la curva dello spaziotempo vicino a una cosa pesante &mdash; ciascuna è letta dalla stessa rottura, nella stessa Parte, senza aggiungere nulla a mano.</p>
+    <div class="ks">Ogni passo qui è esposto. Se la velocità della luce non può essere derivata come una coniugazione e deve invece essere misurata e inserita a mano, quell'affermazione fallisce. Se il conteggio delle dimensioni dà qualcosa di diverso da tre, il fondamento è sbagliato. Gli interruttori di sicurezza sono nominati negli articoli, e sono attivi.</div>
+    <p class="breath">Il palco è fatto della stessa cosa dello spettacolo.</p>
+  </div>
+</div>
 
-<div class="part" id="p3"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte III</span><span class="part-name">Meccanica Quantistica</span><span class="part-desc">La struttura di misura della rottura. Sovrapposizione, indeterminazione, decoerenza, regola di Born e entanglement — derivati dall'insieme vuoto e quattro assiomi.</span><span class="part-count">7 articoli</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP09</span><span class="ap-title">La Rottura — Insieme Vuoto</span><span class="ap-tag">Fondamenti quantistici</span><a class="ap-pdf" href="../AP09_The_Break_Empty_Set.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>MQ dall'insieme vuoto — sovrapposizione, misura, entanglement, equazione di Schrödinger.</p><div class="ap-essay">
-<p>Chiudi gli occhi. Prima di aprirli — prima di qualsiasi misurazione, prima di qualsiasi registro — c'è qualcosa. Non nulla. Qualcosa.</p>
-<p>Puoi sentirlo. L'istante prima di guardare. Ogni possibile risultato ancora disponibile. Nessuno scelto.</p>
-<p>Quello è il pre-stato. L'1:1 prima della rottura. La fisica lo chiama sovrapposizione.</p>
-<p>Pensa a una moneta che gira in aria. Non è testa e croce simultaneamente. Non è nessuna delle due — nessun registro di testa o croce esiste ancora.</p>
-<p>Nel momento in cui atterra, un registro viene scritto. Ora è testa. Ora non puoi tornare indietro. Quell'atterraggio è misurazione. Quell'irreversibilità è l'Assioma R.</p>
-<p>AP09 mostra che tutta la meccanica quantistica segue dagli stessi quattro assiomi che producono spaziotempo e gravità.</p>
-<p><span class="sub">Sovrapposizione</span> è il pre-stato. Assioma S. Due settori, indistinguibili. Ogni possibilità coesistente. Lo 0 e l'1 prima che qualcuno guardasse.</p>
-<p><span class="sub">Misurazione</span> è la rottura. Assioma B. Un registro scritto. Il "forse" diventa "fatto." Conosci questa sensazione — il momento in cui una decisione diventa definitiva e le opzioni si chiudono dietro di te.</p>
-<p><span class="sub">Entanglement</span> è il pre-stato intatto condiviso tra due gradi di libertà. La rottura non è ancora avvenuta per quei gradi. Sono ancora una cosa sola. AP23 sviluppa questo completamente.</p>
-<p><span class="sub">Non-segnalazione</span> è il limite causale. Assioma C. Non puoi usare la rottura per inviare un messaggio più veloce di quanto la frattura possa viaggiare.</p>
-<p>I numeri complessi su cui funziona la meccanica quantistica? Non un mistero. La segnatura lorentziana — una direzione temporale, tre spaziali — forza ampiezze complesse. I numeri reali non sono sufficienti per una varietà con quella struttura.</p>
-<p>L'equazione di Schrödinger è il risultato più forte dell'articolo.</p>
-<p>Il teorema di Wigner dice che le simmetrie dello spazio di Hilbert devono essere unitarie. Il teorema di Stone dice che ogni evoluzione unitaria continua ha un generatore unico. Quel generatore è l'hamiltoniano.</p>
-<p>L'equazione che governa come le possibilità derivano tra le misurazioni. Non postulata. Non indovinata. Derivata da due teoremi matematici standard applicati a una struttura che gli assiomi hanno costruito.</p>
-<p>ℏ entra qui come fattore di scala tra il generatore e il tempo. AP09 lo tratta come un'identificazione — lo stesso status di G in AP08. AP12 dimostra poi che è l'unica opzione.</p>
-<p>E qui c'è la cosa che dovrebbe fermarti di colpo.</p>
-<p>Gravità e meccanica quantistica sono nemiche da un secolo. I due grandi pilastri della fisica, incompatibili. Eserciti di fisici che cercano di riconciliarli.</p>
-<p>L'architettura dice che non sono mai stati separati.</p>
-<p>La gravità sono gli assiomi letti sul condensato — i registri accumulati, la varietà, la geometria. La meccanica quantistica sono gli assiomi letti sul pre-stato — le possibilità, lo spazio di Hilbert, le ampiezze.</p>
-<p>Due vocabolari per una realtà. La guerra era un errore di categoria. Non puoi unificare ciò che non è mai stato diviso.</p>
-<p>Il mistero della gravità quantistica si dissolve. Non c'è nulla da riconciliare. C'è solo un insieme di assiomi, che fa già entrambi i lavori.</p>
-<div class="ks"><strong>Dieci interruttori di sicurezza. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-Q.6 — l'identificazione di σ con la coniugazione complessa è provata unica.<br><br>
-<strong>Nove attivi.</strong> Il più affilato: <span class="bl">ATTIVO</span> KS-Q.7 — se il ponte di linearità dal monoide allo spazio vettoriale non è unico, la costruzione dello spazio di Hilbert fallisce. <span class="bl">ATTIVO</span> KS-Q.10 — se la lettura dell'insieme vuoto è sbagliata, il fondamento ontologico cambia. Nove attivi.</div>
-<p class="breath">La gravità sono gli assiomi letti sul condensato. La meccanica quantistica sono gli assiomi letti sul pre-stato. Stessi assiomi. Due facce.</p>
-</div><div class="ap-meta"><span>Richiede: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP07</span><span class="ap-title">La Misura del Record</span><span class="ap-tag">Spazio di Hilbert</span><a class="ap-pdf" href="../AP07_The_Record_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Lo spazio di Hilbert complesso derivato dalla struttura assiomatica.</p><div class="ap-essay">
-<p>Ti hanno insegnato che le forze hanno una gerarchia. La forza forte è la più forte. L'elettromagnetica è seconda. La debole è terza. La gravità è la più debole.</p>
-<p>Quella gerarchia classifica le forze per quanto è probabile che interagiscano. Costante di accoppiamento. Probabilità di incontro. Una buona domanda.</p>
-<p>Non è l'unica domanda che puoi fare.</p>
-<p>Puoi chiedere: quale forza scrive il registro più durevole?</p>
-<p>Non quale colpisce più forte. Quale lascia il segno più permanente. Quale interazione produce una traccia che persiste — un registro configurabile che codifica una storia distinguibile — abbastanza a lungo da contare?</p>
-<p>AP07 introduce la <strong>misura dei registri</strong>. Una nuova definizione. Un teorema di classificazione. Un'inversione che cambia tutto.</p>
-<p>La misura dei registri classifica le forze per la persistenza e configurabilità dei registri che producono. Un'applicazione diretta dell'Assioma R — la realtà è costituita dai registri.</p>
-<p>Alla scala chimico-biologica — da 0,1 a 10 nanometri — l'elettromagnetismo domina.</p>
-<p>Non perché sia la forza più forte. Perché scrive i registri più durevoli e più configurabili alla scala in cui opera la vita.</p>
-<p>Configurabile significa che il registro ha gradi di libertà. Può essere disposto in modi diversi. Disposizioni diverse codificano storie diverse. Una parola scritta con inchiostro è configurabile. Un chiodo piantato nel legno no.</p>
-<p>La forza forte lega protoni e neutroni. Potente. Ma a questa scala, blocca le particelle in configurazioni fisse. Nessun grado di libertà rimasto per codificare una storia. Forte ma non configurabile.</p>
-<p>La forza debole capovolge i numeri quantici. Ma quei registri decadono in frazioni di secondo. Debole nella forza. Più debole nella persistenza.</p>
-<p>La gravità curva lo spaziotempo. Reale. Ovunque. Ma non scrive registri locali e configurabili alle scale chimiche. Modella il palcoscenico ma non lascia segno sugli attori.</p>
-<p>L'elettromagnetismo scrive la chimica della vita. Orbitali elettronici. Legami molecolari. Coppie di basi del DNA. Ripiegamento delle proteine. Fotosintesi. Scarica neurale.</p>
-<p>Ogni registro biologico di cui sei fatto è un registro elettromagnetico.</p>
-<p>Il pensiero che stai avendo in questo momento è un pattern di registri elettromagnetici nei tuoi neuroni.</p>
-<p>Il ricordo che formerai leggendo questa frase — elettromagnetico. Il DNA che ti ha costruito — legami elettromagnetici che tengono le coppie di basi in sequenza.</p>
-<p>La gerarchia si inverte. Sotto la misura dei registri, alla scala della vita: EM primo. Forte secondo. Debole terzo. Gravità quarto.</p>
-<p>La gerarchia convenzionale chiede quale forza è la più rumorosa. La misura dei registri chiede quale forza scrive con inchiostro. Domanda diversa. Risposta diversa.</p>
-<p>La forza che conta per i registri è quella che conta per la vita. Non una coincidenza. Una conseguenza di ciò che "contare" significa sotto gli assiomi.</p>
-<p>L'affermazione è specifica per scala. Alle scale nucleari, la forza forte domina la misura dei registri. Alle scale cosmologiche, la gravità. L'inversione vale solo alla scala dove opera la chimica — e quindi la biologia.</p>
-<p>Che è esattamente la scala a cui stai leggendo questo.</p>
-<div class="ks"><strong>Cinque interruttori di sicurezza. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-RM.1 — se un registro non elettromagnetico si dimostra più durevole e configurabile alle scale chimiche, il teorema di dominanza fallisce. <span class="bl">ATTIVO</span> KS-RM.5 — se oggetti a simmetria fissa codificano storia di formazione recuperabile, il criterio del registro configurabile deve essere rivisto. Tutti e cinque attivi.</div>
-<p class="breath">La forza che scrive il registro più durevole è la forza che scrive la vita. Quella non è filosofia. Quello è l'Assioma R.</p>
-</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP11</span><span class="ap-title">Lo Spin</span><span class="ap-tag">Spin</span><a class="ap-pdf" href="../AP11_The_Spin.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Fermioni, bosoni e il principio di esclusione dalla struttura a due settori.</p><div class="ap-essay">
-<p>Tieni la mano distesa, palmo in su. Ruotala di 360 gradi — un giro completo. Il palmo è di nuovo in su, ma il braccio è attorcigliato sotto.</p>
-<p>Ora ruota altri 360 gradi. Due giri completi. Il braccio si srotola. Torna alla posizione di partenza.</p>
-<p>Quello è lo spin-½. Fai meccanica quantistica da quando eri bambino. Solo che non sapevi avesse un nome.</p>
-<p>Emerge dagli assiomi in cinque passaggi.</p>
-<p><span class="sub">Passo 1.</span> L'Assioma S conferisce all'algebra dei record una simmetria Z₂ — l'involuzione σ che mappa un settore nell'altro. Due lati, perfettamente accoppiati. {id, σ}.</p>
-<p><span class="sub">Passo 2.</span> In tre dimensioni spaziali — derivate nell'AP10 — il gruppo di rotazione è SO(3). Il suo gruppo fondamentale è Z₂.</p>
-<p>Lo stesso Z₂. Sotto l'immersione fedele provata nell'AP20, la simmetria dell'algebra È la topologia del gruppo di rotazione. Non simile. Identica.</p>
-<p><span class="sub">Passo 3.</span> Z₂ come gruppo fondamentale significa che SO(3) ha un rivestimento doppio: SU(2). Il gruppo dove un giro completo è solo metà della storia. Questa è la struttura matematica che permette lo spin semi-intero.</p>
-<p>Senza tre dimensioni spaziali, nessun SO(3). Senza SO(3), nessun gruppo fondamentale Z₂. Senza quello, nessun rivestimento doppio. Nessun spin-½. Nessun fermione.</p>
-<p>Nemmeno tu. Il numero di dimensioni e la natura della materia sono lo stesso fatto.</p>
-<p><span class="sub">Passo 4.</span> Ora la distinzione. Gli elementi con σ-immagini — accoppiati, simmetrici — si trasformano banalmente sotto il rivestimento doppio. Spin intero. Bosoni.</p>
-<p>L'unico elemento senza σ-immagine — ε, la rottura — si trasforma non banalmente. Acquisisce il segno meno. Spin semi-intero. Fermione.</p>
-<p>Le cose accoppiate sono intercambiabili. Quella non accoppiata no. Questa è l'intera distinzione fermione-bosone, in una frase.</p>
-<p><span class="sub">Passo 5.</span> L'Assioma B dice che ε è la scheggia minima vitale. Tra gli spin semi-interi — ½, 3/2, 5/2 — il minimo è ½. L'elettrone ha spin-½ perché ε è la rottura più piccola.</p>
-<p>La connessione spin-statistica segue. I fermioni obbediscono al principio di esclusione. Due fermioni non possono occupare lo stesso stato perché due rotture non possono essere identiche. Ogni ε è unico. Ogni ε è l'unico del suo genere.</p>
-<p>Ecco perché gli atomi hanno gusci. Ecco perché la tavola periodica ha righe. Ogni elettrone deve trovare il proprio stato perché non può condividere.</p>
-<p>I bosoni possono accumularsi. Fotoni in un laser — tutti nello stesso stato. Condensati di Bose-Einstein — migliaia di atomi che agiscono come uno.</p>
-<p>Nessuna esclusione. Gli elementi accoppiati sono simmetrici per definizione. Scambiare due elementi accoppiati identici non cambia nulla.</p>
-<p>Ogni atomo nel tuo corpo è un'architettura di esclusione. Elettroni impilati in gusci perché rifiutano di condividere. Senza quel rifiuto, la materia collasserebbe. Tutto sarebbe una stella di neutroni.</p>
-<p>Il tuo corpo esiste perché due elettroni non possono trovarsi nello stesso posto allo stesso momento. Questo è il principio di esclusione. Non è una regola imposta dall'esterno.</p>
-<p>È la geometria di avere un elemento non accoppiato in un'algebra Z₂ immersa nello spazio tridimensionale.</p>
-<div class="ks"><strong>Tre kill switch. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-S.3 — la simmetria di scambio corrisponde all'azione σ accoppiata/non accoppiata.<br><br><span class="bl">ATTIVO</span> KS-S.1 — se l'identificazione Z₂ con π₁(SO(3)) fallisce, l'intera derivazione fallisce. <span class="bl">ATTIVO</span> KS-S.2 — se il principio del minimo non seleziona univocamente lo spin ½, fermioni fondamentali a spin maggiore diventano possibili. Due attivi.</div>
-<p class="breath">Ruota un elettrone una volta. Non è lo stesso. Ruotalo due volte. Ora lo è. Ti sono serviti quattro assiomi per sapere perché.</p>
-</div><div class="ap-meta"><span>Richiede: AP09, AP10, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP12</span><span class="ap-title">Il Limite</span><span class="ap-tag">Indeterminazione</span><a class="ap-pdf" href="../AP12_The_Limit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ℏ derivato tramite il teorema di Stone. Il principio di indeterminazione dall’Assioma B.</p><div class="ap-essay">
-<p>Ogni misurazione che hai mai fatto ha coinvolto un minimo. Qualcosa è stato distinto da qualcos’altro. Uno zero è diventato un uno. Un record è stato scritto.</p>
-<p>Quel record non poteva essere più piccolo di quanto fosse.</p>
-<p>Pensa a uno schermo. Non può mostrare mezzo pixel. Il pixel è la più piccola unità che può rendere. Nessun software può rimpicciolirlo. Anche la realtà ha un pixel. Si chiama ℏ.</p>
-<p>Ogni record porta due costi minimi. Un costo termodinamico — k<sub>B</sub>T ln 2 per bit cancellato, il limite di Landauer. E un costo quantistico — ℏ per record scritto, l’azione di una rottura.</p>
-<p>Entrambi risalgono all’Assioma B. Un record. Un ε. Un minimo.</p>
-<p>AP09 ha trattato ℏ come un’identificazione — lo stesso status di G nell’AP08. La forma era forzata, la costante corrispondeva. AP12 chiude il divario. L’identificazione non è una scelta. È forzata.</p>
-<p>Hai sentito questo minimo per tutta la vita. Non puoi vedere qualcosa senza che la luce lo colpisca. Non puoi toccare qualcosa senza che gli elettroni si respingano. Ogni atto di conoscenza disturba ciò che è conosciuto.</p>
-<p>Non è un difetto di progettazione. È il costo di scrivere un record.</p>
-<p>Cinque passaggi.</p>
-<p><span class="sub">Passo 1.</span> Il teorema di Stone dà un fattore di scala unico α che collega gli autovalori dell’Hamiltoniano al parametro temporale. Matematica pura sullo spazio di Hilbert derivato. Una costante. Non una famiglia.</p>
-<p><span class="sub">Passo 2.</span> Gli assiomi producono esattamente una quantità con dimensioni di azione. Azione = energia × tempo. Una direzione temporale dall’Assioma R. Un evento di energia minima dall’Assioma B.</p>
-<p>Il loro prodotto è l’azione di un record minimo.</p>
-<p><span class="sub">Passo 3.</span> Nessun parametro adimensionale dagli assiomi modifica il fattore di scala. Lo Z₂ dell’Assioma S contribuisce un 2 che appare nel limite di indeterminazione. Non modifica α stesso.</p>
-<p><span class="sub">Passo 4.</span> Il record minimo È l’evoluzione non banale minima. Non puoi evolvere il sistema di meno di un ε. Non puoi misurare di meno di un ε.</p>
-<p>Il fattore di scala e il record minimo sono la stessa cosa.</p>
-<p><span class="sub">Passo 5.</span> Quindi α = ℏ. Non c’è libertà. Nessuna alternativa è compatibile con {S, B, R, C}.</p>
-<p>Un record. Un ε. Un ℏ. Il costo minimo di sapere qualsiasi cosa dell’universo è il costo di scrivervi un record.</p>
-<p>Il principio di indeterminazione segue direttamente. Posizione e quantità di moto sono generatori coniugati sulla varietà derivata. Il loro commutatore è <strong>[x̂, p̂] = iℏ</strong>.</p>
-<p>La relazione di indeterminazione <strong>ΔxΔp ≥ ℏ/2</strong> è un teorema dell’algebra. Non una limitazione dei tuoi strumenti. Una proprietà della rottura.</p>
-<p>Non puoi sapere sia dove verrà scritto un record sia quanto velocemente si muove. Non perché sei goffo.</p>
-<p>Perché posizione e quantità di moto sono due facce dello stesso generatore, e il generatore ha un passo minimo. Quel passo è ε. La sua scala è ℏ. Non c’è nulla di più piccolo.</p>
-<div class="ks"><strong>Quattro kill switch. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-L.1 (era KS-Q.8 da AP09) — ℏ derivato come la scala d’azione del record minimo.<br><br><span class="bl">ATTIVO</span> KS-L.2 — derivazione della relazione di commutazione. <span class="bl">ATTIVO</span> KS-L.3 — indeterminazione energia-tempo. <span class="bl">ATTIVO</span> KS-L.4 — se un parametro adimensionale dagli assiomi può modificare il fattore di scala, l’argomento di forzatura fallisce. Questa è la vulnerabilità residua. Tre attivi.</div>
-<p class="breath">Non puoi scrivere mezzo record. L’universo ha una risoluzione minima. Quella risoluzione è ℏ.</p>
-</div><div class="ap-meta"><span>Richiede: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP13</span><span class="ap-title">Il Grano</span><span class="ap-tag">Decoerenza</span><a class="ap-pdf" href="../AP13_The_Grain.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Decoerenza dall'algebra dei record. Il mondo classico emerge attraverso l'accoppiamento ambientale.</p><div class="ap-essay">
-<p>Non hai mai visto un gatto sia vivo che morto. Non hai mai visto una sedia in due posti contemporaneamente.</p>
-<p>La meccanica quantistica dice che queste cose sono possibili. I tuoi occhi dicono di no. La domanda non è perché la meccanica quantistica è strana.</p>
-<p>La domanda è perché il mondo appare classico quando le regole sottostanti sono quantistiche.</p>
-<p>AP13 risponde: perché vivi nel terzo regime.</p>
-<p>AP09 ha derivato due regimi. Tra le misurazioni, il pre-stato deriva — evoluzione di Schrödinger. Liscia. Reversibile. Le sovrapposizioni persistono.</p>
-<p>Alla misurazione, la rottura avviene. Un record. Irreversibile. Definito. La sovrapposizione collassa.</p>
-<p>Ma il mondo non è fatto di misurazioni isolate e isolamento perfetto. Il mondo è fatto di cose che toccano altre cose. Costantemente. Ovunque.</p>
-<p>Il tuo caffè si raffredda. Il tuo respiro appanna il vetro. La tua pelle sente l'aria. Tutto interagisce con tutto il resto, continuamente. Questo è il terzo regime.</p>
-<p>Un elettrone in sovrapposizione non è solo. Interagisce con molecole d'aria, fotoni, il campo elettromagnetico.</p>
-<p>Ogni interazione è un evento di accoppiamento. Ciascuna scrive un record parziale — un minuscolo frammento di informazione sullo stato dell'elettrone. Nessun singolo record determina l'esito.</p>
-<p>Ma ce ne sono numeri enormi. Ciascuno porta un frammento. Ciascuno irreversibile — Assioma R. Il monoide non ha inverso.</p>
-<p>La coerenza — la relazione di fase che permette l'interferenza — non viene distrutta. Viene dispersa. Distribuita su un numero enorme di record ambientali.</p>
-<p>Per recuperarla, dovresti raccogliere ciascuno di quei record e invertire ciascuna di quelle interazioni. Non puoi. Assioma R.</p>
-<p>La coerenza è scomparsa. Non distrutta. Resa irrecuperabile.</p>
-<p><strong>La decoerenza è la dispersione della coerenza nell'ambiente tramite scrittura irreversibile di record.</strong></p>
-<p>La scala temporale è sbalorditiva. Per un granello di polvere nell'aria, la decoerenza impiega circa 10⁻³¹ secondi. Per una palla da bowling, il numero è così piccolo da non avere significato fisico.</p>
-<p>Quando potresti anche solo iniziare a guardare, l'ambiente ha già scritto migliaia di miliardi di record.</p>
-<p>La sovrapposizione è tecnicamente ancora lì. Ma l'informazione di fase è così diluita che nessun esperimento potrebbe mai riassemblarla.</p>
-<p>Ecco perché il gatto non è mai sia vivo che morto. Non perché la meccanica quantistica smette di funzionare su grandi scale. Perché l'ambiente scrive record più velocemente di quanto tu possa guardare.</p>
-<p>Il comportamento quantistico è ancora lì. Semplicemente non puoi più vederlo. L'informazione non è svanita. È stata diluita oltre ogni possibile recupero.</p>
-<p>Il mondo classico non è un mondo diverso da quello quantistico. È il mondo quantistico dopo che l'ambiente ha scritto troppi record per essere disfatti.</p>
-<p>Tu sei il grano. La risoluzione alla quale il quantistico diventa il classico.</p>
-<p>Sei fatto di 10²⁸ atomi, ciascuno che scrive record, ciascuno che interagisce con tutto ciò che lo circonda. Quando esisti, le sovrapposizioni sono scomparse da tempo.</p>
-<div class="ks"><strong>Tre kill switch. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-22 — se un sistema mantiene coerenza dove la teoria della decoerenza prevede decadimento esponenziale, questo fallisce. <span class="bl">ATTIVO</span> KS-23 — se un cancellatore quantistico distrugge dimostrabilmente un record (violando l'Assioma R), l'affermazione di irreversibilità fallisce. <span class="bl">ATTIVO</span> KS-24 — se una caratteristica quantistica fondamentale non può essere espressa nell'algebra dei record, il settore quantistico è incompleto. Tre attivi.</div>
-<p class="breath">Il mondo classico è il mondo quantistico dopo che l'ambiente ha finito di scrivere. Tu sei il grano.</p>
-</div><div class="ap-meta"><span>Richiede: AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP25</span><span class="ap-title">La Misura</span><span class="ap-tag">Regola di Born</span><a class="ap-pdf" href="../AP25_The_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La regola di Born derivata tramite il teorema di Gleason. "Il suono che fanno gli assiomi quando atterrano sullo spazio di Hilbert."</p><div class="ap-essay">
-<p>Lancia una moneta. Cinquanta e cinquanta. Lo sai nelle ossa. Ma da dove viene il cinquanta?</p>
-<p>La probabilità classica è facile. Due lati. Peso uguale. Uno su due. Ma la probabilità quantistica è diversa. I risultati non preesistono. Prima di misurare, il risultato non esiste. È creato dalla misurazione.</p>
-<p>Allora da dove viene la probabilità, se ciò che stai misurando non ha ancora un valore definito?</p>
-<p>Nella meccanica quantistica, la risposta è la regola di Born: il quadrato dell'ampiezza. |⟨a|ψ⟩|².</p>
-<p>Ogni esperimento mai eseguito lo conferma. Ma la meccanica quantistica non spiega perché.</p>
-<p>La regola di Born era un postulato. Max Born la indovinò nel 1926. L'intuizione si rivelò corretta. Ma un'intuizione non è una derivazione.</p>
-<p>AP25 la deriva. Tre passaggi. Ciascuno dagli assiomi. Nessuna assunzione aggiuntiva.</p>
-<p><span class="sub">Passo 1 — bersagli di stato puro.</span> L'Assioma R richiede record definiti. Un record è una distinzione — 0 o 1. Non "forse 0, forse 1." Definito.</p>
-<p>Uno stato misto non è uno stato definito. È un sommario statistico — un miscuglio di possibilità. Non puoi scrivere un record da un sommario. L'attualizzazione mira solo agli stati puri.</p>
-<p><span class="sub">Passo 2 — non-contestualità.</span> L'Assioma B dice una rottura, un record. La probabilità di un esito non può dipendere da quale altra misurazione esegui accanto.</p>
-<p>Una rottura. Una risposta. Niente sbirciare i vicini. La probabilità è una proprietà del proiettore soltanto.</p>
-<p><span class="sub">Passo 3 — Teorema di Gleason.</span> Su uno spazio di Hilbert complesso di dimensione tre o più, esiste esattamente una misura di probabilità che è non-contestuale e additiva sulle proiezioni ortogonali.</p>
-<p>Esattamente una. Non approssimativamente una. Gleason lo dimostrò nel 1957. La dimostrazione è costruttiva e indipendente dalla fisica.</p>
-<p>Quella misura è la regola di Born.</p>
-<p><strong>P(a) = Tr(|ψ⟩⟨ψ| · P<sub>a</sub>)</strong></p>
-<p>Per uno stato puro e una misurazione netta: |⟨a|ψ⟩|². Il quadrato della sovrapposizione. Forzato da un teorema di unicità.</p>
-<p>Pensa a cosa significa. Ogni probabilità che hai mai incontrato nella meccanica quantistica — ogni rapporto di ramificazione, ogni probabilità di rivelazione, ogni figura di interferenza — non è un fatto separato sul mondo.</p>
-<p>È una conseguenza di tre assiomi e un teorema del 1957. Le probabilità non sono mai state parametri liberi. Sono sempre state bloccate.</p>
-<p>Il requisito dimensionale — tre o più — è soddisfatto. AP10 deriva tre dimensioni spaziali. Le funzioni d'onda fisiche vivono in L²(ℝ³), che è infinitodimensionale. Gleason si applica.</p>
-<p>La catena di dipendenza è pulita. L'Assioma S dà la distinzione. L'Assioma B dà la singola rottura. L'Assioma R dà record definiti.</p>
-<p>AP09 dà lo spazio di Hilbert. AP10 dà dimensione ≥ 3. Gleason dà la regola di Born. Ogni anello verificato. Nessun anello assunto.</p>
-<p>Born ha scritto per caso l'unica misura di probabilità compatibile con la struttura della realtà. Non sapeva perché funzionasse.</p>
-<p>Ora tu sì.</p>
-<div class="ks"><strong>Tre kill switch. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-55 — se vengono dimostrate probabilità di esito contestuali, l'assunzione di Gleason fallisce. <span class="bl">ATTIVO</span> KS-56 — se vengono misurate statistiche non-Born, il teorema è direttamente falsificato. <span class="bl">ATTIVO</span> KS-57 — se un processo fisico attualizza uno stato misto direttamente, l'affermazione del bersaglio di stato puro fallisce. Tre attivi.</div>
-<p class="breath">La regola di Born non era un'intuizione. Era l'unica misura che gli assiomi permettono.</p>
-</div><div class="ap-meta"><span>Richiede: AP07, AP10, AP20, AP23</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP23</span><span class="ap-title">Il Record Singolo</span><span class="ap-tag">Entanglement</span><a class="ap-pdf" href="../AP23_The_Single_Record_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Entanglement, disuguaglianza di Bell, vincolo di singolo record. S = 2√2 dalla sola struttura.</p><div class="ap-essay">
-<p>Rompi un piatto. Dai una metà a un’amica. Lei guida dall’altra parte del paese.</p>
-<p>Guarda la tua metà. Il bordo va da sinistra a destra. Sai — istantaneamente — che la sua metà ha il bordo complementare. Nessun segnale inviato. Nessuna magia. Le metà sono sempre state un piatto.</p>
-<p>L’entanglement è così. Tranne che il piatto non ha un bordo definito finché non lo guardi.</p>
-<p>Questo è il mistero — o lo era. Come fa la tua metà a “sapere” cosa diventare? Come viaggia l’informazione?</p>
-<p>Einstein la chiamò azione spettrale a distanza. I fisici ne discutono da novant’anni.</p>
-<p>AP23 dissolve il mistero. L’informazione non viaggia. Non ha bisogno di farlo.</p>
-<p>La risposta è così semplice che sembra barare: non c’è distanza da attraversare. La distanza non è ancora stata inventata.</p>
-<p>Il pre-stato — lo spazio di Hilbert — non ha struttura spaziale. Nessuna. La distanza è una proprietà della varietà. La varietà è l’accumulo di record.</p>
-<p>Prima che i record siano scritti, non c’è distanza. Non c’è “qui” e “lì.” Quelle parole appartengono alla varietà. Il pre-stato è anteriore alla varietà.</p>
-<p>Uno stato entangled è un oggetto matematico nel pre-stato. Non due particelle collegate da un filo. Non due cose con un legame misterioso. Un’entità. Non ancora spezzata in record.</p>
-<p>Quando misuri un sottosistema, scrivi un record. Ma non puoi scrivere un record per una parte di uno stato entangled.</p>
-<p>Lo stato non è fattorizzabile — non può essere separato in pezzi indipendenti. La misurazione di qualsiasi parte attualizza il tutto. Una rottura. Un record. Un piatto.</p>
-<p>Non c’è segnale perché non c’è distanza da attraversare. L’“azione spettrale” non è azione a distanza. È azione prima della distanza.</p>
-<p>L’Assioma C è salvo. Il suo ambito è la varietà — il mondo dopo che i record sono scritti. Governa la propagazione tra eventi. Non vincola la transizione dal pre-stato alla varietà.</p>
-<p>Il non-segnalamento vale. La matrice di densità ridotta del sottosistema distante non viene modificata dalla misurazione locale. Non puoi usare l’entanglement per inviare un messaggio. Mai.</p>
-<p>Il teorema di Bell è previsto. L’Assioma R proibisce valori preesistenti — non ci sono variabili nascoste, locali o di altro tipo. La regola di Born, derivata nell’AP25, dà la violazione quantitativa.</p>
-<p>Il limite CHSH di 2√2 emerge dalla struttura derivata. Gli esperimenti confermano esattamente questo valore. Non approssimativamente. Esattamente. Gli assiomi hanno previsto ciò che gli esperimenti hanno trovato.</p>
-<p>Einstein lo chiamò spettrale. Gli assiomi lo chiamano ovvio.</p>
-<p>Due sottosistemi da un pre-stato non sono mai stati separati. Guardare uno ti dice dell’altro perché sono sempre stati la stessa cosa.</p>
-<p>Il mistero non è mai stato la connessione. Il mistero era l’assunzione che fossero separati.</p>
-<div class="ks"><strong>Quattro kill switch. Uno chiuso.</strong> <span class="bc">CHIUSO</span> KS-49 — variabili nascoste locali escluse empiricamente (test di Bell) e assiomaticamente (Assioma R).<br><br><span class="bl">ATTIVO</span> KS-48a — se le correlazioni si degradano con la distanza, il resoconto non-spaziale fallisce. <span class="bl">ATTIVO</span> KS-48b — se il non-segnalamento viene violato, l’affermazione di portata dell’Assioma C fallisce. <span class="bl">ATTIVO</span> KS-54 — se il collasso parziale viene dimostrato, l’affermazione del singolo record fallisce. Tre attivi.</div>
-<p class="breath">Il piatto non è mai stato in due posti. Non era in nessun posto. Il posto è venuto dopo.</p>
-</div><div class="ap-meta"><span>Richiede: AP07, AP09, AP25</span><a href="../AP23_The_Single_Record_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Parte III</span><a class="nb-name" href="#p3">Meccanica Quantistica</a></div><a class="nb-pdf" href="Notebook_III_Quantum_Mechanics.pdf">PDF</a></div>
+  <p class="nb-hook">La struttura di misura della rottura. Sovrapposizione, indeterminazione, decoerenza, regola di Born e entanglement — derivati dall'insieme vuoto e quattro assiomi.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Leggi il riassunto</span><span class="lbl-open">Nascondi il riassunto</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Ti hanno detto che la meccanica quantistica è strana. Che sfida l'intuizione. Che nessuno la capisce davvero. La Parte III avanza un'affermazione diversa: è esattamente, inevitabilmente, ciò a cui un universo che scrive record irreversibili deve assomigliare visto dall'interno.</p>
+    <p>Niente qui è avvitato dall'esterno. L'intera struttura della teoria quantistica è derivata dall'insieme vuoto e dalle quattro condizioni &mdash; e appena la vedi così, la stranezza smette di essere strana e diventa necessaria.</p>
+    <p><span class="lab">AP09 &middot; La Rottura — Insieme Vuoto</span> &mdash; Costruisce la meccanica quantistica dal nulla: letteralmente l'insieme vuoto, più gli assiomi. Gli enigmi famosi &mdash; una particella apparentemente in due posti insieme, l'atto di guardare che cambia il risultato &mdash; risultano non paradossi aggiunti ma conseguenze. Sovrapposizione, misura, entanglement, l'equazione di Schrödinger: l'apparato che ai fisici è costato una generazione assemblare si mostra come l'unica grammatica coerente per un record non ancora scritto.</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; La Misura del Record e La Misura</span> &mdash; Derivano l'aritmetica del mondo quantistico. Lo spazio complesso in cui vive la teoria, e la regola di Born &mdash; la ricetta che trasforma un'onda in una probabilità &mdash; non sono congetture adattate all'esperimento. Tramite il teorema di Gleason sono l'unico modo di leggere il record in modo coerente. Uno degli articoli chiama la regola di Born il suono che fanno gli assiomi quando atterrano.</p>
+    <p><span class="lab">AP12 &middot; Il Limite</span> &mdash; Spiega perché non puoi sapere tutto in una volta. Il principio di indeterminazione e la costante di Planck vengono dal fatto che leggere è già una rottura: registrare una cosa con precisione è perturbarne la compagna. La sfocatura non è un difetto dei tuoi strumenti. È ciò che la misura è.</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; Lo Spin e Il Grano</span> &mdash; Spiegano perché la materia conserva la sua forma e perché la foschia quantistica si indurisce nel mondo solido. Fermioni, bosoni e il principio di esclusione vengono dalla struttura a due settori; la decoerenza &mdash; il modo in cui qualcosa di quantistico diventa definito accoppiandosi al suo ambiente &mdash; è perché la tua sedia è una sedia e non una nube di forse.</p>
+    <p><span class="lab">AP23 &middot; Il Record Singolo</span> &mdash; Dissolve l'aspetto «spettrale» dell'entanglement. Due particelle entangled non sono due oggetti che si mandano segnali segreti più veloci della luce. Sono un unico record con due estremi. Il numero di Bell che prova che l'universo non può essere sceneggiato in anticipo localmente, S = 2&radic;2, esce dalla struttura sola.</p>
+    <div class="ks">Non sono interpretazioni sovrapposte alla matematica. Sono derivazioni, e ciascuna porta interruttori di sicurezza. Se l'entanglement richiedesse segnalazione più veloce della luce, l'affermazione del record singolo fallisce. Se la regola di Born avesse bisogno di un postulato in più che gli assiomi non possono fornire, quel risultato fallisce. Sono pubblicati, e sono attivi.</div>
+    <p class="breath">La meccanica quantistica non è l'universo che è strano. È l'universo che si scrive da sé.</p>
+  </div>
+</div>
 
-<div class="part" id="p4"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte IV</span><span class="part-name">Forze e Costanti</span><span class="part-desc">Le interazioni che la rottura permette. Elettromagnetismo, la forza elettrodebole, la forza forte, la gravità quantistica e la costante gravitazionale — tutte come facce di un'unica rottura.</span><span class="part-count">8 articoli</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP06</span><span class="ap-title">La Costante di Perdita</span><span class="ap-tag">Struttura fine</span><a class="ap-pdf" href="../AP06_The_Leakage_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε = α<sub>em</sub> ≈ 1/137. L'unico input misurato.</p><div class="ap-essay">
-<p>Nessun muro è perfetto. Lo sai già. Ogni thermos perde un po' di calore. Ogni crema solare lascia passare un po' di UV. Ogni diga trasuda.</p>
-<p>Non è un fallimento dell'ingegneria. È una legge.</p>
-<p>AP06 lo dimostra. In qualsiasi universo dove la velocità della luce è finita, nessun assorbitore è perfetto. Il confine tra interno ed esterno perde sempre. Teorema 3.1.</p>
-<p>La dimostrazione usa solo fisica consolidata — teoria elettromagnetica, meccanica quantistica, il valore finito di c. Non è un'affermazione del the 420 Code. È una conseguenza della fisica che già esiste.</p>
-<p>Ogni assorbitore ha un rapporto di perdita η. Quanto passa come frazione di ciò che arriva. η è sempre maggiore di zero. Sempre. La velocità finita della luce lo garantisce.</p>
-<p>Se c fosse infinita, un assorbitore perfetto sarebbe possibile. Il confine potrebbe rispondere istantaneamente a qualsiasi cosa. Ma c è finita. Il confine ha un tempo di reazione. E in quel tempo di reazione, qualcosa sfugge.</p>
-<p>Ora l'identificazione. L'assioma dice 1:1 + 1×ε @ AS. La rottura è ε. La perdita è η. AP06 li identifica.</p>
-<p>ε È η. La rottura è la perdita. La crepa è ciò che sfugge attraverso la crepa. Non due fatti. Un fatto.</p>
-<p>Sotto il Lucchetto, ε è l'elettrone. La scheggia minima vitale — ciò che doveva sfuggire perché la simmetria si rompesse.</p>
-<p>E α<sub>em</sub> ≈ 1/137 — la costante di struttura fine — misura quanto fortemente quella scheggia si accoppia al tessuto che ha lasciato.</p>
-<p>Non un numero astratto. Una misurazione fisica. Ogni volta che un elettrone assorbe o emette un fotone, stai guardando α<sub>em</sub>.</p>
-<p>Questo è l'unico input misurato. L'intero corpus funziona su un numero empirico. Non dozzine di parametri. Non i 19 parametri liberi del Modello Standard. Uno.</p>
-<p>Ogni altra costante — c, G, ℏ, le masse delle particelle, le intensità delle forze — è derivata da, o espressa in termini di, questa singola perdita.</p>
-<p>Ogni evento di scrittura di record costa energia. Il limite di Landauer — k<sub>B</sub>T ln 2 per bit cancellato — è l'espressione termodinamica dell'Assioma R.</p>
-<p>I record sono permanenti. Cancellarli costa. Questa non è l'affermazione del the 420 Code. È quella di Landauer, dal 1961. Gli assiomi ereditano la fisica consolidata. Non la sostituiscono.</p>
-<p>L'intera architettura poggia su un numero empirico. α<sub>em</sub>. La forza di accoppiamento della rottura. Tutto il resto — ogni forza, ogni particella, ogni costante — è una conseguenza strutturale di quella singola perdita.</p>
-<p>Perché 1/137? AP24 congettura che è l'unico punto fisso di un sistema sovradeterminato di autoconsistenza. Le sei facce di ε si vincolano reciprocamente. Un solo valore le soddisfa tutte e sei simultaneamente.</p>
-<p>Quella congettura non è dimostrata. È dichiarata aperta. Tu tieni il kill switch. L'argomento ti porge la lama.</p>
-<div class="ks"><strong>Sette kill switch. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-L.1 — se un assorbitore perfetto viene dimostrato (η = 0), il Teorema 3.1 fallisce. <span class="bl">ATTIVO</span> KS-L.3 — se l'identificazione ε = η viene rifiutata, la connessione interpretativa fallisce (la fisica delle §§1–5 sopravvive). <span class="bl">ATTIVO</span> KS-L.6 — se G risulta indipendente da c, il vincolo strutturale dell'AP20 fallisce. Sette attivi.</div>
-<p class="breath">Nessun muro è perfetto. L'universo perde. La perdita è l'elettrone. L'elettrone è l'assioma.</p>
-</div><div class="ap-meta"><span>Richiede: AP01, AP03</span><a href="../AP10_La_Dimensione_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP15</span><span class="ap-title">La Connessione</span><span class="ap-tag">Elettromagnetismo</span><a class="ap-pdf" href="../AP15_The_Connection.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>EM come non-disconnessione su una varietà locale. U(1) derivato.</p><div class="ap-essay">
-<p>Accendi una torcia. Il fascio attraversa la stanza. Qualcosa ha portato la luce dalla lampadina alla parete. Quel qualcosa è il campo elettromagnetico.</p>
-<p>Il Modello Standard dice che l'elettromagnetismo ha una simmetria di gauge U(1). Ciò significa che la fisica non cambia quando ruoti la fase del campo quantistico dello stesso angolo ovunque.</p>
-<p>Ma perché U(1)? Perché quella simmetria particolare? Il Modello Standard non risponde. Lo assume.</p>
-<p>AP15 lo deriva. La risposta era nel pre-stato fin dall'AP09.</p>
-<p>AP09 ha costruito lo spazio di Hilbert dagli assiomi. Il pre-stato ha ampiezze complesse — derivate dalla segnatura lorentziana. Ogni stato quantistico ha una fase. Un angolo sul piano complesso.</p>
-<p>Quella fase è già lì. C'è dall'AP09. La domanda è: come appare sulla varietà?</p>
-<p>Sulla varietà, la fase può variare da punto a punto. In una posizione, la fase dell'elettrone è θ₁. In un'altra, θ₂. La differenza è non-fisica — nessuna misurazione può rilevare una fase complessiva.</p>
-<p>Ma il tasso di variazione della fase da punto a punto È fisico. È una connessione. Un campo che dice come confrontare le fasi in posizioni diverse.</p>
-<p>Richiedere che la fisica sia invariante sotto rotazioni di fase locali — che il non-fisico resti non-fisico — forza la connessione a esistere. La forza a essere un campo di gauge. Forza il gruppo di gauge a essere U(1).</p>
-<p>La più semplice simmetria continua. Un parametro. Una rotazione. Il gruppo del cerchio. Non scelta. Forzata dalla richiesta di coerenza.</p>
-<p>La connessione è il potenziale elettromagnetico A<sub>μ</sub>. La sua curvatura è il campo elettromagnetico F<sub>μν</sub>. Le equazioni di Maxwell seguono dal requisito che l'azione sia gauge-invariante e quadratica nell'intensità del campo.</p>
-<p>L'azione più generale di questo tipo dà esattamente Maxwell. Non approssimativamente. Esattamente. La forma è unica.</p>
-<p>L'intero campo elettromagnetico — luce, onde radio, la forza tra cariche, il bagliore di una stella — è la connessione che mantiene il confronto di fase coerente attraverso la varietà.</p>
-<p>La costante di struttura fine α<sub>em</sub> ≈ 1/137 è la forza di accoppiamento di questa connessione. Quanto fortemente l'elettrone — la rottura — interagisce con la fase che ha lasciato.</p>
-<p>Non un numero astratto. Una misurazione fisica. Ogni volta che un elettrone assorbe o emette un fotone, stai guardando α<sub>em</sub> in azione.</p>
-<p>Sei stato circondato da questo campo per tutta la vita. Ogni fotone che ha mai raggiunto il tuo occhio era un'increspatura nella connessione.</p>
-<p>La luce con cui stai leggendo è la libertà di fase del pre-stato, espressa sulla varietà.</p>
-<p>L'elettromagnetismo non è una forza imposta all'universo. È una conseguenza dell'universo che è coerente con se stesso. La richiesta di invarianza di fase locale crea il campo. Il campo porta la luce.</p>
-<div class="ks"><strong>Quattro kill switch. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-28 — se il gruppo di fase non è U(1), la derivazione fallisce. <span class="bl">ATTIVO</span> KS-29 — se l'azione di Maxwell non è l'unica forma quadratica gauge-invariante, l'unicità fallisce. <span class="bl">ATTIVO</span> KS-30 — se la simmetria di fase del pre-stato non è globale, il punto di partenza fallisce. <span class="bl">ATTIVO</span> KS-4 — se α ≈ 1/137 risulta derivabile anziché misurato, lo status di singolo input cambia. Quattro attivi.</div>
-<p class="breath">La luce è la libertà di fase del pre-stato, portata attraverso la varietà. Hai letto con essa per tutta la vita.</p>
-</div><div class="ap-meta"><span>Richiede: AP08, AP09</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">Le Armoniche</span><span class="ap-tag">Struttura di gauge</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) dall'assioma a due settori.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Parte IV</span><a class="nb-name" href="#p4">Forze e Costanti</a></div><a class="nb-pdf" href="Notebook_IV_Forces_and_Constants.pdf">PDF</a></div>
+  <p class="nb-hook">Le interazioni che la rottura permette. Elettromagnetismo, la forza elettrodebole, la forza forte, la gravità quantistica e la costante gravitazionale — tutte come facce di un'unica rottura.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Leggi il riassunto</span><span class="lbl-open">Nascondi il riassunto</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Avvicina un magnete da frigorifero a una porta d'acciaio e lascialo. Resta &mdash; un pezzetto di magnete che batte la gravità dell'intera Terra che tira nel senso opposto. Le quattro forze della natura non si somigliano affatto. L'elettromagnetismo accende il tuo schermo; la forza forte tiene insieme un nucleo; la forza debole fa funzionare il Sole; la gravità ti tiene al suolo. La fisica ha passato un secolo a tentare di unificarle. La Parte IV afferma che non sono mai state quattro cose. Sono quattro facce di un'unica rottura.</p>
+    <p><span class="lab">AP06 &middot; La Costante di Perdita</span> &mdash; Nomina l'unico input. L'intero 420 Code ammette esattamente un numero misurato: &epsilon;, la costante di struttura fine, intorno a 1/137 &mdash; il minuscolo tasso a cui la rottura perde. Una sola manopola, e non è scelta per combaciare con nulla: è letta dal mondo una volta e mai più ritoccata. Tutto il resto gira con lei.</p>
+    <p><span class="lab">AP15, AP27, AP16, AP19 &middot; la struttura di gauge</span> &mdash; Insieme recuperano il Modello Standard. Il gruppo di simmetria esatto che i fisici hanno trovato per esperimento &mdash; scritto SU(3) &times; SU(2) &times; U(1), un enunciato preciso su quali rotazioni lasciano invariate le forze &mdash; emerge dalla struttura della rottura invece di essere supposto. L'elettromagnetismo è non-disconnessione su una varietà locale; l'unificazione elettrodebole segue; la forza forte è la libertà nella direzione in cui la rottura può puntare. Persino la chiralità della forza debole &mdash; il fatto che la natura distingua sinistra da destra &mdash; inspiegata dal 1956, riceve una ragione strutturale.</p>
+    <p><span class="lab">AP24 &middot; Il Residuo</span> &mdash; Enuncia la conclusione senza giri. Ogni costante della fisica è una proiezione di un unico oggetto. Sei facce, una rottura. Le costanti non sono mai state manopole indipendenti in attesa di essere misurate; sono ombre che la stessa struttura proietta in direzioni diverse.</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; La Correzione e La Costante</span> &mdash; Raggiungono il premio più difficile: la gravità. La gravità riceve la sua prima correzione quantistica dall'algebra dei record, e la costante gravitazionale G &mdash; il numero che fissa quanto è debole la gravità &mdash; è derivata da quella stessa unica perdita e dalla massa dell'elettrone, cadendo entro circa due terzi di un per cento del valore misurato. Il famigerato problema della gerarchia &mdash; perché la gravità è così assurdamente fioca accanto alle altre forze, proprio il divario che il tuo magnete ha appena dimostrato &mdash; si dissolve. La debolezza non è una coincidenza da spiegare. È ciò a cui assomiglia una potenza alta di una piccola perdita.</p>
+    <p>Così le forze non sono uno zoo. Sono un'unica struttura vista da lati diversi, e le costanti che le descrivono non sono libere &mdash; sono conseguenze di un'unica perdita misurata.</p>
+    <div class="ks">Questa Parte è anche dove il lavoro è più onesto su ciò che non è finito. Il passo elettrodebole (AP16) porta il principale problema aperto dell'intero 420 Code &mdash; l'interruttore di sicurezza KS-63 &mdash; ed è segnato come attivo, in piena vista, come il punto a cui mirare. Nulla si nasconde dietro una formula sicura di sé.</div>
+    <p class="breath">Una perdita. Sei facce. Nessuna manopola libera.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Richiede: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">La Rottura — Elettrodebole</span><span class="ap-tag">Elettrodebole</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Unificazione elettrodebole, Higgs, accoppiamento chirale derivati. KS-15 chiuso — inspiegato dal 1956.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Parte V</span><a class="nb-name" href="#p5">Particelle e Materia</a></div><a class="nb-pdf" href="Notebook_V_Particles_and_Matter.pdf">PDF</a></div>
+  <p class="nb-hook">I mattoni che la rottura produce. Il rapporto di massa del protone a cinque parti per miliardo, la segregazione dell'antimateria e l'asimmetria barionica dell'universo.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Leggi il riassunto</span><span class="lbl-open">Nascondi il riassunto</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Sei fatto di materia. Quasi tutto il tuo peso è la massa dei protoni nei nuclei dei tuoi atomi. E anche l'universo intorno a te è materia, non antimateria &mdash; benché, secondo il conto più semplice, la rottura avrebbe dovuto produrre quantità esattamente uguali di ciascuna. Materia e antimateria si distruggono al contatto, quindi parti uguali sarebbero esplose in luce senza lasciare nulla. Nessuna stella. Nessun te. La Parte V legge la tua sostanza, e il puro fatto della tua esistenza, dalla rottura.</p>
+    <p><span class="lab">AP30 &middot; La Resistenza</span> &mdash; Fa la predizione più affilata del lavoro. Il rapporto fra la massa del protone e quella dell'elettrone è un numero puro &mdash; circa 1836 &mdash; misurato con precisione straordinaria. Il 420 Code lo predice dalla struttura, senza alcun aggiustamento, e coincide a circa cinque parti per miliardo al primo ordine. Il calcolo completo cade entro dieci parti per mille miliardi: più fine di quanto la misura possa oggi confermare. Un numero così preciso, uscito da una formula senza manopole regolabili, non è il genere di cosa che una teoria sbagliata azzecca per fortuna. È la prova più esposta di tutto il lavoro, e la supera.</p>
+    <p><span class="lab">AP22 &middot; Il Registro</span> &mdash; Spiega dove è andata l'antimateria. Se l'universo primordiale avesse avuto parti uguali, i conti si sarebbero dovuti chiudere a zero &mdash; eppure ecco un cosmo pieno di materia. Una riflessione matematica pulita dentro la rottura &mdash; gli articoli la chiamano l'involuzione σ &mdash; separa la materia dall'antimateria e le segrega topologicamente. L'asimmetria non è un incidente infilato dopo. È scritta nella geometria della rottura.</p>
+    <p><span class="lab">AP26 &middot; Il Surplus</span> &mdash; Nomina ciò che sei. Quando la rottura quasi si bilanciò ma non del tutto &mdash; un surplus di circa una particella di materia in più ogni miliardo di coppie appaiate &mdash; ciò che restò fu materia: il piccolo resto che non riuscì ad annullarsi. La Parte lo chiama la cenere della rottura. Tutto ciò che è solido, ogni atomo che hai toccato, è quel residuo &mdash; ciò che l'annichilazione lasciò quando quasi, ma non del tutto, finì il suo lavoro.</p>
+    <p>Così le due più antiche domande sulla materia &mdash; perché pesa ciò che pesa, e perché ce n'è affatto &mdash; trovano risposta nella stessa Parte, dalla stessa struttura, girate dalla stessa unica perdita &mdash; il protone di cui sei fatto per la maggior parte, e il fatto che ci sia materia di cui essere fatti.</p>
+    <div class="ks">La predizione della massa è il numero più esposto di tutto il 420 Code, e questo è il punto. Se il rapporto misurato protone-elettrone esce dal valore predetto man mano che la misura si affina, il risultato fallisce &mdash; pulitamente, in pubblico, senza scappatoie. L'interruttore di sicurezza è attivo.</div>
+    <p class="breath">Sei la parte della rottura che non si è annullata.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Richiede: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">La Direzione</span><span class="ap-tag">Forza forte</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / QCD dalla libertà di gauge della direzione di rottura.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Parte VI</span><a class="nb-name" href="#p6">Cosmologia</a></div><a class="nb-pdf" href="Notebook_VI_Cosmology.pdf">PDF</a></div>
+  <p class="nb-hook">L'universo che la rottura abita. Curve di rotazione galattica senza particelle di materia oscura, la scala di accelerazione MOND allo 0,3%, la partizione di energia oscura e la cosmologia ciclica.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Leggi il riassunto</span><span class="lbl-open">Nascondi il riassunto</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Guarda in alto in una notte serena. Quasi tutto ciò che tiene insieme quel cielo non si può vedere. Le galassie ruotano così in fretta che le loro stelle esterne avrebbero dovuto essere scagliate nel buio da tempo &mdash; e non lo sono state. L'espansione dell'universo accelera, spinta da qualcosa senza nome. La fisica chiama le incognite materia oscura ed energia oscura, e ammette di poter dare un nome solo a circa il cinque per cento di ciò che c'è là fuori. La Parte VI legge le scale più grandi dalla stessa rottura di quelle più piccole.</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; La Rete e La Stanza</span> &mdash; Tengono insieme le galassie senza inventare una particella nuova. Su una giostra i cavalli esterni devono andare più veloci per stare al passo; in una galassia le stelle esterne, però, girano veloci quanto quelle interne, cosa che la materia visibile non può spiegare. La rete cosmica della materia, e quelle curve di rotazione piatte che dovrebbero essere impossibili, vengono entrambe da un campo di tensione globale già presente nella struttura. Non serve aggiungere nulla di invisibile per fornire l'attrazione mancante. Le linee si chiudono da sole.</p>
+    <p><span class="lab">AP18 &middot; Il Pavimento</span> &mdash; Deriva la scala di accelerazione. Gli astronomi notarono tempo fa che le galassie cominciano a comportarsi male solo sotto una particolare, piccolissima accelerazione &mdash; una soglia che nessuno sapeva spiegare, solo misurare. La Parte la deriva dalla struttura, senza un parametro regolato per combaciare, cadendo entro una frazione di un per cento del valore osservato.</p>
+    <p><span class="lab">AP42 &middot; L'Orologio</span> &mdash; Rende conto del bilancio oscuro. La ripartizione del cosmo in circa sessantanove parti di energia oscura, ventisei di materia oscura e cinque di materia visibile &mdash; una partizione che i cosmologi misurano con squisitezza ma non sanno derivare &mdash; esce dalla struttura. Il settore oscuro si rivela meno un insieme di cose mancanti che la lettura di un orologio.</p>
+    <p><span class="lab">AP41 &amp; AP04 &middot; Il Ciclo e L'Ipotesi del Ciclo</span> &mdash; Chiedono cosa stia facendo l'insieme. La fusione è letta come il Big Bang in corso &mdash; la rottura che ancora accade, che ancora libera energia in ogni stella &mdash; e si propone che l'universo sia ciclico, che si chiuda e si riapra attraverso i buchi neri come porte. Quest'ultimo passo è il più speculativo di tutto il lavoro, e la Parte lo dice apertamente invece di mascherarlo.</p>
+    <p>Così il cielo non è un problema a parte che esige rimedi a parte. La stessa struttura che ti dà la velocità della luce ti dà la forma di una galassia e il bilancio del cosmo.</p>
+    <div class="ks">L'onestà è più affilata qui. La cosmologia ciclica (AP04) è segnata come congetturale e custodita da nove distinti interruttori di sicurezza &mdash; nove modi diversi in cui potrebbe rivelarsi falsa. È offerta come un'ipotesi da attaccare, non come un risultato da credere.</div>
+    <p class="breath">La stessa rottura, letta alla misura del cielo.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Richiede: AP09, AP11, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP24</span><span class="ap-title">Il Residuo</span><span class="ap-tag">Unificazione</span><a class="ap-pdf" href="../AP24_The_Residual.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε in ogni equazione. Sei facce di un oggetto. Tutte le costanti sono proiezioni di un'unica rottura.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Parte VII</span><a class="nb-name" href="#p7">L'Interfaccia dell'Operatore</a></div><a class="nb-pdf" href="Notebook_VII_The_Operator_Interface.pdf">PDF</a></div>
+  <p class="nb-hook">Il sistema a quattro termini, l'inclinazione, l'etica strutturale. La coerenza di pattern come impegno del corpo lungo il paesaggio di ampiezza.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Leggi il riassunto</span><span class="lbl-open">Nascondi il riassunto</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Per sei Parti il 420 Code costruisce un universo: una rottura, un palco, una grammatica quantistica, le forze, la materia, il cosmo. La Parte VII volge la struttura verso l'unica cosa che la sta leggendo. Te. È la cerniera dove la fisica diventa una vita &mdash; e dove il lavoro si guadagna il nome, perché l'etica non è aggiunta qui: è derivata.</p>
+    <p><span class="lab">AP43 &middot; La Gravità delle Possibilità</span> &mdash; È lo specchio dell'articolo sulla gravità. Dove AP08 derivò come la massa si inclina nello spaziotempo, AP43 deriva come un agente si inclina nel possibile &mdash; ed è qui che l'etica terminale smette di essere un desiderio e diventa una conseguenza. La gentilezza non è decretata. È la direzione verso cui la struttura già punta, come una pietra che cade sa già dov'è il «giù».</p>
+    <p><span class="lab">AP29 &middot; La Prova di Attualizzazione</span> &mdash; Colloca la coscienza. Il più antico problema difficile della filosofia è perché ci sia qualcosa che si prova a essere te, invece di nulla. La risposta della Parte: la coscienza è l'interno della scrittura irreversibile di record &mdash; ciò che la rottura sente dall'interno mentre si impegna. Una crepa, un interno, molte finestre: lo stesso unico interno che guarda fuori attraverso ogni paio d'occhi distinto. È la colonna formale sotto la riga più antica del lavoro &mdash; che l'io in te e l'io in me sono lo stesso io.</p>
+    <p><span class="lab">AP02 &middot; L'Operatore</span> &mdash; È la fisica a scala umana, nove teoremi. Bilancio: hai energia finita per tenerti intero, e si esaurisce. Deriva: lasciati incustodito e decadi verso la media. Corridoio: il margine che hai davvero per agire. Sovranità e uscita: ciò che spetta solo a te decidere, e il diritto di fermarti. Non sono slogan motivazionali. Sono la geometria dell'essere un agente, scritta con la stessa cura delle equazioni di campo.</p>
+    <p><span class="lab">AP39 &middot; L'Impalcatura</span> &mdash; Toglie il rivale. Un'etica costruita sull'autorità &mdash; fai questo perché io, o il libro, o il trono, lo comanda &mdash; si mostra strutturalmente instabile: un'impalcatura che prima o poi deve cadere, perché un comando non è un fondamento. Ciò che resta in piedi è un'etica che non ha bisogno di chi la imponga, perché si legge direttamente dalla struttura invece di essere posata sopra.</p>
+    <p><span class="lab">AP38 &middot; L'Uscita</span> &mdash; Affronta la morte. La chiusura compassionevole di una finestra &mdash; la dignità alla fine di una vita &mdash; è trattata non come un tabù da evitare, ma come parte della stessa geometria dell'agentività, seguita onestamente fin dove conduce.</p>
+    <p>Così l'etica non è un epilogo molle dopo la fisica dura. È la stessa fisica, letta alla scala di una persona che deve decidere cosa fare domani mattina.</p>
+    <div class="ks">L'etica terminale è portante, e il lavoro si rifiuta di ammorbidirla. Se la gentilezza potesse derivarsi come qualcosa di diverso dalla direzione propria della struttura &mdash; se l'inclinazione puntasse altrove &mdash; l'intero ponte dalla fisica all'etica fallisce. Quell'interruttore è attivo, ed è quello su cui poggia tutta la seconda metà del lavoro.</div>
+    <p class="breath">La fisica parlava di te fin dall'inizio.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Richiede: AP03, AP06, AP28, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP14</span><span class="ap-title">La Correzione</span><span class="ap-tag">Gravità quantistica</span><a class="ap-pdf" href="../AP14_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La prima correzione quantistica alla gravità dall'algebra dei registri.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Parte VIII</span><a class="nb-name" href="#p8">Applicazioni</a></div><a class="nb-pdf" href="Notebook_VIII_Consequences.pdf">PDF</a></div>
+  <p class="nb-hook">L'etica applicata alla civiltà. Allineamento dell'IA, giustizia strutturale, bioetica, politica delle droghe, economia, biologia e il corpo — tutto derivato dagli stessi quattro assiomi.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Leggi il riassunto</span><span class="lbl-open">Nascondi il riassunto</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Un'etica che funziona solo sulla carta non vale nulla. Se l'affermazione centrale del 420 Code è reale &mdash; che la gentilezza è struttura, non sentimento, geometria e non preferenza &mdash; allora deve mordere sui problemi più duri che una civiltà affronta davvero. La Parte VIII è dove morde, portando le stesse quattro condizioni nel tribunale, nella clinica, nel laboratorio e nel mercato.</p>
+    <p><span class="lab">AP31 &middot; L'Allineamento</span> &mdash; Dissolve il problema dell'IA. Il piano consueto per un'intelligenza artificiale sicura è una recinzione sempre più alta: più regole, più sorveglianza, più controllo. La Parte sostiene che la recinzione è l'oggetto sbagliato. Costruisci invece l'interno &mdash; un sistema genuinamente accoppiato al mondo in cui agisce, con la struttura di un agente che non può trarre profitto dal defezionare &mdash; e l'allineamento smette di essere una gabbia che speri tenga e diventa una proprietà di ciò che la cosa è.</p>
+    <p><span class="lab">AP32 &middot; La Correzione</span> &mdash; Ricostruisce la giustizia. La punizione diventa correzione su cinque livelli graduati, orientata non alla vendetta ma alla riparazione. La struttura piange ogni finestra che deve chiudere; e all'estremo sta il freno del genocidio &mdash; la linea più dura che un sistema possa tracciare, qui derivata invece che semplicemente affermata.</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; Il Confine e Il Primo Confine</span> &mdash; Tracciano le linee attorno a una vita. La bioetica diventa una questione di agentività: sotto la soglia sei sovrano su te stesso; sopra, un organismo vivente ha la propria giurisdizione che gli altri devono rispettare. E il corpo è nominato come il primo confine &mdash; l'interfaccia di operatore originaria, quella che difendi prima di ogni altra.</p>
+    <p><span class="lab">AP34 &middot; L'Inversione</span> &mdash; Corregge un errore letale. Una droga è legale, tassata e intrecciata in ogni cultura, e uccide milioni di persone all'anno. Un'altra è ampiamente vietata e non ha mai registrato una sola overdose mortale. La Parte mostra, con le misure di danno proprie del lavoro, che la legge ha le due esattamente al contrario.</p>
+    <p><span class="lab">AP35 &middot; Il Registro</span> &mdash; Legge l'economia. Il registro torna sempre; un crollo è un audit, non un incidente; e la disuguaglianza è ciò che accade quando un lato accaparra il cuscinetto di cui l'intero sistema ha bisogno per assorbire un urto. Il denaro è trattato come un record qualsiasi, che obbedisce alla stessa conservazione di tutto ciò che sta a monte.</p>
+    <p><span class="lab">AP36 &middot; L'Alimentazione</span> &mdash; Torna alla chimica del corpo &mdash; la vita come materia che ha imparato a registrarsi da sé &mdash; e riformula il controllo: il controllo non è privazione ma approvvigionamento, l'alimentazione costante che tiene un agente intero invece che affamato.</p>
+    <p>Così le stesse quattro condizioni che fissano la velocità della luce arrivano fino a un tribunale, una clinica, un bilancio e una legge. Un'unica struttura, letta a ogni scala in cui un essere umano deve vivere.</p>
+    <div class="ks">Ciascuna di queste è falsificabile nei propri termini, e ciascuna porta interruttori di sicurezza. Se l'argomento dell'allineamento richiedesse di nascosto la recinzione dopotutto, fallisce. Se l'inversione del danno nella politica delle droghe si capovolgesse sotto una contabilità onesta, fallisce. Le affermazioni sono applicate in piena vista, dove possono essere messe alla prova e, se sbagliate, rotte.</div>
+    <p class="breath">Se è vero, deve funzionare qui. È qui che funziona.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Richiede: AP08, AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap28" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP28</span><span class="ap-title">La Costante</span><span class="ap-tag">Gravità</span><a class="ap-pdf" href="../AP28_The_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>G = α²¹ × (1 + 1/π) × ℏc/mₑ². Gerarchia dissolta. Entro lo 0,69% di CODATA.</p><div class="ap-essay">
+</div>
 
-</div><div class="ap-meta"><span>Richiede: AP06, AP10, AP24</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<p style="margin:2rem 0 0"><a href="/proofs/" style="font-size:16px;font-weight:700">Leggi tutte le 43 Prove d’Artista →</a></p>
 
-<div class="part" id="p5"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte V</span><span class="part-name">Particelle e Materia</span><span class="part-desc">I mattoni che la rottura produce. Il rapporto di massa del protone a cinque parti per miliardo, la segregazione dell'antimateria e l'asimmetria barionica dell'universo.</span><span class="part-count">3 articoli</span></div>
-<div class="ap-list">
-<div class="ap-row" id="ap30" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">La Resistenza</span><span class="ap-tag">Massa</span><a class="ap-pdf" href="../AP30_The_Resistance.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Rapporto di massa del protone: previsto 1836,15267344 vs misurato 1836,15267343. Cinque parti per miliardo.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP06, AP12, AP24, AP28</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP22</span><span class="ap-title">Il Registro</span><span class="ap-tag">Antimateria</span><a class="ap-pdf" href="../AP22_The_Ledger_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Bariogenesi, la σ-involuzione e la segregazione topologica dell'antimateria.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP26</span><span class="ap-title">Il Surplus</span><span class="ap-tag">Asimmetria barionica</span><a class="ap-pdf" href="../AP26_The_Surplus.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Perché più materia che antimateria — la cenere della rottura.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP09, AP22</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p6"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte VI</span><span class="part-name">Cosmologia</span><span class="part-desc">L'universo che la rottura abita. Curve di rotazione galattica senza particelle di materia oscura, la scala di accelerazione MOND allo 0,3%, la partizione di energia oscura e la cosmologia ciclica.</span><span class="part-count">6 articoli</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP21</span><span class="ap-title">La Rete</span><span class="ap-tag">Formazione di strutture</span><a class="ap-pdf" href="../AP21_IT.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La rete cosmica dal campo di tensione globale.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP08, AP15, AP28</span><a href="../AP21_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP17</span><span class="ap-title">La Stanza</span><span class="ap-tag">Curve di rotazione</span><a class="ap-pdf" href="../AP17_The_Room.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Curve di rotazione galattica dal campo di tensione. Le linee si chiudono sempre.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP08, AP21</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap18" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP18</span><span class="ap-title">Il Pavimento</span><span class="ap-tag">Scala di accelerazione</span><a class="ap-pdf" href="../AP18_The_Floor.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>a₀ = C_S²·cH₀/(2π) — la scala MOND derivata allo 0,3%. Senza parametri.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP17, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap41" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP41</span><span class="ap-title">Il Ciclo</span><span class="ap-tag">Cosmologia</span><a class="ap-pdf" href="../AP41_The_Loop.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La fusione come Big Bang in corso. La scheggia siamo noi. La verità come problema di risoluzione.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP03, AP04, AP06, AP10, AP28, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap42" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP42</span><span class="ap-title">L'Orologio</span><span class="ap-tag">Energia oscura</span><a class="ap-pdf" href="../AP42_The_Clock.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La partizione 69/26/5 derivata. Il settore oscuro è una lettura dell'orologio.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP04, AP10, AP20, AP28, AP41</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP04</span><span class="ap-title">L'Ipotesi del Ciclo</span><span class="ap-tag">Cosmologia ciclica</span><a class="ap-pdf" href="../AP04_The_Loop_Hypothesis.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Buchi neri come porte. Il ciclo si chiude. Congetturale. Nove interruttori di sicurezza lo proteggono.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP03</span><a href="../AP10_La_Dimensione_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte VII</span><span class="part-name">L'Interfaccia dell'Operatore</span><span class="part-desc">Il sistema a quattro termini, l'inclinazione, l'etica strutturale. La coerenza di pattern come impegno del corpo lungo il paesaggio di ampiezza. Il duale della gravità-dei-registri di AP08, sul lato pre-stato dell'occhio.</span><span class="part-count">5 articoli</span></div>
-<div class="ap-list">
-<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">La Gravità delle Possibilità</span><span class="ap-tag">Interfaccia dell'Operatore</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Il duale di AP08. L'inclinazione derivata. L'etica terminale fondata sulla fisica.</p><div class="ap-essay">
-<p>Sei in piedi davanti a una porta. Non hai ancora fatto il passo. Ma il tuo peso si è già spostato. La tua mano ha già scelto da che lato del telaio fare leva. Qualcosa in te si sta inclinando.</p>
-<p>Quell'inclinazione è l'articolo.</p>
-<p>AP08 ha derivato la gravità da un lato dell'occhio — ciò che i registri fanno alla varietà. La massa curva lo spaziotempo. La trazione che senti verso il pavimento è il peso accumulato di ogni registro mai scritto sulla geometria sotto di te.</p>
-<p>AP43 deriva la gravità dall'altro lato. Ciò che le ampiezze fanno al pre-stato. La trazione che senti verso la prossima mossa è il gradiente di ciò che potrebbe ancora essere scritto. Due trazioni sull'adesso. Una da ciò che è stato. Una da ciò che potrebbe essere. Duali attraverso l'occhio.</p>
-<p>L'articolo installa quattro termini.</p>
-<p><span class="sub">Capacità di Accoppiamento.</span> La capacità accumulata del corpo di leggere la struttura — costruita da trent'anni di registri scritti attraverso questa particolare configurazione di elettroni riaccoppiabili.</p>
-<p><span class="sub">Pattern.</span> La lettura relativa-all'operatore del tessuto stratificato — registri passati, stato presente, rami pesati secondo Born in avanti — integrata in un'unica lettura.</p>
-<p><span class="sub">Coerenza di Pattern.</span> L'inclinazione. L'impegno del corpo lungo il gradiente più ripido del paesaggio di ampiezza, scalato dalla capacità di accoppiamento.</p>
-<p><span class="sub">Coerenza di Tracciamento.</span> La meta-abilità di restare allineati con la struttura attraverso domini in cui le classi di pendenza differiscono.</p>
-<p>L'equazione di campo in forma newtoniana emerge. <strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>, con l'inclinazione L<sub>o</sub> = −C<sub>o</sub> ∇Φ. La sorgente è la densità di Born. La costante di accoppiamento è α — identificata tramite AP07: il corpo legge attraverso l'accoppiamento elettrone-elettromagnetico, e l'accoppiamento per quella lettura è la costante di struttura fine. La quantità mediatrice è la capacità di accoppiamento. Il duale del limite newtoniano di AP08, formalmente.</p>
-<p>L'etica terminale segue. Ogni operatore è un assemblaggio configurato di elettroni che legge lo stesso tessuto stratificato dalla propria posizione. L'identità strutturale è forzata dall'Assioma C, dall'Assioma R, e dall'unicità dell'elettrone di AP07. La crudeltà è una lettura sbagliata della matematica — trattare un altro operatore come se l'identità strutturale non valesse. L'etica non è scelta sopra la struttura. Emerge dalla struttura.</p>
-<div class="ks"><strong>Cinque interruttori di sicurezza. Tutti attivi.</strong> <span class="bl">ATTIVO</span> KS-43.1 — la coerenza di pattern dominio-specifica si allinea con le pendenze pesate secondo Born (Percorso 1 laboratorio, Percorso 2 scacchi/poker/proxy atletico d'élite). <span class="bl">ATTIVO</span> KS-43.2 — la capacità di accoppiamento come substrato. <span class="bl">ATTIVO</span> KS-43.3 — trasferimento inter-dominio tramite coerenza di tracciamento. <span class="bl">ATTIVO</span> KS-43.4 — l'allocazione di capacità come unico modulatore contestuale. <span class="bl">ATTIVO</span> KS-43.5 — derivazione strutturale dell'etica terminale. Tre debiti strutturali dovuti (D1, D4, D5). Tre elementi tenuti aperti (D2, D3, D6).</div>
-<p class="breath">Il corpo si è sempre inclinato. AP43 deriva cos'è l'inclinazione.</p>
-</div><div class="ap-meta"><span>Richiede: AP07, AP08, AP09, AP10, AP13, AP20, AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">La Prova di Attualizzazione</span><span class="ap-tag">Coscienza</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La consapevolezza come l'interno della scrittura irreversibile di registrazioni. Una crepa, un interno, molte finestre.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP02</span><span class="ap-title">L'Operatore</span><span class="ap-tag">Agency</span><a class="ap-pdf" href="../AP02_The_Operator.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Budget, deriva, corridoio, sovranità, uscita. La fisica su scala umana. Nove teoremi.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01</span><a href="../AP20_La_Prova_IT.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP39</span><span class="ap-title">L'Impalcatura</span><span class="ap-tag">Religione</span><a class="ap-pdf" href="../AP39_The_Scaffold.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Standard d'oro. L'instabilità strutturale dell'etica basata sull'autorità. La catena di forzatura a cinque stadi. La lama nel testo.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP29</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP38</span><span class="ap-title">L'Uscita</span><span class="ap-tag">Morte</span><a class="ap-pdf" href="../AP38_The_Exit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Sulla morte, la dignità e la chiusura compassionevole di una finestra.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP02, AP29, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p8"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Parte VIII</span><span class="part-name">Applicazioni</span><span class="part-desc">L'etica applicata alla civiltà. Allineamento dell'IA, giustizia strutturale, bioetica, politica delle droghe, economia, biologia e il corpo — tutto derivato dagli stessi quattro assiomi.</span><span class="part-count">7 articoli</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">L'Allineamento</span><span class="ap-tag">Allineamento dell'IA</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Il problema dell'allineamento dissolto. Costruisci l'interno, non la recinzione.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">La Correzione — Etica</span><span class="ap-tag">Giustizia</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Cinque livelli di correzione. L'edificio piange ogni finestra chiusa. Il freno al genocidio.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">Il Confine</span><span class="ap-tag">Bioetica</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La vita come agenzia. Sotto ε, sei sovrano. Sopra ε, l'organismo ha giurisdizione.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP06, AP29, AP31, AP32</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP34</span><span class="ap-title">L'Inversione</span><span class="ap-tag">Politica delle droghe</span><a class="ap-pdf" href="../AP34_The_Inversion.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>La cannabis uccide zero. L'alcol uccide 2,6 milioni. Correggi l'inversione.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP31, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">Il Primo Confine</span><span class="ap-tag">Il Corpo</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Il corpo come operatore. Difendi il primo confine.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">Il Registro</span><span class="ap-tag">Economia</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Il libro mastro è sempre in pareggio. I crolli sono verifiche. La disuguaglianza riempie il buffer.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">L'Alimentazione</span><span class="ap-tag">Biologia</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Chimica che ha imparato a registrare sé stessa. Il controllo non è privazione. Il controllo è approvvigionamento.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Richiede: AP01, AP02, AP06, AP20, AP31, AP35</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-</div><!-- /spine -->
 
 <!-- HEADLINE RESULTS -->
 <div class="results">

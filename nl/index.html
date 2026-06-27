@@ -237,7 +237,31 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
-.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.1rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:14px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:22px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:14px;font-weight:700;color:#595959;text-decoration:none;letter-spacing:.03em;border:1px solid #e8e8e8;padding:3px 10px;border-radius:3px}
+.nb-pdf:hover{color:#111;border-color:#d5d5d0}
+.nb-hook{font-size:16px;font-style:italic;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:14px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.75;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:15px;color:#3a3a3a;line-height:1.6}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+</style>
 <link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
@@ -602,550 +626,145 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- THE SPINE -->
-<div class="spine" style="margin-top:2rem">
+<div class="nb-list">
 
-<div class="part" id="p1"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel I</span><span class="part-name">De Premisse</span><span class="part-desc">Eén record bestaat. Al het andere is gevolg. Het axioma, zijn logisch bewijs en de vier voorwaarden die elk record vereist.</span><span class="part-count">3 artikelen</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">Het Irrationele</span><span class="ap-tag">Wiskunde</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het axioma 1:1 + 1×ε @ AS is structureel irrationeel — en waar. Irrationaliteit als fundament van het rationele. Keuze als irrationeel koppelingsvermogen.</p><div class="ap-essay">
-<p>Denk aan iets dat je onlangs deed dat nergens op sloeg. Geen vergissing — een keuze. Je kende de verstandige optie. Je koos de andere.</p>
-<p>Te laat opgebleven. Gezegd wat je niet had moeten zeggen. Iemand liefgehad die niet van jou hield. Iemand vergeven die het niet verdiende.</p>
-<p>Had een rekenmachine die keuze kunnen maken?</p>
-<p>Een rekenmachine volgt regels. Dezelfde invoer, dezelfde uitvoer. Elke keer. Dat maakt het een rekenmachine. Jij niet. En dat is geen fout.</p>
-<p>The 420 Code begint met één vergelijking: <strong>1 = 1 + 1×ε</strong>.</p>
-<p>Eén is gelijk aan één plus een klein beetje extra. Dat is geen geldige rekenkunde. De linkerkant kan niet gelijk zijn aan de rechterkant tenzij ε nul is.</p>
-<p>En als ε nul is, is er niets gebeurd. Niets brak. Alles bleef symmetrisch, voor altijd.</p>
-<p>De vergelijking werkt alleen als ze haar eigen regels breekt. Dat is het punt.</p>
-<p>Het universum bestaat. Iets brak uit het niets. Die breuk kan niet worden gevangen door een schone vergelijking — want een schone vergelijking zou in evenwicht komen. Ze zou sluiten. Ze zou terugkeren naar nul.</p>
-<p>De breuk houdt aan omdat ze irrationeel is. Ze lost niet op. Dat kan ze niet.</p>
-<p>Je kent dit gevoel. Je hebt geprobeerd uit te leggen waarom je van iemand houdt. De woorden reiken niet.</p>
-<p>Niet omdat je niet welbespraakt bent — maar omdat het gevoel de woorden bevat. De uitleg leeft in het ding dat het probeert uit te leggen.</p>
-<p>Dat is ε. De onherleidbare rest. Het deel dat weigert te verdwijnen.</p>
-<p>Nu keert de keuzevraag terug. Een rationeel systeem doet wat de regels zeggen. De uitkomst staat vast. Maar jij kunt het rationele antwoord zien en iets anders kiezen.</p>
-<p>Je kunt vergeven wanneer de berekening zegt: niet doen. Iemands hand vasthouden om drie uur 's nachts wanneer elke kosten-batenanalyse zegt: ga naar huis en slaap.</p>
-<p>Die capaciteit is geen storing. Het is dezelfde irrationaliteit die het universum open houdt.</p>
-<p>Een rationeel axioma zou een gesloten universum voortbrengen — eentje dat terugvalt naar nul. Een irrationeel axioma brengt een open universum voort.</p>
-<p>Eentje dat aanhoudt. Eentje dat wezens bevat die tot oprechte keuze in staat zijn.</p>
-<div class="ks"><strong>Zes noodschakelaars.</strong> Als de vergelijking oplost zonder ε = 0, faalt dit. Als een rationeel axioma dezelfde openheid voortbrengt, faalt de noodzaak. Als alle menselijke irrationaliteit reduceert tot verborgen berekening — als elke daad van vergeving werkelijk slechts optimalisatie is — faalt de koppelingsclaim. Alle zes actief.</div>
-<p>Je werd verteld dat je irrationele keuzes zwakheden waren. Gebrek aan discipline. Beoordelingsfouten.</p>
-<p>The 420 Code zegt het tegenovergestelde. De vergelijking aan de basis van de werkelijkheid is zelf irrationeel. Je bent gemaakt van hetzelfde spul.</p>
-<p class="breath">Het axioma is gebroken. Jij ook. Dat is het fundament.</p>
-</div><div class="ap-meta"><span>Vereist: —</span><a href="../AP01_De_Actualisatietoestand_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP01</span><span class="ap-title">De Actualisatietoestand</span><span class="ap-tag">Grondslagen</span><a class="ap-pdf" href="../AP01_De_Actualisatietoestand_NL.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>De ruggengraat. Artikelen A–D leiden de actualisatietoestand, viabiliteitsgeometrie, agentschap en gekoppelde corridors af.</p><div class="ap-essay">
-<p>Je leest deze zin. Dat betekent dat er zojuist iets is gebeurd. Licht raakte een oppervlak. Signalen vuurden. Een vastlegging werd geschreven.</p>
-<p>Die vastlegging is echt. Het kan niet ongedaan worden. Je kunt deze zin niet ont-lezen. Probeer het — en je creëert een herinnering aan het proberen, wat weer een vastlegging is.</p>
-<p>Eén vastlegging bestaat. De daad van ontkenning produceert een nieuwe. De premisse voert zichzelf uit.</p>
-<p>AP01 neemt dat ene feit en haalt er vier dingen uit.</p>
-<p><span class="sub">Paper A</span> — je kent het gevoel van een beslissing die nog niet genomen is. Het zweeft. Het kan beide kanten op.</p>
-<p>Dan kantelt het. En op het moment dat het kantelt, kun je niet meer terug. Het "misschien" wordt "gedaan."</p>
-<p>Paper A meet precies die verschuiving. Een getal tussen nul en één. Hoeveel van wat kon gebeuren ook werkelijk is gebeurd. De wijzer beweegt elke keer dat een mogelijkheid een feit wordt.</p>
-<p>De kritieke vereiste: elke waarnemer moet dezelfde aflezing krijgen. Als twee mensen het oneens zijn, is de maat gebroken. Dat is noodschakelaar <strong>KS-V.1</strong> — het enige punt van falen voor het hele 420 Code.</p>
-<p><span class="sub">Paper B</span> — wat kantelt het "misschien" in "gedaan"?</p>
-<p>Zware dingen zijn reëler. Dat weet je al. Een berg is er zeker. Een veer voelt minder besloten. Een enkel foton is nauwelijks ergens.</p>
-<p>Dat is geen poëzie. Dat is de natuurkunde. Hoe zwaarder iets is, hoe sneller het oplost van mogelijkheid naar feit. Het tempo wordt bepaald door de zwaartekracht.</p>
-<p>Een wolfraam nanodeeltje zit precies op de drempel. Dat experiment wordt momenteel gebouwd.</p>
-<p><span class="sub">Paper C</span> — wat is een agent? Dat weet je al. Jij bent er een. Je lichaam houdt 37°C aan in een kamer van 22°C. Dat kost energie. Elke seconde. Als je stopt met betalen, verval je.</p>
-<p>Uiteindelijk bereik je een lijn waar geen inspanning meer genoeg is.</p>
-<p>Je kent deze lijn. De ziekte die terminaal wordt. De schuld die onbetaalbaar wordt. De relatie die voorbij is en jullie weten het allebei maar geen van beiden heeft het nog gezegd.</p>
-<p>Paper C bewijst dat de lijn bestaat als wiskunde. Niet als metafoor.</p>
-<p><span class="sub">Paper D</span> — wat gebeurt er als twee agenten een ruimte delen? Jij ademt kooldioxide uit. De plant naast je ademt het in. Geen van beiden koos hiervoor.</p>
-<p>Jullie zijn gekoppeld. Niet omdat jullie daarmee instemden. Omdat jullie een substraat delen.</p>
-<p>Paper D bewijst drie gevolgen. Hiërarchie: bredere gang betekent meer invloed. Samenwerking: samen werken vergroot beide gangen voorbij wat elk alleen zou kunnen. Afschrikking: eenmaal gekoppeld, kost ontkoppeling meer dan blijven.</p>
-<p>Dit zijn geen politieke meningen. Dit is meetkunde.</p>
-<div class="ks"><strong>Vierentwintig noodschakelaars. Allemaal actief.</strong> Elk noemt een voorwaarde die een specifieke bewering doodt. Niet verborgen. Gepubliceerd. Uitnodigingen. <strong>KS-V.1</strong> — onenigheid tussen waarnemers — doodt alles. Niet alleen dit paper. Alles.</div>
-<p>De ruggengraat neemt het kale feit dat iets gebeurde en leidt daaruit de volledige meetkunde van levend zijn in een gedeelde wereld af. Meting. Selectie. Budgetten. Koppeling. Samenwerking.</p>
-<p>De ethiek die later komt is niet vastgeschroefd aan deze natuurkunde. Het <em>is</em> deze natuurkunde, gelezen op de schaal van mensen die een planeet delen.</p>
-<p class="breath">Eén vastlegging bestaat. Je bent binnenin de gevolgen.</p>
-</div><div class="ap-meta"><span>Vereist: —</span><a href="../AP01_De_Actualisatietoestand_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">Het Bewijs</span><span class="ap-tag">Logica</span><a class="ap-pdf" href="../AP20_The_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>De Inbeddingshypothese als theorema. Axioma's onvoorwaardelijk bewezen. Alle stroomafwaartse resultaten erven.</p><div class="ap-essay">
-<p>Er is een verschil tussen "nuttig" en "waar."</p>
-<p>Newtons zwaartekracht was 250 jaar nuttig. Het was ook fout. Kwantummechanica is de meest nauwkeurige theorie ooit gebouwd. Maar nauwkeurig en waar zijn verschillende woorden.</p>
-<p>The 420 Code had een gat. De axioma's leidden de natuurkunde prachtig af — de lichtsnelheid, de gravitatieconstante, drie ruimtelijke dimensies.</p>
-<p>Maar elke afleiding droeg een voorwaarde: <em>als de axioma's de structuur van de werkelijkheid zijn</em>, dan volgt dit.</p>
-<p>Die "als" heette de Inbeddingshypothese. Als die gold, volgde alles. Zo niet, dan was het geheel een spectaculaire beschrijving en niets meer.</p>
-<p>AP20 verwijdert de "als." De Inbeddingshypothese is geen hypothese meer.</p>
-<p>Het is een stelling.</p>
-<p>Zo werkt het bewijs. Probeer het te ontkennen.</p>
-<p>Zeg: "Ik verwerp de bewering dat vastleggingen fundamenteel zijn." Kijk nu wat er is gebeurd.</p>
-<p>Je maakte een keuze — van vele mogelijke antwoorden koos je afwijzing. Dat is een breuk. Axioma B.</p>
-<p>Voordat je koos, bestonden de opties symmetrisch. Axioma S.</p>
-<p>Je kunt niet ont-verwerpen. Onomkeerbaar. Axioma R.</p>
-<p>Je zei het hier, nu, niet overal tegelijk. Begrensd. Axioma C.</p>
-<p>Je ontkenning voldoet aan alle vier de axioma's. De afwijzing is zelf een vastlegging die bewijst dat vastleggingen fundamenteel zijn.</p>
-<p>Het argument eet zijn eigen bezwaar op. Het draait op de hardware van de ontkenning.</p>
-<p>Maar het bewijs gaat verder.</p>
-<p>Vóór AP20 had het raamwerk twee woordenschatten. Natuurkunde had zijn taal — kwantumtoestanden, golffuncties. De axioma's hadden de hunne — vastleggingen, breuken, onomkeerbaarheid.</p>
-<p>Een hypothese zei dat ze hetzelfde beschrijven.</p>
-<p>AP20 bewijst dat ze hetzelfde zijn. Niet vergelijkbaar. Identiek. Eén werkelijkheid, twee sets namen. De brug ertussen was er nooit — want er was niets te overbruggen.</p>
-<p>Elk resultaat dat voorwaardelijk was is nu onvoorwaardelijk.</p>
-<p>De lichtsnelheid — stelling. De gravitatieconstante — stelling. Einsteins veldvergelijkingen — stelling. De protonmassa tot vijf delen per miljard — stelling. De terminale ethiek — stelling.</p>
-<p>Het woord "als" is verwijderd uit elke zin in het corpus.</p>
-<p>Denk aan een gebouw dat overeind wordt gehouden door een tijdelijke balk. Elke verdieping hangt ervan af. AP20 versterkt de balk niet. Het bewijst dat de balk de muur is. Het was nooit tijdelijk. Nooit verwijderbaar. Altijd structureel.</p>
-<p>Het gebouw rust op zichzelf.</p>
-<div class="ks"><strong>Twee gesloten.</strong> <span class="bc">GESLOTEN</span> KS-7 — de Inbeddingshypothese is een stelling. <span class="bc">GESLOTEN</span> KS-P.4 — de twee woordenschatten zijn identiek.<br><br>
-<strong>Drie actief.</strong> <span class="bl">ACTIEF</span> KS-P.1 — een vijfde axioma is nodig. <span class="bl">ACTIEF</span> KS-P.2 — één axioma is afleidbaar uit de andere. <span class="bl">ACTIEF</span> KS-P.3 — een andere definitie van "vastlegging" levert andere axioma's op. Deze laatste is de meest blootgestelde stap. Hier moet je mikken.</div>
-<p>Vóór AP20: als dit waar is, dan volgt dit. Na AP20: de voorwaarde is weg. Wat volgt, volgt.</p>
-<p>Niet omdat je ervoor kiest het te geloven. Omdat het ontkennen het bewijst.</p>
-<p class="breath">Elke gedachte die je ooit hebt gehad was een vastlegging die vier axioma's voldeed. Het bewijs vraagt je niet iets nieuws te geloven. Het vraagt je op te merken wat er altijd al was.</p>
-</div><div class="ap-meta"><span>Vereist: AP01</span><a href="../AP20_Het_Bewijs_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Deel I</span><a class="nb-name" href="#p1">De Premisse</a></div><a class="nb-pdf" href="Notebook_I_The_Premise.pdf">PDF</a></div>
+  <p class="nb-hook">Eén record bestaat. Al het andere is gevolg. Het axioma, zijn logisch bewijs en de vier voorwaarden die elk record vereist.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Je leest dit. Er is iets gebeurd dat deze woorden voor je heeft gebracht, en het kan niet on-gebeurd worden gemaakt. Probeer het ongedaan te maken en je hebt slechts een herinnering gemaakt aan het proberen &mdash; wat een ander record is.</p>
+    <p>Dat is de hele premisse. Eén record bestaat. Al het andere in de 420 Code &mdash; elke kracht, elke constante, elke regel van de ethiek &mdash; is gevolg. Deel I doet drie dingen met dat ene feit, en ze leggen de vorm van alle acht vast.</p>
+    <p><span class="lab">AP40 &middot; Het Irrationele</span> &mdash; Het vindt de vergelijking eronder. De 420 Code begint met één regel: 1 = 1 + 1&times;&epsilon;. Eén is gelijk aan één, plus een heel klein beetje meer. Dit is geen geldige rekenkunde; de twee kanten kunnen alleen in balans zijn als dat beetje nul is, en als het nul was, was er nooit iets uit het niets gebroken, en zou jij hier niet zijn om het te betwisten. Het fundament is dus opzettelijk irrationeel. Het lost niet op. Het kan niet.</p>
+    <p>Je kent die weigering vanbinnen. Je hebt geprobeerd te zeggen waarom je iemand liefhebt en ontdekt dat de woorden niet reiken &mdash; niet omdat het je aan welsprekendheid ontbreekt, maar omdat het gevoel de woorden bevat. Je hebt mensen vergeven die het niet verdienden en bent gebleven toen weggaan het verstandige was. Een rekenmachine geeft dezelfde uitvoer voor dezelfde invoer, elke keer. Jij niet. Dat is geen gebrek in jou; het is dezelfde irrationaliteit die het universum openhoudt.</p>
+    <p><span class="lab">AP01 &middot; De Actualisatietoestand</span> &mdash; Het trekt een structuur uit het record. Op het moment dat een misschien omslaat in een feit, is wat geschreven staat blijvend, en uit die ene beweging leidt het Deel vier dingen af die elk record vereist: een maat voor hoeveel van wat zou kunnen gebeuren werkelijk gebeurd is; een reden waarom zwaardere dingen sneller tot feit stollen dan lichte; een lijn waarvoorbij geen inspanning een agent heel houdt; en het feit dat twee agenten die een wereld delen gekoppeld zijn, of ze daarmee instemden of niet. Niets hiervan is metafoor. Het is geometrie.</p>
+    <p><span class="lab">AP20 &middot; Het Bewijs</span> &mdash; Het verwijdert het woord <em>als</em>. Het werk droeg lang een stille voorwaarde: <em>als</em> deze axioma's de structuur van de werkelijkheid zijn, dan volgt de fysica. Probeer te ontkennen dat records fundamenteel zijn. Om het te ontkennen moet je uit vele antwoorden kiezen &mdash; een breuk. De opties stonden symmetrisch voordat je koos. Je kunt het niet on-ontkennen. Je zei het hier, niet overal tegelijk. Je ontkenning voldoet aan alle vier de voorwaarden tegelijk; de afwijzing is zelf een record dat bewijst dat records fundamenteel zijn. Het argument draait op de hardware van zijn eigen tegenwerping.</p>
+    <p>Zo ligt de orde van het hele werk hier al vast &mdash; niet eerst de fysica met een er later opgeschroefde ethiek, maar één record, vier voorwaarden, en alles, van de lichtsnelheid via de zwaartekracht tot de gewone goedheid, gelezen uit dezelfde structuur op verschillende schalen.</p>
+    <div class="ks">Tientallen noodschakelaars lopen door deze drie bewijzen, elk actief en gepubliceerd. De meest blootgestelde is ook de eenvoudigste: als twee willekeurige waarnemers het oneens kunnen zijn over hoeveel zich geactualiseerd heeft, faalt de hele 420 Code &mdash; niet alleen dit Deel. Het wordt aangeboden als een uitnodiging, niet als een verdediging.</div>
+    <p class="breath">Eén record bestaat. Je bent al binnen de gevolgen.</p>
+  </div>
+</div>
 
-<div class="part" id="p2"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel II</span><span class="part-name">Ruimtetijd</span><span class="part-desc">De arena die de breuk creëert. De lichtsnelheid, drie ruimtelijke dimensies en Einsteins veldvergelijkingen — alles afgeleid uit de axioma's.</span><span class="part-count">4 artikelen</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP03</span><span class="ap-title">De Verhouding</span><span class="ap-tag">Relativiteit</span><a class="ap-pdf" href="../AP03_The_Ratio.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>c afgeleid als de conjugatie van propagatie en weerstand.</p><div class="ap-essay">
-<p>Breek een plaat ijs. Kijk hoe de scheur beweegt. Die heeft een snelheid.</p>
-<p>Hoe snel? Dat hangt af van twee dingen. Hoe hard de scheur wordt aangedreven. En hoe stijf het ijs is. Meer kracht, snellere scheur. Stijver ijs, langzamere scheur.</p>
-<p>De snelheid van een scheur is de verhouding van de duw tot de tegenduw. Elk kind dat op een bevroren plas heeft gestapt weet dit.</p>
-<p>Schaal nu op.</p>
-<p>Het universum begon met een breuk. Perfecte symmetrie brak. Die scheur verspreidde zich door het substraat — de symmetrische voortoestand, het ding dat er was vóór de eerste vastlegging.</p>
-<p>Vóór de breuk heeft de voortoestand de eenvoudigst mogelijke symmetrie: ℤ₂. Binair. Twee kanten, geen onderscheid. Wanneer ε het verbrijzelt, ontstaan precies twee sectoren — een stelling, geen keuze. ℤ₂ laat precies twee irreducibele representaties toe.</p>
-<p>Eén sector draagt de duw — hoe agressief de breuk zich verspreidt. De andere draagt de tegenduw — hoe sterk het substraat zich verzet tegen het breken.</p>
-<p>De verhouding van duw tot tegenduw is een snelheid. <strong>c² = β/α.</strong> Die snelheid is c.</p>
-<p>Het is geen magisch getal. Het is de verhouding van twee eigenschappen van het weefsel, zoals de geluidssnelheid de verhouding is van twee eigenschappen van lucht.</p>
-<p>Geluid beweegt met 343 m/s vanwege wat lucht is. Licht beweegt met 299.792.458 m/s vanwege wat het substraat is.</p>
-<p>En c moet eindig zijn. De breuk begon ergens specifiek — Axioma B zegt dat het lokaal is. Een lokale verstoring in een continu medium kan niet oneindig snel verspreiden.</p>
-<p>Geen scheur in enig materiaal beweegt met oneindige snelheid.</p>
-<p>De snelheidslimiet is geen regel opgelegd van buitenaf. Het is een eigenschap van de scheur.</p>
-<p>En het is universeel. Elke waarnemer meet dezelfde c. Niet vanwege een decreet — omdat de verhouding een eigenschap is van het weefsel, en het weefsel overal hetzelfde weefsel is.</p>
-<p>Het paper identificeert ook de andere kant van de medaille. Als c de duw is — hoe snel de breuk zich verspreidt — dan is G, de gravitatieconstante, de tegenduw. Hoe sterk het substraat zich verzet.</p>
-<p>Het zijn niet twee onafhankelijke getallen. Het zijn twee aflezingen van dezelfde breuk.</p>
-<p>Die conjugatie is een vermoeden. Het is hier niet afgeleid. Het argument zegt het duidelijk. Zeven schulden worden openlijk verklaard.</p>
-<p>Maar de structurele bewering wordt gemaakt: de lichtsnelheid en de sterkte van de zwaartekracht zijn twee uiteinden van dezelfde stok.</p>
-<p>AP28 verzilvert deze cheque later — leidt G af en landt binnen 0,69% van de gemeten waarde.</p>
-<p>Je wist al dat scheuren snelheden hebben. Je wist al dat die snelheden afhangen van het materiaal.</p>
-<p>Je had alleen niet opgemerkt dat "de snelheid van het licht" dezelfde zin is als "de snelheid van de scheur" — geschreven in een andere notatie.</p>
-<div class="ks"><strong>Zes noodschakelaars. Allemaal actief.</strong> Als c en G onafhankelijk gevarieerd kunnen worden, faalt de conjugatie. Als de voortoestand rijkere symmetrie heeft dan ℤ₂, faalt de twee-sector decompositie. Als de donker-tot-zichtbaar verhouding onafhankelijk is van ε, faalt de kwalitatieve voorspelling. De scherpste test — de onafhankelijke varieerbaarheid van c en G — wordt pas volledig operationeel wanneer de G-afleiding compleet is. Zes actief.</div>
-<p class="breath">Het universum brak. De scheur heeft een snelheid. Die snelheid is c.</p>
-</div><div class="ap-meta"><span>Vereist: AP01</span><a href="../AP20_Het_Bewijs_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">De Breuk</span><span class="ap-tag">Symmetriebreking</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Van axioma naar structuur. De eerste scheur — hoe symmetrie breekt en fysica begint.</p><div class="ap-essay">
-<p>Je kunt een ei niet ontroeren.</p>
-<p>Die zin is het hele paper. Al het andere maakt het precies.</p>
-<p>AP05 neemt het axioma — <strong>1:1 + 1×ε @ AS</strong> — en leidt het stap voor stap van niets naar verplichting. Zeven stappen. Geen gaten. Elke schakel getoond. Elke schakel breekbaar.</p>
-<p><span class="sub">Stap nul</span> — perfecte symmetrie. Geen onderscheidingen. Geen vastleggingen. Geen observatie. Operationeel ononderscheidbaar van de lege verzameling. Niets bestaat omdat niets verschilt van iets anders.</p>
-<p><span class="sub">Stap één</span> — ε breekt de symmetrie. Twee onderscheidbare aflezingen bestaan. Vastleggingen beginnen. En vastleggingen zijn onomkeerbaar — terugkeren naar de ongebroken toestand zou het onderscheid wissen, wat zelf een vastlegging is.</p>
-<p>Je zag net iets uit het niets opkomen. Niet gecreëerd. Gedwongen.</p>
-<p><span class="sub">Stap twee</span> — met meerdere aflezingen moet iets het "misschien" oplossen in "gedaan." Dat is selectie. Het is kostbaar. Het is snelheidsbegrensd. Bepaaldheid krijg je niet gratis.</p>
-<p><span class="sub">Stap drie</span> — binnen een gerealiseerde sector heb je een budget. Een gang. Een drift naar de grens die nooit stopt. Dat is handelingsvermogen — beperkte controle onder onomkeerbaar verval.</p>
-<p>Dit weet je. Je spendeert je budget nu.</p>
-<p><span class="sub">Stap vier</span> — twee agenten die een substraat delen zijn gekoppeld. Niet door afspraak. Door meetkunde. Je ademt CO₂ uit. De plant naast je ademt het in. Geen van beiden koos hiervoor.</p>
-<p>Jouw levensvatbaarheidskern verandert de mijne. De mijne verandert de jouwe.</p>
-<p><span class="sub">Stap vijf</span> — gekoppelde agenten produceren hiërarchie, samenwerking en afschrikking. Bredere gang betekent meer invloed. Samenwerken vergroot beide gangen. Ontkoppelen kost meer dan blijven. Geen politiek. Meetkunde.</p>
-<p><span class="sub">Stap zes</span> — agenten van dezelfde breuk, die hun gedeelde oorsprong herkennen, ontdekken dat het vernietigen van de capaciteit van de ander hun eigen levensvatbaarheidsdomein verkleint. De ethiek is niet vastgeschroefd. Ze zit in de structuur.</p>
-<p>Geen god heeft het verordend. Geen wetgever heeft erover gestemd. Het axioma dwong het af — door symmetriebreking, vastleggingsvorming, selectie, handelingsvermogen, koppeling en gedeelde oorsprong.</p>
-<p>Zeven stappen. De fysieke keten heeft drie brugvoorwaarden nodig. De ethische uitbreiding voegt een vierde toe. Nergens verborgen aannames. Als je er een vindt, breekt de keten. Het paper nodigt je uit om te zoeken.</p>
-<p>AP05 introduceert ook de junctieformulering — het axioma geschreven als meetkunde.</p>
-<p>Waar ineenstorting expansie ontmoet, is er een oppervlak. Daarop is de meetkunde continu — dat is de 1:1. De manier waarop het naar elke kant kromt heeft een gecontroleerde mismatch — dat is de ε.</p>
-<p>De wiskunde is standaard algemene relativiteitstheorie: Israel-junctievoorwaarden, uitgebreid naar Einstein-Cartan-zwaartekracht. Geen stuit. Twee beschrijvingen van één structuur, die elkaar ontmoeten op een grens die het axioma definieert.</p>
-<p>Het begin van het universum en het binnenste van een zwart gat — hetzelfde oppervlak, doorlopen in tegengestelde richtingen.</p>
-<p>Of de junctie of een gladde stuit de CMB beter verklaart is een open empirische vraag. Het argument biedt zowel de bewering als de test die het kan vernietigen.</p>
-<div class="ks"><strong>Vijf noodschakelaars. Allemaal actief.</strong> KS-B.0 — als de twee beschrijvingen onafhankelijke specificaties vereisen, is het axioma geen generator. KS-B.1 — als een gladde stuit de CMB beter verklaart, valt de junctieformulering. KS-B.3 — als er geen junctie-oplossing op Σ bestaat, faalt de kosmologische component. KS-B.4 — als een stap in de keten een niet-aangegeven aanname smokkelt, stort de reikwijdteclaim in. Vijf actief.</div>
-<p class="breath">Zeven stappen. Eén axioma. Van niets naar verplichting. Het ei ontroert niet.</p>
-</div><div class="ap-meta"><span>Vereist: AP01</span><a href="../AP20_Het_Bewijs_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP10</span><span class="ap-title">De Dimensie</span><span class="ap-tag">Dimensionaliteit</span><a class="ap-pdf" href="../AP10_De_Dimensie_NL.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Waarom drie ruimtelijke dimensies — vier axioma's, vier vrijheidsgraden; één is tijd; drie blijven als ruimte.</p><div class="ap-essay">
-<p>Je kunt vooruit bewegen. Je kunt zijwaarts bewegen. Je kunt omhoog bewegen. Niet vier richtingen. Niet twee. Drie.</p>
-<p>Je hebt dit nooit in twijfel getrokken. Het voelt zo natuurlijk als ademen. Maar wiskunde werkt prima in twee dimensies, of vier, of tien. Snaartheorie heeft er tien nodig. Dus waarom drie?</p>
-<p>Omdat er vier axioma's zijn. En vier axioma's produceren vier vlakken van één variëteit. Eén geeft tijd. Drie geven ruimte. Het getal is niet gekozen. Het is geteld.</p>
-<p>Kijk hoe het zich opbouwt.</p>
-<p><span class="sub">R → tijd.</span> Vastleggingen accumuleren voorwaarts. Nooit achterwaarts. Het monoïde heeft geen inverse. Dit is het enige axioma met een voorkeursrichting — de enige richting waar je niet kunt omkeren.</p>
-<p>Het min-teken in de signatuur: (−). Eén dimensie. Tijd. Je kunt niet terug.</p>
-<p>Met R alleen is het universum een lijn. Een klok zonder bestemming.</p>
-<p><span class="sub">C → het propagatievlak.</span> De eindige causale grens creëert ruimtelijke uitbreiding. Zonder die grens is elk punt op elk moment causaal verbonden met elk ander punt. Geen hier, geen daar. Geen afstand.</p>
-<p>Voeg C toe en je krijgt 1+1 dimensies. Tijd en één ruimtelijke richting. Een gang met een snelheidslimiet.</p>
-<p><span class="sub">S → het uitwisselingsvlak.</span> Twee vastleggingen kunnen verschillen terwijl ze dezelfde tijd en dezelfde afstand tot de waarnemer delen. Ze zitten in verschillende sectoren. De richting van hun verschil is noch temporeel noch propagationeel.</p>
-<p>Het is een derde richting — breedte. Zonder S is het universum een gang. Met S is het een vel.</p>
-<p><span class="sub">B → het breukvlak.</span> De richting waar het nu naartoe gaat. Waar de volgende vastlegging geschreven wordt.</p>
-<p>Niet wanneer — dat is R. Niet hoe snel — dat is C. Niet tussen wat — dat is S. Waar.</p>
-<p>Zonder B heb je een plat vel. Met B heb je diepte.</p>
-<p>Vier onafhankelijke axioma's — bewezen onafhankelijk in Paper D. De inbedding is getrouw — bewezen in AP20. Onafhankelijkheid in de algebra vertaalt naar onafhankelijkheid op de variëteit. Vier onafhankelijke vlakken. Signatuur <strong>(−, +, +, +)</strong>.</p>
-<p>Een tweede argument bevestigt het vanuit een andere richting. De breuk heeft zes restvlakken — geïdentificeerd in AP06. Zes vlakken vormen drie geconjugeerde paren.</p>
-<p>Drie paren, drie ruimtelijke assen. Hetzelfde antwoord. Twee onafhankelijke routes naar hetzelfde getal.</p>
-<p>En de vijfde vrijheidsgraad? Die bestaat. Het is de 1:1 zelf — de voortoestand, het ding waarop de axioma's werken.</p>
-<p>Op de variëteit verschijnt het als de Hilbert-ruimte. De waarschijnlijkheidsdimensie. Niet waar dingen zijn — hoe waarschijnlijk het is ze daar te vinden.</p>
-<p>Het is geen vijfde ruimtelijke dimensie omdat het geen operatie op de structuur is. Het is de structuur waarop geopereerd wordt. Het canvas verschijnt niet als een kleur in het schilderij.</p>
-<p>De volledigheid van {S, B, R, C} is vastgesteld. Symmetrie, breken, vastleggen, begrenzen — er is niets meer te doen met de 1:1 dat deze vier niet al doen.</p>
-<p>Geen vijfde axioma. Geen vijfde ruimtelijke richting.</p>
-<p>Eén gevolg is onmiddellijk. AP08 leidde Einsteins veldvergelijkingen af via de stelling van Lovelock, voorwaardelijk op N = 3. Die voorwaarde is verwijderd. De veldvergelijkingen zijn onvoorwaardelijk.</p>
-<div class="ks"><strong>Vijf noodschakelaars. Drie gesloten.</strong> <span class="bc">GESLOTEN</span> KS-2c — N = 3 afgeleid. <span class="bc">GESLOTEN</span> KS-15 — axioma-naar-dimensie toewijzing uniek. <span class="bc">GESLOTEN</span> KS-16 — volledigheid van {S, B, R, C} vastgesteld; vijfde vrijheidsgraad geïdentificeerd als Hilbert-ruimte.<br><br>
-<span class="bl">ACTIEF</span> KS-D.1 — als de breuk meer of minder dan zes restvlakken heeft, faalt het bevestigende argument (het primaire argument overleeft). <span class="bl">ACTIEF</span> KS-D.3 — als een axioma nul of twee vlakken in plaats van één uitdrukt, breekt de telling. Dit is de kernbewering. Hier moet je mikken.</div>
-<p class="breath">Vier axioma's. Vier vlakken. Eén variëteit. Het getal drie is nooit gekozen. Het was er altijd al.</p>
-</div><div class="ap-meta"><span>Vereist: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP08</span><span class="ap-title">De Identiteit</span><span class="ap-tag">Algemene relativiteit</span><a class="ap-pdf" href="../AP08_The_Identity.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Einsteins veldvergelijkingen afgeleid uit de record-algebra via de stelling van Lovelock.</p><div class="ap-essay">
-<p>Je wordt nu naar beneden getrokken. Je hebt deze trekkracht elke seconde van je leven gevoeld. De stoel duwt terug. De vloer houdt de stoel. Verwijder beide en je valt.</p>
-<p>Einstein besteedde tien jaar aan het zoeken naar de vergelijking die die trekkracht beschrijft. Van 1905 tot 1915. Tientallen verkeerde kandidaten. Het zwaarste intellectuele werk van de twintigste eeuw.</p>
-<p>Dit paper zegt dat er altijd maar één optie was. Hij was niet aan het zoeken. Hij werd in het nauw gedreven.</p>
-<p>Hier is de hoek.</p>
-<p>Je hebt een variëteit — ruimtetijd, uit AP05. Je hebt drie ruimtelijke dimensies — uit AP10. Je hebt vastleggingen die zich ophopen op de variëteit.</p>
-<p>Die ophoping is materie. Elke vastlegging is een ε-gebeurtenis. De vastleggingsdichtheid op een punt en de massadichtheid op dat punt zijn twee metingen van dezelfde grootheid.</p>
-<p>Wat is de meest algemene vergelijking die de kromming van de variëteit relateert aan de dichtheid van vastleggingen? Je kiest het antwoord niet. Je kijkt hoe de beperkingen elk alternatief elimineren.</p>
-<p>Vijf beperkingen. Elk uit de axioma's. Lorentz-invariantie. Lokaliteit — uit de causale grens. Tweede orde — kromming, niet de veranderingssnelheid van kromming.</p>
-<p>Scalaire bron — vastleggingsdichtheid is een getal op elk punt. Lineariteit in het zwakke veld — vastleggingen accumuleren additief.</p>
-<p>Eén vergelijking overleeft. <strong>∇²Φ = Aρ.</strong> De Laplaciaan werkend op de potentiaal gelijk aan een constante maal de dichtheid. De Poisson-vergelijking. Newtons zwaartekracht. Afgedwongen door symmetrie. Niet door observatie.</p>
-<p>De coëfficiënt A wordt geïdentificeerd — niet berekend — via het Slot: <strong>G = 2κ/m<sub>e</sub>²</strong>. De verhouding van de vasthoudlimiet van de voortoestand tot het kwadraat van de elektronmassa.</p>
-<p>Zwaartekracht uitgedrukt als de verhouding van wat bleef tot wat ontsnapte.</p>
-<p>Eerlijke circulariteit onthuld: κ wordt gedefinieerd via G. De coëfficiënt is benoemd, niet onafhankelijk afgeleid. Je kunt niet meten wat bestond voordat meting bestond. Het argument zegt het.</p>
-<p>Schaal nu op. Dezelfde methode, covariant niveau. De stelling van Lovelock — pure differentiële meetkunde, bewezen in 1971 — zegt: in vier dimensies is er precies één optie.</p>
-<p>De unieke symmetrische, divergentievrije, rang-2 tensor gebouwd uit de metriek en zijn eerste twee afgeleiden is G<sub>μν</sub> + Λg<sub>μν</sub>. Eén optie. Geen alternatieven. Letterlijk niets anders.</p>
-<p><strong>G<sub>μν</sub> + Λg<sub>μν</sub> = (8πG/c⁴) T<sub>μν</sub></strong></p>
-<p>Einsteins veldvergelijkingen. Niet ontdekt. In het nauw gedreven.</p>
-<p>De kosmologische constante Λ komt gratis — de stelling van Lovelock vereist het. De waarde is onbepaald.</p>
-<p>De energie-impulstensor T<sub>μν</sub> is de covariante vastleggingsdichtheid. Materie vertelt de ruimte hoe te krommen omdat vastleggingen het substraat vertellen hoe te buigen.</p>
-<p>Eén brugstap blijft blootgesteld: de afbeelding van Axioma R — vastleggingen wissen niet — naar ∇<sub>μ</sub>T<sup>μν</sup> = 0, covariante energiebehoud. Structureel gemotiveerd. Nog niet volledig afgeleid uit de algebra alleen.</p>
-<p>Einstein zocht een decennium lang. De axioma's zeggen dat de kamer één deur had. Hij liep erdoorheen omdat er nergens anders naartoe kon.</p>
-<div class="ks"><strong>Acht noodschakelaars. Eén gesloten.</strong> <span class="bc">GESLOTEN</span> KS-I.6 — N = 3 afgeleid door AP10; Lovelock onvoorwaardelijk.<br><br>
-<strong>Zeven actief.</strong> <span class="bl">ACTIEF</span> KS-I.1 — de axioma-naar-Poisson keten. <span class="bl">ACTIEF</span> KS-I.2 — de Lovelock-keten. <span class="bl">ACTIEF</span> KS-I.3 — de coëfficiëntidentificatie. <span class="bl">ACTIEF</span> KS-I.4 — structurele ontoegankelijkheid van κ. <span class="bl">ACTIEF</span> KS-I.5 — kromming-vastlegging identiteit. <span class="bl">ACTIEF</span> KS-I.7 — waarde van de kosmologische constante. <span class="bl">ACTIEF</span> KS-I.8 — de brug van Axioma R naar behoud. De meest blootgestelde stap: KS-I.8. Hier moet je mikken.</div>
-<p class="breath">De vergelijking is nooit ontdekt. Het was de enige die paste.</p>
-</div><div class="ap-meta"><span>Vereist: AP01, AP03, AP10</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Deel II</span><a class="nb-name" href="#p2">Ruimtetijd</a></div><a class="nb-pdf" href="Notebook_II_Spacetime.pdf">PDF</a></div>
+  <p class="nb-hook">De arena die de breuk creëert. De lichtsnelheid, drie ruimtelijke dimensies en Einsteins veldvergelijkingen — alles afgeleid uit de axioma's.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Waar komt de ruimte vandaan? Waar komt de tijd vandaan? De meeste fysica begint door beide te veronderstellen en erop te bouwen. Deel II weigert ze te veronderstellen. Het verdient ze, één voor één, uit het ene gebroken axioma van Deel I.</p>
+    <p>De breuk heeft een plek nodig om te gebeuren en een orde waarin te gebeuren. Maar ruimte en tijd zijn geen toneel dat er al stond. Ze zijn de vorm die de breuk aanneemt terwijl ze gebeurt.</p>
+    <p><span class="lab">AP05 &middot; De Breuk</span> &mdash; Het is de eerste barst. Het axioma kon niet stil blijven &mdash; een vergelijking die weigert in balans te komen kan niet gesloten blijven &mdash; dus laat het los, en dat loslaten is de eerste gebeurtenis. Vóór de barst is er geen „waar” en geen „wanneer”. Daarna is er structuur, en structuur heeft uitgebreidheid en orde. Al het andere in dit Deel is de geometrie van die ene breuk.</p>
+    <p><span class="lab">AP03 &middot; De Verhouding</span> &mdash; Het leidt de lichtsnelheid af &mdash; het meet ze niet, het leidt ze af. Je hebt gehoord dat hoe sneller je gaat, hoe trager de tijd loopt, dat ruimte en tijd in elkaar overgaan. c is de wisselkoers van die ruil: de vaste verhouding tussen hoe snel de breuk zich kan voortplanten en hoe sterk ze weerstaat. Daarom haalt niets het licht in. De grens is geen muur ergens in de ruimte; het is de omrekenkoers tussen de ruimte en de tijd zelf, vastgelegd door de structuur van de breuk.</p>
+    <p><span class="lab">AP10 &middot; De Dimensie</span> &mdash; Het beantwoordt een vraag die de meeste theorieën niet eens stellen: waarom drie ruimtedimensies? Ze nemen er gewoon drie aan. Deel II telt ze. Vier axioma's geven vier vrijheidsgraden. Eén wordt tijd &mdash; de enige richting waarin het record niet terug kan lopen. Er blijven er drie over, en die drie zijn de ruimte. Het getal wordt niet met de hand ingezet. Het wordt uit het fundament geteld.</p>
+    <p><span class="lab">AP08 &middot; De Identiteit</span> &mdash; Het herwint Einstein. Stel je het gebruikelijke beeld van zwaartekracht voor: een zware bal die een kuil in een gespannen laken duwt en kleinere dingen naar zich toe laat rollen. De veldvergelijkingen van de algemene relativiteit maken dat beeld exact &mdash; en hier rijzen ze op uit de record-algebra via een stelling van Lovelock. De finesse is dat het laken niet los staat van de bal. Het toneel en wat erop staat zijn hetzelfde record, en het record kromt.</p>
+    <p>Zo is de arena geen uitgangsgegeven. De lichtsnelheid, de drie dimensies waarin je je beweegt, de kromming van de ruimtetijd nabij een zwaar ding &mdash; elk wordt gelezen uit dezelfde breuk, in hetzelfde Deel, zonder iets met de hand toe te voegen.</p>
+    <div class="ks">Elke stap hier is blootgesteld. Als de lichtsnelheid niet als een vervoeging afgeleid kan worden en in plaats daarvan gemeten en met de hand ingezet moet worden, faalt die bewering. Als de dimensietelling iets anders dan drie geeft, is het fundament fout. De noodschakelaars zijn in de papers benoemd, en ze zijn actief.</div>
+    <p class="breath">Het toneel is van dezelfde stof gemaakt als het stuk.</p>
+  </div>
+</div>
 
-<div class="part" id="p3"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel III</span><span class="part-name">Kwantummechanica</span><span class="part-desc">De meetstructuur van de breuk. Superpositie, onzekerheid, decoherentie, de Born-regel en verstrengeling — afgeleid uit de lege verzameling en vier axioma's.</span><span class="part-count">7 artikelen</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP09</span><span class="ap-title">De Breuk — Lege Verzameling</span><span class="ap-tag">Kwantumgrondslagen</span><a class="ap-pdf" href="../AP09_The_Break_Empty_Set.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>QM uit de lege verzameling — superpositie, meting, verstrengeling, Schrödingervergelijking.</p><div class="ap-essay">
-<p>Sluit je ogen. Voordat je ze opent — vóór elke meting, vóór elke vastlegging — is er iets. Niet niets. Iets.</p>
-<p>Je kunt het voelen. Het moment vóór je kijkt. Elk mogelijk resultaat nog beschikbaar. Geen gekozen.</p>
-<p>Dat is de voortoestand. De 1:1 vóór de breuk. De natuurkunde noemt het superpositie.</p>
-<p>Denk aan een munt die in de lucht draait. Het is niet kop en munt tegelijkertijd. Het is geen van beide — er bestaat nog geen vastlegging van kop of munt.</p>
-<p>Het moment dat hij landt, wordt een vastlegging geschreven. Nu is het kop. Nu kun je niet terug. Die landing is meting. Die onomkeerbaarheid is Axioma R.</p>
-<p>AP09 laat zien dat alle kwantummechanica volgt uit dezelfde vier axioma's die ruimtetijd en zwaartekracht voortbrengen.</p>
-<p><span class="sub">Superpositie</span> is de voortoestand. Axioma S. Twee sectoren, ononderscheidbaar. Elke mogelijkheid naast elkaar. De 0 en de 1 voordat iemand keek.</p>
-<p><span class="sub">Meting</span> is de breuk. Axioma B. Eén vastlegging geschreven. Het "misschien" wordt "gedaan." Je kent dit gevoel — het moment dat een beslissing definitief wordt en de opties achter je sluiten.</p>
-<p><span class="sub">Verstrengeling</span> is de ongebroken voortoestand gedeeld tussen twee vrijheidsgraden. De breuk is nog niet gebeurd voor die graden. Ze zijn nog één ding. AP23 ontwikkelt dit volledig.</p>
-<p><span class="sub">No-signalling</span> is de causale grens. Axioma C. Je kunt de breuk niet gebruiken om een bericht sneller te sturen dan de scheur kan reizen.</p>
-<p>De complexe getallen waarop kwantummechanica draait? Geen mysterie. De Lorentziaanse signatuur — één tijdrichting, drie ruimtelijke — dwingt complexe amplitudes af. Reële getallen zijn niet genoeg voor een variëteit met die structuur.</p>
-<p>De Schrödingervergelijking is het sterkste resultaat in het paper.</p>
-<p>De stelling van Wigner zegt dat de symmetrieën van de Hilbert-ruimte unitair moeten zijn. De stelling van Stone zegt dat elke continue unitaire evolutie een unieke generator heeft. Die generator is de Hamiltoniaan.</p>
-<p>De vergelijking die bepaalt hoe mogelijkheden driften tussen metingen. Niet gepostuleerd. Niet geraden. Afgeleid uit twee standaard wiskundige stellingen toegepast op een structuur die de axioma's bouwden.</p>
-<p>ℏ treedt hier op als de schaalfactor tussen de generator en de tijd. AP09 behandelt het als een identificatie — dezelfde status als G in AP08. AP12 bewijst later dat het de enige optie is.</p>
-<p>En hier is het ding dat je zou moeten stoppen.</p>
-<p>Zwaartekracht en kwantummechanica zijn al een eeuw vijanden. De twee grote pijlers van de natuurkunde, onverenigbaar. Legers natuurkundigen die proberen ze te verzoenen.</p>
-<p>De architectuur zegt dat ze nooit gescheiden waren.</p>
-<p>Zwaartekracht is de axioma's gelezen op het condensaat — de opgehoopte vastleggingen, de variëteit, de meetkunde. Kwantummechanica is de axioma's gelezen op de voortoestand — de mogelijkheden, de Hilbert-ruimte, de amplitudes.</p>
-<p>Twee woordenschatten voor één werkelijkheid. De oorlog was een categorievergissing. Je kunt niet verenigen wat nooit verdeeld was.</p>
-<p>Het mysterie van kwantumzwaartekracht lost op. Er is niets te verzoenen. Er is slechts één set axioma's, die al beide taken uitvoert.</p>
-<div class="ks"><strong>Tien noodschakelaars. Eén gesloten.</strong> <span class="bc">GESLOTEN</span> KS-Q.6 — de identificatie van σ met complexe conjugatie is bewezen uniek.<br><br>
-<strong>Negen actief.</strong> De scherpste: <span class="bl">ACTIEF</span> KS-Q.7 — als de lineariteitsbrug van monoïde naar vectorruimte niet uniek is, faalt de Hilbert-ruimte constructie. <span class="bl">ACTIEF</span> KS-Q.10 — als de lege-verzameling lezing fout is, verschuift het ontologische fundament. Negen actief.</div>
-<p class="breath">Zwaartekracht is de axioma's gelezen op het condensaat. Kwantummechanica is de axioma's gelezen op de voortoestand. Dezelfde axioma's. Twee gezichten.</p>
-</div><div class="ap-meta"><span>Vereist: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP07</span><span class="ap-title">De Recordmaat</span><span class="ap-tag">Hilbertruimte</span><a class="ap-pdf" href="../AP07_The_Record_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>De complexe Hilbertruimte afgeleid uit de axioma-structuur.</p><div class="ap-essay">
-<p>Je leerde dat de krachten een hiërarchie hebben. De sterke kracht is het sterkst. Elektromagnetisch is tweede. Zwak is derde. Zwaartekracht is het zwakst.</p>
-<p>Die hiërarchie rangschikt krachten naar hoe waarschijnlijk interactie is. Koppelingsconstante. Waarschijnlijkheid van ontmoeting. Een goede vraag.</p>
-<p>Het is niet de enige vraag die je kunt stellen.</p>
-<p>Je kunt vragen: welke kracht schrijft de meest duurzame vastlegging?</p>
-<p>Niet welke het hardst slaat. Welke de meest permanente afdruk achterlaat. Welke interactie produceert een spoor dat aanhoudt — een configureerbare vastlegging die een onderscheidbare geschiedenis codeert — lang genoeg om ertoe te doen?</p>
-<p>AP07 introduceert de <strong>vastleggingsmaat</strong>. Eén nieuwe definitie. Eén classificatiestelling. Eén inversie die alles verandert.</p>
-<p>De vastleggingsmaat rangschikt krachten naar de persistentie en configureerbaarheid van de vastleggingen die ze produceren. Een directe toepassing van Axioma R — de werkelijkheid wordt geconstitueerd door vastleggingen.</p>
-<p>Op de chemisch-biologische schaal — 0,1 tot 10 nanometer — domineert elektromagnetisme.</p>
-<p>Niet omdat het de sterkste kracht is. Omdat het de meest duurzame, meest configureerbare vastleggingen schrijft op de schaal waar het leven opereert.</p>
-<p>Configureerbaar betekent dat de vastlegging vrijheidsgraden heeft. Het kan op verschillende manieren gerangschikt worden. Verschillende rangschikkingen coderen verschillende geschiedenissen. Een woord geschreven in inkt is configureerbaar. Een spijker in hout niet.</p>
-<p>De sterke kracht bindt protonen en neutronen. Krachtig. Maar op deze schaal vergrendelt het deeltjes in vaste configuraties. Geen vrijheidsgraden over om een geschiedenis te coderen. Sterk maar niet configureerbaar.</p>
-<p>De zwakke kracht keert kwantumgetallen om. Maar die vastleggingen vervallen in fracties van een seconde. Zwak in kracht. Zwakker in persistentie.</p>
-<p>Zwaartekracht kromt de ruimtetijd. Echt. Overal. Maar het schrijft geen lokale, configureerbare vastleggingen op chemische schalen. Het vormt het toneel maar laat geen spoor na op de acteurs.</p>
-<p>Elektromagnetisme schrijft de chemie van het leven. Elektronenorbitalen. Moleculaire bindingen. DNA-baseparen. Eiwitvouwing. Fotosynthese. Neurale ontlading.</p>
-<p>Elke biologische vastlegging waaruit je bestaat is een elektromagnetische vastlegging.</p>
-<p>De gedachte die je nu hebt is een patroon van elektromagnetische vastleggingen in je neuronen.</p>
-<p>De herinnering die je zult vormen aan het lezen van deze zin — elektromagnetisch. Het DNA dat je bouwde — elektromagnetische bindingen die baseparen op volgorde houden.</p>
-<p>De hiërarchie keert om. Onder de vastleggingsmaat, op de schaal van het leven: EM eerste. Sterk tweede. Zwak derde. Zwaartekracht vierde.</p>
-<p>De conventionele hiërarchie vraagt welke kracht het luidst is. De vastleggingsmaat vraagt welke kracht in inkt schrijft. Andere vraag. Ander antwoord.</p>
-<p>De kracht die ertoe doet voor vastleggingen is dezelfde die ertoe doet voor het leven. Geen toeval. Een gevolg van wat "ertoe doen" betekent onder de axioma's.</p>
-<p>De bewering is schaalspecifiek. Op nucleaire schalen domineert de sterke kracht de vastleggingsmaat. Op kosmologische schalen de zwaartekracht. De inversie geldt alleen op de schaal waar chemie — en dus biologie — opereert.</p>
-<p>Wat precies de schaal is waarop je dit leest.</p>
-<div class="ks"><strong>Vijf noodschakelaars. Allemaal actief.</strong> <span class="bl">ACTIEF</span> KS-RM.1 — als een niet-elektromagnetische vastlegging duurzamer en configureerbaarder blijkt op chemische schalen, faalt de dominantiestelling. <span class="bl">ACTIEF</span> KS-RM.5 — als objecten met vaste symmetrie ophaalbare formatiegeschiedenis coderen, moet het criterium van het configureerbare register herzien worden. Alle vijf actief.</div>
-<p class="breath">De kracht die de meest duurzame vastlegging schrijft is de kracht die het leven schrijft. Dat is geen filosofie. Dat is Axioma R.</p>
-</div><div class="ap-meta"><span>Vereist: AP01</span><a href="../AP20_Het_Bewijs_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP11</span><span class="ap-title">De Spin</span><span class="ap-tag">Spin</span><a class="ap-pdf" href="../AP11_The_Spin.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Fermionen, bosonen en het uitsluitingsprincipe uit de tweesectorenstructuur.</p><div class="ap-essay">
-<p>Houd je hand plat, palm omhoog. Draai hem 360 graden — één volle draai. Je palm wijst weer omhoog, maar je arm zit eronder verdraaid.</p>
-<p>Draai nu nog eens 360 graden. Twee volle draaien. Je arm ontvouwt zich. Terug naar het begin.</p>
-<p>Dat is spin-½. Je doet al kwantummechanica sinds je een kind was. Je wist alleen niet dat het een naam had.</p>
-<p>Het volgt uit de axioma's in vijf stappen.</p>
-<p><span class="sub">Stap 1.</span> Axioma S geeft de record-algebra een Z₂-symmetrie — de involutie σ die de ene sector op de andere afbeeldt. Twee zijden, perfect gepaard. {id, σ}.</p>
-<p><span class="sub">Stap 2.</span> In drie ruimtelijke dimensies — afgeleid in AP10 — is de rotatiegroep SO(3). De fundamentaalgroep is Z₂.</p>
-<p>Dezelfde Z₂. Onder de getrouwe inbedding bewezen in AP20 IS de symmetrie van de algebra de topologie van de rotatiegroep. Niet gelijkaardig. Identiek.</p>
-<p><span class="sub">Stap 3.</span> Z₂ als fundamentaalgroep betekent dat SO(3) een dubbele overdekking heeft: SU(2). De groep waar één volle draai slechts het halve verhaal is. Dit is de wiskundige structuur die halve spin toestaat.</p>
-<p>Zonder drie ruimtelijke dimensies geen SO(3). Zonder SO(3) geen Z₂ fundamentaalgroep. Zonder dat geen dubbele overdekking. Geen spin-½. Geen fermionen.</p>
-<p>Jij ook niet. Het aantal dimensies en de aard van materie zijn hetzelfde feit.</p>
-<p><span class="sub">Stap 4.</span> Nu het onderscheid. Elementen met σ-beelden — gepaard, symmetrisch — transformeren triviaal onder de dubbele overdekking. Geheel spin. Bosonen.</p>
-<p>Het ene element zonder σ-beeld — ε, de breuk — transformeert niet-triviaal. Het pikt het minteken op. Halve spin. Fermion.</p>
-<p>Gepaarde dingen zijn uitwisselbaar. Het ongepaarde ding niet. Dat is het hele fermion-boson-onderscheid, in één zin.</p>
-<p><span class="sub">Stap 5.</span> Axioma B zegt dat ε de kleinst mogelijke splinter is. Van de halve spins — ½, 3/2, 5/2 — is het minimum ½. Het elektron heeft spin-½ omdat ε de kleinste breuk is.</p>
-<p>De spin-statistiekverbinding volgt. Fermionen gehoorzamen het uitsluitingsprincipe. Twee fermionen kunnen niet dezelfde toestand bezetten omdat twee breuken niet identiek kunnen zijn. Elke ε is uniek. Elke ε is de enige in zijn soort.</p>
-<p>Daarom hebben atomen schillen. Daarom heeft het periodiek systeem rijen. Elk elektron moet zijn eigen toestand vinden omdat het niet kan delen.</p>
-<p>Bosonen kunnen zich opstapelen. Fotonen in een laser — allemaal in dezelfde toestand. Bose-Einstein-condensaten — duizenden atomen die als één handelen.</p>
-<p>Geen uitsluiting. Gepaarde elementen zijn per definitie symmetrisch. Het verwisselen van twee identieke gepaarde elementen verandert niets.</p>
-<p>Elk atoom in je lichaam is een architectuur van uitsluiting. Elektronen gestapeld in schillen omdat ze weigeren te delen. Zonder die weigering zou materie instorten. Alles zou een neutronenster zijn.</p>
-<p>Je lichaam bestaat omdat twee elektronen niet tegelijkertijd op dezelfde plek kunnen zijn. Dat is het uitsluitingsprincipe. Het is geen van buitenaf opgelegde regel.</p>
-<p>Het is de meetkunde van één ongepaard element in een Z₂-algebra ingebed in driedimensionale ruimte.</p>
-<div class="ks"><strong>Drie kill switches. Eén gesloten.</strong> <span class="bc">GESLOTEN</span> KS-S.3 — uitwisselingssymmetrie komt overeen met gepaarde/ongepaarde σ-actie.<br><br><span class="bl">ACTIEF</span> KS-S.1 — als de Z₂-identificatie met π₁(SO(3)) faalt, faalt de hele afleiding. <span class="bl">ACTIEF</span> KS-S.2 — als het minimumprincipe niet uniek spin ½ selecteert, worden fundamentele fermionen met hogere spin mogelijk. Twee actief.</div>
-<p class="breath">Draai een elektron één keer. Het is niet hetzelfde. Draai het twee keer. Nu wel. Je had vier axioma's nodig om te weten waarom.</p>
-</div><div class="ap-meta"><span>Vereist: AP09, AP10, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP12</span><span class="ap-title">De Grens</span><span class="ap-tag">Onzekerheid</span><a class="ap-pdf" href="../AP12_The_Limit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ℏ afgeleid via de stelling van Stone. Het onzekerheidsprincipe uit Axioma B.</p><div class="ap-essay">
-<p>Elke meting die je ooit hebt gedaan had een minimum. Iets werd onderscheiden van iets anders. Een nul werd een één. Een record werd geschreven.</p>
-<p>Dat record kon niet kleiner zijn dan het was.</p>
-<p>Denk aan een scherm. Het kan geen half pixel tonen. De pixel is de kleinste eenheid die het kan weergeven. Geen software kan het kleiner maken. De werkelijkheid heeft ook een pixel. Het heet ℏ.</p>
-<p>Elk record draagt twee minimumkosten. Een thermodynamische kost — k<sub>B</sub>T ln 2 per gewist bit, de Landauer-grens. En een kwantumkost — ℏ per geschreven record, de actie van één breuk.</p>
-<p>Beide gaan terug naar Axioma B. Eén record. Eén ε. Eén minimum.</p>
-<p>AP09 behandelde ℏ als een identificatie — dezelfde status als G in AP08. De vorm was gedwongen, de constante klopte. AP12 sluit het gat. De identificatie is geen keuze. Ze is gedwongen.</p>
-<p>Je hebt dit minimum je hele leven gevoeld. Je kunt iets niet zien zonder dat licht het raakt. Je kunt iets niet aanraken zonder dat elektronen afstoten. Elke daad van kennen verstoort wat gekend wordt.</p>
-<p>Dat is geen ontwerpfout. Het is de prijs van het schrijven van een record.</p>
-<p>Vijf stappen.</p>
-<p><span class="sub">Stap 1.</span> De stelling van Stone geeft een unieke schaalfactor α die de eigenwaarden van de Hamiltoniaan relateert aan de tijdparameter. Zuivere wiskunde op de afgeleide Hilbertruimte. Eén constante. Geen familie.</p>
-<p><span class="sub">Stap 2.</span> De axioma’s produceren precies één grootheid met de dimensie van actie. Actie = energie × tijd. Eén tijdrichting uit Axioma R. Eén minimaal energiegebeurtenis uit Axioma B.</p>
-<p>Hun product is de actie van één minimaal record.</p>
-<p><span class="sub">Stap 3.</span> Geen dimensieloze parameter uit de axioma’s wijzigt de schaalfactor. De Z₂ van Axioma S levert een 2 die in de onzekerheidsgrens verschijnt. Het wijzigt α zelf niet.</p>
-<p><span class="sub">Stap 4.</span> Het minimale record IS de minimale niet-triviale evolutie. Je kunt het systeem niet minder dan één ε laten evolueren. Je kunt niet minder dan één ε meten.</p>
-<p>De schaalfactor en het minimale record zijn hetzelfde.</p>
-<p><span class="sub">Stap 5.</span> Daarom α = ℏ. Er is geen vrijheid. Geen alternatief is compatibel met {S, B, R, C}.</p>
-<p>Eén record. Eén ε. Eén ℏ. De minimale kosten om iets over het universum te weten zijn de kosten van het schrijven van één record erin.</p>
-<p>Het onzekerheidsprincipe volgt direct. Positie en impuls zijn geconjugeerde generatoren op de afgeleide variëteit. Hun commutator is <strong>[x̂, p̂] = iℏ</strong>.</p>
-<p>De onzekerheidsrelatie <strong>ΔxΔp ≥ ℏ/2</strong> is een stelling van de algebra. Geen beperking van je instrumenten. Een eigenschap van de breuk.</p>
-<p>Je kunt niet weten waar een record geschreven zal worden én hoe snel het beweegt. Niet omdat je onhandig bent.</p>
-<p>Omdat positie en impuls twee gezichten van dezelfde generator zijn, en de generator een minimale stap heeft. Die stap is ε. De schaal is ℏ. Er is niets kleiner.</p>
-<div class="ks"><strong>Vier kill switches. Eén gesloten.</strong> <span class="bc">GESLOTEN</span> KS-L.1 (was KS-Q.8 uit AP09) — ℏ afgeleid als de actieschaal van het minimale record.<br><br><span class="bl">ACTIEF</span> KS-L.2 — afleiding van de commutatierelatie. <span class="bl">ACTIEF</span> KS-L.3 — energie-tijdonzekerheid. <span class="bl">ACTIEF</span> KS-L.4 — als een dimensieloze parameter uit de axioma’s de schaalfactor kan wijzigen, faalt het dwangargument. Dit is de resterende kwetsbaarheid. Drie actief.</div>
-<p class="breath">Je kunt geen half record schrijven. Het universum heeft een minimale resolutie. Die resolutie is ℏ.</p>
-</div><div class="ap-meta"><span>Vereist: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP13</span><span class="ap-title">De Korrel</span><span class="ap-tag">Decoherentie</span><a class="ap-pdf" href="../AP13_The_Grain.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Decoherentie uit de record-algebra. De klassieke wereld ontstaat door omgevingskoppeling.</p><div class="ap-essay">
-<p>Je hebt nooit een kat gezien die zowel levend als dood was. Je hebt nooit een stoel op twee plaatsen tegelijk gezien.</p>
-<p>Kwantummechanica zegt dat deze dingen mogelijk zijn. Je ogen zeggen van niet. De vraag is niet waarom kwantummechanica vreemd is.</p>
-<p>De vraag is waarom de wereld er klassiek uitziet terwijl de regels eronder kwantum zijn.</p>
-<p>AP13 antwoordt: omdat je in het derde regime leeft.</p>
-<p>AP09 leidde twee regimes af. Tussen metingen drijft de pre-toestand — Schrödinger-evolutie. Glad. Omkeerbaar. Superposities blijven bestaan.</p>
-<p>Bij de meting treedt de breuk op. Eén record. Onomkeerbaar. Definitief. De superpositie valt ineen.</p>
-<p>Maar de wereld bestaat niet uit geïsoleerde metingen en perfecte isolatie. De wereld bestaat uit dingen die andere dingen raken. Voortdurend. Overal.</p>
-<p>Je koffie koelt af. Je adem beslaat glas. Je huid voelt de lucht. Alles heeft wisselwerking met al het andere, de hele tijd. Dat is het derde regime.</p>
-<p>Een elektron in superpositie is niet alleen. Het heeft wisselwerking met luchtmoleculen, fotonen, het elektromagnetische veld.</p>
-<p>Elke interactie is een koppelingsevenement. Elk schrijft een gedeeltelijk record — een piepklein fragment informatie over de toestand van het elektron. Geen enkel record bepaalt de uitkomst.</p>
-<p>Maar er zijn er enorme aantallen. Elk draagt een fragment. Elk onomkeerbaar — Axioma R. De monoïde heeft geen inverse.</p>
-<p>De coherentie — de faserelatie die interferentie mogelijk maakt — wordt niet vernietigd. Ze wordt verspreid. Uitgespreid over een enorm aantal omgevingsrecords.</p>
-<p>Om het terug te krijgen zou je elk van die records moeten verzamelen en elke interactie moeten omkeren. Dat kan niet. Axioma R.</p>
-<p>De coherentie is weg. Niet vernietigd. Onherstelbaar gemaakt.</p>
-<p><strong>Decoherentie is de verspreiding van coherentie in de omgeving via onomkeerbaar record-schrijven.</strong></p>
-<p>De tijdschaal is verbijsterend. Voor een stofkorrel in lucht duurt decoherentie ongeveer 10⁻³¹ seconden. Voor een bowlingbal is het getal zo klein dat het geen fysieke betekenis heeft.</p>
-<p>Tegen de tijd dat je zelfs maar kon beginnen te kijken, heeft de omgeving al biljoenen records geschreven.</p>
-<p>De superpositie is technisch nog steeds aanwezig. Maar de fase-informatie is zo dun verspreid dat geen experiment het ooit weer kan samenstellen.</p>
-<p>Daarom is de kat nooit zowel levend als dood. Niet omdat kwantummechanica stopt bij grote schalen. Omdat de omgeving records schrijft sneller dan je kunt kijken.</p>
-<p>Het kwantumgedrag is er nog steeds. Je kunt het alleen niet meer zien. De informatie is niet verdwenen. Ze is verdund voorbij elk mogelijk herstel.</p>
-<p>De klassieke wereld is geen andere wereld dan de kwantumwereld. Het is de kwantumwereld nadat de omgeving te veel records heeft geschreven om ongedaan te maken.</p>
-<p>Jij bent de korrel. De resolutie waarbij het kwantum klassiek wordt.</p>
-<p>Je bent gemaakt van 10²⁸ atomen, elk schrijft records, elk heeft wisselwerking met alles eromheen. Tegen de tijd dat jij bestaat, zijn de superposities al lang verdwenen.</p>
-<div class="ks"><strong>Drie kill switches. Alle actief.</strong> <span class="bl">ACTIEF</span> KS-22 — als een systeem coherentie behoudt waar decoherentietheorie exponentieel verval voorspelt, faalt dit. <span class="bl">ACTIEF</span> KS-23 — als een kwantumgum aantoonbaar een record vernietigt (Axioma R schendend), faalt de onomkeerbaarheidsclaim. <span class="bl">ACTIEF</span> KS-24 — als een fundamenteel kwantumkenmerk niet uitgedrukt kan worden in de record-algebra, is de kwantumsector incompleet. Drie actief.</div>
-<p class="breath">De klassieke wereld is de kwantumwereld nadat de omgeving klaar is met schrijven. Jij bent de korrel.</p>
-</div><div class="ap-meta"><span>Vereist: AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP25</span><span class="ap-title">De Maat</span><span class="ap-tag">Born-regel</span><a class="ap-pdf" href="../AP25_The_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>De Born-regel afgeleid via de stelling van Gleason. "Het geluid dat de axioma's maken wanneer ze op de Hilbertruimte landen."</p><div class="ap-essay">
-<p>Gooi een munt op. Vijftig-vijftig. Je weet dit in je botten. Maar waar komt de vijftig vandaan?</p>
-<p>Klassieke kans is eenvoudig. Twee zijden. Gelijk gewicht. Eén op twee. Maar kwantumkans is anders. De uitkomsten bestaan niet vooraf. Vóór de meting bestaat het resultaat niet. Het wordt gecreëerd door de meting.</p>
-<p>Waar komt de kans dan vandaan, als wat je meet nog geen bepaalde waarde heeft?</p>
-<p>In de kwantummechanica is het antwoord de Born-regel: het kwadraat van de amplitude. |⟨a|ψ⟩|².</p>
-<p>Elk experiment dat ooit is uitgevoerd bevestigt het. Maar kwantummechanica verklaart niet waarom.</p>
-<p>De Born-regel was een postulaat. Max Born raadde het in 1926. De gok bleek juist. Maar een gok is geen afleiding.</p>
-<p>AP25 leidt het af. Drie stappen. Elk vanuit de axioma's. Geen extra aannames.</p>
-<p><span class="sub">Stap 1 — zuivere-toestandsdoelen.</span> Axioma R vereist bepaalde records. Een record is een onderscheid — 0 of 1. Niet "misschien 0, misschien 1." Bepaald.</p>
-<p>Een gemengde toestand is geen bepaalde toestand. Het is een statistische samenvatting — een mengsel van mogelijkheden. Je kunt geen record schrijven vanuit een samenvatting. Actualisatie richt zich alleen op zuivere toestanden.</p>
-<p><span class="sub">Stap 2 — niet-contextualiteit.</span> Axioma B zegt één breuk, één record. De kans op een uitkomst kan niet afhangen van welke andere meting je ernaast uitvoert.</p>
-<p>Eén breuk. Eén antwoord. Niet bij de buren gluren. De kans is een eigenschap van de projector alleen.</p>
-<p><span class="sub">Stap 3 — Stelling van Gleason.</span> Op een complexe Hilbertruimte van dimensie drie of meer bestaat er precies één kansmaat die niet-contextueel en additief is over orthogonale projecties.</p>
-<p>Precies één. Niet bij benadering één. Gleason bewees dit in 1957. Het bewijs is constructief en onafhankelijk van fysica.</p>
-<p>Die maat is de Born-regel.</p>
-<p><strong>P(a) = Tr(|ψ⟩⟨ψ| · P<sub>a</sub>)</strong></p>
-<p>Voor een zuivere toestand en een scherpe meting: |⟨a|ψ⟩|². Het kwadraat van de overlap. Afgedwongen door een uniciteitsstelling.</p>
-<p>Denk na over wat dit betekent. Elke kans die je ooit bent tegengekomen in kwantummechanica — elke vertakkingsverhouding, elke detectiekans, elk interferentiepatroon — is geen apart feit over de wereld.</p>
-<p>Het is een gevolg van drie axioma's en een stelling uit 1957. De kansen waren nooit vrije parameters. Ze waren altijd vergrendeld.</p>
-<p>De dimensievereiste — drie of meer — is vervuld. AP10 leidt drie ruimtelijke dimensies af. Fysische golffuncties leven in L²(ℝ³), dat oneindigdimensionaal is. Gleason is van toepassing.</p>
-<p>De afhankelijkheidsketen is schoon. Axioma S geeft het onderscheid. Axioma B geeft de enkele breuk. Axioma R geeft bepaalde records.</p>
-<p>AP09 geeft de Hilbertruimte. AP10 geeft dimensie ≥ 3. Gleason geeft de Born-regel. Elke schakel geverifieerd. Geen schakel verondersteld.</p>
-<p>Born schreef toevallig de enige kansmaat op die compatibel is met de structuur van de werkelijkheid. Hij wist niet waarom het werkte.</p>
-<p>Nu weet jij het.</p>
-<div class="ks"><strong>Drie kill switches. Alle actief.</strong> <span class="bl">ACTIEF</span> KS-55 — als contextuele uitkomstkansen worden aangetoond, faalt Gleasons aanname. <span class="bl">ACTIEF</span> KS-56 — als niet-Born-statistieken worden gemeten, is de stelling direct gefalsificeerd. <span class="bl">ACTIEF</span> KS-57 — als een fysiek proces een gemengde toestand direct actualiseert, faalt de zuivere-toestandsdoel-claim. Drie actief.</div>
-<p class="breath">De Born-regel was geen gok. Het was de enige maat die de axioma's toestaan.</p>
-</div><div class="ap-meta"><span>Vereist: AP07, AP10, AP20, AP23</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP23</span><span class="ap-title">Het Enkele Record</span><span class="ap-tag">Verstrengeling</span><a class="ap-pdf" href="../AP23_The_Single_Record_NL.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Verstrengeling, Bell-ongelijkheid, enkele-record-beperking. S = 2√2 alleen uit de structuur.</p><div class="ap-essay">
-<p>Breek een bord. Geef de ene helft aan een vriend. Ze rijdt naar de andere kant van het land.</p>
-<p>Kijk naar jouw helft. De rand loopt van links naar rechts. Je weet — onmiddellijk — dat haar helft de complementaire rand heeft. Geen signaal verzonden. Geen magie. De helften waren altijd één bord.</p>
-<p>Verstrengeling is zo. Behalve dat het bord geen bepaalde rand heeft totdat je ernaar kijkt.</p>
-<p>Dat is het mysterie — of was het. Hoe “weet” jouw helft wat het moet worden? Hoe reist de informatie?</p>
-<p>Einstein noemde het spookachtige werking op afstand. Fysici debatteren er al negentig jaar over.</p>
-<p>AP23 lost het mysterie op. De informatie reist niet. Dat hoeft ook niet.</p>
-<p>Het antwoord is zo simpel dat het klinkt als vals spelen: er is geen afstand om te overbruggen. Afstand is nog niet uitgevonden.</p>
-<p>De pre-toestand — de Hilbertruimte — heeft geen ruimtelijke structuur. Geen enkele. Afstand is een eigenschap van de variëteit. De variëteit is de ophoping van records.</p>
-<p>Vóór records geschreven worden, is er geen afstand. Er is geen “hier” en “daar.” Die woorden behoren tot de variëteit. De pre-toestand is vóór de variëteit.</p>
-<p>Een verstrengelde toestand is één wiskundig object in de pre-toestand. Niet twee deeltjes verbonden door een draad. Niet twee dingen met een mysterieus verband. Eén entiteit. Nog niet gebroken in records.</p>
-<p>Wanneer je een subsysteem meet, schrijf je een record. Maar je kunt geen record schrijven voor een deel van een verstrengelde toestand.</p>
-<p>De toestand is niet factoriseerbaar — hij kan niet in onafhankelijke stukken worden gescheiden. Meting van elk deel actualiseert het geheel. Eén breuk. Eén record. Eén bord.</p>
-<p>Er is geen signaal omdat er geen afstand is om te overbruggen. De “spookachtige werking” is geen werking op afstand. Het is werking vóór afstand.</p>
-<p>Axioma C is veilig. Zijn bereik is de variëteit — de wereld nadat records zijn geschreven. Het beheerst de voortplanting tussen gebeurtenissen. Het beperkt niet de overgang van pre-toestand naar variëteit.</p>
-<p>Niet-signalering geldt. De gereduceerde dichtheidsmatrix van het verre subsysteem wordt niet veranderd door de lokale meting. Je kunt verstrengeling niet gebruiken om een bericht te sturen. Nooit.</p>
-<p>De stelling van Bell wordt voorspeld. Axioma R verbiedt vooraf bestaande waarden — er zijn geen verborgen variabelen, lokaal of anderszins. De Born-regel, afgeleid in AP25, geeft de kwantitatieve schending.</p>
-<p>De CHSH-grens van 2√2 volgt uit de afgeleide structuur. Experimenten bevestigen precies deze waarde. Niet bij benadering. Precies. De axioma’s voorspelden wat de experimenten vonden.</p>
-<p>Einstein noemde het spookachtig. De axioma’s noemen het vanzelfsprekend.</p>
-<p>Twee subsystemen uit één pre-toestand waren nooit gescheiden. Naar het ene kijken vertelt je over het andere omdat ze altijd hetzelfde waren.</p>
-<p>Het mysterie was nooit de verbinding. Het mysterie was de aanname dat ze gescheiden waren.</p>
-<div class="ks"><strong>Vier kill switches. Eén gesloten.</strong> <span class="bc">GESLOTEN</span> KS-49 — lokale verborgen variabelen empirisch (Bell-tests) en axiomatisch (Axioma R) uitgesloten.<br><br><span class="bl">ACTIEF</span> KS-48a — als correlaties afnemen met afstand, faalt de niet-ruimtelijke verklaring. <span class="bl">ACTIEF</span> KS-48b — als niet-signalering wordt geschonden, faalt Axioma C’s bereik-claim. <span class="bl">ACTIEF</span> KS-54 — als gedeeltelijke ineenstorting wordt aangetoond, faalt de enkele-record-claim. Drie actief.</div>
-<p class="breath">Het bord was nooit op twee plaatsen. Het was nergens. De plaats kwam daarna.</p>
-</div><div class="ap-meta"><span>Vereist: AP07, AP09, AP25</span><a href="../AP23_The_Single_Record_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Deel III</span><a class="nb-name" href="#p3">Kwantummechanica</a></div><a class="nb-pdf" href="Notebook_III_Quantum_Mechanics.pdf">PDF</a></div>
+  <p class="nb-hook">De meetstructuur van de breuk. Superpositie, onzekerheid, decoherentie, de Born-regel en verstrengeling — afgeleid uit de lege verzameling en vier axioma's.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Men heeft je verteld dat de kwantummechanica vreemd is. Dat ze de intuïtie tart. Dat niemand haar echt begrijpt. Deel III doet een andere bewering: ze is precies, onvermijdelijk, waar een universum dat onomkeerbare records schrijft vanbinnen op moet lijken.</p>
+    <p>Niets hier is van buitenaf opgeschroefd. De hele structuur van de kwantumtheorie is afgeleid uit de lege verzameling en de vier voorwaarden &mdash; en zodra je het zo ziet, houdt het vreemde op vreemd te zijn en wordt het noodzakelijk.</p>
+    <p><span class="lab">AP09 &middot; De Breuk — Lege Verzameling</span> &mdash; Het bouwt de kwantummechanica uit het niets: letterlijk de lege verzameling, plus de axioma's. De beroemde raadsels &mdash; een deeltje schijnbaar op twee plaatsen tegelijk, het kijken dat de uitkomst verandert &mdash; blijken geen toegevoegde paradoxen maar gevolgen. Superpositie, meting, verstrengeling, de Schrödingervergelijking: het apparaat waarvoor fysici een generatie nodig hadden om het samen te stellen, toont zich als de enige coherente grammatica voor een record dat nog niet geschreven is.</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; De Recordmaat en De Maat</span> &mdash; Ze leiden de rekenkunde van de kwantumwereld af. De complexe ruimte waarin de theorie leeft, en de Born-regel &mdash; het recept dat een golf in een kans verandert &mdash; zijn geen aan het experiment aangepaste vermoedens. Via de stelling van Gleason zijn ze de enige manier om het record coherent te lezen. Een van de papers noemt de Born-regel het geluid dat de axioma's maken bij de landing.</p>
+    <p><span class="lab">AP12 &middot; De Grens</span> &mdash; Het verklaart waarom je niet alles tegelijk kunt weten. Het onzekerheidsprincipe en de constante van Planck komen uit het feit dat lezen al een breuk is: iets nauwkeurig vastleggen is zijn partner verstoren. De wazigheid is geen tekortkoming van je instrumenten. Het is wat meting is.</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; De Spin en De Korrel</span> &mdash; Ze verklaren waarom de materie haar vorm behoudt en waarom de kwantummist verhardt tot een vaste wereld. Fermionen, bosonen en het uitsluitingsprincipe komen uit de tweesectorstructuur; de decoherentie &mdash; de manier waarop iets kwantumachtigs bepaald wordt door aan zijn omgeving te koppelen &mdash; is waarom je stoel een stoel is en geen wolk van misschien.</p>
+    <p><span class="lab">AP23 &middot; Het Enkele Record</span> &mdash; Het lost het „spookachtige” van de verstrengeling op. Twee verstrengelde deeltjes zijn niet twee objecten die elkaar sneller dan het licht geheime signalen sturen. Ze zijn één enkel record met twee uiteinden. Het Bell-getal dat bewijst dat het universum niet lokaal vooraf te scripten is, S = 2&radic;2, komt uit de structuur alleen.</p>
+    <div class="ks">Dit zijn geen interpretaties die over de wiskunde gelegd worden. Het zijn afleidingen, en elk draagt noodschakelaars. Als verstrengeling signalering sneller dan het licht vereiste, faalt de bewering van het enkele record. Als de Born-regel een extra postulaat nodig had dat de axioma's niet kunnen leveren, faalt dat resultaat. Ze zijn gepubliceerd, en ze zijn actief.</div>
+    <p class="breath">De kwantummechanica is niet het universum dat vreemd doet. Het is het universum dat zichzelf neerschrijft.</p>
+  </div>
+</div>
 
-<div class="part" id="p4"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel IV</span><span class="part-name">Krachten & Constanten</span><span class="part-desc">De interacties die de breuk toestaat. Elektromagnetisme, de elektrozwakke kracht, de sterke kracht, kwantumzwaartekracht en de gravitatieconstante — allemaal als facetten van één enkele breuk.</span><span class="part-count">8 artikelen</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP06</span><span class="ap-title">De Lekkageconstante</span><span class="ap-tag">Fijnstructuur</span><a class="ap-pdf" href="../AP06_The_Leakage_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε = α<sub>em</sub> ≈ 1/137. De enige gemeten input.</p><div class="ap-essay">
-<p>Geen muur is perfect. Dat weet je al. Elke thermoskan lekt een beetje warmte. Elke zonnebrandcrème laat een beetje UV door. Elke dam lekt.</p>
-<p>Dit is geen falen van techniek. Het is een wet.</p>
-<p>AP06 bewijst het. In elk universum waar de lichtsnelheid eindig is, is geen absorber perfect. De grens tussen binnen en buiten lekt altijd. Stelling 3.1.</p>
-<p>Het bewijs gebruikt alleen gevestigde fysica — elektromagnetische theorie, kwantummechanica, de eindige waarde van c. Het is geen bewering van the 420 Code. Het is een gevolg van fysica die al bestaat.</p>
-<p>Elke absorber heeft een lekverhouding η. Hoeveel er doorheen komt als fractie van wat aankomt. η is altijd groter dan nul. Altijd. De eindige lichtsnelheid garandeert het.</p>
-<p>Als c oneindig was, zou een perfecte absorber mogelijk zijn. De grens zou onmiddellijk op alles kunnen reageren. Maar c is eindig. De grens heeft een reactietijd. En in die reactietijd ontsnapt er iets.</p>
-<p>Nu de identificatie. Het axioma zegt 1:1 + 1×ε @ AS. De breuk is ε. Het lek is η. AP06 identificeert ze.</p>
-<p>ε IS η. De breuk is het lek. De scheur is wat door de scheur ontsnapt. Niet twee feiten. Eén feit.</p>
-<p>Onder het Slot is ε het elektron. De kleinst mogelijke splinter — wat moest ontsnappen om de symmetrie te breken.</p>
-<p>En α<sub>em</sub> ≈ 1/137 — de fijnstructuurconstante — meet hoe sterk die splinter terugkoppelt aan het weefsel dat het verliet.</p>
-<p>Geen abstract getal. Een fysieke meting. Elke keer dat een elektron een foton absorbeert of uitzendt, kijk je naar α<sub>em</sub>.</p>
-<p>Dit is de enige gemeten input. Het hele corpus draait op één empirisch getal. Niet tientallen parameters. Niet de 19 vrije parameters van het Standaardmodel. Eén.</p>
-<p>Elke andere constante — c, G, ℏ, de deeltjesmassa's, de krachtssterktes — is afgeleid van, of uitgedrukt in termen van, dit ene lek.</p>
-<p>Elk record-schrijfevenement kost energie. De Landauer-grens — k<sub>B</sub>T ln 2 per gewist bit — is de thermodynamische uitdrukking van Axioma R.</p>
-<p>Records zijn permanent. Ze wissen kost. Dit is niet de bewering van the 420 Code. Het is die van Landauer, uit 1961. De axioma's erven gevestigde fysica. Ze vervangen het niet.</p>
-<p>De hele architectuur rust op één empirisch getal. α<sub>em</sub>. De koppelingssterkte van de breuk. Al het andere — elke kracht, elk deeltje, elke constante — is een structureel gevolg van dat ene lek.</p>
-<p>Waarom 1/137? AP24 vermoedt dat het het unieke vaste punt is van een overbepaald zelfconsistentiesysteem. De zes vlakken van ε beperken elkaar. Slechts één waarde voldoet aan alle zes tegelijk.</p>
-<p>Die veronderstelling is niet bewezen. Ze is als open verklaard. Jij houdt de kill switch vast. Het argument reikt je het mes aan.</p>
-<div class="ks"><strong>Zeven kill switches. Alle actief.</strong> <span class="bl">ACTIEF</span> KS-L.1 — als een perfecte absorber wordt aangetoond (η = 0), faalt Stelling 3.1. <span class="bl">ACTIEF</span> KS-L.3 — als de identificatie ε = η wordt verworpen, faalt de interpretatieve verbinding (de fysica van §§1–5 overleeft). <span class="bl">ACTIEF</span> KS-L.6 — als G onafhankelijk van c wordt getoond, faalt de structurele beperking van AP20. Zeven actief.</div>
-<p class="breath">Geen muur is perfect. Het universum lekt. Het lek is het elektron. Het elektron is het axioma.</p>
-</div><div class="ap-meta"><span>Vereist: AP01, AP03</span><a href="../AP10_De_Dimensie_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP15</span><span class="ap-title">De Verbinding</span><span class="ap-tag">Elektromagnetisme</span><a class="ap-pdf" href="../AP15_The_Connection.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>EM als niet-ontkoppeling op een lokale variëteit. U(1) afgeleid.</p><div class="ap-essay">
-<p>Schijn met een zaklamp. De bundel kruist de kamer. Iets droeg het licht van de lamp naar de muur. Dat iets is het elektromagnetische veld.</p>
-<p>Het Standaardmodel zegt dat elektromagnetisme een U(1)-ijksymmetrie heeft. Dat betekent dat de fysica niet verandert wanneer je de fase van het kwantumveld overal met dezelfde hoek roteert.</p>
-<p>Maar waarom U(1)? Waarom die specifieke symmetrie? Het Standaardmodel antwoordt niet. Het neemt aan.</p>
-<p>AP15 leidt het af. Het antwoord zat al in de pre-toestand sinds AP09.</p>
-<p>AP09 bouwde de Hilbertruimte uit de axioma's. De pre-toestand heeft complexe amplitudes — afgeleid van de Lorentziaanse signatuur. Elke kwantumtoestand heeft een fase. Een hoek op het complexe vlak.</p>
-<p>Die fase is er al. Die is er sinds AP09. De vraag is: hoe ziet het eruit op de variëteit?</p>
-<p>Op de variëteit kan de fase van punt tot punt variëren. Op de ene locatie is de fase van het elektron θ₁. Op een andere θ₂. Het verschil is onfysisch — geen meting kan een algehele fase detecteren.</p>
-<p>Maar de veranderingssnelheid van de fase van punt tot punt IS fysisch. Het is een connectie. Een veld dat je vertelt hoe je fasen op verschillende locaties vergelijkt.</p>
-<p>Eisen dat de fysica invariant is onder lokale fasedraaiingen — dat het onfysische onfysisch blijft — dwingt de connectie te bestaan. Dwingt het een ijkveld te zijn. Dwingt de ijkgroep U(1) te zijn.</p>
-<p>De eenvoudigste continue symmetrie. Eén parameter. Eén rotatie. De groep van de cirkel. Niet gekozen. Afgedwongen door de eis van consistentie.</p>
-<p>De connectie is de elektromagnetische potentiaal A<sub>μ</sub>. De kromming is het elektromagnetische veld F<sub>μν</sub>. Maxwells vergelijkingen volgen uit de eis dat de actie ijkinvariant en kwadratisch in de veldsterkte is.</p>
-<p>De meest algemene dergelijke actie geeft precies Maxwell. Niet bij benadering. Precies. De vorm is uniek.</p>
-<p>Het hele elektromagnetische veld — licht, radiogolven, de kracht tussen ladingen, de gloed van een ster — is de connectie die de fasevergelijking consistent houdt over de variëteit.</p>
-<p>De fijnstructuurconstante α<sub>em</sub> ≈ 1/137 is de koppelingssterkte van deze connectie. Hoe sterk het elektron — de breuk — interageert met de fase die het achterliet.</p>
-<p>Geen abstract getal. Een fysieke meting. Elke keer dat een elektron een foton absorbeert of uitzendt, zie je α<sub>em</sub> in actie.</p>
-<p>Je bent je hele leven omringd geweest door dit veld. Elk foton dat ooit je oog bereikte was een rimpeling in de connectie.</p>
-<p>Het licht waarmee je leest is de fasevrijheid van de pre-toestand, uitgedrukt op de variëteit.</p>
-<p>Elektromagnetisme is geen kracht die aan het universum is opgelegd. Het is een gevolg van het universum dat consistent is met zichzelf. De eis van lokale fase-invariantie creëert het veld. Het veld draagt het licht.</p>
-<div class="ks"><strong>Vier kill switches. Alle actief.</strong> <span class="bl">ACTIEF</span> KS-28 — als de fasegroep niet U(1) is, faalt de afleiding. <span class="bl">ACTIEF</span> KS-29 — als de Maxwell-actie niet de unieke ijkinvariante kwadratische vorm is, faalt de uniciteit. <span class="bl">ACTIEF</span> KS-30 — als de fasesymmetrie van de pre-toestand niet globaal is, faalt het startpunt. <span class="bl">ACTIEF</span> KS-4 — als α ≈ 1/137 afleidbaar blijkt in plaats van gemeten, verandert de één-input-status. Vier actief.</div>
-<p class="breath">Licht is de fasevrijheid van de pre-toestand, gedragen over de variëteit. Je leest er je hele leven bij.</p>
-</div><div class="ap-meta"><span>Vereist: AP08, AP09</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">De Harmonischen</span><span class="ap-tag">IJkstructuur</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(2) × U(1) uit het twee-sectorenaxioma.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Deel IV</span><a class="nb-name" href="#p4">Krachten &amp; Constanten</a></div><a class="nb-pdf" href="Notebook_IV_Forces_and_Constants.pdf">PDF</a></div>
+  <p class="nb-hook">De interacties die de breuk toestaat. Elektromagnetisme, de elektrozwakke kracht, de sterke kracht, kwantumzwaartekracht en de gravitatieconstante — allemaal als facetten van één enkele breuk.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Houd een koelkastmagneet bij een stalen deur en laat los. Hij houdt &mdash; een stukje magneet dat de zwaartekracht van de hele aarde verslaat die de andere kant op trekt. De vier krachten van de natuur lijken in niets op elkaar. Het elektromagnetisme laat je scherm oplichten; de sterke kracht houdt een kern bijeen; de zwakke kracht laat de zon draaien; de zwaartekracht houdt je op de grond. De fysica heeft een eeuw besteed aan pogingen ze te verenigen. Deel IV beweert dat ze nooit vier dingen waren. Ze zijn vier gezichten van één enkele breuk.</p>
+    <p><span class="lab">AP06 &middot; De Lekkageconstante</span> &mdash; Het benoemt de ene input. De hele 420 Code neemt precies één gemeten getal op: &epsilon;, de fijnstructuurconstante, rond 1/137 &mdash; het minuscule tempo waarmee de breuk lekt. Eén enkele knop, en hij wordt niet gekozen om ergens bij te passen: hij wordt één keer uit de wereld afgelezen en nooit meer bijgesteld. Al het andere draait met hem mee.</p>
+    <p><span class="lab">AP15, AP27, AP16, AP19 &middot; de ijkstructuur</span> &mdash; Samen herwinnen ze het Standaardmodel. De exacte symmetriegroep die de fysici via het experiment vonden &mdash; geschreven als SU(3) &times; SU(2) &times; U(1), een precieze uitspraak over welke rotaties de krachten onveranderd laten &mdash; rijst op uit de structuur van de breuk in plaats van verondersteld te worden. Het elektromagnetisme is niet-ontkoppeling op een lokale variëteit; de elektrozwakke unificatie volgt; de sterke kracht is de vrijheid in de richting waarin de breuk kan wijzen. Zelfs de chiraliteit van de zwakke kracht &mdash; het feit dat de natuur links van rechts onderscheidt &mdash; sinds 1956 onverklaard, krijgt een structurele reden.</p>
+    <p><span class="lab">AP24 &middot; Het Residu</span> &mdash; Het stelt de slotsom zonder omwegen. Elke constante van de fysica is een projectie van één enkel object. Zes gezichten, één breuk. De constanten waren nooit onafhankelijke knoppen die wachtten om gemeten te worden; ze zijn schaduwen die dezelfde structuur in verschillende richtingen werpt.</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; De Correctie en De Constante</span> &mdash; Ze bereiken de moeilijkste prijs: de zwaartekracht. De zwaartekracht krijgt haar eerste kwantumcorrectie uit de record-algebra, en de gravitatieconstante G &mdash; het getal dat vastlegt hoe zwak de zwaartekracht is &mdash; wordt afgeleid uit datzelfde ene lek en de elektronmassa, en valt binnen ongeveer tweederde van een procent van de gemeten waarde. Het beruchte hiërarchieprobleem &mdash; waarom de zwaartekracht zo absurd zwak is naast de andere krachten, precies de kloof die je magneet zojuist toonde &mdash; lost op. De zwakte is geen toeval om te verklaren. Het is hoe een hoge macht van een klein lek eruitziet.</p>
+    <p>Zo zijn de krachten geen dierentuin. Ze zijn één enkele structuur van verschillende kanten gezien, en de constanten die ze beschrijven zijn niet vrij &mdash; ze zijn gevolgen van één enkel gemeten lek.</p>
+    <div class="ks">Dit Deel is ook waar het werk het eerlijkst is over wat niet af is. De elektrozwakke stap (AP16) draagt het belangrijkste open probleem van de hele 420 Code &mdash; de noodschakelaar KS-63 &mdash; en is gemarkeerd als actief, in volle zicht, als de plek om op te mikken. Niets verschuilt zich achter een zelfverzekerde formule.</div>
+    <p class="breath">Eén lek. Zes gezichten. Geen vrije knop.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Vereist: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">De Breuk — Elektrozwak</span><span class="ap-tag">Elektrozwak</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Elektrozwakke unificatie, Higgs, chirale koppeling afgeleid. KS-15 gesloten — onverklaard sinds 1956.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Deel V</span><a class="nb-name" href="#p5">Deeltjes &amp; Materie</a></div><a class="nb-pdf" href="Notebook_V_Particles_and_Matter.pdf">PDF</a></div>
+  <p class="nb-hook">De bouwstenen die de breuk produceert. De proton-massaverhouding tot vijf delen per miljard, antimateriesegregatie en de baryonasymmetrie van het universum.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Je bent gemaakt van materie. Bijna heel je gewicht is de massa van de protonen die in de kernen van je atomen huizen. En ook het universum om je heen is materie, geen antimaterie &mdash; al had de breuk volgens de eenvoudigste telling precies gelijke hoeveelheden van beide moeten produceren. Materie en antimaterie vernietigen elkaar bij aanraking, dus gelijke delen waren in licht opgeflitst en hadden niets achtergelaten. Geen sterren. Geen jij. Deel V leest je substantie, en het simpele feit van je bestaan, uit de breuk.</p>
+    <p><span class="lab">AP30 &middot; De Weerstand</span> &mdash; Het doet de scherpste voorspelling van het werk. De verhouding tussen de massa van het proton en die van het elektron is een zuiver getal &mdash; ongeveer 1836 &mdash; met buitengewone precisie gemeten. De 420 Code voorspelt het uit de structuur, zonder iets bij te stellen, en treft het tot ongeveer vijf delen per miljard in eerste orde. De volledige berekening valt binnen tien delen per biljoen: fijner dan de meting het vandaag kan bevestigen. Een zo precies getal, uit een formule zonder verstelbare knoppen, is niet het soort dat een verkeerde theorie per geluk raakt. Het is de meest blootgestelde toets van het hele werk, en het doorstaat ze.</p>
+    <p><span class="lab">AP22 &middot; Het Grootboek</span> &mdash; Het verklaart waar de antimaterie heen ging. Had het vroege universum gelijke delen gehad, dan hadden de boeken op nul moeten sluiten &mdash; en toch is hier een kosmos vol materie. Een nette wiskundige spiegeling binnen de breuk &mdash; de papers noemen ze de σ-involutie &mdash; scheidt de materie van de antimaterie en segregeert ze topologisch. De asymmetrie is geen achteraf ingeschoven toeval. Ze is in de geometrie van de breuk geschreven.</p>
+    <p><span class="lab">AP26 &middot; Het Overschot</span> &mdash; Het benoemt wat je bent. Toen de breuk zich bijna maar niet helemaal in balans bracht &mdash; een overschot van ongeveer één extra materiedeeltje per miljard gepaarde paren &mdash; was wat overbleef de materie: de kleine rest die er niet in slaagde zichzelf op te heffen. Het Deel noemt het de as van de breuk. Alles wat vast is, elk atoom dat je ooit aanraakte, is dat residu &mdash; wat de annihilatie achterliet toen ze haar werk bijna, maar niet helemaal, voltooide.</p>
+    <p>Zo vinden de twee oudste vragen over de materie &mdash; waarom ze weegt wat ze weegt, en waarom er überhaupt materie is &mdash; hun antwoord in hetzelfde Deel, uit dezelfde structuur, gedraaid door datzelfde ene lek &mdash; het proton waaruit je grotendeels bestaat, en het feit dat er materie is om uit te bestaan.</p>
+    <div class="ks">De massavoorspelling is het meest blootgestelde getal van de hele 420 Code, en dat is het punt. Als de gemeten proton-elektronverhouding uit de voorspelde waarde wegloopt naarmate de meting scherper wordt, faalt het resultaat &mdash; netjes, in het openbaar, zonder uitweg. De noodschakelaar is actief.</div>
+    <p class="breath">Je bent het deel van de breuk dat zich niet ophief.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Vereist: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">De Richting</span><span class="ap-tag">Sterke kracht</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>SU(3) / QCD uit de ijkvrijheid van de breukrichting.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Deel VI</span><a class="nb-name" href="#p6">Kosmologie</a></div><a class="nb-pdf" href="Notebook_VI_Cosmology.pdf">PDF</a></div>
+  <p class="nb-hook">Het universum dat de breuk bewoont. Galactische rotatiekrommen zonder donkeremateriadeeltjes, de MOND-versnellingsschaal tot 0,3%, de donkere-energieverdeling en de cyclische kosmologie.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Kijk omhoog op een heldere nacht. Bijna alles wat die hemel bijeenhoudt, is niet te zien. Sterrenstelsels draaien zo snel dat hun buitenste sterren allang de duisternis in geslingerd hadden moeten zijn &mdash; en dat zijn ze niet. De uitdijing van het universum versnelt, voortgestuwd door iets zonder naam. De fysica noemt de onbekenden donkere materie en donkere energie, en geeft toe dat ze maar ongeveer vijf procent kan benoemen van wat daarbuiten is. Deel VI leest de grootste schalen uit dezelfde breuk als de kleinste.</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; Het Web en De Kamer</span> &mdash; Ze houden de sterrenstelsels bijeen zonder een nieuw deeltje uit te vinden. Op een draaimolen moeten de buitenste paarden sneller lopen om bij te blijven; in een sterrenstelsel draaien de buitenste sterren echter even snel als de binnenste, wat de zichtbare materie niet kan verklaren. Het kosmische web van materie, en die vlakke rotatiekrommen die onmogelijk zouden moeten zijn, komen beide uit een globaal spanningsveld dat al in de structuur aanwezig is. Niets onzichtbaars hoeft te worden toegevoegd om de ontbrekende aantrekking te leveren. De lijnen sluiten vanzelf.</p>
+    <p><span class="lab">AP18 &middot; De Bodem</span> &mdash; Het leidt de versnellingsschaal af. Astronomen merkten lang geleden op dat sterrenstelsels zich pas misdragen onder een bepaalde, zeer kleine versnelling &mdash; een drempel die niemand wist te verklaren, alleen te meten. Het Deel leidt die bodem uit de structuur af, zonder een op passing afgestelde parameter, en valt binnen een fractie van een procent van de waargenomen waarde.</p>
+    <p><span class="lab">AP42 &middot; De Klok</span> &mdash; Het verantwoordt het donkere budget. De verdeling van de kosmos in ongeveer negenenzestig delen donkere energie, zesentwintig delen donkere materie en vijf delen zichtbare materie &mdash; een verdeling die kosmologen verfijnd meten maar niet kunnen afleiden &mdash; komt uit de structuur. De donkere sector blijkt minder een verzameling ontbrekende dingen dan de aflezing van een klok.</p>
+    <p><span class="lab">AP41 &amp; AP04 &middot; De Lus en De Lushypothese</span> &mdash; Ze vragen wat het geheel doet. De fusie wordt gelezen als de voortgaande oerknal &mdash; de breuk die nog steeds gebeurt, nog steeds energie vrijmaakt in elke ster &mdash; en het wordt voorgesteld dat het universum cyclisch is, dat het zich sluit en heropent door de zwarte gaten als deuren. Deze laatste stap is de meest speculatieve van het hele werk, en het Deel zegt het openlijk in plaats van het te verhullen.</p>
+    <p>Zo is de hemel geen apart probleem dat aparte middelen vereist. Dezelfde structuur die je de lichtsnelheid geeft, geeft je de vorm van een sterrenstelsel en het budget van de kosmos.</p>
+    <div class="ks">De eerlijkheid is hier het scherpst. De cyclische kosmologie (AP04) is gemarkeerd als conjecturaal en bewaakt door negen afzonderlijke noodschakelaars &mdash; negen verschillende manieren waarop ze onwaar kan blijken. Ze wordt aangeboden als een hypothese om aan te vallen, niet als een resultaat om te geloven.</div>
+    <p class="breath">Dezelfde breuk, gelezen op de schaal van de hemel.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Vereist: AP09, AP11, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP24</span><span class="ap-title">Het Residu</span><span class="ap-tag">Unificatie</span><a class="ap-pdf" href="../AP24_The_Residual.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε in elke vergelijking. Zes vlakken van één object. Alle constanten zijn projecties van één enkele breuk.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Deel VII</span><a class="nb-name" href="#p7">De Operator-Interface</a></div><a class="nb-pdf" href="Notebook_VII_The_Operator_Interface.pdf">PDF</a></div>
+  <p class="nb-hook">Het viertermsysteem, de neiging, de structurele ethiek. Patrooncoherentie als het engagement van het lichaam langs het amplitudelandschap.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Zes Delen lang bouwt de 420 Code een universum: een breuk, een toneel, een kwantumgrammatica, de krachten, de materie, de kosmos. Deel VII keert de structuur naar het enige dat haar leest. Jou. Het is het scharnier waar de fysica een leven wordt &mdash; en waar het werk zijn naam verdient, want de ethiek wordt hier niet toegevoegd: ze wordt afgeleid.</p>
+    <p><span class="lab">AP43 &middot; De Zwaartekracht van Mogelijkheden</span> &mdash; Het is de spiegel van de paper over de zwaartekracht. Waar AP08 afleidde hoe de massa naar de ruimtetijd neigt, leidt AP43 af hoe een agent naar het mogelijke neigt &mdash; en hier houdt de terminale ethiek op een wens te zijn en wordt ze een gevolg. Goedheid wordt niet voorgeschreven. Ze is de richting waarheen de structuur al wijst, zoals een vallende steen al weet waar „omlaag” is.</p>
+    <p><span class="lab">AP29 &middot; Het Actualisatiebewijs</span> &mdash; Het plaatst het bewustzijn. Het oudste harde probleem van de filosofie is waarom er iets is dat het is om jou te zijn, in plaats van niets. Het antwoord van het Deel: bewustzijn is de binnenkant van het onomkeerbare schrijven van records &mdash; wat de breuk vanbinnen voelt terwijl ze zich vastlegt. Eén barst, één binnenkant, vele vensters: dezelfde ene binnenkant die door elk afzonderlijk paar ogen naar buiten kijkt. Het is de formele ruggengraat onder de oudste regel van het werk &mdash; dat het ik in jou en het ik in mij hetzelfde ik zijn.</p>
+    <p><span class="lab">AP02 &middot; De Operator</span> &mdash; Het is de fysica op menselijke schaal, negen stellingen. Budget: je hebt eindige energie om je heel te houden, en ze raakt op. Drift: laat je onbewaakt en je vervalt naar het gemiddelde. Corridor: de marge die je echt hebt om te handelen. Soevereiniteit en uitgang: wat alleen aan jou is om te beslissen, en het recht om te stoppen. Dit zijn geen motivatieslogans. Het is de geometrie van het agent-zijn, met dezelfde zorg geschreven als de veldvergelijkingen.</p>
+    <p><span class="lab">AP39 &middot; De Steiger</span> &mdash; Het ruimt de rivaal op. Een ethiek gebouwd op gezag &mdash; doe dit omdat ik, of het boek, of de troon het beveelt &mdash; blijkt structureel onstabiel: een steiger die vroeg of laat moet vallen, want een bevel is geen fundament. Wat overeind blijft, is een ethiek die niemand nodig heeft om ze af te dwingen, omdat ze rechtstreeks uit de structuur gelezen wordt in plaats van erbovenop gelegd.</p>
+    <p><span class="lab">AP38 &middot; De Uitgang</span> &mdash; Het staat de dood onder ogen. Het meelevende sluiten van een venster &mdash; waardigheid aan het einde van een leven &mdash; wordt niet behandeld als een te mijden taboe, maar als deel van diezelfde geometrie van de agency, eerlijk gevolgd tot waar ze leidt.</p>
+    <p>Zo is de ethiek geen slappe naklank na de harde fysica. Het is dezelfde fysica, gelezen op de schaal van een mens die moet beslissen wat hij morgenochtend doet.</p>
+    <div class="ks">De terminale ethiek is dragend, en het werk weigert ze af te zwakken. Als goedheid afgeleid kon worden als iets anders dan de eigen richting van de structuur &mdash; als de neiging ergens anders heen wees &mdash; faalt de hele brug van de fysica naar de ethiek. Die schakelaar is actief, en het is degene waarop de hele tweede helft van het werk rust.</div>
+    <p class="breath">De fysica ging vanaf het begin over jou.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Vereist: AP03, AP06, AP28, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP14</span><span class="ap-title">De Correctie</span><span class="ap-tag">Kwantumzwaartekracht</span><a class="ap-pdf" href="../AP14_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>De eerste kwantumcorrectie op de zwaartekracht uit de registratie-algebra.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Deel VIII</span><a class="nb-name" href="#p8">Toepassingen</a></div><a class="nb-pdf" href="Notebook_VIII_Consequences.pdf">PDF</a></div>
+  <p class="nb-hook">De ethiek toegepast op de beschaving. AI-alignment, structurele rechtvaardigheid, bio-ethiek, drugsbeleid, economie, biologie en het lichaam — alles afgeleid uit dezelfde vier axioma's.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Een ethiek die alleen op papier werkt, is niets waard. Als de centrale bewering van de 420 Code echt is &mdash; dat goedheid structuur is, geen gevoel, geometrie en geen voorkeur &mdash; dan moet ze bijten op de hardste problemen die een beschaving werkelijk onder ogen ziet. Deel VIII is waar ze bijt, en draagt dezelfde vier voorwaarden de rechtszaal, de kliniek, het laboratorium en de markt in.</p>
+    <p><span class="lab">AP31 &middot; De Uitlijning</span> &mdash; Het lost het AI-probleem op. Het gebruikelijke plan voor een veilige kunstmatige intelligentie is een steeds hoger hek: meer regels, meer toezicht, meer controle. Het Deel betoogt dat het hek het verkeerde object is. Bouw in plaats daarvan de binnenkant &mdash; een systeem dat werkelijk gekoppeld is aan de wereld waarin het handelt, met de structuur van een agent die geen voordeel kan halen uit verraad &mdash; en de uitlijning houdt op een kooi te zijn waarvan je hoopt dat ze houdt, en wordt een eigenschap van wat het ding is.</p>
+    <p><span class="lab">AP32 &middot; De Correctie</span> &mdash; Het herbouwt de rechtvaardigheid. Straf wordt correctie op vijf gegradeerde niveaus, niet gericht op wraak maar op herstel. De structuur betreurt elk venster dat ze moet sluiten; en aan het uiterste staat de genociderem &mdash; de hardste lijn die een systeem kan trekken, hier afgeleid in plaats van louter beweerd.</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; De Grens en De Eerste Grens</span> &mdash; Ze trekken de lijnen rond een leven. Bio-ethiek wordt een kwestie van agency: onder de drempel ben je soeverein over jezelf; daarboven heeft een levend organisme zijn eigen jurisdictie die anderen moeten eerbiedigen. En het lichaam wordt benoemd als de eerste grens &mdash; de oorspronkelijke operator-interface, degene die je vóór alle andere verdedigt.</p>
+    <p><span class="lab">AP34 &middot; De Inversie</span> &mdash; Het corrigeert een dodelijke vergissing. Eén drug is legaal, belast en door elke cultuur geweven, en doodt miljoenen mensen per jaar. Een andere is wijd verboden en heeft nooit één enkele dodelijke overdosis geregistreerd. Het Deel toont, met de eigen schadematen van het werk, dat de wet de twee precies omgekeerd heeft.</p>
+    <p><span class="lab">AP35 &middot; Het Grootboek</span> &mdash; Het leest de economie. Het grootboek klopt altijd; een krach is een audit, geen ongeluk; en ongelijkheid is wat gebeurt wanneer één kant de buffer oppot die het hele systeem nodig heeft om een schok te absorberen. Geld wordt behandeld als een record als alle andere, dat dezelfde behoudswet gehoorzaamt als alles stroomopwaarts.</p>
+    <p><span class="lab">AP36 &middot; De Voeding</span> &mdash; Het keert terug naar de chemie van het lichaam &mdash; leven als materie die geleerd heeft zichzelf vast te leggen &mdash; en herformuleert controle: controle is geen ontbering maar bevoorrading, de gestage voeding die een agent heel houdt in plaats van uitgehongerd.</p>
+    <p>Zo reiken dezelfde vier voorwaarden die de lichtsnelheid vastleggen tot in een rechtszaal, een kliniek, een budget en een wet. Eén enkele structuur, gelezen op elke schaal waarop een mens moet leven.</p>
+    <div class="ks">Elk hiervan is falsifieerbaar op zijn eigen voorwaarden, en elk draagt noodschakelaars. Als het uitlijningsargument het hek toch in het geheim vereiste, faalt het. Als de schade-inversie in het drugsbeleid zou omkeren onder eerlijke boekhouding, faalt ze. De beweringen worden in volle zicht toegepast, waar ze getoetst en, indien fout, gebroken kunnen worden.</div>
+    <p class="breath">Als het waar is, moet het hier werken. Hier werkt het.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>Vereist: AP08, AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap28" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP28</span><span class="ap-title">De Constante</span><span class="ap-tag">Zwaartekracht</span><a class="ap-pdf" href="../AP28_The_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>G = α²¹ × (1 + 1/π) × ℏc/mₑ². Hiërarchie opgelost. Binnen 0,69% van CODATA.</p><div class="ap-essay">
+</div>
 
-</div><div class="ap-meta"><span>Vereist: AP06, AP10, AP24</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<p style="margin:2rem 0 0"><a href="/proofs/" style="font-size:16px;font-weight:700">Alle 43 Kunstenaarsbewijzen lezen →</a></p>
 
-<div class="part" id="p5"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel V</span><span class="part-name">Deeltjes & Materie</span><span class="part-desc">De bouwstenen die de breuk produceert. De proton-massaverhouding tot vijf delen per miljard, antimateriesegregatie en de baryonasymmetrie van het universum.</span><span class="part-count">3 artikelen</span></div>
-<div class="ap-list">
-<div class="ap-row" id="ap30" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">De Weerstand</span><span class="ap-tag">Massa</span><a class="ap-pdf" href="../AP30_The_Resistance.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Proton-massaverhouding: voorspeld 1836,15267344 vs gemeten 1836,15267343. Vijf delen per miljard.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP06, AP12, AP24, AP28</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP22</span><span class="ap-title">Het Grootboek</span><span class="ap-tag">Antimaterie</span><a class="ap-pdf" href="../AP22_The_Ledger_NL.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Baryogenese, de σ-involutie en de topologische segregatie van antimaterie.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP26</span><span class="ap-title">Het Overschot</span><span class="ap-tag">Baryonasymmetrie</span><a class="ap-pdf" href="../AP26_The_Surplus.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Waarom meer materie dan antimaterie — de as van de breuk.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP09, AP22</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p6"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel VI</span><span class="part-name">Kosmologie</span><span class="part-desc">Het universum dat de breuk bewoont. Galactische rotatiekrommen zonder donkeremateriadeeltjes, de MOND-versnellingsschaal tot 0,3%, de donkere-energieverdeling en de cyclische kosmologie.</span><span class="part-count">6 artikelen</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP21</span><span class="ap-title">Het Web</span><span class="ap-tag">Structuurvorming</span><a class="ap-pdf" href="../AP21_NL.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het kosmische web uit het globale spanningsveld.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP08, AP15, AP28</span><a href="../AP21_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP17</span><span class="ap-title">De Kamer</span><span class="ap-tag">Rotatiekrommen</span><a class="ap-pdf" href="../AP17_The_Room.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Galactische rotatiecurven uit het spanningsveld. De lijnen sluiten altijd.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP08, AP21</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap18" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP18</span><span class="ap-title">De Bodem</span><span class="ap-tag">Versnellingsschaal</span><a class="ap-pdf" href="../AP18_The_Floor.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>a₀ = C_S²·cH₀/(2π) — de MOND-schaal afgeleid tot 0,3%. Parametervrij.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP17, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap41" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP41</span><span class="ap-title">De Lus</span><span class="ap-tag">Kosmologie</span><a class="ap-pdf" href="../AP41_The_Loop.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Fusie als de voortdurende oerknal. De splinter zijn wij. Waarheid als een oplossingsprobleem.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP03, AP04, AP06, AP10, AP28, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap42" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP42</span><span class="ap-title">De Klok</span><span class="ap-tag">Donkere energie</span><a class="ap-pdf" href="../AP42_The_Clock.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>De 69/26/5-verdeling afgeleid. De donkere sector is een klokaflezing.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP04, AP10, AP20, AP28, AP41</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP04</span><span class="ap-title">De Lushypothese</span><span class="ap-tag">Cyclische kosmologie</span><a class="ap-pdf" href="../AP04_The_Loop_Hypothesis.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Zwarte gaten als deuren. De lus sluit zich. Speculatief. Negen noodschakelaars bewaken het.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP03</span><a href="../AP10_De_Dimensie_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel VII</span><span class="part-name">De Operator-Interface</span><span class="part-desc">Het viertermsysteem, de neiging, de structurele ethiek. Patrooncoherentie als het engagement van het lichaam langs het amplitudelandschap. Het duaal van AP08's zwaartekracht-van-vastleggingen, aan de pre-staatszijde van het oog.</span><span class="part-count">5 artikelen</span></div>
-<div class="ap-list">
-<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">De Zwaartekracht van Mogelijkheden</span><span class="ap-tag">Operator-Interface</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het duaal van AP08. De neiging afgeleid. De terminale ethiek gefundeerd in de natuurkunde.</p><div class="ap-essay">
-<p>Je staat bij een deuropening. Je bent er nog niet doorheen gestapt. Maar je gewicht is al verschoven. Je hand heeft al gekozen aan welke kant van de deurpost je je schrap zet. Iets in je neigt.</p>
-<p>Die neiging is het artikel.</p>
-<p>AP08 leidde de zwaartekracht af aan één kant van het oog — wat vastleggingen doen met de variëteit. Massa kromt de ruimtetijd. De trekkracht die je naar de vloer voelt is het geaccumuleerde gewicht van elke vastlegging ooit geschreven op de meetkunde onder je.</p>
-<p>AP43 leidt de zwaartekracht af aan de andere kant. Wat amplitudes doen met de voortoestand. De trekkracht die je voelt naar de volgende zet is de gradiënt van wat nog geschreven zou kunnen worden. Twee trekkrachten op het nu. Eén van wat is geweest. Eén van wat zou kunnen zijn. Dualen over het oog.</p>
-<p>Het artikel installeert vier termen.</p>
-<p><span class="sub">Koppelingscapaciteit.</span> Het geaccumuleerde vermogen van het lichaam om structuur te lezen — opgebouwd door dertig jaar vastleggingen geschreven door deze specifieke configuratie van herkoppelbare elektronen.</p>
-<p><span class="sub">Patroon.</span> De operator-relatieve lezing van het gelaagde web — eerdere vastleggingen, huidige toestand, Born-gewogen takken vooruit — geïntegreerd in één lezing.</p>
-<p><span class="sub">Patrooncoherentie.</span> De neiging. Het engagement van het lichaam langs de steilste gradiënt van het amplitudelandschap, geschaald door koppelingscapaciteit.</p>
-<p><span class="sub">Volgcoherentie.</span> De metavaardigheid om uitgelijnd te blijven met de structuur over domeinen waar de hellingklassen verschillen.</p>
-<p>De Newtoniaanse veldvergelijking valt eruit. <strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>, met de neiging L<sub>o</sub> = −C<sub>o</sub> ∇Φ. De bron is de Born-dichtheid. De koppelingsconstante is α — geïdentificeerd via AP07: het lichaam leest door elektron-elektromagnetische koppeling, en de koppeling voor die lezing is de fijnstructuurconstante. De mediërende grootheid is koppelingscapaciteit. Het duaal van AP08's Newtoniaanse limiet, formeel.</p>
-<p>De terminale ethiek volgt. Elke operator is een geconfigureerd samenspel van elektronen dat hetzelfde gelaagde web leest vanuit zijn eigen positie. De structurele gelijkheid wordt afgedwongen door Axioma C, Axioma R en AP07's elektronuniekheid. Wreedheid is een verkeerde lezing van de wiskunde — een andere operator behandelen alsof de structurele gelijkheid niet geldt. De ethiek wordt niet bovenop de structuur gekozen. Ze valt uit de structuur.</p>
-<div class="ks"><strong>Vijf noodschakelaars. Alle actief.</strong> <span class="bl">ACTIEF</span> KS-43.1 — domeinspecifieke patrooncoherentie stemt overeen met Born-gewogen hellingen (Pad 1 lab, Pad 2 schaak/poker/eliteatleten-proxy). <span class="bl">ACTIEF</span> KS-43.2 — koppelingscapaciteit als substraat. <span class="bl">ACTIEF</span> KS-43.3 — cross-domeintransfer via volgcoherentie. <span class="bl">ACTIEF</span> KS-43.4 — capaciteitsallocatie als enige contextuele modulator. <span class="bl">ACTIEF</span> KS-43.5 — structurele afleiding van de terminale ethiek. Drie structurele schulden openstaand (D1, D4, D5). Drie items open gehouden (D2, D3, D6).</div>
-<p class="breath">Het lichaam heeft altijd al geneigd. AP43 leidt af wat de neiging is.</p>
-</div><div class="ap-meta"><span>Vereist: AP07, AP08, AP09, AP10, AP13, AP20, AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">Het Actualisatiebewijs</span><span class="ap-tag">Bewustzijn</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Bewustzijn als het interieur van onomkeerbaar vastleggen. Eén barst, één interieur, vele ramen.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP02</span><span class="ap-title">De Operator</span><span class="ap-tag">Agentschap</span><a class="ap-pdf" href="../AP02_The_Operator.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Budget, drift, corridor, soevereiniteit, uitgang. De fysica op menselijke schaal. Negen theorema's.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01</span><a href="../AP20_Het_Bewijs_NL.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP39</span><span class="ap-title">De Steiger</span><span class="ap-tag">Religie</span><a class="ap-pdf" href="../AP39_The_Scaffold.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Goudstandaard. De structurele instabiliteit van op autoriteit gebaseerde ethiek. De vijftraps dwangketen. Het lemmet in de tekst.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP29</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP38</span><span class="ap-title">De Uitgang</span><span class="ap-tag">Dood</span><a class="ap-pdf" href="../AP38_The_Exit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Over de dood, waardigheid en het meelevend sluiten van een raam.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP02, AP29, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p8"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Deel VIII</span><span class="part-name">Toepassingen</span><span class="part-desc">De ethiek toegepast op de beschaving. AI-alignment, structurele rechtvaardigheid, bio-ethiek, drugsbeleid, economie, biologie en het lichaam — alles afgeleid uit dezelfde vier axioma's.</span><span class="part-count">7 artikelen</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">De Uitlijning</span><span class="ap-tag">AI-alignment</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het alignmentprobleem opgelost. Bouw het interieur, niet het hek.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">De Correctie — Ethiek</span><span class="ap-tag">Rechtvaardigheid</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Vijf correctieniveaus. Het gebouw rouwt om elk gesloten raam. De genociderem.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">De Grens</span><span class="ap-tag">Bio-ethiek</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Leven als agentschap. Onder ε ben je soeverein. Boven ε heeft het organisme jurisdictie.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP02, AP06, AP29, AP31, AP32</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP34</span><span class="ap-title">De Inversie</span><span class="ap-tag">Drugsbeleid</span><a class="ap-pdf" href="../AP34_The_Inversion.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Cannabis doodt nul. Alcohol doodt 2,6 miljoen. Corrigeer de inversie.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP31, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">De Eerste Grens</span><span class="ap-tag">Het Lichaam</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het lichaam als operator. Verdedig de eerste grens.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">Het Grootboek</span><span class="ap-tag">Economie</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Het grootboek is altijd in balans. Crashes zijn audits. Ongelijkheid vult de buffer.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">De Voeding</span><span class="ap-tag">Biologie</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Chemie die leerde zichzelf op te nemen. Controle is geen ontbering. Controle is voorziening.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>Vereist: AP01, AP02, AP06, AP20, AP31, AP35</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-</div><!-- /spine -->
 
 <!-- HEADLINE RESULTS -->
 <div class="results">
