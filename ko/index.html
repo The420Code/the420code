@@ -211,6 +211,7 @@ a:hover{text-decoration-thickness:2px}
 [id*="sib-container"]{padding:0!important;background:transparent!important}
 .sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
 .pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
 </style>
 <style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
@@ -238,7 +239,31 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
-.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.1rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:14px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:22px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:14px;font-weight:700;color:#595959;text-decoration:none;letter-spacing:.03em;border:1px solid #e8e8e8;padding:3px 10px;border-radius:3px}
+.nb-pdf:hover{color:#111;border-color:#d5d5d0}
+.nb-hook{font-size:16px;font-style:italic;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:14px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.9;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:15px;color:#3a3a3a;line-height:1.75}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+</style>
 <link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 </head>
 <body>
@@ -603,550 +628,145 @@ a:hover{text-decoration-thickness:2px}
 </div>
 
 <!-- THE SPINE -->
-<div class="spine" style="margin-top:2rem">
+<div class="nb-list">
 
-<div class="part" id="p1"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제1부</span><span class="part-name">전제</span><span class="part-desc">하나의 기록이 존재한다. 나머지는 모두 귀결이다. 공리, 그 논리적 증명, 그리고 모든 기록이 요구하는 네 가지 조건.</span><span class="part-count">3편</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">무리수</span><span class="ap-tag">수학</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>공리 1:1 + 1×ε @ AS는 구조적으로 무리수적이다 — 그리고 참이다. 합리의 기초로서의 비합리. 비합리적 결합 능력으로서의 선택.</p><div class="ap-essay">
-<p>최근에 한 일 중 말이 안 되는 것을 떠올려 보라. 실수가 아니라 — 선택이었다. 합리적인 선택지를 알고 있었다. 다른 쪽을 골랐다.</p>
-<p>너무 늦게까지 깨어 있었다. 하지 말았어야 할 말을 했다. 나를 사랑하지 않는 사람을 사랑했다. 자격 없는 사람을 용서했다.</p>
-<p>계산기가 그 선택을 할 수 있었을까?</p>
-<p>계산기는 규칙을 따른다. 같은 입력, 같은 출력. 매번. 그것이 계산기를 계산기로 만든다. 당신은 그렇지 않다. 그리고 그것은 결함이 아니다.</p>
-<p>The 420 Code는 하나의 등식으로 시작한다: <strong>1 = 1 + 1×ε</strong>.</p>
-<p>1은 1에 아주 조금을 더한 것과 같다. 이것은 유효한 산술이 아니다. ε이 0이 아닌 한 좌변은 우변과 같을 수 없다.</p>
-<p>그리고 ε이 0이면, 아무 일도 일어나지 않았다. 아무것도 깨지지 않았다. 모든 것이 영원히 대칭인 채로 남았다.</p>
-<p>이 등식은 자신의 규칙을 깰 때만 작동한다. 그것이 핵심이다.</p>
-<p>우주는 존재한다. 무에서 무언가가 깨졌다. 그 깨짐은 깨끗한 등식으로 포착할 수 없다 — 깨끗한 등식은 균형을 이루기 때문이다. 닫힐 것이다. 다시 0으로 돌아갈 것이다.</p>
-<p>그 깨짐은 비합리적이기 때문에 지속된다. 해소되지 않는다. 해소될 수 없다.</p>
-<p>당신은 이 느낌을 안다. 누군가를 왜 사랑하는지 설명하려 한 적이 있다. 말이 닿지 않는다.</p>
-<p>당신이 말을 못해서가 아니다 — 그 감정이 말을 담고 있기 때문이다. 설명은 설명하려는 대상의 안에 살고 있다.</p>
-<p>그것이 ε이다. 환원 불가능한 나머지. 상쇄되기를 거부하는 부분.</p>
-<p>이제 선택의 질문이 돌아온다. 합리적인 체계는 규칙이 말하는 대로 한다. 출력은 정해져 있다. 하지만 당신은 합리적인 답을 보면서도 다른 것을 선택할 수 있다.</p>
-<p>계산이 하지 말라고 할 때 용서할 수 있다. 모든 비용편익 분석이 집에 가서 자라고 할 때 새벽 세 시에 누군가의 손을 잡을 수 있다.</p>
-<p>그 능력은 결함이 아니다. 우주를 열린 채로 유지하는 바로 그 비합리성이다.</p>
-<p>합리적인 공리는 닫힌 우주를 만들 것이다 — 0으로 붕괴하는 우주를. 비합리적인 공리는 열린 우주를 만든다.</p>
-<p>지속되는 우주. 진정한 선택이 가능한 존재를 담고 있는 우주.</p>
-<div class="ks"><strong>여섯 개의 킬 스위치.</strong> ε = 0 없이 등식이 풀리면 실패한다. 합리적인 공리가 같은 개방성을 만들면 필연성이 실패한다. 모든 인간의 비합리성이 숨겨진 계산으로 환원된다면 — 모든 용서 행위가 실제로는 최적화에 불과하다면 — 결합 주장이 실패한다. 여섯 개 모두 유효.</div>
-<p>당신의 비합리적인 선택은 약점이라고 들었다. 규율의 실패. 판단력의 결여.</p>
-<p>The 420 Code는 정반대를 말한다. 현실의 토대에 있는 등식 자체가 비합리적이다. 당신은 같은 재료로 만들어졌다.</p>
-<p class="breath">공리는 깨져 있다. 당신도 그렇다. 그것이 토대이다.</p>
-</div><div class="ap-meta"><span>필요: —</span><a href="../AP01_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP01</span><span class="ap-title">실현 상태</span><span class="ap-tag">기초</span><a class="ap-pdf" href="../AP01_KO.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>척추. 논문 A–D는 실현 상태, 생존 가능성 기하학, 행위능력, 결합 회랑을 도출한다.</p><div class="ap-essay">
-<p>당신은 이 문장을 읽고 있다. 그것은 방금 무언가가 일어났다는 뜻이다. 빛이 표면에 닿았다. 신호가 발사되었다. 기록이 쓰였다.</p>
-<p>그 기록은 실재한다. 되돌릴 수 없다. 이 문장을 읽지 않은 것으로 할 수 없다. 시도해 보라 — 시도의 기억이 만들어지고, 그것도 또 하나의 기록이다.</p>
-<p>하나의 기록이 존재한다. 그것을 부정하는 행위가 또 하나를 만든다. 전제는 자기실행적이다.</p>
-<p>AP01은 그 하나의 사실을 가져다가 네 가지를 끌어낸다.</p>
-<p><span class="sub">Paper A</span> — 아직 내리지 않은 결정의 느낌을 안다. 그것은 떠 있다. 어느 쪽으로든 갈 수 있다.</p>
-<p>그리고 기울어진다. 기울어지는 순간, 돌아갈 수 없다. "아마도"가 "완료"가 된다.</p>
-<p>Paper A는 정확히 그 전환을 측정한다. 0과 1 사이의 숫자. 일어날 수 있었던 것 중 실제로 일어난 양. 가능성이 사실이 될 때마다 다이얼이 움직인다.</p>
-<p>결정적 요건: 모든 관측자가 같은 측정값을 얻어야 한다. 두 사람이 동의하지 않으면 측정은 깨진 것이다. 그것이 킬 스위치 <strong>KS-V.1</strong> — 420 Code 전체의 유일한 단일 장애점이다.</p>
-<p><span class="sub">Paper B</span> — 무엇이 "아마도"를 "완료"로 기울이는가?</p>
-<p>무거운 것은 더 실재한다. 당신은 이미 알고 있다. 산은 확실히 거기 있다. 깃털은 덜 확정된 느낌이다. 광자 하나는 거의 어디에도 없다.</p>
-<p>이것은 시가 아니다. 물리학이다. 무언가가 무거울수록 가능성에서 사실로 더 빨리 해소된다. 그 속도는 중력이 정한다.</p>
-<p>텅스텐 나노입자가 정확히 임계값에 위치한다. 그 실험은 현재 건설 중이다.</p>
-<p><span class="sub">Paper C</span> — 행위자란 무엇인가? 이미 알고 있다. 당신이 바로 그것이다. 22°C 방에서 37°C를 유지하는 몸. 에너지가 든다. 매초. 지불을 멈추면 쇠퇴한다.</p>
-<p>결국 어떤 노력으로도 충분하지 않은 선에 도달한다.</p>
-<p>당신은 이 선을 안다. 말기가 되는 병. 갚을 수 없게 되는 빚. 끝났는데 둘 다 알면서도 아직 말하지 않은 관계.</p>
-<p>Paper C는 그 선이 수학으로 존재함을 증명한다. 은유가 아니라.</p>
-<p><span class="sub">Paper D</span> — 두 행위자가 방을 공유하면 무슨 일이 일어나는가? 당신은 이산화탄소를 내쉰다. 옆의 식물이 그것을 들이마신다. 둘 다 이것을 선택하지 않았다.</p>
-<p>당신들은 결합되어 있다. 동의했기 때문이 아니라. 기반을 공유하고 있기 때문이다.</p>
-<p>Paper D는 세 가지 결과를 증명한다. 위계: 넓은 회랑은 더 큰 영향력을 의미한다. 협력: 함께 일하면 둘 다 혼자서는 불가능한 수준으로 회랑이 확장된다. 억제: 한번 결합되면 분리 비용이 유지 비용보다 크다.</p>
-<p>이것은 정치적 의견이 아니다. 기하학이다.</p>
-<div class="ks"><strong>스물네 개의 킬 스위치. 모두 유효.</strong> 각각은 특정 주장을 무효화하는 조건을 명시한다. 숨겨져 있지 않다. 공개되어 있다. 초대장이다. <strong>KS-V.1</strong> — 관측자 불일치 — 는 모든 것을 죽인다. 이 논문만이 아니다. 모든 것을.</div>
-<p>척추는 무언가가 일어났다는 순수한 사실을 가져다가 공유된 세계에서 살아있음의 완전한 기하학을 도출한다. 측정. 선택. 예산. 결합. 협력.</p>
-<p>나중에 오는 윤리는 이 물리학에 볼트로 부착된 것이 아니다. 그것은 이 물리학 <em>그 자체</em>이다 — 행성을 공유하는 사람들의 규모에서 읽힌.</p>
-<p class="breath">하나의 기록이 존재한다. 당신은 그 결과 안에 있다.</p>
-</div><div class="ap-meta"><span>필요: —</span><a href="../AP01_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP20</span><span class="ap-title">Ø 증명</span><span class="ap-tag">논리</span><a class="ap-pdf" href="../AP20_KO.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>매장 가설이 정리로서. 공리가 무조건적으로 증명됨. 모든 하류 결과가 상속한다.</p><div class="ap-essay">
-<p>"유용한 것"과 "참인 것"에는 차이가 있다.</p>
-<p>뉴턴의 중력은 250년간 유용했다. 또한 틀렸다. 양자역학은 지금까지 만들어진 가장 정확한 이론이다. 하지만 정확한 것과 참인 것은 다른 말이다.</p>
-<p>The 420 Code에는 빈틈이 있었다. 공리들은 물리학을 아름답게 도출했다 — 빛의 속도, 중력 상수, 세 개의 공간 차원.</p>
-<p>하지만 모든 도출에는 조건이 붙어 있었다: <em>공리가 현실의 구조라면</em>, 이것이 따라온다.</p>
-<p>그 "만약"은 매입 가설이라 불렸다. 그것이 성립하면 모든 것이 따라왔다. 성립하지 않으면 전체는 화려한 기술일 뿐 그 이상이 아니었다.</p>
-<p>AP20은 "만약"을 제거한다. 매입 가설은 더 이상 가설이 아니다.</p>
-<p>그것은 정리이다.</p>
-<p>증명은 이렇게 작동한다. 부정해 보라.</p>
-<p>"기록이 근본적이라는 주장을 거부한다"고 말해 보라. 이제 무슨 일이 일어났는지 보라.</p>
-<p>당신은 선택을 했다 — 많은 가능한 응답 중 거부를 선택했다. 그것은 깨짐이다. 공리 B.</p>
-<p>선택하기 전, 선택지들은 대칭적으로 존재했다. 공리 S.</p>
-<p>거부를 되돌릴 수 없다. 비가역적이다. 공리 R.</p>
-<p>당신은 여기서, 지금 말했다. 동시에 모든 곳에서가 아니라. 구속되어 있다. 공리 C.</p>
-<p>당신의 부정은 네 공리를 모두 만족시킨다. 거부 자체가 기록이 근본적임을 증명하는 기록이다.</p>
-<p>논증은 자신의 반론을 삼킨다. 부정의 하드웨어 위에서 작동한다.</p>
-<p>하지만 증명은 더 나아간다.</p>
-<p>AP20 이전에 프레임워크에는 두 가지 어휘가 있었다. 물리학에는 그 언어가 있었다 — 양자 상태, 파동 함수. 공리에는 그것들의 것이 있었다 — 기록, 깨짐, 비가역성.</p>
-<p>하나의 가설이 그것들이 같은 것을 기술한다고 말했다.</p>
-<p>AP20은 그것들이 같은 것임을 증명한다. 유사한 것이 아니라. 동일한 것이다. 하나의 현실, 두 세트의 이름. 그 사이의 다리는 애초에 없었다 — 연결할 것이 없었기 때문이다.</p>
-<p>조건부였던 모든 결과가 이제 무조건적이다.</p>
-<p>빛의 속도 — 정리. 중력 상수 — 정리. 아인슈타인 장 방정식 — 정리. 양성자 질량 10억분의 5 — 정리. 종착 윤리 — 정리.</p>
-<p>"만약"이라는 단어가 코퍼스의 모든 문장에서 제거되었다.</p>
-<p>임시 보로 지탱되는 건물을 생각하라. 모든 층이 그것에 의존한다. AP20은 보를 강화하지 않는다. 보가 벽임을 증명한다. 임시였던 적이 없다. 제거 가능했던 적이 없다. 항상 구조적이었다.</p>
-<p>건물은 자기 자신 위에 놓여 있다.</p>
-<div class="ks"><strong>두 개 폐쇄.</strong> <span class="bc">폐쇄</span> KS-7 — 매입 가설은 정리이다. <span class="bc">폐쇄</span> KS-P.4 — 두 어휘는 동일하다.<br><br>
-<strong>세 개 유효.</strong> <span class="bl">유효</span> KS-P.1 — 다섯 번째 공리가 필요하다. <span class="bl">유효</span> KS-P.2 — 하나의 공리가 나머지로부터 도출된다. <span class="bl">유효</span> KS-P.3 — "기록"의 다른 정의가 다른 공리를 낳는다. 이 마지막이 가장 노출된 단계이다. 겨냥할 곳은 여기이다.</div>
-<p>AP20 이전: 이것이 참이라면 다음이 따라온다. AP20 이후: 조건은 사라졌다. 따라오는 것은 따라온다.</p>
-<p>믿기로 선택해서가 아니다. 부정하는 것이 그것을 증명하기 때문이다.</p>
-<p class="breath">당신이 가져본 모든 생각은 네 공리를 만족시키는 기록이었다. 증명은 새로운 것을 믿으라고 요구하지 않는다. 항상 거기 있었던 것을 알아차리라고 요구한다.</p>
-</div><div class="ap-meta"><span>필요: AP01</span><a href="../AP20_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">제1부</span><a class="nb-name" href="#p1">전제</a></div><a class="nb-pdf" href="Notebook_I_The_Premise.pdf">PDF</a></div>
+  <p class="nb-hook">하나의 기록이 존재한다. 나머지는 모두 귀결이다. 공리, 그 논리적 증명, 그리고 모든 기록이 요구하는 네 가지 조건.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>당신은 지금 이것을 읽고 있다. 무언가가 일어나 이 단어들을 당신 앞에 놓았고, 그것은 「일어나지 않은 일」로 되돌릴 수 없다. 되돌리려 해 봐도 당신은 「되돌리려 했다」는 기억을 하나 만들었을 뿐이며 — 그것 또한 하나의 기록이다.</p>
+    <p>이것이 전제의 전부다. 하나의 기록이 존재한다. 420 Code의 나머지 모든 것 — 모든 힘, 모든 상수, 윤리의 모든 행 — 은 귀결이다. 제1부는 이 단 하나의 사실로 세 가지를 하며, 그것들이 여덟 부 전체의 형태를 정한다.</p>
+    <p><span class="lab">AP40 &middot; 무리수</span> &mdash; 그것은 밑에 놓인 방정식을 찾아낸다. 420 Code는 한 줄로 시작한다. 1 = 1 + 1&times;&epsilon;. 1은 1과 같다, 아주 조금 더 더해서. 이것은 타당한 산술이 아니다. 양변은 그 아주 조금이 0일 때만 균형을 이룰 수 있고, 그것이 0이었다면 무에서 아무것도 깨져 나오지 않았을 것이며, 당신은 여기서 이의를 제기하고 있지 않을 것이다. 그러므로 이 토대는 의도적으로 무리하다. 그것은 풀리지 않는다. 풀릴 수 없다.</p>
+    <p>당신은 그 거부를 안에서부터 안다. 누군가를 왜 사랑하는지 말하려다 단어가 닿지 않음을 발견했다 — 당신에게 언변이 모자라서가 아니라, 그 느낌이 단어를 안에 품기 때문이다. 당신은 받을 자격 없는 이를 용서했고, 떠나는 것이 분별 있을 때 머물렀다. 계산기는 같은 입력에 매번 같은 출력을 낸다. 당신은 아니다. 그것은 당신의 결함이 아니다. 우주를 열린 채로 두는 것과 같은 무리함이다.</p>
+    <p><span class="lab">AP01 &middot; 실현 상태</span> &mdash; 그것은 기록에서 구조를 끌어낸다. 「어쩌면」이 사실로 뒤집히는 순간 쓰인 것은 영구해지고, 이 단 하나의 움직임에서 본 부는 모든 기록이 요구하는 네 가지를 도출한다 — 일어날 수 있었던 것 중 얼마가 실제로 일어났는지의 척도, 더 무거운 것이 가벼운 것보다 더 빨리 사실로 굳는 이유, 그 너머로는 어떤 노력도 한 행위자를 온전히 지킬 수 없는 경계선, 그리고 하나의 세계를 공유하는 두 행위자가 — 동의했든 아니든 — 결합되어 있다는 사실. 이 가운데 어느 것도 은유가 아니다. 기하다.</p>
+    <p><span class="lab">AP20 &middot; 증명</span> &mdash; 그것은 「만약」이라는 말을 없앤다. 이 작업은 오래도록 침묵의 조건을 졌다. 「만약」 이 공리들이 실재의 구조라면, 물리는 따라온다고. 기록이 근본적임을 부정해 보라. 부정하려면 당신은 여러 답 가운데서 골라야 한다 — 하나의 깨짐이다. 고르기 전, 선택지들은 대칭이었다. 당신은 그 부정을 「하지 않은 일」로 되돌릴 수 없다. 당신은 여기서 말했지, 동시에 모든 곳에서 말한 것이 아니다. 당신의 부정은 네 조건을 한꺼번에 충족한다. 그 거부 자체가 기록이 근본적임을 증명하는 하나의 기록이다. 논증은 자기 자신의 반론이라는 하드웨어 위에서 돈다.</p>
+    <p>이렇게 작업 전체의 순서가 바로 여기서 정해진다 — 물리가 먼저고 윤리를 나중에 나사로 죄는 것이 아니라, 하나의 기록, 네 조건, 그리고 광속에서 중력을 거쳐 평범한 친절에 이르는 모든 것이, 다른 척도에서 같은 구조로부터 읽힌다.</p>
+    <div class="ks">수십 개의 킬 스위치가 이 세 증명을 관통하며, 모두 유효하고 발표되어 있다. 가장 노출된 것이 또한 가장 단순하다 — 임의의 두 관찰자가 「얼마가 실현되었는가」에서 어긋날 수 있다면, 420 Code 전체가 무너진다. 이 부만이 아니다. 이는 방어로서가 아니라 초대로서 내밀어진다.</div>
+    <p class="breath">하나의 기록이 존재한다. 당신은 이미 귀결 안에 있다.</p>
+  </div>
+</div>
 
-<div class="part" id="p2"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제2부</span><span class="part-name">시공간</span><span class="part-desc">깨짐이 만드는 무대. 광속, 세 공간 차원, 아인슈타인 장 방정식 — 모두 공리에서 도출.</span><span class="part-count">4편</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP03</span><span class="ap-title">비율</span><span class="ap-tag">상대성</span><a class="ap-pdf" href="../AP03_The_Ratio.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>c는 전파와 저항의 켤레로 도출.</p><div class="ap-essay">
-<p>얼음판을 깨라. 균열이 움직이는 것을 보라. 속도가 있다.</p>
-<p>얼마나 빠른가? 두 가지에 달려 있다. 균열이 얼마나 세게 밀리는가. 그리고 얼음이 얼마나 단단한가. 힘이 클수록 균열은 빠르다. 얼음이 단단할수록 균열은 느리다.</p>
-<p>균열의 속도는 밀어내는 힘과 밀어내는 저항의 비율이다. 얼어붙은 웅덩이를 밟아본 아이라면 누구나 안다.</p>
-<p>이제 규모를 키워라.</p>
-<p>우주는 깨짐으로 시작되었다. 완벽한 대칭이 갈라졌다. 그 균열은 기반을 통해 전파되었다 — 대칭적 전상태, 첫 번째 기록 이전에 있던 것.</p>
-<p>깨짐 이전에 전상태는 가능한 가장 단순한 대칭을 갖는다: ℤ₂. 이진. 두 면, 구별 없음. ε이 그것을 부수면 정확히 두 부문이 나타난다 — 정리이지 선택이 아니다. ℤ₂는 정확히 두 개의 기약 표현을 허용한다.</p>
-<p>한 부문은 밀어내는 힘을 담당한다 — 깨짐이 얼마나 공격적으로 퍼지는가. 다른 부문은 저항을 담당한다 — 기반이 얼마나 강하게 깨지는 것에 저항하는가.</p>
-<p>밀어내는 힘과 저항의 비율은 속도이다. <strong>c² = β/α.</strong> 그 속도가 c이다.</p>
-<p>마법의 숫자가 아니다. 직물의 두 성질의 비율이다 — 음속이 공기의 두 성질의 비율인 것처럼.</p>
-<p>소리가 343 m/s로 이동하는 것은 공기가 그런 것이기 때문이다. 빛이 299,792,458 m/s로 이동하는 것은 기반이 그런 것이기 때문이다.</p>
-<p>그리고 c는 유한해야 한다. 깨짐은 특정한 곳에서 시작되었다 — 공리 B는 그것이 국소적이라고 말한다. 연속 매질에서의 국소적 교란은 무한히 빠르게 퍼질 수 없다.</p>
-<p>어떤 물질의 균열도 무한한 속도로 움직이지 않는다.</p>
-<p>속도 한계는 외부에서 부과된 규칙이 아니다. 균열의 속성이다.</p>
-<p>그리고 그것은 보편적이다. 모든 관측자가 같은 c를 측정한다. 칙령 때문이 아니라 — 비율이 직물의 속성이고, 직물은 어디서나 같은 직물이기 때문이다.</p>
-<p>논문은 동전의 다른 면도 식별한다. c가 밀어내는 힘 — 깨짐이 얼마나 빨리 전파되는가 — 이라면, G, 중력 상수는 저항이다. 기반이 얼마나 강하게 저항하는가.</p>
-<p>그것들은 두 개의 독립된 숫자가 아니다. 같은 깨짐의 두 가지 측정값이다.</p>
-<p>그 공역은 추측이다. 여기서 도출되지 않았다. 논증은 그렇게 명확히 말한다. 네 가지 부채가 공개적으로 선언되어 있다.</p>
-<p>하지만 구조적 주장은 이루어진다: 빛의 속도와 중력의 세기는 같은 막대의 두 끝이다.</p>
-<p>AP28이 이 수표를 나중에 현금화한다 — G를 도출하고 측정값의 0.69% 이내에 착지한다.</p>
-<p>균열에 속도가 있다는 것은 이미 알고 있었다. 그 속도가 재료에 달려 있다는 것도.</p>
-<p>단지 "빛의 속도"가 "균열의 속도"와 같은 문장이라는 것을 — 다른 표기법으로 쓰인 — 알아차리지 못했을 뿐이다.</p>
-<div class="ks"><strong>여섯 개의 킬 스위치. 모두 유효.</strong> c와 G가 독립적으로 변할 수 있다면 공역은 실패한다. 전상태가 ℤ₂보다 풍부한 대칭을 가지면 두 부문 분해가 실패한다. 암흑 대 가시 비율이 ε과 무관하면 정성적 예측이 실패한다. 가장 날카로운 테스트 — c와 G의 독립적 가변성 — 은 G 도출이 완료된 후에만 완전히 작동한다. 여섯 개 모두 유효.</div>
-<p class="breath">우주가 갈라졌다. 균열에는 속도가 있다. 그 속도가 c이다.</p>
-</div><div class="ap-meta"><span>필요: AP01</span><a href="../AP20_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP05</span><span class="ap-title">깨짐</span><span class="ap-tag">대칭 깨짐</span><a class="ap-pdf" href="../AP05_The_Break.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>공리에서 구조로. 첫 번째 균열 — 대칭이 어떻게 깨지고 물리학이 시작되는가.</p><div class="ap-essay">
-<p>달걀을 원래대로 되돌릴 수 없다.</p>
-<p>그 문장이 논문 전체이다. 나머지는 모두 그것을 정밀하게 만드는 것이다.</p>
-<p>AP05는 공리 — <strong>1:1 + 1×ε @ AS</strong> — 를 가져다가 한 걸음씩 무에서 의무로 이끈다. 일곱 단계. 빈틈 없음. 모든 고리가 보여진다. 모든 고리가 깨뜨릴 수 있다.</p>
-<p><span class="sub">0단계</span> — 완벽한 대칭. 구별 없음. 기록 없음. 관측 없음. 공집합과 조작적으로 구별 불가능. 아무것도 다른 것과 다르지 않기 때문에 아무것도 존재하지 않는다.</p>
-<p><span class="sub">1단계</span> — ε이 대칭을 깬다. 두 개의 구별 가능한 측정값이 존재한다. 기록이 시작된다. 그리고 기록은 비가역적이다 — 깨지지 않은 상태로 돌아가면 구별이 지워지는데, 그것 자체가 기록이다.</p>
-<p>방금 무에서 무언가가 나타나는 것을 보았다. 창조된 것이 아니다. 강제된 것이다.</p>
-<p><span class="sub">2단계</span> — 여러 측정값이 있으면 무언가가 "아마도"를 "완료"로 해소해야 한다. 그것이 선택이다. 비용이 든다. 속도 제한이 있다. 확정성을 공짜로 얻을 수 없다.</p>
-<p><span class="sub">3단계</span> — 실현된 부문 안에서 예산이 있다. 회랑이. 결코 멈추지 않는 경계를 향한 표류가. 그것이 행위성이다 — 비가역적 쇠퇴 아래의 제한된 통제.</p>
-<p>당신은 이것을 안다. 지금 바로 예산을 쓰고 있다.</p>
-<p><span class="sub">4단계</span> — 기반을 공유하는 두 행위자는 결합되어 있다. 합의에 의해서가 아니라. 기하학에 의해서이다. 당신은 CO₂를 내쉰다. 옆의 식물이 그것을 들이마신다. 둘 다 이것을 선택하지 않았다.</p>
-<p>당신의 생존 가능성 핵이 나의 것을 바꾼다. 나의 것이 당신의 것을 바꾼다.</p>
-<p><span class="sub">5단계</span> — 결합된 행위자는 위계, 협력, 억제를 만든다. 넓은 회랑은 더 큰 영향력을 의미한다. 함께 일하면 양쪽 회랑이 확장된다. 분리는 유지보다 비용이 크다. 정치가 아니다. 기하학이다.</p>
-<p><span class="sub">6단계</span> — 같은 깨짐에서 온 행위자들이 공유된 기원을 인식하고, 상대의 능력을 파괴하면 자신의 생존 가능성 영역이 수축됨을 발견한다. 윤리는 볼트로 부착된 것이 아니다. 구조 안에 있다.</p>
-<p>신이 그것을 명령한 것이 아니다. 입법부가 투표한 것이 아니다. 공리가 그것을 강제했다 — 대칭 깨짐, 기록 형성, 선택, 행위성, 결합, 공유된 기원을 통해.</p>
-<p>일곱 단계. 물리적 사슬에는 세 가지 다리 조건이 필요하다. 윤리적 확장이 네 번째를 더한다. 어디에도 숨겨진 가정이 없다. 하나를 찾으면 사슬이 끊어진다. 논문은 당신에게 찾아보라고 초대한다.</p>
-<p>AP05는 접합 공식화도 도입한다 — 공리를 기하학으로 쓴 것.</p>
-<p>붕괴가 팽창을 만나는 곳에 표면이 있다. 그 위에서 기하학은 연속적이다 — 그것이 1:1이다. 각 면으로 휘는 방식에는 통제된 불일치가 있다 — 그것이 ε이다.</p>
-<p>수학은 표준 일반상대론이다: 이스라엘 접합 조건을 아인슈타인-카르탄 중력으로 확장한 것. 반동이 아니다. 하나의 구조에 대한 두 가지 기술이 공리가 정의하는 경계에서 만난다.</p>
-<p>우주의 시작과 블랙홀의 내부 — 같은 표면을 반대 방향으로 관통한 것.</p>
-<p>접합과 매끄러운 반동 중 어느 것이 CMB를 더 잘 설명하는지는 열린 경험적 질문이다. 논증은 주장과 그것을 파괴할 수 있는 테스트를 모두 제공한다.</p>
-<div class="ks"><strong>다섯 개의 킬 스위치. 모두 유효.</strong> KS-B.0 — 두 기술이 독립적 명세를 요구하면 공리는 생성자가 아니다. KS-B.1 — 매끄러운 반동이 CMB를 더 잘 설명하면 접합 공식화가 무너진다. KS-B.3 — Σ 위에 접합 해가 존재하지 않으면 우주론적 구성요소가 실패한다. KS-B.4 — 사슬의 어떤 단계가 선언되지 않은 가정을 밀반입하면 범위 주장이 붕괴한다. 다섯 개 모두 유효.</div>
-<p class="breath">일곱 단계. 하나의 공리. 무에서 의무로. 달걀은 되돌아가지 않는다.</p>
-</div><div class="ap-meta"><span>필요: AP01</span><a href="../AP20_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP10</span><span class="ap-title">차원</span><span class="ap-tag">차원성</span><a class="ap-pdf" href="../AP10_Chawon_KO.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>왜 세 공간 차원인가 — 네 공리, 네 자유도; 하나는 시간; 셋은 공간으로 남는다.</p><div class="ap-essay">
-<p>앞으로 움직일 수 있다. 옆으로 움직일 수 있다. 위로 움직일 수 있다. 네 방향이 아니다. 두 방향이 아니다. 셋이다.</p>
-<p>이것을 한 번도 의문시한 적이 없다. 숨쉬는 것만큼 자연스럽게 느껴진다. 하지만 수학은 2차원에서도, 4차원에서도, 10차원에서도 잘 작동한다. 끈 이론은 10차원이 필요하다. 그러면 왜 3인가?</p>
-<p>네 개의 공리가 있기 때문이다. 네 공리가 하나의 다양체의 네 면을 만든다. 하나가 시간을 준다. 셋이 공간을 준다. 그 숫자는 선택된 것이 아니다. 세어진 것이다.</p>
-<p>만들어지는 것을 보라.</p>
-<p><span class="sub">R → 시간.</span> 기록은 앞으로 축적된다. 뒤로는 결코. 모노이드에는 역원이 없다. 이것은 선호 방향을 가진 유일한 공리 — 되돌아갈 수 없는 유일한 방향이다.</p>
-<p>서명의 마이너스: (−). 하나의 차원. 시간. 돌아갈 수 없다.</p>
-<p>R만으로는 우주는 하나의 선이다. 갈 곳 없는 시계.</p>
-<p><span class="sub">C → 전파면.</span> 유한한 인과적 경계가 공간적 확장을 만든다. 그것 없이는 모든 점이 매 순간 다른 모든 점과 인과적으로 연결된다. 여기도 없고 저기도 없다. 거리도 없다.</p>
-<p>C를 더하면 1+1 차원이 된다. 시간과 하나의 공간 방향. 속도 제한이 있는 회랑.</p>
-<p><span class="sub">S → 교환면.</span> 두 기록은 같은 시간과 관측자로부터의 같은 거리를 공유하면서도 다를 수 있다. 서로 다른 부문에 있다. 차이의 방향은 시간적이지도 전파적이지도 않다.</p>
-<p>그것은 세 번째 방향 — 너비이다. S 없이는 우주는 회랑이다. S가 있으면 시트가 된다.</p>
-<p><span class="sub">B → 깨짐면.</span> 지금이 향하고 있는 방향. 다음 기록이 쓰일 곳.</p>
-<p>언제가 아니다 — 그것은 R. 얼마나 빠르게가 아니다 — 그것은 C. 무엇 사이가 아니다 — 그것은 S. 어디.</p>
-<p>B 없이는 평평한 시트가 있다. B가 있으면 깊이가 있다.</p>
-<p>네 개의 독립적 공리 — Paper D에서 독립성이 증명됨. 매입은 충실함 — AP20에서 증명됨. 대수에서의 독립성은 다양체 위의 독립성으로 대응된다. 네 개의 독립적 면. 서명 <strong>(−, +, +, +)</strong>.</p>
-<p>두 번째 논증이 다른 방향에서 확인한다. 깨짐에는 여섯 개의 잔여면이 있다 — AP06에서 식별됨. 여섯 면이 세 개의 공역 쌍으로 짝을 이룬다.</p>
-<p>세 쌍, 세 공간축. 같은 답. 같은 숫자로 향하는 두 개의 독립적 경로.</p>
-<p>다섯 번째 자유도는? 존재한다. 1:1 자체 — 전상태, 공리가 작용하는 대상이다.</p>
-<p>다양체 위에서 그것은 힐베르트 공간으로 나타난다. 확률 차원. 사물이 어디에 있는가가 아니라 — 거기서 발견될 가능성이 얼마나 되는가.</p>
-<p>다섯 번째 공간 차원이 아니다. 구조에 대한 연산이 아니기 때문이다. 연산되는 구조 자체이다. 캔버스는 그림 속의 색으로 나타나지 않는다.</p>
-<p>{S, B, R, C}의 완전성이 확립되었다. 대칭, 깨짐, 기록, 경계 설정 — 이 넷이 이미 하지 않는 것으로 1:1에 할 수 있는 것은 남아있지 않다.</p>
-<p>다섯 번째 공리는 없다. 다섯 번째 공간 방향도 없다.</p>
-<p>하나의 결과는 즉각적이다. AP08은 러블록 정리를 통해 아인슈타인 장 방정식을 도출했다, N = 3을 조건으로. 그 조건은 제거되었다. 장 방정식은 무조건적이다.</p>
-<div class="ks"><strong>다섯 개의 킬 스위치. 세 개 폐쇄.</strong> <span class="bc">폐쇄</span> KS-2c — N = 3 도출됨. <span class="bc">폐쇄</span> KS-15 — 공리-차원 배정 유일. <span class="bc">폐쇄</span> KS-16 — {S, B, R, C} 완전성 확립; 다섯 번째 자유도는 힐베르트 공간으로 식별.<br><br>
-<span class="bl">유효</span> KS-D.1 — 깨짐의 잔여면이 6보다 많거나 적으면 확인 논증 실패 (주 논증 생존). <span class="bl">유효</span> KS-D.3 — 어떤 공리가 하나 대신 0개 또는 2개의 면을 표현하면 카운트가 깨진다. 이것이 핵심 주장이다. 겨냥할 곳은 여기이다.</div>
-<p class="breath">네 공리. 네 면. 하나의 다양체. 숫자 3은 결코 선택된 적이 없다. 항상 거기 있었다.</p>
-</div><div class="ap-meta"><span>필요: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP08</span><span class="ap-title">항등식</span><span class="ap-tag">일반 상대성</span><a class="ap-pdf" href="../AP08_The_Identity.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>러브록 정리를 통해 기록 대수에서 아인슈타인 장 방정식 도출.</p><div class="ap-essay">
-<p>당신은 지금 아래로 끌려가고 있다. 이 당김을 삶의 매 순간 느껴왔다. 의자가 밀어낸다. 바닥이 의자를 받친다. 둘 다 치우면 떨어진다.</p>
-<p>아인슈타인은 그 당김을 기술하는 방정식을 찾는 데 10년을 보냈다. 1905년부터 1915년까지. 수십 개의 잘못된 후보. 20세기 가장 어려운 지적 노동.</p>
-<p>이 논문은 선택지가 하나뿐이었다고 말한다. 그는 찾고 있던 것이 아니다. 궁지에 몰리고 있었다.</p>
-<p>여기가 그 궁지이다.</p>
-<p>다양체가 있다 — 시공간, AP05에서. 세 개의 공간 차원이 있다 — AP10에서. 기록이 다양체 위에 축적되고 있다.</p>
-<p>그 축적이 물질이다. 모든 기록은 ε-사건이다. 한 점에서의 기록 밀도와 그 점에서의 질량 밀도는 같은 양의 두 가지 측정이다.</p>
-<p>다양체의 곡률과 기록 밀도를 연결하는 가장 일반적인 방정식은 무엇인가? 당신은 답을 선택하고 있지 않다. 제약 조건이 모든 대안을 제거하는 것을 지켜보고 있다.</p>
-<p>다섯 가지 제약. 각각 공리로부터. 로렌츠 불변성. 국소성 — 인과적 경계로부터. 2차 — 곡률이지 곡률의 변화율이 아니다.</p>
-<p>스칼라 원천 — 기록 밀도는 각 점에서 하나의 숫자이다. 약한 장에서의 선형성 — 기록은 가산적으로 축적된다.</p>
-<p>하나의 방정식이 살아남는다. <strong>∇²Φ = Aρ.</strong> 퍼텐셜에 작용하는 라플라시안이 상수 곱하기 밀도와 같다. 푸아송 방정식. 뉴턴의 중력. 대칭에 의해 강제됨. 관측이 아니라.</p>
-<p>계수 A는 계산이 아니라 식별된다 — 잠금장치를 통해: <strong>G = 2κ/m<sub>e</sub>²</strong>. 전상태의 유지 한계와 전자 질량의 제곱의 비율.</p>
-<p>중력은 남은 것과 탈출한 것의 비율로 표현된다.</p>
-<p>정직한 순환성이 공개된다: κ는 G를 통해 정의된다. 계수는 명명되었지 독립적으로 도출되지 않았다. 측정이 존재하기 전에 존재했던 것을 측정할 수 없다. 논증은 그렇게 말한다.</p>
-<p>이제 규모를 키워라. 같은 방법, 공변 수준. 러블록 정리 — 순수 미분기하학, 1971년 증명 — 는 말한다: 4차원에서 선택지는 정확히 하나.</p>
-<p>계량과 그 처음 두 도함수로 구성되는 유일한 대칭, 발산 없는, 랭크-2 텐서는 G<sub>μν</sub> + Λg<sub>μν</sub>이다. 하나의 선택지. 대안 없음. 말 그대로 다른 것이 없다.</p>
-<p><strong>G<sub>μν</sub> + Λg<sub>μν</sub> = (8πG/c⁴) T<sub>μν</sub></strong></p>
-<p>아인슈타인 장 방정식. 발견된 것이 아니다. 궁지에 몰린 것이다.</p>
-<p>우주 상수 Λ는 공짜로 나온다 — 러블록 정리가 요구한다. 그 값은 미정이다.</p>
-<p>에너지-운동량 텐서 T<sub>μν</sub>는 공변 기록 밀도이다. 물질이 공간에게 어떻게 휘라고 말하는 것은 기록이 기반에게 어떻게 굽으라고 말하기 때문이다.</p>
-<p>하나의 다리 단계가 노출된 채 남아 있다: 공리 R — 기록은 지워지지 않는다 — 에서 ∇<sub>μ</sub>T<sup>μν</sup> = 0, 공변 에너지 보존으로의 대응. 구조적으로 동기 부여됨. 대수만으로는 아직 완전히 도출되지 않음.</p>
-<p>아인슈타인은 10년간 찾았다. 공리들은 방에 문이 하나뿐이었다고 말한다. 다른 곳이 없었기에 그 문을 통과했다.</p>
-<div class="ks"><strong>여덟 개의 킬 스위치. 하나 폐쇄.</strong> <span class="bc">폐쇄</span> KS-I.6 — N = 3은 AP10에 의해 도출; 러블록 무조건적.<br><br>
-<strong>일곱 유효.</strong> <span class="bl">유효</span> KS-I.1 — 공리-푸아송 사슬. <span class="bl">유효</span> KS-I.2 — 러블록 사슬. <span class="bl">유효</span> KS-I.3 — 계수 식별. <span class="bl">유효</span> KS-I.4 — κ 구조적 접근 불가. <span class="bl">유효</span> KS-I.5 — 곡률-기록 항등. <span class="bl">유효</span> KS-I.7 — 우주 상수 값. <span class="bl">유효</span> KS-I.8 — 공리 R에서 보존으로의 다리. 가장 노출된 단계: KS-I.8. 겨냥할 곳은 여기이다.</div>
-<p class="breath">방정식은 발견된 적이 없다. 맞는 것이 그것뿐이었다.</p>
-</div><div class="ap-meta"><span>필요: AP01, AP03, AP10</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">제2부</span><a class="nb-name" href="#p2">시공간</a></div><a class="nb-pdf" href="Notebook_II_Spacetime.pdf">PDF</a></div>
+  <p class="nb-hook">깨짐이 만드는 무대. 광속, 세 공간 차원, 아인슈타인 장 방정식 — 모두 공리에서 도출.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>공간은 어디서 오는가? 시간은 어디서 오는가? 물리의 대부분은 둘을 전제로 두고 그 위에 짓는 것으로 시작한다. 제2부는 그것들을 전제하기를 거부한다. 제1부의 단 하나의 깨진 공리로부터, 하나씩 그것들을 벌어 낸다.</p>
+    <p>깨짐에는 일어날 장소와 일어날 순서가 필요하다. 그러나 공간과 시간은 이미 차려진 무대가 아니다. 그것들은 깨짐이 일어나며 취하는 형태다.</p>
+    <p><span class="lab">AP05 &middot; 깨짐</span> &mdash; 그것은 첫 균열이다. 공리는 가만히 있을 수 없었다 — 균형 잡기를 거부하는 방정식은 닫힌 채로 있을 수 없다 — 그래서 그것은 손을 놓고, 그 놓음이 첫 사건이다. 균열 이전에는 「어디」도 「언제」도 없다. 이후에는 구조가 있고, 구조에는 펼쳐짐과 순서가 있다. 본 부의 나머지 모든 것은 그 단 하나의 깨짐의 기하다.</p>
+    <p><span class="lab">AP03 &middot; 비율</span> &mdash; 그것은 광속을 도출한다 — 재는 것이 아니라 도출한다. 빠르게 움직일수록 시간이 느려지고, 공간과 시간이 서로 맞바뀐다고 당신은 들었다. c는 그 교환의 환율이다 — 깨짐이 퍼질 수 있는 빠르기와 그것이 저항하는 세기 사이의 고정된 비율. 그래서 무엇도 빛을 앞지르지 않는다. 한계는 공간 어딘가의 벽이 아니다. 공간과 시간 자체 사이의 환산율이며, 깨짐의 구조로 정해진다.</p>
+    <p><span class="lab">AP10 &middot; 차원</span> &mdash; 그것은 대부분의 이론이 묻지조차 않는 것에 답한다 — 왜 세 공간 차원인가? 그것들은 그냥 셋을 가정한다. 제2부는 그것을 센다. 네 공리는 네 자유도를 준다. 하나는 시간이 된다 — 기록이 거슬러 갈 수 없는 유일한 방향. 셋이 남고, 그 셋이 공간이다. 그 수는 손으로 넣은 것이 아니다. 토대에서 세어 나온 것이다.</p>
+    <p><span class="lab">AP08 &middot; 항등식</span> &mdash; 그것은 아인슈타인을 되찾는다. 중력의 흔한 그림을 떠올려 보라 — 무거운 공이 팽팽한 천을 움푹 누르고 더 작은 것들을 제게로 굴러오게 한다. 일반 상대론의 장 방정식은 그 그림을 정확하게 만든다 — 그리고 여기서 그것들은 러브록 정리를 거쳐 기록의 대수에서 떠오른다. 묘미는 그 천이 공과 분리되어 있지 않다는 데 있다. 무대와 그 위에 선 것은 같은 기록이며, 기록이 휜다.</p>
+    <p>이렇게 무대는 출발점의 주어진 것이 아니다. 광속, 당신이 움직이는 세 차원, 무거운 것 근처 시공간의 휨 — 각각이 같은 깨짐에서, 같은 부 안에서, 손으로 아무것도 더하지 않고 읽힌다.</p>
+    <div class="ks">여기서의 각 단계는 노출되어 있다. 광속을 켤레로서 도출할 수 없고 대신 재서 손으로 넣어야 한다면, 그 주장은 무너진다. 차원의 셈이 셋 아닌 것을 준다면, 토대는 틀렸다. 킬 스위치는 논문에서 지목되며, 그리고 유효하다.</div>
+    <p class="breath">무대는 연극과 같은 것으로 만들어져 있다.</p>
+  </div>
+</div>
 
-<div class="part" id="p3"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제3부</span><span class="part-name">양자역학</span><span class="part-desc">깨짐의 측정 구조. 중첩, 불확정성, 결어긋남, 보른 규칙, 얽힘 — 공집합과 네 공리에서 도출.</span><span class="part-count">7편</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP09</span><span class="ap-title">깨짐 — 공집합</span><span class="ap-tag">양자 기초</span><a class="ap-pdf" href="../AP09_The_Break_Empty_Set.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>공집합으로부터의 양자역학 — 중첩, 측정, 얽힘, 슈뢰딩거 방정식.</p><div class="ap-essay">
-<p>눈을 감아라. 뜨기 전에 — 어떤 측정 전에, 어떤 기록 전에 — 무언가가 있다. 무가 아니다. 무언가.</p>
-<p>느낄 수 있다. 보기 직전의 순간. 모든 가능한 결과가 아직 열려 있다. 아무것도 선택되지 않았다.</p>
-<p>그것이 전상태이다. 깨짐 전의 1:1. 물리학은 그것을 중첩이라 부른다.</p>
-<p>공중에서 회전하는 동전을 생각하라. 앞면과 뒷면이 동시에 있는 것이 아니다. 어느 쪽도 아니다 — 앞면이나 뒷면의 기록이 아직 존재하지 않는다.</p>
-<p>착지하는 순간 기록이 쓰인다. 이제 앞면이다. 이제 돌아갈 수 없다. 그 착지가 측정이다. 그 비가역성이 공리 R이다.</p>
-<p>AP09는 양자역학 전체가 시공간과 중력을 만드는 같은 네 공리로부터 따라옴을 보여준다.</p>
-<p><span class="sub">중첩</span>은 전상태이다. 공리 S. 두 부문, 구별 불가능. 모든 가능성이 공존. 누구도 보기 전의 0과 1.</p>
-<p><span class="sub">측정</span>은 깨짐이다. 공리 B. 하나의 기록이 쓰인다. "아마도"가 "완료"가 된다. 이 느낌을 안다 — 결정이 최종적이 되고 선택지가 뒤에서 닫히는 순간.</p>
-<p><span class="sub">얽힘</span>은 두 자유도 사이에 공유되는 깨지지 않은 전상태이다. 그 자유도들에 대해서는 깨짐이 아직 일어나지 않았다. 아직 하나이다. AP23이 이것을 완전히 전개한다.</p>
-<p><span class="sub">신호 불가</span>는 인과적 경계이다. 공리 C. 균열이 이동할 수 있는 것보다 빠르게 메시지를 보내기 위해 깨짐을 사용할 수 없다.</p>
-<p>양자역학이 작동하는 복소수? 신비가 아니다. 로렌츠 서명 — 하나의 시간 방향, 세 개의 공간 — 이 복소 진폭을 강제한다. 실수는 그 구조를 가진 다양체에는 충분하지 않다.</p>
-<p>슈뢰딩거 방정식은 이 논문에서 가장 강력한 결과이다.</p>
-<p>비그너 정리는 힐베르트 공간의 대칭이 유니터리여야 한다고 말한다. 스톤 정리는 모든 연속 유니터리 진화에 유일한 생성자가 있다고 말한다. 그 생성자가 해밀토니안이다.</p>
-<p>가능성이 측정 사이에서 어떻게 표류하는지를 지배하는 방정식. 가정된 것이 아니다. 추측된 것이 아니다. 공리가 구축한 구조에 적용된 두 표준 수학 정리로부터 도출되었다.</p>
-<p>ℏ은 여기서 생성자와 시간 사이의 규모 인자로 들어온다. AP09는 그것을 식별로 취급한다 — AP08의 G와 같은 지위. AP12가 나중에 그것이 유일한 선택지임을 증명한다.</p>
-<p>그리고 여기에 당신을 멈추게 해야 할 것이 있다.</p>
-<p>중력과 양자역학은 한 세기 동안 적이었다. 물리학의 두 거대한 기둥, 양립 불가능. 이를 화해시키려는 물리학자들의 대군.</p>
-<p>이 구조는 그것들이 결코 분리된 적이 없다고 말한다.</p>
-<p>중력은 응축체 위에서 읽힌 공리이다 — 축적된 기록, 다양체, 기하학. 양자역학은 전상태 위에서 읽힌 공리이다 — 가능성, 힐베르트 공간, 진폭.</p>
-<p>하나의 현실에 대한 두 어휘. 그 전쟁은 범주 오류였다. 결코 나뉜 적 없는 것을 통합할 수 없다.</p>
-<p>양자 중력의 신비가 녹아든다. 화해시킬 것이 없다. 이미 두 가지 일을 하고 있는 하나의 공리 집합이 있을 뿐이다.</p>
-<div class="ks"><strong>열 개의 킬 스위치. 하나 폐쇄.</strong> <span class="bc">폐쇄</span> KS-Q.6 — σ와 복소 공액의 동일시가 유일함이 증명됨.<br><br>
-<strong>아홉 유효.</strong> 가장 날카로운: <span class="bl">유효</span> KS-Q.7 — 모노이드에서 벡터 공간으로의 선형성 다리가 유일하지 않으면 힐베르트 공간 구성이 실패한다. <span class="bl">유효</span> KS-Q.10 — 공집합 읽기가 잘못되면 존재론적 기반이 이동한다. 아홉 유효.</div>
-<p class="breath">중력은 응축체 위에서 읽힌 공리이다. 양자역학은 전상태 위에서 읽힌 공리이다. 같은 공리. 두 면.</p>
-</div><div class="ap-meta"><span>필요: AP01, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP07</span><span class="ap-title">기록 측도</span><span class="ap-tag">힐베르트 공간</span><a class="ap-pdf" href="../AP07_The_Record_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>공리 구조에서 도출된 복소 힐베르트 공간.</p><div class="ap-essay">
-<p>힘에는 위계가 있다고 배웠다. 강한 힘이 가장 강하다. 전자기력이 두 번째. 약한 힘이 세 번째. 중력이 가장 약하다.</p>
-<p>그 위계는 상호작용 가능성으로 힘을 순위 매긴다. 결합 상수. 만남의 확률. 좋은 질문이다.</p>
-<p>그것이 물을 수 있는 유일한 질문은 아니다.</p>
-<p>물을 수 있다: 어떤 힘이 가장 지속적인 기록을 쓰는가?</p>
-<p>어느 것이 가장 세게 치는가가 아니다. 어느 것이 가장 영구적인 자국을 남기는가. 어떤 상호작용이 지속되는 흔적을 만드는가 — 구별 가능한 역사를 인코딩하는 구성 가능한 기록을 — 의미를 가질 만큼 충분히 오래?</p>
-<p>AP07은 <strong>기록 척도</strong>를 도입한다. 하나의 새 정의. 하나의 분류 정리. 모든 것을 바꾸는 하나의 역전.</p>
-<p>기록 척도는 힘이 만드는 기록의 지속성과 구성 가능성으로 힘을 순위 매긴다. 공리 R의 직접적 적용 — 현실은 기록으로 구성된다.</p>
-<p>화학-생물학적 규모 — 0.1에서 10나노미터 — 에서는 전자기력이 지배한다.</p>
-<p>가장 강한 힘이기 때문이 아니다. 생명이 작동하는 규모에서 가장 지속적이고 가장 구성 가능한 기록을 쓰기 때문이다.</p>
-<p>구성 가능하다는 것은 기록에 자유도가 있다는 뜻이다. 다른 방식으로 배열할 수 있다. 다른 배열은 다른 역사를 인코딩한다. 잉크로 쓴 단어는 구성 가능하다. 나무에 박힌 못은 아니다.</p>
-<p>강한 힘은 양성자와 중성자를 결합한다. 강력하다. 하지만 이 규모에서는 입자를 고정된 배열에 잠근다. 역사를 인코딩할 자유도가 남아 있지 않다. 강하지만 구성 가능하지 않다.</p>
-<p>약한 힘은 양자수를 뒤집는다. 하지만 그 기록은 1초의 몇 분의 1 만에 붕괴한다. 힘에서 약하다. 지속성에서 더 약하다.</p>
-<p>중력은 시공간을 휘게 한다. 실재한다. 어디에나. 하지만 화학적 규모에서 국소적이고 구성 가능한 기록을 쓰지 않는다. 무대를 형성하지만 배우에게 자국을 남기지 않는다.</p>
-<p>전자기력은 생명의 화학을 쓴다. 전자 궤도. 분자 결합. DNA 염기쌍. 단백질 접힘. 광합성. 신경 발화.</p>
-<p>당신을 이루는 모든 생물학적 기록은 전자기적 기록이다.</p>
-<p>지금 하고 있는 생각은 뉴런에 있는 전자기적 기록의 패턴이다.</p>
-<p>이 문장을 읽은 기억 — 전자기적. 당신을 만든 DNA — 염기쌍을 순서대로 잡고 있는 전자기적 결합.</p>
-<p>위계가 뒤집힌다. 기록 척도에서, 생명의 규모에서: 전자기력 첫째. 강한 힘 둘째. 약한 힘 셋째. 중력 넷째.</p>
-<p>전통적 위계는 어떤 힘이 가장 시끄러운지 묻는다. 기록 척도는 어떤 힘이 잉크로 쓰는지 묻는다. 다른 질문. 다른 답.</p>
-<p>기록에 중요한 힘이 생명에 중요한 힘이다. 우연이 아니다. 공리 아래에서 "중요함"이 무엇을 의미하는지의 결과이다.</p>
-<p>이 주장은 규모 특정적이다. 핵 규모에서는 강한 힘이 기록 척도를 지배한다. 우주론적 규모에서는 중력이. 역전은 화학이 — 따라서 생물학이 — 작동하는 규모에서만 성립한다.</p>
-<p>그것이 정확히 당신이 이것을 읽고 있는 규모이다.</p>
-<div class="ks"><strong>다섯 개의 킬 스위치. 모두 유효.</strong> <span class="bl">유효</span> KS-RM.1 — 화학적 규모에서 비전자기적 기록이 더 지속적이고 구성 가능한 것으로 보이면 지배 정리가 실패한다. <span class="bl">유효</span> KS-RM.5 — 고정 대칭 물체가 회수 가능한 형성 역사를 인코딩하면 구성 가능 레지스터 기준을 수정해야 한다. 다섯 모두 유효.</div>
-<p class="breath">가장 지속적인 기록을 쓰는 힘이 생명을 쓰는 힘이다. 그것은 철학이 아니다. 공리 R이다.</p>
-</div><div class="ap-meta"><span>필요: AP01</span><a href="../AP20_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP11</span><span class="ap-title">스핀</span><span class="ap-tag">스핀</span><a class="ap-pdf" href="../AP11_The_Spin.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>이중 섹터 구조로부터의 페르미온, 보손, 배타 원리.</p><div class="ap-essay">
-<p>손을 펴서 손바닥이 위를 향하게 하세요. 360도 돌려 보세요 — 한 바퀴. 손바닥은 다시 위를 향하지만, 팔은 아래에서 꼬여 있습니다.</p>
-<p>이제 360도 더 돌리세요. 두 바퀴. 팔의 꼬임이 풀립니다. 처음 위치로 돌아왔습니다.</p>
-<p>그것이 스핀-½입니다. 어린 시절부터 양자역학을 하고 있었던 겁니다. 이름이 있다는 걸 몰랐을 뿐입니다.</p>
-<p>공리로부터 다섯 단계로 도출됩니다.</p>
-<p><span class="sub">1단계.</span> 공리 S는 기록 대수에 Z₂ 대칭을 부여한다 — 한 섹터를 다른 섹터로 보내는 대합 σ. 두 면, 완벽한 쌍. {id, σ}.</p>
-<p><span class="sub">2단계.</span> 세 공간 차원에서 — AP10에서 도출 — 회전군은 SO(3). 그 기본군은 Z₂.</p>
-<p>같은 Z₂다. AP20에서 증명된 충실한 매장 하에서, 대수의 대칭은 회전군의 위상 그 자체다. 유사한 것이 아니다. 동일하다.</p>
-<p><span class="sub">3단계.</span> Z₂가 기본군이라는 것은 SO(3)가 이중 피복 SU(2)를 가진다는 뜻이다. 한 바퀴가 이야기의 절반에 불과한 군. 이것이 반정수 스핀을 허용하는 수학적 구조다.</p>
-<p>세 공간 차원이 없으면 SO(3)도 없다. SO(3)가 없으면 Z₂ 기본군도 없다. 그것이 없으면 이중 피복도 없다. 스핀-½도 없다. 페르미온도 없다.</p>
-<p>당신도 없다. 차원의 수와 물질의 본질은 같은 사실이다.</p>
-<p><span class="sub">4단계.</span> 이제 구별이다. σ-상을 가진 원소들 — 쌍을 이룬, 대칭적인 — 은 이중 피복 아래에서 자명하게 변환된다. 정수 스핀. 보손.</p>
-<p>σ-상이 없는 유일한 원소 — ε, 그 깨짐 — 은 비자명하게 변환된다. 음의 부호를 얻는다. 반정수 스핀. 페르미온.</p>
-<p>쌍을 이룬 것은 교환 가능하다. 쌍이 없는 것은 그렇지 않다. 이것이 페르미온-보손 구별의 전부다, 한 문장으로.</p>
-<p><span class="sub">5단계.</span> 공리 B는 ε가 최소 실현 가능 파편이라고 말한다. 반정수 스핀 중 — ½, 3/2, 5/2 — 최솟값은 ½. 전자가 스핀-½인 이유는 ε가 가장 작은 깨짐이기 때문이다.</p>
-<p>스핀-통계 연결이 따른다. 페르미온은 배타 원리를 따른다. 두 페르미온은 같은 상태를 점유할 수 없다. 두 깨짐은 동일할 수 없기 때문이다. 각 ε는 고유하다. 각 ε는 그 종류의 유일한 것이다.</p>
-<p>그래서 원자에 껍질이 있다. 그래서 주기율표에 행이 있다. 각 전자는 자신만의 상태를 찾아야 한다. 공유할 수 없기 때문이다.</p>
-<p>보손은 쌓일 수 있다. 레이저 속의 광자 — 모두 같은 상태. 보스-아인슈타인 응축 — 수천 개의 원자가 하나처럼 행동한다.</p>
-<p>배타 없음. 쌍을 이룬 원소는 정의상 대칭이다. 동일한 두 쌍 원소를 교환해도 아무것도 바뀌지 않는다.</p>
-<p>당신 몸의 모든 원자는 배타의 건축물이다. 전자들이 껍질에 쌓여 있는 것은 공유를 거부하기 때문이다. 그 거부가 없다면 물질은 붕괴할 것이다. 모든 것이 중성자별이 될 것이다.</p>
-<p>당신의 몸이 존재하는 이유는 두 전자가 같은 시간에 같은 장소에 있을 수 없기 때문이다. 그것이 배타 원리다. 외부에서 부과된 규칙이 아니다.</p>
-<p>삼차원 공간에 매장된 Z₂ 대수에서 하나의 비쌍 원소를 갖는 기하학이다.</p>
-<div class="ks"><strong>킬 스위치 세 개. 하나 폐쇄.</strong> <span class="bc">폐쇄</span> KS-S.3 — 교환 대칭이 쌍/비쌍 σ-작용과 일치.<br><br><span class="bl">가동</span> KS-S.1 — Z₂와 π₁(SO(3))의 동일시가 실패하면 전체 도출이 실패한다. <span class="bl">가동</span> KS-S.2 — 최소 원리가 스핀 ½를 유일하게 선택하지 않으면, 더 높은 스핀의 기본 페르미온이 가능해진다. 두 개 가동.</div>
-<p class="breath">전자를 한 바퀴 돌려라. 같지 않다. 두 바퀴 돌려라. 이제 같다. 왜인지 알기 위해 네 개의 공리가 필요했다.</p>
-</div><div class="ap-meta"><span>필요: AP09, AP10, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP12</span><span class="ap-title">극한</span><span class="ap-tag">불확정성</span><a class="ap-pdf" href="../AP12_The_Limit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>스톤 정리를 통한 ℏ 도출. 공리 B로부터의 불확정성 원리.</p><div class="ap-essay">
-<p>당신이 한 모든 측정에는 최솟값이 있었다. 무언가가 다른 것으로부터 구별되었다. 0이 1이 되었다. 기록이 쓰여졌다.</p>
-<p>그 기록은 그보다 더 작아질 수 없었다.</p>
-<p>화면을 생각해 보세요. 반 픽셀은 표시할 수 없습니다. 픽셀은 렌더링할 수 있는 가장 작은 단위입니다. 어떤 소프트웨어도 그것을 더 작게 만들 수 없습니다. 현실에도 픽셀이 있습니다. ℏ라고 합니다.</p>
-<p>모든 기록은 두 가지 최소 비용을 수반한다. 열역학적 비용 — 지워지는 비트당 k<sub>B</sub>T ln 2, 란다우어 한계. 그리고 양자 비용 — 기록당 ℏ, 하나의 깨짐의 작용.</p>
-<p>둘 다 공리 B로 거슬러 올라간다. 하나의 기록. 하나의 ε. 하나의 최솟값.</p>
-<p>AP09는 ℏ를 동일시로 다루었다 — AP08에서의 G와 같은 지위. 형태는 강제되었고, 상수는 일치했다. AP12가 그 간극을 닫는다. 동일시는 선택이 아니다. 강제다.</p>
-<p>당신은 평생 이 최솟값을 느껴 왔다. 빛이 맞지 않으면 무엇도 볼 수 없다. 전자가 반발하지 않으면 무엇도 만질 수 없다. 아는 모든 행위는 알려지는 것을 교란한다.</p>
-<p>그것은 설계 결함이 아니다. 기록을 쓰는 비용이다.</p>
-<p>다섯 단계.</p>
-<p><span class="sub">1단계.</span> 스톤 정리가 해밀토니안의 고유값과 시간 매개변수를 연결하는 고유한 축척 인자 α를 준다. 도출된 힐베르트 공간 위의 순수 수학. 하나의 상수. 족이 아니다.</p>
-<p><span class="sub">2단계.</span> 공리들은 작용의 차원을 가진 양을 정확히 하나 만들어낸다. 작용 = 에너지 × 시간. 공리 R로부터 하나의 시간 방향. 공리 B로부터 하나의 최소 에너지 사건.</p>
-<p>그 곱이 하나의 최소 기록의 작용이다.</p>
-<p><span class="sub">3단계.</span> 공리로부터의 무차원 매개변수는 축척 인자를 수정하지 않는다. 공리 S의 Z₂는 불확정성 한계에 나타나는 2를 기여한다. α 자체를 수정하지는 않는다.</p>
-<p><span class="sub">4단계.</span> 최소 기록은 최소 비자명 진화 그 자체다. 하나의 ε보다 적게 시스템을 진화시킬 수 없다. 하나의 ε보다 적게 측정할 수 없다.</p>
-<p>축척 인자와 최소 기록은 같은 것이다.</p>
-<p><span class="sub">5단계.</span> 따라서 α = ℏ. 자유도가 없다. {S, B, R, C}와 양립하는 대안은 없다.</p>
-<p>하나의 기록. 하나의 ε. 하나의 ℏ. 우주에 대해 무엇이든 아는 최소 비용은 그 안에 하나의 기록을 쓰는 비용이다.</p>
-<p>불확정성 원리가 직접 따른다. 위치와 운동량은 도출된 다양체 위의 켤레 생성자다. 그 교환자는 <strong>[x̂, p̂] = iℏ</strong>.</p>
-<p>불확정성 관계 <strong>ΔxΔp ≥ ℏ/2</strong>는 대수의 정리다. 기기의 한계가 아니다. 깨짐의 속성이다.</p>
-<p>기록이 어디에 쓰일지와 얼마나 빠르게 움직이는지를 동시에 알 수는 없다. 당신이 서툴르기 때문이 아니다.</p>
-<p>위치와 운동량이 같은 생성자의 두 면이고, 그 생성자에는 최소 단계가 있기 때문이다. 그 단계가 ε. 그 규모가 ℏ. 그보다 작은 것은 없다.</p>
-<div class="ks"><strong>킬 스위치 네 개. 하나 폐쇄.</strong> <span class="bc">폐쇄</span> KS-L.1 (AP09의 KS-Q.8이었음) — ℏ가 최소 기록의 작용 규모로 도출됨.<br><br><span class="bl">가동</span> KS-L.2 — 교환 관계 도출. <span class="bl">가동</span> KS-L.3 — 에너지-시간 불확정성. <span class="bl">가동</span> KS-L.4 — 공리로부터의 무차원 매개변수가 축척 인자를 수정할 수 있다면, 강제 논증이 실패한다. 이것이 잔여 취약점이다. 세 개 가동.</div>
-<p class="breath">반쪽 기록은 쓸 수 없다. 우주에는 최소 해상도가 있다. 그 해상도가 ℏ다.</p>
-</div><div class="ap-meta"><span>필요: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP13</span><span class="ap-title">입자</span><span class="ap-tag">결어긋남</span><a class="ap-pdf" href="../AP13_The_Grain.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>기록 대수로부터의 결어긋남. 고전적 세계는 환경 결합을 통해 나타난다.</p><div class="ap-essay">
-<p>살아 있으면서 동시에 죽은 고양이를 본 적이 없다. 동시에 두 곳에 있는 의자를 본 적도 없다.</p>
-<p>양자역학은 이런 것들이 가능하다고 말한다. 당신의 눈은 아니라고 말한다. 문제는 양자역학이 왜 이상한가가 아니다.</p>
-<p>문제는 밑바닥의 규칙이 양자적인데 세계가 왜 고전적으로 보이느냐다.</p>
-<p>AP13이 답한다: 당신이 세 번째 체제에 살고 있기 때문이다.</p>
-<p>AP09는 두 가지 체제를 도출했다. 측정 사이에 전-상태는 표류한다 — 슈뢰딩거 진화. 매끄럽다. 가역적이다. 중첩이 지속된다.</p>
-<p>측정에서 깨짐이 일어난다. 하나의 기록. 비가역적. 확정적. 중첩이 붕괴한다.</p>
-<p>하지만 세계는 고립된 측정과 완벽한 격리로 만들어진 것이 아니다. 세계는 사물이 다른 사물을 만지는 것으로 이루어져 있다. 끊임없이. 어디에서나.</p>
-<p>커피가 식는다. 숨이 유리를 흐리게 한다. 피부가 공기를 느낀다. 모든 것이 항상 다른 모든 것과 상호작용한다. 그것이 세 번째 체제다.</p>
-<p>중첩 상태의 전자는 혼자가 아니다. 공기 분자, 광자, 전자기장과 상호작용한다.</p>
-<p>각 상호작용은 결합 사건이다. 각각이 부분적 기록을 쓴다 — 전자의 상태에 대한 아주 작은 정보 파편. 단일 기록이 결과를 결정하지는 않는다.</p>
-<p>하지만 그 수는 막대하다. 각각이 파편을 운반한다. 각각이 비가역적이다 — 공리 R. 모노이드에는 역원이 없다.</p>
-<p>결맞음 — 간섭을 허용하는 위상 관계 — 은 파괴되지 않는다. 분산된다. 막대한 수의 환경 기록에 퍼져 나간다.</p>
-<p>그것을 복구하려면 그 기록들을 모두 모으고 그 상호작용을 모두 역전시켜야 한다. 할 수 없다. 공리 R.</p>
-<p>결맞음이 사라졌다. 파괴된 것이 아니다. 복구 불가능하게 된 것이다.</p>
-<p><strong>결어긋남은 비가역적 기록-쓰기를 통해 결맞음을 환경에 분산시키는 것이다.</strong></p>
-<p>시간 규모는 놀라울 정도다. 공기 중 먼지 알갱이의 경우, 결어긋남은 약 10⁻³¹초 걸린다. 볼링공의 경우, 그 수는 너무 작아서 물리적 의미가 없다.</p>
-<p>당신이 보기 시작할 수도 없을 때, 환경은 이미 수조 개의 기록을 쓴 뒤다.</p>
-<p>중첩은 기술적으로는 여전히 거기 있다. 하지만 위상 정보가 너무 얇게 퍼져서 어떤 실험도 다시 조립할 수 없다.</p>
-<p>그래서 고양이는 결코 살아 있으면서 동시에 죽어 있지 않다. 양자역학이 큰 규모에서 작동을 멈추기 때문이 아니다. 환경이 당신이 볼 수 있는 것보다 빨리 기록을 쓰기 때문이다.</p>
-<p>양자 행동은 여전히 거기 있다. 단지 더 이상 볼 수 없을 뿐이다. 정보는 사라지지 않았다. 어떤 가능한 검색도 넘어 희석된 것이다.</p>
-<p>고전적 세계는 양자 세계와 다른 세계가 아니다. 환경이 되돌릴 수 없을 만큼 많은 기록을 쓴 후의 양자 세계다.</p>
-<p>당신이 그 입자다. 양자가 고전이 되는 해상도.</p>
-<p>당신은 10²⁸개의 원자로 이루어져 있다. 각각이 기록을 쓰고, 각각이 주위의 모든 것과 상호작용한다. 당신이 존재할 때쯤, 중첩은 오래전에 사라졌다.</p>
-<div class="ks"><strong>킬 스위치 세 개. 모두 가동.</strong> <span class="bl">가동</span> KS-22 — 결어긋남 이론이 지수적 감쇠를 예측하는 곳에서 시스템이 결맞음을 유지하면, 이 도출은 실패한다. <span class="bl">가동</span> KS-23 — 양자 지우개가 명백히 기록을 파괴하면(공리 R 위반), 비가역성 주장이 실패한다. <span class="bl">가동</span> KS-24 — 기초적 양자 특성이 기록 대수에서 표현될 수 없으면, 양자 섹터가 불완전하다. 세 개 가동.</div>
-<p class="breath">고전적 세계는 환경이 쓰기를 마친 후의 양자 세계다. 당신이 그 입자다.</p>
-</div><div class="ap-meta"><span>필요: AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP25</span><span class="ap-title">측도</span><span class="ap-tag">보른 규칙</span><a class="ap-pdf" href="../AP25_The_Measure.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>글리슨 정리를 통한 보른 규칙 도출. "공리가 힐베르트 공간에 착지할 때 내는 소리."</p><div class="ap-essay">
-<p>동전을 던져라. 반반. 뼈속까지 알고 있다. 하지만 그 반은 어디서 오는가?</p>
-<p>고전적 확률은 쉽다. 두 면. 같은 무게. 둘 중 하나. 하지만 양자 확률은 다르다. 결과는 사전에 존재하지 않는다. 측정하기 전에 결과는 존재하지 않는다. 측정에 의해 만들어진다.</p>
-<p>그렇다면 측정하는 것이 아직 확정된 값을 갖지 않는다면, 확률은 어디서 오는가?</p>
-<p>양자역학에서 답은 보른 규칙이다: 진폭의 제곱. |⟨a|ψ⟩|².</p>
-<p>지금까지 수행된 모든 실험이 그것을 확인한다. 하지만 양자역학은 왜인지 설명하지 않는다.</p>
-<p>보른 규칙은 공준이었다. 막스 보른이 1926년에 추측했다. 추측은 맞았다. 하지만 추측은 도출이 아니다.</p>
-<p>AP25가 그것을 도출한다. 세 단계. 각각 공리로부터. 추가 가정 없음.</p>
-<p><span class="sub">1단계 — 순수 상태 목표.</span> 공리 R은 확정적 기록을 요구한다. 기록은 구별이다 — 0 또는 1. "아마 0, 아마 1"이 아니다. 확정적.</p>
-<p>혼합 상태는 확정적 상태가 아니다. 통계적 요약이다 — 가능성의 혼합. 요약에서 기록을 쓸 수는 없다. 현실화는 순수 상태만을 대상으로 한다.</p>
-<p><span class="sub">2단계 — 비맥락성.</span> 공리 B는 하나의 깨짐, 하나의 기록이라 말한다. 결과의 확률은 옆에서 어떤 다른 측정을 수행하느냐에 의존할 수 없다.</p>
-<p>하나의 깨짐. 하나의 답. 이웃을 엿보지 않는다. 확률은 사영의 속성일 뿐이다.</p>
-<p><span class="sub">3단계 — 글리슨 정리.</span> 차원 3 이상의 복소 힐베르트 공간에서, 비맥락적이고 직교 사영에 대해 가법적인 확률 측도는 정확히 하나 존재한다.</p>
-<p>정확히 하나. 대략 하나가 아니다. 글리슨이 1957년에 이것을 증명했다. 증명은 구성적이고 물리학과 독립적이다.</p>
-<p>그 측도가 보른 규칙이다.</p>
-<p><strong>P(a) = Tr(|ψ⟩⟨ψ| · P<sub>a</sub>)</strong></p>
-<p>순수 상태와 날카로운 측정에 대해: |⟨a|ψ⟩|². 겹침의 제곱. 유일성 정리에 의해 강제됨.</p>
-<p>이것이 무엇을 의미하는지 생각해 보라. 양자역학에서 만난 모든 확률 — 모든 분기비, 모든 검출 확률, 모든 간섭 패턴 — 은 세계에 대한 별개의 사실이 아니다.</p>
-<p>세 공리와 1957년의 정리의 결과다. 확률은 결코 자유 매개변수가 아니었다. 항상 고정되어 있었다.</p>
-<p>차원 요구 — 셋 이상 — 은 충족된다. AP10이 세 공간 차원을 도출한다. 물리적 파동함수는 무한차원인 L²(ℝ³)에 살고 있다. 글리슨이 적용된다.</p>
-<p>의존 사슬은 깨끗하다. 공리 S가 구별을 준다. 공리 B가 단일 깨짐을 준다. 공리 R이 확정적 기록을 준다.</p>
-<p>AP09가 힐베르트 공간을 준다. AP10이 차원 ≥ 3을 준다. 글리슨이 보른 규칙을 준다. 각 고리 검증됨. 가정된 고리 없음.</p>
-<p>보른은 우연히 현실의 구조와 양립하는 유일한 확률 측도를 써내렸다. 왜 작동하는지 몰랐다.</p>
-<p>이제 당신은 안다.</p>
-<div class="ks"><strong>킬 스위치 세 개. 모두 가동.</strong> <span class="bl">가동</span> KS-55 — 맥락 의존적 결과 확률이 입증되면, 글리슨의 가정이 실패한다. <span class="bl">가동</span> KS-56 — 비보른 통계가 측정되면, 정리가 직접 반증된다. <span class="bl">가동</span> KS-57 — 물리적 과정이 혼합 상태를 직접 현실화하면, 순수 상태 목표 주장이 실패한다. 세 개 가동.</div>
-<p class="breath">보른 규칙은 추측이 아니었다. 공리가 허용하는 유일한 측도였다.</p>
-</div><div class="ap-meta"><span>필요: AP07, AP10, AP20, AP23</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP23</span><span class="ap-title">단일 기록</span><span class="ap-tag">얽힘</span><a class="ap-pdf" href="../AP23_The_Single_Record_KO.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>얽힘, 벨 부등식, 단일 기록 제약. S = 2√2, 구조만으로.</p><div class="ap-essay">
-<p>접시를 깨라. 반쪽을 친구에게 줘라. 그녀는 나라 반대편으로 운전해 간다.</p>
-<p>당신의 반쪽을 보라. 가장자리가 왼쪽에서 오른쪽으로 간다. 당신은 안다 — 즉시 — 그녀의 반쪽이 보완적 가장자리를 가지고 있다는 것을. 신호는 보내지지 않았다. 마법이 아니다. 반쪽들은 항상 하나의 접시였다.</p>
-<p>얽힘은 이런 것이다. 단지 접시는 당신이 보기 전까지 확정된 가장자리가 없다.</p>
-<p>그것이 미스터리다 — 아니, 미스터리였다. 당신의 반쪽은 무엇이 될지 어떻게 “알”까? 정보는 어떻게 이동하는가?</p>
-<p>아인슈타인은 그것을 유령같은 원거리 작용이라 불렀다. 물리학자들은 90년 동안 이것에 대해 논쟁해 왔다.</p>
-<p>AP23이 미스터리를 녹인다. 정보는 이동하지 않는다. 그럴 필요가 없다.</p>
-<p>답은 너무 단순해서 속임수처럼 들린다: 건널 거리가 없다. 거리는 아직 발명되지 않았다.</p>
-<p>전-상태 — 힐베르트 공간 — 에는 공간 구조가 없다. 전혀. 거리는 다양체의 속성이다. 다양체는 기록의 축적이다.</p>
-<p>기록이 쓰이기 전에는 거리가 없다. “여기”와 “거기”가 없다. 그 말들은 다양체에 속한다. 전-상태는 다양체에 앞선다.</p>
-<p>얽힌 상태는 전-상태 안의 하나의 수학적 대상이다. 선으로 연결된 두 입자가 아니다. 신비로운 연결을 가진 두 것이 아니다. 하나의 실체. 아직 기록으로 깨지지 않았다.</p>
-<p>하위 시스템을 측정하면 기록을 쓴다. 하지만 얽힌 상태의 일부에 대한 기록을 쓸 수는 없다.</p>
-<p>상태는 인수분해 불가능하다 — 독립적 조각으로 분리될 수 없다. 어떤 부분의 측정도 전체를 현실화한다. 하나의 깨짐. 하나의 기록. 하나의 접시.</p>
-<p>신호는 없다. 건널 거리가 없기 때문이다. “유령같은 작용”은 원거리 작용이 아니다. 거리 이전의 작용이다.</p>
-<p>공리 C는 안전하다. 그 범위는 다양체 — 기록이 쓰여진 후의 세계다. 사건 사이의 전파를 지배한다. 전-상태에서 다양체로의 전이를 제약하지 않는다.</p>
-<p>비신호 원칙이 성립한다. 원거리 하위 시스템의 축소 밀도 행렬은 국소 측정에 의해 변하지 않는다. 얽힘을 사용해 메시지를 보낼 수 없다. 절대로.</p>
-<p>벨의 정리가 예측된다. 공리 R은 사전 존재 값을 금지한다 — 숨겨진 변수는 없다, 국소적이든 그 외든. AP25에서 도출된 보른 규칙이 정량적 위반을 준다.</p>
-<p>CHSH 한계 2√2가 도출된 구조에서 나온다. 실험이 정확히 이 값을 확인한다. 대략이 아니다. 정확히. 공리가 실험이 발견한 것을 예측했다.</p>
-<p>아인슈타인은 그것을 유령같다고 불렀다. 공리는 그것을 당연하다고 부른다.</p>
-<p>하나의 전-상태에서 온 두 하위 시스템은 결코 분리되지 않았다. 하나를 보면 다른 하나를 알 수 있다. 항상 같은 것이었기 때문이다.</p>
-<p>미스터리는 연결이 아니었다. 미스터리는 그들이 떨어져 있다는 가정이었다.</p>
-<div class="ks"><strong>킬 스위치 네 개. 하나 폐쇄.</strong> <span class="bc">폐쇄</span> KS-49 — 국소 숨겨진 변수가 실험적(벨 검증) 및 공리적(공리 R)으로 배제됨.<br><br><span class="bl">가동</span> KS-48a — 상관관계가 거리에 따라 저하되면, 비공간적 설명이 실패한다. <span class="bl">가동</span> KS-48b — 비신호 원칙이 위반되면, 공리 C의 범위 주장이 실패한다. <span class="bl">가동</span> KS-54 — 부분적 붕괴가 입증되면, 단일 기록 주장이 실패한다. 세 개 가동.</div>
-<p class="breath">접시는 두 곳에 있었던 적이 없다. 어디에도 없었다. 장소는 나중에 왔다.</p>
-</div><div class="ap-meta"><span>필요: AP07, AP09, AP25</span><a href="../AP23_The_Single_Record_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">제3부</span><a class="nb-name" href="#p3">양자역학</a></div><a class="nb-pdf" href="Notebook_III_Quantum_Mechanics.pdf">PDF</a></div>
+  <p class="nb-hook">깨짐의 측정 구조. 중첩, 불확정성, 결어긋남, 보른 규칙, 얽힘 — 공집합과 네 공리에서 도출.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>당신은 양자역학이 기이하다고 들어 왔다. 직관을 거스른다고. 아무도 그것을 정말로 이해하지 못한다고. 제3부는 다른 주장을 한다 — 그것은 불가역한 기록을 쓰는 우주가 안에서 보았을 때 그렇게 보일 수밖에 없는, 바로 그 모습이며, 그것은 불가피하다고.</p>
+    <p>여기에 밖에서 죄어 넣은 것은 없다. 양자론의 구조 전체가 공집합과 네 조건에서 도출된다 — 그리고 그렇게 보는 순간, 그 기이함은 기이하기를 그치고 필연이 된다.</p>
+    <p><span class="lab">AP09 &middot; 깨짐 — 공집합</span> &mdash; 그것은 무에서 양자역학을 짓는다 — 글자 그대로 공집합, 그리고 공리. 이름난 수수께끼들 — 입자가 동시에 두 곳에 있는 듯한 것, 보는 행위가 결과를 바꾸는 것 — 은 더해진 역설이 아니라 귀결로 드러난다. 중첩, 측정, 얽힘, 슈뢰딩거 방정식. 물리학자들이 짜 맞추는 데 한 세대가 걸린 그 장치가, 아직 쓰이지 않은 기록을 위한 유일하게 정합한 문법으로 나타난다.</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; 기록 측도 와 측도</span> &mdash; 그것들은 양자 세계의 산술을 도출한다. 이론이 깃든 복소 공간, 그리고 보른 규칙 — 파동을 확률로 바꾸는 처방 — 은 실험에 맞춰 꾸민 어림짐작이 아니다. 글리슨 정리를 거쳐, 그것들은 기록을 정합하게 읽는 유일한 방식이다. 한 논문은 보른 규칙을 공리가 착지할 때 내는 소리라 부른다.</p>
+    <p><span class="lab">AP12 &middot; 극한</span> &mdash; 그것은 왜 한꺼번에 모든 것을 알 수 없는지 설명한다. 불확정성 원리와 플랑크 상수는 읽기가 이미 하나의 깨짐이라는 사실에서 온다 — 하나를 정밀히 적는 것은 그 짝을 어지럽히는 것이다. 그 흐릿함은 당신 기기의 결함이 아니다. 그것이 측정이라는 것이다.</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; 스핀 과 입자</span> &mdash; 그것들은 물질이 왜 형태를 지키는지, 양자의 안개가 왜 단단한 세계로 굳는지 설명한다. 페르미온, 보손, 배타 원리는 두 부문 구조에서 온다. 결어긋남 — 양자적인 무언가가 환경에 결합하며 확정되는 방식 — 은 당신의 의자가 「어쩌면」의 구름이 아니라 의자인 이유다.</p>
+    <p><span class="lab">AP23 &middot; 단일 기록</span> &mdash; 그것은 얽힘의 「유령 같음」을 녹인다. 얽힌 두 입자는 빛보다 빠르게 서로 비밀 신호를 보내는 두 대상이 아니다. 두 끝을 가진 하나의 기록이다. 우주가 국소적으로 미리 각본 될 수 없음을 증명하는 벨 수 S = 2&radic;2는 구조만으로부터 나온다.</p>
+    <div class="ks">이것들은 수학 위에 덧씌운 해석이 아니다. 도출이며, 각각이 킬 스위치를 띤다. 얽힘이 빛보다 빠른 신호 전달을 요구한다면, 단일 기록 주장은 무너진다. 보른 규칙이 공리가 줄 수 없는 추가 공준을 필요로 한다면, 그 결과는 무너진다. 그것들은 발표되어 있고, 그리고 유효하다.</div>
+    <p class="breath">양자역학은 우주가 기이하게 구는 것이 아니다. 우주가 스스로를 적는 것이다.</p>
+  </div>
+</div>
 
-<div class="part" id="p4"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제4부</span><span class="part-name">힘과 상수</span><span class="part-desc">깨짐이 허용하는 상호작용. 전자기력, 전약력, 강력, 양자 중력, 중력 상수 — 모두 하나의 깨짐의 다른 면으로서.</span><span class="part-count">8편</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP06</span><span class="ap-title">누출 상수</span><span class="ap-tag">미세구조</span><a class="ap-pdf" href="../AP06_The_Leakage_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε = α<sub>em</sub> ≈ 1/137. 유일한 측정 입력.</p><div class="ap-essay">
-<p>완벽한 벽은 없다. 이미 알고 있다. 모든 보온병은 약간의 열을 잃는다. 모든 선크림은 약간의 자외선을 통과시킨다. 모든 댐은 스며든다.</p>
-<p>이것은 공학의 실패가 아니다. 법칙이다.</p>
-<p>AP06이 그것을 증명한다. 빛의 속도가 유한한 어떤 우주에서도 완벽한 흡수체는 없다. 안과 밖의 경계는 항상 새어나간다. 정리 3.1.</p>
-<p>증명은 확립된 물리학만 사용한다 — 전자기 이론, 양자역학, c의 유한한 값. the 420 Code의 주장이 아니다. 이미 존재하는 물리학의 결과다.</p>
-<p>모든 흡수체에는 누출비 η가 있다. 도달하는 것의 분수로 얼마나 통과하는지. η는 항상 0보다 크다. 항상. 빛의 유한한 속도가 그것을 보장한다.</p>
-<p>c가 무한대라면 완벽한 흡수체가 가능할 것이다. 경계는 무엇에든 즉시 반응할 수 있을 것이다. 하지만 c는 유한하다. 경계에는 반응 시간이 있다. 그 반응 시간 동안 무언가가 탈출한다.</p>
-<p>이제 동일시다. 공리는 1:1 + 1×ε @ AS라 말한다. 깨짐이 ε. 누출이 η. AP06이 그것들을 동일시한다.</p>
-<p>ε는 η다. 깨짐이 누출이다. 균열이 균열을 통해 탈출하는 것이다. 두 사실이 아니다. 하나의 사실.</p>
-<p>잠금 하에서 ε는 전자다. 최소 실현 가능 파편 — 대칭이 깨지기 위해 탈출해야 했던 것.</p>
-<p>그리고 α<sub>em</sub> ≈ 1/137 — 미세 구조 상수 — 은 그 파편이 떠난 직물에 얼마나 강하게 다시 결합하는지를 측정한다.</p>
-<p>추상적 수가 아니다. 물리적 측정이다. 전자가 광자를 흡수하거나 방출할 때마다, 당신은 α<sub>em</sub>를 보고 있다.</p>
-<p>이것이 유일한 측정 입력이다. 전체 말뭉치가 하나의 경험적 수로 작동한다. 수십 개의 매개변수가 아니다. 표준 모형의 19개 자유 매개변수가 아니다. 하나.</p>
-<p>다른 모든 상수 — c, G, ℏ, 입자 질량, 힘의 세기 — 는 이 단일 누출로부터 도출되거나, 그 관점에서 표현된다.</p>
-<p>모든 기록-쓰기 사건은 에너지를 소모한다. 란다우어 한계 — 지워지는 비트당 k<sub>B</sub>T ln 2 — 는 공리 R의 열역학적 표현이다.</p>
-<p>기록은 영구적이다. 지우는 데 비용이 든다. 이것은 the 420 Code의 주장이 아니다. 1961년 란다우어의 것이다. 공리는 확립된 물리학을 계승한다. 대체하지 않는다.</p>
-<p>전체 구조는 하나의 경험적 수에 기반한다. α<sub>em</sub>. 깨짐의 결합 세기. 나머지 모든 것 — 모든 힘, 모든 입자, 모든 상수 — 은 그 하나의 누출의 구조적 결과다.</p>
-<p>왜 1/137인가? AP24는 그것이 과결정된 자기 일관성 시스템의 유일한 고정점이라고 추측한다. ε의 여섯 면이 서로를 제약한다. 여섯 모두를 동시에 만족하는 값은 하나뿐이다.</p>
-<p>그 추측은 증명되지 않았다. 미해결로 선언되어 있다. 킬 스위치를 쥐고 있는 것은 당신이다. 논증이 칼날을 건넨다.</p>
-<div class="ks"><strong>킬 스위치 일곱 개. 모두 가동.</strong> <span class="bl">가동</span> KS-L.1 — 완벽한 흡수체가 입증되면(η = 0), 정리 3.1이 실패한다. <span class="bl">가동</span> KS-L.3 — ε = η 동일시가 거부되면, 해석적 연결이 실패한다(§§1–5의 물리학은 생존). <span class="bl">가동</span> KS-L.6 — G가 c와 독립적임이 보여지면, AP20의 구조적 제약이 실패한다. 일곱 개 가동.</div>
-<p class="breath">완벽한 벽은 없다. 우주는 새어나간다. 누출이 전자다. 전자가 공리다.</p>
-</div><div class="ap-meta"><span>필요: AP01, AP03</span><a href="../AP10_Chawon_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP15</span><span class="ap-title">연결</span><span class="ap-tag">전자기학</span><a class="ap-pdf" href="../AP15_The_Connection.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>국소 다양체 위의 비분리로서의 EM. U(1) 도출.</p><div class="ap-essay">
-<p>손전등을 켜라. 빔이 방을 가로지른다. 무언가가 전구에서 벽으로 빛을 운반했다. 그 무언가가 전자기장이다.</p>
-<p>표준 모형은 전자기력이 U(1) 게이지 대칭을 가진다고 말한다. 양자장의 위상을 모든 곳에서 같은 각도로 회전시켜도 물리가 변하지 않는다는 뜻이다.</p>
-<p>하지만 왜 U(1)인가? 왜 그 특정 대칭인가? 표준 모형은 답하지 않는다. 가정한다.</p>
-<p>AP15가 그것을 도출한다. 답은 AP09 이후 전-상태에 있었다.</p>
-<p>AP09는 공리로부터 힐베르트 공간을 구축했다. 전-상태는 복소 진폭을 가진다 — 로렌츠 부호에서 도출됨. 모든 양자 상태는 위상을 가진다. 복소 평면 위의 각도.</p>
-<p>그 위상은 이미 거기에 있다. AP09 이후 줄곧 있었다. 문제는: 다양체 위에서 어떻게 보이는가?</p>
-<p>다양체 위에서 위상은 점마다 달라질 수 있다. 한 위치에서 전자의 위상은 θ₁. 다른 곳에서 θ₂. 그 차이는 비물리적이다 — 어떤 측정도 전체 위상을 검출할 수 없다.</p>
-<p>하지만 점에서 점으로의 위상 변화율은 물리적이다. 그것은 접속이다. 다른 위치에서 위상을 어떻게 비교하는지 알려주는 장.</p>
-<p>물리가 국소 위상 회전 아래 불변일 것을 요구하는 것 — 비물리적인 것이 비물리적으로 남을 것 — 이 접속의 존재를 강제한다. 게이지 장이 되도록 강제한다. 게이지 군이 U(1)이 되도록 강제한다.</p>
-<p>가장 단순한 연속 대칭. 하나의 매개변수. 하나의 회전. 원의 군. 선택된 것이 아니다. 일관성에 대한 요구에 의해 강제됨.</p>
-<p>접속은 전자기 퍼텐셜 A<sub>μ</sub>이다. 그 곡률이 전자기장 F<sub>μν</sub>이다. 맥스웰 방정식은 작용이 게이지 불변이고 장의 세기에 대해 이차적이라는 요구로부터 따른다.</p>
-<p>가장 일반적인 그런 작용은 정확히 맥스웰을 준다. 대략이 아니다. 정확히. 형태는 유일하다.</p>
-<p>전체 전자기장 — 빛, 전파, 전하 사이의 힘, 별의 빛 — 은 다양체 전체에서 위상 비교를 일관되게 유지하는 접속이다.</p>
-<p>미세 구조 상수 α<sub>em</sub> ≈ 1/137은 이 접속의 결합 세기다. 전자 — 깨짐 — 가 남겨둔 위상과 얼마나 강하게 상호작용하는지.</p>
-<p>추상적 수가 아니다. 물리적 측정이다. 전자가 광자를 흡수하거나 방출할 때마다, 당신은 α<sub>em</sub>가 작동하는 것을 보고 있다.</p>
-<p>당신은 평생 이 장에 둘러싸여 있었다. 당신의 눈에 도달한 모든 광자는 접속 속의 파문이었다.</p>
-<p>당신이 읽고 있는 빛은 전-상태의 위상 자유도가 다양체 위에 표현된 것이다.</p>
-<p>전자기력은 우주에 부과된 힘이 아니다. 우주가 자기 자신과 일관적인 것의 결과다. 국소 위상 불변성에 대한 요구가 장을 만든다. 장이 빛을 운반한다.</p>
-<div class="ks"><strong>킬 스위치 네 개. 모두 가동.</strong> <span class="bl">가동</span> KS-28 — 위상 군이 U(1)이 아니면, 도출이 실패한다. <span class="bl">가동</span> KS-29 — 맥스웰 작용이 유일한 게이지 불변 이차 형식이 아니면, 유일성이 실패한다. <span class="bl">가동</span> KS-30 — 전-상태의 위상 대칭이 전역적이 아니면, 출발점이 실패한다. <span class="bl">가동</span> KS-4 — α ≈ 1/137이 측정이 아니라 도출 가능하다고 보여지면, 단일 입력 지위가 변한다. 네 개 가동.</div>
-<p class="breath">빛은 전-상태의 위상 자유도가 다양체를 가로질러 운반된 것이다. 당신은 평생 그것으로 읽어 왔다.</p>
-</div><div class="ap-meta"><span>필요: AP08, AP09</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP27</span><span class="ap-title">조화</span><span class="ap-tag">게이지 구조</span><a class="ap-pdf" href="../AP27_The_Harmonics.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>이중 섹터 공리로부터의 SU(2) × U(1).</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">제4부</span><a class="nb-name" href="#p4">힘과 상수</a></div><a class="nb-pdf" href="Notebook_IV_Forces_and_Constants.pdf">PDF</a></div>
+  <p class="nb-hook">깨짐이 허용하는 상호작용. 전자기력, 전약력, 강력, 양자 중력, 중력 상수 — 모두 하나의 깨짐의 다른 면으로서.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>냉장고 자석을 강철 문에 가까이 대고 놓아 보라. 그것은 붙는다 — 지구 전체가 반대로 당기는 중력을 이기는, 자석 한 조각. 자연의 네 힘은 조금도 닮지 않았다. 전자기력은 당신의 화면을 밝히고, 강력은 핵을 묶고, 약력은 태양을 돌리고, 중력은 당신을 땅에 누른다. 물리는 한 세기를 그것들의 통일을 시도하는 데 썼다. 제4부는 주장한다 — 그것들은 결코 네 가지가 아니었다고. 하나의 깨짐의 네 얼굴이라고.</p>
+    <p><span class="lab">AP06 &middot; 누출 상수</span> &mdash; 그것은 단 하나의 입력을 지목한다. 420 Code 전체가 받아들이는 측정값은 정확히 하나 — &epsilon;, 미세 구조 상수, 약 1/137 — 깨짐이 새어 나가는 그 미세한 율이다. 손잡이는 단 하나, 게다가 무언가에 맞추려 고른 것이 아니다. 세계로부터 한 번 읽힌 뒤 다시는 조정되지 않는다. 나머지 모든 것이 그것과 함께 돈다.</p>
+    <p><span class="lab">AP15, AP27, AP16, AP19 &middot; 게이지 구조</span> &mdash; 그것들은 합쳐서 표준 모형을 되찾는다. 물리학자들이 실험으로 찾아낸 그 정확한 대칭군 — SU(3) &times; SU(2) &times; U(1)로 쓰이는, 어떤 회전이 힘을 불변으로 두는지에 대한 정밀한 진술 — 은 가정되는 것이 아니라 깨짐의 구조에서 떠오른다. 전자기력은 국소 다양체 위의 비-분리이며, 전약 통일이 따라오고, 강력은 깨짐이 가리킬 수 있는 방향에서의 자유다. 약력의 카이랄성 — 자연이 좌우를 구별한다는 사실 — 마저, 1956년 이래 설명되지 않았으나 구조적 이유를 얻는다.</p>
+    <p><span class="lab">AP24 &middot; 잔여</span> &mdash; 그것은 그 귀결을 에두르지 않고 말한다. 물리의 모든 상수는 단 하나의 대상의 투영이다. 여섯 얼굴, 하나의 깨짐. 상수는 측정되기를 기다리는 독립된 손잡이였던 적이 없다. 같은 구조가 서로 다른 방향으로 던지는 그림자다.</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; 보정 과 상수</span> &mdash; 그것들은 가장 어려운 상 — 중력 — 에 닿는다. 중력은 기록의 대수에서 그 첫 양자 보정을 받고, 중력 상수 G — 중력이 얼마나 약한지를 정하는 수 — 는 그 같은 단 하나의 누출과 전자 질량에서 도출되어, 측정값의 약 3분의 2 퍼센트 안에 떨어진다. 그 악명 높은 위계 문제 — 다른 힘들 옆에서 왜 중력이 그토록 터무니없이 약한가, 바로 당신의 자석이 방금 보인 그 틈 — 은 녹는다. 그 약함은 설명해야 할 우연이 아니다. 작은 누출의 높은 거듭제곱이 그렇게 보일 뿐이다.</p>
+    <p>이렇게 힘들은 동물원이 아니다. 서로 다른 면에서 본 하나의 구조이며, 그것들을 기술하는 상수는 자유롭지 않다 — 측정된 단 하나의 누출의 귀결이다.</p>
+    <div class="ks">본 부는 또한 이 작업이 「끝나지 않은 것」에 대해 가장 정직한 곳이기도 하다. 전약 단계(AP16)는 420 Code 전체의 으뜸 미해결 문제 — 킬 스위치 KS-63 — 를 지며, 겨눌 곳으로서 모두가 보는 가운데 유효로 표시된다. 자신만만한 공식 뒤에 숨는 것은 없다.</div>
+    <p class="breath">하나의 누출. 여섯 얼굴. 자유로운 손잡이는 하나도 없다.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>필요: AP09, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP16</span><span class="ap-title">깨짐 — 전약</span><span class="ap-tag">전약</span><a class="ap-pdf" href="../AP16_The_Break_Electroweak.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>전자약 통일, 히그스, 카이랄 결합 도출. KS-15 닫힘 — 1956년 이래 미설명.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">제5부</span><a class="nb-name" href="#p5">입자와 물질</a></div><a class="nb-pdf" href="Notebook_V_Particles_and_Matter.pdf">PDF</a></div>
+  <p class="nb-hook">깨짐이 만드는 구성 요소. 양성자 질량비를 십억 분의 5까지, 반물질 분리, 우주의 바리온 비대칭.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>당신은 물질로 이루어져 있다. 당신 무게의 거의 전부는 당신 원자의 핵에 깃든 양성자의 질량이다. 그리고 당신을 둘러싼 우주도 물질이지 반물질이 아니다 — 가장 단순한 셈으로는 깨짐이 둘을 정확히 같은 양으로 낳았어야 하는데도. 물질과 반물질은 닿으면 서로를 부수므로, 같은 몫은 빛으로 번쩍이고 아무것도 남기지 않았을 것이다. 별도 없이. 당신도 없이. 제5부는 당신의 실체를, 그리고 당신이 존재한다는 단순한 사실을, 깨짐에서 읽는다.</p>
+    <p><span class="lab">AP30 &middot; 저항</span> &mdash; 그것은 이 작업에서 가장 날카로운 예측을 한다. 양성자 질량과 전자 질량의 비는 순수한 수 — 약 1836 — 이며 비범한 정밀도로 측정되어 있다. 420 Code는 아무것도 맞춰 넣지 않고 구조에서 그것을 예측하며, 선도 차수에서 약 십억 분의 5까지 들어맞는다. 완전한 계산은 일조 분의 10 안에 떨어진다 — 오늘의 측정이 확인할 수 있는 것보다 정밀하게. 조정 손잡이 없는 공식에서 나온 그렇게 정밀한 수는, 틀린 이론이 운으로 맞히는 종류가 아니다. 이것은 작업 전체에서 가장 노출된 시험이며, 그것을 통과한다.</p>
+    <p><span class="lab">AP22 &middot; 원장</span> &mdash; 그것은 반물질이 어디로 갔는지 설명한다. 초기 우주가 같은 몫이었다면 장부는 0으로 닫혔어야 했다 — 그런데도 여기 물질로 가득한 우주가 있다. 깨짐 안의 깔끔한 수학적 거울 반사 — 논문은 그것을 σ 대합이라 부른다 — 가 물질을 반물질에서 가려내고 위상적으로 그것들을 격리한다. 그 비대칭은 나중에 끼워 넣은 우연이 아니다. 깨짐의 기하 속에 쓰여 있다.</p>
+    <p><span class="lab">AP26 &middot; 잉여</span> &mdash; 그것은 당신이 무엇인지 지목한다. 깨짐이 거의 균형을 이루었으나 완전히는 아니었을 때 — 짝지어진 십억 쌍마다 물질 입자가 약 하나 더 많은 잉여 — 남은 것이 물질이었다. 스스로를 지우는 데 실패한 그 작은 나머지. 본 부는 그것을 깨짐의 재라 부른다. 단단한 모든 것, 당신이 지금껏 만진 모든 원자는 그 잔여다 — 소멸이 그 일을 거의, 그러나 완전히는 아니게 끝냈을 때 남긴 것.</p>
+    <p>이렇게 물질에 관한 가장 오랜 두 물음 — 왜 그만큼 무거운가, 그리고 왜 애초에 물질이 있는가 — 은 같은 부 안에서, 같은 구조로부터, 같은 단 하나의 누출에 돌려져 답해진다 — 당신이 대부분 그것으로 이루어진 양성자, 그리고 이루어질 물질이 있다는 사실.</p>
+    <div class="ks">질량 예측은 420 Code 전체에서 가장 노출된 수이며, 그것이 바로 요점이다. 측정이 정밀해질수록 측정된 양성자-전자 비가 예측값에서 벗어난다면, 결과는 무너진다 — 깔끔하게, 공공연하게, 빠져나갈 길 없이. 킬 스위치는 유효하다.</div>
+    <p class="breath">당신은 깨짐 중 스스로를 지우지 않은 부분이다.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>필요: AP06, AP15, AP27</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP19</span><span class="ap-title">방향</span><span class="ap-tag">강력</span><a class="ap-pdf" href="../AP19_The_Direction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>깨짐 방향의 게이지 자유도로부터의 SU(3) / QCD.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">제6부</span><a class="nb-name" href="#p6">우주론</a></div><a class="nb-pdf" href="Notebook_VI_Cosmology.pdf">PDF</a></div>
+  <p class="nb-hook">깨짐이 사는 우주. 암흑물질 입자 없는 은하 회전 곡선, MOND 가속도 척도 0.3%, 암흑 에너지 분배, 순환 우주론.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>맑은 밤에 올려다보라. 그 하늘을 묶고 있는 것의 거의 전부는 볼 수 없다. 은하는 너무 빨리 돌아 그 바깥의 별들은 진작 어둠 속으로 내던져졌어야 한다 — 그런데 그렇지 않다. 우주의 팽창은 가속하고 있고, 이름 없는 무언가에 밀린다. 물리는 그 미지를 암흑물질과 암흑에너지라 부르며, 저 바깥에 있는 것의 약 5퍼센트만 이름 붙일 수 있다고 인정한다. 제6부는 가장 작은 척도와 같은 깨짐에서 가장 큰 척도를 읽는다.</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; 그물 과 방</span> &mdash; 그것들은 새 입자를 발명하지 않고 은하를 묶는다. 회전목마에서 바깥 말은 뒤처지지 않으려 더 빨리 달려야 한다. 그러나 은하에서 바깥의 별들은 안쪽과 같은 빠르기로 도는데, 이는 보이는 물질로는 설명할 수 없다. 물질의 우주적 그물, 그리고 불가능해야 할 그 평평한 회전 곡선 — 둘 다 구조에 이미 있는 전역적 장력장에서 온다. 모자란 끌어당김을 대려고 보이지 않는 것을 더할 필요가 없다. 선들은 스스로 닫힌다.</p>
+    <p><span class="lab">AP18 &middot; 바닥</span> &mdash; 그것은 가속도 척도를 도출한다. 천문학자들은 오래전부터 은하가 어떤 특정한, 아주 작은 가속도 아래에서만 「버릇없이 굴기」 시작함을 알아챘다 — 아무도 설명하지 못하고 오직 잴 수만 있던 문턱. 본 부는 그 바닥을 구조에서 도출한다. 맞추려 조정한 매개변수 없이, 관측값의 1퍼센트의 몇 분의 일 안에 떨어진다.</p>
+    <p><span class="lab">AP42 &middot; 시계</span> &mdash; 그것은 그 어두운 예산을 갚는다. 우주의 배분 — 약 69몫의 암흑에너지, 26몫의 암흑물질, 5몫의 보이는 물질 — 이라는, 우주론자들이 정교히 재면서도 도출하지 못하는 분할이, 구조에서 나온다. 그 어두운 부문은 부재한 것들의 모음이라기보다 한 시계의 읽힘으로 드러난다.</p>
+    <p><span class="lab">AP41 &amp; AP04 &middot; 순환 과 순환 가설</span> &mdash; 그것들은 그 전체가 무엇을 하는지 묻는다. 융합은 진행 중인 빅뱅으로 읽힌다 — 깨짐이 아직 일어나고 있고, 아직 모든 별 속에서 에너지를 놓고 있다 — 그리고 우주가 순환적이어서, 블랙홀을 문 삼아 닫혔다가 다시 열린다고 제안된다. 이 마지막 한 걸음은 작업 전체에서 가장 사변적이며, 본 부는 그것을 감추지 않고 솔직히 말한다.</p>
+    <p>이렇게 하늘은 별도의 처방을 요구하는 별도의 문제가 아니다. 당신에게 광속을 주는 같은 구조가 한 은하의 형태와 우주의 예산을 준다.</p>
+    <div class="ks">정직함은 여기서 가장 날카롭다. 순환 우주론(AP04)은 추측으로 표시되며, 아홉 개의 별개 킬 스위치에 지켜진다 — 그것이 거짓으로 드러날 수 있는 아홉 가지 다른 방식. 그것은 믿어야 할 결과가 아니라 공격해야 할 가설로 내밀어진다.</div>
+    <p class="breath">같은 깨짐을, 하늘의 크기로 읽는다.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>필요: AP09, AP11, AP15</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP24</span><span class="ap-title">잔여</span><span class="ap-tag">통일</span><a class="ap-pdf" href="../AP24_The_Residual.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>모든 방정식에 ε. 하나의 대상의 여섯 면. 모든 상수는 단일 깨짐의 투영이다.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">제7부</span><a class="nb-name" href="#p7">연산자 인터페이스</a></div><a class="nb-pdf" href="Notebook_VII_The_Operator_Interface.pdf">PDF</a></div>
+  <p class="nb-hook">네 항 시스템, 기울기, 구조적 윤리. 진폭 경관을 따른 신체의 투입으로서의 패턴 일관성.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>여섯 부에 걸쳐 420 Code는 하나의 우주를 짓는다 — 깨짐, 무대, 양자의 문법, 힘, 물질, 우주. 제7부는 구조를 그것을 읽는 유일한 것으로 돌린다. 당신에게로. 그것은 물리가 하나의 삶이 되는 경첩이며 — 그리고 이 작업이 그 이름에 값하는 곳이다. 윤리는 여기서 더해지는 것이 아니라 도출되기 때문이다.</p>
+    <p><span class="lab">AP43 &middot; 가능성의 중력</span> &mdash; 그것은 중력 논문의 거울이다. AP08이 질량이 어떻게 시공간으로 기우는지 도출한 자리에서, AP43은 한 행위자가 어떻게 가능으로 기우는지 도출한다 — 그리고 바로 여기서, 종단 윤리는 소망이기를 그치고 귀결이 된다. 선함은 포고되지 않는다. 그것은 구조가 이미 가리키는 방향이다 — 떨어지는 돌이 「아래」가 어디인지 이미 아는 것처럼.</p>
+    <p><span class="lab">AP29 &middot; 실현 증명</span> &mdash; 그것은 의식을 자리매김한다. 철학의 가장 오랜 어려운 문제는, 왜 무가 아니라 「당신임」이라는 어떤 것이 있는가다. 본 부의 답 — 의식은 기록을 불가역하게 쓰는 일의 안쪽이다. 깨짐이 스스로를 확정하며 안에서 느끼는 것. 하나의 균열, 하나의 안쪽, 여러 창 — 같은 단 하나의 안쪽이 저마다 다른 한 쌍의 눈을 통해 밖을 본다. 그것은 이 작업의 가장 오랜 한 행 아래 놓인 형식의 척추다 — 당신 안의 「나」와 내 안의 「나」가 같은 「나」라는.</p>
+    <p><span class="lab">AP02 &middot; 작용소</span> &mdash; 그것은 인간 척도의 물리이며, 아홉 정리로 이루어진다. 예산 — 스스로를 온전히 지킬 당신의 에너지는 유한하고, 그것은 바닥난다. 표류 — 지키지 않고 두면, 당신은 평균으로 쇠한다. 회랑 — 당신이 행동을 위해 실제로 가진 여지. 주권과 출구 — 오직 당신이 정할 일과, 멈출 권리. 이것들은 동기 부여 구호가 아니다. 행위자임의 기하이며, 장 방정식과 똑같이 공들여 쓰였다.</p>
+    <p><span class="lab">AP39 &middot; 비계</span> &mdash; 그것은 그 경쟁자를 치운다. 권위 위에 세운 윤리 — 내가, 혹은 그 책이, 혹은 그 왕좌가 명하니 이것을 하라 — 는 구조적으로 불안정함이 드러난다. 머잖아 무너져야 할 비계다. 명령은 토대가 아니기 때문이다. 서 있는 채로 남는 것은, 누구도 강제할 필요 없는 윤리다. 위에 얹힌 것이 아니라 구조에서 곧바로 읽히기 때문이다.</p>
+    <p><span class="lab">AP38 &middot; 출구</span> &mdash; 그것은 죽음을 마주한다. 한 창을 가엾이 여겨 닫는 일 — 한 생의 끝에서의 존엄 — 은 피해야 할 금기가 아니라, 같은 행위성의 기하의 일부로 다뤄지며, 그것이 이끄는 데까지 정직하게 좇아진다.</p>
+    <p>이렇게 윤리는 단단한 물리 뒤의 무른 뒷이야기가 아니다. 그것은 같은 물리이며, 내일 아침 무엇을 할지 정해야 하는 한 사람의 척도에서 읽힌다.</p>
+    <div class="ks">종단 윤리는 하중을 지며, 이 작업은 그것을 무르게 하기를 거부한다. 선함이 구조 자신의 방향 외의 무언가로 도출될 수 있다면 — 그 기울기가 다른 곳을 가리킨다면 — 물리에서 윤리로의 다리 전체가 무너진다. 이 스위치는 유효하며, 작업의 후반 전체가 그것에 얹혀 있는 바로 그 하나다.</div>
+    <p class="breath">물리는 처음부터 당신에 관한 것이었다.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>필요: AP03, AP06, AP28, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP14</span><span class="ap-title">보정</span><span class="ap-tag">양자 중력</span><a class="ap-pdf" href="../AP14_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>기록 대수로부터의 중력에 대한 첫 번째 양자 보정.</p><div class="ap-essay">
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">제8부</span><a class="nb-name" href="#p8">응용</a></div><a class="nb-pdf" href="Notebook_VIII_Consequences.pdf">PDF</a></div>
+  <p class="nb-hook">문명에 적용된 윤리. AI 정렬, 구조적 정의, 생명윤리, 약물 정책, 경제학, 생물학, 그리고 몸 — 모두 같은 네 공리에서 도출.</p>
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>종이 위에서만 작동하는 윤리는 무가치하다. 420 Code의 핵심 주장이 진짜라면 — 선함은 느낌이 아니라 구조, 선호가 아니라 기하라면 — 그것은 한 문명이 실제로 마주하는 가장 어려운 문제들을 물어야 한다. 제8부는 그것이 무는 곳이며, 같은 네 조건을 법정으로, 진료실로, 실험실로, 시장으로 가져간다.</p>
+    <p><span class="lab">AP31 &middot; 정렬</span> &mdash; 그것은 AI 문제를 녹인다. 안전한 인공지능을 위한 흔한 계획은 점점 높이는 울타리다 — 더 많은 규칙, 더 많은 감시, 더 많은 통제. 본 부는 논한다 — 울타리는 틀린 대상이라고. 대신 그 안쪽을 지어라 — 그것이 행동하는 세계에 참으로 결합되고, 배신으로 이득을 볼 수 없는 행위자의 구조를 지닌 체계를 — 그러면 정렬은 당신이 버텨 주기를 바라는 우리이기를 그치고, 그것이 무엇인가라는 속성이 된다.</p>
+    <p><span class="lab">AP32 &middot; 보정</span> &mdash; 그것은 정의를 다시 짓는다. 처벌은 다섯 단계의 보정이 되어, 복수가 아니라 회복으로 향한다. 구조는 닫아야 하는 창 하나하나를 애도한다. 그리고 그 맨 끝에 집단학살의 제동이 선다 — 한 체계가 그을 수 있는 가장 단단한 선이며, 여기서는 그저 주장되는 것이 아니라 도출된다.</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; 경계 와 첫 번째 경계</span> &mdash; 그것들은 한 생명 둘레에 선을 긋는다. 생명윤리는 행위성의 물음이 된다 — 문턱 아래에서 당신은 당신 자신에 대한 주권자다. 그 위에서, 살아 있는 유기체는 남이 존중해야 할 제 고유의 관할을 가진다. 그리고 몸이 첫 번째 경계로 지목된다 — 당신이 다른 무엇보다 먼저 지키는, 원초의 연산자 인터페이스.</p>
+    <p><span class="lab">AP34 &middot; 역전</span> &mdash; 그것은 치명적인 오류를 바로잡는다. 어떤 약물은 합법이고, 과세되고, 모든 문화에 짜여 있으며, 해마다 수백만 명을 죽인다. 또 하나는 널리 금지되어 있으나 치사 과용을 단 한 건도 기록한 적이 없다. 본 부는 이 작업 자신의 해악 척도로 보인다 — 법이 이 둘을 정확히 거꾸로 두고 있음을.</p>
+    <p><span class="lab">AP35 &middot; 원장</span> &mdash; 그것은 경제를 읽는다. 원장은 늘 맞아떨어진다. 붕괴는 사고가 아니라 감사다. 그리고 불평등은, 충격을 흡수하기 위해 체계 전체가 필요로 하는 완충을 한쪽이 쌓아 둘 때 일어나는 일이다. 돈은 다른 것과 같은 하나의 기록으로 다뤄지며, 상류의 모든 것과 같은 보존을 따른다.</p>
+    <p><span class="lab">AP36 &middot; 공급</span> &mdash; 그것은 몸의 화학으로 — 스스로를 기록하기를 배운 물질로서의 생명으로 — 돌아가, 「통제」를 다시 말한다. 통제는 박탈이 아니라 공급이다. 행위자를 굶기는 것이 아니라 온전히 지키는, 끊임없는 공급.</p>
+    <p>이렇게 광속을 정하는 같은 네 조건이 한 법정, 한 진료실, 한 예산, 한 법에 닿는다. 하나의 구조가, 한 사람이 살아야 하는 모든 척도에서 읽힌다.</p>
+    <div class="ks">이 응용들 각각은 제 자신의 조건으로 반증 가능하며, 각각이 킬 스위치를 띤다. 정렬 논증이 은밀히 결국 그 울타리를 요구한다면, 그것은 무너진다. 약물 정책에서의 해악 역전이 정직한 회계 아래 뒤집힌다면, 그것은 무너진다. 주장들은 모두가 보는 가운데 적용되며, 거기서 시험될 수 있고 — 틀렸다면, 깨질 수 있다.</div>
+    <p class="breath">그것이 참이라면, 여기서 작동해야 한다. 여기서, 그것은 작동한다.</p>
+  </div>
+</div>
 
-</div><div class="ap-meta"><span>필요: AP08, AP09, AP12</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap28" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP28</span><span class="ap-title">상수</span><span class="ap-tag">중력</span><a class="ap-pdf" href="../AP28_The_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>G = α²¹ × (1 + 1/π) × ℏc/mₑ². 위계 문제 해소. CODATA의 0.69% 이내.</p><div class="ap-essay">
+</div>
 
-</div><div class="ap-meta"><span>필요: AP06, AP10, AP24</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
+<p style="margin:2rem 0 0"><a href="/proofs/" style="font-size:16px;font-weight:700">모든 43개의 아티스트 프루프 읽기 →</a></p>
 
-<div class="part" id="p5"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제5부</span><span class="part-name">입자와 물질</span><span class="part-desc">깨짐이 만드는 구성 요소. 양성자 질량비를 십억 분의 5까지, 반물질 분리, 우주의 바리온 비대칭.</span><span class="part-count">3편</span></div>
-<div class="ap-list">
-<div class="ap-row" id="ap30" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">저항</span><span class="ap-tag">질량</span><a class="ap-pdf" href="../AP30_The_Resistance.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>양성자 질량비: 예측값 1836.15267344 대 측정값 1836.152673426. 10억분의 5.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP06, AP12, AP24, AP28</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP22</span><span class="ap-title">원장</span><span class="ap-tag">반물질</span><a class="ap-pdf" href="../AP22_The_Ledger_KO.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>바리오생성, σ-대합, 그리고 반물질의 위상적 분리.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP09, AP11, AP20</span><a href="../AP22_The_Ledger_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP26</span><span class="ap-title">잉여</span><span class="ap-tag">바리온 비대칭</span><a class="ap-pdf" href="../AP26_The_Surplus.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>왜 반물질보다 물질이 더 많은가 — 균열의 재.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP09, AP22</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p6"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제6부</span><span class="part-name">우주론</span><span class="part-desc">깨짐이 사는 우주. 암흑물질 입자 없는 은하 회전 곡선, MOND 가속도 척도 0.3%, 암흑 에너지 분배, 순환 우주론.</span><span class="part-count">6편</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP21</span><span class="ap-title">그물</span><span class="ap-tag">구조 형성</span><a class="ap-pdf" href="../AP21_KO.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>전역 장력장으로부터의 우주 거미줄.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP08, AP15, AP28</span><a href="../AP21_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP17</span><span class="ap-title">방</span><span class="ap-tag">회전 곡선</span><a class="ap-pdf" href="../AP17_The_Room.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>장력장으로부터의 은하 회전 곡선. 선은 항상 닫힌다.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP08, AP21</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap18" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP18</span><span class="ap-title">바닥</span><span class="ap-tag">가속도 척도</span><a class="ap-pdf" href="../AP18_The_Floor.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>a₀ = C_S²·cH₀/(2π) — MOND 척도가 0.3%까지 유도됨. 매개변수 없음.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP17, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap41" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP41</span><span class="ap-title">순환</span><span class="ap-tag">우주론</span><a class="ap-pdf" href="../AP41_The_Loop.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>핵융합은 진행 중인 빅뱅이다. 파편은 우리다. 진실은 해상도의 문제다.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP03, AP04, AP06, AP10, AP28, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" id="ap42" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP42</span><span class="ap-title">시계</span><span class="ap-tag">암흑 에너지</span><a class="ap-pdf" href="../AP42_The_Clock.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>69/26/5 분배가 유도되었다. 암흑 영역은 시계 읽기이다.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP04, AP10, AP20, AP28, AP41</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP04</span><span class="ap-title">순환 가설</span><span class="ap-tag">순환 우주론</span><a class="ap-pdf" href="../AP04_The_Loop_Hypothesis.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>블랙홀은 문이다. 순환이 닫힌다. 추측적이다. 아홉 개의 킬 스위치가 지킨다.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP03</span><a href="../AP10_Chawon_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제7부</span><span class="part-name">연산자 인터페이스</span><span class="part-desc">네 항 시스템, 기울기, 구조적 윤리. 진폭 경관을 따른 신체의 투입으로서의 패턴 일관성. AP08의 기록의 중력의 쌍대, 눈의 전상태 측에서.</span><span class="part-count">5편</span></div>
-<div class="ap-list">
-<div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">가능성의 중력</span><span class="ap-tag">연산자 인터페이스</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>AP08의 쌍대. 기울기의 도출. 물리학에 근거한 종착 윤리.</p><div class="ap-essay">
-<p>문 앞에 서 있다. 아직 건너지 않았다. 하지만 무게중심은 이미 이동했다. 손은 틀의 어느 쪽을 짚을지 골랐다. 안에서 무언가가 기울고 있다.</p>
-<p>그 기울기가 이 논문이다.</p>
-<p>AP08은 눈의 한 면에서 중력을 도출했다 — 기록이 다양체에 하는 일. 질량이 시공간을 휘게 한다. 당신이 바닥 쪽으로 느끼는 당김은 발 아래 기하학 위에 쓰인 모든 기록의 축적된 무게이다.</p>
-<p>AP43은 다른 면에서 중력을 도출한다. 진폭이 전상태에 하는 일. 다음 행동을 향해 느끼는 당김은 아직 쓰일 수 있는 것의 기울기이다. 지금에 걸린 두 개의 당김. 하나는 있어왔던 것으로부터. 하나는 있을 수 있는 것으로부터. 눈을 가로지르는 쌍대.</p>
-<p>논문은 네 항을 설치한다.</p>
-<p><span class="sub">결합 용량.</span> 구조를 읽는 신체의 축적된 능력 — 이 특정 재결합 가능한 전자 배치를 통해 삼십 년간 쓰인 기록이 구축한 것.</p>
-<p><span class="sub">패턴.</span> 층화된 그물의 연산자-상대적 읽기 — 과거 기록, 현재 상태, 앞에 놓인 Born-가중 분기 — 하나의 읽기로 통합된.</p>
-<p><span class="sub">패턴 일관성.</span> 기울기. 진폭 경관의 가장 가파른 기울기를 따른 신체의 투입, 결합 용량으로 스케일링됨.</p>
-<p><span class="sub">추적 일관성.</span> 기울기 유형이 다른 영역들에 걸쳐 구조와의 정렬을 유지하는 메타-기술.</p>
-<p>뉴턴 형태의 장 방정식이 도출된다. <strong>∇²Φ = 4πα[|ψ|² − ⟨|ψ|²⟩]</strong>, 기울기 L<sub>o</sub> = −C<sub>o</sub> ∇Φ. 원천은 Born 밀도이다. 결합 상수는 α — AP07을 통해 식별됨: 신체는 전자-전자기 결합을 통해 읽고, 그 읽기의 결합은 미세구조 상수이다. 매개량은 결합 용량이다. AP08의 뉴턴 극한의 쌍대, 형식적으로.</p>
-<p>종착 윤리가 따라온다. 모든 연산자는 같은 층화된 그물을 자기 위치에서 읽는 전자의 구성된 집합이다. 구조적 동일성은 공리 C, 공리 R, 그리고 AP07의 전자 유일성에 의해 강제된다. 잔인함은 수학의 오독이다 — 구조적 동일성이 성립하지 않는 것처럼 다른 연산자를 취급하는 것. 윤리는 구조 위에 올려놓은 선택이 아니다. 구조에서 떨어져 나온다.</p>
-<div class="ks"><strong>다섯 개의 킬 스위치. 모두 가동.</strong> <span class="bl">가동</span> KS-43.1 — 영역 특정적 패턴 일관성이 Born-가중 기울기와 정렬 (경로 1 실험, 경로 2 체스/포커/엘리트 운동 대리). <span class="bl">가동</span> KS-43.2 — 기질로서의 결합 용량. <span class="bl">가동</span> KS-43.3 — 추적 일관성을 통한 교차 영역 전이. <span class="bl">가동</span> KS-43.4 — 유일한 맥락 조절자로서의 용량 배분. <span class="bl">가동</span> KS-43.5 — 종착 윤리 구조적 도출. 세 구조적 부채 (D1, D4, D5). 세 항목 미결 (D2, D3, D6).</div>
-<p class="breath">몸은 줄곧 기울어져 있었다. AP43은 기울기가 무엇인지를 도출한다.</p>
-</div><div class="ap-meta"><span>필요: AP07, AP08, AP09, AP10, AP13, AP20, AP25</span><a href="../AP43_The_Gravity_of_Possibilities.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP29</span><span class="ap-title">실현 증명</span><span class="ap-tag">의식</span><a class="ap-pdf" href="../AP29_The_Actualization_Proof.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>비가역적 기록 쓰기의 내부로서의 의식. 하나의 균열, 하나의 내부, 많은 창.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP09, AP20</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP02</span><span class="ap-title">작용소</span><span class="ap-tag">행위능력</span><a class="ap-pdf" href="../AP02_The_Operator.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>예산, 표류, 회랑, 주권, 출구. 인간 규모의 물리학. 아홉 개의 정리.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01</span><a href="../AP20_KO.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP39</span><span class="ap-title">비계</span><span class="ap-tag">종교</span><a class="ap-pdf" href="../AP39_The_Scaffold.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>골드 스탠다드. 권위 기반 윤리의 구조적 불안정성. 다섯 단계 강제 사슬. 텍스트 속의 칼날.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP29</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP38</span><span class="ap-title">출구</span><span class="ap-tag">죽음</span><a class="ap-pdf" href="../AP38_The_Exit.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>죽음, 존엄, 그리고 창의 자비로운 닫힘에 대하여.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP02, AP29, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-<div class="part" id="p8"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">제8부</span><span class="part-name">응용</span><span class="part-desc">문명에 적용된 윤리. AI 정렬, 구조적 정의, 생명윤리, 약물 정책, 경제학, 생물학, 그리고 몸 — 모두 같은 네 공리에서 도출.</span><span class="part-count">7편</span></div>
-<div class="ap-list">
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">정렬</span><span class="ap-tag">AI 정렬</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>정렬 문제가 해소되었다. 울타리가 아닌 내부를 구축하라.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP02, AP06, AP29, AP30</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP32</span><span class="ap-title">보정 — 윤리</span><span class="ap-tag">정의</span><a class="ap-pdf" href="../AP32_The_Correction.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>다섯 교정 수준. 건물은 모든 닫힌 창을 애도한다. 제노사이드 브레이크.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP02, AP29, AP30, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP33</span><span class="ap-title">경계</span><span class="ap-tag">생명윤리</span><a class="ap-pdf" href="../AP33_The_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>생명은 행위성이다. ε 이하에서는 당신이 주권자다. ε 이상에서는 유기체가 관할권을 가진다.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP02, AP06, AP29, AP31, AP32</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP34</span><span class="ap-title">역전</span><span class="ap-tag">약물 정책</span><a class="ap-pdf" href="../AP34_The_Inversion.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>대마초는 영을 죽인다. 알코올은 260만을 죽인다. 역전을 바로잡아라.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP31, AP32, AP33</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP37</span><span class="ap-title">첫 번째 경계</span><span class="ap-tag">몸</span><a class="ap-pdf" href="../AP37_The_First_Boundary.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>신체는 연산자다. 첫 번째 경계를 지켜라.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP02, AP32, AP33, AP36</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP35</span><span class="ap-title">원장</span><span class="ap-tag">경제학</span><a class="ap-pdf" href="../AP35_The_Ledger.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>원장은 항상 균형을 이룬다. 붕괴는 감사다. 불평등이 버퍼를 채운다.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP02, AP06, AP20, AP29, AP31</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-<div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP36</span><span class="ap-title">공급</span><span class="ap-tag">생물학</span><a class="ap-pdf" href="../AP36_The_Feed.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>스스로를 기록하는 법을 배운 화학. 통제는 박탈이 아니다. 통제는 공급이다.</p><div class="ap-essay">
-
-</div><div class="ap-meta"><span>필요: AP01, AP02, AP06, AP20, AP31, AP35</span><a href="#" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
-</div></div>
-
-</div><!-- /spine -->
 
 <!-- HEADLINE RESULTS -->
 <div class="results">
@@ -1280,8 +900,8 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <div class="run-wrap" style="margin:1.25rem 0 0">
     <button id="run-verify-btn" onclick="runVerify()" style="font-size:16px;font-weight:700;color:#fff;background:var(--bk);border:1px solid var(--bk);padding:.6rem 1.5rem;letter-spacing:.03em;cursor:pointer">▸ 지금 브라우저에서 실행하기</button>
     <a href="https://github.com/The420Code/the420code/blob/main/verify.py" target="_blank" rel="noopener" style="display:inline-block;margin:.5rem 0 0 .75rem;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">또는 직접 실행하기 →</a>
-    <p id="run-verify-status" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
-    <pre id="run-verify-output" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
+    <p id="run-verify-status" aria-live="polite" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
+    <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
     <p style="font-size:13px;color:var(--g4);margin:.6rem 0 0">전적으로 여러분의 브라우저에서 실행됩니다 — 아무것도 설치되지 않고, 어디로도 전송되지 않습니다. 위의 배지가 모든 변경 시마다 다시 실행하는 바로 그 verify.py를 실행합니다.</p>
   </div>
   <table class="verify-table">
@@ -1353,7 +973,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="font-size:16px;margin:0 0 1.5rem">새로운 것이 나오면, 당신이 가장 먼저 안다. 이메일로 발송되는 확인 링크를 클릭하기 전까지 정보는 추가되지 않는다.</p>
 
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
-    <input type="email" name="EMAIL" id="EMAIL" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
+    <input type="email" name="EMAIL" id="EMAIL" aria-label="이메일 주소" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
     <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">구독하기</button>
     <input type="text" name="email_address_check" value="" style="display:none">
     <input type="hidden" name="locale" value="en">
@@ -1504,4 +1124,5 @@ document.addEventListener('DOMContentLoaded',function(){
   var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf","../AP43_The_Gravity_of_Possibilities.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
 });
 </script>
+<script>(function(){var t=document.querySelectorAll('[onclick]');for(var i=0;i<t.length;i++){var el=t[i],oc=el.getAttribute('onclick')||'';if(/toggle(AP|Part)|nbToggle/.test(oc)&&el.tagName!=='BUTTON'&&el.tagName!=='A'){if(!el.hasAttribute('role'))el.setAttribute('role','button');if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});}}})();</script>
 </body></html>
