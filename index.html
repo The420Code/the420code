@@ -255,6 +255,7 @@ a.nb-name:hover{text-decoration:underline}
 /* ===== END NOTEBOOK ACCORDION CSS ===== */
 /* Unavailable PDF links */
 .pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
 </style>
 <style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
@@ -931,8 +932,8 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <div class="run-wrap" style="margin:1.25rem 0 0">
     <button id="run-verify-btn" onclick="runVerify()" style="font-size:16px;font-weight:700;color:#fff;background:var(--bk);border:1px solid var(--bk);padding:.6rem 1.5rem;letter-spacing:.03em;cursor:pointer">▸ Run it now in your browser</button>
     <a href="https://github.com/The420Code/the420code/blob/main/verify.py" target="_blank" rel="noopener" style="display:inline-block;margin:.5rem 0 0 .75rem;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">or run it yourself →</a>
-    <p id="run-verify-status" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
-    <pre id="run-verify-output" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
+    <p id="run-verify-status" aria-live="polite" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
+    <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
     <p style="font-size:13px;color:var(--g4);margin:.6rem 0 0">Runs entirely in your browser — nothing is installed, nothing is sent anywhere. It executes the exact <code>verify.py</code> that the badge above re-runs on every change.</p>
   </div>
   <table class="verify-table">
@@ -1026,7 +1027,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="font-size:16px;margin:0 0 1.5rem">When something new lands, you'll know first. Your details will not be added unless you click the confirmation link to be emailed.</p>
 
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
-    <input type="email" name="EMAIL" id="EMAIL" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
+    <input type="email" name="EMAIL" id="EMAIL" aria-label="Email address" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
     <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">Subscribe</button>
     <input type="text" name="email_address_check" value="" style="display:none">
     <input type="hidden" name="locale" value="en">
@@ -1178,4 +1179,5 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 });
 </script>
+<script>(function(){var t=document.querySelectorAll('[onclick]');for(var i=0;i<t.length;i++){var el=t[i],oc=el.getAttribute('onclick')||'';if(/toggle(AP|Part)|nbToggle/.test(oc)&&el.tagName!=='BUTTON'&&el.tagName!=='A'){if(!el.hasAttribute('role'))el.setAttribute('role','button');if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});}}})();</script>
 </body></html>
