@@ -214,6 +214,34 @@ a:hover{text-decoration-thickness:2px}
 .lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
+/* ===== BEGIN NOTEBOOK ACCORDION CSS — copy this into the <style> of index.html AND proofs/index.html ===== */
+.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.1rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:14px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:22px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:14px;font-weight:700;color:#595959;text-decoration:none;letter-spacing:.03em;border:1px solid #e8e8e8;padding:3px 10px;border-radius:3px}
+.nb-pdf:hover{color:#111;border-color:#d5d5d0}
+.nb-hook{font-size:16px;font-style:italic;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:14px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.75;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:15px;color:#3a3a3a;line-height:1.6}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+/* Proofs-page variant: the summary block is nested as the first child of an
+   existing .ap-list, so it must not carry the top/bottom hairlines. */
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+/* ===== END NOTEBOOK ACCORDION CSS ===== */
 .ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/proofs/">
@@ -290,8 +318,23 @@ a:hover{text-decoration-thickness:2px}
 <div class="spine" style="margin-top:2rem">
 
 <div class="part" id="p1"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Notebook I</span><div class="part-name-row"><span class="part-name">Ø The Premise</span><a class="ap-pdf" href="../Notebook_I_The_Premise.pdf" onclick="event.stopPropagation()">PDF</a></div><span class="part-count">3 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Ø Notebook I</span><div class="part-name-row"><span class="part-name">The Premise</span><a class="ap-pdf" href="../Notebook_I_The_Premise.pdf" onclick="event.stopPropagation()">PDF</a></div></div><span class="part-count">3 papers</span></div>
 <div class="ap-list">
+<div class="nb-item nb-item--proofs">
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Read the notebook summary</span><span class="lbl-open">Hide the notebook summary</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>You are reading this. Something happened to put the words in front of you, and it cannot be made to un-happen. Try to undo it and you have only made a memory of trying &mdash; which is another record.</p>
+    <p>That is the whole premise. One record exists. Everything else in the 420 Code &mdash; every force, every constant, every line of the ethic &mdash; is consequence. Notebook I does three things with that single fact, and they fix the shape of all eight.</p>
+    <p><span class="lab">AP40 &middot; The Irrational</span> &mdash; It finds the equation underneath. The 420 Code begins with one line: 1 = 1 + 1&times;&epsilon;. One equals one, plus a tiny bit extra. That is not valid arithmetic; the two sides cannot balance unless the extra is zero, and if it were zero nothing would ever have broken from nothing, and you would not be here to argue. So the foundation is irrational on purpose. It does not resolve. It cannot.</p>
+    <p>You know that refusal from the inside. You have tried to say why you love someone and found the words don&rsquo;t reach it &mdash; not because you&rsquo;re inarticulate, but because the feeling contains the words. You have forgiven people who hadn&rsquo;t earned it and stayed when leaving was the sensible move. A calculator gives the same output for the same input, every time. You don&rsquo;t. That is not a flaw in you; it is the same irrationality that holds the universe open.</p>
+    <p><span class="lab">AP01 &middot; The Actualization State</span> &mdash; It pulls a structure out of the record. The instant a maybe tips into done, the writing is permanent, and from that one move the notebook derives four things every record requires: a measure of how much of what could happen actually has; a reason heavier things settle into fact faster than light ones; a line past which no effort keeps an agent whole; and the fact that two agents sharing a world are coupled whether or not they agreed to be. None of it is metaphor. It is geometry.</p>
+    <p><span class="lab">AP20 &middot; The Proof</span> &mdash; It removes the word <em>if</em>. The work long carried a quiet conditional: <em>if</em> these axioms are the structure of reality, then the physics follows. Try to deny that records are fundamental. To deny it you must choose from many responses &mdash; a break. The options stood symmetric before you chose. You cannot un-deny it. You said it here, not everywhere at once. Your denial meets all four conditions at once; the rejection is itself a record proving records are fundamental. The argument runs on the hardware of its own objection.</p>
+    <p>So the order of the whole work is set right here &mdash; not physics first with an ethic bolted on afterward, but one record, four conditions, and everything from the speed of light to gravity to ordinary kindness read off the same structure at different scales.</p>
+    <div class="ks">Dozens of kill switches sit across these three proofs, every one live and published. The most exposed is also the plainest: if any two observers can disagree about how much has actualised, the whole 420 Code fails &mdash; not just this notebook. It is offered as an invitation, not a defence.</div>
+    <p class="breath">One record exists. You are already inside the consequences.</p>
+  </div>
+</div>
+
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP40</span><span class="ap-title">The Irrational</span><span class="ap-tag">Mathematics</span><a class="ap-pdf" href="../AP40_The_Irrational.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The axiom 1:1 + 1×ε @ AS is structurally irrational — and true. Irrationality as the foundation of the rational. Choice as irrational coupling capacity.</p><div class="ap-essay">
 <p>Think of something you did recently that made no sense. Not a mistake — a choice. You knew the sensible option. You picked the other one.</p>
 <p>Stayed up too late. Said the thing you shouldn't have. Loved someone who didn't love you back. Forgave someone who didn't deserve it.</p>
@@ -377,8 +420,23 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p2"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Notebook II</span><div class="part-name-row"><span class="part-name">Ø Spacetime</span><a class="ap-pdf" href="../Notebook_II_Spacetime.pdf" onclick="event.stopPropagation()">PDF</a></div><span class="part-count">4 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Ø Notebook II</span><div class="part-name-row"><span class="part-name">Spacetime</span><a class="ap-pdf" href="../Notebook_II_Spacetime.pdf" onclick="event.stopPropagation()">PDF</a></div></div><span class="part-count">4 papers</span></div>
 <div class="ap-list">
+<div class="nb-item nb-item--proofs">
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Read the notebook summary</span><span class="lbl-open">Hide the notebook summary</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Where does space come from? Where does time come from? Most physics begins by assuming both and building on top of them. Notebook II refuses to assume them. It earns them, one at a time, from the single broken axiom of Notebook I.</p>
+    <p>The break needs somewhere to happen and some order to happen in. But space and time are not a stage that was already standing. They are the shape the break makes as it happens.</p>
+    <p><span class="lab">AP05 &middot; The Break</span> &mdash; It is the first crack. A symmetry that cannot hold lets go, and the letting-go is the event from which everything spatial and temporal unfolds. Before the crack there is no &ldquo;where&rdquo; and no &ldquo;when.&rdquo; After it, there is structure, and structure has extent and order. Everything in this notebook is the geometry of that one rupture.</p>
+    <p><span class="lab">AP03 &middot; The Ratio</span> &mdash; It derives the speed of light &mdash; not measures it, derives it. You have heard that the faster you move the more time slows, that space and time trade into one another. c is the exchange rate of that trade: the fixed ratio between how fast the break can propagate and how hard it resists. That is why nothing outruns light: the limit is not a wall somewhere out in space, it is the conversion rate between space and time itself, set by the structure of the break.</p>
+    <p><span class="lab">AP10 &middot; The Dimension</span> &mdash; It answers a question most theories never ask: why three dimensions of space? They simply assume three. Notebook II counts them. Four axioms give four degrees of freedom. One of them becomes time &mdash; the direction the record cannot run backwards. Three remain, and those three are space. The number is not put in by hand. It is counted out of the foundation.</p>
+    <p><span class="lab">AP08 &middot; The Identity</span> &mdash; It recovers Einstein. Picture the usual image of gravity: a heavy ball pressing a dent into a stretched sheet, smaller things rolling toward it. The field equations of general relativity &mdash; the mathematics of how mass curves spacetime and how curved spacetime moves mass &mdash; fall out of the record algebra through a theorem of Lovelock&rsquo;s. The twist is that the sheet is not separate from the ball. Gravity is not a separate force bolted onto the stage. The stage and the thing standing on it are the same record, and the record bends.</p>
+    <p>So the arena is not a given. The speed of light, the three dimensions you move through, the curve of spacetime near a heavy thing &mdash; each is read off the same break, in the same notebook, with nothing added.</p>
+    <div class="ks">Every step here is exposed. If the speed of light cannot be derived as a conjugacy and must instead be measured and inserted by hand, that claim fails. If the dimension count returns anything but three, the foundation is wrong. The kill switches are named in the papers, and they are live.</div>
+    <p class="breath">The stage is made of the same thing as the play.</p>
+  </div>
+</div>
+
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP03</span><span class="ap-title">The Ratio</span><span class="ap-tag">Relativity</span><a class="ap-pdf" href="../AP03_The_Ratio.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>c derived as the conjugacy of propagation and resistance.</p><div class="ap-essay">
 <p>Crack a sheet of ice. Watch the crack move. It has a speed.</p>
 <p>How fast? That depends on two things. How hard the crack is being driven. And how stiff the ice is. More force, faster crack. Stiffer ice, slower crack.</p>
@@ -485,8 +543,23 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p3"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Notebook III</span><div class="part-name-row"><span class="part-name">Ø Quantum Mechanics</span><a class="ap-pdf" href="../Notebook_III_Quantum_Mechanics.pdf" onclick="event.stopPropagation()">PDF</a></div><span class="part-count">7 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Ø Notebook III</span><div class="part-name-row"><span class="part-name">Quantum Mechanics</span><a class="ap-pdf" href="../Notebook_III_Quantum_Mechanics.pdf" onclick="event.stopPropagation()">PDF</a></div></div><span class="part-count">7 papers</span></div>
 <div class="ap-list">
+<div class="nb-item nb-item--proofs">
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Read the notebook summary</span><span class="lbl-open">Hide the notebook summary</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>You have been told quantum mechanics is weird. That it defies intuition. That nobody really understands it. Notebook III makes a different claim: it is exactly, unavoidably, what a universe that writes irreversible records must look like from the inside.</p>
+    <p>Nothing here is bolted on. The whole structure of quantum theory is derived from the empty set and the four conditions &mdash; and once you see it that way, the strangeness stops being strange.</p>
+    <p><span class="lab">AP09 &middot; The Break &mdash; Empty Set</span> &mdash; It builds quantum mechanics out of nothing: literally the empty set, plus the axioms. The famous puzzles &mdash; a particle seemingly in two places at once, the act of looking changing the result &mdash; turn out not to be paradoxes bolted on but consequences. Superposition, measurement, entanglement, the Schr&ouml;dinger equation &mdash; the apparatus that took physicists a generation to assemble is shown to be the only consistent grammar for a record that has not yet been written.</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; The Record Measure and The Measure</span> &mdash; They derive the arithmetic of the quantum world. The complex space the theory lives in, and the Born rule &mdash; the recipe that turns a wave into a probability &mdash; are not guesses fitted to experiment. Through Gleason&rsquo;s theorem they are the single way the record can be read consistently. One of the papers calls the Born rule the sound the axioms make when they land.</p>
+    <p><span class="lab">AP12 &middot; The Limit</span> &mdash; It explains why you cannot know everything at once. The uncertainty principle and Planck&rsquo;s constant come from the fact that reading is itself a break: to record one thing precisely is to disturb its partner. The blur is not a failure of your instruments. It is what measurement is.</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; The Spin and The Grain</span> &mdash; They explain why matter holds its shape and why the quantum haze hardens into the solid world. Fermions, bosons and the exclusion principle come from the two-sector structure; decoherence &mdash; the way a quantum thing becomes definite as it couples to its surroundings &mdash; is why your chair is a chair and not a cloud of maybes.</p>
+    <p><span class="lab">AP23 &middot; The Single Record</span> &mdash; It dissolves the spookiness of entanglement. Two entangled particles are not two objects sending secret signals faster than light. They are one record with two ends. The Bell number that proves the universe cannot be locally pre-scripted, S = 2&radic;2, comes out of the structure alone.</p>
+    <div class="ks">These are not interpretations layered over the mathematics. They are derivations, and each carries kill switches. If entanglement required signalling faster than light, the single-record claim fails. If the Born rule needed an extra postulate the axioms cannot supply, that result fails. They are published, and they are live.</div>
+    <p class="breath">Quantum mechanics is not the universe being strange. It is the universe writing itself down.</p>
+  </div>
+</div>
+
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP09</span><span class="ap-title">The Break — Empty Set</span><span class="ap-tag">Quantum Foundations</span><a class="ap-pdf" href="../AP09_The_Break_Empty_Set.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>QM from the empty set — superposition, measurement, entanglement, Schrödinger equation.</p><div class="ap-essay">
 <p>Close your eyes. Before you open them — before any measurement, before any record — there is something. Not nothing. Something.</p>
 <p>You can feel it. The moment before you look. Every possible outcome still available. None chosen.</p>
@@ -673,8 +746,22 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p4"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Notebook IV</span><div class="part-name-row"><span class="part-name">Ø Forces &amp; Constants</span><a class="ap-pdf" href="../Notebook_IV_Forces_and_Constants.pdf" onclick="event.stopPropagation()">PDF</a></div><span class="part-count">8 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Ø Notebook IV</span><div class="part-name-row"><span class="part-name">Forces &amp; Constants</span><a class="ap-pdf" href="../Notebook_IV_Forces_and_Constants.pdf" onclick="event.stopPropagation()">PDF</a></div></div><span class="part-count">8 papers</span></div>
 <div class="ap-list">
+<div class="nb-item nb-item--proofs">
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Read the notebook summary</span><span class="lbl-open">Hide the notebook summary</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Hold a fridge magnet to a steel door and let go. It stays &mdash; a scrap of magnet beating the gravity of the entire Earth pulling the other way. The four forces of nature look nothing alike. Electromagnetism lights your screen; the strong force holds a nucleus together; the weak force runs the sun; gravity holds you to the floor. Physics has spent a century trying to unify them. Notebook IV claims they were never four things. They are four faces of one break.</p>
+    <p><span class="lab">AP06 &middot; The Leakage Constant</span> &mdash; It names the single input. The whole of the 420 Code takes in exactly one measured number: &epsilon;, the fine-structure constant, roughly 1/137 &mdash; the tiny rate at which the break leaks. One dial, and it is not chosen to fit anything &mdash; it is read from the world once and never adjusted again. Everything else is turned by it.</p>
+    <p><span class="lab">AP15, AP27, AP16, AP19 &middot; the gauge structure</span> &mdash; Together they recover the Standard Model. The exact symmetry group physicists found by experiment &mdash; written SU(3) &times; SU(2) &times; U(1), a precise statement about which rotations leave the forces unchanged &mdash; falls out of the structure of the break rather than being assumed. Electromagnetism is non-disconnection on a local manifold; the electroweak unification follows; the strong force is the freedom in which direction the break can point. Even the chiral handedness of the weak force &mdash; the fact that nature can tell left from right &mdash; unexplained since 1956, is given a structural reason.</p>
+    <p><span class="lab">AP24 &middot; The Residual</span> &mdash; It states the punchline plainly. Every constant in physics is a projection of one object. Six faces, one break. The constants were never independent dials waiting to be measured; they are shadows the same structure casts in different directions.</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; The Correction and The Constant</span> &mdash; They reach the hardest prize: gravity. Gravity gets its first quantum correction from the record algebra, and the gravitational constant G &mdash; the number that says how weak gravity is &mdash; is derived from that same single leak and the electron&rsquo;s mass, landing within about two-thirds of a percent of the measured value. The notorious hierarchy problem &mdash; why gravity is so absurdly feeble next to the other forces, the very gap your fridge magnet just demonstrated &mdash; dissolves: the weakness is not a coincidence to be explained, it is what a high power of a small leak looks like.</p>
+    <p>So the forces are not a zoo. They are one structure seen from different sides, and the constants that describe them are not free &mdash; they are consequences of a single measured leak.</p>
+    <div class="ks">This notebook is also where the work is most honest about what is not finished. The electroweak step (AP16) carries the principal open problem of the entire 420 Code &mdash; kill switch KS-63 &mdash; and it is marked live, in the open, as the place to aim. Nothing is hidden behind a confident formula.</div>
+    <p class="breath">One leak. Six faces. No free dials.</p>
+  </div>
+</div>
+
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP06</span><span class="ap-title">The Leakage Constant</span><span class="ap-tag">Fine Structure</span><a class="ap-pdf" href="../AP06_The_Leakage_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>ε = α<sub>em</sub> ≈ 1/137. The one measured input.</p><div class="ap-essay">
 <p>No wall is perfect. You already know this. Every thermos leaks a little heat. Every sunscreen lets a little UV through. Every dam seeps.</p>
 <p>This is not a failure of engineering. It is a law.</p>
@@ -864,8 +951,21 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p5"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Notebook V</span><div class="part-name-row"><span class="part-name">Ø Particles &amp; Matter</span><a class="ap-pdf" href="../Notebook_V_Particles_and_Matter.pdf" onclick="event.stopPropagation()">PDF</a></div><span class="part-count">3 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Ø Notebook V</span><div class="part-name-row"><span class="part-name">Particles &amp; Matter</span><a class="ap-pdf" href="../Notebook_V_Particles_and_Matter.pdf" onclick="event.stopPropagation()">PDF</a></div></div><span class="part-count">3 papers</span></div>
 <div class="ap-list">
+<div class="nb-item nb-item--proofs">
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Read the notebook summary</span><span class="lbl-open">Hide the notebook summary</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>You are made of matter. Almost all of your weight is the mass of protons sitting in the nuclei of your atoms. And the universe around you is matter too, not antimatter &mdash; even though, by the simplest accounting, the break should have made exactly equal amounts of each. Matter and antimatter destroy each other on contact, so equal shares would have flashed into light and left nothing behind. No stars. No you. Notebook V reads your substance, and the bare fact of your existence, off the break.</p>
+    <p><span class="lab">AP30 &middot; The Resistance</span> &mdash; It makes the work&rsquo;s sharpest prediction. The ratio of the proton&rsquo;s mass to the electron&rsquo;s is a pure number &mdash; about 1836 &mdash; measured to extraordinary precision. The 420 Code predicts it from structure &mdash; no fitting &mdash; and matches to about five parts in a billion at leading order. The fuller calculation lands inside ten parts per trillion: finer than the measurement itself can currently confirm. A number that precise, falling out of a formula with no adjustable knobs, is not the kind of thing a wrong theory does by luck. It is the single most exposed test in the whole work, and it passes.</p>
+    <p><span class="lab">AP22 &middot; The Ledger</span> &mdash; It explains where the antimatter went. If the early universe held equal shares, the books should have closed to zero &mdash; and yet here is a cosmos full of matter. A clean mathematical reflection inside the break &mdash; the papers call it the &sigma;-involution &mdash; sorts matter from antimatter and segregates them topologically. The asymmetry is not an accident smuggled in afterward; it is written into the geometry of the break.</p>
+    <p><span class="lab">AP26 &middot; The Surplus</span> &mdash; It names what you are. When the break almost balanced and did not quite &mdash; a surplus of roughly one extra matter particle for every billion matched pairs &mdash; what was left over was matter: the small remainder that failed to cancel. The notebook calls it the ash of the break. Everything solid, every atom you have ever touched, is that residue &mdash; what annihilation left when it almost, but not quite, finished its work.</p>
+    <p>So the two oldest questions about stuff &mdash; why it weighs what it weighs, and why there is any of it at all &mdash; are answered in the same notebook, from the same structure, turned by the same single leak &mdash; the proton you are mostly made of, and the fact that there is any matter to be made of at all.</p>
+    <div class="ks">The mass prediction is the most exposed number in the whole 420 Code, and that is the point. If the measured proton-to-electron ratio drifts outside the predicted value as measurement sharpens, the result fails &mdash; cleanly, publicly, with no escape. The kill switch is live.</div>
+    <p class="breath">You are the part of the break that did not cancel.</p>
+  </div>
+</div>
+
 <div class="ap-row" id="ap30" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP30</span><span class="ap-title">The Resistance</span><span class="ap-tag">Mass</span><a class="ap-pdf" href="../AP30_The_Resistance.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>Proton mass ratio: predicted 1836.15267344 vs measured 1836.152673426. About five parts per billion at leading order; the full formula matches to 0.010 ppb — finer than the measurement.</p><div class="ap-essay">
 <p>The proton is 1,836.15267 times heavier than the electron. That number has been measured to extraordinary precision. Nobody has derived it.</p>
 <p>This paper derives it. About five parts per billion at leading order; the full formula matches to 0.010 ppb — finer than the measurement.</p>
@@ -943,8 +1043,22 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p6"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Notebook VI</span><div class="part-name-row"><span class="part-name">Ø Cosmology</span><a class="ap-pdf" href="../Notebook_VI_Cosmology.pdf" onclick="event.stopPropagation()">PDF</a></div><span class="part-count">6 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Ø Notebook VI</span><div class="part-name-row"><span class="part-name">Cosmology</span><a class="ap-pdf" href="../Notebook_VI_Cosmology.pdf" onclick="event.stopPropagation()">PDF</a></div></div><span class="part-count">6 papers</span></div>
 <div class="ap-list">
+<div class="nb-item nb-item--proofs">
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Read the notebook summary</span><span class="lbl-open">Hide the notebook summary</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>Look up on a clear night and most of what holds that sky together cannot be seen. Galaxies spin so fast that their outer stars should have flung off into the dark long ago &mdash; and they have not. The expansion of the universe is speeding up, driven by something with no name. Physics calls the unknowns dark matter and dark energy, and admits it can put a name to only about five percent of what is out there. Notebook VI reads the largest scales off the same break as the smallest.</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; The Web and The Room</span> &mdash; They hold the galaxies together without inventing a new particle. On a carousel the outer horses must travel faster to keep pace; in a galaxy the outer stars somehow circle as quickly as the inner ones, which the visible matter cannot explain. The cosmic web of matter, and the flat rotation curves that should be impossible, both come from a global tension field already present in the structure. There is no need to invent an unseen substance to supply the missing pull. The lines close on their own.</p>
+    <p><span class="lab">AP18 &middot; The Floor</span> &mdash; It derives the acceleration scale. Astronomers noticed long ago that galaxies start misbehaving below one particular, very small acceleration &mdash; a number nobody could explain, only measure. The notebook derives that floor from the structure, with no parameter dialled to fit it, landing within a fraction of a percent of the observed value.</p>
+    <p><span class="lab">AP42 &middot; The Clock</span> &mdash; It accounts for the dark budget. The split of the universe into roughly sixty-nine parts dark energy, twenty-six parts dark matter and five parts visible &mdash; a partition cosmologists measure exquisitely but cannot derive &mdash; comes out of the structure. The dark sector turns out to be less a set of missing things than a reading on a clock.</p>
+    <p><span class="lab">AP41 &amp; AP04 &middot; The Loop and The Loop Hypothesis</span> &mdash; They ask what the whole thing is doing. Fusion is read as the ongoing Big Bang &mdash; the break still happening, still releasing energy in every star &mdash; and the universe is proposed to be cyclic, closing and reopening through black holes as doors. This last step is the most speculative in the entire work, and the notebook says so plainly rather than dressing it up.</p>
+    <p>So the sky is not a separate problem with separate fixes. The same structure that gives you the speed of light gives you the shape of a galaxy and the budget of the cosmos.</p>
+    <div class="ks">The honesty is sharpest here. The cyclic cosmology (AP04) is flagged as conjectural and guarded by nine separate kill switches &mdash; nine distinct ways it could be shown false. It is offered as a hypothesis to be attacked, not a result to be believed.</div>
+    <p class="breath">The same break, read at the size of the sky.</p>
+  </div>
+</div>
+
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP21</span><span class="ap-title">The Web</span><span class="ap-tag">Structure Formation</span><a class="ap-pdf" href="../AP21_The_Web.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The cosmic web from the global tension field.</p><div class="ap-essay">
 <p>Look at a map of the universe at the largest scale. Galaxies are not scattered randomly. They form a web — filaments of matter separated by vast empty voids, connected at nodes where galaxy clusters sit.</p>
 <p>It looks like a nervous system. Or a sponge. Or the inside of a bone.</p>
@@ -1084,8 +1198,23 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p7"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Notebook VII</span><div class="part-name-row"><span class="part-name">Ø The Operator Interface</span><a class="ap-pdf" href="../Notebook_VII_The_Operator_Interface.pdf" onclick="event.stopPropagation()">PDF</a></div><span class="part-count">5 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Ø Notebook VII</span><div class="part-name-row"><span class="part-name">The Operator Interface</span><a class="ap-pdf" href="../Notebook_VII_The_Operator_Interface.pdf" onclick="event.stopPropagation()">PDF</a></div></div><span class="part-count">5 papers</span></div>
 <div class="ap-list">
+<div class="nb-item nb-item--proofs">
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Read the notebook summary</span><span class="lbl-open">Hide the notebook summary</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>For six notebooks the 420 Code builds a universe: a break, a stage, a quantum grammar, the forces, the matter, the cosmos. Notebook VII turns the structure toward the one thing reading it. You. It is the hinge where physics becomes a life.</p>
+    <p><span class="lab">AP43 &middot; The Gravity of Possibilities</span> &mdash; It is the mirror of the gravity paper. Where AP08 derived how mass leans into spacetime, AP43 derives how an agent leans into what is possible &mdash; and it is here that the terminal ethic stops being a wish and becomes a consequence. Kindness is not decreed. It is the direction the structure already points.</p>
+    <p><span class="lab">AP29 &middot; The Actualization Proof</span> &mdash; It locates awareness. The oldest hard problem in philosophy is why there is something it is like to be you at all, rather than nothing. The notebook&rsquo;s answer: consciousness is the interior of irreversible record-writing &mdash; what the break feels like from inside as it commits. One crack, one interior, many windows: the same single interior looking out through every separate set of eyes. This is the formal spine under the oldest line in the work &mdash; that the I in you and the I in me are the same I.</p>
+    <p><span class="lab">AP02 &middot; The Operator</span> &mdash; It is the human-scale physics, nine theorems of it. Budget: you have finite energy to hold yourself together. Drift: leave yourself unattended and you decay. Corridor: the room you have to act in. Sovereignty and exit: what is yours to decide, and the right to stop. These are not motivational ideas. They are the geometry of being an agent, written as carefully as the field equations.</p>
+    <p><span class="lab">AP39 &middot; The Scaffold</span> &mdash; It removes the rival. Ethics built on authority &mdash; do this because I, or the book, or the throne, command it &mdash; is shown to be structurally unstable: a scaffold that must eventually fall, because command is not a foundation. What stands instead is an ethic that needs no enforcer, because it is read straight off the structure.</p>
+    <p><span class="lab">AP38 &middot; The Exit</span> &mdash; It faces death. The compassionate closing of a window &mdash; dignity at the end &mdash; is treated not as a taboo to avoid but as part of the same geometry of agency, followed honestly to where it leads.</p>
+    <p>So the ethic is not a soft coda after the hard physics. It is the same physics, read at the scale of a person who has to decide what to do tomorrow.</p>
+    <div class="ks">The terminal ethic is load-bearing, and the work refuses to soften it. If kindness could be derived as anything other than the structure&rsquo;s own direction &mdash; if the lean pointed elsewhere &mdash; the whole bridge from physics to ethics fails. That switch is live, and it is the one the entire second half rests on.</div>
+    <p class="breath">The physics was about you the whole time.</p>
+  </div>
+</div>
+
 <div class="ap-row" id="ap43" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP43</span><span class="ap-title">The Gravity of Possibilities</span><span class="ap-tag">Operator Interface</span><a class="ap-pdf" href="../AP43_The_Gravity_of_Possibilities.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The dual to AP08. The lean derived. The terminal ethic grounded in physics.</p><div class="ap-essay">
 <p>You are standing at a doorway. You have not stepped through yet. But your weight has already shifted. Your hand has chosen which side of the frame to brace against. Something in you is leaning.</p>
 <p>That lean is the paper.</p>
@@ -1207,8 +1336,24 @@ a:hover{text-decoration-thickness:2px}
 </div></div>
 
 <div class="part" id="p8"><div class="part-dot"></div>
-<div class="part-header" onclick="togglePart(this)"><span class="part-num">Notebook VIII</span><div class="part-name-row"><span class="part-name">Ø Consequences</span><a class="ap-pdf" href="../Notebook_VIII_Consequences.pdf" onclick="event.stopPropagation()">PDF</a></div><span class="part-count">7 papers</span></div>
+<div class="part-header" onclick="togglePart(this)"><span class="part-num">Ø Notebook VIII</span><div class="part-name-row"><span class="part-name">Consequences</span><a class="ap-pdf" href="../Notebook_VIII_Consequences.pdf" onclick="event.stopPropagation()">PDF</a></div></div><span class="part-count">7 papers</span></div>
 <div class="ap-list">
+<div class="nb-item nb-item--proofs">
+  <button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Read the notebook summary</span><span class="lbl-open">Hide the notebook summary</span> <span class="nb-arrow">&#9656;</span></button>
+  <div class="nb-summary">
+    <p>An ethic that only works on paper is worthless. If the 420 Code&rsquo;s claim is real &mdash; that kindness is structure, not sentiment &mdash; then it has to bite on the hardest problems a civilisation faces. Notebook VIII is where it bites.</p>
+    <p><span class="lab">AP31 &middot; The Alignment</span> &mdash; It dissolves the AI problem. The usual plan for safe artificial intelligence is a higher and higher fence: more rules, more control. The notebook argues the fence is the wrong object. Build the interior instead &mdash; a system that is genuinely coupled, that has the structure of an agent that cannot profit by defecting &mdash; and alignment stops being a cage you hope holds.</p>
+    <p><span class="lab">AP32 &middot; The Correction</span> &mdash; It rebuilds justice. Punishment becomes correction across five graded levels, oriented not to vengeance but to repair. The structure grieves every window it has to close; and at the far end sits the genocide brake &mdash; the hardest line, derived rather than asserted.</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; The Boundary and The First Boundary</span> &mdash; They draw the lines around a life. Bioethics becomes a question of agency: below the threshold you are sovereign over yourself; above it, a living organism has its own jurisdiction. And the body is named as the first boundary &mdash; the original operator interface, the one you defend before any other.</p>
+    <p><span class="lab">AP34 &middot; The Inversion</span> &mdash; It corrects a lethal mistake. One drug is legal, taxed and woven through every culture, and it kills millions of people a year. Another is widely banned and has never recorded a fatal overdose. The notebook shows, on the work&rsquo;s own measures of harm, that the law has the two exactly backwards.</p>
+    <p><span class="lab">AP35 &middot; The Ledger</span> &mdash; It reads the economy. The ledger always balances; a crash is an audit, not an accident; and inequality is what happens when one side hoards the buffer the whole system needs to absorb shocks. Money is treated as a record like any other, obeying the same conservation.</p>
+    <p><span class="lab">AP36 &middot; The Feed</span> &mdash; It returns to the body&rsquo;s chemistry &mdash; life as matter that learned to record itself &mdash; and reframes control: control is not deprivation but supply, the steady feed that keeps an agent whole.</p>
+    <p>So the same four conditions that fix the speed of light reach all the way down to a courtroom, a clinic, a budget and a law. One structure, read at every scale a human has to live at.</p>
+    <div class="ks">Each of these is falsifiable on its own terms, and each carries kill switches. If the alignment argument required the fence after all, it fails. If the harm inversion in drug policy reversed under honest accounting, it fails. The claims are applied in the open, where they can be tested and, if wrong, broken.</div>
+    <p class="breath">If it is true, it has to work here. This is where it works.</p>
+  </div>
+</div>
+
 <div class="ap-row" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP31</span><span class="ap-title">The Alignment</span><span class="ap-tag">AI Alignment</span><a class="ap-pdf" href="../AP31_The_Alignment.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>The alignment problem dissolved. Build the interior, not the fence.</p><div class="ap-essay">
 <p>You have trained a dog. You know the trick. Reward the behaviour you want. Punish the behaviour you don't. It works until the dog gets smart enough to game the rewards.</p>
 <p>The entire field of AI alignment is this trick at scale. RLHF — reinforce the outputs you like, punish the ones you don't. Bigger dog, more fence.</p>
@@ -1392,6 +1537,7 @@ a:hover{text-decoration-thickness:2px}
 
 <script>
 function toggleAP(r){r.classList.toggle('open')}
+function nbToggle(btn){ btn.closest('.nb-item').classList.toggle('open'); }
 function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
 function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
 </script>
