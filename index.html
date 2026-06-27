@@ -180,8 +180,8 @@ a:hover{text-decoration-thickness:2px}
 @media(max-width:600px){.physics-card{flex-wrap:wrap;gap:.25rem}.p-error{font-size:18px}}
 .verify-wrap{position:relative;margin:1.5rem 0 0}
 .verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:200px;font-size:13px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
-.copy-btn{position:absolute;top:8px;right:8px;padding:5px 14px;font-family:var(--f);font-size:12px;font-weight:700;letter-spacing:.04em;background:var(--bk);color:var(--wh);border:none;cursor:pointer}
-.copy-btn:hover{opacity:.8}
+.copy-btn{position:absolute;top:8px;right:8px;padding:8px 16px;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;letter-spacing:.03em;background:#8B6914;color:#fff;border:1px solid #8B6914;border-radius:0;cursor:pointer;box-sizing:border-box}
+.copy-btn:hover{background:#6f5310;border-color:#6f5310}
 .verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:14px}
 .verify-table th{text-align:left;font-weight:700;padding:.5rem .5rem;border-bottom:2px solid var(--bk);font-size:13px;letter-spacing:.04em;color:var(--g5)}
 .verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
@@ -562,24 +562,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     <div class="physics-card"><div><div class="p-name">Dark sector partition</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></div></div><div class="p-error">DE 0.06%</div></div>
   </div>
 
-  <div class="verify-wrap" style="margin-top:2rem">
-    <button class="copy-btn" onclick="copyInline(this)">Copy</button>
-    <pre class="verify-code" style="max-height:none"><code>from math import pi
-
-alpha = 1 / 137.035999084                        # fine-structure constant (CODATA 2018)
-
-scaffold    = 21**2 * 4 + 21 * 3 + 3**2           # 1764 + 63 + 9 = 1836
-maintenance = alpha * 21 * (1 - 1 / (84 * pi))    # dynamic term
-correction  = alpha**2 * 21 * 16 / 1836            # higher-order
-
-predicted = scaffold + maintenance + correction
-measured  = 1836.152673426   # CODATA 2022
-
-print(f"predicted: {predicted:.8f}")
-print(f"measured:  {measured:.8f}")
-print(f"residual:  {abs(predicted - measured) / measured * 1e9:.1f} ppb")</code></pre>
-    <p style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic">Verify in one line. α in. Proton mass out. Copy. Paste into any Python 3 environment. Run.</p>
-  </div>
   <p class="confirm-link"><strong>Full verification suite</strong> — all five predictions in one script. <a href="#confirm-the-math">Run it in your browser →</a></p>
 </div>
 
