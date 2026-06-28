@@ -571,6 +571,146 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 <!-- ════════════════════════════════════════ -->
 <!-- Ø NOTEBOOKS                              -->
+
+<!-- CONFIRM THE MATH -->
+<div class="results">
+  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Confirm the Math</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">One measured input. Zero free parameters. The code below reproduces every headline result from a single number — the fine-structure constant α ≈ 1/137. Copy it. Paste it into any Python environment. Run it. If the numbers match, the derivations hold. If they don't, the argument has a problem and you've found it.</p>
+  <div class="verify-wrap">
+    <button class="copy-btn" onclick="copyCode()">Copy</button>
+    <pre class="verify-code"><code>from math import pi, log, exp
+
+# ─── ONE MEASURED INPUT ───
+alpha = 1 / 137.035999084  # fine-structure constant (CODATA 2018)
+
+# ─── PHYSICAL CONSTANTS (CODATA 2018) ───
+hbar = 1.054571817e-34     # reduced Planck constant (J·s)
+c    = 299792458            # speed of light (m/s)
+m_e  = 9.1093837015e-31    # electron mass (kg)
+m_p  = 1.67262192369e-27   # proton mass (kg)
+m_n  = 1.67492749804e-27   # neutron mass (kg)
+G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
+H0   = 70 * 1000 / 3.0857e22  # Hubble constant at 70 km/s/Mpc (s⁻¹) (s⁻¹)
+
+# ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
+# Three layers of geometric resistance + dynamic maintenance
+scaffold    = 21**2 * 4 + 21 * 3 + 3**2           # = 1836
+maintenance = alpha * 21 * (1 - 1 / (84 * pi))     # dynamic term
+correction  = alpha**2 * 21 * 16 / 1836            # higher-order
+ratio_pred  = scaffold + maintenance + correction
+ratio_meas  = 1836.152673426   # CODATA 2022
+ratio_err   = abs(ratio_pred - ratio_meas) / ratio_meas * 1e9
+
+print("PROTON-ELECTRON MASS RATIO (AP30)")
+print(f"  Predicted: {ratio_pred:.8f}")
+print(f"  Measured:  {ratio_meas:.8f}")
+print(f"  Error:     {ratio_err:.1f} ppb")
+print()
+
+# ─── CLAIM 2: Gravitational constant (AP28) ───
+# G = α²¹ × (1 + 1/π) × ℏc/mₑ²
+alpha_G = alpha**21 * (1 + 1 / pi)
+G_pred  = alpha_G * hbar * c / m_e**2
+G_err   = abs(G_pred - G_measured) / G_measured * 100
+
+print("GRAVITATIONAL CONSTANT (AP28)")
+print(f"  Predicted: {G_pred:.4e} N·m²/kg²")
+print(f"  Measured:  {G_measured:.4e} N·m²/kg²")
+print(f"  Error:     {G_err:.2f}%")
+print()
+
+# ─── CLAIM 3: Neutron-proton mass difference (AP30) ───
+# δ = 3(1 - 1/(2π)) + α(1 + 1/(2π))  in units of mₑ
+delta_pred = 3 * (1 - 1 / (2 * pi)) + alpha * (1 + 1 / (2 * pi))
+delta_meas = (m_n - m_p) / m_e
+delta_err  = abs(delta_pred - delta_meas) / delta_meas * 1e6
+
+print("NEUTRON-PROTON MASS DIFFERENCE (AP30)")
+print(f"  Predicted: {delta_pred:.8f} mₑ")
+print(f"  Measured:  {delta_meas:.8f} mₑ")
+print(f"  Error:     {delta_err:.2f} ppm")
+print()
+
+# ─── CLAIM 4: MOND acceleration scale (AP18) ───
+# a₀ = C_S²·c·H₀/(2π)  where C_S² = 2·ln(sec(½) + tan(½)) ≈ 1.0445
+from math import cos, tan
+CS2        = 2 * log(1 / cos(0.5) + tan(0.5))  # C_S² ≈ 1.0445
+a0_pred    = CS2 * c * H0 / (2 * pi)
+a0_meas    = 1.2e-10  # m/s² (McGaugh 2016)
+a0_err     = abs(a0_pred - a0_meas) / a0_meas * 100
+
+print("MOND ACCELERATION SCALE (AP18)")
+print(f"  C_S²:         {CS2:.10f}")
+print(f"  Predicted:    {a0_pred:.4e} m/s² (at H₀ = 70)")
+print(f"  Measured:     {a0_meas:.4e} m/s²")
+print(f"  Error:        {a0_err:.1f}%")
+print()
+
+# ─── CLAIM 5: Dark sector partition (AP42) ───
+# Within dark sector (20/21 of total):
+#   DM fraction = (6/21)(1 - e^(-21/6))
+#   DE fraction = 1 - DM fraction
+# Applied to total budget:
+f_DM_dark = (6/21) * (1 - exp(-21/6))
+f_DE_dark = 1 - f_DM_dark
+f_vis     = 1 / 21
+f_DM      = f_DM_dark * 20 / 21
+f_DE      = f_DE_dark * 20 / 21
+
+print("DARK SECTOR PARTITION (AP42)")
+print(f"  Dark energy:    {f_DE * 100:.2f}%  (observed: 68.89%)")
+print(f"  Dark matter:    {f_DM * 100:.2f}%  (observed: 26.07%)")
+print(f"  Visible matter: {f_vis * 100:.2f}%  (observed: 4.86%)")
+print()
+
+# ─── CLAIM 6: Visible matter fraction (AP41) ───
+print("VISIBLE MATTER FRACTION (AP41)")
+print(f"  Predicted: 1/21 = {1/21 * 100:.2f}%")
+print(f"  Observed:  4.86%")
+print()
+
+print("─" * 50)
+print("One input (α). Zero free parameters.")
+print("Copy this code. Run it. Confirm it yourself.")</code></pre>
+  </div>
+  <div class="run-wrap" style="margin:1.25rem 0 0">
+    <button id="run-verify-btn" onclick="runVerify()" style="display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#8B6914;color:#fff;text-decoration:none;cursor:pointer" onmouseover="this.style.background='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.background='#8B6914';this.style.borderColor='#8B6914'">▸ Run it now in your browser</button>
+    <a href="https://github.com/The420Code/the420code/blob/main/verify.py" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;margin:0 0 0 .75rem;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#fff;color:#8B6914;text-decoration:none" onmouseover="this.style.color='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.color='#8B6914';this.style.borderColor='#8B6914'">or run it yourself →</a>
+    <p id="run-verify-status" aria-live="polite" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
+    <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
+    <p style="font-size:13px;color:var(--g4);margin:.6rem 0 0">Runs entirely in your browser — nothing is installed, nothing is sent anywhere. It executes the exact <code>verify.py</code> that the badge above re-runs on every change.</p>
+  </div>
+  <table class="verify-table">
+    <thead><tr><th>Claim</th><th>Predicted</th><th>Measured</th><th>Error</th><th>Paper</th></tr></thead>
+    <tbody>
+      <tr><td>Proton mass ratio</td><td>1836.15267344</td><td>1836.152673426</td><td>5 ppb</td><td>AP30</td></tr>
+      <tr><td>Gravitational constant G</td><td>6.721 × 10⁻¹¹</td><td>6.674 × 10⁻¹¹</td><td>0.69%</td><td>AP28</td></tr>
+      <tr><td>Neutron-proton mass diff</td><td>2.53099393 mₑ</td><td>2.53098829 mₑ</td><td>2.2 ppm</td><td>AP30</td></tr>
+      <tr><td>MOND acceleration a₀</td><td>1.200 × 10⁻¹⁰</td><td>1.200 × 10⁻¹⁰</td><td>0.0016% (at H₀ = 70)</td><td>AP18</td></tr>
+      <tr><td>Dark energy</td><td>68.85%</td><td>68.89%</td><td>0.06%</td><td>AP42</td></tr>
+      <tr><td>Dark matter</td><td>26.39%</td><td>26.07%</td><td>1.2%</td><td>AP42</td></tr>
+      <tr><td>Visible matter</td><td>4.76%</td><td>4.86%</td><td>2.0%</td><td>AP41</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:14px;color:var(--g4);margin:1rem 0 0;font-style:italic">At the framework’s derived H₀ = 74.3 km/s/Mpc the prediction matches a₀ to 0.0016% (AP18). At an external H₀ = 70 the same formula gives 5.8% — the dependence is real and stated.</p>
+</div>
+
+<!-- ALSO DERIVED -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Also Derived</h2>
+  <div class="also-derived">
+    <ul>
+      <li>N = 3 spatial dimensions (AP10)</li>
+      <li>Einstein’s field equations (AP08)</li>
+      <li>The Born rule (AP25)</li>
+      <li>Standard Model gauge group SU(3) × SU(2) × U(1) (AP15/16/19/27)</li>
+      <li>Chiral coupling — unexplained since 1956, now derived (AP16)</li>
+      <li>Flat rotation curves without dark matter particles (AP17)</li>
+      <li>Bell inequality S = 2√2 from structure (AP23)</li>
+    </ul>
+  </div>
+</div>
+
 <!-- ════════════════════════════════════════ -->
 
 <h2 id="notebooks" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Notebooks</h2>
@@ -755,144 +895,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 
 
-<!-- CONFIRM THE MATH -->
-<div class="results">
-  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Confirm the Math</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">One measured input. Zero free parameters. The code below reproduces every headline result from a single number — the fine-structure constant α ≈ 1/137. Copy it. Paste it into any Python environment. Run it. If the numbers match, the derivations hold. If they don't, the argument has a problem and you've found it.</p>
-  <div class="verify-wrap">
-    <button class="copy-btn" onclick="copyCode()">Copy</button>
-    <pre class="verify-code"><code>from math import pi, log, exp
 
-# ─── ONE MEASURED INPUT ───
-alpha = 1 / 137.035999084  # fine-structure constant (CODATA 2018)
-
-# ─── PHYSICAL CONSTANTS (CODATA 2018) ───
-hbar = 1.054571817e-34     # reduced Planck constant (J·s)
-c    = 299792458            # speed of light (m/s)
-m_e  = 9.1093837015e-31    # electron mass (kg)
-m_p  = 1.67262192369e-27   # proton mass (kg)
-m_n  = 1.67492749804e-27   # neutron mass (kg)
-G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
-H0   = 70 * 1000 / 3.0857e22  # Hubble constant at 70 km/s/Mpc (s⁻¹) (s⁻¹)
-
-# ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
-# Three layers of geometric resistance + dynamic maintenance
-scaffold    = 21**2 * 4 + 21 * 3 + 3**2           # = 1836
-maintenance = alpha * 21 * (1 - 1 / (84 * pi))     # dynamic term
-correction  = alpha**2 * 21 * 16 / 1836            # higher-order
-ratio_pred  = scaffold + maintenance + correction
-ratio_meas  = 1836.152673426   # CODATA 2022
-ratio_err   = abs(ratio_pred - ratio_meas) / ratio_meas * 1e9
-
-print("PROTON-ELECTRON MASS RATIO (AP30)")
-print(f"  Predicted: {ratio_pred:.8f}")
-print(f"  Measured:  {ratio_meas:.8f}")
-print(f"  Error:     {ratio_err:.1f} ppb")
-print()
-
-# ─── CLAIM 2: Gravitational constant (AP28) ───
-# G = α²¹ × (1 + 1/π) × ℏc/mₑ²
-alpha_G = alpha**21 * (1 + 1 / pi)
-G_pred  = alpha_G * hbar * c / m_e**2
-G_err   = abs(G_pred - G_measured) / G_measured * 100
-
-print("GRAVITATIONAL CONSTANT (AP28)")
-print(f"  Predicted: {G_pred:.4e} N·m²/kg²")
-print(f"  Measured:  {G_measured:.4e} N·m²/kg²")
-print(f"  Error:     {G_err:.2f}%")
-print()
-
-# ─── CLAIM 3: Neutron-proton mass difference (AP30) ───
-# δ = 3(1 - 1/(2π)) + α(1 + 1/(2π))  in units of mₑ
-delta_pred = 3 * (1 - 1 / (2 * pi)) + alpha * (1 + 1 / (2 * pi))
-delta_meas = (m_n - m_p) / m_e
-delta_err  = abs(delta_pred - delta_meas) / delta_meas * 1e6
-
-print("NEUTRON-PROTON MASS DIFFERENCE (AP30)")
-print(f"  Predicted: {delta_pred:.8f} mₑ")
-print(f"  Measured:  {delta_meas:.8f} mₑ")
-print(f"  Error:     {delta_err:.2f} ppm")
-print()
-
-# ─── CLAIM 4: MOND acceleration scale (AP18) ───
-# a₀ = C_S²·c·H₀/(2π)  where C_S² = 2·ln(sec(½) + tan(½)) ≈ 1.0445
-from math import cos, tan
-CS2        = 2 * log(1 / cos(0.5) + tan(0.5))  # C_S² ≈ 1.0445
-a0_pred    = CS2 * c * H0 / (2 * pi)
-a0_meas    = 1.2e-10  # m/s² (McGaugh 2016)
-a0_err     = abs(a0_pred - a0_meas) / a0_meas * 100
-
-print("MOND ACCELERATION SCALE (AP18)")
-print(f"  C_S²:         {CS2:.10f}")
-print(f"  Predicted:    {a0_pred:.4e} m/s² (at H₀ = 70)")
-print(f"  Measured:     {a0_meas:.4e} m/s²")
-print(f"  Error:        {a0_err:.1f}%")
-print()
-
-# ─── CLAIM 5: Dark sector partition (AP42) ───
-# Within dark sector (20/21 of total):
-#   DM fraction = (6/21)(1 - e^(-21/6))
-#   DE fraction = 1 - DM fraction
-# Applied to total budget:
-f_DM_dark = (6/21) * (1 - exp(-21/6))
-f_DE_dark = 1 - f_DM_dark
-f_vis     = 1 / 21
-f_DM      = f_DM_dark * 20 / 21
-f_DE      = f_DE_dark * 20 / 21
-
-print("DARK SECTOR PARTITION (AP42)")
-print(f"  Dark energy:    {f_DE * 100:.2f}%  (observed: 68.89%)")
-print(f"  Dark matter:    {f_DM * 100:.2f}%  (observed: 26.07%)")
-print(f"  Visible matter: {f_vis * 100:.2f}%  (observed: 4.86%)")
-print()
-
-# ─── CLAIM 6: Visible matter fraction (AP41) ───
-print("VISIBLE MATTER FRACTION (AP41)")
-print(f"  Predicted: 1/21 = {1/21 * 100:.2f}%")
-print(f"  Observed:  4.86%")
-print()
-
-print("─" * 50)
-print("One input (α). Zero free parameters.")
-print("Copy this code. Run it. Confirm it yourself.")</code></pre>
-  </div>
-  <div class="run-wrap" style="margin:1.25rem 0 0">
-    <button id="run-verify-btn" onclick="runVerify()" style="display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#8B6914;color:#fff;text-decoration:none;cursor:pointer" onmouseover="this.style.background='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.background='#8B6914';this.style.borderColor='#8B6914'">▸ Run it now in your browser</button>
-    <a href="https://github.com/The420Code/the420code/blob/main/verify.py" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;margin:0 0 0 .75rem;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#fff;color:#8B6914;text-decoration:none" onmouseover="this.style.color='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.color='#8B6914';this.style.borderColor='#8B6914'">or run it yourself →</a>
-    <p id="run-verify-status" aria-live="polite" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
-    <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
-    <p style="font-size:13px;color:var(--g4);margin:.6rem 0 0">Runs entirely in your browser — nothing is installed, nothing is sent anywhere. It executes the exact <code>verify.py</code> that the badge above re-runs on every change.</p>
-  </div>
-  <table class="verify-table">
-    <thead><tr><th>Claim</th><th>Predicted</th><th>Measured</th><th>Error</th><th>Paper</th></tr></thead>
-    <tbody>
-      <tr><td>Proton mass ratio</td><td>1836.15267344</td><td>1836.152673426</td><td>5 ppb</td><td>AP30</td></tr>
-      <tr><td>Gravitational constant G</td><td>6.721 × 10⁻¹¹</td><td>6.674 × 10⁻¹¹</td><td>0.69%</td><td>AP28</td></tr>
-      <tr><td>Neutron-proton mass diff</td><td>2.53099393 mₑ</td><td>2.53098829 mₑ</td><td>2.2 ppm</td><td>AP30</td></tr>
-      <tr><td>MOND acceleration a₀</td><td>1.200 × 10⁻¹⁰</td><td>1.200 × 10⁻¹⁰</td><td>0.0016% (at H₀ = 70)</td><td>AP18</td></tr>
-      <tr><td>Dark energy</td><td>68.85%</td><td>68.89%</td><td>0.06%</td><td>AP42</td></tr>
-      <tr><td>Dark matter</td><td>26.39%</td><td>26.07%</td><td>1.2%</td><td>AP42</td></tr>
-      <tr><td>Visible matter</td><td>4.76%</td><td>4.86%</td><td>2.0%</td><td>AP41</td></tr>
-    </tbody>
-  </table>
-  <p style="font-size:14px;color:var(--g4);margin:1rem 0 0;font-style:italic">At the framework’s derived H₀ = 74.3 km/s/Mpc the prediction matches a₀ to 0.0016% (AP18). At an external H₀ = 70 the same formula gives 5.8% — the dependence is real and stated.</p>
-</div>
-
-<!-- ALSO DERIVED -->
-<div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Also Derived</h2>
-  <div class="also-derived">
-    <ul>
-      <li>N = 3 spatial dimensions (AP10)</li>
-      <li>Einstein’s field equations (AP08)</li>
-      <li>The Born rule (AP25)</li>
-      <li>Standard Model gauge group SU(3) × SU(2) × U(1) (AP15/16/19/27)</li>
-      <li>Chiral coupling — unexplained since 1956, now derived (AP16)</li>
-      <li>Flat rotation curves without dark matter particles (AP17)</li>
-      <li>Bell inequality S = 2√2 from structure (AP23)</li>
-    </ul>
-  </div>
-</div>
 
 <!-- KILL SWITCH REGISTRY -->
 <div class="results">
