@@ -386,7 +386,7 @@ a.nb-name:hover{text-decoration:underline}
     <div class="physics-card"><div><div class="p-name">중력 상수 G</div><div class="p-detail">Predicted 6.721 × 10⁻¹¹ · Measured 6.674 × 10⁻¹¹</div><div class="p-source"><a href="#ap28" onclick="event.preventDefault();scrollToAP('ap28')">AP28</a></div></div><div class="p-error">0.69%</div></div>
     <div class="physics-card"><div><div class="p-name">중성자-양성자 질량차</div><div class="p-detail">Predicted 2.53099 mₑ · Measured 2.53099 mₑ</div><div class="p-source"><a href="#ap30" onclick="event.preventDefault();scrollToAP('ap30')">AP30</a></div></div><div class="p-error">2 ppm</div></div>
     <div class="physics-card"><div><div class="p-name">MOND 가속도 a₀</div><div class="p-detail">a₀ = C_S²·cH₀/(2π) · Parameter-free</div><div class="p-source"><a href="#ap18" onclick="event.preventDefault();scrollToAP('ap18')">AP18</a></div></div><div class="p-error">0.0016%</div></div>
-    <div class="physics-card"><div><div class="p-name">암흑 부문 분배</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42" onclick="event.preventDefault();scrollToAP('ap42')">AP42</a></div></div><div class="p-error">DE 0.06%</div></div>
+    <div class="physics-card"><div><div class="p-name">암흑 부문 분배</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42" onclick="event.preventDefault();scrollToAP('ap42')">AP42</a></div></div><div class="p-error">DE 0.06% · DM 1.2% · Vis 2.8%</div></div>
   </div>
 
   <p class="confirm-link"><strong>직접 확인하라.</strong> <a href="#confirm-the-math">코드를 실행하라 →</a></p>
@@ -725,7 +725,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">제6부</span><a class="nb-name" href="#p6">우주론</a></div></div>
-  <p class="nb-hook">깨짐이 사는 우주. 암흑물질 입자 없는 은하 회전 곡선, MOND 가속도 척도 0.3%, 암흑 에너지 분배, 순환 우주론.</p>
+  <p class="nb-hook">깨짐이 사는 우주. 암흑물질 입자 없는 은하 회전 곡선, MOND 가속도 척도 5.8% (at H₀ = 70), 암흑 에너지 분배, 순환 우주론.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">요약 읽기</span><span class="lbl-open">요약 접기</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VI_Cosmology.pdf">PDF</a></div>
   <div class="nb-summary">
     <p>맑은 밤에 올려다보라. 그 하늘을 묶고 있는 것의 거의 전부는 볼 수 없다. 은하는 너무 빨리 돌아 그 바깥의 별들은 진작 어둠 속으로 내던져졌어야 한다 — 그런데 그렇지 않다. 우주의 팽창은 가속하고 있고, 이름 없는 무언가에 밀린다. 물리는 그 미지를 암흑물질과 암흑에너지라 부르며, 저 바깥에 있는 것의 약 5퍼센트만 이름 붙일 수 있다고 인정한다. 제6부는 가장 작은 척도와 같은 깨짐에서 가장 큰 척도를 읽는다.</p>
@@ -828,7 +828,7 @@ m_e  = 9.1093837015e-31    # electron mass (kg)
 m_p  = 1.67262192369e-27   # proton mass (kg)
 m_n  = 1.67492749804e-27   # neutron mass (kg)
 G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
-H0   = 74.3 * 1000 / 3.0857e22  # H0 = 74.3 km/s/Mpc — the framework's derived value (AP18 / KS-45.1) (s⁻¹)
+H0   = 70 * 1000 / 3.0857e22  # H0 = 74.3 km/s/Mpc — the framework's derived value (AP18 / KS-45.1) (s⁻¹)
 
 # ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
 # Three layers of geometric resistance + dynamic maintenance

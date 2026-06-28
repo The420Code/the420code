@@ -401,7 +401,7 @@ a.nb-name:hover{text-decoration:underline}
     <div class="physics-card"><div><div class="p-name">ثابت الجاذبية G</div><div class="p-detail">Predicted 6.721 × 10⁻¹¹ · Measured 6.674 × 10⁻¹¹</div><div class="p-source"><a href="#ap28" onclick="event.preventDefault();scrollToAP('ap28')">AP28</a></div></div><div class="p-error">0.69%</div></div>
     <div class="physics-card"><div><div class="p-name">فرق كتلة النيوترون والبروتون</div><div class="p-detail">Predicted 2.53099 mₑ · Measured 2.53099 mₑ</div><div class="p-source"><a href="#ap30" onclick="event.preventDefault();scrollToAP('ap30')">AP30</a></div></div><div class="p-error">2 ppm</div></div>
     <div class="physics-card"><div><div class="p-name">تسارع MOND a₀</div><div class="p-detail">a₀ = C_S²·cH₀/(2π) · Parameter-free</div><div class="p-source"><a href="#ap18" onclick="event.preventDefault();scrollToAP('ap18')">AP18</a></div></div><div class="p-error">0.0016%</div></div>
-    <div class="physics-card"><div><div class="p-name">تقسيم القطاع المظلم</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42" onclick="event.preventDefault();scrollToAP('ap42')">AP42</a></div></div><div class="p-error">DE 0.06%</div></div>
+    <div class="physics-card"><div><div class="p-name">تقسيم القطاع المظلم</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42" onclick="event.preventDefault();scrollToAP('ap42')">AP42</a></div></div><div class="p-error">DE 0.06% · DM 1.2% · Vis 2.8%</div></div>
   </div>
 
   <p class="confirm-link"><strong>تحقّق بنفسك.</strong> <a href="#confirm-the-math">شغّل الكود ←</a></p>
@@ -740,7 +740,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">الجزء السادس</span><a class="nb-name" href="#p6">علم الكونيات</a></div></div>
-  <p class="nb-hook">الكون الذي يسكنه الكسر. منحنيات دوران المجرات بلا جسيمات مادة مظلمة، مقياس تسارع MOND إلى 0.3%، تقسيم الطاقة المظلمة، والكونيات الدورية.</p>
+  <p class="nb-hook">الكون الذي يسكنه الكسر. منحنيات دوران المجرات بلا جسيمات مادة مظلمة، مقياس تسارع MOND إلى 5.8% (at H₀ = 70)، تقسيم الطاقة المظلمة، والكونيات الدورية.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">اقرأ الملخّص</span><span class="lbl-open">أخفِ الملخّص</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VI_Cosmology.pdf">PDF</a></div>
   <div class="nb-summary">
     <p>ارفع بصرك في ليلة صافية. كل ما يربط تلك السماء تقريبًا لا يُرى. تدور المجرات بسرعة تجعل نجومها الخارجية كان ينبغي أن تُقذَف إلى الظلام منذ زمن بعيد — ولم تُقذَف. يتسارع تمدّد الكون، يدفعه شيء بلا اسم. تسمّي الفيزياء المجهولين مادةً مظلمة وطاقةً مظلمة، وتُقرّ أنها لا تستطيع تسمية سوى نحو خمسة بالمئة مما هو هناك. يقرأ الجزء السادس أكبر المقاييس من الكسر نفسه الذي تُقرأ منه أصغرها.</p>
@@ -843,7 +843,7 @@ m_e  = 9.1093837015e-31    # electron mass (kg)
 m_p  = 1.67262192369e-27   # proton mass (kg)
 m_n  = 1.67492749804e-27   # neutron mass (kg)
 G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
-H0   = 74.3 * 1000 / 3.0857e22  # H0 = 74.3 km/s/Mpc — the framework's derived value (AP18 / KS-45.1) (s⁻¹)
+H0   = 70 * 1000 / 3.0857e22  # H0 = 74.3 km/s/Mpc — the framework's derived value (AP18 / KS-45.1) (s⁻¹)
 
 # ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
 # Three layers of geometric resistance + dynamic maintenance

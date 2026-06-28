@@ -381,7 +381,7 @@ a.nb-name:hover{text-decoration:underline}
     <div class="physics-card"><div><div class="p-name">重力定数 G</div><div class="p-detail">Predicted 6.721 × 10⁻¹¹ · Measured 6.674 × 10⁻¹¹</div><div class="p-source"><a href="#ap28" onclick="event.preventDefault();scrollToAP('ap28')">AP28</a></div></div><div class="p-error">0.69%</div></div>
     <div class="physics-card"><div><div class="p-name">中性子-陽子質量差</div><div class="p-detail">Predicted 2.53099 mₑ · Measured 2.53099 mₑ</div><div class="p-source"><a href="#ap30" onclick="event.preventDefault();scrollToAP('ap30')">AP30</a></div></div><div class="p-error">2 ppm</div></div>
     <div class="physics-card"><div><div class="p-name">MOND加速度 a₀</div><div class="p-detail">a₀ = C_S²·cH₀/(2π) · Parameter-free</div><div class="p-source"><a href="#ap18" onclick="event.preventDefault();scrollToAP('ap18')">AP18</a></div></div><div class="p-error">0.0016%</div></div>
-    <div class="physics-card"><div><div class="p-name">ダークセクター分配</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42" onclick="event.preventDefault();scrollToAP('ap42')">AP42</a></div></div><div class="p-error">DE 0.06%</div></div>
+    <div class="physics-card"><div><div class="p-name">ダークセクター分配</div><div class="p-detail">DE 68.85% · DM 26.39% · Vis 4.76% — Observed: 68.89% / 26.07% / 4.86%</div><div class="p-source"><a href="#ap42" onclick="event.preventDefault();scrollToAP('ap42')">AP42</a></div></div><div class="p-error">DE 0.06% · DM 1.2% · Vis 2.8%</div></div>
   </div>
 
   <p class="confirm-link"><strong>自分で確かめよ。</strong> <a href="#confirm-the-math">コードを実行 →</a></p>
@@ -709,7 +709,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">第VI部</span><a class="nb-name" href="#p6">宇宙論</a></div></div>
-  <p class="nb-hook">破れが住む宇宙。ダークマター粒子なしの銀河回転曲線、MOND加速度スケール0.3%、ダークエネルギー分割、循環宇宙論。</p>
+  <p class="nb-hook">破れが住む宇宙。ダークマター粒子なしの銀河回転曲線、MOND加速度スケール5.8% (at H₀ = 70)、ダークエネルギー分割、循環宇宙論。</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">要約を読む</span><span class="lbl-open">要約を閉じる</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VI_Cosmology.pdf">PDF</a></div>
   <div class="nb-summary">
     <p>晴れた夜に見上げよ。その空を束ねているもののほぼすべては見えない。銀河はあまりに速く回るので、その外縁の星はとうに闇へ投げ出されているはずだ——なのに、そうなっていない。宇宙の膨張は加速しており、名のない何かに押されている。物理は未知をダークマターとダークエネルギーと呼び、外にあるものの五パーセントほどしか名指せないと認める。第VI部は最小のスケールと同じ破れから、最大のスケールを読み出す。</p>
@@ -812,7 +812,7 @@ m_e  = 9.1093837015e-31    # electron mass (kg)
 m_p  = 1.67262192369e-27   # proton mass (kg)
 m_n  = 1.67492749804e-27   # neutron mass (kg)
 G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
-H0   = 74.3 * 1000 / 3.0857e22  # H0 = 74.3 km/s/Mpc — the framework's derived value (AP18 / KS-45.1) (s⁻¹)
+H0   = 70 * 1000 / 3.0857e22  # H0 = 74.3 km/s/Mpc — the framework's derived value (AP18 / KS-45.1) (s⁻¹)
 
 # ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
 # Three layers of geometric resistance + dynamic maintenance
