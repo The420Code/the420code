@@ -237,5 +237,20 @@
   <span style="color: #d5d5d0;">the420code.org</span>
 </div>
 </div>
+<script>
+// Download counter — track every PDF click
+(function(){
+  var counter='/.netlify/functions/download-counter';
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href$=".pdf"]');
+    if(!a) return;
+    var href=a.getAttribute('href');
+    if(!href||href==='#') return;
+    var filename=href.split('/').pop();
+    if(!a.hasAttribute('download')) a.setAttribute('download','');
+    fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})});
+  },true);
+})();
+</script>
 </body>
 </html>

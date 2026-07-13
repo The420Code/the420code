@@ -1670,10 +1670,12 @@ function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var lis
       toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
       return;
     }
+    // Extract filename from href
+    var filename=href.split('/').pop();
     // Force immediate download
     if(!a.hasAttribute('download')) a.setAttribute('download','');
-    // Increment counter
-    fetch(counter,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
+    // Increment counter with per-file tracking
+    fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})}).then(function(r){return r.json()}).then(function(d){
       el.textContent=d.count.toLocaleString();
     });
   },true);

@@ -1540,5 +1540,20 @@ function toggleAP(r){r.classList.toggle('open')}
 function nbToggle(btn){ btn.closest('.nb-item').classList.toggle('open'); }
 function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
 function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
+
+// Download counter — track every PDF click
+(function(){
+  var counter='/.netlify/functions/download-counter';
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href$=".pdf"]');
+    if(!a) a=e.target.closest('.ap-meta a');
+    if(!a) return;
+    var href=a.getAttribute('href');
+    if(!href||href==='#') return;
+    var filename=href.split('/').pop();
+    if(!a.hasAttribute('download')) a.setAttribute('download','');
+    fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})});
+  },true);
+})();
 </script>
 </body></html>
