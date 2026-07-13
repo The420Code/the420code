@@ -27,7 +27,7 @@ The framework takes a single measured number, the fine-structure constant
 | Dark sector partition (DE/DM/Vis) | 68.85 / 26.39 / 4.76 % | 68.89 / 26.07 / 4.86 % | ≤ 1.2 % | AP41/42 |
 
 Every claim in the corpus carries a **kill switch** — an explicit, published
-condition under which it dies. 560 of them.
+condition under which it dies. 561 of them.
 
 ## Verify it yourself
 

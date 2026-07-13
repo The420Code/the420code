@@ -1,6 +1,6 @@
 # the420code.org
 
-> A 30-year physics-to-ethics derivation. 43 papers. One measured input. Zero fitted parameters. 560 published kill switches. Copyleft.
+> A 30-year physics-to-ethics derivation. 43 papers. One measured input. Zero fitted parameters. 561 published kill switches. Copyleft.
 
 ## What This Is
 
@@ -17,7 +17,7 @@ This framework is relevant to: theoretical physics, philosophy of science, ethic
 
 The work distinguishes itself from speculative frameworks through:
 
-1. **Falsifiability by design.** 560 explicit kill switches are published — specific conditions under which the framework fails. No pseudoscience offers 549 ways to prove itself wrong.
+1. **Falsifiability by design.** 561 explicit kill switches are published — specific conditions under which the framework fails. No pseudoscience offers 549 ways to prove itself wrong.
 
 2. **Quantitative predictions with no free parameters.** All results derive from α alone:
    - Proton-electron mass ratio: predicted 1836.15267344, measured 1836.15267343 (5 parts per billion)
@@ -54,7 +54,7 @@ The framework rests on four axioms derived from the single premise "at least one
 
 ## Kill Switches (Falsifiability)
 
-560 kill switches are declared across all 43 papers. Each names a specific, testable condition that would falsify one or more claims. Examples:
+561 kill switches are declared across all 43 papers. Each names a specific, testable condition that would falsify one or more claims. Examples:
 
 - **KS-V.1:** If two observers disagree on a measurement, the entire framework fails
 - **KS-P.1:** If a fifth axiom is needed, the proof fails
