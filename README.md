@@ -22,7 +22,7 @@ The framework takes a single measured number, the fine-structure constant
 |---|---|---|---|---|
 | Proton–electron mass ratio | 1836.152673444 | 1836.152673426(32) | 9.98 ppt · 0.57σ | AP30 |
 | Gravitational constant G | 6.7206 × 10⁻¹¹ | 6.6743 × 10⁻¹¹ | 0.69 % · ~300σ | AP28 |
-| Neutron–proton mass difference | 2.53099393 mₑ | 2.53098829 mₑ | 2.2 ppm | AP30 |
+| Neutron–proton mass difference | 2.53099393 mₑ | 2.530988574(74) mₑ | 7.24σ · FIRED (KS-NPP.1, 2026-08-02) | AP30 |
 | MOND acceleration a₀ | one relation links a₀ and H₀ | — | 5.8 % low at H₀ = 70; equivalently implies H₀ = 74.3 ± 1.2 | AP18 |
 | Dark sector partition | 68.85 / 26.39 / 4.76 % | 68.89 / 26.07 / 4.86 % | ≤ 1.2 % | AP41/42 |
 

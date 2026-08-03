@@ -68,7 +68,7 @@
 
     // CLAIM 6: Visible matter fraction (AP41)
     checks.push(["Visible matter fraction (1/21)", "AP41",
-      (f_vis * 100).toFixed(2) + "%", "4.86%", rel_pct(f_vis * 100, 4.86), "%", 5.0]);
+      (f_vis * 100).toFixed(2) + "%", "~4.885 +/- 0.05%", rel_pct(f_vis * 100, 4.885), "%", 5.0]);
 
     var bar = "=".repeat(72);
     var out = [bar, "THE 420 CODE - VERIFICATION SUITE",

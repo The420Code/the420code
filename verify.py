@@ -2,7 +2,7 @@
 """
 The 420 Code — verification suite.
 
-One measured input: the fine-structure constant alpha (CODATA 2018).
+One measured input: the fine-structure constant alpha (CODATA 2022).
 Zero free parameters.
 
 This script re-derives the five headline results from the axiom and checks each
@@ -89,7 +89,7 @@ checks.append(("Dark matter fraction", "AP42",
 
 # ── CLAIM 6: Visible matter fraction (AP41) ──────────────────────────────────
 checks.append(("Visible matter fraction (1/21)", "AP41",
-               f"{f_vis * 100:.2f}%", "4.86%", rel_pct(f_vis * 100, 4.86), "%", 5.0))
+               f"{f_vis * 100:.2f}%", "~4.885 +/- 0.05%", rel_pct(f_vis * 100, 4.885), "%", 5.0))
 
 
 def main():
