@@ -78,6 +78,11 @@ table.data tr:last-child td{border-bottom:none}
 .verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:340px;font-size:13px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
 .copy-btn{position:absolute;top:8px;right:8px;padding:8px 16px;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;letter-spacing:.03em;background:var(--gold);color:#fff;border:1px solid var(--gold);border-radius:0;cursor:pointer}
 .copy-btn:hover{background:#6f5310;border-color:#6f5310}
+.run-btn{display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid var(--gold);border-radius:0;background:var(--gold);color:#fff;cursor:pointer;margin:0 .5rem .5rem 0}
+.run-btn:hover{background:#6f5310;border-color:#6f5310}
+.run-btn:disabled{opacity:.6;cursor:default}
+.run-status{font-size:14px;color:var(--g4);margin:.5rem 0 .25rem;font-style:italic;display:none}
+.run-out{display:none;max-height:none;margin:.25rem 0 1rem}
 
 .doc-list{list-style:none;margin:0 0 1rem;padding:0}
 .doc-list li{padding:.55rem 0;border-bottom:1px solid var(--g1);font-size:15px}
@@ -419,13 +424,18 @@ resid = D - MP_ME                              # = +9.98 ppt
 # so any alpha^3 term that closes it must be NEGATIVE.</code></pre>
 </div>
 
-<p style="margin:1.5rem 0 .25rem"><b>Or run it right here.</b> No install — this fetches and executes the exact <span class="mono">verify_prereg.py</span> in this directory and prints its output.</p>
+<p style="margin:1.5rem 0 .75rem"><b>Or run them right here.</b> No install — each button fetches and executes the exact script in this directory. Python and <code>mpmath</code> load in your browser; nothing is installed on your machine, nothing is sent anywhere.</p>
 <div class="run-wrap">
-  <button id="run-verify-btn" onclick="runVerify()" style="display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#8B6914;color:#fff;text-decoration:none;cursor:pointer" onmouseover="this.style.background='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.background='#8B6914';this.style.borderColor='#8B6914'">&#9656; Run it now in your browser</button>
-  <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_prereg.py" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;margin:0 0 0 .75rem;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#fff;color:#8B6914;text-decoration:none" onmouseover="this.style.color='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.color='#8B6914';this.style.borderColor='#8B6914'">or on your machine &rarr;</a>
-  <p id="run-verify-status" aria-live="polite" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
-  <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
-  <p style="font-size:13px;color:var(--g4);margin:.6rem 0 0">Runs entirely in your browser — nothing is installed on your machine, nothing is sent anywhere. It loads <code>mpmath</code> on the fly and executes the exact <code>verify_prereg.py</code> from this directory.</p>
+  <button id="run-prereg-btn" class="run-btn" onclick="runScript('prereg')">&#9656; Run verify_prereg.py</button>
+  <button id="run-cosmology-btn" class="run-btn" onclick="runScript('cosmology')">&#9656; Run verify_cosmology.py</button>
+  <button id="run-rigidity-btn" class="run-btn" onclick="runScript('rigidity')">&#9656; Run verify_rigidity.py</button>
+  <p id="run-prereg-status" class="run-status" aria-live="polite"></p>
+  <pre id="run-prereg-out" class="verify-code run-out" aria-live="polite"></pre>
+  <p id="run-cosmology-status" class="run-status" aria-live="polite"></p>
+  <pre id="run-cosmology-out" class="verify-code run-out" aria-live="polite"></pre>
+  <p id="run-rigidity-status" class="run-status" aria-live="polite"></p>
+  <pre id="run-rigidity-out" class="verify-code run-out" aria-live="polite"></pre>
+  <p style="font-size:13px;color:var(--g4);margin:.5rem 0 0">Runs entirely in your browser via Pyodide + mpmath. Prefer your own machine? <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_prereg.py" target="_blank" rel="noopener">verify_prereg.py</a> · <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_cosmology.py" target="_blank" rel="noopener">verify_cosmology.py</a> · <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_rigidity.py" target="_blank" rel="noopener">verify_rigidity.py</a>.</p>
 </div>
 
 <!-- FOOTER -->
@@ -461,11 +471,23 @@ function _loadPy(){
   });
   return _pyReady;
 }
-function runVerify(){
-  var btn=document.getElementById('run-verify-btn');
-  var status=document.getElementById('run-verify-status');
-  var out=document.getElementById('run-verify-output');
-  btn.disabled=true;btn.style.opacity='.6';btn.style.cursor='default';
+var SCRIPTS={
+  prereg:{file:'verify_prereg.py',
+    ok:function(t){return /1836\.152673444331/.test(t)&&/0\.573 sigma/.test(t)},
+    okmsg:'✓ Proton freeze reproduced — D = 1836.152673444331 at 0.57σ; 336 is the only integer in the 3σ window.'},
+  cosmology:{file:'verify_cosmology.py',
+    ok:function(t){return /3\.942 Gyr/.test(t)&&/2\.46 sigma/.test(t)},
+    okmsg:'✓ Cosmology freezes reproduced — H₀ = 74.3, visible fraction 2.46σ, τ = 3.942 Gyr.'},
+  rigidity:{file:'verify_rigidity.py',
+    ok:function(t){return /138\.0x/.test(t)&&/99\.27/.test(t)},
+    okmsg:'✓ Rigidity table reproduced — N=20 overshoots G by 138×, N=22 undershoots by 99.27%.'}
+};
+function runScript(key){
+  var cfg=SCRIPTS[key];
+  var btn=document.getElementById('run-'+key+'-btn');
+  var status=document.getElementById('run-'+key+'-status');
+  var out=document.getElementById('run-'+key+'-out');
+  btn.disabled=true;
   status.style.display='block';status.style.color='var(--g4)';
   status.textContent='Loading Python in your browser (one-time, ~6 MB)…';
   out.style.display='none';out.textContent='';
@@ -475,13 +497,13 @@ function runVerify(){
     status.textContent='Loading mpmath …';
     return py.loadPackage('mpmath');
   }).then(function(){
-    status.textContent='Running verify_prereg.py …';
-    return fetch('verify_prereg.py?cb='+Date.now());
+    status.textContent='Running '+cfg.file+' …';
+    return fetch(cfg.file+'?cb='+Date.now());
   }).then(function(r){
-    if(!r.ok)throw new Error('could not fetch verify_prereg.py ('+r.status+')');
+    if(!r.ok)throw new Error('could not fetch '+cfg.file+' ('+r.status+')');
     return r.text();
   }).then(function(code){
-    PY.FS.writeFile('verify_prereg.py',code);
+    PY.FS.writeFile(cfg.file,code);
     PY.runPython([
       'import sys, io, runpy',
       '_buf = io.StringIO()',
@@ -489,7 +511,7 @@ function runVerify(){
       'sys.stdout = _buf',
       '_rc = 0',
       'try:',
-      "    runpy.run_path('verify_prereg.py', run_name='__main__')",
+      "    runpy.run_path('"+cfg.file+"', run_name='__main__')",
       'except SystemExit as e:',
       '    _rc = e.code or 0',
       'except Exception:',
@@ -503,15 +525,15 @@ function runVerify(){
     var rc=PY.globals.get('_rc');
     out.textContent=text;
     out.style.display='block';
-    var passed=(rc===0)&&/1836\.152673444331/.test(text)&&/0\.573 sigma/.test(text);
+    var passed=(rc===0)&&cfg.ok(text);
     out.style.borderColor=passed?'#1a7f37':'#b00';
-    status.textContent=passed?'✓ Reproduced live in your browser — D = 1836.152673444331 at 0.57σ, and 336 is the only integer in the 3σ window.':'Finished — see the output below.';
+    status.textContent=passed?cfg.okmsg:'Finished — see the output below.';
     status.style.color=passed?'#1a7f37':'var(--g4)';
-    btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';btn.textContent='▸ Run it again';
+    btn.disabled=false;btn.textContent='▸ Run '+cfg.file+' again';
   }).catch(function(err){
     status.style.display='block';status.style.color='#b00';
     status.textContent='Could not run in-browser ('+err.message+'). You can still run it on your machine via the link.';
-    btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';
+    btn.disabled=false;
   });
 }
 </script>
