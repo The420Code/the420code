@@ -419,6 +419,15 @@ resid = D - MP_ME                              # = +9.98 ppt
 # so any alpha^3 term that closes it must be NEGATIVE.</code></pre>
 </div>
 
+<p style="margin:1.5rem 0 .25rem"><b>Or run it right here.</b> No install — this fetches and executes the exact <span class="mono">verify_prereg.py</span> in this directory and prints its output.</p>
+<div class="run-wrap">
+  <button id="run-verify-btn" onclick="runVerify()" style="display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#8B6914;color:#fff;text-decoration:none;cursor:pointer" onmouseover="this.style.background='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.background='#8B6914';this.style.borderColor='#8B6914'">&#9656; Run it now in your browser</button>
+  <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_prereg.py" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;margin:0 0 0 .75rem;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#fff;color:#8B6914;text-decoration:none" onmouseover="this.style.color='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.color='#8B6914';this.style.borderColor='#8B6914'">or on your machine &rarr;</a>
+  <p id="run-verify-status" aria-live="polite" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
+  <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
+  <p style="font-size:13px;color:var(--g4);margin:.6rem 0 0">Runs entirely in your browser — nothing is installed on your machine, nothing is sent anywhere. It loads <code>mpmath</code> on the fly and executes the exact <code>verify_prereg.py</code> from this directory.</p>
+</div>
+
 <!-- FOOTER -->
 <div class="footer">
   <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
@@ -437,6 +446,72 @@ function copyCode(btn){
     btn.textContent = 'Copied';
     var t = document.getElementById('toast'); t.classList.add('show');
     setTimeout(function(){ btn.textContent = 'Copy'; t.classList.remove('show'); }, 1600);
+  });
+}
+
+var _pyReady=null;
+function _loadPy(){
+  if(_pyReady)return _pyReady;
+  _pyReady=new Promise(function(resolve,reject){
+    var s=document.createElement('script');
+    s.src='https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js';
+    s.onload=function(){loadPyodide().then(resolve).catch(reject)};
+    s.onerror=function(){reject(new Error('could not load the Python runtime'))};
+    document.head.appendChild(s);
+  });
+  return _pyReady;
+}
+function runVerify(){
+  var btn=document.getElementById('run-verify-btn');
+  var status=document.getElementById('run-verify-status');
+  var out=document.getElementById('run-verify-output');
+  btn.disabled=true;btn.style.opacity='.6';btn.style.cursor='default';
+  status.style.display='block';status.style.color='var(--g4)';
+  status.textContent='Loading Python in your browser (one-time, ~6 MB)…';
+  out.style.display='none';out.textContent='';
+  var PY;
+  _loadPy().then(function(py){
+    PY=py;
+    status.textContent='Loading mpmath …';
+    return py.loadPackage('mpmath');
+  }).then(function(){
+    status.textContent='Running verify_prereg.py …';
+    return fetch('verify_prereg.py?cb='+Date.now());
+  }).then(function(r){
+    if(!r.ok)throw new Error('could not fetch verify_prereg.py ('+r.status+')');
+    return r.text();
+  }).then(function(code){
+    PY.FS.writeFile('verify_prereg.py',code);
+    PY.runPython([
+      'import sys, io, runpy',
+      '_buf = io.StringIO()',
+      '_old = sys.stdout',
+      'sys.stdout = _buf',
+      '_rc = 0',
+      'try:',
+      "    runpy.run_path('verify_prereg.py', run_name='__main__')",
+      'except SystemExit as e:',
+      '    _rc = e.code or 0',
+      'except Exception:',
+      '    import traceback; traceback.print_exc(file=_buf)',
+      '    _rc = 1',
+      'finally:',
+      '    sys.stdout = _old',
+      '_out = _buf.getvalue()'
+    ].join('\n'));
+    var text=PY.globals.get('_out');
+    var rc=PY.globals.get('_rc');
+    out.textContent=text;
+    out.style.display='block';
+    var passed=(rc===0)&&/1836\.152673444331/.test(text)&&/0\.573 sigma/.test(text);
+    out.style.borderColor=passed?'#1a7f37':'#b00';
+    status.textContent=passed?'✓ Reproduced live in your browser — D = 1836.152673444331 at 0.57σ, and 336 is the only integer in the 3σ window.':'Finished — see the output below.';
+    status.style.color=passed?'#1a7f37':'var(--g4)';
+    btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';btn.textContent='▸ Run it again';
+  }).catch(function(err){
+    status.style.display='block';status.style.color='#b00';
+    status.textContent='Could not run in-browser ('+err.message+'). You can still run it on your machine via the link.';
+    btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';
   });
 }
 </script>
