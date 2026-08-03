@@ -1,10 +1,24 @@
+#!/usr/bin/env python3
+"""Create one Zenodo deposit per language edition and publish each.
+
+Credential comes from the environment, never the source:
+
+    export ZENODO_TOKEN=...       # personal access token, deposit scope
+    python3 scripts/zenodo_languages.py [path-to-pdfs]
+
+[path-to-pdfs] defaults to the repository root (the parent of scripts/).
+"""
 import requests, json, os, sys, io, time
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-TOKEN = 'i5PEMeDsWDCNnrYC8lemZsNPSA0y0cSm6i6wLyUcTPvDZXhGTxnYDjFSJqaq'
+TOKEN = os.environ.get('ZENODO_TOKEN')
+if not TOKEN:
+    sys.exit('ZENODO_TOKEN is not set. Export it in your shell; never write it in a file.')
+
 BASE = 'https://zenodo.org/api'
 HEADERS = {'Authorization': f'Bearer {TOKEN}'}
-DST = r'C:\Users\info\the420code'
+DST = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 LANGUAGES = {
     'es': {

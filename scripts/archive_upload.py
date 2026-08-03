@@ -1,9 +1,24 @@
+#!/usr/bin/env python3
+"""Upload the corpus PDFs to the Internet Archive (archive.org).
+
+Credentials come from the environment, never the source:
+
+    export IA_ACCESS_KEY=...      # S3 access key
+    export IA_SECRET_KEY=...      # S3 secret key
+    python3 scripts/archive_upload.py [path-to-pdfs]
+
+[path-to-pdfs] defaults to the repository root (the parent of scripts/).
+"""
 import requests, os, sys, io, time, glob
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-ACCESS = 'OtgmFQuBl4Sq8UyF'
-SECRET = 'd0yiSX1tIsFIs7ue'
-DST = r'C:\Users\info\the420code'
+ACCESS = os.environ.get('IA_ACCESS_KEY')
+SECRET = os.environ.get('IA_SECRET_KEY')
+if not ACCESS or not SECRET:
+    sys.exit('IA_ACCESS_KEY and IA_SECRET_KEY must both be set. Export them in your shell; never write them in a file.')
+
+DST = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Create one item for the entire 420 Code collection
 ITEM_ID = 'the-420-code-artist-proofs'

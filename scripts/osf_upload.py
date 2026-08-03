@@ -1,10 +1,24 @@
-import requests, json, os, sys, io, glob, time
+#!/usr/bin/env python3
+"""Upload the corpus PDFs to OSF (osf.io).
+
+Credential comes from the environment, never the source:
+
+    export OSF_TOKEN=...          # personal access token, narrowest scope
+    python3 scripts/osf_upload.py [path-to-pdfs]
+
+[path-to-pdfs] defaults to the repository root (the parent of scripts/).
+"""
+import requests, json, os, sys, io, glob
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-TOKEN = 'xNS9Mk0xRebs2A7hVg7ozYxgFpJz33EZnd4qUs66Ty37oHpxY564yvq47FdwFSrGTIUkfh'
+TOKEN = os.environ.get('OSF_TOKEN')
+if not TOKEN:
+    sys.exit('OSF_TOKEN is not set. Export it in your shell; never write it in a file.')
+
 BASE = 'https://api.osf.io/v2'
 HEADERS = {'Authorization': f'Bearer {TOKEN}', 'Content-Type': 'application/json'}
-DST = r'C:\Users\info\the420code'
+DST = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Step 1: Create project
 print('Creating OSF project...')

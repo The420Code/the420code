@@ -10,3 +10,6 @@ translations_shell.js
 index_en.html
 package.json
 package-lock.json
+scripts
+.env
+.env.example

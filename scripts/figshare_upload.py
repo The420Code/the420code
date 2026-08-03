@@ -1,10 +1,24 @@
-import requests, json, os, sys, io, glob, time, hashlib
+#!/usr/bin/env python3
+"""Upload the corpus PDFs to Figshare and publish the article.
+
+Credential comes from the environment, never the source:
+
+    export FIGSHARE_TOKEN=...     # personal token
+    python3 scripts/figshare_upload.py [path-to-pdfs]
+
+[path-to-pdfs] defaults to the repository root (the parent of scripts/).
+"""
+import requests, json, os, sys, io, glob, hashlib
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-TOKEN = '572ccb9f5717c3307318ef9189be6f251575f17ac71623762d87d5afa655f16268d66376b9fee633096720091e0dff1b4e4c4a1cc27c5f7c6cdce3b339a961c7'
+TOKEN = os.environ.get('FIGSHARE_TOKEN')
+if not TOKEN:
+    sys.exit('FIGSHARE_TOKEN is not set. Export it in your shell; never write it in a file.')
+
 BASE = 'https://api.figshare.com/v2'
 HEADERS = {'Authorization': f'token {TOKEN}'}
-DST = r'C:\Users\info\the420code'
+DST = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Create article
 print('Creating figshare article...')
