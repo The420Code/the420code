@@ -424,18 +424,18 @@ resid = D - MP_ME                              # = +9.98 ppt
 # so any alpha^3 term that closes it must be NEGATIVE.</code></pre>
 </div>
 
-<p style="margin:1.5rem 0 .75rem"><b>Or run them right here.</b> No install — each button fetches and executes the exact script in this directory. Python and <code>mpmath</code> load in your browser; nothing is installed on your machine, nothing is sent anywhere.</p>
+<p style="margin:1.5rem 0 .75rem"><b>Or verify them right here — offline.</b> Each button re-derives the numbers independently in pure JavaScript at 60-digit precision, entirely in your browser: no install, no Python, no network, nothing sent anywhere. The reference scripts (<code>verify_prereg.py</code>, <code>verify_cosmology.py</code>, <code>verify_rigidity.py</code>) agree to every digit — a second, independent implementation that matches is stronger than re-running one file twice.</p>
 <div class="run-wrap">
-  <button id="run-prereg-btn" class="run-btn" onclick="runScript('prereg')">&#9656; Run verify_prereg.py</button>
-  <button id="run-cosmology-btn" class="run-btn" onclick="runScript('cosmology')">&#9656; Run verify_cosmology.py</button>
-  <button id="run-rigidity-btn" class="run-btn" onclick="runScript('rigidity')">&#9656; Run verify_rigidity.py</button>
+  <button id="run-prereg-btn" class="run-btn" onclick="runScript('prereg')">&#9656; Verify the proton freeze</button>
+  <button id="run-cosmology-btn" class="run-btn" onclick="runScript('cosmology')">&#9656; Verify the cosmology freezes</button>
+  <button id="run-rigidity-btn" class="run-btn" onclick="runScript('rigidity')">&#9656; Verify the rigidity table</button>
   <p id="run-prereg-status" class="run-status" aria-live="polite"></p>
   <pre id="run-prereg-out" class="verify-code run-out" aria-live="polite"></pre>
   <p id="run-cosmology-status" class="run-status" aria-live="polite"></p>
   <pre id="run-cosmology-out" class="verify-code run-out" aria-live="polite"></pre>
   <p id="run-rigidity-status" class="run-status" aria-live="polite"></p>
   <pre id="run-rigidity-out" class="verify-code run-out" aria-live="polite"></pre>
-  <p style="font-size:13px;color:var(--g4);margin:.5rem 0 0">Runs entirely in your browser via Pyodide + mpmath. Prefer your own machine? <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_prereg.py" target="_blank" rel="noopener">verify_prereg.py</a> · <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_cosmology.py" target="_blank" rel="noopener">verify_cosmology.py</a> · <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_rigidity.py" target="_blank" rel="noopener">verify_rigidity.py</a>.</p>
+  <p style="font-size:13px;color:var(--g4);margin:.5rem 0 0">Prefer to run the exact Python on your own machine (<code>pip install mpmath</code>)? <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_prereg.py" target="_blank" rel="noopener">verify_prereg.py</a> · <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_cosmology.py" target="_blank" rel="noopener">verify_cosmology.py</a> · <a href="https://github.com/The420Code/the420code/blob/main/prereg/verify_rigidity.py" target="_blank" rel="noopener">verify_rigidity.py</a>.</p>
 </div>
 
 <!-- FOOTER -->
@@ -449,6 +449,8 @@ resid = D - MP_ME                              # = +9.98 ppt
 </div>
 
 <div class="toast" id="toast">Copied to clipboard</div>
+<script src="vendor/decimal.min.js"></script>
+<script src="verify.js"></script>
 <script>
 function copyCode(btn){
   var code = btn.parentElement.querySelector('code').textContent;
@@ -459,82 +461,26 @@ function copyCode(btn){
   });
 }
 
-var _pyReady=null;
-function _loadPy(){
-  if(_pyReady)return _pyReady;
-  _pyReady=new Promise(function(resolve,reject){
-    var s=document.createElement('script');
-    s.src='https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js';
-    s.onload=function(){loadPyodide().then(resolve).catch(reject)};
-    s.onerror=function(){reject(new Error('could not load the Python runtime'))};
-    document.head.appendChild(s);
-  });
-  return _pyReady;
-}
-var SCRIPTS={
-  prereg:{file:'verify_prereg.py',
-    ok:function(t){return /1836\.152673444331/.test(t)&&/0\.573 sigma/.test(t)},
-    okmsg:'✓ Proton freeze reproduced — D = 1836.152673444331 at 0.57σ; 336 is the only integer in the 3σ window.'},
-  cosmology:{file:'verify_cosmology.py',
-    ok:function(t){return /3\.942 Gyr/.test(t)&&/2\.46 sigma/.test(t)},
-    okmsg:'✓ Cosmology freezes reproduced — H₀ = 74.3, visible fraction 2.46σ, τ = 3.942 Gyr.'},
-  rigidity:{file:'verify_rigidity.py',
-    ok:function(t){return /138\.0x/.test(t)&&/99\.27/.test(t)},
-    okmsg:'✓ Rigidity table reproduced — N=20 overshoots G by 138×, N=22 undershoots by 99.27%.'}
-};
+var PREREG_MAP={prereg:'verifyPrereg',cosmology:'verifyCosmology',rigidity:'verifyRigidity'};
 function runScript(key){
-  var cfg=SCRIPTS[key];
-  var btn=document.getElementById('run-'+key+'-btn');
   var status=document.getElementById('run-'+key+'-status');
   var out=document.getElementById('run-'+key+'-out');
-  btn.disabled=true;
   status.style.display='block';status.style.color='var(--g4)';
-  status.textContent='Loading Python in your browser (one-time, ~6 MB)…';
-  out.style.display='none';out.textContent='';
-  var PY;
-  _loadPy().then(function(py){
-    PY=py;
-    status.textContent='Loading mpmath …';
-    return py.loadPackage('mpmath');
-  }).then(function(){
-    status.textContent='Running '+cfg.file+' …';
-    return fetch(cfg.file+'?cb='+Date.now());
-  }).then(function(r){
-    if(!r.ok)throw new Error('could not fetch '+cfg.file+' ('+r.status+')');
-    return r.text();
-  }).then(function(code){
-    PY.FS.writeFile(cfg.file,code);
-    PY.runPython([
-      'import sys, io, runpy',
-      '_buf = io.StringIO()',
-      '_old = sys.stdout',
-      'sys.stdout = _buf',
-      '_rc = 0',
-      'try:',
-      "    runpy.run_path('"+cfg.file+"', run_name='__main__')",
-      'except SystemExit as e:',
-      '    _rc = e.code or 0',
-      'except Exception:',
-      '    import traceback; traceback.print_exc(file=_buf)',
-      '    _rc = 1',
-      'finally:',
-      '    sys.stdout = _old',
-      '_out = _buf.getvalue()'
-    ].join('\n'));
-    var text=PY.globals.get('_out');
-    var rc=PY.globals.get('_rc');
-    out.textContent=text;
-    out.style.display='block';
-    var passed=(rc===0)&&cfg.ok(text);
-    out.style.borderColor=passed?'#1a7f37':'#b00';
-    status.textContent=passed?cfg.okmsg:'Finished — see the output below.';
-    status.style.color=passed?'#1a7f37':'var(--g4)';
-    btn.disabled=false;btn.textContent='▸ Run '+cfg.file+' again';
-  }).catch(function(err){
-    status.style.display='block';status.style.color='#b00';
-    status.textContent='Could not run in-browser ('+err.message+'). You can still run it on your machine via the link.';
-    btn.disabled=false;
-  });
+  status.textContent='Computing…';
+  out.style.display='none';
+  setTimeout(function(){
+    try{
+      if(typeof Decimal==='undefined'||!window.PREREG)throw new Error('verifier failed to load');
+      var res=window.PREREG[PREREG_MAP[key]]();
+      out.textContent=res.out;out.style.display='block';
+      out.style.borderColor=res.ok?'#1a7f37':'#b00';
+      status.textContent=res.ok?res.msg:'Finished — see the output below.';
+      status.style.color=res.ok?'#1a7f37':'var(--g4)';
+    }catch(err){
+      status.style.color='#b00';
+      status.textContent='Could not run ('+err.message+'). Use the Python links below to run it on your machine.';
+    }
+  },20);
 }
 </script>
 </body>
