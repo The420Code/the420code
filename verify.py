@@ -24,7 +24,7 @@ Independent re-derivation  https://github.com/ajgreyling/the420code-proof
 from math import pi, log, exp, cos, tan
 
 # ── ONE MEASURED INPUT ───────────────────────────────────────────────────────
-ALPHA = 1 / 137.035999084          # fine-structure constant (CODATA 2018)
+ALPHA = 1 / 137.035999177          # fine-structure constant (CODATA 2022)
 
 # ── PHYSICAL CONSTANTS (CODATA) ──────────────────────────────────────────────
 HBAR   = 1.054571817e-34           # reduced Planck constant (J*s)

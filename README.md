@@ -18,13 +18,17 @@ conditions all of physics and one ethic are derived.
 The framework takes a single measured number, the fine-structure constant
 α ≈ 1/137, and re-derives five fundamental results with **zero free parameters**:
 
-| Result | Predicted | Measured | Error | Paper |
-| --- | --- | --- | --- | --- |
-| Proton-electron mass ratio | 1836.1526734444 | 1836.152673426 | 0.01 ppb | AP30 |
-| Gravitational constant G | 6.7206 × 10⁻¹¹ | 6.6743 × 10⁻¹¹ | 0.69 % | AP28 |
-| Neutron-proton mass difference | 2.53099393 mₑ | 2.53098829 mₑ | 2.2 ppm | AP30 |
-| MOND acceleration a₀ (H₀ = 74.3) | 1.2000 × 10⁻¹⁰ | 1.2000 × 10⁻¹⁰ | 0.002 % | AP18 |
-| Dark sector partition (DE/DM/Vis) | 68.85 / 26.39 / 4.76 % | 68.89 / 26.07 / 4.86 % | ≤ 1.2 % | AP41/42 |
+| Result | Predicted | Measured | Agreement | Paper |
+|---|---|---|---|---|
+| Proton–electron mass ratio | 1836.152673444 | 1836.152673426(32) | 9.98 ppt · 0.57σ | AP30 |
+| Gravitational constant G | 6.7206 × 10⁻¹¹ | 6.6743 × 10⁻¹¹ | 0.69 % · ~300σ | AP28 |
+| Neutron–proton mass difference | 2.53099393 mₑ | 2.53098829 mₑ | 2.2 ppm | AP30 |
+| MOND acceleration a₀ | one relation links a₀ and H₀ | — | 5.8 % low at H₀ = 70; equivalently implies H₀ = 74.3 ± 1.2 | AP18 |
+| Dark sector partition | 68.85 / 26.39 / 4.76 % | 68.89 / 26.07 / 4.86 % | ≤ 1.2 % | AP41/42 |
+
+> A frozen, timestamped pre-registration of the proton–electron mass ratio at
+> order α³ — including the conditions under which it dies — is at
+> [`/prereg/`](https://the420code.org/prereg/).
 
 Every claim in the corpus carries a **kill switch** — an explicit, published
 condition under which it dies. 561 of them.
