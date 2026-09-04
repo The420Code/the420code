@@ -143,6 +143,11 @@ and the expansion rate as a closure. A fired switch is shown, never repaired,
 never deleted; a new structural row may freeze beside the corpse, never in its
 place.</p>
 
+<p>The same freezes are read independently, and in plain language, by the verifier who
+anchors them: <a href="https://lucid.rodeo/prereg/" target="_blank" rel="noopener">Frozen Predictions — 420Code, in plain words</a>. He runs his own
+scripts against the same CODATA inputs and keeps his own scoreboard. Reading both is the
+point; a registry checked only by its author is a registry checked by nobody.</p>
+
 <!-- SCOREBOARD -->
 <h2 id="scoreboard">The scoreboard</h2>
 <p style="font-size:14px;color:var(--g5,#555);margin:0 0 1rem">Standing as of <b>4 September 2026</b>, the wave. Thirteen rows below: eleven live, two fired. They are carried by nine registrations, listed under <a href="#register">the register</a> — a registration can own more than one row, because one prediction can be read against more than one measurement.</p>
@@ -219,6 +224,22 @@ place.</p>
   <p style="margin:0 0 .5rem"><b>Where the argument is weak — stated first, not last.</b> Rigidity is not uniqueness: this shows the integer cannot move <i>within the corpus’s own family</i> and says nothing about whether a different family of primitives would also reach 1836. That is KS-30.4’s between-family limb, and it is open and unclosed. Most of these numbers are retrospective — written against measurements that already existed — and no outside reader can distinguish honest derivation from reverse engineering by inspection; only the frozen forward predictions and the sealed lattice protocol can carry that weight, and they carry it only in the future. The α² coefficient 16 has no structural decomposition and is owed under KS-30.3.</p>
   <p style="margin:0"><b>What a fitted framework cannot produce.</b> Fitting has a signature: everything lands, nothing is ever wrong, every error sits comfortably inside whatever tolerance was quoted. This corpus does not have that signature. The structural G lands at +0.69% — 309σ on CODATA’s bar, and roughly thirteen times the spread between G experiments; it passes its pre-stated one-per-cent bar and nothing more, and <b>a fitter would have done better</b>. The neutron–proton row failed at 7.24σ, found and published by the corpus itself. The uniqueness claim was found wrong and corrected the same day. The visible fraction was restated from 2.0% to 2.46σ once the observed value was taken from the middle of its range rather than the bottom. The muon is unreachable and the corpus says so. Five negative results, four of them found and published before anyone outside asked. Fitting has no mechanism for producing its own counter-evidence.</p>
   <p style="margin:.5rem 0 0">The full argument, with the arithmetic and the sensitivity script: <a href="RIGIDITY.md">RIGIDITY.md</a> · <a href="verify_rigidity.py">verify_rigidity.py</a> · <a href="RIGIDITY-NOTE-2026-09-04.md">dated note of 4 September 2026</a> (the frozen document’s “31σ” for the structural G is corrected to 309σ there, and its H₀ threshold superseded).</p>
+</div>
+
+<p style="margin:0 0 .75rem"><b>The open leg, now enumerated (4 September 2026).</b> The paragraph above concedes that rigidity is not uniqueness — it shows 21 cannot move <i>inside</i> the corpus’s family and says nothing about other families. That was the weakest point in this defence, so it was searched rather than argued. The space the charge names was made concrete — the integers 1 to 30, π, the four arithmetic operations, and no more tokens than the corpus’s own five — and every formula in it was enumerated against the measured ratio. The result splits, and one half goes against the corpus.</p>
+<div class="tbl-wrap">
+<table class="data verify-table" style="margin-top:0">
+  <thead><tr><th>Leg</th><th>Question</th><th>Answer</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><b>A</b></td><td>How many five-leaf formulas reach m<sub>p</sub>/m<sub>e</sub> as well as the corpus does?</td><td><b>2,971</b> — and <b>15</b> of them reach eleven-digit agreement at order α, which the corpus’s own formula does not</td><td class="sig-fire">the limb fires</td></tr>
+    <tr><td><b>B</b></td><td>How many integers let the <i>same</i> N carry the mass ratio, G, and the visible fraction at once?</td><td><b>one</b> — N = 21, across 14 to 28; its neighbours demand a factor of 0.0096 or 179 where the corpus has 1.32</td><td class="sig-in">the limb holds</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
+  <p style="margin:0 0 .5rem"><b>Leg A, stated against the corpus.</b> About three thousand formulas no more complex than this one hit the proton ratio at the corpus’s own accuracy, and fifteen beat it — 22 + 10/(19 − 9π) lands within 3.4 × 10⁻⁸ of the target and means nothing at all. <b>The proton ratio’s precision has no evidential weight on its own, and any presentation leading with the eleven digits is misleading.</b> RIGIDITY.md said exactly this in words before the search was run; this is the number behind the words.</p>
+  <p style="margin:0 0 .5rem"><b>Leg B, stated for it.</b> None of those three thousand formulas has a second life. They reach one number and stop. The corpus’s claim was never the ratio alone — it is that one integer carries three unrelated observables, and there the exponential in G does the discriminating: one step in N changes what G demands by a factor of 137. Across 14 to 28, exactly one integer carries all three, and it is 21.</p>
+  <p style="margin:0"><b>What is still open, and why the switch stays live.</b> The search enumerates one coefficient, not three formulas jointly, so it cannot rule out a different <i>kind</i> of primitive set carrying three observables by some other route. KS-30.4’s between-family limb is narrowed, not closed, and should stay LIVE; a status change is the author’s ruling, not a script’s. Full method and result: <a href="FINDING-2026-09-04-KS-30.4-between-family.md">the finding of 4 September 2026</a> · <a href="verify_between_family.py">verify_between_family.py</a>.</p>
 </div>
 
 <h3 id="register" style="margin:1.75rem 0 .5rem">The register</h3>
@@ -326,7 +347,11 @@ place.</p>
 <span class="mono">wave-2026-09-04</span> (the wave) in the repository; that hash
 is the timestamp of record. The papers of the wave carry their own freezes,
 anchored by the independent verifier and published beside each proof at
-<a href="/proofs/instruments/">/proofs/instruments/</a>. <b>Last checked</b> = the date the standing was last
+<a href="/proofs/instruments/">/proofs/instruments/</a>. The verifier keeps his own
+account of the same freezes, in plain words and with his own scripts, at
+<a href="https://lucid.rodeo/prereg/" target="_blank" rel="noopener">lucid.rodeo/prereg</a> — and the wider companion to the body of work at
+<a href="https://lucid.rodeo/the420code/" target="_blank" rel="noopener">lucid.rodeo/the420code</a>. Where his reading and this page differ, the
+difference is the useful part; both are public. <b>Last checked</b> = the date the standing was last
 re-computed against measurement. Every row the root <span class="mono">verify.py</span> carries is
 re-computed on every push, and last was at the wave; the dark-sector clock is not one of them — it
 awaits a redshift-evolution measurement, and its August date is the honest one. Two further documents are <em>not</em>
@@ -335,7 +360,11 @@ integer 21 cannot move — the answer to "this is numerology", summarised above
 under <a href="#numerology">“This is just integer curve-fitting”</a>, with its
 <a href="RIGIDITY-NOTE-2026-09-04.md">dated note</a>) and
 <a href="PROTOCOL-lattice-qcd-mapping.md">PROTOCOL-lattice-qcd-mapping.md</a>, a
-sealed-envelope procedure for the one blind test still available — explicitly
+sealed-envelope procedure for the one blind test still available (its machinery —
+the template, the readiness check that refuses a freeze with a blank field or a
+lattice number in it, and the digest-and-commit step — is
+<a href="seal_lattice_freeze.py">seal_lattice_freeze.py</a>; the derivation itself is
+reserved to the author, alone, by the protocol’s own §1) — explicitly
 <b>not a freeze</b>.</p>
 
 <!-- FULL TEXT -->
@@ -516,13 +545,14 @@ sealed-envelope procedure for the one blind test still available — explicitly
 
 <!-- VERIFY -->
 <h2 id="reproduce">Reproduce it yourself</h2>
+<p style="margin:0 0 1rem">Three independent routes: the scripts below; the verifier’s own scripts and plain-language walkthrough at <a href="https://lucid.rodeo/prereg/" target="_blank" rel="noopener">lucid.rodeo/prereg</a>; and his anchored bundles and audits at <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener">github.com/ajgreyling/the420code-proof</a>, where each paper’s freeze carries a tag and a digest.</p>
 <p>The one external dependency is <span class="mono">mpmath</span>. Every number on this page comes out of these four scripts:</p>
 <div class="mono-block">pip install mpmath
 python3 verify_prereg.py       # the proton freeze
 python3 verify_cosmology.py    # the three cosmology freezes
 python3 verify_rigidity.py     # the rigidity table
 python3 verify_family.py       # the wave: the realised G, the realised neutron, the cycle, the closure</div>
-<p>Scripts: <a href="verify_prereg.py">verify_prereg.py</a> · <a href="verify_cosmology.py">verify_cosmology.py</a> · <a href="verify_rigidity.py">verify_rigidity.py</a> · <a href="verify_family.py">verify_family.py</a>. The head of the proton script:</p>
+<p>Scripts: <a href="verify_prereg.py">verify_prereg.py</a> · <a href="verify_cosmology.py">verify_cosmology.py</a> · <a href="verify_rigidity.py">verify_rigidity.py</a> · <a href="verify_between_family.py">verify_between_family.py</a> · <a href="verify_family.py">verify_family.py</a>. The head of the proton script:</p>
 <div class="verify-wrap">
   <button class="copy-btn" onclick="copyCode(this)">Copy</button>
   <pre class="verify-code"><code>from mpmath import mp, mpf, pi, sqrt
