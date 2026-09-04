@@ -148,6 +148,20 @@ anchors them: <a href="https://lucid.rodeo/prereg/" target="_blank" rel="noopene
 scripts against the same CODATA inputs and keeps his own scoreboard. Reading both is the
 point; a registry checked only by its author is a registry checked by nobody.</p>
 
+<div style="border-top:1px solid var(--g2,#e8e8e8);border-bottom:1px solid var(--g2,#e8e8e8);padding:.9rem 0;margin:1.5rem 0">
+  <p style="font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--g5,#555);margin:0 0 .5rem">ON THIS PAGE</p>
+  <p style="font-size:15px;margin:0;line-height:1.9">
+    <a href="#scoreboard">The scoreboard</a> — every prediction, its σ and its error ·
+    <a href="#register">The register</a> — status, kill condition, document, commit ·
+    <a href="#span">The span</a> — the field of physics each prediction is made in ·
+    <a href="#numerology">“This is just integer curve-fitting”</a> — the answer, with the search behind it ·
+    <a href="#registration">The registration</a> — one freeze reproduced in full ·
+    <a href="#errata">Errata</a> ·
+    <a href="#documents">The frozen documents</a> ·
+    <a href="#reproduce">Reproduce it yourself</a>
+  </p>
+</div>
+
 <!-- SCOREBOARD -->
 <h2 id="scoreboard">The scoreboard</h2>
 <p style="font-size:14px;color:var(--g5,#555);margin:0 0 1rem">Standing as of <b>4 September 2026</b>, the wave. Thirteen rows below: eleven live, two fired. They are carried by nine registrations, listed under <a href="#register">the register</a> — a registration can own more than one row, because one prediction can be read against more than one measurement.</p>
@@ -180,68 +194,6 @@ point; a registry checked only by its author is a registry checked by nobody.</p
   </ul>
   <p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA reading is dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. The author stands behind the realised value. AP28’s structural value, +0.69%, carried an omission — the arena’s held ε, priced in AP44 — and stands beside it as the record of that omission: the neutron’s fired row exposed a structural error whose consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p>
 </div>
-<h3 id="span" style="margin:1.75rem 0 .5rem">The span — the field each prediction is made in</h3>
-<p style="margin:0 0 .75rem">The same axiom and the same single measured input, the fine-structure constant α, are read at every scale the corpus reaches. This is the same set of predictions as the table above, sorted by the field of physics each one is made in and the size of the thing it describes.</p>
-<div class="tbl-wrap">
-<table class="data verify-table span-table" style="margin-top:0">
-  <thead><tr><th>Field</th><th>Scale</th><th>What is predicted</th><th>Paper</th><th>σ</th></tr></thead>
-  <tbody>
-      <tr><td><b>Particle physics</b></td><td>10⁻¹⁵ m — a proton</td><td>The proton-to-electron mass ratio</td><td><a href="/proofs/#ap30" onclick="event.preventDefault();window.location.href='/proofs/#ap30'">AP30</a></td><td class="sig-in">+0.57σ</td></tr>
-      <tr><td><b>Nuclear physics</b></td><td>10⁻¹⁵ m — a nucleus</td><td>The neutron–proton mass difference, realised</td><td><a href="/proofs/#ap47" onclick="event.preventDefault();window.location.href='/proofs/#ap47'">AP47</a></td><td class="sig-in">−0.005σ</td></tr>
-      <tr><td><b>Gravitation, metrology</b></td><td>10⁻¹ m — a torsion balance</td><td>The gravitational constant G, realised</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td><td><span class="sig-in">+0.01σ</span> vs atom interferometry<br><span class="sig-fire">−16σ</span> vs the CODATA adjustment</td></tr>
-      <tr><td><b>Galactic dynamics</b></td><td>10²¹ m — a galaxy’s outskirts</td><td>The MOND acceleration floor a₀</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td><td class="sig-in">−0.46σ</td></tr>
-      <tr><td><b>Cosmology — the dark sector</b></td><td>10²⁶ m — the observable universe</td><td>The dark-energy, dark-matter and visible fractions, from one timescale</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a> · <a href="/proofs/#ap41" onclick="event.preventDefault();window.location.href='/proofs/#ap41'">AP41</a></td><td><span class="sig-in">−0.07σ</span> · <span class="sig-in">+0.8σ</span> · −2.46σ</td></tr>
-      <tr><td><b>Cosmology — the chronology</b></td><td>10²⁶ m — one cycle</td><td>The age of the universe</td><td><a href="/proofs/#ap46" onclick="event.preventDefault();window.location.href='/proofs/#ap46'">AP46</a></td><td>+2.1σ</td></tr>
-      <tr><td><b>Cosmology — the expansion</b></td><td>10²⁶ m — the closure</td><td>The expansion rate H₀</td><td><a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48</a></td><td class="sig-in">+0.1σ</td></tr>
-  </tbody>
-</table>
-</div>
-<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
-  <p style="margin:0 0 .5rem"><b>What the span shows.</b> These are not one field’s predictions. They run from the weight of a proton to the rate at which the universe expands — about forty-one orders of magnitude in length scale, from the femtometre of a nucleus to the Hubble radius — and each is derived from the same axiom and the same one measured number. <b>Seven of the eleven live rows in the scoreboard land inside one standard deviation</b> of the measurement they face: the proton’s mass ratio, the neutron’s realised difference, the realised G against atom interferometry, the acceleration floor, the expansion rate, and two of the three dark-sector fractions.</p>
-  <p style="margin:0 0 .5rem"><b>Why that is not proof.</b> The rows are not independent tests, and nothing here should be read as though they were. α is the one input to all of them. The acceleration floor is derived from the expansion rate and the expansion rate from the cycle and the partition together, so those sit on one chain read at three points; the three dark-sector fractions come from a single timescale, not three derivations. Counted as families rather than rows, the live set is four at most — the mass scaffold, the gravitational coupling, the cosmological chain, and the dark partition — and even those are coupled, since the rate is a closure <i>of</i> the partition and the cycle. One of the seven, the realised G, reads +0.01σ against atom interferometry and −16σ against the CODATA adjustment; both readings are in the table above, and the reader is entitled to weigh them.</p>
-  <p style="margin:0"><b>What it does show.</b> Where a structural omission was found, paying it moved three separate derivations toward measurement rather than away. The bare neutron–proton row fired at 7.24σ on 2 August 2026; pricing the held distinction that row had treated as free brought the difference to −0.005σ (AP47). The same omission, priced at the arena, moved the gravitational constant from +0.69% to −0.036% (AP44). The same mechanism at the cosmological scale replaced the floor’s inverted 74.3 — which fired — with a rate closed out of the partition and the cycle, 67.45, at 0.1σ against the relic glow (AP46, AP48). Three limbs, one correction, all three improving. That is what the span supports, and it is worth saying exactly what it is and what it is not. It is evidence that the framework behaves <i>as a structure</i>: an omission found in one place, once accounted for, propagates into other fields and improves them there too. It is not evidence that nature agrees this is the structure of reality. That is a separate claim, and it is not settled here — it is settled, if it is ever settled, at the switches: the conditions listed above under which each of these rows dies. Not yet.</p>
-</div>
-
-<h3 id="numerology" style="margin:1.75rem 0 .5rem">“This is just integer curve-fitting”</h3>
-<p style="margin:0 0 .75rem">The charge, at full strength: <i>you have a handful of small integers — 3, 4, 6, 21 — and π, and a free choice of where to put them; with that much freedom you can hit any target you like.</i> As a general principle that is correct, and the corpus does not dispute it. Precision alone proves nothing. The question is not how close the numbers land. It is <b>how much freedom was available when they were written</b> — and that is computable.</p>
-<p style="margin:0 0 .75rem">21 is not chosen. It is built: <b>21 = 6 × 3 + 3</b> — six faces of the break (AP24) across three spatial dimensions (AP10), plus three actualisation couplings. Both inputs are derived upstream and both were fixed before any mass ratio, gravitational constant or dark-sector split was computed; the ordering is checkable against the dependency graph, since AP10 and AP28 precede AP30, AP41 and AP42. So the perturbations available to a fitter are not “any integer near 21” — they are: change the face count, or change the dimension count. Here is what each does, substituted consistently everywhere the integer appears:</p>
-<div class="tbl-wrap">
-<table class="data verify-table" style="margin-top:0">
-  <thead><tr><th>N</th><th>Where it comes from</th><th>m<sub>p</sub>/m<sub>e</sub> error</th><th>G error</th><th>Visible fraction error</th></tr></thead>
-  <tbody>
-    <tr><td>14</td><td>2 dimensions</td><td>−54.5%</td><td>9.1 × 10¹⁴ × too big</td><td>+46.2%</td></tr>
-    <tr><td>18</td><td>5 faces</td><td>−26.0%</td><td>2.6 × 10⁶ × too big</td><td>+13.7%</td></tr>
-    <tr><td>20</td><td>ad hoc</td><td>−9.10%</td><td>138 × too big</td><td>+2.35%</td></tr>
-    <tr><td><b>21</b></td><td><b>6 faces, 3 dimensions</b></td><td class="sig-in"><b>1 × 10⁻⁹%</b></td><td class="sig-in"><b>+0.69%</b></td><td class="sig-in"><b>−2.52%</b></td></tr>
-    <tr><td>22</td><td>ad hoc</td><td>+9.53%</td><td>−99.3%</td><td>−6.95%</td></tr>
-    <tr><td>24</td><td>7 faces</td><td>+29.9%</td><td>−100%</td><td>−14.7%</td></tr>
-    <tr><td>28</td><td>4 dimensions</td><td>+75.9%</td><td>−100%</td><td>−26.9%</td></tr>
-  </tbody>
-</table>
-</div>
-<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
-  <p style="margin:0 0 .5rem"><b>Read the G column.</b> N sits in an exponent, α<sup>N</sup>. One step changes G by a factor of 137 — not 137 per cent, a factor of 137. The mass ratio alone would tolerate 20 or 22 to within ten per cent; the exponential closes that window to a single integer. <b>The same integer is pinned to eleven decimal places by a polynomial, to within a factor of 1.007 by an exponential, and to within a few per cent by a reciprocal — three functional forms, three unrelated observables, and no value but 21 survives all three.</b> (The G column shows AP28’s structural value, the form the exponent test is written against; AP44’s realised value, −0.036%, carries the same exponent.)</p>
-  <p style="margin:0 0 .5rem"><b>Where the argument is weak — stated first, not last.</b> Rigidity is not uniqueness: this shows the integer cannot move <i>within the corpus’s own family</i> and says nothing about whether a different family of primitives would also reach 1836. That is KS-30.4’s between-family limb, and it is open and unclosed. Most of these numbers are retrospective — written against measurements that already existed — and no outside reader can distinguish honest derivation from reverse engineering by inspection; only the frozen forward predictions and the sealed lattice protocol can carry that weight, and they carry it only in the future. The α² coefficient 16 has no structural decomposition and is owed under KS-30.3.</p>
-  <p style="margin:0"><b>What a fitted framework cannot produce.</b> Fitting has a signature: everything lands, nothing is ever wrong, every error sits comfortably inside whatever tolerance was quoted. This corpus does not have that signature. The structural G lands at +0.69% — 309σ on CODATA’s bar, and roughly thirteen times the spread between G experiments; it passes its pre-stated one-per-cent bar and nothing more, and <b>a fitter would have done better</b>. The neutron–proton row failed at 7.24σ, found and published by the corpus itself. The uniqueness claim was found wrong and corrected the same day. The visible fraction was restated from 2.0% to 2.46σ once the observed value was taken from the middle of its range rather than the bottom. The muon is unreachable and the corpus says so. Five negative results, four of them found and published before anyone outside asked. Fitting has no mechanism for producing its own counter-evidence.</p>
-  <p style="margin:.5rem 0 0">The full argument, with the arithmetic and the sensitivity script: <a href="RIGIDITY.md">RIGIDITY.md</a> · <a href="verify_rigidity.py">verify_rigidity.py</a> · <a href="RIGIDITY-NOTE-2026-09-04.md">dated note of 4 September 2026</a> (the frozen document’s “31σ” for the structural G is corrected to 309σ there, and its H₀ threshold superseded).</p>
-</div>
-
-<p style="margin:0 0 .75rem"><b>The open leg, now enumerated (4 September 2026).</b> The paragraph above concedes that rigidity is not uniqueness — it shows 21 cannot move <i>inside</i> the corpus’s family and says nothing about other families. That was the weakest point in this defence, so it was searched rather than argued. The space the charge names was made concrete — the integers 1 to 30, π, the four arithmetic operations, and no more tokens than the corpus’s own five — and every formula in it was enumerated against the measured ratio. The result splits, and one half goes against the corpus.</p>
-<div class="tbl-wrap">
-<table class="data verify-table" style="margin-top:0">
-  <thead><tr><th>Leg</th><th>Question</th><th>Answer</th><th>Verdict</th></tr></thead>
-  <tbody>
-    <tr><td><b>A</b></td><td>How many five-leaf formulas reach m<sub>p</sub>/m<sub>e</sub> as well as the corpus does?</td><td><b>2,971</b> — and <b>15</b> of them reach eleven-digit agreement at order α, which the corpus’s own formula does not</td><td class="sig-fire">the limb fires</td></tr>
-    <tr><td><b>B</b></td><td>How many integers let the <i>same</i> N carry the mass ratio, G, and the visible fraction at once?</td><td><b>one</b> — N = 21, across 14 to 28; its neighbours demand a factor of 0.0096 or 179 where the corpus has 1.32</td><td class="sig-in">the limb holds</td></tr>
-  </tbody>
-</table>
-</div>
-<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
-  <p style="margin:0 0 .5rem"><b>Leg A, stated against the corpus.</b> About three thousand formulas no more complex than this one hit the proton ratio at the corpus’s own accuracy, and fifteen beat it — 22 + 10/(19 − 9π) lands within 3.4 × 10⁻⁸ of the target and means nothing at all. <b>The proton ratio’s precision has no evidential weight on its own, and any presentation leading with the eleven digits is misleading.</b> RIGIDITY.md said exactly this in words before the search was run; this is the number behind the words.</p>
-  <p style="margin:0 0 .5rem"><b>Leg B, stated for it.</b> None of those three thousand formulas has a second life. They reach one number and stop. The corpus’s claim was never the ratio alone — it is that one integer carries three unrelated observables, and there the exponential in G does the discriminating: one step in N changes what G demands by a factor of 137. Across 14 to 28, exactly one integer carries all three, and it is 21.</p>
-  <p style="margin:0"><b>What is still open, and why the switch stays live.</b> The search enumerates one coefficient, not three formulas jointly, so it cannot rule out a different <i>kind</i> of primitive set carrying three observables by some other route. KS-30.4’s between-family limb is narrowed, not closed, and should stay LIVE; a status change is the author’s ruling, not a script’s. Full method and result: <a href="FINDING-2026-09-04-KS-30.4-between-family.md">the finding of 4 September 2026</a> · <a href="verify_between_family.py">verify_between_family.py</a>.</p>
-</div>
-
 <h3 id="register" style="margin:1.75rem 0 .5rem">The register</h3>
 <p style="margin:0 0 .75rem">Each registration with its standing, the condition under which it dies, its frozen document and script, and the commit that timestamps it. The numbers are in the table above.</p>
 <div class="tbl-wrap">
@@ -366,6 +318,68 @@ lattice number in it, and the digest-and-commit step — is
 <a href="seal_lattice_freeze.py">seal_lattice_freeze.py</a>; the derivation itself is
 reserved to the author, alone, by the protocol’s own §1) — explicitly
 <b>not a freeze</b>.</p>
+
+<h3 id="span" style="margin:1.75rem 0 .5rem">The span — the field each prediction is made in</h3>
+<p style="margin:0 0 .75rem">The same axiom and the same single measured input, the fine-structure constant α, are read at every scale the corpus reaches. This is the same set of predictions as the scoreboard, sorted by the field of physics each one is made in and the size of the thing it describes.</p>
+<div class="tbl-wrap">
+<table class="data verify-table span-table" style="margin-top:0">
+  <thead><tr><th>Field</th><th>Scale</th><th>What is predicted</th><th>Paper</th><th>σ</th></tr></thead>
+  <tbody>
+      <tr><td><b>Particle physics</b></td><td>10⁻¹⁵ m — a proton</td><td>The proton-to-electron mass ratio</td><td><a href="/proofs/#ap30" onclick="event.preventDefault();window.location.href='/proofs/#ap30'">AP30</a></td><td class="sig-in">+0.57σ</td></tr>
+      <tr><td><b>Nuclear physics</b></td><td>10⁻¹⁵ m — a nucleus</td><td>The neutron–proton mass difference, realised</td><td><a href="/proofs/#ap47" onclick="event.preventDefault();window.location.href='/proofs/#ap47'">AP47</a></td><td class="sig-in">−0.005σ</td></tr>
+      <tr><td><b>Gravitation, metrology</b></td><td>10⁻¹ m — a torsion balance</td><td>The gravitational constant G, realised</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td><td><span class="sig-in">+0.01σ</span> vs atom interferometry<br><span class="sig-fire">−16σ</span> vs the CODATA adjustment</td></tr>
+      <tr><td><b>Galactic dynamics</b></td><td>10²¹ m — a galaxy’s outskirts</td><td>The MOND acceleration floor a₀</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td><td class="sig-in">−0.46σ</td></tr>
+      <tr><td><b>Cosmology — the dark sector</b></td><td>10²⁶ m — the observable universe</td><td>The dark-energy, dark-matter and visible fractions, from one timescale</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a> · <a href="/proofs/#ap41" onclick="event.preventDefault();window.location.href='/proofs/#ap41'">AP41</a></td><td><span class="sig-in">−0.07σ</span> · <span class="sig-in">+0.8σ</span> · −2.46σ</td></tr>
+      <tr><td><b>Cosmology — the chronology</b></td><td>10²⁶ m — one cycle</td><td>The age of the universe</td><td><a href="/proofs/#ap46" onclick="event.preventDefault();window.location.href='/proofs/#ap46'">AP46</a></td><td>+2.1σ</td></tr>
+      <tr><td><b>Cosmology — the expansion</b></td><td>10²⁶ m — the closure</td><td>The expansion rate H₀</td><td><a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48</a></td><td class="sig-in">+0.1σ</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
+  <p style="margin:0 0 .5rem"><b>What the span shows.</b> These are not one field’s predictions. They run from the weight of a proton to the rate at which the universe expands — about forty-one orders of magnitude in length scale, from the femtometre of a nucleus to the Hubble radius — and each is derived from the same axiom and the same one measured number. <b>Seven of the eleven live rows in the scoreboard land inside one standard deviation</b> of the measurement they face: the proton’s mass ratio, the neutron’s realised difference, the realised G against atom interferometry, the acceleration floor, the expansion rate, and two of the three dark-sector fractions.</p>
+  <p style="margin:0 0 .5rem"><b>Why that is not proof.</b> The rows are not independent tests, and nothing here should be read as though they were. α is the one input to all of them. The acceleration floor is derived from the expansion rate and the expansion rate from the cycle and the partition together, so those sit on one chain read at three points; the three dark-sector fractions come from a single timescale, not three derivations. Counted as families rather than rows, the live set is four at most — the mass scaffold, the gravitational coupling, the cosmological chain, and the dark partition — and even those are coupled, since the rate is a closure <i>of</i> the partition and the cycle. One of the seven, the realised G, reads +0.01σ against atom interferometry and −16σ against the CODATA adjustment; both readings are in the table above, and the reader is entitled to weigh them.</p>
+  <p style="margin:0"><b>What it does show.</b> Where a structural omission was found, paying it moved three separate derivations toward measurement rather than away. The bare neutron–proton row fired at 7.24σ on 2 August 2026; pricing the held distinction that row had treated as free brought the difference to −0.005σ (AP47). The same omission, priced at the arena, moved the gravitational constant from +0.69% to −0.036% (AP44). The same mechanism at the cosmological scale replaced the floor’s inverted 74.3 — which fired — with a rate closed out of the partition and the cycle, 67.45, at 0.1σ against the relic glow (AP46, AP48). Three limbs, one correction, all three improving. That is what the span supports, and it is worth saying exactly what it is and what it is not. It is evidence that the framework behaves <i>as a structure</i>: an omission found in one place, once accounted for, propagates into other fields and improves them there too. It is not evidence that nature agrees this is the structure of reality. That is a separate claim, and it is not settled here — it is settled, if it is ever settled, at the switches: the conditions listed above under which each of these rows dies. Not yet.</p>
+</div>
+
+<h3 id="numerology" style="margin:1.75rem 0 .5rem">“This is just integer curve-fitting”</h3>
+<p style="margin:0 0 .75rem">The charge, at full strength: <i>you have a handful of small integers — 3, 4, 6, 21 — and π, and a free choice of where to put them; with that much freedom you can hit any target you like.</i> As a general principle that is correct, and the corpus does not dispute it. Precision alone proves nothing. The question is not how close the numbers land. It is <b>how much freedom was available when they were written</b> — and that is computable.</p>
+<p style="margin:0 0 .75rem">21 is not chosen. It is built: <b>21 = 6 × 3 + 3</b> — six faces of the break (AP24) across three spatial dimensions (AP10), plus three actualisation couplings. Both inputs are derived upstream and both were fixed before any mass ratio, gravitational constant or dark-sector split was computed; the ordering is checkable against the dependency graph, since AP10 and AP28 precede AP30, AP41 and AP42. So the perturbations available to a fitter are not “any integer near 21” — they are: change the face count, or change the dimension count. Here is what each does, substituted consistently everywhere the integer appears:</p>
+<div class="tbl-wrap">
+<table class="data verify-table" style="margin-top:0">
+  <thead><tr><th>N</th><th>Where it comes from</th><th>m<sub>p</sub>/m<sub>e</sub> error</th><th>G error</th><th>Visible fraction error</th></tr></thead>
+  <tbody>
+    <tr><td>14</td><td>2 dimensions</td><td>−54.5%</td><td>9.1 × 10¹⁴ × too big</td><td>+46.2%</td></tr>
+    <tr><td>18</td><td>5 faces</td><td>−26.0%</td><td>2.6 × 10⁶ × too big</td><td>+13.7%</td></tr>
+    <tr><td>20</td><td>ad hoc</td><td>−9.10%</td><td>138 × too big</td><td>+2.35%</td></tr>
+    <tr><td><b>21</b></td><td><b>6 faces, 3 dimensions</b></td><td class="sig-in"><b>1 × 10⁻⁹%</b></td><td class="sig-in"><b>+0.69%</b></td><td class="sig-in"><b>−2.52%</b></td></tr>
+    <tr><td>22</td><td>ad hoc</td><td>+9.53%</td><td>−99.3%</td><td>−6.95%</td></tr>
+    <tr><td>24</td><td>7 faces</td><td>+29.9%</td><td>−100%</td><td>−14.7%</td></tr>
+    <tr><td>28</td><td>4 dimensions</td><td>+75.9%</td><td>−100%</td><td>−26.9%</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
+  <p style="margin:0 0 .5rem"><b>Read the G column.</b> N sits in an exponent, α<sup>N</sup>. One step changes G by a factor of 137 — not 137 per cent, a factor of 137. The mass ratio alone would tolerate 20 or 22 to within ten per cent; the exponential closes that window to a single integer. <b>The same integer is pinned to eleven decimal places by a polynomial, to within a factor of 1.007 by an exponential, and to within a few per cent by a reciprocal — three functional forms, three unrelated observables, and no value but 21 survives all three.</b> (The G column shows AP28’s structural value, the form the exponent test is written against; AP44’s realised value, −0.036%, carries the same exponent.)</p>
+  <p style="margin:0 0 .5rem"><b>Where the argument is weak — stated first, not last.</b> Rigidity is not uniqueness: this shows the integer cannot move <i>within the corpus’s own family</i> and says nothing about whether a different family of primitives would also reach 1836. That is KS-30.4’s between-family limb, and it is open and unclosed. Most of these numbers are retrospective — written against measurements that already existed — and no outside reader can distinguish honest derivation from reverse engineering by inspection; only the frozen forward predictions and the sealed lattice protocol can carry that weight, and they carry it only in the future. The α² coefficient 16 has no structural decomposition and is owed under KS-30.3.</p>
+  <p style="margin:0"><b>What a fitted framework cannot produce.</b> Fitting has a signature: everything lands, nothing is ever wrong, every error sits comfortably inside whatever tolerance was quoted. This corpus does not have that signature. The structural G lands at +0.69% — 309σ on CODATA’s bar, and roughly thirteen times the spread between G experiments; it passes its pre-stated one-per-cent bar and nothing more, and <b>a fitter would have done better</b>. The neutron–proton row failed at 7.24σ, found and published by the corpus itself. The uniqueness claim was found wrong and corrected the same day. The visible fraction was restated from 2.0% to 2.46σ once the observed value was taken from the middle of its range rather than the bottom. The muon is unreachable and the corpus says so. Five negative results, four of them found and published before anyone outside asked. Fitting has no mechanism for producing its own counter-evidence.</p>
+  <p style="margin:.5rem 0 0">The full argument, with the arithmetic and the sensitivity script: <a href="RIGIDITY.md">RIGIDITY.md</a> · <a href="verify_rigidity.py">verify_rigidity.py</a> · <a href="RIGIDITY-NOTE-2026-09-04.md">dated note of 4 September 2026</a> (the frozen document’s “31σ” for the structural G is corrected to 309σ there, and its H₀ threshold superseded).</p>
+</div>
+
+<p style="margin:0 0 .75rem"><b>The open leg, now enumerated (4 September 2026).</b> The paragraph above concedes that rigidity is not uniqueness — it shows 21 cannot move <i>inside</i> the corpus’s family and says nothing about other families. That was the weakest point in this defence, so it was searched rather than argued. The space the charge names was made concrete — the integers 1 to 30, π, the four arithmetic operations, and no more tokens than the corpus’s own five — and every formula in it was enumerated against the measured ratio. The result splits, and one half goes against the corpus.</p>
+<div class="tbl-wrap">
+<table class="data verify-table" style="margin-top:0">
+  <thead><tr><th>Leg</th><th>Question</th><th>Answer</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><b>A</b></td><td>How many five-leaf formulas reach m<sub>p</sub>/m<sub>e</sub> as well as the corpus does?</td><td><b>2,971</b> — and <b>15</b> of them reach eleven-digit agreement at order α, which the corpus’s own formula does not</td><td class="sig-fire">the limb fires</td></tr>
+    <tr><td><b>B</b></td><td>How many integers let the <i>same</i> N carry the mass ratio, G, and the visible fraction at once?</td><td><b>one</b> — N = 21, across 14 to 28; its neighbours demand a factor of 0.0096 or 179 where the corpus has 1.32</td><td class="sig-in">the limb holds</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
+  <p style="margin:0 0 .5rem"><b>Leg A, stated against the corpus.</b> About three thousand formulas no more complex than this one hit the proton ratio at the corpus’s own accuracy, and fifteen beat it — 22 + 10/(19 − 9π) lands within 3.4 × 10⁻⁸ of the target and means nothing at all. <b>The proton ratio’s precision has no evidential weight on its own, and any presentation leading with the eleven digits is misleading.</b> RIGIDITY.md said exactly this in words before the search was run; this is the number behind the words.</p>
+  <p style="margin:0 0 .5rem"><b>Leg B, stated for it.</b> None of those three thousand formulas has a second life. They reach one number and stop. The corpus’s claim was never the ratio alone — it is that one integer carries three unrelated observables, and there the exponential in G does the discriminating: one step in N changes what G demands by a factor of 137. Across 14 to 28, exactly one integer carries all three, and it is 21.</p>
+  <p style="margin:0"><b>What is still open, and why the switch stays live.</b> The search enumerates one coefficient, not three formulas jointly, so it cannot rule out a different <i>kind</i> of primitive set carrying three observables by some other route. KS-30.4’s between-family limb is narrowed, not closed, and should stay LIVE; a status change is the author’s ruling, not a script’s. Full method and result: <a href="FINDING-2026-09-04-KS-30.4-between-family.md">the finding of 4 September 2026</a> · <a href="verify_between_family.py">verify_between_family.py</a>.</p>
+</div>
 
 <!-- FULL TEXT -->
 <h2 id="registration">The registration — proton–electron mass ratio at order α³</h2>
@@ -541,6 +555,8 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
   <li><a href="2026-08-02-visible-fraction-KS41.1.md">2026-08-02-visible-fraction-KS41.1.md</a><span class="desc">The visible fraction, 1/21, with the corpus's own comparison corrected.</span></li>
   <li><a href="ERRATA-2026-08-02.md">ERRATA-2026-08-02.md</a><span class="desc">The seven corrections and strengthenings of 2026-08-02, E1–E7.</span></li>  <li><a href="RIGIDITY.md">RIGIDITY.md</a><span class="desc">The answer to "this is numerology": why the integer 21 cannot move. Not a freeze.</span></li>
   <li><a href="PROTOCOL-lattice-qcd-mapping.md">PROTOCOL-lattice-qcd-mapping.md</a><span class="desc">The sealed-envelope protocol for the one blind test still available. <b>Not a freeze</b> — the procedure for making one.</span></li>
+<li><a href="FINDING-2026-09-04-KS-30.4-between-family.md">FINDING-2026-09-04-KS-30.4-between-family.md</a> — the between-family limb enumerated: how many other formulas reach the proton ratio, and how many integers carry three observables at once. Reproduced by <a href="verify_between_family.py">verify_between_family.py</a>.</li>
+<li><a href="RIGIDITY-NOTE-2026-09-04.md">RIGIDITY-NOTE-2026-09-04.md</a> — the dated note beside the frozen <a href="RIGIDITY.md">RIGIDITY.md</a>: its “31σ” for the structural G corrected to 309σ, and three passages the wave of 4 September overtook.</li>
 </ul>
 
 <!-- VERIFY -->
