@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dated note beside RIGIDITY.md — issued 4 September 2026 at the wave — the 420 code</title>
+<meta name="description" content="Dated note beside RIGIDITY.md — issued 4 September 2026 at the wave The 420 Code · Studio G · the frozen file is never edited; corrections supersede, dated, in the open RIGIDITY.md">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--g4:#4a4a4a;--g5:#4a4a4a;--g6:#1a1a1a;--gold:#8B6914;--fire:#8B1A1A;--live:#2f5233;--f:'Atkinson Hyperlegible',system-ui,sans-serif}
+body{font-family:var(--f);font-size:18px;line-height:1.75;color:var(--bk);background:var(--wh);-webkit-text-size-adjust:100%}
+.wrap{max-width:780px;margin:0 auto;padding:0 1.25rem 5rem}
+.nav{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;padding:1rem 0;border-bottom:1px solid var(--g2);margin-bottom:2rem;font-size:17px}
+.nav a{color:var(--bk);text-decoration:none;font-weight:700}.nav a:hover{text-decoration:underline}
+a{color:var(--bk)}
+.crumb{font-size:16px;color:var(--g5);margin:0 0 .5rem;letter-spacing:.04em;text-transform:uppercase;font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:0 0 1rem}
+h2{font-size:25px;margin:2.5rem 0 .85rem;line-height:1.3}
+h3{font-size:20px;margin:2rem 0 .7rem}
+h4{font-size:18px;margin:1.5rem 0 .5rem}
+p{margin:0 0 1.1rem}
+ul,ol{margin:0 0 1.1rem 1.5rem} li{margin:0 0 .5rem}
+blockquote{border-left:4px solid var(--gold);background:var(--g1);padding:1rem 1.25rem;margin:0 0 1.2rem;font-size:18px}
+code{font-family:'Courier New',monospace;font-size:16.5px;background:var(--g1);padding:1px 5px;border-radius:2px}
+.doc-code{font-family:'Courier New',monospace;font-size:15.5px;line-height:1.6;background:var(--g1);padding:1rem 1.15rem;overflow-x:auto;margin:0 0 1.2rem;white-space:pre}
+.doc-tblwrap{overflow-x:auto;margin:0 0 1.4rem}
+.doc-table{width:100%;border-collapse:collapse;font-size:16.5px}
+.doc-table th{text-align:left;font-weight:700;padding:.6rem .65rem;border-bottom:2px solid var(--bk);font-size:15.5px}
+.doc-table td{padding:.55rem .65rem;border-bottom:1px solid var(--g2);vertical-align:top}
+hr{border:none;border-top:1px solid var(--g2);margin:2rem 0}
+.seal{border:1px solid var(--g2);background:var(--g1);padding:1.1rem 1.25rem;margin:2.5rem 0 0;font-size:16.5px;line-height:1.7}
+.seal .lbl{font-weight:700;letter-spacing:.05em;font-size:14.5px;text-transform:uppercase;color:var(--g5);display:block;margin-bottom:.4rem}
+.mono{font-family:'Courier New',monospace;word-break:break-all}
+.foot{margin:3rem 0 0;padding-top:1.25rem;border-top:1px solid var(--g2);font-size:16px;color:var(--g5)}
+@media(max-width:640px){body{font-size:17px}h1{font-size:28px}h2{font-size:22px}.wrap{padding:0 1rem 4rem}}
+</style></head>
+<body><div class="wrap">
+<nav class="nav">
+  <a href="/">← the420code.org</a>
+  <a href="/prereg/">Ø predictions</a>
+  <a href="/proofs/">Ø proofs</a>
+</nav>
+<p class="crumb">Ø Frozen Predictions · the document of record</p>
+<h1>Dated note beside RIGIDITY.md — issued 4 September 2026 at the wave</h1>
+<p><strong>The 420 Code · Studio G · the frozen file is never edited; corrections supersede, dated, in the open</strong></p>
+<p><code>RIGIDITY.md</code> was frozen on 2 August 2026. Four of its statements have been overtaken by events or found wrong since. The document is not edited. This note stands beside it.</p>
+<p>Its argument is untouched by all four: 21 is built from the face count and the dimension count, both fixed upstream and before any number was computed; the exponential in G closes the window to a single integer; and rigidity is not uniqueness. <code>verify_rigidity.py</code> reproduces the table on demand and its figures are correct as printed.</p>
+<hr>
+<h2>1. One arithmetic error — §5, first bullet</h2>
+<blockquote>"G lands at 0.69 % — about 31σ against the measurement's formal bar…"</blockquote>
+<p><strong>That is wrong by a factor of ten.</strong> CODATA 2022 gives G = 6.67430(15) × 10⁻¹¹, a bar of 1.5 × 10⁻¹⁵. AP28's structural value 6.7206 × 10⁻¹¹ sits 4.63 × 10⁻¹³ above it:</p>
+<p>    4.63 × 10⁻¹³ / 1.5 × 10⁻¹⁵ = 309σ</p>
+<p>The correct figure is <strong>309σ</strong>, as the scoreboard at <code>/prereg/</code> prints it. The document's "31σ" implies a bar ten times CODATA's, which nothing supports.</p>
+<p>The bullet's <em>argument</em> survives the correction and is strengthened by it: the point was that a fitter would have done better than 0.69 %, and 309σ makes that sharper, not softer. The neighbouring claim in the same bullet — that the gap is "roughly 14 times the historical scatter between G experiments" — is right at the order (6937 ppm against a lab-to-lab spread of up to 540 ppm, about 13×).</p>
+<h2>2. The "unrepaired 0.69 %" is no longer unrepaired — §5, first bullet</h2>
+<p>The bullet rests on the 0.69 % never having been touched. On 11 August 2026 AP44 (<em>The Snap</em>) priced the arena's once-held ε and realised the coupling as α²¹(1 + 1/π)/(1 + α), giving <strong>6.6719 × 10⁻¹¹, −0.036 %</strong> against CODATA. AP28's value stands beside it as the structural value and the record of the omission; neither is edited.</p>
+<p>What this does to the argument: the correction did not come from tuning against G. It came from a structural omission exposed when the neutron's bare row fired at 7.24σ on 2 August — the same omission, paid at three sites (AP44, AP47, AP48), moving three derivations toward measurement at once. A framework built by fitting has no mechanism that produces a correction of that shape. The bullet's conclusion holds; its evidence is now the correction rather than its absence.</p>
+<p>Read the realised value against the laboratory measurements rather than the adjustment and the picture the document was pointing at becomes explicit: the atom-interferometry value (LENS 2014, 6.67191(99) × 10⁻¹¹) sits <strong>1 ppm</strong> from the realised value, while CODATA's adjusted mean sits 360 ppm away. Both readings are on the scoreboard; the switch on G, KS-CCC.3, tests the direction the consensus moves, not the magnitude against CODATA.</p>
+<h2>3. One of the frozen forward predictions has fired — §4(b), §6.2</h2>
+<p>Both sections list KS-45.1 (H₀ = 74.3 ± 1.2, from the floor inverted) among the forward predictions that would carry the weight the retrospective numbers cannot. <strong>KS-45.1 fired on 3 September 2026</strong>, on the corpus's own derived rate, as AP46 §9 had pre-registered — 5.7σ on the width it registered. It is shown as a corpse and never repaired (<code>ERRATUM-2026-09-03-H0-KS45.1.md</code>).</p>
+<p>This is not a loss to §5's argument; it is §5's argument executing. It is, however, a change to the list: of the forward predictions §4(b) names, the proton at order α³, KS-42.6 and KS-41.1 remain live, KS-45.1 is dead, and four new registrations were frozen at the wave (KS-ASM.1, KS-STRETCH.3, KS-FLIP.1, KS-CCC.3).</p>
+<h2>4. The H₀ threshold in §6 is superseded — §6.2</h2>
+<blockquote>"H₀ converging above or below 71.9"</blockquote>
+<p>That threshold belonged to KS-45.1, which has fired. The corpus's expansion rate is now AP48's closure: <strong>67.45 km/s/Mpc, window 64.4–70.8</strong>, carried by KS-ASM.1, which dies if the settled rate lands outside that window in either direction — including if the Cepheid ladder's 73 is confirmed as the expansion rate.</p>
+<hr>
+<p><em>Frozen files are never edited; corrections supersede, dated, in the open.</em> <em>Copyleft 2026. Don't be a cunt. Be kind.</em></p>
+<div class="seal">
+  <span class="lbl">The file this page renders</span>
+  <span class="mono">RIGIDITY-NOTE-2026-09-04.md</span> · SHA-256 <span class="mono">f2ba82e77b5e0dbf77edec9035561e6bfe414fc2ba05200d1a4e85737a07689e</span><br>
+  This page is a rendering. The frozen file is the record: <a href="../RIGIDITY-NOTE-2026-09-04.md">open the raw document</a>.
+  Frozen files are never edited; corrections supersede, dated, in the open.
+</div>
+<p class="foot"><a href="/prereg/">← back to Ø Frozen Predictions</a> · Copyleft 2026. Don't be a cunt. Be kind.</p>
+</div></body></html>

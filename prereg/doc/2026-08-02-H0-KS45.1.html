@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-registration: the Hubble constant from the acceleration floor (KS-45.1) — the 420 code</title>
+<meta name="description" content="Pre-registration: the Hubble constant from the acceleration floor (KS-45.1) Freeze date: 2026-08-02 Author: G · Studio G · the420code.org Scope: AP18 (The Floor), AP17, and Rosin Ø">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--g4:#4a4a4a;--g5:#4a4a4a;--g6:#1a1a1a;--gold:#8B6914;--fire:#8B1A1A;--live:#2f5233;--f:'Atkinson Hyperlegible',system-ui,sans-serif}
+body{font-family:var(--f);font-size:18px;line-height:1.75;color:var(--bk);background:var(--wh);-webkit-text-size-adjust:100%}
+.wrap{max-width:780px;margin:0 auto;padding:0 1.25rem 5rem}
+.nav{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;padding:1rem 0;border-bottom:1px solid var(--g2);margin-bottom:2rem;font-size:17px}
+.nav a{color:var(--bk);text-decoration:none;font-weight:700}.nav a:hover{text-decoration:underline}
+a{color:var(--bk)}
+.crumb{font-size:16px;color:var(--g5);margin:0 0 .5rem;letter-spacing:.04em;text-transform:uppercase;font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:0 0 1rem}
+h2{font-size:25px;margin:2.5rem 0 .85rem;line-height:1.3}
+h3{font-size:20px;margin:2rem 0 .7rem}
+h4{font-size:18px;margin:1.5rem 0 .5rem}
+p{margin:0 0 1.1rem}
+ul,ol{margin:0 0 1.1rem 1.5rem} li{margin:0 0 .5rem}
+blockquote{border-left:4px solid var(--gold);background:var(--g1);padding:1rem 1.25rem;margin:0 0 1.2rem;font-size:18px}
+code{font-family:'Courier New',monospace;font-size:16.5px;background:var(--g1);padding:1px 5px;border-radius:2px}
+.doc-code{font-family:'Courier New',monospace;font-size:15.5px;line-height:1.6;background:var(--g1);padding:1rem 1.15rem;overflow-x:auto;margin:0 0 1.2rem;white-space:pre}
+.doc-tblwrap{overflow-x:auto;margin:0 0 1.4rem}
+.doc-table{width:100%;border-collapse:collapse;font-size:16.5px}
+.doc-table th{text-align:left;font-weight:700;padding:.6rem .65rem;border-bottom:2px solid var(--bk);font-size:15.5px}
+.doc-table td{padding:.55rem .65rem;border-bottom:1px solid var(--g2);vertical-align:top}
+hr{border:none;border-top:1px solid var(--g2);margin:2rem 0}
+.seal{border:1px solid var(--g2);background:var(--g1);padding:1.1rem 1.25rem;margin:2.5rem 0 0;font-size:16.5px;line-height:1.7}
+.seal .lbl{font-weight:700;letter-spacing:.05em;font-size:14.5px;text-transform:uppercase;color:var(--g5);display:block;margin-bottom:.4rem}
+.mono{font-family:'Courier New',monospace;word-break:break-all}
+.foot{margin:3rem 0 0;padding-top:1.25rem;border-top:1px solid var(--g2);font-size:16px;color:var(--g5)}
+@media(max-width:640px){body{font-size:17px}h1{font-size:28px}h2{font-size:22px}.wrap{padding:0 1rem 4rem}}
+</style></head>
+<body><div class="wrap">
+<nav class="nav">
+  <a href="/">← the420code.org</a>
+  <a href="/prereg/">Ø predictions</a>
+  <a href="/proofs/">Ø proofs</a>
+</nav>
+<p class="crumb">Ø Frozen Predictions · the document of record</p>
+<h1>Pre-registration: the Hubble constant from the acceleration floor (KS-45.1)</h1>
+<p><strong>Freeze date:</strong> 2026-08-02 <strong>Author:</strong> G · Studio G · the420code.org <strong>Scope:</strong> AP18 (<em>The Floor</em>), AP17, and Rosin Ø Proofs ch. 14 / ch. 19 <strong>Switches engaged:</strong> KS-45 (2π geometric factor), KS-45.1 (Hubble prediction), KS-45.2 (dipole topology, closed), KS-39, KS-3 <strong>Reproduction:</strong> <code>verify_cosmology.py</code> in this directory <strong>Status:</strong> frozen for commit. The hash is the timestamp.</p>
+<hr>
+<h2>1. The registered value</h2>
+<blockquote><strong>H₀ = 74.3 ± 1.2 km/s/Mpc</strong></blockquote>
+<p>The ± 1.2 is propagated from the empirical acceleration floor a₀, not from the derivation. The derivation contributes no uncertainty because it contains no fitted quantity.</p>
+<hr>
+<h2>2. The relation, and why it has no free parameter</h2>
+<p>    a₀ = α_apex · c · H₀ / (2π)          α_apex = 2 ln(sec ½ + tan ½) = 1.04447620656     H₀ = 2π a₀ / (α_apex · c)            α_apex / (2π) = 0.16623355</p>
+<p>Every step is stated in AP18 and reproduced here so the coefficient can be attacked rather than accepted:</p>
+<ol><li><strong>The topology is forced, not chosen.</strong> The angular field lives on S², whose Euler characteristic is 2. By Poincaré–Hopf a smooth field on S² must have index-sum 2 — so the one break gives one source, the involution one sink: a dipole, exactly two index-1 zeros. Nothing here is adjustable. (KS-45.2, closed.)</li><li><strong>The apex acceleration is geometric.</strong> The widest closing field line reaches the Hubble radius R_H = c/H₀ and returns at the gentlest curvature 1/R_H, giving c²/R_H = cH₀.</li><li><strong>The coherent fraction is 1/(2π)</strong> — one radian of arc on a closed loop.</li><li><strong>The apex correction is an integral, not a fit.</strong> With the S² dipole tension profile T(θ)/T_apex = 1/sin θ, writing u = θ − π/2 turns 1/sin θ into sec u; averaging over one radian, half to each side:</li></ol>
+<p>       α_apex = 2 ∫₀^½ sec u du = 2 ln(sec ½ + tan ½) = 1.04447620656</p>
+<p>That number is a transcendental constant of the geometry. It cannot be tuned without changing the geometry that produced it.</p>
+<p><strong>Zero free parameters.</strong> The only measured input on the right-hand side is a₀ itself (or H₀, read the other way).</p>
+<hr>
+<h2>3. Honest accounting: this is one relation, not two predictions</h2>
+<p>Fix a₀ from galaxy rotation and the relation predicts H₀. Fix H₀ from the distance ladder and it predicts a₀. <strong>It is one claim read in two directions</strong>, and any presentation that scores it twice is inflating it. Ø Proofs ch. 19 already states this; it is restated here because it is the first thing a referee will check.</p>
+<hr>
+<h2>4. Current standing (measurements all predate this freeze)</h2>
+<p><strong>Read backwards</strong> — a₀ ≈ 1.2 × 10⁻¹⁰ m/s² (McGaugh, SPARC) gives H₀ = 74.30:</p>
+<div class="doc-tblwrap"><table class="doc-table"><thead><tr><th>Measurement</th><th>Value</th><th>Distance from 74.3 ± 1.2</th></tr></thead><tbody><tr><td>H0 Distance Network, April 2026</td><td>73.50 ± 0.81</td><td><strong>0.55 σ</strong></td></tr><tr><td>SH0ES Cepheid ladder</td><td>≈ 73.0 ± 1.0</td><td>0.83 σ</td></tr><tr><td>TRGB / CCHP</td><td>≈ 69.8 ± 0.8</td><td>3.12 σ</td></tr><tr><td>Planck CMB (ΛCDM)</td><td>67.4 ± 0.5</td><td><strong>5.31 σ</strong></td></tr></tbody></table></div>
+<p><strong>Read forwards</strong> — fixing H₀ and predicting the floor:</p>
+<div class="doc-tblwrap"><table class="doc-table"><thead><tr><th>H₀ input</th><th>predicted a₀</th><th>vs 1.2 × 10⁻¹⁰</th></tr></thead><tbody><tr><td>73.50 (H0DN 2026)</td><td>1.1871 × 10⁻¹⁰</td><td>−1.08 %</td></tr><tr><td>67.4 (Planck)</td><td>1.0886 × 10⁻¹⁰</td><td>−9.29 %</td></tr></tbody></table></div>
+<p>The relation <strong>takes a side in the Hubble tension.</strong> It sits with the local distance ladder and against the CMB inference. That is not a hedge, it is an exposure, and it is the reason this claim is worth freezing.</p>
+<hr>
+<h2>5. Kill and confirm conditions (binding)</h2>
+<ol><li><strong>KILL — the low branch.</strong> If the Hubble tension resolves toward the CMB value, i.e. a converged H₀ below <strong>71.9</strong> (2σ below the registered value), KS-45.1 fires. There is no coefficient available to rescue it: α_apex is an integral of a forced geometry, not a parameter.</li><li><strong>KILL — the floor.</strong> If a₀ is re-determined with systematics under 5 % and the relation a₀/(cH₀) = 0.16623 is violated at 3σ using any independently determined H₀, KS-45 fires.</li><li><strong>CONFIRM.</strong> A converged H₀ in 73.1–75.5 with sub-1 % precision, together with a₀ systematics under 5 %, closes KS-45.1 in the corpus's favour.</li><li><strong>NO RE-ANCHORING.</strong> α_apex is frozen at 1.04447620656. If a future draft changes the coherent window from one radian, or the tension profile from 1/sin θ, that is a new prediction and must be registered as one, referencing this file's hash.</li></ol>
+<hr>
+<h2>6. What limits the test — stated plainly</h2>
+<p><strong>The bottleneck is a₀, not H₀.</strong> H₀ is now measured to just over 1 %. The empirical acceleration floor carries a random uncertainty near 2 % but a systematic uncertainty commonly quoted at 10–20 %, depending on the galaxy sample, the mass-to-light treatment, and the fitting form. Propagated naively, a₀'s systematic gives H₀ = 74.3 ± 6.2 — far too loose to discriminate anything.</p>
+<p><strong>So the ± 1.2 in the registered value is the optimistic branch, and this document says so.</strong> The claim becomes sharp only when galaxy-dynamics systematics tighten below about 5 %. That is a rotation-curve problem, not a cosmology problem, and it is where the corpus should be pushing.</p>
+<p>Read forwards, however, the test is already live: at the best current H₀ the relation predicts a₀ = 1.187 × 10⁻¹⁰ and Planck's H₀ predicts 1.089 × 10⁻¹⁰. Those differ by 9 %, which is within reach.</p>
+<hr>
+<h2>7. What this does and does not establish</h2>
+<p><strong>Does:</strong> register a parameter-free number, with its geometry exhibited step by step, against a quantity two independent communities are actively measuring, on the side of the dispute where it can be shown wrong.</p>
+<p><strong>Does not:</strong> establish that the tension field is the correct account of galactic dynamics (KS-3, KS-40 Bullet Cluster, KS-41 structure formation all remain live and unclosed); establish that a₀ is fundamental rather than emergent; or convert a 0.55σ agreement into evidence of uniqueness. Other relations link a₀ and cH₀ with order-unity coefficients; a match removes rivals, it never proves the derivation.</p>
+<hr>
+<p><em>Copyleft 2026. Don't be a cunt. Be kind.</em></p>
+<div class="seal">
+  <span class="lbl">The file this page renders</span>
+  <span class="mono">2026-08-02-H0-KS45.1.md</span> · SHA-256 <span class="mono">efb5715a13d619bf0c38142947450fe8b1b902603271f64012e8c570e0386cb8</span><br>
+  This page is a rendering. The frozen file is the record: <a href="../2026-08-02-H0-KS45.1.md">open the raw document</a>.
+  Frozen files are never edited; corrections supersede, dated, in the open.
+</div>
+<p class="foot"><a href="/prereg/">← back to Ø Frozen Predictions</a> · Copyleft 2026. Don't be a cunt. Be kind.</p>
+</div></body></html>
