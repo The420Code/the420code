@@ -72,6 +72,7 @@ table.data tr:last-child td{border-bottom:none}
 .badge.live{background:#fff;color:var(--live);border:1px solid var(--live)}
 .mono{font-family:'Courier New',Courier,monospace}
 .sig-fire{color:var(--fire);font-weight:700}
+.span-table td:first-child{white-space:normal;min-width:140px}
 
 /* confirm-the-math code block */
 .verify-wrap{position:relative;margin:1.5rem 0}
@@ -100,6 +101,7 @@ table.data tr:last-child td{border-bottom:none}
 .verify-table th{text-align:left;font-weight:700;padding:.5rem .5rem;border-bottom:2px solid var(--bk);font-size:13px;letter-spacing:.04em;color:var(--g5)}
 .verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
 .verify-table td:last-child{color:var(--g5)}
+.sig-in,table.verify-table td.sig-in{color:var(--live);font-weight:700}
 </style>
 </head>
 <body>
@@ -172,6 +174,28 @@ place.</p>
   </ul>
   <p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA reading is dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. The author stands behind the realised value. AP28’s structural value, +0.69%, carried an omission — the arena’s held ε, priced in AP44 — and stands beside it as the record of that omission: the neutron’s fired row exposed a structural error whose consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p>
 </div>
+<h3 id="span" style="margin:1.75rem 0 .5rem">The span — the field each prediction is made in</h3>
+<p style="margin:0 0 .75rem">The same axiom and the same single measured input, the fine-structure constant α, are read at every scale the corpus reaches. This is the same set of predictions as the table above, sorted by the field of physics each one is made in and the size of the thing it describes.</p>
+<div class="tbl-wrap">
+<table class="data verify-table span-table" style="margin-top:0">
+  <thead><tr><th>Field</th><th>Scale</th><th>What is predicted</th><th>Paper</th><th>σ</th></tr></thead>
+  <tbody>
+      <tr><td><b>Particle physics</b></td><td>10⁻¹⁵ m — a proton</td><td>The proton-to-electron mass ratio</td><td><a href="/proofs/#ap30" onclick="event.preventDefault();window.location.href='/proofs/#ap30'">AP30</a></td><td class="sig-in">+0.57σ</td></tr>
+      <tr><td><b>Nuclear physics</b></td><td>10⁻¹⁵ m — a nucleus</td><td>The neutron–proton mass difference, realised</td><td><a href="/proofs/#ap47" onclick="event.preventDefault();window.location.href='/proofs/#ap47'">AP47</a></td><td class="sig-in">−0.005σ</td></tr>
+      <tr><td><b>Gravitation, metrology</b></td><td>10⁻¹ m — a torsion balance</td><td>The gravitational constant G, realised</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td><td><span class="sig-in">+0.01σ</span> vs atom interferometry<br><span class="sig-fire">−16σ</span> vs the CODATA adjustment</td></tr>
+      <tr><td><b>Galactic dynamics</b></td><td>10²¹ m — a galaxy’s outskirts</td><td>The MOND acceleration floor a₀</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td><td class="sig-in">−0.46σ</td></tr>
+      <tr><td><b>Cosmology — the dark sector</b></td><td>10²⁶ m — the observable universe</td><td>The dark-energy, dark-matter and visible fractions, from one timescale</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a> · <a href="/proofs/#ap41" onclick="event.preventDefault();window.location.href='/proofs/#ap41'">AP41</a></td><td><span class="sig-in">−0.07σ</span> · <span class="sig-in">+0.8σ</span> · −2.46σ</td></tr>
+      <tr><td><b>Cosmology — the chronology</b></td><td>10²⁶ m — one cycle</td><td>The age of the universe</td><td><a href="/proofs/#ap46" onclick="event.preventDefault();window.location.href='/proofs/#ap46'">AP46</a></td><td>+2.1σ</td></tr>
+      <tr><td><b>Cosmology — the expansion</b></td><td>10²⁶ m — the closure</td><td>The expansion rate H₀</td><td><a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48</a></td><td class="sig-in">+0.1σ</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
+  <p style="margin:0 0 .5rem"><b>What the span shows.</b> These are not one field’s predictions. They run from the weight of a proton to the rate at which the universe expands — about forty-one orders of magnitude in length scale, from the femtometre of a nucleus to the Hubble radius — and each is derived from the same axiom and the same one measured number. <b>Seven of the eleven live rows in the scoreboard land inside one standard deviation</b> of the measurement they face: the proton’s mass ratio, the neutron’s realised difference, the realised G against atom interferometry, the acceleration floor, the expansion rate, and two of the three dark-sector fractions.</p>
+  <p style="margin:0 0 .5rem"><b>Why that is not proof.</b> The rows are not independent tests, and nothing here should be read as though they were. α is the one input to all of them. The acceleration floor is derived from the expansion rate and the expansion rate from the cycle and the partition together, so those sit on one chain read at three points; the three dark-sector fractions come from a single timescale, not three derivations. Counted as families rather than rows, the live set is four at most — the mass scaffold, the gravitational coupling, the cosmological chain, and the dark partition — and even those are coupled, since the rate is a closure <i>of</i> the partition and the cycle. One of the seven, the realised G, reads +0.01σ against atom interferometry and −16σ against the CODATA adjustment; both readings are in the table above, and the reader is entitled to weigh them.</p>
+  <p style="margin:0"><b>What it does show.</b> Where a structural omission was found, paying it moved three separate derivations toward measurement rather than away. The bare neutron–proton row fired at 7.24σ on 2 August 2026; pricing the held distinction that row had treated as free brought the difference to −0.005σ (AP47). The same omission, priced at the arena, moved the gravitational constant from +0.69% to −0.036% (AP44). The same mechanism at the cosmological scale replaced the floor’s inverted 74.3 — which fired — with a rate closed out of the partition and the cycle, 67.45, at 0.1σ against the relic glow (AP46, AP48). Three limbs, one correction, all three improving. That is what the span supports: not that the structure is proved, but that it is one structure, and that it improves as a whole when its omissions are accounted for.</p>
+</div>
+
 <h3 id="register" style="margin:1.75rem 0 .5rem">The register</h3>
 <p style="margin:0 0 .75rem">Each registration with its standing, the condition under which it dies, its frozen document and script, and the commit that timestamps it. The numbers are in the table above.</p>
 <div class="tbl-wrap">
