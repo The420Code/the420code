@@ -256,18 +256,21 @@ a.nb-name:hover{text-decoration:underline}
 .pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
 
-/* Ø Map — the front door's index */
-.map{border-top:1px solid var(--g2);border-bottom:1px solid var(--g2);padding:1.4rem 0;margin:2.5rem 0 0}
-.map h2{font-size:22px;font-weight:700;margin:0 0 1rem}
-.map-row{display:grid;grid-template-columns:190px 1fr;gap:.6rem 1.5rem;align-items:baseline;padding:.7rem 0;border-top:1px solid var(--g1)}
-.map-row:first-of-type{border-top:none}
-.map-q{font-size:16px;font-weight:700;color:var(--g5);letter-spacing:.02em}
-.map-links{font-size:17px;line-height:1.85;margin:0}
-.map-links a{font-weight:700;text-decoration:none;border-bottom:1px solid var(--g3)}
-.map-links a:hover{border-bottom-color:var(--bk)}
-.map-links .sep{color:var(--g3);padding:0 .45rem}
-.map-note{font-size:16px;color:var(--g5);font-style:italic;margin:1rem 0 0}
-@media(max-width:640px){.map-row{grid-template-columns:1fr;gap:.25rem}.map-q{font-size:15px}}
+/* Ø Map — the directory at the door */
+.map{border-top:1px solid var(--g2);border-bottom:1px solid var(--g2);padding:1.6rem 0 1.4rem;margin:2.5rem 0 0}
+.map h2{font-size:24px;font-weight:700;margin:0 0 .35rem}
+.map-intro{font-size:17px;color:var(--g5);margin:0 0 1.25rem}
+.map-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
+.map-door{display:flex;align-items:baseline;gap:.6rem;padding:.72rem 0;border-top:1px solid var(--g1);text-decoration:none;color:var(--bk)}
+.map-door:hover .d-name{border-bottom-color:var(--bk)}
+.map-door:hover .d-tag{color:var(--bk)}
+.map-door:first-child{grid-column:1/-1;border-top:none;padding-top:0}
+.map-door:first-child .d-name{font-size:20px}
+.map-door:first-child .d-tag{font-size:17.5px;color:var(--g6)}
+.d-name{font-size:18px;font-weight:700;white-space:nowrap;border-bottom:1px solid var(--g3)}
+.d-tag{font-size:16.5px;color:var(--g5)}
+.d-tag::before{content:"— ";color:var(--g3)}
+@media(max-width:640px){.map-grid{grid-template-columns:1fr;gap:0}.d-name{font-size:17px}.d-tag{font-size:16px}}
 </style>
 <style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
@@ -328,10 +331,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 <!-- MAP -->
 <div class="map">
   <h2>Ø Map</h2>
-  <div class="map-row"><div class="map-q">If you are new</div><p class="map-links"><a href="#museum">Ø Museum</a> <span style="font-weight:400;color:var(--g5)">— five doors, one building</span><span class="sep">·</span><a href="#axiom">1 Axiom</a> <span style="font-weight:400;color:var(--g5)">— the one line the rest is a consequence of</span></p></div>
-  <div class="map-row"><div class="map-q">If you want the numbers</div><p class="map-links"><a href="#physics">Ø Physics</a> <span style="font-weight:400;color:var(--g5)">— every prediction with its σ and its error</span><span class="sep">·</span><a href="#confirm-the-math">Ø Confirm the Math</a> <span style="font-weight:400;color:var(--g5)">— the code; run it in your browser</span><span class="sep">·</span><a href="/prereg/">Ø Frozen Predictions</a> <span style="font-weight:400;color:var(--g5)">— time-stamped before the test, the two that died included</span></p></div>
-  <div class="map-row"><div class="map-q">If you want the work</div><p class="map-links"><a href="/proofs/">Ø Proofs</a> <span style="font-weight:400;color:var(--g5)">— all 48 Artist’s Proofs</span><span class="sep">·</span><a href="#notebooks">Ø Notebooks</a> <span style="font-weight:400;color:var(--g5)">— the eight bound volumes</span><span class="sep">·</span><a href="#five-doors">Ø Five Doors</a> <span style="font-weight:400;color:var(--g5)">— the standalone books</span><span class="sep">·</span><a href="#models">Ø Models</a> <span style="font-weight:400;color:var(--g5)">— the philosophical register</span></p></div>
-  <div class="map-row"><div class="map-q">If you want to break it</div><p class="map-links"><a href="#killswitch">Ø Kill Switch Registry</a> <span style="font-weight:400;color:var(--g5)">— 583 stated ways this could be shown wrong</span><span class="sep">·</span><a href="/prereg/#numerology">“This is just curve-fitting”</a> <span style="font-weight:400;color:var(--g5)">— the objection, answered with arithmetic</span><span class="sep">·</span><a href="#glossary">Ø Structural Glossary</a> <span style="font-weight:400;color:var(--g5)">— every term that does structural work</span></p></div>
+  <p class="map-intro">A million words, one building. Twelve doors — take any of them.</p>
+  <div class="map-grid">
+    <a class="map-door" href="#museum"><span class="d-name">Ø Museum</span><span class="d-tag">Be kind. The ethics from physics</span></a>
+    <a class="map-door" href="#five-doors"><span class="d-name">Ø Five Doors</span><span class="d-tag">the heart of it</span></a>
+    <a class="map-door" href="#models"><span class="d-name">Ø Models</span><span class="d-tag">the philosophy</span></a>
+    <a class="map-door" href="#exhibition"><span class="d-name">Ø Exhibition</span><span class="d-tag">the whole story</span></a>
+    <a class="map-door" href="#axiom"><span class="d-name">1 Axiom</span><span class="d-tag">one record exists</span></a>
+    <a class="map-door" href="#physics"><span class="d-name">Ø Physics</span><span class="d-tag">the structure of reality</span></a>
+    <a class="map-door" href="#notebooks"><span class="d-name">Ø Notebooks</span><span class="d-tag">all the proofs, bound</span></a>
+    <a class="map-door" href="/proofs/"><span class="d-name">Ø Proofs</span><span class="d-tag">the forty-eight</span></a>
+    <a class="map-door" href="/prereg/"><span class="d-name">Ø Predictions</span><span class="d-tag">frozen before the test</span></a>
+    <a class="map-door" href="#confirm-the-math"><span class="d-name">Ø Confirm the Math</span><span class="d-tag">run it yourself</span></a>
+    <a class="map-door" href="#killswitch"><span class="d-name">Ø Kill Switches</span><span class="d-tag">583 ways it could die</span></a>
+    <a class="map-door" href="#glossary"><span class="d-name">Ø Glossary</span><span class="d-tag">the words, defined</span></a>
+  </div>
   <p class="map-note">Nothing here asks to be believed. Every claim carries the condition under which it dies, and two of them have already died.</p>
 </div>
 
