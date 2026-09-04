@@ -146,7 +146,8 @@ place.</p>
       <th>Prediction</th>
       <th>Frozen value</th>
       <th>Best current measurement</th>
-      <th>Current σ</th>
+      <th>σ</th>
+      <th>Error</th>
       <th>Status</th>
       <th class="wrap">Execution window / kill</th>
       <th>Document</th>
@@ -160,7 +161,8 @@ place.</p>
       <td class="wrap"><b>Proton–electron mass ratio</b><br>at order α² (AP30)</td>
       <td class="mono">1836.152673444331</td>
       <td class="mono">1836.152673426(32)<br>CODATA 2022</td>
-      <td>0.57σ</td>
+      <td>+0.57σ</td>
+      <td>0.010 ppb</td>
       <td><span class="badge live">LIVE</span></td>
       <td class="wrap">Dies at 3σ once measurement uncertainty ≤ 3.3 ppt (now 17.4 ppt; ~3–5 yr)</td>
       <td><a href="2026-08-02-mp-me-alpha3.md">mp-me-alpha3</a></td>
@@ -171,7 +173,8 @@ place.</p>
       <td class="wrap"><b>Neutron–proton mass difference</b><br>KS-NPP.1 (AP30)</td>
       <td class="mono">2.53099393 mₑ</td>
       <td class="mono">2.530988574(74) mₑ</td>
-      <td class="sig-fire">7.24σ</td>
+      <td class="sig-fire">+7.24σ</td>
+      <td>+2.1 ppm</td>
       <td><span class="badge fired">FIRED — 2026-08-02</span></td>
       <td class="wrap">Empirical limb fired (offset 2.12 ppm vs a 0.288 ppm bar). No repair offered: the required correction is negative, every term is positive. Structural limbs KS-NPP.2/.3 open.</td>
       <td><a href="ERRATA-2026-08-02.md">ERRATA §E6a</a></td>
@@ -183,7 +186,8 @@ place.</p>
       <td class="wrap"><b>Hubble constant H₀ from the floor inverted</b><br>KS-45.1 (AP18)</td>
       <td class="mono">74.3 ± 1.2 km/s/Mpc</td>
       <td class="mono">67.45 (the corpus's own rate, AP48)<br>67.4 ± 0.5 (Planck)</td>
-      <td class="sig-fire">5.7σ on the registered width</td>
+      <td class="sig-fire">+5.7σ<br>on the registered width</td>
+      <td>+10.2%</td>
       <td><span class="badge fired">FIRED — 2026-09-03</span></td>
       <td class="wrap">Fired by AP48 on the corpus's own derived rate, as AP46 §9 pre-registered. The registered ±1.2 omitted the ±0.24 systematic on a₀; on the honest width, 74.3 ± 14.9, the floor's relation survives at 0.46σ (KS-45 live). Shown, never repaired. The corpus's H₀ entry is now KS-ASM.1.</td>
       <td><a href="2026-08-02-H0-KS45.1.md">H0-KS45.1</a> · <a href="ERRATUM-2026-09-03-H0-KS45.1.md">erratum</a></td>
@@ -195,7 +199,8 @@ place.</p>
       <td class="wrap"><b>Expansion rate H₀ — the closure</b><br>KS-ASM.1 (AP48)</td>
       <td class="mono">67.45 km/s/Mpc<br>window 64.4–70.8</td>
       <td class="mono">67.4 ± 0.5 (Planck 2018)<br>73.49 ± 0.93 (Cepheid ladder, JWST)</td>
-      <td>0.1σ vs Planck<br>the ladder outside the window</td>
+      <td>+0.1σ vs Planck</td>
+      <td>+0.07% · window 64.4–70.8<br>the ladder outside the window</td>
       <td><span class="badge live">LIVE</span></td>
       <td class="wrap">Dies if the expansion rate, as the data settle it, lands outside 64.4–70.8 in either direction — including if the Cepheid ladder's 73 is confirmed as the expansion rate; on that edge flat ΛCDM at the sky's partition dies with it, and KS-STRETCH.3 fires too (the age would be 12.78 Gyr)</td>
       <td><a href="2026-09-04-H0-KS-ASM.1.md">H0-KS-ASM.1</a></td>
@@ -207,7 +212,8 @@ place.</p>
       <td class="wrap"><b>Age of the universe — one cycle</b><br>KS-STRETCH.3 (AP46)</td>
       <td class="mono">13.830 Gyr<br>window 13.17–14.49</td>
       <td class="mono">13.787 ± 0.020 Gyr<br>(Planck 2018)</td>
-      <td>+0.31%<br>(0.04 Gyr inside; one lane wide)</td>
+      <td>+2.1σ vs Planck+BAO</td>
+      <td>+0.31% · window 13.17–14.49<br>(0.04 Gyr inside; one lane wide)</td>
       <td><span class="badge live">LIVE</span></td>
       <td class="wrap">Dies if the age, as the cosmological data settle it, differs from one cycle by more than one lane-time, 0.66 Gyr, either way (an early-dark-energy age near 12.9 fires it)</td>
       <td><a href="2026-09-04-age-KS-STRETCH.3.md">age-KS-STRETCH.3</a></td>
@@ -220,6 +226,7 @@ place.</p>
       <td class="mono">2.53098857035 mₑ</td>
       <td class="mono">2.530988574(74) mₑ</td>
       <td>−0.005σ</td>
+      <td>−1.4 ppb</td>
       <td><span class="badge live">LIVE</span></td>
       <td class="wrap">Dies if an improved measurement departs from the expression Δ_bare/(1 + α²/8π) beyond the bar, 7.4 × 10⁻⁷ mₑ (0.29 ppm). Frozen beside the corpse above, never in its place. The absent α³ term (KS-FLIP.3) waits on ~20× better B_d metrology.</td>
       <td><a href="2026-09-04-neutron-KS-FLIP.1.md">neutron-KS-FLIP.1</a></td>
@@ -230,8 +237,9 @@ place.</p>
     <tr>
       <td class="wrap"><b>Gravitational constant G — realised, and the fork</b><br>KS-CCC.3 (AP44)</td>
       <td class="mono">6.6719 × 10⁻¹¹<br>(AP28's structural 6.7206 beside it)</td>
-      <td class="mono">6.6743 × 10⁻¹¹<br>(CODATA)</td>
-      <td>−0.036%<br>(the sign flipped; open)</td>
+      <td class="mono">6.67430(15) × 10⁻¹¹ (CODATA)<br>6.67191(99) × 10⁻¹¹ (LENS 2014, atom interferometry)</td>
+      <td>−16σ vs CODATA<br>+0.01σ vs LENS 2014</td>
+      <td>−0.036% (the sign flipped; open)<br>+1 ppm vs LENS 2014</td>
       <td><span class="badge live">LIVE</span></td>
       <td class="wrap">The fork: as apparatus systematics resolve, the adjusted G migrates ~300 ppm downward toward 6.672 × 10⁻¹¹ — or converges upward toward 6.7206 and the commitment dies. Tests existence and direction, not magnitude.</td>
       <td><a href="2026-09-04-G-KS-CCC.3.md">G-KS-CCC.3</a></td>
@@ -243,7 +251,8 @@ place.</p>
       <td class="wrap"><b>Visible fraction</b><br>KS-41.1 (AP41)</td>
       <td class="mono">1/21 = 4.7619%</td>
       <td class="mono">≈ 4.885 ± 0.05%<br>(Planck 2018; range 4.86–4.91%)</td>
-      <td>2.46σ</td>
+      <td>−2.46σ</td>
+      <td>−2.5%</td>
       <td><span class="badge live">LIVE — nearest to firing</span></td>
       <td class="wrap">Dies if Ω_b/Ω_total central value exceeds 4.81% at sub-0.5% precision (~5 yr)</td>
       <td><a href="2026-08-02-visible-fraction-KS41.1.md">visible-fraction-KS41.1</a></td>
@@ -255,6 +264,7 @@ place.</p>
       <td class="wrap"><b>Dark-sector clock</b><br>KS-42.6 (AP42)</td>
       <td class="mono">τ/t_H = 6/21 (τ ≈ 3.94 Gyr)<br>Ω_DM/Ω_b rises with time</td>
       <td>no z-evolution measurement yet</td>
+      <td>—</td>
       <td>directional</td>
       <td><span class="badge live">LIVE — conditional on D48</span></td>
       <td class="wrap">Dies if Ω_DM/Ω_b at z ≳ 4 matches the z = 0 value, or a dark-matter particle is detected (KS-42.1)</td>
@@ -265,6 +275,17 @@ place.</p>
     </tr>
   </tbody>
 </table>
+<div class="sigma-note" style="font-size:14px;color:var(--g5,#555);margin:1rem 0 0;line-height:1.6">
+  <p style="margin:0 0 .5rem"><b>How to read the σ column.</b> Every measurement comes with a bar: one standard deviation, σ, the experimenters’ own statement of how far their number might sit from the truth. The σ column divides the gap between the frozen value and the measurement by that bar. The sign says which side: + above the measurement, − below. The Error column gives the same gap in the number’s own units.</p>
+  <ul style="margin:0 0 .5rem 1.25rem;padding:0">
+    <li><b>Under 1σ</b> — inside the bar. Agreement. About one honest measurement in three lands this far from the truth by chance alone.</li>
+    <li><b>2σ</b> — tension. One in twenty-two. Worth watching, not yet a verdict.</li>
+    <li><b>3σ</b> — evidence of a real gap. One in 370.</li>
+    <li><b>5σ</b> — the discovery standard of particle physics. One in 1.7 million. At 5σ a prediction is either confirmed or dead; there is no third reading.</li>
+    <li><b>Above 5σ</b> — dead. The two corpses on this page sit at 7.24σ and 5.7σ. They are shown, never repaired.</li>
+  </ul>
+  <p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA reading is dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. The author stands behind the realised value. AP28’s structural value, +0.69%, carried an omission — the arena’s held ε, priced in AP44 — and stands beside it as the record of that omission: the neutron’s fired row exposed a structural error whose consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p>
+</div>
 </div>
 <p style="font-size:14px;color:var(--g4)"><b>Commit</b> = the commit tagged
 <span class="mono">prereg-2026-08-02</span> (the freezes of 2 August) or
