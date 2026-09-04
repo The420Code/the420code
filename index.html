@@ -257,17 +257,18 @@ a.nb-name:hover{text-decoration:underline}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
 
 /* Ø Map — the directory at the door */
-.map{border-top:1px solid var(--g2);border-bottom:1px solid var(--g2);padding:1.6rem 0 1.4rem;margin:2.5rem 0 0}
+.map{padding:0;margin:3rem 0 3.5rem}
 .map h2{font-size:26px;font-weight:700;margin:0 0 .35rem}
-.map-intro{font-size:17px;color:var(--g5);margin:0 0 1.25rem}
+.map-intro{font-size:17px;color:var(--g5);margin:0 0 1.4rem}
 .map-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
-.map-door{display:flex;align-items:baseline;gap:.6rem;padding:.72rem 0;border-top:1px solid var(--g1);text-decoration:none;color:var(--bk)}
+.map-door{display:flex;align-items:baseline;gap:.6rem;padding:.62rem 0;text-decoration:none;color:var(--bk)}
+.map-door:first-child{grid-column:1/-1;padding-top:0}
 .map-door:hover .d-name{border-bottom-color:var(--bk)}
 .map-door:hover .d-tag{color:var(--bk)}
-.map-door:first-child{grid-column:1/-1;border-top:none;padding-top:0}
-.d-name{font-size:18px;font-weight:700;white-space:nowrap;border-bottom:1px solid var(--g3)}
+.d-name{font-size:18px;font-weight:700;white-space:nowrap;border-bottom:1px solid transparent}
 .d-tag{font-size:16.5px;color:var(--g5)}
 .d-tag::before{content:"— ";color:var(--g3)}
+.map-note{font-size:16px;color:var(--g5);font-style:italic;margin:1.4rem 0 0}
 @media(max-width:640px){.map-grid{grid-template-columns:1fr;gap:0}.d-name{font-size:17px}.d-tag{font-size:16px}}
 </style>
 <style id="claude-agent-animation-styles">
