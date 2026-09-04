@@ -165,7 +165,6 @@ point; a registry checked only by its author is a registry checked by nobody.</p
     <a href="#register">The register</a> — status, kill condition, document, commit ·
     <a href="#span">The span</a> — the field of physics each prediction is made in ·
     <a href="#numerology">“This is just integer curve-fitting”</a> — the answer, with the search behind it ·
-    <a href="#registration">The registration</a> — one freeze reproduced in full ·
     <a href="#errata">Errata</a> ·
     <a href="#documents">The frozen documents</a> ·
     <a href="#reproduce">Reproduce it yourself</a>
@@ -395,141 +394,6 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
   <p style="margin:0"><b>What is still open, and why the switch stays live.</b> The search enumerates one coefficient, not three formulas jointly, so it cannot rule out a different <i>kind</i> of primitive set carrying three observables by some other route. KS-30.4’s between-family limb is narrowed, not closed. <b>Ruled by the author on 4 September 2026: the switch stays LIVE.</b> Full method and result: <a href="doc/FINDING-2026-09-04-KS-30.4-between-family.html">the finding of 4 September 2026</a> <span class="raw">(<a href="FINDING-2026-09-04-KS-30.4-between-family.md">raw</a>)</span> · <a href="verify_between_family.py">verify_between_family.py</a>.</p>
 </div>
 
-<!-- FULL TEXT -->
-<h2 id="registration">The registration — proton–electron mass ratio at order α³</h2>
-<p style="font-size:16px;color:var(--g5,#555);margin:0 0 1rem">The title names α³ because α³ is the order this document <i>declines</i> to register: it freezes the value at order α², as the register above lists it, and §5 states why no α³ coefficient is claimed. This one registration is reproduced here in full as the worked example of the form; the other eight are linked from the register.</p>
-<p style="color:var(--g5)"><b>Freeze date:</b> 2026-08-02 · <b>Author:</b> G · Studio G · the420code.org · <b>Scope:</b> AP30 (<em>The Resistance</em>) and Ø Predictions Part I<br><b>Reproduction:</b> <a href="verify_prereg.py">verify_prereg.py</a> recomputes every number below from CODATA 2022 inputs.</p>
-
-<h3>1. What this document registers, and what it does not</h3>
-<p>It registers <b>one number</b>: the value the AP30 formula produces when the series is truncated where AP30 truncates it, at order α².</p>
-<p>It does <b>not</b> register a value for the order-α³ coefficient. As of this freeze date the corpus contains no derivation of that coefficient, and none is claimed here. §5 explains why any value stated today would be a fit rather than a prediction.</p>
-<p>This is a narrower claim than earlier drafts of this document made. The narrowing is deliberate.</p>
-
-<h3>2. Inputs (CODATA 2022, NIST, retrieved 2026-08-02)</h3>
-<div class="tbl-wrap">
-<table class="data">
-  <thead><tr><th>Quantity</th><th>Value</th><th>Relative uncertainty</th></tr></thead>
-  <tbody>
-    <tr><td>α⁻¹</td><td class="mono">137.035999177(21)</td><td>1.5 × 10⁻¹⁰</td></tr>
-    <tr><td>m_p/m_e</td><td class="mono">1836.152673426(32)</td><td>1.7 × 10⁻¹¹ (17 ppt)</td></tr>
-    <tr><td>m_μ/m_e</td><td class="mono">206.7682827(46)</td><td>2.2 × 10⁻⁸</td></tr>
-  </tbody>
-</table>
-</div>
-<p>Earlier drafts used α⁻¹ = 137.035999084. That is the CODATA <b>2018</b> value. The correction moves the frozen value by 0.013 ppt — numerically irrelevant against a 10 ppt effect, but the label was wrong and is corrected here.</p>
-
-<h3>3. The formula, with its epistemic ledger</h3>
-<div class="mono-block">m_p/m_e = 21²×4 + 21×3 + 3²
-        + α · 21 · (1 − 1/(84π))
-        + α² · 21 · 16/1836
-        + O(α³)</div>
-<p>What each term rests on, stated as the corpus itself states it:</p>
-<div class="tbl-wrap">
-<table class="data">
-  <thead><tr><th>Term</th><th>Status in the corpus</th></tr></thead>
-  <tbody>
-    <tr><td class="mono">1764 + 63 + 9 = 1836</td><td>Derived from {21, 3, 4}. Additivity of the three layers is <b>argued, not proved</b> — KS-30.1, the paper's named standing debt.</td></tr>
-    <tr><td class="mono">α · 21 · (1 − 1/(84π))</td><td>Derived. Isotropy of the leakage is an assumption — KS-30.2.</td></tr>
-    <tr><td class="mono">α² · 21 · 16/1836</td><td><b>The integer 16 is not derived.</b> AP30 §6 states its structural decomposition from {21, 3, 4} is owed under KS-30.3. But its value is no longer free — see §4a.</td></tr>
-    <tr><td class="mono">O(α³)</td><td>Not computed. No coefficient, no sign.</td></tr>
-  </tbody>
-</table>
-</div>
-<p>The integers 21, 3, 4 are fixed in AP10/AP28, upstream of any mass calculation. That ordering is the load-bearing fact and it is checkable against the corpus's own dependency graph.</p>
-
-<h3>4. The frozen value</h3>
-<p>Evaluated at CODATA 2022 α:</p>
-<div class="tbl-wrap">
-<table class="data">
-  <tbody>
-    <tr><td>21²×4 + 21×3 + 3²</td><td class="mono">1836</td></tr>
-    <tr><td>α · 21 · (1 − 1/(84π))</td><td class="mono">0.152663698984911</td></tr>
-    <tr><td>α² · 21 · 16/1836</td><td class="mono">0.00000974534591208</td></tr>
-    <tr><td><b>D (frozen)</b></td><td class="mono"><b>1836.152673444331</b></td></tr>
-    <tr><td>propagated uncertainty from α</td><td class="mono">0.013 ppt</td></tr>
-  </tbody>
-</table>
-</div>
-<p>Against measurement:</p>
-<div class="tbl-wrap">
-<table class="data">
-  <tbody>
-    <tr><td>D − measured</td><td class="mono">+1.833 × 10⁻⁸ = <b>+9.98 ppt</b> (0.00998 ppb)</td></tr>
-    <tr><td>measurement uncertainty</td><td class="mono">17.4 ppt</td></tr>
-    <tr><td><b>discrepancy</b></td><td class="mono"><b>0.57 σ</b></td></tr>
-  </tbody>
-</table>
-</div>
-<p>D lies <b>above</b> the measured value. Any order-α³ term that closes the gap must therefore be <b>negative</b>, while the α and α² terms are both positive.</p>
-<p><b>D is the registered prediction.</b> It was fixed by structure, not by the measurement, and it is the only value in this document not selected with the residual in view.</p>
-
-<h3>4a. The α² coefficient is empirically pinned (registered 2026-08-02)</h3>
-<p>Subtracting the exactly known 1836 and O(α) terms from the measurement and dividing by α²:</p>
-<div class="tbl-wrap">
-<table class="data">
-  <tbody>
-    <tr><td>coefficient required by measurement</td><td class="mono"><b>0.1826623 ± 0.000601</b> — a <b>0.33 %</b> constraint</td></tr>
-    <tr><td>corpus value 21 × 16 / 1836</td><td class="mono">0.1830065</td></tr>
-    <tr><td>agreement</td><td class="mono"><b>0.57 σ</b></td></tr>
-    <tr><td>implied value of the owed integer</td><td class="mono"><b>16 = 15.97 ± 0.05</b></td></tr>
-  </tbody>
-</table>
-</div>
-<p>Written as an integer numerator over 1836, the measurement requires <b>335.4 ± 1.1</b>. The integers inside the 3σ window are 332 … 339. Exactly one is a product of powers of {21, 3, 4}:</p>
-<blockquote>336 = 21 × 16 = 84 × 4 = 4² × 21</blockquote>
-<p><b>Consequence for the recursion.</b> The naive rank-3 continuation 4³ = 64 gives c₃ = 21 × 64/1836 = 0.732 — excluded at 9.5σ (same sign) or 8.3σ (reversed). Any derivation producing 16 at second order must <em>not</em> produce 64 at third.</p>
-
-<h3>5. Why no α³ coefficient is registered</h3>
-<p>Write the third-order term as c₃α³. The measurement constrains c₃ to:</p>
-<blockquote>c₃ = −0.047 ± 0.082 (1σ), i.e. the interval [−0.129, +0.035]</blockquote>
-<p>The uncertainty is 1.7× the magnitude of the central value; the interval contains zero. A bounded enumeration over the corpus integers returns <b>910 distinct admissible values inside 1σ</b>. The sign is undetermined, the coefficient is unconstrained, and the generating rule is owed.</p>
-<p><b>The honest position: the framework predicts D. It does not yet predict anything at order α³.</b></p>
-
-<h3>6. Correction to the uniqueness claim</h3>
-<p>Ø Predictions Part I states three conditions on the decomposition of 1836 and reports that <b>exactly one</b> sum satisfies all three. Independent enumeration (<a href="verify_prereg.py">verify_prereg.py</a>) reproduces the eleven under the first two conditions and returns <b>two</b> under all three:</p>
-<div class="tbl-wrap">
-<table class="data">
-  <thead><tr><th>Decomposition</th><th>21-exponents</th><th>structural factors</th></tr></thead>
-  <tbody>
-    <tr><td class="mono">21²×4 + 21×3 + 3² = 1764 + 63 + 9</td><td>2, 1, 0</td><td>3, 2, 2</td></tr>
-    <tr><td class="mono">21²×3 + 21×3² + 3⁴×4 = 1323 + 189 + 324</td><td>2, 1, 0</td><td>3, 3, 5</td></tr>
-  </tbody>
-</table>
-</div>
-<p><b>Condition 4 (formalised here).</b> <em>The number of structural factors per term, counted with multiplicity, must be non-increasing across the ordered triple.</em> Under conditions 1–4 the enumeration returns <b>exactly one</b> decomposition: 1764 + 63 + 9.</p>
-<p><b>Declared:</b> condition 4 was formalised on 2026-08-02, <em>after</em> the alternative surfaced. AP30 §3 already states the criterion in prose ("each successive term using fewer body-of-work numbers"), but as strictly decreasing; the adopted decomposition is 3, 2, 2 — non-increasing. <b>AP30's prose is corrected to "no more than."</b> KS-30.4's within-family limb is recorded as reopened 2026-08-02 and closed the same day by condition 4, with the ordering disclosed.</p>
-
-<h3>7. Binding conditions</h3>
-<ol>
-  <li><b>KILL D.</b> D dies at 3σ once measurement uncertainty reaches <b>3.3 ppt</b>, and at 5σ at <b>2.0 ppt</b>. Current best is 17.4 ppt (CODATA 2022) / 20.2 ppt (HD⁺) / 25.6 ppt (H₂⁺). This is a real kill condition and it arrives within 3–5 years.</li>
-  <li><b>CONFIRM D.</b> The measurement converges on 1836.152673444 as uncertainty falls below 5 ppt.</li>
-  <li><b>NO POST-HOC c₃.</b> If D dies, the framework may not repair itself with a coefficient chosen against the residual.</li>
-  <li><b>KS-30.4 stays open</b> until §6 is resolved.</li>
-  <li><b>No retro-editing.</b> This file's hash and date are the record.</li>
-</ol>
-
-<h3>8. Circularity declaration</h3>
-<p>CODATA 2022 and all measurements predating this freeze <b>cannot confirm anything in §5</b>. The interval in §5 was computed from them. They <i>can</i> test D, because D was not derived from them. That asymmetry is the whole content of this registration.</p>
-<p><b>Author’s testimony on derivation order, offered as testimony and not as evidence:</b> the integers were fixed from the axiom chain (one record exists → {S, B, R, C} → the manifold → 21, 3, 4) before any measured ratio was consulted, and the agreement with m<sub>p</sub>/m<sub>e</sub> was noticed only after the terms were written. This is checkable in principle against draft history and the corpus’s internal dependency order; it is not checkable from this document, and no reader is asked to take it on trust. It is recorded here because if it is true it matters, and because stating it now makes it falsifiable later.</p>
-
-<h3>9. The muon: a domain boundary, registered</h3>
-<p>A three-term sum with strictly decreasing 21-exponents requires a leading term of at least 21² = 441, a second of at least 21, and a third of at least 1. <b>The construction has a floor of 463.</b> m_μ/m_e = 206.77 lies below that floor and is unreachable at any exponents. The floor is itself a kill condition, and it is registered as one.</p>
-
-<h3>10. What this establishes and what it does not</h3>
-<p><b>Establishes:</b> a single frozen number, derived from structure fixed in advance, currently 0.57σ from the best measurement, with a kill condition that binds within roughly five years and cannot be evaded by adjusting a free coefficient.</p>
-<p><b>Does not establish:</b> that the decomposition is unique (§6 — it is not); that the α² coefficient is derived (KS-30.3); that the layers add (KS-30.1); or that a match at 17 ppt selects this construction over the many others that survive at the same precision. <em>A confirmation can only remove rivals. It can never establish uniqueness.</em></p>
-
-<hr>
-
-
-<h3>11. References</h3>
-<ul>
-  <li>E. Tiesinga, P. J. Mohr, D. B. Newell, B. N. Taylor, <i>CODATA recommended values of the fundamental physical constants: 2022</i>, Rev. Mod. Phys. <b>97</b>, 025002 (2025). Values retrieved from NIST, 2026-08-02.</li>
-  <li>S. Alighanbari, M. R. Schenkel, V. I. Korobov, S. Schiller, <i>High-accuracy laser spectroscopy of H₂⁺ and the proton–electron mass ratio</i>, <b>Nature 644, 69–75 (2025)</b>, doi:10.1038/s41586-025-09306-2. m<sub>p</sub>/m<sub>e</sub> = 1836.152673414(47), 26 ppt. <i>(Earlier drafts of this document cited “Nature 625”. That was wrong.)</i></li>
-  <li>J.-Ph. Karr, S. Schiller, V. I. Korobov, S. Alighanbari, <i>Determination of a set of fundamental constants from molecular hydrogen ion spectroscopy: a modeling study</i>, Phys. Rev. A <b>112</b>, 022809 (2025).</li>
-  <li>S. Schiller, J.-Ph. Karr, <i>Prospects for the determination of fundamental constants with beyond-state-of-the-art uncertainty using molecular hydrogen ion spectroscopy</i>, Phys. Rev. A <b>109</b>, 042825 (2024) — the projection source for future precision; <b>the specific improvement factor quoted in earlier drafts has not been verified against either paper and is not asserted here.</b></li>
-</ul>
-
 <!-- ERRATA -->
 <h2 id="errata">Errata — 2026-08-02</h2>
 <p style="color:var(--g5)">What changed on 2026-08-02 and why, in a form a referee can check. Full text: <a href="doc/ERRATA-2026-08-02.html">ERRATA-2026-08-02.md</a> <span class="raw">(<a href="ERRATA-2026-08-02.md">raw</a>)</span>.</p>
@@ -557,21 +421,28 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
 
 <!-- DOCUMENTS -->
 <h2 id="documents">The frozen documents</h2>
-<ul class="doc-list">
-  <li><a href="doc/2026-08-02-mp-me-alpha3.html">2026-08-02-mp-me-alpha3.md</a> <span class="raw">(<a href="2026-08-02-mp-me-alpha3.md">raw</a>)</span><span class="desc">The proton freeze — the standard the others follow. Registers D = 1836.152673444331.</span></li>
-  <li><a href="doc/2026-08-02-H0-KS45.1.html">2026-08-02-H0-KS45.1.md</a> <span class="raw">(<a href="2026-08-02-H0-KS45.1.md">raw</a>)</span><span class="desc">The Hubble constant, 74.3 ± 1.2 km/s/Mpc, from the acceleration floor. <b>FIRED 2026-09-03</b> — kept verbatim as the record of what was registered.</span></li>
-  <li><a href="doc/ERRATUM-2026-09-03-H0-KS45.1.html">ERRATUM-2026-09-03-H0-KS45.1.md</a> <span class="raw">(<a href="ERRATUM-2026-09-03-H0-KS45.1.md">raw</a>)</span><span class="desc">The status event and the erratum on the width: KS-45.1 fired on the corpus's own rate; the registered ±1.2 omitted the ±0.24 systematic.</span></li>
-  <li><a href="doc/2026-09-04-H0-KS-ASM.1.html">2026-09-04-H0-KS-ASM.1.md</a> <span class="raw">(<a href="2026-09-04-H0-KS-ASM.1.md">raw</a>)</span><span class="desc">The expansion rate as a closure: 67.45 km/s/Mpc, window 64.4–70.8 (AP48).</span></li>
-  <li><a href="doc/2026-09-04-age-KS-STRETCH.3.html">2026-09-04-age-KS-STRETCH.3.md</a> <span class="raw">(<a href="2026-09-04-age-KS-STRETCH.3.md">raw</a>)</span><span class="desc">The age of everything as one cycle: 13.830 Gyr, one lane-time wide (AP46).</span></li>
-  <li><a href="doc/2026-09-04-neutron-KS-FLIP.1.html">2026-09-04-neutron-KS-FLIP.1.md</a> <span class="raw">(<a href="2026-09-04-neutron-KS-FLIP.1.md">raw</a>)</span><span class="desc">The neutron–proton difference, realised: 2.53098857035 mₑ, frozen beside the corpse (AP47).</span></li>
-  <li><a href="doc/2026-09-04-G-KS-CCC.3.html">2026-09-04-G-KS-CCC.3.md</a> <span class="raw">(<a href="2026-09-04-G-KS-CCC.3.md">raw</a>)</span><span class="desc">The gravitational constant, realised: 6.6719 × 10⁻¹¹, and the fork it creates (AP44).</span></li>
-  <li><a href="doc/2026-08-02-dark-clock-KS42.6.html">2026-08-02-dark-clock-KS42.6.md</a> <span class="raw">(<a href="2026-08-02-dark-clock-KS42.6.md">raw</a>)</span><span class="desc">The dark-sector clock, τ/t_H = 6/21, and the direction Ω_DM/Ω_b rises with time.</span></li>
-  <li><a href="doc/2026-08-02-visible-fraction-KS41.1.html">2026-08-02-visible-fraction-KS41.1.md</a> <span class="raw">(<a href="2026-08-02-visible-fraction-KS41.1.md">raw</a>)</span><span class="desc">The visible fraction, 1/21, with the corpus's own comparison corrected.</span></li>
-  <li><a href="doc/ERRATA-2026-08-02.html">ERRATA-2026-08-02.md</a> <span class="raw">(<a href="ERRATA-2026-08-02.md">raw</a>)</span><span class="desc">The seven corrections and strengthenings of 2026-08-02, E1–E7.</span></li>  <li><a href="doc/RIGIDITY.html">RIGIDITY.md</a> <span class="raw">(<a href="RIGIDITY.md">raw</a>)</span><span class="desc">The answer to "this is numerology": why the integer 21 cannot move. Not a freeze.</span></li>
-  <li><a href="doc/PROTOCOL-lattice-qcd-mapping.html">PROTOCOL-lattice-qcd-mapping.md</a> <span class="raw">(<a href="PROTOCOL-lattice-qcd-mapping.md">raw</a>)</span><span class="desc">The sealed-envelope protocol for the one blind test still available. <b>Not a freeze</b> — the procedure for making one.</span></li>
-<li><a href="doc/FINDING-2026-09-04-KS-30.4-between-family.html">FINDING-2026-09-04-KS-30.4-between-family.md</a> <span class="raw">(<a href="FINDING-2026-09-04-KS-30.4-between-family.md">raw</a>)</span> — the between-family limb enumerated: how many other formulas reach the proton ratio, and how many integers carry three observables at once. Reproduced by <a href="verify_between_family.py">verify_between_family.py</a>.</li>
-<li><a href="doc/RIGIDITY-NOTE-2026-09-04.html">RIGIDITY-NOTE-2026-09-04.md</a> <span class="raw">(<a href="RIGIDITY-NOTE-2026-09-04.md">raw</a>)</span> — the dated note beside the frozen <a href="doc/RIGIDITY.html">RIGIDITY.md</a> <span class="raw">(<a href="RIGIDITY.md">raw</a>)</span>: its “31σ” for the structural G corrected to 309σ, and three passages the wave of 4 September overtook.</li>
-</ul>
+<p>Every document in this directory, and the prediction or claim it belongs to. Each opens as a page; the raw file beside it is the record, and its SHA-256 is printed at the foot of every page. Frozen files are never edited — corrections supersede, dated, in the open.</p>
+<div class="tbl-wrap">
+<table class="data">
+  <thead><tr><th>Prediction or claim</th><th>Document</th><th>What it is</th></tr></thead>
+  <tbody>
+    <tr><td class="wrap"><b>Proton–electron mass ratio<br>KS-30.1–.4 · AP30</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-08-02-mp-me-alpha3.html">2026-08-02-mp-me-alpha3.md</a> <span class="raw">(<a href="2026-08-02-mp-me-alpha3.md">raw</a>)</span></td><td class="wrap">The proton freeze — the standard the others follow. Registers D = 1836.152673444331 at order α², and registers that no α³ coefficient is claimed.</td></tr>
+    <tr><td class="wrap"><b>Gravitational constant, realised<br>KS-CCC.3 · AP44</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-09-04-G-KS-CCC.3.html">2026-09-04-G-KS-CCC.3.md</a> <span class="raw">(<a href="2026-09-04-G-KS-CCC.3.md">raw</a>)</span></td><td class="wrap">6.6719 × 10⁻¹¹, and the fork it creates: the consensus migrates down toward 6.672, or converges up toward 6.7206 and the commitment dies.</td></tr>
+    <tr><td class="wrap"><b>Neutron–proton difference, realised<br>KS-FLIP.1 · AP47</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-09-04-neutron-KS-FLIP.1.html">2026-09-04-neutron-KS-FLIP.1.md</a> <span class="raw">(<a href="2026-09-04-neutron-KS-FLIP.1.md">raw</a>)</span></td><td class="wrap">2.53098857035 mₑ, the held distinction priced at second order — frozen beside the corpse below, never in its place.</td></tr>
+    <tr><td class="wrap"><b>Age of the universe, one cycle<br>KS-STRETCH.3 · AP46</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-09-04-age-KS-STRETCH.3.html">2026-09-04-age-KS-STRETCH.3.md</a> <span class="raw">(<a href="2026-09-04-age-KS-STRETCH.3.md">raw</a>)</span></td><td class="wrap">13.830 Gyr, one lane-time wide: the window 13.17–14.49.</td></tr>
+    <tr><td class="wrap"><b>Expansion rate, the closure<br>KS-ASM.1 · AP48</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-09-04-H0-KS-ASM.1.html">2026-09-04-H0-KS-ASM.1.md</a> <span class="raw">(<a href="2026-09-04-H0-KS-ASM.1.md">raw</a>)</span></td><td class="wrap">67.45 km/s/Mpc, window 64.4–70.8 — a closure of the dark-sector partition and the cycle under the balance.</td></tr>
+    <tr><td class="wrap"><b>Visible fraction<br>KS-41.1 · AP41</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-08-02-visible-fraction-KS41.1.html">2026-08-02-visible-fraction-KS41.1.md</a> <span class="raw">(<a href="2026-08-02-visible-fraction-KS41.1.md">raw</a>)</span></td><td class="wrap">1/21, with the corpus’s own comparison corrected — the row nearest to firing.</td></tr>
+    <tr><td class="wrap"><b>Dark-sector clock<br>KS-42.6 · AP42</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-08-02-dark-clock-KS42.6.html">2026-08-02-dark-clock-KS42.6.md</a> <span class="raw">(<a href="2026-08-02-dark-clock-KS42.6.md">raw</a>)</span></td><td class="wrap">τ/t_H = 6/21, and the direction: Ω_DM/Ω_b rises with time.</td></tr>
+    <tr><td class="wrap"><b>Hubble constant from the floor inverted<br>KS-45.1 · AP18</b> <span class="badge fired">FIRED</span></td><td class="wrap"><a href="doc/2026-08-02-H0-KS45.1.html">2026-08-02-H0-KS45.1.md</a> <span class="raw">(<a href="2026-08-02-H0-KS45.1.md">raw</a>)</span></td><td class="wrap">74.3 ± 1.2 km/s/Mpc, as registered on 2 August. Kept verbatim as the record of what was claimed; never edited.</td></tr>
+    <tr><td class="wrap"><b>Hubble constant from the floor inverted<br>KS-45.1 · AP18</b> <span class="badge fired">FIRED</span></td><td class="wrap"><a href="doc/ERRATUM-2026-09-03-H0-KS45.1.html">ERRATUM-2026-09-03-H0-KS45.1.md</a> <span class="raw">(<a href="ERRATUM-2026-09-03-H0-KS45.1.md">raw</a>)</span></td><td class="wrap">The status event and the erratum on the width: it fired on the corpus’s own derived rate, and the registered ±1.2 had omitted the ±0.24 systematic.</td></tr>
+    <tr><td class="wrap"><b>Neutron–proton difference, the bare row<br>KS-NPP.1 · AP30</b> <span class="badge fired">FIRED</span></td><td class="wrap"><a href="doc/ERRATA-2026-08-02.html">ERRATA-2026-08-02.md</a> <span class="raw">(<a href="ERRATA-2026-08-02.md">raw</a>)</span></td><td class="wrap">The corrections and strengthenings of 2 August, E1–E7 — including the fired neutron row at 7.24σ, found and published by the corpus itself.</td></tr>
+    <tr><td class="wrap"><b>No single prediction — the answer to “this is numerology”<br>bears on KS-30.4</b></td><td class="wrap"><a href="doc/RIGIDITY.html">RIGIDITY.md</a> <span class="raw">(<a href="RIGIDITY.md">raw</a>)</span></td><td class="wrap">Why the integer 21 cannot move: it is built, and the exponential in G closes the window to one value. States its own weaknesses first. <b>Not a freeze.</b></td></tr>
+    <tr><td class="wrap"><b>No single prediction — the answer to “this is numerology”<br>bears on KS-30.4</b></td><td class="wrap"><a href="doc/RIGIDITY-NOTE-2026-09-04.html">RIGIDITY-NOTE-2026-09-04.md</a> <span class="raw">(<a href="RIGIDITY-NOTE-2026-09-04.md">raw</a>)</span></td><td class="wrap">The dated note beside it: the frozen document’s “31σ” for the structural G corrected to 309σ, and three passages the wave of 4 September overtook.</td></tr>
+    <tr><td class="wrap"><b>No single prediction — the answer to “this is numerology”<br>bears on KS-30.4</b></td><td class="wrap"><a href="doc/FINDING-2026-09-04-KS-30.4-between-family.html">FINDING-2026-09-04-KS-30.4-between-family.md</a> <span class="raw">(<a href="FINDING-2026-09-04-KS-30.4-between-family.md">raw</a>)</span></td><td class="wrap">The between-family limb enumerated: 2,971 formulas reach the proton ratio as well as the corpus does, and exactly one integer carries three observables. One leg against, one for.</td></tr>
+    <tr><td class="wrap"><b>No prediction yet — the lattice promise<br>AP30 Lemma 2 · KS-30.1</b></td><td class="wrap"><a href="doc/PROTOCOL-lattice-qcd-mapping.html">PROTOCOL-lattice-qcd-mapping.md</a> <span class="raw">(<a href="PROTOCOL-lattice-qcd-mapping.md">raw</a>)</span></td><td class="wrap">The sealed-envelope procedure for the one blind test still available. <b>Not a freeze</b> — the procedure for making one. Its machinery is <a href="seal_lattice_freeze.py">seal_lattice_freeze.py</a>.</td></tr>
+  </tbody>
+</table>
+</div>
 
 <!-- VERIFY -->
 <h2 id="reproduce">Reproduce it yourself</h2>
