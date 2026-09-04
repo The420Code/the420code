@@ -16,14 +16,16 @@ conditions follow — symmetry, break, record, constraint — and from those fou
 conditions all of physics and one ethic are derived.
 
 The framework takes a single measured number, the fine-structure constant
-α ≈ 1/137, and re-derives five fundamental results with **zero free parameters**:
+α ≈ 1/137, and re-derives its headline results with **zero free parameters** — and shows the two that died:
 
 | Result | Predicted | Measured | Agreement | Paper |
 |---|---|---|---|---|
 | Proton–electron mass ratio | 1836.152673444 | 1836.152673426(32) | 9.98 ppt · 0.57σ | AP30 |
-| Gravitational constant G | 6.7206 × 10⁻¹¹ | 6.6743 × 10⁻¹¹ | 0.69 % · ~300σ | AP28 |
-| Neutron–proton mass difference | 2.53099393 mₑ | 2.530988574(74) mₑ | 7.24σ · FIRED (KS-NPP.1, 2026-08-02) | AP30 |
-| MOND acceleration a₀ | one relation links a₀ and H₀ | — | 5.8 % low at H₀ = 70; equivalently implies H₀ = 74.3 ± 1.2 | AP18 |
+| Gravitational constant G, realised | 6.6719 × 10⁻¹¹ | 6.6743 × 10⁻¹¹ | −0.036 % (AP28’s structural 6.7206, +0.69 %, beside it) | AP44 / AP28 |
+| Neutron–proton mass difference, realised | 2.53098857035 mₑ | 2.530988574(74) mₑ | −0.005σ (the bare row, 2.53099393 mₑ, FIRED at 7.24σ on 2026-08-02 — KS-NPP.1, shown) | AP47 / AP30 |
+| Age of the universe, one cycle | 13.830 Gyr | 13.787 ± 0.020 Gyr | +0.31 %, one lane-time wide | AP46 |
+| Expansion rate H₀, the closure | 67.45 km/s/Mpc (window 64.4–70.8) | 67.4 ± 0.5 (Planck) | 0.1σ; the floor’s inversion 74.3 ± 1.2 FIRED on 2026-09-03 (KS-45.1, shown) | AP48 / AP18 |
+| MOND acceleration a₀ at the corpus’s H₀ | 1.089 × 10⁻¹⁰ m/s² | 1.20 ± 0.26 × 10⁻¹⁰ | 0.46σ (9.2 % low; the ±0.24 systematic restored) | AP18 |
 | Dark sector partition | 68.85 / 26.39 / 4.76 % | 68.89 / 26.07 / 4.86 % | ≤ 1.2 % | AP41/42 |
 
 > A frozen, timestamped pre-registration of the proton–electron mass ratio at
@@ -31,7 +33,7 @@ The framework takes a single measured number, the fine-structure constant
 > [`/prereg/`](https://the420code.org/prereg/).
 
 Every claim in the corpus carries a **kill switch** — an explicit, published
-condition under which it dies. 561 of them.
+condition under which it dies. 583 of them (Master Kill Switch Registry v5.27, 4 September 2026); two have fired and are shown, never repaired.
 
 ## Verify it yourself
 
@@ -42,8 +44,9 @@ library only and runs in well under a second:
 python verify.py
 ```
 
-It re-derives all five results from α, prints a scorecard, and exits non-zero if
-any derivation drifts outside its published tolerance. The badge above runs this
+It re-derives the headline results from α, prints a scorecard and the two
+corpses, and exits non-zero if any live derivation drifts outside its published
+tolerance. The badge above runs this
 on every push.
 
 ## Independent verification
@@ -58,9 +61,10 @@ original published script. They match to machine precision.
 ## What's in this repository
 
 This repo is the full source of [the420code.org](https://the420code.org): the
-exhibition pages, all 43 Artist's Proofs and 8 Notebooks as PDFs, the Structural
-Glossary, the Master Kill Switch Registry, the verification code, and twelve
-language editions.
+exhibition pages, all 48 Artist's Proofs and 8 Notebooks as PDFs, the Structural
+Glossary, the Master Kill Switch Registry, the instruments beside each new proof
+(`proofs/instruments/`), the frozen predictions (`prereg/`), the verification
+code, and twelve language editions.
 
 ## License
 

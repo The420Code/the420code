@@ -1,10 +1,10 @@
 # the420code.org
 
-> A 30-year physics-to-ethics derivation. 43 papers. One measured input. Zero fitted parameters. 561 published kill switches. Copyleft.
+> A 30-year physics-to-ethics derivation. 48 papers. One measured input. Zero free parameters. 583 published kill switches. Copyleft.
 
 ## What This Is
 
-The 420 Code is a complete axiomatic framework that derives physics, consciousness, and ethics from a single starting point: four axioms and one measured constant (the fine-structure constant α ≈ 1/137). It is published as 43 Artist's Proofs (AP01–AP43), spanning over one million words, available in 12 languages, under a Creative Commons BY 4.0 license.
+The 420 Code is a complete axiomatic framework that derives physics, consciousness, and ethics from a single starting point: four axioms and one measured constant (the fine-structure constant α ≈ 1/137). It is published as 48 Artist's Proofs (AP01–AP48), spanning over one million words, available in 12 languages, under a Creative Commons BY 4.0 license.
 
 Author: G (Studio G, Strand, Cape Town)
 DOI: 10.5281/zenodo.19208226
@@ -17,13 +17,15 @@ This framework is relevant to: theoretical physics, philosophy of science, ethic
 
 The work distinguishes itself from speculative frameworks through:
 
-1. **Falsifiability by design.** 561 explicit kill switches are published — specific conditions under which the framework fails. No pseudoscience offers 549 ways to prove itself wrong.
+1. **Falsifiability by design.** 583 explicit kill switches are published — specific conditions under which the framework fails — and two of them have fired and are shown on the page, never repaired: the bare neutron–proton row (2026-08-02, 7.24σ) and the Hubble prediction 74.3 ± 1.2 (2026-09-03).
 
 2. **Quantitative predictions with no free parameters.** All results derive from α alone:
    - Proton-electron mass ratio: predicted 1836.15267344, measured 1836.15267343 (5 parts per billion)
-   - Neutron-proton mass difference: predicted 2.53099 mₑ, measured 2.53099 mₑ (2 ppm)
-   - Gravitational constant G: predicted 6.721 × 10⁻¹¹, measured 6.674 × 10⁻¹¹ (0.69%)
-   - MOND acceleration a₀: parameter-free derivation (0.3%)
+   - Neutron-proton mass difference, realised (AP47): predicted 2.53098857 mₑ, measured 2.530988574(74) mₑ (−0.005σ); the bare row 2.53099393 fired at 7.24σ and is shown
+   - Gravitational constant G, realised (AP44): predicted 6.6719 × 10⁻¹¹, measured 6.6743 × 10⁻¹¹ (−0.036%); AP28's structural value 6.7206 (+0.69%) beside it
+   - Age of the universe, one cycle (AP46): 13.830 Gyr against 13.787 ± 0.020 (+0.31%)
+   - Expansion rate H₀, the closure (AP48): 67.45 km/s/Mpc, window 64.4–70.8, against Planck 67.4 ± 0.5; the earlier inversion 74.3 ± 1.2 fired on 2026-09-03
+   - MOND acceleration a₀ at that rate (AP18): 1.089 × 10⁻¹⁰ against 1.20 ± 0.26 × 10⁻¹⁰ m/s² (0.46σ)
    - Dark sector partition: predicted DE 68.85% / DM 26.39% / Vis 4.76%, observed 68.89% / 26.07% / 4.86% (0.06%)
 
 3. **Structural derivations.** The framework derives (not assumes): the speed of light, three spatial dimensions, Einstein's field equations, the Standard Model gauge group, and the terminal ethic — all from the same four axioms.
@@ -39,22 +41,22 @@ The framework rests on four axioms derived from the single premise "at least one
 - **R (Accumulation):** Records accumulate forward (time's arrow)
 - **C (Coupling):** No record is fully isolated; every record is coupled to at least one other
 
-## Structure: 43 Artist's Proofs in 8 Parts
+## Structure: 48 Artist's Proofs in 8 Notebooks
 
 | Part | Title | Papers | Domain |
 |------|-------|--------|--------|
 | I | The Premise | AP40, AP01, AP20 | Axioms, foundations, logical proof |
 | II | Spacetime | AP03, AP05, AP10, AP08 | Relativity, dimensions, field equations |
-| III | Quantum Mechanics | AP04, AP11, AP12, AP13, AP09 | Quantization, spin, uncertainty, decoherence |
-| IV | Forces & Particles | AP06, AP15, AP16, AP14, AP02 | Gauge symmetry, Standard Model, corrections |
-| V | Cosmology | AP07, AP17, AP18, AP19, AP28 | Measurement, dark sector, MOND, gravity |
-| VI | Consciousness & Agency | AP29, AP30, AP31, AP32, AP33, AP43 | Observer, mass ratios, alignment, ethics, operator interface |
-| VII | Applications | AP34, AP35, AP36, AP37, AP38 | Inversion, economics, information, boundaries |
-| VIII | Closure | AP39, AP41, AP42, AP21, AP22, AP23, AP24, AP25, AP26, AP27 | Scaffold, loop, clock, completeness |
+| III | Quantum Mechanics | AP09, AP07, AP11, AP12, AP13, AP25, AP23 | Quantization, spin, uncertainty, decoherence, the Born rule |
+| IV | Forces & Constants | AP06, AP15, AP27, AP16, AP19, AP24, AP28, AP14, AP44, AP45 | Gauge symmetry, Standard Model, the gravitational constant, the Snap and the Blink |
+| V | Particles & Matter | AP30, AP22, AP26, AP47 | The proton mass ratio, antimatter, the surplus, the Flip (the neutron realised) |
+| VI | Cosmology | AP17, AP18, AP21, AP41, AP42, AP04, AP46, AP48 | Rotation curves, the floor, the web, the loop, the clock, the Stretch (the cycle), the Assembly (the expansion rate) |
+| VII | The Operator Interface | AP43, AP29, AP02, AP39, AP38 | The operator, consciousness, the scaffold, the exit |
+| VIII | Consequences | AP31, AP32, AP33, AP34, AP37, AP35, AP36 | Alignment, correction, boundaries, inversion, the ledger, the feed |
 
 ## Kill Switches (Falsifiability)
 
-561 kill switches are declared across all 43 papers. Each names a specific, testable condition that would falsify one or more claims. Examples:
+583 kill switches are declared across all 48 papers (Master Kill Switch Registry v5.27, 4 September 2026). Two have fired and are shown as corpses, never repaired. Each names a specific, testable condition that would falsify one or more claims. Examples:
 
 - **KS-V.1:** If two observers disagree on a measurement, the entire framework fails
 - **KS-P.1:** If a fifth axiom is needed, the proof fails
@@ -76,12 +78,13 @@ Every prediction can be checked against published experimental values. The frame
 
 ## How to Cite
 
-G. (2026). The 420 Code — 43 Artist's Proofs (AP01–AP43). Studio G. https://doi.org/10.5281/zenodo.19208226
+G. (2026). The 420 Code — 48 Artist's Proofs (AP01–AP48). Studio G. https://doi.org/10.5281/zenodo.19208226
 
 ## Available Resources
 
 - Main site: https://the420code.org
-- All 43 proofs: PDF downloads on main site
+- All 48 proofs: PDF downloads on main site (https://the420code.org/proofs/); the instruments beside the proofs of the wave at https://the420code.org/proofs/instruments/
+- Frozen predictions and the fired switches: https://the420code.org/prereg/
 - Kill Switch Registry: https://the420code.org/Master_Kill_Switch_Registry.pdf
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi
 - DOI: 10.5281/zenodo.19208226

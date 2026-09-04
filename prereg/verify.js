@@ -1,7 +1,7 @@
 /* The 420 Code — offline in-browser verifier.
  *
- * An INDEPENDENT re-derivation of the three pre-registration scripts
- * (verify_prereg.py, verify_cosmology.py, verify_rigidity.py), written in
+ * An INDEPENDENT re-derivation of the four pre-registration scripts
+ * (verify_prereg.py, verify_cosmology.py, verify_rigidity.py, verify_family.py), written in
  * JavaScript with decimal.js at 60-digit precision. It reproduces every
  * headline number with no Python, no network, no external call — it runs
  * entirely in your browser, offline. The reference Python scripts in this
@@ -232,8 +232,100 @@
     };
   }
 
+  // ── verify_family.py — the wave of September 2026 ──────────────────────────
+  function verifyFamily() {
+    var AINV = d('137.035999177'), ALPHA = d(1).div(AINV);
+    var HBAR = d('1.054571817e-34'), C = d('299792458'), M_E = d('9.1093837139e-31'), G_MEAS = d('6.67430e-11');
+    var MP_ME = d('1836.152673426'), MN_ME = d('1838.68366200'), DELTA_U = d('7.4e-7');
+    var KM_PER_MPC = d('3.0857e19'), GYR = d('365.25').times(86400).times('1e9');
+    function s(x, n) { return d(x).toSignificantDigits(n).toFixed(); }
+    function sn(x, n) { // mpmath nstr(x, n, strip_zeros=False): n significant digits, exponent form when small/large
+      var v = d(x); var e = v.e; // decimal exponent
+      if (v.isZero()) return v.toFixed(n - 1);
+      if (e < -5 || e >= n + 4) {
+        var m = v.div(d(10).pow(e)).toFixed(n - 1);
+        if (m.slice(0, 2) === '10') { m = v.div(d(10).pow(e + 1)).toFixed(n - 1); e = e + 1; }
+        return m + 'e' + (e < 0 ? '-' : '+') + Math.abs(e);
+      }
+      return v.toPrecision(n);
+    }
+    var out = [];
+    var alpha_G = ALPHA.pow(21).times(d(1).plus(d(1).div(PI)));
+    var G_struct = alpha_G.times(HBAR).times(C).div(M_E.pow(2));
+    var G_real = G_struct.div(d(1).plus(ALPHA));
+    out.push('AP44 — THE SNAP: the gravitational constant, realised (KS-CCC.3)');
+    out.push('  alpha_G  = alpha^21 (1 + 1/pi)          = ' + sn(alpha_G, 8));
+    out.push('  G_struct = alpha_G hbar c / m_e^2        = ' + sn(G_struct, 6) + '   (AP28, provisioned: ' + sn(G_struct.div(G_MEAS).minus(1).times(100), 3) + ' %)');
+    out.push('  1/(1 + alpha)                            = ' + sn(d(1).div(d(1).plus(ALPHA)), 7));
+    out.push('  G_real   = G_struct / (1 + alpha)        = ' + sn(G_real, 6) + '   (' + sn(G_real.div(G_MEAS).minus(1).times(100), 3) + ' % against CODATA ' + sn(G_MEAS, 5) + ')');
+    out.push('  the fork (KS-CCC.3): the adjusted value migrates toward 6.672e-11, or stays at 6.6743e-11 and the commitment dies.');
+    out.push('');
+    var d_bare = d(3).times(d(1).minus(d(1).div(PI.times(2)))).plus(ALPHA.times(d(1).plus(d(1).div(PI.times(2)))));
+    var f2 = ALPHA.pow(2).div(PI.times(8));
+    var d_real = d_bare.div(d(1).plus(f2));
+    var d_meas = MN_ME.minus(MP_ME);
+    out.push('AP47 — THE FLIP: the neutron-proton mass difference, realised (KS-FLIP.1)');
+    out.push('  delta_bare = 3(1 - 1/2pi) + alpha(1 + 1/2pi) = ' + sn(d_bare, 9) + '   [KS-NPP.1: FIRED 2026-08-02 at ' + sn(d_bare.minus(d_meas).div(DELTA_U), 3) + ' sigma — shown, never repaired]');
+    out.push('  f2 = alpha^2 / (8 pi)                       = ' + sn(f2, 6));
+    out.push('  delta_real = delta_bare / (1 + f2)          = ' + sn(d_real, 12));
+    out.push('  measured (CODATA 2022 ratio difference)     = ' + sn(d_meas, 10) + ' +/- ' + sn(DELTA_U, 2) + '  (0.29 ppm)');
+    out.push('  residual                                    = ' + sn(d_real.minus(d_meas).div(DELTA_U), 2) + ' sigma');
+    var a3 = d_bare.times(ALPHA.pow(3)).div(PI.times(8));
+    out.push('  KS-FLIP.3: the absent alpha^3 term would sit at ' + sn(a3, 2) + ' m_e — ' + sn(a3.div(DELTA_U).times(100), 2) + ' % of the bar; adjudication waits on ~20x better B_d metrology.');
+    out.push('');
+    var tau_C = HBAR.div(M_E.times(C.pow(2)));
+    var escape = ALPHA.pow(-18).times(tau_C);
+    var t_cycle = escape.times(21).div(18);
+    var lane = t_cycle.div(21);
+    var AGE_MEAS = d('13.787'), AGE_U = d('0.020');
+    out.push('AP46 — THE STRETCH: the age of everything, one cycle (KS-STRETCH.3)');
+    out.push('  tau_C = hbar / (m_e c^2)                    = ' + sn(tau_C, 11) + ' s   (the tick)');
+    out.push('  alpha^-18 ticks                             = ' + sn(ALPHA.pow(-18), 6));
+    out.push('  alpha^-18 tau_C (the thread)                = ' + sn(escape, 5) + ' s = ' + sn(escape.div(GYR), 5) + ' Gyr');
+    out.push('  x 21/18 (the duty)                          = ' + sn(t_cycle.div(GYR), 5) + ' Gyr   (one cycle)');
+    out.push('  measured age (Planck 2018)                  = ' + sn(AGE_MEAS, 5) + ' +/- ' + sn(AGE_U, 2) + ' Gyr;  landing ' + sn(t_cycle.div(GYR).div(AGE_MEAS).minus(1).times(100), 2) + ' %');
+    out.push('  the lane (cycle/21)                         = ' + sn(lane.div(GYR), 4) + ' Gyr;  the window ' + sn(t_cycle.minus(lane).div(GYR), 4) + ' to ' + sn(t_cycle.plus(lane).div(GYR), 4) + ' Gyr');
+    out.push('');
+    var f_DM_dark = d(6).div(21).times(d(1).minus(d(-21).div(6).exp()));
+    var f_DE = d(1).minus(f_DM_dark).times(20).div(21);
+    var f_DM = f_DM_dark.times(20).div(21);
+    var f_vis = d(1).div(21);
+    var om_L = f_DE, om_m = f_DM.plus(f_vis);
+    var H0t0 = d(2).div(om_L.sqrt().times(3)).times(D.asinh(om_L.div(om_m).sqrt()));
+    var H0 = H0t0.div(t_cycle).times(KM_PER_MPC);
+    var H0_lo = H0t0.div(t_cycle.plus(lane)).times(KM_PER_MPC);
+    var H0_hi = H0t0.div(t_cycle.minus(lane)).times(KM_PER_MPC);
+    var settled = H0.times(om_L.sqrt());
+    var Lam = d(3).times(settled.div(KM_PER_MPC).pow(2)).div(C.pow(2));
+    out.push('AP48 — THE ASSEMBLY: the expansion rate, the closure (KS-ASM.1)');
+    out.push("  Omega_L, Omega_m (AP42, the corpus's count) = " + sn(om_L, 5) + ', ' + sn(om_m, 5));
+    out.push('  H0 t0 = (2/(3 sqrt(Omega_L))) asinh sqrt(Omega_L/Omega_m) = ' + sn(H0t0, 5) + '   (the pure number)');
+    out.push('  1 / cycle                                   = ' + sn(KM_PER_MPC.div(t_cycle), 5) + ' km/s/Mpc');
+    out.push('  H0 = H0t0 / cycle                           = ' + sn(H0, 5) + ' km/s/Mpc;  window ' + sn(H0_lo, 4) + ' to ' + sn(H0_hi, 4));
+    out.push('  Planck 2018 (TT,TE,EE+lowE+lensing)         = 67.4 +/- 0.5;  Cepheid ladder (JWST, SH0ES) 73.49 +/- 0.93 — outside the window');
+    out.push('  settled rate = H0 sqrt(Omega_L)             = ' + sn(settled, 4) + ' km/s/Mpc = ' + sn(settled.div(KM_PER_MPC.div(t_cycle)), 4) + " of the cycle's inverse");
+    out.push('  Lambda = 3 H_inf^2 / c^2                    = ' + sn(Lam, 4) + ' m^-2   (the same closure in other units)');
+    out.push('');
+    var half = d('0.5');
+    var CS2 = d(2).times(D.ln(d(1).div(D.cos(half)).plus(D.tan(half))));
+    var a0 = CS2.times(C).times(H0.div(KM_PER_MPC)).div(PI.times(2));
+    var A0_MEAS = d('1.20e-10'), A0_U = d('0.02e-10').pow(2).plus(d('0.24e-10').pow(2)).sqrt();
+    out.push("AP18 — THE FLOOR at the corpus's rate, and the corpse of KS-45.1");
+    out.push('  C_S^2 = 2 ln(sec 1/2 + tan 1/2)             = ' + sn(CS2, 11));
+    out.push('  a0 = C_S^2 c H0 / (2 pi) at H0 = ' + sn(H0, 4) + '     = ' + sn(a0, 5) + ' m/s^2');
+    out.push('  empirical scale                             = 1.20e-10 +/- 0.02 (random) +/- 0.24 (systematic):  ' + sn(A0_MEAS.minus(a0).div(A0_U), 2) + ' sigma low  (' + sn(d(1).minus(a0.div(A0_MEAS)).times(100), 2) + ' %)');
+    out.push("  KS-45 (the coefficient 0.1662 vs the sky's 0.183 +/- 0.037): " + sn(A0_MEAS.div(C.times(H0.div(KM_PER_MPC))).minus(CS2.div(PI.times(2))).div(d('0.037')), 2) + ' sigma — live');
+    out.push('  KS-45.1 as registered: 74.3 +/- 1.2;  (74.3 - H0)/1.2 = ' + sn(d('74.3').minus(H0).div(d('1.2')), 3) + ' sigma — FIRED 2026-09-03, shown, never repaired');
+    out.push('  honest width of the inversion: 74.3 +/- ' + sn(d('74.3').times(d('0.24')).div(d('1.20')), 3) + '   (the registered +/- 1.2 omitted the systematic)');
+    out.push('');
+    out.push('One measured input (alpha). Zero free parameters. Two corpses on the board.');
+    var ok = H0.gt(64.4) && H0.lt(70.8) && d_real.minus(d_meas).abs().lt(DELTA_U) && t_cycle.div(GYR).minus(AGE_MEAS).abs().lt(d('0.66')) && G_real.div(G_MEAS).minus(1).abs().lt(d('0.01'));
+    return { out: out.join('\n'), ok: ok,
+      msg: '✓ The wave reproduced offline — G realised at −0.036%, the neutron at −0.005σ, one cycle 13.830 Gyr, the closure 67.45 km/s/Mpc; two corpses shown.' };
+  }
+
   function pad(s, w) { s = String(s); while (s.length < w) s += ' '; return s; }
 
-  var API = { verifyPrereg: verifyPrereg, verifyCosmology: verifyCosmology, verifyRigidity: verifyRigidity };
+  var API = { verifyPrereg: verifyPrereg, verifyCosmology: verifyCosmology, verifyRigidity: verifyRigidity, verifyFamily: verifyFamily };
   if (isNode) module.exports = API; else root.PREREG = API;
 })(typeof self !== 'undefined' ? self : this);
