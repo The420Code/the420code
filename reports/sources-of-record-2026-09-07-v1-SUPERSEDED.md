@@ -1,3 +1,10 @@
+> **SUPERSEDED — 7 September 2026.** This report's ruling, *"all 43 diverge; the harvest must
+> never touch OneDrive"*, is **withdrawn and must not be relied on**. Its test could not
+> distinguish layout from content — run against a PDF made from the document itself it reported
+> 16% diverged — and it audited only one of several candidate source folders, missing the
+> formatted sources actually used for publication. Replaced by
+> `sources-of-record-2026-09-07-v2.md`. Kept, never deleted, as the record of what was claimed.
+
 # Sources of record — AP01–AP43 — 7 September 2026
 
 Ruled by the desk on 7 September: build `proofs/instruments/AP<nn>/` the way AP30's is — the source whose text matches the site PDF paragraph by paragraph. **The harvest must never touch OneDrive again.**
