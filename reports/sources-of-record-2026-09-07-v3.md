@@ -1,6 +1,6 @@
 # Sources of record — AP01–AP49 — v3, 7 September 2026
 
-**26 of record. 23 diverged.** This is the report to read. Two earlier reports of the same day are kept beside it, superseded and never deleted:
+**27 of record. 22 diverged.** This is the report to read. Two earlier reports of the same day are kept beside it, superseded and never deleted:
 
 - **v1** ruled *"all 43 diverge; the harvest must never touch OneDrive"*. Withdrawn. Its test compared sliding chunks and reported percentages, and on a control — a document against a PDF made from that same document — it reported 16% diverged. It also audited only `00 - KDP/420code_final/Standalone_Artists_Proofs/`, never `000 - AP's and Notebooks/Final Documents To Publish/Formatted/`, where most papers are of record. Both faults were mine; the first was caught by the desk's control, the second by MC's harvester, which had been pointing at the right folder all along.
 - **v2** replaced the test correctly but miscounted: 21 and 28. Its checker dropped the Contents block on the published side and not on the source side, so a paper's own front matter came back as prose the published paper was missing — AP44 and AP47 were failed on nothing but their tables of contents — and it read the typesetter's `@@TITLE` / `@@SUB` directive lines, which are never printed, as prose, which failed AP45 and AP46. v2's withdrawal of v1 stands; v2's count does not.
@@ -106,29 +106,19 @@ v2 flagged AP44, AP45, AP46 and AP47 as each showing one or two content items ag
 
 They are not errors in the published corpus. Each is either a pre-publication draft difference — as AP30's seventeen turned out to be — or a paragraph edited after publication, which becomes a dated note. **That reading is G's.** The paragraphs are printed verbatim in each paper's `SOURCE_OF_RECORD.md` so the judgement is made on the text and not on a percentage.
 
-The 23 that diverge cannot take the AP30 republish procedure — appending dated notes to a locked body requires the document the locked body was set from. Any republish of one of them would be a re-typesetting, which is the one thing that can put an invisible error into a paper that is otherwise correct.
+The 22 that diverge cannot take the AP30 republish procedure — appending dated notes to a locked body requires the document the locked body was set from. Any republish of one of them would be a re-typesetting, which is the one thing that can put an invisible error into a paper that is otherwise correct.
 
-*Run 2026-09-07. Nothing in OneDrive and nothing published was modified.*
-
-**The checker is beside this report** at `reports/of_record_2026-09-07.py`, so the ruling is
-reproducible and MC has the exact file to fold into `museum/check_of_record.py`.
+**The checker is beside this report** at `reports/of_record_2026-09-07.py`, so the ruling is reproducible and MC has the exact file to fold into `museum/check_of_record.py`.
 
 ## Corrections to this report, same day
 
-The count above is the third of the day and the second correction to v3 itself. Two further
-faults were found in the checker after v3 was first written, both by evidence and not by guess:
+The count above is the third of the day and the second correction to v3 itself. Two further faults were found in the checker after v3 was first written, both by evidence and not by guess:
 
-1. **Dot-leader lines were dropped whole.** A Contents entry that wraps puts its dot leader on
-   the second line, so dropping the line threw away real Contents text with the furniture. AP28
-   came back DIVERGED on four of its own wrapped Contents entries because of it. The leader and
-   its page number are now stripped and the words kept.
-2. **The Contents region was guessed at, not bounded.** It is now bounded by its own furniture —
-   from the "Contents" heading to the last line carrying a dot leader — and the same front-matter
-   cross-check runs in both directions. AP45 was failed on one Contents sub-line before this.
+1. **Dot-leader lines were dropped whole.** A Contents entry that wraps puts its dot leader on the second line, so dropping the line threw away real Contents text with the furniture. AP28 came back DIVERGED on four of its own wrapped Contents entries because of it. The leader and its page number are now stripped and the words kept.
+2. **The Contents region was guessed at, not bounded.** It is now bounded by its own furniture — from the "Contents" heading to the last line carrying a dot leader — and the same front-matter cross-check runs in both directions. AP45 was failed on one Contents sub-line before this.
 
-**AP28 and AP45 are of record. The count is 27 of record, 22 diverged.** AP28's clearance is what
-made its republish of 7 September 2026 possible at all: an hour earlier it had no source, and its
-dated notes had to stand beside the paper instead of in it.
+**AP28 and AP45 are of record.** AP28's clearance is what made its republish of 7 September 2026 possible at all: an hour earlier it had no source, and its dated notes had to stand beside the paper instead of in it.
 
-*7 September 2026: AP28, AP30, AP47 and AP49 were republished with dated notes that day. Their
-rows above are re-verified against the new PDFs and carry the new digests; all four are of record.*
+*7 September 2026: AP28, AP30, AP47 and AP49 were republished with dated notes that day. Their rows above are re-verified against the new PDFs and carry the new digests; all four are of record.*
+
+*Run 2026-09-07. Nothing in OneDrive and nothing published was modified.*
