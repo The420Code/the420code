@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-padding-top:56px"><head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>the 420 code — 49 Artist’s Proofs</title>
@@ -21,9 +21,9 @@ a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
 a:hover{text-decoration-thickness:2px}
 
 .nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
-/* anchored AP rows clear the sticky nav (measured: 69px desktop, 109px mobile) */
-.ap-row[id]{scroll-margin-top:86px}
-@media(max-width:640px){.ap-row[id]{scroll-margin-top:126px}}
+/* anchored headings rest ~17px clear of the sticky nav (nav 69 desktop / 109 mobile) */
+html{scroll-padding-top:86px}
+@media(max-width:640px){html{scroll-padding-top:126px}}
 .nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
 .nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
 .nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
