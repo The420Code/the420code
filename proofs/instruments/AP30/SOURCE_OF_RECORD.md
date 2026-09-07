@@ -10,10 +10,10 @@ against the published paper's own Contents block and sets them aside.
 | | |
 |---|---|
 | Published PDF | `/AP30_The_Resistance.pdf` |
-| sha256 | `3b86e7819d850ce6ec815e8a1e902a547635f91fd36e12a84430b4ad39eb0e96` |
-| Source of record | `AP30_The_Resistance_FINAL_v1_0_dated_notes_2026-09-07.docx` |
+| sha256 | `613989df68cfcff5cb32a25223675d0f54883c7d5235f36c83244f095f9d7b1a` |
+| Source of record | `AP30_The_Resistance_FINAL_v1_0_dated_notes_2026-09-09.docx` |
 | Found in | instruments |
-| Paragraphs compared | 152 |
+| Paragraphs compared | 160 |
 
 Harvest from this file. If the published PDF is replaced, this note and the
 digest are re-verified at that republish.

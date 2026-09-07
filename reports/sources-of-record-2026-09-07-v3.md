@@ -81,7 +81,7 @@ v2 flagged AP44, AP45, AP46 and AP47 as each showing one or two content items ag
 | **AP27** | DIVERGED | `AP27_The_Harmonics_v2.docx` | Formatted | 202 | 25 + 2 | 1 |
 | **AP28** | DIVERGED | `AP28_The_Constant_v2.docx` | Formatted | 194 | 4 + 0 | 0 |
 | **AP29** | OF RECORD | `AP29_The_Actualization_Proof_FINAL_v2.docx` | Formatted | 133 | 0 + 0 | 0 |
-| **AP30** | OF RECORD | `AP30_The_Resistance_FINAL_v1_0_dated_notes_2` | instruments | 152 | 0 + 0 | 1 |
+| **AP30** | OF RECORD | `AP30_The_Resistance_FINAL_v1_0_dated_notes_2` | instruments | 160 | 0 + 0 | 1 |
 | **AP31** | OF RECORD | `AP31_The_Alignment_FINAL_v3.docx` | Formatted | 287 | 0 + 0 | 1 |
 | **AP32** | OF RECORD | `AP32_The_Correction_FINAL.docx` | Formatted | 210 | 0 + 0 | 1 |
 | **AP33** | OF RECORD | `AP33_The_Boundary_FINAL.docx` | Formatted | 217 | 0 + 0 | 1 |
@@ -98,7 +98,7 @@ v2 flagged AP44, AP45, AP46 and AP47 as each showing one or two content items ag
 | **AP44** | OF RECORD | `AP44_The_Snap_FINAL_v1_0.md` | instruments | 163 | 0 + 0 | 10 |
 | **AP45** | OF RECORD | `AP45_The_Blink_FINAL_v1_7.md` | instruments | 233 | 0 + 0 | 1 |
 | **AP46** | OF RECORD | `AP46_The_Stretch_FINAL_v1_5.md` | instruments | 205 | 0 + 0 | 1 |
-| **AP47** | OF RECORD | `AP47_The_Flip_FINAL_v3.md` | instruments | 88 | 0 + 0 | 9 |
+| **AP47** | OF RECORD | `AP47_The_Flip_FINAL_v3_dated_notes_2026-09-0` | instruments | 92 | 0 + 0 | 9 |
 | **AP48** | OF RECORD | `AP48_The_Assembly_FINAL_v1_1.docx` | instruments | 221 | 0 + 0 | 0 |
 | **AP49** | OF RECORD | `AP49_The_Hold_FINAL_v1_0.md` | instruments | 113 | 0 + 0 | 0 |
 
@@ -113,3 +113,6 @@ The 23 that diverge cannot take the AP30 republish procedure — appending dated
 **The checker is beside this report** at `reports/of_record_2026-09-07.py`, so the ruling is
 reproducible and MC has the exact file to fold into `museum/check_of_record.py`. Run it as
 `python of_record_2026-09-07.py <source> <published.pdf>`.
+
+*9 September 2026: AP30 and AP47 were republished with dated notes on that day. Their rows above
+are re-verified against the new PDFs and carry the new digests; both remain of record.*

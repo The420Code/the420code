@@ -10,10 +10,10 @@ against the published paper's own Contents block and sets them aside.
 | | |
 |---|---|
 | Published PDF | `/AP47_The_Flip.pdf` |
-| sha256 | `cccf073de1368e8a6e4a1a4636d2f8c7167827857960b19d7cb04461a30a3e3b` |
-| Source of record | `AP47_The_Flip_FINAL_v3.md` |
+| sha256 | `c0be5d61157b6ddb8f076ef266c3ad6e0f048d000f245228e10e9755d296893b` |
+| Source of record | `AP47_The_Flip_FINAL_v3_dated_notes_2026-09-09.docx` |
 | Found in | instruments |
-| Paragraphs compared | 88 |
+| Paragraphs compared | 92 |
 
 Harvest from this file. If the published PDF is replaced, this note and the
 digest are re-verified at that republish.
