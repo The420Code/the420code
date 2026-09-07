@@ -1,3 +1,7 @@
+> **These notes are now carried in the paper itself.** They stood beside AP28 for part of 7 September 2026, while no source of record for the paper had been established. One was established the same day, and the paper was republished with the three notes appended after §12 and the U+2728 ornament removed as dress. This file is kept, never deleted, as the record of the interval; the digest it cites, `aecc98d3…`, is the pre-republish PDF, preserved at `proofs/instruments/AP28/AP28_The_Constant_FINAL_v1_0_published_to_2026-09-06.pdf`. Note 2 as built quotes the registry's words for KS-CCC.4a and KS-CCC.4b, which this file paraphrases.
+
+---
+
 # Dated notes beside AP28 The Constant — issued 7 September 2026
 
 **The 420 Code · Studio G · a supersession note; the frozen file is never edited**

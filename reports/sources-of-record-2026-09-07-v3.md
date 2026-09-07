@@ -24,12 +24,12 @@ Paragraph-level, layout-normalised, reporting paragraphs and never percentages:
 
 | Verdict | Papers |
 |---|---|
-| **OF RECORD** | 26 |
-| **DIVERGED** | 23 |
+| **OF RECORD** | 27 |
+| **DIVERGED** | 22 |
 
-**Of record (26):** AP07, AP13, AP17, AP20, AP25, AP29, AP30, AP31, AP32, AP33, AP34, AP35, AP36, AP37, AP38, AP39, AP40, AP41, AP42, AP43, AP44, AP45, AP46, AP47, AP48, AP49
+**Of record (27):** AP07, AP13, AP17, AP20, AP25, AP28, AP29, AP30, AP31, AP32, AP33, AP34, AP35, AP36, AP37, AP38, AP39, AP40, AP41, AP42, AP43, AP44, AP45, AP46, AP47, AP48, AP49
 
-**Diverged (23):** AP01, AP02, AP03, AP04, AP05, AP06, AP08, AP09, AP10, AP11, AP12, AP14, AP15, AP16, AP18, AP19, AP21, AP22, AP23, AP24, AP26, AP27, AP28
+**Diverged (22):** AP01, AP02, AP03, AP04, AP05, AP06, AP08, AP09, AP10, AP11, AP12, AP14, AP15, AP16, AP18, AP19, AP21, AP22, AP23, AP24, AP26, AP27
 
 Every paper has `proofs/instruments/AP<nn>/SOURCE_OF_RECORD.md`. Where a paper is of record the verified source sits beside it with the published digest; where it diverged, **no file is placed**, so nothing can be harvested from it by mistake, and the divergent paragraphs are printed there verbatim.
 
@@ -55,35 +55,35 @@ v2 flagged AP44, AP45, AP46 and AP47 as each showing one or two content items ag
 | **AP01** | DIVERGED | `AP01_The_Actualization_State.docx` | Formatted | 1300 | 72 + 2 | 3 |
 | **AP02** | DIVERGED | `AP02_The_Operator_FINAL_v6.docx` | Formatted | 338 | 1 + 0 | 5 |
 | **AP03** | DIVERGED | `AP03_The_Ratio_FINAL.docx` | Formatted | 297 | 3 + 0 | 8 |
-| **AP04** | DIVERGED | `AP04_The_Loop_Hypothesis_FINAL.docx` | Formatted | 155 | 1 + 1 | 5 |
+| **AP04** | DIVERGED | `AP04_The_Loop_Hypothesis_FINAL.docx` | Formatted | 155 | 1 + 1 | 15 |
 | **AP05** | DIVERGED | `AP05_The_Break_FINAL.docx` | Formatted | 248 | 3 + 1 | 16 |
-| **AP06** | DIVERGED | `AP06_The_Leakage_Constant_FINAL.docx` | Standalone | 199 | 3 + 2 | 12 |
+| **AP06** | DIVERGED | `AP06_The_Leakage_Constant_FINAL.docx` | Standalone | 199 | 3 + 2 | 21 |
 | **AP07** | OF RECORD | `AP07_The_Record_Measure_FINAL.docx` | Formatted | 206 | 0 + 0 | 0 |
-| **AP08** | DIVERGED | `AP08_The_Identity_FINAL.docx` | Formatted | 316 | 5 + 0 | 11 |
+| **AP08** | DIVERGED | `AP08_The_Identity_FINAL.docx` | Formatted | 316 | 5 + 0 | 10 |
 | **AP09** | DIVERGED | `AP09_The_Break_Empty_Set_FINAL.docx` | Formatted | 435 | 11 + 6 | 6 |
 | **AP10** | DIVERGED | `AP10_The_Dimension_FINAL.docx` | Formatted | 311 | 7 + 0 | 9 |
 | **AP11** | DIVERGED | `AP11_The_Spin_FINAL.docx` | Formatted | 202 | 35 + 17 | 19 |
 | **AP12** | DIVERGED | `AP12_The_Limit_FINAL.docx` | Formatted | 204 | 1 + 0 | 0 |
 | **AP13** | OF RECORD | `AP13_The_Grain_FINAL.docx` | Formatted | 207 | 0 + 0 | 0 |
-| **AP14** | DIVERGED | `AP14_The_Correction_v2.docx` | Formatted | 186 | 21 + 11 | 11 |
-| **AP15** | DIVERGED | `AP15_The_Connection_v2.docx` | Formatted | 284 | 6 + 0 | 6 |
-| **AP16** | DIVERGED | `AP16_The_Break_Electroweak_v2.docx` | Formatted | 216 | 6 + 0 | 2 |
-| **AP17** | OF RECORD | `AP17_The_Room_FINAL.docx` | Formatted | 194 | 0 + 0 | 2 |
-| **AP18** | DIVERGED | `AP18_The_Floor_FINAL.docx` | Formatted | 156 | 7 + 0 | 6 |
-| **AP19** | DIVERGED | `AP19_The_Direction_v2.docx` | Formatted | 243 | 4 + 0 | 4 |
+| **AP14** | DIVERGED | `AP14_The_Correction_v2.docx` | Formatted | 186 | 21 + 11 | 22 |
+| **AP15** | DIVERGED | `AP15_The_Connection_v2.docx` | Formatted | 284 | 6 + 0 | 15 |
+| **AP16** | DIVERGED | `AP16_The_Break_Electroweak_v2.docx` | Formatted | 216 | 6 + 0 | 12 |
+| **AP17** | OF RECORD | `AP17_The_Room_FINAL.docx` | Formatted | 194 | 0 + 0 | 14 |
+| **AP18** | DIVERGED | `AP18_The_Floor_FINAL.docx` | Formatted | 156 | 6 + 0 | 14 |
+| **AP19** | DIVERGED | `AP19_The_Direction_v2.docx` | Formatted | 243 | 4 + 0 | 14 |
 | **AP20** | OF RECORD | `AP20_The_Proof_FINAL_v3.docx` | Formatted | 309 | 0 + 0 | 10 |
-| **AP21** | DIVERGED | `AP21_The_Web_FINAL.docx` | Formatted | 178 | 6 + 1 | 6 |
+| **AP21** | DIVERGED | `AP21_The_Web_FINAL.docx` | Formatted | 178 | 5 + 1 | 17 |
 | **AP22** | DIVERGED | `AP22_The_Ledger_FINAL.docx` | Formatted | 299 | 28 + 5 | 9 |
 | **AP23** | DIVERGED | `AP23_The_Single_Record_FINAL.docx` | Formatted | 162 | 3 + 0 | 0 |
-| **AP24** | DIVERGED | `AP24_The_Residual_v2.docx` | Formatted | 232 | 7 + 0 | 0 |
+| **AP24** | DIVERGED | `AP24_The_Residual_v2.docx` | Formatted | 232 | 5 + 0 | 10 |
 | **AP25** | OF RECORD | `AP25_The_Measure_FINAL.docx` | Formatted | 148 | 0 + 0 | 0 |
-| **AP26** | DIVERGED | `AP26_The_Surplus_FINAL.docx` | Formatted | 144 | 2 + 0 | 3 |
-| **AP27** | DIVERGED | `AP27_The_Harmonics_v2.docx` | Formatted | 202 | 25 + 2 | 1 |
-| **AP28** | DIVERGED | `AP28_The_Constant_v2.docx` | Formatted | 194 | 4 + 0 | 0 |
+| **AP26** | DIVERGED | `AP26_The_Surplus_FINAL.docx` | Formatted | 144 | 2 + 0 | 4 |
+| **AP27** | DIVERGED | `AP27_The_Harmonics_v2.docx` | Formatted | 202 | 25 + 2 | 11 |
+| **AP28** | OF RECORD | `AP28_The_Constant_FINAL_v1_0_dated_notes_202` | instruments | 198 | 0 + 0 | 12 |
 | **AP29** | OF RECORD | `AP29_The_Actualization_Proof_FINAL_v2.docx` | Formatted | 133 | 0 + 0 | 0 |
-| **AP30** | OF RECORD | `AP30_The_Resistance_FINAL_v1_0_dated_notes_2` | instruments | 160 | 0 + 0 | 1 |
-| **AP31** | OF RECORD | `AP31_The_Alignment_FINAL_v3.docx` | Formatted | 287 | 0 + 0 | 1 |
-| **AP32** | OF RECORD | `AP32_The_Correction_FINAL.docx` | Formatted | 210 | 0 + 0 | 1 |
+| **AP30** | OF RECORD | `AP30_The_Resistance_FINAL_v1_0_dated_notes_2` | instruments | 160 | 0 + 0 | 2 |
+| **AP31** | OF RECORD | `AP31_The_Alignment_FINAL_v3.docx` | Formatted | 287 | 0 + 0 | 2 |
+| **AP32** | OF RECORD | `AP32_The_Correction_FINAL.docx` | Formatted | 210 | 0 + 0 | 2 |
 | **AP33** | OF RECORD | `AP33_The_Boundary_FINAL.docx` | Formatted | 217 | 0 + 0 | 1 |
 | **AP34** | OF RECORD | `AP34_The_Inversion_FINAL.docx` | Formatted | 179 | 0 + 0 | 1 |
 | **AP35** | OF RECORD | `AP35_The_Ledger_FINAL_v3.docx` | Formatted | 214 | 0 + 0 | 1 |
@@ -92,15 +92,15 @@ v2 flagged AP44, AP45, AP46 and AP47 as each showing one or two content items ag
 | **AP38** | OF RECORD | `AP38_The_Exit_FINAL_v2.docx` | Formatted | 128 | 0 + 0 | 0 |
 | **AP39** | OF RECORD | `AP39_The_Scaffold_FINAL_v2.docx` | Formatted | 350 | 0 + 0 | 0 |
 | **AP40** | OF RECORD | `AP40_The_Irrational_FINAL_v3.docx` | Formatted | 282 | 0 + 0 | 8 |
-| **AP41** | OF RECORD | `AP41_The_Loop_FINAL.docx` | Formatted | 150 | 0 + 0 | 4 |
-| **AP42** | OF RECORD | `AP42_The_Clock_FINAL.docx` | Formatted | 137 | 0 + 0 | 0 |
+| **AP41** | OF RECORD | `AP41_The_Loop_FINAL.docx` | Formatted | 150 | 0 + 0 | 13 |
+| **AP42** | OF RECORD | `AP42_The_Clock_FINAL.docx` | Formatted | 137 | 0 + 0 | 12 |
 | **AP43** | OF RECORD ·  by inspection | `AP43_The_Gravity_of_Possibilities_FINAL_v3.d` | Formatted | 601 | 1 + 0 | 12 |
 | **AP44** | OF RECORD | `AP44_The_Snap_FINAL_v1_0.md` | instruments | 163 | 0 + 0 | 10 |
 | **AP45** | OF RECORD | `AP45_The_Blink_FINAL_v1_7.md` | instruments | 233 | 0 + 0 | 1 |
 | **AP46** | OF RECORD | `AP46_The_Stretch_FINAL_v1_5.md` | instruments | 205 | 0 + 0 | 1 |
 | **AP47** | OF RECORD | `AP47_The_Flip_FINAL_v3_dated_notes_2026-09-0` | instruments | 92 | 0 + 0 | 9 |
 | **AP48** | OF RECORD | `AP48_The_Assembly_FINAL_v1_1.docx` | instruments | 221 | 0 + 0 | 0 |
-| **AP49** | OF RECORD | `AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09` | instruments | 113 | 0 + 0 | 0 |
+| **AP49** | OF RECORD | `AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09` | instruments | 112 | 0 + 0 | 0 |
 
 ## What the remaining divergences are
 
@@ -113,5 +113,22 @@ The 23 that diverge cannot take the AP30 republish procedure — appending dated
 **The checker is beside this report** at `reports/of_record_2026-09-07.py`, so the ruling is
 reproducible and MC has the exact file to fold into `museum/check_of_record.py`.
 
-*9 September 2026: AP30, AP47 and AP49 were republished with dated notes that day. Their rows
-above are re-verified against the new PDFs and carry the new digests; all three remain of record.*
+## Corrections to this report, same day
+
+The count above is the third of the day and the second correction to v3 itself. Two further
+faults were found in the checker after v3 was first written, both by evidence and not by guess:
+
+1. **Dot-leader lines were dropped whole.** A Contents entry that wraps puts its dot leader on
+   the second line, so dropping the line threw away real Contents text with the furniture. AP28
+   came back DIVERGED on four of its own wrapped Contents entries because of it. The leader and
+   its page number are now stripped and the words kept.
+2. **The Contents region was guessed at, not bounded.** It is now bounded by its own furniture —
+   from the "Contents" heading to the last line carrying a dot leader — and the same front-matter
+   cross-check runs in both directions. AP45 was failed on one Contents sub-line before this.
+
+**AP28 and AP45 are of record. The count is 27 of record, 22 diverged.** AP28's clearance is what
+made its republish of 7 September 2026 possible at all: an hour earlier it had no source, and its
+dated notes had to stand beside the paper instead of in it.
+
+*7 September 2026: AP28, AP30, AP47 and AP49 were republished with dated notes that day. Their
+rows above are re-verified against the new PDFs and carry the new digests; all four are of record.*

@@ -2,7 +2,7 @@
 
 **Checked 7 September 2026** by the paragraph-level test of record. The closest
 candidate is `AP18_The_Floor_FINAL.docx` (found in Formatted), and it is **not** the published
-text: 7 paragraph(s) in the source are absent from the
+text: 6 paragraph(s) in the source are absent from the
 published PDF, and 0 published sentence(s) are absent from
 the source.
 
@@ -18,7 +18,6 @@ copied into this folder, so nothing here can be harvested by mistake.
 
 ## In the source, absent from the published paper
 
-- 8 - Kill Switches · KS-45, KS-45.1, KS-45.2, and updates, in Claim/Test/Status/Recovery form 22
 - The two sectors L and P are connected by the involution σ (Axiom S). The tension field of ε between 0 and 1 has field lines that leave 1 (propagation, matter, the visible) and return to 0 (fold, collapse, the dark). Every field line must close.
 - The monoid (M, ·) accumulates records (Axiom R). Records are irreversible; the monoid grows monotonically. Under EH (proved in AP20: AS = manifold identity), the monoid admits embedding into a smooth manifold M. The manifold is the accumulated record. Cosmologically, the manifold is expanding; the expansion rate is the Hubble parameter H0.
 - Lemma 1 (Measure homomorphism). The monoid (M, ·) admits a measure μ: M → R+ satisfying μ(m1 · m2) = μ(m1) + μ(m2) for disjoint records.

@@ -1,3 +1,7 @@
+> **SUPERSEDED.** This file was published for about an hour on 7 September 2026 and is superseded by the version above. Its notes carry the date **9 September 2026**, which was the date on the desk's draft and not the date the notes were appended. The ruling is explicit — *the date on each note is the date WC appends it* — and that date is 7 September 2026. Two of its notes also predate G's ruling on their text: AP30's item 10 did not carry C beside R, its item 11 did not carry the sentence on the now, and AP49's note did not carry the §0.2 pointer. It is kept, never deleted, because it was published: it is in Zenodo version 10.5281/zenodo.22646076, which is permanent.
+
+---
+
 # Republish AP49 — The Hold — FINAL v1.0 · dated note 9 September 2026
 
 The locked body is untouched. One dated note is appended after §8, where AP30's and AP47's sit. Verified after the build: the source of record beside this note reproduces the new PDF paragraph for paragraph, and **every body sentence of the previous PDF is present in the new one** — 0 lost, checked sentence by sentence with running heads and page numbers stripped.

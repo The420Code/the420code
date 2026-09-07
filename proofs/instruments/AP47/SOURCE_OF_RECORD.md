@@ -10,8 +10,8 @@ against the published paper's own Contents block and sets them aside.
 | | |
 |---|---|
 | Published PDF | `/AP47_The_Flip.pdf` |
-| sha256 | `c0be5d61157b6ddb8f076ef266c3ad6e0f048d000f245228e10e9755d296893b` |
-| Source of record | `AP47_The_Flip_FINAL_v3_dated_notes_2026-09-09.docx` |
+| sha256 | `3adae0106d96eaabad2bd953e45681cd7d4023228e60d5a421df4ff357355aca` |
+| Source of record | `AP47_The_Flip_FINAL_v3_dated_notes_2026-09-07.docx` |
 | Found in | instruments |
 | Paragraphs compared | 92 |
 

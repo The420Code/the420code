@@ -2,7 +2,7 @@
 
 **Checked 7 September 2026** by the paragraph-level test of record. The closest
 candidate is `AP24_The_Residual_v2.docx` (found in Formatted), and it is **not** the published
-text: 7 paragraph(s) in the source are absent from the
+text: 5 paragraph(s) in the source are absent from the
 published PDF, and 0 published sentence(s) are absent from
 the source.
 
@@ -18,8 +18,6 @@ copied into this folder, so nothing here can be harvested by mistake.
 
 ## In the source, absent from the published paper
 
-- 6 - What This Means · Consequence: one measured input, zero free parameters. The Standard Model's ≈25 free parameters reduced to one. 25
-- 8 - Conclusion · Six faces. One scar. One break. One ε. One answer. 28
 - AP09 (The Break - Empty Set). The complex Hilbert space H. The fixed-point structure of §4.3 uses this complex structure (transcendental fixed points are generically irrational).
 - The Planck length. lP = √(ħG/c3). Substitute G = 2κ/me2: lP = √(2ħκ/(me2c3)). The electron mass is under the root.
 - the now - The actualisation state. The boundary between H and M. Immeasurable by structure.

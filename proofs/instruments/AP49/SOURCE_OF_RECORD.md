@@ -10,10 +10,10 @@ against the published paper's own Contents block and sets them aside.
 | | |
 |---|---|
 | Published PDF | `/AP49_The_Hold.pdf` |
-| sha256 | `c62b0dabb012dcab66edcb5a302df72b68d57c0b3154c6a3b3e3896a4f357114` |
-| Source of record | `AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09-09.docx` |
+| sha256 | `11f52e78366c3df334338a805ebd0c1df9f60c02a9d8b3782ea4682d1393f825` |
+| Source of record | `AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09-07.docx` |
 | Found in | instruments |
-| Paragraphs compared | 113 |
+| Paragraphs compared | 112 |
 
 Harvest from this file. If the published PDF is replaced, this note and the
 digest are re-verified at that republish.
