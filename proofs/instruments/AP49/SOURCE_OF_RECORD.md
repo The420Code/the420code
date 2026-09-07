@@ -10,8 +10,8 @@ against the published paper's own Contents block and sets them aside.
 | | |
 |---|---|
 | Published PDF | `/AP49_The_Hold.pdf` |
-| sha256 | `290f143fba1a3ce6f6cf6307355128f468dc55f2b3af4214edf3a420e696368b` |
-| Source of record | `AP49_The_Hold_FINAL_v1_0.md` |
+| sha256 | `c62b0dabb012dcab66edcb5a302df72b68d57c0b3154c6a3b3e3896a4f357114` |
+| Source of record | `AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09-09.docx` |
 | Found in | instruments |
 | Paragraphs compared | 113 |
 

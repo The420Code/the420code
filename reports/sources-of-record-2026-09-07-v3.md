@@ -100,7 +100,7 @@ v2 flagged AP44, AP45, AP46 and AP47 as each showing one or two content items ag
 | **AP46** | OF RECORD | `AP46_The_Stretch_FINAL_v1_5.md` | instruments | 205 | 0 + 0 | 1 |
 | **AP47** | OF RECORD | `AP47_The_Flip_FINAL_v3_dated_notes_2026-09-0` | instruments | 92 | 0 + 0 | 9 |
 | **AP48** | OF RECORD | `AP48_The_Assembly_FINAL_v1_1.docx` | instruments | 221 | 0 + 0 | 0 |
-| **AP49** | OF RECORD | `AP49_The_Hold_FINAL_v1_0.md` | instruments | 113 | 0 + 0 | 0 |
+| **AP49** | OF RECORD | `AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09` | instruments | 113 | 0 + 0 | 0 |
 
 ## What the remaining divergences are
 
@@ -111,8 +111,7 @@ The 23 that diverge cannot take the AP30 republish procedure — appending dated
 *Run 2026-09-07. Nothing in OneDrive and nothing published was modified.*
 
 **The checker is beside this report** at `reports/of_record_2026-09-07.py`, so the ruling is
-reproducible and MC has the exact file to fold into `museum/check_of_record.py`. Run it as
-`python of_record_2026-09-07.py <source> <published.pdf>`.
+reproducible and MC has the exact file to fold into `museum/check_of_record.py`.
 
-*9 September 2026: AP30 and AP47 were republished with dated notes on that day. Their rows above
-are re-verified against the new PDFs and carry the new digests; both remain of record.*
+*9 September 2026: AP30, AP47 and AP49 were republished with dated notes that day. Their rows
+above are re-verified against the new PDFs and carry the new digests; all three remain of record.*
