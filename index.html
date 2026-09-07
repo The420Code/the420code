@@ -262,7 +262,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .map-intro{font-size:17px;color:var(--g5);margin:0 0 1.4rem}
 .map-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
 .map-door{display:flex;align-items:baseline;gap:.6rem;padding:.62rem 0;text-decoration:none;color:var(--bk)}
-.map-door:first-child{grid-column:1/-1;padding-top:0}
+.map-door:nth-child(-n+2){padding-top:0}
 .map-door:hover .d-name{border-bottom-color:var(--bk)}
 .map-door:hover .d-tag{color:var(--bk)}
 .d-name{font-size:18px;font-weight:700;white-space:nowrap;border-bottom:1px solid transparent}
@@ -330,9 +330,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 <!-- MAP -->
 <div class="map">
   <h2>Ø Map</h2>
-  <p class="map-intro">One building — twelve doors. Take any of them.</p>
+  <p class="map-intro">The whole building. Twelve doors — take any of them.</p>
   <div class="map-grid">
-    <a class="map-door" href="#museum"><span class="d-name">Ø Museum</span><span class="d-tag">Be kind. The ethics from physics</span></a>
+    <a class="map-door" href="#museum"><span class="d-name">Ø Museum</span><span class="d-tag">ethics from physics</span></a>
     <a class="map-door" href="#five-doors"><span class="d-name">Ø Five Doors</span><span class="d-tag">the heart of it</span></a>
     <a class="map-door" href="#models"><span class="d-name">Ø Models</span><span class="d-tag">the philosophy</span></a>
     <a class="map-door" href="#exhibition"><span class="d-name">Ø Exhibition</span><span class="d-tag">the whole story</span></a>
