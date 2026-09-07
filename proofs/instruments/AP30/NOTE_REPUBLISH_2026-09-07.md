@@ -39,3 +39,23 @@ Metadata is neutral (Studio G).
 Rule locked 7 September 2026: a locked body is never edited, replaced or removed —
 corrections go beside it by dated note. A lemma that must be rewritten becomes
 v2.0 with v1.0 kept beside it.
+
+## The two published files, both kept
+
+*Beside, never replaced* applies to the rendered PDF as well as the text.
+
+| | file | sha256 | pages |
+|---|---|---|---|
+| **published to 6 Sep 2026** | `proofs/instruments/AP30/AP30_The_Resistance_FINAL_v1_0_published_to_2026-09-06.pdf` | `acb4621c1d3e6258de70897980427fc7f367dde3f57f38b1a1f35f926e3239ce` | 26 |
+| **published from 7 Sep 2026** | `/AP30_The_Resistance.pdf` | `3b86e7819d850ce6ec815e8a1e902a547635f91fd36e12a84430b4ad39eb0e96` | 27 |
+
+The previous file is not superseded in the sense of being wrong — it is the
+paper without its dated notes, and it is the file two frozen records point at.
+**The AP49 freeze bundle of 6 September 2026 cites `acb4621c…` for
+`inputs/AP30_The_Resistance.pdf`**, in `freezes/2026-09-06-AP49/SHA256SUMS.txt`
+and in `proofs/instruments/AP49/SHA256SUMS.txt`. Those are frozen files and are
+not edited. The digest they cite resolves to the preserved file above, which is
+why it is kept at a stable path rather than only in git history.
+
+Nothing else in the corpus cites the AP30 PDF by digest — checked across every
+`.md`, `.txt` and `.html` in the repository on 7 September 2026.
