@@ -1,3 +1,7 @@
+> **SUPERSEDED the same day by v3.** v2's *withdrawal of v1* stands and is not in question. v2's own **count** does not: it reported 21 of record and 28 diverged, and the true figures are **26 and 23**. v2's checker dropped the Contents block on the published side and not on the source side, so a paper's own front matter came back as prose the published paper was missing; it also read the typesetter's `@@` directives as prose. Both are corrected in v3, which is the report to read. This file is kept, never deleted, as the record of what was claimed and why it was wrong.
+
+---
+
 # Sources of record — AP01–AP49 — v2, 7 September 2026
 
 > **v1 of this report is withdrawn as a ruling.** It concluded *"all 43 diverge; the harvest must never touch OneDrive"*. That conclusion is not established and must not be relied on. v1 is kept at `sources-of-record-2026-09-07-v1-SUPERSEDED.md`, never deleted, as the record of what was claimed and why it was wrong.
