@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-verify_prereg.py — regenerates every number in 2026-08-02-mp-me-alpha3.md
-from CODATA 2022 inputs. No fitted quantities are used as input.
+verify_prereg.py — regenerates every number in 2026-08-02-mp-me-alpha3.md and
+in its superseding entry 2026-09-06-mp-me-closed.md (AP49, The Hold), from
+CODATA 2022 inputs. No fitted quantities are used as input.
 
     pip install mpmath
     python3 verify_prereg.py
@@ -175,4 +176,56 @@ print(f'  minimum three-term sum with strictly decreasing 21-exponents:')
 print(f'    21^2 * 1  +  21^1 * 1  +  21^0 * 1  =  441 + 21 + 1  =  {floor}')
 print(f'  m_mu/m_e = {MU_ME}  <  {floor}')
 print(f'  unreachable at any exponents. The lepton sector is not derived.')
+print()
+
+# ------------------------------------------------- AP49 the series closed
+# Superseding entry of 6 September 2026 (2026-09-06-mp-me-closed.md).
+# Every order beyond the first is the previous order times the repair's share
+# r = 16*alpha/1836, so the tail is a geometric series and it sums.
+rule('AP49 (6 September 2026) — the chain of holders, summed')
+
+H2_ME, H2_ME_U = mpf('1836.152673414'), mpf('0.000000047')   # Nature 644, 69 (2025)
+
+r = mpf(16) * ALPHA / 1836
+TAIL_CLOSED = 21 * ALPHA * r / (1 - r)
+D_CLOSED = T0 + T1 + TAIL_CLOSED
+
+c3 = 21 * mpf(16)**2 / mpf(1836)**2
+t3 = 21 * ALPHA * r**2
+
+print(f'  r = 16*alpha/1836                = {s(r, 15)}')
+print(f'  21*alpha*r/(1 - r)               = {s(TAIL_CLOSED, 15)}')
+print(f'  D_closed                         = {s(D_CLOSED, 16)}')
+print(f'  D (2 Aug, truncated at alpha^2)  = {s(D, 16)}')
+print(f'  the tail beyond second order     = +{s(D_CLOSED - D, 3)}  (+{s(ppt(D_CLOSED - D), 3)} ppt)')
+print(f'  c3 = 21*16^2/1836^2              = +{s(c3, 6)}   sign stated in advance')
+print(f'  its term, 21*alpha*r^2           = +{s(t3, 3)}')
+
+rc = D_CLOSED - MP_ME
+rh = D_CLOSED - H2_ME
+print(f'\n  against CODATA 2022  {MP_ME}({str(MP_ME_U)[-2:]}):')
+print(f'    D_closed - measured            = +{s(rc, 4)} = +{s(ppt(rc), 3)} ppt')
+print(f'    prediction ABOVE measurement by  {s(rc / MP_ME_U, 3)} sigma')
+print(f'  against H2+ 2025 {H2_ME}({str(H2_ME_U)[-2:]}):')
+print(f'    D_closed - measured            = +{s(rh, 4)}')
+print(f'    prediction ABOVE measurement by  {s(rh / H2_ME_U, 3)} sigma')
+
+# KS-HOLD.3 — the base of the chain: bare 21*alpha, or the repair net of its leak
+D_LEAKED = T0 + T1 + T1 * r / (1 - r)
+print(f'\n  KS-HOLD.3, the base of the chain:')
+print(f'    bare base   21*alpha           -> {s(D_CLOSED, 16)}')
+print(f'    leaked base 21*alpha*(1-1/84pi)-> {s(D_LEAKED, 16)}')
+print(f'    separation                     = {s(D_CLOSED - D_LEAKED, 3)} = {s(ppt(D_CLOSED - D_LEAKED), 3)} ppt')
+print(f'    CODATA sits between them: +{s(rc / MP_ME_U, 3)} sigma below the bare, '
+      f'{s((D_LEAKED - MP_ME) / MP_ME_U, 3)} sigma above the leaked')
+for bar in (mpf('1.7'), mpf('3')):
+    print(f'    at a bar of {s(bar,2)} ppt the two bases are {s(ppt(D_CLOSED - D_LEAKED) / bar, 3)} sigma apart')
+
+# KS-HOLD.1 — when the closed form dies, if the central value holds
+print(f'\n  KS-HOLD.1, the kill:')
+for n in (3, 5):
+    print(f'    {n} sigma reached at measurement uncertainty <= {s(ppt(rc) / n, 3)} ppt')
+print(f'    third order resolved at about {s(ppt(MP_ME_U) / ppt(t3), 3)}x today\'s precision')
+print(f'    current CODATA 2022 bar: {s(ppt(MP_ME_U), 3)} ppt')
+print(f'    the chain adds at every order; no negative term exists in it, and none is offered.')
 print()

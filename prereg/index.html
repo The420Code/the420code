@@ -70,6 +70,7 @@ table.data tr:last-child td{border-bottom:none}
 .badge{display:inline-block;font-size:13.5px;font-weight:700;letter-spacing:.04em;padding:2px 9px;border-radius:2px;white-space:nowrap}
 .badge.fired{background:var(--fire);color:#fff}
 .badge.live{background:#fff;color:var(--live);border:1px solid var(--live)}
+.badge.sup{background:#fff;color:var(--g5);border:1px solid var(--g3)}
 .mono{font-family:'Courier New',Courier,monospace}
 .sig-fire{color:var(--fire);font-weight:700}
 .span-table td:first-child{white-space:normal;min-width:140px}
@@ -177,7 +178,7 @@ point; a registry checked only by its author is a registry checked by nobody.</p
 <table class="verify-table" style="margin-top:0">
     <thead><tr><th>Claim</th><th>Predicted</th><th>Measured</th><th>σ</th><th>Error</th><th>Paper</th></tr></thead>
     <tbody>
-      <tr><td>Proton mass ratio</td><td>1836.15267344</td><td>1836.152673426(32)</td><td>+0.57σ</td><td>0.010 ppb</td><td><a href="/proofs/#ap30" onclick="event.preventDefault();window.location.href='/proofs/#ap30'">AP30</a></td></tr>
+      <tr><td>Proton mass ratio — the series closed</td><td>1836.152673445</td><td>1836.152673426(32)</td><td>+0.59σ</td><td>10.3 ppt</td><td><a href="/proofs/#ap49" onclick="event.preventDefault();window.location.href='/proofs/#ap49'">AP49</a></td></tr>
       <tr><td>Gravitational constant G, realised — against CODATA</td><td>6.6719 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>−16σ</td><td>−0.036%</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
       <tr><td>Gravitational constant G, realised — against atom interferometry</td><td>6.6719 × 10⁻¹¹</td><td>6.67191(99) × 10⁻¹¹ (LENS 2014)</td><td>+0.01σ</td><td>+1 ppm</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
       <tr><td>Gravitational constant G, structural</td><td>6.7206 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>+309σ</td><td>+0.69%</td><td><a href="/proofs/#ap28" onclick="event.preventDefault();window.location.href='/proofs/#ap28'">AP28</a></td></tr>
@@ -221,13 +222,40 @@ point; a registry checked only by its author is a registry checked by nobody.</p
   </thead>
   <tbody>
     <tr>
-      <td class="wrap"><b>Proton–electron mass ratio</b><br>at order α² (AP30)</td>
+      <td class="wrap"><b>Proton–electron mass ratio</b><br>the series closed (AP49) · KS-HOLD.1</td>
       <td><span class="badge live">LIVE</span></td>
-      <td class="wrap">Dies at 3σ once measurement uncertainty ≤ 3.3 ppt (now 17.4 ppt; ~3–5 yr)</td>
+      <td class="wrap">Dies at 3σ once measurement uncertainty ≤ 3.4 ppt with the central value unchanged (now 17.4 ppt; ~3–5 yr); 5σ at 2.1 ppt</td>
+      <td><a href="doc/2026-09-06-mp-me-closed.html">mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
+      <td><a href="verify_prereg.py">verify_prereg.py</a></td>
+      <td class="mono">prereg-2026-09-06</td>
+      <td class="mono">2026-09-06</td>
+    </tr>
+    <tr>
+      <td class="wrap"><b>Proton–electron mass ratio</b><br>at order α² (AP30) — superseded by reference, kept</td>
+      <td><span class="badge sup">SUPERSEDED</span></td>
+      <td class="wrap">D = 1836.152673444331 at +0.57σ, frozen 2 August 2026 (digest 6ea78dac…). Superseded by the closed form, never replaced by it.</td>
       <td><a href="doc/2026-08-02-mp-me-alpha3.html">mp-me-alpha3</a> <span class="raw">(<a href="2026-08-02-mp-me-alpha3.md">raw</a>)</span></td>
       <td><a href="verify_prereg.py">verify_prereg.py</a></td>
       <td class="mono">prereg-2026-08-02</td>
-      <td class="mono">2026-09-04</td>
+      <td class="mono">2026-09-06</td>
+    </tr>
+    <tr>
+      <td class="wrap"><b>The base of the chain</b><br>KS-HOLD.3 · AP49</td>
+      <td><span class="badge live">LIVE</span></td>
+      <td class="wrap">Bare 21α or the leaked repair: the two bases predict 1836.152673445 and 1836.152673408, 3.7 × 10⁻⁸ apart. CODATA sits between them (+0.59σ / −0.56σ) and decides nothing yet — decided at about ten times today's precision (12σ at 1.7 ppt, ~7σ at 3 ppt). Fires if the measurement settles on the leaked value, or on neither.</td>
+      <td><a href="doc/2026-09-06-mp-me-closed.html">mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
+      <td><a href="verify_prereg.py">verify_prereg.py</a></td>
+      <td class="mono">prereg-2026-09-06</td>
+      <td class="mono">2026-09-06</td>
+    </tr>
+    <tr>
+      <td class="wrap"><b>The reading of the sixteen</b><br>KS-HOLD.2 · AP49 — structural</td>
+      <td><span class="badge live">LIVE</span></td>
+      <td class="wrap">A second-order support count is its object through the four dimensional expressions: 21 × 4, 2 × 4, 4 × 4. Fires if any second-order count in the family needs its object squared, its object through three dimensions, or any count not of this form. No measurement decides it.</td>
+      <td><a href="doc/2026-09-06-mp-me-closed.html">mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
+      <td>—</td>
+      <td class="mono">prereg-2026-09-06</td>
+      <td class="mono">2026-09-06</td>
     </tr>
     <tr>
       <td class="wrap"><b>Neutron–proton mass difference</b><br>KS-NPP.1 (AP30)</td>
@@ -426,6 +454,7 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
 <table class="data">
   <thead><tr><th>Prediction or claim</th><th>Document</th><th>What it is</th></tr></thead>
   <tbody>
+    <tr><td class="wrap"><b>Proton–electron mass ratio, closed<br>KS-HOLD.1–.3 · AP49</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-09-06-mp-me-closed.html">2026-09-06-mp-me-closed.md</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td><td class="wrap">The superseding entry. Registers D_closed = 1836.152673444951 with the series summed in closed form, the third-order coefficient c₃ = +1.595 × 10⁻³ and its term +6.2 × 10⁻¹⁰ with the sign stated in advance, and the kill at 3.4 ppt. The entry of 2 August stands beside it, never in its place.</td></tr>
     <tr><td class="wrap"><b>Proton–electron mass ratio<br>KS-30.1–.4 · AP30</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-08-02-mp-me-alpha3.html">2026-08-02-mp-me-alpha3.md</a> <span class="raw">(<a href="2026-08-02-mp-me-alpha3.md">raw</a>)</span></td><td class="wrap">The proton freeze — the standard the others follow. Registers D = 1836.152673444331 at order α², and registers that no α³ coefficient is claimed.</td></tr>
     <tr><td class="wrap"><b>Gravitational constant, realised<br>KS-CCC.3 · AP44</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-09-04-G-KS-CCC.3.html">2026-09-04-G-KS-CCC.3.md</a> <span class="raw">(<a href="2026-09-04-G-KS-CCC.3.md">raw</a>)</span></td><td class="wrap">6.6719 × 10⁻¹¹, and the fork it creates: the consensus migrates down toward 6.672, or converges up toward 6.7206 and the commitment dies.</td></tr>
     <tr><td class="wrap"><b>Neutron–proton difference, realised<br>KS-FLIP.1 · AP47</b> <span class="badge live">LIVE</span></td><td class="wrap"><a href="doc/2026-09-04-neutron-KS-FLIP.1.html">2026-09-04-neutron-KS-FLIP.1.md</a> <span class="raw">(<a href="2026-09-04-neutron-KS-FLIP.1.md">raw</a>)</span></td><td class="wrap">2.53098857035 mₑ, the held distinction priced at second order — frozen beside the corpse below, never in its place.</td></tr>
@@ -465,15 +494,22 @@ MP_ME, MP_ME_U = mpf('1836.152673426'), mpf('0.000000032')
 ALPHA = 1 / AINV
 ALPHA_U = ALPHA * (AINV_U / AINV)
 
-# The frozen O(alpha^2) value
+# The frozen O(alpha^2) value of 2 August 2026 (superseded, kept)
 T0 = mpf(21**2 * 4 + 21 * 3 + 3**2)            # = 1836
 T1 = ALPHA * 21 * (1 - 1 / (84 * pi))
 T2 = ALPHA**2 * 21 * mpf(16) / 1836
 D = T0 + T1 + T2                               # = 1836.152673444331
+# resid = D - MP_ME = +9.98 ppt = 0.57 sigma, D above measurement.
 
-resid = D - MP_ME                              # = +9.98 ppt
-# discrepancy = resid / u = 0.57 sigma; D lies above measurement,
-# so any alpha^3 term that closes it must be NEGATIVE.</code></pre>
+# AP49 (6 September 2026): the series closed. Every order beyond the first is
+# the previous one times r, so the tail is a geometric series and it sums.
+r = mpf(16) * ALPHA / 1836                     # the repair's share
+D_CLOSED = T0 + T1 + 21 * ALPHA * r / (1 - r)  # = 1836.152673444951
+
+resid = D_CLOSED - MP_ME                       # = +1.895e-8 = +10.3 ppt
+# discrepancy = resid / u = +0.59 sigma. The chain ADDS at every order and has
+# no negative term, so it cannot close a positive gap -- and none is offered.
+# c3 = 21 * 16**2 / 1836**2 = +1.595e-3, its term +6.2e-10, sign in advance.</code></pre>
 </div>
 
 <p style="margin:1.5rem 0 .75rem"><b>Or verify them right here — offline.</b> Each button re-derives the numbers independently in pure JavaScript at 60-digit precision, entirely in your browser: no install, no Python, no network, nothing sent anywhere. The reference scripts (<code>verify_prereg.py</code>, <code>verify_cosmology.py</code>, <code>verify_rigidity.py</code>) agree to every digit — a second, independent implementation that matches is stronger than re-running one file twice.</p>
