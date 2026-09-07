@@ -36,6 +36,10 @@ a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
 a:hover{text-decoration-thickness:2px}
 
 .nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
+/* anchored sections clear the sticky nav (measured: 60px desktop, 111px mobile) */
+#scoreboard,#register,#span,#numerology,#errata,#documents,#reproduce{scroll-margin-top:76px}
+@media(max-width:640px){#scoreboard,#register,#span,#numerology,#errata,#documents,
+#reproduce{scroll-margin-top:128px}}
 .nav a:not(.nav-logo){font-size:16px;color:var(--g5);text-decoration:none}
 .nav a:not(.nav-logo):hover{color:var(--bk);text-decoration:underline}
 .nav-logo{margin-right:auto;display:inline-flex;align-items:center}

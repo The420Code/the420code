@@ -61,6 +61,11 @@ a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
 a:hover{text-decoration-thickness:2px}
 
 .nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
+/* anchored headings clear the sticky nav (measured: 119px desktop, 176px mobile) */
+#museum,#five-doors,#models,#exhibition,#axiom,#physics,#notebooks,
+#confirm-the-math,#killswitch,#glossary{scroll-margin-top:136px}
+@media(max-width:640px){#museum,#five-doors,#models,#exhibition,#axiom,#physics,
+#notebooks,#confirm-the-math,#killswitch,#glossary{scroll-margin-top:192px}}
 .nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
 .nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
 .nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
@@ -330,7 +335,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 <!-- MAP -->
 <div class="map">
   <h2>Ø Map</h2>
-  <p class="map-intro">The whole building. Twelve doors — take any of them.</p>
+  <p class="map-intro">The whole building. Twelve rooms — start anywhere.</p>
   <div class="map-grid">
     <a class="map-door" href="#museum"><span class="d-name">Ø Museum</span><span class="d-tag">ethics from physics</span></a>
     <a class="map-door" href="#five-doors"><span class="d-name">Ø Five Doors</span><span class="d-tag">the heart of it</span></a>
@@ -339,7 +344,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     <a class="map-door" href="#axiom"><span class="d-name">1 Axiom</span><span class="d-tag">one record exists</span></a>
     <a class="map-door" href="#physics"><span class="d-name">Ø Physics</span><span class="d-tag">the structure of reality</span></a>
     <a class="map-door" href="#notebooks"><span class="d-name">Ø Notebooks</span><span class="d-tag">all the proofs, bound</span></a>
-    <a class="map-door" href="/proofs/"><span class="d-name">Ø Proofs</span><span class="d-tag">the forty-nine</span></a>
+    <a class="map-door" href="/proofs/"><span class="d-name">Ø Proofs</span><span class="d-tag">forty-nine artist’s proofs</span></a>
     <a class="map-door" href="/prereg/"><span class="d-name">Ø Predictions</span><span class="d-tag">frozen before the test</span></a>
     <a class="map-door" href="#confirm-the-math"><span class="d-name">Ø Confirm the Math</span><span class="d-tag">run it yourself</span></a>
     <a class="map-door" href="#killswitch"><span class="d-name">Ø Kill Switches</span><span class="d-tag">ways it could be wrong</span></a>
