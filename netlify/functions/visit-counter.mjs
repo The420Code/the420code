@@ -1,8 +1,46 @@
 import { getStore } from "@netlify/blobs";
 
 // A visit is one browser session, not one page load. The page guards on
-// sessionStorage before it posts, so a reload does not inflate the number and
-// the figure keeps meaning something. Counted from every page; shown on one.
+// sessionStorage before it posts, so a reload does not count again and the
+// figure keeps meaning something. Counted from every page; shown on one.
+//
+// One key, one write. The total is DERIVED from the per-page map rather than
+// stored beside it, so the total can never disagree with its own breakdown.
+// The first version kept three keys and three writes, and a rapid pair of
+// visits lost one: the total said 2 while the pages summed to 3.
+//
+// This is still not atomic — @netlify/blobs 8.2 has no conditional write, so
+// two genuinely simultaneous visits can still collapse into one. At this site's
+// traffic that is rare, and the number is honest about what it is: sessions
+// that reached a page and ran the script. Crawlers do not run it.
+
+const KEY = "visits-v2";
+const LANGS = ["ar","de","es","fr","hi","it","ja","ko","nl","pt","ru","zh"];
+
+const total = (state) => Object.values(state.pages).reduce((a, b) => a + b, 0);
+
+async function read(store) {
+  const raw = await store.get(KEY);
+  if (raw) {
+    try { const s = JSON.parse(raw); return { pages: s.pages || {}, langs: s.langs || {} }; }
+    catch (e) { /* fall through and start clean rather than throw */ }
+  }
+  // carry over whatever the first version recorded, once
+  const old = await store.get("visits-per-page");
+  if (old) {
+    try {
+      const pages = JSON.parse(old);
+      const langs = {};
+      for (const [p, n] of Object.entries(pages)) {
+        const seg = (p.split("/")[1] || "");
+        const l = LANGS.includes(seg) ? seg : "en";
+        langs[l] = (langs[l] || 0) + n;
+      }
+      return { pages, langs };
+    } catch (e) { /* ignore */ }
+  }
+  return { pages: {}, langs: {} };
+}
 
 export default async (req, context) => {
   const store = getStore("counters");
@@ -15,69 +53,36 @@ export default async (req, context) => {
     "Access-Control-Allow-Headers": "Content-Type",
   };
 
-  if (req.method === "OPTIONS") {
-    return new Response(null, { status: 204, headers });
-  }
+  if (req.method === "OPTIONS") return new Response(null, { status: 204, headers });
 
-  // GET ?stats=1 — the per-page and per-language breakdown, for the site owner
-  if (req.method === "GET" && url.searchParams.get("stats") === "1") {
-    const [totalRaw, pagesRaw, langsRaw] = await Promise.all([
-      store.get("visits"),
-      store.get("visits-per-page"),
-      store.get("visits-per-lang"),
-    ]);
-    return new Response(JSON.stringify({
-      total: totalRaw ? parseInt(totalRaw, 10) : 0,
-      pages: pagesRaw ? JSON.parse(pagesRaw) : {},
-      languages: langsRaw ? JSON.parse(langsRaw) : {},
-    }), { headers });
-  }
-
-  // GET — the total
   if (req.method === "GET") {
-    const raw = await store.get("visits");
-    return new Response(JSON.stringify({ count: raw ? parseInt(raw, 10) : 0 }), { headers });
+    const state = await read(store);
+    const body = url.searchParams.get("stats") === "1"
+      ? { total: total(state), pages: state.pages, languages: state.langs }
+      : { count: total(state) };
+    return new Response(JSON.stringify(body), { headers });
   }
 
-  // POST { "path": "/proofs/" } — one visit
   if (req.method === "POST") {
     let path = "/";
     try {
       const body = await req.json();
       if (typeof body.path === "string") {
-        // keep a short, safe path; never a query string, never a fragment
         path = body.path.split("?")[0].split("#")[0].slice(0, 64)
                         .replace(/[^a-zA-Z0-9/_.\-]/g, "");
         if (!path.startsWith("/")) path = "/" + path;
       }
-    } catch (e) {
-      // no body, or bad JSON: still count the visit against "/"
-    }
+    } catch (e) { /* no body, or bad JSON: count it against "/" */ }
 
-    // the language edition is the first path segment when it is a known one
     const seg = path.split("/")[1] || "";
-    const lang = ["ar","de","es","fr","hi","it","ja","ko","nl","pt","ru","zh"]
-                   .includes(seg) ? seg : "en";
+    const lang = LANGS.includes(seg) ? seg : "en";
 
-    const [totalRaw, pagesRaw, langsRaw] = await Promise.all([
-      store.get("visits"),
-      store.get("visits-per-page"),
-      store.get("visits-per-lang"),
-    ]);
+    const state = await read(store);
+    state.pages[path] = (state.pages[path] || 0) + 1;
+    state.langs[lang] = (state.langs[lang] || 0) + 1;
+    await store.set(KEY, JSON.stringify(state));
 
-    const total = (totalRaw ? parseInt(totalRaw, 10) : 0) + 1;
-    const pages = pagesRaw ? JSON.parse(pagesRaw) : {};
-    const langs = langsRaw ? JSON.parse(langsRaw) : {};
-    pages[path] = (pages[path] || 0) + 1;
-    langs[lang] = (langs[lang] || 0) + 1;
-
-    await Promise.all([
-      store.set("visits", String(total)),
-      store.set("visits-per-page", JSON.stringify(pages)),
-      store.set("visits-per-lang", JSON.stringify(langs)),
-    ]);
-
-    return new Response(JSON.stringify({ count: total }), { headers });
+    return new Response(JSON.stringify({ count: total(state) }), { headers });
   }
 
   return new Response("Method not allowed", { status: 405, headers });
