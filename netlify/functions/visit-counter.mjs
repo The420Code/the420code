@@ -3,43 +3,65 @@ import { getStore } from "@netlify/blobs";
 // A visit is one browser session, not one page load. The page guards on
 // sessionStorage before it posts, so a reload does not count again and the
 // figure keeps meaning something. Counted from every page; shown on one.
+// Crawlers do not run the script, so they are not in the number.
 //
-// One key, one write. The total is DERIVED from the per-page map rather than
-// stored beside it, so the total can never disagree with its own breakdown.
-// The first version kept three keys and three writes, and a rapid pair of
-// visits lost one: the total said 2 while the pages summed to 3.
+// WHY THIS IS APPEND-ONLY. Two earlier versions read the count, added one and
+// wrote it back. Both undercounted, and measurably: three visits a few seconds
+// apart produced two. Netlify Blobs is eventually consistent, so a read taken
+// straight after a write can still be the old value, and the increment is lost.
+// No amount of key design fixes that, and @netlify/blobs 8.2 has no conditional
+// write to build a compare-and-swap on.
 //
-// This is still not atomic — @netlify/blobs 8.2 has no conditional write, so
-// two genuinely simultaneous visits can still collapse into one. At this site's
-// traffic that is rare, and the number is honest about what it is: sessions
-// that reached a page and ran the script. Crawlers do not run it.
+// So a visit never reads anything. It writes one new blob under its own unique
+// key, which cannot collide and cannot be lost. The count is the number of those
+// blobs, plus a rolled-up base. Exact by construction.
 
-const KEY = "visits-v2";
+const PREFIX = "v/";
+const BASE = "visits-base";
+const ROLLUP_AT = 2000;   // fold the loose blobs into the base past this many
 const LANGS = ["ar","de","es","fr","hi","it","ja","ko","nl","pt","ru","zh"];
 
-const total = (state) => Object.values(state.pages).reduce((a, b) => a + b, 0);
+const langOf = (path) => {
+  const seg = path.split("/")[1] || "";
+  return LANGS.includes(seg) ? seg : "en";
+};
 
-async function read(store) {
-  const raw = await store.get(KEY);
-  if (raw) {
-    try { const s = JSON.parse(raw); return { pages: s.pages || {}, langs: s.langs || {} }; }
-    catch (e) { /* fall through and start clean rather than throw */ }
+async function readBase(store) {
+  const raw = await store.get(BASE);
+  if (!raw) return { count: 0, pages: {}, langs: {} };
+  try {
+    const b = JSON.parse(raw);
+    return { count: b.count || 0, pages: b.pages || {}, langs: b.langs || {} };
+  } catch (e) { return { count: 0, pages: {}, langs: {} }; }
+}
+
+async function tally(store, withBreakdown) {
+  const base = await readBase(store);
+  const { blobs } = await store.list({ prefix: PREFIX });
+  const out = { total: base.count + blobs.length, pages: null, langs: null };
+  if (!withBreakdown) return out;
+
+  const pages = { ...base.pages }, langs = { ...base.langs };
+  const loose = await Promise.all(blobs.map(b => store.get(b.key).catch(() => null)));
+  for (const raw of loose) {
+    if (!raw) continue;
+    let p = "/";
+    try { p = JSON.parse(raw).path || "/"; } catch (e) { /* count it against "/" */ }
+    pages[p] = (pages[p] || 0) + 1;
+    const l = langOf(p);
+    langs[l] = (langs[l] || 0) + 1;
   }
-  // carry over whatever the first version recorded, once
-  const old = await store.get("visits-per-page");
-  if (old) {
-    try {
-      const pages = JSON.parse(old);
-      const langs = {};
-      for (const [p, n] of Object.entries(pages)) {
-        const seg = (p.split("/")[1] || "");
-        const l = LANGS.includes(seg) ? seg : "en";
-        langs[l] = (langs[l] || 0) + n;
-      }
-      return { pages, langs };
-    } catch (e) { /* ignore */ }
+  out.pages = pages; out.langs = langs;
+
+  // Fold the loose blobs into the base when there are many, so the list stays
+  // cheap. The base is written before anything is deleted: if the delete half
+  // fails, the next roll-up simply counts those visits into the base again --
+  // which is why this only runs when the list is long, and never on a POST.
+  if (blobs.length >= ROLLUP_AT) {
+    await store.set(BASE, JSON.stringify({ count: out.total, pages, langs }));
+    for (const b of blobs) { try { await store.delete(b.key); } catch (e) { /* next time */ } }
   }
-  return { pages: {}, langs: {} };
+  return out;
 }
 
 export default async (req, context) => {
@@ -56,10 +78,11 @@ export default async (req, context) => {
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers });
 
   if (req.method === "GET") {
-    const state = await read(store);
-    const body = url.searchParams.get("stats") === "1"
-      ? { total: total(state), pages: state.pages, languages: state.langs }
-      : { count: total(state) };
+    const stats = url.searchParams.get("stats") === "1";
+    const t = await tally(store, stats);
+    const body = stats
+      ? { total: t.total, pages: t.pages, languages: t.langs }
+      : { count: t.total };
     return new Response(JSON.stringify(body), { headers });
   }
 
@@ -74,15 +97,12 @@ export default async (req, context) => {
       }
     } catch (e) { /* no body, or bad JSON: count it against "/" */ }
 
-    const seg = path.split("/")[1] || "";
-    const lang = LANGS.includes(seg) ? seg : "en";
+    // a key no other visit can take: time, then randomness
+    const key = PREFIX + Date.now().toString(36) + "-" +
+                Math.random().toString(36).slice(2, 10);
+    await store.set(key, JSON.stringify({ path, t: Date.now() }));
 
-    const state = await read(store);
-    state.pages[path] = (state.pages[path] || 0) + 1;
-    state.langs[lang] = (state.langs[lang] || 0) + 1;
-    await store.set(KEY, JSON.stringify(state));
-
-    return new Response(JSON.stringify({ count: total(state) }), { headers });
+    return new Response(JSON.stringify({ ok: true }), { headers });
   }
 
   return new Response("Method not allowed", { status: 405, headers });
