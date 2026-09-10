@@ -270,6 +270,20 @@ a.nb-name:hover{text-decoration:underline}
 @media(min-width:701px){
   .nav{gap:.55rem 1.05rem;font-size:15px}
 }
+
+/* The header carries thirteen rooms; the reading column is 760px, where thirteen
+   labels need three rows. So the header alone breaks out of the column, up to
+   1180px, and fits them in two. The reading column is untouched. */
+@media(min-width:781px){
+  .nav{width:100vw;max-width:1180px;position:sticky;
+       margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);
+       padding-left:max(1.5rem,calc((100vw - 1180px)/2));
+       padding-right:max(1.5rem,calc((100vw - 1180px)/2));
+       gap:.5rem .95rem;font-size:14.5px}
+}
+@media(min-width:1200px){
+  .nav{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+}
 </style>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/proofs/">
