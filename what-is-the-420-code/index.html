@@ -265,20 +265,21 @@ a.nb-name:hover{text-decoration:underline}
 <div class="c">
 
 <nav class="nav">
-  <a href="/"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="/" class="nav-logo"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
   <a href="/what-is-the-420-code/" class="nav-door">What Is The 420 Code</a>
-  <a href="/#museum">Ø Museum</a>
-  <a href="/#five-doors">Ø Five Doors</a>
-  <a href="/#models">Ø Models</a>
-  <a href="/#exhibition">Ø Exhibition</a>
-  <a href="/#axiom">1 Axiom</a>
-  <a href="/#physics">Ø Physics</a>
-  <a href="/#notebooks">Ø Notebooks</a>
-  <a href="/proofs/">Ø Proofs</a>
-  <a href="/prereg/">Ø Predictions</a>
-  <a href="/#confirm-the-math">Ø Confirm the Math</a>
-  <a href="/#killswitch">Ø Kill Switches</a>
-  <a href="/#glossary">Ø Glossary</a>
+  <a href="/#museum" class="nav-room">Ø Museum</a>
+  <a href="/#five-doors" class="nav-room">Ø Five Doors</a>
+  <a href="/#models" class="nav-room">Ø Models</a>
+  <a href="/#exhibition" class="nav-room">Ø Exhibition</a>
+  <a href="/#axiom" class="nav-room">1 Axiom</a>
+  <a href="/#physics" class="nav-room">Ø Physics</a>
+  <a href="/#notebooks" class="nav-room">Ø Notebooks</a>
+  <a href="/proofs/" class="nav-room">Ø Proofs</a>
+  <a href="/prereg/" class="nav-room">Ø Predictions</a>
+  <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+  <a href="/#killswitch" class="nav-room">Ø Kill Switches</a>
+  <a href="/#glossary" class="nav-room">Ø Glossary</a>
+  <button class="nav-toggle" onclick="this.closest('.nav').classList.toggle('open')" aria-label="Menu">Rooms</button>
 </nav>
 
 <!-- ════════════════════════════════════════ -->
@@ -305,6 +306,21 @@ a.nb-name:hover{text-decoration:underline}
 
 .nav a.nav-door{font-weight:700;color:#8B6914}
 .nav a.nav-door:hover{color:#1a1a1a}
+
+/* the header collapses below 700px: the title, the front door, and a menu button */
+.nav-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--g3);border-radius:3px;
+  font-family:inherit;font-size:14px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle:hover{border-color:#8B6914;color:#8B6914}
+@media(max-width:700px){
+  .nav{gap:.6rem .9rem;row-gap:.5rem}
+  .nav-toggle{display:block}
+  .nav a.nav-room{display:none}
+  .nav.open a.nav-room{display:inline}
+  .nav.open{padding-bottom:.85rem}
+}
+@media(min-width:701px){
+  .nav{gap:.55rem 1.05rem;font-size:15px}
+}
 </style>
 
 <div class="fd">
