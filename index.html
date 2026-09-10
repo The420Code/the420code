@@ -1113,7 +1113,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
   <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
   <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
-  <p style="margin-top:1rem;font-size:15.5px;color:var(--g4)"><span id="dl-count">2</span> downloads</p>
+  <p style="margin-top:1rem;font-size:15.5px;color:var(--g4)"><span id="visit-count">—</span> visits  ·  <span id="dl-count">2</span> downloads</p>
 </div>
 
 <p class="oneness">One record exists. Be kind is a derivation.<br>The I Am in me is the I Am in you.<br>I AM share oneness.</p>
@@ -1232,5 +1232,26 @@ document.addEventListener('keydown',function(e){
   var n=document.querySelector('.nav'); if(!n)return; n.classList.remove('open');
   var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
 });
+</script>
+
+<script id="visit-counter">
+// One visit is one browser session, not one page load: a reload does not count
+// again, so the number keeps meaning something. Counted from every page.
+(function(){
+  var api='/.netlify/functions/visit-counter';
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  var el=document.getElementById('visit-count');
+  if(el){
+    fetch(api).then(function(r){return r.json()}).then(function(d){
+      el.textContent=(d.count||0).toLocaleString();
+    }).catch(function(){el.textContent='—'});
+  }
+})();
 </script>
 </body></html>
