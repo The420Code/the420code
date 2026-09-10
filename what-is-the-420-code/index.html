@@ -290,8 +290,9 @@ a.nb-name:hover{text-decoration:underline}
 <!-- ════════════════════════════════════════ -->
 
 <style>
-.fd .fd-pre{display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem 2.5rem;flex-wrap:wrap;font-size:15px;color:var(--g4);font-style:italic;line-height:1.75;margin:2.5rem 0 1.6rem}
-.fd .fd-pre a{flex-shrink:0;color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3);font-style:italic}
+.fd .fd-pre{display:flex;justify-content:space-between;align-items:baseline;gap:2rem;flex-wrap:nowrap;font-size:15px;color:var(--g4);font-style:italic;line-height:1.75;margin:2.5rem 0 1.6rem}
+.fd .fd-pre>span{flex:1 1 auto;min-width:0}
+.fd .fd-pre a{flex:0 0 auto;white-space:nowrap;color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3);font-style:italic}
 .fd .fd-pre a:hover{color:#8B6914;border-color:#8B6914}
 @media(max-width:700px){.fd .fd-pre{display:block}.fd .fd-pre a{display:inline-block;margin-top:.55rem}}
 .fd h1{font-size:38px;font-weight:700;line-height:1.12;margin:0 0 1.35rem}
