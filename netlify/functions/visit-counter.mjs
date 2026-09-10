@@ -19,6 +19,12 @@ import { getStore } from "@netlify/blobs";
 const PREFIX = "v/";
 const BASE = "visits-base";
 const ROLLUP_AT = 2000;   // fold the loose blobs into the base past this many
+
+// Four hits were written to "/" while this was being brought up on 10 September
+// 2026 -- all of them mine, none of them a reader. They are subtracted so the
+// figure is true from its first day rather than starting four ahead. Stated here
+// rather than quietly folded into a base, so the number can always be audited.
+const SEED = 4;
 const LANGS = ["ar","de","es","fr","hi","it","ja","ko","nl","pt","ru","zh"];
 
 const langOf = (path) => {
@@ -67,9 +73,9 @@ async function tally(store, withBreakdown) {
     const l = langOf(p);
     langs[l] = (langs[l] || 0) + 1;
   }
-  const out = { total: base.count + Object.values(pages).reduce((a,b)=>a+b,0)
-                        - Object.values(base.pages).reduce((a,b)=>a+b,0),
-                pages, langs };
+  const counted = base.count + Object.values(pages).reduce((a,b)=>a+b,0)
+                            - Object.values(base.pages).reduce((a,b)=>a+b,0);
+  const out = { total: Math.max(0, counted - SEED), pages, langs };
 
   // Fold the loose blobs into the base when there are many, so the list stays
   // cheap. The base is written before anything is deleted: if the delete half
