@@ -26,6 +26,20 @@ const langOf = (path) => {
   return LANGS.includes(seg) ? seg : "en";
 };
 
+// Only pages this site actually has are counted. Two reasons: a scanner walking
+// /wp-admin/ never inflates the figure, and the handful of probe paths written
+// while this was being built drop out of the count without deleting anything.
+// Applied when reading, so it is retroactive.
+const PAGES = new Set(["/", "/what-is-the-420-code/", "/proofs/", "/prereg/",
+                       ...LANGS.map(l => `/${l}/`)]);
+const normalise = (p) => {
+  if (!p || p === "") return "/";
+  p = p.replace(/index\.html$/, "");
+  if (!p.endsWith("/")) p += "/";
+  return p;
+};
+const isRealPage = (p) => PAGES.has(normalise(p));
+
 async function readBase(store) {
   const raw = await store.get(BASE);
   if (!raw) return { count: 0, pages: {}, langs: {} };
@@ -38,20 +52,24 @@ async function readBase(store) {
 async function tally(store, withBreakdown) {
   const base = await readBase(store);
   const { blobs } = await store.list({ prefix: PREFIX });
-  const out = { total: base.count + blobs.length, pages: null, langs: null };
-  if (!withBreakdown) return out;
 
+  // every read walks the blobs, because only real pages count and the path
+  // lives inside each blob; the total is the sum of the breakdown, always
   const pages = { ...base.pages }, langs = { ...base.langs };
   const loose = await Promise.all(blobs.map(b => store.get(b.key).catch(() => null)));
   for (const raw of loose) {
     if (!raw) continue;
     let p = "/";
     try { p = JSON.parse(raw).path || "/"; } catch (e) { /* count it against "/" */ }
+    if (!isRealPage(p)) continue;
+    p = normalise(p);
     pages[p] = (pages[p] || 0) + 1;
     const l = langOf(p);
     langs[l] = (langs[l] || 0) + 1;
   }
-  out.pages = pages; out.langs = langs;
+  const out = { total: base.count + Object.values(pages).reduce((a,b)=>a+b,0)
+                        - Object.values(base.pages).reduce((a,b)=>a+b,0),
+                pages, langs };
 
   // Fold the loose blobs into the base when there are many, so the list stays
   // cheap. The base is written before anything is deleted: if the delete half
