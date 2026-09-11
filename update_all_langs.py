@@ -163,7 +163,7 @@ AXIOM_SECTION_EN = '''<!-- ═════════════════�
 
 <div class="axiom-display">1:1 + 1\u00d7<span class="epsilon">\u03b5</span> <span class="at-as">@ AS</span></div>
 
-<p style="font-size:16px;margin:0 0 1rem">The 1:1 is perfect symmetry. The <i>\u03b5</i> is the break. The @ AS names where the break is \u2014 at the Actualizing Structural prior, the now where the substrate is held and the break is processed.</p>
+<p style="font-size:16px;margin:0 0 1rem">The 1:1 is perfect symmetry. The <i>\u03b5</i> is the break. The @ AS names where the break is \u2014 at the Actualization State, the now where the substrate is held and the break is processed.</p>
 
 <p style="font-size:16px;margin:0 0 1rem">Written as the cycle AS sustains: <b>1:1 + 1\u00d7\u03b5 \u2212 1\u00d7\u03b5</b>. The +\u03b5 side is actualisation: something becomes a record. The \u22121\u00d7\u03b5 side is defragmentation: a record releases its structure back into potential. Both sides run continuously at AS. A reader inhabits the +\u03b5 side, where records are being written.</p>
 

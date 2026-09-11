@@ -24,8 +24,9 @@ the Rooms drop-down carries.
 - Arabic is built right-to-left, with dates, ids and formulas isolated in `<bdi>`, except the
   axiom paragraph, which stands alone, is set LTR, and is left exactly as written. Its header is
   the mirror image of the others, the same on its home page and its front door.
-- *Actualization State* stays in English in every edition but Spanish, which uses the corpus's
-  locked *Estado de Actualización*. The other editions' decision (DEC-AS) is still open.
+- AS is always *the Actualization State*: it is AP01 (G, 11 September 2026). Each edition names it
+  exactly as its own home page names AP01, in its front door and its 1 Axiom section alike.
+  Nothing on the site spells AS out any other way.
 
 ## History
 
@@ -37,3 +38,5 @@ the Rooms drop-down carries.
   neck as one sheet of glass; the one Operator expressed as many; the operator and the ethic
   rewritten. The tables were re-keyed around the paragraphs the edits add and split, and a
   second reviewer read every new string blind.
+- 11 September 2026, afternoon: G's rulings. *one operator* goes back to a small o; AS is always the
+  Actualization State, named in each edition as that edition names AP01.
