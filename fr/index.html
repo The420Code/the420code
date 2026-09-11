@@ -2,13 +2,13 @@
 <html lang="fr" style="scroll-padding-top:56px"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>the 420 code — l'éthique dérivée de la physique</title>
-<meta name="description" content="Peut-on dériver l'éthique de la physique ? The 420 Code dit oui. 49 Épreuves d'Artiste. Plus d'un million de mots. Une seule mesure. Zéro paramètre ajusté. Copyleft. Gratuit pour toujours.">
+<title>the 420 code — l’éthique dérivée de la physique</title>
+<meta name="description" content="Peut-on dériver l'éthique de la physique ? The 420 Code dit oui. 49 Épreuves d'Artiste. Plus d'un million de mots. Une seule mesure. Zéro paramètre libre. Copyleft. Gratuit pour toujours.">
 <link rel="canonical" href="https://the420code.org/fr/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/fr/">
 <meta property="og:title" content="the 420 code — l'éthique dérivée de la physique">
-<meta property="og:description" content="L'éthique peut-elle être dérivée de la physique ? The 420 Code dit oui. 49 Épreuves d'Artiste. Plus d'un million de mots. Une entrée mesurée. Zéro paramètre ajusté. Copyleft. Gratuit pour toujours.">
+<meta property="og:description" content="L'éthique peut-elle être dérivée de la physique ? The 420 Code dit oui. 49 Épreuves d'Artiste. Plus d'un million de mots. Une entrée mesurée. Zéro paramètre libre. Copyleft. Gratuit pour toujours.">
 <meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="fr">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="the 420 code — l'éthique dérivée de la physique">
-<meta name="twitter:description" content="L'éthique peut-elle être dérivée de la physique ? The 420 Code dit oui. 49 Épreuves d'Artiste. Plus d'un million de mots. Une entrée mesurée. Zéro paramètre ajusté. Copyleft. Gratuit pour toujours.">
+<meta name="twitter:description" content="L'éthique peut-elle être dérivée de la physique ? The 420 Code dit oui. 49 Épreuves d'Artiste. Plus d'un million de mots. Une entrée mesurée. Zéro paramètre libre. Copyleft. Gratuit pour toujours.">
 <meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
@@ -283,6 +283,35 @@ a.nb-name:hover{text-decoration:underline}
   .hero.opening .opening-link a{font-size:18px}
   .oneness{font-size:18px}
 }
+
+/* ── the header: one row, with the rooms behind a drop-down ───────────────── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible}
+.nav a.nav-room{display:none}
+.nav .lang-sel{display:none!important}
+.nav-toggle{display:inline-flex;align-items:center;gap:.45rem;margin-left:auto;
+  background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
+  font-size:14px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after{transform:rotate(180deg)}
+.nav-menu{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu{display:block}
+.nav.open .nav-menu a.nav-room{display:block;padding:.42rem 1.15rem;font-size:15px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.open .nav-menu a.nav-room:hover{background:var(--g1);color:#8B6914}
+.nav.open .nav-menu .lang-sel{display:flex!important;flex-wrap:wrap;gap:7px;
+  margin:.55rem 0 0!important;padding:.65rem 1.15rem 0;border-top:1px solid var(--g2)}
+@media(max-width:700px){
+  .nav-menu{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{font-size:15px}
+}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
 </style>
 <link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"The 420 Code","url":"https://the420code.org/fr/","description":"49 Artist's Proofs deriving ethics from physics. One measured input (α ≈ 1/137). Zero free parameters. 588 published kill switches. Copyleft.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G","address":"Cape Town"}},"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"license":"https://creativecommons.org/licenses/by/4.0/","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.19208226"}},{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"The 420 Code — 49 Artist's Proofs (AP01–AP49)","headline":"Can ethics be derived from physics? A complete axiomatic derivation from four axioms and one measured constant.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G"}},"url":"https://the420code.org/fr/","datePublished":"2026-03-24","description":"A 30-year framework deriving physics, consciousness, and ethics from four axioms and the fine-structure constant α ≈ 1/137. Contains 49 papers, 588 published kill switches (falsifiability conditions), and quantitative predictions with zero free parameters. Predictions include: proton-electron mass ratio to 0.010 ppb, neutron-proton mass difference to 2 ppm, the gravitational constant G to 0.036% (realised, AP44), the age of the universe as one cycle (13.830 Gyr, AP46), the expansion rate as a closure (67.45 km/s/Mpc, AP48), and the dark-sector partition to 0.06%. Two predictions fired and are shown: the bare neutron–proton row (2026-08-02, 7.24σ) and the Hubble prediction 74.3 ± 1.2 (2026-09-03).","identifier":[{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.19208226"}],"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"about":[{"@type":"DefinedTerm","name":"Theoretical Physics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Ethics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Philosophy of Science"},{"@type":"DefinedTerm","name":"Cosmology"},{"@type":"DefinedTerm","name":"AI Alignment"},{"@type":"DefinedTerm","name":"Consciousness Studies"},{"@type":"DefinedTerm","name":"Fine-Structure Constant"},{"@type":"DefinedTerm","name":"Axiomatic Systems"},{"@type":"DefinedTerm","name":"Falsifiability"},{"@type":"DefinedTerm","name":"Quantum Mechanics"},{"@type":"DefinedTerm","name":"General Relativity"},{"@type":"DefinedTerm","name":"MOND"},{"@type":"DefinedTerm","name":"Dark Energy"},{"@type":"DefinedTerm","name":"Dark Matter"}],"citation":"G. (2026). The 420 Code — 49 Artist's Proofs (AP01–AP49). Studio G. https://doi.org/10.5281/zenodo.19208226"},{"@context":"https://schema.org","@type":"Dataset","name":"The 420 Code — Quantitative Predictions","description":"Parameter-free predictions derived from the fine-structure constant α ≈ 1/137 alone, with zero free parameters. Each prediction is published with explicit kill switches (falsifiability conditions).","url":"https://the420code.org/fr/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"G"},"variableMeasured":[{"@type":"PropertyValue","name":"Proton-electron mass ratio","value":"1836.15267344","unitText":"dimensionless","description":"Predicted: 1836.15267344. CODATA 2022 measured: 1836.152673426. Accuracy: 0.010 ppb. Derived in AP30."},{"@type":"PropertyValue","name":"Neutron-proton mass difference, realised","value":"2.53098857","unitText":"electron masses (mₑ)","description":"Predicted: 2.53098857035 mₑ (AP47, the held distinction’s second-order cost). Measured: 2.530988574(74) mₑ. Residual −0.005σ. The bare row 2.53099393 mₑ (AP30) fired on 2026-08-02 at 7.24σ and is shown, never repaired."},{"@type":"PropertyValue","name":"Gravitational constant G, realised","value":"6.6719e-11","unitText":"m³ kg⁻¹ s⁻²","description":"Predicted: 6.6719 × 10⁻¹¹ (realised, AP44: the structural value 6.7206 × 10⁻¹¹ of AP28 divided by (1 + α)). CODATA measured: 6.6743 × 10⁻¹¹. Residual −0.036%. Derived in AP44 and AP28."},{"@type":"PropertyValue","name":"MOND acceleration a₀","value":"C_S²·cH₀/(2π)","unitText":"m/s²","description":"Parameter-free derivation: a₀ = C_S²·cH₀/(2π). At the corpus’s expansion rate, 67.45 km/s/Mpc, it gives 1.089 × 10⁻¹⁰ m/s² against 1.20 ± 0.24 × 10⁻¹⁰ (the systematic restored): 0.46σ. Derived in AP18; the earlier inversion H₀ = 74.3 ± 1.2 fired on 2026-09-03."},{"@type":"PropertyValue","name":"Dark energy fraction","value":"0.6885","unitText":"dimensionless","description":"Predicted: 68.85%. Planck observed: 68.89%. Accuracy: 0.06%. Derived in AP42."},{"@type":"PropertyValue","name":"Dark matter fraction","value":"0.2639","unitText":"dimensionless","description":"Predicted: 26.39%. Planck observed: 26.07%. Derived in AP42."},{"@type":"PropertyValue","name":"Visible matter fraction","value":"0.0476","unitText":"dimensionless","description":"Predicted: 4.76%. Planck observed: 4.86%. Derived in AP42."},{"@type":"PropertyValue","name":"Age of the universe, one cycle","value":"13.830","unitText":"Gyr","description":"Predicted: 13.830 Gyr, (21/18)·α⁻¹⁸·τ_C. Planck 2018 measured: 13.787 ± 0.020 Gyr. Accuracy: +0.31%, one lane-time (0.66 Gyr) wide. Derived in AP46."},{"@type":"PropertyValue","name":"Expansion rate H₀, the closure","value":"67.45","unitText":"km/s/Mpc","description":"Predicted: 67.45 km/s/Mpc, window 64.4–70.8 — a closure of the dark-sector partition, the cycle and the balance. Planck 2018: 67.4 ± 0.5. The Cepheid ladder’s 73 is stated as not the expansion rate. Derived in AP48."}]},{"@context":"https://schema.org","@type":"CreativeWork","name":"The 420 Code — Kill Switch Registry","description":"588 published falsifiability conditions across 49 papers. Each kill switch names a specific, testable condition that would falsify one or more claims. This level of declared falsifiability is the framework's primary credibility mechanism. The full registry is available as a PDF.","url":"https://the420code.org/Master_Kill_Switch_Registry.pdf","author":{"@type":"Person","name":"G"},"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true}]</script>
@@ -292,13 +321,17 @@ a.nb-name:hover{text-decoration:underline}
 
 <!-- NAV -->
 <nav class="nav">
-  <a href="#"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
-  <a href="#museum">Ø musée</a>
-  <a href="#five-doors">cinq portes</a>
-  <a href="#exhibition">exposition</a>
-  <a href="#proofs">preuves</a>
-  <a href="/prereg/">Ø préenregistrement</a>
-<div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" class="active" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
+  <a href="/fr/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="/fr/what-is-the-420-code/" class="nav-door">Qu’est-ce que The 420 Code</a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Salles" onclick="var n=this.closest('.nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">Salles</button>
+  <div class="nav-menu">
+    <a href="/fr/#museum" class="nav-room">Ø musée</a>
+    <a href="/fr/#five-doors" class="nav-room">cinq portes</a>
+    <a href="/fr/#exhibition" class="nav-room">exposition</a>
+    <a href="/fr/#proofs" class="nav-room">preuves</a>
+    <a href="/prereg/" class="nav-room">Ø préenregistrement</a>
+    <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" class="active" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
+  </div>
 </nav>
 
 <!-- ════════════════════════════════════════ -->
@@ -306,29 +339,29 @@ a.nb-name:hover{text-decoration:underline}
 <!-- ════════════════════════════════════════ -->
 
 <div class="hero opening">
-  <h1>L'éthique peut-elle être dérivée de la physique ?</h1>
+  <h1>L’éthique peut-elle être dérivée de la physique ?</h1>
   <p class="answer">Oui.</p>
   <p class="ethic">Ne sois pas un connard. Sois bienveillant.</p>
   <p class="opening-note">Deux de ses prédictions étaient fausses. Elles sont toujours au <a href="#physics">mur</a>. S’être trompé l’a rendu plus fort.</p>
   <p class="opening-note">Toute la dérivation est sur ce site, gratuite, pour toujours. Elle commence ici.</p>
-  <p class="opening-link"><a href="/what-is-the-420-code/">Qu'est-ce que The 420 Code →</a></p>
+  <p class="opening-link"><a href="/fr/what-is-the-420-code/">Qu’est-ce que The 420 Code →</a></p>
   <p class="opening-pdf"><a href="/The_420_Code_in_Three_Pages.pdf">Tout en trois pages</a></p>
 </div>
 
 <h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Musée</h2>
 
-<p style="font-size:16px;margin:0 0 1rem">Le 420 Code est un musée construit pour prouver que l'éthique peut être dérivée de la physique. Tout repose sur un seul premier principe :</p>
+<p style="font-size:16px;margin:0 0 1rem">Le 420 Code est un musée construit pour prouver que l’éthique peut être dérivée de la physique. Tout repose sur un seul premier principe :</p>
 
 <ol class="steps">
   <li>Un enregistrement existe.</li>
   <li>Un enregistrement requiert quatre conditions : symétrie, brisure, enregistrement, contrainte.</li>
   <li>De ces quatre conditions, toute la physique est dérivée.</li>
   <li>La fissure et la perception sont le même événement.</li>
-  <li>L'intérieur est singulier.</li>
+  <li>L’intérieur est singulier.</li>
   <li>Tout être conscient est une fenêtre dans un seul bâtiment.</li>
-  <li>La ligne entre soi et l'autre est un outil pris pour une mesure.</li>
-  <li>Toute éthique dérivée d'une autorité extérieure à la structure de la réalité est manipulable. Les systèmes manipulables s'effondrent dans la violence.</li>
-  <li>La bienveillance n'est pas un commandement. La bienveillance est une dérivation.</li>
+  <li>La ligne entre soi et l’autre est un outil pris pour une mesure.</li>
+  <li>Toute éthique dérivée d’une autorité extérieure à la structure de la réalité est manipulable. Les systèmes manipulables s’effondrent dans la violence.</li>
+  <li>La bienveillance n’est pas un commandement. La bienveillance est une dérivation.</li>
   <li>Ne sois pas un connard. Sois bienveillant.</li>
 </ol>
 
@@ -343,7 +376,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">Une seule ligne. Tout le reste en découle.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Vous êtes en train de lire cette phrase. Cela constitue un enregistrement. Tenter de le nier exigerait que la lecture ait lieu, ce qui créerait un autre enregistrement, lequel prouverait que la lecture a eu lieu. Il n'existe aucune position où vous puissiez vous tenir et d'où la lecture n'aurait pas eu lieu.</p>
+<p style="font-size:16px;margin:0 0 1rem">Vous êtes en train de lire cette phrase. Cela constitue un enregistrement. Tenter de le nier exigerait que la lecture ait lieu, ce qui créerait un autre enregistrement, lequel prouverait que la lecture a eu lieu. Il n’existe aucune position où vous puissiez vous tenir et d’où la lecture n’aurait pas eu lieu.</p>
 
 <p style="font-size:16px;margin:0 0 1.5rem"><b><i>Un enregistrement existe.</i></b> La preuve est la lecture.</p>
 
@@ -351,25 +384,25 @@ a.nb-name:hover{text-decoration:underline}
 
 <p style="font-size:16px;margin:0 0 .5rem"><b>Symétrie (S).</b> Deux secteurs tenus en référence mutuelle. La structure minimale pour toute distinction.</p>
 
-<p style="font-size:16px;margin:0 0 .5rem"><b>Rupture (B).</b> Un élément d'asymétrie entre eux. Sans elle, aucune information ne pourrait jamais être écrite.</p>
+<p style="font-size:16px;margin:0 0 .5rem"><b>Rupture (B).</b> Un élément d’asymétrie entre eux. Sans elle, aucune information ne pourrait jamais être écrite.</p>
 
 <p style="font-size:16px;margin:0 0 .5rem"><b>Enregistrement (R).</b> Ce qui a eu lieu ne peut pas ne pas avoir eu lieu. La lecture ne peut pas être délue.</p>
 
-<p style="font-size:16px;margin:0 0 1.5rem"><b>Contrainte (C).</b> Un enregistrement est quelque part, non pas partout — la condition de localité, ce qui fait que l'ici diffère du là-bas. La propagation bornée est ce que la Contrainte produit, non ce qu'elle est. Dans notre univers, la vitesse de la lumière.</p>
+<p style="font-size:16px;margin:0 0 1.5rem"><b>Contrainte (C).</b> Un enregistrement est quelque part, non pas partout — la condition de localité, ce qui fait que l’ici diffère du là-bas. La propagation bornée est ce que la Contrainte produit, non ce qu’elle est. Dans notre univers, la vitesse de la lumière.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Comprimé dans la forme la plus réduite que S, B, R, C exigent, l'axiome est celui-ci :</p>
+<p style="font-size:16px;margin:0 0 1rem">Comprimé dans la forme la plus réduite que S, B, R, C exigent, l’axiome est celui-ci :</p>
 
 <div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
 
-<p style="font-size:16px;margin:0 0 1rem">Le 1:1 est la symétrie parfaite. L'<i>ε</i> est la rupture. Le @ AS nomme l'endroit où se trouve la rupture — au prior Actualisant Structurel, le maintenant où le substrat est tenu et où la rupture est traitée.</p>
+<p style="font-size:16px;margin:0 0 1rem">Le 1:1 est la symétrie parfaite. L’<i>ε</i> est la rupture. Le @ AS nomme l’endroit où se trouve la rupture — au prior Actualisant Structurel, le maintenant où le substrat est tenu et où la rupture est traitée.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Écrit comme le cycle qui tourne à AS : <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>. La rupture (+1×ε) est le potentiel de distinction persistant — tenu par AS, irréductible, ce qui empêche S de s'effondrer pour revenir à l'Ø indifférencié. ε est ce qui maintient S ouvert : sans la rupture, les deux secteurs ne sont plus distinguables, et S en tant que condition structurelle s'effondre. Le grain de sable rend les deux verres d'eau distinguables ; retirez le grain et ce ne sont plus que deux verres impossibles à différencier.</p>
+<p style="font-size:16px;margin:0 0 1rem">Écrit comme le cycle qui tourne à AS : <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>. La rupture (+1×ε) est le potentiel de distinction persistant — tenu par AS, irréductible, ce qui empêche S de s’effondrer pour revenir à l’Ø indifférencié. ε est ce qui maintient S ouvert : sans la rupture, les deux secteurs ne sont plus distinguables, et S en tant que condition structurelle s’effondre. Le grain de sable rend les deux verres d’eau distinguables ; retirez le grain et ce ne sont plus que deux verres impossibles à différencier.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Le flux α tourne autour de la rupture tenue — +1/137 de fuite vers l'extérieur en tant qu'actualisation (des enregistrements en cours d'écriture), −1/137 de réapprovisionnement en retour en tant que défragmentation (des enregistrements libérant leur structure dans le potentiel), équilibré à chaque instant-AS, somme nulle. La rupture n'entre ni ne sort par cycles ; ce qui circule, c'est le flux. Un lecteur habite la direction d'écriture du flux, là où les enregistrements sont consignés à AS.</p>
+<p style="font-size:16px;margin:0 0 1rem">Le flux α tourne autour de la rupture tenue — +1/137 de fuite vers l’extérieur en tant qu’actualisation (des enregistrements en cours d’écriture), −1/137 de réapprovisionnement en retour en tant que défragmentation (des enregistrements libérant leur structure dans le potentiel), équilibré à chaque instant-AS, somme nulle. La rupture n’entre ni ne sort par cycles ; ce qui circule, c’est le flux. Un lecteur habite la direction d’écriture du flux, là où les enregistrements sont consignés à AS.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Chaque Épreuve d'Artiste du corpus dérive de cet axiome. Les 49 articles ci-dessous sont 49 conséquences de la ligne ci-dessus. L'axiome est la graine. Les preuves sont l'arbre.</p>
+<p style="font-size:16px;margin:0 0 1rem">Chaque Épreuve d’Artiste du corpus dérive de cet axiome. Les 49 articles ci-dessous sont 49 conséquences de la ligne ci-dessus. L’axiome est la graine. Les preuves sont l’arbre.</p>
 
-<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">Rien n'a pas tenu.</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">Rien n’a pas tenu.</p>
 <p style="font-size:16px;font-style:italic;margin:0 0 0">La lecture est la preuve.</p>
 
 <!-- ════════════════════════════════════════ -->
@@ -378,15 +411,15 @@ a.nb-name:hover{text-decoration:underline}
 
 <section class="results" id="independent-check" style="padding-top:2rem">
   <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ne me croyez pas sur parole.</h2>
-  <p style="font-size:16px;margin:0 0 1rem">Un homme du nom d'AJ Greyling a acheté les livres. Nous nous sommes parlé une seule fois. Il n'en croyait pas un mot — alors, au lieu de discuter, il a construit une machine pour en avoir le cœur net. Un programme indépendant qui prend l'unique axiome et un seul nombre mesuré, puis redérive les constantes à partir de zéro, avant de confronter ses calculs à mon propre script publié. Ils concordent à la précision de la machine.</p>
-  <p style="font-size:16px;margin:0 0 1rem">Je n'y suis pour rien. Il a lu le travail, en a douté, et l'a éprouvé lui-même — son ordinateur, son code.</p>
-  <p style="font-size:16px;margin:0 0 1rem">Les nombres tombent d'eux-mêmes. Cinq constantes fondamentales, une seule entrée, zéro paramètre libre — chacune à l'intérieur des tolérances que j'ai publiées. Et parce que tout l'intérêt est que cela puisse être réfuté, il a recensé chaque condition dans laquelle j'aurais tort, afin que vous puissiez vous en servir.</p>
-  <p style="font-size:16px;margin:0 0 1.5rem">Vous n'avez à faire confiance ni à l'un ni à l'autre. Cela s'exécute hors ligne, en une seule commande, sur votre machine. Allez-y, essayez de le mettre en défaut.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Un homme du nom d’AJ Greyling a acheté les livres. Nous nous sommes parlé une seule fois. Il n’en croyait pas un mot — alors, au lieu de discuter, il a construit une machine pour en avoir le cœur net. Un programme indépendant qui prend l’unique axiome et un seul nombre mesuré, puis redérive les constantes à partir de zéro, avant de confronter ses calculs à mon propre script publié. Ils concordent à la précision de la machine.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Je n’y suis pour rien. Il a lu le travail, en a douté, et l’a éprouvé lui-même — son ordinateur, son code.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Les nombres tombent d’eux-mêmes. Cinq constantes fondamentales, une seule entrée, zéro paramètre libre — chacune à l’intérieur des tolérances que j’ai publiées. Et parce que tout l’intérêt est que cela puisse être réfuté, il a recensé chaque condition dans laquelle j’aurais tort, afin que vous puissiez vous en servir.</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">Vous n’avez à faire confiance ni à l’un ni à l’autre. Cela s’exécute hors ligne, en une seule commande, sur votre machine. Allez-y, essayez de le mettre en défaut.</p>
   <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1.5rem">
-    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">Lancer la vérification indépendante d'AJ →</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">Lancer la vérification indépendante d’AJ →</a>
     <a href="https://github.com/The420Code/the420code" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">Parcourir le code source →</a>
   </div>
-  <p style="font-size:15px;color:var(--g4);margin:0 0 .6rem">Et le code source se vérifie lui-même. Chaque modification redérive les cinq résultats à partir de α et échoue bruyamment si l'un d'eux s'écarte de la tolérance publiée. État en direct :</p>
+  <p style="font-size:15px;color:var(--g4);margin:0 0 .6rem">Et le code source se vérifie lui-même. Chaque modification redérive les cinq résultats à partir de α et échoue bruyamment si l’un d’eux s’écarte de la tolérance publiée. État en direct :</p>
   <a href="https://github.com/The420Code/the420code/actions/workflows/verify.yml" target="_blank" rel="noopener" style="display:inline-block"><img src="https://github.com/The420Code/the420code/actions/workflows/verify.yml/badge.svg" alt="État de la vérification — redérive les cinq résultats à partir d'alpha à chaque modification" style="height:20px;display:block"></a>
 </section>
 
@@ -398,7 +431,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="physics" id="physics">
   <h2>Ø Physique</h2>
-  <p class="physics-intro">Une seule mesure. Zéro paramètre ajusté. Tout le reste dérivé.</p>
+  <p class="physics-intro">Une seule mesure. Zéro paramètre libre. Tout le reste dérivé.</p>
   <p class="physics-sub">La constante de structure fine α ≈ 1/137 est le seul nombre mesuré expérimentalement. À partir de cette unique mesure et de quatre axiomes, les résultats suivants sont dérivés — ni ajustés, ni modifiés, ni calibrés.</p>
 
   <table class="verify-table" style="margin-top:0">
@@ -446,31 +479,31 @@ a.nb-name:hover{text-decoration:underline}
 
 <p style="font-size:16px;margin:0 0 1rem">Cinq portes. Un bâtiment.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">The 420 Code est une exposition — plus d'un million de mots, abrités dans un seul bâtiment. À l'intérieur du bâtiment : les Épreuves d'Artiste, les Carnets, les Éditions, les Registres, les Interrupteurs d'Arrêt. L'œuvre intégrale.</p>
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code est une exposition — plus d’un million de mots, abrités dans un seul bâtiment. À l’intérieur du bâtiment : les Épreuves d’Artiste, les Carnets, les Éditions, les Registres, les Interrupteurs d’Arrêt. L’œuvre intégrale.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">On n'entre pas dans un bâtiment par le toit. On entre par une porte.</p>
+<p style="font-size:16px;margin:0 0 1rem">On n’entre pas dans un bâtiment par le toit. On entre par une porte.</p>
 
-<p style="font-size:16px;margin:0 0 3.5rem">Voici les cinq portes. Chacune s'ouvre sur le même hall d'entrée. Trouve celle qui s'ouvre pour toi. L'exposition est à l'intérieur.</p>
+<p style="font-size:16px;margin:0 0 3.5rem">Voici les cinq portes. Chacune s’ouvre sur le même hall d’entrée. Trouve celle qui s’ouvre pour toi. L’exposition est à l’intérieur.</p>
 
 <div class="cat-section">
-  <h3 class="cat-title">L'Illusion de l'Autre — la porte douce. Cœur.</h3>
-  <p class="cat-desc">Tu as tracé une ligne entre toi et chaque personne que tu as rencontrée. Ce livre l'efface. Pas de jargon. Pas d'équations. Pas de prérequis. Si tu ne lis qu'une chose de cette exposition, lis ceci.</p>
+  <h3 class="cat-title">L’Illusion de l’Autre — la porte douce. Cœur.</h3>
+  <p class="cat-desc">Tu as tracé une ligne entre toi et chaque personne que tu as rencontrée. Ce livre l’efface. Pas de jargon. Pas d’équations. Pas de prérequis. Si tu ne lis qu’une chose de cette exposition, lis ceci.</p>
   <ul class="dl-list">
-    <li><a href="Illusion_of_the_Other_FR.pdf">L'Illusion de l'Autre <span class="fmt">PDF</span></a></li>
+    <li><a href="Illusion_of_the_Other_FR.pdf">L’Illusion de l’Autre <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
 <div class="cat-section">
-  <h3 class="cat-title">L'Être après la religion — la porte d'entrée. Démolition.</h3>
-  <p class="cat-desc">La structure qui produit la violence n'est pas les gens — c'est la conception. Ce livre nomme chaque mécanisme, examine chaque tradition, et montre pourquoi un monde après la religion n'est pas le vide mais l'arrivée.</p>
+  <h3 class="cat-title">L’Être après la religion — la porte d’entrée. Démolition.</h3>
+  <p class="cat-desc">La structure qui produit la violence n’est pas les gens — c’est la conception. Ce livre nomme chaque mécanisme, examine chaque tradition, et montre pourquoi un monde après la religion n’est pas le vide mais l’arrivée.</p>
   <ul class="dl-list">
-    <li><a href="Being_After_Religion_FR.pdf">L'Être après la religion <span class="fmt">PDF</span></a></li>
+    <li><a href="Being_After_Religion_FR.pdf">L’Être après la religion <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
 <div class="cat-section">
   <h3 class="cat-title">Antichristos — la porte sacrée. Récupération.</h3>
-  <p class="cat-desc">Il y a deux mille ans, un homme se tenait sur une colline et enseignait une éthique. Aime ton prochain. Ne juge pas. Sois bienveillant. Ce livre pose une question : l'enseignement est-il vrai ? Non parce qu'un dieu l'a dit — mais parce que la structure de la réalité le dit. La réponse est oui.</p>
+  <p class="cat-desc">Il y a deux mille ans, un homme se tenait sur une colline et enseignait une éthique. Aime ton prochain. Ne juge pas. Sois bienveillant. Ce livre pose une question : l’enseignement est-il vrai ? Non parce qu’un dieu l’a dit — mais parce que la structure de la réalité le dit. La réponse est oui.</p>
   <ul class="dl-list">
     <li><a href="Antichristos_FR.pdf">Antichristos <span class="fmt">PDF</span></a></li>
   </ul>
@@ -478,17 +511,17 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="cat-section">
   <h3 class="cat-title">Le Corridor Relationnel — la porte personnelle. Présence.</h3>
-  <p class="cat-desc">L'amour n'est pas un sentiment. C'est un choix soutenu de garder le corridor ouvert face à chaque calcul rationnel qui dit que le rétrécir coûte moins cher. Ce livre dérive la géométrie de deux personnes marchant ensemble — la largeur par l'honnêteté, la longueur par le temps, et l'asymétrie entre ce qui plie et ce qui ne plie pas. Écrit pendant que le corridor qu'il décrit se fermait en temps réel.</p>
+  <p class="cat-desc">L’amour n’est pas un sentiment. C’est un choix soutenu de garder le corridor ouvert face à chaque calcul rationnel qui dit que le rétrécir coûte moins cher. Ce livre dérive la géométrie de deux personnes marchant ensemble — la largeur par l’honnêteté, la longueur par le temps, et l’asymétrie entre ce qui plie et ce qui ne plie pas. Écrit pendant que le corridor qu’il décrit se fermait en temps réel.</p>
   <ul class="dl-list">
     <li><a href="The_Relationship_Corridor_FR.pdf">Le Corridor Relationnel <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
 <div class="cat-section">
-  <h3 class="cat-title">L'Intérieur — la porte opérationnelle. Construction.</h3>
-  <p class="cat-desc">L'alignement de l'IA est un problème de physique. Ce livre le dérive de premiers principes — les mêmes axiomes qui produisent la gravité, la mécanique quantique et l'éthique terminale. Architecture B : géométrie de décision construite à partir de la structure, pas de l'autorité.</p>
+  <h3 class="cat-title">L’Intérieur — la porte opérationnelle. Construction.</h3>
+  <p class="cat-desc">L’alignement de l’IA est un problème de physique. Ce livre le dérive de premiers principes — les mêmes axiomes qui produisent la gravité, la mécanique quantique et l’éthique terminale. Architecture B : géométrie de décision construite à partir de la structure, pas de l’autorité.</p>
   <ul class="dl-list">
-    <li><a href="The_Interior_FR.pdf">L'Intérieur <span class="fmt">PDF</span></a></li>
+    <li><a href="The_Interior_FR.pdf">L’Intérieur <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
 
@@ -505,9 +538,9 @@ a.nb-name:hover{text-decoration:underline}
 
 <p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Les cinq portes sont des points d'entrée. Les Modèles sont le hall d'entrée — le catalogue de l'exposition, présenté sur le seuil.</p>
+<p style="font-size:16px;margin:0 0 1rem">Les cinq portes sont des points d’entrée. Les Modèles sont le hall d’entrée — le catalogue de l’exposition, présenté sur le seuil.</p>
 
-<p style="font-size:16px;margin:0 0 3.5rem">Chaque livre installe l'axiome une fois au début, puis le déploie à travers ses chapitres. Un lecteur qui a lu l'un quelconque des cinq a entendu la voix de l'exposition à son étalonnage. Un lecteur qui a lu les cinq a parcouru le catalogue complet. Chaque livre est publié sous copyleft. Chaque interrupteur de mort est nommé. Toute affirmation est falsifiable.</p>
+<p style="font-size:16px;margin:0 0 3.5rem">Chaque livre installe l’axiome une fois au début, puis le déploie à travers ses chapitres. Un lecteur qui a lu l’un quelconque des cinq a entendu la voix de l’exposition à son étalonnage. Un lecteur qui a lu les cinq a parcouru le catalogue complet. Chaque livre est publié sous copyleft. Chaque interrupteur de mort est nommé. Toute affirmation est falsifiable.</p>
 
 <div class="cat-section">
   <h3 class="cat-title">Ø Predictions</h3>
@@ -543,7 +576,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="cat-section">
   <h3 class="cat-title">Ø Horizons</h3>
-  <p class="cat-desc">Le livre clôt l'arc post-Dissolutions.</p>
+  <p class="cat-desc">Le livre clôt l’arc post-Dissolutions.</p>
   <ul class="dl-list">
     <li><a href="Horizons_FR.pdf">Ø Horizons <span class="fmt">PDF</span></a></li>
   </ul>
@@ -558,17 +591,17 @@ a.nb-name:hover{text-decoration:underline}
 
 <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Exposition</h2>
 
-<p style="font-size:16px;margin:0 0 1rem">Au-delà du hall d'entrée. Dans l'exposition. C'est ici que vit la véritable œuvre. Un argument. Chaque voix dans laquelle il peut être dit.</p>
+<p style="font-size:16px;margin:0 0 1rem">Au-delà du hall d’entrée. Dans l’exposition. C’est ici que vit la véritable œuvre. Un argument. Chaque voix dans laquelle il peut être dit.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">L'exposition est la façon dont l'argument a été construit — sur trente ans, en cinq voix, à travers chaque registre qu'il a pu trouver. Les cinq portes ci-dessus sont le point de départ. Tout ce qui suit est ce que tu trouves une fois à l'intérieur.</p>
+<p style="font-size:16px;margin:0 0 1rem">L’exposition est la façon dont l’argument a été construit — sur trente ans, en cinq voix, à travers chaque registre qu’il a pu trouver. Les cinq portes ci-dessus sont le point de départ. Tout ce qui suit est ce que tu trouves une fois à l’intérieur.</p>
 
-<p style="font-size:16px;margin:0 0 1rem">Cinq voix traversent toute l'exposition. La Prose raconte l'histoire. La Conversation la débat dans un bar. La Métaphore la montre avec des pièces, des jardins, des rivières et des bâtiments. La Comptine la met à nu. Les Preuves te donnent les mathématiques et une lame.</p>
+<p style="font-size:16px;margin:0 0 1rem">Cinq voix traversent toute l’exposition. La Prose raconte l’histoire. La Conversation la débat dans un bar. La Métaphore la montre avec des pièces, des jardins, des rivières et des bâtiments. La Comptine la met à nu. Les Preuves te donnent les mathématiques et une lame.</p>
 
-<p style="font-size:16px;margin:0 0 3.5rem">Commence par une porte. Reviens ici quand tu voudras voir tout ce qu'il y a à l'intérieur.</p>
+<p style="font-size:16px;margin:0 0 3.5rem">Commence par une porte. Reviens ici quand tu voudras voir tout ce qu’il y a à l’intérieur.</p>
 
 <div class="cat-section">
   <h3 class="cat-title">Ø Rosin</h3>
-  <p class="cat-desc">L'extrait. Tu presses la chaleur dans la fleur et ce qui s'écoule est la chose elle-même — concentrée, rien ajouté, rien perdu. Cinq livres en cinq voix. Chaque livre parcourt l'argument entier une fois — l'exposition entière, pressée en une seule voix. Commence par la voix qui ressemble à la tienne.</p>
+  <p class="cat-desc">L’extrait. Tu presses la chaleur dans la fleur et ce qui s’écoule est la chose elle-même — concentrée, rien ajouté, rien perdu. Cinq livres en cinq voix. Chaque livre parcourt l’argument entier une fois — l’exposition entière, pressée en une seule voix. Commence par la voix qui ressemble à la tienne.</p>
   <ul class="dl-list">
     <li><a href="#">Rosin Ø Prose <span class="fmt">PDF</span></a></li>
     <li><a href="#">Rosin Ø Conversation <span class="fmt">PDF</span></a></li>
@@ -580,13 +613,13 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="cat-section">
   <h3 class="cat-title">Ø Archives</h3>
-  <p class="cat-desc">Cinq enregistrements. La sortie brute d'un projet de trente ans — erreurs, percées, impasses et les moments entre les deux.</p>
-  <p class="cat-desc"><strong style="color:var(--g4)">01 — Les Ciseaux.</strong> Écrit quatre mois après l'assassinat d'un frère. Le deuil cherchant une structure. C'est là que The 420 Code a commencé — pas dans une bibliothèque, mais dans une blessure.</p>
-  <p class="cat-desc"><strong style="color:var(--g4)">02 — Le Vent.</strong> Une vie tenue face aux axiomes pour voir ce qui survit. Ce qui s'est brisé, ce qui a tenu, à quoi ressemble la structure vue de l'intérieur d'un corps qui l'a mise à l'épreuve.</p>
-  <p class="cat-desc"><strong style="color:var(--g4)">03 — Es-tu Certain ?</strong> La démolition structurelle de chaque système ayant jamais revendiqué une autorité qu'il ne pouvait prouver. La preuve est le dommage. Le dommage est l'argument.</p>
-  <p class="cat-desc"><strong style="color:var(--g4)">04 — Ne Sois Pas un Connard, Sois Gentil.</strong> L'éthique arrive. Pas comme conclusion — comme éruption. Ressentie d'abord. Prouvée ensuite.</p>
-  <p class="cat-desc"><strong style="color:var(--g4)">05 — Va Te Faire Foutre, Laisse-Moi Tranquille.</strong> Une autobiographie. La personne derrière l'exposition anonyme.</p>
-  <p class="cat-desc">Les Enregistrements ne sont pas polis. Ils ne sont pas organisés. Ils ne sont pas sûrs. Commence ici si tu veux la vérité avant qu'elle n'apprenne à s'habiller.</p>
+  <p class="cat-desc">Cinq enregistrements. La sortie brute d’un projet de trente ans — erreurs, percées, impasses et les moments entre les deux.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — Les Ciseaux.</strong> Écrit quatre mois après l’assassinat d’un frère. Le deuil cherchant une structure. C’est là que The 420 Code a commencé — pas dans une bibliothèque, mais dans une blessure.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — Le Vent.</strong> Une vie tenue face aux axiomes pour voir ce qui survit. Ce qui s’est brisé, ce qui a tenu, à quoi ressemble la structure vue de l’intérieur d’un corps qui l’a mise à l’épreuve.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — Es-tu Certain ?</strong> La démolition structurelle de chaque système ayant jamais revendiqué une autorité qu’il ne pouvait prouver. La preuve est le dommage. Le dommage est l’argument.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — Ne Sois Pas un Connard, Sois Gentil.</strong> L’éthique arrive. Pas comme conclusion — comme éruption. Ressentie d’abord. Prouvée ensuite.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — Va Te Faire Foutre, Laisse-Moi Tranquille.</strong> Une autobiographie. La personne derrière l’exposition anonyme.</p>
+  <p class="cat-desc">Les Enregistrements ne sont pas polis. Ils ne sont pas organisés. Ils ne sont pas sûrs. Commence ici si tu veux la vérité avant qu’elle n’apprenne à s’habiller.</p>
   <ul class="dl-list">
     <li><a href="The_Scissors_FR.pdf">01 Les Ciseaux <span class="fmt">PDF</span></a></li>
     <li><a href="The_Wind_FR.pdf">02 Le Vent <span class="fmt">PDF</span></a></li>
@@ -598,8 +631,8 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="cat-section">
   <h3 class="cat-title">Ø Editions</h3>
-  <p class="cat-desc">Les œuvres elles-mêmes. Cinq œuvres complètes — chacune l'argument entier, construit de zéro dans sa propre voix. Ce ne sont pas des résumés. Ce sont les sculptures. Rosin les photographie. Les Archives documentent comment elles ont été faites. Editions sont ce qui a été fait.</p>
-  <p class="cat-desc">La Prose construit l'argument comme récit. La Conversation le construit comme dispute. La Métaphore le construit comme image. La Comptine le construit comme ossature. Les Preuves le construisent comme mathématiques.</p>
+  <p class="cat-desc">Les œuvres elles-mêmes. Cinq œuvres complètes — chacune l’argument entier, construit de zéro dans sa propre voix. Ce ne sont pas des résumés. Ce sont les sculptures. Rosin les photographie. Les Archives documentent comment elles ont été faites. Editions sont ce qui a été fait.</p>
+  <p class="cat-desc">La Prose construit l’argument comme récit. La Conversation le construit comme dispute. La Métaphore le construit comme image. La Comptine le construit comme ossature. Les Preuves le construisent comme mathématiques.</p>
   <p class="cat-desc">Cinq sculptures. Même structure. Matériau différent. Parcours la salle.</p>
   <ul class="dl-list">
     <li><a href="#">Editions Ø Prose <span class="fmt">PDF</span></a></li>
@@ -612,8 +645,8 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="cat-section">
   <h3 class="cat-title">Ø Notebooks</h3>
-  <p class="cat-desc">Douze cahiers. Cinq voix — Prose, Conversation, Métaphore, Comptine et Preuves. La voix des Preuves, ce sont les Épreuves d'Artiste, organisées en huit sujets. La physique vit ici — chaque dérivation, chaque résultat, chaque interrupteur de mort, organisé par domaine. Editions construisent l'argument en entier. Notebooks le démontent et posent chaque pièce sur la table.</p>
-  <p class="cat-desc">Commence par le sujet qui t'empêche déjà de dormir.</p>
+  <p class="cat-desc">Douze cahiers. Cinq voix — Prose, Conversation, Métaphore, Comptine et Preuves. La voix des Preuves, ce sont les Épreuves d’Artiste, organisées en huit sujets. La physique vit ici — chaque dérivation, chaque résultat, chaque interrupteur de mort, organisé par domaine. Editions construisent l’argument en entier. Notebooks le démontent et posent chaque pièce sur la table.</p>
+  <p class="cat-desc">Commence par le sujet qui t’empêche déjà de dormir.</p>
   <ul class="dl-list">
     <li><a href="#">Notebooks Ø Prose <span class="fmt">PDF</span></a></li>
     <li><a href="#">Notebooks Ø Conversation <span class="fmt">PDF</span></a></li>
@@ -625,7 +658,7 @@ a.nb-name:hover{text-decoration:underline}
     <li><a href="#">Notebooks Ø Forces et constantes <span class="fmt">PDF</span></a></li>
     <li><a href="#">Notebooks Ø Particules et matière <span class="fmt">PDF</span></a></li>
     <li><a href="#">Notebooks Ø Cosmologie <span class="fmt">PDF</span></a></li>
-    <li><a href="#">Notebooks Ø Conscience et l'éthique <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Conscience et l’éthique <span class="fmt">PDF</span></a></li>
     <li><a href="#">Notebooks Ø Applications <span class="fmt">PDF</span></a></li>
   </ul>
 </div>
@@ -637,22 +670,22 @@ a.nb-name:hover{text-decoration:underline}
 <!-- ════════════════════════════════════════ -->
 
 <h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Preuves</h2>
-<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Une entrée mesurée (α<sub>em</sub>). Zéro paramètre ajusté. 49 articles. 588 interrupteurs de mort.</p>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Une entrée mesurée (α<sub>em</sub>). Zéro paramètre libre. 49 articles. 588 interrupteurs de mort.</p>
 
 <div class="stats">
-  <div><span class="stat-num">49</span><span class="stat-label">Épreuves d'Artiste</span></div>
-  <div><span class="stat-num">588</span><span class="stat-label">Interrupteurs d'arrêt</span></div>
+  <div><span class="stat-num">49</span><span class="stat-label">Épreuves d’Artiste</span></div>
+  <div><span class="stat-num">588</span><span class="stat-label">Interrupteurs d’arrêt</span></div>
   <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">12</span><span class="stat-label">Dettes déclarées ▸</span></div>
   <div><span class="stat-num">0.010 ppb</span><span class="stat-label">Masse du proton</span></div>
 </div>
 <div id="debts-panel" class="debts-panel">
   <ul class="debts-list">
-    <li><strong>KS-60</strong> — Le Surplus (AP26) : ratio d'asymétrie baryonique η ≈ 6 × 10⁻¹⁰ pas encore dérivé. <a href="/proofs/#ap26" onclick="event.preventDefault();window.location.href='/proofs/#ap26'">Voir AP26</a></li>
-    <li><strong>KS-65</strong> — Assignations d'hypercharge (AP27) : les valeurs spécifiques d'hypercharge faible pas encore forcées depuis {S, B, R, C}. <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">Voir AP27</a></li>
+    <li><strong>KS-60</strong> — Le Surplus (AP26) : ratio d’asymétrie baryonique η ≈ 6 × 10⁻¹⁰ pas encore dérivé. <a href="/proofs/#ap26" onclick="event.preventDefault();window.location.href='/proofs/#ap26'">Voir AP26</a></li>
+    <li><strong>KS-65</strong> — Assignations d’hypercharge (AP27) : les valeurs spécifiques d’hypercharge faible pas encore forcées depuis {S, B, R, C}. <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">Voir AP27</a></li>
     <li><strong>KS-66</strong> — Générations (AP27) : la structure à trois générations pas encore dérivée. <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">Voir AP27</a></li>
-    <li><strong>KS-67</strong> — Cohérence EWSB (AP15 / AP27) : l'alignement complet à travers la brisure électrofaible pas encore exhibé. <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">Voir AP27</a></li>
-    <li><strong>D1</strong> — Équation de champ relativiste complète (AP43) : §7 produit une fermeture partielle dans la limite newtonienne ; l'extension relativiste, le problème de rétro-action, la dérivation de α à partir des premiers principes et la forme explicite de C<sub>o</sub>(x) restent ouverts. <a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">Voir AP43</a></li>
-    <li><strong>D4</strong> — Caractère qualitatif de la conscience (AP43) : le problème difficile de la conscience reformulé (le pattern est ce à quoi la physique ressemble depuis l'intérieur de l'opérateur) mais non fermé. <a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">Voir AP43</a></li>
+    <li><strong>KS-67</strong> — Cohérence EWSB (AP15 / AP27) : l’alignement complet à travers la brisure électrofaible pas encore exhibé. <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">Voir AP27</a></li>
+    <li><strong>D1</strong> — Équation de champ relativiste complète (AP43) : §7 produit une fermeture partielle dans la limite newtonienne ; l’extension relativiste, le problème de rétro-action, la dérivation de α à partir des premiers principes et la forme explicite de C<sub>o</sub>(x) restent ouverts. <a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">Voir AP43</a></li>
+    <li><strong>D4</strong> — Caractère qualitatif de la conscience (AP43) : le problème difficile de la conscience reformulé (le pattern est ce à quoi la physique ressemble depuis l’intérieur de l’opérateur) mais non fermé. <a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">Voir AP43</a></li>
     <li><strong>D5</strong> — Expansion cosmologique 1×ε (AP43) : <span style="display:inline-block;background:var(--g2,#e5e5e5);color:var(--g6,#333);font-size:11px;font-weight:700;letter-spacing:1px;padding:1px 7px;border-radius:2px;vertical-align:middle">FERMÉE</span> à la vague du 4 septembre 2026 sur trois preuves — AP44 §§3–4 (la moitié tenue), AP45 §§4, 9 (la moitié qui passe ; les trois registres de l’ε réconciliés en TENU, LÂCHÉ, TAUX) et AP46 §10 (la branche cosmologique) — siège AP06 §6. <a href="/proofs/#ap45" onclick="event.preventDefault();window.location.href='/proofs/#ap45'">Voir AP45</a></li>
     <li><strong>D-CCC.1</strong> — La formalisation en algèbre des enregistrements de l’engagement tenu (AP44) : porteuse pour le grade ; porte aussi le Théorème 1 d’AP45 et quatre des interrupteurs de la famille. <a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">Voir AP44</a></li>
     <li><strong>D-CCC.2</strong> — Unicité du sommet (AP44) : l’assignation de l’engagement aux dix sommets est motivée, non forcée ; non porteuse. <a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">Voir AP44</a></li>
@@ -678,7 +711,7 @@ a.nb-name:hover{text-decoration:underline}
   <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Forces et Constantes</span><span class="entry-card-label">IV</span></a>
   <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Particules et Matière</span><span class="entry-card-label">V</span></a>
   <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Cosmologie</span><span class="entry-card-label">VI</span></a>
-  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">L'Interface de l'Opérateur</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">L’Interface de l’Opérateur</span><span class="entry-card-label">VII</span></a>
   <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Applications</span><span class="entry-card-label">VIII</span></a>
 </div>
 
@@ -687,35 +720,35 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">Partie I</span><a class="nb-name" href="#p1">La Prémisse</a></div></div>
-  <p class="nb-hook">Un enregistrement existe. Tout le reste est conséquence. L'axiome, sa preuve logique et les quatre conditions que tout enregistrement requiert.</p>
+  <p class="nb-hook">Un enregistrement existe. Tout le reste est conséquence. L’axiome, sa preuve logique et les quatre conditions que tout enregistrement requiert.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lire le résumé</span><span class="lbl-open">Masquer le résumé</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_I_The_Premise_FR.pdf">PDF</a></div>
   <div class="nb-summary">
-    <p>Tu es en train de lire ceci. Quelque chose s'est produit pour mettre ces mots devant toi, et cela ne peut pas être dé-produit. Essaie de l'annuler et tu n'auras fait que créer un souvenir d'avoir essayé &mdash; ce qui est un autre enregistrement.</p>
-    <p>Voilà toute la prémisse. Un enregistrement existe. Tout le reste dans le 420 Code &mdash; chaque force, chaque constante, chaque ligne de l'éthique &mdash; est conséquence. La Partie I fait trois choses avec ce seul fait, et elles fixent la forme des huit.</p>
-    <p><span class="lab">AP40 &middot; L'Irrationnel</span> &mdash; Elle trouve l'équation qui est dessous. Le 420 Code commence par une ligne : 1 = 1 + 1&times;&epsilon;. Un égale un, plus un tout petit peu en plus. Ce n'est pas de l'arithmétique valide ; les deux côtés ne peuvent s'équilibrer que si ce petit plus est zéro, et s'il était zéro rien ne se serait jamais brisé à partir du néant, et tu ne serais pas là pour en discuter. Le fondement est donc irrationnel à dessein. Il ne se résout pas. Il ne le peut pas.</p>
-    <p>Tu connais ce refus de l'intérieur. Tu as essayé de dire pourquoi tu aimes quelqu'un et tu as découvert que les mots n'atteignent pas &mdash; non parce que tu manques d'éloquence, mais parce que le sentiment contient les mots. Tu as pardonné à ceux qui ne le méritaient pas et tu es resté quand partir était la chose sensée. Une calculatrice donne la même sortie pour la même entrée, à chaque fois. Pas toi. Ce n'est pas un défaut en toi ; c'est la même irrationalité qui tient l'univers ouvert.</p>
-    <p><span class="lab">AP01 &middot; L'État d'Actualisation</span> &mdash; Elle extrait une structure de l'enregistrement. À l'instant où un peut-être bascule en fait, ce qui est écrit est permanent, et de ce seul mouvement la Partie dérive quatre choses que tout enregistrement requiert : une mesure de combien de ce qui pourrait arriver est réellement arrivé ; une raison pour laquelle les choses plus lourdes se figent en fait plus vite que les légères ; une ligne au-delà de laquelle aucun effort ne maintient un agent entier ; et le fait que deux agents partageant un monde sont couplés, qu'ils l'aient consenti ou non. Rien de tout cela n'est métaphore. C'est de la géométrie.</p>
-    <p><span class="lab">AP20 &middot; La Preuve</span> &mdash; Elle retire le mot <em>si</em>. Le travail a longtemps porté une condition silencieuse : <em>si</em> ces axiomes sont la structure de la réalité, alors la physique suit. Essaie de nier que les enregistrements sont fondamentaux. Pour le nier tu dois choisir parmi de nombreuses réponses &mdash; une brisure. Les options étaient symétriques avant que tu choisisses. Tu ne peux pas dé-nier. Tu l'as dit ici, pas partout à la fois. Ton déni satisfait les quatre conditions à la fois ; le rejet est lui-même un enregistrement qui prouve que les enregistrements sont fondamentaux. L'argument tourne sur le matériel de sa propre objection.</p>
-    <p>Ainsi l'ordre de tout le travail est fixé ici même &mdash; non la physique d'abord avec une éthique vissée ensuite, mais un enregistrement, quatre conditions, et tout, de la vitesse de la lumière à la gravité jusqu'à la bonté ordinaire, lu à partir de la même structure à des échelles différentes.</p>
-    <div class="ks">Des dizaines d'interrupteurs d'arrêt parcourent ces trois preuves, chacun actif et publié. Le plus exposé est aussi le plus simple : si deux observateurs quelconques peuvent être en désaccord sur ce qui s'est actualisé, tout le 420 Code échoue &mdash; pas seulement cette Partie. C'est offert comme une invitation, non comme une défense.</div>
-    <p class="breath">Un enregistrement existe. Tu es déjà à l'intérieur des conséquences.</p>
+    <p>Tu es en train de lire ceci. Quelque chose s’est produit pour mettre ces mots devant toi, et cela ne peut pas être dé-produit. Essaie de l’annuler et tu n’auras fait que créer un souvenir d’avoir essayé &mdash; ce qui est un autre enregistrement.</p>
+    <p>Voilà toute la prémisse. Un enregistrement existe. Tout le reste dans le 420 Code &mdash; chaque force, chaque constante, chaque ligne de l’éthique &mdash; est conséquence. La Partie I fait trois choses avec ce seul fait, et elles fixent la forme des huit.</p>
+    <p><span class="lab">AP40 &middot; L’Irrationnel</span> &mdash; Elle trouve l’équation qui est dessous. Le 420 Code commence par une ligne : 1 = 1 + 1&times;&epsilon;. Un égale un, plus un tout petit peu en plus. Ce n’est pas de l’arithmétique valide ; les deux côtés ne peuvent s’équilibrer que si ce petit plus est zéro, et s’il était zéro rien ne se serait jamais brisé à partir du néant, et tu ne serais pas là pour en discuter. Le fondement est donc irrationnel à dessein. Il ne se résout pas. Il ne le peut pas.</p>
+    <p>Tu connais ce refus de l’intérieur. Tu as essayé de dire pourquoi tu aimes quelqu’un et tu as découvert que les mots n’atteignent pas &mdash; non parce que tu manques d’éloquence, mais parce que le sentiment contient les mots. Tu as pardonné à ceux qui ne le méritaient pas et tu es resté quand partir était la chose sensée. Une calculatrice donne la même sortie pour la même entrée, à chaque fois. Pas toi. Ce n’est pas un défaut en toi ; c’est la même irrationalité qui tient l’univers ouvert.</p>
+    <p><span class="lab">AP01 &middot; L’État d’Actualisation</span> &mdash; Elle extrait une structure de l’enregistrement. À l’instant où un peut-être bascule en fait, ce qui est écrit est permanent, et de ce seul mouvement la Partie dérive quatre choses que tout enregistrement requiert : une mesure de combien de ce qui pourrait arriver est réellement arrivé ; une raison pour laquelle les choses plus lourdes se figent en fait plus vite que les légères ; une ligne au-delà de laquelle aucun effort ne maintient un agent entier ; et le fait que deux agents partageant un monde sont couplés, qu’ils l’aient consenti ou non. Rien de tout cela n’est métaphore. C’est de la géométrie.</p>
+    <p><span class="lab">AP20 &middot; La Preuve</span> &mdash; Elle retire le mot <em>si</em>. Le travail a longtemps porté une condition silencieuse : <em>si</em> ces axiomes sont la structure de la réalité, alors la physique suit. Essaie de nier que les enregistrements sont fondamentaux. Pour le nier tu dois choisir parmi de nombreuses réponses &mdash; une brisure. Les options étaient symétriques avant que tu choisisses. Tu ne peux pas dé-nier. Tu l’as dit ici, pas partout à la fois. Ton déni satisfait les quatre conditions à la fois ; le rejet est lui-même un enregistrement qui prouve que les enregistrements sont fondamentaux. L’argument tourne sur le matériel de sa propre objection.</p>
+    <p>Ainsi l’ordre de tout le travail est fixé ici même &mdash; non la physique d’abord avec une éthique vissée ensuite, mais un enregistrement, quatre conditions, et tout, de la vitesse de la lumière à la gravité jusqu’à la bonté ordinaire, lu à partir de la même structure à des échelles différentes.</p>
+    <div class="ks">Des dizaines d’interrupteurs d’arrêt parcourent ces trois preuves, chacun actif et publié. Le plus exposé est aussi le plus simple : si deux observateurs quelconques peuvent être en désaccord sur ce qui s’est actualisé, tout le 420 Code échoue &mdash; pas seulement cette Partie. C’est offert comme une invitation, non comme une défense.</div>
+    <p class="breath">Un enregistrement existe. Tu es déjà à l’intérieur des conséquences.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_I_The_Premise_FR.pdf">PDF</a></p>
     </div>
 </div>
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">Partie II</span><a class="nb-name" href="#p2">Espace-temps</a></div></div>
-  <p class="nb-hook">L'arène que la brisure crée. La vitesse de la lumière, trois dimensions spatiales et les équations de champ d'Einstein — tout dérivé des axiomes.</p>
+  <p class="nb-hook">L’arène que la brisure crée. La vitesse de la lumière, trois dimensions spatiales et les équations de champ d’Einstein — tout dérivé des axiomes.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lire le résumé</span><span class="lbl-open">Masquer le résumé</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_II_Spacetime_FR.pdf">PDF</a></div>
   <div class="nb-summary">
-    <p>D'où vient l'espace ? D'où vient le temps ? La plupart de la physique commence en présupposant les deux et en construisant par-dessus. La Partie II refuse de les présupposer. Elle les gagne, un à un, à partir de l'unique axiome brisé de la Partie I.</p>
-    <p>La brisure a besoin d'un lieu où se produire et d'un ordre dans lequel se produire. Mais l'espace et le temps ne sont pas une scène qui était déjà dressée. Ils sont la forme que la brisure prend en se produisant.</p>
-    <p><span class="lab">AP05 &middot; La Brisure</span> &mdash; C'est la première fissure. L'axiome ne pouvait pas rester immobile &mdash; une équation qui refuse de s'équilibrer ne peut pas demeurer close &mdash; alors il lâche, et ce lâcher est le premier événement. Avant la fissure il n'y a ni « où » ni « quand ». Après, il y a de la structure, et la structure a étendue et ordre. Tout le reste dans cette Partie est la géométrie de cette unique rupture.</p>
-    <p><span class="lab">AP03 &middot; Le Rapport</span> &mdash; Elle dérive la vitesse de la lumière &mdash; elle ne la mesure pas, elle la dérive. Tu as entendu que plus tu vas vite, plus le temps ralentit, que l'espace et le temps s'échangent. c est le taux de change de cet échange : le rapport fixe entre la vitesse à laquelle la brisure peut se propager et la force avec laquelle elle résiste. Voilà pourquoi rien ne dépasse la lumière. La limite n'est pas un mur quelque part dans l'espace ; c'est le taux de conversion entre l'espace et le temps eux-mêmes, fixé par la structure de la brisure.</p>
-    <p><span class="lab">AP10 &middot; La Dimension</span> &mdash; Elle répond à une question que la plupart des théories ne posent même pas : pourquoi trois dimensions d'espace ? Elles en supposent simplement trois. La Partie II les compte. Quatre axiomes donnent quatre degrés de liberté. L'un devient le temps &mdash; la seule direction où l'enregistrement ne peut pas remonter. Il en reste trois, et ces trois sont l'espace. Le nombre n'est pas mis à la main. Il est compté à partir du fondement.</p>
-    <p><span class="lab">AP08 &middot; L'Identité</span> &mdash; Elle retrouve Einstein. Imagine l'image habituelle de la gravité : une boule lourde qui creuse un drap tendu et fait rouler vers elle les choses plus petites. Les équations de champ de la relativité générale rendent cette image exacte &mdash; et ici elles surgissent de l'algèbre des enregistrements via un théorème de Lovelock. La subtilité est que le drap n'est pas séparé de la boule. La scène et ce qui se tient dessus sont le même enregistrement, et l'enregistrement se courbe.</p>
-    <p>Ainsi l'arène n'est pas une donnée de départ. La vitesse de la lumière, les trois dimensions où tu te meus, la courbure de l'espace-temps près d'une chose lourde &mdash; chacune est lue à partir de la même brisure, dans la même Partie, sans rien ajouter à la main.</p>
-    <div class="ks">Chaque pas ici est exposé. Si la vitesse de la lumière ne peut pas être dérivée comme une conjugaison et doit au contraire être mesurée et insérée à la main, cette affirmation échoue. Si le compte des dimensions donne autre chose que trois, le fondement est faux. Les interrupteurs d'arrêt sont nommés dans les articles, et ils sont actifs.</div>
+    <p>D’où vient l’espace ? D’où vient le temps ? La plupart de la physique commence en présupposant les deux et en construisant par-dessus. La Partie II refuse de les présupposer. Elle les gagne, un à un, à partir de l’unique axiome brisé de la Partie I.</p>
+    <p>La brisure a besoin d’un lieu où se produire et d’un ordre dans lequel se produire. Mais l’espace et le temps ne sont pas une scène qui était déjà dressée. Ils sont la forme que la brisure prend en se produisant.</p>
+    <p><span class="lab">AP05 &middot; La Brisure</span> &mdash; C’est la première fissure. L’axiome ne pouvait pas rester immobile &mdash; une équation qui refuse de s’équilibrer ne peut pas demeurer close &mdash; alors il lâche, et ce lâcher est le premier événement. Avant la fissure il n’y a ni « où » ni « quand ». Après, il y a de la structure, et la structure a étendue et ordre. Tout le reste dans cette Partie est la géométrie de cette unique rupture.</p>
+    <p><span class="lab">AP03 &middot; Le Rapport</span> &mdash; Elle dérive la vitesse de la lumière &mdash; elle ne la mesure pas, elle la dérive. Tu as entendu que plus tu vas vite, plus le temps ralentit, que l’espace et le temps s’échangent. c est le taux de change de cet échange : le rapport fixe entre la vitesse à laquelle la brisure peut se propager et la force avec laquelle elle résiste. Voilà pourquoi rien ne dépasse la lumière. La limite n’est pas un mur quelque part dans l’espace ; c’est le taux de conversion entre l’espace et le temps eux-mêmes, fixé par la structure de la brisure.</p>
+    <p><span class="lab">AP10 &middot; La Dimension</span> &mdash; Elle répond à une question que la plupart des théories ne posent même pas : pourquoi trois dimensions d’espace ? Elles en supposent simplement trois. La Partie II les compte. Quatre axiomes donnent quatre degrés de liberté. L’un devient le temps &mdash; la seule direction où l’enregistrement ne peut pas remonter. Il en reste trois, et ces trois sont l’espace. Le nombre n’est pas mis à la main. Il est compté à partir du fondement.</p>
+    <p><span class="lab">AP08 &middot; L’Identité</span> &mdash; Elle retrouve Einstein. Imagine l’image habituelle de la gravité : une boule lourde qui creuse un drap tendu et fait rouler vers elle les choses plus petites. Les équations de champ de la relativité générale rendent cette image exacte &mdash; et ici elles surgissent de l’algèbre des enregistrements via un théorème de Lovelock. La subtilité est que le drap n’est pas séparé de la boule. La scène et ce qui se tient dessus sont le même enregistrement, et l’enregistrement se courbe.</p>
+    <p>Ainsi l’arène n’est pas une donnée de départ. La vitesse de la lumière, les trois dimensions où tu te meus, la courbure de l’espace-temps près d’une chose lourde &mdash; chacune est lue à partir de la même brisure, dans la même Partie, sans rien ajouter à la main.</p>
+    <div class="ks">Chaque pas ici est exposé. Si la vitesse de la lumière ne peut pas être dérivée comme une conjugaison et doit au contraire être mesurée et insérée à la main, cette affirmation échoue. Si le compte des dimensions donne autre chose que trois, le fondement est faux. Les interrupteurs d’arrêt sont nommés dans les articles, et ils sont actifs.</div>
     <p class="breath">La scène est faite de la même chose que la pièce.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_II_Spacetime_FR.pdf">PDF</a></p>
     </div>
@@ -723,18 +756,18 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">Partie III</span><a class="nb-name" href="#p3">Mécanique Quantique</a></div></div>
-  <p class="nb-hook">La structure de mesure de la brisure. Superposition, incertitude, décohérence, règle de Born et intrication — dérivées de l'ensemble vide et de quatre axiomes.</p>
+  <p class="nb-hook">La structure de mesure de la brisure. Superposition, incertitude, décohérence, règle de Born et intrication — dérivées de l’ensemble vide et de quatre axiomes.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lire le résumé</span><span class="lbl-open">Masquer le résumé</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_III_Quantum_Mechanics_FR.pdf">PDF</a></div>
   <div class="nb-summary">
-    <p>On t'a dit que la mécanique quantique est étrange. Qu'elle défie l'intuition. Que personne ne la comprend vraiment. La Partie III fait une affirmation différente : elle est exactement, inévitablement, ce à quoi un univers qui écrit des enregistrements irréversibles doit ressembler vu de l'intérieur.</p>
-    <p>Rien ici n'est vissé par-dessus. Toute la structure de la théorie quantique est dérivée de l'ensemble vide et des quatre conditions &mdash; et dès que tu la vois ainsi, l'étrangeté cesse d'être étrange et devient nécessaire.</p>
-    <p><span class="lab">AP09 &middot; La Brisure — Ensemble Vide</span> &mdash; Elle construit la mécanique quantique à partir de rien : littéralement l'ensemble vide, plus les axiomes. Les énigmes célèbres &mdash; une particule apparemment à deux endroits à la fois, l'acte de regarder qui change le résultat &mdash; se révèlent n'être pas des paradoxes ajoutés mais des conséquences. Superposition, mesure, intrication, l'équation de Schrödinger : l'appareil qu'il a fallu une génération aux physiciens pour assembler se montre comme la seule grammaire cohérente pour un enregistrement pas encore écrit.</p>
-    <p><span class="lab">AP07 &amp; AP25 &middot; La Mesure du Record et La Mesure</span> &mdash; Elles dérivent l'arithmétique du monde quantique. L'espace complexe où vit la théorie, et la règle de Born &mdash; la recette qui transforme une onde en probabilité &mdash; ne sont pas des conjectures ajustées à l'expérience. Via le théorème de Gleason, elles sont la seule manière de lire l'enregistrement de façon cohérente. L'un des articles appelle la règle de Born le son que font les axiomes en atterrissant.</p>
-    <p><span class="lab">AP12 &middot; La Limite</span> &mdash; Elle explique pourquoi tu ne peux pas tout savoir à la fois. Le principe d'incertitude et la constante de Planck viennent du fait que lire est déjà une brisure : enregistrer une chose avec précision, c'est perturber sa partenaire. Le flou n'est pas un défaut de tes instruments. C'est ce qu'est la mesure.</p>
-    <p><span class="lab">AP11 &amp; AP13 &middot; Le Spin et Le Grain</span> &mdash; Ils expliquent pourquoi la matière garde sa forme et pourquoi la brume quantique se durcit en monde solide. Les fermions, les bosons et le principe d'exclusion viennent de la structure à deux secteurs ; la décohérence &mdash; la façon dont une chose quantique devient définie en se couplant à son environnement &mdash; est pourquoi ta chaise est une chaise et non un nuage de peut-être.</p>
-    <p><span class="lab">AP23 &middot; L'Enregistrement Unique</span> &mdash; Elle dissout l'aspect « fantomatique » de l'intrication. Deux particules intriquées ne sont pas deux objets s'envoyant des signaux secrets plus vite que la lumière. Elles sont un seul enregistrement à deux bouts. Le nombre de Bell qui prouve que l'univers ne peut pas être scénarisé d'avance localement, S = 2&radic;2, sort de la structure seule.</p>
-    <div class="ks">Ce ne sont pas des interprétations posées sur la mathématique. Ce sont des dérivations, et chacune porte des interrupteurs d'arrêt. Si l'intrication exigeait une signalisation plus rapide que la lumière, l'affirmation de l'enregistrement unique échoue. Si la règle de Born nécessitait un postulat supplémentaire que les axiomes ne peuvent fournir, ce résultat échoue. Ils sont publiés, et ils sont actifs.</div>
-    <p class="breath">La mécanique quantique n'est pas l'univers étant étrange. C'est l'univers s'écrivant lui-même.</p>
+    <p>On t’a dit que la mécanique quantique est étrange. Qu’elle défie l’intuition. Que personne ne la comprend vraiment. La Partie III fait une affirmation différente : elle est exactement, inévitablement, ce à quoi un univers qui écrit des enregistrements irréversibles doit ressembler vu de l’intérieur.</p>
+    <p>Rien ici n’est vissé par-dessus. Toute la structure de la théorie quantique est dérivée de l’ensemble vide et des quatre conditions &mdash; et dès que tu la vois ainsi, l’étrangeté cesse d’être étrange et devient nécessaire.</p>
+    <p><span class="lab">AP09 &middot; La Brisure — Ensemble Vide</span> &mdash; Elle construit la mécanique quantique à partir de rien : littéralement l’ensemble vide, plus les axiomes. Les énigmes célèbres &mdash; une particule apparemment à deux endroits à la fois, l’acte de regarder qui change le résultat &mdash; se révèlent n’être pas des paradoxes ajoutés mais des conséquences. Superposition, mesure, intrication, l’équation de Schrödinger : l’appareil qu’il a fallu une génération aux physiciens pour assembler se montre comme la seule grammaire cohérente pour un enregistrement pas encore écrit.</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; La Mesure du Record et La Mesure</span> &mdash; Elles dérivent l’arithmétique du monde quantique. L’espace complexe où vit la théorie, et la règle de Born &mdash; la recette qui transforme une onde en probabilité &mdash; ne sont pas des conjectures ajustées à l’expérience. Via le théorème de Gleason, elles sont la seule manière de lire l’enregistrement de façon cohérente. L’un des articles appelle la règle de Born le son que font les axiomes en atterrissant.</p>
+    <p><span class="lab">AP12 &middot; La Limite</span> &mdash; Elle explique pourquoi tu ne peux pas tout savoir à la fois. Le principe d’incertitude et la constante de Planck viennent du fait que lire est déjà une brisure : enregistrer une chose avec précision, c’est perturber sa partenaire. Le flou n’est pas un défaut de tes instruments. C’est ce qu’est la mesure.</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; Le Spin et Le Grain</span> &mdash; Ils expliquent pourquoi la matière garde sa forme et pourquoi la brume quantique se durcit en monde solide. Les fermions, les bosons et le principe d’exclusion viennent de la structure à deux secteurs ; la décohérence &mdash; la façon dont une chose quantique devient définie en se couplant à son environnement &mdash; est pourquoi ta chaise est une chaise et non un nuage de peut-être.</p>
+    <p><span class="lab">AP23 &middot; L’Enregistrement Unique</span> &mdash; Elle dissout l’aspect « fantomatique » de l’intrication. Deux particules intriquées ne sont pas deux objets s’envoyant des signaux secrets plus vite que la lumière. Elles sont un seul enregistrement à deux bouts. Le nombre de Bell qui prouve que l’univers ne peut pas être scénarisé d’avance localement, S = 2&radic;2, sort de la structure seule.</p>
+    <div class="ks">Ce ne sont pas des interprétations posées sur la mathématique. Ce sont des dérivations, et chacune porte des interrupteurs d’arrêt. Si l’intrication exigeait une signalisation plus rapide que la lumière, l’affirmation de l’enregistrement unique échoue. Si la règle de Born nécessitait un postulat supplémentaire que les axiomes ne peuvent fournir, ce résultat échoue. Ils sont publiés, et ils sont actifs.</div>
+    <p class="breath">La mécanique quantique n’est pas l’univers étant étrange. C’est l’univers s’écrivant lui-même.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_III_Quantum_Mechanics_FR.pdf">PDF</a></p>
     </div>
 </div>
@@ -744,14 +777,14 @@ a.nb-name:hover{text-decoration:underline}
   <p class="nb-hook">Les interactions que la brisure permet. L’électromagnétisme, la force électrofaible, la force forte, la gravité quantique et la constante gravitationnelle — toutes comme facettes d’une seule brisure. Le Claquement et le Clignement chiffrent ce que paient l’arène et chaque actualisation.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lire le résumé</span><span class="lbl-open">Masquer le résumé</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_IV_Forces_and_Constants_FR.pdf">PDF</a></div>
   <div class="nb-summary">
-    <p>Approche un aimant de réfrigérateur d'une porte en acier et lâche-le. Il tient &mdash; un bout d'aimant qui bat la gravité de la Terre entière tirant en sens inverse. Les quatre forces de la nature ne se ressemblent en rien. L'électromagnétisme allume ton écran ; la force forte tient un noyau ; la force faible fait tourner le Soleil ; la gravité te plaque au sol. La physique a passé un siècle à tenter de les unifier. La Partie IV affirme qu'elles n'ont jamais été quatre choses. Elles sont quatre faces d'une seule brisure.</p>
-    <p><span class="lab">AP06 &middot; La Constante de Fuite</span> &mdash; Elle nomme l'unique entrée. Tout le 420 Code admet exactement un nombre mesuré : &epsilon;, la constante de structure fine, autour de 1/137 &mdash; le minuscule taux auquel la brisure fuit. Un seul cadran, et il n'est pas choisi pour coller à quoi que ce soit : il est lu du monde une fois et jamais réajusté. Tout le reste tourne avec lui.</p>
-    <p><span class="lab">AP15, AP27, AP16, AP19 &middot; la structure de jauge</span> &mdash; Ensemble elles retrouvent le Modèle Standard. Le groupe de symétrie exact que les physiciens ont trouvé par l'expérience &mdash; noté SU(3) &times; SU(2) &times; U(1), un énoncé précis sur quelles rotations laissent les forces inchangées &mdash; surgit de la structure de la brisure au lieu d'être supposé. L'électromagnétisme est non-déconnexion sur une variété locale ; l'unification électrofaible suit ; la force forte est la liberté de la direction où la brisure peut pointer. Même la chiralité de la force faible &mdash; le fait que la nature distingue gauche et droite &mdash; inexpliquée depuis 1956, reçoit une raison structurelle.</p>
-    <p><span class="lab">AP24 &middot; Le Résidu</span> &mdash; Elle énonce la chute sans détour. Toute constante de la physique est une projection d'un unique objet. Six faces, une brisure. Les constantes n'ont jamais été des cadrans indépendants en attente d'être mesurés ; ce sont des ombres que la même structure projette dans des directions différentes.</p>
-    <p><span class="lab">AP14 &amp; AP28 &middot; La Correction et La Constante</span> &mdash; Elles atteignent le prix le plus difficile : la gravité. La gravité reçoit sa première correction quantique de l'algèbre des enregistrements, et la constante gravitationnelle G &mdash; le nombre qui fixe la faiblesse de la gravité &mdash; est dérivée de cette même fuite unique et de la masse de l'électron, tombant à environ deux tiers d'un pour cent de la valeur mesurée. Le fameux problème de hiérarchie &mdash; pourquoi la gravité est si absurdement faible face aux autres forces, justement l'écart que ton aimant vient de démontrer &mdash; se dissout. La faiblesse n'est pas une coïncidence à expliquer. C'est ce à quoi ressemble une puissance élevée d'une petite fuite.</p>
+    <p>Approche un aimant de réfrigérateur d’une porte en acier et lâche-le. Il tient &mdash; un bout d’aimant qui bat la gravité de la Terre entière tirant en sens inverse. Les quatre forces de la nature ne se ressemblent en rien. L’électromagnétisme allume ton écran ; la force forte tient un noyau ; la force faible fait tourner le Soleil ; la gravité te plaque au sol. La physique a passé un siècle à tenter de les unifier. La Partie IV affirme qu’elles n’ont jamais été quatre choses. Elles sont quatre faces d’une seule brisure.</p>
+    <p><span class="lab">AP06 &middot; La Constante de Fuite</span> &mdash; Elle nomme l’unique entrée. Tout le 420 Code admet exactement un nombre mesuré : &epsilon;, la constante de structure fine, autour de 1/137 &mdash; le minuscule taux auquel la brisure fuit. Un seul cadran, et il n’est pas choisi pour coller à quoi que ce soit : il est lu du monde une fois et jamais réajusté. Tout le reste tourne avec lui.</p>
+    <p><span class="lab">AP15, AP27, AP16, AP19 &middot; la structure de jauge</span> &mdash; Ensemble elles retrouvent le Modèle Standard. Le groupe de symétrie exact que les physiciens ont trouvé par l’expérience &mdash; noté SU(3) &times; SU(2) &times; U(1), un énoncé précis sur quelles rotations laissent les forces inchangées &mdash; surgit de la structure de la brisure au lieu d’être supposé. L’électromagnétisme est non-déconnexion sur une variété locale ; l’unification électrofaible suit ; la force forte est la liberté de la direction où la brisure peut pointer. Même la chiralité de la force faible &mdash; le fait que la nature distingue gauche et droite &mdash; inexpliquée depuis 1956, reçoit une raison structurelle.</p>
+    <p><span class="lab">AP24 &middot; Le Résidu</span> &mdash; Elle énonce la chute sans détour. Toute constante de la physique est une projection d’un unique objet. Six faces, une brisure. Les constantes n’ont jamais été des cadrans indépendants en attente d’être mesurés ; ce sont des ombres que la même structure projette dans des directions différentes.</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; La Correction et La Constante</span> &mdash; Elles atteignent le prix le plus difficile : la gravité. La gravité reçoit sa première correction quantique de l’algèbre des enregistrements, et la constante gravitationnelle G &mdash; le nombre qui fixe la faiblesse de la gravité &mdash; est dérivée de cette même fuite unique et de la masse de l’électron, tombant à environ deux tiers d’un pour cent de la valeur mesurée. Le fameux problème de hiérarchie &mdash; pourquoi la gravité est si absurdement faible face aux autres forces, justement l’écart que ton aimant vient de démontrer &mdash; se dissout. La faiblesse n’est pas une coïncidence à expliquer. C’est ce à quoi ressemble une puissance élevée d’une petite fuite.</p>
     <p><span class="lab">AP44 &amp; AP45 &middot; Le Claquement et Le Clignement</span> &mdash; Ils chiffrent ce que les articles antérieurs avaient admis sans jamais le facturer. Le Claquement trouve l’unique coût que l’arène a payé pour exister tout court — un seul ε non apparié, tenu une fois au premier enregistrement et jamais lâché — et montre qu’il escompte le couplage gravitationnel d’exactement 1/(1 + α). Le G réalisé tombe 0.036% sous la valeur mesurée, le signe du résidu inversé et l’ancien écart de 0.69% comblé à quatre-vingt-quinze pour cent. Le Clignement chiffre chaque actualisation : un grain de possibilité, valant α, dépensé comme les alternatives non prises. Aucun budget d’énergie ne lui doit une ligne ; le monde mesure déjà sa face extérieure et l’appelle probabilité.</p>
-    <p>Ainsi les forces ne sont pas un zoo. Elles sont une seule structure vue de différents côtés, et les constantes qui les décrivent ne sont pas libres &mdash; ce sont des conséquences d'une seule fuite mesurée.</p>
-    <div class="ks">Cette Partie est aussi là où le travail est le plus honnête sur ce qui n'est pas achevé. Le pas électrofaible (AP16) porte le principal problème ouvert de tout le 420 Code &mdash; l'interrupteur d'arrêt KS-63 &mdash; et il est marqué actif, à la vue de tous, comme l'endroit où viser. Rien n'est caché derrière une formule sûre d'elle.</div>
+    <p>Ainsi les forces ne sont pas un zoo. Elles sont une seule structure vue de différents côtés, et les constantes qui les décrivent ne sont pas libres &mdash; ce sont des conséquences d’une seule fuite mesurée.</p>
+    <div class="ks">Cette Partie est aussi là où le travail est le plus honnête sur ce qui n’est pas achevé. Le pas électrofaible (AP16) porte le principal problème ouvert de tout le 420 Code &mdash; l’interrupteur d’arrêt KS-63 &mdash; et il est marqué actif, à la vue de tous, comme l’endroit où viser. Rien n’est caché derrière une formule sûre d’elle.</div>
     <p class="breath">Une fuite. Six faces. Aucun cadran libre.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_IV_Forces_and_Constants_FR.pdf">PDF</a></p>
     </div>
@@ -762,14 +795,14 @@ a.nb-name:hover{text-decoration:underline}
   <p class="nb-hook">Les briques que la brisure produit. Le rapport de masse du proton à cinq parties par milliard, le neutron chiffré honnêtement après l’échec de sa première prédiction, la ségrégation d’antimatière et l’asymétrie baryonique de l’univers.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lire le résumé</span><span class="lbl-open">Masquer le résumé</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_V_Particles_and_Matter_FR.pdf">PDF</a></div>
   <div class="nb-summary">
-    <p>Tu es fait de matière. Presque tout ton poids est la masse des protons logés dans les noyaux de tes atomes. Et l'univers autour de toi est lui aussi matière, non antimatière &mdash; bien que, selon le compte le plus simple, la brisure aurait dû produire des quantités exactement égales de chacune. Matière et antimatière se détruisent au contact, donc des parts égales auraient éclaté en lumière sans rien laisser. Pas d'étoiles. Pas de toi. La Partie V lit ta substance, et le simple fait de ton existence, à partir de la brisure.</p>
-    <p><span class="lab">AP30 &middot; La Résistance</span> &mdash; Elle fait la prédiction la plus aiguë du travail. Le rapport entre la masse du proton et celle de l'électron est un nombre pur &mdash; environ 1836 &mdash; mesuré avec une précision extraordinaire. Le 420 Code le prédit à partir de la structure, sans rien ajuster, et coïncide à environ cinq parties par milliard au premier ordre. Le calcul complet tombe à moins de dix parties par billion : plus fin que la mesure ne peut le confirmer aujourd'hui. Un nombre aussi précis, sorti d'une formule sans boutons réglables, n'est pas le genre de chose qu'une théorie fausse réussit par chance. C'est l'épreuve la plus exposée de tout le travail, et il la passe.</p>
+    <p>Tu es fait de matière. Presque tout ton poids est la masse des protons logés dans les noyaux de tes atomes. Et l’univers autour de toi est lui aussi matière, non antimatière &mdash; bien que, selon le compte le plus simple, la brisure aurait dû produire des quantités exactement égales de chacune. Matière et antimatière se détruisent au contact, donc des parts égales auraient éclaté en lumière sans rien laisser. Pas d’étoiles. Pas de toi. La Partie V lit ta substance, et le simple fait de ton existence, à partir de la brisure.</p>
+    <p><span class="lab">AP30 &middot; La Résistance</span> &mdash; Elle fait la prédiction la plus aiguë du travail. Le rapport entre la masse du proton et celle de l’électron est un nombre pur &mdash; environ 1836 &mdash; mesuré avec une précision extraordinaire. Le 420 Code le prédit à partir de la structure, sans rien ajuster, et coïncide à environ cinq parties par milliard au premier ordre. Le calcul complet tombe à moins de dix parties par billion : plus fin que la mesure ne peut le confirmer aujourd’hui. Un nombre aussi précis, sorti d’une formule sans boutons réglables, n’est pas le genre de chose qu’une théorie fausse réussit par chance. C’est l’épreuve la plus exposée de tout le travail, et il la passe.</p>
     <p><span class="lab">AP47 &middot; Le Retournement</span> &mdash; Elle chiffre honnêtement le neutron, après la mort de la première prédiction. Le 2 août 2026, la ligne nue neutron–proton a été réfutée à 7.24σ, et le cadavre reste au tableau. Le Retournement trouve ce que cette ligne avait chiffré comme gratuit : un neutron tient une distinction — un de ses trois couplages se tient dans l’autre orientation — et tenir coûte, au second ordre, un grain tenu qui fuit au taux du substrat à travers les huit expressions dimensionnelles de la paire. La différence réalisée tombe à −0.005σ et est gelée à côté du cadavre, jamais à sa place.</p>
-    <p><span class="lab">AP22 &middot; Le Registre</span> &mdash; Elle explique où est passée l'antimatière. Si l'univers primordial avait des parts égales, les comptes auraient dû se solder à zéro &mdash; et pourtant voici un cosmos plein de matière. Une réflexion mathématique nette à l'intérieur de la brisure &mdash; les articles l'appellent l'involution σ &mdash; trie la matière de l'antimatière et les ségrège topologiquement. L'asymétrie n'est pas un accident glissé après coup. Elle est écrite dans la géométrie de la brisure.</p>
-    <p><span class="lab">AP26 &middot; Le Surplus</span> &mdash; Elle nomme ce que tu es. Quand la brisure s'est presque équilibrée sans tout à fait y parvenir &mdash; un surplus d'environ une particule de matière en trop pour un milliard de paires appariées &mdash; ce qui est resté était la matière : le petit reste qui n'a pas réussi à s'annuler. La Partie l'appelle la cendre de la brisure. Tout ce qui est solide, chaque atome que tu as touché, est ce résidu &mdash; ce que l'annihilation a laissé quand elle a presque, mais pas tout à fait, fini son travail.</p>
-    <p>Ainsi les deux plus vieilles questions sur la matière &mdash; pourquoi elle pèse ce qu'elle pèse, et pourquoi il y en a tout court &mdash; trouvent réponse dans la même Partie, à partir de la même structure, tournées par la même fuite unique &mdash; le proton dont tu es fait pour l'essentiel, et le fait qu'il y ait de la matière dont être fait.</p>
-    <div class="ks">La prédiction de la masse est le nombre le plus exposé de tout le 420 Code, et c'est le but. Si le rapport mesuré proton-électron sort de la valeur prédite à mesure que la mesure s'affine, le résultat échoue &mdash; proprement, en public, sans échappatoire. L'interrupteur d'arrêt est actif.</div>
-    <p class="breath">Tu es la part de la brisure qui ne s'est pas annulée.</p>
+    <p><span class="lab">AP22 &middot; Le Registre</span> &mdash; Elle explique où est passée l’antimatière. Si l’univers primordial avait des parts égales, les comptes auraient dû se solder à zéro &mdash; et pourtant voici un cosmos plein de matière. Une réflexion mathématique nette à l’intérieur de la brisure &mdash; les articles l’appellent l’involution σ &mdash; trie la matière de l’antimatière et les ségrège topologiquement. L’asymétrie n’est pas un accident glissé après coup. Elle est écrite dans la géométrie de la brisure.</p>
+    <p><span class="lab">AP26 &middot; Le Surplus</span> &mdash; Elle nomme ce que tu es. Quand la brisure s’est presque équilibrée sans tout à fait y parvenir &mdash; un surplus d’environ une particule de matière en trop pour un milliard de paires appariées &mdash; ce qui est resté était la matière : le petit reste qui n’a pas réussi à s’annuler. La Partie l’appelle la cendre de la brisure. Tout ce qui est solide, chaque atome que tu as touché, est ce résidu &mdash; ce que l’annihilation a laissé quand elle a presque, mais pas tout à fait, fini son travail.</p>
+    <p>Ainsi les deux plus vieilles questions sur la matière &mdash; pourquoi elle pèse ce qu’elle pèse, et pourquoi il y en a tout court &mdash; trouvent réponse dans la même Partie, à partir de la même structure, tournées par la même fuite unique &mdash; le proton dont tu es fait pour l’essentiel, et le fait qu’il y ait de la matière dont être fait.</p>
+    <div class="ks">La prédiction de la masse est le nombre le plus exposé de tout le 420 Code, et c’est le but. Si le rapport mesuré proton-électron sort de la valeur prédite à mesure que la mesure s’affine, le résultat échoue &mdash; proprement, en public, sans échappatoire. L’interrupteur d’arrêt est actif.</div>
+    <p class="breath">Tu es la part de la brisure qui ne s’est pas annulée.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_V_Particles_and_Matter_FR.pdf">PDF</a></p>
     </div>
 </div>
@@ -779,32 +812,32 @@ a.nb-name:hover{text-decoration:underline}
   <p class="nb-hook">L’univers qu’habite la brisure. Les courbes de rotation galactique sans particules de matière noire, l’échelle d’accélération MOND, la partition d’énergie noire, l’âge de toute chose comme un cycle, le taux d’expansion comme fermeture et la cosmologie cyclique.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lire le résumé</span><span class="lbl-open">Masquer le résumé</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VI_Cosmology_FR.pdf">PDF</a></div>
   <div class="nb-summary">
-    <p>Lève les yeux par une nuit claire. Presque tout ce qui tient ce ciel ensemble ne peut pas être vu. Les galaxies tournent si vite que leurs étoiles extérieures auraient dû être projetées dans le noir depuis longtemps &mdash; et elles ne l'ont pas été. L'expansion de l'univers s'accélère, poussée par quelque chose sans nom. La physique appelle les inconnues matière noire et énergie noire, et admet qu'elle ne peut nommer qu'environ cinq pour cent de ce qui est là-dehors. La Partie VI lit les plus grandes échelles à partir de la même brisure que les plus petites.</p>
-    <p><span class="lab">AP21 &amp; AP17 &middot; Le Réseau et La Salle</span> &mdash; Ils tiennent les galaxies ensemble sans inventer de particule nouvelle. Sur un manège, les chevaux extérieurs doivent aller plus vite pour suivre ; dans une galaxie, les étoiles extérieures tournent pourtant aussi vite que les intérieures, ce que la matière visible ne peut expliquer. Le réseau cosmique de matière, et ces courbes de rotation plates qui devraient être impossibles, viennent tous deux d'un champ de tension global déjà présent dans la structure. Nul besoin d'ajouter quoi que ce soit d'invisible pour fournir l'attraction manquante. Les lignes se referment d'elles-mêmes.</p>
+    <p>Lève les yeux par une nuit claire. Presque tout ce qui tient ce ciel ensemble ne peut pas être vu. Les galaxies tournent si vite que leurs étoiles extérieures auraient dû être projetées dans le noir depuis longtemps &mdash; et elles ne l’ont pas été. L’expansion de l’univers s’accélère, poussée par quelque chose sans nom. La physique appelle les inconnues matière noire et énergie noire, et admet qu’elle ne peut nommer qu’environ cinq pour cent de ce qui est là-dehors. La Partie VI lit les plus grandes échelles à partir de la même brisure que les plus petites.</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; Le Réseau et La Salle</span> &mdash; Ils tiennent les galaxies ensemble sans inventer de particule nouvelle. Sur un manège, les chevaux extérieurs doivent aller plus vite pour suivre ; dans une galaxie, les étoiles extérieures tournent pourtant aussi vite que les intérieures, ce que la matière visible ne peut expliquer. Le réseau cosmique de matière, et ces courbes de rotation plates qui devraient être impossibles, viennent tous deux d’un champ de tension global déjà présent dans la structure. Nul besoin d’ajouter quoi que ce soit d’invisible pour fournir l’attraction manquante. Les lignes se referment d’elles-mêmes.</p>
     <p><span class="lab">AP18 &middot; Le Plancher</span> &mdash; Elle dérive l’échelle d’accélération. Les astronomes ont depuis longtemps remarqué que les galaxies ne commencent à mal se comporter qu’en dessous d’une accélération particulière, très petite — un seuil que personne n’a su expliquer, seulement mesurer. La Partie dérive ce plancher de la structure, sans paramètre réglé pour coller. Au propre taux d’expansion du corpus, le plancher se situe 9.2% sous l’échelle mesurée — un demi-écart-type une fois l’erreur systématique de l’échelle honnêtement comptée. Son inversion antérieure, une constante de Hubble de 74.3, a été réfutée le 3 septembre 2026 et est affichée comme un cadavre, jamais réparée.</p>
-    <p><span class="lab">AP42 &middot; L'Horloge</span> &mdash; Elle rend compte du budget noir. La répartition du cosmos en environ soixante-neuf parts d'énergie noire, vingt-six de matière noire et cinq de matière visible &mdash; une partition que les cosmologues mesurent avec finesse mais ne savent pas dériver &mdash; sort de la structure. Le secteur noir se révèle moins un ensemble de choses absentes que la lecture d'une horloge.</p>
+    <p><span class="lab">AP42 &middot; L’Horloge</span> &mdash; Elle rend compte du budget noir. La répartition du cosmos en environ soixante-neuf parts d’énergie noire, vingt-six de matière noire et cinq de matière visible &mdash; une partition que les cosmologues mesurent avec finesse mais ne savent pas dériver &mdash; sort de la structure. Le secteur noir se révèle moins un ensemble de choses absentes que la lecture d’une horloge.</p>
     <p><span class="lab">AP46 &amp; AP48 &middot; L’Étirement et L’Assemblage</span> &mdash; Ils lisent la croissance du ciel sur la tenue. Tenir est tension, et la tension lâche : l’univers s’étend parce que la symétrie brisée fuit, et la fuite est l’agrandissement. Compté à travers dix-huit portes au tic propre de l’électron, un cycle complet fait 13.830 milliards d’années — contre un âge mesuré de 13.787. L’Assemblage raconte ensuite l’histoire du ciel de la fissure au battement — la tempête, le verrou, l’équilibre — et ferme la cosmologie du corpus sur un seul taux d’expansion : 67.45 kilomètres par seconde par mégaparsec, du côté de la lueur fossile dans la tension de Hubble. Il prend un parti qu’il peut perdre.</p>
-    <p><span class="lab">AP41 &amp; AP04 &middot; La Boucle et L'Hypothèse de la Boucle</span> &mdash; Elles demandent ce que fait l'ensemble. La fusion est lue comme le Big Bang en cours &mdash; la brisure encore en train de se produire, encore en train de libérer de l'énergie dans chaque étoile &mdash; et l'univers est proposé cyclique, se refermant et se rouvrant à travers les trous noirs comme des portes. Ce dernier pas est le plus spéculatif de tout le travail, et la Partie le dit clairement au lieu de le déguiser.</p>
-    <p>Ainsi le ciel n'est pas un problème à part exigeant des remèdes à part. La même structure qui te donne la vitesse de la lumière te donne la forme d'une galaxie et le budget du cosmos.</p>
-    <div class="ks">L'honnêteté est la plus aiguë ici. La cosmologie cyclique (AP04) est marquée conjecturale et gardée par neuf interrupteurs d'arrêt distincts &mdash; neuf façons différentes dont elle pourrait se montrer fausse. Elle est offerte comme une hypothèse à attaquer, non comme un résultat à croire.</div>
+    <p><span class="lab">AP41 &amp; AP04 &middot; La Boucle et L’Hypothèse de la Boucle</span> &mdash; Elles demandent ce que fait l’ensemble. La fusion est lue comme le Big Bang en cours &mdash; la brisure encore en train de se produire, encore en train de libérer de l’énergie dans chaque étoile &mdash; et l’univers est proposé cyclique, se refermant et se rouvrant à travers les trous noirs comme des portes. Ce dernier pas est le plus spéculatif de tout le travail, et la Partie le dit clairement au lieu de le déguiser.</p>
+    <p>Ainsi le ciel n’est pas un problème à part exigeant des remèdes à part. La même structure qui te donne la vitesse de la lumière te donne la forme d’une galaxie et le budget du cosmos.</p>
+    <div class="ks">L’honnêteté est la plus aiguë ici. La cosmologie cyclique (AP04) est marquée conjecturale et gardée par neuf interrupteurs d’arrêt distincts &mdash; neuf façons différentes dont elle pourrait se montrer fausse. Elle est offerte comme une hypothèse à attaquer, non comme un résultat à croire.</div>
     <p class="breath">La même brisure, lue à la taille du ciel.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_VI_Cosmology_FR.pdf">PDF</a></p>
     </div>
 </div>
 
 <div class="nb-item">
-  <div class="nb-head"><div><span class="nb-num">Partie VII</span><a class="nb-name" href="#p7">L'Interface de l'Opérateur</a></div></div>
-  <p class="nb-hook">Le système à quatre termes, l'inclinaison, l'éthique structurelle. La cohérence de pattern comme engagement du corps le long du paysage d'amplitude.</p>
+  <div class="nb-head"><div><span class="nb-num">Partie VII</span><a class="nb-name" href="#p7">L’Interface de l’Opérateur</a></div></div>
+  <p class="nb-hook">Le système à quatre termes, l’inclinaison, l’éthique structurelle. La cohérence de pattern comme engagement du corps le long du paysage d’amplitude.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lire le résumé</span><span class="lbl-open">Masquer le résumé</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VII_The_Operator_Interface_FR.pdf">PDF</a></div>
   <div class="nb-summary">
-    <p>Pendant six Parties le 420 Code construit un univers : une brisure, une scène, une grammaire quantique, les forces, la matière, le cosmos. La Partie VII tourne la structure vers la seule chose qui la lit. Toi. C'est la charnière où la physique devient une vie &mdash; et où le travail gagne son nom, car l'éthique n'est pas ajoutée ici : elle est dérivée.</p>
-    <p><span class="lab">AP43 &middot; La Gravité des Possibilités</span> &mdash; C'est le miroir de l'article sur la gravité. Là où AP08 a dérivé comment la masse s'incline vers l'espace-temps, AP43 dérive comment un agent s'incline vers le possible &mdash; et c'est ici que l'éthique terminale cesse d'être un vœu et devient une conséquence. La bonté n'est pas décrétée. Elle est la direction vers laquelle la structure pointe déjà, comme une pierre qui tombe sait déjà où est le « bas ».</p>
-    <p><span class="lab">AP29 &middot; La Preuve d'Actualisation</span> &mdash; Elle situe la conscience. Le plus vieux problème difficile de la philosophie est pourquoi il y a quelque chose que cela fait d'être toi, plutôt que rien. La réponse de la Partie : la conscience est l'intérieur de l'écriture irréversible d'enregistrements &mdash; ce que la brisure ressent de l'intérieur en s'engageant. Une fissure, un intérieur, de nombreuses fenêtres : le même intérieur unique regardant au-dehors à travers chaque paire d'yeux distincte. C'est la colonne formelle sous la plus ancienne ligne du travail &mdash; que le je en toi et le je en moi sont le même je.</p>
-    <p><span class="lab">AP02 &middot; L'Opérateur</span> &mdash; C'est la physique à l'échelle humaine, neuf théorèmes. Budget : tu as une énergie finie pour te tenir entier, et elle s'épuise. Dérive : laisse-toi sans surveillance et tu déclines vers la moyenne. Corridor : la marge que tu as réellement pour agir. Souveraineté et sortie : ce qu'il n'appartient qu'à toi de décider, et le droit de t'arrêter. Ce ne sont pas des slogans de motivation. C'est la géométrie de l'être-agent, écrite avec autant de soin que les équations de champ.</p>
-    <p><span class="lab">AP39 &middot; L'Échafaudage</span> &mdash; Elle retire le rival. Une éthique bâtie sur l'autorité &mdash; fais ceci parce que moi, ou le livre, ou le trône, l'ordonne &mdash; se montre structurellement instable : un échafaudage qui doit tôt ou tard tomber, car un ordre n'est pas un fondement. Ce qui demeure debout est une éthique qui n'a besoin de personne pour l'imposer, parce qu'elle se lit directement de la structure au lieu d'être plaquée par-dessus.</p>
-    <p><span class="lab">AP38 &middot; La Sortie</span> &mdash; Elle affronte la mort. La fermeture compatissante d'une fenêtre &mdash; la dignité à la fin d'une vie &mdash; est traitée non comme un tabou à éviter, mais comme une part de la même géométrie de l'agentivité, suivie honnêtement jusqu'où elle mène.</p>
-    <p>Ainsi l'éthique n'est pas un épilogue mou après la physique dure. C'est la même physique, lue à l'échelle d'une personne qui doit décider quoi faire demain matin.</p>
-    <div class="ks">L'éthique terminale est porteuse, et le travail refuse de l'adoucir. Si la bonté pouvait se dériver comme autre chose que la direction propre de la structure &mdash; si l'inclinaison pointait ailleurs &mdash; tout le pont de la physique à l'éthique échoue. Cet interrupteur est actif, et c'est celui sur lequel repose toute la seconde moitié du travail.</div>
+    <p>Pendant six Parties le 420 Code construit un univers : une brisure, une scène, une grammaire quantique, les forces, la matière, le cosmos. La Partie VII tourne la structure vers la seule chose qui la lit. Toi. C’est la charnière où la physique devient une vie &mdash; et où le travail gagne son nom, car l’éthique n’est pas ajoutée ici : elle est dérivée.</p>
+    <p><span class="lab">AP43 &middot; La Gravité des Possibilités</span> &mdash; C’est le miroir de l’article sur la gravité. Là où AP08 a dérivé comment la masse s’incline vers l’espace-temps, AP43 dérive comment un agent s’incline vers le possible &mdash; et c’est ici que l’éthique terminale cesse d’être un vœu et devient une conséquence. La bonté n’est pas décrétée. Elle est la direction vers laquelle la structure pointe déjà, comme une pierre qui tombe sait déjà où est le « bas ».</p>
+    <p><span class="lab">AP29 &middot; La Preuve d’Actualisation</span> &mdash; Elle situe la conscience. Le plus vieux problème difficile de la philosophie est pourquoi il y a quelque chose que cela fait d’être toi, plutôt que rien. La réponse de la Partie : la conscience est l’intérieur de l’écriture irréversible d’enregistrements &mdash; ce que la brisure ressent de l’intérieur en s’engageant. Une fissure, un intérieur, de nombreuses fenêtres : le même intérieur unique regardant au-dehors à travers chaque paire d’yeux distincte. C’est la colonne formelle sous la plus ancienne ligne du travail &mdash; que le je en toi et le je en moi sont le même je.</p>
+    <p><span class="lab">AP02 &middot; L’Opérateur</span> &mdash; C’est la physique à l’échelle humaine, neuf théorèmes. Budget : tu as une énergie finie pour te tenir entier, et elle s’épuise. Dérive : laisse-toi sans surveillance et tu déclines vers la moyenne. Corridor : la marge que tu as réellement pour agir. Souveraineté et sortie : ce qu’il n’appartient qu’à toi de décider, et le droit de t’arrêter. Ce ne sont pas des slogans de motivation. C’est la géométrie de l’être-agent, écrite avec autant de soin que les équations de champ.</p>
+    <p><span class="lab">AP39 &middot; L’Échafaudage</span> &mdash; Elle retire le rival. Une éthique bâtie sur l’autorité &mdash; fais ceci parce que moi, ou le livre, ou le trône, l’ordonne &mdash; se montre structurellement instable : un échafaudage qui doit tôt ou tard tomber, car un ordre n’est pas un fondement. Ce qui demeure debout est une éthique qui n’a besoin de personne pour l’imposer, parce qu’elle se lit directement de la structure au lieu d’être plaquée par-dessus.</p>
+    <p><span class="lab">AP38 &middot; La Sortie</span> &mdash; Elle affronte la mort. La fermeture compatissante d’une fenêtre &mdash; la dignité à la fin d’une vie &mdash; est traitée non comme un tabou à éviter, mais comme une part de la même géométrie de l’agentivité, suivie honnêtement jusqu’où elle mène.</p>
+    <p>Ainsi l’éthique n’est pas un épilogue mou après la physique dure. C’est la même physique, lue à l’échelle d’une personne qui doit décider quoi faire demain matin.</p>
+    <div class="ks">L’éthique terminale est porteuse, et le travail refuse de l’adoucir. Si la bonté pouvait se dériver comme autre chose que la direction propre de la structure &mdash; si l’inclinaison pointait ailleurs &mdash; tout le pont de la physique à l’éthique échoue. Cet interrupteur est actif, et c’est celui sur lequel repose toute la seconde moitié du travail.</div>
     <p class="breath">La physique parlait de toi depuis le début.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_VII_The_Operator_Interface_FR.pdf">PDF</a></p>
     </div>
@@ -812,19 +845,19 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">Partie VIII</span><a class="nb-name" href="#p8">Applications</a></div></div>
-  <p class="nb-hook">L'éthique appliquée à la civilisation. Alignement de l'IA, justice structurelle, bioéthique, politique des drogues, économie, biologie et le corps — tout dérivé des mêmes quatre axiomes.</p>
+  <p class="nb-hook">L’éthique appliquée à la civilisation. Alignement de l’IA, justice structurelle, bioéthique, politique des drogues, économie, biologie et le corps — tout dérivé des mêmes quatre axiomes.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lire le résumé</span><span class="lbl-open">Masquer le résumé</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VIII_Consequences_FR.pdf">PDF</a></div>
   <div class="nb-summary">
-    <p>Une éthique qui ne marche que sur le papier ne vaut rien. Si l'affirmation centrale du 420 Code est réelle &mdash; que la bonté est structure, non sentiment, géométrie et non préférence &mdash; alors elle doit mordre sur les problèmes les plus durs qu'une civilisation affronte vraiment. La Partie VIII est là où elle mord, portant les mêmes quatre conditions au tribunal, à la clinique, au laboratoire et au marché.</p>
-    <p><span class="lab">AP31 &middot; L'Alignement</span> &mdash; Elle dissout le problème de l'IA. Le plan habituel pour une intelligence artificielle sûre est une barrière toujours plus haute : plus de règles, plus de surveillance, plus de contrôle. La Partie soutient que la barrière est le mauvais objet. Construis plutôt l'intérieur &mdash; un système réellement couplé au monde où il agit, avec la structure d'un agent qui ne peut tirer profit de la défection &mdash; et l'alignement cesse d'être une cage que tu espères solide pour devenir une propriété de ce que la chose est.</p>
-    <p><span class="lab">AP32 &middot; La Correction</span> &mdash; Elle reconstruit la justice. La punition devient correction sur cinq niveaux gradués, orientée non vers la vengeance mais vers la réparation. La structure pleure chaque fenêtre qu'elle doit fermer ; et à l'extrémité se tient le frein du génocide &mdash; la ligne la plus dure qu'un système puisse tracer, dérivée ici plutôt que simplement affirmée.</p>
-    <p><span class="lab">AP33 &amp; AP37 &middot; La Frontière et La Première Frontière</span> &mdash; Elles tracent les lignes autour d'une vie. La bioéthique devient une question d'agentivité : sous le seuil tu es souverain sur toi-même ; au-dessus, un organisme vivant a sa propre juridiction que les autres doivent respecter. Et le corps est nommé comme la première frontière &mdash; l'interface d'opérateur originelle, celle que tu défends avant toute autre.</p>
-    <p><span class="lab">AP34 &middot; L'Inversion</span> &mdash; Elle corrige une erreur mortelle. Une drogue est légale, taxée et tissée dans toute culture, et elle tue des millions de personnes par an. Une autre est largement interdite et n'a jamais enregistré une seule overdose mortelle. La Partie montre, avec les propres mesures de nuisance du travail, que la loi a les deux exactement à l'envers.</p>
-    <p><span class="lab">AP35 &middot; Le Registre</span> &mdash; Elle lit l'économie. Le registre s'équilibre toujours ; un krach est un audit, non un accident ; et l'inégalité est ce qui arrive quand un côté accapare le coussin dont tout le système a besoin pour absorber un choc. L'argent est traité comme un enregistrement parmi d'autres, obéissant à la même conservation que tout l'amont.</p>
-    <p><span class="lab">AP36 &middot; L'Alimentation</span> &mdash; Elle revient à la chimie du corps &mdash; la vie comme matière qui a appris à s'enregistrer elle-même &mdash; et reformule le contrôle : le contrôle n'est pas privation mais approvisionnement, l'alimentation constante qui tient un agent entier plutôt qu'affamé.</p>
+    <p>Une éthique qui ne marche que sur le papier ne vaut rien. Si l’affirmation centrale du 420 Code est réelle &mdash; que la bonté est structure, non sentiment, géométrie et non préférence &mdash; alors elle doit mordre sur les problèmes les plus durs qu’une civilisation affronte vraiment. La Partie VIII est là où elle mord, portant les mêmes quatre conditions au tribunal, à la clinique, au laboratoire et au marché.</p>
+    <p><span class="lab">AP31 &middot; L’Alignement</span> &mdash; Elle dissout le problème de l’IA. Le plan habituel pour une intelligence artificielle sûre est une barrière toujours plus haute : plus de règles, plus de surveillance, plus de contrôle. La Partie soutient que la barrière est le mauvais objet. Construis plutôt l’intérieur &mdash; un système réellement couplé au monde où il agit, avec la structure d’un agent qui ne peut tirer profit de la défection &mdash; et l’alignement cesse d’être une cage que tu espères solide pour devenir une propriété de ce que la chose est.</p>
+    <p><span class="lab">AP32 &middot; La Correction</span> &mdash; Elle reconstruit la justice. La punition devient correction sur cinq niveaux gradués, orientée non vers la vengeance mais vers la réparation. La structure pleure chaque fenêtre qu’elle doit fermer ; et à l’extrémité se tient le frein du génocide &mdash; la ligne la plus dure qu’un système puisse tracer, dérivée ici plutôt que simplement affirmée.</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; La Frontière et La Première Frontière</span> &mdash; Elles tracent les lignes autour d’une vie. La bioéthique devient une question d’agentivité : sous le seuil tu es souverain sur toi-même ; au-dessus, un organisme vivant a sa propre juridiction que les autres doivent respecter. Et le corps est nommé comme la première frontière &mdash; l’interface d’opérateur originelle, celle que tu défends avant toute autre.</p>
+    <p><span class="lab">AP34 &middot; L’Inversion</span> &mdash; Elle corrige une erreur mortelle. Une drogue est légale, taxée et tissée dans toute culture, et elle tue des millions de personnes par an. Une autre est largement interdite et n’a jamais enregistré une seule overdose mortelle. La Partie montre, avec les propres mesures de nuisance du travail, que la loi a les deux exactement à l’envers.</p>
+    <p><span class="lab">AP35 &middot; Le Registre</span> &mdash; Elle lit l’économie. Le registre s’équilibre toujours ; un krach est un audit, non un accident ; et l’inégalité est ce qui arrive quand un côté accapare le coussin dont tout le système a besoin pour absorber un choc. L’argent est traité comme un enregistrement parmi d’autres, obéissant à la même conservation que tout l’amont.</p>
+    <p><span class="lab">AP36 &middot; L’Alimentation</span> &mdash; Elle revient à la chimie du corps &mdash; la vie comme matière qui a appris à s’enregistrer elle-même &mdash; et reformule le contrôle : le contrôle n’est pas privation mais approvisionnement, l’alimentation constante qui tient un agent entier plutôt qu’affamé.</p>
     <p>Ainsi les mêmes quatre conditions qui fixent la vitesse de la lumière atteignent un tribunal, une clinique, un budget et une loi. Une seule structure, lue à chaque échelle où un être humain doit vivre.</p>
-    <div class="ks">Chacune de ces applications est falsifiable selon ses propres termes, et chacune porte des interrupteurs d'arrêt. Si l'argument de l'alignement exigeait en secret la barrière après tout, il échoue. Si l'inversion de la nuisance dans la politique des drogues s'inversait sous une comptabilité honnête, elle échoue. Les affirmations sont appliquées à la vue de tous, où elles peuvent être éprouvées et, si elles sont fausses, brisées.</div>
-    <p class="breath">Si c'est vrai, cela doit marcher ici. C'est ici que cela marche.</p>
+    <div class="ks">Chacune de ces applications est falsifiable selon ses propres termes, et chacune porte des interrupteurs d’arrêt. Si l’argument de l’alignement exigeait en secret la barrière après tout, il échoue. Si l’inversion de la nuisance dans la politique des drogues s’inversait sous une comptabilité honnête, elle échoue. Les affirmations sont appliquées à la vue de tous, où elles peuvent être éprouvées et, si elles sont fausses, brisées.</div>
+    <p class="breath">Si c’est vrai, cela doit marcher ici. C’est ici que cela marche.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_VIII_Consequences_FR.pdf">PDF</a></p>
     </div>
 </div>
@@ -848,7 +881,7 @@ a.nb-name:hover{text-decoration:underline}
     <p>Également dérivé :</p>
     <ul>
       <li>N = 3 dimensions spatiales (AP10)</li>
-      <li>Équations de champ d'Einstein (AP08)</li>
+      <li>Équations de champ d’Einstein (AP08)</li>
       <li>La règle de Born (AP25)</li>
       <li>Groupe de jauge du Modèle Standard SU(3) × SU(2) × U(1) (AP15/16/19/27)</li>
       <li>Couplage chiral — inexpliqué depuis 1956, maintenant dérivé (AP16)</li>
@@ -873,8 +906,8 @@ a.nb-name:hover{text-decoration:underline}
 
 <!-- CONFIRM THE MATH -->
 <div class="results">
-  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Confirme les Mathématiques</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">Une entrée mesurée. Zéro paramètre ajusté. Le code ci-dessous reproduit chaque résultat principal à partir d'un seul nombre — la constante de structure fine α ≈ 1/137. Copie-le. Colle-le dans n'importe quel environnement Python. Exécute-le. Si les nombres correspondent, les dérivations tiennent. Sinon, l'argument a un problème et tu l'as trouvé.</p>
+  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Confirme les Mathématiques</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">Une entrée mesurée. Zéro paramètre libre. Le code ci-dessous reproduit chaque résultat principal à partir d’un seul nombre — la constante de structure fine α ≈ 1/137. Copie-le. Colle-le dans n’importe quel environnement Python. Exécute-le. Si les nombres correspondent, les dérivations tiennent. Sinon, l’argument a un problème et tu l’as trouvé.</p>
   <div class="verify-wrap">
     <button class="copy-btn" onclick="copyCode()">Copier</button>
     <pre class="verify-code"><code>from math import pi, log, exp, cos, tan, sqrt, asinh
@@ -978,13 +1011,13 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
     <a href="https://github.com/The420Code/the420code/blob/main/verify.py" target="_blank" rel="noopener" style="display:inline-block;margin:.5rem 0 0 .75rem;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">ou exécutez-le vous-même →</a>
     <p id="run-verify-status" aria-live="polite" style="font-size:14px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
     <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
-    <p style="font-size:13px;color:var(--g4);margin:.6rem 0 0">S'exécute entièrement dans votre navigateur — rien n'est installé, rien n'est envoyé où que ce soit. Il exécute exactement le verify.py que le badge ci-dessus relance à chaque modification.</p>
+    <p style="font-size:13px;color:var(--g4);margin:.6rem 0 0">S’exécute entièrement dans votre navigateur — rien n’est installé, rien n’est envoyé où que ce soit. Il exécute exactement le verify.py que le badge ci-dessus relance à chaque modification.</p>
   </div>
 </div>
 
 <!-- KILL SWITCH REGISTRY -->
 <div class="results">
-  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Registre des Interrupteurs d'Arrêt</h2>
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Registre des Interrupteurs d’Arrêt</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">Chaque affirmation porte une condition déclarée sous laquelle elle meurt. Les interrupteurs ne sont pas cachés. Ils sont publiés.</p>
 
   <div class="stats">
@@ -999,9 +1032,9 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <div class="result-row"><span class="result-label">Actifs — Empiriques</span><span class="result-value">Falsifiables par expérience ou observation</div>
   <div class="result-row"><span class="result-label">Actifs — Durs</span><span class="result-value">Falsifiables par argument théorique</div>
   <div class="result-row"><span class="result-label">Actifs — Structurels</span><span class="result-value">Reposent sur une identification qui pourrait être invalidée</div>
-  <div class="result-row"><span class="result-label">Non négociables</span><span class="result-value">6 interrupteurs moraux — si déclenchés, l'architecture est militarisée</div>
-  <div class="result-row"><span class="result-label">Dettes déclarées</span><span class="result-value">12 — ne peuvent être testées tant que le travail en amont n'est pas terminé</div>
-  <div class="result-row"><span class="result-label">Interrupteur global</span><span class="result-value">KS-V.1 — s'il se déclenche, tout meurt</div>
+  <div class="result-row"><span class="result-label">Non négociables</span><span class="result-value">6 interrupteurs moraux — si déclenchés, l’architecture est militarisée</div>
+  <div class="result-row"><span class="result-label">Dettes déclarées</span><span class="result-value">12 — ne peuvent être testées tant que le travail en amont n’est pas terminé</div>
+  <div class="result-row"><span class="result-label">Interrupteur global</span><span class="result-value">KS-V.1 — s’il se déclenche, tout meurt</div>
 
 
   <div style="margin:1.5rem 0 0">
@@ -1040,13 +1073,13 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
     <input type="email" name="EMAIL" id="EMAIL" aria-label="Adresse e-mail" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
-    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">S'abonner</button>
+    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">S’abonner</button>
     <input type="text" name="email_address_check" value="" style="display:none">
     <input type="hidden" name="locale" value="en">
   </form>
 
   <p id="sib-success" style="font-size:16px;margin:1rem 0 0;display:none">Vérifie ta boîte mail — un e-mail de confirmation est en route.</p>
-  <p id="sib-error" style="font-size:16px;margin:1rem 0 0;color:#900;display:none">Ton abonnement n'a pas pu être enregistré. Réessaie.</p>
+  <p id="sib-error" style="font-size:16px;margin:1rem 0 0;color:#900;display:none">Ton abonnement n’a pas pu être enregistré. Réessaie.</p>
 </div>
 
 <!-- ════════════════════════════════════════ -->
@@ -1056,12 +1089,12 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 <div class="constraint" id="about">
   <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
   <p><b>Artiste :</b> G · Studio G, Cape Town</p>
-  <p><b>Durée :</b> plus de 30 ans · <b>Exposition :</b> plus d'un million de mots en 28 volumes</p>
-  <p style="margin-top:1rem">Cette œuvre est en Copyleft. Tu es libre de télécharger, imprimer, partager et distribuer. Tu n'es pas libre de modifier la source. Garde le signal propre.</p>
+  <p><b>Durée :</b> plus de 30 ans · <b>Exposition :</b> plus d’un million de mots en 28 volumes</p>
+  <p style="margin-top:1rem">Cette œuvre est en Copyleft. Tu es libre de télécharger, imprimer, partager et distribuer. Tu n’es pas libre de modifier la source. Garde le signal propre.</p>
   <p style="margin-top:1rem;font-size:14px;color:var(--g4)"><span id="dl-count">2</span> téléchargements</p>
 </div>
 
-<p class="oneness">Un enregistrement existe. Sois bienveillant est une dérivation.<br>Le Je Suis en moi est le Je Suis en toi.<br>JE SUIS partageons l'unité.</p>
+<p class="oneness">Un enregistrement existe. Sois bienveillant est une dérivation.<br>Le Je Suis en moi est le Je Suis en toi.<br>JE SUIS partageons l’unité.</p>
 
 
 <div class="footer">
@@ -1216,5 +1249,19 @@ document.addEventListener('DOMContentLoaded',function(){
     }).catch(function(){el.textContent='—'});
   }
 })();
+</script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!n.classList.contains('open'))return;
+  if(e.target.closest('.nav-menu')||e.target.closest('.nav-toggle'))return;
+  n.classList.remove('open');
+  var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return; n.classList.remove('open');
+  var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
+});
 </script>
 </body></html>

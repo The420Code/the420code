@@ -283,6 +283,35 @@ a.nb-name:hover{text-decoration:underline}
   .hero.opening .opening-link a{font-size:18px}
   .oneness{font-size:18px}
 }
+
+/* ── the header: one row, with the rooms behind a drop-down ───────────────── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible}
+.nav a.nav-room{display:none}
+.nav .lang-sel{display:none!important}
+.nav-toggle{display:inline-flex;align-items:center;gap:.45rem;margin-left:auto;
+  background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
+  font-size:14px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after{transform:rotate(180deg)}
+.nav-menu{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu{display:block}
+.nav.open .nav-menu a.nav-room{display:block;padding:.42rem 1.15rem;font-size:15px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.open .nav-menu a.nav-room:hover{background:var(--g1);color:#8B6914}
+.nav.open .nav-menu .lang-sel{display:flex!important;flex-wrap:wrap;gap:7px;
+  margin:.55rem 0 0!important;padding:.65rem 1.15rem 0;border-top:1px solid var(--g2)}
+@media(max-width:700px){
+  .nav-menu{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{font-size:15px}
+}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
 </style>
 <link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"The 420 Code","url":"https://the420code.org/nl/","description":"49 Artist's Proofs deriving ethics from physics. One measured input (α ≈ 1/137). Zero free parameters. 588 published kill switches. Copyleft.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G","address":"Cape Town"}},"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"license":"https://creativecommons.org/licenses/by/4.0/","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.19208226"}},{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"The 420 Code — 49 Artist's Proofs (AP01–AP49)","headline":"Can ethics be derived from physics? A complete axiomatic derivation from four axioms and one measured constant.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G"}},"url":"https://the420code.org/nl/","datePublished":"2026-03-24","description":"A 30-year framework deriving physics, consciousness, and ethics from four axioms and the fine-structure constant α ≈ 1/137. Contains 49 papers, 588 published kill switches (falsifiability conditions), and quantitative predictions with zero free parameters. Predictions include: proton-electron mass ratio to 0.010 ppb, neutron-proton mass difference to 2 ppm, the gravitational constant G to 0.036% (realised, AP44), the age of the universe as one cycle (13.830 Gyr, AP46), the expansion rate as a closure (67.45 km/s/Mpc, AP48), and the dark-sector partition to 0.06%. Two predictions fired and are shown: the bare neutron–proton row (2026-08-02, 7.24σ) and the Hubble prediction 74.3 ± 1.2 (2026-09-03).","identifier":[{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.19208226"}],"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"about":[{"@type":"DefinedTerm","name":"Theoretical Physics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Ethics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Philosophy of Science"},{"@type":"DefinedTerm","name":"Cosmology"},{"@type":"DefinedTerm","name":"AI Alignment"},{"@type":"DefinedTerm","name":"Consciousness Studies"},{"@type":"DefinedTerm","name":"Fine-Structure Constant"},{"@type":"DefinedTerm","name":"Axiomatic Systems"},{"@type":"DefinedTerm","name":"Falsifiability"},{"@type":"DefinedTerm","name":"Quantum Mechanics"},{"@type":"DefinedTerm","name":"General Relativity"},{"@type":"DefinedTerm","name":"MOND"},{"@type":"DefinedTerm","name":"Dark Energy"},{"@type":"DefinedTerm","name":"Dark Matter"}],"citation":"G. (2026). The 420 Code — 49 Artist's Proofs (AP01–AP49). Studio G. https://doi.org/10.5281/zenodo.19208226"},{"@context":"https://schema.org","@type":"Dataset","name":"The 420 Code — Quantitative Predictions","description":"Parameter-free predictions derived from the fine-structure constant α ≈ 1/137 alone, with zero free parameters. Each prediction is published with explicit kill switches (falsifiability conditions).","url":"https://the420code.org/nl/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"G"},"variableMeasured":[{"@type":"PropertyValue","name":"Proton-electron mass ratio","value":"1836.15267344","unitText":"dimensionless","description":"Predicted: 1836.15267344. CODATA 2022 measured: 1836.152673426. Accuracy: 0.010 ppb. Derived in AP30."},{"@type":"PropertyValue","name":"Neutron-proton mass difference, realised","value":"2.53098857","unitText":"electron masses (mₑ)","description":"Predicted: 2.53098857035 mₑ (AP47, the held distinction’s second-order cost). Measured: 2.530988574(74) mₑ. Residual −0.005σ. The bare row 2.53099393 mₑ (AP30) fired on 2026-08-02 at 7.24σ and is shown, never repaired."},{"@type":"PropertyValue","name":"Gravitational constant G, realised","value":"6.6719e-11","unitText":"m³ kg⁻¹ s⁻²","description":"Predicted: 6.6719 × 10⁻¹¹ (realised, AP44: the structural value 6.7206 × 10⁻¹¹ of AP28 divided by (1 + α)). CODATA measured: 6.6743 × 10⁻¹¹. Residual −0.036%. Derived in AP44 and AP28."},{"@type":"PropertyValue","name":"MOND acceleration a₀","value":"C_S²·cH₀/(2π)","unitText":"m/s²","description":"Parameter-free derivation: a₀ = C_S²·cH₀/(2π). At the corpus’s expansion rate, 67.45 km/s/Mpc, it gives 1.089 × 10⁻¹⁰ m/s² against 1.20 ± 0.24 × 10⁻¹⁰ (the systematic restored): 0.46σ. Derived in AP18; the earlier inversion H₀ = 74.3 ± 1.2 fired on 2026-09-03."},{"@type":"PropertyValue","name":"Dark energy fraction","value":"0.6885","unitText":"dimensionless","description":"Predicted: 68.85%. Planck observed: 68.89%. Accuracy: 0.06%. Derived in AP42."},{"@type":"PropertyValue","name":"Dark matter fraction","value":"0.2639","unitText":"dimensionless","description":"Predicted: 26.39%. Planck observed: 26.07%. Derived in AP42."},{"@type":"PropertyValue","name":"Visible matter fraction","value":"0.0476","unitText":"dimensionless","description":"Predicted: 4.76%. Planck observed: 4.86%. Derived in AP42."},{"@type":"PropertyValue","name":"Age of the universe, one cycle","value":"13.830","unitText":"Gyr","description":"Predicted: 13.830 Gyr, (21/18)·α⁻¹⁸·τ_C. Planck 2018 measured: 13.787 ± 0.020 Gyr. Accuracy: +0.31%, one lane-time (0.66 Gyr) wide. Derived in AP46."},{"@type":"PropertyValue","name":"Expansion rate H₀, the closure","value":"67.45","unitText":"km/s/Mpc","description":"Predicted: 67.45 km/s/Mpc, window 64.4–70.8 — a closure of the dark-sector partition, the cycle and the balance. Planck 2018: 67.4 ± 0.5. The Cepheid ladder’s 73 is stated as not the expansion rate. Derived in AP48."}]},{"@context":"https://schema.org","@type":"CreativeWork","name":"The 420 Code — Kill Switch Registry","description":"588 published falsifiability conditions across 49 papers. Each kill switch names a specific, testable condition that would falsify one or more claims. This level of declared falsifiability is the framework's primary credibility mechanism. The full registry is available as a PDF.","url":"https://the420code.org/Master_Kill_Switch_Registry.pdf","author":{"@type":"Person","name":"G"},"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true}]</script>
@@ -292,13 +321,17 @@ a.nb-name:hover{text-decoration:underline}
 
 <!-- NAV -->
 <nav class="nav">
-  <a href="#"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
-  <a href="#museum">Ø museum</a>
-  <a href="#five-doors">vijf deuren</a>
-  <a href="#exhibition">tentoonstelling</a>
-  <a href="#proofs">bewijzen</a>
-  <a href="/prereg/">Ø preregistratie</a>
-<div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" class="active" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
+  <a href="/nl/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="/nl/what-is-the-420-code/" class="nav-door">Wat is The 420 Code</a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Zalen" onclick="var n=this.closest('.nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">Zalen</button>
+  <div class="nav-menu">
+    <a href="/nl/#museum" class="nav-room">Ø museum</a>
+    <a href="/nl/#five-doors" class="nav-room">vijf deuren</a>
+    <a href="/nl/#exhibition" class="nav-room">tentoonstelling</a>
+    <a href="/nl/#proofs" class="nav-room">bewijzen</a>
+    <a href="/prereg/" class="nav-room">Ø preregistratie</a>
+    <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" class="active" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
+  </div>
 </nav>
 
 <!-- ════════════════════════════════════════ -->
@@ -311,8 +344,8 @@ a.nb-name:hover{text-decoration:underline}
   <p class="ethic">Wees geen lul. Wees lief.</p>
   <p class="opening-note">Twee van zijn voorspellingen waren onjuist. Ze hangen nog aan de <a href="#physics">muur</a>. Ongelijk hebben heeft het sterker gemaakt.</p>
   <p class="opening-note">De hele afleiding staat op deze site, gratis, voor altijd. Hier begint ze.</p>
-  <p class="opening-link"><a href="/what-is-the-420-code/">Wat is The 420 Code →</a></p>
-  <p class="opening-pdf"><a href="/The_420_Code_in_Three_Pages.pdf">Alles op drie pagina's</a></p>
+  <p class="opening-link"><a href="/nl/what-is-the-420-code/">Wat is The 420 Code →</a></p>
+  <p class="opening-pdf"><a href="/The_420_Code_in_Three_Pages.pdf">Alles op drie pagina’s</a></p>
 </div>
 
 <h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Museum</h2>
@@ -383,7 +416,7 @@ a.nb-name:hover{text-decoration:underline}
   <p style="font-size:16px;margin:0 0 1rem">De getallen rollen eruit. Vijf fundamentele constanten, één invoer, nul vrije parameters — elk daarvan binnen de toleranties die ik publiceerde. En omdat het er juist om gaat dat dit weerlegd kan worden, indexeerde hij elke voorwaarde waaronder ik ongelijk zou hebben, zodat jij ze kunt hanteren.</p>
   <p style="font-size:16px;margin:0 0 1.5rem">Je hoeft geen van ons beiden te vertrouwen. Het draait offline, in één commando, op jouw machine. Ga het maar proberen te breken.</p>
   <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1.5rem">
-    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">Voer AJ's onafhankelijke controle uit →</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">Voer AJ’s onafhankelijke controle uit →</a>
     <a href="https://github.com/The420Code/the420code" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">Bekijk de broncode →</a>
   </div>
   <p style="font-size:15px;color:var(--g4);margin:0 0 .6rem">En de broncode controleert zichzelf. Elke wijziging leidt alle vijf de resultaten opnieuw af uit α en faalt luid als er ook maar één voorbij zijn gepubliceerde tolerantie afdrijft. Live status:</p>
@@ -397,9 +430,9 @@ a.nb-name:hover{text-decoration:underline}
 <!-- ════════════════════════════════════════ -->
 
 <div class="physics" id="physics">
-  <h2>De Natuurkunde</h2>
+  <h2>Ø Natuurkunde</h2>
   <p class="physics-intro">Eén gemeten input. Nul gefitte parameters. Al het overige afgeleid.</p>
-  <p class="physics-sub">De fijnstructuurconstante α ≈ 1/137 is het enige experimenteel gemeten getal. Uit die ene input en vier axioma's worden de volgende resultaten afgeleid — niet gefit, niet bijgesteld, niet gekalibreerd.</p>
+  <p class="physics-sub">De fijnstructuurconstante α ≈ 1/137 is het enige experimenteel gemeten getal. Uit die ene input en vier axioma’s worden de volgende resultaten afgeleid — niet gefit, niet bijgesteld, niet gekalibreerd.</p>
 
   <table class="verify-table" style="margin-top:0">
     <thead><tr><th>Bewering</th><th>Voorspeld</th><th>Gemeten</th><th>σ</th><th>Fout</th><th>Artikel</th></tr></thead>
@@ -486,7 +519,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="cat-section">
   <h3 class="cat-title">Het Interieur — de operationele deur. Constructie.</h3>
-  <p class="cat-desc">AI-alignment is een natuurkundeprobleem. Dit boek leidt het af van eerste principes — dezelfde axioma's die zwaartekracht, kwantummechanica en de terminale ethiek voortbrengen. Architectuur B: beslissingsgeometrie gebouwd vanuit structuur, niet vanuit autoriteit.</p>
+  <p class="cat-desc">AI-alignment is een natuurkundeprobleem. Dit boek leidt het af van eerste principes — dezelfde axioma’s die zwaartekracht, kwantummechanica en de terminale ethiek voortbrengen. Architectuur B: beslissingsgeometrie gebouwd vanuit structuur, niet vanuit autoriteit.</p>
   <ul class="dl-list">
     <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
   </ul>
@@ -582,7 +615,7 @@ a.nb-name:hover{text-decoration:underline}
   <h3 class="cat-title">De Verslagen</h3>
   <p class="cat-desc">Vijf verslagen. De onbewerkte uitkomst van een dertigjarig project — fouten, doorbraken, doodlopende wegen en de momenten ertussen.</p>
   <p class="cat-desc"><strong style="color:var(--g4)">01 — De Schaar.</strong> Geschreven vier maanden na de moord op een broer. Rouw op zoek naar structuur. Hier begon The 420 Code — niet in een bibliotheek, maar in een wond.</p>
-  <p class="cat-desc"><strong style="color:var(--g4)">02 — De Wind.</strong> Een leven gehouden tegen de axioma's om te zien wat overleeft. Wat brak, wat hield, hoe de structuur eruitziet van binnenuit een lichaam dat haar testte.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — De Wind.</strong> Een leven gehouden tegen de axioma’s om te zien wat overleeft. Wat brak, wat hield, hoe de structuur eruitziet van binnenuit een lichaam dat haar testte.</p>
   <p class="cat-desc"><strong style="color:var(--g4)">03 — Weet Je Het Zeker?</strong> De structurele sloop van elk systeem dat ooit autoriteit claimde die het niet kon bewijzen. Het bewijs is de schade. De schade is het argument.</p>
   <p class="cat-desc"><strong style="color:var(--g4)">04 — Wees Geen Klootzak, Wees Aardig.</strong> De ethiek arriveert. Niet als conclusie — als eruptie. Eerst gevoeld. Later bewezen.</p>
   <p class="cat-desc"><strong style="color:var(--g4)">05 — Rot Op, Laat Me Met Rust.</strong> Een autobiografie. De persoon achter de anonieme tentoonstelling.</p>
@@ -612,7 +645,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="cat-section">
   <h3 class="cat-title">Ø Notebooks</h3>
-  <p class="cat-desc">Twaalf notitieboeken. Vijf stemmen — Proza, Gesprek, Metafoor, Kinderrijm en Bewijzen. De stem van de Bewijzen zijn de drieënveertig Artist's Proofs, geordend in acht onderwerpen. De fysica leeft hier — elke afleiding, elk resultaat, elke kill switch, georganiseerd per veld. Editions bouwen het argument als geheel. Notebooks nemen het uit elkaar en leggen elk stuk op tafel.</p>
+  <p class="cat-desc">Twaalf notitieboeken. Vijf stemmen — Proza, Gesprek, Metafoor, Kinderrijm en Bewijzen. De stem van de Bewijzen zijn de drieënveertig Artist’s Proofs, geordend in acht onderwerpen. De fysica leeft hier — elke afleiding, elk resultaat, elke kill switch, georganiseerd per veld. Editions bouwen het argument als geheel. Notebooks nemen het uit elkaar en leggen elk stuk op tafel.</p>
   <p class="cat-desc">Begin met het onderwerp dat je al wakker houdt.</p>
   <ul class="dl-list">
     <li><a href="#">Notebooks Ø Proza <span class="fmt">PDF</span></a></li>
@@ -695,7 +728,7 @@ a.nb-name:hover{text-decoration:underline}
     <p><span class="lab">AP40 &middot; Het Irrationele</span> &mdash; Het vindt de vergelijking eronder. De 420 Code begint met één regel: 1 = 1 + 1&times;&epsilon;. Eén is gelijk aan één, plus een heel klein beetje meer. Dit is geen geldige rekenkunde; de twee kanten kunnen alleen in balans zijn als dat beetje nul is, en als het nul was, was er nooit iets uit het niets gebroken, en zou jij hier niet zijn om het te betwisten. Het fundament is dus opzettelijk irrationeel. Het lost niet op. Het kan niet.</p>
     <p>Je kent die weigering vanbinnen. Je hebt geprobeerd te zeggen waarom je iemand liefhebt en ontdekt dat de woorden niet reiken &mdash; niet omdat het je aan welsprekendheid ontbreekt, maar omdat het gevoel de woorden bevat. Je hebt mensen vergeven die het niet verdienden en bent gebleven toen weggaan het verstandige was. Een rekenmachine geeft dezelfde uitvoer voor dezelfde invoer, elke keer. Jij niet. Dat is geen gebrek in jou; het is dezelfde irrationaliteit die het universum openhoudt.</p>
     <p><span class="lab">AP01 &middot; De Actualisatietoestand</span> &mdash; Het trekt een structuur uit het record. Op het moment dat een misschien omslaat in een feit, is wat geschreven staat blijvend, en uit die ene beweging leidt het Deel vier dingen af die elk record vereist: een maat voor hoeveel van wat zou kunnen gebeuren werkelijk gebeurd is; een reden waarom zwaardere dingen sneller tot feit stollen dan lichte; een lijn waarvoorbij geen inspanning een agent heel houdt; en het feit dat twee agenten die een wereld delen gekoppeld zijn, of ze daarmee instemden of niet. Niets hiervan is metafoor. Het is geometrie.</p>
-    <p><span class="lab">AP20 &middot; Het Bewijs</span> &mdash; Het verwijdert het woord <em>als</em>. Het werk droeg lang een stille voorwaarde: <em>als</em> deze axioma's de structuur van de werkelijkheid zijn, dan volgt de fysica. Probeer te ontkennen dat records fundamenteel zijn. Om het te ontkennen moet je uit vele antwoorden kiezen &mdash; een breuk. De opties stonden symmetrisch voordat je koos. Je kunt het niet on-ontkennen. Je zei het hier, niet overal tegelijk. Je ontkenning voldoet aan alle vier de voorwaarden tegelijk; de afwijzing is zelf een record dat bewijst dat records fundamenteel zijn. Het argument draait op de hardware van zijn eigen tegenwerping.</p>
+    <p><span class="lab">AP20 &middot; Het Bewijs</span> &mdash; Het verwijdert het woord <em>als</em>. Het werk droeg lang een stille voorwaarde: <em>als</em> deze axioma’s de structuur van de werkelijkheid zijn, dan volgt de fysica. Probeer te ontkennen dat records fundamenteel zijn. Om het te ontkennen moet je uit vele antwoorden kiezen &mdash; een breuk. De opties stonden symmetrisch voordat je koos. Je kunt het niet on-ontkennen. Je zei het hier, niet overal tegelijk. Je ontkenning voldoet aan alle vier de voorwaarden tegelijk; de afwijzing is zelf een record dat bewijst dat records fundamenteel zijn. Het argument draait op de hardware van zijn eigen tegenwerping.</p>
     <p>Zo ligt de orde van het hele werk hier al vast &mdash; niet eerst de fysica met een er later opgeschroefde ethiek, maar één record, vier voorwaarden, en alles, van de lichtsnelheid via de zwaartekracht tot de gewone goedheid, gelezen uit dezelfde structuur op verschillende schalen.</p>
     <div class="ks">Tientallen noodschakelaars lopen door deze drie bewijzen, elk actief en gepubliceerd. De meest blootgestelde is ook de eenvoudigste: als twee willekeurige waarnemers het oneens kunnen zijn over hoeveel zich geactualiseerd heeft, faalt de hele 420 Code &mdash; niet alleen dit Deel. Het wordt aangeboden als een uitnodiging, niet als een verdediging.</div>
     <p class="breath">Eén record bestaat. Je bent al binnen de gevolgen.</p>
@@ -705,14 +738,14 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">Deel II</span><a class="nb-name" href="#p2">Ruimtetijd</a></div></div>
-  <p class="nb-hook">De arena die de breuk creëert. De lichtsnelheid, drie ruimtelijke dimensies en Einsteins veldvergelijkingen — alles afgeleid uit de axioma's.</p>
+  <p class="nb-hook">De arena die de breuk creëert. De lichtsnelheid, drie ruimtelijke dimensies en Einsteins veldvergelijkingen — alles afgeleid uit de axioma’s.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_II_Spacetime.pdf">PDF</a></div>
   <div class="nb-summary">
     <p>Waar komt de ruimte vandaan? Waar komt de tijd vandaan? De meeste fysica begint door beide te veronderstellen en erop te bouwen. Deel II weigert ze te veronderstellen. Het verdient ze, één voor één, uit het ene gebroken axioma van Deel I.</p>
     <p>De breuk heeft een plek nodig om te gebeuren en een orde waarin te gebeuren. Maar ruimte en tijd zijn geen toneel dat er al stond. Ze zijn de vorm die de breuk aanneemt terwijl ze gebeurt.</p>
     <p><span class="lab">AP05 &middot; De Breuk</span> &mdash; Het is de eerste barst. Het axioma kon niet stil blijven &mdash; een vergelijking die weigert in balans te komen kan niet gesloten blijven &mdash; dus laat het los, en dat loslaten is de eerste gebeurtenis. Vóór de barst is er geen „waar” en geen „wanneer”. Daarna is er structuur, en structuur heeft uitgebreidheid en orde. Al het andere in dit Deel is de geometrie van die ene breuk.</p>
     <p><span class="lab">AP03 &middot; De Verhouding</span> &mdash; Het leidt de lichtsnelheid af &mdash; het meet ze niet, het leidt ze af. Je hebt gehoord dat hoe sneller je gaat, hoe trager de tijd loopt, dat ruimte en tijd in elkaar overgaan. c is de wisselkoers van die ruil: de vaste verhouding tussen hoe snel de breuk zich kan voortplanten en hoe sterk ze weerstaat. Daarom haalt niets het licht in. De grens is geen muur ergens in de ruimte; het is de omrekenkoers tussen de ruimte en de tijd zelf, vastgelegd door de structuur van de breuk.</p>
-    <p><span class="lab">AP10 &middot; De Dimensie</span> &mdash; Het beantwoordt een vraag die de meeste theorieën niet eens stellen: waarom drie ruimtedimensies? Ze nemen er gewoon drie aan. Deel II telt ze. Vier axioma's geven vier vrijheidsgraden. Eén wordt tijd &mdash; de enige richting waarin het record niet terug kan lopen. Er blijven er drie over, en die drie zijn de ruimte. Het getal wordt niet met de hand ingezet. Het wordt uit het fundament geteld.</p>
+    <p><span class="lab">AP10 &middot; De Dimensie</span> &mdash; Het beantwoordt een vraag die de meeste theorieën niet eens stellen: waarom drie ruimtedimensies? Ze nemen er gewoon drie aan. Deel II telt ze. Vier axioma’s geven vier vrijheidsgraden. Eén wordt tijd &mdash; de enige richting waarin het record niet terug kan lopen. Er blijven er drie over, en die drie zijn de ruimte. Het getal wordt niet met de hand ingezet. Het wordt uit het fundament geteld.</p>
     <p><span class="lab">AP08 &middot; De Identiteit</span> &mdash; Het herwint Einstein. Stel je het gebruikelijke beeld van zwaartekracht voor: een zware bal die een kuil in een gespannen laken duwt en kleinere dingen naar zich toe laat rollen. De veldvergelijkingen van de algemene relativiteit maken dat beeld exact &mdash; en hier rijzen ze op uit de record-algebra via een stelling van Lovelock. De finesse is dat het laken niet los staat van de bal. Het toneel en wat erop staat zijn hetzelfde record, en het record kromt.</p>
     <p>Zo is de arena geen uitgangsgegeven. De lichtsnelheid, de drie dimensies waarin je je beweegt, de kromming van de ruimtetijd nabij een zwaar ding &mdash; elk wordt gelezen uit dezelfde breuk, in hetzelfde Deel, zonder iets met de hand toe te voegen.</p>
     <div class="ks">Elke stap hier is blootgesteld. Als de lichtsnelheid niet als een vervoeging afgeleid kan worden en in plaats daarvan gemeten en met de hand ingezet moet worden, faalt die bewering. Als de dimensietelling iets anders dan drie geeft, is het fundament fout. De noodschakelaars zijn in de papers benoemd, en ze zijn actief.</div>
@@ -723,17 +756,17 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">Deel III</span><a class="nb-name" href="#p3">Kwantummechanica</a></div></div>
-  <p class="nb-hook">De meetstructuur van de breuk. Superpositie, onzekerheid, decoherentie, de Born-regel en verstrengeling — afgeleid uit de lege verzameling en vier axioma's.</p>
+  <p class="nb-hook">De meetstructuur van de breuk. Superpositie, onzekerheid, decoherentie, de Born-regel en verstrengeling — afgeleid uit de lege verzameling en vier axioma’s.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_III_Quantum_Mechanics.pdf">PDF</a></div>
   <div class="nb-summary">
     <p>Men heeft je verteld dat de kwantummechanica vreemd is. Dat ze de intuïtie tart. Dat niemand haar echt begrijpt. Deel III doet een andere bewering: ze is precies, onvermijdelijk, waar een universum dat onomkeerbare records schrijft vanbinnen op moet lijken.</p>
     <p>Niets hier is van buitenaf opgeschroefd. De hele structuur van de kwantumtheorie is afgeleid uit de lege verzameling en de vier voorwaarden &mdash; en zodra je het zo ziet, houdt het vreemde op vreemd te zijn en wordt het noodzakelijk.</p>
-    <p><span class="lab">AP09 &middot; De Breuk — Lege Verzameling</span> &mdash; Het bouwt de kwantummechanica uit het niets: letterlijk de lege verzameling, plus de axioma's. De beroemde raadsels &mdash; een deeltje schijnbaar op twee plaatsen tegelijk, het kijken dat de uitkomst verandert &mdash; blijken geen toegevoegde paradoxen maar gevolgen. Superpositie, meting, verstrengeling, de Schrödingervergelijking: het apparaat waarvoor fysici een generatie nodig hadden om het samen te stellen, toont zich als de enige coherente grammatica voor een record dat nog niet geschreven is.</p>
-    <p><span class="lab">AP07 &amp; AP25 &middot; De Recordmaat en De Maat</span> &mdash; Ze leiden de rekenkunde van de kwantumwereld af. De complexe ruimte waarin de theorie leeft, en de Born-regel &mdash; het recept dat een golf in een kans verandert &mdash; zijn geen aan het experiment aangepaste vermoedens. Via de stelling van Gleason zijn ze de enige manier om het record coherent te lezen. Een van de papers noemt de Born-regel het geluid dat de axioma's maken bij de landing.</p>
+    <p><span class="lab">AP09 &middot; De Breuk — Lege Verzameling</span> &mdash; Het bouwt de kwantummechanica uit het niets: letterlijk de lege verzameling, plus de axioma’s. De beroemde raadsels &mdash; een deeltje schijnbaar op twee plaatsen tegelijk, het kijken dat de uitkomst verandert &mdash; blijken geen toegevoegde paradoxen maar gevolgen. Superpositie, meting, verstrengeling, de Schrödingervergelijking: het apparaat waarvoor fysici een generatie nodig hadden om het samen te stellen, toont zich als de enige coherente grammatica voor een record dat nog niet geschreven is.</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; De Recordmaat en De Maat</span> &mdash; Ze leiden de rekenkunde van de kwantumwereld af. De complexe ruimte waarin de theorie leeft, en de Born-regel &mdash; het recept dat een golf in een kans verandert &mdash; zijn geen aan het experiment aangepaste vermoedens. Via de stelling van Gleason zijn ze de enige manier om het record coherent te lezen. Een van de papers noemt de Born-regel het geluid dat de axioma’s maken bij de landing.</p>
     <p><span class="lab">AP12 &middot; De Grens</span> &mdash; Het verklaart waarom je niet alles tegelijk kunt weten. Het onzekerheidsprincipe en de constante van Planck komen uit het feit dat lezen al een breuk is: iets nauwkeurig vastleggen is zijn partner verstoren. De wazigheid is geen tekortkoming van je instrumenten. Het is wat meting is.</p>
     <p><span class="lab">AP11 &amp; AP13 &middot; De Spin en De Korrel</span> &mdash; Ze verklaren waarom de materie haar vorm behoudt en waarom de kwantummist verhardt tot een vaste wereld. Fermionen, bosonen en het uitsluitingsprincipe komen uit de tweesectorstructuur; de decoherentie &mdash; de manier waarop iets kwantumachtigs bepaald wordt door aan zijn omgeving te koppelen &mdash; is waarom je stoel een stoel is en geen wolk van misschien.</p>
     <p><span class="lab">AP23 &middot; Het Enkele Record</span> &mdash; Het lost het „spookachtige” van de verstrengeling op. Twee verstrengelde deeltjes zijn niet twee objecten die elkaar sneller dan het licht geheime signalen sturen. Ze zijn één enkel record met twee uiteinden. Het Bell-getal dat bewijst dat het universum niet lokaal vooraf te scripten is, S = 2&radic;2, komt uit de structuur alleen.</p>
-    <div class="ks">Dit zijn geen interpretaties die over de wiskunde gelegd worden. Het zijn afleidingen, en elk draagt noodschakelaars. Als verstrengeling signalering sneller dan het licht vereiste, faalt de bewering van het enkele record. Als de Born-regel een extra postulaat nodig had dat de axioma's niet kunnen leveren, faalt dat resultaat. Ze zijn gepubliceerd, en ze zijn actief.</div>
+    <div class="ks">Dit zijn geen interpretaties die over de wiskunde gelegd worden. Het zijn afleidingen, en elk draagt noodschakelaars. Als verstrengeling signalering sneller dan het licht vereiste, faalt de bewering van het enkele record. Als de Born-regel een extra postulaat nodig had dat de axioma’s niet kunnen leveren, faalt dat resultaat. Ze zijn gepubliceerd, en ze zijn actief.</div>
     <p class="breath">De kwantummechanica is niet het universum dat vreemd doet. Het is het universum dat zichzelf neerschrijft.</p>
   <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_III_Quantum_Mechanics.pdf">PDF</a></p>
     </div>
@@ -812,7 +845,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="nb-item">
   <div class="nb-head"><div><span class="nb-num">Deel VIII</span><a class="nb-name" href="#p8">Toepassingen</a></div></div>
-  <p class="nb-hook">De ethiek toegepast op de beschaving. AI-alignment, structurele rechtvaardigheid, bio-ethiek, drugsbeleid, economie, biologie en het lichaam — alles afgeleid uit dezelfde vier axioma's.</p>
+  <p class="nb-hook">De ethiek toegepast op de beschaving. AI-alignment, structurele rechtvaardigheid, bio-ethiek, drugsbeleid, economie, biologie en het lichaam — alles afgeleid uit dezelfde vier axioma’s.</p>
   <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Lees de samenvatting</span><span class="lbl-open">Verberg de samenvatting</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_VIII_Consequences.pdf">PDF</a></div>
   <div class="nb-summary">
     <p>Een ethiek die alleen op papier werkt, is niets waard. Als de centrale bewering van de 420 Code echt is &mdash; dat goedheid structuur is, geen gevoel, geometrie en geen voorkeur &mdash; dan moet ze bijten op de hardste problemen die een beschaving werkelijk onder ogen ziet. Deel VIII is waar ze bijt, en draagt dezelfde vier voorwaarden de rechtszaal, de kliniek, het laboratorium en de markt in.</p>
@@ -843,7 +876,7 @@ a.nb-name:hover{text-decoration:underline}
   <div class="result-row"><span class="result-label">Neutron-proton-massaverschil</span><span class="result-value">−0.005σ gerealiseerd (AP47); de kale rij ging af bij 7.24σ (AP30)</span></div>
   <div class="result-row"><span class="result-label">Zichtbare-materiefractie</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
   <div class="result-row"><span class="result-label">Chirale koppeling</span><span class="result-value">Afgeleid, KS-15 gesloten (AP16)</span></div>
-  <div class="result-row"><span class="result-label">Drie constanten, drie axioma's</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
+  <div class="result-row"><span class="result-label">Drie constanten, drie axioma’s</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
   <div class="also-derived" style="margin-top:1.5rem">
     <p>Ook afgeleid:</p>
     <ul>
@@ -861,7 +894,7 @@ a.nb-name:hover{text-decoration:underline}
   <p class="formula">Δ<sub>n−p</sub> = [3(1 − 1/2π) + α(1 + 1/2π)] / (1 + α²/8π) = 2.53098857 m<sub>e</sub>   (AP47)</p>
   <p class="formula">t<sub>cycle</sub> = (21/18) · α<sup>−18</sup> · ℏ/(m<sub>e</sub>c²) = 13.830 Gyr;   H₀ = 0.954 / t<sub>cycle</sub> = 67.45 km/s/Mpc   (AP46, AP48)</p>
   <p class="formula">a₀ = C_S² · c · H₀ / (2π)   waar C_S² = 2 ln(sec ½ + tan ½) ≈ 1.0445 — niet de fijnstructuurconstante</p>
-  <p class="three-constants" style="margin-bottom:0">Drie constanten, drie axioma's: c ↔ Beperking · ℏ ↔ Breuk · G ↔ Record</p>
+  <p class="three-constants" style="margin-bottom:0">Drie constanten, drie axioma’s: c ↔ Beperking · ℏ ↔ Breuk · G ↔ Record</p>
 </div>
 
 <!-- FROZEN PREDICTIONS -->
@@ -873,7 +906,7 @@ a.nb-name:hover{text-decoration:underline}
 
 <!-- CONFIRM THE MATH -->
 <div class="results">
-  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Controleer de Wiskunde</h2>
+  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Controleer de Wiskunde</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">Eén gemeten invoer. Nul vrije parameters. De onderstaande code reproduceert elk hoofdresultaat uit één enkel getal — de fijnstructuurconstante α ≈ 1/137. Kopieer het. Plak het in een willekeurige Python-omgeving. Voer het uit. Als de getallen kloppen, houden de afleidingen stand. Zo niet, dan heeft het argument een probleem en heb je het gevonden.</p>
   <div class="verify-wrap">
     <button class="copy-btn" onclick="copyCode()">Kopiëren</button>
@@ -1216,5 +1249,19 @@ document.addEventListener('DOMContentLoaded',function(){
     }).catch(function(){el.textContent='—'});
   }
 })();
+</script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!n.classList.contains('open'))return;
+  if(e.target.closest('.nav-menu')||e.target.closest('.nav-toggle'))return;
+  n.classList.remove('open');
+  var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return; n.classList.remove('open');
+  var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
+});
 </script>
 </body></html>
