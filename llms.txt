@@ -7,7 +7,7 @@
 The 420 Code is one argument, derived over thirty years from a single axiom — one record exists — and the four conditions that follow from it: Symmetry, Break, Record, Constraint. From that axiom and one measured constant, the fine-structure constant α ≈ 1/137, it derives physics, consciousness and ethics. It is published as 53 Artist's Proofs (AP01–AP53), over one million words, under a Creative Commons BY 4.0 licence. The front door and the home page are in 13 languages; the papers are in English.
 
 Author: G (Studio G, Strand, Cape Town)
-DOI: 10.5281/zenodo.19208225 (the concept DOI: it always resolves to the latest version)
+DOI: 10.5281/zenodo.22714160 (this version, 11 September 2026; all versions: 10.5281/zenodo.19208225, which always resolves to the latest)
 License: CC BY 4.0 (Copyleft — free forever)
 URL: https://the420code.org
 Start here: https://the420code.org/what-is-the-420-code/
@@ -81,7 +81,7 @@ Every prediction can be checked against published experimental values, and every
 
 ## How to Cite
 
-G. (2026). The 420 Code — 53 Artist's Proofs (AP01–AP53). Studio G. https://doi.org/10.5281/zenodo.19208225
+G. (2026). The 420 Code — 53 Artist's Proofs (AP01–AP53). Studio G. https://doi.org/10.5281/zenodo.22714160
 
 ## Available Resources
 
@@ -93,4 +93,4 @@ G. (2026). The 420 Code — 53 Artist's Proofs (AP01–AP53). Studio G. https://
 - Frozen predictions and the fired switches: https://the420code.org/prereg/
 - Kill Switch Registry: https://the420code.org/Master_Kill_Switch_Registry.pdf
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi
-- DOI: 10.5281/zenodo.19208225
+- DOI: 10.5281/zenodo.22714160 (this version); 10.5281/zenodo.19208225 (all versions)
