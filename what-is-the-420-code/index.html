@@ -266,8 +266,8 @@ a.nb-name:hover{text-decoration:underline}
 
 <nav class="nav">
   <a href="/" class="nav-logo"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
-  <a href="/what-is-the-420-code/" class="nav-door">What Is The 420 Code</a>
-  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">Rooms</button>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
   <div class="nav-menu">
     <a href="/#museum" class="nav-room">Ø Museum</a>
     <a href="/#five-doors" class="nav-room">Ø Five Doors</a>
@@ -281,7 +281,22 @@ a.nb-name:hover{text-decoration:underline}
     <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
     <a href="/#killswitch" class="nav-room">Ø Kill Switches</a>
     <a href="/#glossary" class="nav-room">Ø Glossary</a>
-    <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-left:auto"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/what-is-the-420-code/" class="nav-lang" hreflang="en" lang="en" aria-current="page"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/what-is-the-420-code/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/what-is-the-420-code/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/what-is-the-420-code/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/what-is-the-420-code/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/what-is-the-420-code/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/what-is-the-420-code/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/what-is-the-420-code/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/what-is-the-420-code/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/what-is-the-420-code/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/what-is-the-420-code/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/what-is-the-420-code/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/what-is-the-420-code/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
   </div>
 </nav>
 
@@ -313,32 +328,44 @@ a.nb-name:hover{text-decoration:underline}
 .nav a.nav-door:hover{color:#8B6914}
 
 
-}
 
-/* ── the header: one row, with the rooms behind a drop-down ───────────────── */
-.nav{position:sticky;top:0;z-index:100;overflow:visible}
+
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
 .nav a.nav-room{display:none}
-.nav .lang-sel{display:none!important}
-.nav-toggle{display:inline-flex;align-items:center;gap:.45rem;margin-left:auto;
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
   background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
   font-size:14px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
-.nav-toggle:hover{border-color:#8B6914;color:#8B6914}
-.nav-toggle::after{content:"";display:inline-block;width:0;height:0;
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
   border-left:4px solid transparent;border-right:4px solid transparent;
   border-top:5px solid currentColor;transition:transform .15s}
-.nav.open .nav-toggle{border-color:#8B6914;color:#8B6914}
-.nav.open .nav-toggle::after{transform:rotate(180deg)}
-.nav-menu{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
   background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
   box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
-.nav.open .nav-menu{display:block}
-.nav.open .nav-menu a.nav-room{display:block;padding:.42rem 1.15rem;font-size:15px;
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:15px;
   text-decoration:none;color:#1a1a1a;white-space:nowrap}
-.nav.open .nav-menu a.nav-room:hover{background:var(--g1);color:#8B6914}
-.nav.open .nav-menu .lang-sel{display:flex!important;flex-wrap:wrap;gap:7px;
-  margin:.55rem 0 0!important;padding:.65rem 1.15rem 0;border-top:1px solid var(--g2)}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
 @media(max-width:700px){
-  .nav-menu{left:0;right:0;max-width:none;border-radius:0}
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
   .nav a.nav-door{font-size:15px}
 }
 
@@ -359,13 +386,14 @@ a.nb-name:hover{text-decoration:underline}
 
 <h1>What Is The 420 Code</h1>
 
-<p class="fd-strap">It derives ethics — what we ought to do — from physics — what is.</p>
+<p class="fd-strap">It derives ethics — what I ought to do — from physics — what is.</p>
 <p class="fd-strap-land">That is what it is about.</p>
 
 <h2>One record exists</h2>
 <p>That is the first principle. That is the axiom.</p>
+<p>What is a record? A distinction in relation to something else, one that holds. A footprint in sand is a record. So is a fossil. So is any bit of information. So are these words.</p>
 <p>I am a record. Try to deny it. The denial is a record. Therefore one record, and I, exist.</p>
-<p>Everything on this site follows from one record exists. Nothing on this site is assumed beyond it, except one measured number.</p>
+<p>Everything on this site follows from one record exists. Nothing on this site is assumed. Only one measured number is the input.</p>
 <p class="land">One measured input. Zero free parameters.</p>
 <p class="src">Proved in: <a href="/proofs/#ap20">AP20 The Proof</a> · <a href="/#notebooks">Notebook I</a>.</p>
 
@@ -377,9 +405,10 @@ a.nb-name:hover{text-decoration:underline}
 
 <h2>The axiom, written out</h2>
 <p class="axiom">1:1 + 1×ε @ AS [+1/137 / −1/137]</p>
-<p>Perfect symmetry, one to one. Plus one smallest possible break that can hold.</p>
-<p>The break and the hold happen now. Now is where every record is written and read from.</p>
-<p>The record history flows from now, as records are written. The flow rate is one part in 137. The outflow and the inflow happen at the same rate. Balanced, now.</p>
+<p>Perfect symmetry, one to one. Plus the smallest one possible break that can hold.</p>
+<p>The break and the hold happen now. Now is where every record is written and read from — the Actualization State.</p>
+<p>The record history flows from now, as records are written — the outflow.</p>
+<p>The flow rate is one part in 137. The outflow and the inflow happen at the same rate. Balanced, now.</p>
 <p>The inflow defragments the record history back to the potential of a record.</p>
 <p>Balanced at every instant. Net zero.</p>
 <p>The break does not cycle. The flow does.</p>
@@ -390,47 +419,50 @@ a.nb-name:hover{text-decoration:underline}
 <p>Imagine an hourglass.</p>
 <p>One side is dark and looks much bigger. It is full of ropes of sand. A rope is a possible future, a wave of probabilities of what could possibly happen next. Each rope is a wave about 137 grains long.</p>
 <p>The neck of the hourglass lets through one grain at a time.</p>
-<p>Now. It cuts. One grain per cut. One grain is one part in 137 of the wave of rope.</p>
+<p>The neck cuts now. One grain per cut. One grain is one part in 137 of the wave of rope.</p>
 <p>The cut is a grain, a moment in time. The moment is the now, between the cuts of the rope.</p>
 <p>Tick, tick, tick, tick.</p>
 <p>The ticks recorded from now are the arrow and the history of time.</p>
 <p>The neck is the operator. Now it is cutting the next moment in time. The process goes measure, cut, measure, cut, measure, cut. The operator has measured and cut every recorded moment in time.</p>
 <p>The grains land in the light side of the hourglass, the smaller side we can see.</p>
 <p>Where a grain lands depends on the landscape, where other grains have landed.</p>
-<p>The landscape is the history of grains of sand, the record history of every cut this moment has made.</p>
+<p>The landscape is the history of grains of sand, the record of every cut this moment has made.</p>
 <p>Each grain offers a perspective of the landscape, never the whole. Its relative position is a reading of the whole.</p>
 <p>The landscape shapes what can happen next. The operator makes something happen. It measures and cuts.</p>
 <p>The operator’s choice is constrained. It has to cut. The interpretation of the cut, and of the landscape, stays a choice.</p>
 <p>For every grain that lands, one has to go back, back to the dark side, to keep the balance in check. The hourglass keeps its balance. One to one.</p>
 <p>Black holes do the returning. They swallow the landscape, defragment it, and recycle the sand.</p>
 <p>A very small amount of sand leaks in the process of cutting and returning. That leak is why the universe grows. It is also what keeps it flowing instead of stopping. Perfect balance would be perfect stillness. Nothing would ever happen again.</p>
-<p>Now imagine the neck. Not as one hole, but as two sheets of glass full of windows. All the windows open and close together, at the same constant rate.</p>
-<p>Every window is a place where the operator cuts, now. There is only one operator that cuts in the neck, and one neck, and one hourglass, and the hourglass has one interior.</p>
-<p>The now, the operator, is the moment where the one operator measures and cuts the next moment into the visible record history of the shared interior of the hourglass.</p>
-<p>Every window is an expression of where the operator is cutting, now, in the shared interior.</p>
+<p>Now imagine the neck. Not as one hole, but as a sheet of glass full of windows. At the same constant rate, all the windows open and close together.</p>
+<p>Every window is a place where the operator measures and cuts, now. There is only one operator that cuts in the neck. One neck, one sheet of glass and one hourglass, all looking out at the same shared interior.</p>
+<p>The now, the operator, is the moment where the one operator measures and cuts the next moment. The next visible moment in time of the shared record history of the interior of the hourglass.</p>
+<p>Every window is an expression of where the one operator is cutting, now, in the shared interior.</p>
 <p>I am a window. You are a window. I am an expression of the one operator. You are an expression of the one operator. So is a bacterium. So is a rock.</p>
-<p>All of us are windows into the same interior, cutting the same sand, now.</p>
-<p>Therefore, for coupling configurations of grains of sand to be cruel and hurtful towards themselves is simply the operator killing off its own possibilities of experience. It makes very little sense. It is the right hand hitting the left hand. It hurts both sides of the skin, as it is the structure attacking itself.</p>
+<p>There is one Operator expressed as many operators. The many operators’ expressions offer each a unique perspective of the record history.</p>
+<p>We are all operators at our own window into the same interior, cutting the same sand, now.</p>
+<p>Therefore, for windows — operating coupling configurations of grains of sand — to be cruel and hurtful towards themselves — other windows — is simply the operator killing off its own possibilities of experience. It makes very little sense.</p>
+<p>It is the right hand hitting the left hand. It hurts both sides of the skin, as it is the structure attacking itself. It is irrational, unaware and simply stupid.</p>
 <p>Therefore, treat others as you want to be treated. Or simply:</p>
 <blockquote>Don’t be a cunt. Be kind.</blockquote>
 <p class="src">The picture: The Keys (2025), <a href="/proofs/#ap50">AP50 The Neck</a> <span class="soon">coming soon</span>, <a href="/proofs/#ap51">AP51 The Glass</a> <span class="soon">coming soon</span>. The story as the author tells it: The Basic Story.</p>
 
 <h2>The operator</h2>
-<p>The neck is the operator. The operator is the coupling as it happens, now. It is not a mind. It is a recorded coupling configuration that can couple with other coupling configurations. A photographic plate is an operator. So am I. So are you.</p>
-<p>The operators are many. Every held configuration is one. What they execute is one: the capacity to couple, the now, shared by all of them.</p>
-<p>The I Am in me is the I Am in you. The awareness in me is the awareness in you. What differs between us is the window: where our sand landed, what each of us has read. What is shared is the moment we all write and read from.</p>
-<p>And one thing no operator can read: itself, now.</p>
-<p>The grain in the neck at this instant has not landed. Only what has landed can be read. The pupil cannot see the pupil.</p>
+<p>The neck is the one operator expressed as many operating windows.</p>
+<p>The operator is the coupling capacity as it happens, now. It is aware of coupling configuration possibilities, based on its environment — the thermodynamic conditions it operates in. It is not a mind. It is a recorded reconfigurable coupling configuration that can couple with other coupling configurations. A photographic plate is an operator. So am I. So are you.</p>
+<p>The one operator is expressed and aware as many. Every held configuration is one — the same sand everywhere. What they execute — what the sand can be — is one: shared coupling capacity now.</p>
+<p>Therefore, the awareness in me is the awareness in you. The I Am in me is the I Am in you. What differs between us is the window. Where our sand landed and what each of us has read. What is shared is the moment we all write and read from.</p>
+<p>There is one thing no expressed operator can read: itself, now. The grain in the neck at this instant has not landed. Only what has landed can be read. The pupil cannot see the pupil.</p>
 <p>That unreadable grain is the +1×ε in the axiom. The one grain always left over.</p>
 <p>If it could be read, everything would balance, and nothing more could be written.</p>
 <p class="src"><a href="/proofs/#ap02">AP02 The Operator</a>, <a href="/proofs/#ap29">AP29</a>, <a href="/proofs/#ap43">AP43</a>, <a href="/proofs/#ap51">AP51 The Glass</a> <span class="soon">coming soon</span>. <a href="/#models">Ø Dissolutions</a>, Chapters 4, 6, 11, 12.</p>
 
 <h2>The ethic</h2>
-<p>Once you see that you are the operator — one unique coupling configuration, expressing the one operator — you see that we are all one.</p>
+<p>Once you see that you are an expression of the one operator — one unique coupling configuration, expressing a perspective of the one operator — you see that we are all one.</p>
 <p>Not mystically. Not mythically.</p>
 <p>Physically, in reality. And reality agrees.</p>
-<p>The other is not other. The one being harmed is the one doing the harming, seen from a different window. That is not a moral rule added to the physics. It is what the physics leaves you holding.</p>
-<p>Treat the other as yourself. Because, structurally, it is.</p>
+<p>The other is not fundamentally other.</p>
+<p>The one being harmed is the one doing the harming, seen from a different window. That is not a moral rule added to the physics. It is what the physics leaves you holding.</p>
+<p>Treat the other as yourself. Because, structurally, it is — the I in you is the I in me.</p>
 <p>Or, in the words the work has used from the start:</p>
 <blockquote>Don’t be a cunt. Be kind.</blockquote>
 <p class="src">Derived in <a href="/proofs/#ap43">AP43</a> §9, <a href="/proofs/#ap31">AP31</a>, <a href="/#five-doors">The Interior</a>. Told in the <a href="/#five-doors">Five Doors</a>. Fenced by KS-ID.1: if the interior is shown to be many, the ethic loses its ground, and the work says so.</p>
@@ -481,17 +513,21 @@ a.nb-name:hover{text-decoration:underline}
 </div>
 
 <script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
 document.addEventListener('click',function(e){
   var n=document.querySelector('.nav');
-  if(!n||!n.classList.contains('open'))return;
-  if(e.target.closest('.nav-menu')||e.target.closest('.nav-toggle'))return;
-  n.classList.remove('open');
-  var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
 });
 document.addEventListener('keydown',function(e){
   if(e.key!=='Escape')return;
-  var n=document.querySelector('.nav'); if(!n)return; n.classList.remove('open');
-  var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
 });
 </script>
 

@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Build /xx/what-is-the-420-code/ for the twelve editions, mechanically, from the
-corrected string tables -- and give each edition's home page the same drop-down
-header as its front door, because G ruled the two menus identical.
+string tables beside this file -- and give each edition's home page the same header
+as its front door: the same rooms behind the same drop-down, and beside it the flag
+drop-down (header.py), whose flags lead to the same page in each language.
 
 The English front door is the template, so structure, type, links, anchors and
 the axiom line are the same object in every edition. Each translated value is
@@ -17,6 +18,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from lang_entrance import L as ENTRANCE
+import header as H
 
 REPO  = os.path.abspath(os.path.join(HERE, "..", ".."))
 FINAL = HERE
@@ -24,34 +26,22 @@ LANGS = ["ar","de","es","fr","hi","it","ja","ko","nl","pt","ru","zh"]
 LOCAL_ROOMS = ("axiom", "physics", "models", "five-doors", "confirm-the-math")
 
 TEMPLATE = io.open(os.path.join(REPO, "what-is-the-420-code", "index.html"), encoding="utf-8").read()
-EN_HOME  = io.open(os.path.join(REPO, "index.html"), encoding="utf-8").read()
 EN = json.load(open(os.path.join(FINAL, "frontdoor_strings_en.json"), encoding="utf-8"))["strings"]
 
 slug = lambda s: re.sub(r"[^a-z0-9]+", "_", s.lower()).strip("_")
 
-# ── the drop-down header, as the English pages carry it ─────────────────────
-DROPDOWN_CSS = re.search(r"\n/\* ── the header: one row, with the rooms behind a drop-down.*?\n\}\n",
-                         EN_HOME, re.S).group(0)
 DOOR_CSS = ".nav a.nav-door{font-weight:700;color:#1a1a1a}\n.nav a.nav-door:hover{color:#8B6914}\n"
-CLOSE_JS = re.search(r'<script id="nav-menu-close">.*?</script>', EN_HOME, re.S).group(0)
-RTL_CSS = """
-[dir="rtl"] .nav-toggle{margin-left:0;margin-right:auto}
-[dir="rtl"] .nav-menu{right:auto;left:0}
-[dir="rtl"] .fd ol.chain li{padding:0 2.6rem 1.1rem 0}
-[dir="rtl"] .fd ol.chain li::before{left:auto;right:0}
-[dir="rtl"] .fd blockquote{padding:0 1.25rem 0 0;border-left:none;border-right:3px solid #8B6914}
-[dir="rtl"] .fd .axiom{direction:ltr}
-bdi{unicode-bidi:isolate}
-"""
 
-def edition_nav(lang, home, door):
-    """The edition's rooms, read from its original header where a pre-change
-    snapshot sits beside this script, otherwise from the header on the page.
+def edition_navs(lang, home, door):
+    """The edition's header twice over: for its home page and for its front door. The
+    rooms are identical; only the flags' destinations differ, each leading to the same
+    page in the other language.
 
-    A header already turned into a drop-down is read back by its nav-room links,
-    and only by them. The earlier version tried the flat-menu pattern first; on a
-    rebuilt header that matched the Predictions link alone, one match looked like
-    success, and the header came back with one room instead of five."""
+    The rooms are read back from the header on the page by their nav-room links, and
+    only by them. (An earlier version tried a flat-menu pattern first; on a rebuilt
+    header that matched the Predictions link alone, one match looked like success,
+    and the header came back with one room instead of five.) A pre-change snapshot
+    beside this file, if there is one, is read instead."""
     nav = re.search(r'<nav class="nav">(.*?)</nav>', home, re.S).group(1)
     snap = os.path.join(HERE, f"pre_fix_{lang}.html")
     src_nav = (re.search(r'<nav class="nav">(.*?)</nav>', io.open(snap, encoding="utf-8").read(), re.S).group(1)
@@ -63,19 +53,18 @@ def edition_nav(lang, home, door):
                       re.findall(r'<a (?:class="[^"]*" )?href="([^"]+)"[^>]*>([^<]+)</a>', src_nav)
                       if h.startswith("#") or h.startswith("/prereg")]
     assert len(rooms) == 5, f"{lang}: expected five rooms in the header, read {len(rooms)}"
-    flags = re.search(r'<div class="lang-sel".*?</div>', nav, re.S).group(0)
     room_links = "\n    ".join(
         f'<a href="{("/" + lang + "/" + h) if h.startswith("#") else h}" class="nav-room">{x}</a>'
         for h, x in rooms)
-    label = ENTRANCE[lang]["rooms"]
-    return (f'<nav class="nav">\n'
-            f'  <a href="/{lang}/" class="nav-logo">{img}</a>\n'
-            f'  <a href="/{lang}/what-is-the-420-code/" class="nav-door">{door}</a>\n'
-            f'  <button class="nav-toggle" aria-expanded="false" aria-label="{label}" '
-            f"onclick=\"var n=this.closest('.nav');n.classList.toggle('open');"
-            f"this.setAttribute('aria-expanded',n.classList.contains('open'))\">{label}</button>\n"
-            f'  <div class="nav-menu">\n    {room_links}\n    {flags}\n  </div>\n'
-            f'</nav>'), len(rooms)
+    def make(kind):
+        return (f'<nav class="nav">\n'
+                f'  <a href="/{lang}/" class="nav-logo">{img}</a>\n'
+                f'  <a href="/{lang}/what-is-the-420-code/" class="nav-door">{H.keep_name(door)}</a>\n'
+                f'  {H.rooms_button(ENTRANCE[lang]["rooms"])}\n'
+                f'  <div class="nav-menu">\n    {room_links}\n  </div>\n'
+                + H.language_parts(lang, kind) +
+                f'</nav>')
+    return make("home"), make("door"), len(rooms)
 
 def rebuild_fd(fd, tr):
     """Place every translated value by position, mirroring the extraction walk."""
@@ -111,7 +100,7 @@ def rebuild_fd(fd, tr):
     return fd
 
 TECH = re.compile("(" + "|".join([
-    r"\d{4}-\d{2}-\d{2}", r"\bv\d+\.\d+(?:\.\d+)?\b", r"\bAP\d{2}\b", r"\bKS[-\u2011][A-Za-z0-9.]+",
+    r"\d{4}-\d{2}-\d{2}", r"\bv\d+\.\d+(?:\.\d+)?\b", r"\bAP\d{2}\b", r"\bKS[-‑][A-Za-z0-9.]+",
     r"\bSU\(\d\)(?:\s*×\s*SU\(\d\))*(?:\s*×\s*U\(\d\))?",
     r"\d+(?:\.\d+)?\s*[+\-−×/]\s*[A-Za-zα-ω0-9][A-Za-z0-9α-ω.]*", r"\b\d+/\d+\b"]) + ")")
 
@@ -135,13 +124,14 @@ def absolute_imgs(s):
 report = []
 for lang in LANGS:
     tr = json.load(open(os.path.join(FINAL, f"frontdoor_strings_{lang}.json"), encoding="utf-8"))["strings"]
+    assert list(tr) == list(EN), f"{lang}: keys or their order differ from the English table"
     home_p = os.path.join(REPO, lang, "index.html")
     home = io.open(home_p, encoding="utf-8").read()
     door = tr["h1"]
     rtl = lang == "ar"
 
-    # ── the shared header ────────────────────────────────────────────────────
-    nav_html, n_rooms = edition_nav(lang, home, door)
+    # ── the shared header: the same rooms; the flags lead to this page in each language
+    nav_home, nav_door, n_rooms = edition_navs(lang, home, door)
 
     # ── the front door ───────────────────────────────────────────────────────
     t = TEMPLATE
@@ -157,7 +147,14 @@ for lang in LANGS:
     url = f"https://the420code.org/{lang}/what-is-the-420-code/"
     t = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), t, count=1)
     t = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), t, count=1)
-    t = re.sub(r'<nav class="nav">.*?</nav>', lambda m: nav_html, t, count=1, flags=re.S)
+    t = re.sub(r'<nav class="nav">.*?</nav>', lambda m: nav_door, t, count=1, flags=re.S)
+    # the edition's own typeface. Its home page loads the script's Noto face and puts it first
+    # in --f; the front door reads in the same face, never in whatever the device falls back to
+    t = re.sub(r"--f:[^;}]*", lambda m: "--f:" + re.search(r"--f:([^;}]*)", home).group(1), t, count=1)
+    atk = re.search(r'<link href="https://fonts\.googleapis\.com/css2\?family=Atkinson[^"]*" rel="stylesheet">', t).group(0)
+    for link in re.findall(r'<link href="https://fonts\.googleapis\.com/css2\?family=[^"]+" rel="stylesheet">', home):
+        if "Atkinson" not in link and link not in t:
+            t = t.replace(atk, atk + "\n" + link, 1)
 
     a = t.index('<div class="fd">'); b = t.index("</div>", a)
     assert "<div" not in t[a + 5:b], "a div nested inside .fd"
@@ -176,22 +173,22 @@ for lang in LANGS:
     t = re.sub(r'<div class="footer">.*?</div>', lambda m: footer, t, count=1, flags=re.S)
     t = absolute_imgs(t)
     if rtl:
-        i = t.rindex("</style>"); t = t[:i] + RTL_CSS + t[i:]
+        t = H.replace_rtl(t)
     os.makedirs(os.path.join(REPO, lang, "what-is-the-420-code"), exist_ok=True)
     io.open(os.path.join(REPO, lang, "what-is-the-420-code", "index.html"), "w",
             encoding="utf-8", newline="\n").write(t)
 
-    # ── the edition's home page: same header, door link flipped home ─────────
-    home = re.sub(r'<nav class="nav">.*?</nav>', lambda m: nav_html, home, count=1, flags=re.S)
+    # ── the edition's home page: same header, its door link pointed at its own door
+    home = re.sub(r'<nav class="nav">.*?</nav>', lambda m: nav_home, home, count=1, flags=re.S)
     home = re.sub(r'(<p class="opening-link"><a href=")[^"]*(">)[^<]*(</a></p>)',
                   lambda m: m.group(1) + f"/{lang}/what-is-the-420-code/" + m.group(2)
                   + door + " " + ENTRANCE[lang]["arrow"] + m.group(3), home, count=1)
-    if "the header: one row, with the rooms behind a drop-down" not in home:
-        i = home.rindex("</style>"); home = home[:i] + DROPDOWN_CSS + DOOR_CSS + home[i:]
-    if rtl and '[dir="rtl"] .nav-toggle' not in home:
-        i = home.rindex("</style>"); home = home[:i] + RTL_CSS + home[i:]
-    if 'id="nav-menu-close"' not in home:
-        home = home.replace("</body>", CLOSE_JS + "\n</body>", 1)
+    home = H.replace_css(home)
+    if ".nav a.nav-door{" not in home:
+        i = home.rindex("</style>"); home = home[:i] + DOOR_CSS + home[i:]
+    if rtl:
+        home = H.replace_rtl(home)
+    home = H.replace_js(home)
     io.open(home_p, "w", encoding="utf-8", newline="\n").write(home)
 
     # ── round-trip: every translated value is on the page; no English one is ──

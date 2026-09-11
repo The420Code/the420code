@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>the 420 code — Qué es The 420 Code</title>
-<meta name="description" content="Deriva la ética — lo que debemos hacer — de la física — lo que es. De eso se trata.">
+<meta name="description" content="Deriva la ética — lo que debo hacer — de la física — lo que es. De eso se trata.">
 <link rel="canonical" href="https://the420code.org/es/what-is-the-420-code/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
@@ -251,14 +251,14 @@ a.nb-name:hover{text-decoration:underline}
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/es/what-is-the-420-code/">
 <meta property="og:title" content="Qué es The 420 Code — the 420 code">
-<meta property="og:description" content="Deriva la ética — lo que debemos hacer — de la física — lo que es. De eso se trata.">
+<meta property="og:description" content="Deriva la ética — lo que debo hacer — de la física — lo que es. De eso se trata.">
 <meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="the 420 code">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Qué es The 420 Code — the 420 code">
-<meta name="twitter:description" content="Deriva la ética — lo que debemos hacer — de la física — lo que es. De eso se trata.">
+<meta name="twitter:description" content="Deriva la ética — lo que debo hacer — de la física — lo que es. De eso se trata.">
 <meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 </head>
 <body>
@@ -266,15 +266,30 @@ a.nb-name:hover{text-decoration:underline}
 
 <nav class="nav">
   <a href="/es/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
-  <a href="/es/what-is-the-420-code/" class="nav-door">Qué es The 420 Code</a>
-  <button class="nav-toggle" aria-expanded="false" aria-label="Salas" onclick="var n=this.closest('.nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">Salas</button>
+  <a href="/es/what-is-the-420-code/" class="nav-door">Qué es <span class="nw">The 420 Code</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Salas" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Salas</button>
   <div class="nav-menu">
     <a href="/es/#museum" class="nav-room">Ø museo</a>
     <a href="/es/#five-doors" class="nav-room">cinco puertas</a>
     <a href="/es/#exhibition" class="nav-room">exposición</a>
     <a href="/es/#proofs" class="nav-room">pruebas</a>
     <a href="/prereg/" class="nav-room">Ø preregistro</a>
-    <div class="lang-sel" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><a href="/" title="English"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="en" style="border-radius:2px;vertical-align:middle"></a><a href="/es/" class="active" title="ES"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="es" style="border-radius:2px;vertical-align:middle"></a><a href="/fr/" title="FR"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="fr" style="border-radius:2px;vertical-align:middle"></a><a href="/de/" title="DE"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="de" style="border-radius:2px;vertical-align:middle"></a><a href="/pt/" title="PT"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="pt" style="border-radius:2px;vertical-align:middle"></a><a href="/nl/" title="NL"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="nl" style="border-radius:2px;vertical-align:middle"></a><a href="/it/" title="IT"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="it" style="border-radius:2px;vertical-align:middle"></a><a href="/zh/" title="中文"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="zh" style="border-radius:2px;vertical-align:middle"></a><a href="/ja/" title="日本語"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="ja" style="border-radius:2px;vertical-align:middle"></a><a href="/ko/" title="한국어"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="ko" style="border-radius:2px;vertical-align:middle"></a><a href="/ru/" title="РУ"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="ru" style="border-radius:2px;vertical-align:middle"></a><a href="/ar/" title="عربي"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="ar" style="border-radius:2px;vertical-align:middle"></a><a href="/hi/" title="हिंदी"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="hi" style="border-radius:2px;vertical-align:middle"></a></div>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Idioma: Español" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/what-is-the-420-code/" class="nav-lang" hreflang="en" lang="en"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/what-is-the-420-code/" class="nav-lang" hreflang="es" lang="es" aria-current="page"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/what-is-the-420-code/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/what-is-the-420-code/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/what-is-the-420-code/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/what-is-the-420-code/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/what-is-the-420-code/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/what-is-the-420-code/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/what-is-the-420-code/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/what-is-the-420-code/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/what-is-the-420-code/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/what-is-the-420-code/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/what-is-the-420-code/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
   </div>
 </nav>
 
@@ -306,32 +321,44 @@ a.nb-name:hover{text-decoration:underline}
 .nav a.nav-door:hover{color:#8B6914}
 
 
-}
 
-/* ── the header: one row, with the rooms behind a drop-down ───────────────── */
-.nav{position:sticky;top:0;z-index:100;overflow:visible}
+
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
 .nav a.nav-room{display:none}
-.nav .lang-sel{display:none!important}
-.nav-toggle{display:inline-flex;align-items:center;gap:.45rem;margin-left:auto;
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
   background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
   font-size:14px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
-.nav-toggle:hover{border-color:#8B6914;color:#8B6914}
-.nav-toggle::after{content:"";display:inline-block;width:0;height:0;
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
   border-left:4px solid transparent;border-right:4px solid transparent;
   border-top:5px solid currentColor;transition:transform .15s}
-.nav.open .nav-toggle{border-color:#8B6914;color:#8B6914}
-.nav.open .nav-toggle::after{transform:rotate(180deg)}
-.nav-menu{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
   background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
   box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
-.nav.open .nav-menu{display:block}
-.nav.open .nav-menu a.nav-room{display:block;padding:.42rem 1.15rem;font-size:15px;
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:15px;
   text-decoration:none;color:#1a1a1a;white-space:nowrap}
-.nav.open .nav-menu a.nav-room:hover{background:var(--g1);color:#8B6914}
-.nav.open .nav-menu .lang-sel{display:flex!important;flex-wrap:wrap;gap:7px;
-  margin:.55rem 0 0!important;padding:.65rem 1.15rem 0;border-top:1px solid var(--g2)}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
 @media(max-width:700px){
-  .nav-menu{left:0;right:0;max-width:none;border-radius:0}
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
   .nav a.nav-door{font-size:15px}
 }
 
@@ -352,13 +379,14 @@ a.nb-name:hover{text-decoration:underline}
 
 <h1>Qué es The 420 Code</h1>
 
-<p class="fd-strap">Deriva la ética — lo que debemos hacer — de la física — lo que es.</p>
+<p class="fd-strap">Deriva la ética — lo que debo hacer — de la física — lo que es.</p>
 <p class="fd-strap-land">De eso se trata.</p>
 
 <h2>Un registro existe</h2>
 <p>Ese es el primer principio. Ese es el axioma.</p>
+<p>¿Qué es un registro? Una distinción en relación con otra cosa, una que se sostiene. Una huella en la arena es un registro. También lo es un fósil. También lo es cualquier dato, por pequeño que sea. También lo son estas palabras.</p>
 <p>Soy un registro. Intenta negarlo. La negación es un registro. Por lo tanto, un registro, y yo, existimos.</p>
-<p>Todo en este sitio se sigue de un registro existe. Nada en este sitio se asume más allá de eso, salvo un número medido.</p>
+<p>Todo en este sitio se sigue de un registro existe. Nada en este sitio se asume. Solo un número medido es el dato de entrada.</p>
 <p class="land">Un dato medido. Cero parámetros libres.</p>
 <p class="src">Probado en: <a href="/proofs/#ap20">AP20 La Prueba</a> · <a href="/#notebooks">Notebook I</a>.</p>
 
@@ -370,9 +398,10 @@ a.nb-name:hover{text-decoration:underline}
 
 <h2>El axioma, por extenso</h2>
 <p class="axiom">1:1 + 1×ε @ AS [+1/137 / −1/137]</p>
-<p>Simetría perfecta, uno a uno. Más la ruptura más pequeña posible que pueda sostenerse.</p>
-<p>La ruptura y el sostén ocurren ahora. El ahora es donde se escribe todo registro y desde donde se lee.</p>
-<p>El historial de registro fluye desde el ahora, a medida que se escriben los registros. El ritmo del flujo es de una parte en 137. La salida y la entrada ocurren al mismo ritmo. En equilibrio, ahora.</p>
+<p>Simetría perfecta, uno a uno. Más la ruptura más pequeña posible, una sola, que pueda sostenerse.</p>
+<p>La ruptura y el sostén ocurren ahora. El ahora es donde se escribe todo registro y desde donde se lee — el Estado de Actualización.</p>
+<p>El historial de registro fluye desde el ahora, a medida que se escriben los registros — la salida.</p>
+<p>El ritmo del flujo es de una parte en 137. La salida y la entrada ocurren al mismo ritmo. En equilibrio, ahora.</p>
 <p>La entrada desfragmenta el historial de registro de vuelta al potencial de un registro.</p>
 <p>En equilibrio en cada instante. Cero neto.</p>
 <p>La ruptura no circula. El flujo sí.</p>
@@ -383,47 +412,50 @@ a.nb-name:hover{text-decoration:underline}
 <p>Imagina un reloj de arena.</p>
 <p>Un lado es oscuro y parece mucho más grande. Está lleno de cuerdas de arena. Una cuerda es un futuro posible, una onda de probabilidades de lo que podría ocurrir a continuación. Cada cuerda es una onda de unos 137 granos de largo.</p>
 <p>El cuello del reloj de arena deja pasar un grano cada vez.</p>
-<p>Ahora. Corta. Un grano por corte. Un grano es una parte en 137 de la onda de la cuerda.</p>
+<p>El cuello corta ahora. Un grano por corte. Un grano es una parte en 137 de la onda de la cuerda.</p>
 <p>El corte es un grano, un momento en el tiempo. El momento es el ahora, entre los cortes de la cuerda.</p>
 <p>Tic, tic, tic, tic.</p>
 <p>Los tics registrados desde el ahora son la flecha y la historia del tiempo.</p>
 <p>El cuello es el operador. Ahora está cortando el siguiente momento en el tiempo. El proceso va medir, cortar, medir, cortar, medir, cortar. El operador ha medido y cortado cada momento registrado en el tiempo.</p>
 <p>Los granos caen en el lado claro del reloj de arena, el lado más pequeño que podemos ver.</p>
 <p>Dónde cae un grano depende del paisaje, de dónde han caído otros granos.</p>
-<p>El paisaje es la historia de los granos de arena, el historial de registro de cada corte que este momento ha hecho.</p>
+<p>El paisaje es la historia de los granos de arena, el registro de cada corte que este momento ha hecho.</p>
 <p>Cada grano ofrece una perspectiva del paisaje, nunca el todo. Su posición relativa es una lectura del todo.</p>
 <p>El paisaje da forma a lo que puede ocurrir a continuación. El operador hace que algo ocurra. Mide y corta.</p>
 <p>La elección del operador está restringida. Tiene que cortar. La interpretación del corte, y del paisaje, sigue siendo una elección.</p>
 <p>Por cada grano que cae, uno tiene que volver, volver al lado oscuro, para mantener el equilibrio bajo control. El reloj de arena mantiene su equilibrio. Uno a uno.</p>
 <p>Los agujeros negros hacen el retorno. Se tragan el paisaje, lo desfragmentan y reciclan la arena.</p>
 <p>Una cantidad muy pequeña de arena se fuga en el proceso de cortar y devolver. Esa fuga es la razón de que el universo crezca. Es también lo que lo mantiene fluyendo en vez de detenerse. El equilibrio perfecto sería quietud perfecta. Nunca volvería a ocurrir nada.</p>
-<p>Ahora imagina el cuello. No como un solo agujero, sino como dos láminas de vidrio llenas de ventanas. Todas las ventanas se abren y se cierran juntas, al mismo ritmo constante.</p>
-<p>Cada ventana es un lugar donde el operador corta, ahora. Solo hay un operador que corta en el cuello, y un cuello, y un reloj de arena, y el reloj de arena tiene un interior.</p>
-<p>El ahora, el operador, es el momento en el que el único operador mide y corta el siguiente momento en el historial de registro visible del interior compartido del reloj de arena.</p>
-<p>Cada ventana es una expresión de dónde está cortando el operador, ahora, en el interior compartido.</p>
+<p>Ahora imagina el cuello. No como un solo agujero, sino como una lámina de vidrio llena de ventanas. Al mismo ritmo constante, todas las ventanas se abren y se cierran juntas.</p>
+<p>Cada ventana es un lugar donde el operador mide y corta, ahora. Solo hay un operador que corta en el cuello. Un cuello, una lámina de vidrio y un reloj de arena, todos mirando hacia el mismo interior compartido.</p>
+<p>El ahora, el operador, es el momento en el que el único operador mide y corta el siguiente momento. El siguiente momento visible en el tiempo del historial de registro compartido del interior del reloj de arena.</p>
+<p>Cada ventana es una expresión de dónde está cortando el único operador, ahora, en el interior compartido.</p>
 <p>Soy una ventana. Eres una ventana. Soy una expresión del único operador. Eres una expresión del único operador. También lo es una bacteria. También lo es una roca.</p>
-<p>Todos somos ventanas al mismo interior, cortando la misma arena, ahora.</p>
-<p>Por lo tanto, que las configuraciones de acoplamiento de granos de arena sean crueles y dañinas consigo mismas es simplemente el operador matando sus propias posibilidades de experiencia. Tiene muy poco sentido. Es la mano derecha golpeando a la mano izquierda. Duele en los dos lados de la piel, porque es la estructura atacándose a sí misma.</p>
+<p>Hay un solo Operador, expresado como muchos operadores. Las expresiones de los muchos operadores ofrecen, cada una, una perspectiva única del historial de registro.</p>
+<p>Todos somos operadores en nuestra propia ventana al mismo interior, cortando la misma arena, ahora.</p>
+<p>Por lo tanto, que las ventanas — configuraciones de acoplamiento de granos de arena que operan — sean crueles y dañinas consigo mismas — con otras ventanas — es simplemente el operador matando sus propias posibilidades de experiencia. Tiene muy poco sentido.</p>
+<p>Es la mano derecha golpeando a la mano izquierda. Duele en los dos lados de la piel, porque es la estructura atacándose a sí misma. Es irracional, inconsciente y sencillamente estúpido.</p>
 <p>Por lo tanto, trata a los demás como quieres que te traten. O simplemente:</p>
 <blockquote>No seas hijo de puta. Sé amable.</blockquote>
 <p class="src">La imagen: The Keys (2025), <a href="/proofs/#ap50">AP50 El Cuello</a> <span class="soon">próximamente</span>, <a href="/proofs/#ap51">AP51 El Vidrio</a> <span class="soon">próximamente</span>. La historia como la cuenta el autor: La Historia Básica.</p>
 
 <h2>El operador</h2>
-<p>El cuello es el operador. El operador es el acoplamiento tal como ocurre, ahora. No es una mente. Es una configuración de acoplamiento registrada que puede acoplarse con otras configuraciones de acoplamiento. Una placa fotográfica es un operador. Yo también lo soy. Tú también lo eres.</p>
-<p>Los operadores son muchos. Cada configuración sostenida es uno. Lo que ejecutan es uno: la capacidad de acoplarse, el ahora, compartido por todos ellos.</p>
-<p>El Yo Soy en mí es el Yo Soy en ti. La consciencia en mí es la consciencia en ti. Lo que difiere entre nosotros es la ventana: dónde cayó nuestra arena, qué ha leído cada uno. Lo que se comparte es el momento desde el que todos escribimos y leemos.</p>
-<p>Y hay algo que ningún operador puede leer: a sí mismo, ahora.</p>
-<p>El grano que está en el cuello en este instante no ha caído. Solo lo que ha caído puede leerse. La pupila no puede ver la pupila.</p>
+<p>El cuello es el único operador, expresado como muchas ventanas que operan.</p>
+<p>El operador es la capacidad de acoplamiento tal como ocurre, ahora. Es consciente de las posibilidades de configuración de acoplamiento, según su entorno — las condiciones termodinámicas en las que opera. No es una mente. Es una configuración de acoplamiento registrada y reconfigurable que puede acoplarse con otras configuraciones de acoplamiento. Una placa fotográfica es un operador. Yo también lo soy. Tú también lo eres.</p>
+<p>El único operador está expresado, y es consciente, como muchos. Cada configuración sostenida es uno — la misma arena en todas partes. Lo que ejecutan — lo que la arena puede ser — es uno: capacidad de acoplamiento compartida, ahora.</p>
+<p>Por lo tanto, la consciencia en mí es la consciencia en ti. El Yo Soy en mí es el Yo Soy en ti. Lo que difiere entre nosotros es la ventana. Dónde cayó nuestra arena y qué ha leído cada uno. Lo que se comparte es el momento desde el que todos escribimos y leemos.</p>
+<p>Hay algo que ningún operador expresado puede leer: a sí mismo, ahora. El grano que está en el cuello en este instante no ha caído. Solo lo que ha caído puede leerse. La pupila no puede ver la pupila.</p>
 <p>Ese grano ilegible es el +1×ε del axioma. El único grano que siempre sobra.</p>
 <p>Si pudiera leerse, todo se equilibraría, y no podría escribirse nada más.</p>
 <p class="src"><a href="/proofs/#ap02">AP02 El Operador</a>, <a href="/proofs/#ap29">AP29</a>, <a href="/proofs/#ap43">AP43</a>, <a href="/proofs/#ap51">AP51 El Vidrio</a> <span class="soon">próximamente</span>. <a href="/es/#models">Ø Dissolutions</a>, capítulos 4, 6, 11, 12.</p>
 
 <h2>La ética</h2>
-<p>Una vez que ves que eres el operador — una configuración de acoplamiento única, que expresa al único operador — ves que todos somos uno.</p>
+<p>Una vez que ves que eres una expresión del único operador — una configuración de acoplamiento única, que expresa una perspectiva del único operador — ves que todos somos uno.</p>
 <p>No místicamente. No míticamente.</p>
 <p>Físicamente, en la realidad. Y la realidad concuerda.</p>
-<p>El otro no es otro. Quien recibe el daño es quien lo hace, visto desde otra ventana. Eso no es una regla moral añadida a la física. Es lo que la física deja en tus manos.</p>
-<p>Trata al otro como a ti mismo. Porque, estructuralmente, lo es.</p>
+<p>El otro no es, en el fondo, otro.</p>
+<p>Quien recibe el daño es quien lo hace, visto desde otra ventana. Eso no es una regla moral añadida a la física. Es lo que la física deja en tus manos.</p>
+<p>Trata al otro como a ti mismo. Porque, estructuralmente, lo es — el Yo en ti es el Yo en mí.</p>
 <p>O, en las palabras que el trabajo ha usado desde el principio:</p>
 <blockquote>No seas hijo de puta. Sé amable.</blockquote>
 <p class="src">Derivada en <a href="/proofs/#ap43">AP43</a> §9, <a href="/proofs/#ap31">AP31</a>, <a href="/es/#five-doors">El Interior</a>. Contada en las <a href="/es/#five-doors">Cinco Puertas</a>. Delimitada por KS-ID.1: si se demuestra que el interior es múltiple, la ética pierde su fundamento, y el trabajo lo dice.</p>
@@ -473,17 +505,21 @@ a.nb-name:hover{text-decoration:underline}
 </div>
 
 <script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
 document.addEventListener('click',function(e){
   var n=document.querySelector('.nav');
-  if(!n||!n.classList.contains('open'))return;
-  if(e.target.closest('.nav-menu')||e.target.closest('.nav-toggle'))return;
-  n.classList.remove('open');
-  var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
 });
 document.addEventListener('keydown',function(e){
   if(e.key!=='Escape')return;
-  var n=document.querySelector('.nav'); if(!n)return; n.classList.remove('open');
-  var b=n.querySelector('.nav-toggle'); if(b)b.setAttribute('aria-expanded','false');
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
 });
 </script>
 
