@@ -5,13 +5,14 @@ Rooms, then the language: a button showing the flag of the language being read, 
 same kind of button as Rooms, with the same arrow, opening a list of all thirteen.
 A flag takes the reader to the same page in that language wherever the page exists
 in it -- a front door to a front door, a home page to a home page, the Proofs page to
-that edition's proofs room -- so changing language never changes what is being read.
+that edition's proofs room. A page that exists only in English (Predictions, its frozen
+documents, Three Ways of Being Sure) sends each other language to its edition's home.
 
 One row at every width: the logo and both buttons keep their size, and the door's name
 wraps inside its own box when a phone is narrow, never splitting "The 420 Code".
 
-Used by build.py for the twelve editions, and for the three English pages that carry
-the header (home, front door, Proofs), so all twenty-seven are made by the same code."""
+Used by build.py for the twelve editions, and for every English page that carries the
+header, so all of them are made by the same code."""
 
 FLAGCDN = "https://flagcdn.com/w40/{}.png"
 
@@ -30,10 +31,10 @@ LANGS = [("en", "gb", "English",    "Language"),
          ("ar", "sa", "العربية",     "اللغة"),
          ("hi", "in", "हिंदी",       "भाषा")]
 BY_CODE = {c: (f, n, w) for c, f, n, w in LANGS}
-KINDS = ("home", "door", "proofs")
+KINDS = ("home", "door", "proofs", "en-only")
 
 
-def target(code, kind):
+def target(code, kind, here=None):
     """Where a flag leads from a page of this kind."""
     base = "/" if code == "en" else f"/{code}/"
     if kind == "home":
@@ -42,6 +43,9 @@ def target(code, kind):
         return base + "what-is-the-420-code/"
     if kind == "proofs":
         return "/proofs/" if code == "en" else f"/{code}/#proofs"
+    if kind == "en-only":
+        assert here, "an English-only page names itself"
+        return here if code == "en" else base
     raise ValueError(kind)
 
 
@@ -69,19 +73,46 @@ def flag_button(lang):
             f'onclick="{_toggle("lang-open")}"><img src="{FLAGCDN.format(flag)}" width="20" height="15" alt=""></button>')
 
 
-def lang_menu(lang, kind):
+def lang_menu(lang, kind, here=None):
     rows = []
     for code, flag, name, _ in LANGS:
         cur = ' aria-current="page"' if code == lang else ""
-        rows.append(f'<a href="{target(code, kind)}" class="nav-lang" hreflang="{code}" lang="{code}"{cur}>'
+        rows.append(f'<a href="{target(code, kind, here)}" class="nav-lang" hreflang="{code}" lang="{code}"{cur}>'
                     f'<img src="{FLAGCDN.format(flag)}" width="20" height="15" alt="">{name}</a>')
     return '<div class="nav-langs">\n    ' + "\n    ".join(rows) + "\n  </div>"
 
 
-def language_parts(lang, kind):
+def language_parts(lang, kind, here=None):
     """The flag button and its list, as they sit in the header after the rooms menu."""
-    return f"  {flag_button(lang)}\n  {lang_menu(lang, kind)}\n"
+    return f"  {flag_button(lang)}\n  {lang_menu(lang, kind, here)}\n"
 
+
+def english_header(rooms_menu, kind, here=None):
+    """The whole English header, for a page outside the generated set. rooms_menu is the
+    English front door's own rooms block, taken from it verbatim, so the rooms can never
+    drift from the pages that define them."""
+    return ('<nav class="nav">\n'
+            '  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>\n'
+            f'  <a href="/what-is-the-420-code/" class="nav-door">{keep_name("What Is The 420 Code")}</a>\n'
+            f'  {rooms_button("Rooms")}\n'
+            f'{rooms_menu}\n'
+            + language_parts("en", kind, here) + '</nav>')
+
+
+DOOR_CSS = ".nav a.nav-door{font-weight:700;color:#1a1a1a}\n.nav a.nav-door:hover{color:#8B6914}"
+
+# the rules the header stands on, exactly as the home page has them, for a page that was
+# built with a header of its own
+BASE_MARK = "/* ── the header's base, as the home page has it ── */"
+BASE_END = "/* ── end of the header's base ── */"
+BASE_CSS = BASE_MARK + """
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem;line-height:1.65}
+html{scroll-padding-top:86px}
+@media(max-width:640px){html{scroll-padding-top:126px}}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+@media(max-width:600px){.nav{gap:.75rem;padding:.75rem 0}}
+""" + DOOR_CSS + "\n" + BASE_END
 
 CSS_MARK = "/* ── the header: one row, with the rooms"
 CSS_END = "  .nav a.nav-door{font-size:15px}\n}"

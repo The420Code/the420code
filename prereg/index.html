@@ -35,13 +35,16 @@ body{font-family:var(--f);font-size:18px;line-height:1.65;color:#1a1a1a;backgrou
 a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
 a:hover{text-decoration-thickness:2px}
 
-.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
-/* anchored headings rest ~17px clear of the sticky nav (nav 60 desktop / 111 mobile) */
-html{scroll-padding-top:77px}
-@media(max-width:640px){html{scroll-padding-top:128px}}
-.nav a:not(.nav-logo){font-size:16px;color:var(--g5);text-decoration:none}
-.nav a:not(.nav-logo):hover{color:var(--bk);text-decoration:underline}
-.nav-logo{margin-right:auto;display:inline-flex;align-items:center}
+/* ── the header's base, as the home page has it ── */
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem;line-height:1.65}
+html{scroll-padding-top:86px}
+@media(max-width:640px){html{scroll-padding-top:126px}}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+@media(max-width:600px){.nav{gap:.75rem;padding:.75rem 0}}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
+/* ── end of the header's base ── */
 
 .section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
 .hero{margin:1rem 0 2rem}
@@ -122,6 +125,61 @@ table.data tr:last-child td{border-bottom:none}
 
 .constraint{margin:2rem 0;padding:1.5rem 0}
 .constraint p{font-size:16px;margin:0 0 .25rem}
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
+.nav a.nav-room{display:none}
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
+  font-size:14px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:15px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
+@media(max-width:700px){
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
+  .nav a.nav-door{font-size:15px}
+}
+/* Ø Map — the directory at the door */
+.map{padding:0;margin:3rem 0 3.5rem}
+.map h2{font-size:26px;font-weight:700;margin:0 0 .35rem}
+.map-intro{font-size:17px;color:var(--g5);margin:0 0 1.4rem}
+.map-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
+.map-door{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .6rem;padding:.62rem 0;text-decoration:none;color:var(--bk)}
+.map-door:nth-child(-n+2){padding-top:0}
+.map-door:hover .d-name{border-bottom-color:var(--bk)}
+.map-door:hover .d-tag{color:var(--bk)}
+.d-name{font-size:18px;font-weight:700;border-bottom:1px solid transparent}
+.d-tag{font-size:16.5px;color:var(--g5)}
+.d-tag::before{content:"— ";color:var(--g3)}
+.map-note{font-size:16px;color:var(--g5);font-style:italic;margin:1.4rem 0 0}
+@media(max-width:640px){.map-grid{grid-template-columns:1fr;gap:0}.map-door:nth-child(2){padding-top:.62rem}.d-name{font-size:17px}.d-tag{font-size:16px}}
+/* its entries are sentences, so one column, as the Map itself is on a phone */
+.map-grid{grid-template-columns:1fr}.map-door:nth-child(2){padding-top:.62rem}
+.map h2{line-height:1.65}
 </style>
 </head>
 <body>
@@ -129,17 +187,45 @@ table.data tr:last-child td{border-bottom:none}
 
 <!-- NAV -->
 <nav class="nav">
-  <a class="nav-logo" href="/"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
-  <a href="/#physics">Ø physics</a>
-  <a href="/proofs/">Ø proofs</a>
-  <a href="/">← back to the420code.org</a>
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/#five-doors" class="nav-room">Ø Five Doors</a>
+    <a href="/#models" class="nav-room">Ø Models</a>
+    <a href="/#exhibition" class="nav-room">Ø Exhibition</a>
+    <a href="/#axiom" class="nav-room">1 Axiom</a>
+    <a href="/#physics" class="nav-room">Ø Physics</a>
+    <a href="/#notebooks" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="/#killswitch" class="nav-room">Ø Kill Switches</a>
+    <a href="/#glossary" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/prereg/" class="nav-lang" hreflang="en" lang="en" aria-current="page"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-  <p class="section-label" style="padding:0">Ø PRE-REGISTRATION</p>
-  <h1>Frozen Predictions</h1>
-  <p class="lead">Every forward prediction, its document, its verification script, and its current standing — including the conditions under which each one dies.</p>
+  <h1>Ø Frozen Predictions</h1>
+  <p class="lead">The pre-registration of every forward prediction, its document, its verification script, and its current standing. Also the conditions under which each one dies.</p>
   <p class="en-note"><b>English only.</b> This is a precision document; a mistranslated digit is worse than an absent page. It is deliberately not translated into the twelve language editions.</p>
 </div>
 
@@ -168,17 +254,18 @@ anchors them: <a href="https://lucid.rodeo/prereg/" target="_blank" rel="noopene
 scripts against the same CODATA inputs and keeps his own scoreboard. Reading both is the
 point; a registry checked only by its author is a registry checked by nobody.</p>
 
-<div style="border-top:1px solid var(--g2,#e8e8e8);border-bottom:1px solid var(--g2,#e8e8e8);padding:.9rem 0;margin:1.5rem 0">
-  <p style="font-size:14.5px;font-weight:700;letter-spacing:.06em;color:var(--g5,#555);margin:0 0 .6rem">ON THIS PAGE</p>
-  <p style="font-size:16.5px;margin:0;line-height:1.95">
-    <a href="#scoreboard">The scoreboard</a> — every prediction, its σ and its error ·
-    <a href="#register">The register</a> — status, kill condition, document, commit ·
-    <a href="#span">The span</a> — the field of physics each prediction is made in ·
-    <a href="#numerology">“This is just integer curve-fitting”</a> — the answer, with the search behind it ·
-    <a href="#errata">Errata</a> ·
-    <a href="#documents">The frozen documents</a> ·
-    <a href="#reproduce">Reproduce it yourself</a>
-  </p>
+<div class="map">
+  <h2>Ø On this page</h2>
+  <p class="map-intro">Seven parts — start anywhere.</p>
+  <div class="map-grid">
+    <a class="map-door" href="#scoreboard"><span class="d-name">The scoreboard</span><span class="d-tag">every prediction, its σ and its error</span></a>
+    <a class="map-door" href="#register"><span class="d-name">The register</span><span class="d-tag">status, kill condition, document, commit</span></a>
+    <a class="map-door" href="#span"><span class="d-name">The span</span><span class="d-tag">the field of physics each prediction is made in</span></a>
+    <a class="map-door" href="#numerology"><span class="d-name">“This is just integer curve-fitting”</span><span class="d-tag">the answer, with the search behind it</span></a>
+    <a class="map-door" href="#errata"><span class="d-name">Errata</span><span class="d-tag">what changed on 2 August, and why</span></a>
+    <a class="map-door" href="#documents"><span class="d-name">The frozen documents</span><span class="d-tag">every document, and the prediction it belongs to</span></a>
+    <a class="map-door" href="#reproduce"><span class="d-name">Reproduce it yourself</span><span class="d-tag">three independent routes</span></a>
+  </div>
 </div>
 
 <!-- SCOREBOARD -->
@@ -615,6 +702,24 @@ function runScript(key){
     }).catch(function(){el.textContent='—'});
   }
 })();
+</script>
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
 </script>
 </body>
 </html>
