@@ -163,7 +163,7 @@ RTL_CSS = RTL_MARK + """
 @media(min-width:701px){[dir="rtl"] .nav-menu,[dir="rtl"] .nav-langs{right:auto;left:0}}
 [dir="rtl"] .fd ol.chain li{padding:0 2.6rem 1.1rem 0}
 [dir="rtl"] .fd ol.chain li::before{left:auto;right:0}
-[dir="rtl"] .fd blockquote{padding:0 1.25rem 0 0;border-left:none;border-right:3px solid #8B6914}
+[dir="rtl"] .fd blockquote{border-left:none;border-right:3px solid #8B6914}
 [dir="rtl"] .fd .axiom{direction:ltr}
 bdi{unicode-bidi:isolate}
 /* ── end right-to-left ── */"""
@@ -173,7 +173,7 @@ RTL_CSS_OLD = """
 [dir="rtl"] .nav-menu{right:auto;left:0}
 [dir="rtl"] .fd ol.chain li{padding:0 2.6rem 1.1rem 0}
 [dir="rtl"] .fd ol.chain li::before{left:auto;right:0}
-[dir="rtl"] .fd blockquote{padding:0 1.25rem 0 0;border-left:none;border-right:3px solid #8B6914}
+[dir="rtl"] .fd blockquote{border-left:none;border-right:3px solid #8B6914}
 [dir="rtl"] .fd .axiom{direction:ltr}
 bdi{unicode-bidi:isolate}
 """

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ø Instruments — the 420 code</title>
+<meta name="description" content="The source of record beside every Artist’s Proof: the file its published PDF was built from, checked paragraph by paragraph against that PDF.">
+<link rel="canonical" href="https://the420code.org/proofs/instruments/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/instruments/">
+<meta property="og:title" content="Ø Instruments — the 420 code">
+<meta property="og:description" content="The source of record beside every Artist’s Proof: the file its published PDF was built from, checked paragraph by paragraph against that PDF.">
+<meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="the 420 code">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ø Instruments — the 420 code">
+<meta name="twitter:description" content="The source of record beside every Artist’s Proof: the file its published PDF was built from, checked paragraph by paragraph against that PDF.">
+<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<meta name="author" content="G — Studio G">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--g4:#4a4a4a;--g5:#4a4a4a;--g6:#1a1a1a;--gold:#8B6914;--fire:#8B1A1A;--live:#2f5233;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:18px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+/* ── the header's base, as the home page has it ── */
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem;line-height:1.65}
+html{scroll-padding-top:86px}
+@media(max-width:640px){html{scroll-padding-top:126px}}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+@media(max-width:600px){.nav{gap:.75rem;padding:.75rem 0}}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
+/* ── end of the header's base ── */
+
+.section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+.hero{margin:1rem 0 2rem}
+.hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 1rem}
+.hero .lead{font-size:20px;font-style:italic;color:var(--g5);margin:0 0 .5rem}
+.en-note{font-size:16px;line-height:1.7;color:var(--g6);background:var(--g1);border-left:5px solid var(--gold);padding:1.1rem 1.25rem;margin:1.25rem 0 0}
+
+h2{font-size:26px;font-weight:700;margin:3rem 0 1rem}
+h3{font-size:18px;font-weight:700;margin:2rem 0 .5rem}
+h4{font-size:16px;font-weight:700;margin:1.5rem 0 .35rem}
+p{margin:0 0 1rem}
+ul,ol{margin:0 0 1rem 1.25rem}
+li{margin:0 0 .35rem}
+blockquote{margin:1rem 0;padding:.75rem 1.25rem;border-left:3px solid var(--gold);background:var(--g1);font-weight:700}
+hr{border:none;border-top:1px solid var(--g2);margin:2.5rem 0}
+code,pre{font-family:'Courier New',Courier,monospace}
+.mono-block{font-size:15px;background:var(--g1);border:1px solid var(--g2);padding:1rem 1.25rem;overflow-x:auto;white-space:pre;font-size:13.5px;line-height:1.55;margin:0 0 1.25rem;tab-size:2}
+
+/* tables — reuse the site's verify-table look */
+.tbl-wrap{overflow-x:auto;margin:0 0 1.5rem}
+table.data{width:100%;border-collapse:collapse;font-size:16px}
+table.data th{text-align:left;font-weight:700;padding:.5rem .6rem;border-bottom:2px solid var(--bk);font-size:14.5px;letter-spacing:.03em;color:var(--g5);white-space:nowrap;vertical-align:bottom}
+table.data td{padding:.5rem .6rem;border-bottom:1px solid var(--g1);vertical-align:top}
+table.data tr:last-child td{border-bottom:none}
+
+/* scoreboard */
+.scoreboard th, .scoreboard td{white-space:nowrap}
+.scoreboard td.wrap{white-space:normal;min-width:180px}
+.badge{display:inline-block;font-size:13.5px;font-weight:700;letter-spacing:.04em;padding:2px 9px;border-radius:2px;white-space:nowrap}
+.badge.fired{background:var(--fire);color:#fff}
+.badge.live{background:#fff;color:var(--live);border:1px solid var(--live)}
+.badge.sup{background:#fff;color:var(--g5);border:1px solid var(--g3)}
+.mono{font-family:'Courier New',Courier,monospace}
+.sig-fire{color:var(--fire);font-weight:700}
+.span-table td:first-child{white-space:normal;min-width:140px}
+
+/* confirm-the-math code block */
+.verify-wrap{position:relative;margin:1.5rem 0}
+.verify-code{font-size:14.5px;background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:340px;font-size:13px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
+.copy-btn{position:absolute;top:8px;right:8px;padding:8px 16px;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;letter-spacing:.03em;background:var(--gold);color:#fff;border:1px solid var(--gold);border-radius:0;cursor:pointer}
+.copy-btn:hover{background:#6f5310;border-color:#6f5310}
+.run-btn{display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:14px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid var(--gold);border-radius:0;background:var(--gold);color:#fff;cursor:pointer;margin:0 .5rem .5rem 0}
+.run-btn:hover{background:#6f5310;border-color:#6f5310}
+.run-btn:disabled{opacity:.6;cursor:default}
+.run-status{font-size:14px;color:var(--g4);margin:.5rem 0 .25rem;font-style:italic;display:none}
+.run-out{display:none;max-height:none;margin:.25rem 0 1rem}
+
+.doc-list{list-style:none;margin:0 0 1rem;padding:0}
+.doc-list li{padding:.55rem 0;border-bottom:1px solid var(--g1);font-size:15px}
+.doc-list li:last-child{border-bottom:none}
+.doc-list a{font-weight:700;text-decoration:none}
+.doc-list a:hover{text-decoration:underline}
+.doc-list .desc{font-size:15.5px;color:var(--g5);display:block;font-size:14px;font-weight:400;margin-top:2px}
+
+.footer{margin:4rem 0 0;padding:2rem 0 0;font-size:16px;color:var(--g4);border-top:1px solid var(--g2)}
+.footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+@media(max-width:600px){.c{padding:2rem 1rem 3rem}.hero h1{font-size:28px}h2{font-size:22px}}
+.verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:16px}
+.verify-table th{text-align:left;font-weight:700;padding:.6rem .5rem;border-bottom:2px solid var(--bk);font-size:14.5px;letter-spacing:.04em;color:var(--g5)}
+.verify-table td{padding:.5rem .5rem;border-bottom:1px solid var(--g1)}
+.verify-table td:last-child{color:var(--g5)}
+.sig-in,table.verify-table td.sig-in{color:var(--live);font-weight:700}
+
+/* the four commentary blocks, told apart */
+.sigma-note{font-size:16px;line-height:1.7;color:var(--g6);background:var(--g1);border-left:5px solid var(--g3);padding:1.1rem 1.25rem;margin:1.25rem 0 0}
+.sigma-note p{margin:0 0 .7rem}.sigma-note p:last-child{margin:0}
+.sigma-note ul{margin:0 0 .7rem 1.35rem}.sigma-note li{margin:0 0 .45rem}
+.sigma-note .kind{display:block;font-size:14px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin:0 0 .7rem}
+.note-read{border-left-color:var(--gold)}        .note-read .kind{color:var(--gold)}
+.note-arg{border-left-color:var(--gold)}         .note-arg .kind{color:var(--gold)}
+.note-result{border-left-color:var(--gold)}      .note-result .kind{color:var(--gold)}
+.raw{font-size:14px;color:var(--g5)}
+
+.oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem}
+@media(max-width:700px){.oneness{font-size:18px}}
+
+.constraint{margin:2rem 0;padding:1.5rem 0}
+.constraint p{font-size:16px;margin:0 0 .25rem}
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
+.nav a.nav-room{display:none}
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
+  font-size:14px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:15px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
+@media(max-width:700px){
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
+  .nav a.nav-door{font-size:15px}
+}
+/* Ø Map — the directory at the door */
+.map{padding:0;margin:3rem 0 3.5rem}
+.map h2{font-size:26px;font-weight:700;margin:0 0 .35rem}
+.map-intro{font-size:17px;color:var(--g5);margin:0 0 1.4rem}
+.map-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
+.map-door{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .6rem;padding:.62rem 0;text-decoration:none;color:var(--bk)}
+.map-door:nth-child(-n+2){padding-top:0}
+.map-door:hover .d-name{border-bottom-color:var(--bk)}
+.map-door:hover .d-tag{color:var(--bk)}
+.d-name{font-size:18px;font-weight:700;border-bottom:1px solid transparent}
+.d-tag{font-size:16.5px;color:var(--g5)}
+.d-tag::before{content:"— ";color:var(--g3)}
+.map-note{font-size:16px;color:var(--g5);font-style:italic;margin:1.4rem 0 0}
+@media(max-width:640px){.map-grid{grid-template-columns:1fr;gap:0}.map-door:nth-child(2){padding-top:.62rem}.d-name{font-size:17px}.d-tag{font-size:16px}}
+/* its entries are sentences, so one column, as the Map itself is on a phone */
+.map-grid{grid-template-columns:1fr}.map-door:nth-child(2){padding-top:.62rem}
+/* the gap under the contents is the page's 48px, like every other; on a phone its heading
+   is the size of the section headings under it */
+.map{margin-bottom:3rem}
+@media(max-width:600px){.map h2{font-size:22px}}
+.instruments td{white-space:normal}
+.instruments td.files{overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<div class="c">
+
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/#five-doors" class="nav-room">Ø Five Doors</a>
+    <a href="/#models" class="nav-room">Ø Models</a>
+    <a href="/#exhibition" class="nav-room">Ø Exhibition</a>
+    <a href="/#axiom" class="nav-room">1 Axiom</a>
+    <a href="/#physics" class="nav-room">Ø Physics</a>
+    <a href="/#notebooks" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="/#killswitch" class="nav-room">Ø Kill Switches</a>
+    <a href="/#glossary" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/proofs/instruments/" class="nav-lang" hreflang="en" lang="en" aria-current="page"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Ø Instruments</h1>
+  <p class="lead">The source of record beside every Artist’s Proof: the file its published PDF was built from, checked paragraph by paragraph against that PDF. Where no file matches, the folder says so, and the published PDF is its own source.</p>
+</div>
+
+<p>The check runs in both directions. Every paragraph of sixty characters or more in the source must be in the published PDF, and every sentence of sixty characters or more in the PDF must be in the source.</p>
+
+<p>The folders also keep the earlier PDFs a republish replaced, and the note that says why. Frozen files are never edited: a correction is a dated note beside the locked body, never a change inside it.</p>
+
+<p><b>Of record: 31. Diverged: 22.</b> Fifty-three papers, AP01 to AP53.</p>
+
+<div class="tbl-wrap"><table class="data instruments">
+<thead><tr><th>Paper</th><th>Title</th><th>Standing</th><th>In the folder</th></tr></thead>
+<tbody>
+<tr><td><a href="/proofs/#ap01">AP01</a></td><td>The Actualization State</td><td><a href="AP01/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap02">AP02</a></td><td>The Operator</td><td><a href="AP02/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap03">AP03</a></td><td>The Ratio</td><td><a href="AP03/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap04">AP04</a></td><td>The Loop Hypothesis</td><td><a href="AP04/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap05">AP05</a></td><td>The Break</td><td><a href="AP05/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap06">AP06</a></td><td>The Leakage Constant</td><td><a href="AP06/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap07">AP07</a></td><td>The Record Measure</td><td><a href="AP07/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP07/AP07_The_Record_Measure_FINAL.docx">AP07_The_Record_Measure_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap08">AP08</a></td><td>The Identity</td><td><a href="AP08/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap09">AP09</a></td><td>The Break — Empty Set</td><td><a href="AP09/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap10">AP10</a></td><td>The Dimension</td><td><a href="AP10/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap11">AP11</a></td><td>The Spin</td><td><a href="AP11/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap12">AP12</a></td><td>The Limit</td><td><a href="AP12/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap13">AP13</a></td><td>The Grain</td><td><a href="AP13/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP13/AP13_The_Grain_FINAL.docx">AP13_The_Grain_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap14">AP14</a></td><td>The Correction</td><td><a href="AP14/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap15">AP15</a></td><td>The Connection</td><td><a href="AP15/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap16">AP16</a></td><td>The Break — Electroweak</td><td><a href="AP16/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap17">AP17</a></td><td>The Room</td><td><a href="AP17/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP17/AP17_The_Room_FINAL.docx">AP17_The_Room_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap18">AP18</a></td><td>The Floor</td><td><a href="AP18/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files"><a href="AP18/ERRATA_NOTES_2026-09-03.md">ERRATA_NOTES_2026-09-03.md</a> · <a href="AP18/ERRATUM_AP18_The_Floor_2026-09-03.md">ERRATUM_AP18_The_Floor_2026-09-03.md</a></td></tr>
+<tr><td><a href="/proofs/#ap19">AP19</a></td><td>The Direction</td><td><a href="AP19/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap20">AP20</a></td><td>The Proof</td><td><a href="AP20/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP20/AP20_The_Proof_FINAL_v3.docx">AP20_The_Proof_FINAL_v3.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap21">AP21</a></td><td>The Web</td><td><a href="AP21/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap22">AP22</a></td><td>The Ledger</td><td><a href="AP22/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap23">AP23</a></td><td>The Single Record</td><td><a href="AP23/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap24">AP24</a></td><td>The Residual</td><td><a href="AP24/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap25">AP25</a></td><td>The Measure</td><td><a href="AP25/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP25/AP25_The_Measure_FINAL.docx">AP25_The_Measure_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap26">AP26</a></td><td>The Surplus</td><td><a href="AP26/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap27">AP27</a></td><td>The Harmonics</td><td><a href="AP27/SOURCE_OF_RECORD.md">Diverged</a>: the published PDF is its own source</td><td class="files">—</td></tr>
+<tr><td><a href="/proofs/#ap28">AP28</a></td><td>The Constant</td><td><a href="AP28/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP28/AP28_The_Constant_FINAL_v1_0_dated_notes_2026-09-07.docx">AP28_The_Constant_FINAL_v1_0_dated_notes_2026-09-07.docx</a> · <a href="AP28/AP28_The_Constant_FINAL_v1_0_published_to_2026-09-06.pdf">AP28_The_Constant_FINAL_v1_0_published_to_2026-09-06.pdf</a> · <a href="AP28/DATED_NOTES_2026-09-07.md">DATED_NOTES_2026-09-07.md</a> · <a href="AP28/NOTE_REPUBLISH_2026-09-07.md">NOTE_REPUBLISH_2026-09-07.md</a></td></tr>
+<tr><td><a href="/proofs/#ap29">AP29</a></td><td>The Actualization Proof</td><td><a href="AP29/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP29/AP29_The_Actualization_Proof_FINAL_v2.docx">AP29_The_Actualization_Proof_FINAL_v2.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap30">AP30</a></td><td>The Resistance</td><td><a href="AP30/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP30/AP30_The_Resistance_FINAL_v1_0_dated_notes_2026-09-07.docx">AP30_The_Resistance_FINAL_v1_0_dated_notes_2026-09-07.docx</a> · <a href="AP30/AP30_The_Resistance_FINAL_v1_0_dated_notes_2026-09-07_items_1to12.docx">AP30_The_Resistance_FINAL_v1_0_dated_notes_2026-09-07_items_1to12.docx</a> · <a href="AP30/AP30_The_Resistance_FINAL_v1_0_dated_notes_2026-09-09.docx">AP30_The_Resistance_FINAL_v1_0_dated_notes_2026-09-09.docx</a> · <a href="AP30/AP30_The_Resistance_FINAL_v1_0_notes_1to5_published_2026-09-07.pdf">AP30_The_Resistance_FINAL_v1_0_notes_1to5_published_2026-09-07.pdf</a> · <a href="AP30/AP30_The_Resistance_FINAL_v1_0_notes_dated_2026-09-09_superseded.pdf">AP30_The_Resistance_FINAL_v1_0_notes_dated_2026-09-09_superseded.pdf</a> · <a href="AP30/AP30_The_Resistance_FINAL_v1_0_published_to_2026-09-06.pdf">AP30_The_Resistance_FINAL_v1_0_published_to_2026-09-06.pdf</a> · <a href="AP30/NOTE_REPUBLISH_2026-09-07.md">NOTE_REPUBLISH_2026-09-07.md</a> · <a href="AP30/NOTE_REPUBLISH_2026-09-07_items_1to12.md">NOTE_REPUBLISH_2026-09-07_items_1to12.md</a> · <a href="AP30/NOTE_REPUBLISH_2026-09-09_SUPERSEDED.md">NOTE_REPUBLISH_2026-09-09_SUPERSEDED.md</a> · <a href="AP30/ONEDRIVE_DIVERGENCE_2026-09-07.md">ONEDRIVE_DIVERGENCE_2026-09-07.md</a></td></tr>
+<tr><td><a href="/proofs/#ap31">AP31</a></td><td>The Alignment</td><td><a href="AP31/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP31/AP31_The_Alignment_FINAL_v3.docx">AP31_The_Alignment_FINAL_v3.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap32">AP32</a></td><td>The Correction — Ethics</td><td><a href="AP32/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP32/AP32_The_Correction_FINAL.docx">AP32_The_Correction_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap33">AP33</a></td><td>The Boundary</td><td><a href="AP33/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP33/AP33_The_Boundary_FINAL.docx">AP33_The_Boundary_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap34">AP34</a></td><td>The Inversion</td><td><a href="AP34/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP34/AP34_The_Inversion_FINAL.docx">AP34_The_Inversion_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap35">AP35</a></td><td>The Ledger</td><td><a href="AP35/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP35/AP35_The_Ledger_FINAL_v3.docx">AP35_The_Ledger_FINAL_v3.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap36">AP36</a></td><td>The Feed</td><td><a href="AP36/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP36/AP36_The_Feed_FINAL.docx">AP36_The_Feed_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap37">AP37</a></td><td>The First Boundary</td><td><a href="AP37/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP37/AP37_The_First_Boundary_FINAL.docx">AP37_The_First_Boundary_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap38">AP38</a></td><td>The Exit</td><td><a href="AP38/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP38/AP38_The_Exit_FINAL_v2.docx">AP38_The_Exit_FINAL_v2.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap39">AP39</a></td><td>The Scaffold</td><td><a href="AP39/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP39/AP39_The_Scaffold_FINAL_v2.docx">AP39_The_Scaffold_FINAL_v2.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap40">AP40</a></td><td>The Irrational</td><td><a href="AP40/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP40/AP40_The_Irrational_FINAL_v3.docx">AP40_The_Irrational_FINAL_v3.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap41">AP41</a></td><td>The Loop</td><td><a href="AP41/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP41/AP41_The_Loop_FINAL.docx">AP41_The_Loop_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap42">AP42</a></td><td>The Clock</td><td><a href="AP42/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP42/AP42_The_Clock_FINAL.docx">AP42_The_Clock_FINAL.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap43">AP43</a></td><td>The Gravity of Possibilities</td><td><a href="AP43/SOURCE_OF_RECORD.md">Of record</a>, one item cleared by inspection</td><td class="files"><a href="AP43/AP43_The_Gravity_of_Possibilities_FINAL_v3.docx">AP43_The_Gravity_of_Possibilities_FINAL_v3.docx</a></td></tr>
+<tr><td><a href="/proofs/#ap44">AP44</a></td><td>The Snap</td><td><a href="AP44/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP44/AP44_The_Snap_FINAL_v1_0.md">AP44_The_Snap_FINAL_v1_0.md</a> · <a href="AP44/MKSR_Registry_Rulings_2026-09-02.md">MKSR_Registry_Rulings_2026-09-02.md</a></td></tr>
+<tr><td><a href="/proofs/#ap45">AP45</a></td><td>The Blink</td><td><a href="AP45/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP45/AP45_The_Blink_FINAL_v1_7.md">AP45_The_Blink_FINAL_v1_7.md</a> · <a href="AP45/FREEZE_REGISTER_AP45_AP46_2026-09-02.md">FREEZE_REGISTER_AP45_AP46_2026-09-02.md</a> · <a href="AP45/MKSR_Registry_Rulings_2026-09-02.md">MKSR_Registry_Rulings_2026-09-02.md</a> · <a href="AP45/SHA256SUMS_freeze_bundle_2026-09-02.txt">SHA256SUMS_freeze_bundle_2026-09-02.txt</a></td></tr>
+<tr><td><a href="/proofs/#ap46">AP46</a></td><td>The Stretch</td><td><a href="AP46/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP46/AP46_The_Stretch_FINAL_v1_5.md">AP46_The_Stretch_FINAL_v1_5.md</a> · <a href="AP46/DATED_NOTE_AP46_2026-09-04.md">DATED_NOTE_AP46_2026-09-04.md</a> · <a href="AP46/FREEZE_REGISTER_AP45_AP46_2026-09-02.md">FREEZE_REGISTER_AP45_AP46_2026-09-02.md</a> · <a href="AP46/MKSR_Registry_Rulings_2026-09-02.md">MKSR_Registry_Rulings_2026-09-02.md</a> · <a href="AP46/SHA256SUMS_freeze_bundle_2026-09-02.txt">SHA256SUMS_freeze_bundle_2026-09-02.txt</a></td></tr>
+<tr><td><a href="/proofs/#ap47">AP47</a></td><td>The Flip</td><td><a href="AP47/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP47/AP47_The_Flip_FINAL_v3.md">AP47_The_Flip_FINAL_v3.md</a> · <a href="AP47/AP47_The_Flip_FINAL_v3_dated_notes_2026-09-07.docx">AP47_The_Flip_FINAL_v3_dated_notes_2026-09-07.docx</a> · <a href="AP47/AP47_The_Flip_FINAL_v3_dated_notes_2026-09-09.docx">AP47_The_Flip_FINAL_v3_dated_notes_2026-09-09.docx</a> · <a href="AP47/AP47_The_Flip_FINAL_v3_notes_dated_2026-09-09_superseded.pdf">AP47_The_Flip_FINAL_v3_notes_dated_2026-09-09_superseded.pdf</a> · <a href="AP47/AP47_The_Flip_FINAL_v3_published_to_2026-09-08.pdf">AP47_The_Flip_FINAL_v3_published_to_2026-09-08.pdf</a> · <a href="AP47/NOTE_REPUBLISH_2026-09-07.md">NOTE_REPUBLISH_2026-09-07.md</a> · <a href="AP47/NOTE_REPUBLISH_2026-09-09_SUPERSEDED.md">NOTE_REPUBLISH_2026-09-09_SUPERSEDED.md</a> · <a href="AP47/WP_ROAD1_v1_2.md">WP_ROAD1_v1_2.md</a></td></tr>
+<tr><td><a href="/proofs/#ap48">AP48</a></td><td>The Assembly</td><td><a href="AP48/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP48/AP48_The_Assembly_FINAL_v1_1.docx">AP48_The_Assembly_FINAL_v1_1.docx</a> · <a href="AP48/AP48_The_Assembly_FINAL_v1_1.md">AP48_The_Assembly_FINAL_v1_1.md</a> · <a href="AP48/AP48_The_Assembly_FINAL_v1_1.pdf">AP48_The_Assembly_FINAL_v1_1.pdf</a> · <a href="AP48/README_FOR_AJ.md">Freeze README</a> · <a href="AP48/SHA256SUMS.txt">SHA256SUMS.txt</a> · <a href="AP48/inputs/AP18_The_Floor_FINAL.docx">inputs/AP18_The_Floor_FINAL.docx</a> · <a href="AP48/inputs/CONTINUATION_README_AP48.md">inputs/CONTINUATION_README_AP48.md</a> · <a href="AP48/inputs/WP_ASM1_Assembly_Primer.docx">inputs/WP_ASM1_Assembly_Primer.docx</a> · <a href="AP48/inputs/WP_ASM1_Assembly_Primer.md">inputs/WP_ASM1_Assembly_Primer.md</a> · <a href="AP48/instruments/AP48_Open_Derivations_v1_0.md">instruments/AP48_Open_Derivations_v1_0.md</a> · <a href="AP48/instruments/DATED_NOTE_AP46_2026-09-04.md">instruments/DATED_NOTE_AP46_2026-09-04.md</a> · <a href="AP48/instruments/ERRATA_NOTES_2026-09-03.md">instruments/ERRATA_NOTES_2026-09-03.md</a> · <a href="AP48/instruments/ERRATUM_AP18_The_Floor_2026-09-03.md">instruments/ERRATUM_AP18_The_Floor_2026-09-03.md</a> · <a href="AP48/instruments/PROV_ASM_1_2026-09-03.md">instruments/PROV_ASM_1_2026-09-03.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_1.md">lineage/AP48_The_Assembly_v0_1.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_2.md">lineage/AP48_The_Assembly_v0_2.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_3.md">lineage/AP48_The_Assembly_v0_3.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_4.md">lineage/AP48_The_Assembly_v0_4.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_5.md">lineage/AP48_The_Assembly_v0_5.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_6.md">lineage/AP48_The_Assembly_v0_6.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_7.md">lineage/AP48_The_Assembly_v0_7.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_8.md">lineage/AP48_The_Assembly_v0_8.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v0_9.md">lineage/AP48_The_Assembly_v0_9.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v1_0.md">lineage/AP48_The_Assembly_v1_0.md</a> · <a href="AP48/lineage/AP48_The_Assembly_v1_1.md">lineage/AP48_The_Assembly_v1_1.md</a></td></tr>
+<tr><td><a href="/proofs/#ap49">AP49</a></td><td>The Hold</td><td><a href="AP49/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP49/AP49_The_Hold_FINAL_v1_0.md">AP49_The_Hold_FINAL_v1_0.md</a> · <a href="AP49/AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09-07.docx">AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09-07.docx</a> · <a href="AP49/AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09-09.docx">AP49_The_Hold_FINAL_v1_0_dated_notes_2026-09-09.docx</a> · <a href="AP49/AP49_The_Hold_FINAL_v1_0_notes_dated_2026-09-09_superseded.pdf">AP49_The_Hold_FINAL_v1_0_notes_dated_2026-09-09_superseded.pdf</a> · <a href="AP49/AP49_The_Hold_FINAL_v1_0_published_to_2026-09-08.pdf">AP49_The_Hold_FINAL_v1_0_published_to_2026-09-08.pdf</a> · <a href="AP49/DATED_NOTE_AP30_2026-09-06.md">DATED_NOTE_AP30_2026-09-06.md</a> · <a href="AP49/NOTE_REPUBLISH_2026-09-07.md">NOTE_REPUBLISH_2026-09-07.md</a> · <a href="AP49/NOTE_REPUBLISH_2026-09-09_SUPERSEDED.md">NOTE_REPUBLISH_2026-09-09_SUPERSEDED.md</a> · <a href="AP49/PREREG_2026-09-06-mp-me-closed.md">PREREG_2026-09-06-mp-me-closed.md</a> · <a href="AP49/PROV_HOLD_1_2026-09-06.md">PROV_HOLD_1_2026-09-06.md</a> · <a href="AP49/README_FOR_AJ.md">Freeze README</a> · <a href="AP49/SHA256SUMS.txt">SHA256SUMS.txt</a></td></tr>
+<tr><td><a href="/proofs/#ap50">AP50</a></td><td>The Neck</td><td><a href="AP50/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP50/AP50_The_Neck_FINAL_v1_0.docx">AP50_The_Neck_FINAL_v1_0.docx</a> · <a href="AP50/SHA256SUMS.txt">SHA256SUMS.txt</a></td></tr>
+<tr><td><a href="/proofs/#ap51">AP51</a></td><td>The Glass</td><td><a href="AP51/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP51/AP51_The_Glass_FINAL_v1_0.docx">AP51_The_Glass_FINAL_v1_0.docx</a> · <a href="AP51/SHA256SUMS.txt">SHA256SUMS.txt</a></td></tr>
+<tr><td><a href="/proofs/#ap52">AP52</a></td><td>Reading Relativity</td><td><a href="AP52/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP52/AP52_Reading_Relativity_FINAL_v1_0.docx">AP52_Reading_Relativity_FINAL_v1_0.docx</a> · <a href="AP52/SHA256SUMS.txt">SHA256SUMS.txt</a></td></tr>
+<tr><td><a href="/proofs/#ap53">AP53</a></td><td>Gravity Is the Neck</td><td><a href="AP53/SOURCE_OF_RECORD.md">Of record</a></td><td class="files"><a href="AP53/AP53_Gravity_Is_the_Neck_FINAL_v1_0.docx">AP53_Gravity_Is_the_Neck_FINAL_v1_0.docx</a> · <a href="AP53/SHA256SUMS.txt">SHA256SUMS.txt</a></td></tr>
+</tbody></table></div>
+
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The I Am in me is the I Am in you.</p>
+
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+
+</div>
+
+
+<script id="visit-counter">
+// One visit is one browser session, not one page load: a reload does not count
+// again, so the number keeps meaning something. Counted from every page.
+(function(){
+  var api='/.netlify/functions/visit-counter';
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  var el=document.getElementById('visit-count');
+  if(el){
+    fetch(api).then(function(r){return r.json()}).then(function(d){
+      el.textContent=(d.count||0).toLocaleString();
+    }).catch(function(){el.textContent='—'});
+  }
+})();
+</script>
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+</body></html>

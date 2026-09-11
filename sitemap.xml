@@ -17,22 +17,486 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <priority>1.0</priority>
   </url>
-  <url><loc>https://the420code.org/es/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/fr/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/de/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/pt/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/nl/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/it/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/zh/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/ja/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/ko/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/ru/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/ar/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/hi/</loc><lastmod>2026-03-24</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/proofs/</loc><lastmod>2026-09-04</lastmod><priority>0.9</priority></url>
-  <url><loc>https://the420code.org/prereg/</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://the420code.org/three-ways-of-being-sure</loc><lastmod>2026-05-24</lastmod><priority>0.8</priority></url>
+  <url>
+    <loc>https://the420code.org/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/hi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/es/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/fr/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/de/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/pt/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/nl/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/it/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/zh/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/ja/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/ko/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/ru/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/ar/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://the420code.org/hi/what-is-the-420-code/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://the420code.org/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://the420code.org/es/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://the420code.org/fr/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://the420code.org/de/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://the420code.org/pt/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://the420code.org/nl/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://the420code.org/it/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://the420code.org/zh/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://the420code.org/ja/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://the420code.org/ko/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://the420code.org/ru/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://the420code.org/ar/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://the420code.org/hi/what-is-the-420-code/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://the420code.org/what-is-the-420-code/"/>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://the420code.org/proofs/</loc><lastmod>2026-09-11</lastmod><priority>0.9</priority></url>
+  <url><loc>https://the420code.org/proofs/instruments/</loc><lastmod>2026-09-11</lastmod><priority>0.6</priority></url>
+  <url><loc>https://the420code.org/prereg/</loc><lastmod>2026-09-11</lastmod><priority>0.8</priority></url>
+  <url><loc>https://the420code.org/three-ways-of-being-sure</loc><lastmod>2026-09-11</lastmod><priority>0.8</priority></url>
 </urlset>

@@ -50,9 +50,9 @@ html{scroll-padding-top:86px}
 .hero{margin:1rem 0 2rem}
 .hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 1rem}
 .hero .lead{font-size:20px;font-style:italic;color:var(--g5);margin:0 0 .5rem}
-.en-note{font-size:16px;font-size:14px;color:var(--g4);border:1px solid var(--g2);background:var(--g1);padding:.6rem 1rem;margin:1.25rem 0 0}
+.en-note{font-size:16px;line-height:1.7;color:var(--g6);background:var(--g1);border-left:5px solid var(--gold);padding:1.1rem 1.25rem;margin:1.25rem 0 0}
 
-h2{font-size:26px;font-weight:700;margin:3rem 0 1rem;line-height:1.2}
+h2{font-size:26px;font-weight:700;margin:3rem 0 1rem}
 h3{font-size:18px;font-weight:700;margin:2rem 0 .5rem}
 h4{font-size:16px;font-weight:700;margin:1.5rem 0 .35rem}
 p{margin:0 0 1rem}
@@ -78,7 +78,7 @@ table.data tr:last-child td{border-bottom:none}
 .badge.live{background:#fff;color:var(--live);border:1px solid var(--live)}
 .badge.sup{background:#fff;color:var(--g5);border:1px solid var(--g3)}
 .mono{font-family:'Courier New',Courier,monospace}
-.sig-fire{color:var(--fire);font-weight:700}
+.sig-fire,table.verify-table td.sig-fire{color:var(--fire);font-weight:700}
 .span-table td:first-child{white-space:normal;min-width:140px}
 
 /* confirm-the-math code block */
@@ -115,9 +115,9 @@ table.data tr:last-child td{border-bottom:none}
 .sigma-note p{margin:0 0 .7rem}.sigma-note p:last-child{margin:0}
 .sigma-note ul{margin:0 0 .7rem 1.35rem}.sigma-note li{margin:0 0 .45rem}
 .sigma-note .kind{display:block;font-size:14px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin:0 0 .7rem}
-.note-read{border-left-color:var(--g3)}          .note-read .kind{color:var(--g5)}
+.note-read{border-left-color:var(--gold)}        .note-read .kind{color:var(--gold)}
 .note-arg{border-left-color:var(--gold)}         .note-arg .kind{color:var(--gold)}
-.note-result{border-left-color:var(--fire)}      .note-result .kind{color:var(--fire)}
+.note-result{border-left-color:var(--gold)}      .note-result .kind{color:var(--gold)}
 .raw{font-size:14px;color:var(--g5)}
 
 .oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem}
@@ -179,7 +179,10 @@ table.data tr:last-child td{border-bottom:none}
 @media(max-width:640px){.map-grid{grid-template-columns:1fr;gap:0}.map-door:nth-child(2){padding-top:.62rem}.d-name{font-size:17px}.d-tag{font-size:16px}}
 /* its entries are sentences, so one column, as the Map itself is on a phone */
 .map-grid{grid-template-columns:1fr}.map-door:nth-child(2){padding-top:.62rem}
-.map h2{line-height:1.65}
+/* the gap under the contents is the page's 48px, like every other; on a phone its heading
+   is the size of the section headings under it */
+.map{margin-bottom:3rem}
+@media(max-width:600px){.map h2{font-size:22px}}
 </style>
 </head>
 <body>
@@ -258,18 +261,18 @@ point; a registry checked only by its author is a registry checked by nobody.</p
   <h2>Ø On this page</h2>
   <p class="map-intro">Seven parts — start anywhere.</p>
   <div class="map-grid">
-    <a class="map-door" href="#scoreboard"><span class="d-name">The scoreboard</span><span class="d-tag">every prediction, its σ and its error</span></a>
-    <a class="map-door" href="#register"><span class="d-name">The register</span><span class="d-tag">status, kill condition, document, commit</span></a>
-    <a class="map-door" href="#span"><span class="d-name">The span</span><span class="d-tag">the field of physics each prediction is made in</span></a>
-    <a class="map-door" href="#numerology"><span class="d-name">“This is just integer curve-fitting”</span><span class="d-tag">the answer, with the search behind it</span></a>
-    <a class="map-door" href="#errata"><span class="d-name">Errata</span><span class="d-tag">what changed on 2 August, and why</span></a>
-    <a class="map-door" href="#documents"><span class="d-name">The frozen documents</span><span class="d-tag">every document, and the prediction it belongs to</span></a>
-    <a class="map-door" href="#reproduce"><span class="d-name">Reproduce it yourself</span><span class="d-tag">three independent routes</span></a>
+    <a class="map-door" href="#scoreboard"><span class="d-name">Ø The scoreboard</span><span class="d-tag">every prediction, its σ and its error</span></a>
+    <a class="map-door" href="#register"><span class="d-name">Ø The register</span><span class="d-tag">status, kill condition, document, commit</span></a>
+    <a class="map-door" href="#span"><span class="d-name">Ø The span</span><span class="d-tag">the field of physics each prediction is made in</span></a>
+    <a class="map-door" href="#numerology"><span class="d-name">Ø “This is just integer curve-fitting”</span><span class="d-tag">the answer, with the search behind it</span></a>
+    <a class="map-door" href="#errata"><span class="d-name">Ø Errata</span><span class="d-tag">what changed on 2 August, and why</span></a>
+    <a class="map-door" href="#documents"><span class="d-name">Ø The frozen documents</span><span class="d-tag">every document, and the prediction it belongs to</span></a>
+    <a class="map-door" href="#reproduce"><span class="d-name">Ø Reproduce it yourself</span><span class="d-tag">three independent routes</span></a>
   </div>
 </div>
 
 <!-- SCOREBOARD -->
-<h2 id="scoreboard">The scoreboard</h2>
+<h2 id="scoreboard">Ø The scoreboard</h2>
 <p style="font-size:16px;color:var(--g5,#555);margin:0 0 1rem">Standing as of <b>4 September 2026</b>, the wave. Thirteen rows below: eleven live, two fired. They are carried by nine registrations, listed under <a href="#register">the register</a> — a registration can own more than one row, because one prediction can be read against more than one measurement.</p>
 <table class="verify-table" style="margin-top:0">
     <thead><tr><th>Claim</th><th>Predicted</th><th>Measured</th><th>σ</th><th>Error</th><th>Paper</th></tr></thead>
@@ -301,7 +304,7 @@ point; a registry checked only by its author is a registry checked by nobody.</p
   </ul>
   <p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA reading is dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. The author stands behind the realised value. AP28’s structural value, +0.69%, carried an omission — the arena’s held ε, priced in AP44 — and stands beside it as the record of that omission: the neutron’s fired row exposed a structural error whose consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p>
 </div>
-<h3 id="register" style="margin:1.75rem 0 .5rem">The register</h3>
+<h2 id="register">Ø The register</h2>
 <p style="margin:0 0 .75rem">Each registration with its standing, the condition under which it dies, its frozen document and script, and the commit that timestamps it. The numbers are in the table above.</p>
 <div class="tbl-wrap">
 <table class="data scoreboard">
@@ -453,7 +456,7 @@ lattice number in it, and the digest-and-commit step — is
 reserved to the author, alone, by the protocol’s own §1) — explicitly
 <b>not a freeze</b>.</p>
 
-<h3 id="span" style="margin:1.75rem 0 .5rem">The span — the field each prediction is made in</h3>
+<h2 id="span">Ø The span — the field each prediction is made in</h2>
 <p style="margin:0 0 .75rem">The same axiom and the same single measured input, the fine-structure constant α, are read at every scale the corpus reaches. This is the same set of predictions as the scoreboard, sorted by the field of physics each one is made in and the size of the thing it describes.</p>
 <div class="tbl-wrap">
 <table class="data verify-table span-table" style="margin-top:0">
@@ -476,7 +479,7 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
   <p style="margin:0"><b>What it does show.</b> Where a structural omission was found, paying it moved three separate derivations toward measurement rather than away. The bare neutron–proton row fired at 7.24σ on 2 August 2026; pricing the held distinction that row had treated as free brought the difference to −0.005σ (AP47). The same omission, priced at the arena, moved the gravitational constant from +0.69% to −0.036% (AP44). The same mechanism at the cosmological scale replaced the floor’s inverted 74.3 — which fired — with a rate closed out of the partition and the cycle, 67.45, at 0.1σ against the relic glow (AP46, AP48). Three limbs, one correction, all three improving. That is what the span supports, and it is worth saying exactly what it is and what it is not. It is evidence that the framework behaves <i>as a structure</i>: an omission found in one place, once accounted for, propagates into other fields and improves them there too. It is not evidence that nature agrees this is the structure of reality. That is a separate claim, and it is not settled here — it is settled, if it is ever settled, at the switches: the conditions listed above under which each of these rows dies. Not yet.</p>
 </div>
 
-<h3 id="numerology" style="margin:1.75rem 0 .5rem">“This is just integer curve-fitting”</h3>
+<h2 id="numerology">Ø “This is just integer curve-fitting”</h2>
 <p style="margin:0 0 .75rem">The charge, at full strength: <i>you have a handful of small integers — 3, 4, 6, 21 — and π, and a free choice of where to put them; with that much freedom you can hit any target you like.</i> As a general principle that is correct, and the corpus does not dispute it. Precision alone proves nothing. The question is not how close the numbers land. It is <b>how much freedom was available when they were written</b> — and that is computable.</p>
 <p style="margin:0 0 .75rem">21 is not chosen. It is built: <b>21 = 6 × 3 + 3</b> — six faces of the break (AP24) across three spatial dimensions (AP10), plus three actualisation couplings. Both inputs are derived upstream and both were fixed before any mass ratio, gravitational constant or dark-sector split was computed; the ordering is checkable against the dependency graph, since AP10 and AP28 precede AP30, AP41 and AP42. So the perturbations available to a fitter are not “any integer near 21” — they are: change the face count, or change the dimension count. Here is what each does, substituted consistently everywhere the integer appears:</p>
 <div class="tbl-wrap">
@@ -519,7 +522,7 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
 </div>
 
 <!-- ERRATA -->
-<h2 id="errata">Errata — 2026-08-02</h2>
+<h2 id="errata">Ø Errata — 2026-08-02</h2>
 <p style="color:var(--g5)">What changed on 2026-08-02 and why, in a form a referee can check. Full text: <a href="doc/ERRATA-2026-08-02.html">ERRATA-2026-08-02.md</a> <span class="raw">(<a href="ERRATA-2026-08-02.md">raw</a>)</span>.</p>
 
 <h4>E1 — α mislabelled</h4>
@@ -544,7 +547,7 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
 <hr>
 
 <!-- DOCUMENTS -->
-<h2 id="documents">The frozen documents</h2>
+<h2 id="documents">Ø The frozen documents</h2>
 <p>Every document in this directory, and the prediction or claim it belongs to. Each opens as a page; the raw file beside it is the record, and its SHA-256 is printed at the foot of every page. Frozen files are never edited — corrections supersede, dated, in the open.</p>
 <div class="tbl-wrap">
 <table class="data">
@@ -570,7 +573,7 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
 </div>
 
 <!-- VERIFY -->
-<h2 id="reproduce">Reproduce it yourself</h2>
+<h2 id="reproduce">Ø Reproduce it yourself</h2>
 <p style="margin:0 0 1rem">Three independent routes: the scripts below; the verifier’s own scripts and plain-language walkthrough at <a href="https://lucid.rodeo/prereg/" target="_blank" rel="noopener">lucid.rodeo/prereg</a>; and his anchored bundles and audits at <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener">github.com/ajgreyling/the420code-proof</a>, where each paper’s freeze carries a tag and a digest.</p>
 <p>The one external dependency is <span class="mono">mpmath</span>. Every number on this page comes out of these four scripts:</p>
 <div class="mono-block">pip install mpmath
