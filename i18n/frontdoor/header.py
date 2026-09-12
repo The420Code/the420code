@@ -115,7 +115,7 @@ html{scroll-padding-top:86px}
 """ + DOOR_CSS + "\n" + BASE_END
 
 CSS_MARK = "/* ── the header: one row, with the rooms"
-CSS_END = "  .nav a.nav-door{font-size:15px}\n}"
+CSS_END = "  .nav a.nav-door{font-size:16px}\n}"
 
 CSS = """/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
 .nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
@@ -127,7 +127,7 @@ CSS = """/* ── the header: one row, with the rooms and the languages behind 
 .nav .nw{white-space:nowrap}
 .nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
   background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
-  font-size:14px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+  font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
 /* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
 .nav-flag{height:calc(1.2em + 12px)}
@@ -142,7 +142,7 @@ CSS = """/* ── the header: one row, with the rooms and the languages behind 
   background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
   box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
 .nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
-.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:15px;
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;
   text-decoration:none;color:#1a1a1a;white-space:nowrap}
 .nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
 .nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
@@ -153,7 +153,7 @@ CSS = """/* ── the header: one row, with the rooms and the languages behind 
 @media(max-width:700px){
   .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
   .nav a.nav-door{line-height:1.25}
-  .nav a.nav-door{font-size:15px}
+  .nav a.nav-door{font-size:16px}
 }"""
 
 RTL_MARK = "/* ── right-to-left: the header and the front door ── */"
