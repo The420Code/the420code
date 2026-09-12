@@ -52,7 +52,7 @@ def edition_navs(lang, home, door):
     rooms = built or [(h, x) for h, x in
                       re.findall(r'<a (?:class="[^"]*" )?href="([^"]+)"[^>]*>([^<]+)</a>', src_nav)
                       if h.startswith("#") or h.startswith("/prereg")]
-    assert len(rooms) == 5, f"{lang}: expected five rooms in the header, read {len(rooms)}"
+    assert len(rooms) == 13, f"{lang}: expected thirteen rooms in the header, read {len(rooms)}"
     room_links = "\n    ".join(
         f'<a href="{("/" + lang + "/" + h) if h.startswith("#") else h}" class="nav-room">{x}</a>'
         for h, x in rooms)
