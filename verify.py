@@ -48,13 +48,17 @@ def rel_pct(pred, meas):
     return abs(pred - meas) / meas * 100.0
 
 
-# ── CLAIM 1: Proton-electron mass ratio (AP30) ───────────────────────────────
+# ── CLAIM 1: Proton-electron mass ratio — the series closed (AP49) ───────────
+# AP30 stopped at a^2 with a coefficient of sixteen it declared owed under KS-30.3. AP49 The Hold
+# paid that switch on 6 September 2026: the repair's share is r = 16a/1836, the series closes as a
+# chain of holders, and every order follows from the ruling instead of being truncated. KS-HOLD.1.
 scaffold    = 21**2 * 4 + 21 * 3 + 3**2          # = 1836
 maintenance = ALPHA * 21 * (1 - 1 / (84 * pi))    # dynamic term
-correction  = ALPHA**2 * 21 * 16 / 1836           # higher-order
+hold_share  = 16 * ALPHA / 1836                   # r, the repair's share of the previous order
+correction  = 21 * ALPHA * hold_share / (1 - hold_share)   # all orders, not truncated at a^2
 ratio_pred  = scaffold + maintenance + correction
 ratio_err   = abs(ratio_pred - RATIO_PE) / RATIO_PE * 1e9
-checks.append(("Proton-electron mass ratio", "AP30",
+checks.append(("Proton-electron mass ratio", "AP49",
                f"{ratio_pred:.10f}", f"{RATIO_PE:.10f}", ratio_err, "ppb", 5.0))
 
 # ── CLAIM 2: Gravitational constant G — realised (AP44) and structural (AP28) ─

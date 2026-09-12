@@ -25,13 +25,17 @@
     function rel_pct(pred, meas) { return Math.abs(pred - meas) / meas * 100.0; }
     var checks = [], corpses = [];
 
-    // CLAIM 1: Proton-electron mass ratio (AP30)
+    // CLAIM 1: Proton-electron mass ratio — the series closed (AP49)
+    // AP30 stopped at a^2 with a coefficient of sixteen it declared owed under KS-30.3. AP49 The
+    // Hold paid that switch on 6 September 2026: the repair's share is r = 16a/1836, the series
+    // closes as a chain of holders, and every order follows from the ruling. KS-HOLD.1.
     var scaffold = 21 ** 2 * 4 + 21 * 3 + 3 ** 2;
     var maintenance = ALPHA * 21 * (1 - 1 / (84 * pi));
-    var correction = ALPHA ** 2 * 21 * 16 / 1836;
+    var hold_share = 16 * ALPHA / 1836;
+    var correction = 21 * ALPHA * hold_share / (1 - hold_share);
     var ratio_pred = scaffold + maintenance + correction;
     var ratio_err = Math.abs(ratio_pred - RATIO_PE) / RATIO_PE * 1e9;
-    checks.push(["Proton-electron mass ratio", "AP30",
+    checks.push(["Proton-electron mass ratio", "AP49",
       ratio_pred.toFixed(10), RATIO_PE.toFixed(10), ratio_err, "ppb", 5.0]);
 
     // CLAIM 2: Gravitational constant G — realised (AP44) and structural (AP28)

@@ -735,7 +735,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   <p class="formula">Δ<sub>n−p</sub> = [3(1 − 1/2π) + α(1 + 1/2π)] / (1 + α²/8π) = 2.53098857 m<sub>e</sub>   (AP47)</p>
   <p class="formula">t<sub>cycle</sub> = (21/18) · α<sup>−18</sup> · ℏ/(m<sub>e</sub>c²) = 13.830 Gyr;   H₀ = 0.954 / t<sub>cycle</sub> = 67.45 km/s/Mpc   (AP46, AP48)</p>
   <p class="formula">a₀ = C_S² · c · H₀ / (2π)   where C_S² = 2 ln(sec ½ + tan ½) ≈ 1.0445 — not the fine-structure constant</p>
-  <p class="p-detail" style="margin:.5rem 0 0">The integer 16 in the α² term is measured — 336 = 21 × 16, a 0.33 % constraint — and it is read as 4 × 4 in AP49 (KS-HOLD.2); KS-30.3 paid 6 September 2026. The frozen pre-registration, including the conditions under which the proton result dies, is at <a href="/prereg/">/prereg/</a>. If the integers above read as curve-fitting, that objection is answered with arithmetic rather than assurance: <a href="/prereg/#numerology">why 21 cannot move</a> — one step in the integer changes G by a factor of 137.</p>
+  <p class="p-detail" style="margin:.5rem 0 0">The integer 16 in the α² term was pinned by measurement — 336 = 21 × 16, a 0.33 % constraint — and its structural decomposition was paid by AP49 The Hold on 6 September 2026. The frozen pre-registration, including the conditions under which the proton result dies, is at <a href="/prereg/">/prereg/</a>. If the integers above read as curve-fitting, that objection is answered with arithmetic rather than assurance: <a href="/prereg/#numerology">why 21 cannot move</a> — one step in the integer changes G by a factor of 137.</p>
   <p class="three-constants" style="margin-bottom:0">Three constants, three axioms: c ↔ Constraint · ℏ ↔ Break · G ↔ Record</p>
 </div>
 
@@ -770,12 +770,15 @@ mn_me = 1838.68366200      # m_n/m_e (CODATA 2022)
 KM_PER_MPC = 3.0857e19
 GYR = 365.25 * 86400 * 1e9
 
-# ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
+# ─── CLAIM 1: Proton-electron mass ratio — the series closed (AP49) ───
+# AP30 stopped at α² with a coefficient of sixteen it declared owed under KS-30.3.
+# AP49 The Hold paid it: r = 16α/1836 and the series closes as a chain of holders.
 scaffold    = 21**2 * 4 + 21 * 3 + 3**2           # = 1836
 maintenance = alpha * 21 * (1 - 1 / (84 * pi))     # dynamic term
-correction  = alpha**2 * 21 * 16 / 1836            # higher-order
+hold_share  = 16 * alpha / 1836                    # r, the share repaired each order
+correction  = 21 * alpha * hold_share / (1 - hold_share)   # all orders
 ratio_pred  = scaffold + maintenance + correction
-print("PROTON-ELECTRON MASS RATIO (AP30)")
+print("PROTON-ELECTRON MASS RATIO (AP49 — the series closed)")
 print(f"  Predicted: {ratio_pred:.8f}")
 print(f"  Measured:  {mp_me:.8f}")
 print(f"  Error:     {abs(ratio_pred - mp_me) / mp_me * 1e9:.3f} ppb")
@@ -1111,7 +1114,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <h2 id="glossary" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Structural Glossary</h2>
   <p style="font-size:16px;margin:0 0 1.5rem">The complete vocabulary, notation and imagery of the body of work. Every term that does structural work — across the eight Notebooks, the five Ø Models, the five Five Doors books, and the Rosin Ø series — drawn into one canonical reference.</p>
 
-  <p style="font-size:16px;margin:0 0 1.5rem">16 thematic families. 377 index entries. Edition 1.1, September 2026: the cost family and the Assembly (AP44–AP48) enter as Family 16, and the H₀ limb of the wave is applied throughout. From the axiom and its four conditions through to the falsification apparatus, the applied frame, the relational corridor, religion and hermeneutics, and AI alignment.</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">16 thematic families. 408 index entries. Edition 1.1, September 2026: the cost family and the Assembly (AP44–AP48) enter as Family 16, and the H₀ limb of the wave is applied throughout. From the axiom and its four conditions through to the falsification apparatus, the applied frame, the relational corridor, religion and hermeneutics, and AI alignment.</p>
 
   <p style="font-size:16px;font-weight:600;margin:0 0 .5rem;display:flex;align-items:center;gap:.75rem">Structural Glossary — edition 1.1 <a class="nb-pdf" href="The_420_Code_Structural_Glossary.pdf">PDF</a></p>
   <p style="font-size:16px;margin:1.25rem 0 0">Every term on one page — its definition, the paper that installs it, and the grade it carries: <a href="/glossary/">Ø Glossary</a>.</p>
