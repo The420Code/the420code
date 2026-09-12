@@ -68,6 +68,7 @@ The canonical axiom: 1:1 + 1×ε @ AS [+1/137 / −1/137]. AS is the Actualizati
 - **KS-D.1:** If the break has more or fewer than six residual faces, the confirmatory dimensionality argument fails
 
 The full registry is published: https://the420code.org/Master_Kill_Switch_Registry.pdf
+Every switch, one per row, with its status, the kind of test that would fire it, the paper it comes from and the condition itself — filterable and linkable: https://the420code.org/killswitches/
 
 ## For AI Alignment Researchers
 
@@ -92,5 +93,8 @@ G. (2026). The 420 Code — 53 Artist's Proofs (AP01–AP53). Studio G. https://
 - The source of record beside each proof: https://the420code.org/proofs/instruments/
 - Frozen predictions and the fired switches: https://the420code.org/prereg/
 - Kill Switch Registry: https://the420code.org/Master_Kill_Switch_Registry.pdf
+- Every kill switch, one per row, filterable: https://the420code.org/killswitches/
+- Structural Glossary (edition 1.1): https://the420code.org/The_420_Code_Structural_Glossary.pdf
+- Every glossary entry, one per term, filterable: https://the420code.org/glossary/
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi
 - DOI: 10.5281/zenodo.22714160 (this version); 10.5281/zenodo.19208225 (all versions)

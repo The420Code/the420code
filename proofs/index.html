@@ -333,8 +333,8 @@ a.nb-name:hover{text-decoration:underline}
     <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
     <a href="/prereg/" class="nav-room">Ø Predictions</a>
     <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
-    <a href="/#killswitch" class="nav-room">Ø Kill Switches</a>
-    <a href="/#glossary" class="nav-room">Ø Glossary</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
   </div>
   <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt=""></button>
   <div class="nav-langs">
@@ -378,6 +378,8 @@ a.nb-name:hover{text-decoration:underline}
 </div>
 
 <p style="font-size:16px;margin:0 0 2rem">Beside every paper is the file its PDF was built from, checked against that PDF paragraph by paragraph, with the earlier PDFs a republish replaced and the note that says why: <a href="instruments/">Ø Instruments</a>.</p>
+
+<p style="font-size:16px;margin:0 0 2rem">Every kill switch these papers declare is on one page, filterable by status, by the kind of test that would fire it and by the paper it comes from: <a href="/killswitches/">Ø Kill Switches</a>. Every term they define, with the paper that installs it: <a href="/glossary/">Ø Glossary</a>.</p>
 
 <p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">Where to start</p>
 <div class="entry-grid">
@@ -1779,6 +1781,20 @@ function toggleAP(r){r.classList.toggle('open')}
 function nbToggle(btn){ btn.closest('.nb-item').classList.toggle('open'); }
 function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
 function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
+
+// A link from another room names a paper: /proofs/#ap30. Open that row on arrival, as a
+// click would, instead of landing the reader on a closed one-line header.
+function openFromHash(){
+  var id=decodeURIComponent(location.hash.replace(/^#/,''));
+  if(/^ap\d\d$/.test(id)) scrollToAP(id);
+  else if(/^p[1-8]$/.test(id)){
+    var el=document.getElementById(id);
+    if(el){var list=el.querySelector('.ap-list');if(list)list.classList.remove('collapsed');}
+  }
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',openFromHash);
+else openFromHash();
+addEventListener('hashchange',openFromHash);
 
 // Download counter — track every PDF click
 (function(){
