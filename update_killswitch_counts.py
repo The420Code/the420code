@@ -76,7 +76,7 @@ KILLSWITCH_KEYWORDS = {
            r"kill[\s-]?switch(es)?", r"sicherheitsschalter\w*"],
     "pt": [r"interruptores? de seguran\u00e7a", r"interruptores? fatais?",
            r"interruptores? letais?"],
-    "nl": [r"noodschakelaars?", r"veiligheidsschakelaars?",
+    "nl": [r"doodsvoorwaarden?", r"noodschakelaars?",
            r"kill[\s-]?switch(es)?"],
     "it": [r"interruttori? di sicurezza", r"interruttori? fatali?",
            r"interruttori? letali?"],
