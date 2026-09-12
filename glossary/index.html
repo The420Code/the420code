@@ -195,7 +195,7 @@ table.data tr:last-child td{border-bottom:none}
 html{scroll-padding-top:calc(var(--navh) + var(--ctlh) + 1.1rem)}
 .ctl{display:none}
 html.js .ctl{display:block}
-.ctl{position:sticky;top:var(--navh);z-index:90;background:rgba(255,255,255,0.96);
+.ctl{position:sticky;top:var(--navh);z-index:90;background:rgba(255,255,255,0.95);
   backdrop-filter:blur(8px);border-bottom:1px solid var(--g3);margin:0 0 2rem;padding:1rem 0 .9rem}
 /* the sticky part is one line: what you are looking for, and how much of it there is. The
    chip rows fold away behind a real disclosure, so the bar never eats the reader's screen. */
@@ -212,14 +212,14 @@ html.js .ctl{display:block}
 .ctl-fold[open]>summary .sw-arrow{transform:rotate(90deg);color:var(--gold)}
 .ctl-body{padding:.7rem 0 .1rem;max-height:min(54vh,440px);overflow-y:auto}
 .ctl-find input{flex:1 1 14rem;min-width:0;font-family:var(--f);font-size:16px;line-height:1.4;
-  color:#1a1a1a;background:var(--wh);border:1px solid var(--g3);border-radius:3px;padding:7px 11px}
+  color:var(--g6);background:var(--wh);border:1px solid var(--g3);border-radius:3px;padding:7px 11px}
 .ctl-find input:focus{border-color:var(--gold);outline:none}
 .ctl-find input::placeholder{color:var(--g5);opacity:1}
 .ctl-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:.45rem;margin:0 0 .45rem}
 .ctl-row:last-of-type{margin-bottom:0}
 .ctl-key{flex:0 0 5.4rem;font-size:16px;font-weight:700;letter-spacing:.03em;color:var(--g4)}
 .chip{display:inline-flex;align-items:baseline;gap:.4rem;font-family:inherit;font-size:16px;
-  line-height:1.25;font-weight:400;color:#1a1a1a;background:none;border:1px solid var(--g3);
+  line-height:1.25;font-weight:400;color:var(--g6);background:none;border:1px solid var(--g3);
   border-radius:3px;padding:4px 10px;cursor:pointer}
 .chip:hover{border-color:var(--gold);color:var(--gold)}
 .chip .n{font-size:16px;color:var(--g5);font-variant-numeric:tabular-nums}
@@ -235,11 +235,11 @@ html.js .ctl{display:block}
 .chip.clear{border-style:dashed}
 .chip.clear[disabled]{opacity:.45;cursor:default;border-color:var(--g3);color:var(--g5)}
 .ctl-count{font-size:16px;font-weight:700;color:var(--g4);white-space:nowrap;margin:0}
-.ctl-count b{color:#1a1a1a;font-variant-numeric:tabular-nums}
+.ctl-count b{color:var(--g6);font-variant-numeric:tabular-nums}
 .ctl-none{font-size:16px;color:var(--g6);background:var(--g1);border-left:5px solid var(--gold);
   padding:1.1rem 1.25rem;margin:1.25rem 0}
 .jump{display:flex;flex-wrap:wrap;gap:.3rem;margin:0 0 .75rem}
-.jump a{font-size:16px;font-weight:700;line-height:1.25;color:#1a1a1a;text-decoration:none;
+.jump a{font-size:16px;font-weight:700;line-height:1.25;color:var(--g6);text-decoration:none;
   border:1px solid transparent;border-radius:3px;padding:3px 7px;min-width:1.9rem;text-align:center}
 .jump a:hover{border-color:var(--gold);color:var(--gold);text-decoration:none}
 .jump a.off{color:var(--g3);pointer-events:none}
@@ -277,7 +277,6 @@ html.js .ctl{display:block}
 .sw-body dd{margin:0}
 .sw-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.2rem 0 0}
 .sw-meta a{color:#383838}
-.sw-hit{background:#f0e6c8}
 
 /* the status word, in the wall's own vocabulary. It may shrink and it may wrap: a handful of
    the registry's status cells are whole clauses, and a status that can neither wrap nor
@@ -303,6 +302,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
   .ctl{padding:.8rem 0 .7rem;margin-bottom:1.5rem}
   .ctl-key{flex-basis:100%}
   .ctl-body{max-height:min(46vh,320px)}
+  /* On a small screen an open panel plus two sticky bars can leave no row on the page at all.
+     While the panel is open the bar stops being sticky, so the reader scrolls past it to the
+     list instead of being walled off from it. Shut, it sticks again. */
+  .ctl:has(.ctl-fold[open]){position:static}
   .grp-n{margin-left:0;flex-basis:100%}
   .sw-id{flex-basis:100%}
 }
@@ -418,8 +421,10 @@ in the address bar — so a filtered page can be sent to someone.</p>
     </div>
   </details>
 </div>
-<p class="ctl-none" id="nohits" hidden>No entry matches all of that. Drop a filter, or clear them
-all and start again.</p>
+<p class="ctl-none" id="nohits" hidden>Nothing here matches all of that. Clear it and start again, or
+drop whichever part you care least about. This room renders edition 1.1, which has no entries for
+AP49 to AP53 yet — a term from one of those five will not be found here, and that is said plainly
+under Which edition this is.</p>
 
 <section class="grp" id="az-symbol">
 <div class="grp-head"><h3 class="grp-name">Symbols</h3><span class="grp-n" data-all="42">42</span></div>
@@ -1001,7 +1006,7 @@ published PDF was built from is beside it at
   var folder=ctl.querySelector('.ctl-fold');
   var foldLabel=folder&&folder.querySelector('.ctl-fold-n');
   var chips=[].slice.call(ctl.querySelectorAll('.chip[data-k]'));
-  var KEYS={}, q='', forced=null;
+  var KEYS={}, q='', forced=null, stale=false;
   chips.forEach(function(c){ KEYS[c.dataset.k]=KEYS[c.dataset.k]||[]; });
 
   // Two sticky layers here, not one: the site's header and this bar. An anchor has to land
@@ -1010,7 +1015,12 @@ published PDF was built from is beside it at
   function layers(){
     var root=document.documentElement, n=document.querySelector('.nav');
     if(n) root.style.setProperty('--navh', Math.round(n.getBoundingClientRect().height)+'px');
-    root.style.setProperty('--ctlh', Math.round(ctl.getBoundingClientRect().height)+'px');
+    // Only a bar that is actually sticky can stand in front of an anchor. On a small screen
+    // with the panel open this one is deliberately static, and reserving its height there
+    // pushed every landing so far down the page that no row fitted on the screen at all.
+    var sticky=getComputedStyle(ctl).position==='sticky';
+    root.style.setProperty('--ctlh',
+      sticky ? Math.round(ctl.getBoundingClientRect().height)+'px' : '0px');
   }
   layers();
   addEventListener('resize', layers);
@@ -1030,6 +1040,12 @@ published PDF was built from is beside it at
 
   function on(k){ return chips.filter(function(c){ return c.dataset.k===k && c.getAttribute('aria-pressed')==='true'; })
                               .map(function(c){ return c.dataset.v; }); }
+
+  function currentSel(){
+    var sel={};
+    Object.keys(KEYS).forEach(function(k){ sel[k]=on(k); });
+    return sel;
+  }
 
   function apply(push){
     var sel={}, any=false;
@@ -1096,10 +1112,17 @@ published PDF was built from is beside it at
       var i=pair.indexOf('='); if(i<0) return;
       var k=decode(pair.slice(0,i)), v=pair.slice(i+1);
       if(k==='q'){ q=decode(v.replace(/\+/g,' ')); if(find) find.value=q; any=true; return; }
-      var want=v.split(',').map(decode);
+      var want=v.split(',').map(function(x){ return decode(x.replace(/\+/g,' ')); });
+      var matched=0;
       chips.forEach(function(c){
-        if(c.dataset.k===k && want.indexOf(c.dataset.v)>-1){ c.setAttribute('aria-pressed','true'); any=true; }
+        if(c.dataset.k===k && want.indexOf(c.dataset.v)>-1){
+          c.setAttribute('aria-pressed','true'); any=true; matched++;
+        }
       });
+      // A value naming no chip is silently dropped -- a mistyped or outdated shared link. The
+      // page stays honest, but the address bar would keep asserting a filter that is not in
+      // force, and copy it forward. Remember it, and rewrite the URL to what is actually set.
+      if(matched!==want.length) stale=true;
     });
     return any;
   }
@@ -1115,8 +1138,20 @@ published PDF was built from is beside it at
     });
   });
   if(find){
-    var t;
-    find.addEventListener('input', function(){ clearTimeout(t); t=setTimeout(function(){ q=find.value; apply(); }, 90); });
+    var t, settle;
+    find.addEventListener('input', function(){
+      // The count is a live region. Left polite while someone types, a screen reader reads a
+      // new number for every letter before it ever reads a result. So it goes quiet for the
+      // keystrokes -- the filtering stays as fast as it was -- and speaks once, when the
+      // typing stops.
+      if(out) out.parentNode.setAttribute('aria-live','off');
+      clearTimeout(t); t=setTimeout(function(){ q=find.value; apply(); }, 90);
+      clearTimeout(settle); settle=setTimeout(function(){
+        if(!out) return;
+        out.parentNode.setAttribute('aria-live','polite');
+        var n=out.textContent; out.textContent=''; out.textContent=n;
+      }, 600);
+    });
     find.addEventListener('keydown', function(e){ if(e.key==='Escape'){ find.value=''; q=''; apply(); } });
   }
   if(clear) clear.addEventListener('click', function(){
@@ -1141,6 +1176,7 @@ published PDF was built from is beside it at
   // once, on arrival -- and never reopen the panel behind them afterwards
   if(folder && chips.some(function(c){ return c.getAttribute('aria-pressed')==='true'; })) folder.open=true;
   apply(false);
+  if(stale) writeUrl(currentSel(), fold(q).trim());
   var landed=openHash();
   // A filtered link with no row named used to arrive at the top of the page, with its
   // results some ten screens below the boards and the tables. Put the reader at the list.

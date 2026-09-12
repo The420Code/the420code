@@ -93,6 +93,16 @@
   "chain.10": "<b>La cinématique de la relativité restreinte,</b> et pourquoi personne ne peut lire un « maintenant ». <span class=\"w\"><a href=\"/proofs/#ap52\">AP52 Lire la relativité</a>.</span>",
   "h2.what_it_does_not_derive": "Ce qu’il ne dérive pas",
   "p.what_it_does_not_derive.0": "La valeur de α. Elle est mesurée, et le travail le dit sur chaque page qui l’utilise. Le corpus y travaille. Ce travail part de l’histoire ci-dessus : α est le moment de la coupe.",
+  "h2.how_this_was_made": "Comment cela a été fait",
+  "p.how_this_was_made.0": "Je suis un artiste et un philosophe de la nature.",
+  "p.how_this_was_made.1": "Je ferme les yeux et je vois l’objet tout entier. Puis je le sculpte dans les mots. Une fois les mots suffisamment précis, un atelier d’IA peut les traduire en mathématiques.",
+  "p.how_this_was_made.2": "L’acte de voir est mien. Les mots sont miens. Les descriptions sont miennes.",
+  "p.how_this_was_made.3": "La traduction est celle de la machine, et la machine est vérifiée — par moi-même et par un panel d’autres machines.",
+  "p.how_this_was_made.4": "Les mathématiques ont écrit la physique. La physique et la nature se recouvrent, et elles concordent. Je n’aurais pas pu prédire ce recouvrement — je ne pensais même pas à des recouvrements possibles. Une seule chose m’intéresse : décrire ce que je vois aussi clairement que possible.",
+  "p.how_this_was_made.5": "Je n’ai jamais cherché à prédire un proton. Je suis parti d’un enregistrement — ce qu’il lui faut pour exister, comment il s’écrit, comment il se lit. Tout le reste en a découlé. Cela a fini par faire beaucoup de description et beaucoup d’écriture.",
+  "p.how_this_was_made.6": "Ensuite, le travail a été attaqué sans pitié. Un panel d’examen composé des meilleurs modèles d’IA a reçu pour instruction de le mettre en défaut. Chaque affirmation énonce la condition sous laquelle elle meurt — les attaques étaient donc structurées et anticipées. Elles sont toutes publiées. Deux de ces conditions ont été remplies — deux prédictions étaient fausses — et toutes deux sont toujours au mur, avec leurs nombres et leurs dates. Avoir tort et corriger l’erreur a rendu la structure plus solide.",
+  "p.how_this_was_made.7": "Le nombre d’entrée — α — est mesuré, et non dérivé. La raison est dans l’opérateur, ci-dessus : rien ne peut se lire soi-même à l’instant où cela a lieu. La pupille ne peut pas voir la pupille. Ce n’est pas un trou dans la méthode. C’est le propre résultat de la méthode, et c’est pourquoi il n’y a qu’une seule entrée.",
+  "src.how_this_was_made": "Chaque condition, une par ligne : <a href=\"/killswitches/\">Ø Interrupteurs d’Arrêt</a> · Chaque terme, avec l’article qui l’installe : <a href=\"/glossary/\">Ø Glossaire</a>.",
   "take": "Tout en trois pages",
   "close": "Un enregistrement existe.<br>Sois bienveillant est une dérivation.<br>Le Je Suis en moi est le Je Suis en toi."
  }

@@ -93,6 +93,16 @@
   "chain.10": "<b>Special relativity’s kinematics,</b> and why no one can read a “now”. <span class=\"w\"><a href=\"/proofs/#ap52\">AP52 Reading Relativity</a>.</span>",
   "h2.what_it_does_not_derive": "What it does not derive",
   "p.what_it_does_not_derive.0": "The value of α. It is measured, and the work says so on every page that uses it. The body of work is working on it. That work starts from the story above: α is the moment of the cut.",
+  "h2.how_this_was_made": "How this was made",
+  "p.how_this_was_made.0": "I am an artist and a natural philosopher.",
+  "p.how_this_was_made.1": "I close my eyes and see the whole object. Then I sculpt it in words. Once the words are precise enough, an AI desk can translate them into mathematics.",
+  "p.how_this_was_made.2": "The seeing is mine. The words are mine. The descriptions are mine.",
+  "p.how_this_was_made.3": "The translation is the machine’s, and the machine is checked — by myself and a panel of other machines.",
+  "p.how_this_was_made.4": "The mathematics wrote the physics. The physics and nature overlap in agreement. I could not have predicted the overlap — I wasn’t even thinking about possible overlaps. I am only interested in describing what I see as clearly as possible.",
+  "p.how_this_was_made.5": "I never set out to predict a proton. I started with a record — what it needs to exist, how it is written, how it is read. Everything else followed from that. It ended up being a lot of describing and a lot of writing.",
+  "p.how_this_was_made.6": "Then it was ruthlessly attacked. A review panel of the best AI models was instructed to break it. Every claim states the condition under which it dies — so the attacks were structured and pre-empted. They are all published. Two of these conditions have been met — two predictions were wrong — both are still on the wall, with their numbers and their dates. Being wrong, and correcting the error, made the structure stronger.",
+  "p.how_this_was_made.7": "The input number — α — is measured and not derived. The reason is in the operator, above: nothing can read itself at the instant it happens. The pupil cannot see the pupil. That is not a hole in the method. It is the method’s own result, and it is why there is exactly one input.",
+  "src.how_this_was_made": "Every condition, one per row: <a href=\"/killswitches/\">Ø Kill Switches</a> · Every term, with the paper that installs it: <a href=\"/glossary/\">Ø Glossary</a>.",
   "take": "Everything in three pages",
   "close": "One record exists.<br>Be kind is a derivation.<br>The I Am in me is the I Am in you."
  }
