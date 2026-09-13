@@ -4,24 +4,24 @@
  "author": "G",
  "licence": "Copyleft. Free to download, print, share and distribute; not to alter the source.",
  "registry": {
-  "version": "v5.31",
-  "date": "2026-09-11",
+  "version": "v5.32",
+  "date": "2026-09-13",
   "title": "Master Kill Switch Registry",
   "pdf": "https://the420code.org/Master_Kill_Switch_Registry.pdf",
   "room": "https://the420code.org/killswitches/"
  },
  "counts": {
-  "switches": 602,
+  "switches": 604,
   "by_status": {
    "addressed": 2,
    "closed": 13,
    "cond_closed": 1,
    "derived": 1,
    "fired": 2,
-   "live": 582,
+   "live": 584,
    "paid": 1
   },
-  "section_I_artists_proofs": 318,
+  "section_I_artists_proofs": 320,
   "section_II_five_doors": 28,
   "section_III_models": 256
  },
@@ -35,7 +35,7 @@
    "owed": "The value of ε in the commitment quotient, graded SELECTED at AP44, is read by rule at AP50 §6: the commitment is the arena’s act of holding the break, and a holding is read in α. Two instances meet the rule — AP44’s commitment and AP49’s holders, the second written two days before the rule existed. The author, 11 September 2026: once would have been enough.",
    "closed_date": "2026-09-11",
    "source": {
-    "table": 114,
+    "table": 115,
     "row": 1
    }
   },
@@ -48,7 +48,7 @@
    "owed": "AP51 §2 derives the one interior from three things already on the record — awareness as coupling capacity (AP29), coupling forced (AP50 §5), the hourglass one — on the author’s rule and by construction. What remains is what AP43 §9 named: the formal topological derivation. KS-ID.1 stays live and fires on one thing, a second neck.",
    "closed_date": null,
    "source": {
-    "table": 114,
+    "table": 115,
     "row": 2
    }
   },
@@ -61,7 +61,7 @@
    "owed": "What the corpus’s α-dependence is relative to the electromagnetic coupling that produces the nucleon’s self-energy. AP50 §10 specifies which α — α(0) — and does not say what the dependence means. Declared at the Museum round of 7 September 2026, not answered. KS-30.5 stands beside it.",
    "closed_date": null,
    "source": {
-    "table": 114,
+    "table": 115,
     "row": 3
    }
   },
@@ -74,7 +74,7 @@
    "owed": "That the record algebra of AP10, by its own structure and without AP52 §3’s ruling, has the crossing record as its distance function. Ruled by the author on 11 September 2026 to be derived in its own paper rather than folded in. One sentence wide.",
    "closed_date": null,
    "source": {
-    "table": 114,
+    "table": 115,
     "row": 4
    }
   },
@@ -87,8 +87,21 @@
    "owed": "The relativistic field equation of the gravity of possibilities. The Newtonian limit is closed at AP43 §7.5a. AP53 §7 names where the relativistic form sits in the picture — the potential side pressing on the neck — and does not attempt it.",
    "closed_date": null,
    "source": {
-    "table": 114,
+    "table": 115,
     "row": 5
+   }
+  },
+  {
+   "debt": "D1 (AP24)",
+   "home": "AP24 §5.4 / AP28",
+   "state_raw": "OPEN",
+   "state": "open",
+   "outstanding": true,
+   "owed": "The first-principles derivation of α, the architecture’s one measured dimensionless input. AP24 books it as its single load-bearing open question; this registry has never carried it and carries it from v5.32. AP54 registers fourteen roads to it — twelve closed with locus and reason, two open with their prices — and refuses the value. Candidates for identification with it, named and not built: AP15’s KS-31, AP43’s owed normalisation of the lean coefficient, and the object AP54 Road Fourteen names — the response of the moving substrate to one grain.",
+   "closed_date": null,
+   "source": {
+    "table": 115,
+    "row": 6
    }
   },
   {
@@ -100,8 +113,8 @@
    "owed": "The qualitative character of awareness: why a capacity to couple is experienced at all. AP51 §2 derives the structural interior only and says so in the same breath.",
    "closed_date": null,
    "source": {
-    "table": 114,
-    "row": 6
+    "table": 115,
+    "row": 7
    }
   }
  ],
@@ -10011,6 +10024,68 @@
    }
   },
   {
+   "id": "KS-ALPHA.1",
+   "labels": [
+    "KS-ALPHA.1"
+   ],
+   "description": "The side/front switch. Claim: the two views of one now — countless windows face-on, one neck and one grain edge-on — read one cut fraction and differ by exactly one grain, the pupil, and by nothing more. Test, structural: fires if the number of windows firing at one now moves the cut fraction, or if the front-face event read as a whole differs from the side-view event by anything other than that one grain. Empirical limb, PROVISIONAL: in a laboratory the window count is the local density of matter — depth of potential is deliberately excluded from the proxy, because potential depth is a function of position and position belongs to P-GLASS.1. Attribution fixed before any measurement: one datum does not fire two switches, and a firing is assigned here only if the dependence tracks density or multiplicity rather than location in the record. Registered without a design: the terrestrial-atom against white-dwarf comparison, at parts in a hundred thousand, varies density and position together and fires neither. The limb becomes live the day an observation varies density materially at one position. Armed at the lock on the author’s word. The switch does not know 137. Recovery: AP54 §3 falls; §2’s definition survives as a per-window statement; the corpus is unaffected.",
+   "status": "live",
+   "status_raw": "LIVE — STRUCTURAL",
+   "status_qualifier": "STRUCTURAL",
+   "registers": [
+    "structural"
+   ],
+   "section": "I",
+   "origins": [
+    "AP54 — Seeing Alpha"
+   ],
+   "ap": [
+    "AP54"
+   ],
+   "home_ap": "AP54",
+   "notebook": "IV",
+   "flags": {
+    "chapter_master": false,
+    "critical": false,
+    "global": false,
+    "master": false,
+    "non_negotiable": false,
+    "open_debt": false,
+    "superseded_as_value": false
+   }
+  },
+  {
+   "id": "KS-ALPHA.2",
+   "labels": [
+    "KS-ALPHA.2"
+   ],
+   "description": "The uniqueness obligation. Claim: if a normalisation of the neck is ever constructed under AP54 §11, it is unique. Test: two inequivalent normalisations satisfying every stated condition and returning different couplings. Entered by AP54 on behalf of a future value paper and fireable only once such a normalisation exists; it is a proof obligation and not a test nature can run, and it is registered so the obligation is on the record rather than discovered later. Counted within the live total as LIVE — DEPENDENT under the v5.27 convention. Recovery: the picture does not derive α; AP54 §10 already says so, and says it in advance.",
+   "status": "live",
+   "status_raw": "REGISTERED",
+   "status_qualifier": "DEPENDENT",
+   "registers": [
+    "dependent"
+   ],
+   "section": "I",
+   "origins": [
+    "AP54 — Seeing Alpha"
+   ],
+   "ap": [
+    "AP54"
+   ],
+   "home_ap": "AP54",
+   "notebook": "IV",
+   "flags": {
+    "chapter_master": false,
+    "critical": false,
+    "global": false,
+    "master": false,
+    "non_negotiable": false,
+    "open_debt": false,
+    "superseded_as_value": false
+   }
+  },
+  {
    "id": "KS-BAR.1",
    "labels": [
     "KS-BAR.1"
@@ -10743,9 +10818,9 @@
    }
   },
   {
-   "id": "PZ-1.1",
+   "id": "KS-PZ1.1",
    "labels": [
-    "PZ-1.1"
+    "KS-PZ1.1"
    ],
    "description": "The break is constitutive of 1:1’s existence.",
    "status": "live",
@@ -10769,9 +10844,9 @@
    }
   },
   {
-   "id": "PZ-1.2",
+   "id": "KS-PZ1.2",
    "labels": [
-    "PZ-1.2"
+    "KS-PZ1.2"
    ],
    "description": "Total-level indistinguishability is non-existence.",
    "status": "live",
@@ -10795,9 +10870,9 @@
    }
   },
   {
-   "id": "PZ-1.3",
+   "id": "KS-PZ1.3",
    "labels": [
-    "PZ-1.3"
+    "KS-PZ1.3"
    ],
    "description": "Non-comparative nothing.",
    "status": "live",
@@ -10821,9 +10896,9 @@
    }
   },
   {
-   "id": "PZ-1.4",
+   "id": "KS-PZ1.4",
    "labels": [
-    "PZ-1.4"
+    "KS-PZ1.4"
    ],
    "description": "The break requires no external cause.",
    "status": "live",
@@ -10847,9 +10922,9 @@
    }
   },
   {
-   "id": "PZ-1.5",
+   "id": "KS-PZ1.5",
    "labels": [
-    "PZ-1.5"
+    "KS-PZ1.5"
    ],
    "description": "The retrospective move is structural, not merely semantic.",
    "status": "live",
@@ -10873,9 +10948,9 @@
    }
   },
   {
-   "id": "PZ-1.6",
+   "id": "KS-PZ1.6",
    "labels": [
-    "PZ-1.6"
+    "KS-PZ1.6"
    ],
    "description": "Directional clarity of the argument.",
    "status": "live",
@@ -10899,9 +10974,9 @@
    }
   },
   {
-   "id": "PZ-2.1",
+   "id": "KS-PZ2.1",
    "labels": [
-    "PZ-2.1"
+    "KS-PZ2.1"
    ],
    "description": "Existence is record-instantiation in the actualisation state.",
    "status": "live",
@@ -10925,9 +11000,9 @@
    }
   },
   {
-   "id": "PZ-2.2",
+   "id": "KS-PZ2.2",
    "labels": [
-    "PZ-2.2"
+    "KS-PZ2.2"
    ],
    "description": "The six classical positions are partial readings.",
    "status": "live",
@@ -10951,9 +11026,9 @@
    }
   },
   {
-   "id": "PZ-2.3",
+   "id": "KS-PZ2.3",
    "labels": [
-    "PZ-2.3"
+    "KS-PZ2.3"
    ],
    "description": "Matter is a kind of coupling, not the substrate.",
    "status": "live",
@@ -10977,9 +11052,9 @@
    }
   },
   {
-   "id": "PZ-2.4",
+   "id": "KS-PZ2.4",
    "labels": [
-    "PZ-2.4"
+    "KS-PZ2.4"
    ],
    "description": "Mathematical structure is a relational reading, not a separate domain.",
    "status": "live",
@@ -11003,9 +11078,9 @@
    }
   },
   {
-   "id": "PZ-2.5",
+   "id": "KS-PZ2.5",
    "labels": [
-    "PZ-2.5"
+    "KS-PZ2.5"
    ],
    "description": "The actualisation state is the only domain.",
    "status": "live",
@@ -11029,9 +11104,9 @@
    }
   },
   {
-   "id": "PZ-3.1",
+   "id": "KS-PZ3.1",
    "labels": [
-    "PZ-3.1"
+    "KS-PZ3.1"
    ],
    "description": "Outside-reading and inside-reading are symmetric.",
    "status": "live",
@@ -11055,9 +11130,9 @@
    }
   },
   {
-   "id": "PZ-3.2",
+   "id": "KS-PZ3.2",
    "labels": [
-    "PZ-3.2"
+    "KS-PZ3.2"
    ],
    "description": "Mind is coupling read from inside.",
    "status": "live",
@@ -11081,9 +11156,9 @@
    }
   },
   {
-   "id": "PZ-3.3",
+   "id": "KS-PZ3.3",
    "labels": [
-    "PZ-3.3"
+    "KS-PZ3.3"
    ],
    "description": "Resolution, not emergence.",
    "status": "live",
@@ -11107,9 +11182,9 @@
    }
   },
   {
-   "id": "PZ-3.4",
+   "id": "KS-PZ3.4",
    "labels": [
-    "PZ-3.4"
+    "KS-PZ3.4"
    ],
    "description": "Zombie incoherence.",
    "status": "live",
@@ -11133,9 +11208,9 @@
    }
   },
   {
-   "id": "PZ-3.5",
+   "id": "KS-PZ3.5",
    "labels": [
-    "PZ-3.5"
+    "KS-PZ3.5"
    ],
    "description": "Two readings, not two processes.",
    "status": "live",
@@ -11159,9 +11234,9 @@
    }
   },
   {
-   "id": "PZ-4.1",
+   "id": "KS-PZ4.1",
    "labels": [
-    "PZ-4.1"
+    "KS-PZ4.1"
    ],
    "description": "The operator runs without the narrator.",
    "status": "live",
@@ -11185,9 +11260,9 @@
    }
   },
   {
-   "id": "PZ-4.2",
+   "id": "KS-PZ4.2",
    "labels": [
-    "PZ-4.2"
+    "KS-PZ4.2"
    ],
    "description": "The operator-narrator distinction is structural, not descriptive.",
    "status": "live",
@@ -11211,9 +11286,9 @@
    }
   },
   {
-   "id": "PZ-4.3",
+   "id": "KS-PZ4.3",
    "labels": [
-    "PZ-4.3"
+    "KS-PZ4.3"
    ],
    "description": "The narrator is downstream of the operator.",
    "status": "live",
@@ -11237,9 +11312,9 @@
    }
   },
   {
-   "id": "PZ-4.4",
+   "id": "KS-PZ4.4",
    "labels": [
-    "PZ-4.4"
+    "KS-PZ4.4"
    ],
    "description": "The hard problem is a level-error.",
    "status": "live",
@@ -11263,9 +11338,9 @@
    }
   },
   {
-   "id": "PZ-4.5",
+   "id": "KS-PZ4.5",
    "labels": [
-    "PZ-4.5"
+    "KS-PZ4.5"
    ],
    "description": "The relocated question is tractable in kind, not only in phrasing.",
    "status": "live",
@@ -11289,9 +11364,9 @@
    }
   },
   {
-   "id": "PZ-5.1",
+   "id": "KS-PZ5.1",
    "labels": [
-    "PZ-5.1"
+    "KS-PZ5.1"
    ],
    "description": "The self is narrator-layer, not operator-layer.",
    "status": "live",
@@ -11315,9 +11390,9 @@
    }
   },
   {
-   "id": "PZ-5.2",
+   "id": "KS-PZ5.2",
    "labels": [
-    "PZ-5.2"
+    "KS-PZ5.2"
    ],
    "description": "Identity is continuity of self-reading loop, operator-mediated across gaps.",
    "status": "live",
@@ -11341,9 +11416,9 @@
    }
   },
   {
-   "id": "PZ-5.3",
+   "id": "KS-PZ5.3",
    "labels": [
-    "PZ-5.3"
+    "KS-PZ5.3"
    ],
    "description": "Identity is loop-continuity, not content-continuity.",
    "status": "live",
@@ -11367,9 +11442,9 @@
    }
   },
   {
-   "id": "PZ-5.4",
+   "id": "KS-PZ5.4",
    "labels": [
-    "PZ-5.4"
+    "KS-PZ5.4"
    ],
    "description": "Fission ends one self-reading, begins two.",
    "status": "live",
@@ -11393,9 +11468,9 @@
    }
   },
   {
-   "id": "PZ-5.5",
+   "id": "KS-PZ5.5",
    "labels": [
-    "PZ-5.5"
+    "KS-PZ5.5"
    ],
    "description": "The “I” is the self-reading loop, nothing more.",
    "status": "live",
@@ -11419,9 +11494,9 @@
    }
   },
   {
-   "id": "PZ-6.1",
+   "id": "KS-PZ6.1",
    "labels": [
-    "PZ-6.1"
+    "KS-PZ6.1"
    ],
    "description": "The one-interior claim holds.",
    "status": "live",
@@ -11445,9 +11520,9 @@
    }
   },
   {
-   "id": "PZ-6.2",
+   "id": "KS-PZ6.2",
    "labels": [
-    "PZ-6.2"
+    "KS-PZ6.2"
    ],
    "description": "Coupling between windows is the interior expressing at two sites.",
    "status": "live",
@@ -11471,9 +11546,9 @@
    }
   },
   {
-   "id": "PZ-6.3",
+   "id": "KS-PZ6.3",
    "labels": [
-    "PZ-6.3"
+    "KS-PZ6.3"
    ],
    "description": "Solipsism requires an added axiom of a different kind.",
    "status": "live",
@@ -11497,9 +11572,9 @@
    }
   },
   {
-   "id": "PZ-6.4",
+   "id": "KS-PZ6.4",
    "labels": [
-    "PZ-6.4"
+    "KS-PZ6.4"
    ],
    "description": "Records are local to the window that writes them.",
    "status": "live",
@@ -11523,9 +11598,9 @@
    }
   },
   {
-   "id": "PZ-6.5",
+   "id": "KS-PZ6.5",
    "labels": [
-    "PZ-6.5"
+    "KS-PZ6.5"
    ],
    "description": "Phenomenological asymmetry requires nothing beyond record-locality.",
    "status": "live",
@@ -11549,9 +11624,9 @@
    }
   },
   {
-   "id": "PZ-7.1",
+   "id": "KS-PZ7.1",
    "labels": [
-    "PZ-7.1"
+    "KS-PZ7.1"
    ],
    "description": "Absolute free will requires separation the axiom does not produce.",
    "status": "live",
@@ -11575,9 +11650,9 @@
    }
   },
   {
-   "id": "PZ-7.2",
+   "id": "KS-PZ7.2",
    "labels": [
-    "PZ-7.2"
+    "KS-PZ7.2"
    ],
    "description": "Absolute determinism misdescribes coupling as scripted trajectory.",
    "status": "live",
@@ -11601,9 +11676,9 @@
    }
   },
   {
-   "id": "PZ-7.3",
+   "id": "KS-PZ7.3",
    "labels": [
-    "PZ-7.3"
+    "KS-PZ7.3"
    ],
    "description": "Coupling happens under constraint, without determination.",
    "status": "live",
@@ -11627,9 +11702,9 @@
    }
   },
   {
-   "id": "PZ-7.4",
+   "id": "KS-PZ7.4",
    "labels": [
-    "PZ-7.4"
+    "KS-PZ7.4"
    ],
    "description": "Responsibility attaches at the operator layer.",
    "status": "live",
@@ -11653,9 +11728,9 @@
    }
   },
   {
-   "id": "PZ-7.5",
+   "id": "KS-PZ7.5",
    "labels": [
-    "PZ-7.5"
+    "KS-PZ7.5"
    ],
    "description": "Operator-layer responsibility lifts only under structural narrator-severance.",
    "status": "live",
@@ -11679,9 +11754,9 @@
    }
   },
   {
-   "id": "PZ-8.1",
+   "id": "KS-PZ8.1",
    "labels": [
-    "PZ-8.1"
+    "KS-PZ8.1"
    ],
    "description": "Is and ought are two readings of one coupling.",
    "status": "live",
@@ -11705,9 +11780,9 @@
    }
   },
   {
-   "id": "PZ-8.2",
+   "id": "KS-PZ8.2",
    "labels": [
-    "PZ-8.2"
+    "KS-PZ8.2"
    ],
    "description": "Interior-sharing is structural, not smuggled.",
    "status": "live",
@@ -11731,9 +11806,9 @@
    }
   },
   {
-   "id": "PZ-8.3",
+   "id": "KS-PZ8.3",
    "labels": [
-    "PZ-8.3"
+    "KS-PZ8.3"
    ],
    "description": "Self-preservation is structural.",
    "status": "live",
@@ -11757,9 +11832,9 @@
    }
   },
   {
-   "id": "PZ-8.4",
+   "id": "KS-PZ8.4",
    "labels": [
-    "PZ-8.4"
+    "KS-PZ8.4"
    ],
    "description": "Compassion is the strongest weighting of correctly-read geometry.",
    "status": "live",
@@ -11783,9 +11858,9 @@
    }
   },
   {
-   "id": "PZ-8.5",
+   "id": "KS-PZ8.5",
    "labels": [
-    "PZ-8.5"
+    "KS-PZ8.5"
    ],
    "description": "Correct reading is a cognitive achievement.",
    "status": "live",
@@ -11809,9 +11884,9 @@
    }
   },
   {
-   "id": "PZ-9.1",
+   "id": "KS-PZ9.1",
    "labels": [
-    "PZ-9.1"
+    "KS-PZ9.1"
    ],
    "description": "The ethical measure is what propagates.",
    "status": "live",
@@ -11835,9 +11910,9 @@
    }
   },
   {
-   "id": "PZ-9.2",
+   "id": "KS-PZ9.2",
    "labels": [
-    "PZ-9.2"
+    "KS-PZ9.2"
    ],
    "description": "Joint viable set is structurally definable.",
    "status": "live",
@@ -11861,9 +11936,9 @@
    }
   },
   {
-   "id": "PZ-9.3",
+   "id": "KS-PZ9.3",
    "labels": [
-    "PZ-9.3"
+    "KS-PZ9.3"
    ],
    "description": "Parasitic contraction is structurally distinguishable from cooperative and from genuine zero-sum.",
    "status": "live",
@@ -11887,9 +11962,9 @@
    }
   },
   {
-   "id": "PZ-9.4",
+   "id": "KS-PZ9.4",
    "labels": [
-    "PZ-9.4"
+    "KS-PZ9.4"
    ],
    "description": "Responsibility is grounded in override-capacity under knowable consequence.",
    "status": "live",
@@ -11913,9 +11988,9 @@
    }
   },
   {
-   "id": "PZ-9.5",
+   "id": "KS-PZ9.5",
    "labels": [
-    "PZ-9.5"
+    "KS-PZ9.5"
    ],
    "description": "The terminal ethic is derivable from the axiom without imported premises.",
    "status": "live",
@@ -11939,9 +12014,9 @@
    }
   },
   {
-   "id": "PZ-10.1",
+   "id": "KS-PZ10.1",
    "labels": [
-    "PZ-10.1"
+    "KS-PZ10.1"
    ],
    "description": "Meaning fuses three structurally separable senses.",
    "status": "live",
@@ -11965,9 +12040,9 @@
    }
   },
   {
-   "id": "PZ-10.2",
+   "id": "KS-PZ10.2",
    "labels": [
-    "PZ-10.2"
+    "KS-PZ10.2"
    ],
    "description": "Purpose at the window’s scale is orientation of coupling capacity, under both prior history and override-capacity.",
    "status": "live",
@@ -11991,9 +12066,9 @@
    }
   },
   {
-   "id": "PZ-10.3",
+   "id": "KS-PZ10.3",
    "labels": [
-    "PZ-10.3"
+    "KS-PZ10.3"
    ],
    "description": "Significance at the joint scale is propagation into the joint viable set.",
    "status": "live",
@@ -12017,9 +12092,9 @@
    }
   },
   {
-   "id": "PZ-10.4",
+   "id": "KS-PZ10.4",
    "labels": [
-    "PZ-10.4"
+    "KS-PZ10.4"
    ],
    "description": "The refusal of absolute grounding does not collapse to nihilism.",
    "status": "live",
@@ -12043,9 +12118,9 @@
    }
   },
   {
-   "id": "PZ-10.5",
+   "id": "KS-PZ10.5",
    "labels": [
-    "PZ-10.5"
+    "KS-PZ10.5"
    ],
    "description": "Meaning-crisis operates at narrator-layer, operator-layer, or both.",
    "status": "live",
@@ -12069,9 +12144,9 @@
    }
   },
   {
-   "id": "PZ-11.1",
+   "id": "KS-PZ11.1",
    "labels": [
-    "PZ-11.1"
+    "KS-PZ11.1"
    ],
    "description": "Time is what R structurally is, read from the single now at which the axiom executes.",
    "status": "live",
@@ -12095,9 +12170,9 @@
    }
   },
   {
-   "id": "PZ-11.2",
+   "id": "KS-PZ11.2",
    "labels": [
-    "PZ-11.2"
+    "KS-PZ11.2"
    ],
    "description": "The AS is singular, not one-per-site.",
    "status": "live",
@@ -12121,9 +12196,9 @@
    }
   },
   {
-   "id": "PZ-11.3",
+   "id": "KS-PZ11.3",
    "labels": [
-    "PZ-11.3"
+    "KS-PZ11.3"
    ],
    "description": "Induction is structural-constraint reading, not bridging inference.",
    "status": "live",
@@ -12147,9 +12222,9 @@
    }
   },
   {
-   "id": "PZ-11.4",
+   "id": "KS-PZ11.4",
    "labels": [
-    "PZ-11.4"
+    "KS-PZ11.4"
    ],
    "description": "The axiom is not an inductive claim.",
    "status": "live",
@@ -12173,9 +12248,9 @@
    }
   },
   {
-   "id": "PZ-11.5",
+   "id": "KS-PZ11.5",
    "labels": [
-    "PZ-11.5"
+    "KS-PZ11.5"
    ],
    "description": "Structurally governed versus narrator-constructed predicates are distinguishable.",
    "status": "live",
@@ -12199,9 +12274,9 @@
    }
   },
   {
-   "id": "PZ-12.1",
+   "id": "KS-PZ12.1",
    "labels": [
-    "PZ-12.1"
+    "KS-PZ12.1"
    ],
    "description": "Observer is any coupling configuration forcing non-optionality.",
    "status": "live",
@@ -12225,9 +12300,9 @@
    }
   },
   {
-   "id": "PZ-12.2",
+   "id": "KS-PZ12.2",
    "labels": [
-    "PZ-12.2"
+    "KS-PZ12.2"
    ],
    "description": "Observer and observed are two positions in one AS, not two kinds of system.",
    "status": "live",
@@ -12251,9 +12326,9 @@
    }
   },
   {
-   "id": "PZ-12.3",
+   "id": "KS-PZ12.3",
    "labels": [
-    "PZ-12.3"
+    "KS-PZ12.3"
    ],
    "description": "No additional event at measurement beyond the coupling.",
    "status": "live",
@@ -12277,9 +12352,9 @@
    }
   },
   {
-   "id": "PZ-12.4",
+   "id": "KS-PZ12.4",
    "labels": [
-    "PZ-12.4"
+    "KS-PZ12.4"
    ],
    "description": "The forcing function is the structural process at coupling.",
    "status": "live",
@@ -12303,9 +12378,9 @@
    }
   },
   {
-   "id": "PZ-12.5",
+   "id": "KS-PZ12.5",
    "labels": [
-    "PZ-12.5"
+    "KS-PZ12.5"
    ],
    "description": "The narrator is downstream of the coupling that forced the outcome.",
    "status": "live",
@@ -12329,9 +12404,9 @@
    }
   },
   {
-   "id": "RES-1.1",
+   "id": "KS-RES1.1",
    "labels": [
-    "RES-1.1"
+    "KS-RES1.1"
    ],
    "description": "Information without record.",
    "status": "live",
@@ -12355,9 +12430,9 @@
    }
   },
   {
-   "id": "RES-1.2",
+   "id": "KS-RES1.2",
    "labels": [
-    "RES-1.2"
+    "KS-RES1.2"
    ],
    "description": "Record without information.",
    "status": "live",
@@ -12381,9 +12456,9 @@
    }
   },
   {
-   "id": "RES-1.3",
+   "id": "KS-RES1.3",
    "labels": [
-    "RES-1.3"
+    "KS-RES1.3"
    ],
    "description": "Sub-bit asymmetry below ε.",
    "status": "live",
@@ -12407,9 +12482,9 @@
    }
   },
   {
-   "id": "RES-1.4",
+   "id": "KS-RES1.4",
    "labels": [
-    "RES-1.4"
+    "KS-RES1.4"
    ],
    "description": "Landauer not tied to R.",
    "status": "live",
@@ -12433,9 +12508,9 @@
    }
   },
   {
-   "id": "RES-1.5",
+   "id": "KS-RES1.5",
    "labels": [
-    "RES-1.5"
+    "KS-RES1.5"
    ],
    "description": "A more parsimonious account.",
    "status": "live",
@@ -12459,9 +12534,9 @@
    }
   },
   {
-   "id": "RES-2.1",
+   "id": "KS-RES2.1",
    "labels": [
-    "RES-2.1"
+    "KS-RES2.1"
    ],
    "description": "A mathematical structure whose truth cannot be expressed as a relation between records or constraints on records.",
    "status": "live",
@@ -12485,9 +12560,9 @@
    }
   },
   {
-   "id": "RES-2.2",
+   "id": "KS-RES2.2",
    "labels": [
-    "RES-2.2"
+    "KS-RES2.2"
    ],
    "description": "A logic structurally forced beyond the binary at the floor.",
    "status": "live",
@@ -12511,9 +12586,9 @@
    }
   },
   {
-   "id": "RES-2.3",
+   "id": "KS-RES2.3",
    "labels": [
-    "RES-2.3"
+    "KS-RES2.3"
    ],
    "description": "Algebraic structure not reducible to record-composition or record-policy.",
    "status": "live",
@@ -12537,9 +12612,9 @@
    }
   },
   {
-   "id": "RES-2.4",
+   "id": "KS-RES2.4",
    "labels": [
-    "RES-2.4"
+    "KS-RES2.4"
    ],
    "description": "A geometry whose locality structure cannot be traced to bounded propagation.",
    "status": "live",
@@ -12563,9 +12638,9 @@
    }
   },
   {
-   "id": "RES-2.5",
+   "id": "KS-RES2.5",
    "labels": [
-    "RES-2.5"
+    "KS-RES2.5"
    ],
    "description": "A canonical extension of mathematics requiring a primitive the axiom cannot install as a record-policy.",
    "status": "live",
@@ -12589,9 +12664,9 @@
    }
   },
   {
-   "id": "RES-3.1",
+   "id": "KS-RES3.1",
    "labels": [
-    "RES-3.1"
+    "KS-RES3.1"
    ],
    "description": "A universal whose instances share no relational structure under any operation.",
    "status": "live",
@@ -12615,9 +12690,9 @@
    }
   },
   {
-   "id": "RES-3.2",
+   "id": "KS-RES3.2",
    "labels": [
-    "RES-3.2"
+    "KS-RES3.2"
    ],
    "description": "A property not readable as a stable response or coupling pattern under any operation.",
    "status": "live",
@@ -12641,9 +12716,9 @@
    }
   },
   {
-   "id": "RES-3.3",
+   "id": "KS-RES3.3",
    "labels": [
-    "RES-3.3"
+    "KS-RES3.3"
    ],
    "description": "A proposition whose content is not a recordable constraint at any layer.",
    "status": "live",
@@ -12667,9 +12742,9 @@
    }
   },
   {
-   "id": "RES-3.4",
+   "id": "KS-RES3.4",
    "labels": [
-    "RES-3.4"
+    "KS-RES3.4"
    ],
    "description": "A feature of universals not capturable as invariant, coupling-pattern, recordable constraint, or record-policy.",
    "status": "live",
@@ -12693,9 +12768,9 @@
    }
   },
   {
-   "id": "RES-3.5",
+   "id": "KS-RES3.5",
    "labels": [
-    "RES-3.5"
+    "KS-RES3.5"
    ],
    "description": "The counting-invariant is conventional rather than structural.",
    "status": "live",
@@ -12719,9 +12794,9 @@
    }
   },
   {
-   "id": "RES-4.1",
+   "id": "KS-RES4.1",
    "labels": [
-    "RES-4.1"
+    "KS-RES4.1"
    ],
    "description": "A genuine lawlike constraint with no structural source in {S, B, R, C}.",
    "status": "live",
@@ -12745,9 +12820,9 @@
    }
   },
   {
-   "id": "RES-4.2",
+   "id": "KS-RES4.2",
    "labels": [
-    "RES-4.2"
+    "KS-RES4.2"
    ],
    "description": "A regularity that supports counterfactuals across all standard tests but has no structural constraint from {S, B, R, ….",
    "status": "live",
@@ -12771,9 +12846,9 @@
    }
   },
   {
-   "id": "RES-4.3",
+   "id": "KS-RES4.3",
    "labels": [
-    "RES-4.3"
+    "KS-RES4.3"
    ],
    "description": "QM and GR require different structural primitives.",
    "status": "live",
@@ -12797,9 +12872,9 @@
    }
   },
   {
-   "id": "RES-4.4",
+   "id": "KS-RES4.4",
    "labels": [
-    "RES-4.4"
+    "KS-RES4.4"
    ],
    "description": "{S, B, R, C} as currently axiomatised is consistent with two different values of the actualisation rate without furth….",
    "status": "live",
@@ -12823,9 +12898,9 @@
    }
   },
   {
-   "id": "RES-4.5",
+   "id": "KS-RES4.5",
    "labels": [
-    "RES-4.5"
+    "KS-RES4.5"
    ],
    "description": "Counterfactual force grounded without trajectory-space.",
    "status": "live",
@@ -12849,9 +12924,9 @@
    }
   },
   {
-   "id": "RES-5.1",
+   "id": "KS-RES5.1",
    "labels": [
-    "RES-5.1"
+    "KS-RES5.1"
    ],
    "description": "A causal relation that cannot be expressed as record-propagation or record-constraint under bounded C.",
    "status": "live",
@@ -12875,9 +12950,9 @@
    }
   },
   {
-   "id": "RES-5.2",
+   "id": "KS-RES5.2",
    "labels": [
-    "RES-5.2"
+    "KS-RES5.2"
    ],
    "description": "Strong backward causation permitted by {S, B, R, C}.",
    "status": "live",
@@ -12901,9 +12976,9 @@
    }
   },
   {
-   "id": "RES-5.3",
+   "id": "KS-RES5.3",
    "labels": [
-    "RES-5.3"
+    "KS-RES5.3"
    ],
    "description": "Causal counterfactual dependence not modellable as removal or alteration of a record in counterfactual trajectory-space.",
    "status": "live",
@@ -12927,9 +13002,9 @@
    }
   },
   {
-   "id": "RES-5.4",
+   "id": "KS-RES5.4",
    "labels": [
-    "RES-5.4"
+    "KS-RES5.4"
    ],
    "description": "Structural dissociation of the cause-effect asymmetry from R’s direction-preservation.",
    "status": "live",
@@ -12953,9 +13028,9 @@
    }
   },
   {
-   "id": "RES-5.5",
+   "id": "KS-RES5.5",
    "labels": [
-    "RES-5.5"
+    "KS-RES5.5"
    ],
    "description": "A physical process that genuinely propagates record-bearing influence faster than C permits.",
    "status": "live",
@@ -12979,9 +13054,9 @@
    }
   },
   {
-   "id": "RES-6.1",
+   "id": "KS-RES6.1",
    "labels": [
-    "RES-6.1"
+    "KS-RES6.1"
    ],
    "description": "Finite motion requiring actual execution of an infinite ordered sequence.",
    "status": "live",
@@ -13005,9 +13080,9 @@
    }
   },
   {
-   "id": "RES-6.2",
+   "id": "KS-RES6.2",
    "labels": [
-    "RES-6.2"
+    "KS-RES6.2"
    ],
    "description": "Record-bearing motion derived without C at a finite rate.",
    "status": "live",
@@ -13031,9 +13106,9 @@
    }
   },
   {
-   "id": "RES-6.3",
+   "id": "KS-RES6.3",
    "labels": [
-    "RES-6.3"
+    "KS-RES6.3"
    ],
    "description": "The now / writing-edge account incompatible with Lorentz-invariant causal structure.",
    "status": "live",
@@ -13057,9 +13132,9 @@
    }
   },
   {
-   "id": "RES-6.4",
+   "id": "KS-RES6.4",
    "labels": [
-    "RES-6.4"
+    "KS-RES6.4"
    ],
    "description": "A classical paradox of motion structurally equivalent to Zeno’s continuum-decomposition problem whose closure require….",
    "status": "live",
@@ -13083,9 +13158,9 @@
    }
   },
   {
-   "id": "RES-6.5",
+   "id": "KS-RES6.5",
    "labels": [
-    "RES-6.5"
+    "KS-RES6.5"
    ],
    "description": "The now-installation requires resources beyond {S, B, R, C}.",
    "status": "live",
@@ -13109,9 +13184,9 @@
    }
   },
   {
-   "id": "RES-7.1",
+   "id": "KS-RES7.1",
    "labels": [
-    "RES-7.1"
+    "KS-RES7.1"
    ],
    "description": "Record-lineage continuity not structurally distinguishable from material-lineage continuity.",
    "status": "live",
@@ -13135,9 +13210,9 @@
    }
   },
   {
-   "id": "RES-7.2",
+   "id": "KS-RES7.2",
    "labels": [
-    "RES-7.2"
+    "KS-RES7.2"
    ],
    "description": "An object whose persistence-pattern requires a substance beneath.",
    "status": "live",
@@ -13161,9 +13236,9 @@
    }
   },
   {
-   "id": "RES-7.3",
+   "id": "KS-RES7.3",
    "labels": [
-    "RES-7.3"
+    "KS-RES7.3"
    ],
    "description": "Ship-lineage and self-lineage do not share the persistence-form of lineage under R.",
    "status": "live",
@@ -13187,9 +13262,9 @@
    }
   },
   {
-   "id": "RES-7.4",
+   "id": "KS-RES7.4",
    "labels": [
-    "RES-7.4"
+    "KS-RES7.4"
    ],
    "description": "A structural selector overriding referent-specification.",
    "status": "live",
@@ -13213,9 +13288,9 @@
    }
   },
   {
-   "id": "RES-7.5",
+   "id": "KS-RES7.5",
    "labels": [
-    "RES-7.5"
+    "KS-RES7.5"
    ],
    "description": "A class of entity whose persistence requires a primitive other than R-preserved pattern at a site.",
    "status": "live",
@@ -13239,9 +13314,9 @@
    }
   },
   {
-   "id": "RES-8.1",
+   "id": "KS-RES8.1",
    "labels": [
-    "RES-8.1"
+    "KS-RES8.1"
    ],
    "description": "Counterfactual force grounded in something other than trajectory-space under minimal-intervention discipline.",
    "status": "live",
@@ -13265,9 +13340,9 @@
    }
   },
   {
-   "id": "RES-8.2",
+   "id": "KS-RES8.2",
    "labels": [
-    "RES-8.2"
+    "KS-RES8.2"
    ],
    "description": "Necessities requiring irreducibly different primitives.",
    "status": "live",
@@ -13291,9 +13366,9 @@
    }
   },
   {
-   "id": "RES-8.3",
+   "id": "KS-RES8.3",
    "labels": [
-    "RES-8.3"
+    "KS-RES8.3"
    ],
    "description": "A modal claim the actualisation-state-read-three-ways cannot express.",
    "status": "live",
@@ -13317,9 +13392,9 @@
    }
   },
   {
-   "id": "RES-8.4",
+   "id": "KS-RES8.4",
    "labels": [
-    "RES-8.4"
+    "KS-RES8.4"
    ],
    "description": "Possible-world ontology required, not merely possible-world semantics.",
    "status": "live",
@@ -13343,9 +13418,9 @@
    }
   },
   {
-   "id": "RES-8.5",
+   "id": "KS-RES8.5",
    "labels": [
-    "RES-8.5"
+    "KS-RES8.5"
    ],
    "description": "Two of the three readings collapse, making the third superfluous.",
    "status": "live",
@@ -13369,9 +13444,9 @@
    }
   },
   {
-   "id": "RES-8.5.1",
+   "id": "KS-RES8.5.1",
    "labels": [
-    "RES-8.5.1"
+    "KS-RES8.5.1"
    ],
    "description": "Sentient commitment reducible in principle to prior-record computation.",
    "status": "live",
@@ -13395,9 +13470,9 @@
    }
   },
   {
-   "id": "RES-8.5.2",
+   "id": "KS-RES8.5.2",
    "labels": [
-    "RES-8.5.2"
+    "KS-RES8.5.2"
    ],
    "description": "No shared structural form between quantum residual and choice residual.",
    "status": "live",
@@ -13421,9 +13496,9 @@
    }
   },
   {
-   "id": "RES-8.5.3",
+   "id": "KS-RES8.5.3",
    "labels": [
-    "RES-8.5.3"
+    "KS-RES8.5.3"
    ],
    "description": "Override reducible to deeper computation with no operator-layer residual.",
    "status": "live",
@@ -13447,9 +13522,9 @@
    }
   },
   {
-   "id": "RES-8.5.4",
+   "id": "KS-RES8.5.4",
    "labels": [
-    "RES-8.5.4"
+    "KS-RES8.5.4"
    ],
    "description": "Override with no structural cost.",
    "status": "live",
@@ -13473,9 +13548,9 @@
    }
   },
   {
-   "id": "RES-8.5.5",
+   "id": "KS-RES8.5.5",
    "labels": [
-    "RES-8.5.5"
+    "KS-RES8.5.5"
    ],
    "description": "Determinism and free will incompatible at some load-bearing level on this account.",
    "status": "live",
@@ -13499,9 +13574,9 @@
    }
   },
   {
-   "id": "RES-9.1",
+   "id": "KS-RES9.1",
    "labels": [
-    "RES-9.1"
+    "KS-RES9.1"
    ],
    "description": "A living system whose persistence does not involve dynamic kinetic stability.",
    "status": "live",
@@ -13525,9 +13600,9 @@
    }
   },
   {
-   "id": "RES-9.2",
+   "id": "KS-RES9.2",
    "labels": [
-    "RES-9.2"
+    "KS-RES9.2"
    ],
    "description": "The chemistry-to-biology transition requires a principle outside {S, B, R, C}.",
    "status": "live",
@@ -13551,9 +13626,9 @@
    }
   },
   {
-   "id": "RES-9.3",
+   "id": "KS-RES9.3",
    "labels": [
-    "RES-9.3"
+    "KS-RES9.3"
    ],
    "description": "No structurally specifiable threshold.",
    "status": "live",
@@ -13577,9 +13652,9 @@
    }
   },
   {
-   "id": "RES-9.4",
+   "id": "KS-RES9.4",
    "labels": [
-    "RES-9.4"
+    "KS-RES9.4"
    ],
    "description": "Full persistence-inversion conditions insufficient for life.",
    "status": "live",
@@ -13603,9 +13678,9 @@
    }
   },
   {
-   "id": "RES-9.5",
+   "id": "KS-RES9.5",
    "labels": [
-    "RES-9.5"
+    "KS-RES9.5"
    ],
    "description": "Record-constrained self-regeneration separable from life.",
    "status": "live",
@@ -13629,9 +13704,9 @@
    }
   },
   {
-   "id": "RES-10.1",
+   "id": "KS-RES10.1",
    "labels": [
-    "RES-10.1"
+    "KS-RES10.1"
    ],
    "description": "Substrate material is load-bearing for self-registration, modelling, or valence.",
    "status": "live",
@@ -13655,9 +13730,9 @@
    }
   },
   {
-   "id": "RES-10.2",
+   "id": "KS-RES10.2",
    "labels": [
-    "RES-10.2"
+    "KS-RES10.2"
    ],
    "description": "A criterion for consciousness the axiom endorses.",
    "status": "live",
@@ -13681,9 +13756,9 @@
    }
   },
   {
-   "id": "RES-10.3",
+   "id": "KS-RES10.3",
    "labels": [
-    "RES-10.3"
+    "KS-RES10.3"
    ],
    "description": "Valenced self-registration without welfare obligation.",
    "status": "live",
@@ -13707,9 +13782,9 @@
    }
   },
   {
-   "id": "RES-10.4",
+   "id": "KS-RES10.4",
    "labels": [
-    "RES-10.4"
+    "KS-RES10.4"
    ],
    "description": "The one-interior claim from Ø Dissolutions Chapter 6 applies only to biological architectures.",
    "status": "live",
@@ -13733,9 +13808,9 @@
    }
   },
   {
-   "id": "RES-10.5",
+   "id": "KS-RES10.5",
    "labels": [
-    "RES-10.5"
+    "KS-RES10.5"
    ],
    "description": "Species-membership is load-bearing for obligation.",
    "status": "live",
@@ -13759,9 +13834,9 @@
    }
   },
   {
-   "id": "RES-11.1",
+   "id": "KS-RES11.1",
    "labels": [
-    "RES-11.1"
+    "KS-RES11.1"
    ],
    "description": "The one-interior claim does not support the building/window distinction.",
    "status": "live",
@@ -13785,9 +13860,9 @@
    }
   },
   {
-   "id": "RES-11.2",
+   "id": "KS-RES11.2",
    "labels": [
-    "RES-11.2"
+    "KS-RES11.2"
    ],
    "description": "A fourth structural fact of death.",
    "status": "live",
@@ -13811,9 +13886,9 @@
    }
   },
   {
-   "id": "RES-11.3",
+   "id": "KS-RES11.3",
    "labels": [
-    "RES-11.3"
+    "KS-RES11.3"
    ],
    "description": "Grief grounded without the closing-of-coupling-pathways account.",
    "status": "live",
@@ -13837,9 +13912,9 @@
    }
   },
   {
-   "id": "RES-11.4",
+   "id": "KS-RES11.4",
    "labels": [
-    "RES-11.4"
+    "KS-RES11.4"
    ],
    "description": "A case where the interior itself is diminished at a window’s closing.",
    "status": "live",
@@ -13863,9 +13938,9 @@
    }
   },
   {
-   "id": "RES-11.5",
+   "id": "KS-RES11.5",
    "labels": [
-    "RES-11.5"
+    "KS-RES11.5"
    ],
    "description": "A structurally specifiable continuation of the self-reading loop after coupling-architecture disassembly.",
    "status": "live",
@@ -13889,9 +13964,9 @@
    }
   },
   {
-   "id": "RES-12.1",
+   "id": "KS-RES12.1",
    "labels": [
-    "RES-12.1"
+    "KS-RES12.1"
    ],
    "description": "A case of suffering that cannot be reduced to damaging coupling registered by a valenced self-registering architecture.",
    "status": "live",
@@ -13915,9 +13990,9 @@
    }
   },
   {
-   "id": "RES-12.2",
+   "id": "KS-RES12.2",
    "labels": [
-    "RES-12.2"
+    "KS-RES12.2"
    ],
    "description": "The dissolution collapses into nihilism: refusing theodicy entails no responsibility.",
    "status": "live",
@@ -13941,9 +14016,9 @@
    }
   },
   {
-   "id": "RES-12.3",
+   "id": "KS-RES12.3",
    "labels": [
-    "RES-12.3"
+    "KS-RES12.3"
    ],
    "description": "A case of catastrophic innocent suffering the dissolution cannot hold without collapsing back into theodicy.",
    "status": "live",
@@ -13967,9 +14042,9 @@
    }
   },
   {
-   "id": "RES-12.4",
+   "id": "KS-RES12.4",
    "labels": [
-    "RES-12.4"
+    "KS-RES12.4"
    ],
    "description": "Act at override-capacity without importing an ethical premise.",
    "status": "live",
@@ -13993,9 +14068,9 @@
    }
   },
   {
-   "id": "RES-12.5",
+   "id": "KS-RES12.5",
    "labels": [
-    "RES-12.5"
+    "KS-RES12.5"
    ],
    "description": "Explained is in fact excused.",
    "status": "live",
@@ -14019,9 +14094,9 @@
    }
   },
   {
-   "id": "RES-12.6",
+   "id": "KS-RES12.6",
    "labels": [
-    "RES-12.6"
+    "KS-RES12.6"
    ],
    "description": "The refusal of theodicy makes the structural response unmotivated.",
    "status": "live",
@@ -14045,9 +14120,9 @@
    }
   },
   {
-   "id": "APP-1.1",
+   "id": "KS-APP1.1",
    "labels": [
-    "APP-1.1"
+    "KS-APP1.1"
    ],
    "description": "Exhibit a form of property whose legitimacy cannot be expressed as coupling-capacity provenance plus cooperative prop….",
    "status": "live",
@@ -14071,9 +14146,9 @@
    }
   },
   {
-   "id": "APP-1.2",
+   "id": "KS-APP1.2",
    "labels": [
-    "APP-1.2"
+    "KS-APP1.2"
    ],
    "description": "Show that the parasitic / cooperative distinction is not structurally measurable at the propagation site.",
    "status": "live",
@@ -14097,9 +14172,9 @@
    }
   },
   {
-   "id": "APP-1.3",
+   "id": "KS-APP1.3",
    "labels": [
-    "APP-1.3"
+    "KS-APP1.3"
    ],
    "description": "Demonstrate that inheritance structurally severs provenance.",
    "status": "live",
@@ -14123,9 +14198,9 @@
    }
   },
   {
-   "id": "APP-1.4",
+   "id": "KS-APP1.4",
    "labels": [
-    "APP-1.4"
+    "KS-APP1.4"
    ],
    "description": "Produce a widely-accepted property form whose legitimacy the model cannot ground.",
    "status": "live",
@@ -14149,9 +14224,9 @@
    }
   },
   {
-   "id": "APP-1.5",
+   "id": "KS-APP1.5",
    "labels": [
-    "APP-1.5"
+    "KS-APP1.5"
    ],
    "description": "Show that the test ratifies the current distribution by default.",
    "status": "live",
@@ -14175,9 +14250,9 @@
    }
   },
   {
-   "id": "APP-2.1",
+   "id": "KS-APP2.1",
    "labels": [
-    "APP-2.1"
+    "KS-APP2.1"
    ],
    "description": "Show that the stabilising / destabilising classification requires an external value premise the chapter has not supplied.",
    "status": "live",
@@ -14201,9 +14276,9 @@
    }
   },
   {
-   "id": "APP-2.2",
+   "id": "KS-APP2.2",
    "labels": [
-    "APP-2.2"
+    "KS-APP2.2"
    ],
    "description": "Derive a different correction-hierarchy ordering from the same structural conditions.",
    "status": "live",
@@ -14227,9 +14302,9 @@
    }
   },
   {
-   "id": "APP-2.3",
+   "id": "KS-APP2.3",
    "labels": [
-    "APP-2.3"
+    "KS-APP2.3"
    ],
    "description": "Removal structurally preferred despite sufficient lower-level correction.",
    "status": "live",
@@ -14253,9 +14328,9 @@
    }
   },
   {
-   "id": "APP-2.4",
+   "id": "KS-APP2.4",
    "labels": [
-    "APP-2.4"
+    "KS-APP2.4"
    ],
    "description": "Demonstrate that bias auditing cannot be done structurally.",
    "status": "live",
@@ -14279,9 +14354,9 @@
    }
   },
   {
-   "id": "APP-2.5",
+   "id": "KS-APP2.5",
    "labels": [
-    "APP-2.5"
+    "KS-APP2.5"
    ],
    "description": "Produce a class of harm where the hierarchy’s structural ordering fails.",
    "status": "live",
@@ -14305,9 +14380,9 @@
    }
   },
   {
-   "id": "APP-3.1",
+   "id": "KS-APP3.1",
    "labels": [
-    "APP-3.1"
+    "KS-APP3.1"
    ],
    "description": "Show that ε is not computable from interaction data, in principle.",
    "status": "live",
@@ -14331,9 +14406,9 @@
    }
   },
   {
-   "id": "APP-3.2",
+   "id": "KS-APP3.2",
    "labels": [
-    "APP-3.2"
+    "KS-APP3.2"
    ],
    "description": "Exhibit a case where two structural readings of the same decision produce incompatible verdicts.",
    "status": "live",
@@ -14357,9 +14432,9 @@
    }
   },
   {
-   "id": "APP-3.3",
+   "id": "KS-APP3.3",
    "labels": [
-    "APP-3.3"
+    "KS-APP3.3"
    ],
    "description": "Produce decisions the structural reading cannot address.",
    "status": "live",
@@ -14383,9 +14458,9 @@
    }
   },
   {
-   "id": "APP-3.4",
+   "id": "KS-APP3.4",
    "labels": [
-    "APP-3.4"
+    "KS-APP3.4"
    ],
    "description": "Show vulnerability to capture or systematic error the protocol cannot address.",
    "status": "live",
@@ -14409,9 +14484,9 @@
    }
   },
   {
-   "id": "APP-3.5",
+   "id": "KS-APP3.5",
    "labels": [
-    "APP-3.5"
+    "KS-APP3.5"
    ],
    "description": "Demonstrate that the voting residual is large enough to break the policy claim.",
    "status": "live",
@@ -14435,9 +14510,9 @@
    }
   },
   {
-   "id": "APP-4.1",
+   "id": "KS-APP4.1",
    "labels": [
-    "APP-4.1"
+    "KS-APP4.1"
    ],
    "description": "Show that price is not the resolution of a probability field over a coupling-event’s structural value, in either open….",
    "status": "live",
@@ -14461,9 +14536,9 @@
    }
   },
   {
-   "id": "APP-4.2",
+   "id": "KS-APP4.2",
    "labels": [
-    "APP-4.2"
+    "KS-APP4.2"
    ],
    "description": "Exhibit a financial crisis not framable as record/capacity misalignment or buffer failure.",
    "status": "live",
@@ -14487,9 +14562,9 @@
    }
   },
   {
-   "id": "APP-4.3",
+   "id": "KS-APP4.3",
    "labels": [
-    "APP-4.3"
+    "KS-APP4.3"
    ],
    "description": "Demonstrate that taxation-as-maintenance cannot be distinguished from extraction without an external normative premise.",
    "status": "live",
@@ -14513,9 +14588,9 @@
    }
   },
   {
-   "id": "APP-4.4",
+   "id": "KS-APP4.4",
    "labels": [
-    "APP-4.4"
+    "KS-APP4.4"
    ],
    "description": "Demonstrate that the buffer’s parasitic-accumulation threshold is structurally unspecifiable in principle.",
    "status": "live",
@@ -14539,9 +14614,9 @@
    }
   },
   {
-   "id": "APP-4.5",
+   "id": "KS-APP4.5",
    "labels": [
-    "APP-4.5"
+    "KS-APP4.5"
    ],
    "description": "Show that the derived economy reduces without remainder to an existing economic school.",
    "status": "live",
@@ -14565,9 +14640,9 @@
    }
   },
   {
-   "id": "APP-5.1",
+   "id": "KS-APP5.1",
    "labels": [
-    "APP-5.1"
+    "KS-APP5.1"
    ],
    "description": "Exhibit a medical case where level three is structurally preferred to level one despite level one being available.",
    "status": "live",
@@ -14591,9 +14666,9 @@
    }
   },
   {
-   "id": "APP-5.2",
+   "id": "KS-APP5.2",
    "labels": [
-    "APP-5.2"
+    "KS-APP5.2"
    ],
    "description": "Show that coupling-capacity projection cannot be computed without age or ability bias.",
    "status": "live",
@@ -14617,9 +14692,9 @@
    }
   },
   {
-   "id": "APP-5.3",
+   "id": "KS-APP5.3",
    "labels": [
-    "APP-5.3"
+    "KS-APP5.3"
    ],
    "description": "Demonstrate that the dignity floor is not specifiable in structural terms.",
    "status": "live",
@@ -14643,9 +14718,9 @@
    }
   },
   {
-   "id": "APP-5.4",
+   "id": "KS-APP5.4",
    "labels": [
-    "APP-5.4"
+    "KS-APP5.4"
    ],
    "description": "Produce a major disease class the hierarchy cannot handle.",
    "status": "live",
@@ -14669,9 +14744,9 @@
    }
   },
   {
-   "id": "APP-5.5",
+   "id": "KS-APP5.5",
    "labels": [
-    "APP-5.5"
+    "KS-APP5.5"
    ],
    "description": "Show that the prevention-first commitment is contradicted by empirical data.",
    "status": "live",
@@ -14695,9 +14770,9 @@
    }
   },
   {
-   "id": "APP-6.1",
+   "id": "KS-APP6.1",
    "labels": [
-    "APP-6.1"
+    "KS-APP6.1"
    ],
    "description": "Show that widening and narrowing are not stable across ambiguous cases.",
    "status": "live",
@@ -14721,9 +14796,9 @@
    }
   },
   {
-   "id": "APP-6.2",
+   "id": "KS-APP6.2",
    "labels": [
-    "APP-6.2"
+    "KS-APP6.2"
    ],
    "description": "Exhibit an edit clearly corridor-widening and clearly parasitic.",
    "status": "live",
@@ -14747,9 +14822,9 @@
    }
   },
   {
-   "id": "APP-6.3",
+   "id": "KS-APP6.3",
    "labels": [
-    "APP-6.3"
+    "KS-APP6.3"
    ],
    "description": "Demonstrate that future override-capacity cannot be estimated.",
    "status": "live",
@@ -14773,9 +14848,9 @@
    }
   },
   {
-   "id": "APP-6.4",
+   "id": "KS-APP6.4",
    "labels": [
-    "APP-6.4"
+    "KS-APP6.4"
    ],
    "description": "Produce a case where the axiom permits enhancement beyond disease correction.",
    "status": "live",
@@ -14799,9 +14874,9 @@
    }
   },
   {
-   "id": "APP-6.5",
+   "id": "KS-APP6.5",
    "labels": [
-    "APP-6.5"
+    "KS-APP6.5"
    ],
    "description": "Show parental authority incompatible with the chapter’s framing.",
    "status": "live",
@@ -14825,9 +14900,9 @@
    }
   },
   {
-   "id": "APP-7.1",
+   "id": "KS-APP7.1",
    "labels": [
-    "APP-7.1"
+    "KS-APP7.1"
    ],
    "description": "Show that cognitive sovereignty holds even where the operator’s coupling has eroded self-reading capacity.",
    "status": "live",
@@ -14851,9 +14926,9 @@
    }
   },
   {
-   "id": "APP-7.2",
+   "id": "KS-APP7.2",
    "labels": [
-    "APP-7.2"
+    "KS-APP7.2"
    ],
    "description": "Exhibit a case where externalised destruction crossing ε cannot be measured without importing value.",
    "status": "live",
@@ -14877,9 +14952,9 @@
    }
   },
   {
-   "id": "APP-7.3",
+   "id": "KS-APP7.3",
    "labels": [
-    "APP-7.3"
+    "KS-APP7.3"
    ],
    "description": "Demonstrate that the noise-floor framing fails for a major mental-illness class.",
    "status": "live",
@@ -14903,9 +14978,9 @@
    }
   },
   {
-   "id": "APP-7.4",
+   "id": "KS-APP7.4",
    "labels": [
-    "APP-7.4"
+    "KS-APP7.4"
    ],
    "description": "Produce a case where condemnation of an addictive pathway structurally aids corridor-widening.",
    "status": "live",
@@ -14929,9 +15004,9 @@
    }
   },
   {
-   "id": "APP-7.5",
+   "id": "KS-APP7.5",
    "labels": [
-    "APP-7.5"
+    "KS-APP7.5"
    ],
    "description": "Show that the chapter’s worked case is selectively chosen.",
    "status": "live",
@@ -14955,9 +15030,9 @@
    }
   },
   {
-   "id": "APP-8.1",
+   "id": "KS-APP8.1",
    "labels": [
-    "APP-8.1"
+    "KS-APP8.1"
    ],
    "description": "Show that impedance matching is not specifiable.",
    "status": "live",
@@ -14981,9 +15056,9 @@
    }
   },
   {
-   "id": "APP-8.2",
+   "id": "KS-APP8.2",
    "labels": [
-    "APP-8.2"
+    "KS-APP8.2"
    ],
    "description": "Exhibit augmentation that outruns control yet preserves coherent self-reading.",
    "status": "live",
@@ -15007,9 +15082,9 @@
    }
   },
   {
-   "id": "APP-8.3",
+   "id": "KS-APP8.3",
    "labels": [
-    "APP-8.3"
+    "KS-APP8.3"
    ],
    "description": "Demonstrate biomatter transfer as parasitic in some structural form.",
    "status": "live",
@@ -15033,9 +15108,9 @@
    }
   },
   {
-   "id": "APP-8.4",
+   "id": "KS-APP8.4",
    "labels": [
-    "APP-8.4"
+    "KS-APP8.4"
    ],
    "description": "Produce a transhumanist proposal the chapter cannot dispatch.",
    "status": "live",
@@ -15059,9 +15134,9 @@
    }
   },
   {
-   "id": "APP-8.5",
+   "id": "KS-APP8.5",
    "labels": [
-    "APP-8.5"
+    "KS-APP8.5"
    ],
    "description": "Show that “shatters self-reading” lacks structural ground.",
    "status": "live",
@@ -15085,9 +15160,9 @@
    }
   },
   {
-   "id": "APP-9.1",
+   "id": "KS-APP9.1",
    "labels": [
-    "APP-9.1"
+    "KS-APP9.1"
    ],
    "description": "Exhibit a case where the right to exit cannot be derived from operator authority without importing autonomy as a sepa….",
    "status": "live",
@@ -15111,9 +15186,9 @@
    }
   },
   {
-   "id": "APP-9.2",
+   "id": "KS-APP9.2",
    "labels": [
-    "APP-9.2"
+    "KS-APP9.2"
    ],
    "description": "Show that the corridor-cannot-be-re-widened condition is not structurally measurable.",
    "status": "live",
@@ -15137,9 +15212,9 @@
    }
   },
   {
-   "id": "APP-9.3",
+   "id": "KS-APP9.3",
    "labels": [
-    "APP-9.3"
+    "KS-APP9.3"
    ],
    "description": "Demonstrate that the operator-vs-narrator distinction collapses at the corridor’s closing.",
    "status": "live",
@@ -15163,9 +15238,9 @@
    }
   },
   {
-   "id": "APP-9.4",
+   "id": "KS-APP9.4",
    "labels": [
-    "APP-9.4"
+    "KS-APP9.4"
    ],
    "description": "Produce a case where extending the corridor against the operator’s reading is structurally correct.",
    "status": "live",
@@ -15189,9 +15264,9 @@
    }
   },
   {
-   "id": "APP-9.5",
+   "id": "KS-APP9.5",
    "labels": [
-    "APP-9.5"
+    "KS-APP9.5"
    ],
    "description": "Show that the dignity floor cannot be specified at the closing without cultural import.",
    "status": "live",
@@ -15215,9 +15290,9 @@
    }
   },
   {
-   "id": "APP-10.1",
+   "id": "KS-APP10.1",
    "labels": [
-    "APP-10.1"
+    "KS-APP10.1"
    ],
    "description": "Show that long-timescale propagation cannot be measured at policy-relevant resolution.",
    "status": "live",
@@ -15241,9 +15316,9 @@
    }
   },
   {
-   "id": "APP-10.2",
+   "id": "KS-APP10.2",
    "labels": [
-    "APP-10.2"
+    "KS-APP10.2"
    ],
    "description": "Exhibit substrate-degradation where the correction hierarchy fails.",
    "status": "live",
@@ -15267,9 +15342,9 @@
    }
   },
   {
-   "id": "APP-10.3",
+   "id": "KS-APP10.3",
    "labels": [
-    "APP-10.3"
+    "KS-APP10.3"
    ],
    "description": "Demonstrate that biosphere-as-joint-structure imports value beyond the axiom.",
    "status": "live",
@@ -15293,9 +15368,9 @@
    }
   },
   {
-   "id": "APP-10.4",
+   "id": "KS-APP10.4",
    "labels": [
-    "APP-10.4"
+    "KS-APP10.4"
    ],
    "description": "Show that human-supremacist substrate-coupling produces the same prescriptions without smuggling in substrate standing.",
    "status": "live",
@@ -15319,9 +15394,9 @@
    }
   },
   {
-   "id": "APP-10.5",
+   "id": "KS-APP10.5",
    "labels": [
-    "APP-10.5"
+    "KS-APP10.5"
    ],
    "description": "Show that stewardship-as-structural-fact reduces in practice to current environmentalism.",
    "status": "live",
@@ -15345,9 +15420,9 @@
    }
   },
   {
-   "id": "APP-11.1",
+   "id": "KS-APP11.1",
    "labels": [
-    "APP-11.1"
+    "KS-APP11.1"
    ],
    "description": "Show that the verifiable-contraction-greater-than-force criterion cannot be measured at policy-relevant resolution.",
    "status": "live",
@@ -15371,9 +15446,9 @@
    }
   },
   {
-   "id": "APP-11.2",
+   "id": "KS-APP11.2",
    "labels": [
-    "APP-11.2"
+    "KS-APP11.2"
    ],
    "description": "Exhibit a conflict where every party fails the test, yet inaction also fails — and the chapter cannot specify which f….",
    "status": "live",
@@ -15397,9 +15472,9 @@
    }
   },
   {
-   "id": "APP-11.3",
+   "id": "KS-APP11.3",
    "labels": [
-    "APP-11.3"
+    "KS-APP11.3"
    ],
    "description": "Exhibit a case where the structural test produces a sharply asymmetrical verdict that the chapter’s anti-capture disc….",
    "status": "live",
@@ -15423,9 +15498,9 @@
    }
   },
   {
-   "id": "APP-11.4",
+   "id": "KS-APP11.4",
    "labels": [
-    "APP-11.4"
+    "KS-APP11.4"
    ],
    "description": "Produce a class of collective force the criterion does not classify.",
    "status": "live",
@@ -15449,9 +15524,9 @@
    }
   },
   {
-   "id": "APP-11.5",
+   "id": "KS-APP11.5",
    "labels": [
-    "APP-11.5"
+    "KS-APP11.5"
    ],
    "description": "Show that the structural test reduces in practice to mainstream just-war theory.",
    "status": "live",
@@ -15475,9 +15550,9 @@
    }
   },
   {
-   "id": "APP-12.1",
+   "id": "KS-APP12.1",
    "labels": [
-    "APP-12.1"
+    "KS-APP12.1"
    ],
    "description": "Show that the geometric region is structurally underdetermined beyond use.",
    "status": "live",
@@ -15501,9 +15576,9 @@
    }
   },
   {
-   "id": "APP-12.2",
+   "id": "KS-APP12.2",
    "labels": [
-    "APP-12.2"
+    "KS-APP12.2"
    ],
    "description": "Exhibit substrate where geometry produces destabilising distribution.",
    "status": "live",
@@ -15527,9 +15602,9 @@
    }
   },
   {
-   "id": "APP-12.3",
+   "id": "KS-APP12.3",
    "labels": [
-    "APP-12.3"
+    "KS-APP12.3"
    ],
    "description": "Demonstrate that the corrective requires fiat the chapter’s framing rules out.",
    "status": "live",
@@ -15553,9 +15628,9 @@
    }
   },
   {
-   "id": "APP-12.4",
+   "id": "KS-APP12.4",
    "labels": [
-    "APP-12.4"
+    "KS-APP12.4"
    ],
    "description": "Produce a class of resource the model cannot allocate.",
    "status": "live",
@@ -15579,9 +15654,9 @@
    }
   },
   {
-   "id": "APP-12.5",
+   "id": "KS-APP12.5",
    "labels": [
-    "APP-12.5"
+    "KS-APP12.5"
    ],
    "description": "Show that structural distribution reduces to mainstream economics.",
    "status": "live",
@@ -15605,9 +15680,9 @@
    }
   },
   {
-   "id": "APP-12.6",
+   "id": "KS-APP12.6",
    "labels": [
-    "APP-12.6"
+    "KS-APP12.6"
    ],
    "description": "Show that the not-planning / not-market disarm conceals a hidden third position that imports the same authority struc….",
    "status": "live",
@@ -15631,9 +15706,9 @@
    }
   },
   {
-   "id": "HOR-1.1",
+   "id": "KS-HOR1.1",
    "labels": [
-    "HOR-1.1"
+    "KS-HOR1.1"
    ],
    "description": "Coupling coherence is structurally unmeasurable.",
    "status": "live",
@@ -15657,9 +15732,9 @@
    }
   },
   {
-   "id": "HOR-1.2",
+   "id": "KS-HOR1.2",
    "labels": [
-    "HOR-1.2"
+    "KS-HOR1.2"
    ],
    "description": "Exhibit registered beauty whose coherence cannot be structurally specified.",
    "status": "live",
@@ -15683,9 +15758,9 @@
    }
   },
   {
-   "id": "HOR-1.3",
+   "id": "KS-HOR1.3",
    "labels": [
-    "HOR-1.3"
+    "KS-HOR1.3"
    ],
    "description": "The projection fails across cultures.",
    "status": "live",
@@ -15709,9 +15784,9 @@
    }
   },
   {
-   "id": "HOR-1.4",
+   "id": "KS-HOR1.4",
    "labels": [
-    "HOR-1.4"
+    "KS-HOR1.4"
    ],
    "description": "Produce a sublime case the corridor-expansion account misses.",
    "status": "live",
@@ -15735,9 +15810,9 @@
    }
   },
   {
-   "id": "HOR-1.5",
+   "id": "KS-HOR1.5",
    "labels": [
-    "HOR-1.5"
+    "KS-HOR1.5"
    ],
    "description": "Projection reduces without remainder to existing aesthetic theory.",
    "status": "live",
@@ -15761,9 +15836,9 @@
    }
   },
   {
-   "id": "HOR-2.1",
+   "id": "KS-HOR2.1",
    "labels": [
-    "HOR-2.1"
+    "KS-HOR2.1"
    ],
    "description": "The low-entropy phase-relationship account fails to predict consonance across diverse traditions.",
    "status": "live",
@@ -15787,9 +15862,9 @@
    }
   },
   {
-   "id": "HOR-2.2",
+   "id": "KS-HOR2.2",
    "labels": [
-    "HOR-2.2"
+    "KS-HOR2.2"
    ],
    "description": "Exhibit music without trackable temporal, spectral, or dynamic trajectory.",
    "status": "live",
@@ -15813,9 +15888,9 @@
    }
   },
   {
-   "id": "HOR-2.3",
+   "id": "KS-HOR2.3",
    "labels": [
-    "HOR-2.3"
+    "KS-HOR2.3"
    ],
    "description": "Demonstrate non-human responses do not fit the structural account.",
    "status": "live",
@@ -15839,9 +15914,9 @@
    }
   },
   {
-   "id": "HOR-2.4",
+   "id": "KS-HOR2.4",
    "labels": [
-    "HOR-2.4"
+    "KS-HOR2.4"
    ],
    "description": "Produce a tradition where the octave is structurally not privileged.",
    "status": "live",
@@ -15865,9 +15940,9 @@
    }
   },
   {
-   "id": "HOR-2.5",
+   "id": "KS-HOR2.5",
    "labels": [
-    "HOR-2.5"
+    "KS-HOR2.5"
    ],
    "description": "The propositional-bypass claim reduces without remainder to existing music-cognition theory.",
    "status": "live",
@@ -15891,9 +15966,9 @@
    }
   },
   {
-   "id": "HOR-3.1",
+   "id": "KS-HOR3.1",
    "labels": [
-    "HOR-3.1"
+    "KS-HOR3.1"
    ],
    "description": "Play cannot be structurally distinguished from work or instrumental training.",
    "status": "live",
@@ -15917,9 +15992,9 @@
    }
   },
   {
-   "id": "HOR-3.2",
+   "id": "KS-HOR3.2",
    "labels": [
-    "HOR-3.2"
+    "KS-HOR3.2"
    ],
    "description": "Exhibit play that is not override-capacity training.",
    "status": "live",
@@ -15943,9 +16018,9 @@
    }
   },
   {
-   "id": "HOR-3.3",
+   "id": "KS-HOR3.3",
    "labels": [
-    "HOR-3.3"
+    "KS-HOR3.3"
    ],
    "description": "Demonstrate that games with irreversible outcomes still count as play in the structural sense.",
    "status": "live",
@@ -15969,9 +16044,9 @@
    }
   },
   {
-   "id": "HOR-3.4",
+   "id": "KS-HOR3.4",
    "labels": [
-    "HOR-3.4"
+    "KS-HOR3.4"
    ],
    "description": "Produce an architecture with high override-capacity and no complex play.",
    "status": "live",
@@ -15995,9 +16070,9 @@
    }
   },
   {
-   "id": "HOR-3.5",
+   "id": "KS-HOR3.5",
    "labels": [
-    "HOR-3.5"
+    "KS-HOR3.5"
    ],
    "description": "The corridor-expansion-as-fun account reduces without remainder to existing accounts of play-pleasure.",
    "status": "live",
@@ -16021,9 +16096,9 @@
    }
   },
   {
-   "id": "HOR-4.1",
+   "id": "KS-HOR4.1",
    "labels": [
-    "HOR-4.1"
+    "KS-HOR4.1"
    ],
    "description": "Structural-truth reduces without remainder to another truth criterion.",
    "status": "live",
@@ -16047,9 +16122,9 @@
    }
   },
   {
-   "id": "HOR-4.2",
+   "id": "KS-HOR4.2",
    "labels": [
-    "HOR-4.2"
+    "KS-HOR4.2"
    ],
    "description": "Exhibit a narrative the protagonist-plot-resolution architecture cannot describe.",
    "status": "live",
@@ -16073,9 +16148,9 @@
    }
   },
   {
-   "id": "HOR-4.3",
+   "id": "KS-HOR4.3",
    "labels": [
-    "HOR-4.3"
+    "KS-HOR4.3"
    ],
    "description": "Demonstrate that experimental narrative requires extra structural resources beyond the chapter’s apparatus.",
    "status": "live",
@@ -16099,9 +16174,9 @@
    }
   },
   {
-   "id": "HOR-4.4",
+   "id": "KS-HOR4.4",
    "labels": [
-    "HOR-4.4"
+    "KS-HOR4.4"
    ],
    "description": "Structural-truth is not readable even as mixed, local, or resolution-relative.",
    "status": "live",
@@ -16125,9 +16200,9 @@
    }
   },
   {
-   "id": "HOR-4.5",
+   "id": "KS-HOR4.5",
    "labels": [
-    "HOR-4.5"
+    "KS-HOR4.5"
    ],
    "description": "Show that consistent application of the structural-truth criterion produces censorship recommendations.",
    "status": "live",
@@ -16151,9 +16226,9 @@
    }
   },
   {
-   "id": "HOR-5.1",
+   "id": "KS-HOR5.1",
    "labels": [
-    "HOR-5.1"
+    "KS-HOR5.1"
    ],
    "description": "The compression-token account fails for non-referring language.",
    "status": "live",
@@ -16177,9 +16252,9 @@
    }
   },
   {
-   "id": "HOR-5.2",
+   "id": "KS-HOR5.2",
    "labels": [
-    "HOR-5.2"
+    "KS-HOR5.2"
    ],
    "description": "The joint-pattern account collapses into private-language paradoxes.",
    "status": "live",
@@ -16203,9 +16278,9 @@
    }
   },
   {
-   "id": "HOR-5.3",
+   "id": "KS-HOR5.3",
    "labels": [
-    "HOR-5.3"
+    "KS-HOR5.3"
    ],
    "description": "A linguistic phenomenon is not reducible to compression-token, composition, joint-structure activation, context-selec….",
    "status": "live",
@@ -16229,9 +16304,9 @@
    }
   },
   {
-   "id": "HOR-5.4",
+   "id": "KS-HOR5.4",
    "labels": [
-    "HOR-5.4"
+    "KS-HOR5.4"
    ],
    "description": "Context-dependence requires a context-semantics extra to the chapter’s account.",
    "status": "live",
@@ -16255,9 +16330,9 @@
    }
   },
   {
-   "id": "HOR-5.5",
+   "id": "KS-HOR5.5",
    "labels": [
-    "HOR-5.5"
+    "KS-HOR5.5"
    ],
    "description": "A linguistic tradition exists where the compression-plus-joint-pattern account fails.",
    "status": "live",
@@ -16281,9 +16356,9 @@
    }
   },
   {
-   "id": "HOR-6.1",
+   "id": "KS-HOR6.1",
    "labels": [
-    "HOR-6.1"
+    "KS-HOR6.1"
    ],
    "description": "The operator-narrator distinction fails at one altered state.",
    "status": "live",
@@ -16307,9 +16382,9 @@
    }
   },
   {
-   "id": "HOR-6.2",
+   "id": "KS-HOR6.2",
    "labels": [
-    "HOR-6.2"
+    "KS-HOR6.2"
    ],
    "description": "Narrator quiescence is never structurally clean.",
    "status": "live",
@@ -16333,9 +16408,9 @@
    }
   },
   {
-   "id": "HOR-6.3",
+   "id": "KS-HOR6.3",
    "labels": [
-    "HOR-6.3"
+    "KS-HOR6.3"
    ],
    "description": "The structural-relief framing produces clinical distress that the framing itself worsens.",
    "status": "live",
@@ -16359,9 +16434,9 @@
    }
   },
   {
-   "id": "HOR-6.4",
+   "id": "KS-HOR6.4",
    "labels": [
-    "HOR-6.4"
+    "KS-HOR6.4"
    ],
    "description": "Produce a phenomenon — blindsight, alien-hand syndrome, depersonalisation, dissociative states — that the operator-na….",
    "status": "live",
@@ -16385,9 +16460,9 @@
    }
   },
   {
-   "id": "HOR-6.5",
+   "id": "KS-HOR6.5",
    "labels": [
-    "HOR-6.5"
+    "KS-HOR6.5"
    ],
    "description": "The structural-relief framing is rhetorical.",
    "status": "live",
@@ -16411,9 +16486,9 @@
    }
   },
   {
-   "id": "HOR-7.1",
+   "id": "KS-HOR7.1",
    "labels": [
-    "HOR-7.1"
+    "KS-HOR7.1"
    ],
    "description": "The interior-sharing claim collapses at minimal-resolution coupling-architectures.",
    "status": "live",
@@ -16437,9 +16512,9 @@
    }
   },
   {
-   "id": "HOR-7.2",
+   "id": "KS-HOR7.2",
    "labels": [
-    "HOR-7.2"
+    "KS-HOR7.2"
    ],
    "description": "Narrator-depth variation across species cannot be measured structurally.",
    "status": "live",
@@ -16463,9 +16538,9 @@
    }
   },
   {
-   "id": "HOR-7.3",
+   "id": "KS-HOR7.3",
    "labels": [
-    "HOR-7.3"
+    "KS-HOR7.3"
    ],
    "description": "Proportional obligation produces internally inconsistent verdicts.",
    "status": "live",
@@ -16489,9 +16564,9 @@
    }
   },
   {
-   "id": "HOR-7.4",
+   "id": "KS-HOR7.4",
    "labels": [
-    "HOR-7.4"
+    "KS-HOR7.4"
    ],
    "description": "Produce a non-human architecture the framework cannot handle.",
    "status": "live",
@@ -16515,9 +16590,9 @@
    }
   },
   {
-   "id": "HOR-7.5",
+   "id": "KS-HOR7.5",
    "labels": [
-    "HOR-7.5"
+    "KS-HOR7.5"
    ],
    "description": "One-interior proves to be category-plural rather than resolution-variable.",
    "status": "live",
@@ -16541,9 +16616,9 @@
    }
   },
   {
-   "id": "HOR-8.1",
+   "id": "KS-HOR8.1",
    "labels": [
-    "HOR-8.1"
+    "KS-HOR8.1"
    ],
    "description": "A recognised transcendent type cannot be read through operator/narrator reconfiguration.",
    "status": "live",
@@ -16567,9 +16642,9 @@
    }
   },
   {
-   "id": "HOR-8.2",
+   "id": "KS-HOR8.2",
    "labels": [
-    "HOR-8.2"
+    "KS-HOR8.2"
    ],
    "description": "One-interior registration cannot be distinguished from pathological dissolution.",
    "status": "live",
@@ -16593,9 +16668,9 @@
    }
   },
   {
-   "id": "HOR-8.3",
+   "id": "KS-HOR8.3",
    "labels": [
-    "HOR-8.3"
+    "KS-HOR8.3"
    ],
    "description": "A documented report requires extra-structural commitments at the load-bearing level.",
    "status": "live",
@@ -16619,9 +16694,9 @@
    }
   },
   {
-   "id": "HOR-8.4",
+   "id": "KS-HOR8.4",
    "labels": [
-    "HOR-8.4"
+    "KS-HOR8.4"
    ],
    "description": "Structural registration leads to destabilising outcomes that the framework cannot anticipate.",
    "status": "live",
@@ -16645,9 +16720,9 @@
    }
   },
   {
-   "id": "HOR-8.5",
+   "id": "KS-HOR8.5",
    "labels": [
-    "HOR-8.5"
+    "KS-HOR8.5"
    ],
    "description": "One-interior cannot be distinguished from a tradition-specific nondual doctrine.",
    "status": "live",
@@ -16671,9 +16746,9 @@
    }
   },
   {
-   "id": "HOR-9.1",
+   "id": "KS-HOR9.1",
    "labels": [
-    "HOR-9.1"
+    "KS-HOR9.1"
    ],
    "description": "Pre-agency biosphere priority cannot resolve competing corridor claims.",
    "status": "live",
@@ -16697,9 +16772,9 @@
    }
   },
   {
-   "id": "HOR-9.2",
+   "id": "KS-HOR9.2",
    "labels": [
-    "HOR-9.2"
+    "KS-HOR9.2"
    ],
    "description": "Terraforming cannot be audited at speculative timescales.",
    "status": "live",
@@ -16723,9 +16798,9 @@
    }
   },
   {
-   "id": "HOR-9.3",
+   "id": "KS-HOR9.3",
    "labels": [
-    "HOR-9.3"
+    "KS-HOR9.3"
    ],
    "description": "Obligation-to-future-generations exhibits a form that window-extension cannot capture.",
    "status": "live",
@@ -16749,9 +16824,9 @@
    }
   },
   {
-   "id": "HOR-9.4",
+   "id": "KS-HOR9.4",
    "labels": [
-    "HOR-9.4"
+    "KS-HOR9.4"
    ],
    "description": "The 420 Code’s axiom forces a discount-rate structure on future obligations that is unjustified.",
    "status": "live",
@@ -16775,9 +16850,9 @@
    }
   },
   {
-   "id": "HOR-9.5",
+   "id": "KS-HOR9.5",
    "labels": [
-    "HOR-9.5"
+    "KS-HOR9.5"
    ],
    "description": "Cosmic one-interior reduces without remainder to cosmopolitan ethics.",
    "status": "live",
@@ -16801,9 +16876,9 @@
    }
   },
   {
-   "id": "HOR-10.1",
+   "id": "KS-HOR10.1",
    "labels": [
-    "HOR-10.1"
+    "KS-HOR10.1"
    ],
    "description": "The single-commitment reading of quantum measurement does not survive experimentally.",
    "status": "live",
@@ -16827,9 +16902,9 @@
    }
   },
   {
-   "id": "HOR-10.2",
+   "id": "KS-HOR10.2",
    "labels": [
-    "HOR-10.2"
+    "KS-HOR10.2"
    ],
    "description": "The loop cosmology is indistinguishable from a bubble-universe multiverse.",
    "status": "live",
@@ -16853,9 +16928,9 @@
    }
   },
   {
-   "id": "HOR-10.3",
+   "id": "KS-HOR10.3",
    "labels": [
-    "HOR-10.3"
+    "KS-HOR10.3"
    ],
    "description": "A physical phenomenon exists that the loop cosmology cannot accommodate.",
    "status": "live",
@@ -16879,9 +16954,9 @@
    }
   },
   {
-   "id": "HOR-10.4",
+   "id": "KS-HOR10.4",
    "labels": [
-    "HOR-10.4"
+    "KS-HOR10.4"
    ],
    "description": "An alternative single-commitment reading exists that the axiom does not privilege over the chapter’s reading.",
    "status": "live",
@@ -16905,9 +16980,9 @@
    }
   },
   {
-   "id": "HOR-10.5",
+   "id": "KS-HOR10.5",
    "labels": [
-    "HOR-10.5"
+    "KS-HOR10.5"
    ],
    "description": "The defragmentation-to-break cycle requires premises outside the axiom’s structural conditions.",
    "status": "live",
@@ -16931,9 +17006,9 @@
    }
   },
   {
-   "id": "HOR-10.6",
+   "id": "KS-HOR10.6",
    "labels": [
-    "HOR-10.6"
+    "KS-HOR10.6"
    ],
    "description": "The axiom is consistent with a many-worlds reading.",
    "status": "live",
@@ -16957,9 +17032,9 @@
    }
   },
   {
-   "id": "HOR-11.1",
+   "id": "KS-HOR11.1",
    "labels": [
-    "HOR-11.1"
+    "KS-HOR11.1"
    ],
    "description": "The finite holding limit is assumed rather than derived.",
    "status": "live",
@@ -16983,9 +17058,9 @@
    }
   },
   {
-   "id": "HOR-11.2",
+   "id": "KS-HOR11.2",
    "labels": [
-    "HOR-11.2"
+    "KS-HOR11.2"
    ],
    "description": "Restoration-is-condition-for-break is not rigorous.",
    "status": "live",
@@ -17009,9 +17084,9 @@
    }
   },
   {
-   "id": "HOR-11.3",
+   "id": "KS-HOR11.3",
    "labels": [
-    "HOR-11.3"
+    "KS-HOR11.3"
    ],
    "description": "Empirical predictions distinguishable from CCC, Steinhardt-Turok, or another cyclic alternative are exhibited that th….",
    "status": "live",
@@ -17035,9 +17110,9 @@
    }
   },
   {
-   "id": "HOR-11.4",
+   "id": "KS-HOR11.4",
    "labels": [
-    "HOR-11.4"
+    "KS-HOR11.4"
    ],
    "description": "A cosmological scenario exists that the loop cannot accommodate.",
    "status": "live",
@@ -17061,9 +17136,9 @@
    }
   },
   {
-   "id": "HOR-11.5",
+   "id": "KS-HOR11.5",
    "labels": [
-    "HOR-11.5"
+    "KS-HOR11.5"
    ],
    "description": "The defragmented-grain-as-probability-weights claim is ungrounded.",
    "status": "live",
@@ -17087,9 +17162,9 @@
    }
   },
   {
-   "id": "HOR-12.1",
+   "id": "KS-HOR12.1",
    "labels": [
-    "HOR-12.1"
+    "KS-HOR12.1"
    ],
    "description": "Registration of one-interior is not distinguishable from numinous feeling.",
    "status": "live",
@@ -17113,9 +17188,9 @@
    }
   },
   {
-   "id": "HOR-12.2",
+   "id": "KS-HOR12.2",
    "labels": [
-    "HOR-12.2"
+    "KS-HOR12.2"
    ],
    "description": "The relocation does not preserve phenomenological weight.",
    "status": "live",
@@ -17139,9 +17214,9 @@
    }
   },
   {
-   "id": "HOR-12.3",
+   "id": "KS-HOR12.3",
    "labels": [
-    "HOR-12.3"
+    "KS-HOR12.3"
    ],
    "description": "A sacred experience exists that the framework cannot ground.",
    "status": "live",
@@ -17165,9 +17240,9 @@
    }
   },
   {
-   "id": "HOR-12.4",
+   "id": "KS-HOR12.4",
    "labels": [
-    "HOR-12.4"
+    "KS-HOR12.4"
    ],
    "description": "A structural ground for sacredness exists that does not reduce to the chapter’s claims.",
    "status": "live",
@@ -17191,9 +17266,9 @@
    }
   },
   {
-   "id": "HOR-12.5",
+   "id": "KS-HOR12.5",
    "labels": [
-    "HOR-12.5"
+    "KS-HOR12.5"
    ],
    "description": "The sacred cannot survive Ø Resolutions Chapter 12’s confrontation without becoming consolation.",
    "status": "live",
@@ -17217,9 +17292,9 @@
    }
   },
   {
-   "id": "HOR-12.6",
+   "id": "KS-HOR12.6",
    "labels": [
-    "HOR-12.6"
+    "KS-HOR12.6"
    ],
    "description": "The chapter fails to integrate the four-doors quartet.",
    "status": "live",
@@ -17243,9 +17318,9 @@
    }
   },
   {
-   "id": "HOR-13.1",
+   "id": "KS-HOR13.1",
    "labels": [
-    "HOR-13.1"
+    "KS-HOR13.1"
    ],
    "description": "An AP cross-reference is wrong.",
    "status": "live",
@@ -17269,9 +17344,9 @@
    }
   },
   {
-   "id": "HOR-13.2",
+   "id": "KS-HOR13.2",
    "labels": [
-    "HOR-13.2"
+    "KS-HOR13.2"
    ],
    "description": "A consequence does not in fact follow from its named source.",
    "status": "live",
@@ -17295,9 +17370,9 @@
    }
   },
   {
-   "id": "HOR-13.3",
+   "id": "KS-HOR13.3",
    "labels": [
-    "HOR-13.3"
+    "KS-HOR13.3"
    ],
    "description": "The Architecture A vs Architecture B distinction is not structural.",
    "status": "live",
@@ -17321,9 +17396,9 @@
    }
   },
   {
-   "id": "HOR-13.4",
+   "id": "KS-HOR13.4",
    "labels": [
-    "HOR-13.4"
+    "KS-HOR13.4"
    ],
    "description": "A class of human practice exists that the axiom-aligned world cannot accommodate.",
    "status": "live",
@@ -17347,9 +17422,9 @@
    }
   },
   {
-   "id": "HOR-13.5",
+   "id": "KS-HOR13.5",
    "labels": [
-    "HOR-13.5"
+    "KS-HOR13.5"
    ],
    "description": "The chapter has slipped into vision rather than derivation.",
    "status": "live",
@@ -17373,9 +17448,9 @@
    }
   },
   {
-   "id": "HOR-13.6",
+   "id": "KS-HOR13.6",
    "labels": [
-    "HOR-13.6"
+    "KS-HOR13.6"
    ],
    "description": "The chapter’s closing line is not earned.",
    "status": "live",
