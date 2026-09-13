@@ -2,11 +2,17 @@
 
 **The 420 Code · Studio G · a dated lodgement of a DRAFT. Not a publication of the paper.**
 
-**AP54 Seeing Alpha is in draft at v0.16. It is not locked, not armed, not frozen.** Nothing in this
-folder is a proof, a release, or a source of record. AP54's row on Ø Instruments is marked *Draft,
-not locked* and points here rather than at a source of record; **it has no row on Ø Proofs**, because
-it is not a published paper and this entry does not make it one. The papers of record on this site
-are AP01 to AP53.
+**This lodgement records a draft.** When it was written on the morning of 13 September 2026, AP54
+Seeing Alpha was at v0.16 — not locked, not armed, not frozen — and the nine digests below fix the
+state of the work at that moment. That is what a before-state is for, and it is not amended after the
+fact.
+
+> **Later the same day, 13 September 2026.** AP54 locked at FINAL v1.0 and is published. It now has a
+> row on Ø Proofs and an ordinary row of record on Ø Instruments. **None of that changes anything in
+> the table below.** The draft this lodgement records is v0.16 at 72,463 bytes; the locked paper is a
+> different file, 75,117 bytes, digest `347e452e…`, and it is listed under AP54's own source of
+> record — not here. Row 1 stays *digest only* because the file it names is the draft, and the draft
+> is not what was published.
 
 What this is: a timestamp on the state of the work on this date, so that a later paper which claims
 to have been built blind can be checked against what was actually held beforehand.
@@ -27,15 +33,15 @@ witness standing, and that is stated rather than glossed.
 
 ## The nine files
 
-Six are published here with their bytes. Three are not on the machine that built this page, so
+Seven are published here with their bytes. Two are not on the machine that built this page, so
 their digests are published and their files are not — which is the instruction, and which costs a
-reader nothing except the ability to check those three today.
+reader nothing except the ability to check those two today.
 
 | # | File | Bytes | SHA-256 | Published here |
 |---|---|---|---|---|
 | 1 | AP54 Seeing Alpha, DRAFT v0.16 | 72,463 | `b80df9b92c3bfdf2a335a97b2c32b798bc5864e149a850322a7d9c5aa0b06ba8` | **digest only** |
 | 2 | The Atom in the Hourglass, version 1 | 11,482 | `481aff66742c6dde51264e674d40ccf1075ef7cb3e833291357812cddc534168` | [file](The_Atom_in_the_Hourglass_v1_2026-09-13.docx) |
-| 3 | The Atom in the Hourglass, version 2 | 12,238 | `7b8331f3c52c20053a68c520e252efb94fd4584c20a93e2909bc00b8ae404494` | **digest only** |
+| 3 | The Atom in the Hourglass, version 2 | 12,238 | `7b8331f3c52c20053a68c520e252efb94fd4584c20a93e2909bc00b8ae404494` | [file](The_Atom_in_the_Hourglass_v2_2026-09-13.docx) |
 | 4 | The Ripple Construction, 13 September 2026 | 13,927 | `1bc2ea112201b37a2e2c479841ed8366c3c5d5d13f752c6dca7ee3c0288151c4` | [file](The_Ripple_Construction_2026-09-13.docx) |
 | 5 | AP43 Dated Notes, 13 September 2026 | 10,975 | `42bfb350d134bb06b89d7301002145a08eb0716950b7f8bcb6639872a059c57e` | [file](AP43_Dated_Notes_2026-09-13.docx) |
 | 6 | AP54 §10, What Does Not Derive It — FINAL | 14,702 | `84f3b018365f59f23b1391686d1b50c515cf5215a6aae988cb65a381f35e1963` | [file](AP54_S10_What_Does_Not_Derive_It_FINAL_2026-09-12.docx) |
@@ -43,7 +49,7 @@ reader nothing except the ability to check those three today.
 | 8 | AP54 Reviewer Brief | 11,785 | `6615dda93ea2965177eb82f950a7f3702cc0feeec8c18118a56374a863c0fbb6` | [file](AP54_Reviewer_Brief_2026-09-12.docx) |
 | 9 | For WC — Three Wall Corrections | 10,273 | `61c8c5b58a3ab40c7e7727e3c4acc909c733e518ca7d4dd08b935eb208c82c75` | [file](For_WC_Three_Wall_Corrections_2026-09-12.docx) |
 
-`SHA256SUMS.txt` in this folder lists the six published files in the form `sha256sum -c` reads.
+`SHA256SUMS.txt` in this folder lists the seven published files in the form `sha256sum -c` reads.
 
 **To verify:** run SHA-256 on the file and compare it with the row. A difference of a single byte
 changes the digest entirely.
@@ -85,15 +91,16 @@ from, the corrections already made to them, and the register of every road alrea
 the ripple paper later claims can be checked against them, by anyone, without taking this desk's word
 for what was held on 13 September 2026.
 
-## What is recorded about the three that are digests only
+## What is recorded about the two that are digests only
 
-A file named *The Atom in the Hourglass v2* dated 13 September exists on the machine that built this
-page, at **12,158 bytes**, digest `8f69747c3a4853e6…`. **That is not the lodged file:** the lodged
-version 2 is 12,238 bytes with the digest in row 3 above. The two differ by eighty bytes and by every
-byte of their digests, so the file on hand was not published. Publishing a near-miss under a
-lodged digest would make the lodgement worthless, which is the one thing it cannot survive.
+**Row 3 was one of them this morning, and is not any more.** A file named *The Atom in the Hourglass
+v2* was on hand at **12,158 bytes**, digest `8f69747c…` — eighty bytes short of the lodged version and
+sharing no character of its digest. It was withheld, because publishing a near-miss under a lodged
+digest would have made the lodgement worthless while looking exactly like success. The lodged file
+itself arrived with the publication pack later that day, at 12,238 bytes and the digest in row 3, and
+**that** is the file now published. The near-miss was never served.
 
-For rows 1 and 7, no file of that size exists anywhere on the machine. Their digests stand and their
-bytes are owed.
+For rows 1 and 7 — the draft at v0.16 and the audit closures — no file of that size exists anywhere on
+the machine. Their digests stand and their bytes are owed.
 
 *Frozen files are never edited; corrections supersede, dated, in the open.*

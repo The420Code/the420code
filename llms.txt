@@ -1,10 +1,10 @@
 # the420code.org
 
-> A 30-year physics-to-ethics derivation. 53 papers. One measured input. Zero free parameters. 602 published kill switches. Copyleft.
+> A 30-year physics-to-ethics derivation. 54 papers. One measured input. Zero free parameters. 602 published kill switches. Copyleft.
 
 ## What This Is
 
-The 420 Code is one argument, derived over thirty years from a single axiom — one record exists — and the four conditions that follow from it: Symmetry, Break, Record, Constraint. From that axiom and one measured constant, the fine-structure constant α ≈ 1/137, it derives physics, consciousness and ethics. It is published as 53 Artist's Proofs (AP01–AP53), over one million words, under a Creative Commons BY 4.0 licence. The front door and the home page are in 13 languages; the papers are in English.
+The 420 Code is one argument, derived over thirty years from a single axiom — one record exists — and the four conditions that follow from it: Symmetry, Break, Record, Constraint. From that axiom and one measured constant, the fine-structure constant α ≈ 1/137, it derives physics, consciousness and ethics. It is published as 54 Artist's Proofs (AP01–AP54), over one million words, under a Creative Commons BY 4.0 licence. The front door and the home page are in 13 languages; the papers are in English.
 
 Author: G (Studio G, Strand, Cape Town)
 DOI: 10.5281/zenodo.22714160 (this version, 11 September 2026; all versions: 10.5281/zenodo.19208225, which always resolves to the latest)
@@ -44,14 +44,14 @@ One record exists. For a record to exist, four things must hold:
 
 The canonical axiom: 1:1 + 1×ε @ AS [+1/137 / −1/137]. AS is the Actualization State (AP01).
 
-## Structure: 53 Artist's Proofs in 8 Notebooks
+## Structure: 54 Artist's Proofs in 8 Notebooks
 
 | Part | Title | Papers | Domain |
 |------|-------|--------|--------|
 | I | The Premise | AP40, AP01, AP20 | Axioms, foundations, logical proof |
 | II | Spacetime | AP03, AP05, AP10, AP08 | Relativity, dimensions, field equations |
 | III | Quantum Mechanics | AP09, AP07, AP11, AP12, AP13, AP25, AP23 | Quantization, spin, uncertainty, decoherence, the Born rule |
-| IV | Forces & Constants | AP06, AP15, AP27, AP16, AP19, AP24, AP14, AP28, AP44, AP45, AP50, AP52, AP53 | Gauge symmetry, the Standard Model, the gravitational constant, the Snap and the Blink, the Neck, relativity read, gravity as the neck |
+| IV | Forces & Constants | AP06, AP15, AP27, AP16, AP19, AP24, AP14, AP28, AP44, AP45, AP50, AP52, AP53, AP54 | Gauge symmetry, the Standard Model, the gravitational constant, the Snap and the Blink, the Neck, relativity read, gravity as the neck |
 | V | Particles & Matter | AP30, AP47, AP49, AP22, AP26 | The proton mass ratio, the Flip (the neutron realised), the Hold (the proton closed), antimatter, the surplus |
 | VI | Cosmology | AP17, AP18, AP21, AP41, AP42, AP04, AP46, AP48 | Rotation curves, the floor, the web, the loop, the clock, the Stretch (the cycle), the Assembly (the expansion rate) |
 | VII | The Operator Interface | AP43, AP29, AP02, AP39, AP38, AP51 | The operator, consciousness, the scaffold, the exit, the Glass (the operator in the hourglass) |
@@ -59,7 +59,7 @@ The canonical axiom: 1:1 + 1×ε @ AS [+1/137 / −1/137]. AS is the Actualizati
 
 ## Kill Switches (Falsifiability)
 
-602 kill switches are declared across the work (Master Kill Switch Registry v5.31, 11 September 2026): 318 across the 53 Artist's Proofs, 28 across the Five Doors volumes, 256 across the Ø Models series. 582 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Five debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. Examples:
+602 kill switches are declared across the work (Master Kill Switch Registry v5.31, 11 September 2026): 318 across AP01–AP53, 28 across the Five Doors volumes, 256 across the Ø Models series. 582 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Five debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. Examples:
 
 - **KS-V.1:** If two observers disagree on a measurement, the entire framework fails
 - **KS-P.1:** If a fifth axiom is needed, the proof fails
@@ -82,14 +82,14 @@ Every prediction can be checked against published experimental values, and every
 
 ## How to Cite
 
-G. (2026). The 420 Code — 53 Artist's Proofs (AP01–AP53). Studio G. https://doi.org/10.5281/zenodo.22714160
+G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://doi.org/10.5281/zenodo.22714160
 
 ## Available Resources
 
 - Main site: https://the420code.org
 - The front door, one page: https://the420code.org/what-is-the-420-code/
 - Everything in three pages: https://the420code.org/The_420_Code_in_Three_Pages.pdf
-- All 53 proofs, as PDFs: https://the420code.org/proofs/
+- All 54 proofs: https://the420code.org/proofs/
 - The source of record beside each proof: https://the420code.org/proofs/instruments/
 - Frozen predictions and the fired switches: https://the420code.org/prereg/
 - Kill Switch Registry: https://the420code.org/Master_Kill_Switch_Registry.pdf
