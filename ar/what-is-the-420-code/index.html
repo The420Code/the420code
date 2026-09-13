@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--g4:#595959;--g5:#595959;--g6:#1a1a1a;--f:'Noto Sans Arabic','Atkinson Hyperlegible',sans-serif;--mw:760px}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#595959;--g5:#595959;--g6:#1a1a1a;--f:'Noto Sans Arabic','Atkinson Hyperlegible',sans-serif;--mw:760px}
 body{font-family:var(--f);font-size:16px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
 a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
@@ -341,7 +341,7 @@ a.nb-name:hover{text-decoration:underline}
 .nav a.nav-door{min-width:0;word-break:keep-all}
 .nav .nw{white-space:nowrap}
 .nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
-  background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
   font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
 /* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
@@ -354,7 +354,7 @@ a.nb-name:hover{text-decoration:underline}
 .nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
 .nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
 .nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
-  background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
   box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
 .nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
 .nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;

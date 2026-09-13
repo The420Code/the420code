@@ -94,6 +94,7 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 - Frozen predictions and the fired switches: https://the420code.org/prereg/
 - Kill Switch Registry: https://the420code.org/Master_Kill_Switch_Registry.pdf
 - Every kill switch, one per row, filterable: https://the420code.org/killswitches/
+- Every kill switch as DATA, for machines: https://the420code.org/killswitches.json (the same parse the room is built from: 602 rows, each with the registry’s own text, status, register, origin, notebook and dates; the registry PDF is the authority where they differ)
 - Structural Glossary (edition 1.1): https://the420code.org/The_420_Code_Structural_Glossary.pdf
 - Every glossary entry, one per term, filterable: https://the420code.org/glossary/
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi

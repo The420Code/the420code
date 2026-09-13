@@ -126,7 +126,7 @@ CSS = """/* ── the header: one row, with the rooms and the languages behind 
 .nav a.nav-door{min-width:0;word-break:keep-all}
 .nav .nw{white-space:nowrap}
 .nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
-  background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
   font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
 /* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
@@ -139,7 +139,7 @@ CSS = """/* ── the header: one row, with the rooms and the languages behind 
 .nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
 .nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
 .nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
-  background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
   box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
 .nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
 .nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;

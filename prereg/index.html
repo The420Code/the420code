@@ -29,7 +29,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--g4:#4a4a4a;--g5:#4a4a4a;--g6:#1a1a1a;--gold:#8B6914;--fire:#8B1A1A;--live:#2f5233;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#4a4a4a;--g5:#4a4a4a;--g6:#1a1a1a;--gold:#8B6914;--fire:#8B1A1A;--live:#2f5233;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
 body{font-family:var(--f);font-size:18px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
 a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
@@ -134,7 +134,7 @@ table.data tr:last-child td{border-bottom:none}
 .nav a.nav-door{min-width:0;word-break:keep-all}
 .nav .nw{white-space:nowrap}
 .nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
-  background:none;border:1px solid var(--g3);border-radius:3px;font-family:inherit;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
   font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
 /* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
@@ -147,7 +147,7 @@ table.data tr:last-child td{border-bottom:none}
 .nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
 .nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
 .nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
-  background:#fff;border:1px solid var(--g3);border-top:none;border-radius:0 0 4px 4px;
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
   box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
 .nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
 .nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;
@@ -458,7 +458,7 @@ re-computed against measurement. Every row the root <span class="mono">verify.py
 re-computed on every push, and last was at the wave; the dark-sector clock is not one of them — it
 awaits a redshift-evolution measurement, and its August date is the honest one. Two further documents are <em>not</em>
 predictions and carry no row: <a href="doc/RIGIDITY.html">RIGIDITY.md</a> <span class="raw">(<a href="RIGIDITY.md">raw</a>)</span> (why the
-integer 21 cannot move — the answer to "this is numerology", summarised above
+integer 21 cannot move — the answer to “this is numerology”, summarised above
 under <a href="#numerology">“This is just integer curve-fitting”</a>, with its
 <a href="doc/RIGIDITY-NOTE-2026-09-04.html">dated note</a> <span class="raw">(<a href="RIGIDITY-NOTE-2026-09-04.md">raw</a>)</span>) and
 <a href="doc/PROTOCOL-lattice-qcd-mapping.html">PROTOCOL-lattice-qcd-mapping.md</a> <span class="raw">(<a href="PROTOCOL-lattice-qcd-mapping.md">raw</a>)</span>, a
@@ -541,7 +541,7 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
 <h4>E1 — α mislabelled</h4>
 <p><span class="mono">1/137.035999084</span> is CODATA <b>2018</b>. CODATA 2022 is <span class="mono">1/137.035999177(21)</span>. Effect on the proton prediction: <b>0.013 ppt</b> — numerically irrelevant, the label was wrong.</p>
 <h4>E2 — uniqueness of the 1836 decomposition</h4>
-<p>Two decompositions survive the three stated conditions, not one. A fourth condition (factor count non-increasing) leaves exactly one. AP30’s wording is corrected from "fewer" to <b>"no more than."</b> Condition 4 formalised 2026-08-02, after the alternative surfaced. Declared.</p>
+<p>Two decompositions survive the three stated conditions, not one. A fourth condition (factor count non-increasing) leaves exactly one. AP30’s wording is corrected from “fewer” to <b>“no more than.”</b> Condition 4 formalised 2026-08-02, after the alternative surfaced. Declared.</p>
 <h4>E3 — KS-30.4 status event</h4>
 <p>Within-family limb reopened 2026-08-02, closed same day by condition 4. Between-family limb unchanged and open. Total switch count unchanged at <b>561</b>.</p>
 <h4>E4 — the α² coefficient 16</h4>
@@ -556,7 +556,7 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
 <h4>E6c — the α² coefficient is now pinned (a strengthening)</h4>
 <p>The measurement requires 0.1826623 ± 0.000601 (0.33%). 21×16/1836 agrees at 0.57σ; <b>336 is the only product of powers of {21, 3, 4} inside 3σ.</b> The value is settled; the decomposition is what is owed.</p>
 <h4>E7 — citation</h4>
-<p>Alighanbari et al. is <b>Nature 644, 69–75 (2025)</b>. Corrects any occurrence of "Nature 625."</p>
+<p>Alighanbari et al. is <b>Nature 644, 69–75 (2025)</b>. Corrects any occurrence of “Nature 625.”</p>
 
 <hr>
 
