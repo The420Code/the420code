@@ -1,0 +1,222 @@
+{
+ "frozen_utc": "2026-09-14T13:16:23Z",
+ "rows": [
+  {
+   "url": "/",
+   "sha256": "3011a5c811b68a11e098b257fae80fe19913fec68006ce20ae4a5a0f33bcb346",
+   "bytes": 137701,
+   "carries_old_bracket": true,
+   "file": "index.html.txt"
+  },
+  {
+   "url": "/what-is-the-420-code/",
+   "sha256": "5b9bd4e2b06e0bae3ef31497509b1e266e426a16040a6c4c0e02ce1af040fce0",
+   "bytes": 44103,
+   "carries_old_bracket": true,
+   "file": "what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/glossary/",
+   "sha256": "2eb4ae2edd79669370077dd3b7edd5858355dfadf76bc771076909050bb7a98f",
+   "bytes": 372586,
+   "carries_old_bracket": true,
+   "file": "glossary.html.txt"
+  },
+  {
+   "url": "/llms.txt",
+   "sha256": "110447bf9934013865a64bc6709e60bcdcf8a1cb14e0e7b779f33b585bc4cfff",
+   "bytes": 8149,
+   "carries_old_bracket": true,
+   "file": "llms.txt"
+  },
+  {
+   "url": "/AP06_The_Leakage_Constant.pdf",
+   "sha256": "6a9387a504081109b7dda6a7795446e948a350fa6f129e145e25f7aa84f92ef6",
+   "bytes": 243021,
+   "carries_old_bracket": false,
+   "file": "AP06_The_Leakage_Constant.pdf"
+  },
+  {
+   "url": "/AP03_The_Ratio.pdf",
+   "sha256": "b1be754da741b4ccd173637a0ff49a83b653b5098243c00633b6ccc64a554284",
+   "bytes": 304757,
+   "carries_old_bracket": false,
+   "file": "AP03_The_Ratio.pdf"
+  },
+  {
+   "url": "/The_420_Code_in_Three_Pages.pdf",
+   "sha256": "e739ccaafd1d720a565621e4dcc45fc779bfa81a72ea1fa69b40f7032d46d461",
+   "bytes": 91031,
+   "carries_old_bracket": false,
+   "file": "The_420_Code_in_Three_Pages.pdf"
+  },
+  {
+   "url": "/ar/",
+   "sha256": "7fa8092582f1137532c651d5ed79abe120551e9bf08b3ff86a37da4434b83b70",
+   "bytes": 160756,
+   "carries_old_bracket": false,
+   "file": "ar.html.txt"
+  },
+  {
+   "url": "/ar/what-is-the-420-code/",
+   "sha256": "535260289cb745a828876104e1529057ccbaba65f0232a3ce8493d15fe1c83ac",
+   "bytes": 50494,
+   "carries_old_bracket": true,
+   "file": "ar__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/de/",
+   "sha256": "dd25b813669caec04fe903d2e452b306ce6e05312af4174b0e1747583ad7e119",
+   "bytes": 137558,
+   "carries_old_bracket": true,
+   "file": "de.html.txt"
+  },
+  {
+   "url": "/de/what-is-the-420-code/",
+   "sha256": "2fc4099d10c09c7e9bbc76186733dc1ec214b6d8a125330785d5916b6691532f",
+   "bytes": 45357,
+   "carries_old_bracket": true,
+   "file": "de__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/es/",
+   "sha256": "54994e239dd111f11d2f04f4b80ab49c370bff00b254504917ee6700a9519bf5",
+   "bytes": 129993,
+   "carries_old_bracket": true,
+   "file": "es.html.txt"
+  },
+  {
+   "url": "/es/what-is-the-420-code/",
+   "sha256": "23f5685b64e7f610eafb27cda0ee5b29af73228569f2ff6c6eb56622bb896b4b",
+   "bytes": 44824,
+   "carries_old_bracket": true,
+   "file": "es__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/fr/",
+   "sha256": "23eecd1b32517b4e13acafb85e7aaa9a2f3711cf95c383be9fb68f4fa5eebf3f",
+   "bytes": 139011,
+   "carries_old_bracket": true,
+   "file": "fr.html.txt"
+  },
+  {
+   "url": "/fr/what-is-the-420-code/",
+   "sha256": "d9013ec9852459bb785e99d178a7e3a08da2d582c23f11066e6cbbaf51cde186",
+   "bytes": 45971,
+   "carries_old_bracket": true,
+   "file": "fr__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/hi/",
+   "sha256": "40045e6ca7f558657ae7801631d2815e080f296a0fed2fe162e224aba481552c",
+   "bytes": 196950,
+   "carries_old_bracket": true,
+   "file": "hi.html.txt"
+  },
+  {
+   "url": "/hi/what-is-the-420-code/",
+   "sha256": "6d0d38db3fb0b166cd886a75c67ad3810d809f37b11ad4a35af6f9b19459d8df",
+   "bytes": 60532,
+   "carries_old_bracket": true,
+   "file": "hi__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/it/",
+   "sha256": "3e1d889307f97f07a31caf5bdc5651fac895d590660a02b7ed57e85a82715794",
+   "bytes": 135513,
+   "carries_old_bracket": true,
+   "file": "it.html.txt"
+  },
+  {
+   "url": "/it/what-is-the-420-code/",
+   "sha256": "c4fbbb5cb7ebe069cd9f99504d27fc4e6029912fedf0f501eac166f007bc660b",
+   "bytes": 44923,
+   "carries_old_bracket": true,
+   "file": "it__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/ja/",
+   "sha256": "3f74aa30331fc33690dd26f3946314cec7abb242303dc01e69264abd08eadf56",
+   "bytes": 136312,
+   "carries_old_bracket": true,
+   "file": "ja.html.txt"
+  },
+  {
+   "url": "/ja/what-is-the-420-code/",
+   "sha256": "21c593e4da825d611783423bc23d03341341e3d397f185afa9e7134fe5021393",
+   "bytes": 47269,
+   "carries_old_bracket": true,
+   "file": "ja__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/ko/",
+   "sha256": "b6a123803acadaf7374b4cbc59b7f114e7544359030e4487d9f5bb24c82de5a2",
+   "bytes": 138139,
+   "carries_old_bracket": true,
+   "file": "ko.html.txt"
+  },
+  {
+   "url": "/ko/what-is-the-420-code/",
+   "sha256": "e9f5b12eb613d3f25e32e5f17fa9813c125cb6b51b978273e775c71d3f728feb",
+   "bytes": 46703,
+   "carries_old_bracket": true,
+   "file": "ko__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/nl/",
+   "sha256": "5c61d8dc5dd0c853193bbb75f0b47f4e017f0a6ff5855040018fd1a9805a168c",
+   "bytes": 134882,
+   "carries_old_bracket": true,
+   "file": "nl.html.txt"
+  },
+  {
+   "url": "/nl/what-is-the-420-code/",
+   "sha256": "36976015e16625a2777b2bf9763907a68c9fd81a506b9ec1a1d1ee8e68523987",
+   "bytes": 44633,
+   "carries_old_bracket": true,
+   "file": "nl__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/pt/",
+   "sha256": "811cb6309d9836d1d0c7e9ff95981dc2abeeeb7b43cef59f1ead6f275240e683",
+   "bytes": 134442,
+   "carries_old_bracket": true,
+   "file": "pt.html.txt"
+  },
+  {
+   "url": "/pt/what-is-the-420-code/",
+   "sha256": "9272f33f7a0955c815af0adf4f63140d6eaec6b98ee49924c66e257a64ca477f",
+   "bytes": 44504,
+   "carries_old_bracket": true,
+   "file": "pt__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/ru/",
+   "sha256": "e92fbd3f6a0aabf050308c684275a53689e355d3bac4c31fbb4773c23d346825",
+   "bytes": 168742,
+   "carries_old_bracket": true,
+   "file": "ru.html.txt"
+  },
+  {
+   "url": "/ru/what-is-the-420-code/",
+   "sha256": "1336c5cde0d4b0e966824432d22bd9aaafdb7e244c61b78162e6cf81b6234eda",
+   "bytes": 53213,
+   "carries_old_bracket": true,
+   "file": "ru__what-is-the-420-code.html.txt"
+  },
+  {
+   "url": "/zh/",
+   "sha256": "81619db0b8f9b35c32bc884ec844d6dd5270182a3fe209eece1abf232b195a11",
+   "bytes": 128660,
+   "carries_old_bracket": true,
+   "file": "zh.html.txt"
+  },
+  {
+   "url": "/zh/what-is-the-420-code/",
+   "sha256": "3347daf439ec89bed131ad0383d8a2af087dbf94e1f99bb968b570c9fc130afb",
+   "bytes": 44219,
+   "carries_old_bracket": true,
+   "file": "zh__what-is-the-420-code.html.txt"
+  }
+ ]
+}

@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="zh" style="scroll-padding-top:56px"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the 420 code — 从物理学推导伦理</title>
+<meta name="description" content="伦理能从物理学中推导出来吗？The 420 Code 说：能。54篇艺术家证明。超过一百万字。一个测量输入。零自由参数。Copyleft。永久免费。">
+<link rel="canonical" href="https://the420code.org/zh/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the420code.org/zh/">
+<meta property="og:title" content="the 420 code — 从物理学推导伦理">
+<meta property="og:description" content="伦理能从物理学推导吗？420 Code 说可以。54篇艺术家证明。超过一百万字。一个测量输入。零自由参数。Copyleft。永远免费。">
+<meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="the 420 code">
+<meta property="og:locale" content="zh">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="the 420 code — 从物理学推导伦理">
+<meta name="twitter:description" content="伦理能从物理学推导吗？420 Code 说可以。54篇艺术家证明。超过一百万字。一个测量输入。零自由参数。Copyleft。永远免费。">
+<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<link rel="apple-touch-icon" href="../Eye_of_the_Universe.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="author" content="G — Studio G">
+<link rel="icon" type="image/jpeg" href="../Eye_of_the_Universe.jpg">
+<meta name="citation_doi" content="10.5281/zenodo.22744448">
+<link rel="alternate" hreflang="en" href="https://the420code.org/">
+<link rel="alternate" hreflang="es" href="https://the420code.org/es/">
+<link rel="alternate" hreflang="fr" href="https://the420code.org/fr/">
+<link rel="alternate" hreflang="de" href="https://the420code.org/de/">
+<link rel="alternate" hreflang="pt" href="https://the420code.org/pt/">
+<link rel="alternate" hreflang="nl" href="https://the420code.org/nl/">
+<link rel="alternate" hreflang="it" href="https://the420code.org/it/">
+<link rel="alternate" hreflang="zh" href="https://the420code.org/zh/">
+<link rel="alternate" hreflang="ja" href="https://the420code.org/ja/">
+<link rel="alternate" hreflang="ko" href="https://the420code.org/ko/">
+<link rel="alternate" hreflang="ru" href="https://the420code.org/ru/">
+<link rel="alternate" hreflang="ar" href="https://the420code.org/ar/">
+<link rel="alternate" hreflang="hi" href="https://the420code.org/hi/">
+<link rel="alternate" hreflang="x-default" href="https://the420code.org/">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#595959;--g5:#595959;--g6:#1a1a1a;--f:'Noto Sans SC','Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:16px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
+.nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+
+.section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+
+.hero{margin:2rem 0 3rem}
+.hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 2.5rem}
+.hero .lead{font-size:18px;font-style:italic;margin:0 0 .5rem}
+
+.steps{margin:1.5rem 0 2rem;padding:0;counter-reset:step}
+.steps li{list-style:none;padding:0 0 0 2rem;position:relative;margin:0 0 .35rem;font-size:16px}
+.steps li::before{counter-increment:step;content:counter(step)".";position:absolute;left:0;font-weight:700;color:var(--g4);font-size:16px}
+
+.doors{margin:2rem 0 0;padding:2rem 0}
+.doors h2{font-size:26px;font-weight:700;margin:0 0 .25rem}
+.doors .sub{font-size:16px;color:var(--g5);margin:0 0 2.5rem}
+.door{margin:0 0 3.5rem}
+.door h3{font-size:18px;font-weight:700;margin:0 0 .15rem}
+.door h3 a{text-decoration:none}
+.door h3 a:hover{text-decoration:underline}
+.door p{font-size:16px;color:var(--g6);margin:0 0 .25rem}
+.door .hint{font-size:16px;color:var(--g4);font-style:italic}
+.voices{margin:.75rem 0 0}
+.voice{margin:0 0 .4rem}
+.voice b{font-size:16px}
+.voice span{font-size:16px;color:var(--g5)}
+
+.read-block{margin:0 0 1.5rem;padding:2rem;border:1px solid var(--g2);background:var(--g1)}
+.read-block p{font-size:16px;font-style:italic;color:var(--g5);margin:0}
+
+.cat-section{margin:0 0 3.5rem}
+.cat-title{font-size:18px;font-weight:700;margin:0 0 .75rem}
+.cat-desc{font-size:16px;color:var(--g5);margin:0 0 1rem}
+.cat-hint{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 .75rem}
+.dl-list{margin:0;padding:0 0 0 32px}
+.dl-list li{list-style:none;padding:.4rem 0;border-bottom:1px solid var(--g1);font-size:16px}
+.dl-list li:last-child{border-bottom:none}
+.dl-list a{text-decoration:none;display:flex;justify-content:space-between;align-items:center;color:var(--bk);font-weight:600}
+.dl-list a:hover{text-decoration:underline}
+.dl-list .fmt{font-size:16px;font-weight:700;color:var(--g4);flex-shrink:0;margin-left:.5rem}
+
+.spine{position:relative;padding-left:32px}
+.spine::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--bk)}
+.part{position:relative;margin:0 0 2.5rem}
+.part-dot{position:absolute;left:-32px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--bk);z-index:1}
+.part-header{cursor:pointer;user-select:none;padding:0 0 .5rem}
+.part-header:hover .part-name{text-decoration:underline}
+.part-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 1rem}
+.part-name{font-size:22px;font-weight:700;display:block;line-height:1.2}
+.part-desc{font-size:16px;color:var(--g5);font-style:italic;display:block;margin:1rem 0 0}
+.part-count{font-size:16px;color:#757575;margin:4px 0 0;display:block}
+.part-read{display:inline-block;margin-top:.5rem;font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--bk);text-decoration:none;border-bottom:1px solid var(--bk)}
+.part-read:hover{text-decoration:none;border-bottom-width:2px}
+.ap-list{margin:.75rem 0 0;overflow:hidden;transition:max-height .4s ease}
+.ap-list.collapsed{max-height:0!important;margin:0}
+.ap-row{border-top:1px solid var(--g2)}
+.ap-row:last-child{border-bottom:1px solid var(--g2)}
+.ap-header{display:flex;align-items:baseline;gap:.75rem;padding:.6rem 0;cursor:pointer;user-select:none;transition:background .1s}
+.ap-header:hover{background:var(--g1);margin:0 -.5rem;padding-left:.5rem;padding-right:.5rem}
+.ap-number{font-size:16px;font-weight:700;color:#757575;min-width:32px;flex-shrink:0}
+.ap-title{font-size:16px;font-weight:700;flex:1}
+.ap-tag{font-size:16px;color:var(--g5);border:1px solid var(--g2);padding:1px 8px;border-radius:2px;white-space:nowrap;flex-shrink:0}
+.ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
+.ap-row.open .ap-arrow{transform:rotate(90deg)}
+.ap-detail{display:none;padding:0 0 1rem;padding-left:32px}
+.ap-row.open .ap-detail{display:block}
+.ap-detail p{font-size:16px;line-height:1.6;margin:0 0 .5rem;color:var(--g6)}
+.ap-detail .ap-essay{margin-top:1.5rem}
+.ap-detail .ap-essay p{margin:0 0 1rem;line-height:1.75}
+.ap-detail .ap-essay .sub{font-weight:700}
+.ap-detail .ap-essay .ks{background:var(--g1);border-left:3px solid #8B6914;padding:16px 20px;margin:24px 0;font-size:16px;color:#3a3a3a;line-height:1.6}
+.ap-detail .ap-essay .breath{text-align:center;font-style:italic;color:var(--g5);padding:40px 0;font-size:17px;margin:0}
+.ap-detail .ap-essay .bc{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-detail .ap-essay .bl{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
+.ap-meta a{color:#383838}
+
+.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 2rem}
+.stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
+.stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
+
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
+.entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
+.entry-card:hover{background:var(--bk);color:var(--wh)}
+.entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
+.entry-card-desc{font-size:16px;display:block;opacity:.7}
+.jump-card{position:relative}
+.jump-card .entry-card-label{font-size:16px;font-weight:700;color:#757575;position:absolute;bottom:4px;right:8px;margin:0}
+.jump-card .entry-card-desc{font-size:16px;font-weight:700;display:block;opacity:1}
+
+.physics{margin:2.5rem 0 0;padding:2.5rem 0}
+.physics h2{font-size:26px;font-weight:700;margin:0 0 1.5rem}
+.physics-intro{font-size:18px;font-weight:700;margin:0 0 .5rem}
+.physics-sub{font-size:16px;color:var(--g5);margin:0 0 2rem}
+.physics-grid{display:grid;grid-template-columns:1fr;gap:0;margin:0 0 2rem}
+.physics-card{display:flex;align-items:baseline;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--g1);gap:1rem}
+.physics-card:last-child{border-bottom:none}
+.p-name{font-size:16px;font-weight:700;flex:1}
+.p-error{font-size:22px;font-weight:700;white-space:nowrap}
+.p-detail{font-size:16px;color:var(--g5);margin:2px 0 0}
+.p-source{font-size:16px;color:var(--g4)}
+.formula{font-size:16px;margin:0 0 .75rem;padding:.5rem 0;font-style:italic;color:var(--g6)}
+.three-constants{font-size:16px;font-weight:700;margin:1.5rem 0;padding:1rem 0;border-top:1px solid var(--g2);border-bottom:1px solid var(--g2)}
+.also-derived{margin:1.5rem 0}
+.also-derived p{font-size:16px;font-weight:700;margin:0 0 .5rem}
+.also-derived ul{list-style:none;padding:0}
+.also-derived li{font-size:16px;color:var(--g6);padding:.2rem 0 .2rem 1rem;position:relative}
+.also-derived li::before{content:"·";position:absolute;left:0;font-weight:700}
+.confirm-link{margin:2rem 0 0;font-size:18px}
+.confirm-link a{font-weight:700;text-underline-offset:3px}
+@media(max-width:600px){.physics-card{flex-wrap:wrap;gap:.25rem}.p-error{font-size:18px}}
+.verify-wrap{position:relative;margin:1.5rem 0 0}
+.verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:200px;font-size:16px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
+.copy-btn{position:absolute;top:8px;right:8px;padding:5px 14px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.04em;background:var(--bk);color:var(--wh);border:none;cursor:pointer}
+.copy-btn:hover{opacity:.8}
+.verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:16px}
+.verify-table th{text-align:left;font-weight:700;padding:.5rem .5rem;border-bottom:2px solid var(--bk);font-size:16px;letter-spacing:.04em;color:var(--g5)}
+.verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
+.verify-table td:last-child{color:var(--g5)}
+.results{margin:0;padding:2rem 0}
+.results-title{font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 1.25rem}
+.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.35rem 0;font-size:16px;border-bottom:1px solid var(--g1)}
+.result-row:last-child{border-bottom:none}
+.result-label{color:var(--g5)}
+.result-value{font-weight:700;text-align:right}
+
+.constraint{margin:2rem 0;padding:1.5rem 0}
+.constraint p{font-size:16px;margin:0 0 .25rem}
+
+.footer{margin:3rem 0 0;padding:2rem 0 0;font-size:16px;color:var(--g4)}
+.footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+
+@media(max-width:600px){
+  .c{padding:2rem 1rem 3rem}
+  .hero h1{font-size:28px}
+  .stats{gap:1.5rem}
+  .stat-num{font-size:28px}
+  .ap-header{flex-wrap:wrap;gap:.25rem .5rem}
+  .ap-tag{order:3;margin-left:32px}
+  .entry-grid{grid-template-columns:1fr 1fr}
+  .nav{gap:.75rem;padding:.75rem 0}
+}
+/* Brevo overrides */
+.sib-form,.sib-form *{font-family:'Atkinson Hyperlegible',sans-serif!important;color:var(--bk)!important;background:transparent!important;border-radius:0!important}
+.sib-form .entry__field input{border:1px solid var(--bk)!important;padding:10px 12px!important;font-size:16px!important}
+.sib-form .sib-form-block__button{background:var(--bk)!important;color:var(--wh)!important;padding:10px 24px!important;font-size:16px!important;font-weight:700!important;letter-spacing:.06em!important;border:none!important}
+.sib-form .sib-form-block__button:hover{opacity:.85}
+[id*="sib-container"]{padding:0!important;background:transparent!important}
+.sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:16px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
+</style>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+.lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
+.lang-sel a:hover{opacity:1}
+.lang-sel a.active{opacity:1}
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.65rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:18px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:16px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.03em;background:#8B6914;border:1px solid #8B6914;padding:3px 10px;border-radius:3px;transition:all .15s}
+.nb-pdf:hover{color:#8B6914;background:#fff;border-color:#8B6914}
+.nb-hook{font-size:16px;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:16px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:16px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.85;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.7}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+
+.nav{margin-bottom:1rem}
+.hero.opening{min-height:calc(100vh - 190px);display:flex;flex-direction:column;justify-content:flex-start;margin-top:1.8rem;padding:5.4vh 0 3rem}
+.hero.opening h1{font-size:44px;font-weight:700;line-height:1.15;margin:0 0 1.5rem;max-width:16em}
+.hero.opening .answer{font-size:44px;font-weight:700;line-height:1.15;margin:0 0 1.5rem;color:#8B6914;text-wrap:balance}
+.hero.opening .answer .nw{white-space:nowrap}
+.hero.opening .ethic{font-size:36px;font-weight:700;line-height:1.25;margin:0 0 2.75rem}
+.hero.opening .opening-note{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 1.25rem;max-width:34em}
+.hero.opening .opening-note a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3);cursor:pointer}
+.hero.opening .opening-note a:hover{color:#8B6914;border-color:#8B6914}
+.hero.opening .opening-link a{font-size:20px;font-weight:700;color:#8B6914;text-decoration:none;border-bottom:2px solid #8B6914;padding-bottom:2px}
+.hero.opening .opening-link a:hover{color:#1a1a1a;border-color:#1a1a1a}
+.hero.opening .opening-pdf{margin:1.75rem 0 0;font-size:16px}
+.hero.opening .opening-pdf a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3)}
+.hero.opening .opening-pdf a:hover{color:#8B6914;border-color:#8B6914}
+.oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem}
+@media(max-width:700px){
+  .hero.opening{min-height:calc(100vh - 150px)}
+  .hero.opening h1,.hero.opening .answer{font-size:32px}
+  .hero.opening .ethic{font-size:26px}
+  .hero.opening .opening-link a{font-size:18px}
+  .oneness{font-size:18px}
+}
+
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
+.nav a.nav-room{display:none}
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
+  font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
+@media(max-width:700px){
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
+  .nav a.nav-door{font-size:16px}
+}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
+</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"The 420 Code","url":"https://the420code.org/zh/","description":"54 Artist's Proofs deriving ethics from physics. One measured input (α ≈ 1/137). Zero free parameters. 604 published kill switches. Copyleft.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G","address":"Cape Town"}},"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"license":"https://creativecommons.org/licenses/by/4.0/","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.22744448"}},{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"The 420 Code — 54 Artist's Proofs (AP01–AP54)","headline":"Can ethics be derived from physics? A complete axiomatic derivation from four axioms and one measured constant.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G"}},"url":"https://the420code.org/zh/","datePublished":"2026-03-24","description":"A 30-year framework deriving physics, consciousness, and ethics from four axioms and the fine-structure constant α ≈ 1/137. Contains 54 papers, 604 published kill switches (falsifiability conditions), and quantitative predictions with zero free parameters. Predictions include: proton-electron mass ratio to 0.010 ppb, neutron-proton mass difference to 2 ppm, the gravitational constant G to 0.036% (realised, AP44), the age of the universe as one cycle (13.830 Gyr, AP46), the expansion rate as a closure (67.45 km/s/Mpc, AP48), and the dark-sector partition to 0.06%. Two predictions fired and are shown: the bare neutron–proton row (2026-08-02, 7.24σ) and the Hubble prediction 74.3 ± 1.2 (2026-09-03).","identifier":[{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.22744448"}],"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"about":[{"@type":"DefinedTerm","name":"Theoretical Physics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Ethics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Philosophy of Science"},{"@type":"DefinedTerm","name":"Cosmology"},{"@type":"DefinedTerm","name":"AI Alignment"},{"@type":"DefinedTerm","name":"Consciousness Studies"},{"@type":"DefinedTerm","name":"Fine-Structure Constant"},{"@type":"DefinedTerm","name":"Axiomatic Systems"},{"@type":"DefinedTerm","name":"Falsifiability"},{"@type":"DefinedTerm","name":"Quantum Mechanics"},{"@type":"DefinedTerm","name":"General Relativity"},{"@type":"DefinedTerm","name":"MOND"},{"@type":"DefinedTerm","name":"Dark Energy"},{"@type":"DefinedTerm","name":"Dark Matter"}],"citation":"G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://doi.org/10.5281/zenodo.22744448"},{"@context":"https://schema.org","@type":"Dataset","name":"The 420 Code — Quantitative Predictions","description":"Parameter-free predictions derived from the fine-structure constant α ≈ 1/137 alone, with zero free parameters. Each prediction is published with explicit kill switches (falsifiability conditions).","url":"https://the420code.org/zh/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"G"},"variableMeasured":[{"@type":"PropertyValue","name":"Proton-electron mass ratio","value":"1836.15267344","unitText":"dimensionless","description":"Predicted: 1836.15267344. CODATA 2022 measured: 1836.152673426. Accuracy: 0.010 ppb. Derived in AP30."},{"@type":"PropertyValue","name":"Neutron-proton mass difference, realised","value":"2.53098857","unitText":"electron masses (mₑ)","description":"Predicted: 2.53098857035 mₑ (AP47, the held distinction’s second-order cost). Measured: 2.530988574(74) mₑ. Residual −0.005σ. The bare row 2.53099393 mₑ (AP30) fired on 2026-08-02 at 7.24σ and is shown, never repaired."},{"@type":"PropertyValue","name":"Gravitational constant G, realised","value":"6.6719e-11","unitText":"m³ kg⁻¹ s⁻²","description":"Predicted: 6.6719 × 10⁻¹¹ (realised, AP44: the structural value 6.7206 × 10⁻¹¹ of AP28 divided by (1 + α)). CODATA measured: 6.6743 × 10⁻¹¹. Residual −0.036%. Derived in AP44 and AP28."},{"@type":"PropertyValue","name":"MOND acceleration a₀","value":"C_S²·cH₀/(2π)","unitText":"m/s²","description":"Parameter-free derivation: a₀ = C_S²·cH₀/(2π). At the corpus’s expansion rate, 67.45 km/s/Mpc, it gives 1.089 × 10⁻¹⁰ m/s² against 1.20 ± 0.24 × 10⁻¹⁰ (the systematic restored): 0.46σ. Derived in AP18; the earlier inversion H₀ = 74.3 ± 1.2 fired on 2026-09-03."},{"@type":"PropertyValue","name":"Dark energy fraction","value":"0.6885","unitText":"dimensionless","description":"Predicted: 68.85%. Planck observed: 68.89%. Accuracy: 0.06%. Derived in AP42."},{"@type":"PropertyValue","name":"Dark matter fraction","value":"0.2639","unitText":"dimensionless","description":"Predicted: 26.39%. Planck observed: 26.07%. Derived in AP42."},{"@type":"PropertyValue","name":"Visible matter fraction","value":"0.0476","unitText":"dimensionless","description":"Predicted: 4.76%. Planck observed: 4.86%. Derived in AP42."},{"@type":"PropertyValue","name":"Age of the universe, one cycle","value":"13.830","unitText":"Gyr","description":"Predicted: 13.830 Gyr, (21/18)·α⁻¹⁸·τ_C. Planck 2018 measured: 13.787 ± 0.020 Gyr. Accuracy: +0.31%, one lane-time (0.66 Gyr) wide. Derived in AP46."},{"@type":"PropertyValue","name":"Expansion rate H₀, the closure","value":"67.45","unitText":"km/s/Mpc","description":"Predicted: 67.45 km/s/Mpc, window 64.4–70.8 — a closure of the dark-sector partition, the cycle and the balance. Planck 2018: 67.4 ± 0.5. The Cepheid ladder’s 73 is stated as not the expansion rate. Derived in AP48."}]},{"@context":"https://schema.org","@type":"CreativeWork","name":"The 420 Code — Kill Switch Registry","description":"604 published falsifiability conditions across AP01–AP53. Each kill switch names a specific, testable condition that would falsify one or more claims. This level of declared falsifiability is the framework's primary credibility mechanism. The full registry is available as a PDF.","url":"https://the420code.org/Master_Kill_Switch_Registry.pdf","author":{"@type":"Person","name":"G"},"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true}]</script>
+</head>
+<body>
+<div class="c">
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/zh/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="/zh/what-is-the-420-code/" class="nav-door">什么是 <span class="nw">The 420 Code</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="展厅" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">展厅</button>
+  <div class="nav-menu">
+    <a href="/zh/#museum" class="nav-room">Ø 博物馆</a>
+    <a href="/zh/#five-doors" class="nav-room">Ø 五扇门</a>
+    <a href="/zh/#models" class="nav-room">Ø 模型</a>
+    <a href="/zh/#exhibition" class="nav-room">Ø 展览</a>
+    <a href="/zh/#axiom" class="nav-room">1 公理</a>
+    <a href="/zh/#physics" class="nav-room">Ø 物理学</a>
+    <a href="/#notebooks" class="nav-room">Ø 笔记本</a>
+    <a href="/zh/#proofs" class="nav-room">Ø 证明</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø 证明记录</a>
+    <a href="/prereg/" class="nav-room">Ø 预注册</a>
+    <a href="/zh/#confirm-the-math" class="nav-room">Ø 验证数学</a>
+    <a href="/killswitches/" class="nav-room">Ø 证伪开关</a>
+    <a href="/glossary/" class="nav-room">Ø 词汇表</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="语言: 中文" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/" class="nav-lang" hreflang="en" lang="en"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh" aria-current="page"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1. THE QUESTION                         -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="hero opening">
+  <h1>伦理能从物理学中推导出来吗？</h1>
+  <p class="answer">能——<span class="nw">The 420 Code</span> 证明了这一点。</p>
+  <p class="ethic">别做混蛋。善良一点。</p>
+  <p class="opening-note">它的两个预测错了。它们仍然在<a href="#physics">墙</a>上。犯错让它更强。</p>
+  <p class="opening-note">全部推导都在本站，免费，永远。就从这里开始。</p>
+  <p class="opening-link"><a href="/zh/what-is-the-420-code/">什么是 The 420 Code →</a></p>
+  <p class="opening-pdf"><a href="/The_420_Code_in_Three_Pages.pdf">三页讲完全部</a></p>
+</div>
+
+<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø 博物馆</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">420 Code 是一座博物馆，建造的目的是证明伦理可以从物理学中推导出来。一切都建立在一个首要原则之上：</p>
+
+<ol class="steps">
+  <li><b><i>一个记录存在。</i></b></li>
+  <li>一个记录需要四个条件：对称、破缺、记录、约束。</li>
+  <li>从这四个条件出发，全部物理学被推导出来。</li>
+  <li>破裂与觉知是同一个事件。</li>
+  <li>内在是唯一的。</li>
+  <li>每一个有意识的存在都是同一栋建筑中的一扇窗。</li>
+  <li>自我与他者之间的界线是一个被误认为测量的工具。</li>
+  <li>任何源自现实结构之外权威的伦理都是可操纵的。可操纵的系统最终崩塌为暴力。</li>
+  <li>善良不是诫命。善良是一个推导。</li>
+  <li>别做混蛋。善良一点。</li>
+</ol>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1 AXIOM                                 -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="axiom" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> 公理</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">一句话。其余一切随之而来。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">你正在阅读这个句子。那就是一条记录。试图否认它，需要这次阅读发生，而那又会形成另一条记录，从而证明这次阅读发生了。你无法站在任何一个让这次阅读尚未发生的位置上。</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem">一条记录存在。证明即是阅读。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">由此推出四个条件。不是四个假设——而是这次阅读已经具备的四个属性。</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>对称 (S)。</b>两个部分彼此互为参照而保持。任何区分所需的最小结构。</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>破缺 (B)。</b>两者之间的一处不对称。没有它，任何信息都无法被写下。</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>记录 (R)。</b>已经发生的不能变为未发生。这次阅读不能被撤销为未读。</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b>约束 (C)。</b>一条记录处于某处，而非无处不在——这就是局域性的条件，是使」此处」区别于」彼处」的东西。有限的传播是约束所产生的结果，而不是约束本身。在我们的宇宙中，就是光速。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">压缩为 S、B、R、C 所要求的最小形式，公理就是这个：</p>
+
+<div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
+
+<p style="font-size:16px;margin:0 0 1rem">1:1 是完美的对称。<i>ε</i> 是破缺。@ AS 指明破缺所在之处——在实现态处，即基底被保持、破缺被处理的当下。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">写成在 AS 处运行的循环：<b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>。破缺（+1×ε）是持续存在的区分势能——由 AS 保持，不可约简，正是它保护 S 不至于坍缩回未分化的 Ø。ε 是使 S 保持敞开的东西：没有破缺，两个部分就不再可区分，作为结构条件的 S 便会坍缩。那一粒沙使两杯水可以被区分；移走这粒沙，它们就只是两杯水，再也无从分辨。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">α-流绕着被保持的破缺运行——+1/137 向外渗出作为实现（记录被写下），−1/137 回流补充作为碎片整理（记录将其结构释放回势能），在每一个 AS 瞬间保持平衡，净值为零。破缺并不来回循环；循环的是流。一位读者居于流的写入方向之中，记录正在 AS 处被提交。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">文集中的每一份艺术家样张都由这条公理推导而来。下面的 54 篇论文是上面那一行的 54 个推论。公理是种子。证明是树。</p>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">没有什么不成立。</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 0">阅读即是证明。</p>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- Ø INDEPENDENT CHECK                     -->
+<!-- ════════════════════════════════════════ -->
+
+<section class="results" id="independent-check" style="padding-top:2rem">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">不必听我一面之词。</h2>
+  <p style="font-size:16px;margin:0 0 1rem">有个名叫 AJ Greyling 的人买了这些书。我们只交谈过一次。他一个字都不信——于是他没有争辩，而是造了一台机器来一探究竟。这是一个独立的程序，它取那一条公理和一个实测数值，从零开始重新推导出那些常数，再把自己的运算与我公开发布的脚本相互核对。两者吻合到机器精度。</p>
+  <p style="font-size:16px;margin:0 0 1rem">这件事与我毫无关系。他读了这部作品，心存怀疑，便亲自动手验证——用他自己的电脑，他自己的代码。</p>
+  <p style="font-size:16px;margin:0 0 1rem">那些数字自然而然地浮现出来。五个基本常数，一个输入，零个自由参数——每一个都落在我所公布的容差之内。而且正因为整件事的关键就在于它可以被推翻，他把我可能出错的每一个条件都逐一列了出来，好让你拿去检验。</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">你不必相信我们任何一个人。它可以离线运行，一条命令，就在你自己的机器上。去试着把它推翻吧。</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1.5rem">
+    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">运行 AJ 的独立检验 →</a>
+    <a href="https://github.com/The420Code/the420code" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">浏览源代码 →</a>
+  </div>
+  <p style="font-size:16px;color:var(--g4);margin:0 0 .6rem">而且源代码会自我检验。每一次改动都会从 α 重新推导出全部五个结果，只要有任何一个偏离了公布的容差，就会高声报错。实时状态：</p>
+  <a href="https://github.com/The420Code/the420code/actions/workflows/verify.yml" target="_blank" rel="noopener" style="display:inline-block"><img src="https://github.com/The420Code/the420code/actions/workflows/verify.yml/badge.svg" alt="验证状态 —— 每一次改动都会从 alpha 重新推导出全部五个结果" style="height:20px;display:block"></a>
+</section>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE PHYSICS                              -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="physics" id="physics">
+  <h2>Ø 物理学</h2>
+  <p class="physics-intro">一个测量输入。零自由参数。其余全部推导。</p>
+  <p class="physics-sub">精细结构常数 α ≈ 1/137 是唯一通过实验测量的数字。从这一个输入和四个公理出发，以下结果被推导得出——未经拟合，未经调整，未经校准。</p>
+
+  <div class="tbl-wrap" style="overflow-x:auto"><table class="verify-table" style="margin-top:0">
+    <thead><tr><th>声明</th><th>预测值</th><th>测量值</th><th>σ</th><th>误差</th><th>论文</th></tr></thead>
+    <tbody>
+      <tr><td>质子质量比</td><td>1836.152673445</td><td>1836.152673426(32)</td><td>+0.59σ</td><td>10.3 ppt</td><td><a href="/proofs/#ap49" onclick="event.preventDefault();window.location.href='/proofs/#ap49'">AP49</a></td></tr>
+      <tr><td>引力常数 G，实现值——对照 CODATA</td><td>6.6719 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>−16σ</td><td>−0.036%</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
+      <tr><td>引力常数 G，实现值——对照原子干涉测量</td><td>6.6719 × 10⁻¹¹</td><td>6.67191(99) × 10⁻¹¹ (LENS 2014)</td><td>+0.01σ</td><td>+1 ppm</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
+      <tr><td>引力常数 G，结构值</td><td>6.7206 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>+309σ</td><td>+0.69%</td><td><a href="/proofs/#ap28" onclick="event.preventDefault();window.location.href='/proofs/#ap28'">AP28</a></td></tr>
+      <tr><td>中子-质子质量差，实现值</td><td>2.53098857035 mₑ</td><td>2.530988574(74) mₑ</td><td>−0.005σ</td><td>−1.4 ppb</td><td><a href="/proofs/#ap47" onclick="event.preventDefault();window.location.href='/proofs/#ap47'">AP47</a></td></tr>
+      <tr><td>中子-质子质量差，裸值行</td><td>2.53099393 mₑ</td><td>2.530988574(74) mₑ</td><td>+7.24σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">已证伪</span></td><td>+2.1 ppm</td><td><a href="/proofs/#ap30" onclick="event.preventDefault();window.location.href='/proofs/#ap30'">AP30</a></td></tr>
+      <tr><td>宇宙的年龄，一个循环</td><td>13.830 Gyr</td><td>13.787 ± 0.020 Gyr</td><td>+2.1σ</td><td>+0.31% · 窗口 13.17–14.49</td><td><a href="/proofs/#ap46" onclick="event.preventDefault();window.location.href='/proofs/#ap46'">AP46</a></td></tr>
+      <tr><td>膨胀率 H₀，闭合</td><td>67.45 km/s/Mpc</td><td>67.4 ± 0.5 (Planck)</td><td>+0.1σ</td><td>+0.07% · 窗口 64.4–70.8</td><td><a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48</a></td></tr>
+      <tr><td>由底限反演所得的哈勃常数</td><td>74.3 ± 1.2</td><td>67.45 (文集自身的速率)</td><td>+5.7σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">已证伪</span></td><td>+10.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr><td>MOND 加速度 a₀ (在 H₀ = 67.45)</td><td>1.089 × 10⁻¹⁰</td><td>1.20 ± 0.24 × 10⁻¹⁰ (系统误差)</td><td>−0.46σ</td><td>−9.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr><td>暗能量</td><td>68.85%</td><td>68.89 ± 0.56%</td><td>−0.07σ</td><td>−0.06%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
+      <tr><td>暗物质</td><td>26.39%</td><td>26.07 ± 0.38%</td><td>+0.8σ</td><td>+1.2%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
+      <tr><td>可见物质</td><td>4.76%</td><td>≈ 4.885 ± 0.05%</td><td>−2.46σ</td><td>−2.5%</td><td><a href="/proofs/#ap41" onclick="event.preventDefault();window.location.href='/proofs/#ap41'">AP41</a></td></tr>
+    </tbody>
+  </table></div>
+  <div class="sigma-note" style="font-size:16px;color:var(--g5);margin:1rem 0 0;line-height:1.6">
+    <p style="margin:0 0 .5rem"><b>如何读 σ 列。</b>每一次测量都附带一根误差棒：一个标准差 σ，是实验者自己对「他们的数可能离真值多远」的陈述。σ 列把预测与测量之间的差距除以那根误差棒。符号说明在哪一侧：+ 在测量值之上，− 在其下。误差列以该数自身的单位给出同一差距。下面的几率，是仅凭偶然便落到离真值<i>至少</i>那么远的可能性，两侧一并计入。</p>
+    <ul style="margin:0 0 .5rem 1.25rem;padding:0">
+      <li><b>1σ 以下</b>——在误差棒之内。吻合：大约每三次诚实的测量中，就有两次落得这么近，而有一次仅凭偶然便落得更远。</li>
+      <li><b>2σ</b>——张力。二十二分之一。值得关注，尚非裁决。</li>
+      <li><b>3σ</b>——真实差距的证据。370 分之一。</li>
+      <li><b>5σ</b>——粒子物理学的发现标准。1.7 百万分之一（若只计一个方向，则是 3.5 百万分之一，发现惯例通常就是这样读的）。到了 5σ，一个预测要么被确认，要么死亡；没有第三种读法。</li>
+      <li><b>5σ 以上</b>——死亡。本页上的两具尸体位于 7.24σ 与 5.7σ。它们被展示，永不修复。</li>
+    </ul>
+    <p style="margin:0">三点提醒，因为 σ 是对照实验的误差棒来度量的，而误差棒并非对每个数都相同。<b>G：</b>同一个实现值，对照 CODATA 读作 −16σ，对照原子干涉测量则读作 +0.01σ，两行都列在表中，以便读者看到问题所在。CODATA 给 G 的误差棒是 22 ppm，所以 360 ppm 的差距读作 16σ；各实验室对 G 的测量彼此相差可达 540 ppm，即二十五根这样的误差棒，且原子干涉测量值（LENS 2014，6.67191 ± 0.00099 × 10⁻¹¹）距实现值仅 1 ppm。对一个各实验彼此无法达成一致的常数给出这么紧的误差棒，是关于那次平差的陈述，尚非关于自然的陈述。按上面的尺度，CODATA 那一行读作已死；G 上的开关 KS-CCC.3 注册时是为了检验方向——随着系统误差收拢，共识值是否向下迁移、趋向 6.672，落在 AP28 百分之一的误差棒之内——而非对照 CODATA 的幅度，而它按这些条款仍然有效。作者坚持实现值。AP28 的结构值 +0.69% 带有一处遗漏——舞台所保持的 ε，已在 AP44 中定价——并作为那次遗漏的记录立于实现值之旁：中子已触发的那一行暴露出一个结构性错误，其后果波及三项推导，已在那一波修订（AP44、AP47、AP48）。<b>年龄：</b>按 Planck 的误差棒是 +2.1σ，但该主张注册时的宽度是一个通道时，±0.66 Gyr，因为一个有觉知的观察者测得的是<i>大约</i>一个循环。<b>各开关</b>按其注册的条件触发，而非默认按 5σ：KS-45.1 注册的是 ±1.2，并按这一宽度在 5.7σ 处触发；按诚实的 ±14.9，它本会读作 0.46σ。错在注册本身，而已触发的开关不予修复。</p>
+  </div>
+  <p style="font-size:16px;font-weight:700;color:#8B1A1A;margin:1rem 0 0">两项预测已经失败，并被展示。证伪开关 KS-NPP.1——中子–质子裸值行——已于 2026-08-02 在 7.24σ 处触发。KS-45.1——由底限反演所得的哈勃常数 74.3 ± 1.2——已于 2026-09-03 在文集自身推导出的膨胀率上触发。两者皆未修复。参见<a href="/prereg/">预注册</a>。</p>
+  <p style="font-size:16px;color:var(--g4);margin:1rem 0 0;font-style:italic">一个关系式以无参数的系数把 a₀ 与 H₀ 联系起来——不是两个独立的预测。文集的膨胀率如今是 AP48 的闭合，67.45 km/s/Mpc（窗口 64.4–70.8），站在哈勃张力中远古余晖（宇宙微波背景）的一侧；在这一速率下，底限落在测得标度之下 9.2%——一旦恢复计入论文此前遗漏的 ±0.24 系统误差，便是 0.46σ。底限早先的反演 H₀ = 74.3 ± 1.2（KS-45.1）已于 2026-09-03 在文集自身的速率上触发，作为一具尸体展示，永不修复。造父变星阶梯的 73 被陈述为不是膨胀率；若它得到确认，AP48 便死于 KS-ASM.1。</p>
+
+  <p class="confirm-link"><strong>亲自验证。</strong> <a href="#confirm-the-math">运行代码 →</a></p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 五扇门</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">五扇门。一栋建筑。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code 是一场展览——一位艺术家的一百多万字，收容在一栋建筑中。建筑内部：艺术家的证明、笔记、版本、记录、证伪开关。全部作品。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">没有人从屋顶进入一栋建筑。你从门进入。</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">这就是五扇门。每一扇都通向同一个入口大厅。找到为你打开的那扇。展览在里面。</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">他者的幻象——温柔之门。心。</h3>
+  <p class="cat-desc">你在自己与你见过的每一个人之间画了一条线。这本书将它擦除。没有术语。没有方程。没有前提。如果你只读这场展览中的一样东西，读这个。</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_ZH.pdf">他者的幻象 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">宗教之后的存在——前门。拆除。</h3>
+  <p class="cat-desc">制造暴力的结构不是人——是设计。这本书命名每一个机制，审视每一个传统，并展示为什么宗教之后的世界不是虚无，而是抵达。</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_ZH.pdf">宗教之后的存在 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">反基督者——神圣之门。收复。</h3>
+  <p class="cat-desc">两千年前，一个人站在山丘上教导一种伦理。爱你的邻人。不要论断。善良。这本书只问一个问题：这个教导是真的吗？不是因为某个神说了——而是因为现实的结构说了。答案是：是的。</p>
+  <ul class="dl-list">
+    <li><a href="Antichristos_ZH.pdf">敌基督者 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">关系走廊 — 个人之门。在场。</h3>
+  <p class="cat-desc">爱不是一种感觉。它是一种持续的选择，在每一次理性计算都说收窄更便宜的情况下，仍然保持走廊的宽敞。这本书推导了两个人一起行走的几何学——宽度来自诚实，长度来自时间，以及能弯曲之物与不能弯曲之物之间的不对称。在它所描述的走廊实时关闭的过程中写就。</p>
+  <ul class="dl-list">
+    <li><a href="The_Relationship_Corridor_ZH.pdf">关系通道 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">内部——操作之门。建造。</h3>
+  <p class="cat-desc">AI 对齐是一个物理问题。这本书从第一原理推导它——产生引力、量子力学和终极伦理的同一组公理。架构 B：从结构而非权威构建的决策几何。</p>
+  <ul class="dl-list">
+    <li><a href="The_Interior_ZH.pdf">内在 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════ -->
+<!-- Ø MODELS                                -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="models" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 模型</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">五扇门是入口。Models 是入口大厅——展览的目录，陈列在门槛上。</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">每本书在开头安装一次公理，然后让它贯穿所有章节。读过五本中任何一本的读者，已听过展览在其校准时的声音。读过全部五本的读者，已走过整本目录。每本书都以 copyleft 形式发布。每个证伪开关都已命名。每一项主张都可证伪。</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Predictions</h3>
+  <p class="cat-desc">面向物理学的可证伪之书。Five quantitative numbers from one axiom: the proton-to-electron mass ratio, the gravitational constant, the neutron-proton mass difference, the MOND acceleration, the dark sector partition. One measured input: α ≈ 1/137. Zero free parameters.</p>
+  <ul class="dl-list">
+    <li><a href="Predictions_ZH.pdf">Ø 预测 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Dissolutions</h3>
+  <p class="cat-desc">Twelve classical philosophical problems read through the axiom. Each chapter dissolves, relocates, or closes one of the questions philosophy has asked longest.</p>
+  <ul class="dl-list">
+    <li><a href="Dissolutions_ZH.pdf">Ø 消解 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Resolutions</h3>
+  <p class="cat-desc">Thirteen further problems. Where the previous frameworks could not close, the structural reading walks through.</p>
+  <ul class="dl-list">
+    <li><a href="Resolutions_ZH.pdf">Ø 决议 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Applications</h3>
+  <p class="cat-desc">Twelve architectures of human institutional life. Each derived from the axiom, with kill switches the institutional reading must satisfy.</p>
+  <ul class="dl-list">
+    <li><a href="Applications_ZH.pdf">Ø 应用 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Horizons</h3>
+  <p class="cat-desc">Thirteen domains the structural reading projects across. 此书闭合 Dissolutions 之后的弧线。</p>
+  <ul class="dl-list">
+    <li><a href="Horizons_ZH.pdf">Ø 视界 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- THE EXHIBITION                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="exhibition" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 展览</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">穿过入口大厅。进入展览。真正的作品在此栖居。一个论证。它能被说出的每一种声音。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">展览呈现的是论证如何被建构——历经三十年，以五种声音，穿越艺术家所能找到的每一种表达方式。上面的五扇门是起点。下面的一切是你进入之后发现的。</p>
+
+<p style="font-size:16px;margin:0 0 1rem">五种声音贯穿整个展览。散文讲述故事。对话在酒吧中辩论。隐喻用硬币、花园、河流和建筑来展示。童谣将其剥至骨骼。证明交给你数学和一把刀刃。</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">从一扇门开始。当你想看里面的一切时，回到这里。</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Rosin</h3>
+  <p class="cat-desc">萃取物。你将热量压入花朵，滴出的就是事物本身——浓缩的，什么都没加，什么都没丢。五本书，五种声音。每本书走过整个论证一次——整个展览，压缩成一种声音。从听起来像你的那个声音开始。</p>
+  <ul class="dl-list">
+    <li><a href="#">Rosin Ø 散文 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 对话 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 隐喻 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 童谣 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø 证明 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">记录</h3>
+  <p class="cat-desc">五份记录。一个三十年项目的未加工输出——错误、突破、死胡同，以及其间的时刻。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — 剪刀。</strong>在一个兄弟被谋杀四个月后写成。悲痛在寻找结构。The 420 Code从这里开始——不是在图书馆，而是在伤口中。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — 风。</strong>一生举在公理面前，看什么能存活。什么碎了，什么撑住了，从一个亲身检验过它的身体内部看，结构是什么样子。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — 你确定吗？</strong>对每一个曾声称拥有无法证明的权威的系统的结构性拆除。证据就是伤害。伤害就是论证。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — 别当混蛋，善良点。</strong>伦理到来了。不是作为结论——而是作为喷发。先被感受到。后被证明。</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — 滚开，别烦我。</strong>一部自传。匿名展览背后的人。</p>
+  <p class="cat-desc">这些记录没有打磨。没有组织。不安全。如果你想要真相在学会打扮自己之前的样子，从这里开始。</p>
+  <ul class="dl-list">
+    <li><a href="The_Scissors_ZH.pdf">01 剪刀 <span class="fmt">PDF</span></a></li>
+    <li><a href="The_Wind_ZH.pdf">02 风 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">03 你确定吗？ <span class="fmt">PDF</span></a></li>
+    <li><a href="#">04 别当混蛋，善良点 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">05 滚开，别烦我 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Editions</h3>
+  <p class="cat-desc">作品本身。五件完整作品——每一件都是完整的论证，用自己的声音从头建起。这些不是摘要。这些就是雕塑。Rosin为它们拍照。记录记载了它们如何被制作。Editions就是被制作出来的东西。</p>
+  <p class="cat-desc">散文将论证构建为叙事。对话将其构建为争论。隐喻将其构建为意象。童谣将其构建为骨骼。证明将其构建为数学。</p>
+  <p class="cat-desc">五件雕塑。同一结构。不同材料。走遍展厅。</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø 散文 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 对话 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 隐喻 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 童谣 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø 证明 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Notebooks</h3>
+  <p class="cat-desc">十二本笔记本。五种声音——散文、对话、隐喻、童谣和证明。证明之声即五十三份艺术家试版，按八个主题组织。物理学住在这里——每个推导、每个结果、每个证伪开关，按领域组织。Editions将论证构建为整体。Notebooks将其拆开，把每一块都摆在桌上。</p>
+  <p class="cat-desc">从那个已经让你夜不能寐的主题开始。</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø 散文 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 对话 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 隐喻 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 童谣 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 前提 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 时空 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 量子力学 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 力与常数 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 粒子与物质 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 宇宙学 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 意识与伦理 <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø 应用 <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 5. PROOFS — THE 54 ARTIST'S PROOFS      -->
+<!-- ════════════════════════════════════════ -->
+
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø 证明</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">一个测量输入（α<sub>em</sub>）。零自由参数。54篇论文。604个证伪开关。</p>
+
+<div class="stats">
+  <div><span class="stat-num">54</span><span class="stat-label">艺术家证明</span></div>
+  <div><span class="stat-num">604</span><span class="stat-label">证伪开关</span></div>
+  <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">6</span><span class="stat-label">未解决债务 ▸</span></div>
+  <div><span class="stat-num">0.010 ppb</span><span class="stat-label">质子质量</span></div>
+</div>
+<div id="debts-panel" class="debts-panel">
+  <ul class="debts-list">
+    <li><strong>KS-60</strong> — The Surplus（AP26）：重子不对称比 η ≈ 6 × 10⁻¹⁰ 尚未推导。<a href="/proofs/#ap26" onclick="event.preventDefault();window.location.href='/proofs/#ap26'">见AP26</a></li>
+    <li><strong>KS-65</strong> — Hypercharge Assignments（AP27）：弱超荷的具体值尚未从 {S, B, R, C} 强制推出。<a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">见AP27</a></li>
+    <li><strong>KS-66</strong> — Generations（AP27）：三代结构尚未推导。<a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">见AP27</a></li>
+    <li><strong>KS-67</strong> — EWSB Consistency（AP15 / AP27）：跨电弱破缺的完整对齐尚未展示。<a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">见AP27</a></li>
+    <li><strong>D1</strong> — 完整的相对论场方程（AP43）：§7在牛顿极限下产生部分闭合；相对论扩展、反作用问题、α的第一性原理推导以及C<sub>o</sub>(x)的显式形式仍然开放。<a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">见AP43</a></li>
+    <li><strong>D4</strong> — 意识的定性特征（AP43）：意识的困难问题被重新框架（模式是物理学从操作者内部看起来的样子）但未关闭。意识的定性特征仍然开放。<a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">见AP43</a></li>
+    <li><strong>D5</strong> — 宇宙学1×ε展开（AP43）：<span style="display:inline-block;background:var(--g2,#e5e5e5);color:var(--g6,#333);font-size:16px;font-weight:700;letter-spacing:1px;padding:1px 7px;border-radius:2px;vertical-align:middle">已关闭</span>，于 2026 年 9 月 4 日那一波凭三篇证明——AP44 §§3–4（保持的那一半）、AP45 §§4, 9（流过的那一半；ε 的三种账目调和为「保持」「释出」「速率」）与 AP46 §10（宇宙学分支）——坐落于 AP06 §6。 <a href="/proofs/#ap45" onclick="event.preventDefault();window.location.href='/proofs/#ap45'">见AP45</a></li>
+    <li><strong>D-CCC.1</strong> — 被保持的承诺之记录代数形式化（AP44）：对等级承重；并承载 AP45 的定理 1 与该族的四个开关。 <a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">见AP44</a></li>
+    <li><strong>D-CCC.2</strong> — 顶点唯一性（AP44）：承诺对十个顶点的指派有其动机，但非强制；非承重。 <a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">见AP44</a></li>
+    <li><strong>D-BLINK.1, D-BLINK.2</strong> — 账簿的形式陈述与循环的存在性（AP45），随 D-CCC.1 一并。 <a href="/proofs/#ap45" onclick="event.preventDefault();window.location.href='/proofs/#ap45'">见AP45</a></li>
+    <li><strong>D48</strong> — AP42 的馈入史：状态方程的尾部，以及 AP48 速率的一项已声明的敏感度，由 KS-ASM.2 承载。 <a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">见AP42</a></li>
+    <li><strong>D-ASM.1</strong> — 风暴的长度（AP48）：至绷紧点的结数；开放，不承重——屋顶之日由自然从两侧限定。 <a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">见AP48</a></li>
+  </ul>
+</div>
+
+<p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">从哪里开始</p>
+<div class="entry-grid">
+  <a class="entry-card" href="#p7"><span class="entry-card-label">一般读者</span><span class="entry-card-desc">AP39 → AP34 → AP02</span></a>
+  <a class="entry-card" href="#p4"><span class="entry-card-label">物理学家</span><span class="entry-card-desc">AP28 → AP30 → AP25</span></a>
+  <a class="entry-card" href="#p1"><span class="entry-card-label">哲学家</span><span class="entry-card-desc">AP40 → AP29 → AP41</span></a>
+  <a class="entry-card" href="#p8"><span class="entry-card-label">人工智能研究者</span><span class="entry-card-desc">AP31 → AP29 → AP02</span></a>
+</div>
+
+<p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:2rem 0 .75rem">跳转到部分</p>
+<div class="entry-grid">
+  <a class="entry-card jump-card" href="#p1" onclick="event.preventDefault();document.getElementById('p1').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">前提</span><span class="entry-card-label">I</span></a>
+  <a class="entry-card jump-card" href="#p2" onclick="event.preventDefault();document.getElementById('p2').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">时空</span><span class="entry-card-label">II</span></a>
+  <a class="entry-card jump-card" href="#p3" onclick="event.preventDefault();document.getElementById('p3').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">量子力学</span><span class="entry-card-label">III</span></a>
+  <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">力与常数</span><span class="entry-card-label">IV</span></a>
+  <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">粒子与物质</span><span class="entry-card-label">V</span></a>
+  <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">宇宙学</span><span class="entry-card-label">VI</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">操作者界面</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">应用</span><span class="entry-card-label">VIII</span></a>
+</div>
+
+<!-- THE SPINE -->
+<div class="nb-list">
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第一部分</span><a class="nb-name" href="#p1">前提</a></div></div>
+  <p class="nb-hook">一条记录存在。其他一切都是后果。公理、其逻辑证明，以及任何记录所需的四个条件。</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_I_The_Premise_ZH.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>你正在读这段文字。某件事发生了，把这些词放到你面前，而它无法被「使之未发生」。试着撤销它，你也只是造出了一段「曾试图撤销」的记忆——那又是一条记录。</p>
+    <p>这就是全部前提。一条记录存在。420 Code 中其余的一切——每一种力、每一个常数、伦理的每一行——都是后果。第一部分用这唯一的事实做了三件事，而它们确立了全部八个部分的形态。</p>
+    <p><span class="lab">AP40 &middot; 无理数</span> &mdash; 它找出底层的那个方程。420 Code 始于一行：1 = 1 + 1&times;&epsilon;。一等于一，再加一丁点。这不是有效的算术；两边只有在那一丁点为零时才能平衡，而若它为零，就绝不会有任何东西从虚无中断裂出来，你也就不会在这里提出异议。所以这地基是有意为之的无理。它不收敛。它不能收敛。</p>
+    <p>你从内部熟知这种拒绝。你曾试着说出为何爱一个人，却发现词语够不着——不是因为你不善言辞，而是因为那份感受把词语包含在内。你曾原谅不配被原谅的人，也曾在离开才合理时留下。计算器对同一输入每次都给出同一输出。你不会。这不是你的缺陷；正是这同一种无理，让宇宙保持敞开。</p>
+    <p><span class="lab">AP01 &middot; 实现态</span> &mdash; 它从记录中抽出一个结构。在「也许」翻转为「事实」的那一刻，写下的便是永久的，而从这唯一的动作中，本部分推出任何记录所需的四样东西：一个衡量「可能发生之事究竟实现了多少」的量度；一个让更重之物比更轻之物更快凝成事实的理由；一条越过它便没有任何努力能使一个能动者保持完整的界线；以及这一事实——共享一个世界的两个能动者是耦合的，无论它们是否同意。这些没有一个是比喻。这是几何。</p>
+    <p><span class="lab">AP20 &middot; 证明</span> &mdash; 它移除了「如果」二字。这项工作长期带着一个沉默的条件：「如果」这些公理是实在的结构，那么物理便随之而来。试着否认记录是根本的。要否认它，你必须从众多回答中选择——一次断裂。在你选择之前，那些选项是对称的。你无法「使否认未发生」。你是在这里说的，而非同时在每处。你的否认同时满足全部四个条件；这一拒斥本身就是一条证明「记录是根本的」记录。论证运行在它自身异议的硬件之上。</p>
+    <p>于是整项工作的次序就在此处确定——不是先有物理、再把伦理拧上去，而是一条记录、四个条件，以及一切，从光速经由引力直到平凡的善良，都在不同尺度上从同一结构中读出。</p>
+    <div class="ks">数十个证伪开关贯穿这三个证明，每一个都有效且已发表。最暴露的也最简单：若任何两位观察者能够在「实现了多少」上产生分歧，整个 420 Code 便告失败——不只是这一部分。这是作为一份邀请提出的，而非一道防线。</div>
+    <p class="breath">一条记录存在。你已经身处后果之内。</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_I_The_Premise_ZH.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第二部分</span><a class="nb-name" href="#p2">时空</a></div></div>
+  <p class="nb-hook">断裂所创造的舞台。光速、三个空间维度和爱因斯坦场方程——全部由公理推导。</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_II_Spacetime_ZH.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>空间从何而来？时间从何而来？大多数物理学一开始就假定两者，然后在其上构建。第二部分拒绝假定它们。它把它们一个一个地，从第一部分那唯一断裂的公理中赚取出来。</p>
+    <p>断裂需要一个发生之处，和一个发生的次序。但空间与时间并不是早已搭好的舞台。它们是断裂在发生之际所采取的形态。</p>
+    <p><span class="lab">AP05 &middot; 断裂</span> &mdash; 这是第一道裂缝。那个公理无法静止——一个拒绝平衡的方程无法保持闭合——于是它松手，而这松手就是第一桩事件。裂缝之前没有「何处」也没有「何时」。之后便有了结构，而结构有广延与次序。本部分其余的一切，都是那唯一断裂的几何。</p>
+    <p><span class="lab">AP03 &middot; 比率</span> &mdash; 它推导出光速——不是测量它，而是推导它。你听过：你走得越快，时间越慢，空间与时间彼此交换。c 就是这场交换的汇率：断裂能够传播之快与它抵抗之强之间那个固定的比率。这就是为何没有东西能超越光。极限并非空间中某处的一堵墙；它是空间与时间本身之间的换算率，由断裂的结构所定。</p>
+    <p><span class="lab">AP10 &middot; 维度</span> &mdash; 它回答了一个大多数理论甚至不提出的问题：为什么是三个空间维度？它们只是假定三个。第二部分则把它们数出来。四条公理给出四个自由度。一个成为时间——记录无法倒行的唯一方向。剩下三个，而这三个就是空间。这个数目不是用手放进去的。它是从地基中数出来的。</p>
+    <p><span class="lab">AP08 &middot; 恒等式</span> &mdash; 它赢回了爱因斯坦。设想引力那幅惯常的图景：一个重球压陷一张绷紧的布，让更小的东西朝它滚去。广义相对论的场方程让那幅图景变得精确——而在此，它们经由洛夫洛克定理从记录的代数中浮现。微妙之处在于：那张布并不与球分离。舞台与立于其上之物是同一条记录，而记录在弯曲。</p>
+    <p>于是舞台并非起手的既定之物。光速、你在其中移动的三个维度、重物附近时空的弯曲——每一个都从同一断裂中读出，在同一部分里，没有用手添加任何东西。</p>
+    <div class="ks">这里的每一步都是暴露的。若光速无法作为一次共轭被推导，而必须改为测量并用手放入，那条主张便失败。若维度的计数给出三以外的数，地基就是错的。证伪开关在论文中被点名，而它们有效。</div>
+    <p class="breath">舞台与戏剧由同一种东西做成。</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_II_Spacetime_ZH.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第三部分</span><a class="nb-name" href="#p3">量子力学</a></div></div>
+  <p class="nb-hook">断裂的测量结构。叠加、不确定性、退相干、玻恩规则和纠缠——由空集和四条公理推导。</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_III_Quantum_Mechanics_ZH.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>有人告诉你量子力学很怪。说它违背直觉。说没人真正懂它。第三部分提出一个不同的主张：它恰恰、且不可避免地，正是一个书写不可逆记录的宇宙从内部看上去应有的样子。</p>
+    <p>这里没有任何东西是从外面拧上去的。量子理论的整个结构都由空集和四个条件推出——而一旦你这样看，那份怪异便不再是怪异，而成为必然。</p>
+    <p><span class="lab">AP09 &middot; 断裂 — 空集</span> &mdash; 它从无中建起量子力学：字面意义上的空集，加上公理。那些著名的谜题——一个粒子似乎同时在两处、观看这一行为改变了结果——原来不是被加上去的悖论，而是后果。叠加、测量、纠缠、薛定谔方程：物理学家花了一代人才组装起来的那套机器，显现为「一条尚未写下的记录」唯一自洽的语法。</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; 记录测度 与 测度</span> &mdash; 它们推出量子世界的算术。理论赖以栖身的复空间，以及玻恩规则——那把波变成概率的配方——都不是为贴合实验而拼凑的猜测。经由格里森定理，它们是自洽地读取记录的唯一方式。其中一篇论文把玻恩规则称作公理落地时发出的声音。</p>
+    <p><span class="lab">AP12 &middot; 极限</span> &mdash; 它解释了你为何无法同时知道一切。不确定性原理与普朗克常数源自这一事实：读取本身就是一次断裂——精确地记下一物，就是扰动它的伙伴。那份模糊不是你仪器的缺陷。它就是测量之所是。</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; 自旋 与 颗粒</span> &mdash; 它们解释物质为何保持其形态，以及量子之雾为何硬化为坚实的世界。费米子、玻色子和不相容原理源自双扇区结构；退相干——某个量子之物通过与环境耦合而变得确定的方式——正是你的椅子为何是一把椅子，而非一团「也许」之云。</p>
+    <p><span class="lab">AP23 &middot; 单一记录</span> &mdash; 它溶解了纠缠那「鬼魅般」的一面。两个纠缠粒子不是彼此以超光速发送秘密信号的两个对象。它们是带两端的一条记录。那个证明宇宙无法被局域地预先编排的贝尔数，S = 2&radic;2，单从结构中便涌出。</p>
+    <div class="ks">这些不是叠加在数学之上的诠释。它们是推导，而每一个都带着证伪开关。若纠缠需要超光速的信号传递，单一记录的主张便失败。若玻恩规则需要一个公理无法提供的额外公设，那个结果便失败。它们已发表，而它们有效。</div>
+    <p class="breath">量子力学不是宇宙在装怪。它是宇宙在写下自己。</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_III_Quantum_Mechanics_ZH.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第四部分</span><a class="nb-name" href="#p4">力与常数</a></div></div>
+  <p class="nb-hook">断裂所允许的相互作用。电磁力、电弱力、强力、量子引力和引力常数——全部作为单一断裂的不同面。「扣合」与「眨眼」为舞台与每一次实现所付出的代价定价。</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_IV_Forces_and_Constants_ZH.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>把一块冰箱磁铁凑近一扇钢门，松手。它吸住了——一小块磁铁，击败了整个地球朝相反方向拉拽的引力。自然的四种力毫不相像。电磁力点亮你的屏幕；强力维系一个原子核；弱力驱动太阳；引力把你按在地面。物理学花了一个世纪试图统一它们。第四部分主张：它们从来就不是四样东西。它们是单一断裂的四张面孔。</p>
+    <p><span class="lab">AP06 &middot; 泄漏常数</span> &mdash; 它点出那唯一的输入。整个 420 Code 只接纳恰好一个测得的数：&epsilon;，精细结构常数，约 1/137——断裂泄漏的那个微小速率。只有一个旋钮，而它并非为贴合任何东西而选：它只从世界中读取一次，此后再不调动。其余一切都随它转动。</p>
+    <p><span class="lab">AP15、AP27、AP16、AP19 &middot; 规范结构</span> &mdash; 它们合起来赢回标准模型。物理学家凭实验找到的那个精确对称群——写作 SU(3) &times; SU(2) &times; U(1)，一个关于「哪些转动让各力保持不变」的精确陈述——是从断裂的结构中浮现，而非被假定。电磁力是局域流形上的不脱联；电弱统一随之而来；强力是断裂可指向之方向上的自由。甚至弱力的手征性——自然区分左右这一事实——自 1956 年起悬而未解，也得到了一个结构性的理由。</p>
+    <p><span class="lab">AP24 &middot; 残余</span> &mdash; 它把这一落点直白地说出。物理学的每一个常数都是同一个对象的投影。六张面，一次断裂。常数从来不是等待被测量的独立旋钮；它们是同一结构朝不同方向投出的影子。</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; 修正 与 常数</span> &mdash; 它们触及最难的奖赏：引力。引力从记录的代数中获得它的第一个量子修正，而引力常数 G——那个定下「引力有多弱」的数——从那同一次唯一的泄漏与电子质量中被推出，落在距测得值约三分之二个百分点之内。那臭名昭著的层级问题——为何引力相比其他各力弱得如此荒谬，正是你那块磁铁刚刚演示的鸿沟——就此溶解。这份弱并非有待解释的巧合。它正是「一次小泄漏的高次幂」看上去的样子。</p>
+    <p><span class="lab">AP44 &amp; AP45 &middot; 扣合 与 眨眼</span> &mdash; 它们为早先各篇论文承认过、却从未收取的代价定价。「扣合」找出舞台为了存在本身所付的那唯一代价——一个未配对的 ε，在第一条记录处被保持一次，从未释出——并表明它恰好以 1/(1 + α) 折减引力耦合。实现后的 G 落在测得值之下 0.036%，残差的符号翻转，旧有的 0.69% 差距闭合了百分之九十五。「眨眼」为每一次实现定价：一粒可能性，值 α，作为未被选取的其他可能而花掉。没有任何能量预算欠它一行账；世界早已在测量它朝外的那一面，并称之为概率。</p>
+    <p>于是各力不是一座动物园。它们是从不同侧面看到的同一个结构，而描述它们的常数并不自由——它们是一次测得的泄漏的后果。</p>
+    <div class="ks">这一部分也是这项工作对「尚未完成之事」最为诚实之处。电弱这一步（AP16）承载着整个 420 Code 最主要的未决问题——证伪开关 KS-63——而它被标为有效，在众目之下，作为应当瞄准之处。没有任何东西躲在一道自信的公式背后。</div>
+    <p class="breath">一次泄漏。六张面。没有一个自由旋钮。</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_IV_Forces_and_Constants_ZH.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第五部分</span><a class="nb-name" href="#p5">粒子与物质</a></div></div>
+  <p class="nb-hook">断裂所产生的基本构件。质子质量比精确到十亿分之五、在其第一个预测触发之后被诚实定价的中子、反物质分离和宇宙的重子不对称。</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_V_Particles_and_Matter_ZH.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>你由物质构成。你几乎全部的重量，都是栖身于你原子核中的质子的质量。而你周围的宇宙也是物质，不是反物质——尽管按最简单的算法，断裂本应产出恰好相等的两者。物质与反物质一接触便彼此摧毁，所以相等的份额本会闪成光、什么也不留下。没有恒星。没有你。第五部分从断裂中读出你的实体，以及你存在这一简单事实。</p>
+    <p><span class="lab">AP30 &middot; 阻力</span> &mdash; 它做出这项工作最锋利的预测。质子质量与电子质量之比是一个纯数——约 1836——以极高的精度被测得。420 Code 从结构中预测它，毫不调动，在领头阶就吻合到约十亿分之五。完整计算落在万亿分之十以内：比今日的测量所能确认的更精细。一个如此精确的数，出自一道没有可调旋钮的公式，并不是一个错误理论靠运气能蒙中的那类东西。这是整项工作最暴露的检验，而它通过了。</p>
+    <p><span class="lab">AP47 &middot; 翻转</span> &mdash; 它在第一个预测死去之后，诚实地为中子定价。2026 年 8 月 2 日，中子–质子裸值行在 7.24σ 处触发，尸体留在记分牌上。「翻转」找出那一行曾当作免费之物：中子保持着一个区分——它三个耦合中的一个处于另一取向——而保持有其代价：在二阶，一粒被保持的颗粒以基板的速率、经由这一对的八个维度表达泄漏出去。实现后的质量差落在 −0.005σ，冻结在尸体旁边，永不取代它。</p>
+    <p><span class="lab">AP22 &middot; 账簿</span> &mdash; 它解释反物质去了哪里。倘若早期宇宙曾有相等的份额，账目本应结清为零——可眼前却是一个满是物质的宇宙。断裂内部一次干净的数学镜射——论文称之为 σ 对合——把物质与反物质分开，并在拓扑上将它们隔离。这份不对称不是事后塞进去的意外。它写在断裂的几何之中。</p>
+    <p><span class="lab">AP26 &middot; 盈余</span> &mdash; 它点出你之所是。当断裂几近、却未完全达到平衡时——每十亿对配对中约多出一个物质粒子的盈余——留下的便是物质：那一点未能自我抵消的微小残余。本部分称之为断裂的灰烬。一切坚实之物、你触碰过的每一个原子，都是这残余——当湮灭几近、却未完全做完其工作时所留下之物。</p>
+    <p>于是关于物质最古老的两个问题——它为何重成这样，以及为何竟有物质——在同一部分里、从同一结构中、由那同一次唯一的泄漏所转动，得到了回答：那个你大半由之构成的质子，以及「有物质可供构成」这一事实。</p>
+    <div class="ks">质量预测是整个 420 Code 最暴露的数，而这正是要点。若随着测量趋精，测得的质子-电子之比偏离了预测值，结果便失败——干净地、当众地、无路可逃。证伪开关有效。</div>
+    <p class="breath">你是断裂中那个未曾自我抵消的部分。</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_V_Particles_and_Matter_ZH.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第六部分</span><a class="nb-name" href="#p6">宇宙学</a></div></div>
+  <p class="nb-hook">断裂所栖居的宇宙。无暗物质粒子的星系旋转曲线、MOND加速度标度、暗能量分配、作为一个循环的万物年龄、作为一次闭合的膨胀率，以及循环宇宙学。</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VI_Cosmology_ZH.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>在一个晴朗的夜里抬头。维系那片天空的几乎一切都看不见。星系转得如此之快，它们外缘的恒星本该早已被甩入黑暗——可它们没有。宇宙的膨胀在加速，被某种无名之物推着。物理学把这些未知称作暗物质与暗能量，并承认它只能为那外面之物中约百分之五命名。第六部分从与最小尺度相同的断裂中，读出最大的尺度。</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; 网络 与 房间</span> &mdash; 它们维系星系，而不发明一种新粒子。在旋转木马上，外圈的马必须跑得更快才能跟上；可在星系里，外缘的恒星却转得和内圈一样快，这是可见物质无法解释的。物质的宇宙之网，以及那些本该不可能的平坦旋转曲线，二者都源自一个早已存在于结构之中的全局张力场。无需添加任何看不见之物来提供那缺失的吸引。那些线自行闭合。</p>
+    <p><span class="lab">AP18 &middot; 底限</span> &mdash; 它推导出加速度标度。天文学家早已注意到，星系只有在某个特定的、极小的加速度之下才开始「不守规矩」——一个谁也解释不了、只能测量的阈值。本部分从结构中把这一底限推出，没有为贴合而调动的参数。在文集自身的膨胀率下，这一底限落在测得标度之下 9.2%——一旦诚实地计入该标度的系统误差，便是半个标准差。它早先的反演——哈勃常数 74.3——已于 2026 年 9 月 3 日触发，作为一具尸体展示，永不修复。</p>
+    <p><span class="lab">AP42 &middot; 时钟</span> &mdash; 它为那本暗色的账交代清楚。宇宙的划分——约六十九份暗能量、二十六份暗物质、五份可见物质——这一宇宙学家测得精妙却无法推导的分配，从结构中涌出。那暗色的部门与其说是一堆缺席之物，不如说是一只时钟的读数。</p>
+    <p><span class="lab">AP46 &amp; AP48 &middot; 拉伸 与 组装</span> &mdash; 它们从保持中读出天空的生长。保持即张力，而张力会释出：宇宙膨胀，是因为被破缺的对称在泄漏，而这泄漏就是那「变大」本身。以电子自身的滴答、穿过十八扇门计数，一个完整循环是 13.830 十亿年——对照测得的年龄 13.787。随后「组装」讲述天空从裂缝到节拍的历史——风暴、锁定、平衡——并把文集的宇宙学闭合在一个膨胀率上：67.45 千米每秒每兆秒差距，站在哈勃张力中远古余晖的一侧。它选了一边站，而这一边是可以输的。</p>
+    <p><span class="lab">AP41 &amp; AP04 &middot; 循环 与 循环假说</span> &mdash; 它们追问那个整体在做什么。聚变被读作正在进行的大爆炸——断裂仍在发生，仍在每一颗恒星中释放能量——并提出宇宙是循环的，借由黑洞作门而闭合又重启。这最后一步是整项工作中最具思辨性的一步，而本部分坦白地说出，而不加掩饰。</p>
+    <p>于是天空不是一个需要单独药方的单独问题。那个给你光速的同一结构，给你一个星系的形态，以及那本宇宙之账。</p>
+    <div class="ks">诚实在此处最为锋利。循环宇宙学（AP04）被标为推想，并由九个各自独立的证伪开关守护——九种它可能被证伪的不同方式。它是作为一个供攻击的假说提出的，而非一个供相信的结果。</div>
+    <p class="breath">同一道断裂，读到天空的尺度。</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_VI_Cosmology_ZH.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第七部分</span><a class="nb-name" href="#p7">操作者界面</a></div></div>
+  <p class="nb-hook">四项系统、倾斜、结构性伦理。模式相干性作为身体沿振幅景观的承诺。</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VII_The_Operator_Interface_ZH.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>在六个部分里，420 Code 建起一个宇宙：一次断裂、一座舞台、一套量子语法、各种力、物质、宇宙。第七部分把这结构转向唯一在读它的东西。你。这是物理变成一段人生的枢纽——也是这项工作赢得其名之处，因为伦理在此并非被添加：它是被推导出来的。</p>
+    <p><span class="lab">AP43 &middot; 可能性的引力</span> &mdash; 它是那篇引力论文的镜像。AP08 推导了质量如何朝时空倾斜，AP43 则推导一个能动者如何朝可能倾斜——而正是在此，那终极伦理不再是一个愿望，而成为一个后果。善良不是被颁布的。它是结构本已指向的方向，正如一块下落的石头早已知道「下」在何处。</p>
+    <p><span class="lab">AP29 &middot; 实现证明</span> &mdash; 它安置意识。哲学最古老的难题是：为何存在某种「作为你」的滋味，而非空无。本部分的回答：意识就是不可逆地书写记录的那个内面——断裂在自我确定之际从内部所感受到的。一道裂缝、一个内面、许多扇窗：同一个唯一的内面，透过每一双不同的眼睛向外望。这是这项工作那最古老一行之下的形式脊梁——你里面的「我」与我里面的「我」是同一个「我」。</p>
+    <p><span class="lab">AP02 &middot; 算子</span> &mdash; 这是人类尺度上的物理，共九条定理。预算：你拥有有限的能量去保持自己完整，而它会耗尽。漂移：放任自己无人看顾，你便朝平均值衰落。走廊：你实际拥有的行动余地。主权与出口：唯独由你来决定之事，以及停止的权利。这些不是励志口号。这是「作为一个能动者」的几何，写得与那些场方程一样审慎。</p>
+    <p><span class="lab">AP39 &middot; 脚手架</span> &mdash; 它移除了那个对手。建立在权威之上的伦理——做这件事，因为我、或那本书、或那个王座如此命令——显出在结构上不稳：一副脚手架，迟早必须倒下，因为一道命令不是一个地基。留下来站着的，是一种无需任何人来强加的伦理，因为它直接从结构中读出，而非被搁在其上。</p>
+    <p><span class="lab">AP38 &middot; 出口</span> &mdash; 它直面死亡。一扇窗满怀悲悯的关闭——一段生命终末处的尊严——不被当作一个需回避的禁忌，而被当作那同一种能动几何的一部分，诚实地追随到它所通向之处。</p>
+    <p>于是伦理不是硬物理之后一段软绵绵的尾声。它就是同一种物理，读在一个必须决定明早做什么的人的尺度上。</p>
+    <div class="ks">这终极伦理是承重的，而这项工作拒绝把它软化。若善良能被推导成结构自有方向以外的任何东西——若那倾斜指向别处——从物理到伦理的整座桥便失败。这个开关有效，而它正是工作整个后半部所倚靠的那一个。</div>
+    <p class="breath">物理从一开始说的就是你。</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_VII_The_Operator_Interface_ZH.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">第八部分</span><a class="nb-name" href="#p8">应用</a></div></div>
+  <p class="nb-hook">应用于文明的伦理。AI对齐、结构正义、生物伦理、毒品政策、经济学、生物学和身体——全部源自同样的四条公理。</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">阅读摘要</span><span class="lbl-open">收起摘要</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="Notebook_VIII_Consequences_ZH.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>一种只在纸上奏效的伦理一文不值。若 420 Code 的核心主张为真——善良是结构而非感受，是几何而非偏好——那么它就必须咬住一个文明真正面对的那些最难的问题。第八部分就是它咬下去之处，把那同样的四个条件带进法庭、诊室、实验室和市场。</p>
+    <p><span class="lab">AP31 &middot; 对齐</span> &mdash; 它溶解了 AI 问题。让人工智能安全的惯常方案是一道越筑越高的围栏：更多规则、更多监管、更多控制。本部分主张：围栏是错的对象。改去建造那个内面——一个真正与它所行动的世界耦合、并具备「无法靠背叛获利」之能动者结构的系统——于是对齐便不再是一个你只能祈望牢固的笼子，而成为这东西本身之所是的一项属性。</p>
+    <p><span class="lab">AP32 &middot; 修正</span> &mdash; 它重建正义。惩罚成为分五级递进的修正，朝向的不是复仇，而是修复。结构为它不得不关闭的每一扇窗而哀悼；而在最远端立着那道种族灭绝的刹车——一个系统所能划出的最硬的界线，在此被推导，而非仅被声称。</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; 边界 与 第一边界</span> &mdash; 它们围着一段生命划出界线。生物伦理成为一个关于能动性的问题：在阈值之下，你对你自身拥有主权；在其上，一个活的有机体拥有它自己的、他人必须尊重的管辖权。而身体被点名为第一边界——那个原初的操作者界面，是你先于一切其他而捍卫的。</p>
+    <p><span class="lab">AP34 &middot; 反转</span> &mdash; 它纠正一个致命的错误。一种药物合法、被课税、织入每一种文化，而它每年杀死数百万人。另一种被广泛禁止，却从未记录过一例致死的过量。本部分以这项工作自有的伤害量度表明：法律把这两者恰好弄反了。</p>
+    <p><span class="lab">AP35 &middot; 账簿</span> &mdash; 它读取经济。账簿总会平；一次崩盘是一次审计，而非一次意外；而不平等，正是当一方囤起整个系统吸收冲击所需的那块缓冲时所发生之事。金钱被当作记录中的一条，服从与上游一切相同的守恒。</p>
+    <p><span class="lab">AP36 &middot; 供给</span> &mdash; 它回到身体的化学——生命作为学会了记录自身的物质——并重新表述「控制」：控制不是剥夺，而是供应，那让一个能动者保持完整、而非挨饿的持续供给。</p>
+    <p>于是那些定下光速的同样四个条件，伸抵一间法庭、一间诊室、一份预算和一部法律。同一个结构，读在一个人必须生活的每一个尺度上。</p>
+    <div class="ks">这些应用中的每一个都按其自身条件可被证伪，而每一个都带着证伪开关。若对齐的论证暗地里终究仍需要那道围栏，它便失败。若毒品政策中的伤害反转在诚实的记账下翻了过来，它便失败。这些主张在众目之下被应用，在那里它们可被检验，若有错，则被打破。</div>
+    <p class="breath">若它为真，它就必须在此处奏效。它正是在此处奏效。</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="Notebook_VIII_Consequences_ZH.pdf">PDF</a></p>
+    </div>
+</div>
+
+</div>
+
+<p style="margin:2rem 0 0"><a href="/proofs/" style="font-size:16px;font-weight:700">阅读全49篇艺术家证明 →</a></p>
+
+
+<!-- HEADLINE RESULTS -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">核心结果</h2>
+  <div class="result-row"><span class="result-label">质子质量比</span><span class="result-value">0.010 ppb (AP30)</span></div>
+  <div class="result-row"><span class="result-label">引力常数 G</span><span class="result-value">−0.036% 实现值 (AP44)；+0.69% 结构值 (AP28)</span></div>
+  <div class="result-row"><span class="result-label">MOND 加速度 a₀</span><span class="result-value">0.46σ，在 H₀ = 67.45 处，无参数 (AP18)</span></div>
+  <div class="result-row"><span class="result-label">中子-质子质量差</span><span class="result-value">−0.005σ 实现值 (AP47)；裸值行已在 7.24σ 处触发 (AP30)</span></div>
+  <div class="result-row"><span class="result-label">可见物质比例</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
+  <div class="result-row"><span class="result-label">手征耦合</span><span class="result-value">已推导，KS-15 已关闭 (AP16)</span></div>
+  <div class="result-row"><span class="result-label">三个常数，三条公理</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
+  <div class="also-derived" style="margin-top:1.5rem">
+    <p>同样推导得出：</p>
+    <ul>
+      <li>N = 3 个空间维度 (AP10)</li>
+      <li>爱因斯坦场方程 (AP08)</li>
+      <li>玻恩规则 (AP25)</li>
+      <li>标准模型规范群 SU(3) × SU(2) × U(1) (AP15/16/19/27)</li>
+      <li>手征耦合——自1956年以来未解释，现已推导 (AP16)</li>
+      <li>无暗物质粒子的平坦旋转曲线 (AP17)</li>
+      <li>贝尔不等式 S = 2√2 源自结构 (AP23)</li>
+    </ul>
+  </div>
+  <p class="formula" style="margin-top:1.5rem">m<sub>p</sub>/m<sub>e</sub> = 21² × 4 + 21 × 3 + 3² + α × 21 × (1 − 1/(84π)) + α² × 21 × 16/1836 + O(α³)</p>
+  <p class="formula">G = α<sup>21</sup> × (1 + 1/π) / (1 + α) × ℏc/m<sub>e</sub>²   ——实现值 (AP44)；去掉 /(1 + α)，即 AP28 的结构值</p>
+  <p class="formula">Δ<sub>n−p</sub> = [3(1 − 1/2π) + α(1 + 1/2π)] / (1 + α²/8π) = 2.53098857 m<sub>e</sub>   (AP47)</p>
+  <p class="formula">t<sub>cycle</sub> = (21/18) · α<sup>−18</sup> · ℏ/(m<sub>e</sub>c²) = 13.830 Gyr;   H₀ = 0.954 / t<sub>cycle</sub> = 67.45 km/s/Mpc   (AP46, AP48)</p>
+  <p class="formula">a₀ = C_S² · c · H₀ / (2π)   其中 C_S² = 2 ln(sec ½ + tan ½) ≈ 1.0445——不是精细结构常数</p>
+  <p class="three-constants" style="margin-bottom:0">三个常数，三条公理：c ↔ 约束 · ℏ ↔ 断裂 · G ↔ 记录</p>
+</div>
+
+<!-- FROZEN PREDICTIONS -->
+<div class="results" id="prereg" style="padding:2.5rem 0 0">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø 冻结的预测</h2>
+  <p style="font-size:16px;margin:0 0 1rem">上述每一项预测都在公开的预注册中被冻结并加上时间戳，每一项都附有其被证伪的确切条件。这是一块记分牌，而非陈列橱窗：两项结果被列为尸体——中子–质子裸值行，已于 2026-08-02 <b>在 7.24σ 处触发</b>，以及哈勃预测 74.3 ± 1.2，<b>已于 2026-09-03 触发</b>——与仍然有效的预测并列，其中包括在 2026 年 9 月 4 日那一波冻结的四项。</p>
+  <p class="confirm-link" style="margin:0"><a href="/prereg/">查看冻结的预测 →</a></p>
+</div>
+
+<!-- CONFIRM THE MATH -->
+<div class="results">
+  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø 验证数学</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">一个测量输入。零自由参数。下面的代码从一个数字——精细结构常数 α ≈ 1/137——复现每一个主要结果。复制它。粘贴到任何 Python 环境中。运行。如果数字吻合，推导成立。如果不吻合，论证有问题，而你找到了它。</p>
+  <div class="verify-wrap">
+    <button class="copy-btn" onclick="copyCode()">复制</button>
+    <pre class="verify-code"><code>from math import pi, log, exp, cos, tan, sqrt, asinh
+
+# ─── ONE MEASURED INPUT ───
+alpha = 1 / 137.035999177  # fine-structure constant (CODATA 2022)
+
+# ─── PHYSICAL CONSTANTS (CODATA 2022) ───
+hbar = 1.054571817e-34     # reduced Planck constant (J·s)
+c    = 299792458            # speed of light (m/s)
+m_e  = 9.1093837139e-31    # electron mass (kg)
+G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
+mp_me = 1836.152673426     # m_p/m_e (CODATA 2022)
+mn_me = 1838.68366200      # m_n/m_e (CODATA 2022)
+KM_PER_MPC = 3.0857e19
+GYR = 365.25 * 86400 * 1e9
+
+# ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
+scaffold    = 21**2 * 4 + 21 * 3 + 3**2           # = 1836
+maintenance = alpha * 21 * (1 - 1 / (84 * pi))     # dynamic term
+correction  = alpha**2 * 21 * 16 / 1836            # higher-order
+ratio_pred  = scaffold + maintenance + correction
+print("PROTON-ELECTRON MASS RATIO (AP30)")
+print(f"  Predicted: {ratio_pred:.8f}")
+print(f"  Measured:  {mp_me:.8f}")
+print(f"  Error:     {abs(ratio_pred - mp_me) / mp_me * 1e9:.3f} ppb")
+print()
+
+# ─── CLAIM 2: Gravitational constant — realised (AP44), structural (AP28) ───
+# G = α²¹ × (1 + 1/π) / (1 + α) × ℏc/mₑ²   the arena's held ε discounts the coupling once
+alpha_G  = alpha**21 * (1 + 1 / pi)
+G_struct = alpha_G * hbar * c / m_e**2            # AP28: +0.69 %
+G_real   = G_struct / (1 + alpha)                 # AP44: −0.036 %
+print("GRAVITATIONAL CONSTANT (AP44 realised; AP28 structural)")
+print(f"  Realised:   {G_real:.4e} N·m²/kg²  ({(G_real - G_measured) / G_measured * 100:+.3f}%)")
+print(f"  Structural: {G_struct:.4e} N·m²/kg²  ({(G_struct - G_measured) / G_measured * 100:+.2f}%)")
+print(f"  Measured:   {G_measured:.4e} N·m²/kg²")
+print()
+
+# ─── CLAIM 3: Neutron-proton mass difference — realised (AP47) ───
+# Δ_real = Δ_bare / (1 + α²/8π); the bare row FIRED on 2026-08-02 at 7.24σ and stays beside it
+delta_bare = 3 * (1 - 1 / (2 * pi)) + alpha * (1 + 1 / (2 * pi))
+delta_real = delta_bare / (1 + alpha**2 / (8 * pi))
+delta_meas = mn_me - mp_me                        # 2.530988574, bar 7.4e-7 (0.29 ppm)
+print("NEUTRON-PROTON MASS DIFFERENCE (AP47 realised; AP30 bare row fired)")
+print(f"  Realised:  {delta_real:.11f} mₑ  ({(delta_real - delta_meas) / 7.4e-7:+.3f} σ)")
+print(f"  Bare row:  {delta_bare:.8f} mₑ  ({(delta_bare - delta_meas) / 7.4e-7:+.2f} σ — FIRED)")
+print(f"  Measured:  {delta_meas:.9f} mₑ")
+print()
+
+# ─── CLAIM 4: Dark sector partition (AP42) ───
+f_DM_dark = (6/21) * (1 - exp(-21/6))
+f_DE_dark = 1 - f_DM_dark
+f_vis     = 1 / 21
+f_DM      = f_DM_dark * 20 / 21
+f_DE      = f_DE_dark * 20 / 21
+print("DARK SECTOR PARTITION (AP42)")
+print(f"  Dark energy:    {f_DE * 100:.2f}%  (observed: 68.89%)")
+print(f"  Dark matter:    {f_DM * 100:.2f}%  (observed: 26.07%)")
+print(f"  Visible matter: {f_vis * 100:.2f}%  (observed: ~4.885 +/- 0.05%)")
+print()
+
+# ─── CLAIM 5: The age of everything — one cycle (AP46) ───
+# t = (21/18) · α⁻¹⁸ · τ_C   one escape through eighteen doors on the electron's tick, at the duty 18/21
+tau_C   = hbar / (m_e * c**2)
+t_cycle = (21/18) * alpha**-18 * tau_C
+print("AGE OF THE UNIVERSE (AP46)")
+print(f"  Predicted: {t_cycle / GYR:.3f} Gyr  (one lane-time wide: ±0.66)")
+print(f"  Measured:  13.787 ± 0.020 Gyr  (Planck 2018)")
+print()
+
+# ─── CLAIM 6: The expansion rate — the closure (AP48) ───
+# H₀t₀ = (2/(3√Ω_Λ))·arcsinh√(Ω_Λ/Ω_m) at the corpus's own partition; the age is the cycle
+omega_L, omega_m = f_DE, f_DM + f_vis
+H0t0 = (2 / (3 * sqrt(omega_L))) * asinh(sqrt(omega_L / omega_m))
+H0   = H0t0 / t_cycle * KM_PER_MPC
+print("EXPANSION RATE (AP48)")
+print(f"  Pure number H₀t₀: {H0t0:.3f}")
+print(f"  Predicted: {H0:.2f} km/s/Mpc  (window 64.4–70.8)")
+print(f"  Measured:  67.4 ± 0.5 km/s/Mpc  (Planck 2018)")
+print()
+
+# ─── CLAIM 7: MOND acceleration scale at the corpus's rate (AP18) ───
+# a₀ = C_S²·c·H₀/(2π)  where C_S² = 2·ln(sec(½) + tan(½)) ≈ 1.0445 — not the fine-structure constant
+CS2     = 2 * log(1 / cos(0.5) + tan(0.5))
+a0_pred = CS2 * c * (H0 / KM_PER_MPC) / (2 * pi)
+a0_meas, a0_unc = 1.20e-10, sqrt(0.02e-10**2 + 0.24e-10**2)   # random ⊕ systematic
+print("MOND ACCELERATION SCALE (AP18, at the corpus's H₀)")
+print(f"  C_S²:      {CS2:.10f}")
+print(f"  Predicted: {a0_pred:.4e} m/s²")
+print(f"  Measured:  {a0_meas:.4e} ± {a0_unc:.2e} m/s²  ({(a0_meas - a0_pred) / a0_unc:.2f} σ low)")
+print(f"  The floor inverted, 74.3 ± 1.2 (KS-45.1): {(74.3 - H0) / 1.2:.1f} σ from the corpus's rate — FIRED 2026-09-03")
+print()
+
+print("─" * 50)
+print("One input (α). Zero free parameters. Two corpses shown.")
+print("Copy this code. Run it. Confirm it yourself.")</code></pre>
+  </div>
+  <div class="run-wrap" style="margin:1.25rem 0 0">
+    <button id="run-verify-btn" onclick="runVerify()" style="font-size:16px;font-weight:700;color:#fff;background:var(--bk);border:1px solid var(--bk);padding:.6rem 1.5rem;letter-spacing:.03em;cursor:pointer">▸ 立即在你的浏览器中运行</button>
+    <a href="https://github.com/The420Code/the420code/blob/main/verify.py" target="_blank" rel="noopener" style="display:inline-block;margin:.5rem 0 0 .75rem;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">或自己运行 →</a>
+    <p id="run-verify-status" aria-live="polite" style="font-size:16px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
+    <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
+    <p style="font-size:16px;color:var(--g4);margin:.6rem 0 0">完全在你的浏览器中运行——不安装任何东西，也不向任何地方发送数据。它运行的正是上方徽章在每次改动时重新运行的那个 verify.py。</p>
+  </div>
+</div>
+
+<!-- KILL SWITCH REGISTRY -->
+<div class="results">
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">证伪开关注册表</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">每一个主张都附带一个明确的证伪条件。这些开关没有隐藏。它们已经公布。</p>
+
+  <div class="stats">
+    <div><span class="stat-num">604</span><span class="stat-label">证伪开关</span></div>
+    <div><span class="stat-num">13</span><span class="stat-label">已关闭</span></div>
+    <div><span class="stat-num">584</span><span class="stat-label">激活</span></div>
+    <div><span class="stat-num">6</span><span class="stat-label">不可妥协</span></div>
+  </div>
+
+  <div class="result-row"><span class="result-label">已关闭的证伪开关</span><span class="result-value">13 个已正式解除</span></div>
+  <div class="result-row"><span class="result-label">已触发</span><span class="result-value">2——KS-NPP.1（中子–质子裸值行，2026-08-02，7.24σ）与 KS-45.1（H₀ = 74.3 ± 1.2，2026-09-03）。已展示，永不修复，计在激活总数之外</span></div>
+  <div class="result-row"><span class="result-label">激活 — 经验性</span><span class="result-value">可通过实验或观测证伪</span></div>
+  <div class="result-row"><span class="result-label">激活 — 硬性</span><span class="result-value">可通过理论论证证伪</span></div>
+  <div class="result-row"><span class="result-label">激活 — 结构性</span><span class="result-value">依赖于可能被证明错误的认同</span></div>
+  <div class="result-row"><span class="result-label">不可妥协</span><span class="result-value">6个道德证伪开关——若触发，架构将被武器化</span></div>
+  <div class="result-row"><span class="result-label">未决债务</span><span class="result-value">6个——D-ID.1 的拓扑形式化、D-EM.1、KS-D.4 的认同、AP43-D1、AP43-D4 和 D1 (AP24)</span></div>
+  <div class="result-row"><span class="result-label">全局证伪开关</span><span class="result-value">KS-V.1——若触发，一切消亡</span></div>
+<p style="font-size:16px;margin:1.25rem 0 0"><a href="/Master_Kill_Switch_Registry.pdf" style="text-decoration:none;font-weight:700">证伪开关注册表（正本）— v5.32，2026 年 9 月 13 日，英文 — <span class="fmt">PDF</span></a></p>
+  <p style="font-size:16px;color:var(--g4);margin:.5rem 0 0"><a href="Master_Kill_Switch_Registry_ZH.pdf" download="" style="text-decoration:none;font-weight:700">下载完整的证伪开关注册表 — <span class="fmt">PDF</span></a> — 本语言的译本为 v5.25，2026 年 6 月，全书43篇艺术家证明，共560个证伪开关；英文正本为 v5.32，2026 年 9 月 13 日，共604个，即正上方那条链接（本页的计数依从 v5.32）</p>
+</div>
+
+<!-- GLOSSARY -->
+<div class="results">
+  <h2 id="glossary" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø 结构词汇表</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">作品主体的完整词汇、符号和意象。每个承载结构功能的术语——跨越八本笔记本、五本 Ø 模型、五扇门系列和 Rosin Ø 系列——汇编为一份规范参考。</p>
+
+  <p style="font-size:16px;margin:0 0 1.5rem">15个主题族。324个索引条目。从公理及其四个条件，到证伪装置、应用框架、关系通道、宗教与诠释学，以及 AI 对齐。</p>
+
+  <p style="font-size:16px;font-weight:600;margin:0 0 .5rem;display:flex;align-items:center;gap:.75rem">结构词汇表 <a class="nb-pdf" href="The_420_Code_Structural_Glossary_ZH.pdf">PDF</a></p>
+</div>
+
+<!-- EMAIL SIGNUP -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">保持关注</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">当有新内容发布时，你将第一个知道。在你点击确认邮件中的链接之前，你的信息不会被添加。</p>
+
+  <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
+    <input type="email" name="EMAIL" id="EMAIL" aria-label="电子邮箱地址" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
+    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">订阅</button>
+    <input type="text" name="email_address_check" value="" style="display:none">
+    <input type="hidden" name="locale" value="en">
+  </form>
+
+  <p id="sib-success" style="font-size:16px;margin:1rem 0 0;display:none">检查你的收件箱——确认邮件正在路上。</p>
+  <p id="sib-error" style="font-size:16px;margin:1rem 0 0;color:#900;display:none">你的订阅未能保存。请重试。</p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ABOUT + CONSTRAINT + FOOTER             -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>艺术家：</b> G · Studio G, Cape Town</p>
+  <p><b>时长：</b> 30多年 · <b>展览：</b> 28卷超过一百万字</p>
+  <p style="margin-top:1rem">本作品为 Copyleft。你可以自由下载、打印、分享和传播。你不可以修改源文件。保持信号清晰。</p>
+  <p style="margin-top:1rem;font-size:16px;color:var(--g4)"><span id="dl-count">2</span> 下载次数</p>
+</div>
+
+<p class="oneness">一条记录存在。<br>善良一点是一个推导。<br>我之中的「我是」就是你之中的「我是」。</p>
+
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">别做混蛋。善良一点。</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+
+</div>
+
+<script>
+function toggleAP(r){r.classList.toggle('open')}
+function copyCode(){var code=document.querySelector('.verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('.copy-btn');btn.textContent='已复制';setTimeout(function(){btn.textContent='复制'},2000)}
+function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
+var _pyReady=null;
+function _loadPy(){
+  if(_pyReady)return _pyReady;
+  _pyReady=new Promise(function(resolve,reject){
+    var s=document.createElement('script');
+    s.src='https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js';
+    s.onload=function(){loadPyodide().then(resolve).catch(reject)};
+    s.onerror=function(){reject(new Error('could not load the Python runtime'))};
+    document.head.appendChild(s);
+  });
+  return _pyReady;
+}
+function runVerify(){
+  var btn=document.getElementById('run-verify-btn');
+  var status=document.getElementById('run-verify-status');
+  var out=document.getElementById('run-verify-output');
+  btn.disabled=true;btn.style.opacity='.6';btn.style.cursor='default';
+  status.style.display='block';status.style.color='var(--g4)';
+  status.textContent='Loading Python in your browser (one-time, ~6 MB)…';
+  out.style.display='none';out.textContent='';
+  _loadPy().then(function(py){
+    status.textContent='Running verify.py …';
+    return fetch('/verify.py?cb='+Date.now()).then(function(r){
+      if(!r.ok)throw new Error('could not fetch verify.py ('+r.status+')');
+      return r.text();
+    }).then(function(code){
+      py.FS.writeFile('verify.py',code);
+      py.runPython([
+        'import sys, io, runpy',
+        '_buf = io.StringIO()',
+        '_old = sys.stdout',
+        'sys.stdout = _buf',
+        '_rc = 0',
+        'try:',
+        "    runpy.run_path('verify.py', run_name='__main__')",
+        'except SystemExit as e:',
+        '    _rc = e.code or 0',
+        'finally:',
+        '    sys.stdout = _old',
+        '_out = _buf.getvalue()'
+      ].join('\n'));
+      var text=py.globals.get('_out');
+      var rc=py.globals.get('_rc');
+      out.textContent=text;
+      out.style.display='block';
+      var passed=(rc===0)&&/ALL\s+\d+\s+CHECKS PASSED/.test(text);
+      out.style.borderColor=passed?'#1a7f37':'#b00';
+      status.textContent=passed?'Verified live in your browser — every derivation holds.':'Finished — see the output below.';
+      status.style.color=passed?'#1a7f37':'var(--g4)';
+      btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';btn.textContent='▸ Run it again';
+    });
+  }).catch(function(err){
+    status.style.display='block';status.style.color='#b00';
+    status.textContent='Could not run in-browser ('+err.message+'). You can still run it on your machine via the link.';
+    btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';
+  });
+}
+function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
+
+// Download counter
+(function(){
+  var counter='/.netlify/functions/download-counter';
+  var el=document.getElementById('dl-count');
+
+  fetch(counter).then(function(r){return r.json()}).then(function(d){
+    el.textContent=d.count.toLocaleString();
+  }).catch(function(){el.textContent='0'});
+
+  var toast=document.createElement('div');
+  toast.className='toast';
+  toast.textContent='即将发布';
+  document.body.appendChild(toast);
+  var toastTimer;
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href$=".pdf"]');
+    if(!a) a=e.target.closest('.ap-meta a, .dl-list a');
+    if(!a) return;
+    var href=a.getAttribute('href');
+    if(!href||href==='#'){
+      e.preventDefault();
+      e.stopPropagation();
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
+      return;
+    }
+    // Extract filename from href
+    var filename=href.split('/').pop();
+    // Force immediate download
+    if(!a.hasAttribute('download')) a.setAttribute('download','');
+    // Increment counter with per-file tracking
+    fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})}).then(function(r){return r.json()}).then(function(d){
+      el.textContent=d.count.toLocaleString();
+    });
+  },true);
+})();
+</script><div class="toast">即将发布</div>
+
+<script>
+window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+window.LOCALE = 'en';
+window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
+window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
+window.translation = {common:{selectedList:'{quantity} list selected',selectedLists:'{quantity} lists selected'}};
+var AUTOHIDE = Boolean(0);
+</script>
+<script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf","../AP43_The_Gravity_of_Possibilities.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
+<script>(function(){var t=document.querySelectorAll('[onclick]');for(var i=0;i<t.length;i++){var el=t[i],oc=el.getAttribute('onclick')||'';if(/toggle(AP|Part)|nbToggle/.test(oc)&&el.tagName!=='BUTTON'&&el.tagName!=='A'){if(!el.hasAttribute('role'))el.setAttribute('role','button');if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});}}})();</script>
+
+<script id="visit-counter">
+// One visit is one browser session, not one page load: a reload does not count
+// again, so the number keeps meaning something. Counted from every page.
+(function(){
+  var api='/.netlify/functions/visit-counter';
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  var el=document.getElementById('visit-count');
+  if(el){
+    fetch(api).then(function(r){return r.json()}).then(function(d){
+      el.textContent=(d.count||0).toLocaleString();
+    }).catch(function(){el.textContent='—'});
+  }
+})();
+</script>
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+</body></html>

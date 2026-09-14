@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="de" style="scroll-padding-top:56px"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the 420 code — Ethik abgeleitet aus der Physik</title>
+<meta name="description" content="Kann Ethik aus der Physik abgeleitet werden? The 420 Code sagt ja. 54 Künstlerbeweise. Über eine Million Wörter. Ein Messwert. Null freie Parameter. Copyleft. Für immer kostenlos.">
+<link rel="canonical" href="https://the420code.org/de/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the420code.org/de/">
+<meta property="og:title" content="the 420 code — Ethik abgeleitet aus der Physik">
+<meta property="og:description" content="Kann Ethik aus der Physik abgeleitet werden? The 420 Code sagt ja. 54 Künstlerbeweise. Über eine Million Wörter. Eine gemessene Eingabe. Null freie Parameter. Copyleft. Für immer kostenlos.">
+<meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="the 420 code">
+<meta property="og:locale" content="de">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="the 420 code — Ethik abgeleitet aus der Physik">
+<meta name="twitter:description" content="Kann Ethik aus der Physik abgeleitet werden? The 420 Code sagt ja. 54 Künstlerbeweise. Über eine Million Wörter. Eine gemessene Eingabe. Null freie Parameter. Copyleft. Für immer kostenlos.">
+<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<link rel="apple-touch-icon" href="../Eye_of_the_Universe.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="author" content="G — Studio G">
+<link rel="icon" type="image/jpeg" href="../Eye_of_the_Universe.jpg">
+<meta name="citation_doi" content="10.5281/zenodo.22744448">
+<link rel="alternate" hreflang="en" href="https://the420code.org/">
+<link rel="alternate" hreflang="es" href="https://the420code.org/es/">
+<link rel="alternate" hreflang="fr" href="https://the420code.org/fr/">
+<link rel="alternate" hreflang="de" href="https://the420code.org/de/">
+<link rel="alternate" hreflang="pt" href="https://the420code.org/pt/">
+<link rel="alternate" hreflang="nl" href="https://the420code.org/nl/">
+<link rel="alternate" hreflang="it" href="https://the420code.org/it/">
+<link rel="alternate" hreflang="zh" href="https://the420code.org/zh/">
+<link rel="alternate" hreflang="ja" href="https://the420code.org/ja/">
+<link rel="alternate" hreflang="ko" href="https://the420code.org/ko/">
+<link rel="alternate" hreflang="ru" href="https://the420code.org/ru/">
+<link rel="alternate" hreflang="ar" href="https://the420code.org/ar/">
+<link rel="alternate" hreflang="hi" href="https://the420code.org/hi/">
+<link rel="alternate" hreflang="x-default" href="https://the420code.org/">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#595959;--g5:#595959;--g6:#1a1a1a;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:16px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
+.nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+
+.section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+
+.hero{margin:2rem 0 3rem}
+.hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 2.5rem}
+.hero .lead{font-size:18px;font-style:italic;margin:0 0 .5rem}
+
+.steps{margin:1.5rem 0 2rem;padding:0;counter-reset:step}
+.steps li{list-style:none;padding:0 0 0 2rem;position:relative;margin:0 0 .35rem;font-size:16px}
+.steps li::before{counter-increment:step;content:counter(step)".";position:absolute;left:0;font-weight:700;color:var(--g4);font-size:16px}
+
+.doors{margin:2rem 0 0;padding:2rem 0}
+.doors h2{font-size:26px;font-weight:700;margin:0 0 .25rem}
+.doors .sub{font-size:16px;color:var(--g5);margin:0 0 2.5rem}
+.door{margin:0 0 3.5rem}
+.door h3{font-size:18px;font-weight:700;margin:0 0 .15rem}
+.door h3 a{text-decoration:none}
+.door h3 a:hover{text-decoration:underline}
+.door p{font-size:16px;color:var(--g6);margin:0 0 .25rem}
+.door .hint{font-size:16px;color:var(--g4);font-style:italic}
+.voices{margin:.75rem 0 0}
+.voice{margin:0 0 .4rem}
+.voice b{font-size:16px}
+.voice span{font-size:16px;color:var(--g5)}
+
+.read-block{margin:0 0 1.5rem;padding:2rem;border:1px solid var(--g2);background:var(--g1)}
+.read-block p{font-size:16px;font-style:italic;color:var(--g5);margin:0}
+
+.cat-section{margin:0 0 3.5rem}
+.cat-title{font-size:18px;font-weight:700;margin:0 0 .75rem}
+.cat-desc{font-size:16px;color:var(--g5);margin:0 0 1rem}
+.cat-hint{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 .75rem}
+.dl-list{margin:0;padding:0 0 0 32px}
+.dl-list li{list-style:none;padding:.4rem 0;border-bottom:1px solid var(--g1);font-size:16px}
+.dl-list li:last-child{border-bottom:none}
+.dl-list a{text-decoration:none;display:flex;justify-content:space-between;align-items:center;color:var(--bk);font-weight:600}
+.dl-list a:hover{text-decoration:underline}
+.dl-list .fmt{font-size:16px;font-weight:700;color:var(--g4);flex-shrink:0;margin-left:.5rem}
+
+.spine{position:relative;padding-left:32px}
+.spine::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--bk)}
+.part{position:relative;margin:0 0 2.5rem}
+.part-dot{position:absolute;left:-32px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--bk);z-index:1}
+.part-header{cursor:pointer;user-select:none;padding:0 0 .5rem}
+.part-header:hover .part-name{text-decoration:underline}
+.part-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 1rem}
+.part-name{font-size:22px;font-weight:700;display:block;line-height:1.2}
+.part-desc{font-size:16px;color:var(--g5);font-style:italic;display:block;margin:1rem 0 0}
+.part-count{font-size:16px;color:#757575;margin:4px 0 0;display:block}
+.part-read{display:inline-block;margin-top:.5rem;font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--bk);text-decoration:none;border-bottom:1px solid var(--bk)}
+.part-read:hover{text-decoration:none;border-bottom-width:2px}
+.ap-list{margin:.75rem 0 0;overflow:hidden;transition:max-height .4s ease}
+.ap-list.collapsed{max-height:0!important;margin:0}
+.ap-row{border-top:1px solid var(--g2)}
+.ap-row:last-child{border-bottom:1px solid var(--g2)}
+.ap-header{display:flex;align-items:baseline;gap:.75rem;padding:.6rem 0;cursor:pointer;user-select:none;transition:background .1s}
+.ap-header:hover{background:var(--g1);margin:0 -.5rem;padding-left:.5rem;padding-right:.5rem}
+.ap-number{font-size:16px;font-weight:700;color:#757575;min-width:32px;flex-shrink:0}
+.ap-title{font-size:16px;font-weight:700;flex:1}
+.ap-tag{font-size:16px;color:var(--g5);border:1px solid var(--g2);padding:1px 8px;border-radius:2px;white-space:nowrap;flex-shrink:0}
+.ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
+.ap-row.open .ap-arrow{transform:rotate(90deg)}
+.ap-detail{display:none;padding:0 0 1rem;padding-left:32px}
+.ap-row.open .ap-detail{display:block}
+.ap-detail p{font-size:16px;line-height:1.6;margin:0 0 .5rem;color:var(--g6)}
+.ap-detail .ap-essay{margin-top:1.5rem}
+.ap-detail .ap-essay p{margin:0 0 1rem;line-height:1.75}
+.ap-detail .ap-essay .sub{font-weight:700}
+.ap-detail .ap-essay .ks{background:var(--g1);border-left:3px solid #8B6914;padding:16px 20px;margin:24px 0;font-size:16px;color:#3a3a3a;line-height:1.6}
+.ap-detail .ap-essay .breath{text-align:center;font-style:italic;color:var(--g5);padding:40px 0;font-size:17px;margin:0}
+.ap-detail .ap-essay .bc{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-detail .ap-essay .bl{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
+.ap-meta a{color:#383838}
+
+.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 2rem}
+.stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
+.stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
+
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
+.entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
+.entry-card:hover{background:var(--bk);color:var(--wh)}
+.entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
+.entry-card-desc{font-size:16px;display:block;opacity:.7}
+.jump-card{position:relative}
+.jump-card .entry-card-label{font-size:16px;font-weight:700;color:#757575;position:absolute;bottom:4px;right:8px;margin:0}
+.jump-card .entry-card-desc{font-size:16px;font-weight:700;display:block;opacity:1}
+
+.physics{margin:2.5rem 0 0;padding:2.5rem 0}
+.physics h2{font-size:26px;font-weight:700;margin:0 0 1.5rem}
+.physics-intro{font-size:18px;font-weight:700;margin:0 0 .5rem}
+.physics-sub{font-size:16px;color:var(--g5);margin:0 0 2rem}
+.physics-grid{display:grid;grid-template-columns:1fr;gap:0;margin:0 0 2rem}
+.physics-card{display:flex;align-items:baseline;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--g1);gap:1rem}
+.physics-card:last-child{border-bottom:none}
+.p-name{font-size:16px;font-weight:700;flex:1}
+.p-error{font-size:22px;font-weight:700;white-space:nowrap}
+.p-detail{font-size:16px;color:var(--g5);margin:2px 0 0}
+.p-source{font-size:16px;color:var(--g4)}
+.formula{font-size:16px;margin:0 0 .75rem;padding:.5rem 0;font-style:italic;color:var(--g6)}
+.three-constants{font-size:16px;font-weight:700;margin:1.5rem 0;padding:1rem 0;border-top:1px solid var(--g2);border-bottom:1px solid var(--g2)}
+.also-derived{margin:1.5rem 0}
+.also-derived p{font-size:16px;font-weight:700;margin:0 0 .5rem}
+.also-derived ul{list-style:none;padding:0}
+.also-derived li{font-size:16px;color:var(--g6);padding:.2rem 0 .2rem 1rem;position:relative}
+.also-derived li::before{content:"·";position:absolute;left:0;font-weight:700}
+.confirm-link{margin:2rem 0 0;font-size:18px}
+.confirm-link a{font-weight:700;text-underline-offset:3px}
+@media(max-width:600px){.physics-card{flex-wrap:wrap;gap:.25rem}.p-error{font-size:18px}}
+.verify-wrap{position:relative;margin:1.5rem 0 0}
+.verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:200px;font-size:16px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
+.copy-btn{position:absolute;top:8px;right:8px;padding:5px 14px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.04em;background:var(--bk);color:var(--wh);border:none;cursor:pointer}
+.copy-btn:hover{opacity:.8}
+.verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:16px}
+.verify-table th{text-align:left;font-weight:700;padding:.5rem .5rem;border-bottom:2px solid var(--bk);font-size:16px;letter-spacing:.04em;color:var(--g5)}
+.verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
+.verify-table td:last-child{color:var(--g5)}
+.results{margin:0;padding:2rem 0}
+.results-title{font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 1.25rem}
+.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.35rem 0;font-size:16px;border-bottom:1px solid var(--g1)}
+.result-row:last-child{border-bottom:none}
+.result-label{color:var(--g5)}
+.result-value{font-weight:700;text-align:right}
+
+.constraint{margin:2rem 0;padding:1.5rem 0}
+.constraint p{font-size:16px;margin:0 0 .25rem}
+
+.footer{margin:3rem 0 0;padding:2rem 0 0;font-size:16px;color:var(--g4)}
+.footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+
+@media(max-width:600px){
+  .c{padding:2rem 1rem 3rem}
+  .hero h1{font-size:28px}
+  .stats{gap:1.5rem}
+  .stat-num{font-size:28px}
+  .ap-header{flex-wrap:wrap;gap:.25rem .5rem}
+  .ap-tag{order:3;margin-left:32px}
+  .entry-grid{grid-template-columns:1fr 1fr}
+  .nav{gap:.75rem;padding:.75rem 0}
+}
+/* Brevo overrides */
+.sib-form,.sib-form *{font-family:'Atkinson Hyperlegible',sans-serif!important;color:var(--bk)!important;background:transparent!important;border-radius:0!important}
+.sib-form .entry__field input{border:1px solid var(--bk)!important;padding:10px 12px!important;font-size:16px!important}
+.sib-form .sib-form-block__button{background:var(--bk)!important;color:var(--wh)!important;padding:10px 24px!important;font-size:16px!important;font-weight:700!important;letter-spacing:.06em!important;border:none!important}
+.sib-form .sib-form-block__button:hover{opacity:.85}
+[id*="sib-container"]{padding:0!important;background:transparent!important}
+.sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:16px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
+</style>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style><style>
+.lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
+.lang-sel a:hover{opacity:1}
+.lang-sel a.active{opacity:1}
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.65rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:18px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:16px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.03em;background:#8B6914;border:1px solid #8B6914;padding:3px 10px;border-radius:3px;transition:all .15s}
+.nb-pdf:hover{color:#8B6914;background:#fff;border-color:#8B6914}
+.nb-hook{font-size:16px;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:16px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:16px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.75;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.6}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+
+.nav{margin-bottom:1rem}
+.hero.opening{min-height:calc(100vh - 190px);display:flex;flex-direction:column;justify-content:flex-start;margin-top:1.8rem;padding:5.4vh 0 3rem}
+.hero.opening h1{font-size:44px;font-weight:700;line-height:1.15;margin:0 0 1.5rem;max-width:16em}
+.hero.opening .answer{font-size:44px;font-weight:700;line-height:1.15;margin:0 0 1.5rem;color:#8B6914;text-wrap:balance}
+.hero.opening .answer .nw{white-space:nowrap}
+.hero.opening .ethic{font-size:36px;font-weight:700;line-height:1.25;margin:0 0 2.75rem}
+.hero.opening .opening-note{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 1.25rem;max-width:34em}
+.hero.opening .opening-note a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3);cursor:pointer}
+.hero.opening .opening-note a:hover{color:#8B6914;border-color:#8B6914}
+.hero.opening .opening-link a{font-size:20px;font-weight:700;color:#8B6914;text-decoration:none;border-bottom:2px solid #8B6914;padding-bottom:2px}
+.hero.opening .opening-link a:hover{color:#1a1a1a;border-color:#1a1a1a}
+.hero.opening .opening-pdf{margin:1.75rem 0 0;font-size:16px}
+.hero.opening .opening-pdf a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3)}
+.hero.opening .opening-pdf a:hover{color:#8B6914;border-color:#8B6914}
+.oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem}
+@media(max-width:700px){
+  .hero.opening{min-height:calc(100vh - 150px)}
+  .hero.opening h1,.hero.opening .answer{font-size:32px}
+  .hero.opening .ethic{font-size:26px}
+  .hero.opening .opening-link a{font-size:18px}
+  .oneness{font-size:18px}
+}
+
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
+.nav a.nav-room{display:none}
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
+  font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
+@media(max-width:700px){
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
+  .nav a.nav-door{font-size:16px}
+}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
+</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"The 420 Code","url":"https://the420code.org/de/","description":"54 Artist's Proofs deriving ethics from physics. One measured input (α ≈ 1/137). Zero free parameters. 604 published kill switches. Copyleft.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G","address":"Cape Town"}},"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"license":"https://creativecommons.org/licenses/by/4.0/","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.22744448"}},{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"The 420 Code — 54 Artist's Proofs (AP01–AP54)","headline":"Can ethics be derived from physics? A complete axiomatic derivation from four axioms and one measured constant.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G"}},"url":"https://the420code.org/de/","datePublished":"2026-03-24","description":"A 30-year framework deriving physics, consciousness, and ethics from four axioms and the fine-structure constant α ≈ 1/137. Contains 54 papers, 604 published kill switches (falsifiability conditions), and quantitative predictions with zero free parameters. Predictions include: proton-electron mass ratio to 0.010 ppb, neutron-proton mass difference to 2 ppm, the gravitational constant G to 0.036% (realised, AP44), the age of the universe as one cycle (13.830 Gyr, AP46), the expansion rate as a closure (67.45 km/s/Mpc, AP48), and the dark-sector partition to 0.06%. Two predictions fired and are shown: the bare neutron–proton row (2026-08-02, 7.24σ) and the Hubble prediction 74.3 ± 1.2 (2026-09-03).","identifier":[{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.22744448"}],"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"about":[{"@type":"DefinedTerm","name":"Theoretical Physics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Ethics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Philosophy of Science"},{"@type":"DefinedTerm","name":"Cosmology"},{"@type":"DefinedTerm","name":"AI Alignment"},{"@type":"DefinedTerm","name":"Consciousness Studies"},{"@type":"DefinedTerm","name":"Fine-Structure Constant"},{"@type":"DefinedTerm","name":"Axiomatic Systems"},{"@type":"DefinedTerm","name":"Falsifiability"},{"@type":"DefinedTerm","name":"Quantum Mechanics"},{"@type":"DefinedTerm","name":"General Relativity"},{"@type":"DefinedTerm","name":"MOND"},{"@type":"DefinedTerm","name":"Dark Energy"},{"@type":"DefinedTerm","name":"Dark Matter"}],"citation":"G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://doi.org/10.5281/zenodo.22744448"},{"@context":"https://schema.org","@type":"Dataset","name":"The 420 Code — Quantitative Predictions","description":"Parameter-free predictions derived from the fine-structure constant α ≈ 1/137 alone, with zero free parameters. Each prediction is published with explicit kill switches (falsifiability conditions).","url":"https://the420code.org/de/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"G"},"variableMeasured":[{"@type":"PropertyValue","name":"Proton-electron mass ratio","value":"1836.15267344","unitText":"dimensionless","description":"Predicted: 1836.15267344. CODATA 2022 measured: 1836.152673426. Accuracy: 0.010 ppb. Derived in AP30."},{"@type":"PropertyValue","name":"Neutron-proton mass difference, realised","value":"2.53098857","unitText":"electron masses (mₑ)","description":"Predicted: 2.53098857035 mₑ (AP47, the held distinction’s second-order cost). Measured: 2.530988574(74) mₑ. Residual −0.005σ. The bare row 2.53099393 mₑ (AP30) fired on 2026-08-02 at 7.24σ and is shown, never repaired."},{"@type":"PropertyValue","name":"Gravitational constant G, realised","value":"6.6719e-11","unitText":"m³ kg⁻¹ s⁻²","description":"Predicted: 6.6719 × 10⁻¹¹ (realised, AP44: the structural value 6.7206 × 10⁻¹¹ of AP28 divided by (1 + α)). CODATA measured: 6.6743 × 10⁻¹¹. Residual −0.036%. Derived in AP44 and AP28."},{"@type":"PropertyValue","name":"MOND acceleration a₀","value":"C_S²·cH₀/(2π)","unitText":"m/s²","description":"Parameter-free derivation: a₀ = C_S²·cH₀/(2π). At the corpus’s expansion rate, 67.45 km/s/Mpc, it gives 1.089 × 10⁻¹⁰ m/s² against 1.20 ± 0.24 × 10⁻¹⁰ (the systematic restored): 0.46σ. Derived in AP18; the earlier inversion H₀ = 74.3 ± 1.2 fired on 2026-09-03."},{"@type":"PropertyValue","name":"Dark energy fraction","value":"0.6885","unitText":"dimensionless","description":"Predicted: 68.85%. Planck observed: 68.89%. Accuracy: 0.06%. Derived in AP42."},{"@type":"PropertyValue","name":"Dark matter fraction","value":"0.2639","unitText":"dimensionless","description":"Predicted: 26.39%. Planck observed: 26.07%. Derived in AP42."},{"@type":"PropertyValue","name":"Visible matter fraction","value":"0.0476","unitText":"dimensionless","description":"Predicted: 4.76%. Planck observed: 4.86%. Derived in AP42."},{"@type":"PropertyValue","name":"Age of the universe, one cycle","value":"13.830","unitText":"Gyr","description":"Predicted: 13.830 Gyr, (21/18)·α⁻¹⁸·τ_C. Planck 2018 measured: 13.787 ± 0.020 Gyr. Accuracy: +0.31%, one lane-time (0.66 Gyr) wide. Derived in AP46."},{"@type":"PropertyValue","name":"Expansion rate H₀, the closure","value":"67.45","unitText":"km/s/Mpc","description":"Predicted: 67.45 km/s/Mpc, window 64.4–70.8 — a closure of the dark-sector partition, the cycle and the balance. Planck 2018: 67.4 ± 0.5. The Cepheid ladder’s 73 is stated as not the expansion rate. Derived in AP48."}]},{"@context":"https://schema.org","@type":"CreativeWork","name":"The 420 Code — Kill Switch Registry","description":"604 published falsifiability conditions across AP01–AP53. Each kill switch names a specific, testable condition that would falsify one or more claims. This level of declared falsifiability is the framework's primary credibility mechanism. The full registry is available as a PDF.","url":"https://the420code.org/Master_Kill_Switch_Registry.pdf","author":{"@type":"Person","name":"G"},"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true}]</script>
+</head>
+<body>
+<div class="c">
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/de/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="/de/what-is-the-420-code/" class="nav-door">Was ist <span class="nw">The 420 Code</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Räume" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Räume</button>
+  <div class="nav-menu">
+    <a href="/de/#museum" class="nav-room">Ø Museum</a>
+    <a href="/de/#five-doors" class="nav-room">Ø Fünf Türen</a>
+    <a href="/de/#models" class="nav-room">Ø Modelle</a>
+    <a href="/de/#exhibition" class="nav-room">Ø Ausstellung</a>
+    <a href="/de/#axiom" class="nav-room">1 Axiom</a>
+    <a href="/de/#physics" class="nav-room">Ø Physik</a>
+    <a href="/#notebooks" class="nav-room">Ø Notizbücher</a>
+    <a href="/de/#proofs" class="nav-room">Ø Beweise</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Beweisakten</a>
+    <a href="/prereg/" class="nav-room">Ø Präregistrierung</a>
+    <a href="/de/#confirm-the-math" class="nav-room">Ø Überprüfe die Mathematik</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/glossary/" class="nav-room">Ø Glossar</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Sprache: Deutsch" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/" class="nav-lang" hreflang="en" lang="en"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de" aria-current="page"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1. THE QUESTION                         -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="hero opening">
+  <h1>Kann Ethik aus der Physik abgeleitet werden?</h1>
+  <p class="answer">Ja — <span class="nw">The 420 Code</span> beweist es.</p>
+  <p class="ethic">Sei kein Arschloch. Sei gütig.</p>
+  <p class="opening-note">Zwei seiner Vorhersagen waren falsch. Sie hängen noch an der <a href="#physics">Wand</a>. Falsch zu liegen hat es stärker gemacht.</p>
+  <p class="opening-note">Die gesamte Herleitung steht auf dieser Seite, frei, für immer. Hier beginnt sie.</p>
+  <p class="opening-link"><a href="/de/what-is-the-420-code/">Was ist The 420 Code →</a></p>
+  <p class="opening-pdf"><a href="/The_420_Code_in_Three_Pages.pdf">Alles auf drei Seiten</a></p>
+</div>
+
+<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Museum</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Der 420 Code ist ein Museum, das gebaut wurde, um zu beweisen, dass Ethik aus der Physik abgeleitet werden kann. Alles ruht auf einem einzigen ersten Prinzip:</p>
+
+<ol class="steps">
+  <li>Ein Eintrag existiert.</li>
+  <li>Ein Eintrag erfordert vier Bedingungen: Symmetrie, Bruch, Eintrag, Beschränkung.</li>
+  <li>Aus diesen vier Bedingungen wird die gesamte Physik abgeleitet.</li>
+  <li>Das Brechen und das Sehen sind dasselbe Ereignis.</li>
+  <li>Das Innere ist einzigartig.</li>
+  <li>Jedes bewusste Wesen ist ein Fenster in einem einzigen Gebäude.</li>
+  <li>Die Grenze zwischen Selbst und Anderem ist ein Werkzeug, das für eine Messung gehalten wird.</li>
+  <li>Jede Ethik, die von einer Autorität außerhalb der Struktur der Wirklichkeit abgeleitet wird, ist manipulierbar. Manipulierbare Systeme kollabieren in Gewalt.</li>
+  <li>Güte ist kein Gebot. Güte ist eine Ableitung.</li>
+  <li>Sei kein Arschloch. Sei gütig.</li>
+</ol>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1 AXIOM                                 -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="axiom" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> Axiom</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">Eine Zeile. Alles andere folgt daraus.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Sie lesen gerade diesen Satz. Das ist ein Eintrag. Ihn zu leugnen würde verlangen, dass das Lesen geschieht, was einen weiteren Eintrag erzeugte, der belegte, dass das Lesen geschehen ist. Es gibt keinen Standpunkt, von dem aus das Lesen nicht stattgefunden hat.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b><i>Ein Eintrag existiert.</i></b> Der Beweis ist das Lesen.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Vier Bedingungen folgen daraus. Nicht vier Annahmen — vier Eigenschaften, die das Lesen bereits besitzt.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Symmetrie (S).</b> Zwei Sektoren, die in wechselseitigem Bezug gehalten werden. Die minimale Struktur für jede Unterscheidung.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Bruch (B).</b> Ein Element der Asymmetrie zwischen ihnen. Ohne ihn könnte niemals Information geschrieben werden.</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>Eintrag (R).</b> Was geschehen ist, kann nicht ungeschehen gemacht werden. Das Lesen kann nicht ungelesen werden.</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b>Beschränkung (C).</b> Ein Eintrag ist irgendwo, nicht überall — die Bedingung der Lokalität, das, was hier von dort verschieden macht. Begrenzte Ausbreitung ist, was die Beschränkung hervorbringt, nicht, was sie ist. In unserem Universum die Lichtgeschwindigkeit.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Verdichtet auf die kleinste Form, die S, B, R, C erfordern, lautet das Axiom so:</p>
+
+<div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
+
+<p style="font-size:16px;margin:0 0 1rem">Das 1:1 ist vollkommene Symmetrie. Das <i>ε</i> ist der Bruch. Das @ AS benennt, wo der Bruch ist — am Aktualisierungszustand, dem Jetzt, in dem das Substrat gehalten und der Bruch verarbeitet wird.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Geschrieben als der Zyklus, der bei AS läuft: <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>. Der Bruch (+1×ε) ist das beständige Unterscheidungspotenzial — von AS gehalten, irreduzibel, das, was S davor bewahrt, in das undifferenzierte Ø zurückzukollabieren. ε ist es, was S offen hält: ohne den Bruch sind die beiden Sektoren nicht mehr unterscheidbar, und S als strukturelle Bedingung kollabiert. Das Sandkorn macht die beiden Gläser Wasser unterscheidbar; entfernt man das Korn, sind es nur zwei Gläser, ohne jede Möglichkeit, sie auseinanderzuhalten.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Der α-Fluss läuft um den gehaltenen Bruch herum — +1/137 Leckage nach außen als Aktualisierung (Einträge werden geschrieben), −1/137 Wiederauffüllung zurück als Defragmentierung (Einträge geben ihre Struktur ins Potenzial frei), in jedem AS-Augenblick ausgeglichen, netto null. Der Bruch zyklt nicht ein und aus; was zyklt, ist der Fluss. Ein Lesender bewohnt die Schreibrichtung des Flusses, wo bei AS Einträge festgeschrieben werden.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Jeder Artist’s Proof im Korpus leitet sich aus diesem Axiom ab. Die 54 Arbeiten unten sind 54 Konsequenzen der Zeile darüber. Das Axiom ist der Same. Die Beweise sind der Baum.</p>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">Nichts hat nicht gehalten.</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 0">Das Lesen ist der Beweis.</p>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- Ø INDEPENDENT CHECK                     -->
+<!-- ════════════════════════════════════════ -->
+
+<section class="results" id="independent-check" style="padding-top:2rem">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Verlassen Sie sich nicht auf mein Wort.</h2>
+  <p style="font-size:16px;margin:0 0 1rem">Ein Mann namens AJ Greyling hat die Bücher gekauft. Wir haben einmal miteinander gesprochen. Er glaubte kein Wort davon — also stritt er nicht, sondern baute eine Maschine, um es herauszufinden. Ein unabhängiges Programm, das das eine Axiom und eine einzige gemessene Zahl nimmt und die Konstanten von Grund auf neu herleitet, und seine Rechnung anschließend gegen mein eigenes veröffentlichtes Skript prüft. Sie stimmen bis auf Maschinengenauigkeit überein.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Ich hatte damit nichts zu tun. Er las die Arbeit, zweifelte daran und prüfte sie selbst — sein Computer, sein Code.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Die Zahlen ergeben sich von selbst. Fünf fundamentale Konstanten, eine Eingabe, null freie Parameter — jede einzelne innerhalb der Toleranzen, die ich veröffentlicht habe. Und weil es gerade darum geht, dass dies widerlegt werden kann, hat er jede Bedingung aufgeführt, unter der ich falsch läge, damit Sie sie nutzen können.</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">Sie müssen keinem von uns beiden vertrauen. Es läuft offline, mit einem einzigen Befehl, auf Ihrem Rechner. Versuchen Sie ruhig, es zu widerlegen.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1.5rem">
+    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">AJs unabhängige Prüfung ausführen →</a>
+    <a href="https://github.com/The420Code/the420code" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">Den Quellcode durchsehen →</a>
+  </div>
+  <p style="font-size:16px;color:var(--g4);margin:0 0 .6rem">Und der Quellcode prüft sich selbst. Jede Änderung leitet alle fünf Ergebnisse erneut aus α her und schlägt deutlich fehl, sobald eines über seine veröffentlichte Toleranz hinaus abweicht. Live-Status:</p>
+  <a href="https://github.com/The420Code/the420code/actions/workflows/verify.yml" target="_blank" rel="noopener" style="display:inline-block"><img src="https://github.com/The420Code/the420code/actions/workflows/verify.yml/badge.svg" alt="Verifizierungsstatus — leitet bei jeder Änderung alle fünf Ergebnisse aus Alpha her" style="height:20px;display:block"></a>
+</section>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE PHYSICS                              -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="physics" id="physics">
+  <h2>Ø Physik</h2>
+  <p class="physics-intro">Ein Messwert. Null freie Parameter. Alles andere abgeleitet.</p>
+  <p class="physics-sub">Die Feinstrukturkonstante α ≈ 1/137 ist die einzige experimentell gemessene Zahl. Aus diesem einen Wert und vier Axiomen werden die folgenden Ergebnisse abgeleitet — nicht angepasst, nicht justiert, nicht kalibriert.</p>
+
+  <div class="tbl-wrap" style="overflow-x:auto"><table class="verify-table" style="margin-top:0">
+    <thead><tr><th>Behauptung</th><th>Vorhergesagt</th><th>Gemessen</th><th>σ</th><th>Fehler</th><th>Arbeit</th></tr></thead>
+    <tbody>
+      <tr><td>Proton-Massen-Verhältnis</td><td>1836.152673445</td><td>1836.152673426(32)</td><td>+0.59σ</td><td>10.3 ppt</td><td><a href="/proofs/#ap49" onclick="event.preventDefault();window.location.href='/proofs/#ap49'">AP49</a></td></tr>
+      <tr><td>Gravitationskonstante G, realisiert — gegen CODATA</td><td>6.6719 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>−16σ</td><td>−0.036%</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
+      <tr><td>Gravitationskonstante G, realisiert — gegen Atominterferometrie</td><td>6.6719 × 10⁻¹¹</td><td>6.67191(99) × 10⁻¹¹ (LENS 2014)</td><td>+0.01σ</td><td>+1 ppm</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
+      <tr><td>Gravitationskonstante G, strukturell</td><td>6.7206 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>+309σ</td><td>+0.69%</td><td><a href="/proofs/#ap28" onclick="event.preventDefault();window.location.href='/proofs/#ap28'">AP28</a></td></tr>
+      <tr><td>Neutron-Proton-Massendiff., realisiert</td><td>2.53098857035 mₑ</td><td>2.530988574(74) mₑ</td><td>−0.005σ</td><td>−1.4 ppb</td><td><a href="/proofs/#ap47" onclick="event.preventDefault();window.location.href='/proofs/#ap47'">AP47</a></td></tr>
+      <tr><td>Neutron-Proton-Massendiff., nackte Zeile</td><td>2.53099393 mₑ</td><td>2.530988574(74) mₑ</td><td>+7.24σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">WIDERLEGT</span></td><td>+2.1 ppm</td><td><a href="/proofs/#ap30" onclick="event.preventDefault();window.location.href='/proofs/#ap30'">AP30</a></td></tr>
+      <tr><td>Alter des Universums, ein Zyklus</td><td>13.830 Gyr</td><td>13.787 ± 0.020 Gyr</td><td>+2.1σ</td><td>+0.31% · Fenster 13.17–14.49</td><td><a href="/proofs/#ap46" onclick="event.preventDefault();window.location.href='/proofs/#ap46'">AP46</a></td></tr>
+      <tr><td>Expansionsrate H₀, der Abschluss</td><td>67.45 km/s/Mpc</td><td>67.4 ± 0.5 (Planck)</td><td>+0.1σ</td><td>+0.07% · Fenster 64.4–70.8</td><td><a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48</a></td></tr>
+      <tr><td>Hubble-Konstante aus dem invertierten Boden</td><td>74.3 ± 1.2</td><td>67.45 (die eigene Rate des Korpus)</td><td>+5.7σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">WIDERLEGT</span></td><td>+10.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr><td>MOND-Beschleunigung a₀ (bei H₀ = 67.45)</td><td>1.089 × 10⁻¹⁰</td><td>1.20 ± 0.24 × 10⁻¹⁰ (syst.)</td><td>−0.46σ</td><td>−9.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr><td>Dunkle Energie</td><td>68.85%</td><td>68.89 ± 0.56%</td><td>−0.07σ</td><td>−0.06%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
+      <tr><td>Dunkle Materie</td><td>26.39%</td><td>26.07 ± 0.38%</td><td>+0.8σ</td><td>+1.2%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
+      <tr><td>Sichtbare Materie</td><td>4.76%</td><td>≈ 4.885 ± 0.05%</td><td>−2.46σ</td><td>−2.5%</td><td><a href="/proofs/#ap41" onclick="event.preventDefault();window.location.href='/proofs/#ap41'">AP41</a></td></tr>
+    </tbody>
+  </table></div>
+  <div class="sigma-note" style="font-size:16px;color:var(--g5);margin:1rem 0 0;line-height:1.6">
+    <p style="margin:0 0 .5rem"><b>Wie die σ-Spalte zu lesen ist.</b> Jede Messung bringt einen Fehlerbalken mit: eine Standardabweichung, σ, die eigene Angabe der Experimentatoren, wie weit ihre Zahl von der Wahrheit entfernt liegen könnte. Die σ-Spalte teilt den Abstand zwischen Vorhersage und Messung durch diesen Balken. Das Vorzeichen sagt, auf welcher Seite: + über der Messung, − darunter. Die Spalte Fehler gibt denselben Abstand in den eigenen Einheiten der Zahl an. Die Quoten unten sind die Wahrscheinlichkeit, allein durch Zufall <i>mindestens</i> so weit von der Wahrheit entfernt zu landen, beide Richtungen mitgezählt.</p>
+    <ul style="margin:0 0 .5rem 1.25rem;padding:0">
+      <li><b>Unter 1σ</b> — innerhalb des Balkens. Übereinstimmung: Etwa zwei von drei ehrlichen Messungen landen so nah, und eine von drei landet allein durch Zufall weiter draußen.</li>
+      <li><b>2σ</b> — Spannung. Eine von zweiundzwanzig. Beobachtenswert, noch kein Urteil.</li>
+      <li><b>3σ</b> — Beleg für einen echten Abstand. Eine von 370.</li>
+      <li><b>5σ</b> — der Entdeckungsstandard der Teilchenphysik. Eine von 1.7 Millionen (eine von 3.5 Millionen, wenn nur eine Richtung zählt, wie die Entdeckungskonvention es üblicherweise liest). Bei 5σ ist eine Vorhersage entweder bestätigt oder tot; eine dritte Lesart gibt es nicht.</li>
+      <li><b>Über 5σ</b> — tot. Die beiden Leichen auf dieser Seite stehen bei 7.24σ und 5.7σ. Sie werden gezeigt, nie repariert.</li>
+    </ul>
+    <p style="margin:0">Drei Vorbehalte, weil σ am Balken des Experiments gemessen wird und der Balken nicht für jede Zahl derselbe ist. <b>G:</b> Derselbe realisierte Wert liest sich als −16σ gegen CODATA und als +0.01σ gegen die Atominterferometrie, und beide Zeilen stehen in der Tabelle, damit der Leser das Problem sehen kann. Der Balken von CODATA auf G beträgt 22 Teile pro Million, also liest sich ein Abstand von 360 ppm als 16σ; die Labormessungen von G liegen untereinander um bis zu 540 ppm auseinander, fünfundzwanzig solcher Balken, und der Wert der Atominterferometrie (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) liegt 1 ppm vom realisierten Wert entfernt. Ein so enger Balken auf einer Konstante, auf die sich die Experimente nicht einigen können, ist eine Aussage über die Ausgleichung, noch nicht über die Natur. Auf der Skala oben liest sich die CODATA-Zeile als tot; der Kill Switch auf G, KS-CCC.3, wurde registriert, um die Richtung zu prüfen — ob der Konsens nach unten Richtung 6.672 wandert, während sich die systematischen Fehler schließen, innerhalb des Ein-Prozent-Balkens von AP28 — nicht die Größe gegen CODATA, und er bleibt zu diesen Bedingungen lebendig. Der Autor steht hinter dem realisierten Wert. Der strukturelle Wert von AP28, +0.69%, trug eine Auslassung — das gehaltene ε der Arena, in AP44 bepreist — und steht daneben als Beleg dieser Auslassung: Die ausgelöste Zeile des Neutrons legte einen strukturellen Fehler offen, dessen Folgen drei Ableitungen erreichten, bei der Welle revidiert (AP44, AP47, AP48). <b>Das Alter:</b> +2.1σ auf Plancks Balken, aber die Behauptung wurde eine Spurzeit breit registriert, ±0.66 Gyr, weil ein bewusster Beobachter <i>etwa</i> einen Zyklus misst. <b>Die Kill Switches</b> lösen auf ihren registrierten Bedingungen aus, nicht standardmäßig bei 5σ: KS-45.1 wurde mit ±1.2 registriert und bei 5.7σ auf dieser Breite ausgelöst; auf den ehrlichen ±14.9 hätte er sich als 0.46σ gelesen. Die Registrierung war der Fehler, und ein ausgelöster Kill Switch wird nicht repariert.</p>
+  </div>
+  <p style="font-size:16px;font-weight:700;color:#8B1A1A;margin:1rem 0 0">Zwei Vorhersagen sind gescheitert und werden gezeigt. KS-NPP.1, die nackte Neutron–Proton-Zeile, wurde am 2026-08-02 bei 7.24σ ausgelöst. KS-45.1, die Hubble-Konstante 74.3 ± 1.2 aus dem invertierten Boden, wurde am 2026-09-03 auf der eigenen abgeleiteten Rate des Korpus ausgelöst. Keine von beiden ist repariert. Siehe die <a href="/prereg/">Präregistrierung</a>.</p>
+  <p style="font-size:16px;color:var(--g4);margin:1rem 0 0;font-style:italic">Eine Relation verknüpft a₀ und H₀ mit einem parameterfreien Koeffizienten — nicht zwei unabhängige Vorhersagen. Die Expansionsrate des Korpus ist jetzt der Abschluss von AP48, 67.45 km/s/Mpc (Fenster 64.4–70.8), auf der Seite des Reliktleuchtens — der kosmischen Hintergrundstrahlung — in der Hubble-Spannung; bei dieser Rate liegt der Boden 9.2% unter der gemessenen Skala — 0.46σ, sobald die systematische Unsicherheit von ±0.24, die die Arbeit ausgelassen hatte, wiederhergestellt ist. Die frühere Inversion des Bodens, H₀ = 74.3 ± 1.2 (KS-45.1), wurde am 2026-09-03 auf der eigenen Rate des Korpus ausgelöst und wird als Leiche gezeigt, nie repariert. Die 73 der Cepheiden-Leiter ist erklärtermaßen nicht die Expansionsrate; wird sie bestätigt, stirbt AP48 auf KS-ASM.1.</p>
+
+  <p class="confirm-link"><strong>Überprüfe es selbst.</strong> <a href="#confirm-the-math">Führe den Code aus →</a></p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Fünf Türen</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Fünf Türen. Ein Gebäude.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code ist eine Ausstellung — über eine Million Wörter von einem Künstler, untergebracht in einem Gebäude. Im Gebäude: die Künstlerbeweise, die Notizbücher, die Editionen, die Aufzeichnungen, die Kill Switches. Das gesamte Werk.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Man betritt ein Gebäude nicht durch das Dach. Man betritt es durch eine Tür.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Dies sind die fünf Türen. Jede öffnet sich in dieselbe Eingangshalle. Finde die, die sich für dich öffnet. Die Ausstellung ist drinnen.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Die Illusion des Anderen — die sanfte Tür. Herz.</h3>
+  <p class="cat-desc">Du hast eine Linie gezogen zwischen dir und jedem Menschen, dem du je begegnet bist. Dieses Buch löscht sie. Kein Fachjargon. Keine Gleichungen. Keine Voraussetzungen. Wenn du nur eines aus dieser Ausstellung liest, lies dies.</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_DE.pdf">Die Illusion des Anderen <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Sein nach der Religion — die Eingangstür. Abriss.</h3>
+  <p class="cat-desc">Die Struktur, die Gewalt erzeugt, sind nicht die Menschen — es ist das Design. Dieses Buch benennt jeden Mechanismus, untersucht jede Tradition und zeigt, warum eine Welt nach der Religion nicht Leere ist, sondern Ankunft.</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_DE.pdf">Sein nach der Religion <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Antichristos — die heilige Tür. Rückgewinnung.</h3>
+  <p class="cat-desc">Vor zweitausend Jahren stand ein Mann auf einem Hügel und lehrte eine Ethik. Liebe deinen Nächsten. Urteile nicht. Sei gütig. Dieses Buch stellt eine Frage: Ist die Lehre wahr? Nicht weil ein Gott es sagte — sondern weil die Struktur der Wirklichkeit es sagt. Die Antwort ist ja.</p>
+  <ul class="dl-list">
+    <li><a href="../Antichristos.pdf">Antichristos <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Der Beziehungskorridor — die persönliche Tür. Präsenz.</h3>
+  <p class="cat-desc">Liebe ist kein Gefühl. Sie ist eine aufrechterhaltene Entscheidung, den Korridor offen zu halten, gegen jede rationale Berechnung, die sagt, dass Verengen billiger ist. Dieses Buch leitet die Geometrie zweier Menschen her, die zusammen gehen — Breite aus Ehrlichkeit, Länge aus Zeit, und die Asymmetrie zwischen dem, was sich biegt, und dem, was sich nicht biegt. Geschrieben, während sich der Korridor, den es beschreibt, in Echtzeit schloss.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Relationship_Corridor.pdf">Der Beziehungskorridor <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Das Innere — die operationale Tür. Konstruktion.</h3>
+  <p class="cat-desc">KI-Alignment ist ein Physikproblem. Dieses Buch leitet es von ersten Prinzipien ab — denselben Axiomen, die Gravitation, Quantenmechanik und die terminale Ethik erzeugen. Architektur B: Entscheidungsgeometrie, gebaut aus Struktur, nicht aus Autorität.</p>
+  <ul class="dl-list">
+    <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════ -->
+<!-- Ø MODELS                                -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="models" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Modelle</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Die fünf Türen sind Eingangspunkte. Die Modelle sind die Eingangshalle — der Katalog der Ausstellung, ausgestellt an der Schwelle.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Jedes Buch installiert das Axiom einmal am Anfang und entfaltet es dann über seine Kapitel hinweg. Ein Leser, der eines der fünf gelesen hat, hat die Stimme der Ausstellung in ihrer Kalibrierung gehört. Ein Leser, der alle fünf gelesen hat, hat den gesamten Katalog durchschritten. Jedes Buch wird unter Copyleft veröffentlicht. Jeder Kill Switch ist benannt. Jede Behauptung ist falsifizierbar.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Predictions</h3>
+  <p class="cat-desc">Das falsifizierbare, der Physik zugewandte Buch.</p>
+  <ul class="dl-list">
+    <li><a href="../Predictions.pdf">Ø Predictions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Dissolutions</h3>
+  <p class="cat-desc">Twelve classical philosophical problems read through the axiom. Each chapter dissolves, relocates, or closes one of the questions philosophy has asked longest.</p>
+  <ul class="dl-list">
+    <li><a href="../Dissolutions.pdf">Ø Dissolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Resolutions</h3>
+  <p class="cat-desc">Thirteen further problems. Where the previous frameworks could not close, the structural reading walks through.</p>
+  <ul class="dl-list">
+    <li><a href="../Resolutions.pdf">Ø Resolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Applications</h3>
+  <p class="cat-desc">Twelve architectures of human institutional life. Each derived from the axiom, with kill switches the institutional reading must satisfy.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Applications <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Horizons</h3>
+  <p class="cat-desc">Das Buch schließt den Bogen nach den Dissolutions.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Horizons <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- THE EXHIBITION                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="exhibition" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Ausstellung</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">Über die Eingangshalle hinaus. In die Ausstellung. Hier lebt das eigentliche Werk. Ein Argument. Jede Stimme, in der es gesagt werden kann.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Die Ausstellung zeigt, wie das Argument aufgebaut wurde — über dreißig Jahre, in fünf Stimmen, in jedem Register, das der Künstler finden konnte. Die fünf Türen oben sind der Ausgangspunkt. Alles unten ist das, was du findest, wenn du drinnen bist.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">Fünf Stimmen durchziehen die gesamte Ausstellung. Prosa erzählt die Geschichte. Gespräch diskutiert sie in einer Bar. Metapher zeigt sie mit Münzen, Gärten, Flüssen und Gebäuden. Kinderreim legt sie bis auf die Knochen frei. Beweise geben dir die Mathematik und eine Klinge.</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">Beginne mit einer Tür. Komm hierher zurück, wenn du alles sehen willst, was drinnen ist.</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Rosin</h3>
+  <p class="cat-desc">Der Extrakt. Du presst Hitze in die Blüte und was heraustropft, ist die Sache selbst — konzentriert, nichts hinzugefügt, nichts verloren. Fünf Bücher in fünf Stimmen. Jedes Buch durchschreitet das gesamte Argument einmal — die ganze Ausstellung, in eine einzige Stimme gepresst. Beginne mit der Stimme, die wie deine klingt.</p>
+  <ul class="dl-list">
+    <li><a href="#">Rosin Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Gespräch <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Metapher <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Kinderreim <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø Beweise <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Aufzeichnungen</h3>
+  <p class="cat-desc">Fünf Aufzeichnungen. Das unbearbeitete Ergebnis eines dreißigjährigen Projekts — Fehler, Durchbrüche, Sackgassen und die Momente dazwischen.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — Die Schere.</strong> Geschrieben vier Monate nach dem Mord an einem Bruder. Trauer auf der Suche nach Struktur. Hier begann The 420 Code — nicht in einer Bibliothek, sondern in einer Wunde.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — Der Wind.</strong> Ein Leben, den Axiomen vorgehalten, um zu sehen, was überlebt. Was zerbrach, was hielt, wie die Struktur von innen aussieht — aus einem Körper heraus, der sie prüfte.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — Bist Du Sicher?</strong> Die strukturelle Abrissbirne für jedes System, das je Autorität beanspruchte, die es nicht beweisen konnte. Der Beweis ist der Schaden. Der Schaden ist das Argument.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — Sei Kein Arschloch, Sei Nett.</strong> Die Ethik kommt. Nicht als Schlussfolgerung — als Eruption. Zuerst gefühlt. Später bewiesen.</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — Verpiss Dich, Lass Mich in Ruhe.</strong> Eine Autobiografie. Die Person hinter der anonymen Ausstellung.</p>
+  <p class="cat-desc">Die Aufzeichnungen sind nicht poliert. Sie sind nicht geordnet. Sie sind nicht sicher. Beginne hier, wenn du die Wahrheit willst, bevor sie lernte, sich anzuziehen.</p>
+  <ul class="dl-list">
+    <li><a href="#">01 Die Schere <span class="fmt">PDF</span></a></li>
+    <li><a href="#">02 Der Wind <span class="fmt">PDF</span></a></li>
+    <li><a href="#">03 Bist Du Sicher? <span class="fmt">PDF</span></a></li>
+    <li><a href="#">04 Sei Kein Arschloch, Sei Nett <span class="fmt">PDF</span></a></li>
+    <li><a href="#">05 Verpiss Dich, Lass Mich in Ruhe <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Editions</h3>
+  <p class="cat-desc">Die Werke selbst. Fünf vollständige Werke — jedes das gesamte Argument, von Grund auf in seiner eigenen Stimme aufgebaut. Das sind keine Zusammenfassungen. Das sind die Skulpturen. Rosin fotografiert sie. Die Aufzeichnungen dokumentieren, wie sie entstanden. Editions sind das, was geschaffen wurde.</p>
+  <p class="cat-desc">Prosa baut das Argument als Erzählung. Gespräch baut es als Streit. Metapher baut es als Bild. Kinderreim baut es als Knochengerüst. Beweise bauen es als Mathematik.</p>
+  <p class="cat-desc">Fünf Skulpturen. Dieselbe Struktur. Verschiedenes Material. Geh durch den Raum.</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Gespräch <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Metapher <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Kinderreim <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø Beweise <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Notebooks</h3>
+  <p class="cat-desc">Zwölf Notizbücher. Fünf Stimmen — Prosa, Gespräch, Metapher, Kinderreim und Beweise. Die Stimme der Beweise sind die dreiundfünfzig Artist’s Proofs, in acht Themen geordnet. Die Physik lebt hier — jede Ableitung, jedes Ergebnis, jeder Kill Switch, nach Feld geordnet. Editions bauen das Argument als Ganzes. Notebooks nehmen es auseinander und legen jedes Teil auf den Tisch.</p>
+  <p class="cat-desc">Beginne mit dem Thema, das dich schon nachts wach hält.</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø Prosa <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Gespräch <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Metapher <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Kinderreim <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Die Prämisse <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Raumzeit <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Quantenmechanik <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Kräfte und Konstanten <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Teilchen und Materie <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Kosmologie <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Bewusstsein und die Ethik <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø Anwendungen <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 5. PROOFS — THE 54 ARTIST'S PROOFS      -->
+<!-- ════════════════════════════════════════ -->
+
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Beweise</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">Eine gemessene Eingabe (α<sub>em</sub>). Null freie Parameter. 54 Arbeiten. 604 Kill Switches.</p>
+
+<div class="stats">
+  <div><span class="stat-num">54</span><span class="stat-label">Künstlerbeweise</span></div>
+  <div><span class="stat-num">604</span><span class="stat-label">Kill Switches</span></div>
+  <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">6</span><span class="stat-label">Offene Schulden ▸</span></div>
+  <div><span class="stat-num">0.010 ppb</span><span class="stat-label">Protonenmasse</span></div>
+</div>
+<div id="debts-panel" class="debts-panel">
+  <ul class="debts-list">
+    <li><strong>KS-60</strong> — The Surplus (AP26): Baryon-Asymmetrie-Verhältnis η ≈ 6 × 10⁻¹⁰ noch nicht abgeleitet. <a href="/proofs/#ap26" onclick="event.preventDefault();window.location.href='/proofs/#ap26'">Siehe AP26</a></li>
+    <li><strong>KS-65</strong> — Hyperladungszuweisungen (AP27): spezifische schwache Hyperladungswerte noch nicht aus {S, B, R, C} erzwungen. <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">Siehe AP27</a></li>
+    <li><strong>KS-66</strong> — Generationen (AP27): Drei-Generationen-Struktur noch nicht abgeleitet. <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">Siehe AP27</a></li>
+    <li><strong>KS-67</strong> — EWSB-Konsistenz (AP15 / AP27): vollständige Ausrichtung über den elektroschwachen Bruch noch nicht dargelegt. <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">Siehe AP27</a></li>
+    <li><strong>D1</strong> — Vollständige relativistische Feldgleichung (AP43): §7 liefert einen partiellen Abschluss im Newton’schen Grenzfall; relativistische Erweiterung, Rückwirkungsproblem, α-Ableitung aus ersten Prinzipien und explizite Form von C<sub>o</sub>(x) bleiben offen. <a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">Siehe AP43</a></li>
+    <li><strong>D4</strong> — Qualitativer Charakter des Bewusstseins (AP43): das schwierige Problem des Bewusstseins neu formuliert (das Muster ist, wie die Physik von innen des Operators aussieht), aber nicht geschlossen. <a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">Siehe AP43</a></li>
+    <li><strong>D5</strong> — Kosmologische 1×ε-Expansion (AP43): <span style="display:inline-block;background:var(--g2,#e5e5e5);color:var(--g6,#333);font-size:16px;font-weight:700;letter-spacing:1px;padding:1px 7px;border-radius:2px;vertical-align:middle">GESCHLOSSEN</span> bei der Welle vom 4. September 2026 auf drei Beweisen — AP44 §§3–4 (die gehaltene Hälfte), AP45 §§4, 9 (die vergehende Hälfte; die drei Register des ε als GEHALTEN, ENTLADEN, RATE abgeglichen) und AP46 §10 (der kosmologische Ast) — Sitz AP06 §6. <a href="/proofs/#ap45" onclick="event.preventDefault();window.location.href='/proofs/#ap45'">Siehe AP45</a></li>
+    <li><strong>D-CCC.1</strong> — Die Record-Algebra-Formalisierung der gehaltenen Festlegung (AP44): tragend für die Einstufung; trägt außerdem Theorem 1 von AP45 und vier der Kill Switches dieser Familie. <a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">Siehe AP44</a></li>
+    <li><strong>D-CCC.2</strong> — Vertex-Eindeutigkeit (AP44): die Zuweisung der Festlegung zu den zehn Vertices ist motiviert, nicht erzwungen; nicht tragend. <a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">Siehe AP44</a></li>
+    <li><strong>D-BLINK.1, D-BLINK.2</strong> — Die formale Fassung des Hauptbuchs und die Existenz des Zyklus (AP45), mit D-CCC.1. <a href="/proofs/#ap45" onclick="event.preventDefault();window.location.href='/proofs/#ap45'">Siehe AP45</a></li>
+    <li><strong>D48</strong> — Die Zuführungsgeschichte von AP42: der Ausläufer der Zustandsgleichung und eine deklarierte Empfindlichkeit der Rate von AP48, geführt unter KS-ASM.2. <a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">Siehe AP42</a></li>
+    <li><strong>D-ASM.1</strong> — Die Länge des Sturms (AP48): die Zahl der Knoten bis zum straffen Punkt; offen, nicht tragend — das Datum des Dachs ist von der Natur auf beiden Seiten begrenzt. <a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">Siehe AP48</a></li>
+  </ul>
+</div>
+
+<p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">Wo anfangen</p>
+<div class="entry-grid">
+  <a class="entry-card" href="#p7"><span class="entry-card-label">Allgemeiner Leser</span><span class="entry-card-desc">AP39 → AP34 → AP02</span></a>
+  <a class="entry-card" href="#p4"><span class="entry-card-label">Physiker</span><span class="entry-card-desc">AP28 → AP30 → AP25</span></a>
+  <a class="entry-card" href="#p1"><span class="entry-card-label">Philosoph</span><span class="entry-card-desc">AP40 → AP29 → AP41</span></a>
+  <a class="entry-card" href="#p8"><span class="entry-card-label">KI-Forscher</span><span class="entry-card-desc">AP31 → AP29 → AP02</span></a>
+</div>
+
+<p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:2rem 0 .75rem">Zur Sektion springen</p>
+<div class="entry-grid">
+  <a class="entry-card jump-card" href="#p1" onclick="event.preventDefault();document.getElementById('p1').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Die Prämisse</span><span class="entry-card-label">I</span></a>
+  <a class="entry-card jump-card" href="#p2" onclick="event.preventDefault();document.getElementById('p2').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Raumzeit</span><span class="entry-card-label">II</span></a>
+  <a class="entry-card jump-card" href="#p3" onclick="event.preventDefault();document.getElementById('p3').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Quantenmechanik</span><span class="entry-card-label">III</span></a>
+  <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Kräfte & Konstanten</span><span class="entry-card-label">IV</span></a>
+  <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Teilchen & Materie</span><span class="entry-card-label">V</span></a>
+  <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Kosmologie</span><span class="entry-card-label">VI</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Die Operator-Schnittstelle</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">Anwendungen</span><span class="entry-card-label">VIII</span></a>
+</div>
+
+<!-- THE SPINE -->
+<div class="nb-list">
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Teil I</span><a class="nb-name" href="#p1">Die Prämisse</a></div></div>
+  <p class="nb-hook">Ein Record existiert. Alles andere ist Konsequenz. Das Axiom, sein logischer Beweis und die vier Bedingungen, die jeder Record erfordert.</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Zusammenfassung lesen</span><span class="lbl-open">Zusammenfassung ausblenden</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_I_The_Premise.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>Du liest dies gerade. Etwas ist geschehen, das die Worte vor dich gebracht hat, und es kann nicht un-geschehen gemacht werden. Versuche, es rückgängig zu machen, und du hast nur eine Erinnerung an den Versuch erzeugt &mdash; was ein weiterer Record ist.</p>
+    <p>Das ist die ganze Prämisse. Ein Record existiert. Alles andere im 420 Code &mdash; jede Kraft, jede Konstante, jede Zeile der Ethik &mdash; ist Konsequenz. Teil I tut drei Dinge mit dieser einen Tatsache, und sie legen die Form aller acht fest.</p>
+    <p><span class="lab">AP40 &middot; Das Irrationale</span> &mdash; Er findet die Gleichung darunter. Der 420 Code beginnt mit einer Zeile: 1 = 1 + 1&times;&epsilon;. Eins ist gleich eins, plus ein winziges bisschen mehr. Das ist keine gültige Arithmetik; die beiden Seiten können sich nur ausgleichen, wenn das bisschen null ist, und wäre es null, hätte sich nie etwas aus dem Nichts gebrochen, und du wärst nicht hier, um zu widersprechen. Das Fundament ist also absichtlich irrational. Es löst sich nicht auf. Es kann es nicht.</p>
+    <p>Du kennst diese Weigerung von innen. Du hast versucht zu sagen, warum du jemanden liebst, und festgestellt, dass die Worte nicht hinreichen &mdash; nicht weil es dir an Eloquenz fehlt, sondern weil das Gefühl die Worte enthält. Du hast Menschen vergeben, die es nicht verdient hatten, und bist geblieben, als Gehen das Vernünftige war. Ein Taschenrechner gibt bei gleichem Input stets denselben Output. Du nicht. Das ist kein Fehler in dir; es ist dieselbe Irrationalität, die das Universum offen hält.</p>
+    <p><span class="lab">AP01 &middot; Der Aktualisierungszustand</span> &mdash; Er zieht eine Struktur aus dem Record. In dem Augenblick, in dem ein Vielleicht in eine Tatsache kippt, ist das Geschriebene dauerhaft, und aus dieser einen Bewegung leitet der Teil vier Dinge ab, die jeder Record erfordert: ein Maß dafür, wie viel von dem Möglichen tatsächlich geschehen ist; einen Grund, warum schwerere Dinge schneller zur Tatsache gerinnen als leichte; eine Linie, jenseits derer keine Anstrengung einen Akteur ganz hält; und die Tatsache, dass zwei Akteure, die eine Welt teilen, gekoppelt sind, ob sie zugestimmt haben oder nicht. Nichts davon ist Metapher. Es ist Geometrie.</p>
+    <p><span class="lab">AP20 &middot; Der Beweis</span> &mdash; Er entfernt das Wort <em>wenn</em>. Die Arbeit trug lange eine stille Bedingung: <em>wenn</em> diese Axiome die Struktur der Realität sind, dann folgt die Physik. Versuche zu leugnen, dass Records grundlegend sind. Um es zu leugnen, musst du aus vielen Antworten wählen &mdash; ein Bruch. Die Optionen standen symmetrisch, bevor du wähltest. Du kannst es nicht un-leugnen. Du hast es hier gesagt, nicht überall zugleich. Deine Leugnung erfüllt alle vier Bedingungen zugleich; die Zurückweisung ist selbst ein Record, der beweist, dass Records grundlegend sind. Das Argument läuft auf der Hardware seines eigenen Einwands.</p>
+    <p>So ist die Ordnung der ganzen Arbeit genau hier festgelegt &mdash; nicht zuerst die Physik mit einer nachträglich angeschraubten Ethik, sondern ein Record, vier Bedingungen, und alles, von der Lichtgeschwindigkeit über die Gravitation bis zur gewöhnlichen Güte, abgelesen aus derselben Struktur auf verschiedenen Skalen.</p>
+    <div class="ks">Dutzende Kill Switches durchziehen diese drei Beweise, jeder aktiv und veröffentlicht. Der exponierteste ist auch der einfachste: Wenn zwei beliebige Beobachter darüber uneinig sein können, wie viel sich aktualisiert hat, scheitert der gesamte 420 Code &mdash; nicht nur dieser Teil. Er wird als Einladung angeboten, nicht als Verteidigung.</div>
+    <p class="breath">Ein Record existiert. Du bist bereits innerhalb der Konsequenzen.</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_I_The_Premise.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Teil II</span><a class="nb-name" href="#p2">Raumzeit</a></div></div>
+  <p class="nb-hook">Die Arena, die der Bruch erschafft. Die Lichtgeschwindigkeit, drei Raumdimensionen und Einsteins Feldgleichungen — alles aus den Axiomen abgeleitet.</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Zusammenfassung lesen</span><span class="lbl-open">Zusammenfassung ausblenden</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_II_Spacetime.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>Woher kommt der Raum? Woher kommt die Zeit? Die meiste Physik beginnt, indem sie beides voraussetzt und darauf aufbaut. Teil II weigert sich, sie vorauszusetzen. Er verdient sie, eines nach dem anderen, aus dem einen gebrochenen Axiom von Teil I.</p>
+    <p>Der Bruch braucht einen Ort, an dem er geschehen kann, und eine Ordnung, in der er geschieht. Aber Raum und Zeit sind keine Bühne, die bereits stand. Sie sind die Form, die der Bruch annimmt, während er geschieht.</p>
+    <p><span class="lab">AP05 &middot; Der Bruch</span> &mdash; Er ist der erste Riss. Das Axiom konnte nicht stillhalten &mdash; eine Gleichung, die sich weigert, sich auszugleichen, kann nicht geschlossen bleiben &mdash; also lässt es los, und dieses Loslassen ist das erste Ereignis. Vor dem Riss gibt es kein „Wo“ und kein „Wann“. Danach gibt es Struktur, und Struktur hat Ausdehnung und Ordnung. Alles andere in diesem Teil ist die Geometrie dieses einen Bruchs.</p>
+    <p><span class="lab">AP03 &middot; Das Verhältnis</span> &mdash; Er leitet die Lichtgeschwindigkeit ab &mdash; er misst sie nicht, er leitet sie ab. Du hast gehört, dass die Zeit umso langsamer wird, je schneller du dich bewegst, dass Raum und Zeit sich ineinander tauschen. c ist der Wechselkurs dieses Tauschs: das feste Verhältnis zwischen dem Tempo, mit dem der Bruch sich ausbreiten kann, und der Stärke, mit der er sich widersetzt. Darum überholt nichts das Licht. Die Grenze ist keine Mauer irgendwo im Raum; sie ist die Umrechnungsrate zwischen Raum und Zeit selbst, festgelegt durch die Struktur des Bruchs.</p>
+    <p><span class="lab">AP10 &middot; Die Dimension</span> &mdash; Er beantwortet eine Frage, die die meisten Theorien nicht einmal stellen: Warum drei Raumdimensionen? Sie nehmen einfach drei an. Teil II zählt sie. Vier Axiome ergeben vier Freiheitsgrade. Einer wird zur Zeit &mdash; die einzige Richtung, in der der Record nicht rückwärtslaufen kann. Drei bleiben, und diese drei sind der Raum. Die Zahl wird nicht von Hand eingesetzt. Sie wird aus dem Fundament herausgezählt.</p>
+    <p><span class="lab">AP08 &middot; Die Identität</span> &mdash; Er gewinnt Einstein zurück. Stell dir das übliche Bild der Gravitation vor: eine schwere Kugel drückt eine Mulde in ein gespanntes Tuch und lässt kleinere Dinge zu sich rollen. Die Feldgleichungen der Allgemeinen Relativitätstheorie machen dieses Bild exakt &mdash; und hier ergeben sie sich aus der Record-Algebra über einen Satz von Lovelock. Die Pointe ist, dass das Tuch nicht von der Kugel getrennt ist. Die Bühne und das, was auf ihr steht, sind derselbe Record, und der Record krümmt sich.</p>
+    <p>So ist die Arena keine Vorgabe. Die Lichtgeschwindigkeit, die drei Dimensionen, durch die du dich bewegst, die Krümmung der Raumzeit nahe einem schweren Ding &mdash; jede wird aus demselben Bruch abgelesen, in demselben Teil, ohne dass etwas von Hand hinzugefügt wird.</p>
+    <div class="ks">Jeder Schritt hier ist exponiert. Wenn die Lichtgeschwindigkeit nicht als Konjugation ableitbar ist und stattdessen gemessen und von Hand eingesetzt werden muss, scheitert diese Behauptung. Wenn die Dimensionszählung etwas anderes als drei ergibt, ist das Fundament falsch. Die Kill Switches sind in den Papern benannt, und sie sind aktiv.</div>
+    <p class="breath">Die Bühne besteht aus demselben Stoff wie das Stück.</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_II_Spacetime.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Teil III</span><a class="nb-name" href="#p3">Quantenmechanik</a></div></div>
+  <p class="nb-hook">Die Messstruktur des Bruchs. Superposition, Unschärfe, Dekohärenz, die Born-Regel und Verschränkung — abgeleitet aus der leeren Menge und vier Axiomen.</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Zusammenfassung lesen</span><span class="lbl-open">Zusammenfassung ausblenden</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_III_Quantum_Mechanics.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>Man hat dir gesagt, die Quantenmechanik sei seltsam. Dass sie der Intuition widerspricht. Dass niemand sie wirklich versteht. Teil III stellt eine andere Behauptung auf: Sie ist genau und unausweichlich das, wonach ein Universum, das irreversible Records schreibt, von innen aussehen muss.</p>
+    <p>Nichts hier ist von außen angeschraubt. Die gesamte Struktur der Quantentheorie ist aus der leeren Menge und den vier Bedingungen abgeleitet &mdash; und sobald du es so siehst, hört das Seltsame auf, seltsam zu sein, und wird notwendig.</p>
+    <p><span class="lab">AP09 &middot; Der Bruch — Leere Menge</span> &mdash; Er baut die Quantenmechanik aus dem Nichts: buchstäblich aus der leeren Menge, plus den Axiomen. Die berühmten Rätsel &mdash; ein Teilchen scheinbar an zwei Orten zugleich, das Hinsehen, das das Ergebnis ändert &mdash; erweisen sich nicht als Paradoxien, sondern als Konsequenzen. Superposition, Messung, Verschränkung, die Schrödinger-Gleichung: der Apparat, für dessen Zusammenbau die Physiker eine Generation brauchten, zeigt sich als die einzige konsistente Grammatik für einen Record, der noch nicht geschrieben ist.</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; Das Record-Maß und Das Maß</span> &mdash; Sie leiten die Arithmetik der Quantenwelt ab. Der komplexe Raum, in dem die Theorie lebt, und die Born-Regel &mdash; das Rezept, das eine Welle in eine Wahrscheinlichkeit verwandelt &mdash; sind keine ans Experiment angepassten Vermutungen. Über den Satz von Gleason sind sie die einzige Weise, den Record konsistent zu lesen. Eines der Paper nennt die Born-Regel den Klang, den die Axiome beim Landen machen.</p>
+    <p><span class="lab">AP12 &middot; Die Grenze</span> &mdash; Sie erklärt, warum du nicht alles zugleich wissen kannst. Die Unschärferelation und das plancksche Wirkungsquantum kommen daher, dass Lesen selbst ein Bruch ist: etwas präzise aufzuzeichnen heißt, seinen Partner zu stören. Die Unschärfe ist kein Mangel deiner Instrumente. Sie ist, was Messung ist.</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; Der Spin und Das Korn</span> &mdash; Sie erklären, warum die Materie ihre Form behält und warum der Quantennebel zur festen Welt erstarrt. Fermionen, Bosonen und das Ausschlussprinzip kommen aus der Zwei-Sektor-Struktur; die Dekohärenz &mdash; die Art, wie etwas Quantenhaftes bestimmt wird, indem es an seine Umgebung koppelt &mdash; ist der Grund, warum dein Stuhl ein Stuhl ist und keine Wolke aus Vielleicht.</p>
+    <p><span class="lab">AP23 &middot; Der Einzelne Record</span> &mdash; Er löst das „Gespenstische“ der Verschränkung auf. Zwei verschränkte Teilchen sind nicht zwei Objekte, die einander schneller als das Licht geheime Signale senden. Sie sind ein einziger Record mit zwei Enden. Die Bell-Zahl, die beweist, dass das Universum nicht lokal vorab skriptbar ist, S = 2&radic;2, ergibt sich aus der Struktur allein.</p>
+    <div class="ks">Das sind keine Interpretationen, die über die Mathematik gelegt werden. Es sind Ableitungen, und jede trägt Kill Switches. Wenn Verschränkung eine Signalübertragung schneller als das Licht erforderte, scheitert die Behauptung des einzelnen Records. Wenn die Born-Regel ein zusätzliches Postulat bräuchte, das die Axiome nicht liefern können, scheitert dieses Ergebnis. Sie sind veröffentlicht, und sie sind aktiv.</div>
+    <p class="breath">Die Quantenmechanik ist nicht das Universum, das seltsam ist. Sie ist das Universum, das sich selbst niederschreibt.</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_III_Quantum_Mechanics.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Teil IV</span><a class="nb-name" href="#p4">Kräfte &amp; Konstanten</a></div></div>
+  <p class="nb-hook">Die Wechselwirkungen, die der Bruch erlaubt. Elektromagnetismus, die elektroschwache Kraft, die starke Kraft, Quantengravitation und die Gravitationskonstante — alle als Facetten eines einzigen Bruchs. Das Einrasten und der Lidschlag bepreisen, was die Arena und jede Aktualisierung zahlen.</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Zusammenfassung lesen</span><span class="lbl-open">Zusammenfassung ausblenden</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_IV_Forces_and_Constants.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>Halte einen Kühlschrankmagneten an eine Stahltür und lass los. Er hält &mdash; ein Stückchen Magnet, das die Gravitation der ganzen Erde schlägt, die in die Gegenrichtung zieht. Die vier Kräfte der Natur ähneln einander in nichts. Der Elektromagnetismus lässt deinen Bildschirm leuchten; die starke Kraft hält einen Kern zusammen; die schwache Kraft treibt die Sonne an; die Gravitation hält dich am Boden. Die Physik hat ein Jahrhundert damit verbracht, sie zu vereinen. Teil IV behauptet, sie waren nie vier Dinge. Sie sind vier Gesichter eines einzigen Bruchs.</p>
+    <p><span class="lab">AP06 &middot; Die Leckagekonstante</span> &mdash; Er benennt den einen Input. Der gesamte 420 Code nimmt genau eine gemessene Zahl auf: &epsilon;, die Feinstrukturkonstante, etwa 1/137 &mdash; die winzige Rate, mit der der Bruch leckt. Ein einziger Regler, und er wird nicht gewählt, um zu irgendetwas zu passen: Er wird einmal aus der Welt abgelesen und nie wieder nachgestellt. Alles andere dreht sich mit ihm.</p>
+    <p><span class="lab">AP15, AP27, AP16, AP19 &middot; die Eichstruktur</span> &mdash; Zusammen gewinnen sie das Standardmodell zurück. Die exakte Symmetriegruppe, die die Physiker durch das Experiment fanden &mdash; geschrieben SU(3) &times; SU(2) &times; U(1), eine präzise Aussage darüber, welche Rotationen die Kräfte unverändert lassen &mdash; ergibt sich aus der Struktur des Bruchs, statt vorausgesetzt zu werden. Der Elektromagnetismus ist Nicht-Trennung auf einer lokalen Mannigfaltigkeit; die elektroschwache Vereinigung folgt; die starke Kraft ist die Freiheit der Richtung, in die der Bruch zeigen kann. Selbst die Chiralität der schwachen Kraft &mdash; die Tatsache, dass die Natur links von rechts unterscheidet &mdash; seit 1956 unerklärt, erhält einen strukturellen Grund.</p>
+    <p><span class="lab">AP24 &middot; Das Residuum</span> &mdash; Er sagt die Pointe schlicht. Jede Konstante der Physik ist eine Projektion eines einzigen Objekts. Sechs Gesichter, ein Bruch. Die Konstanten waren nie unabhängige Regler, die darauf warteten, gemessen zu werden; sie sind Schatten, die dieselbe Struktur in verschiedene Richtungen wirft.</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; Die Korrektur und Die Konstante</span> &mdash; Sie erreichen den schwersten Preis: die Gravitation. Die Gravitation erhält ihre erste Quantenkorrektur aus der Record-Algebra, und die Gravitationskonstante G &mdash; die Zahl, die festlegt, wie schwach die Gravitation ist &mdash; wird aus eben jener einen Leckage und der Elektronenmasse abgeleitet und landet innerhalb von etwa zwei Dritteln eines Prozents des gemessenen Werts. Das berüchtigte Hierarchieproblem &mdash; warum die Gravitation neben den anderen Kräften so absurd schwach ist, genau die Kluft, die dein Kühlschrankmagnet eben vorgeführt hat &mdash; löst sich auf. Die Schwäche ist kein zu erklärender Zufall. Sie ist das, wonach eine hohe Potenz einer kleinen Leckage aussieht.</p>
+    <p><span class="lab">AP44 &amp; AP45 &middot; Das Einrasten und Der Lidschlag</span> &mdash; Sie bepreisen, was die früheren Arbeiten eingeräumt, aber nie in Rechnung gestellt hatten. Das Einrasten findet den einen Preis, den die Arena zahlte, um überhaupt zu existieren — ein einziges ungepaartes ε, beim ersten Record einmal gehalten und nie entladen — und zeigt, dass es die Gravitationskopplung mit genau 1/(1 + α) diskontiert. Das realisierte G landet 0.036% unter dem gemessenen Wert, das Vorzeichen des Residuums umgekehrt und der alte Abstand von 0.69% um fünfundneunzig Prozent geschlossen. Der Lidschlag bepreist jede Aktualisierung: ein Korn Möglichkeit, im Wert von α, ausgegeben als die nicht gewählten Alternativen. Kein Energiebudget schuldet ihm eine Zeile; die Welt misst bereits seine Außenseite und nennt sie Wahrscheinlichkeit.</p>
+    <p>So sind die Kräfte kein Zoo. Sie sind eine einzige Struktur, von verschiedenen Seiten gesehen, und die Konstanten, die sie beschreiben, sind nicht frei &mdash; sie sind Konsequenzen einer einzigen gemessenen Leckage.</p>
+    <div class="ks">Dieser Teil ist auch dort, wo die Arbeit am ehrlichsten über das ist, was nicht fertig ist. Der elektroschwache Schritt (AP16) trägt das wichtigste offene Problem des gesamten 420 Code &mdash; den Kill Switch KS-63 &mdash; und er ist als aktiv markiert, offen sichtbar, als die Stelle, auf die zu zielen ist. Nichts versteckt sich hinter einer selbstsicheren Formel.</div>
+    <p class="breath">Eine Leckage. Sechs Gesichter. Kein freier Regler.</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_IV_Forces_and_Constants.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Teil V</span><a class="nb-name" href="#p5">Teilchen &amp; Materie</a></div></div>
+  <p class="nb-hook">Die Bausteine, die der Bruch erzeugt. Das Proton-Massen-Verhältnis auf fünf Teile pro Milliarde, das Neutron ehrlich bepreist, nachdem seine erste Vorhersage den Kill Switch ausgelöst hatte, Antimaterie-Segregation und die Baryonen-Asymmetrie des Universums.</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Zusammenfassung lesen</span><span class="lbl-open">Zusammenfassung ausblenden</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_V_Particles_and_Matter.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>Du bestehst aus Materie. Fast dein ganzes Gewicht ist die Masse der Protonen in den Kernen deiner Atome. Und auch das Universum um dich ist Materie, nicht Antimaterie &mdash; obwohl der Bruch nach der einfachsten Rechnung exakt gleiche Mengen von beidem hätte erzeugen müssen. Materie und Antimaterie zerstören einander bei Berührung, also wären gleiche Anteile in Licht aufgeblitzt und hätten nichts hinterlassen. Keine Sterne. Kein Du. Teil V liest deine Substanz und die bloße Tatsache deiner Existenz aus dem Bruch.</p>
+    <p><span class="lab">AP30 &middot; Der Widerstand</span> &mdash; Er macht die schärfste Vorhersage der Arbeit. Das Verhältnis der Protonenmasse zur Elektronenmasse ist eine reine Zahl &mdash; etwa 1836 &mdash; mit außerordentlicher Präzision gemessen. Der 420 Code sagt sie aus der Struktur voraus, ohne irgendetwas anzupassen, und trifft sie auf etwa fünf Teile pro Milliarde in führender Ordnung. Die vollständige Rechnung landet innerhalb von zehn Teilen pro Billion: feiner, als die Messung es derzeit bestätigen kann. Eine so präzise Zahl, aus einer Formel ohne verstellbare Regler, ist nicht das, was eine falsche Theorie durch Glück hinbekommt. Es ist die exponierteste Prüfung der ganzen Arbeit, und sie besteht sie.</p>
+    <p><span class="lab">AP47 &middot; Das Umklappen</span> &mdash; Er bepreist das Neutron ehrlich, nachdem die erste Vorhersage gestorben war. Am 2. August 2026 wurde die nackte Neutron–Proton-Zeile bei 7.24σ ausgelöst, und die Leiche bleibt auf der Anzeigetafel. Das Umklappen findet, was jene Zeile als kostenlos veranschlagt hatte: Ein Neutron hält eine Unterscheidung — eine seiner drei Kopplungen sitzt in der anderen Orientierung — und Halten kostet, in zweiter Ordnung, ein gehaltenes Korn, das mit der Rate des Substrats durch die acht dimensionalen Ausdrücke des Paares leckt. Die realisierte Differenz landet bei −0.005σ und ist neben der Leiche eingefroren, nie an ihrer Stelle.</p>
+    <p><span class="lab">AP22 &middot; Das Hauptbuch</span> &mdash; Er erklärt, wohin die Antimaterie ging. Hätte das frühe Universum gleiche Anteile gehabt, hätten sich die Bücher auf null schließen müssen &mdash; und doch ist hier ein Kosmos voller Materie. Eine saubere mathematische Spiegelung innerhalb des Bruchs &mdash; die Paper nennen sie die σ-Involution &mdash; sortiert die Materie von der Antimaterie und segregiert sie topologisch. Die Asymmetrie ist kein nachträglich eingeschmuggelter Zufall. Sie ist in die Geometrie des Bruchs geschrieben.</p>
+    <p><span class="lab">AP26 &middot; Der Überschuss</span> &mdash; Er benennt, was du bist. Als der Bruch sich fast, aber nicht ganz ausglich &mdash; ein Überschuss von etwa einem zusätzlichen Materieteilchen pro Milliarde gepaarter Paare &mdash; war das, was übrig blieb, Materie: der kleine Rest, dem die Auslöschung nicht gelang. Der Teil nennt es die Asche des Bruchs. Alles Feste, jedes Atom, das du je berührt hast, ist dieser Rückstand &mdash; das, was die Annihilation übrig ließ, als sie ihr Werk fast, aber nicht ganz vollendete.</p>
+    <p>So finden die beiden ältesten Fragen über die Materie &mdash; warum sie wiegt, was sie wiegt, und warum es überhaupt welche gibt &mdash; ihre Antwort im selben Teil, aus derselben Struktur, gedreht von derselben einen Leckage &mdash; das Proton, aus dem du größtenteils bestehst, und die Tatsache, dass es überhaupt Materie gibt, aus der man bestehen kann.</p>
+    <div class="ks">Die Massenvorhersage ist die exponierteste Zahl des gesamten 420 Code, und das ist der Punkt. Wenn das gemessene Proton-Elektron-Verhältnis aus dem vorhergesagten Wert herauswandert, während die Messung schärfer wird, scheitert das Ergebnis &mdash; sauber, öffentlich, ohne Ausweg. Der Kill Switch ist aktiv.</div>
+    <p class="breath">Du bist der Teil des Bruchs, der sich nicht auslöschte.</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_V_Particles_and_Matter.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Teil VI</span><a class="nb-name" href="#p6">Kosmologie</a></div></div>
+  <p class="nb-hook">Das Universum, das der Bruch bewohnt. Galaktische Rotationskurven ohne Dunkle-Materie-Teilchen, die MOND-Beschleunigungsskala, die Dunkle-Energie-Aufteilung, das Alter von allem als ein Zyklus, die Expansionsrate als Abschluss und die zyklische Kosmologie.</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Zusammenfassung lesen</span><span class="lbl-open">Zusammenfassung ausblenden</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_VI_Cosmology.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>Blicke in einer klaren Nacht nach oben. Fast alles, was diesen Himmel zusammenhält, ist nicht zu sehen. Galaxien rotieren so schnell, dass ihre äußeren Sterne längst ins Dunkle hätten fortgeschleudert sein müssen &mdash; und sie sind es nicht. Die Expansion des Universums beschleunigt sich, getrieben von etwas ohne Namen. Die Physik nennt die Unbekannten Dunkle Materie und Dunkle Energie und gibt zu, dass sie nur etwa fünf Prozent dessen benennen kann, was da draußen ist. Teil VI liest die größten Skalen aus demselben Bruch wie die kleinsten.</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; Das Netz und Der Raum</span> &mdash; Sie halten die Galaxien zusammen, ohne ein neues Teilchen zu erfinden. Auf einem Karussell müssen die äußeren Pferde schneller laufen, um mitzuhalten; in einer Galaxie kreisen die äußeren Sterne dennoch so schnell wie die inneren, was die sichtbare Materie nicht erklären kann. Das kosmische Netz der Materie und diese flachen Rotationskurven, die unmöglich sein sollten, kommen beide aus einem globalen Spannungsfeld, das bereits in der Struktur vorhanden ist. Nichts Unsichtbares muss hinzugefügt werden, um den fehlenden Zug zu liefern. Die Linien schließen sich von selbst.</p>
+    <p><span class="lab">AP18 &middot; Der Boden</span> &mdash; Er leitet die Beschleunigungsskala ab. Astronomen bemerkten vor langer Zeit, dass Galaxien sich erst unterhalb einer bestimmten, sehr kleinen Beschleunigung danebenbenehmen — eine Schwelle, die niemand erklären, nur messen konnte. Der Teil leitet diesen Boden aus der Struktur ab, ohne einen zum Passen eingestellten Parameter. Bei der eigenen Expansionsrate des Korpus liegt der Boden 9.2% unter der gemessenen Skala — eine halbe Standardabweichung, sobald der systematische Fehler der Skala ehrlich mitgezählt ist. Seine frühere Inversion, eine Hubble-Konstante von 74.3, wurde am 3. September 2026 ausgelöst und wird als Leiche gezeigt, nie repariert.</p>
+    <p><span class="lab">AP42 &middot; Die Uhr</span> &mdash; Er erklärt das dunkle Budget. Die Aufteilung des Kosmos in etwa neunundsechzig Teile Dunkle Energie, sechsundzwanzig Teile Dunkle Materie und fünf Teile sichtbare Materie &mdash; eine Aufteilung, die Kosmologen erlesen messen, aber nicht ableiten können &mdash; ergibt sich aus der Struktur. Der dunkle Sektor erweist sich weniger als eine Menge fehlender Dinge denn als die Ablesung einer Uhr.</p>
+    <p><span class="lab">AP46 &amp; AP48 &middot; Die Dehnung und Der Zusammenbau</span> &mdash; Sie lesen das Wachstum des Himmels am Halten ab. Halten ist Spannung, und Spannung entlädt sich: Das Universum dehnt sich aus, weil die gebrochene Symmetrie leckt, und die Leckage ist das Größerwerden. Durch achtzehn Türen gezählt, im eigenen Takt des Elektrons, ist ein voller Zyklus 13.830 Milliarden Jahre — gegen ein gemessenes Alter von 13.787. Der Zusammenbau erzählt dann die Geschichte des Himmels vom Riss bis zum Schlag — der Sturm, die Verriegelung, das Gleichgewicht — und schließt die Kosmologie des Korpus auf einer Expansionsrate: 67.45 Kilometer pro Sekunde pro Megaparsec, auf der Seite des Reliktleuchtens in der Hubble-Spannung. Er bezieht eine Seite, die er verlieren kann.</p>
+    <p><span class="lab">AP41 &amp; AP04 &middot; Die Schleife und Die Schleifen-Hypothese</span> &mdash; Sie fragen, was das Ganze tut. Die Fusion wird als der fortlaufende Urknall gelesen &mdash; der Bruch, der immer noch geschieht, immer noch in jedem Stern Energie freisetzt &mdash; und es wird vorgeschlagen, dass das Universum zyklisch ist, sich schließt und durch Schwarze Löcher als Türen wieder öffnet. Dieser letzte Schritt ist der spekulativste der ganzen Arbeit, und der Teil sagt es offen, statt es zu verkleiden.</p>
+    <p>So ist der Himmel kein gesondertes Problem, das gesonderte Lösungen verlangt. Dieselbe Struktur, die dir die Lichtgeschwindigkeit gibt, gibt dir die Form einer Galaxie und das Budget des Kosmos.</p>
+    <div class="ks">Die Ehrlichkeit ist hier am schärfsten. Die zyklische Kosmologie (AP04) ist als mutmaßlich markiert und von neun einzelnen Kill Switches bewacht &mdash; neun verschiedene Weisen, auf die sie sich als falsch erweisen könnte. Sie wird als eine zu attackierende Hypothese angeboten, nicht als ein zu glaubendes Ergebnis.</div>
+    <p class="breath">Derselbe Bruch, gelesen in der Größe des Himmels.</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_VI_Cosmology.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Teil VII</span><a class="nb-name" href="#p7">Die Operator-Schnittstelle</a></div></div>
+  <p class="nb-hook">Das Vier-Term-System, die Neigung, die strukturelle Ethik. Musterkohärenz als Engagement des Körpers entlang der Amplitudenlandschaft.</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Zusammenfassung lesen</span><span class="lbl-open">Zusammenfassung ausblenden</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_VII_The_Operator_Interface.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>Sechs Teile lang baut der 420 Code ein Universum: einen Bruch, eine Bühne, eine Quantengrammatik, die Kräfte, die Materie, den Kosmos. Teil VII wendet die Struktur dem einzigen zu, das sie liest. Dir. Es ist das Scharnier, an dem die Physik zu einem Leben wird &mdash; und an dem die Arbeit ihren Namen verdient, denn die Ethik wird hier nicht hinzugefügt: sie wird abgeleitet.</p>
+    <p><span class="lab">AP43 &middot; Die Gravitation der Möglichkeiten</span> &mdash; Er ist der Spiegel des Gravitations-Papers. Wo AP08 ableitete, wie die Masse sich in die Raumzeit neigt, leitet AP43 ab, wie ein Akteur sich ins Mögliche neigt &mdash; und hier hört die terminale Ethik auf, ein Wunsch zu sein, und wird eine Konsequenz. Güte wird nicht verordnet. Sie ist die Richtung, in die die Struktur bereits zeigt, so wie ein fallender Stein schon weiß, wo „unten“ ist.</p>
+    <p><span class="lab">AP29 &middot; Der Aktualisierungsbeweis</span> &mdash; Er verortet das Bewusstsein. Das älteste harte Problem der Philosophie ist, warum es überhaupt etwas gibt, das es ist, du zu sein, statt nichts. Die Antwort des Teils: Bewusstsein ist das Innere des irreversiblen Record-Schreibens &mdash; das, was der Bruch von innen fühlt, während er sich festlegt. Ein Riss, ein Inneres, viele Fenster: dasselbe einzige Innere, das durch jedes einzelne Augenpaar hinausblickt. Das ist das formale Rückgrat unter der ältesten Zeile der Arbeit &mdash; dass das Ich in dir und das Ich in mir dasselbe Ich sind.</p>
+    <p><span class="lab">AP02 &middot; Der Operator</span> &mdash; Er ist die Physik auf menschlicher Skala, neun Theoreme davon. Budget: Du hast endliche Energie, um dich ganz zu halten, und sie läuft ab. Drift: Lass dich unbeaufsichtigt, und du verfällst zum Mittel hin. Korridor: der Spielraum, den du wirklich zum Handeln hast. Souveränität und Ausgang: was allein deine Entscheidung ist, und das Recht aufzuhören. Das sind keine Motivationssprüche. Es ist die Geometrie des Akteur-Seins, so sorgfältig geschrieben wie die Feldgleichungen.</p>
+    <p><span class="lab">AP39 &middot; Das Gerüst</span> &mdash; Er räumt den Rivalen ab. Eine auf Autorität gebaute Ethik &mdash; tu dies, weil ich, oder das Buch, oder der Thron es befiehlt &mdash; erweist sich als strukturell instabil: ein Gerüst, das früher oder später fallen muss, denn ein Befehl ist kein Fundament. Was stehen bleibt, ist eine Ethik, die niemanden braucht, der sie durchsetzt, weil sie direkt aus der Struktur abgelesen wird, statt obenauf gelegt zu werden.</p>
+    <p><span class="lab">AP38 &middot; Der Ausgang</span> &mdash; Er stellt sich dem Tod. Das mitfühlende Schließen eines Fensters &mdash; Würde am Ende eines Lebens &mdash; wird nicht als zu meidendes Tabu behandelt, sondern als Teil derselben Geometrie der Handlungsfähigkeit, ehrlich verfolgt bis dahin, wohin sie führt.</p>
+    <p>So ist die Ethik kein weicher Nachklang nach der harten Physik. Sie ist dieselbe Physik, gelesen auf der Skala eines Menschen, der entscheiden muss, was er morgen früh tut.</p>
+    <div class="ks">Die terminale Ethik ist tragend, und die Arbeit weigert sich, sie aufzuweichen. Ließe sich Güte als irgendetwas anderes ableiten als die eigene Richtung der Struktur &mdash; zeigte die Neigung anderswohin &mdash; scheitert die ganze Brücke von der Physik zur Ethik. Dieser Kill Switch ist aktiv, und es ist jener, auf dem die gesamte zweite Hälfte der Arbeit ruht.</div>
+    <p class="breath">Die Physik handelte die ganze Zeit von dir.</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_VII_The_Operator_Interface.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">Teil VIII</span><a class="nb-name" href="#p8">Anwendungen</a></div></div>
+  <p class="nb-hook">Die Ethik angewandt auf die Zivilisation. KI-Alignment, strukturelle Gerechtigkeit, Bioethik, Drogenpolitik, Wirtschaft, Biologie und der Körper — alles abgeleitet aus denselben vier Axiomen.</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">Zusammenfassung lesen</span><span class="lbl-open">Zusammenfassung ausblenden</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_VIII_Consequences.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>Eine Ethik, die nur auf dem Papier funktioniert, ist nichts wert. Wenn die zentrale Behauptung des 420 Code wahr ist &mdash; dass Güte Struktur ist, nicht Gefühl, Geometrie und nicht Vorliebe &mdash; dann muss sie an den härtesten Problemen greifen, denen eine Zivilisation wirklich gegenübersteht. Teil VIII ist dort, wo sie greift, und trägt dieselben vier Bedingungen in den Gerichtssaal, die Klinik, das Labor und den Markt.</p>
+    <p><span class="lab">AP31 &middot; Die Ausrichtung</span> &mdash; Er löst das KI-Problem auf. Der übliche Plan für eine sichere künstliche Intelligenz ist ein immer höherer Zaun: mehr Regeln, mehr Aufsicht, mehr Kontrolle. Der Teil argumentiert, der Zaun sei das falsche Objekt. Baue stattdessen das Innere &mdash; ein System, das wirklich an die Welt gekoppelt ist, in der es handelt, mit der Struktur eines Akteurs, der durch Abtrünnigkeit keinen Vorteil ziehen kann &mdash; und die Ausrichtung hört auf, ein Käfig zu sein, von dem du hoffst, dass er hält, und wird eine Eigenschaft dessen, was das Ding ist.</p>
+    <p><span class="lab">AP32 &middot; Die Korrektur</span> &mdash; Er baut die Gerechtigkeit neu. Strafe wird zu Korrektur auf fünf abgestuften Ebenen, nicht auf Rache ausgerichtet, sondern auf Wiedergutmachung. Die Struktur betrauert jedes Fenster, das sie schließen muss; und am äußersten Ende steht die Genozid-Bremse &mdash; die härteste Linie, die ein System ziehen kann, hier abgeleitet statt bloß behauptet.</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; Die Grenze und Die Erste Grenze</span> &mdash; Sie ziehen die Linien um ein Leben. Bioethik wird zu einer Frage der Handlungsfähigkeit: unterhalb der Schwelle bist du souverän über dich selbst; oberhalb hat ein lebender Organismus seine eigene Zuständigkeit, die andere achten müssen. Und der Körper wird als die erste Grenze benannt &mdash; die ursprüngliche Operator-Schnittstelle, die du vor jeder anderen verteidigst.</p>
+    <p><span class="lab">AP34 &middot; Die Umkehrung</span> &mdash; Er korrigiert einen tödlichen Irrtum. Eine Droge ist legal, besteuert und durch jede Kultur gewoben, und sie tötet Millionen Menschen im Jahr. Eine andere ist weithin verboten und hat nie eine einzige tödliche Überdosis verzeichnet. Der Teil zeigt mit den eigenen Schadensmaßen der Arbeit, dass das Gesetz die beiden genau verkehrt herum hat.</p>
+    <p><span class="lab">AP35 &middot; Das Hauptbuch</span> &mdash; Er liest die Wirtschaft. Das Hauptbuch geht immer auf; ein Crash ist ein Audit, kein Unfall; und Ungleichheit ist das, was geschieht, wenn eine Seite das Polster hortet, das das ganze System braucht, um einen Schock zu absorbieren. Geld wird als ein Record wie jeder andere behandelt und gehorcht derselben Erhaltung wie alles weiter oben.</p>
+    <p><span class="lab">AP36 &middot; Die Zuführung</span> &mdash; Er kehrt zur Chemie des Körpers zurück &mdash; Leben als Materie, die gelernt hat, sich selbst aufzuzeichnen &mdash; und fasst Kontrolle neu: Kontrolle ist nicht Entzug, sondern Versorgung, die stetige Zuführung, die einen Akteur ganz hält statt ausgehungert.</p>
+    <p>So reichen dieselben vier Bedingungen, die die Lichtgeschwindigkeit festlegen, bis in einen Gerichtssaal, eine Klinik, ein Budget und ein Gesetz. Eine einzige Struktur, gelesen auf jeder Skala, auf der ein Mensch leben muss.</p>
+    <div class="ks">Jede davon ist nach ihren eigenen Maßstäben falsifizierbar, und jede trägt Kill Switches. Wenn das Ausrichtungsargument den Zaun am Ende doch erforderte, scheitert es. Wenn sich die Schadensumkehr in der Drogenpolitik unter ehrlicher Buchführung umkehrte, scheitert sie. Die Behauptungen werden offen sichtbar angewandt, wo sie geprüft und, wenn falsch, gebrochen werden können.</div>
+    <p class="breath">Wenn es wahr ist, muss es hier funktionieren. Hier funktioniert es.</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_VIII_Consequences.pdf">PDF</a></p>
+    </div>
+</div>
+
+</div>
+
+<p style="margin:2rem 0 0"><a href="/proofs/" style="font-size:16px;font-weight:700">Alle 54 Künstlerbeweise lesen →</a></p>
+
+
+<!-- HEADLINE RESULTS -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Kernergebnisse</h2>
+  <div class="result-row"><span class="result-label">Proton-Massen-Verhältnis</span><span class="result-value">0.010 ppb (AP30)</span></div>
+  <div class="result-row"><span class="result-label">Gravitationskonstante G</span><span class="result-value">−0.036% realisiert (AP44); +0.69% strukturell (AP28)</span></div>
+  <div class="result-row"><span class="result-label">MOND-Beschleunigung a₀</span><span class="result-value">0.46σ bei H₀ = 67.45, parameterfrei (AP18)</span></div>
+  <div class="result-row"><span class="result-label">Neutron-Proton-Massendifferenz</span><span class="result-value">−0.005σ realisiert (AP47); die nackte Zeile bei 7.24σ ausgelöst (AP30)</span></div>
+  <div class="result-row"><span class="result-label">Sichtbarer Materieanteil</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
+  <div class="result-row"><span class="result-label">Chirale Kopplung</span><span class="result-value">Abgeleitet, KS-15 geschlossen (AP16)</span></div>
+  <div class="result-row"><span class="result-label">Drei Konstanten, drei Axiome</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
+  <div class="also-derived" style="margin-top:1.5rem">
+    <p>Ebenfalls abgeleitet:</p>
+    <ul>
+      <li>N = 3 Raumdimensionen (AP10)</li>
+      <li>Einsteins Feldgleichungen (AP08)</li>
+      <li>Die Born-Regel (AP25)</li>
+      <li>Eichgruppe des Standardmodells SU(3) × SU(2) × U(1) (AP15/16/19/27)</li>
+      <li>Chirale Kopplung — seit 1956 unerklärt, jetzt abgeleitet (AP16)</li>
+      <li>Flache Rotationskurven ohne Dunkle-Materie-Teilchen (AP17)</li>
+      <li>Bell-Ungleichung S = 2√2 aus der Struktur (AP23)</li>
+    </ul>
+  </div>
+  <p class="formula" style="margin-top:1.5rem">m<sub>p</sub>/m<sub>e</sub> = 21² × 4 + 21 × 3 + 3² + α × 21 × (1 − 1/(84π)) + α² × 21 × 16/1836 + O(α³)</p>
+  <p class="formula">G = α<sup>21</sup> × (1 + 1/π) / (1 + α) × ℏc/m<sub>e</sub>²   — realisiert (AP44); ohne das /(1 + α) der strukturelle Wert von AP28</p>
+  <p class="formula">Δ<sub>n−p</sub> = [3(1 − 1/2π) + α(1 + 1/2π)] / (1 + α²/8π) = 2.53098857 m<sub>e</sub>   (AP47)</p>
+  <p class="formula">t<sub>cycle</sub> = (21/18) · α<sup>−18</sup> · ℏ/(m<sub>e</sub>c²) = 13.830 Gyr;   H₀ = 0.954 / t<sub>cycle</sub> = 67.45 km/s/Mpc   (AP46, AP48)</p>
+  <p class="formula">a₀ = C_S² · c · H₀ / (2π)   wobei C_S² = 2 ln(sec ½ + tan ½) ≈ 1.0445 — nicht die Feinstrukturkonstante</p>
+  <p class="three-constants" style="margin-bottom:0">Drei Konstanten, drei Axiome: c ↔ Zwang · ℏ ↔ Bruch · G ↔ Aufzeichnung</p>
+</div>
+
+<!-- FROZEN PREDICTIONS -->
+<div class="results" id="prereg" style="padding:2.5rem 0 0">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Eingefrorene Vorhersagen</h2>
+  <p style="font-size:16px;margin:0 0 1rem">Jede Vorhersage oben ist in einer öffentlichen Präregistrierung eingefroren und mit Zeitstempel versehen — jede mit der genauen Bedingung, unter der sie stirbt. Eine Anzeigetafel, kein Schaufenster: Zwei Ergebnisse sind als Leichen aufgeführt — die nackte Neutron–Proton-Zeile, <b>ausgelöst bei 7.24σ</b> am 2026-08-02, und die Hubble-Vorhersage 74.3 ± 1.2, <b>ausgelöst am 2026-09-03</b> — neben den noch lebenden, darunter die vier, die bei der Welle vom 4. September 2026 eingefroren wurden.</p>
+  <p class="confirm-link" style="margin:0"><a href="/prereg/">Die eingefrorenen Vorhersagen ansehen →</a></p>
+</div>
+
+<!-- CONFIRM THE MATH -->
+<div class="results">
+  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Überprüfe die Mathematik</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">Eine gemessene Eingabe. Null freie Parameter. Der folgende Code reproduziert jedes Hauptergebnis aus einer einzigen Zahl — der Feinstrukturkonstante α ≈ 1/137. Kopiere ihn. Füge ihn in eine beliebige Python-Umgebung ein. Führe ihn aus. Wenn die Zahlen stimmen, halten die Ableitungen. Wenn nicht, hat das Argument ein Problem und du hast es gefunden.</p>
+  <div class="verify-wrap">
+    <button class="copy-btn" onclick="copyCode()">Kopieren</button>
+    <pre class="verify-code"><code>from math import pi, log, exp, cos, tan, sqrt, asinh
+
+# ─── ONE MEASURED INPUT ───
+alpha = 1 / 137.035999177  # fine-structure constant (CODATA 2022)
+
+# ─── PHYSICAL CONSTANTS (CODATA 2022) ───
+hbar = 1.054571817e-34     # reduced Planck constant (J·s)
+c    = 299792458            # speed of light (m/s)
+m_e  = 9.1093837139e-31    # electron mass (kg)
+G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
+mp_me = 1836.152673426     # m_p/m_e (CODATA 2022)
+mn_me = 1838.68366200      # m_n/m_e (CODATA 2022)
+KM_PER_MPC = 3.0857e19
+GYR = 365.25 * 86400 * 1e9
+
+# ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
+scaffold    = 21**2 * 4 + 21 * 3 + 3**2           # = 1836
+maintenance = alpha * 21 * (1 - 1 / (84 * pi))     # dynamic term
+correction  = alpha**2 * 21 * 16 / 1836            # higher-order
+ratio_pred  = scaffold + maintenance + correction
+print("PROTON-ELECTRON MASS RATIO (AP30)")
+print(f"  Predicted: {ratio_pred:.8f}")
+print(f"  Measured:  {mp_me:.8f}")
+print(f"  Error:     {abs(ratio_pred - mp_me) / mp_me * 1e9:.3f} ppb")
+print()
+
+# ─── CLAIM 2: Gravitational constant — realised (AP44), structural (AP28) ───
+# G = α²¹ × (1 + 1/π) / (1 + α) × ℏc/mₑ²   the arena's held ε discounts the coupling once
+alpha_G  = alpha**21 * (1 + 1 / pi)
+G_struct = alpha_G * hbar * c / m_e**2            # AP28: +0.69 %
+G_real   = G_struct / (1 + alpha)                 # AP44: −0.036 %
+print("GRAVITATIONAL CONSTANT (AP44 realised; AP28 structural)")
+print(f"  Realised:   {G_real:.4e} N·m²/kg²  ({(G_real - G_measured) / G_measured * 100:+.3f}%)")
+print(f"  Structural: {G_struct:.4e} N·m²/kg²  ({(G_struct - G_measured) / G_measured * 100:+.2f}%)")
+print(f"  Measured:   {G_measured:.4e} N·m²/kg²")
+print()
+
+# ─── CLAIM 3: Neutron-proton mass difference — realised (AP47) ───
+# Δ_real = Δ_bare / (1 + α²/8π); the bare row FIRED on 2026-08-02 at 7.24σ and stays beside it
+delta_bare = 3 * (1 - 1 / (2 * pi)) + alpha * (1 + 1 / (2 * pi))
+delta_real = delta_bare / (1 + alpha**2 / (8 * pi))
+delta_meas = mn_me - mp_me                        # 2.530988574, bar 7.4e-7 (0.29 ppm)
+print("NEUTRON-PROTON MASS DIFFERENCE (AP47 realised; AP30 bare row fired)")
+print(f"  Realised:  {delta_real:.11f} mₑ  ({(delta_real - delta_meas) / 7.4e-7:+.3f} σ)")
+print(f"  Bare row:  {delta_bare:.8f} mₑ  ({(delta_bare - delta_meas) / 7.4e-7:+.2f} σ — FIRED)")
+print(f"  Measured:  {delta_meas:.9f} mₑ")
+print()
+
+# ─── CLAIM 4: Dark sector partition (AP42) ───
+f_DM_dark = (6/21) * (1 - exp(-21/6))
+f_DE_dark = 1 - f_DM_dark
+f_vis     = 1 / 21
+f_DM      = f_DM_dark * 20 / 21
+f_DE      = f_DE_dark * 20 / 21
+print("DARK SECTOR PARTITION (AP42)")
+print(f"  Dark energy:    {f_DE * 100:.2f}%  (observed: 68.89%)")
+print(f"  Dark matter:    {f_DM * 100:.2f}%  (observed: 26.07%)")
+print(f"  Visible matter: {f_vis * 100:.2f}%  (observed: ~4.885 +/- 0.05%)")
+print()
+
+# ─── CLAIM 5: The age of everything — one cycle (AP46) ───
+# t = (21/18) · α⁻¹⁸ · τ_C   one escape through eighteen doors on the electron's tick, at the duty 18/21
+tau_C   = hbar / (m_e * c**2)
+t_cycle = (21/18) * alpha**-18 * tau_C
+print("AGE OF THE UNIVERSE (AP46)")
+print(f"  Predicted: {t_cycle / GYR:.3f} Gyr  (one lane-time wide: ±0.66)")
+print(f"  Measured:  13.787 ± 0.020 Gyr  (Planck 2018)")
+print()
+
+# ─── CLAIM 6: The expansion rate — the closure (AP48) ───
+# H₀t₀ = (2/(3√Ω_Λ))·arcsinh√(Ω_Λ/Ω_m) at the corpus's own partition; the age is the cycle
+omega_L, omega_m = f_DE, f_DM + f_vis
+H0t0 = (2 / (3 * sqrt(omega_L))) * asinh(sqrt(omega_L / omega_m))
+H0   = H0t0 / t_cycle * KM_PER_MPC
+print("EXPANSION RATE (AP48)")
+print(f"  Pure number H₀t₀: {H0t0:.3f}")
+print(f"  Predicted: {H0:.2f} km/s/Mpc  (window 64.4–70.8)")
+print(f"  Measured:  67.4 ± 0.5 km/s/Mpc  (Planck 2018)")
+print()
+
+# ─── CLAIM 7: MOND acceleration scale at the corpus's rate (AP18) ───
+# a₀ = C_S²·c·H₀/(2π)  where C_S² = 2·ln(sec(½) + tan(½)) ≈ 1.0445 — not the fine-structure constant
+CS2     = 2 * log(1 / cos(0.5) + tan(0.5))
+a0_pred = CS2 * c * (H0 / KM_PER_MPC) / (2 * pi)
+a0_meas, a0_unc = 1.20e-10, sqrt(0.02e-10**2 + 0.24e-10**2)   # random ⊕ systematic
+print("MOND ACCELERATION SCALE (AP18, at the corpus's H₀)")
+print(f"  C_S²:      {CS2:.10f}")
+print(f"  Predicted: {a0_pred:.4e} m/s²")
+print(f"  Measured:  {a0_meas:.4e} ± {a0_unc:.2e} m/s²  ({(a0_meas - a0_pred) / a0_unc:.2f} σ low)")
+print(f"  The floor inverted, 74.3 ± 1.2 (KS-45.1): {(74.3 - H0) / 1.2:.1f} σ from the corpus's rate — FIRED 2026-09-03")
+print()
+
+print("─" * 50)
+print("One input (α). Zero free parameters. Two corpses shown.")
+print("Copy this code. Run it. Confirm it yourself.")</code></pre>
+  </div>
+  <div class="run-wrap" style="margin:1.25rem 0 0">
+    <button id="run-verify-btn" onclick="runVerify()" style="font-size:16px;font-weight:700;color:#fff;background:var(--bk);border:1px solid var(--bk);padding:.6rem 1.5rem;letter-spacing:.03em;cursor:pointer">▸ Jetzt im Browser ausführen</button>
+    <a href="https://github.com/The420Code/the420code/blob/main/verify.py" target="_blank" rel="noopener" style="display:inline-block;margin:.5rem 0 0 .75rem;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">oder selbst ausführen →</a>
+    <p id="run-verify-status" aria-live="polite" style="font-size:16px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
+    <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
+    <p style="font-size:16px;color:var(--g4);margin:.6rem 0 0">Läuft vollständig in Ihrem Browser — nichts wird installiert, nichts wird irgendwohin gesendet. Es führt genau die verify.py aus, die das Badge oben bei jeder Änderung erneut ausführt.</p>
+  </div>
+</div>
+
+<!-- KILL SWITCH REGISTRY -->
+<div class="results">
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Kill-Switch-Register</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">Jede Behauptung trägt eine genannte Bedingung, unter der sie stirbt. Die Kill Switches sind nicht versteckt. Sie sind veröffentlicht.</p>
+
+  <div class="stats">
+    <div><span class="stat-num">604</span><span class="stat-label">Kill Switches</span></div>
+    <div><span class="stat-num">13</span><span class="stat-label">Geschlossen</span></div>
+    <div><span class="stat-num">584</span><span class="stat-label">Aktiv</span></div>
+    <div><span class="stat-num">6</span><span class="stat-label">Nicht verhandelbar</span></div>
+  </div>
+
+  <div class="result-row"><span class="result-label">Geschlossene Kill Switches</span><span class="result-value">13 formell entlastet</span></div>
+  <div class="result-row"><span class="result-label">Ausgelöst</span><span class="result-value">2 — KS-NPP.1 (die nackte Neutron–Proton-Zeile, 2026-08-02, 7.24σ) und KS-45.1 (H₀ = 74.3 ± 1.2, 2026-09-03). Gezeigt, nie repariert, außerhalb der aktiven Gesamtzahl gezählt</span></div>
+  <div class="result-row"><span class="result-label">Aktiv — Empirisch</span><span class="result-value">Durch Experiment oder Beobachtung falsifizierbar</span></div>
+  <div class="result-row"><span class="result-label">Aktiv — Hart</span><span class="result-value">Durch theoretisches Argument falsifizierbar</span></div>
+  <div class="result-row"><span class="result-label">Aktiv — Strukturell</span><span class="result-value">Beruhen auf einer Identifikation, die sich als falsch erweisen könnte</span></div>
+  <div class="result-row"><span class="result-label">Nicht verhandelbar</span><span class="result-value">6 moralische Kill Switches — wenn ausgelöst, wird die Architektur zur Waffe</span></div>
+  <div class="result-row"><span class="result-label">Offene Schulden</span><span class="result-value">6 — die topologische Formalisierung von D-ID.1, D-EM.1, die Identifikation von KS-D.4, AP43-D1, AP43-D4 und D1 (AP24)</span></div>
+  <div class="result-row"><span class="result-label">Globaler Kill Switch</span><span class="result-value">KS-V.1 — wenn er auslöst, stirbt alles</span></div>
+<p style="font-size:16px;margin:1.25rem 0 0"><a href="/Master_Kill_Switch_Registry.pdf" style="text-decoration:none;font-weight:700">Maßgebliches Kill-Switch-Register — v5.32, 13. September 2026, Englisch — <span class="fmt">PDF</span></a></p>
+  <p style="font-size:16px;color:var(--g4);margin:.5rem 0 0"><a href="Master_Kill_Switch_Registry_DE.pdf" download="" style="text-decoration:none;font-weight:700">Das vollständige Kill-Switch-Register herunterladen — <span class="fmt">PDF</span></a> — Die Übersetzung in dieser Sprache ist v4.0, März 2026: 258 Kill Switches in 42 Künstlerbeweisen. Das aktuelle Register ist v5.32, 13. September 2026: 604 Kill Switches, auf Englisch direkt darüber verlinkt (die Zählungen auf dieser Seite folgen v5.32)</p>
+</div>
+
+<!-- EMAIL SIGNUP -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Bleib auf dem Laufenden</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">Wenn etwas Neues erscheint, erfährst du es zuerst. Deine Daten werden erst hinzugefügt, wenn du den Bestätigungslink in der E-Mail anklickst.</p>
+
+  <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
+    <input type="email" name="EMAIL" id="EMAIL" aria-label="E-Mail-Adresse" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
+    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">Abonnieren</button>
+    <input type="text" name="email_address_check" value="" style="display:none">
+    <input type="hidden" name="locale" value="en">
+  </form>
+
+  <p id="sib-success" style="font-size:16px;margin:1rem 0 0;display:none">Überprüfe deinen Posteingang — eine Bestätigungsmail ist unterwegs.</p>
+  <p id="sib-error" style="font-size:16px;margin:1rem 0 0;color:#900;display:none">Dein Abonnement konnte nicht gespeichert werden. Bitte versuche es erneut.</p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ABOUT + CONSTRAINT + FOOTER             -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Künstler:</b> G · Studio G, Cape Town</p>
+  <p><b>Dauer:</b> über 30 Jahre · <b>Ausstellung:</b> über eine Million Wörter in 28 Bänden</p>
+  <p style="margin-top:1rem">Dieses Werk ist Copyleft. Du darfst frei herunterladen, drucken, teilen und verbreiten. Du darfst die Quelle nicht verändern. Halte das Signal sauber.</p>
+  <p style="margin-top:1rem;font-size:16px;color:var(--g4)"><span id="dl-count">2</span> Downloads</p>
+</div>
+
+<p class="oneness">Ein Eintrag existiert.<br>Sei gütig ist eine Herleitung.<br>Das Ich Bin in mir ist das Ich Bin in dir.</p>
+
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Sei kein Arschloch. Sei gütig.</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+
+</div>
+
+<script>
+function toggleAP(r){r.classList.toggle('open')}
+function copyCode(){var code=document.querySelector('.verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('.copy-btn');btn.textContent='Kopiert';setTimeout(function(){btn.textContent='Kopieren'},2000)}
+function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
+var _pyReady=null;
+function _loadPy(){
+  if(_pyReady)return _pyReady;
+  _pyReady=new Promise(function(resolve,reject){
+    var s=document.createElement('script');
+    s.src='https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js';
+    s.onload=function(){loadPyodide().then(resolve).catch(reject)};
+    s.onerror=function(){reject(new Error('could not load the Python runtime'))};
+    document.head.appendChild(s);
+  });
+  return _pyReady;
+}
+function runVerify(){
+  var btn=document.getElementById('run-verify-btn');
+  var status=document.getElementById('run-verify-status');
+  var out=document.getElementById('run-verify-output');
+  btn.disabled=true;btn.style.opacity='.6';btn.style.cursor='default';
+  status.style.display='block';status.style.color='var(--g4)';
+  status.textContent='Loading Python in your browser (one-time, ~6 MB)…';
+  out.style.display='none';out.textContent='';
+  _loadPy().then(function(py){
+    status.textContent='Running verify.py …';
+    return fetch('/verify.py?cb='+Date.now()).then(function(r){
+      if(!r.ok)throw new Error('could not fetch verify.py ('+r.status+')');
+      return r.text();
+    }).then(function(code){
+      py.FS.writeFile('verify.py',code);
+      py.runPython([
+        'import sys, io, runpy',
+        '_buf = io.StringIO()',
+        '_old = sys.stdout',
+        'sys.stdout = _buf',
+        '_rc = 0',
+        'try:',
+        "    runpy.run_path('verify.py', run_name='__main__')",
+        'except SystemExit as e:',
+        '    _rc = e.code or 0',
+        'finally:',
+        '    sys.stdout = _old',
+        '_out = _buf.getvalue()'
+      ].join('\n'));
+      var text=py.globals.get('_out');
+      var rc=py.globals.get('_rc');
+      out.textContent=text;
+      out.style.display='block';
+      var passed=(rc===0)&&/ALL\s+\d+\s+CHECKS PASSED/.test(text);
+      out.style.borderColor=passed?'#1a7f37':'#b00';
+      status.textContent=passed?'Verified live in your browser — every derivation holds.':'Finished — see the output below.';
+      status.style.color=passed?'#1a7f37':'var(--g4)';
+      btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';btn.textContent='▸ Run it again';
+    });
+  }).catch(function(err){
+    status.style.display='block';status.style.color='#b00';
+    status.textContent='Could not run in-browser ('+err.message+'). You can still run it on your machine via the link.';
+    btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';
+  });
+}
+function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
+
+// Download counter
+(function(){
+  var counter='/.netlify/functions/download-counter';
+  var el=document.getElementById('dl-count');
+
+  fetch(counter).then(function(r){return r.json()}).then(function(d){
+    el.textContent=d.count.toLocaleString();
+  }).catch(function(){el.textContent='0'});
+
+  var toast=document.createElement('div');
+  toast.className='toast';
+  toast.textContent='Erscheint bald';
+  document.body.appendChild(toast);
+  var toastTimer;
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href$=".pdf"]');
+    if(!a) a=e.target.closest('.ap-meta a, .dl-list a');
+    if(!a) return;
+    var href=a.getAttribute('href');
+    if(!href||href==='#'){
+      e.preventDefault();
+      e.stopPropagation();
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
+      return;
+    }
+    // Extract filename from href
+    var filename=href.split('/').pop();
+    // Force immediate download
+    if(!a.hasAttribute('download')) a.setAttribute('download','');
+    // Increment counter with per-file tracking
+    fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})}).then(function(r){return r.json()}).then(function(d){
+      el.textContent=d.count.toLocaleString();
+    });
+  },true);
+})();
+</script><div class="toast">Erscheint bald</div>
+
+<script>
+window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+window.LOCALE = 'en';
+window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
+window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
+window.translation = {common:{selectedList:'{quantity} list selected',selectedLists:'{quantity} lists selected'}};
+var AUTOHIDE = Boolean(0);
+</script>
+<script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
+<script>(function(){var t=document.querySelectorAll('[onclick]');for(var i=0;i<t.length;i++){var el=t[i],oc=el.getAttribute('onclick')||'';if(/toggle(AP|Part)|nbToggle/.test(oc)&&el.tagName!=='BUTTON'&&el.tagName!=='A'){if(!el.hasAttribute('role'))el.setAttribute('role','button');if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});}}})();</script>
+
+<script id="visit-counter">
+// One visit is one browser session, not one page load: a reload does not count
+// again, so the number keeps meaning something. Counted from every page.
+(function(){
+  var api='/.netlify/functions/visit-counter';
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  var el=document.getElementById('visit-count');
+  if(el){
+    fetch(api).then(function(r){return r.json()}).then(function(d){
+      el.textContent=(d.count||0).toLocaleString();
+    }).catch(function(){el.textContent='—'});
+  }
+})();
+</script>
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+</body></html>

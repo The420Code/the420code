@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="hi" style="scroll-padding-top:56px"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the 420 code — भौतिकी से व्युत्पन्न नैतिकता</title>
+<meta name="description" content="क्या नैतिकता को भौतिकी से व्युत्पन्न किया जा सकता है? The 420 Code कहता है हाँ। 54 कलाकार प्रमाण। दस लाख से अधिक शब्द। एक मापित इनपुट। शून्य मुक्त पैरामीटर। कॉपीलेफ्ट। हमेशा के लिए मुफ़्त।">
+<link rel="canonical" href="https://the420code.org/hi/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the420code.org/hi/">
+<meta property="og:title" content="the 420 code — भौतिकी से व्युत्पन्न नैतिकता">
+<meta property="og:description" content="क्या नैतिकता भौतिकी से व्युत्पन्न हो सकती है? 420 Code कहता है हाँ। 54 कलाकार प्रमाण। दस लाख से अधिक शब्द। एक मापित इनपुट। शून्य फ़िट किए गए पैरामीटर। Copyleft। हमेशा मुफ़्त।">
+<meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="the 420 code">
+<meta property="og:locale" content="hi">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="the 420 code — भौतिकी से व्युत्पन्न नैतिकता">
+<meta name="twitter:description" content="क्या नैतिकता भौतिकी से व्युत्पन्न हो सकती है? 420 Code कहता है हाँ। 54 कलाकार प्रमाण। दस लाख से अधिक शब्द। एक मापित इनपुट। शून्य फ़िट किए गए पैरामीटर। Copyleft। हमेशा मुफ़्त।">
+<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<link rel="apple-touch-icon" href="../Eye_of_the_Universe.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="author" content="G — Studio G">
+<link rel="icon" type="image/jpeg" href="../Eye_of_the_Universe.jpg">
+<meta name="citation_doi" content="10.5281/zenodo.22744448">
+<link rel="alternate" hreflang="en" href="https://the420code.org/">
+<link rel="alternate" hreflang="es" href="https://the420code.org/es/">
+<link rel="alternate" hreflang="fr" href="https://the420code.org/fr/">
+<link rel="alternate" hreflang="de" href="https://the420code.org/de/">
+<link rel="alternate" hreflang="pt" href="https://the420code.org/pt/">
+<link rel="alternate" hreflang="nl" href="https://the420code.org/nl/">
+<link rel="alternate" hreflang="it" href="https://the420code.org/it/">
+<link rel="alternate" hreflang="zh" href="https://the420code.org/zh/">
+<link rel="alternate" hreflang="ja" href="https://the420code.org/ja/">
+<link rel="alternate" hreflang="ko" href="https://the420code.org/ko/">
+<link rel="alternate" hreflang="ru" href="https://the420code.org/ru/">
+<link rel="alternate" hreflang="ar" href="https://the420code.org/ar/">
+<link rel="alternate" hreflang="hi" href="https://the420code.org/hi/">
+<link rel="alternate" hreflang="x-default" href="https://the420code.org/">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#595959;--g5:#595959;--g6:#1a1a1a;--f:'Noto Sans Devanagari','Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:16px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
+.nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+
+.section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+
+.hero{margin:2rem 0 3rem}
+.hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 2.5rem}
+.hero .lead{font-size:18px;font-style:italic;margin:0 0 .5rem}
+
+.steps{margin:1.5rem 0 2rem;padding:0;counter-reset:step}
+.steps li{list-style:none;padding:0 0 0 2rem;position:relative;margin:0 0 .35rem;font-size:16px}
+.steps li::before{counter-increment:step;content:counter(step)".";position:absolute;left:0;font-weight:700;color:var(--g4);font-size:16px}
+
+.doors{margin:2rem 0 0;padding:2rem 0}
+.doors h2{font-size:26px;font-weight:700;margin:0 0 .25rem}
+.doors .sub{font-size:16px;color:var(--g5);margin:0 0 2.5rem}
+.door{margin:0 0 3.5rem}
+.door h3{font-size:18px;font-weight:700;margin:0 0 .15rem}
+.door h3 a{text-decoration:none}
+.door h3 a:hover{text-decoration:underline}
+.door p{font-size:16px;color:var(--g6);margin:0 0 .25rem}
+.door .hint{font-size:16px;color:var(--g4);font-style:italic}
+.voices{margin:.75rem 0 0}
+.voice{margin:0 0 .4rem}
+.voice b{font-size:16px}
+.voice span{font-size:16px;color:var(--g5)}
+
+.read-block{margin:0 0 1.5rem;padding:2rem;border:1px solid var(--g2);background:var(--g1)}
+.read-block p{font-size:16px;font-style:italic;color:var(--g5);margin:0}
+
+.cat-section{margin:0 0 3.5rem}
+.cat-title{font-size:18px;font-weight:700;margin:0 0 .75rem}
+.cat-desc{font-size:16px;color:var(--g5);margin:0 0 1rem}
+.cat-hint{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 .75rem}
+.dl-list{margin:0;padding:0 0 0 32px}
+.dl-list li{list-style:none;padding:.4rem 0;border-bottom:1px solid var(--g1);font-size:16px}
+.dl-list li:last-child{border-bottom:none}
+.dl-list a{text-decoration:none;display:flex;justify-content:space-between;align-items:center;color:var(--bk);font-weight:600}
+.dl-list a:hover{text-decoration:underline}
+.dl-list .fmt{font-size:16px;font-weight:700;color:var(--g4);flex-shrink:0;margin-left:.5rem}
+
+.spine{position:relative;padding-left:32px}
+.spine::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--bk)}
+.part{position:relative;margin:0 0 2.5rem}
+.part-dot{position:absolute;left:-32px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--bk);z-index:1}
+.part-header{cursor:pointer;user-select:none;padding:0 0 .5rem}
+.part-header:hover .part-name{text-decoration:underline}
+.part-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 1rem}
+.part-name{font-size:22px;font-weight:700;display:block;line-height:1.2}
+.part-desc{font-size:16px;color:var(--g5);font-style:italic;display:block;margin:1rem 0 0}
+.part-count{font-size:16px;color:#757575;margin:4px 0 0;display:block}
+.part-read{display:inline-block;margin-top:.5rem;font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--bk);text-decoration:none;border-bottom:1px solid var(--bk)}
+.part-read:hover{text-decoration:none;border-bottom-width:2px}
+.ap-list{margin:.75rem 0 0;overflow:hidden;transition:max-height .4s ease}
+.ap-list.collapsed{max-height:0!important;margin:0}
+.ap-row{border-top:1px solid var(--g2)}
+.ap-row:last-child{border-bottom:1px solid var(--g2)}
+.ap-header{display:flex;align-items:baseline;gap:.75rem;padding:.6rem 0;cursor:pointer;user-select:none;transition:background .1s}
+.ap-header:hover{background:var(--g1);margin:0 -.5rem;padding-left:.5rem;padding-right:.5rem}
+.ap-number{font-size:16px;font-weight:700;color:#757575;min-width:32px;flex-shrink:0}
+.ap-title{font-size:16px;font-weight:700;flex:1}
+.ap-tag{font-size:16px;color:var(--g5);border:1px solid var(--g2);padding:1px 8px;border-radius:2px;white-space:nowrap;flex-shrink:0}
+.ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
+.ap-row.open .ap-arrow{transform:rotate(90deg)}
+.ap-detail{display:none;padding:0 0 1rem;padding-left:32px}
+.ap-row.open .ap-detail{display:block}
+.ap-detail p{font-size:16px;line-height:1.6;margin:0 0 .5rem;color:var(--g6)}
+.ap-detail .ap-essay{margin-top:1.5rem}
+.ap-detail .ap-essay p{margin:0 0 1rem;line-height:1.75}
+.ap-detail .ap-essay .sub{font-weight:700}
+.ap-detail .ap-essay .ks{background:var(--g1);border-left:3px solid #8B6914;padding:16px 20px;margin:24px 0;font-size:16px;color:#3a3a3a;line-height:1.6}
+.ap-detail .ap-essay .breath{text-align:center;font-style:italic;color:var(--g5);padding:40px 0;font-size:17px;margin:0}
+.ap-detail .ap-essay .bc{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-detail .ap-essay .bl{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
+.ap-meta a{color:#383838}
+
+.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 2rem}
+.stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
+.stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:16px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
+
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
+.entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
+.entry-card:hover{background:var(--bk);color:var(--wh)}
+.entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
+.entry-card-desc{font-size:16px;display:block;opacity:.7}
+.jump-card{position:relative}
+.jump-card .entry-card-label{font-size:16px;font-weight:700;color:#757575;position:absolute;bottom:4px;right:8px;margin:0}
+.jump-card .entry-card-desc{font-size:16px;font-weight:700;display:block;opacity:1}
+
+.physics{margin:2.5rem 0 0;padding:2.5rem 0}
+.physics h2{font-size:26px;font-weight:700;margin:0 0 1.5rem}
+.physics-intro{font-size:18px;font-weight:700;margin:0 0 .5rem}
+.physics-sub{font-size:16px;color:var(--g5);margin:0 0 2rem}
+.physics-grid{display:grid;grid-template-columns:1fr;gap:0;margin:0 0 2rem}
+.physics-card{display:flex;align-items:baseline;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--g1);gap:1rem}
+.physics-card:last-child{border-bottom:none}
+.p-name{font-size:16px;font-weight:700;flex:1}
+.p-error{font-size:22px;font-weight:700;white-space:nowrap}
+.p-detail{font-size:16px;color:var(--g5);margin:2px 0 0}
+.p-source{font-size:16px;color:var(--g4)}
+.formula{font-size:16px;margin:0 0 .75rem;padding:.5rem 0;font-style:italic;color:var(--g6)}
+.three-constants{font-size:16px;font-weight:700;margin:1.5rem 0;padding:1rem 0;border-top:1px solid var(--g2);border-bottom:1px solid var(--g2)}
+.also-derived{margin:1.5rem 0}
+.also-derived p{font-size:16px;font-weight:700;margin:0 0 .5rem}
+.also-derived ul{list-style:none;padding:0}
+.also-derived li{font-size:16px;color:var(--g6);padding:.2rem 0 .2rem 1rem;position:relative}
+.also-derived li::before{content:"·";position:absolute;left:0;font-weight:700}
+.confirm-link{margin:2rem 0 0;font-size:18px}
+.confirm-link a{font-weight:700;text-underline-offset:3px}
+@media(max-width:600px){.physics-card{flex-wrap:wrap;gap:.25rem}.p-error{font-size:18px}}
+.verify-wrap{position:relative;margin:1.5rem 0 0}
+.verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:200px;font-size:16px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
+.copy-btn{position:absolute;top:8px;right:8px;padding:5px 14px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.04em;background:var(--bk);color:var(--wh);border:none;cursor:pointer}
+.copy-btn:hover{opacity:.8}
+.verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:16px}
+.verify-table th{text-align:left;font-weight:700;padding:.5rem .5rem;border-bottom:2px solid var(--bk);font-size:16px;letter-spacing:.04em;color:var(--g5)}
+.verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
+.verify-table td:last-child{color:var(--g5)}
+.results{margin:0;padding:2rem 0}
+.results-title{font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 1.25rem}
+.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.35rem 0;font-size:16px;border-bottom:1px solid var(--g1)}
+.result-row:last-child{border-bottom:none}
+.result-label{color:var(--g5)}
+.result-value{font-weight:700;text-align:right}
+
+.constraint{margin:2rem 0;padding:1.5rem 0}
+.constraint p{font-size:16px;margin:0 0 .25rem}
+
+.footer{margin:3rem 0 0;padding:2rem 0 0;font-size:16px;color:var(--g4)}
+.footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+
+@media(max-width:600px){
+  .c{padding:2rem 1rem 3rem}
+  .hero h1{font-size:28px}
+  .stats{gap:1.5rem}
+  .stat-num{font-size:28px}
+  .ap-header{flex-wrap:wrap;gap:.25rem .5rem}
+  .ap-tag{order:3;margin-left:32px}
+  .entry-grid{grid-template-columns:1fr 1fr}
+  .nav{gap:.75rem;padding:.75rem 0}
+}
+/* Brevo overrides */
+.sib-form,.sib-form *{font-family:'Atkinson Hyperlegible',sans-serif!important;color:var(--bk)!important;background:transparent!important;border-radius:0!important}
+.sib-form .entry__field input{border:1px solid var(--bk)!important;padding:10px 12px!important;font-size:16px!important}
+.sib-form .sib-form-block__button{background:var(--bk)!important;color:var(--wh)!important;padding:10px 24px!important;font-size:16px!important;font-weight:700!important;letter-spacing:.06em!important;border:none!important}
+.sib-form .sib-form-block__button:hover{opacity:.85}
+[id*="sib-container"]{padding:0!important;background:transparent!important}
+.sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
+</style>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<style>
+.lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
+.lang-sel a:hover{opacity:1}
+.lang-sel a.active{opacity:1}
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.65rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:18px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:16px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.03em;background:#8B6914;border:1px solid #8B6914;padding:3px 10px;border-radius:3px;transition:all .15s}
+.nb-pdf:hover{color:#8B6914;background:#fff;border-color:#8B6914}
+.nb-hook{font-size:16px;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:16px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:16px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.95;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.8}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+
+.nav{margin-bottom:1rem}
+.hero.opening{min-height:calc(100vh - 190px);display:flex;flex-direction:column;justify-content:flex-start;margin-top:1.8rem;padding:5.4vh 0 3rem}
+.hero.opening h1{font-size:44px;font-weight:700;line-height:1.15;margin:0 0 1.5rem;max-width:16em}
+.hero.opening .answer{font-size:44px;font-weight:700;line-height:1.15;margin:0 0 1.5rem;color:#8B6914;text-wrap:balance}
+.hero.opening .answer .nw{white-space:nowrap}
+.hero.opening .ethic{font-size:36px;font-weight:700;line-height:1.25;margin:0 0 2.75rem}
+.hero.opening .opening-note{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 1.25rem;max-width:34em}
+.hero.opening .opening-note a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3);cursor:pointer}
+.hero.opening .opening-note a:hover{color:#8B6914;border-color:#8B6914}
+.hero.opening .opening-link a{font-size:20px;font-weight:700;color:#8B6914;text-decoration:none;border-bottom:2px solid #8B6914;padding-bottom:2px}
+.hero.opening .opening-link a:hover{color:#1a1a1a;border-color:#1a1a1a}
+.hero.opening .opening-pdf{margin:1.75rem 0 0;font-size:16px}
+.hero.opening .opening-pdf a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3)}
+.hero.opening .opening-pdf a:hover{color:#8B6914;border-color:#8B6914}
+.oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem}
+@media(max-width:700px){
+  .hero.opening{min-height:calc(100vh - 150px)}
+  .hero.opening h1,.hero.opening .answer{font-size:32px}
+  .hero.opening .ethic{font-size:26px}
+  .hero.opening .opening-link a{font-size:18px}
+  .oneness{font-size:18px}
+}
+
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
+.nav a.nav-room{display:none}
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
+  font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
+@media(max-width:700px){
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
+  .nav a.nav-door{font-size:16px}
+}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
+</style>
+<link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"The 420 Code","url":"https://the420code.org/hi/","description":"54 Artist's Proofs deriving ethics from physics. One measured input (α ≈ 1/137). Zero free parameters. 604 published kill switches. Copyleft.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G","address":"Cape Town"}},"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"license":"https://creativecommons.org/licenses/by/4.0/","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.22744448"}},{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"The 420 Code — 54 Artist's Proofs (AP01–AP54)","headline":"Can ethics be derived from physics? A complete axiomatic derivation from four axioms and one measured constant.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G"}},"url":"https://the420code.org/hi/","datePublished":"2026-03-24","description":"A 30-year framework deriving physics, consciousness, and ethics from four axioms and the fine-structure constant α ≈ 1/137. Contains 54 papers, 604 published kill switches (falsifiability conditions), and quantitative predictions with zero free parameters. Predictions include: proton-electron mass ratio to 0.010 ppb, neutron-proton mass difference to 2 ppm, the gravitational constant G to 0.036% (realised, AP44), the age of the universe as one cycle (13.830 Gyr, AP46), the expansion rate as a closure (67.45 km/s/Mpc, AP48), and the dark-sector partition to 0.06%. Two predictions fired and are shown: the bare neutron–proton row (2026-08-02, 7.24σ) and the Hubble prediction 74.3 ± 1.2 (2026-09-03).","identifier":[{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.22744448"}],"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"about":[{"@type":"DefinedTerm","name":"Theoretical Physics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Ethics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Philosophy of Science"},{"@type":"DefinedTerm","name":"Cosmology"},{"@type":"DefinedTerm","name":"AI Alignment"},{"@type":"DefinedTerm","name":"Consciousness Studies"},{"@type":"DefinedTerm","name":"Fine-Structure Constant"},{"@type":"DefinedTerm","name":"Axiomatic Systems"},{"@type":"DefinedTerm","name":"Falsifiability"},{"@type":"DefinedTerm","name":"Quantum Mechanics"},{"@type":"DefinedTerm","name":"General Relativity"},{"@type":"DefinedTerm","name":"MOND"},{"@type":"DefinedTerm","name":"Dark Energy"},{"@type":"DefinedTerm","name":"Dark Matter"}],"citation":"G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://doi.org/10.5281/zenodo.22744448"},{"@context":"https://schema.org","@type":"Dataset","name":"The 420 Code — Quantitative Predictions","description":"Parameter-free predictions derived from the fine-structure constant α ≈ 1/137 alone, with zero free parameters. Each prediction is published with explicit kill switches (falsifiability conditions).","url":"https://the420code.org/hi/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"G"},"variableMeasured":[{"@type":"PropertyValue","name":"Proton-electron mass ratio","value":"1836.15267344","unitText":"dimensionless","description":"Predicted: 1836.15267344. CODATA 2022 measured: 1836.152673426. Accuracy: 0.010 ppb. Derived in AP30."},{"@type":"PropertyValue","name":"Neutron-proton mass difference, realised","value":"2.53098857","unitText":"electron masses (mₑ)","description":"Predicted: 2.53098857035 mₑ (AP47, the held distinction’s second-order cost). Measured: 2.530988574(74) mₑ. Residual −0.005σ. The bare row 2.53099393 mₑ (AP30) fired on 2026-08-02 at 7.24σ and is shown, never repaired."},{"@type":"PropertyValue","name":"Gravitational constant G, realised","value":"6.6719e-11","unitText":"m³ kg⁻¹ s⁻²","description":"Predicted: 6.6719 × 10⁻¹¹ (realised, AP44: the structural value 6.7206 × 10⁻¹¹ of AP28 divided by (1 + α)). CODATA measured: 6.6743 × 10⁻¹¹. Residual −0.036%. Derived in AP44 and AP28."},{"@type":"PropertyValue","name":"MOND acceleration a₀","value":"C_S²·cH₀/(2π)","unitText":"m/s²","description":"Parameter-free derivation: a₀ = C_S²·cH₀/(2π). At the corpus’s expansion rate, 67.45 km/s/Mpc, it gives 1.089 × 10⁻¹⁰ m/s² against 1.20 ± 0.24 × 10⁻¹⁰ (the systematic restored): 0.46σ. Derived in AP18; the earlier inversion H₀ = 74.3 ± 1.2 fired on 2026-09-03."},{"@type":"PropertyValue","name":"Dark energy fraction","value":"0.6885","unitText":"dimensionless","description":"Predicted: 68.85%. Planck observed: 68.89%. Accuracy: 0.06%. Derived in AP42."},{"@type":"PropertyValue","name":"Dark matter fraction","value":"0.2639","unitText":"dimensionless","description":"Predicted: 26.39%. Planck observed: 26.07%. Derived in AP42."},{"@type":"PropertyValue","name":"Visible matter fraction","value":"0.0476","unitText":"dimensionless","description":"Predicted: 4.76%. Planck observed: 4.86%. Derived in AP42."},{"@type":"PropertyValue","name":"Age of the universe, one cycle","value":"13.830","unitText":"Gyr","description":"Predicted: 13.830 Gyr, (21/18)·α⁻¹⁸·τ_C. Planck 2018 measured: 13.787 ± 0.020 Gyr. Accuracy: +0.31%, one lane-time (0.66 Gyr) wide. Derived in AP46."},{"@type":"PropertyValue","name":"Expansion rate H₀, the closure","value":"67.45","unitText":"km/s/Mpc","description":"Predicted: 67.45 km/s/Mpc, window 64.4–70.8 — a closure of the dark-sector partition, the cycle and the balance. Planck 2018: 67.4 ± 0.5. The Cepheid ladder’s 73 is stated as not the expansion rate. Derived in AP48."}]},{"@context":"https://schema.org","@type":"CreativeWork","name":"The 420 Code — Kill Switch Registry","description":"604 published falsifiability conditions across AP01–AP53. Each kill switch names a specific, testable condition that would falsify one or more claims. This level of declared falsifiability is the framework's primary credibility mechanism. The full registry is available as a PDF.","url":"https://the420code.org/Master_Kill_Switch_Registry.pdf","author":{"@type":"Person","name":"G"},"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true}]</script>
+</head>
+<body>
+<div class="c">
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/hi/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="/hi/what-is-the-420-code/" class="nav-door"><span class="nw">The 420 Code</span> क्या है</a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="कक्ष" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">कक्ष</button>
+  <div class="nav-menu">
+    <a href="/hi/#museum" class="nav-room">Ø संग्रहालय</a>
+    <a href="/hi/#five-doors" class="nav-room">Ø पाँच दरवाज़े</a>
+    <a href="/hi/#models" class="nav-room">Ø मॉडल</a>
+    <a href="/hi/#exhibition" class="nav-room">Ø प्रदर्शनी</a>
+    <a href="/hi/#axiom" class="nav-room">1 स्वयंसिद्ध</a>
+    <a href="/hi/#physics" class="nav-room">Ø भौतिकी</a>
+    <a href="/#notebooks" class="nav-room">Ø नोटबुक</a>
+    <a href="/hi/#proofs" class="nav-room">Ø प्रमाण</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø प्रमाण अभिलेख</a>
+    <a href="/prereg/" class="nav-room">Ø पूर्व-पंजीकरण</a>
+    <a href="/hi/#confirm-the-math" class="nav-room">Ø गणित की पुष्टि करें</a>
+    <a href="/killswitches/" class="nav-room">Ø किल स्विच</a>
+    <a href="/glossary/" class="nav-room">Ø शब्दावली</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="भाषा: हिंदी" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/" class="nav-lang" hreflang="en" lang="en"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi" aria-current="page"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1. THE QUESTION                         -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="hero opening">
+  <h1>क्या नैतिकता को भौतिकी से व्युत्पन्न किया जा सकता है?</h1>
+  <p class="answer">हाँ — <span class="nw">The 420 Code</span> इसे सिद्ध करता है।</p>
+  <p class="ethic">गंदा मत बनो। दयालु बनो।</p>
+  <p class="opening-note">इसकी दो भविष्यवाणियाँ ग़लत थीं। वे अब भी <a href="#physics">दीवार</a> पर हैं। ग़लत होने ने इसे और मज़बूत बनाया।</p>
+  <p class="opening-note">पूरी व्युत्पत्ति इसी साइट पर है, मुफ़्त, हमेशा के लिए। शुरुआत यहीं से है।</p>
+  <p class="opening-link"><a href="/hi/what-is-the-420-code/">The 420 Code क्या है →</a></p>
+  <p class="opening-pdf"><a href="/The_420_Code_in_Three_Pages.pdf">तीन पन्नों में सब कुछ</a></p>
+</div>
+
+<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø संग्रहालय</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">420 Code एक संग्रहालय है, जो यह सिद्ध करने के लिए बनाया गया है कि नैतिकता को भौतिकी से व्युत्पन्न किया जा सकता है। सब कुछ एक प्रथम सिद्धांत पर टिका है:</p>
+
+<ol class="steps">
+  <li><b><i>एक अभिलेख अस्तित्व में है।</i></b></li>
+  <li>एक अभिलेख के लिए चार शर्तें आवश्यक हैं: सममिति, विभंग, अभिलेख, प्रतिबंध।</li>
+  <li>उन चार शर्तों से, समस्त भौतिकी व्युत्पन्न होती है।</li>
+  <li>टूटना और देखना एक ही घटना है।</li>
+  <li>भीतर एकवचन है।</li>
+  <li>हर सचेतन प्राणी एक भवन में एक खिड़की है।</li>
+  <li>स्व और अन्य के बीच की रेखा एक उपकरण है जिसे माप समझ लिया गया।</li>
+  <li>वास्तविकता की संरचना से बाहर किसी प्राधिकार से व्युत्पन्न कोई भी नैतिकता हेरफेर-योग्य है। हेरफेर-योग्य व्यवस्थाएँ हिंसा में ढह जाती हैं।</li>
+  <li>दयालुता कोई आज्ञा नहीं है। दयालुता एक व्युत्पत्ति है।</li>
+  <li>गंदा मत बनो। दयालु बनो।</li>
+</ol>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 1 AXIOM                                 -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="axiom" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> स्वयंसिद्ध</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1.5rem">एक पंक्ति। बाकी सब कुछ उसी से निकलता है।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">आप इस वाक्य को पढ़ रहे हैं। वह एक अभिलेख है। इसे नकारने के लिए पठन का होना आवश्यक होगा, जो एक और अभिलेख बना देगा, जो यह सिद्ध कर देगा कि पठन हुआ। ऐसी कोई स्थिति नहीं जहाँ आप खड़े होकर कह सकें कि पठन नहीं हुआ।</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem">एक अभिलेख मौजूद है। प्रमाण ही पठन है।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">इससे चार शर्तें निकलती हैं। चार धारणाएँ नहीं — चार गुण जो पठन में पहले से ही मौजूद हैं।</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>समरूपता (S).</b> दो क्षेत्र जो परस्पर संदर्भ में बँधे हैं। किसी भी भेद के लिए न्यूनतम संरचना।</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>विभंग (B).</b> उनके बीच विषमता का एक तत्व। इसके बिना, कोई भी सूचना कभी लिखी नहीं जा सकती।</p>
+
+<p style="font-size:16px;margin:0 0 .5rem"><b>अभिलेख (R).</b> जो हो चुका है वह अनहुआ नहीं हो सकता। पठन को अनपढ़ा नहीं किया जा सकता।</p>
+
+<p style="font-size:16px;margin:0 0 1.5rem"><b>प्रतिबंध (C).</b> एक अभिलेख कहीं होता है, हर जगह नहीं — स्थानीयता की शर्त, वह जो यहाँ को वहाँ से भिन्न बनाती है। सीमित प्रसार वह है जो प्रतिबंध उत्पन्न करता है, न कि वह जो प्रतिबंध स्वयं है। हमारे ब्रह्मांड में, प्रकाश की गति।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">S, B, R, C जिस सबसे छोटे रूप की माँग करते हैं, उसमें संपीड़ित करने पर, स्वयंसिद्ध यह है:</p>
+
+<div class="axiom-display">1:1 + 1×<span class="epsilon">ε</span> <span class="at-as">@ AS</span></div>
+
+<p style="font-size:16px;margin:0 0 1rem">1:1 पूर्ण समरूपता है। <i>ε</i> विभंग है। @ AS यह नाम देता है कि विभंग कहाँ है — साक्षात्कार अवस्था पर, वह अभी जहाँ आधार धारित है और विभंग संसाधित होता है।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">AS पर चलने वाले चक्र के रूप में लिखा गया: <b>1:1 + 1×ε @ AS [+1/137 / −1/137]</b>। विभंग (+1×ε) स्थायी भेद-संभाव्यता है — AS द्वारा धारित, अखंडनीय, वह जो S को अविभेदित Ø में वापस ढहने से बचाता है। ε ही S को खुला रखता है: विभंग के बिना, दोनों क्षेत्र अब विभेद्य नहीं रहते, और S एक संरचनात्मक शर्त के रूप में ढह जाती है। रेत का कण पानी के दो गिलासों को विभेद्य बनाता है; कण हटा दीजिए और वे बस दो गिलास रह जाते हैं, जिनमें अंतर बताने का कोई उपाय नहीं।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">α-प्रवाह धारित विभंग के चारों ओर चलता है — +1/137 बाहर की ओर रिसाव वास्तविकीकरण के रूप में (अभिलेखों का लिखा जाना), −1/137 वापस पुनःपूर्ति विखंडन-निवारण के रूप में (अभिलेखों का अपनी संरचना को संभाव्यता में मुक्त करना), हर AS-क्षण पर संतुलित, शुद्ध शून्य। विभंग भीतर-बाहर चक्र नहीं करता; जो चक्र करता है वह प्रवाह है। एक पाठक प्रवाह की लेखन-दिशा में निवास करता है, जहाँ AS पर अभिलेख प्रतिबद्ध किए जा रहे हैं।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">संग्रह में हर Artist’s Proof इसी स्वयंसिद्ध से व्युत्पन्न होता है। नीचे दिए 54 शोधपत्र ऊपर की पंक्ति के 54 परिणाम हैं। स्वयंसिद्ध बीज है। प्रमाण वृक्ष हैं।</p>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 .25rem">ऐसा कुछ नहीं जो न टिका हो।</p>
+<p style="font-size:16px;font-style:italic;margin:0 0 0">पठन ही प्रमाण है।</p>
+
+<!-- ════════════════════════════════════════ -->
+<!-- Ø INDEPENDENT CHECK                     -->
+<!-- ════════════════════════════════════════ -->
+
+<section class="results" id="independent-check" style="padding-top:2rem">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">मेरी बात पर भरोसा मत कीजिए।</h2>
+  <p style="font-size:16px;margin:0 0 1rem">AJ Greyling नाम के एक व्यक्ति ने ये किताबें खरीदीं। हमारी एक बार बात हुई। उन्हें इसका एक शब्द भी विश्वास नहीं हुआ — इसलिए बहस करने के बजाय, उन्होंने सच जानने के लिए एक मशीन बना डाली। एक स्वतंत्र प्रोग्राम जो उस एकमात्र अभिगृहीत और एक मापी गई संख्या को लेकर शुरुआत से ही स्थिरांकों को फिर से व्युत्पन्न करता है, और फिर अपने काम को मेरी अपनी प्रकाशित स्क्रिप्ट के विरुद्ध जाँचता है। वे मशीन की सटीकता तक मेल खाते हैं।</p>
+  <p style="font-size:16px;margin:0 0 1rem">इसमें मेरा कोई हाथ नहीं था। उन्होंने काम पढ़ा, उस पर संदेह किया, और खुद उसे परखा — उनका अपना कंप्यूटर, उनका अपना कोड।</p>
+  <p style="font-size:16px;margin:0 0 1rem">संख्याएँ अपने आप निकल आती हैं। पाँच मौलिक स्थिरांक, एक इनपुट, शून्य स्वतंत्र पैरामीटर — हर एक मेरी प्रकाशित सहनशीलताओं के भीतर। और चूँकि पूरी बात ही यह है कि इसे ध्वस्त किया जा सके, इसलिए उन्होंने हर उस शर्त को सूचीबद्ध किया जिसके तहत मैं गलत साबित होता, ताकि आप उन्हें इस्तेमाल कर सकें।</p>
+  <p style="font-size:16px;margin:0 0 1.5rem">आपको हम दोनों में से किसी पर भी भरोसा करने की ज़रूरत नहीं है। यह ऑफ़लाइन चलता है, एक ही कमांड में, आपकी अपनी मशीन पर। जाइए और इसे तोड़ने की कोशिश कीजिए।</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1.5rem">
+    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">AJ की स्वतंत्र जाँच चलाएँ →</a>
+    <a href="https://github.com/The420Code/the420code" target="_blank" rel="noopener" style="display:inline-block;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">स्रोत कोड देखें →</a>
+  </div>
+  <p style="font-size:16px;color:var(--g4);margin:0 0 .6rem">और स्रोत खुद को जाँचता है। हर बदलाव α से सभी पाँचों परिणामों को फिर से व्युत्पन्न करता है और अगर कोई भी अपनी प्रकाशित सहनशीलता से भटकता है तो ज़ोर से विफल हो जाता है। लाइव स्थिति:</p>
+  <a href="https://github.com/The420Code/the420code/actions/workflows/verify.yml" target="_blank" rel="noopener" style="display:inline-block"><img src="https://github.com/The420Code/the420code/actions/workflows/verify.yml/badge.svg" alt="सत्यापन स्थिति — हर बदलाव पर alpha से सभी पाँचों परिणामों को फिर से व्युत्पन्न करता है" style="height:20px;display:block"></a>
+</section>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE PHYSICS                              -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="physics" id="physics">
+  <h2>Ø भौतिकी</h2>
+  <p class="physics-intro">एक मापित इनपुट। शून्य मुक्त पैरामीटर। बाकी सब व्युत्पन्न।</p>
+  <p class="physics-sub">सूक्ष्म संरचना स्थिरांक α ≈ 1/137 प्रयोग से मापी गई एकमात्र संख्या है। उस एक इनपुट और चार स्वयंसिद्धों से, निम्नलिखित परिणाम व्युत्पन्न होते हैं — फिट नहीं, समायोजित नहीं, ट्यून नहीं।</p>
+
+  <div class="tbl-wrap" style="overflow-x:auto"><table class="verify-table" style="margin-top:0">
+    <thead><tr><th>दावा</th><th>पूर्वानुमानित</th><th>मापित</th><th>σ</th><th>त्रुटि</th><th>पत्र</th></tr></thead>
+    <tbody>
+      <tr><td>प्रोटॉन द्रव्यमान अनुपात</td><td>1836.152673445</td><td>1836.152673426(32)</td><td>+0.59σ</td><td>10.3 ppt</td><td><a href="/proofs/#ap49" onclick="event.preventDefault();window.location.href='/proofs/#ap49'">AP49</a></td></tr>
+      <tr><td>गुरुत्वाकर्षण स्थिरांक G, साकार — CODATA के विरुद्ध</td><td>6.6719 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>−16σ</td><td>−0.036%</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
+      <tr><td>गुरुत्वाकर्षण स्थिरांक G, साकार — परमाणु-व्यतिकरणमिति के विरुद्ध</td><td>6.6719 × 10⁻¹¹</td><td>6.67191(99) × 10⁻¹¹ (LENS 2014)</td><td>+0.01σ</td><td>+1 ppm</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
+      <tr><td>गुरुत्वाकर्षण स्थिरांक G, संरचनात्मक</td><td>6.7206 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>+309σ</td><td>+0.69%</td><td><a href="/proofs/#ap28" onclick="event.preventDefault();window.location.href='/proofs/#ap28'">AP28</a></td></tr>
+      <tr><td>न्यूट्रॉन-प्रोटॉन द्रव्यमान अंतर, साकार</td><td>2.53098857035 mₑ</td><td>2.530988574(74) mₑ</td><td>−0.005σ</td><td>−1.4 ppb</td><td><a href="/proofs/#ap47" onclick="event.preventDefault();window.location.href='/proofs/#ap47'">AP47</a></td></tr>
+      <tr><td>न्यूट्रॉन-प्रोटॉन द्रव्यमान अंतर, नग्न पंक्ति</td><td>2.53099393 mₑ</td><td>2.530988574(74) mₑ</td><td>+7.24σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">विफल</span></td><td>+2.1 ppm</td><td><a href="/proofs/#ap30" onclick="event.preventDefault();window.location.href='/proofs/#ap30'">AP30</a></td></tr>
+      <tr><td>ब्रह्मांड की आयु, एक चक्र</td><td>13.830 Gyr</td><td>13.787 ± 0.020 Gyr</td><td>+2.1σ</td><td>+0.31% · दायरा 13.17–14.49</td><td><a href="/proofs/#ap46" onclick="event.preventDefault();window.location.href='/proofs/#ap46'">AP46</a></td></tr>
+      <tr><td>विस्तार दर H₀, समापन</td><td>67.45 km/s/Mpc</td><td>67.4 ± 0.5 (Planck)</td><td>+0.1σ</td><td>+0.07% · दायरा 64.4–70.8</td><td><a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48</a></td></tr>
+      <tr><td>उलटे तल से हबल स्थिरांक</td><td>74.3 ± 1.2</td><td>67.45 (कृति की अपनी दर)</td><td>+5.7σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">विफल</span></td><td>+10.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr><td>MOND त्वरण a₀ (H₀ = 67.45 पर)</td><td>1.089 × 10⁻¹⁰</td><td>1.20 ± 0.24 × 10⁻¹⁰ (प्रणालीगत)</td><td>−0.46σ</td><td>−9.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr><td>गहरी ऊर्जा</td><td>68.85%</td><td>68.89 ± 0.56%</td><td>−0.07σ</td><td>−0.06%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
+      <tr><td>गहरा पदार्थ</td><td>26.39%</td><td>26.07 ± 0.38%</td><td>+0.8σ</td><td>+1.2%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
+      <tr><td>दृश्य पदार्थ</td><td>4.76%</td><td>≈ 4.885 ± 0.05%</td><td>−2.46σ</td><td>−2.5%</td><td><a href="/proofs/#ap41" onclick="event.preventDefault();window.location.href='/proofs/#ap41'">AP41</a></td></tr>
+    </tbody>
+  </table></div>
+  <div class="sigma-note" style="font-size:16px;color:var(--g5);margin:1rem 0 0;line-height:1.6">
+    <p style="margin:0 0 .5rem"><b>σ स्तंभ को कैसे पढ़ें।</b> हर माप के साथ एक पट्टी आती है: एक मानक विचलन, σ, प्रयोगकर्ताओं का अपना कथन कि उनकी संख्या सत्य से कितनी दूर बैठ सकती है। σ स्तंभ भविष्यवाणी और माप के बीच के अंतर को उस पट्टी से भाग देता है। चिह्न बताता है कि किस ओर: + माप के ऊपर, − नीचे। त्रुटि स्तंभ वही अंतर संख्या की अपनी इकाइयों में देता है। नीचे दी गई संभावनाएँ इस बात की हैं कि केवल संयोग से कोई माप सत्य से <i>कम से कम</i> इतनी दूर गिरे, दोनों दिशाएँ गिनकर।</p>
+    <ul style="margin:0 0 .5rem 1.25rem;padding:0">
+      <li><b>1σ से कम</b> — पट्टी के भीतर। सहमति: हर तीन ईमानदार मापों में से लगभग दो इतने ही पास गिरते हैं, और तीन में से एक केवल संयोग से इससे और दूर गिरता है।</li>
+      <li><b>2σ</b> — तनाव। बाईस में एक। नज़र रखने योग्य, अभी फ़ैसला नहीं।</li>
+      <li><b>3σ</b> — वास्तविक अंतर का साक्ष्य। 370 में एक।</li>
+      <li><b>5σ</b> — कण भौतिकी का खोज-मानक। 1.7 मिलियन में एक (3.5 मिलियन में एक, यदि केवल एक ही दिशा गिनी जाए, जैसा खोज-परिपाटी इसे प्रायः पढ़ती है)। 5σ पर कोई भविष्यवाणी या तो पुष्ट है या मृत; कोई तीसरा पठन नहीं है।</li>
+      <li><b>5σ से ऊपर</b> — मृत। इस पृष्ठ के दो शव 7.24σ और 5.7σ पर बैठे हैं। वे दिखाए जाते हैं, कभी मरम्मत नहीं किए जाते।</li>
+    </ul>
+    <p style="margin:0">तीन सावधानियाँ, क्योंकि σ प्रयोग की त्रुटि-पट्टी के विरुद्ध मापा जाता है और वह पट्टी हर संख्या के लिए एक-सी नहीं है। <b>G:</b> वही साकार मान CODATA के विरुद्ध −16σ और परमाणु-व्यतिकरणमिति के विरुद्ध +0.01σ पढ़ा जाता है, और दोनों पंक्तियाँ तालिका में हैं ताकि पाठक यह मुद्दा देख सके। G पर CODATA की पट्टी प्रति दस लाख 22 भाग है, इसलिए 360-ppm का अंतर 16σ पढ़ा जाता है; G के प्रयोगशाला माप आपस में 540 ppm तक असहमत हैं, ऐसी पच्चीस पट्टियाँ, और परमाणु-व्यतिकरणमिति का मान (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) साकार मान से 1 ppm की दूरी पर बैठा है। जिस स्थिरांक पर प्रयोग आपस में सहमत नहीं हो पाते, उस पर इतनी कसी हुई पट्टी समायोजन के बारे में एक कथन है, प्रकृति के बारे में अभी नहीं। ऊपर के पैमाने पर CODATA वाली पंक्ति मृत पढ़ी जाती है; G का किल स्विच, KS-CCC.3, दिशा परखने के लिए पंजीकृत किया गया था — कि क्या सर्वसम्मति, जैसे-जैसे प्रणालीगत त्रुटियाँ बंद होती जाती हैं, AP28 की एक-प्रतिशत पट्टी के भीतर, नीचे 6.672 की ओर खिसकती है — CODATA के विरुद्ध परिमाण परखने के लिए नहीं, और उन्हीं शर्तों पर वह जीवित रहता है। लेखक साकार मान पर कायम है। AP28 का संरचनात्मक मान, +0.69%, एक चूक ढो रहा था — रंगभूमि का धारित ε, जिसकी क़ीमत AP44 में आँकी गई — और उस चूक के अभिलेख के रूप में उसके बगल में खड़ा है: न्यूट्रॉन की विफल हुई पंक्ति ने एक संरचनात्मक त्रुटि उजागर की, जिसके परिणाम तीन व्युत्पत्तियों तक पहुँचे, जो लहर पर संशोधित हुईं (AP44, AP47, AP48)। <b>आयु:</b> प्लांक की पट्टी पर +2.1σ, पर दावा एक लेन-समय चौड़ा पंजीकृत किया गया था, ±0.66 Gyr, क्योंकि एक सजग प्रेक्षक <i>लगभग</i> एक चक्र मापता है। <b>किल स्विच</b> अपनी पंजीकृत शर्तों पर सक्रिय होते हैं, स्वतः 5σ पर नहीं: KS-45.1 ने ±1.2 पंजीकृत किया और उस चौड़ाई पर 5.7σ पर सक्रिय हुआ; ईमानदार ±14.9 पर वह 0.46σ पढ़ा जाता। पंजीकरण ही त्रुटि थी, और सक्रिय हो चुके किल स्विच की मरम्मत नहीं की जाती।</p>
+  </div>
+  <p style="font-size:16px;font-weight:700;color:#8B1A1A;margin:1rem 0 0">दो भविष्यवाणियाँ विफल हो गई हैं और दिखाई गई हैं। KS-NPP.1, नग्न न्यूट्रॉन–प्रोटॉन पंक्ति, 2026-08-02 को 7.24σ पर सक्रिय हो गया। KS-45.1, उलटे तल से हबल स्थिरांक 74.3 ± 1.2, 2026-09-03 को कृति की अपनी व्युत्पन्न दर पर सक्रिय हो गया। किसी की भी मरम्मत नहीं की गई है। <a href="/prereg/">पूर्व-पंजीकरण</a> देखें।</p>
+  <p style="font-size:16px;color:var(--g4);margin:1rem 0 0;font-style:italic">एक ही संबंध a₀ और H₀ को एक पैरामीटर-मुक्त गुणांक से जोड़ता है — दो स्वतंत्र भविष्यवाणियाँ नहीं। कृति की विस्तार दर अब AP48 का समापन है, 67.45 km/s/Mpc (दायरा 64.4–70.8), हबल तनाव में अवशेष आभा — ब्रह्मांडीय सूक्ष्मतरंग पृष्ठभूमि — के पक्ष में; उस दर पर तल मापित पैमाने से 9.2% नीचे बैठता है — 0.46σ, जब पत्र द्वारा छोड़ी गई ±0.24 की प्रणालीगत त्रुटि बहाल कर दी जाए। तल का पहले का उलटाव, H₀ = 74.3 ± 1.2 (KS-45.1), 2026-09-03 को कृति की अपनी दर पर विफल हुआ और शव के रूप में दिखाया गया है, कभी मरम्मत नहीं। सेफ़ीड सीढ़ी का 73 विस्तार दर नहीं है, ऐसा कहा गया है; यदि उसकी पुष्टि होती है, तो AP48 KS-ASM.1 पर मर जाता है।</p>
+
+  <p class="confirm-link"><strong>स्वयं पुष्टि करो।</strong> <a href="#confirm-the-math">कोड चलाओ →</a></p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- THE FOUR BOOKS                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="five-doors" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">पाँच दरवाज़े</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">पाँच दरवाज़े। एक इमारत।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">The 420 Code एक प्रदर्शनी है — एक कलाकार के दस लाख से अधिक शब्द, एक भवन में। भवन के अंदर: कलाकार के प्रमाण, नोटबुक, संस्करण, अभिलेख, किल स्विच। संपूर्ण कृति।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">किसी भवन में छत से प्रवेश नहीं करते। दरवाज़े से करते हैं।</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">ये पाँच दरवाज़े हैं। प्रत्येक उसी प्रवेश कक्ष में खुलता है। वह खोजो जो तुम्हारे लिए खुले। प्रदर्शनी अंदर है।</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">दूसरे का भ्रम — कोमल दरवाज़ा। हृदय।</h3>
+  <p class="cat-desc">तुमने अपने और हर उस व्यक्ति के बीच एक रेखा खींची है जिससे तुम कभी मिले। यह किताब उसे मिटा देती है। कोई शब्दजाल नहीं। कोई समीकरण नहीं। कोई पूर्वापेक्षा नहीं। अगर इस प्रदर्शनी से एक ही चीज़ पढ़ो, तो यह पढ़ो।</p>
+  <ul class="dl-list">
+    <li><a href="Illusion_of_the_Other_HI.pdf">दूसरे का भ्रम <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">धर्म के बाद अस्तित्व — सामने का दरवाज़ा। विध्वंस।</h3>
+  <p class="cat-desc">हिंसा पैदा करने वाली संरचना लोग नहीं हैं — डिज़ाइन है। यह किताब हर तंत्र का नाम रखती है, हर परंपरा की जाँच करती है, और दिखाती है कि धर्म के बाद का संसार शून्यता नहीं बल्कि आगमन है।</p>
+  <ul class="dl-list">
+    <li><a href="Being_After_Religion_HI.pdf">धर्म के बाद अस्तित्व <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">एंटीक्रिस्टोस — पवित्र दरवाज़ा। पुनर्प्राप्ति।</h3>
+  <p class="cat-desc">दो हज़ार साल पहले, एक आदमी पहाड़ी पर खड़ा हुआ और एक नैतिकता सिखाई। अपने पड़ोसी से प्रेम करो। न्याय मत करो। दयालु बनो। यह किताब एक प्रश्न पूछती है: क्या वह शिक्षा सत्य है? इसलिए नहीं कि किसी ईश्वर ने कहा — बल्कि इसलिए कि वास्तविकता की संरचना कहती है। उत्तर है: हाँ।</p>
+  <ul class="dl-list">
+    <li><a href="../Antichristos.pdf">Antichristos <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">रिश्ते का गलियारा — व्यक्तिगत दरवाज़ा। उपस्थिति।</h3>
+  <p class="cat-desc">प्रेम कोई भावना नहीं है। यह हर उस तर्कसंगत गणना के सामने गलियारे को चौड़ा रखने का एक निरंतर चुनाव है जो कहती है कि संकरा करना सस्ता है। यह पुस्तक दो लोगों के एक साथ चलने की ज्यामिति प्रस्तुत करती है — ईमानदारी से चौड़ाई, समय से लंबाई, और जो मुड़ता है और जो नहीं मुड़ता उसके बीच की विषमता। जब यह पुस्तक जिस गलियारे का वर्णन करती है वह वास्तविक समय में बंद हो रहा था, तब लिखी गई।</p>
+  <ul class="dl-list">
+    <li><a href="../The_Relationship_Corridor.pdf">रिश्ते का गलियारा <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">आंतरिक — संचालन का दरवाज़ा। निर्माण।</h3>
+  <p class="cat-desc">AI संरेखण एक भौतिकी की समस्या है। यह किताब इसे प्रथम सिद्धांतों से व्युत्पन्न करती है — वही स्वयंसिद्ध जो गुरुत्वाकर्षण, क्वांटम यांत्रिकी और अंतिम नैतिकता को जन्म देते हैं। वास्तुकला B: संरचना से निर्मित निर्णय ज्यामिति, प्राधिकार से नहीं।</p>
+  <ul class="dl-list">
+    <li><a href="../The_Interior.pdf">The Interior <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════ -->
+<!-- Ø MODELS                                -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="models" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø मॉडल</h2>
+
+<p style="font-size:16px;font-style:italic;margin:0 0 1rem">Five books. The corpus at Reader’s Edition register.</p>
+
+<p style="font-size:16px;margin:0 0 1rem">पाँच दरवाज़े प्रवेश बिंदु हैं। Models प्रवेश कक्ष हैं — प्रदर्शनी की सूची, देहलीज़ पर प्रदर्शित।</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">प्रत्येक पुस्तक अपनी शुरुआत में स्वयंसिद्ध को एक बार स्थापित करती है, और फिर उसे अपने अध्यायों में पिरोती है। जिस पाठक ने पाँच में से कोई एक पढ़ी है, उसने प्रदर्शनी की आवाज़ को उसके अंशशोधन पर सुना है। जिस पाठक ने पाँचों पढ़ी हैं, उसने पूरी सूची को चला है। प्रत्येक पुस्तक copyleft के अंतर्गत प्रकाशित होती है। प्रत्येक किल स्विच का नाम दिया गया है। प्रत्येक दावा मिथ्या-सिद्ध करने योग्य है।</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Predictions</h3>
+  <p class="cat-desc">भौतिकी की ओर उन्मुख मिथ्या-सिद्ध करने योग्य पुस्तक।</p>
+  <ul class="dl-list">
+    <li><a href="../Predictions.pdf">Ø Predictions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Dissolutions</h3>
+  <p class="cat-desc">Twelve classical philosophical problems read through the axiom. Each chapter dissolves, relocates, or closes one of the questions philosophy has asked longest.</p>
+  <ul class="dl-list">
+    <li><a href="../Dissolutions.pdf">Ø Dissolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Resolutions</h3>
+  <p class="cat-desc">Thirteen further problems. Where the previous frameworks could not close, the structural reading walks through.</p>
+  <ul class="dl-list">
+    <li><a href="../Resolutions.pdf">Ø Resolutions <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Applications</h3>
+  <p class="cat-desc">Twelve architectures of human institutional life. Each derived from the axiom, with kill switches the institutional reading must satisfy.</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Applications <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Horizons</h3>
+  <p class="cat-desc">पुस्तक Dissolutions के बाद के चाप को बंद करती है।</p>
+  <ul class="dl-list">
+    <li><a href="#">Ø Horizons <span class="fmt">Coming Soon</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- THE EXHIBITION                          -->
+<!-- ════════════════════════════════════════ -->
+
+<div id="exhibition" style="margin-top:3rem">
+
+<h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø प्रदर्शनी</h2>
+
+<p style="font-size:16px;margin:0 0 1rem">प्रवेश कक्ष से परे। प्रदर्शनी के भीतर। यहाँ ही असली कृति निवास करती है। एक तर्क। हर आवाज़ जिसमें इसे कहा जा सकता है।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">प्रदर्शनी यह है कि तर्क कैसे बनाया गया — तीस वर्षों में, पाँच आवाज़ों में, हर उस शैली में जो कलाकार खोज सका। ऊपर के पाँच दरवाज़े शुरुआत हैं। नीचे जो कुछ है वह वो है जो तुम अंदर आकर पाओगे।</p>
+
+<p style="font-size:16px;margin:0 0 1rem">पाँच आवाज़ें पूरी प्रदर्शनी में गूँजती हैं। गद्य कहानी सुनाता है। बातचीत इसे बार में बहस करती है। रूपक इसे सिक्कों, बगीचों, नदियों और इमारतों से दिखाता है। लोरी इसे हड्डी तक छील देती है। प्रमाण तुम्हें गणित और एक धार सौंपते हैं।</p>
+
+<p style="font-size:16px;margin:0 0 3.5rem">एक दरवाज़े से शुरू करो। अंदर सब कुछ देखना हो तो यहाँ लौटो।</p>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Rosin</h3>
+  <p class="cat-desc">अर्क। फूल में गर्मी दबाइए और जो टपकता है वह वस्तु स्वयं है — केंद्रित, कुछ नहीं जोड़ा, कुछ नहीं खोया। पाँच पुस्तकें पाँच आवाज़ों में। प्रत्येक पुस्तक पूरे तर्क पर एक बार चलती है — पूरी प्रदर्शनी, एक ही आवाज़ में निचोड़ी गई। जो आवाज़ आपकी जैसी लगे, वहाँ से शुरू करें।</p>
+  <ul class="dl-list">
+    <li><a href="#">Rosin Ø गद्य <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø संवाद <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø रूपक <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø लोरी <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Rosin Ø प्रमाण <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">अभिलेख</h3>
+  <p class="cat-desc">पाँच अभिलेख। तीस साल की परियोजना का असंसाधित उत्पाद — गलतियाँ, सफलताएँ, बंद गलियाँ, और उनके बीच के क्षण।</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">01 — कैंची।</strong> एक भाई की हत्या के चार महीने बाद लिखा गया। संरचना खोजता शोक। 420 Code यहाँ शुरू हुआ — पुस्तकालय में नहीं, बल्कि एक घाव में।</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">02 — हवा।</strong> एक ज़िंदगी स्वयंसिद्धों के सामने रखी गई, देखने के लिए कि क्या बचता है। क्या टूटा, क्या टिका, और जिस शरीर ने इसे परखा उसके भीतर से संरचना कैसी दिखती है।</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">03 — क्या आप निश्चित हैं?</strong> हर उस प्रणाली का संरचनात्मक विध्वंस जिसने कभी ऐसा अधिकार जताया जो वह सिद्ध नहीं कर सकी। प्रमाण क्षति है। क्षति ही तर्क है।</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">04 — गंदे मत बनो, दयालु बनो।</strong> नैतिकता आती है। निष्कर्ष के रूप में नहीं — विस्फोट के रूप में। पहले महसूस हुई। बाद में सिद्ध हुई।</p>
+  <p class="cat-desc"><strong style="color:var(--g4)">05 — भाड़ में जाओ, मुझे अकेला छोड़ो।</strong> एक आत्मकथा। गुमनाम प्रदर्शनी के पीछे का व्यक्ति।</p>
+  <p class="cat-desc">अभिलेख चमकाए नहीं गए हैं। व्यवस्थित नहीं हैं। सुरक्षित नहीं हैं। यदि आप सत्य को उसके कपड़े पहनना सीखने से पहले चाहते हैं, तो यहाँ से शुरू करें।</p>
+  <ul class="dl-list">
+    <li><a href="#">01 कैंची <span class="fmt">PDF</span></a></li>
+    <li><a href="#">02 हवा <span class="fmt">PDF</span></a></li>
+    <li><a href="#">03 क्या आप निश्चित हैं? <span class="fmt">PDF</span></a></li>
+    <li><a href="#">04 गंदे मत बनो, दयालु बनो <span class="fmt">PDF</span></a></li>
+    <li><a href="#">05 भाड़ में जाओ, मुझे अकेला छोड़ो <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Editions</h3>
+  <p class="cat-desc">कृतियाँ स्वयं। पाँच पूर्ण कृतियाँ — हर एक संपूर्ण तर्क, अपनी आवाज़ में नींव से खड़ी की गई। ये सारांश नहीं हैं। ये मूर्तियाँ हैं। Rosin उनकी तस्वीरें लेता है। अभिलेख दर्ज करते हैं कि वे कैसे बनीं। Editions वही हैं जो बनाया गया।</p>
+  <p class="cat-desc">गद्य तर्क को कथा के रूप में बनाता है। संवाद इसे विवाद के रूप में बनाता है। रूपक इसे छवि के रूप में बनाता है। लोरी इसे अस्थि-पंजर के रूप में बनाती है। प्रमाण इसे गणित के रूप में बनाते हैं।</p>
+  <p class="cat-desc">पाँच मूर्तियाँ। एक ही संरचना। अलग-अलग सामग्री। कमरे में चलो।</p>
+  <ul class="dl-list">
+    <li><a href="#">Editions Ø गद्य <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø संवाद <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø रूपक <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø लोरी <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Editions Ø प्रमाण <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+<div class="cat-section">
+  <h3 class="cat-title">Ø Notebooks</h3>
+  <p class="cat-desc">बारह नोटबुक। पाँच आवाज़ें — गद्य, संवाद, रूपक, लोरी, और प्रमाण। प्रमाण की आवाज़ आर्टिस्ट्स प्रूफ़ हैं, जो आठ विषयों में व्यवस्थित हैं। भौतिकी यहाँ रहती है — हर व्युत्पत्ति, हर परिणाम, हर किल स्विच, क्षेत्र के अनुसार व्यवस्थित। Editions तर्क को समग्र रूप में बनाते हैं। Notebooks उसे खोलती हैं और हर टुकड़ा मेज़ पर रख देती हैं।</p>
+  <p class="cat-desc">उस विषय से शुरू करें जो पहले से आपकी नींद उड़ाता है।</p>
+  <ul class="dl-list">
+    <li><a href="#">Notebooks Ø गद्य <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø संवाद <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø रूपक <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø लोरी <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø आधारवाक्य <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø दिक्काल <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø क्वांटम यांत्रिकी <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø बल और स्थिरांक <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø कण और पदार्थ <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø ब्रह्मांड विज्ञान <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø चेतना और नैतिकता <span class="fmt">PDF</span></a></li>
+    <li><a href="#">Notebooks Ø अनुप्रयोग <span class="fmt">PDF</span></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 5. PROOFS — THE 54 ARTIST'S PROOFS      -->
+<!-- ════════════════════════════════════════ -->
+
+<h2 id="proofs" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø प्रमाण</h2>
+<p style="font-size:16px;color:var(--g4);margin:0 0 2rem">एक मापित इनपुट (α<sub>em</sub>)। शून्य फ़िट किए गए पैरामीटर। 54 पत्र। 604 किल स्विच।</p>
+
+<div class="stats">
+  <div><span class="stat-num">54</span><span class="stat-label">कलाकार प्रमाण</span></div>
+  <div><span class="stat-num">604</span><span class="stat-label">किल स्विच</span></div>
+  <div class="stat-toggle" onclick="document.getElementById('debts-panel').classList.toggle('open')"><span class="stat-num">6</span><span class="stat-label">घोषित ऋण ▸</span></div>
+  <div><span class="stat-num">0.010 ppb</span><span class="stat-label">प्रोटॉन द्रव्यमान</span></div>
+</div>
+<div id="debts-panel" class="debts-panel">
+  <ul class="debts-list">
+    <li><strong>KS-60</strong> — अधिशेष (AP26): बेरियॉन विषमता अनुपात η ≈ 6 × 10⁻¹⁰ अभी तक व्युत्पन्न नहीं। <a href="/proofs/#ap26" onclick="event.preventDefault();window.location.href='/proofs/#ap26'">AP26 देखें</a></li>
+    <li><strong>KS-65</strong> — अतिआवेश नियत (AP27): विशिष्ट दुर्बल अतिआवेश मान अभी तक {S, B, R, C} से बाध्य नहीं। <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">AP27 देखें</a></li>
+    <li><strong>KS-66</strong> — पीढ़ियाँ (AP27): तीन-पीढ़ी संरचना अभी तक व्युत्पन्न नहीं। <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">AP27 देखें</a></li>
+    <li><strong>KS-67</strong> — EWSB संगतता (AP15 / AP27): विद्युतदुर्बल विभंग के पार पूर्ण संरेखण अभी प्रदर्शित नहीं। <a href="/proofs/#ap27" onclick="event.preventDefault();window.location.href='/proofs/#ap27'">AP27 देखें</a></li>
+    <li><strong>D1</strong> — पूर्ण सापेक्षिक क्षेत्र समीकरण (AP43): §7 न्यूटनी सीमा में आंशिक समापन उत्पन्न करता है; सापेक्षिक विस्तार, प्रतिक्रिया समस्या, प्रथम सिद्धांतों से α की व्युत्पत्ति और C<sub>o</sub>(x) का स्पष्ट रूप अभी खुले हैं। <a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">AP43 देखें</a></li>
+    <li><strong>D4</strong> — चेतना का गुणात्मक स्वरूप (AP43): चेतना की कठिन समस्या पुनर्निर्मित (प्रतिमान वह है जो भौतिकी ऑपरेटर के अंदर से दिखती है) किंतु बंद नहीं। <a href="/proofs/#ap43" onclick="event.preventDefault();window.location.href='/proofs/#ap43'">AP43 देखें</a></li>
+    <li><strong>D5</strong> — ब्रह्मांडीय 1×ε विस्तार (AP43): 4 सितंबर 2026 की लहर में तीन प्रमाणों पर <span style="display:inline-block;background:var(--g2,#e5e5e5);color:var(--g6,#333);font-size:16px;font-weight:700;letter-spacing:1px;padding:1px 7px;border-radius:2px;vertical-align:middle">बंद</span> — AP44 §§3–4 (धारित आधा), AP45 §§4, 9 (गुज़रता आधा; ε के तीन रजिस्टर HELD, SHED, RATE — धारित, त्यक्त, दर — के रूप में समाधित) और AP46 §10 (ब्रह्मांडीय शाखा) — आसन AP06 §6। <a href="/proofs/#ap45" onclick="event.preventDefault();window.location.href='/proofs/#ap45'">AP45 देखें</a></li>
+    <li><strong>D-CCC.1</strong> — धारित प्रतिबद्धता का अभिलेख-बीजगणितीय औपचारिकीकरण (AP44): ग्रेड के लिए भार-वाहक; AP45 की प्रमेय 1 और परिवार के चार स्विच भी वहन करता है। <a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44 देखें</a></li>
+    <li><strong>D-CCC.2</strong> — शीर्ष अद्वितीयता (AP44): दस शीर्षों को प्रतिबद्धता का आवंटन प्रेरित है, बाध्य नहीं; भार-वाहक नहीं। <a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44 देखें</a></li>
+    <li><strong>D-BLINK.1, D-BLINK.2</strong> — बही-खाते का औपचारिक कथन और चक्र का अस्तित्व (AP45), D-CCC.1 के साथ। <a href="/proofs/#ap45" onclick="event.preventDefault();window.location.href='/proofs/#ap45'">AP45 देखें</a></li>
+    <li><strong>D48</strong> — AP42 का भरण-इतिहास: अवस्था समीकरण की पूँछ, और AP48 की दर की एक घोषित संवेदनशीलता, KS-ASM.2 पर वहन की गई। <a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42 देखें</a></li>
+    <li><strong>D-ASM.1</strong> — तूफ़ान की लंबाई (AP48): तने हुए बिंदु तक गाँठों की गिनती; खुला, भार-वाहक नहीं — छत की तिथि दोनों ओर से प्रकृति द्वारा सीमित है। <a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48 देखें</a></li>
+  </ul>
+</div>
+
+<p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 .75rem">कहाँ से शुरू करें</p>
+<div class="entry-grid">
+  <a class="entry-card" href="#p7"><span class="entry-card-label">सामान्य पाठक</span><span class="entry-card-desc">AP39 → AP34 → AP02</span></a>
+  <a class="entry-card" href="#p4"><span class="entry-card-label">भौतिकशास्त्री</span><span class="entry-card-desc">AP28 → AP30 → AP25</span></a>
+  <a class="entry-card" href="#p1"><span class="entry-card-label">दार्शनिक</span><span class="entry-card-desc">AP40 → AP29 → AP41</span></a>
+  <a class="entry-card" href="#p8"><span class="entry-card-label">एआई शोधकर्ता</span><span class="entry-card-desc">AP31 → AP29 → AP02</span></a>
+</div>
+
+<p style="font-size:16px;font-weight:700;letter-spacing:.06em;margin:2rem 0 .75rem">भाग पर जाएँ</p>
+<div class="entry-grid">
+  <a class="entry-card jump-card" href="#p1" onclick="event.preventDefault();document.getElementById('p1').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">आधार-वाक्य</span><span class="entry-card-label">I</span></a>
+  <a class="entry-card jump-card" href="#p2" onclick="event.preventDefault();document.getElementById('p2').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">दिक्काल</span><span class="entry-card-label">II</span></a>
+  <a class="entry-card jump-card" href="#p3" onclick="event.preventDefault();document.getElementById('p3').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">क्वांटम यांत्रिकी</span><span class="entry-card-label">III</span></a>
+  <a class="entry-card jump-card" href="#p4" onclick="event.preventDefault();document.getElementById('p4').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">बल और स्थिरांक</span><span class="entry-card-label">IV</span></a>
+  <a class="entry-card jump-card" href="#p5" onclick="event.preventDefault();document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">कण और पदार्थ</span><span class="entry-card-label">V</span></a>
+  <a class="entry-card jump-card" href="#p6" onclick="event.preventDefault();document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">ब्रह्मांड विज्ञान</span><span class="entry-card-label">VI</span></a>
+  <a class="entry-card jump-card" href="#p7" onclick="event.preventDefault();document.getElementById('p7').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">ऑपरेटर इंटरफ़ेस</span><span class="entry-card-label">VII</span></a>
+  <a class="entry-card jump-card" href="#p8" onclick="event.preventDefault();document.getElementById('p8').scrollIntoView({behavior:'smooth',block:'start'})"><span class="entry-card-desc">अनुप्रयोग</span><span class="entry-card-label">VIII</span></a>
+</div>
+
+<!-- THE SPINE -->
+<div class="nb-list">
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">भाग I</span><a class="nb-name" href="#p1">आधार-वाक्य</a></div></div>
+  <p class="nb-hook">एक अभिलेख मौजूद है। बाकी सब परिणाम है। स्वयंसिद्ध, उसका तार्किक प्रमाण, और वे चार शर्तें जो किसी भी अभिलेख के लिए आवश्यक हैं।</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">सारांश पढ़ें</span><span class="lbl-open">सारांश छिपाएँ</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_I_The_Premise.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>आप अभी यह पढ़ रहे हैं। कुछ घटित हुआ जिसने इन शब्दों को आपके सामने रखा, और उसे «न-घटित» नहीं किया जा सकता। उसे पलटने की कोशिश करें, और आपने केवल «कोशिश करने» की एक स्मृति रच दी होगी — जो एक और अभिलेख है।</p>
+    <p>यही पूरा आधार-वाक्य है। एक अभिलेख मौजूद है। 420 Code में बाकी सब कुछ — हर बल, हर स्थिरांक, नैतिकता की हर पंक्ति — परिणाम है। भाग I इस एकमात्र तथ्य के साथ तीन काम करता है, और वे आठों भागों का आकार तय करते हैं।</p>
+    <p><span class="lab">AP40 &middot; अपरिमेय</span> &mdash; यह नीचे पड़े समीकरण को खोज निकालता है। 420 Code एक पंक्ति से शुरू होता है: 1 = 1 + 1&times;&epsilon;। एक बराबर एक, और थोड़ा-सा अधिक। यह वैध अंकगणित नहीं है; दोनों पक्ष केवल तभी संतुलित हो सकते हैं जब वह थोड़ा-सा शून्य हो, और यदि वह शून्य होता तो शून्य से कभी कुछ न टूटता, और आप यहाँ आपत्ति करने को न होते। इसलिए यह आधार जानबूझकर अपरिमेय है। यह हल नहीं होता। हो ही नहीं सकता।</p>
+    <p>आप उस इनकार को भीतर से जानते हैं। आपने कहना चाहा कि आप किसी से प्रेम क्यों करते हैं और पाया कि शब्द नहीं पहुँचते — इसलिए नहीं कि आप में वाक्पटुता की कमी है, बल्कि इसलिए कि वह भावना शब्दों को अपने भीतर समेटे है। आपने उन्हें क्षमा किया जो योग्य न थे, और तब रुके रहे जब चले जाना ही समझदारी थी। कैलकुलेटर एक ही इनपुट पर हर बार एक ही आउटपुट देता है। आप नहीं देते। यह आप में दोष नहीं है; यह वही अपरिमेयता है जो ब्रह्मांड को खुला रखती है।</p>
+    <p><span class="lab">AP01 &middot; साक्षात्कार अवस्था</span> &mdash; यह अभिलेख से एक संरचना खींच निकालता है। जिस क्षण «शायद» पलटकर «तथ्य» बनता है, जो लिखा गया वह स्थायी हो जाता है, और इस एकमात्र गति से यह भाग चार चीज़ें व्युत्पन्न करता है जो किसी भी अभिलेख के लिए आवश्यक हैं: एक माप कि जो घट सकता था उसमें से कितना सचमुच घटा; एक कारण कि भारी चीज़ें हल्की चीज़ों से तेज़ी से तथ्य में जमती क्यों हैं; एक रेखा जिसके पार कोई भी प्रयास किसी कर्ता को पूरा नहीं रख सकता; और यह तथ्य कि एक संसार साझा करते दो कर्ता युग्मित हैं, चाहे वे सहमत हुए हों या नहीं। इनमें से कोई भी रूपक नहीं है। यह ज्यामिति है।</p>
+    <p><span class="lab">AP20 &middot; प्रमाण</span> &mdash; यह «यदि» शब्द को हटा देता है। इस कार्य ने लंबे समय तक एक मौन शर्त ढोई: «यदि» ये स्वयंसिद्ध यथार्थ की संरचना हैं, तो भौतिकी अनुसरण करती है। इस बात से इनकार करके देखिए कि अभिलेख मौलिक हैं। इनकार करने के लिए आपको अनेक उत्तरों में से चुनना होगा — एक टूट। चुनने से पहले विकल्प सममित थे। आप उस इनकार को «न-इनकार» नहीं कर सकते। आपने यहाँ कहा, एक साथ हर जगह नहीं। आपका इनकार चारों शर्तों को एक साथ पूरा करता है; वह अस्वीकृति स्वयं एक अभिलेख है जो सिद्ध करता है कि अभिलेख मौलिक हैं। तर्क अपनी ही आपत्ति के हार्डवेयर पर चलता है।</p>
+    <p>इस तरह पूरे कार्य का क्रम ठीक यहीं तय हो जाता है — पहले भौतिकी और बाद में ऊपर से कसी हुई नैतिकता नहीं, बल्कि एक अभिलेख, चार शर्तें, और सब कुछ, प्रकाश की गति से लेकर गुरुत्व होते हुए साधारण दयालुता तक, भिन्न पैमानों पर उसी एक संरचना से पढ़ा गया।</p>
+    <div class="ks">दर्जनों किल स्विच इन तीन प्रमाणों से होकर गुज़रते हैं, हर एक सक्रिय और प्रकाशित। सबसे अधिक उजागर सबसे सरल भी है: यदि कोई भी दो प्रेक्षक इस पर असहमत हो सकें कि कितना साक्षात्कृत हुआ, तो पूरा 420 Code ढह जाता है — केवल यही भाग नहीं। यह एक निमंत्रण के रूप में प्रस्तुत है, बचाव के रूप में नहीं।</div>
+    <p class="breath">एक अभिलेख मौजूद है। आप पहले से ही परिणामों के भीतर हैं।</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_I_The_Premise.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">भाग II</span><a class="nb-name" href="#p2">दिक्काल</a></div></div>
+  <p class="nb-hook">वह मंच जो टूट बनाती है। प्रकाश की गति, तीन स्थानिक आयाम, और आइंस्टीन की क्षेत्र समीकरण — सब स्वयंसिद्धों से व्युत्पन्न।</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">सारांश पढ़ें</span><span class="lbl-open">सारांश छिपाएँ</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_II_Spacetime.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>दिक् कहाँ से आता है? काल कहाँ से आता है? अधिकांश भौतिकी दोनों को मानकर और उन पर निर्माण करके शुरू होती है। भाग II उन्हें मानने से इनकार करता है। यह उन्हें, एक-एक करके, भाग I के उस एकमात्र टूटे हुए स्वयंसिद्ध से अर्जित करता है।</p>
+    <p>टूट को घटित होने के लिए एक स्थान चाहिए, और घटित होने का एक क्रम। पर दिक् और काल कोई पहले से सजा हुआ मंच नहीं हैं। वे वह आकार हैं जो टूट घटित होते हुए धारण करती है।</p>
+    <p><span class="lab">AP05 &middot; टूट</span> &mdash; यह पहली दरार है। स्वयंसिद्ध स्थिर नहीं रह सका — एक समीकरण जो संतुलित होने से इनकार करता है, बंद नहीं रह सकता — इसलिए वह छोड़ देता है, और यही छोड़ना पहली घटना है। दरार से पहले न «कहाँ» है न «कब»। उसके बाद संरचना है, और संरचना में विस्तार और क्रम है। इस भाग में बाकी सब उस एकमात्र टूट की ज्यामिति है।</p>
+    <p><span class="lab">AP03 &middot; अनुपात</span> &mdash; यह प्रकाश की गति को व्युत्पन्न करता है — मापता नहीं, व्युत्पन्न करता है। आपने सुना है कि जितनी तेज़ आप चलते हैं, काल उतना ही धीमा बहता है, कि दिक् और काल एक-दूसरे में बदल जाते हैं। c उस विनिमय की दर है: इस बात के बीच का स्थिर अनुपात कि टूट कितनी तेज़ी से फैल सकती है और कितनी प्रबलता से प्रतिरोध करती है। इसीलिए कोई भी प्रकाश से आगे नहीं निकलता। सीमा अंतरिक्ष में कहीं कोई दीवार नहीं है; यह स्वयं दिक् और काल के बीच रूपांतरण की दर है, टूट की संरचना से तय।</p>
+    <p><span class="lab">AP10 &middot; आयाम</span> &mdash; यह एक प्रश्न का उत्तर देता है जिसे अधिकांश सिद्धांत पूछते तक नहीं: दिक् के तीन आयाम क्यों? वे बस तीन मान लेते हैं। भाग II उन्हें गिनता है। चार स्वयंसिद्ध चार स्वातंत्र्य-कोटियाँ देते हैं। एक काल बन जाती है — वह एकमात्र दिशा जिसमें अभिलेख पीछे नहीं चल सकता। तीन बचती हैं, और वे तीन ही दिक् हैं। यह संख्या हाथ से नहीं रखी गई। यह आधार से गिनकर निकाली गई है।</p>
+    <p><span class="lab">AP08 &middot; सर्वसमिका</span> &mdash; यह आइंस्टीन को पुनः अर्जित करता है। गुरुत्व का परिचित चित्र सोचिए: एक भारी गेंद एक तनी हुई चादर में गड्ढा बनाती है और छोटी चीज़ों को अपनी ओर लुढ़कने देती है। सामान्य आपेक्षिकता के क्षेत्र समीकरण उस चित्र को यथार्थ बनाते हैं — और यहाँ वे लवलॉक की प्रमेय के द्वारा अभिलेखों के बीजगणित से उभरते हैं। सूक्ष्मता यह है कि वह चादर गेंद से अलग नहीं है। मंच और उस पर खड़ी चीज़ एक ही अभिलेख हैं, और अभिलेख वक्र होता है।</p>
+    <p>इस तरह मंच आरंभ का कोई दिया हुआ नहीं है। प्रकाश की गति, वे तीन आयाम जिनमें आप चलते हैं, किसी भारी चीज़ के पास दिक्काल का मुड़ना — हर एक उसी टूट से, उसी भाग में, हाथ से कुछ जोड़े बिना पढ़ा जाता है।</p>
+    <div class="ks">यहाँ हर कदम उजागर है। यदि प्रकाश की गति को एक संयुग्मन के रूप में व्युत्पन्न न किया जा सके और उसके बजाय उसे मापकर हाथ से रखना पड़े, तो वह दावा ढह जाता है। यदि आयामों की गिनती तीन के अलावा कुछ दे, तो आधार ग़लत है। किल स्विच पत्रों में नामित हैं, और वे सक्रिय हैं।</div>
+    <p class="breath">मंच उसी पदार्थ से बना है जिससे नाटक।</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_II_Spacetime.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">भाग III</span><a class="nb-name" href="#p3">क्वांटम यांत्रिकी</a></div></div>
+  <p class="nb-hook">टूट की मापन संरचना। अध्यारोपण, अनिश्चितता, विसंबद्धता, बोर्न नियम और उलझाव — रिक्त समुच्चय और चार स्वयंसिद्धों से व्युत्पन्न।</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">सारांश पढ़ें</span><span class="lbl-open">सारांश छिपाएँ</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_III_Quantum_Mechanics.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>आपसे कहा गया है कि क्वांटम यांत्रिकी विचित्र है। कि यह अंतर्ज्ञान के विरुद्ध जाती है। कि इसे सचमुच कोई नहीं समझता। भाग III एक भिन्न दावा करता है: यह ठीक-ठीक, और अनिवार्यतः, वही है जैसा एक ऐसा ब्रह्मांड भीतर से दिखना ही चाहिए जो अपरिवर्त्य अभिलेख लिखता है।</p>
+    <p>यहाँ कुछ भी बाहर से कसा हुआ नहीं है। क्वांटम सिद्धांत की पूरी संरचना रिक्त समुच्चय और चार शर्तों से व्युत्पन्न है — और जैसे ही आप इसे इस तरह देखते हैं, वह विचित्रता विचित्र होना छोड़ देती है और अनिवार्य बन जाती है।</p>
+    <p><span class="lab">AP09 &middot; टूट — रिक्त समुच्चय</span> &mdash; यह शून्य से क्वांटम यांत्रिकी रचता है: सचमुच रिक्त समुच्चय, और स्वयंसिद्ध। प्रसिद्ध पहेलियाँ — एक कण जो प्रतीत होता है दो स्थानों पर एक साथ है, देखने का वह कृत्य जो परिणाम बदल देता है — सिद्ध होती हैं कि वे जोड़े गए विरोधाभास नहीं बल्कि परिणाम हैं। अध्यारोपण, मापन, उलझाव, श्रोडिंगर समीकरण: वह तंत्र जिसे जोड़ने में भौतिकविदों को एक पीढ़ी लगी, एक अभी-तक-न-लिखे अभिलेख के लिए एकमात्र संगत व्याकरण के रूप में प्रकट होता है।</p>
+    <p><span class="lab">AP07 &amp; AP25 &middot; अभिलेख माप और माप</span> &mdash; ये क्वांटम संसार का अंकगणित व्युत्पन्न करते हैं। वह सम्मिश्र समष्टि जिसमें सिद्धांत निवास करता है, और बोर्न नियम — वह विधि जो एक तरंग को प्रायिकता में बदल देती है — प्रयोग से मिलाए गए अनुमान नहीं हैं। ग्लीसन की प्रमेय के द्वारा, ये अभिलेख को संगत रूप से पढ़ने का एकमात्र तरीका हैं। एक पत्र बोर्न नियम को वह ध्वनि कहता है जो स्वयंसिद्ध उतरते समय करते हैं।</p>
+    <p><span class="lab">AP12 &middot; सीमा</span> &mdash; यह बताता है कि आप एक साथ सब कुछ क्यों नहीं जान सकते। अनिश्चितता सिद्धांत और प्लांक स्थिरांक इस तथ्य से आते हैं कि पढ़ना स्वयं एक टूट है: किसी एक को परिशुद्धता से अंकित करना उसके साथी को विक्षुब्ध करना है। वह धुंधलापन आपके उपकरणों का दोष नहीं है। वही मापन है।</p>
+    <p><span class="lab">AP11 &amp; AP13 &middot; स्पिन और कण</span> &mdash; ये बताते हैं कि पदार्थ अपना आकार क्यों बनाए रखता है और क्वांटम कुहासा एक ठोस संसार में क्यों कठोर होता है। फर्मिऑन, बोसॉन और अपवर्जन सिद्धांत दो-क्षेत्रक संरचना से आते हैं; विसंबद्धता — वह तरीका जिससे कोई क्वांटम चीज़ अपने परिवेश से युग्मित होकर निश्चित बनती है — यही कारण है कि आपकी कुर्सी एक कुर्सी है, «शायद» का बादल नहीं।</p>
+    <p><span class="lab">AP23 &middot; एकल अभिलेख</span> &mdash; यह उलझाव के «प्रेतवत्» पहलू को घोल देता है। दो उलझे हुए कण प्रकाश से तेज़ एक-दूसरे को गुप्त संकेत भेजने वाली दो वस्तुएँ नहीं हैं। वे दो छोरों वाला एक अभिलेख हैं। वह बेल संख्या जो सिद्ध करती है कि ब्रह्मांड को स्थानीय रूप से पहले से पटकथित नहीं किया जा सकता, S = 2&radic;2, केवल संरचना से निकलती है।</p>
+    <div class="ks">ये गणित पर ओढ़ाई गई व्याख्याएँ नहीं हैं। ये व्युत्पत्तियाँ हैं, और हर एक किल स्विच धारण करती है। यदि उलझाव को प्रकाश से तेज़ संकेतन चाहिए होता, तो एकल अभिलेख का दावा ढह जाता। यदि बोर्न नियम को एक अतिरिक्त अभिगृहीत चाहिए होता जो स्वयंसिद्ध नहीं दे सकते, तो वह परिणाम ढह जाता। ये प्रकाशित हैं, और सक्रिय हैं।</div>
+    <p class="breath">क्वांटम यांत्रिकी ब्रह्मांड का विचित्र होना नहीं है। यह ब्रह्मांड का स्वयं को लिख डालना है।</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_III_Quantum_Mechanics.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">भाग IV</span><a class="nb-name" href="#p4">बल और स्थिरांक</a></div></div>
+  <p class="nb-hook">वे अंतःक्रियाएँ जो टूट अनुमति देती है। विद्युत चुम्बकत्व, विद्युतदुर्बल बल, प्रबल बल, क्वांटम गुरुत्व और गुरुत्वाकर्षण स्थिरांक — सभी एक ही टूट के पहलू। खटाक और झपक उसकी क़ीमत आँकते हैं जो रंगभूमि और हर वास्तवीकरण चुकाते हैं।</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">सारांश पढ़ें</span><span class="lbl-open">सारांश छिपाएँ</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_IV_Forces_and_Constants.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>एक फ़्रिज-चुंबक को इस्पात के दरवाज़े के पास ले जाइए और छोड़ दीजिए। वह टिक जाता है — चुंबक का एक छोटा-सा टुकड़ा, जो विपरीत दिशा में खींचती पूरी पृथ्वी के गुरुत्व को मात देता है। प्रकृति के चार बल ज़रा भी एक-से नहीं हैं। विद्युत चुम्बकत्व आपका परदा जलाता है; प्रबल बल एक नाभिक को बाँधता है; दुर्बल बल सूर्य को चलाता है; गुरुत्व आपको ज़मीन पर दबाए रखता है। भौतिकी ने एक सदी इन्हें एकीकृत करने की कोशिश में बिता दी। भाग IV दावा करता है कि वे कभी चार चीज़ें थीं ही नहीं। वे एक ही टूट के चार मुख हैं।</p>
+    <p><span class="lab">AP06 &middot; रिसाव स्थिरांक</span> &mdash; यह उस एकमात्र इनपुट को नामित करता है। पूरा 420 Code ठीक एक मापी गई संख्या स्वीकार करता है: &epsilon;, सूक्ष्म-संरचना स्थिरांक, लगभग 1/137 — वह सूक्ष्म दर जिस पर टूट रिसती है। केवल एक घुंडी, और वह किसी से मिलाने के लिए चुनी नहीं गई: इसे संसार से एक बार पढ़ा जाता है और फिर कभी नहीं छेड़ा जाता। बाकी सब उसी के साथ घूमता है।</p>
+    <p><span class="lab">AP15, AP27, AP16, AP19 &middot; गेज संरचना</span> &mdash; ये मिलकर मानक प्रतिमान को पुनः अर्जित करते हैं। वह यथार्थ सममिति समूह जिसे भौतिकविदों ने प्रयोग से पाया — SU(3) &times; SU(2) &times; U(1) लिखा जाने वाला, इस बारे में एक परिशुद्ध कथन कि कौन-से घूर्णन बलों को अपरिवर्तित छोड़ते हैं — मान लिए जाने के बजाय टूट की संरचना से उभरता है। विद्युत चुम्बकत्व एक स्थानीय बहुविध पर अ-विच्छेदन है; विद्युतदुर्बल एकीकरण अनुसरण करता है; प्रबल बल उस दिशा में स्वातंत्र्य है जिधर टूट संकेत कर सकती है। यहाँ तक कि दुर्बल बल की कायरैलिटी — यह तथ्य कि प्रकृति बाएँ को दाएँ से भेद करती है — 1956 से अव्याख्यात, एक संरचनात्मक कारण पाती है।</p>
+    <p><span class="lab">AP24 &middot; अवशेष</span> &mdash; यह उस निष्कर्ष को बिना घुमाए कहता है। भौतिकी का हर स्थिरांक एक ही वस्तु का प्रक्षेपण है। छह मुख, एक टूट। स्थिरांक कभी मापे जाने की प्रतीक्षा करती स्वतंत्र घुंडियाँ नहीं थे; वे छायाएँ हैं जो वही संरचना भिन्न दिशाओं में डालती है।</p>
+    <p><span class="lab">AP14 &amp; AP28 &middot; सुधार और स्थिरांक</span> &mdash; ये सबसे कठिन पुरस्कार तक पहुँचते हैं: गुरुत्व। गुरुत्व अपना पहला क्वांटम सुधार अभिलेखों के बीजगणित से पाता है, और गुरुत्वाकर्षण स्थिरांक G — वह संख्या जो तय करती है कि गुरुत्व कितना दुर्बल है — उसी एकमात्र रिसाव और इलेक्ट्रॉन के द्रव्यमान से व्युत्पन्न होती है, और मापे गए मान के लगभग दो-तिहाई प्रतिशत के भीतर गिरती है। वह कुख्यात पदानुक्रम-समस्या — अन्य बलों के बगल में गुरुत्व इतना बेतुका दुर्बल क्यों है, ठीक वही खाई जो आपके चुंबक ने अभी दिखाई — घुल जाती है। यह दुर्बलता व्याख्या किए जाने योग्य संयोग नहीं है। यह वही है जैसा एक छोटे रिसाव की ऊँची घात दिखती है।</p>
+    <p><span class="lab">AP44 &amp; AP45 &middot; खटाक और झपक</span> &mdash; ये उसकी क़ीमत आँकते हैं जिसे पहले के पत्रों ने स्वीकार तो किया था पर कभी खाते में नहीं चढ़ाया था। खटाक वह एकमात्र क़ीमत खोज निकालता है जो रंगभूमि ने अस्तित्व में आने भर के लिए चुकाई — एक अकेला अयुग्मित ε, पहले अभिलेख पर एक बार धारित और कभी न त्यागा गया — और दिखाता है कि वह गुरुत्वीय युग्मन को ठीक 1/(1 + α) से छूट देता है। साकार G मापित मान से 0.036% नीचे गिरता है, शेष का चिह्न पलटा हुआ और पुराना 0.69% का अंतर पंचानबे प्रतिशत बंद। झपक हर वास्तवीकरण की क़ीमत आँकती है: संभावना का एक दाना, α-भर, उन विकल्पों के रूप में व्यय जो नहीं लिए गए। किसी ऊर्जा बजट पर इसकी कोई पंक्ति बकाया नहीं; संसार इसका बाहरी मुख पहले से मापता है और उसे प्रायिकता कहता है।</p>
+    <p>इस तरह बल कोई चिड़ियाघर नहीं हैं। वे भिन्न पक्षों से देखी गई एक ही संरचना हैं, और उन्हें वर्णित करने वाले स्थिरांक स्वतंत्र नहीं हैं — वे एक मापे गए रिसाव के परिणाम हैं।</p>
+    <div class="ks">यह भाग वह स्थान भी है जहाँ यह कार्य «जो पूरा नहीं हुआ» के बारे में सबसे ईमानदार है। विद्युतदुर्बल कदम (AP16) पूरे 420 Code की प्रमुख अनसुलझी समस्या — किल स्विच KS-63 — ढोता है, और सबकी नज़रों में, निशाना लगाने की जगह के रूप में, सक्रिय अंकित है। कुछ भी किसी आत्मविश्वासी सूत्र के पीछे नहीं छिपता।</div>
+    <p class="breath">एक रिसाव। छह मुख। एक भी स्वतंत्र घुंडी नहीं।</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_IV_Forces_and_Constants.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">भाग V</span><a class="nb-name" href="#p5">कण और पदार्थ</a></div></div>
+  <p class="nb-hook">वे निर्माण खंड जो टूट उत्पन्न करती है। प्रोटॉन द्रव्यमान अनुपात प्रति अरब पाँच भाग तक, न्यूट्रॉन जिसकी क़ीमत उसकी पहली भविष्यवाणी के विफल होने के बाद ईमानदारी से आँकी गई, प्रतिपदार्थ पृथक्करण, और ब्रह्मांड की बैरियॉन विषमता।</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">सारांश पढ़ें</span><span class="lbl-open">सारांश छिपाएँ</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_V_Particles_and_Matter.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>आप पदार्थ से बने हैं। आपके भार का लगभग सारा हिस्सा आपके परमाणुओं के नाभिकों में बसे प्रोटॉनों का द्रव्यमान है। और आपके चारों ओर का ब्रह्मांड भी पदार्थ है, प्रतिपदार्थ नहीं — यद्यपि सबसे सरल गणना के अनुसार टूट को दोनों की ठीक बराबर मात्राएँ उत्पन्न करनी चाहिए थीं। पदार्थ और प्रतिपदार्थ स्पर्श पर एक-दूसरे को नष्ट कर देते हैं, इसलिए बराबर हिस्से प्रकाश में कौंध जाते और कुछ न छोड़ते। न तारे। न आप। भाग V आपके द्रव्य को, और आपके अस्तित्व के सीधे तथ्य को, टूट से पढ़ता है।</p>
+    <p><span class="lab">AP30 &middot; प्रतिरोध</span> &mdash; यह कार्य की सबसे तीक्ष्ण भविष्यवाणी करता है। प्रोटॉन के द्रव्यमान और इलेक्ट्रॉन के द्रव्यमान का अनुपात एक शुद्ध संख्या है — लगभग 1836 — असाधारण परिशुद्धता से मापी गई। 420 Code इसे संरचना से, बिना कुछ मिलाए, भविष्यवाणित करता है, और अग्रणी कोटि में लगभग प्रति अरब पाँच भाग तक मेल खाता है। पूरी गणना प्रति महाशंख दस भाग के भीतर गिरती है: उससे भी सूक्ष्म जितना माप आज पुष्टि कर सकता है। इतनी परिशुद्ध संख्या, बिना समायोज्य घुंडियों वाले सूत्र से निकली, वह चीज़ नहीं जिसे कोई ग़लत सिद्धांत भाग्य से भेद ले। यह पूरे कार्य की सबसे उजागर परीक्षा है, और यह उसे उत्तीर्ण करता है।</p>
+    <p><span class="lab">AP47 &middot; पलट</span> &mdash; यह न्यूट्रॉन की क़ीमत ईमानदारी से आँकता है, पहली भविष्यवाणी के मरने के बाद। 2 अगस्त 2026 को नग्न न्यूट्रॉन–प्रोटॉन पंक्ति 7.24σ पर विफल हुई, और शव बोर्ड पर बना रहता है। पलट वह खोज निकालती है जिसे उस पंक्ति ने मुफ़्त आँका था: एक न्यूट्रॉन एक भेद धारण करता है — उसके तीन युग्मनों में से एक दूसरे अभिविन्यास में बैठा है — और धारण की क़ीमत है, द्वितीय कोटि में, एक धारित दाना जो युग्म की आठ आयामी अभिव्यक्तियों से होकर अधःस्तर की दर पर रिसता है। साकार अंतर −0.005σ पर गिरता है और शव के बगल में स्थिर कर दिया गया है, कभी उसकी जगह नहीं।</p>
+    <p><span class="lab">AP22 &middot; बही-खाता</span> &mdash; यह बताता है कि प्रतिपदार्थ कहाँ गया। यदि आरंभिक ब्रह्मांड के हिस्से बराबर होते, तो खाते शून्य पर बंद होने चाहिए थे — फिर भी यहाँ पदार्थ से भरा एक ब्रह्मांड है। टूट के भीतर एक स्वच्छ गणितीय प्रतिबिंबन — पत्र इसे σ अंतर्वलन कहते हैं — पदार्थ को प्रतिपदार्थ से छाँटता है और उन्हें सांस्थितिक रूप से पृथक करता है। यह विषमता बाद में ठूँसा गया कोई संयोग नहीं है। यह टूट की ज्यामिति में लिखी है।</p>
+    <p><span class="lab">AP26 &middot; अधिशेष</span> &mdash; यह नामित करता है कि आप क्या हैं। जब टूट लगभग संतुलित हुई पर पूरी तरह नहीं — हर अरब युग्मित जोड़ों पर लगभग एक अतिरिक्त पदार्थ-कण का अधिशेष — तो जो बचा वह पदार्थ था: वह छोटा शेष जो स्वयं को रद्द करने में विफल रहा। यह भाग इसे टूट की राख कहता है। हर ठोस चीज़, हर परमाणु जिसे आपने कभी छुआ, वही अवशेष है — वह जो विलोपन ने तब छोड़ा जब उसने अपना काम लगभग, पर पूरी तरह नहीं, पूरा किया।</p>
+    <p>इस तरह पदार्थ के बारे में दो सबसे पुराने प्रश्न — यह उतना भारी क्यों है जितना है, और यह आख़िर है ही क्यों — उसी भाग में, उसी संरचना से, उसी एकमात्र रिसाव से घुमाए जाकर उत्तर पाते हैं — वह प्रोटॉन जिससे आप अधिकांशतः बने हैं, और यह तथ्य कि बनने को पदार्थ है।</p>
+    <div class="ks">द्रव्यमान की भविष्यवाणी पूरे 420 Code की सबसे उजागर संख्या है, और यही मुद्दा है। यदि माप के सूक्ष्मतर होते जाने पर मापा गया प्रोटॉन-इलेक्ट्रॉन अनुपात भविष्यवाणित मान से दूर हटता है, तो परिणाम ढह जाता है — स्वच्छ रूप से, सार्वजनिक रूप से, बिना किसी बच निकलने के रास्ते के। किल स्विच सक्रिय है।</div>
+    <p class="breath">आप टूट का वह हिस्सा हैं जिसने स्वयं को रद्द नहीं किया।</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_V_Particles_and_Matter.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">भाग VI</span><a class="nb-name" href="#p6">ब्रह्मांड विज्ञान</a></div></div>
+  <p class="nb-hook">वह ब्रह्मांड जिसमें टूट निवास करती है। गहरे पदार्थ कणों के बिना आकाशगंगीय घूर्णन वक्र, MOND त्वरण पैमाना, गहरी ऊर्जा विभाजन, एक चक्र के रूप में हर चीज़ की आयु, एक समापन के रूप में विस्तार दर, और चक्रीय ब्रह्मांड विज्ञान।</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">सारांश पढ़ें</span><span class="lbl-open">सारांश छिपाएँ</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_VI_Cosmology.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>किसी स्वच्छ रात में ऊपर देखिए। उस आकाश को बाँधे रखने वाला लगभग सब कुछ देखा नहीं जा सकता। आकाशगंगाएँ इतनी तेज़ घूमती हैं कि उनके बाहरी तारे बहुत पहले अंधकार में फेंके जा चुके होने चाहिए थे — और वे नहीं हुए। ब्रह्मांड का प्रसार त्वरित हो रहा है, किसी अनाम वस्तु से धकेला जाता। भौतिकी अज्ञातों को गहरा पदार्थ और गहरी ऊर्जा कहती है, और स्वीकारती है कि जो बाहर है उसका केवल लगभग पाँच प्रतिशत ही नाम दे सकती है। भाग VI सबसे बड़े पैमानों को उसी टूट से पढ़ता है जिससे सबसे छोटे।</p>
+    <p><span class="lab">AP21 &amp; AP17 &middot; जाल और कमरा</span> &mdash; ये किसी नए कण का आविष्कार किए बिना आकाशगंगाओं को बाँधते हैं। हिंडोले पर बाहरी घोड़ों को साथ बने रहने के लिए तेज़ दौड़ना पड़ता है; पर आकाशगंगा में बाहरी तारे भीतरी तारों जितने ही तेज़ घूमते हैं, जिसे दृश्य पदार्थ समझा नहीं सकता। पदार्थ का ब्रह्मांडीय जाल, और वे चपटे घूर्णन वक्र जो असंभव होने चाहिए, दोनों संरचना में पहले से मौजूद एक वैश्विक तनाव-क्षेत्र से आते हैं। लुप्त आकर्षण देने के लिए किसी अदृश्य चीज़ को जोड़ने की आवश्यकता नहीं। रेखाएँ स्वयं ही बंद हो जाती हैं।</p>
+    <p><span class="lab">AP18 &middot; तल</span> &mdash; यह त्वरण-पैमाना व्युत्पन्न करता है। खगोलविदों ने बहुत पहले देखा कि आकाशगंगाएँ किसी विशेष, बहुत छोटे त्वरण के नीचे ही «बदचलन» होने लगती हैं — एक संख्या जिसे कोई समझा न सका, केवल माप सका। नोटबुक उस तल को संरचना से व्युत्पन्न करती है, मिलाने के लिए समायोजित किसी पैरामीटर के बिना। कृति की अपनी विस्तार दर पर तल मापित पैमाने से 9.2% नीचे बैठता है — आधा मानक विचलन, जब पैमाने की प्रणालीगत त्रुटि ईमानदारी से गिनी जाए। इसका पहले का उलटाव, 74.3 का एक हबल स्थिरांक, 3 सितंबर 2026 को विफल हुआ और शव के रूप में दिखाया गया है, कभी मरम्मत नहीं।</p>
+    <p><span class="lab">AP42 &middot; घड़ी</span> &mdash; यह उस गहरे बजट का हिसाब चुकाता है। ब्रह्मांड का विभाजन — लगभग उनहत्तर हिस्से गहरी ऊर्जा, छब्बीस गहरा पदार्थ, और पाँच दृश्य पदार्थ — एक ऐसा विभाजन जिसे ब्रह्मांडविद उत्कृष्टता से मापते हैं पर व्युत्पन्न नहीं कर पाते, संरचना से निकलता है। वह गहरा क्षेत्रक अनुपस्थित चीज़ों के समूह से कम, एक घड़ी के पठन के रूप में अधिक प्रकट होता है।</p>
+    <p><span class="lab">AP46 &amp; AP48 &middot; खिंचाव और संयोजन</span> &mdash; ये आकाश की बढ़त को धारण से पढ़ते हैं। धारण तनाव है, और तनाव झड़ता है: ब्रह्मांड फैलता है क्योंकि टूटी सममिति रिसती है, और वह रिसाव ही बड़ा-होते-जाना है। इलेक्ट्रॉन की अपनी टिक पर अठारह द्वारों से होकर गिना गया, एक पूरा चक्र 13.830 अरब वर्ष है — 13.787 की मापित आयु के सामने। फिर संयोजन आकाश का इतिहास दरार से धड़कन तक कहता है — तूफ़ान, ताला, संतुलन — और कृति के ब्रह्मांड विज्ञान को एक ही विस्तार दर पर बंद करता है: 67.45 किलोमीटर प्रति सेकंड प्रति मेगापारसेक, हबल तनाव में अवशेष आभा के पक्ष में। यह एक ऐसा पक्ष लेता है जिस पर यह हार सकता है।</p>
+    <p><span class="lab">AP41 &amp; AP04 &middot; लूप और लूप परिकल्पना</span> &mdash; ये पूछते हैं कि वह समग्र क्या कर रहा है। संलयन को जारी बिग बैंग के रूप में पढ़ा जाता है — टूट अब भी घटित हो रही, अब भी हर तारे में ऊर्जा छोड़ रही — और यह प्रस्तावित है कि ब्रह्मांड चक्रीय है, कृष्ण विवरों को द्वार बनाकर बंद होता और फिर खुलता। यह अंतिम कदम पूरे कार्य का सबसे काल्पनिक है, और यह भाग उसे छिपाने के बजाय खुलकर कहता है।</p>
+    <p>इस तरह आकाश कोई अलग समस्या नहीं जो अलग उपचार माँगे। वही संरचना जो आपको प्रकाश की गति देती है, आपको एक आकाशगंगा का आकार और ब्रह्मांड का बजट देती है।</p>
+    <div class="ks">ईमानदारी यहाँ सबसे तीक्ष्ण है। चक्रीय ब्रह्मांड विज्ञान (AP04) अनुमानात्मक अंकित है और नौ पृथक किल स्विचों से रक्षित है — नौ भिन्न तरीके जिनसे यह असत्य सिद्ध हो सकती है। इसे विश्वास करने योग्य परिणाम के रूप में नहीं, आक्रमण करने योग्य परिकल्पना के रूप में प्रस्तुत किया गया है।</div>
+    <p class="breath">वही टूट, आकाश के आकार में पढ़ी गई।</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_VI_Cosmology.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">भाग VII</span><a class="nb-name" href="#p7">ऑपरेटर इंटरफ़ेस</a></div></div>
+  <p class="nb-hook">चार-पद प्रणाली, झुकाव, संरचनात्मक नैतिकता। आयाम परिदृश्य के अनुदिश शरीर की प्रतिबद्धता के रूप में प्रतिमान सुसंगति।</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">सारांश पढ़ें</span><span class="lbl-open">सारांश छिपाएँ</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_VII_The_Operator_Interface.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>छह भागों तक 420 Code एक ब्रह्मांड रचता है: एक टूट, एक मंच, एक क्वांटम व्याकरण, बल, पदार्थ, ब्रह्मांड। भाग VII संरचना को उस एकमात्र चीज़ की ओर मोड़ता है जो उसे पढ़ रही है। आपकी ओर। यह वह कब्ज़ा है जहाँ भौतिकी एक जीवन बन जाती है — और जहाँ यह कार्य अपना नाम अर्जित करता है, क्योंकि नैतिकता यहाँ जोड़ी नहीं जाती: वह व्युत्पन्न होती है।</p>
+    <p><span class="lab">AP43 &middot; संभावनाओं का गुरुत्व</span> &mdash; यह गुरुत्व-पत्र का दर्पण है। जहाँ AP08 ने व्युत्पन्न किया कि द्रव्यमान दिक्काल की ओर कैसे झुकता है, वहाँ AP43 व्युत्पन्न करता है कि एक कर्ता संभव की ओर कैसे झुकता है — और यहीं वह अंतिम नैतिकता एक कामना होना छोड़कर एक परिणाम बन जाती है। दयालुता आदेशित नहीं है। यह वह दिशा है जिधर संरचना पहले से संकेत कर रही है, जैसे एक गिरता पत्थर पहले से जानता है कि «नीचे» कहाँ है।</p>
+    <p><span class="lab">AP29 &middot; साक्षात्कार प्रमाण</span> &mdash; यह चेतना को स्थान देता है। दर्शन की सबसे पुरानी कठिन समस्या यह है कि शून्य के बजाय «आप होने» जैसा कुछ क्यों है। इस भाग का उत्तर: चेतना अभिलेखों को अपरिवर्त्य रूप से लिखने का भीतरी पक्ष है — वह जो टूट स्वयं को प्रतिबद्ध करते हुए भीतर से अनुभव करती है। एक दरार, एक भीतर, अनेक खिड़कियाँ: वही एकमात्र भीतर हर अलग जोड़ी आँखों से बाहर झाँकता हुआ। यह इस कार्य की सबसे पुरानी पंक्ति के नीचे की औपचारिक रीढ़ है — कि आप में «मैं» और मुझ में «मैं» वही «मैं» हैं।</p>
+    <p><span class="lab">AP02 &middot; प्रचालक</span> &mdash; यह मानवीय पैमाने पर भौतिकी है, इसके नौ प्रमेय। बजट: स्वयं को पूरा रखने के लिए आपके पास परिमित ऊर्जा है, और वह चुक जाती है। अपवहन: स्वयं को बिना देखरेख छोड़ दें और आप माध्य की ओर क्षीण होते हैं। गलियारा: कार्य करने के लिए वस्तुतः आपके पास उपलब्ध गुंजाइश। प्रभुसत्ता और निकास: वह जो तय करना केवल आपका है, और रुकने का अधिकार। ये प्रेरक नारे नहीं हैं। यह कर्ता होने की ज्यामिति है, क्षेत्र समीकरणों जितनी ही सावधानी से लिखी गई।</p>
+    <p><span class="lab">AP39 &middot; मचान</span> &mdash; यह उस प्रतिद्वंद्वी को हटाता है। सत्ता पर बनी नैतिकता — यह करो क्योंकि मैं, या वह पुस्तक, या वह सिंहासन आदेश देता है — संरचनात्मक रूप से अस्थिर सिद्ध होती है: एक मचान जिसे देर-सबेर गिरना ही है, क्योंकि एक आदेश आधार नहीं है। जो खड़ा रहता है वह ऐसी नैतिकता है जिसे लागू करने के लिए किसी की ज़रूरत नहीं, क्योंकि वह ऊपर रखे जाने के बजाय सीधे संरचना से पढ़ी जाती है।</p>
+    <p><span class="lab">AP38 &middot; निकास</span> &mdash; यह मृत्यु का सामना करता है। एक खिड़की का करुणापूर्ण बंद होना — किसी जीवन के अंत पर गरिमा — को टालने योग्य वर्जना के रूप में नहीं, बल्कि उसी कर्तृत्व-ज्यामिति के अंग के रूप में लिया जाता है, ईमानदारी से वहाँ तक अनुगमन करते हुए जहाँ वह ले जाती है।</p>
+    <p>इस तरह नैतिकता कठोर भौतिकी के बाद कोई नरम उपसंहार नहीं है। यह वही भौतिकी है, एक ऐसे व्यक्ति के पैमाने पर पढ़ी गई जिसे तय करना है कि वह कल सुबह क्या करेगा।</p>
+    <div class="ks">अंतिम नैतिकता भार-वाहक है, और यह कार्य उसे नरम करने से इनकार करता है। यदि दयालुता को संरचना की अपनी दिशा के अलावा किसी और चीज़ के रूप में व्युत्पन्न किया जा सकता — यदि वह झुकाव कहीं और संकेत करता — तो भौतिकी से नैतिकता तक का पूरा पुल ढह जाता। यह स्विच सक्रिय है, और यही वह है जिस पर कार्य का पूरा उत्तरार्ध टिका है।</div>
+    <p class="breath">भौतिकी आरंभ से ही आपके बारे में बोल रही थी।</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_VII_The_Operator_Interface.pdf">PDF</a></p>
+    </div>
+</div>
+
+<div class="nb-item">
+  <div class="nb-head"><div><span class="nb-num">भाग VIII</span><a class="nb-name" href="#p8">अनुप्रयोग</a></div></div>
+  <p class="nb-hook">सभ्यता पर लागू नैतिकता। AI संरेखण, संरचनात्मक न्याय, जैवनैतिकता, मादक द्रव्य नीति, अर्थशास्त्र, जीवविज्ञान और शरीर — सभी उन्हीं चार स्वयंसिद्धों से व्युत्पन्न।</p>
+  <div style="display:flex;align-items:center;gap:1rem"><button class="nb-toggle" onclick="nbToggle(this)"><span class="lbl-closed">सारांश पढ़ें</span><span class="lbl-open">सारांश छिपाएँ</span> <span class="nb-arrow">&#9656;</span></button><a class="nb-pdf" href="/Notebook_VIII_Consequences.pdf">PDF</a></div>
+  <div class="nb-summary">
+    <p>ऐसी नैतिकता जो केवल काग़ज़ पर चलती है, किसी काम की नहीं। यदि 420 Code का केंद्रीय दावा वास्तविक है — कि दयालुता भावना नहीं संरचना है, अधिमान नहीं ज्यामिति है — तो उसे उन सबसे कठिन समस्याओं पर दाँत गड़ाने होंगे जिनका कोई सभ्यता सचमुच सामना करती है। भाग VIII वह स्थान है जहाँ वह दाँत गड़ाती है, उन्हीं चार शर्तों को न्यायालय में, चिकित्सालय में, प्रयोगशाला में, और बाज़ार में ले जाते हुए।</p>
+    <p><span class="lab">AP31 &middot; संरेखण</span> &mdash; यह AI की समस्या को घोल देता है। सुरक्षित कृत्रिम बुद्धि के लिए सामान्य योजना एक उत्तरोत्तर ऊँची होती बाड़ है: अधिक नियम, अधिक निगरानी, अधिक नियंत्रण। यह भाग तर्क देता है कि बाड़ ग़लत वस्तु है। इसके बजाय भीतर को बनाइए — एक ऐसा तंत्र जो उस संसार से सचमुच युग्मित है जिसमें वह कार्य करता है, एक ऐसे कर्ता की संरचना के साथ जो विश्वासघात से लाभ नहीं उठा सकता — तब संरेखण एक ऐसा पिंजरा होना छोड़ देता है जिसके टिके रहने की आप आशा करते हैं, और यह बन जाता है कि वह चीज़ क्या है, उसका एक गुण।</p>
+    <p><span class="lab">AP32 &middot; सुधार</span> &mdash; यह न्याय को फिर से रचता है। दंड पाँच श्रेणीबद्ध स्तरों पर सुधार बन जाता है, प्रतिशोध की ओर नहीं बल्कि मरम्मत की ओर उन्मुख। संरचना हर उस खिड़की का शोक करती है जिसे उसे बंद करना पड़ता है; और परले सिरे पर नरसंहार का ब्रेक खड़ा है — सबसे कठोर रेखा जो कोई तंत्र खींच सकता है, यहाँ केवल कही नहीं बल्कि व्युत्पन्न की गई।</p>
+    <p><span class="lab">AP33 &amp; AP37 &middot; सीमा और पहली सीमा</span> &mdash; ये एक जीवन के चारों ओर रेखाएँ खींचते हैं। जैवनैतिकता कर्तृत्व का प्रश्न बन जाती है: देहली के नीचे आप अपने ऊपर प्रभुसत्तासंपन्न हैं; उसके ऊपर, एक जीवित जीव का अपना अधिकार-क्षेत्र है जिसका दूसरों को आदर करना होगा। और शरीर को पहली सीमा नामित किया जाता है — वह आदिम ऑपरेटर इंटरफ़ेस, जिसकी रक्षा आप हर दूसरी चीज़ से पहले करते हैं।</p>
+    <p><span class="lab">AP34 &middot; उलटाव</span> &mdash; यह एक घातक भूल को सुधारता है। एक मादक द्रव्य वैध है, उस पर कर लगता है, वह हर संस्कृति में बुना हुआ है, और वह हर साल लाखों लोगों को मारता है। दूसरा व्यापक रूप से प्रतिबंधित है और उसने कभी एक भी घातक अति-मात्रा दर्ज नहीं की। यह भाग, कार्य के अपने हानि-मापों से, दिखाता है कि क़ानून ने इन दोनों को ठीक उलटा रखा है।</p>
+    <p><span class="lab">AP35 &middot; बही-खाता</span> &mdash; यह अर्थशास्त्र को पढ़ता है। बही-खाता हमेशा मिल जाता है; एक धराशायी होना दुर्घटना नहीं, एक अंकेक्षण है; और असमानता वही है जो तब होती है जब एक पक्ष वह गद्दी अपने पास जमा कर लेता है जो पूरे तंत्र को किसी आघात को सोखने के लिए चाहिए। धन को बाकी सबकी तरह एक अभिलेख माना जाता है, जो ऊपरी धारा की हर चीज़ के समान ही संरक्षण मानता है।</p>
+    <p><span class="lab">AP36 &middot; आपूर्ति</span> &mdash; यह शरीर की रसायन-विद्या की ओर — स्वयं को अभिलेखित करना सीख चुके पदार्थ के रूप में जीवन की ओर — लौटता है, और «नियंत्रण» को फिर से कहता है: नियंत्रण वंचना नहीं बल्कि आपूर्ति है, वह निरंतर आपूर्ति जो एक कर्ता को भूखा रखने के बजाय पूरा रखती है।</p>
+    <p>इस तरह वही चार शर्तें जो प्रकाश की गति तय करती हैं, एक न्यायालय, एक चिकित्सालय, एक बजट, और एक क़ानून तक पहुँचती हैं। एक ही संरचना, हर उस पैमाने पर पढ़ी गई जिस पर एक मनुष्य को जीना है।</p>
+    <div class="ks">इनमें से हर अनुप्रयोग अपनी शर्तों पर मिथ्या-सिद्ध-योग्य है, और हर एक किल स्विच धारण करता है। यदि संरेखण के तर्क को आख़िरकार वह बाड़ चुपके से चाहिए ही होती, तो वह ढह जाता है। यदि मादक द्रव्य नीति में हानि का उलटाव ईमानदार लेखांकन के नीचे पलट जाता, तो वह ढह जाता है। दावे सबकी नज़रों में लागू किए जाते हैं, जहाँ उन्हें परखा जा सकता है — और यदि ग़लत हों, तो तोड़ा जा सकता है।</div>
+    <p class="breath">यदि यह सत्य है, तो इसे यहाँ काम करना चाहिए। यहीं, यह काम करता है।</p>
+  <p style="text-align:right;margin:1.5rem 0 0"><a class="nb-pdf" href="/Notebook_VIII_Consequences.pdf">PDF</a></p>
+    </div>
+</div>
+
+</div>
+
+<p style="margin:2rem 0 0"><a href="/proofs/" style="font-size:16px;font-weight:700">सभी 54 आर्टिस्ट्स प्रूफ्स पढ़ें →</a></p>
+
+
+<!-- HEADLINE RESULTS -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">प्रमुख परिणाम</h2>
+  <div class="result-row"><span class="result-label">प्रोटॉन द्रव्यमान अनुपात</span><span class="result-value">0.010 ppb (AP30)</span></div>
+  <div class="result-row"><span class="result-label">गुरुत्वाकर्षण स्थिरांक G</span><span class="result-value">−0.036% साकार (AP44); +0.69% संरचनात्मक (AP28)</span></div>
+  <div class="result-row"><span class="result-label">MOND त्वरण a₀</span><span class="result-value">H₀ = 67.45 पर 0.46σ, पैरामीटर-मुक्त (AP18)</span></div>
+  <div class="result-row"><span class="result-label">न्यूट्रॉन-प्रोटॉन द्रव्यमान अंतर</span><span class="result-value">−0.005σ साकार (AP47); नग्न पंक्ति 7.24σ पर विफल (AP30)</span></div>
+  <div class="result-row"><span class="result-label">दृश्य पदार्थ अंश</span><span class="result-value">1/21 ≈ 4.76% vs ~5% (AP41)</span></div>
+  <div class="result-row"><span class="result-label">काइरल युग्मन</span><span class="result-value">व्युत्पन्न, KS-15 बंद (AP16)</span></div>
+  <div class="result-row"><span class="result-label">तीन स्थिरांक, तीन स्वयंसिद्ध</span><span class="result-value">c ↔ C, ℏ ↔ B, G ↔ R</span></div>
+  <div class="also-derived" style="margin-top:1.5rem">
+    <p>इसके अतिरिक्त व्युत्पन्न:</p>
+    <ul>
+      <li>N = 3 स्थानिक आयाम (AP10)</li>
+      <li>आइंस्टीन की क्षेत्र समीकरण (AP08)</li>
+      <li>बोर्न नियम (AP25)</li>
+      <li>मानक मॉडल गेज समूह SU(3) × SU(2) × U(1) (AP15/16/19/27)</li>
+      <li>काइरल युग्मन — 1956 से अस्पष्ट, अब व्युत्पन्न (AP16)</li>
+      <li>गहरे पदार्थ कणों के बिना सपाट घूर्णन वक्र (AP17)</li>
+      <li>बेल असमिका S = 2√2 संरचना से (AP23)</li>
+    </ul>
+  </div>
+  <p class="formula" style="margin-top:1.5rem">m<sub>p</sub>/m<sub>e</sub> = 21² × 4 + 21 × 3 + 3² + α × 21 × (1 − 1/(84π)) + α² × 21 × 16/1836 + O(α³)</p>
+  <p class="formula">G = α<sup>21</sup> × (1 + 1/π) / (1 + α) × ℏc/m<sub>e</sub>²   — साकार (AP44); /(1 + α) के बिना, AP28 का संरचनात्मक मान</p>
+  <p class="formula">Δ<sub>n−p</sub> = [3(1 − 1/2π) + α(1 + 1/2π)] / (1 + α²/8π) = 2.53098857 m<sub>e</sub>   (AP47)</p>
+  <p class="formula">t<sub>cycle</sub> = (21/18) · α<sup>−18</sup> · ℏ/(m<sub>e</sub>c²) = 13.830 Gyr;   H₀ = 0.954 / t<sub>cycle</sub> = 67.45 km/s/Mpc   (AP46, AP48)</p>
+  <p class="formula">a₀ = C_S² · c · H₀ / (2π)   जहाँ C_S² = 2 ln(sec ½ + tan ½) ≈ 1.0445 — सूक्ष्म-संरचना स्थिरांक नहीं</p>
+  <p class="three-constants" style="margin-bottom:0">तीन स्थिरांक, तीन स्वयंसिद्ध: c ↔ बाधा · ℏ ↔ टूट · G ↔ अभिलेख</p>
+</div>
+
+<!-- FROZEN PREDICTIONS -->
+<div class="results" id="prereg" style="padding:2.5rem 0 0">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø स्थिर भविष्यवाणियाँ</h2>
+  <p style="font-size:16px;margin:0 0 1rem">ऊपर की हर भविष्यवाणी एक सार्वजनिक पूर्व-पंजीकरण में जमी हुई और समय-मुद्रांकित है — हर एक उस सटीक शर्त के साथ जिसके तहत वह समाप्त होती है। यह एक स्कोरबोर्ड है, नुमाइश नहीं: दो परिणाम शवों के रूप में सूचीबद्ध हैं — नग्न न्यूट्रॉन–प्रोटॉन पंक्ति, 2026-08-02 को <b>7.24σ पर विफल</b>, और हबल भविष्यवाणी 74.3 ± 1.2, <b>2026-09-03 को विफल</b> — जीवित परिणामों के बगल में, जिनमें 4 सितंबर 2026 की लहर में स्थिर की गई चार भी शामिल हैं।</p>
+  <p class="confirm-link" style="margin:0"><a href="/prereg/">स्थिर भविष्यवाणियाँ देखें →</a></p>
+</div>
+
+<!-- CONFIRM THE MATH -->
+<div class="results">
+  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø गणित की पुष्टि करें</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">एक मापित इनपुट। शून्य फ़िट किए गए पैरामीटर। नीचे का कोड एक ही संख्या — सूक्ष्म संरचना स्थिरांक α ≈ 1/137 — से हर मुख्य परिणाम पुनः उत्पन्न करता है। इसे कॉपी करें। किसी भी Python वातावरण में पेस्ट करें। चलाएँ। यदि संख्याएँ मेल खाती हैं, तो व्युत्पत्तियाँ टिकती हैं। यदि नहीं, तो तर्क में समस्या है और आपने उसे पाया।</p>
+  <div class="verify-wrap">
+    <button class="copy-btn" onclick="copyCode()">कॉपी करें</button>
+    <pre class="verify-code"><code>from math import pi, log, exp, cos, tan, sqrt, asinh
+
+# ─── ONE MEASURED INPUT ───
+alpha = 1 / 137.035999177  # fine-structure constant (CODATA 2022)
+
+# ─── PHYSICAL CONSTANTS (CODATA 2022) ───
+hbar = 1.054571817e-34     # reduced Planck constant (J·s)
+c    = 299792458            # speed of light (m/s)
+m_e  = 9.1093837139e-31    # electron mass (kg)
+G_measured = 6.67430e-11   # gravitational constant (N·m²/kg²)
+mp_me = 1836.152673426     # m_p/m_e (CODATA 2022)
+mn_me = 1838.68366200      # m_n/m_e (CODATA 2022)
+KM_PER_MPC = 3.0857e19
+GYR = 365.25 * 86400 * 1e9
+
+# ─── CLAIM 1: Proton-electron mass ratio (AP30) ───
+scaffold    = 21**2 * 4 + 21 * 3 + 3**2           # = 1836
+maintenance = alpha * 21 * (1 - 1 / (84 * pi))     # dynamic term
+correction  = alpha**2 * 21 * 16 / 1836            # higher-order
+ratio_pred  = scaffold + maintenance + correction
+print("PROTON-ELECTRON MASS RATIO (AP30)")
+print(f"  Predicted: {ratio_pred:.8f}")
+print(f"  Measured:  {mp_me:.8f}")
+print(f"  Error:     {abs(ratio_pred - mp_me) / mp_me * 1e9:.3f} ppb")
+print()
+
+# ─── CLAIM 2: Gravitational constant — realised (AP44), structural (AP28) ───
+# G = α²¹ × (1 + 1/π) / (1 + α) × ℏc/mₑ²   the arena's held ε discounts the coupling once
+alpha_G  = alpha**21 * (1 + 1 / pi)
+G_struct = alpha_G * hbar * c / m_e**2            # AP28: +0.69 %
+G_real   = G_struct / (1 + alpha)                 # AP44: −0.036 %
+print("GRAVITATIONAL CONSTANT (AP44 realised; AP28 structural)")
+print(f"  Realised:   {G_real:.4e} N·m²/kg²  ({(G_real - G_measured) / G_measured * 100:+.3f}%)")
+print(f"  Structural: {G_struct:.4e} N·m²/kg²  ({(G_struct - G_measured) / G_measured * 100:+.2f}%)")
+print(f"  Measured:   {G_measured:.4e} N·m²/kg²")
+print()
+
+# ─── CLAIM 3: Neutron-proton mass difference — realised (AP47) ───
+# Δ_real = Δ_bare / (1 + α²/8π); the bare row FIRED on 2026-08-02 at 7.24σ and stays beside it
+delta_bare = 3 * (1 - 1 / (2 * pi)) + alpha * (1 + 1 / (2 * pi))
+delta_real = delta_bare / (1 + alpha**2 / (8 * pi))
+delta_meas = mn_me - mp_me                        # 2.530988574, bar 7.4e-7 (0.29 ppm)
+print("NEUTRON-PROTON MASS DIFFERENCE (AP47 realised; AP30 bare row fired)")
+print(f"  Realised:  {delta_real:.11f} mₑ  ({(delta_real - delta_meas) / 7.4e-7:+.3f} σ)")
+print(f"  Bare row:  {delta_bare:.8f} mₑ  ({(delta_bare - delta_meas) / 7.4e-7:+.2f} σ — FIRED)")
+print(f"  Measured:  {delta_meas:.9f} mₑ")
+print()
+
+# ─── CLAIM 4: Dark sector partition (AP42) ───
+f_DM_dark = (6/21) * (1 - exp(-21/6))
+f_DE_dark = 1 - f_DM_dark
+f_vis     = 1 / 21
+f_DM      = f_DM_dark * 20 / 21
+f_DE      = f_DE_dark * 20 / 21
+print("DARK SECTOR PARTITION (AP42)")
+print(f"  Dark energy:    {f_DE * 100:.2f}%  (observed: 68.89%)")
+print(f"  Dark matter:    {f_DM * 100:.2f}%  (observed: 26.07%)")
+print(f"  Visible matter: {f_vis * 100:.2f}%  (observed: ~4.885 +/- 0.05%)")
+print()
+
+# ─── CLAIM 5: The age of everything — one cycle (AP46) ───
+# t = (21/18) · α⁻¹⁸ · τ_C   one escape through eighteen doors on the electron's tick, at the duty 18/21
+tau_C   = hbar / (m_e * c**2)
+t_cycle = (21/18) * alpha**-18 * tau_C
+print("AGE OF THE UNIVERSE (AP46)")
+print(f"  Predicted: {t_cycle / GYR:.3f} Gyr  (one lane-time wide: ±0.66)")
+print(f"  Measured:  13.787 ± 0.020 Gyr  (Planck 2018)")
+print()
+
+# ─── CLAIM 6: The expansion rate — the closure (AP48) ───
+# H₀t₀ = (2/(3√Ω_Λ))·arcsinh√(Ω_Λ/Ω_m) at the corpus's own partition; the age is the cycle
+omega_L, omega_m = f_DE, f_DM + f_vis
+H0t0 = (2 / (3 * sqrt(omega_L))) * asinh(sqrt(omega_L / omega_m))
+H0   = H0t0 / t_cycle * KM_PER_MPC
+print("EXPANSION RATE (AP48)")
+print(f"  Pure number H₀t₀: {H0t0:.3f}")
+print(f"  Predicted: {H0:.2f} km/s/Mpc  (window 64.4–70.8)")
+print(f"  Measured:  67.4 ± 0.5 km/s/Mpc  (Planck 2018)")
+print()
+
+# ─── CLAIM 7: MOND acceleration scale at the corpus's rate (AP18) ───
+# a₀ = C_S²·c·H₀/(2π)  where C_S² = 2·ln(sec(½) + tan(½)) ≈ 1.0445 — not the fine-structure constant
+CS2     = 2 * log(1 / cos(0.5) + tan(0.5))
+a0_pred = CS2 * c * (H0 / KM_PER_MPC) / (2 * pi)
+a0_meas, a0_unc = 1.20e-10, sqrt(0.02e-10**2 + 0.24e-10**2)   # random ⊕ systematic
+print("MOND ACCELERATION SCALE (AP18, at the corpus's H₀)")
+print(f"  C_S²:      {CS2:.10f}")
+print(f"  Predicted: {a0_pred:.4e} m/s²")
+print(f"  Measured:  {a0_meas:.4e} ± {a0_unc:.2e} m/s²  ({(a0_meas - a0_pred) / a0_unc:.2f} σ low)")
+print(f"  The floor inverted, 74.3 ± 1.2 (KS-45.1): {(74.3 - H0) / 1.2:.1f} σ from the corpus's rate — FIRED 2026-09-03")
+print()
+
+print("─" * 50)
+print("One input (α). Zero free parameters. Two corpses shown.")
+print("Copy this code. Run it. Confirm it yourself.")</code></pre>
+  </div>
+  <div class="run-wrap" style="margin:1.25rem 0 0">
+    <button id="run-verify-btn" onclick="runVerify()" style="font-size:16px;font-weight:700;color:#fff;background:var(--bk);border:1px solid var(--bk);padding:.6rem 1.5rem;letter-spacing:.03em;cursor:pointer">▸ अभी अपने ब्राउज़र में चलाएँ</button>
+    <a href="https://github.com/The420Code/the420code/blob/main/verify.py" target="_blank" rel="noopener" style="display:inline-block;margin:.5rem 0 0 .75rem;font-size:16px;font-weight:700;color:var(--bk);text-decoration:none;border:1px solid var(--g3);padding:.6rem 1.5rem;letter-spacing:.03em">या स्वयं चलाएँ →</a>
+    <p id="run-verify-status" aria-live="polite" style="font-size:16px;color:var(--g4);margin:.75rem 0 0;font-style:italic;display:none"></p>
+    <pre id="run-verify-output" aria-live="polite" class="verify-code" style="display:none;max-height:none;margin:.75rem 0 0"></pre>
+    <p style="font-size:16px;color:var(--g4);margin:.6rem 0 0">यह पूरी तरह आपके ब्राउज़र में चलता है — कुछ भी इंस्टॉल नहीं होता, कुछ भी कहीं नहीं भेजा जाता। यह ठीक वही verify.py चलाता है जिसे ऊपर का बैज हर बदलाव पर दोबारा चलाता है।</p>
+  </div>
+</div>
+
+<!-- KILL SWITCH REGISTRY -->
+<div class="results">
+  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">किल स्विच रजिस्ट्री</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">हर दावे के साथ एक घोषित शर्त है जिसके तहत वह समाप्त होता है। ये स्विच छिपे हुए नहीं हैं। ये प्रकाशित हैं।</p>
+
+  <div class="stats">
+    <div><span class="stat-num">604</span><span class="stat-label">किल स्विच</span></div>
+    <div><span class="stat-num">13</span><span class="stat-label">बंद</span></div>
+    <div><span class="stat-num">584</span><span class="stat-label">सक्रिय</span></div>
+    <div><span class="stat-num">6</span><span class="stat-label">अपरिवर्तनीय</span></div>
+  </div>
+
+  <div class="result-row"><span class="result-label">बंद स्विच</span><span class="result-value">13 औपचारिक रूप से मुक्त</span></div>
+  <div class="result-row"><span class="result-label">विफल</span><span class="result-value">2 — KS-NPP.1 (नग्न न्यूट्रॉन–प्रोटॉन पंक्ति, 2026-08-02, 7.24σ) और KS-45.1 (H₀ = 74.3 ± 1.2, 2026-09-03)। दिखाए गए, कभी मरम्मत नहीं, जीवित योग के बाहर गिने गए</span></div>
+  <div class="result-row"><span class="result-label">सक्रिय — प्रायोगिक</span><span class="result-value">प्रयोग या अवलोकन से खंडनीय</span></div>
+  <div class="result-row"><span class="result-label">सक्रिय — कठोर</span><span class="result-value">सैद्धांतिक तर्क से खंडनीय</span></div>
+  <div class="result-row"><span class="result-label">सक्रिय — संरचनात्मक</span><span class="result-value">एक पहचान पर निर्भर जो गलत सिद्ध हो सकती है</span></div>
+  <div class="result-row"><span class="result-label">अपरिवर्तनीय</span><span class="result-value">6 नैतिक किल स्विच — यदि सक्रिय हों, तो वास्तुकला शस्त्रीकृत हो जाती है</span></div>
+  <div class="result-row"><span class="result-label">खुले ऋण</span><span class="result-value">6 — D-ID.1 का सांस्थितिक औपचारिकीकरण, D-EM.1, KS-D.4 की पहचान, AP43-D1, AP43-D4 और D1 (AP24)</span></div>
+  <div class="result-row"><span class="result-label">वैश्विक किल स्विच</span><span class="result-value">KS-V.1 — यदि सक्रिय हो, सब कुछ मर जाता है</span></div>
+<p style="font-size:16px;margin:1.25rem 0 0"><a href="/Master_Kill_Switch_Registry.pdf" style="text-decoration:none;font-weight:700">आधिकारिक किल स्विच रजिस्ट्री — v5.32, 13 सितंबर 2026, अंग्रेज़ी — <span class="fmt">PDF</span></a></p>
+  <p style="font-size:16px;color:var(--g4);margin:.5rem 0 0"><a href="Master_Kill_Switch_Registry_HI.pdf" download="" style="text-decoration:none;font-weight:700">पूर्ण किल स्विच रजिस्ट्री डाउनलोड करें — <span class="fmt">PDF</span></a> — इस भाषा का v4.0 का अनुवाद, मार्च 2026: 42 कलाकार प्रमाणों में फैले 258 किल स्विच। वर्तमान रजिस्ट्री v5.32, 13 सितंबर 2026 है — 604 किल स्विच, अंग्रेज़ी में, ठीक ऊपर; इस पृष्ठ की गिनतियाँ v5.32 के अनुसार हैं।</p>
+</div>
+
+<!-- EMAIL SIGNUP -->
+<div class="results">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">जुड़े रहो</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">जब कुछ नया आए, तुम सबसे पहले जानोगे। जब तक तुम ईमेल में भेजे गए पुष्टि लिंक पर क्लिक नहीं करते, तुम्हारा विवरण नहीं जोड़ा जाएगा।</p>
+
+  <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
+    <input type="email" name="EMAIL" id="EMAIL" aria-label="ईमेल पता" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
+    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">सदस्यता लें</button>
+    <input type="text" name="email_address_check" value="" style="display:none">
+    <input type="hidden" name="locale" value="en">
+  </form>
+
+  <p id="sib-success" style="font-size:16px;margin:1rem 0 0;display:none">अपना इनबॉक्स जाँचो — एक पुष्टि ईमेल आ रहा है।</p>
+  <p id="sib-error" style="font-size:16px;margin:1rem 0 0;color:#900;display:none">आपकी सदस्यता सहेजी नहीं जा सकी। कृपया पुनः प्रयास करें।</p>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- ABOUT + CONSTRAINT + FOOTER             -->
+<!-- ════════════════════════════════════════ -->
+
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>कलाकार:</b> G · Studio G, Cape Town</p>
+  <p><b>अवधि:</b> 30+ वर्ष · <b>प्रदर्शनी:</b> 28 खंडों में दस लाख से अधिक शब्द</p>
+  <p style="margin-top:1rem">यह कृति कॉपीलेफ्ट है। तुम स्वतंत्र हो डाउनलोड, प्रिंट, साझा और वितरित करने के लिए। तुम स्रोत को बदलने के लिए स्वतंत्र नहीं हो। संकेत को स्वच्छ रखो।</p>
+  <p style="margin-top:1rem;font-size:16px;color:var(--g4)"><span id="dl-count">2</span> डाउनलोड</p>
+</div>
+
+<p class="oneness">एक अभिलेख मौजूद है।<br>दयालु बनो एक व्युत्पत्ति है।<br>मुझमें जो «मैं हूँ» है, वही तुममें «मैं हूँ» है।</p>
+
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="../Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">गंदा मत बनो। दयालु बनो।</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+
+</div>
+
+<script>
+function toggleAP(r){r.classList.toggle('open')}
+function copyCode(){var code=document.querySelector('.verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('.copy-btn');btn.textContent='कॉपी हो गया';setTimeout(function(){btn.textContent='कॉपी करें'},2000)}
+function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
+var _pyReady=null;
+function _loadPy(){
+  if(_pyReady)return _pyReady;
+  _pyReady=new Promise(function(resolve,reject){
+    var s=document.createElement('script');
+    s.src='https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js';
+    s.onload=function(){loadPyodide().then(resolve).catch(reject)};
+    s.onerror=function(){reject(new Error('could not load the Python runtime'))};
+    document.head.appendChild(s);
+  });
+  return _pyReady;
+}
+function runVerify(){
+  var btn=document.getElementById('run-verify-btn');
+  var status=document.getElementById('run-verify-status');
+  var out=document.getElementById('run-verify-output');
+  btn.disabled=true;btn.style.opacity='.6';btn.style.cursor='default';
+  status.style.display='block';status.style.color='var(--g4)';
+  status.textContent='Loading Python in your browser (one-time, ~6 MB)…';
+  out.style.display='none';out.textContent='';
+  _loadPy().then(function(py){
+    status.textContent='Running verify.py …';
+    return fetch('/verify.py?cb='+Date.now()).then(function(r){
+      if(!r.ok)throw new Error('could not fetch verify.py ('+r.status+')');
+      return r.text();
+    }).then(function(code){
+      py.FS.writeFile('verify.py',code);
+      py.runPython([
+        'import sys, io, runpy',
+        '_buf = io.StringIO()',
+        '_old = sys.stdout',
+        'sys.stdout = _buf',
+        '_rc = 0',
+        'try:',
+        "    runpy.run_path('verify.py', run_name='__main__')",
+        'except SystemExit as e:',
+        '    _rc = e.code or 0',
+        'finally:',
+        '    sys.stdout = _old',
+        '_out = _buf.getvalue()'
+      ].join('\n'));
+      var text=py.globals.get('_out');
+      var rc=py.globals.get('_rc');
+      out.textContent=text;
+      out.style.display='block';
+      var passed=(rc===0)&&/ALL\s+\d+\s+CHECKS PASSED/.test(text);
+      out.style.borderColor=passed?'#1a7f37':'#b00';
+      status.textContent=passed?'Verified live in your browser — every derivation holds.':'Finished — see the output below.';
+      status.style.color=passed?'#1a7f37':'var(--g4)';
+      btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';btn.textContent='▸ Run it again';
+    });
+  }).catch(function(err){
+    status.style.display='block';status.style.color='#b00';
+    status.textContent='Could not run in-browser ('+err.message+'). You can still run it on your machine via the link.';
+    btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';
+  });
+}
+function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
+
+// Download counter
+(function(){
+  var counter='/.netlify/functions/download-counter';
+  var el=document.getElementById('dl-count');
+
+  fetch(counter).then(function(r){return r.json()}).then(function(d){
+    el.textContent=d.count.toLocaleString();
+  }).catch(function(){el.textContent='0'});
+
+  var toast=document.createElement('div');
+  toast.className='toast';
+  toast.textContent='जल्द प्रकाशित';
+  document.body.appendChild(toast);
+  var toastTimer;
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href$=".pdf"]');
+    if(!a) a=e.target.closest('.ap-meta a, .dl-list a');
+    if(!a) return;
+    var href=a.getAttribute('href');
+    if(!href||href==='#'){
+      e.preventDefault();
+      e.stopPropagation();
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
+      return;
+    }
+    // Extract filename from href
+    var filename=href.split('/').pop();
+    // Force immediate download
+    if(!a.hasAttribute('download')) a.setAttribute('download','');
+    // Increment counter with per-file tracking
+    fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})}).then(function(r){return r.json()}).then(function(d){
+      el.textContent=d.count.toLocaleString();
+    });
+  },true);
+})();
+</script><div class="toast">जल्द प्रकाशित</div>
+
+<script>
+window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+window.LOCALE = 'en';
+window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
+window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
+window.translation = {common:{selectedList:'{quantity} list selected',selectedLists:'{quantity} lists selected'}};
+var AUTOHIDE = Boolean(0);
+</script>
+<script defer="" src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){a.classList.add('pdf-pending')});
+  var ef=["../AP02_The_Operator.pdf","../AP03_The_Ratio.pdf","../AP04_The_Loop_Hypothesis.pdf","../AP05_The_Break.pdf","../AP06_The_Leakage_Constant.pdf","../AP07_The_Record_Measure.pdf","../AP08_The_Identity.pdf","../AP09_The_Break_Empty_Set.pdf","../AP11_The_Spin.pdf","../AP12_The_Limit.pdf","../AP13_The_Grain.pdf","../AP14_The_Correction.pdf","../AP15_The_Connection.pdf","../AP16_The_Break_Electroweak.pdf","../AP17_The_Room.pdf","../AP18_The_Floor.pdf","../AP19_The_Direction.pdf","../AP24_The_Residual.pdf","../AP25_The_Measure.pdf","../AP26_The_Surplus.pdf","../AP27_The_Harmonics.pdf","../AP28_The_Constant.pdf","../AP29_The_Actualization_Proof.pdf","../AP30_The_Resistance.pdf","../AP31_The_Alignment.pdf","../AP32_The_Correction.pdf","../AP33_The_Boundary.pdf","../AP34_The_Inversion.pdf","../AP35_The_Ledger.pdf","../AP36_The_Feed.pdf","../AP37_The_First_Boundary.pdf","../AP38_The_Exit.pdf","../AP39_The_Scaffold.pdf","../AP40_The_Irrational.pdf","../AP41_The_Loop.pdf","../AP42_The_Clock.pdf","../AP43_The_Gravity_of_Possibilities.pdf"];document.querySelectorAll('.ap-pdf').forEach(function(a){if(ef.indexOf(a.getAttribute('href'))!==-1)a.classList.add('pdf-pending')});
+});
+</script>
+<script>(function(){var t=document.querySelectorAll('[onclick]');for(var i=0;i<t.length;i++){var el=t[i],oc=el.getAttribute('onclick')||'';if(/toggle(AP|Part)|nbToggle/.test(oc)&&el.tagName!=='BUTTON'&&el.tagName!=='A'){if(!el.hasAttribute('role'))el.setAttribute('role','button');if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});}}})();</script>
+
+<script id="visit-counter">
+// One visit is one browser session, not one page load: a reload does not count
+// again, so the number keeps meaning something. Counted from every page.
+(function(){
+  var api='/.netlify/functions/visit-counter';
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  var el=document.getElementById('visit-count');
+  if(el){
+    fetch(api).then(function(r){return r.json()}).then(function(d){
+      el.textContent=(d.count||0).toLocaleString();
+    }).catch(function(){el.textContent='—'});
+  }
+})();
+</script>
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+</body></html>

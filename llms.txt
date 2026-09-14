@@ -42,7 +42,7 @@ One record exists. For a record to exist, four things must hold:
 - **R — Record:** the break must hold, so a record history persists
 - **C — Constraint:** the record must be bounded, so it can be read
 
-The canonical axiom: 1:1 + 1×ε @ AS [+1/137 / −1/137]. AS is the Actualization State (AP01).
+The canonical axiom: 1:1 + 1×ε @ AS [+α | −α]. AS is the Actualization State (AP01).
 
 ## Structure: 54 Artist's Proofs in 8 Notebooks
 

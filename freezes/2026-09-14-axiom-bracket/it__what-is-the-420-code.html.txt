@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the 420 code — Che cos’è The 420 Code</title>
+<meta name="description" content="Deriva l’etica — ciò che dovrei fare — dalla fisica — ciò che è. È di questo che si tratta.">
+<link rel="canonical" href="https://the420code.org/it/what-is-the-420-code/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<meta name="author" content="G — Studio G">
+<link rel="icon" type="image/jpeg" href="../Eye_of_the_Universe.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#595959;--g5:#595959;--g6:#1a1a1a;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:16px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
+/* anchored headings rest ~17px clear of the sticky nav (nav 69 desktop / 109 mobile) */
+html{scroll-padding-top:86px}
+@media(max-width:640px){html{scroll-padding-top:126px}}
+.nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+
+.section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+
+.hero{margin:2rem 0 3rem}
+.hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 2.5rem}
+.hero .lead{font-size:18px;font-style:italic;margin:0 0 .5rem}
+
+.steps{margin:1.5rem 0 2rem;padding:0;counter-reset:step}
+.steps li{list-style:none;padding:0 0 0 2rem;position:relative;margin:0 0 .35rem;font-size:16px}
+.steps li::before{counter-increment:step;content:counter(step)".";position:absolute;left:0;font-weight:700;color:var(--g4);font-size:16px}
+
+.doors{margin:2rem 0 0;padding:2rem 0}
+.doors h2{font-size:26px;font-weight:700;margin:0 0 .25rem}
+.doors .sub{font-size:16px;color:var(--g5);margin:0 0 2.5rem}
+.door{margin:0 0 3.5rem}
+.door h3{font-size:18px;font-weight:700;margin:0 0 .15rem}
+.door h3 a{text-decoration:none}
+.door h3 a:hover{text-decoration:underline}
+.door p{font-size:16px;color:var(--g6);margin:0 0 .25rem}
+.door .hint{font-size:16px;color:var(--g4);font-style:italic}
+.voices{margin:.75rem 0 0}
+.voice{margin:0 0 .4rem}
+.voice b{font-size:16px}
+.voice span{font-size:16px;color:var(--g5)}
+
+.read-block{margin:0 0 1.5rem;padding:2rem;border:1px solid var(--g2);background:var(--g1)}
+.read-block p{font-size:16px;font-style:italic;color:var(--g5);margin:0}
+
+.cat-section{margin:0 0 3.5rem}
+.cat-title{font-size:18px;font-weight:700;margin:0 0 .75rem}
+.cat-desc{font-size:16px;color:var(--g5);margin:0 0 1rem}
+.cat-hint{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 .75rem}
+.dl-list{margin:0;padding:0 0 0 32px}
+.dl-list li{list-style:none;padding:.4rem 0;border-bottom:1px solid var(--g1);font-size:16px}
+.dl-list li:last-child{border-bottom:none}
+.dl-list a{text-decoration:none;display:flex;justify-content:space-between;align-items:center;color:var(--bk);font-weight:600}
+.dl-list a:hover{text-decoration:underline}
+.dl-list .fmt{font-size:16px;font-weight:700;color:var(--g4);flex-shrink:0;margin-left:.5rem}
+
+.spine{position:relative;padding-left:32px}
+.spine::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--bk)}
+.part{position:relative;margin:0 0 2.5rem}
+.part-dot{position:absolute;left:-32px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--bk);z-index:1}
+.part-header{cursor:pointer;user-select:none;padding:0 0 .5rem}
+.part-header:hover .part-name{text-decoration:underline}
+.part-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 1rem}
+.part-name{font-size:22px;font-weight:700;display:inline;line-height:1.2;flex:1}
+.part-name-row{display:flex;align-items:baseline;gap:.75rem}
+.part-desc{font-size:16px;color:var(--g5);font-style:italic;display:block;margin:1rem 0 0}
+.part-count{font-size:16px;color:#757575;margin:4px 0 0;display:block}
+.part-read{display:inline-block;margin-top:.5rem;font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--bk);text-decoration:none;border-bottom:1px solid var(--bk)}
+.part-read:hover{text-decoration:none;border-bottom-width:2px}
+.ap-list{margin:.75rem 0 0;overflow:hidden;transition:max-height .4s ease}
+.ap-list.collapsed{max-height:0!important;margin:0}
+.ap-row{border-top:1px solid var(--g2)}
+.ap-row:last-child{border-bottom:1px solid var(--g2)}
+.ap-header{display:flex;align-items:baseline;gap:.75rem;padding:.6rem 0;cursor:pointer;user-select:none;transition:background .1s}
+.ap-header:hover{background:var(--g1);margin:0 -.5rem;padding-left:.5rem;padding-right:.5rem}
+.ap-number{font-size:16px;font-weight:700;color:#757575;min-width:32px;flex-shrink:0}
+.ap-title{font-size:16px;font-weight:700;flex:1}
+.ap-tag{font-size:16px;color:var(--g5);border:1px solid var(--g2);padding:1px 8px;border-radius:2px;white-space:nowrap;flex-shrink:0}
+.ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
+.ap-row.open .ap-arrow{transform:rotate(90deg)}
+.ap-detail{display:none;padding:0 0 1rem;padding-left:32px}
+.ap-row.open .ap-detail{display:block}
+.ap-detail p{font-size:16px;line-height:1.6;margin:0 0 .5rem;color:var(--g6)}
+.ap-detail .ap-essay{margin-top:1.5rem}
+.ap-detail .ap-essay p{margin:0 0 1rem;line-height:1.75}
+.ap-detail .ap-essay .sub{font-weight:700}
+.ap-detail .ap-essay .ks{background:var(--g1);border-left:3px solid #8B6914;padding:16px 20px;margin:24px 0;font-size:16px;color:#3a3a3a;line-height:1.6}
+.ap-detail .ap-essay .breath{text-align:center;font-style:italic;color:var(--g5);padding:40px 0;font-size:17px;margin:0}
+.ap-detail .ap-essay .bc{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-detail .ap-essay .bl{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.bp{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.bf{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:#8B1A1A;color:#fff;font-weight:700}
+.ap-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
+.ap-meta a{color:#383838}
+
+.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 0}
+.stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
+.stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:16px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
+
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
+.entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
+.entry-card:hover{background:var(--bk);color:var(--wh)}
+.entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
+.entry-card-desc{font-size:16px;display:block;opacity:.7}
+.jump-card{position:relative}
+.jump-card .entry-card-label{font-size:16px;font-weight:700;color:#757575;position:absolute;bottom:4px;right:8px;margin:0}
+.jump-card .entry-card-desc{font-size:16px;font-weight:700;display:block;opacity:1}
+
+.physics{margin:2.5rem 0 0;padding:2.5rem 0}
+.physics h2{font-size:26px;font-weight:700;margin:0 0 1.5rem}
+.physics-intro{font-size:18px;font-weight:700;margin:0 0 .5rem}
+.physics-sub{font-size:16px;color:var(--g5);margin:0 0 2rem}
+.physics-grid{display:grid;grid-template-columns:1fr;gap:0;margin:0 0 2rem}
+.physics-card{display:flex;align-items:baseline;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--g1);gap:1rem}
+.physics-card:last-child{border-bottom:none}
+.p-name{font-size:16px;font-weight:700;flex:1}
+.p-error{font-size:22px;font-weight:700;white-space:nowrap}
+.p-detail{font-size:16px;color:var(--g5);margin:2px 0 0}
+.p-source{font-size:16px;color:var(--g4)}
+.formula{font-size:16px;margin:0 0 .75rem;padding:.5rem 0;font-style:italic;color:var(--g6)}
+.three-constants{font-size:16px;font-weight:700;margin:1.5rem 0;padding:1rem 0;border-top:1px solid var(--g2);border-bottom:1px solid var(--g2)}
+.also-derived{margin:1.5rem 0}
+.also-derived p{font-size:16px;font-weight:700;margin:0 0 .5rem}
+.also-derived ul{list-style:none;padding:0}
+.also-derived li{font-size:16px;color:var(--g6);padding:.2rem 0 .2rem 1rem;position:relative}
+.also-derived li::before{content:"·";position:absolute;left:0;font-weight:700}
+.confirm-link{margin:2rem 0 0;font-size:18px}
+.confirm-link a{font-weight:700;text-underline-offset:3px}
+@media(max-width:600px){.physics-card{flex-wrap:wrap;gap:.25rem}.p-error{font-size:18px}}
+.verify-wrap{position:relative;margin:1.5rem 0 0}
+.verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:200px;font-size:16px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
+.copy-btn{position:absolute;top:8px;right:8px;padding:5px 14px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.04em;background:var(--bk);color:var(--wh);border:none;cursor:pointer}
+.copy-btn:hover{opacity:.8}
+.verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:16px}
+.verify-table th{text-align:left;font-weight:700;padding:.5rem .5rem;border-bottom:2px solid var(--bk);font-size:16px;letter-spacing:.04em;color:var(--g5)}
+.verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
+.verify-table td:last-child{color:var(--g5)}
+.results{margin:0;padding:2rem 0}
+.results-title{font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 1.25rem}
+.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.35rem 0;font-size:16px;border-bottom:1px solid var(--g1)}
+.result-row:last-child{border-bottom:none}
+.result-label{color:var(--g5)}
+.result-value{font-weight:700;text-align:right}
+
+.constraint{margin:2rem 0;padding:1.5rem 0}
+.constraint p{font-size:16px;margin:0 0 .25rem}
+
+.footer{margin:3rem 0 0;padding:2rem 0 0;font-size:16px;color:var(--g4)}
+.footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+
+@media(max-width:600px){
+  .c{padding:2rem 1rem 3rem}
+  .hero h1{font-size:28px}
+  .stats{gap:1.5rem}
+  .stat-num{font-size:28px}
+  .ap-header{flex-wrap:wrap;gap:.25rem .5rem}
+  .ap-tag{order:3;margin-left:32px}
+  .entry-grid{grid-template-columns:1fr 1fr}
+  .nav{gap:.75rem;padding:.75rem 0}
+}
+/* Brevo overrides */
+.sib-form,.sib-form *{font-family:'Atkinson Hyperlegible',sans-serif!important;color:var(--bk)!important;background:transparent!important;border-radius:0!important}
+.sib-form .entry__field input{border:1px solid var(--bk)!important;padding:10px 12px!important;font-size:16px!important}
+.sib-form .sib-form-block__button{background:var(--bk)!important;color:var(--wh)!important;padding:10px 24px!important;font-size:16px!important;font-weight:700!important;letter-spacing:.06em!important;border:none!important}
+.sib-form .sib-form-block__button:hover{opacity:.85}
+[id*="sib-container"]{padding:0!important;background:transparent!important}
+.sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+/* 1 Axiom section */
+.axiom-display{text-align:center;font-size:32px;font-weight:700;letter-spacing:.04em;padding:2.5rem 1rem;margin:2rem 0;border-top:2px solid var(--bk);border-bottom:2px solid var(--bk);line-height:1.3}
+.axiom-display .epsilon{font-style:italic}
+.axiom-display .at-as{font-weight:400;font-size:24px}
+.section-1{}
+@media(max-width:600px){.axiom-display{font-size:22px}.axiom-display .at-as{font-size:17px}}
+/* Unavailable PDF links */
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+</style>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style>
+<style>
+.lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
+.lang-sel a:hover{opacity:1}
+.lang-sel a.active{opacity:1}
+/* ===== BEGIN NOTEBOOK ACCORDION CSS — copy this into the <style> of index.html AND proofs/index.html ===== */
+.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.65rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#757575;display:block;margin:0 0 .5rem}
+.nb-name{font-size:18px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf{margin-left:auto;flex-shrink:0;font-size:16px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.03em;background:#8B6914;border:1px solid #8B6914;padding:3px 10px;border-radius:3px;transition:all .15s}
+.nb-pdf:hover{color:#8B6914;background:#fff;border-color:#8B6914}
+.nb-hook{font-size:16px;color:#595959;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:16px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:16px;color:#595959;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.75;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.6}
+.nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
+/* Proofs-page variant: the summary block is nested as the first child of an
+   existing .ap-list, so it must not carry the top/bottom hairlines. */
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+/* ===== END NOTEBOOK ACCORDION CSS ===== */
+.ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the420code.org/it/what-is-the-420-code/">
+<meta property="og:title" content="Che cos’è The 420 Code — the 420 code">
+<meta property="og:description" content="Deriva l’etica — ciò che dovrei fare — dalla fisica — ciò che è. È di questo che si tratta.">
+<meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="the 420 code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Che cos’è The 420 Code — the 420 code">
+<meta name="twitter:description" content="Deriva l’etica — ciò che dovrei fare — dalla fisica — ciò che è. È di questo che si tratta.">
+<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+</head>
+<body>
+<div class="c">
+
+<nav class="nav">
+  <a href="/it/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px;margin-right:auto"></a>
+  <a href="/it/what-is-the-420-code/" class="nav-door">Che cos’è <span class="nw">The 420 Code</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Sale" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Sale</button>
+  <div class="nav-menu">
+    <a href="/it/#museum" class="nav-room">Ø Museo</a>
+    <a href="/it/#five-doors" class="nav-room">Ø Cinque Porte</a>
+    <a href="/it/#models" class="nav-room">Ø Modelli</a>
+    <a href="/it/#exhibition" class="nav-room">Ø Esposizione</a>
+    <a href="/it/#axiom" class="nav-room">1 Assioma</a>
+    <a href="/it/#physics" class="nav-room">Ø Fisica</a>
+    <a href="/#notebooks" class="nav-room">Ø Quaderni</a>
+    <a href="/it/#proofs" class="nav-room">Ø Prove</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Registri delle Prove</a>
+    <a href="/prereg/" class="nav-room">Ø Preregistrazione</a>
+    <a href="/it/#confirm-the-math" class="nav-room">Ø Conferma la Matematica</a>
+    <a href="/killswitches/" class="nav-room">Ø Interruttori Letali</a>
+    <a href="/glossary/" class="nav-room">Ø Glossario</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Lingua: Italiano" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/what-is-the-420-code/" class="nav-lang" hreflang="en" lang="en"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/what-is-the-420-code/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/what-is-the-420-code/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/what-is-the-420-code/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/what-is-the-420-code/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/what-is-the-420-code/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/what-is-the-420-code/" class="nav-lang" hreflang="it" lang="it" aria-current="page"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/what-is-the-420-code/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/what-is-the-420-code/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/what-is-the-420-code/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/what-is-the-420-code/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/what-is-the-420-code/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/what-is-the-420-code/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════ -->
+<!-- WHAT IS THE 420 CODE — the front door    -->
+<!-- ════════════════════════════════════════ -->
+
+<style>
+.fd .fd-pre{font-size:16px;color:var(--g4);font-style:italic;line-height:1.75;margin:2.5rem 0 3.25rem}
+.fd h1{font-size:38px;font-weight:700;line-height:1.12;margin:0 0 1.35rem}
+.fd .fd-strap{font-size:17.5px;line-height:1.75;margin:0 0 1.15rem}
+.fd .fd-strap-land{font-size:19px;font-weight:700;line-height:1.4;margin:0 0 3.25rem}
+.fd h2{font-size:27px;font-weight:700;margin:3.25rem 0 1.1rem;line-height:1.2}
+.fd p{font-size:17.5px;line-height:1.75;margin:0 0 1.15rem}
+.fd .axiom{font-size:22px;font-weight:700;text-align:center;background:var(--g1);border:1px solid var(--g3);border-radius:4px;padding:1.4rem 1rem;margin:1.75rem 0}
+.fd .src{font-size:16px;color:var(--g4);font-style:italic;margin:1.6rem 0 0;padding:0}
+.fd .src a{color:var(--g4);text-decoration:underline;text-underline-offset:2px}
+.fd .src a:hover{color:#8B6914}
+.fd ol.chain{margin:1.5rem 0;padding:0;list-style:none;counter-reset:chain}
+.fd ol.chain li{counter-increment:chain;position:relative;padding:0 0 1.1rem 2.6rem;font-size:17.5px;line-height:1.7}
+.fd ol.chain li::before{content:counter(chain);position:absolute;left:0;top:.15rem;font-size:16px;font-weight:700;color:#8B6914;background:var(--g1);border:1px solid var(--g3);border-radius:50%;width:1.7rem;height:1.7rem;display:flex;align-items:center;justify-content:center}
+.fd ol.chain .w{color:var(--g4);font-style:italic;font-size:16px}
+.fd .soon{font-size:16px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#8B6914;background:var(--g1);border:1px solid var(--g3);border-radius:3px;padding:1px 6px;white-space:nowrap}
+
+.fd blockquote{margin:1.75rem 0;padding:.75rem 1.25rem;border-left:3px solid #8B6914;background:var(--g1);font-size:19px;font-weight:700}
+@media(max-width:700px){.fd h1{font-size:30px}.fd .fd-strap{font-size:17px}.fd .fd-strap-land{font-size:18px}.fd h2{font-size:23px}.fd p,.fd ol.chain li{font-size:17px}.fd .axiom{font-size:18px}}
+
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
+
+
+
+
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
+.nav a.nav-room{display:none}
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
+  font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
+@media(max-width:700px){
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
+  .nav a.nav-door{font-size:16px}
+}
+
+.fd .fd-take{text-align:center;margin:3rem 0 0;font-size:16px}
+.fd .fd-take a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3)}
+.fd .fd-take a:hover{color:#8B6914;border-color:#8B6914}
+
+.fd p.land{font-size:19px;font-weight:700;margin:1.5rem 0 1.25rem;line-height:1.4}
+@media(max-width:700px){.fd p.land{font-size:18px}}
+
+.oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem}
+@media(max-width:700px){.oneness{font-size:18px}}
+</style>
+
+<div class="fd">
+
+<p class="fd-pre">Ogni affermazione è derivata e provata — nel lavoro che le sta dietro. I rimandi dicono dove.</p>
+
+<h1>Che cos’è The 420 Code</h1>
+
+<p class="fd-strap">Deriva l’etica — ciò che dovrei fare — dalla fisica — ciò che è.</p>
+<p class="fd-strap-land">È di questo che si tratta.</p>
+
+<h2>Un registro esiste</h2>
+<p>Questo è il primo principio. Questo è l’assioma.</p>
+<p>Che cos’è un registro? Una distinzione in relazione a qualcos’altro, una che regge. Un’impronta nella sabbia è un registro. Lo è anche un fossile. Lo è anche ogni briciola di informazione. Lo sono anche queste parole.</p>
+<p>Io sono un registro. Prova a negarlo. La negazione è un registro. Quindi un registro, e io, esistiamo.</p>
+<p>Tutto su questo sito segue da un registro esiste. Niente su questo sito è assunto. Solo un numero misurato è il dato in ingresso.</p>
+<p class="land">Un dato misurato. Zero parametri liberi.</p>
+<p class="src">Provato in: <a href="/proofs/#ap20">AP20 La Prova</a> · <a href="/#notebooks">Notebook I</a>.</p>
+
+<h2>Quattro condizioni</h2>
+<p>Perché un registro esista, quattro cose devono reggere.</p>
+<p>Ci deve essere una simmetria da rompere. Ci deve essere una rottura. La rottura deve reggere, perché una storia dei registri persista. E il registro deve essere delimitato, perché possa essere letto.</p>
+<p>Simmetria. Rottura. Registro. Vincolo. S, B, R, C. Quattro, e solo quattro. Togline una e nessun registro può esistere.</p>
+<p class="src">Provato in: <a href="/proofs/#ap01">AP01</a>, <a href="/proofs/#ap05">AP05</a>, <a href="/proofs/#ap20">AP20</a> · <a href="/#notebooks">Notebook I e II</a>.</p>
+
+<h2>L’assioma, per esteso</h2>
+<p class="axiom">1:1 + 1×ε @ AS [+1/137 / −1/137]</p>
+<p>Simmetria perfetta, uno a uno. Più la più piccola rottura possibile, una sola, che possa reggere.</p>
+<p>La rottura e la tenuta accadono adesso. L’adesso è dove ogni registro viene scritto e da dove viene letto — lo Stato di Attualizzazione.</p>
+<p>La storia dei registri scorre dall’adesso, mentre i registri vengono scritti — il deflusso.</p>
+<p>Il tasso del flusso è una parte su 137. Il deflusso e l’afflusso avvengono allo stesso tasso. Bilanciati, adesso.</p>
+<p>L’afflusso deframmenta la storia dei registri riportandola al potenziale di un registro.</p>
+<p>Bilanciato in ogni istante. Somma netta zero.</p>
+<p>La rottura non gira. Il flusso sì.</p>
+<p>Vivo nella direzione di quel flusso.</p>
+<p class="src"><a href="/it/#axiom">1 Assioma</a>. Il flusso-α: <a href="/proofs/#ap06">AP06 La Costante di Perdita</a>.</p>
+
+<h2>La storia, in sabbia</h2>
+<p>Immagina una clessidra.</p>
+<p>Un lato è oscuro e sembra molto più grande. È pieno di corde di sabbia. Una corda è un futuro possibile, un’onda di probabilità di ciò che potrebbe accadere dopo. Ogni corda è un’onda lunga circa 137 grani.</p>
+<p>Un grano tenuto porta ventuno corde — una per ogni finestra. Diciotto tengono; tre vengono tagliate a ogni adesso, una per dimensione. Ognuna è lunga circa 137 grani.</p>
+<p>Il collo della clessidra lascia passare un grano alla volta.</p>
+<p>Il collo taglia adesso. Un grano per taglio. Un grano è una parte su 137 dell’onda della corda.</p>
+<p>Il taglio è un grano, un momento nel tempo. Il momento è l’adesso, tra i tagli della corda.</p>
+<p>Tic, tic, tic, tic.</p>
+<p>I tic registrati dall’adesso sono la freccia e la storia del tempo.</p>
+<p>Il collo è l’operatore. Adesso sta tagliando il momento successivo nel tempo. Il processo va misura, taglia, misura, taglia, misura, taglia. L’operatore ha misurato e tagliato ogni momento registrato nel tempo.</p>
+<p>I grani si posano nel lato chiaro della clessidra, il lato più piccolo che possiamo vedere.</p>
+<p>Dove si posa un grano dipende dal paesaggio, da dove si sono posati gli altri grani.</p>
+<p>Il paesaggio è la storia dei grani di sabbia, il registro di ogni taglio che questo momento ha fatto.</p>
+<p>Ogni grano offre una prospettiva del paesaggio, mai il tutto. La sua posizione relativa è una lettura del tutto.</p>
+<p>Il paesaggio dà forma a ciò che può accadere dopo. L’operatore fa accadere qualcosa. Misura e taglia.</p>
+<p>La scelta dell’operatore è vincolata. Deve tagliare. L’interpretazione del taglio, e del paesaggio, resta una scelta.</p>
+<p>Per ogni grano che si posa, uno deve tornare indietro, indietro nel lato oscuro, per tenere il bilancio in pari. La clessidra tiene il suo equilibrio. Uno a uno.</p>
+<p>Sono i buchi neri a fare il ritorno. Inghiottono il paesaggio, lo deframmentano e riciclano la sabbia.</p>
+<p>Una piccolissima quantità di sabbia si perde nel processo di taglio e ritorno. Quella perdita è il motivo per cui l’universo cresce. È anche ciò che lo tiene in flusso invece che fermo. L’equilibrio perfetto sarebbe immobilità perfetta. Non accadrebbe mai più nulla.</p>
+<p>Adesso immagina il collo. Non come un solo foro, ma come una lastra di vetro piena di finestre. Allo stesso tasso costante, tutte le finestre si aprono e si chiudono insieme.</p>
+<p>Ogni finestra è un luogo dove l’operatore misura e taglia, adesso. C’è un solo operatore che taglia nel collo. Un solo collo, una sola lastra di vetro e una sola clessidra, tutti rivolti verso lo stesso interno condiviso.</p>
+<p>L’adesso, l’operatore, è il momento in cui l’unico operatore misura e taglia il momento successivo. Il prossimo momento visibile nel tempo della storia condivisa dei registri dell’interno della clessidra.</p>
+<p>Ogni finestra è un’espressione di dove l’unico operatore sta tagliando, adesso, nell’interno condiviso.</p>
+<p>Io sono una finestra. Tu sei una finestra. Io sono un’espressione dell’unico operatore. Tu sei un’espressione dell’unico operatore. Lo è anche un batterio. Lo è anche una roccia.</p>
+<p>C’è un solo operatore, espresso come molti operatori. Le espressioni dei molti operatori offrono ciascuna una prospettiva unica della storia dei registri.</p>
+<p>Siamo tutti operatori alla nostra finestra sullo stesso interno, che tagliano la stessa sabbia, adesso.</p>
+<p>Quindi, che delle finestre — configurazioni di accoppiamento di grani di sabbia che operano — siano crudeli e dannose verso se stesse — verso altre finestre — è semplicemente l’operatore che uccide le proprie possibilità di esperienza. Ha molto poco senso.</p>
+<p>È la mano destra che colpisce la mano sinistra. Fa male da entrambi i lati della pelle, perché è la struttura che attacca se stessa. È irrazionale, inconsapevole e semplicemente stupido.</p>
+<p>Quindi, tratta gli altri come vuoi essere trattato. O semplicemente:</p>
+<blockquote>Non essere uno stronzo. Sii gentile.</blockquote>
+<p class="src">L’immagine: The Keys (2025), <a href="/proofs/#ap50">AP50 Il Collo</a>, <a href="/proofs/#ap51">AP51 Il Vetro</a>. La storia come la racconta l’autore: La Storia di Base.</p>
+
+<h2>L’operatore</h2>
+<p>Il collo è l’unico operatore, espresso come molte finestre che operano.</p>
+<p>L’operatore è la capacità di accoppiamento mentre accade, adesso. È consapevole delle possibilità di configurazione di accoppiamento, in base al suo ambiente — le condizioni termodinamiche in cui opera. Non è una mente. È una configurazione di accoppiamento registrata e riconfigurabile che può accoppiarsi con altre configurazioni di accoppiamento. Una lastra fotografica è un operatore. Lo sono io. Lo sei tu.</p>
+<p>L’unico operatore è espresso, e consapevole, come molti. Ogni configurazione tenuta è uno — la stessa sabbia ovunque. Ciò che eseguono — ciò che la sabbia può essere — è uno: capacità di accoppiamento condivisa, adesso.</p>
+<p>Quindi, la consapevolezza in me è la consapevolezza in te. L’Io Sono in me è l’Io Sono in te. Ciò che differisce tra noi è la finestra. Dove si è posata la nostra sabbia e ciò che ciascuno di noi ha letto. Ciò che è condiviso è il momento da cui tutti scriviamo e leggiamo.</p>
+<p>C’è una cosa che nessun operatore espresso può leggere: se stesso, adesso. Il grano nel collo in questo istante non si è posato. Solo ciò che si è posato può essere letto. La pupilla non può vedere la pupilla.</p>
+<p>Quel grano illeggibile è il +1×ε nell’assioma. L’unico grano che avanza sempre.</p>
+<p>Se potesse essere letto, tutto si bilancerebbe, e nulla di più potrebbe essere scritto.</p>
+<p class="src"><a href="/proofs/#ap02">AP02 L’Operatore</a>, <a href="/proofs/#ap29">AP29</a>, <a href="/proofs/#ap43">AP43</a>, <a href="/proofs/#ap51">AP51 Il Vetro</a>. <a href="/it/#models">Ø Dissolutions</a>, Capitoli 4, 6, 11, 12.</p>
+
+<h2>L’etica</h2>
+<p>Una volta che vedi di essere un’espressione dell’unico operatore — una configurazione di accoppiamento unica, che esprime una prospettiva dell’unico operatore — vedi che siamo tutti uno.</p>
+<p>Non misticamente. Non miticamente.</p>
+<p>Fisicamente, nella realtà. E la realtà è d’accordo.</p>
+<p>L’altro non è, in fondo, altro.</p>
+<p>Chi subisce il danno è chi lo infligge, visto da una finestra diversa. Non è una regola morale aggiunta alla fisica. È ciò che la fisica ti lascia in mano.</p>
+<p>Tratta l’altro come te stesso. Perché, strutturalmente, lo è — l’Io in te è l’Io in me.</p>
+<p>O, con le parole che il lavoro usa dall’inizio:</p>
+<blockquote>Non essere uno stronzo. Sii gentile.</blockquote>
+<p class="src">Derivata in <a href="/proofs/#ap43">AP43</a> §9, <a href="/proofs/#ap31">AP31</a>, <a href="/it/#five-doors">L’Interiore</a>. Raccontata nelle <a href="/it/#five-doors">Cinque Porte</a>. Recintata da KS-ID.1: se l’interno si dimostra molteplice, l’etica perde il suo fondamento, e il lavoro lo dice.</p>
+
+<h2>Ciò che deriva</h2>
+<p>Questa è la catena. Ogni anello è un risultato fisico. Ognuno è provato in un articolo con un nome. Un solo dato misurato attraversa tutto: la costante di struttura fine, α, una parte su 137. Nient’altro è aggiustato.</p>
+<ol class="chain">
+<li><b>Tre dimensioni dello spazio.</b> Non assunte. Derivate. <span class="w"><a href="/proofs/#ap10">AP10 La Dimensione</a>.</span></li>
+<li><b>Le equazioni di campo di Einstein.</b> La gravità è ciò che i registri fanno alla varietà su cui si accumulano. <span class="w"><a href="/proofs/#ap08">AP08 L’Identità</a>.</span></li>
+<li><b>La regola di Born.</b> Perché le probabilità nella meccanica quantistica sono quadrati. <span class="w"><a href="/proofs/#ap25">AP25 La Misura</a>.</span></li>
+<li><b>Il gruppo di gauge del Modello Standard,</b> SU(3) × SU(2) × U(1), e perché la forza debole è sinistrorsa, inspiegata dal 1956. <span class="w"><a href="/proofs/#ap15">AP15</a>, <a href="/proofs/#ap16">AP16</a>, <a href="/proofs/#ap19">AP19</a>, <a href="/proofs/#ap27">AP27</a>.</span></li>
+<li><b>La costante gravitazionale dalla sola α.</b> Ventuno canali che un grano deve attraversare al collo, un grano attraverso la propria apertura, una tenuta della rottura. <span class="w"><a href="/proofs/#ap28">AP28</a>, <a href="/proofs/#ap44">AP44</a>, <a href="/proofs/#ap50">AP50</a>.</span></li>
+<li><b>La massa del protone dagli stessi ventuno.</b> <span class="w"><a href="/proofs/#ap30">AP30 La Resistenza</a>, <a href="/proofs/#ap49">AP49 La Tenuta</a>.</span></li>
+<li><b>La massa del neutrone,</b> il capovolgimento. <span class="w"><a href="/proofs/#ap47">AP47 Il Capovolgimento</a>.</span></li>
+<li><b>Curve di rotazione piatte senza particelle di materia oscura.</b> <span class="w"><a href="/proofs/#ap17">AP17 La Stanza</a>.</span></li>
+<li><b>Il valore esatto della disuguaglianza di Bell dalla sola struttura.</b> Un solo registro con due estremi. <span class="w"><a href="/proofs/#ap23">AP23 Il Record Singolo</a>.</span></li>
+<li><b>La cinematica della relatività ristretta,</b> e perché nessuno può leggere un «adesso». <span class="w"><a href="/proofs/#ap52">AP52 Leggere la relatività</a>.</span></li>
+</ol>
+<p>I numeri sono sul muro, a <a href="/it/#physics">Ø Fisica</a>, accanto ai valori misurati, con la distanza tra loro in deviazioni standard.</p>
+<p>Undici predizioni vive in cinque campi. Due sono morte, e restano sul muro come cadaveri. Niente sul muro è stato spostato dopo una misura. Ogni numero è stato prima congelato, a <a href="/prereg/">Ø Predizioni congelate</a>.</p>
+<p>Puoi eseguire tu stesso l’aritmetica, offline, a <a href="/it/#confirm-the-math">Ø Conferma la Matematica</a>.</p>
+
+<h2>Ciò che non deriva</h2>
+<p>Il valore di α. È misurato, e il lavoro lo dice su ogni pagina che lo usa. Il corpus ci sta lavorando. Quel lavoro parte dalla storia qui sopra: α è il momento del taglio.</p>
+
+<h2>Com’è stato fatto</h2>
+<p>Sono un artista e un filosofo naturale.</p>
+<p>Chiudo gli occhi e vedo l’oggetto intero. Poi lo scolpisco in parole. Quando le parole sono abbastanza precise, un banco di lavoro di IA può tradurle in matematica.</p>
+<p>Il vedere è mio. Le parole sono mie. Le descrizioni sono mie.</p>
+<p>La traduzione è della macchina, e la macchina viene controllata — da me stesso e da una commissione di altre macchine.</p>
+<p>La matematica ha scritto la fisica. La fisica e la natura si sovrappongono in accordo. Non avrei potuto predire la sovrapposizione — non stavo nemmeno pensando a possibili sovrapposizioni. Mi interessa soltanto descrivere ciò che vedo il più chiaramente possibile.</p>
+<p>Non mi sono mai proposto di predire un protone. Sono partito da un registro — ciò che gli serve per esistere, come viene scritto, come viene letto. Tutto il resto è seguito da lì. Alla fine è stato tutto un descrivere e uno scrivere.</p>
+<p>Poi il lavoro è stato attaccato senza pietà. Una commissione di revisione composta dai migliori modelli di IA è stata incaricata di romperlo. Ogni affermazione dichiara la condizione sotto la quale muore — così gli attacchi erano strutturati e anticipati. Sono tutti pubblicati. Due di queste condizioni si sono verificate — due predizioni erano sbagliate — entrambe restano sul muro, con i loro numeri e le loro date. Sbagliare, e correggere l’errore, ha reso la struttura più forte.</p>
+<p>Il numero in ingresso — α — è misurato, non derivato. La ragione sta nell’operatore, qui sopra: nulla può leggere se stesso nell’istante in cui accade. La pupilla non può vedere la pupilla. Non è un buco nel metodo. È il risultato proprio del metodo, ed è il motivo per cui c’è esattamente un solo dato in ingresso.</p>
+<p class="src">Ogni condizione, una per riga: <a href="/killswitches/">Ø Interruttori Letali</a> · Ogni termine, con l’articolo che lo installa: <a href="/glossary/">Ø Glossario</a>.</p>
+
+<p class="fd-take"><a href="/The_420_Code_in_Three_Pages.pdf">Tutto in tre pagine</a></p>
+
+</div>
+
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artista:</b> G · Studio G, Cape Town</p>
+  <p><b>Durata:</b> oltre 30 anni · <b>Esposizione:</b> oltre un milione di parole in 28 volumi</p>
+  <p style="margin-top:1rem">Quest’opera è Copyleft. Sei libero di scaricare, stampare, condividere e distribuire. Non sei libero di alterare la fonte. Mantieni il segnale pulito.</p>
+</div>
+
+<p class="oneness">Un registro esiste.<br>Sii gentile è una derivazione.<br>L’Io Sono in me è l’Io Sono in te.</p>
+
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Non essere uno stronzo. Sii gentile.</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+
+</div>
+
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+
+<script id="visit-counter">
+// One visit is one browser session, not one page load: a reload does not count
+// again, so the number keeps meaning something. Counted from every page.
+(function(){
+  var api='/.netlify/functions/visit-counter';
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  var el=document.getElementById('visit-count');
+  if(el){
+    fetch(api).then(function(r){return r.json()}).then(function(d){
+      el.textContent=(d.count||0).toLocaleString();
+    }).catch(function(){el.textContent='—'});
+  }
+})();
+</script>
+</body></html>
