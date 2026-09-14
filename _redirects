@@ -1,0 +1,19 @@
+# Ghost pages retired 14 September 2026. They were live, unlinked and stale:
+# index_en.html and output/** were the dormant generator's output, still
+# claiming 43/42 Artist's Proofs and KS-30.3 live, which the registry ruled PAID.
+# Anything that indexed them now lands on the page that tells the truth.
+
+/index_en.html          /                   301
+/output/ar/*            /ar/                301
+/output/de/*            /de/                301
+/output/es/*            /es/                301
+/output/fr/*            /fr/                301
+/output/hi/*            /hi/                301
+/output/it/*            /it/                301
+/output/ja/*            /ja/                301
+/output/ko/*            /ko/                301
+/output/nl/*            /nl/                301
+/output/pt/*            /pt/                301
+/output/ru/*            /ru/                301
+/output/zh/*            /zh/                301
+/output/*               /                   301
