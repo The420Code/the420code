@@ -80,7 +80,7 @@
   "h2.what_it_derives": "Was er herleitet",
   "p.what_it_derives.0": "Das ist die Kette. Jedes Glied ist ein physikalisches Ergebnis. Jedes ist in einem benannten Aufsatz bewiesen. Eine gemessene Eingabe läuft durch alles hindurch: die Feinstrukturkonstante, α, ein Teil in 137. Nichts sonst ist angepasst.",
   "p.what_it_derives.1": "Die Zahlen hängen an der Wand, bei <a href=\"/#physics\">Ø Physik</a>, neben den gemessenen Werten, mit dem Abstand zwischen ihnen in Standardabweichungen.",
-  "p.what_it_derives.2": "Elf lebende Vorhersagen in fünf Feldern. Zwei sind gestorben, und sie bleiben als Leichen an der Wand. Nichts an der Wand wurde nach einer Messung verschoben. Jede Zahl wurde zuerst eingefroren, bei <a href=\"/prereg/\">Ø Eingefrorene Vorhersagen</a>.",
+  "p.what_it_derives.2": "Zwölf lebende Vorhersagen in fünf Feldern. Zwei sind gestorben, und sie bleiben als Leichen an der Wand. Nichts an der Wand wurde nach einer Messung verschoben. Jede Zahl wurde zuerst eingefroren, bei <a href=\"/prereg/\">Ø Eingefrorene Vorhersagen</a>.",
   "p.what_it_derives.3": "Sie können die Rechnung selbst durchführen, offline, bei <a href=\"/#confirm-the-math\">Ø Überprüfe die Mathematik</a>.",
   "chain.1": "<b>Drei Dimensionen des Raums.</b> Nicht angenommen. Hergeleitet. <span class=\"w\"><a href=\"/proofs/#ap10\">AP10 Die Dimension</a>.</span>",
   "chain.2": "<b>Einsteins Feldgleichungen.</b> Gravitation ist das, was Einträge mit der Mannigfaltigkeit machen, auf der sie sich ansammeln. <span class=\"w\"><a href=\"/proofs/#ap08\">AP08 Die Identität</a>.</span>",

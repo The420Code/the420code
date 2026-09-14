@@ -80,7 +80,7 @@
   "h2.what_it_derives": "Lo que deriva",
   "p.what_it_derives.0": "Esta es la cadena. Cada eslabón es un resultado físico. Cada uno está probado en un artículo con nombre. Un solo dato medido lo recorre todo: la constante de estructura fina, α, una parte en 137. Nada más está ajustado.",
   "p.what_it_derives.1": "Los números están en la pared, en <a href=\"/#physics\">Ø Física</a>, junto a los valores medidos, con la distancia entre ellos en desviaciones estándar.",
-  "p.what_it_derives.2": "Once predicciones vivas en cinco campos. Dos han muerto, y siguen en la pared como cadáveres. Nada en la pared se movió después de una medición. Cada número se congeló antes, en <a href=\"/prereg/\">Ø Predicciones congeladas</a>.",
+  "p.what_it_derives.2": "Doce predicciones vivas en cinco campos. Dos han muerto, y siguen en la pared como cadáveres. Nada en la pared se movió después de una medición. Cada número se congeló antes, en <a href=\"/prereg/\">Ø Predicciones congeladas</a>.",
   "p.what_it_derives.3": "Puedes hacer tú mismo la aritmética, sin conexión, en <a href=\"/#confirm-the-math\">Ø Confirma las Matemáticas</a>.",
   "chain.1": "<b>Tres dimensiones del espacio.</b> No asumidas. Derivadas. <span class=\"w\"><a href=\"/proofs/#ap10\">AP10 La Dimensión</a>.</span>",
   "chain.2": "<b>Las ecuaciones de campo de Einstein.</b> La gravedad es lo que los registros le hacen a la variedad sobre la que se acumulan. <span class=\"w\"><a href=\"/proofs/#ap08\">AP08 La Identidad</a>.</span>",
