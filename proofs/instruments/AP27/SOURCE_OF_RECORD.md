@@ -10,10 +10,14 @@ the source.
 AP27, and the AP30 republish procedure is not available to it.** No file is
 copied into this folder, so nothing here can be harvested by mistake.
 
+**Republished 14 September 2026** — the decorative U+2728 on page 5 removed, nothing
+else changed; see `NOTE_REPUBLISH_2026-09-14.md` beside this file. The digest below is the
+new one; the outgoing file is kept at `AP27_The_Harmonics_published_to_2026-09-13.pdf`.
+
 | | |
 |---|---|
 | Published PDF | `/AP27_The_Harmonics.pdf` |
-| sha256 | `b6b78c49ff9ea3cbf4b9fd1fd71055595c904a18e9bb97f88b95386200cb5013` |
+| sha256 | `5f99e95a1ab85cf8e0220f786352ecb994c93083fd9b1f4de4ee26870103406d` |
 | Closest candidate | `AP27_The_Harmonics_v2.docx` (Formatted) — NOT of record |
 
 ## In the source, absent from the published paper

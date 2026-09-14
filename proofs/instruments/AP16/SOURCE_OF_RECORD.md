@@ -10,10 +10,14 @@ the source.
 AP16, and the AP30 republish procedure is not available to it.** No file is
 copied into this folder, so nothing here can be harvested by mistake.
 
+**Republished 14 September 2026** — the decorative U+2728 on page 5 removed, nothing
+else changed; see `NOTE_REPUBLISH_2026-09-14.md` beside this file. The digest below is the
+new one; the outgoing file is kept at `AP16_The_Break_Electroweak_published_to_2026-09-13.pdf`.
+
 | | |
 |---|---|
 | Published PDF | `/AP16_The_Break_Electroweak.pdf` |
-| sha256 | `d361386650e20b8ce988f2b201d8cffc3b9b13e7e2d0d41a4b09706ee5d44cda` |
+| sha256 | `d1f39bd31c28f237ab3982ec4af9b981cfaea695110354421937d2354d11ff10` |
 | Closest candidate | `AP16_The_Break_Electroweak_v2.docx` (Formatted) — NOT of record |
 
 ## In the source, absent from the published paper

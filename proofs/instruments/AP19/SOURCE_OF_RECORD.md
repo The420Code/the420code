@@ -10,10 +10,14 @@ the source.
 AP19, and the AP30 republish procedure is not available to it.** No file is
 copied into this folder, so nothing here can be harvested by mistake.
 
+**Republished 14 September 2026** — the decorative U+2728 on page 5 removed, nothing
+else changed; see `NOTE_REPUBLISH_2026-09-14.md` beside this file. The digest below is the
+new one; the outgoing file is kept at `AP19_The_Direction_published_to_2026-09-13.pdf`.
+
 | | |
 |---|---|
 | Published PDF | `/AP19_The_Direction.pdf` |
-| sha256 | `50e6662473f0e074ae98bdc77c5390d2db003da5f312ce711d98a17e1f72d466` |
+| sha256 | `f4b172782344cbba771670ee17ae06e649984516007fdf32f26146b02604fd1e` |
 | Closest candidate | `AP19_The_Direction_v2.docx` (Formatted) — NOT of record |
 
 ## In the source, absent from the published paper

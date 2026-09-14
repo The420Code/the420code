@@ -10,10 +10,14 @@ the source.
 AP24, and the AP30 republish procedure is not available to it.** No file is
 copied into this folder, so nothing here can be harvested by mistake.
 
+**Republished 14 September 2026** — the decorative U+2728 on page 4 removed, nothing
+else changed; see `NOTE_REPUBLISH_2026-09-14.md` beside this file. The digest below is the
+new one; the outgoing file is kept at `AP24_The_Residual_published_to_2026-09-13.pdf`.
+
 | | |
 |---|---|
 | Published PDF | `/AP24_The_Residual.pdf` |
-| sha256 | `3a052367dbbe520415754aff7054c7993f02eebc36074dd7c7907cfbf85b196d` |
+| sha256 | `c4641e4e3f1012bb1ef5e3258e2fcc1c2f9f1ac0cae07d583b83b5bc709ec645` |
 | Closest candidate | `AP24_The_Residual_v2.docx` (Formatted) — NOT of record |
 
 ## In the source, absent from the published paper

@@ -10,10 +10,14 @@ the source.
 AP06, and the AP30 republish procedure is not available to it.** No file is
 copied into this folder, so nothing here can be harvested by mistake.
 
+**Republished 14 September 2026** — the decorative U+2728 on page 5 removed, nothing
+else changed; see `NOTE_REPUBLISH_2026-09-14.md` beside this file. The digest below is the
+new one; the outgoing file is kept at `AP06_The_Leakage_Constant_published_to_2026-09-13.pdf`.
+
 | | |
 |---|---|
 | Published PDF | `/AP06_The_Leakage_Constant.pdf` |
-| sha256 | `d24d76ce142d54f92769f71684b7dd09aba27823f7b53a1063afa695f7c300a7` |
+| sha256 | `6a9387a504081109b7dda6a7795446e948a350fa6f129e145e25f7aa84f92ef6` |
 | Closest candidate | `AP06_The_Leakage_Constant_FINAL.docx` (Standalone) — NOT of record |
 
 ## In the source, absent from the published paper
