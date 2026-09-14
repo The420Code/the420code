@@ -1147,7 +1147,7 @@ function runVerify(){
       out.style.display='block';
       var passed=(rc===0)&&/ALL\s+\d+\s+CHECKS PASSED/.test(text);
       out.style.borderColor=passed?'#1a7f37':'#b00';
-      status.textContent=passed?'✓ Verified live in your browser — every derivation holds.':'Finished — see the output below.';
+      status.textContent=passed?'Verified live in your browser — every derivation holds.':'Finished — see the output below.';
       status.style.color=passed?'#1a7f37':'var(--g4)';
       btn.disabled=false;btn.style.opacity='1';btn.style.cursor='pointer';btn.textContent='▸ Run it again';
     });

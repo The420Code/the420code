@@ -104,7 +104,7 @@
              && dec.n12 === 11 && dec.n123 === 2 && dec.n1234 === 1;
     return {
       out: out.join('\n'), ok: ok,
-      msg: '✓ Proton freeze reproduced offline — D = 1836.152673444331 at 0.57σ; 336 is the only integer in the 3σ window; decompositions 11 / 2 / 1.'
+      msg: 'Proton freeze reproduced offline — D = 1836.152673444331 at 0.57σ; 336 is the only integer in the 3σ window; decompositions 11 / 2 / 1.'
     };
   }
 
@@ -176,7 +176,7 @@
              && sig(sPlanck, 3) === '5.31' && sig(visSig, 3) === '2.46' && sig(tau, 4) === '3.942';
     return {
       out: out.join('\n'), ok: ok,
-      msg: '✓ Cosmology freezes reproduced offline — H₀ = 74.3 (0.55σ vs H0DN, 5.31σ vs Planck); visible fraction 2.46σ; τ = 3.942 Gyr.'
+      msg: 'Cosmology freezes reproduced offline — H₀ = 74.3 (0.55σ vs H0DN, 5.31σ vs Planck); visible fraction 2.46σ; τ = 3.942 Gyr.'
     };
   }
 
@@ -228,7 +228,7 @@
              && n22dG.plus(99.27).abs().lt(0.1);     // N=22 undershoots by ~-99.27%
     return {
       out: out.join('\n'), ok: ok,
-      msg: '✓ Rigidity table reproduced offline — N=20 overshoots G by 138×, N=22 undershoots by 99.27%.'
+      msg: 'Rigidity table reproduced offline — N=20 overshoots G by 138×, N=22 undershoots by 99.27%.'
     };
   }
 
@@ -321,7 +321,7 @@
     out.push('One measured input (alpha). Zero free parameters. Two corpses on the board.');
     var ok = H0.gt(64.4) && H0.lt(70.8) && d_real.minus(d_meas).abs().lt(DELTA_U) && t_cycle.div(GYR).minus(AGE_MEAS).abs().lt(d('0.66')) && G_real.div(G_MEAS).minus(1).abs().lt(d('0.01'));
     return { out: out.join('\n'), ok: ok,
-      msg: '✓ The wave reproduced offline — G realised at −0.036%, the neutron at −0.005σ, one cycle 13.830 Gyr, the closure 67.45 km/s/Mpc; two corpses shown.' };
+      msg: 'The wave reproduced offline — G realised at −0.036%, the neutron at −0.005σ, one cycle 13.830 Gyr, the closure 67.45 km/s/Mpc; two corpses shown.' };
   }
 
   function pad(s, w) { s = String(s); while (s.length < w) s += ' '; return s; }

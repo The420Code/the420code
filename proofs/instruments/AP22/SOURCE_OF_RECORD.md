@@ -36,7 +36,7 @@ copied into this folder, so nothing here can be harvested by mistake.
 - (P2) σ̂ is anti-linear. By Part A, σ maps L (exterior) to P (interior) at the horizon. The Killing vector field ∂/∂t is timelike in the exterior and spacelike in the interior.
 - Formal proof of anti-linearity. The Tomita operator S for the pair (aL, |ΩHH⟩) is defined by S(a|ΩHH⟩) = a|ΩHH⟩ for all a ∈ aL.
 - (P3) σ̂ maps aL to aP. By Part A, σ maps L (exterior) to P (interior).
-- Therefore σ̂ aL σ̂ = a′L, which is the defining property of a modular conjugation. ✓
+- Therefore σ̂ aL σ̂ = a′L, which is the defining property of a modular conjugation. 
 - Given the algebra aL and the vector |ΩHH⟩, there is exactly one anti-linear isometric involution satisfying JaLJ = a′L and J|ΩHH⟩ = |ΩHH⟩.
 - σ̂ satisfies (P1)-(P4): it is an anti-linear involution that maps aL to a′L and preserves the vacuum. J satisfies the same properties and is uniquely determined.
 - Proof. The involution σ maps L ↔ P. The notation "1:1" denotes a bijection: every element in L has exactly one image in P, and every element in P has exactly one pre-image in L.
