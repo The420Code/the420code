@@ -17,3 +17,7 @@
 /output/ru/*            /ru/                301
 /output/zh/*            /zh/                301
 /output/*               /                   301
+
+# The take-away document was renamed 15 September 2026 when its own title changed
+# from three pages to a few. Anything that saved the old address still lands.
+/The_420_Code_in_Three_Pages.pdf   /The_420_Code_in_a_few_pages.pdf   301
