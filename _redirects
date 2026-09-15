@@ -21,3 +21,20 @@
 # The take-away document was renamed 15 September 2026 when its own title changed
 # from three pages to a few. Anything that saved the old address still lands.
 /The_420_Code_in_Three_Pages.pdf   /The_420_Code_in_a_few_pages.pdf   301
+
+# Twelve editor backups retired 15 September 2026. They were tracked, so Netlify
+# served every one at 200, linked from nothing and stale since June: "42 Artist's
+# Proofs. 546 Kill Switches", in twelve languages, with every crawler allowed.
+# The bytes stay in the history; the addresses land on the page that is true.
+/ar/index.html.bak3      /ar/      301
+/de/index.html.bak3      /de/      301
+/es/index.html.bak3      /es/      301
+/fr/index.html.bak3      /fr/      301
+/hi/index.html.bak3      /hi/      301
+/it/index.html.bak3      /it/      301
+/ja/index.html.bak3      /ja/      301
+/ko/index.html.bak3      /ko/      301
+/nl/index.html.bak3      /nl/      301
+/pt/index.html.bak3      /pt/      301
+/ru/index.html.bak3      /ru/      301
+/zh/index.html.bak3      /zh/      301
