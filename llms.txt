@@ -59,7 +59,7 @@ The canonical axiom: 1:1 + 1×ε @ AS [+α | −α]. AS is the Actualization Sta
 
 ## Kill Switches (Falsifiability)
 
-604 kill switches are declared across the work (Master Kill Switch Registry v5.32, 13 September 2026): 320 across AP01–AP54, 28 across the Five Doors volumes, 256 across the Ø Models series. 584 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Six debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. Examples:
+604 kill switches are declared across the work (Master Kill Switch Registry v5.33, 18 September 2026): 320 across AP01–AP54, 28 across the Five Doors volumes, 256 across the Ø Models series. 584 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Six debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. Examples:
 
 - **KS-V.1:** If two observers disagree on a measurement, the entire framework fails
 - **KS-P.1:** If a fifth axiom is needed, the proof fails
