@@ -184,6 +184,17 @@ table.data tr:last-child td{border-bottom:none}
 .map{margin-bottom:3rem}
 @media(max-width:600px){.map h2{font-size:22px}}
 </style>
+<style id="prereg-folds-2026-09-19">
+/* labels that open: the note stays in its dress, its body hides until the label is clicked */
+.note-fold .kind{margin:0;cursor:pointer}.note-fold.open .kind{margin:0 0 .7rem}
+.note-fold .fold-body{display:none}.note-fold.open .fold-body{display:block}
+.fold-arrow{display:inline-block;font-size:16px;transition:transform .2s;margin-left:.2rem}.note-fold.open .fold-arrow{transform:rotate(90deg)}
+/* the register: the crux on the row, the rest under it */
+tr.reg-detail{display:none}tr.reg-row.open + tr.reg-detail{display:table-row}
+tr.reg-detail td{background:var(--g1);font-size:16px;line-height:1.6;color:var(--g6);padding:.5rem .75rem .7rem 2.1rem}
+.reg-toggle{background:none;border:none;cursor:pointer;padding:0 .45rem 0 0;font:inherit;color:var(--g4);vertical-align:baseline}
+.reg-toggle .ap-arrow{display:inline-block;font-size:16px;transition:transform .2s}tr.reg-row.open .reg-toggle .ap-arrow{transform:rotate(90deg)}
+</style>
 </head>
 <body>
 <div class="c">
@@ -296,8 +307,8 @@ point; a registry checked only by its author is a registry checked by nobody.</p
     </tbody>
   </table>
 </div>
-<div class="sigma-note note-read" style="margin:1.25rem 0 0">
-  <span class="kind">How to read this table</span>
+<div class="sigma-note note-fold note-read" style="margin:1.25rem 0 0">
+  <span class="kind fold-toggle" onclick="foldToggle(this)">How to read this table <span class="fold-arrow">▸</span></span><div class="fold-body">
   <p style="margin:0 0 .5rem"><b>How to read the σ column.</b> Every measurement comes with a bar: one standard deviation, σ, the experimenters’ own statement of how far their number might sit from the truth. The σ column divides the gap between prediction and measurement by that bar. The sign says which side: + above the measurement, − below. The Error column gives the same gap in the number’s own units. The odds below are the chance of landing <i>at least</i> that far from the truth by chance alone, counting both directions.</p>
   <ul style="margin:0 0 .5rem 1.25rem;padding:0">
     <li><b>Under 1σ</b> — inside the bar. Agreement: about two honest measurements in three land this close, and one in three lands further out by chance alone.</li>
@@ -307,16 +318,16 @@ point; a registry checked only by its author is a registry checked by nobody.</p
     <li><b>Above 5σ</b> — dead. The two corpses on this page sit at 7.24σ and 5.7σ. They are shown, never repaired.</li>
   </ul>
   <p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both rows are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA row reads dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. The author stands behind the realised value. AP28’s structural value, +0.69%, carried an omission — the arena’s held ε, priced in AP44 — and stands beside it as the record of that omission: the neutron’s fired row exposed a structural error whose consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p>
-</div>
+</div></div>
 <h2 id="register">Ø The register</h2>
 <p style="margin:0 0 .75rem">Each registration with its standing, the condition under which it dies, its frozen document and script, and the commit that timestamps it. The numbers are in the table above.</p>
 <div class="tbl-wrap">
-<table class="data scoreboard">
+<table class="data scoreboard reg-fold">
   <thead>
     <tr>
       <th>Prediction</th>
       <th>Status</th>
-      <th class="wrap">Execution window / kill</th>
+      <th class="wrap">Kill condition — the crux</th>
       <th>Document</th>
       <th>Script</th>
       <th>Commit</th>
@@ -324,127 +335,141 @@ point; a registry checked only by its author is a registry checked by nobody.</p
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td class="wrap"><b>Proton–electron mass ratio</b><br>the series closed (AP49) · KS-HOLD.1</td>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Proton–electron mass ratio</b></td>
       <td><span class="badge live">LIVE</span></td>
       <td class="wrap">Dies at 3σ once measurement uncertainty ≤ 3.4 ppt with the central value unchanged (now 17.4 ppt; ~3–5 yr); 5σ at 2.1 ppt</td>
-      <td><a href="doc/2026-09-06-mp-me-closed.html">mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
+      <td><a href='/prereg/doc/2026-09-06-mp-me-closed'>mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
       <td><a href="verify_prereg.py">verify_prereg.py</a></td>
       <td class="mono">6772e24</td>
       <td class="mono">2026-09-06</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>Proton–electron mass ratio</b><br>at order α² (AP30) — superseded by reference, kept</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>the series closed (AP49) · KS-HOLD.1</b></td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Proton–electron mass ratio</b></td>
       <td><span class="badge sup">SUPERSEDED</span></td>
-      <td class="wrap">D = 1836.152673444331 at +0.57σ, frozen 2 August 2026 (digest 6ea78dac…). Superseded by the closed form, never replaced by it.</td>
-      <td><a href="doc/2026-08-02-mp-me-alpha3.html">mp-me-alpha3</a> <span class="raw">(<a href="2026-08-02-mp-me-alpha3.md">raw</a>)</span></td>
+      <td class="wrap">Superseded by the closed form, never replaced by it.</td>
+      <td><a href='/prereg/doc/2026-08-02-mp-me-alpha3'>mp-me-alpha3</a> <span class="raw">(<a href="2026-08-02-mp-me-alpha3.md">raw</a>)</span></td>
       <td><a href="verify_prereg.py">verify_prereg.py</a></td>
       <td class="mono">prereg-2026-08-02</td>
       <td class="mono">2026-09-06</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>The base of the chain</b><br>KS-HOLD.3 · AP49</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>at order α² (AP30) — superseded by reference, kept</b> — D = 1836.152673444331 at +0.57σ, frozen 2 August 2026 (digest 6ea78dac…).</td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>The base of the chain</b></td>
       <td><span class="badge live">LIVE</span></td>
-      <td class="wrap">Bare 21α or the leaked repair: the two bases predict 1836.152673445 and 1836.152673408, 3.7 × 10⁻⁸ apart. CODATA sits between them (+0.59σ / −0.56σ) and decides nothing yet — decided at about ten times today’s precision (12σ at 1.7 ppt, ~7σ at 3 ppt). Fires if the measurement settles on the leaked value, or on neither.</td>
-      <td><a href="doc/2026-09-06-mp-me-closed.html">mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
+      <td class="wrap">Fires if the measurement settles on the leaked value, or on neither.</td>
+      <td><a href='/prereg/doc/2026-09-06-mp-me-closed'>mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
       <td><a href="verify_prereg.py">verify_prereg.py</a></td>
       <td class="mono">6772e24</td>
       <td class="mono">2026-09-06</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>The reading of the sixteen</b><br>KS-HOLD.2 · AP49 — structural</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-HOLD.3 · AP49</b> — Bare 21α or the leaked repair: the two bases predict 1836.152673445 and 1836.152673408, 3.7 × 10⁻⁸ apart. CODATA sits between them (+0.59σ / −0.56σ) and decides nothing yet — decided at about ten times today’s precision (12σ at 1.7 ppt, ~7σ at 3 ppt).</td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>The reading of the sixteen</b></td>
       <td><span class="badge live">LIVE</span></td>
-      <td class="wrap">A second-order support count is its object through the four dimensional expressions: 21 × 4, 2 × 4, 4 × 4. Fires if any second-order count in the family needs its object squared, its object through three dimensions, or any count not of this form. No measurement decides it.</td>
-      <td><a href="doc/2026-09-06-mp-me-closed.html">mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
+      <td class="wrap">Fires if any second-order count in the family needs its object squared, its object through three dimensions, or any count not of this form. No measurement decides it.</td>
+      <td><a href='/prereg/doc/2026-09-06-mp-me-closed'>mp-me-closed</a> <span class="raw">(<a href="2026-09-06-mp-me-closed.md">raw</a>)</span></td>
       <td>—</td>
       <td class="mono">6772e24</td>
       <td class="mono">2026-09-06</td>
     </tr>
-    <tr id="ks-npp-1">
-      <td class="wrap"><b>Neutron–proton mass difference</b><br>KS-NPP.1 (AP30)</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-HOLD.2 · AP49 — structural</b> — A second-order support count is its object through the four dimensional expressions: 21 × 4, 2 × 4, 4 × 4.</td></tr>
+    <tr id="ks-npp-1" class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Neutron–proton mass difference</b></td>
       <td><span class="badge fired">FIRED — 2026-08-02</span></td>
-      <td class="wrap">Empirical limb fired (offset 2.12 ppm vs a 0.288 ppm bar). No repair offered: the required correction is negative, every term is positive. Structural limbs KS-NPP.2/.3 open.</td>
-      <td><a href="doc/ERRATA-2026-08-02.html">ERRATA §E6a</a> <span class="raw">(<a href="ERRATA-2026-08-02.md">raw</a>)</span></td>
+      <td class="wrap">Empirical limb fired (offset 2.12 ppm vs a 0.288 ppm bar).</td>
+      <td><a href='/prereg/doc/errata-2026-08-02'>ERRATA §E6a</a> <span class="raw">(<a href="ERRATA-2026-08-02.md">raw</a>)</span></td>
       <td>— (two-route check, see errata)</td>
       <td class="mono">prereg-2026-08-02</td>
       <td class="mono">2026-09-04</td>
     </tr>
-    <tr id="ks-45-1">
-      <td class="wrap"><b>Hubble constant H₀ from the floor inverted</b><br>KS-45.1 (AP18)</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-NPP.1 (AP30)</b> — No repair offered: the required correction is negative, every term is positive. Structural limbs KS-NPP.2/.3 open.</td></tr>
+    <tr id="ks-45-1" class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Hubble constant H₀ from the floor inverted</b></td>
       <td><span class="badge fired">FIRED — 2026-09-03</span></td>
-      <td class="wrap">Fired by AP48 on the corpus’s own derived rate, as AP46 §9 pre-registered. The registered ±1.2 omitted the ±0.24 systematic on a₀; on the honest width, 74.3 ± 14.9, the floor’s relation survives at 0.46σ (KS-45 live). Shown, never repaired. The corpus’s H₀ entry is now KS-ASM.1.</td>
-      <td><a href="doc/2026-08-02-H0-KS45.1.html">H0-KS45.1</a> <span class="raw">(<a href="2026-08-02-H0-KS45.1.md">raw</a>)</span> · <a href="doc/ERRATUM-2026-09-03-H0-KS45.1.html">erratum</a> <span class="raw">(<a href="ERRATUM-2026-09-03-H0-KS45.1.md">raw</a>)</span></td>
+      <td class="wrap">Fired by AP48 on the corpus’s own derived rate, as AP46 §9 pre-registered.</td>
+      <td><a href='/prereg/doc/2026-08-02-h0-ks45.1'>H0-KS45.1</a> <span class="raw">(<a href="2026-08-02-H0-KS45.1.md">raw</a>)</span> · <a href='/prereg/doc/erratum-2026-09-03-h0-ks45.1'>erratum</a> <span class="raw">(<a href="ERRATUM-2026-09-03-H0-KS45.1.md">raw</a>)</span></td>
       <td><a href="verify_family.py">verify_family.py</a></td>
       <td class="mono">prereg-2026-08-02</td>
       <td class="mono">2026-09-04</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>Expansion rate H₀ — the closure</b><br>KS-ASM.1 (AP48)</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-45.1 (AP18)</b> — The registered ±1.2 omitted the ±0.24 systematic on a₀; on the honest width, 74.3 ± 14.9, the floor’s relation survives at 0.46σ (KS-45 live). Shown, never repaired. The corpus’s H₀ entry is now KS-ASM.1.</td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Expansion rate H₀ — the closure</b></td>
       <td><span class="badge live">LIVE</span></td>
-      <td class="wrap">Dies if the expansion rate, as the data settle it, lands outside 64.4–70.8 in either direction — including if the Cepheid ladder’s 73 is confirmed as the expansion rate; on that edge flat ΛCDM at the sky’s partition dies with it, and KS-STRETCH.3 fires too (the age would be 12.78 Gyr)</td>
-      <td><a href="doc/2026-09-04-H0-KS-ASM.1.html">H0-KS-ASM.1</a> <span class="raw">(<a href="2026-09-04-H0-KS-ASM.1.md">raw</a>)</span></td>
+      <td class="wrap">Dies if the expansion rate, as the data settle it, lands outside 64.4–70.8 in either direction</td>
+      <td><a href='/prereg/doc/2026-09-04-h0-ks-asm.1'>H0-KS-ASM.1</a> <span class="raw">(<a href="2026-09-04-H0-KS-ASM.1.md">raw</a>)</span></td>
       <td><a href="verify_family.py">verify_family.py</a></td>
       <td class="mono">wave-2026-09-04</td>
       <td class="mono">2026-09-04</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>Age of the universe — one cycle</b><br>KS-STRETCH.3 (AP46)</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-ASM.1 (AP48)</b> — — including if the Cepheid ladder’s 73 is confirmed as the expansion rate; on that edge flat ΛCDM at the sky’s partition dies with it, and KS-STRETCH.3 fires too (the age would be 12.78 Gyr)</td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Age of the universe — one cycle</b></td>
       <td><span class="badge live">LIVE</span></td>
-      <td class="wrap">Dies if the age, as the cosmological data settle it, differs from one cycle by more than one lane-time, 0.66 Gyr, either way (an early-dark-energy age near 12.9 fires it)</td>
-      <td><a href="doc/2026-09-04-age-KS-STRETCH.3.html">age-KS-STRETCH.3</a> <span class="raw">(<a href="2026-09-04-age-KS-STRETCH.3.md">raw</a>)</span></td>
+      <td class="wrap">Dies if the age, as the cosmological data settle it, differs from one cycle by more than one lane-time, 0.66 Gyr, either way</td>
+      <td><a href='/prereg/doc/2026-09-04-age-ks-stretch.3'>age-KS-STRETCH.3</a> <span class="raw">(<a href="2026-09-04-age-KS-STRETCH.3.md">raw</a>)</span></td>
       <td><a href="verify_family.py">verify_family.py</a></td>
       <td class="mono">wave-2026-09-04</td>
       <td class="mono">2026-09-04</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>Neutron–proton mass difference — realised</b><br>KS-FLIP.1 (AP47)</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-STRETCH.3 (AP46)</b> — (an early-dark-energy age near 12.9 fires it)</td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Neutron–proton mass difference — realised</b></td>
       <td><span class="badge live">LIVE</span></td>
-      <td class="wrap">Dies if an improved measurement departs from the expression Δ_bare/(1 + α²/8π) beyond the bar, 7.4 × 10⁻⁷ mₑ (0.29 ppm). Frozen beside the corpse above, never in its place. The absent α³ term (KS-FLIP.3) waits on ~20× better B_d metrology.</td>
-      <td><a href="doc/2026-09-04-neutron-KS-FLIP.1.html">neutron-KS-FLIP.1</a> <span class="raw">(<a href="2026-09-04-neutron-KS-FLIP.1.md">raw</a>)</span></td>
+      <td class="wrap">Dies if an improved measurement departs from the expression Δ_bare/(1 + α²/8π) beyond the bar, 7.4 × 10⁻⁷ mₑ (0.29 ppm).</td>
+      <td><a href='/prereg/doc/2026-09-04-neutron-ks-flip.1'>neutron-KS-FLIP.1</a> <span class="raw">(<a href="2026-09-04-neutron-KS-FLIP.1.md">raw</a>)</span></td>
       <td><a href="verify_family.py">verify_family.py</a></td>
       <td class="mono">wave-2026-09-04</td>
       <td class="mono">2026-09-04</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>Gravitational constant G — realised, and the fork</b><br>KS-CCC.3 (AP44)</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-FLIP.1 (AP47)</b> — Frozen beside the corpse above, never in its place. The absent α³ term (KS-FLIP.3) waits on ~20× better B_d metrology.</td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Gravitational constant G — realised, and the fork</b></td>
       <td><span class="badge live">LIVE</span></td>
-      <td class="wrap">The fork: as apparatus systematics resolve, the adjusted G migrates ~300 ppm downward toward 6.672 × 10⁻¹¹ — or converges upward toward 6.7206 and the commitment dies. Tests existence and direction, not magnitude.</td>
-      <td><a href="doc/2026-09-04-G-KS-CCC.3.html">G-KS-CCC.3</a> <span class="raw">(<a href="2026-09-04-G-KS-CCC.3.md">raw</a>)</span></td>
+      <td class="wrap">The fork: as apparatus systematics resolve, the adjusted G migrates ~300 ppm downward toward 6.672 × 10⁻¹¹ — or converges upward toward 6.7206 and the commitment dies.</td>
+      <td><a href='/prereg/doc/2026-09-04-g-ks-ccc.3'>G-KS-CCC.3</a> <span class="raw">(<a href="2026-09-04-G-KS-CCC.3.md">raw</a>)</span></td>
       <td><a href="verify_family.py">verify_family.py</a></td>
       <td class="mono">wave-2026-09-04</td>
       <td class="mono">2026-09-04</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>α(0) does not vary across the record history</b><br>P-GLASS.1 · KS-GLASS.3 (AP51) — a null; the anchoring is outstanding</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-CCC.3 (AP44)</b> — Tests existence and direction, not magnitude.</td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>α(0) does not vary across the record history</b></td>
       <td><span class="badge live">LIVE</span></td>
       <td class="wrap">Dies on a variation of α(0) at 5σ or better, by two independent methods, standing after their systematics are reviewed</td>
-      <td><a href="doc/2026-09-11-alpha-no-variation.html">alpha-no-variation</a> <span class="raw">(<a href="2026-09-11-alpha-no-variation.md">raw</a>)</span></td>
+      <td><a href='/prereg/doc/2026-09-11-alpha-no-variation'>alpha-no-variation</a> <span class="raw">(<a href="2026-09-11-alpha-no-variation.md">raw</a>)</span></td>
       <td>—</td>
       <td class="mono">c9c02cd</td>
       <td class="mono">2026-09-11</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>Visible fraction</b><br>KS-41.1 (AP41)</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>P-GLASS.1 · KS-GLASS.3 (AP51) — a null; the anchoring is outstanding</b></td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Visible fraction</b></td>
       <td><span class="badge live">LIVE — nearest to firing</span></td>
       <td class="wrap">Dies if Ω_b/Ω_total central value exceeds 4.81% at sub-0.5% precision (~5 yr)</td>
-      <td><a href="doc/2026-08-02-visible-fraction-KS41.1.html">visible-fraction-KS41.1</a> <span class="raw">(<a href="2026-08-02-visible-fraction-KS41.1.md">raw</a>)</span></td>
+      <td><a href='/prereg/doc/2026-08-02-visible-fraction-ks41.1'>visible-fraction-KS41.1</a> <span class="raw">(<a href="2026-08-02-visible-fraction-KS41.1.md">raw</a>)</span></td>
       <td><a href="verify_cosmology.py">verify_cosmology.py</a></td>
       <td class="mono">prereg-2026-08-02</td>
       <td class="mono">2026-09-04</td>
     </tr>
-    <tr>
-      <td class="wrap"><b>Dark-sector clock</b><br>KS-42.6 (AP42)</td>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-41.1 (AP41)</b></td></tr>
+    <tr class="reg-row">
+      <td class="wrap"><button class="reg-toggle" onclick="regToggle(this)" aria-label="More on this row"><span class="ap-arrow">▸</span></button><b>Dark-sector clock</b></td>
       <td><span class="badge live">LIVE — conditional on D48</span></td>
       <td class="wrap">Dies if Ω_DM/Ω_b at z ≳ 4 matches the z = 0 value, or a dark-matter particle is detected (KS-42.1)</td>
-      <td><a href="doc/2026-08-02-dark-clock-KS42.6.html">dark-clock-KS42.6</a> <span class="raw">(<a href="2026-08-02-dark-clock-KS42.6.md">raw</a>)</span></td>
+      <td><a href='/prereg/doc/2026-08-02-dark-clock-ks42.6'>dark-clock-KS42.6</a> <span class="raw">(<a href="2026-08-02-dark-clock-KS42.6.md">raw</a>)</span></td>
       <td><a href="verify_cosmology.py">verify_cosmology.py</a></td>
       <td class="mono">prereg-2026-08-02</td>
       <td class="mono">2026-08-03</td>
     </tr>
+    <tr class="reg-detail"><td colspan="7" class="wrap"><b>KS-42.6 (AP42)</b></td></tr>
   </tbody>
 </table>
 </div>
-<p style="font-size:16px;color:var(--g4)"><b>Commit</b> = the commit tagged
+<div class="sigma-note note-fold" style="margin:1rem 0 0">
+  <span class="kind fold-toggle" onclick="foldToggle(this)">Commit · last checked · the two documents that are not predictions <span class="fold-arrow">▸</span></span><div class="fold-body"><p style="margin:0"><b>Commit</b> = the commit tagged
 <span class="mono">prereg-2026-08-02</span> (the freezes of 2 August) or
 <span class="mono">wave-2026-09-04</span> (the wave) in the repository; that hash
 is the timestamp of record. The papers of the wave carry their own freezes,
@@ -467,7 +492,7 @@ the template, the readiness check that refuses a freeze with a blank field or a
 lattice number in it, and the digest-and-commit step — is
 <a href="seal_lattice_freeze.py">seal_lattice_freeze.py</a>; the derivation itself is
 reserved to the author, alone, by the protocol’s own §1) — explicitly
-<b>not a freeze</b>.</p>
+<b>not a freeze</b>.</p></div></div>
 
 <h2 id="span">Ø The span — the field each prediction is made in</h2>
 <p style="margin:0 0 .75rem">The same axiom and the same single measured input, the fine-structure constant α, are read at every scale the corpus reaches. This is the same set of predictions as the scoreboard, sorted by the field of physics each one is made in and the size of the thing it describes.</p>
@@ -485,12 +510,12 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
   </tbody>
 </table>
 </div>
-<div class="sigma-note note-arg" style="margin:1.25rem 0 0">
-  <span class="kind">What the span shows — and what it does not</span>
+<div class="sigma-note note-fold note-arg" style="margin:1.25rem 0 0">
+  <span class="kind fold-toggle" onclick="foldToggle(this)">What the span shows — and what it does not <span class="fold-arrow">▸</span></span><div class="fold-body">
   <p style="margin:0 0 .5rem"><b>What the span shows.</b> These are not one field’s predictions. They run from the weight of a proton to the rate at which the universe expands — about forty-one orders of magnitude in length scale, from the femtometre of a nucleus to the Hubble radius — and each is derived from the same axiom and the same one measured number. <b>Seven of the eleven live rows in the scoreboard land inside one standard deviation</b> of the measurement they face: the proton’s mass ratio, the neutron’s realised difference, the realised G against atom interferometry, the acceleration floor, the expansion rate, and two of the three dark-sector fractions.</p>
   <p style="margin:0 0 .5rem"><b>Why that is not proof.</b> The rows are not independent tests, and nothing here should be read as though they were. α is the one input to all of them. The acceleration floor is derived from the expansion rate and the expansion rate from the cycle and the partition together, so those sit on one chain read at three points; the three dark-sector fractions come from a single timescale, not three derivations. Counted as families rather than rows, the live set is four at most — the mass scaffold, the gravitational coupling, the cosmological chain, and the dark partition — and even those are coupled, since the rate is a closure <i>of</i> the partition and the cycle. One of the seven, the realised G, reads +0.01σ against atom interferometry and −16σ against the CODATA adjustment; both readings are in the table above, and the reader is entitled to weigh them.</p>
   <p style="margin:0"><b>What it does show.</b> Where a structural omission was found, paying it moved three separate derivations toward measurement rather than away. The bare neutron–proton row fired at 7.24σ on 2 August 2026; pricing the held distinction that row had treated as free brought the difference to −0.005σ (AP47). The same omission, priced at the arena, moved the gravitational constant from +0.69% to −0.036% (AP44). The same mechanism at the cosmological scale replaced the floor’s inverted 74.3 — which fired — with a rate closed out of the partition and the cycle, 67.45, at 0.1σ against the relic glow (AP46, AP48). Three limbs, one correction, all three improving. That is what the span supports, and it is worth saying exactly what it is and what it is not. It is evidence that the framework behaves <i>as a structure</i>: an omission found in one place, once accounted for, propagates into other fields and improves them there too. It is not evidence that nature agrees this is the structure of reality. That is a separate claim, and it is not settled here — it is settled, if it is ever settled, at the switches: the conditions listed above under which each of these rows dies. Not yet.</p>
-</div>
+</div></div>
 
 <h2 id="numerology">Ø “This is just integer curve-fitting”</h2>
 <p style="margin:0 0 .75rem">The charge, at full strength: <i>you have a handful of small integers — 3, 4, 6, 21 — and π, and a free choice of where to put them; with that much freedom you can hit any target you like.</i> As a general principle that is correct, and the corpus does not dispute it. Precision alone proves nothing. The question is not how close the numbers land. It is <b>how much freedom was available when they were written</b> — and that is computable.</p>
@@ -509,13 +534,13 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
   </tbody>
 </table>
 </div>
-<div class="sigma-note note-arg" style="margin:1.25rem 0 0">
-  <span class="kind">The rigidity argument, and where it is weak</span>
+<div class="sigma-note note-fold note-arg" style="margin:1.25rem 0 0">
+  <span class="kind fold-toggle" onclick="foldToggle(this)">The rigidity argument, and where it is weak <span class="fold-arrow">▸</span></span><div class="fold-body">
   <p style="margin:0 0 .5rem"><b>Read the G column.</b> N sits in an exponent, α<sup>N</sup>. One step changes G by a factor of 137 — not 137 per cent, a factor of 137. The mass ratio alone would tolerate 20 or 22 to within ten per cent; the exponential closes that window to a single integer. <b>The same integer is pinned to eleven decimal places by a polynomial, to within a factor of 1.007 by an exponential, and to within a few per cent by a reciprocal — three functional forms, three unrelated observables, and no value but 21 survives all three.</b> (The G column shows AP28’s structural value, the form the exponent test is written against; AP44’s realised value, −0.036%, carries the same exponent.)</p>
   <p style="margin:0 0 .5rem"><b>Where the argument is weak — stated first, not last.</b> Rigidity is not uniqueness: this shows the integer cannot move <i>within the corpus’s own family</i> and says nothing about whether a different family of primitives would also reach 1836. That is KS-30.4’s between-family limb, and it is open and unclosed. Most of these numbers are retrospective: the measurement was already on the public record when the derivation was written. That is an order of events, not a method — it does not mean the number was aimed at, and where a structural choice could have been made by comparison with a measured value this corpus fences it rather than concedes it: <a href="/killswitches/#ks-ccc-1">KS-CCC.1</a> binds the commitment behind G and fires on any refinement whose selection depended on comparison with measured G and whose history is undisclosed. It is live and has not fired. But the order is what it is, and <b>no outside reader can distinguish an honest retrospective derivation from a reverse-engineered one by inspection</b>; only the frozen forward predictions and the sealed lattice protocol can carry that weight, and they carry it only in the future. The α² coefficient 16 was owed under KS-30.3 until AP49 The Hold paid it at the structural register on 6 September 2026: the sixteen is four conditions of a record held in three dimensions over time, four times four. The switch’s own test stands — the closed form dies at three sigma once the measurement reaches 3.4 ppt.</p>
   <p style="margin:0"><b>What a fitted framework cannot produce.</b> Fitting has a signature: everything lands, nothing is ever wrong, every error sits comfortably inside whatever tolerance was quoted. This corpus does not have that signature. The structural G lands at +0.69% — 309σ on CODATA’s bar, and roughly thirteen times the spread between G experiments; it passes its pre-stated one-per-cent bar and nothing more, and <b>a fitter would have done better</b>. The neutron–proton row failed at 7.24σ, found and published by the corpus itself. The uniqueness claim was found wrong and corrected the same day. The visible fraction was restated from 2.0% to 2.46σ once the observed value was taken from the middle of its range rather than the bottom. The muon is unreachable and the corpus says so. Five negative results, four of them found and published before anyone outside asked. Fitting has no mechanism for producing its own counter-evidence.</p>
   <p style="margin:.5rem 0 0">The full argument, with the arithmetic and the sensitivity script: <a href="doc/RIGIDITY.html">RIGIDITY.md</a> <span class="raw">(<a href="RIGIDITY.md">raw</a>)</span> · <a href="verify_rigidity.py">verify_rigidity.py</a> · <a href="doc/RIGIDITY-NOTE-2026-09-04.html">dated note of 4 September 2026</a> <span class="raw">(<a href="RIGIDITY-NOTE-2026-09-04.md">raw</a>)</span> (the frozen document’s “31σ” for the structural G is corrected to 309σ there, and its H₀ threshold superseded). Its sentence that the α² coefficient 16 has no structural decomposition is superseded too: AP49 The Hold paid KS-30.3 on 6 September 2026. And §4(b)’s “written against a measurement that already existed” is corrected by the <a href="doc/RIGIDITY-NOTE-2026-09-19.html">dated note of 19 September 2026</a> <span class="raw">(<a href="RIGIDITY-NOTE-2026-09-19.md">raw</a>)</span> — retrospective is the order of events and stands; written against is a claim about method, and it is withdrawn. The frozen document is not edited.</p>
-</div>
+</div></div>
 
 <p style="margin:1.75rem 0 .75rem"><b>The open leg, now enumerated (4 September 2026).</b> The paragraph above concedes that rigidity is not uniqueness — it shows 21 cannot move <i>inside</i> the corpus’s family and says nothing about other families. That was the weakest point in this defence, so it was searched rather than argued. The space the charge names was made concrete — the integers 1 to 30, π, the four arithmetic operations, and no more tokens than the corpus’s own five — and every formula in it was enumerated against the measured ratio. The result splits, and one half goes against the corpus.</p>
 <div class="tbl-wrap">
@@ -527,18 +552,19 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
   </tbody>
 </table>
 </div>
-<div class="sigma-note note-result" style="margin:1.25rem 0 0">
-  <span class="kind">The result of the search — one leg against, one for</span>
+<div class="sigma-note note-fold note-result" style="margin:1.25rem 0 0">
+  <span class="kind fold-toggle" onclick="foldToggle(this)">The result of the search — one leg against, one for <span class="fold-arrow">▸</span></span><div class="fold-body">
   <p style="margin:0 0 .5rem"><b>Leg A, stated against the corpus.</b> About three thousand formulas no more complex than this one hit the proton ratio at the corpus’s own accuracy, and fifteen beat it — 22 + 10/(19 − 9π) lands within 3.4 × 10⁻⁸ of the target and means nothing at all. <b>The proton ratio’s precision has no evidential weight on its own, and any presentation leading with the eleven digits is misleading.</b> RIGIDITY.md said exactly this in words before the search was run; this is the number behind the words.</p>
   <p style="margin:0 0 .5rem"><b>Leg B, stated for it.</b> None of those three thousand formulas has a second life. They reach one number and stop. The corpus’s claim was never the ratio alone — it is that one integer carries three unrelated observables, and there the exponential in G does the discriminating: one step in N changes what G demands by a factor of 137. Across 14 to 28, exactly one integer carries all three, and it is 21.</p>
   <p style="margin:0"><b>What is still open, and why the switch stays live.</b> The search enumerates one coefficient, not three formulas jointly, so it cannot rule out a different <i>kind</i> of primitive set carrying three observables by some other route. KS-30.4’s between-family limb is narrowed, not closed. <b>Ruled by the author on 4 September 2026: the switch stays LIVE.</b> Full method and result: <a href="doc/FINDING-2026-09-04-KS-30.4-between-family.html">the finding of 4 September 2026</a> <span class="raw">(<a href="FINDING-2026-09-04-KS-30.4-between-family.md">raw</a>)</span> · <a href="verify_between_family.py">verify_between_family.py</a>.</p>
-</div>
+</div></div>
 
 <!-- ERRATA -->
 <h2 id="errata">Ø Errata — 2026-08-02</h2>
 <p style="color:var(--g5)">What changed on 2026-08-02 and why, in a form a referee can check. Full text: <a href="doc/ERRATA-2026-08-02.html">ERRATA-2026-08-02.md</a> <span class="raw">(<a href="ERRATA-2026-08-02.md">raw</a>)</span>.</p>
 
-<h4>E1 — α mislabelled</h4>
+<div class="sigma-note note-fold" style="margin:.5rem 0 1.5rem">
+  <span class="kind fold-toggle" onclick="foldToggle(this)">The seven entries, E1 to E7 <span class="fold-arrow">▸</span></span><div class="fold-body"><h4>E1 — α mislabelled</h4>
 <p><span class="mono">1/137.035999084</span> is CODATA <b>2018</b>. CODATA 2022 is <span class="mono">1/137.035999177(21)</span>. Effect on the proton prediction: <b>0.013 ppt</b> — numerically irrelevant, the label was wrong.</p>
 <h4>E2 — uniqueness of the 1836 decomposition</h4>
 <p>Two decompositions survive the three stated conditions, not one. A fourth condition (factor count non-increasing) leaves exactly one. AP30’s wording is corrected from “fewer” to <b>“no more than.”</b> Condition 4 formalised 2026-08-02, after the alternative surfaced. Declared.</p>
@@ -557,6 +583,8 @@ reserved to the author, alone, by the protocol’s own §1) — explicitly
 <p>The measurement requires 0.1826623 ± 0.000601 (0.33%). 21×16/1836 agrees at 0.57σ; <b>336 is the only product of powers of {21, 3, 4} inside 3σ.</b> The value is settled; the decomposition is what is owed.</p>
 <h4>E7 — citation</h4>
 <p>Alighanbari et al. is <b>Nature 644, 69–75 (2025)</b>. Corrects any occurrence of “Nature 625.”</p>
+
+</div></div>
 
 <hr>
 
@@ -597,7 +625,8 @@ python3 verify_cosmology.py    # the three cosmology freezes
 python3 verify_rigidity.py     # the rigidity table
 python3 verify_family.py       # the wave: the realised G, the realised neutron, the cycle, the closure</div>
 <p>Scripts: <a href="verify_prereg.py">verify_prereg.py</a> · <a href="verify_cosmology.py">verify_cosmology.py</a> · <a href="verify_rigidity.py">verify_rigidity.py</a> · <a href="verify_between_family.py">verify_between_family.py</a> · <a href="verify_family.py">verify_family.py</a>. The head of the proton script:</p>
-<div class="verify-wrap">
+<div class="sigma-note note-fold" style="margin:.5rem 0 0">
+  <span class="kind fold-toggle" onclick="foldToggle(this)">The head of the proton script <span class="fold-arrow">▸</span></span><div class="fold-body"><div class="verify-wrap">
   <button class="copy-btn" onclick="copyCode(this)">Copy</button>
   <pre class="verify-code"><code>from mpmath import mp, mpf, pi, sqrt
 mp.dps = 50
@@ -624,7 +653,7 @@ resid = D_CLOSED - MP_ME                       # = +1.895e-8 = +10.3 ppt
 # discrepancy = resid / u = +0.59 sigma. The chain ADDS at every order and has
 # no negative term, so it cannot close a positive gap -- and none is offered.
 # c3 = 21 * 16**2 / 1836**2 = +1.595e-3, its term +6.2e-10, sign in advance.</code></pre>
-</div>
+</div></div></div>
 
 <p style="margin:1.5rem 0 .75rem"><b>Or verify them right here — offline.</b> Each button re-derives the numbers independently in pure JavaScript at 60-digit precision, entirely in your browser: no install, no Python, no network, nothing sent anywhere. The reference scripts (<code>verify_prereg.py</code>, <code>verify_cosmology.py</code>, <code>verify_rigidity.py</code>) agree to every digit — a second, independent implementation that matches is stronger than re-running one file twice.</p>
 <div class="run-wrap">
@@ -740,6 +769,12 @@ document.addEventListener('keydown',function(e){
   n.classList.remove('open','lang-open');
   n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
 });
+</script>
+<script id="prereg-folds-2026-09-19">
+function foldToggle(el){el.closest('.note-fold').classList.toggle('open');}
+function regToggle(btn){btn.closest('tr').classList.toggle('open');}
+(function(){function o(){var h=location.hash&&location.hash.slice(1);if(!h)return;var el=document.getElementById(h);if(el&&el.classList.contains('reg-row'))el.classList.add('open');}
+window.addEventListener('hashchange',o);o();})();
 </script>
 </body>
 </html>
