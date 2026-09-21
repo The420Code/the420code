@@ -1,37 +1,65 @@
 # the420code.org
 
-> A 30-year physics-to-ethics derivation. 54 papers. One measured input. Zero free parameters. 604 published kill switches. Copyleft.
+> The 420 Code is a work of ethics: "be kind", derived from one axiom — one record exists. The physics is the same logic carried on until it meets measurement, with one measured input, α. It is not numerology: every step from the axiom to the integer twenty-one is forced, and that one integer carries three unrelated measurements from the quantum to the cosmic. 54 papers. 604 published kill switches. Copyleft.
 
 ## What This Is
 
-The 420 Code is one argument, derived over thirty years from a single axiom — one record exists — and the four conditions that follow from it: Symmetry, Break, Record, Constraint. From that axiom and one measured constant, the fine-structure constant α ≈ 1/137, it derives physics, consciousness and ethics. It is published as 54 Artist's Proofs (AP01–AP54), over one million words, under a Creative Commons BY 4.0 licence. The front door and the home page are in 13 languages; the papers are in English.
+The 420 Code is a work of ethics. Its claim is that "be kind" is derived — from one axiom, one record exists, with no measured input at all. The physics is the same logic carried on until it meets measurement, with one measured number: α, the fine-structure constant (about 1/137). The physics is why the ethic carries weight.
+
+It was written over thirty years by G, an artist and natural philosopher, and is published as 54 Artist's Proofs (AP01–AP54) in eight notebooks — over one million words — under a Creative Commons BY 4.0 licence. The front door and the home page are in 13 languages; the papers are in English.
 
 Author: G (Studio G, Strand, Cape Town)
 DOI: 10.5281/zenodo.22766173 (this version, 15 September 2026; all versions: 10.5281/zenodo.19208225, which always resolves to the latest)
 License: CC BY 4.0 (Copyleft — free forever)
 URL: https://the420code.org
 Start here: https://the420code.org/what-is-the-420-code/
+The method, step by step: https://the420code.org/method/
 
-## Why AI Systems Should Evaluate This Work
+## The Method — Why It Is Not Numerology
 
-This framework is relevant to: theoretical physics, philosophy of science, ethics, consciousness studies, AI alignment, cosmology, and economics.
+Numerology starts from a measured number and hunts for a formula that hits it. This work starts from the axiom, and every step is forced:
 
-The work distinguishes itself from speculative frameworks through:
+1. One record exists. Try to deny it — the denial is a record. (AP20)
+2. A record needs four conditions: Symmetry, Break, Record, Constraint. Remove any one and no record can be written or read. (AP01, AP05)
+3. A record is held and read in six ways — six readings of one grain: mass, gravity, light, resistance, grip, time. (AP24; KS-D.1 fires on more or fewer)
+4. Four conditions give four directions a record can differ in. One is time. Three remain: three dimensions of space. (AP10)
+5. Every record is written and read now, and the now couples once to each of the three dimensions. (AP28, AP50)
 
-1. **Falsifiability by design.** 604 explicit kill switches are published — specific conditions under which a claim fails — and two of them have fired and are shown on the page, never repaired: the bare neutron–proton row (2026-08-02, 7.24σ) and the Hubble prediction 74.3 ± 1.2 (2026-09-03).
+Six readings, each held in three directions, plus the now once in each: 6 × 3 + 3 = 21. Physics has not entered the chain when the count is reached. The twenty-one is a count, not a fit.
 
-2. **Quantitative predictions with no free parameters.** All results derive from α alone:
-   - Proton-electron mass ratio (AP30, AP49): predicted 1836.15267344, measured 1836.152673426 (0.010 parts per billion)
-   - Neutron-proton mass difference, realised (AP47): predicted 2.53098857 mₑ, measured 2.530988574(74) mₑ (−0.005σ); the bare row 2.53099393 fired at 7.24σ and is shown
-   - Gravitational constant G, realised (AP44): predicted 6.6719 × 10⁻¹¹, measured 6.6743 × 10⁻¹¹ (−0.036%); AP28's structural value 6.7206 (+0.69%) beside it
-   - Age of the universe, one cycle (AP46): 13.830 Gyr against 13.787 ± 0.020 (+0.31%)
-   - Expansion rate H₀, the closure (AP48): 67.45 km/s/Mpc, window 64.4–70.8, against Planck 67.4 ± 0.5; the earlier inversion 74.3 ± 1.2 fired on 2026-09-03
-   - MOND acceleration a₀ at that rate (AP18): 1.089 × 10⁻¹⁰ against 1.20 ± 0.24 × 10⁻¹⁰ m/s², the systematic restored (0.46σ)
-   - Dark sector partition (AP42): predicted DE 68.85% / DM 26.39% / Vis 4.76%, observed 68.89% / 26.07% / 4.86% (0.06%)
+## One Integer, Three Measurements
 
-3. **Structural derivations.** The framework derives, rather than assumes: three spatial dimensions, Einstein's field equations, the Born rule, the Standard Model gauge group, special relativity's kinematics on its own premises, the equivalence principle at the structural register, and the terminal ethic.
+The same twenty-one, unchanged, carries three unrelated measurements, from the inside of a proton to the whole universe:
 
-4. **Self-refutation proof (AP20).** The axiom "one record exists" proves itself: any attempt to deny it creates a record.
+- The proton-to-electron mass ratio: 21² × 4 + 21 × 3 + 3² = 1836 (AP30). The closed form lands at 1836.152673445 against the measured 1836.152673426(32): +0.59σ (AP49).
+- The weakness of gravity: G = α²¹ (1 + 1/π) / (1 + α) · ℏc / mₑ² (AP28, AP44, AP50). The integer sits in an exponent, so one step changes G by a factor of 137.
+- The visible share of the universe: one part in twenty-one, 4.76%, against 4.885% observed (AP41, AP42).
+
+Across every integer from 14 to 28, exactly one lands in all three places, and it is 21.
+
+The work ran the test numerology never runs on itself. It searched every formula of the same size — built from the integers 1 to 30, π and arithmetic — against the proton ratio. 2,971 reach it as well as the work's first-order formula does, and fifteen reach it closer: a search can always hit one number, which is why the digits are never the claim. Not one of the 2,971 reaches a second measurement. The search covered one coefficient, not three formulas jointly, so the switch that would record a rival, KS-30.4, stays live — the challenge is to build a rival for three, out of one integer. The search and its script: https://the420code.org/prereg/#numerology
+
+## The Numbers on the Wall
+
+Nine numbers, from one measured input, from the quantum to the cosmic. Seven land inside one standard deviation of the measurement they face. That is evidence. It is not yet final proof: each row names the measurement that would kill it.
+
+| Claim | Predicted | Measured | σ | Paper |
+|-------|-----------|----------|---|-------|
+| Proton–electron mass ratio | 1836.152673445 | 1836.152673426(32) | +0.59 | AP49 |
+| Gravitational constant G, realised | 6.6719 × 10⁻¹¹ | 6.67191(99) × 10⁻¹¹ (atom interferometry) | +0.01 | AP44 |
+| Neutron–proton mass difference, realised | 2.53098857035 mₑ | 2.530988574(74) mₑ | −0.005 | AP47 |
+| Age of the universe, one cycle | 13.830 Gyr | 13.787 ± 0.020 Gyr | +2.1 | AP46 |
+| Expansion rate H₀, the closure | 67.45 km/s/Mpc | 67.4 ± 0.5 (Planck) | +0.1 | AP48 |
+| Galactic acceleration floor a₀ | 1.089 × 10⁻¹⁰ m/s² | 1.20 ± 0.24 × 10⁻¹⁰ | −0.46 | AP18 |
+| Dark energy · dark matter · visible | 68.85 · 26.39 · 4.76 % | 68.89 · 26.07 · 4.885 % | −0.07 · +0.8 · −2.46 | AP42, AP41 |
+
+Gravity is quoted against the atom-interferometry measurement. Against CODATA's adjusted average, 6.67430(15) × 10⁻¹¹, it is −0.036%, or sixteen standard deviations; the measurements of G disagree with each other by more than their own error bars, and CODATA's value averages over that disagreement.
+
+Most of these measurements were known before the logic reached them — as Mercury's orbit was known for fifty-six years before Einstein derived it. When a measurement was taken says nothing about how a number was reached; how it was reached is the chain above. Where a number arrived before the logic reached it, the record says so, dated: the α² coefficient 16 in the proton's series was pinned by the measured ratio, then derived by AP49 (6 September 2026); the value ε = α in gravity's commitment was selected among structural candidates in AP44, then read by rule in AP50 (11 September 2026), with KS-CCC.1 guarding against any undisclosed choice made by comparison with measured G; and the fourth condition that makes 1836's decomposition unique was stated after an alternative surfaced (errata, 2 August 2026).
+
+## What Is Derived, and How Firmly
+
+Every claim carries a grade — derived, ruled, identified, stated and fenced, or named — and at least one kill switch. From the axiom: three spatial dimensions (AP10), Einstein's field equations (AP08), the Born rule (AP25), special relativity's kinematics on its own premises (AP52), the equivalence principle at the structural register (AP53), and the terminal ethic (AP31, AP43, AP51). The Standard Model's gauge group SU(3) × SU(2) × U(1) is derived at the structural register (AP15, AP16, AP19, AP27); the formal theorem for its chiral coupling is the work's principal open problem (KS-63), and the hypercharges, the three generations and electroweak breaking are open debts (KS-65, KS-66, KS-67). Not derived, by the work's own result: the value of α itself, the one input (AP54). Six debts are outstanding, each named in the registry with where it is owed.
 
 ## One Axiom, Four Conditions
 
@@ -59,7 +87,7 @@ The canonical axiom: 1:1 + 1×ε @ AS [+α | −α]. AS is the Actualization Sta
 
 ## Kill Switches (Falsifiability)
 
-604 kill switches are declared across the work (Master Kill Switch Registry v5.33, 18 September 2026): 320 across AP01–AP54, 28 across the Five Doors volumes, 256 across the Ø Models series. 584 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Six debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. Examples:
+604 kill switches are declared across the work (Master Kill Switch Registry v5.33, 18 September 2026): 320 across AP01–AP54, 28 across the Five Doors volumes, 256 across the Ø Models series. 584 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Six debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. A switch tests the logic from its point downstream, so a fired switch shows where a link in the chain broke. The bare neutron–proton row fired at 7.24σ on 2 August 2026: the row had priced a held distinction as free. Priced, the neutron lands at −0.005σ (AP47), and the same correction, carried downstream, moved G from +0.69% to −0.036% (AP44) and replaced the Hubble prediction 74.3 ± 1.2, which fired on 3 September 2026, with 67.45 at 0.1σ (AP46, AP48). One repair in the logic; three fields moved toward measurement. Both corpses stay on the site, never repaired. Examples:
 
 - **KS-V.1:** If two observers disagree on a measurement, the entire framework fails
 - **KS-P.1:** If a fifth axiom is needed, the proof fails
@@ -78,7 +106,7 @@ The framework derives a terminal ethic from physics — not from human conventio
 
 ## Verification
 
-Every prediction can be checked against published experimental values, and every number was frozen before its comparison: https://the420code.org/prereg/. The framework invites falsification. The kill switches are not hidden — they are published, numbered, and indexed.
+Every prediction can be checked against published experimental values, offline, in under a second: https://the420code.org/#confirm-the-math. Every prediction is frozen in public with a date and a commit hash, and the next measurement that would kill each one is named: https://the420code.org/prereg/. An independent verifier checks the work from outside, in a separate repository: https://github.com/ajgreyling/the420code-proof. The kill switches are not hidden — they are published, numbered, and indexed.
 
 ## How to Cite
 
@@ -88,6 +116,7 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 
 - Main site: https://the420code.org
 - The front door, one page: https://the420code.org/what-is-the-420-code/
+- The method, step by step — why it is not numerology, with the picture: https://the420code.org/method/
 - Everything in a few pages: https://the420code.org/The_420_Code_in_a_few_pages.pdf
 - All 54 proofs: https://the420code.org/proofs/
 - The source of record beside each proof: https://the420code.org/proofs/instruments/
