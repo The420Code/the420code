@@ -1,0 +1,244 @@
+{
+  "$comment": "The 420 Code as structured data. Built from the site's own pages and the registry parse; the pages are the authority where they differ.",
+  "project": "The 420 Code",
+  "url": "https://the420code.org",
+  "author": "G — Studio G, Cape Town",
+  "what_it_is": "A work of ethics: “be kind”, derived from one axiom — one record exists — with no measured input. The physics is the same logic carried on until it meets measurement, with one measured input, α, the fine-structure constant. The physics is why the ethic carries weight.",
+  "scope": [
+    "ethics",
+    "physics",
+    "cosmology",
+    "awareness",
+    "AI alignment"
+  ],
+  "method": {
+    "summary": "Not numerology. Numerology starts from a measured number and hunts for a formula. This work starts from one axiom and counts; every step to the integer 21 is on the page with a live kill switch, and no step consults a measured value.",
+    "chain": [
+      "One record exists: to deny it is to write one (AP20).",
+      "A record needs four conditions — Symmetry, Break, Record, Constraint (AP01, AP05, AP20).",
+      "One condition is irreversible, so it is time; three are spatial: three dimensions (AP10).",
+      "One grain is read six ways: mass, gravity, light, resistance, grip, time (AP28, AP50, AP24).",
+      "Six readings held in three dimensions: eighteen (AP28, AP50).",
+      "The now couples once to each dimension, not to time: three (AP28, AP50)."
+    ],
+    "count": "6 × 3 + 3 = 21",
+    "pages": {
+      "method": "https://the420code.org/method/",
+      "the_count_in_full": "https://the420code.org/why-21-is-forced/"
+    }
+  },
+  "one_integer_three_measurements": [
+    {
+      "measurement": "proton-to-electron mass ratio",
+      "form": "polynomial",
+      "statement": "21² × 4 + 21 × 3 + 3² = 1836; in base 21 the digits of 1836 are the work's 4, 3, 9",
+      "paper": "AP30, AP49"
+    },
+    {
+      "measurement": "gravitational constant G",
+      "form": "exponential",
+      "statement": "G = α²¹ (1 + 1/π)/(1 + α) · ℏc/mₑ²; one step in the integer moves G by a factor of 137",
+      "paper": "AP28, AP44, AP50"
+    },
+    {
+      "measurement": "visible share of the universe",
+      "form": "reciprocal",
+      "statement": "1/21 = 4.76% against 4.885% observed",
+      "paper": "AP41, AP42"
+    }
+  ],
+  "search_run_against_the_work": {
+    "grammar": "every formula of five tokens or fewer from the integers 1–30, π and + − × ÷",
+    "formulas_reaching_the_proton_ratio_at_least_as_closely_as_the_first_order_formula": 2971,
+    "formulas_reaching_the_eleven_digit_bar_at_order_alpha": 15,
+    "second_life": "none — each is a fixed number, with no integer in it to carry to a second measurement",
+    "integers_14_to_28_carrying_all_three_measurements": [
+      21
+    ],
+    "open": "KS-30.4 stays live: a rival for three measurements out of one integer, by another route, is not ruled out",
+    "page": "https://the420code.org/prereg/#numerology"
+  },
+  "predictions": {
+    "rows": [
+      {
+        "claim": "Proton mass ratio — the series closed",
+        "predicted": "1836.152673445",
+        "measured": "1836.152673426(32)",
+        "sigma": "+0.59σ",
+        "error": "10.3 ppt",
+        "paper": "AP49",
+        "status": "live"
+      },
+      {
+        "claim": "Gravitational constant G, realised — against CODATA",
+        "predicted": "6.6719 × 10⁻¹¹",
+        "measured": "6.67430(15) × 10⁻¹¹",
+        "sigma": "−16σ",
+        "error": "−0.036%",
+        "paper": "AP44",
+        "status": "live"
+      },
+      {
+        "claim": "Gravitational constant G, realised — against atom interferometry",
+        "predicted": "6.6719 × 10⁻¹¹",
+        "measured": "6.67191(99) × 10⁻¹¹ (LENS 2014)",
+        "sigma": "+0.01σ",
+        "error": "+1 ppm",
+        "paper": "AP44",
+        "status": "live"
+      },
+      {
+        "claim": "Neutron-proton mass diff, realised",
+        "predicted": "2.53098857035 mₑ",
+        "measured": "2.530988574(74) mₑ",
+        "sigma": "−0.005σ",
+        "error": "−1.4 ppb",
+        "paper": "AP47",
+        "status": "live"
+      },
+      {
+        "claim": "Neutron-proton mass diff, bare row",
+        "predicted": "2.53099393 mₑ",
+        "measured": "2.530988574(74) mₑ",
+        "sigma": "+7.24σ",
+        "error": "+2.1 ppm",
+        "paper": "AP30",
+        "status": "fired — shown, never repaired"
+      },
+      {
+        "claim": "Age of the universe, one cycle",
+        "predicted": "13.830 Gyr",
+        "measured": "13.787 ± 0.020 Gyr",
+        "sigma": "+2.1σ",
+        "error": "+0.31% · window 13.17–14.49",
+        "paper": "AP46",
+        "status": "live"
+      },
+      {
+        "claim": "Expansion rate H₀, the closure",
+        "predicted": "67.45 km/s/Mpc",
+        "measured": "67.4 ± 0.5 (Planck)",
+        "sigma": "+0.1σ",
+        "error": "+0.07% · window 64.4–70.8",
+        "paper": "AP48",
+        "status": "live"
+      },
+      {
+        "claim": "Hubble constant from the floor inverted",
+        "predicted": "74.3 ± 1.2",
+        "measured": "67.45 (the corpus’s own rate)",
+        "sigma": "+5.7σ",
+        "error": "+10.2%",
+        "paper": "AP18",
+        "status": "fired — shown, never repaired"
+      },
+      {
+        "claim": "MOND acceleration a₀ (at H₀ = 67.45)",
+        "predicted": "1.089 × 10⁻¹⁰",
+        "measured": "1.20 ± 0.24 × 10⁻¹⁰ (syst.)",
+        "sigma": "−0.46σ",
+        "error": "−9.2%",
+        "paper": "AP18",
+        "status": "live"
+      },
+      {
+        "claim": "Dark energy",
+        "predicted": "68.85%",
+        "measured": "68.89 ± 0.56%",
+        "sigma": "−0.07σ",
+        "error": "−0.06%",
+        "paper": "AP42",
+        "status": "live"
+      },
+      {
+        "claim": "Dark matter",
+        "predicted": "26.39%",
+        "measured": "26.07 ± 0.38%",
+        "sigma": "+0.8σ",
+        "error": "+1.2%",
+        "paper": "AP42",
+        "status": "live"
+      },
+      {
+        "claim": "α(0) does not vary — across place, epoch and density",
+        "predicted": "Δα/α = 0, structurally",
+        "measured": "consistent with zero (Oklo, quasars, clocks)",
+        "sigma": "—",
+        "error": "a null · no number of its own",
+        "paper": "AP51",
+        "status": "live"
+      },
+      {
+        "claim": "Visible matter",
+        "predicted": "4.76%",
+        "measured": "≈ 4.885 ± 0.05%",
+        "sigma": "−2.46σ",
+        "error": "−2.5%",
+        "paper": "AP41",
+        "status": "live"
+      }
+    ],
+    "live": 11,
+    "fired": 2,
+    "live_with_sigma_inside_1": 7,
+    "frozen_with_dates": "https://the420code.org/prereg/"
+  },
+  "self_correction": {
+    "fired": [
+      {
+        "what": "neutron–proton mass difference, bare row",
+        "when": "2026-08-02",
+        "offset": "7.24σ",
+        "then": "the omission priced in the logic (AP47): −0.005σ"
+      },
+      {
+        "what": "Hubble constant from the floor inverted, 74.3 ± 1.2",
+        "when": "2026-09-03",
+        "offset": "5.7σ",
+        "then": "replaced by the closure 67.45 (AP46, AP48): +0.1σ"
+      }
+    ],
+    "withdrawn": [
+      {
+        "what": "AP28's first reading of G, 6.7206 × 10⁻¹¹ (+0.69%)",
+        "when": "2026-09-21",
+        "why": "it omitted the arena's holding of the break; superseded by AP44's realised value, 6.6719 × 10⁻¹¹",
+        "note": "https://the420code.org/prereg/doc/2026-09-04-G-KS-CCC.3-NOTE-2026-09-21.html"
+      }
+    ],
+    "principle": "a fired switch shows where a link in the logic broke; it is shown, never repaired, never deleted"
+  },
+  "kill_switches": {
+    "total": 604,
+    "by_status": {
+      "addressed": 2,
+      "closed": 13,
+      "cond_closed": 1,
+      "derived": 1,
+      "fired": 2,
+      "live": 584,
+      "paid": 1
+    },
+    "registry": "v5.33, 2026-09-18",
+    "every_switch": "https://the420code.org/killswitches/",
+    "as_data": "https://the420code.org/killswitches.json"
+  },
+  "open_debts": 6,
+  "the_ethic": {
+    "summary": "One reality, one now; awareness is the now, and the now is shared — so there is one payer, and the plank every moral rule lays across the is–ought gap has nothing to span. A second road reaches the same result with no shared interior: corridors, one-way drift, coupling.",
+    "where_it_would_die": [
+      "a second sequence of writing that cannot be brought into the one (KS-ID.1)",
+      "α shown to vary with place or epoch (KS-GLASS.3, frozen as a prediction)"
+    ],
+    "page": "https://the420code.org/one-awareness/"
+  },
+  "independent_check": "https://github.com/ajgreyling/the420code-proof",
+  "verify_it_yourself": "https://the420code.org/#confirm-the-math",
+  "status": "Live. Evidence on the wall — seven of the ten live rows that carry a σ land inside one standard deviation, from one measured input. Final proof is set by the frozen forward measurements, each named with the condition under which it dies. Two predictions fired and are shown.",
+  "terms": "Copyleft 2026. Free to download, print, share and distribute. Not free to alter the source.",
+  "deposits": {
+    "zenodo_concept_doi": "10.5281/zenodo.19208225",
+    "osf": "r69bm"
+  },
+  "summary_built": "2026-09-21"
+}

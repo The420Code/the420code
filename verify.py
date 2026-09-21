@@ -42,6 +42,7 @@ GYR      = 365.25 * 86400 * 1e9    # seconds in a gigayear (Julian)
 # A check passes when error_value <= tolerance.
 checks = []
 corpses = []
+withdrawn = []   # readings the author superseded: shown, not counted (21 September 2026)
 
 
 def rel_pct(pred, meas):
@@ -61,14 +62,14 @@ ratio_err   = abs(ratio_pred - RATIO_PE) / RATIO_PE * 1e9
 checks.append(("Proton-electron mass ratio", "AP49",
                f"{ratio_pred:.10f}", f"{RATIO_PE:.10f}", ratio_err, "ppb", 5.0))
 
-# ── CLAIM 2: Gravitational constant G — realised (AP44) and structural (AP28) ─
-alpha_G  = ALPHA**21 * (1 + 1 / pi)               # AP28: the provisioned coupling
-G_struct = alpha_G * HBAR * C / M_E**2            # AP28: the structural value, +0.69%
-G_real   = G_struct / (1 + ALPHA)                 # AP44: the arena's held epsilon, once
+# ── CLAIM 2: Gravitational constant G — realised (AP44) ─────────────────────
+alpha_G  = ALPHA**21 * (1 + 1 / pi)               # the provisioned coupling
+G_first  = alpha_G * HBAR * C / M_E**2            # AP28's first reading, +0.69% -- withdrawn 2026-09-21
+G_real   = G_first / (1 + ALPHA)                  # AP44: the arena's held epsilon, once
 checks.append(("Gravitational constant G, realised", "AP44",
                f"{G_real:.4e}", f"{G_MEAS:.4e}", rel_pct(G_real, G_MEAS), "%", 1.0))
-checks.append(("Gravitational constant G, structural (provisioned)", "AP28",
-               f"{G_struct:.4e}", f"{G_MEAS:.4e}", rel_pct(G_struct, G_MEAS), "%", 1.0))
+withdrawn.append(("Gravitational constant G, first reading", "AP28, superseded by AP44", "2026-09-21",
+                  f"{G_first:.4e}", f"{G_MEAS:.4e}", rel_pct(G_first, G_MEAS), "%"))
 
 # ── CLAIM 3: Neutron-proton mass difference — realised (AP47) ────────────────
 delta_bare = 3 * (1 - 1 / (2 * pi)) + ALPHA * (1 + 1 / (2 * pi))   # AP30: the flip priced as free — FIRED
@@ -152,6 +153,16 @@ def main():
         print(f"        registered: {pred}")
         print(f"        against   : {meas}")
         print(f"        offset    : {sig:.2f} sigma")
+        print()
+
+    print("-" * 72)
+    print("WITHDRAWN - readings the author superseded. Shown, not counted.")
+    print("-" * 72)
+    for name, why, date, pred, meas, err, unit in withdrawn:
+        print(f"[WITHDRAWN] {name}  ({why}, {date})")
+        print(f"        registered: {pred}")
+        print(f"        against   : {meas}")
+        print(f"        offset    : {err:.2f} {unit}")
         print()
 
     print("=" * 72)

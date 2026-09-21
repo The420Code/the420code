@@ -23,7 +23,7 @@
     var KM_PER_MPC = 3.0857e19, GYR = 365.25 * 86400 * 1e9;
 
     function rel_pct(pred, meas) { return Math.abs(pred - meas) / meas * 100.0; }
-    var checks = [], corpses = [];
+    var checks = [], corpses = [], withdrawn = [];
 
     // CLAIM 1: Proton-electron mass ratio — the series closed (AP49)
     // AP30 stopped at a^2 with a coefficient of sixteen it declared owed under KS-30.3. AP49 The
@@ -38,14 +38,14 @@
     checks.push(["Proton-electron mass ratio", "AP49",
       ratio_pred.toFixed(10), RATIO_PE.toFixed(10), ratio_err, "ppb", 5.0]);
 
-    // CLAIM 2: Gravitational constant G — realised (AP44) and structural (AP28)
+    // CLAIM 2: Gravitational constant G — realised (AP44); AP28's first reading withdrawn 2026-09-21
     var alpha_G = ALPHA ** 21 * (1 + 1 / pi);
-    var G_struct = alpha_G * HBAR * C / (M_E * M_E);
-    var G_real = G_struct / (1 + ALPHA);
+    var G_first = alpha_G * HBAR * C / (M_E * M_E);
+    var G_real = G_first / (1 + ALPHA);
     checks.push(["Gravitational constant G, realised", "AP44",
       G_real.toExponential(4), G_MEAS.toExponential(4), rel_pct(G_real, G_MEAS), "%", 1.0]);
-    checks.push(["Gravitational constant G, structural (provisioned)", "AP28",
-      G_struct.toExponential(4), G_MEAS.toExponential(4), rel_pct(G_struct, G_MEAS), "%", 1.0]);
+    withdrawn.push(["Gravitational constant G, first reading", "AP28, superseded by AP44", "2026-09-21",
+      G_first.toExponential(4), G_MEAS.toExponential(4), rel_pct(G_first, G_MEAS), "%"]);
 
     // CLAIM 3: Neutron-proton mass difference — realised (AP47)
     var delta_bare = 3 * (1 - 1 / (2 * pi)) + ALPHA * (1 + 1 / (2 * pi));
@@ -125,6 +125,17 @@
       out.push("        registered: " + c[3]);
       out.push("        against   : " + c[4]);
       out.push("        offset    : " + c[5].toFixed(2) + " sigma");
+      out.push("");
+    }
+    out.push(dash);
+    out.push("WITHDRAWN - readings the author superseded. Shown, not counted.");
+    out.push(dash);
+    for (var k = 0; k < withdrawn.length; k++) {
+      var w = withdrawn[k];
+      out.push("[WITHDRAWN] " + w[0] + "  (" + w[1] + ", " + w[2] + ")");
+      out.push("        registered: " + w[3]);
+      out.push("        against   : " + w[4]);
+      out.push("        offset    : " + w[5].toFixed(2) + " " + w[6]);
       out.push("");
     }
     out.push(bar);
