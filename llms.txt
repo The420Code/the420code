@@ -141,7 +141,7 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 - Every kill switch, one per row, filterable: https://the420code.org/killswitches/
 - The whole work as structured DATA, for machines: https://the420code.org/summary.json
 - Every kill switch as DATA, for machines: https://the420code.org/killswitches.json (the same parse the room is built from: 604 rows, each with the registry’s own text, status, register, origin, notebook and dates; the registry PDF is the authority where they differ)
-- Structural Glossary (edition 1.1): https://the420code.org/The_420_Code_Structural_Glossary.pdf
+- Structural Glossary (edition 1.2, 21 September 2026): https://the420code.org/The_420_Code_Structural_Glossary.pdf
 - Every glossary entry, one per term, filterable: https://the420code.org/glossary/
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi
 - DOI: 10.5281/zenodo.22766173 (this version); 10.5281/zenodo.19208225 (all versions)
