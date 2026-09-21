@@ -5,7 +5,7 @@ Read back off each edition's home page on 11 September 2026, so this file says w
 site says. Edit here and rebuild; a page edit is lost at the next rebuild.
 
 Each entry:
-  yes        the answer line: "Yes — The 420 Code proves it." in that edition
+  yes        the answer line: "Yes — The 420 Code shows how." in that edition (G, 21 September 2026)
   corpses    the two-wrong-predictions line; {wall} marks the one word that is the link
              (the key keeps the name it had before G ruled "wrong, not dead")
   wall       that word
@@ -19,7 +19,7 @@ Each entry:
 L = {}
 
 L["de"] = dict(
- yes='Ja — The 420 Code beweist es.',
+ yes='Ja — The 420 Code zeigt, wie.',
  corpses='Zwei seiner Vorhersagen waren falsch. Sie hängen noch an der {wall}. Falsch zu liegen hat es stärker gemacht.',
  wall='Wand',
  starts='Die gesamte Herleitung steht auf dieser Seite, frei, für immer. Hier beginnt sie.',
@@ -30,7 +30,7 @@ L["de"] = dict(
  arrow='→')
 
 L["es"] = dict(
- yes='Sí — The 420 Code lo prueba.',
+ yes='Sí — The 420 Code muestra cómo.',
  corpses='Dos de sus predicciones fueron erróneas. Siguen en el {wall}. Equivocarse lo hizo más fuerte.',
  wall='muro',
  starts='Toda la derivación está en este sitio, gratis, para siempre. Empieza aquí.',
@@ -41,7 +41,7 @@ L["es"] = dict(
  arrow='→')
 
 L["fr"] = dict(
- yes='Oui — The 420 Code le prouve.',
+ yes='Oui — The 420 Code montre comment.',
  corpses='Deux de ses prédictions étaient fausses. Elles sont toujours au {wall}. S’être trompé l’a rendu plus fort.',
  wall='mur',
  starts='Toute la dérivation est sur ce site, gratuite, pour toujours. Elle commence ici.',
@@ -52,7 +52,7 @@ L["fr"] = dict(
  arrow='→')
 
 L["it"] = dict(
- yes='Sì — The 420 Code lo prova.',
+ yes='Sì — The 420 Code mostra come.',
  corpses='Due delle sue previsioni erano sbagliate. Sono ancora sul {wall}. Sbagliare l’ha reso più forte.',
  wall='muro',
  starts='L’intera derivazione è su questo sito, gratis, per sempre. Comincia qui.',
@@ -63,7 +63,7 @@ L["it"] = dict(
  arrow='→')
 
 L["nl"] = dict(
- yes='Ja — The 420 Code bewijst het.',
+ yes='Ja — The 420 Code laat zien hoe.',
  corpses='Twee van zijn voorspellingen waren onjuist. Ze hangen nog aan de {wall}. Ongelijk hebben heeft het sterker gemaakt.',
  wall='muur',
  starts='De hele afleiding staat op deze site, gratis, voor altijd. Hier begint ze.',
@@ -74,7 +74,7 @@ L["nl"] = dict(
  arrow='→')
 
 L["pt"] = dict(
- yes='Sim — The 420 Code prova isso.',
+ yes='Sim — The 420 Code mostra como.',
  corpses='Duas das suas previsões estavam erradas. Continuam no {wall}. Estar errado o tornou mais forte.',
  wall='muro',
  starts='Toda a derivação está neste site, grátis, para sempre. Começa aqui.',
@@ -85,7 +85,7 @@ L["pt"] = dict(
  arrow='→')
 
 L["ru"] = dict(
- yes='Да — The 420 Code это доказывает.',
+ yes='Да — The 420 Code показывает, как.',
  corpses='Два его предсказания оказались неверными. Они по-прежнему на {wall}. Ошибка сделала его сильнее.',
  wall='стене',
  starts='Весь вывод — на этом сайте, бесплатно, навсегда. Он начинается здесь.',
@@ -96,7 +96,7 @@ L["ru"] = dict(
  arrow='→')
 
 L["zh"] = dict(
- yes='能——The 420 Code 证明了这一点。',
+ yes='能——The 420 Code 展示了如何推导。',
  corpses='它的两个预测错了。它们仍然在{wall}上。犯错让它更强。',
  wall='墙',
  starts='全部推导都在本站，免费，永远。就从这里开始。',
@@ -107,7 +107,7 @@ L["zh"] = dict(
  arrow='→')
 
 L["ja"] = dict(
- yes='はい——The 420 Code がそれを証明する。',
+ yes='はい——The 420 Code がその道筋を示す。',
  corpses='その予測のうち二つは間違っていた。今も{wall}に掛かっている。間違いがそれを強くした。',
  wall='壁',
  starts='導出のすべてがこのサイトにある。無料で、永久に。ここから始まる。',
@@ -118,7 +118,7 @@ L["ja"] = dict(
  arrow='→')
 
 L["ko"] = dict(
- yes='그렇다 — The 420 Code가 그것을 증명한다.',
+ yes='그렇다 — The 420 Code가 그 방법을 보여 준다.',
  corpses='그 예측 중 둘은 틀렸다. 여전히 {wall}에 걸려 있다. 틀린 것이 그것을 더 강하게 만들었다.',
  wall='벽',
  starts='도출 전체가 이 사이트에 있다. 무료로, 영원히. 여기서 시작한다.',
@@ -129,7 +129,7 @@ L["ko"] = dict(
  arrow='→')
 
 L["hi"] = dict(
- yes='हाँ — The 420 Code इसे सिद्ध करता है।',
+ yes='हाँ — The 420 Code दिखाता है कि कैसे।',
  corpses='इसकी दो भविष्यवाणियाँ ग़लत थीं। वे अब भी {wall} पर हैं। ग़लत होने ने इसे और मज़बूत बनाया।',
  wall='दीवार',
  starts='पूरी व्युत्पत्ति इसी साइट पर है, मुफ़्त, हमेशा के लिए। शुरुआत यहीं से है।',
@@ -140,7 +140,7 @@ L["hi"] = dict(
  arrow='→')
 
 L["ar"] = dict(
- yes='نعم — The 420 Code يبرهن على ذلك.',
+ yes='نعم — The 420 Code يبيّن كيف.',
  corpses='كان اثنان من تنبّؤاته خاطئين. وما زالا على {wall}. الخطأ جعله أقوى.',
  wall='الجدار',
  starts='الاشتقاق كامله على هذا الموقع، مجّانًا، إلى الأبد. من هنا يبدأ.',
