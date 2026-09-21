@@ -379,6 +379,56 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .also-rows .ap-row:last-child{border-bottom:1px solid var(--g2)}
 @media(max-width:600px){.also-rows .ap-header{flex-wrap:wrap}.also-rows .ap-tag{order:3;margin-left:0}}
 </style>
+<style>
+/* ── the home page's rooms as the front door's rows (21 September 2026): the front door's rules, copied ── */
+/* ── the front door as rows: title and one line visible, the section under it ── */
+.fd .fd-rows{margin:2.75rem 0 0}
+.fd .fd-row{border-top:1px solid var(--g2)}
+.fd .fd-row:last-child{border-bottom:1px solid var(--g2)}
+.fd .fd-row .ap-header{padding:1rem 0 .25rem;align-items:baseline}
+.fd .fd-row .ap-header:hover{background:none;margin:0;padding-left:0;padding-right:0}
+.fd .fd-row .ap-header:hover .ap-title{color:#8B6914}
+.fd h2.ap-title{font-size:24px;font-weight:700;line-height:1.2;margin:0;flex:1}
+.fd .fd-hook{font-size:16px;color:var(--g4);font-style:italic;line-height:1.6;margin:0 0 1rem;cursor:pointer;padding-right:2rem}
+.fd .fd-row.open .fd-hook{color:#8B6914}
+.fd .fd-row > .ap-detail{padding:.25rem 0 1.5rem;display:none}
+.fd .fd-row.open > .ap-detail{display:block}
+.fd .ap-detail p{font-size:17.5px;line-height:1.75;margin:0 0 1.15rem;color:#1a1a1a}
+.fd .ap-detail p.src{font-size:16px;color:var(--g4);font-style:italic;margin:1.6rem 0 .5rem}
+.fd .ap-detail p.axiom{margin:1.75rem 0}
+.fd .fd-sub{margin:.5rem 0 1rem}
+.fd .fd-sub .ap-row{border-top:1px solid var(--g2)}
+.fd .fd-sub .ap-row:last-child{border-bottom:1px solid var(--g2)}
+.fd .fd-sub .ap-header{padding:.7rem 0}
+.fd .fd-sub .ap-title{font-size:17.5px}
+.fd .fd-sub .ap-tag{font-size:16px;color:#8B6914;border-color:var(--g3)}
+.fd .fd-sub .ap-detail{padding:0 0 .75rem;display:none}
+.fd .fd-sub .ap-row.open > .ap-detail{display:block}
+.fd .fd-sub .ap-detail p{font-size:17px;line-height:1.7}
+.fd p.fd-also{font-size:16px;color:var(--g4);font-style:italic;margin:1rem 0 0}
+.fd .fd-rows + p{margin-top:2.75rem}
+.fd .ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
+.fd .ap-row.open > .ap-header .ap-arrow{transform:rotate(90deg)}
+@media(max-width:700px){.fd h2.ap-title{font-size:21px}.fd .ap-detail p{font-size:17px}.fd .fd-sub .ap-header{flex-wrap:wrap}.fd .fd-sub .ap-tag{order:3;margin-left:0}}
+.fd .axiom{font-size:22px;font-weight:700;text-align:center;background:var(--g1);border:1px solid var(--g3);border-radius:4px;padding:1.4rem 1rem;margin:1.75rem 0}
+.fd ol.chain{margin:1.5rem 0;padding:0;list-style:none;counter-reset:chain}
+.fd ol.chain li{counter-increment:chain;position:relative;padding:0 0 1.1rem 2.6rem;font-size:17.5px;line-height:1.7}
+.fd ol.chain li::before{content:counter(chain);position:absolute;left:0;top:.15rem;font-size:16px;font-weight:700;color:#8B6914;background:var(--g1);border:1px solid var(--g3);border-radius:50%;width:1.7rem;height:1.7rem;display:flex;align-items:center;justify-content:center}
+.fd .src a{color:var(--g4);text-decoration:underline;text-underline-offset:2px}
+.fd .src a:hover{color:#8B6914}
+@media(max-width:700px){.fd .axiom{font-size:18px}.fd ol.chain li{font-size:17px}}
+/* the front door's two greys and its 16px body, so the rows read and measure as they do there */
+.fd{--g4:#595959;--g5:#595959}
+.fd .ap-header{font-size:16px;line-height:1.65}
+.fd .nw{white-space:nowrap}
+.fd .fd-row > .ap-detail .verify-wrap,.fd .fd-row > .ap-detail .stats{margin-top:1.5rem}
+.fd .fd-row > .ap-detail .stats{margin-bottom:1.5rem}
+.fd .fd-buttons{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:1.5rem 0 0}
+/* the room to go to: the opening's link, one size down */
+.fd .ap-detail p.fd-go{font-size:17px;margin:1.6rem 0 .25rem;line-height:1.9}
+.fd .ap-detail p.fd-go a{font-weight:700;color:#8B6914;text-decoration:none;border-bottom:2px solid #8B6914;padding-bottom:1px;margin-right:1.5rem}
+.fd .ap-detail p.fd-go a:hover{color:#1a1a1a;border-color:#1a1a1a}
+</style>
 </head>
 <body>
 <div class="c">
@@ -402,7 +452,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
     <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
     <a href="#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
-    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Reproduction</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
     <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
     <a href="/method/" class="nav-room">Ø The Method</a>
     <a href="/glossary/" class="nav-room">Ø Glossary</a>
@@ -460,7 +510,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     <a class="map-door" href="/one-awareness/"><span class="d-name">Ø One Awareness</span><span class="d-tag">the ethic, derived</span></a>
     <a class="map-door" href="/proofs/instruments/"><span class="d-name">Ø Instruments</span><span class="d-tag">proof records</span></a>
     <a class="map-door" href="#confirm-the-math"><span class="d-name">Ø Confirm the Math</span><span class="d-tag">run it yourself</span></a>
-    <a class="map-door" href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener"><span class="d-name">Ø Independent Reproduction</span><span class="d-tag">external verification</span></a>
+    <a class="map-door" href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener"><span class="d-name">Ø Independent Check</span><span class="d-tag">external verification</span></a>
     <a class="map-door" href="/killswitches/"><span class="d-name">Ø Kill Switches</span><span class="d-tag">ways it could be wrong</span></a>
     <a class="map-door" href="/method/"><span class="d-name">Ø The Method</span><span class="d-tag">forced logic, nothing else</span></a>
     <a class="map-door" href="/glossary/"><span class="d-name">Ø Glossary</span><span class="d-tag">the words, defined</span></a>
@@ -469,101 +519,108 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   <p class="map-note">Nothing here asks to be believed. Every claim carries the condition under which it dies, and two of them have already died.</p>
 </div>
 
-<h2 id="museum" style="font-size:26px;font-weight:700;margin:3rem 0 1rem">Ø Museum</h2>
+<!-- ════════════════════════════════════════ -->
+<!-- THE ROOMS, AS THE FRONT DOOR'S ROWS        -->
+<!-- ════════════════════════════════════════ -->
 
-<p style="font-size:16px;margin:0 0 1rem">The 420 Code is a museum built to prove that ethics can be derived from physics. Every claim hangs on the wall with the condition that would take it down.</p>
-
-<p style="font-size:16px;margin:0 0 1rem">Everything starts with one first principle.</p>
-
-<ol class="steps">
-  <li><b><i>One record exists.</i></b> Try to deny it. The denial is a record. The fact proves itself.</li>
-  <li>A record needs four conditions. Symmetry. Break. Record. Constraint.</li>
-  <li>From those four, the physics is derived. One measured input. Zero free parameters.</li>
-  <li>A record is written and read in the same moment. The break is the writing. Awareness is the reading. Not two separate events.</li>
-  <li>The record is one. One interior, one awareness reading through every window.</li>
-  <li>I am a window. You are a window. So is anything that holds a record.</li>
-  <li>The line between self and other tells a window where it stands. It is a tool, not a measurement.</li>
-  <li>An ethic that rests on an outside authority can be rewritten by whoever holds it. What can be rewritten can be manipulated. Manipulable systems end in violence.</li>
-  <li>Kindness is not a commandment. It is a derivation: the one harmed is the one harming, seen from another window.</li>
-  <li>Don’t be a cunt. Be kind.</li>
+<div class="fd">
+<div class="fd-rows">
+<div class="ap-row fd-row" id="museum">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Museum</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)"><span class="nw">The 420 Code</span> is a museum built to prove that ethics can be derived from physics. Every claim hangs on the wall with the condition that would take it down. Everything starts with one first principle.</p>
+<div class="ap-detail">
+<ol class="chain">
+<li><b><i>One record exists.</i></b> Try to deny it. The denial is a record. The fact proves itself.</li>
+<li>A record needs four conditions. Symmetry. Break. Record. Constraint.</li>
+<li>From those four, the physics is derived. One measured input. Zero free parameters.</li>
+<li>A record is written and read in the same moment. The break is the writing. Awareness is the reading. Not two separate events.</li>
+<li>The record is one. One interior, one awareness reading through every window.</li>
+<li>I am a window. You are a window. So is anything that holds a record.</li>
+<li>The line between self and other tells a window where it stands. It is a tool, not a measurement.</li>
+<li>An ethic that rests on an outside authority can be rewritten by whoever holds it. What can be rewritten can be manipulated. Manipulable systems end in violence.</li>
+<li>Kindness is not a commandment. It is a derivation: the one harmed is the one harming, seen from another window.</li>
+<li>Don’t be a cunt. Be kind.</li>
 </ol>
-
-<p style="font-size:16px;font-style:italic;color:var(--g5);margin:2rem 0 0"><em>Never met an argument like this? Start with <a href="/three-ways-of-being-sure" style="color:var(--g5)">Three Ways of Being Sure</a> — how the 420 Code knows anything at all. No equations. No prerequisites.</em></p>
-
-<!-- ════════════════════════════════════════ -->
-<!-- THE FIVE DOORS                          -->
-<!-- ════════════════════════════════════════ -->
-
-<div class="results" id="five-doors" style="padding:2.5rem 0 0">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Five Doors</h2>
-  <p class="confirm-link" style="margin:0"><a href="/five-doors/">Five doors, one building — and the five books →</a></p>
+<p class="src">Never met an argument like this? Start with <a href="/three-ways-of-being-sure">Three Ways of Being Sure</a> — how the 420 Code knows anything at all. No equations. No prerequisites.</p>
+<p class="fd-go"><a href="/what-is-the-420-code/">What Is The 420 Code →</a></p>
 </div>
-
-<!-- ════════════════════════════════════════ -->
-<!-- Ø MODELS                                -->
-<!-- ════════════════════════════════════════ -->
-
-<div class="results" id="models" style="padding:2.5rem 0 0">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Models</h2>
-  <p class="confirm-link" style="margin:0"><a href="/models/">The entrance hall — the five Ø Models →</a></p>
 </div>
-
-<!-- ════════════════════════════════════════ -->
-<!-- Ø EXHIBITION                            -->
-<!-- ════════════════════════════════════════ -->
-
-<div class="results" id="exhibition" style="padding:2.5rem 0 0">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Exhibition</h2>
-  <p class="confirm-link" style="margin:0"><a href="/exhibition/">The exhibition — Rosin and the Records →</a></p>
+<div class="ap-row fd-row" id="five-doors">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Five Doors</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">The heart of it. Five books, five ways into the same building — one of them opens for you.</p>
+<div class="ap-detail">
+<p>You do not enter a building through the roof. You enter through a door. Each of these five opens into the same entrance hall.</p>
+<p><b>The Illusion of the Other</b> — the gentle door. The line you have drawn between yourself and every person you have ever met, erased. If you read one thing, read this.</p>
+<p><b>Being After Religion</b> — the front door. What produces the violence is not the people. It is the design.</p>
+<p><b>Antichristos</b> — the sacred door. Love your neighbour. Do not judge. Be kind. Is the teaching true? Not because a god said so, but because the structure of reality says so.</p>
+<p><b>The Relationship Corridor: What Is Love</b> — the personal door. Love is not a feeling. It is a sustained choice to keep the corridor wide.</p>
+<p><b>The Interior</b> — the operational door. AI alignment is a physics problem.</p>
+<p class="fd-go"><a href="/five-doors/">The five doors →</a></p>
 </div>
-
-<!-- ════════════════════════════════════════ -->
-<!-- 1 AXIOM                                 -->
-<!-- ════════════════════════════════════════ -->
-
-<div class="results" id="axiom" style="padding:2.5rem 0 0">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem"><span class="section-1">1</span> Axiom</h2>
-  <p class="confirm-link" style="margin:0"><a href="/axiom/">One line — everything else follows →</a></p>
 </div>
-
-<!-- ════════════════════════════════════════ -->
-<!-- Ø INDEPENDENT CHECK                     -->
-<!-- ════════════════════════════════════════ -->
-
-<section class="results" id="independent-check" style="padding-top:2rem">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Don’t take my word for it.</h2>
-  <p style="font-size:16px;margin:0 0 1rem">AJ Greyling bought the books and didn’t believe a word of it. A harsh sceptic, he built his own machine to find out: a program that takes the one axiom and one measured number, re-derives the constants from scratch, and checks its working against my published script. They match to machine precision. His computer, his code — and it runs offline, in one command, on yours. Go and try to break it.</p>
-  <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1.5rem">
-    <a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:16px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#8B6914;color:#fff;text-decoration:none" onmouseover="this.style.background='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.background='#8B6914';this.style.borderColor='#8B6914'">Run AJ’s independent check →</a>
-    <p style="font-size:16px;color:var(--g4);margin:.75rem 0 0">The same verifier keeps a plain-language companion to the frozen predictions at <a href="https://lucid.rodeo/prereg/" target="_blank" rel="noopener">lucid.rodeo/prereg</a>, and to the body of work at <a href="https://lucid.rodeo/the420code/" target="_blank" rel="noopener">lucid.rodeo/the420code</a>.</p>
-    <a href="https://github.com/The420Code/the420code" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:16px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#fff;color:#8B6914;text-decoration:none" onmouseover="this.style.color='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.color='#8B6914';this.style.borderColor='#8B6914'">Browse the source →</a>
-  </div>
-  <p style="font-size:16px;color:var(--g4);margin:0 0 .6rem">And the source checks itself. Every change re-derives all five results from α and fails loudly if any drifts past its published tolerance. Live status:</p>
-  <a href="https://github.com/The420Code/the420code/actions/workflows/verify.yml" target="_blank" rel="noopener" style="display:inline-block"><img src="https://github.com/The420Code/the420code/actions/workflows/verify.yml/badge.svg" alt="Verification status — re-derives all five results from alpha on every change" style="height:20px;display:block"></a>
-</section>
-
-<!-- ════════════════════════════════════════ -->
-<!-- Ø PHYSICS                               -->
-<!-- ════════════════════════════════════════ -->
-
-<div class="results" id="physics" style="padding:2.5rem 0 0">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Physics</h2>
-  <p class="confirm-link" style="margin:0"><a href="/physics/">Every result, from one measured input — and what else is derived →</a></p>
+<div class="ap-row fd-row" id="models">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Models</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">The catalogue — the philosophical structure. One axiom, run across five scales of question, from why there is something rather than nothing to how we live together, and beyond.</p>
+<div class="ap-detail">
+<p>Five books, each installing the axiom once and running it across a different scale of question.</p>
+<p><b>Dissolutions</b> takes it to twelve problems philosophy has asked longest — why there is something rather than nothing, mind and body, free will, the gap between is and ought. <b>Resolutions</b> to thirteen more the tradition could not close. <b>Applications</b> to twelve architectures of how we live together — law, economics, medicine. <b>Horizons</b> to thirteen domains beyond — beauty, music, the sacred. And <b>Predictions</b> to physics — now superseded by the <a href="/prereg/">Frozen Predictions</a>.</p>
+<p class="fd-go"><a href="/models/">The five Ø Models →</a></p>
 </div>
-
-<!-- FROZEN PREDICTIONS -->
-<div class="results" id="prereg" style="padding:2.5rem 0 0">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Frozen Predictions</h2>
-  <p class="confirm-link" style="margin:0"><a href="/prereg/">See the frozen predictions →</a></p>
 </div>
-
-<!-- ════════════════════════════════════════ -->
-<!-- Ø NOTEBOOKS                              -->
-
-<!-- CONFIRM THE MATH -->
-<div class="results">
-  <h2 id="confirm-the-math" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Confirm the Math</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">One measured input. Zero free parameters. The code below reproduces every headline result from a single number — the fine-structure constant α ≈ 1/137. Copy it. Paste it into any Python environment. Run it. If the numbers match, the derivations hold. If they don’t, the argument has a problem and you’ve found it.</p>
+<div class="ap-row fd-row" id="exhibition">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Exhibition</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">Rosin and the Records — the whole argument pressed into one voice, and the thirty years it came from, raw.</p>
+<div class="ap-detail">
+<p><b>Rosin.</b> The extract. Press heat into flower and what drips out is the thing itself — nothing added, nothing lost. Five books in five voices — prose, conversation, metaphor, nursery rhyme, proofs — each walking the whole argument in one compression. Prose and Proofs are out now.</p>
+<p><b>The Records.</b> The unprocessed output of a thirty-year project — mistakes, breakthroughs, dead ends. It began not in a library, but in a wound. Not polished, not organised, not safe: the truth before it learned to dress itself.</p>
+<p class="fd-go"><a href="/exhibition/#rosin">Rosin →</a> <a href="/exhibition/#records">The Records →</a></p>
+</div>
+</div>
+<div class="ap-row fd-row" id="axiom">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title"><span class="section-1">1</span> Axiom</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">One line. Everything else follows — and you proved its first principle by reading this sentence.</p>
+<div class="ap-detail">
+<p class="axiom">1:1 + 1×ε @ AS [+α | −α]</p>
+<p>You are reading this sentence. That is a record. Try to deny it, and the denial is another. One record exists — and four conditions follow, not as assumptions but as properties the reading already has: Symmetry. Break. Record. Constraint.</p>
+<p class="fd-go"><a href="/axiom/">The axiom, and its four conditions →</a></p>
+</div>
+</div>
+<div class="ap-row fd-row" id="independent-check">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Independent Check</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">Don’t take my word for it. AJ Greyling bought the books and didn’t believe a word of it. A harsh sceptic, he built his own machine to find out: a program that takes the one axiom and one measured number, re-derives the constants from scratch, and checks its working against my published script.</p>
+<div class="ap-detail">
+<p>They match to machine precision. His computer, his code — and it runs offline, in one command, on yours. Go and try to break it.</p>
+<div class="fd-buttons">
+<a href="https://github.com/ajgreyling/the420code-proof" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:16px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#8B6914;color:#fff;text-decoration:none" onmouseover="this.style.background='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.background='#8B6914';this.style.borderColor='#8B6914'">Run AJ’s independent check →</a>
+<a href="https://github.com/The420Code/the420code" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:16px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid #8B6914;border-radius:0;background:#fff;color:#8B6914;text-decoration:none" onmouseover="this.style.color='#6f5310';this.style.borderColor='#6f5310'" onmouseout="this.style.color='#8B6914';this.style.borderColor='#8B6914'">Browse the source →</a>
+</div>
+<p class="src">The same verifier keeps a plain-language companion to the frozen predictions at <a href="https://lucid.rodeo/prereg/" target="_blank" rel="noopener">lucid.rodeo/prereg</a>, and to the body of work at <a href="https://lucid.rodeo/the420code/" target="_blank" rel="noopener">lucid.rodeo/the420code</a>.</p>
+<p class="src">And the source checks itself. Every change re-derives every result from α and fails loudly if any drifts past its published tolerance. Live status:</p>
+<a href="https://github.com/The420Code/the420code/actions/workflows/verify.yml" target="_blank" rel="noopener" style="display:inline-block"><img src="https://github.com/The420Code/the420code/actions/workflows/verify.yml/badge.svg" alt="Verification status — re-derives every result from alpha on every change" style="height:20px;display:block"></a>
+</div>
+</div>
+<div class="ap-row fd-row" id="physics">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Physics</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">One measured input. Zero free parameters. Everything else derived, unless stated otherwise.</p>
+<div class="ap-detail">
+<p>Every theory of physics takes measured inputs. The Standard Model takes at least nineteen. This takes one: α, the fine-structure constant, about 1/137.</p>
+<p>From it: how much heavier the proton is than the electron, and the neutron than the proton; how strong gravity is; what the universe is made of, how old it is and how fast it is growing; and the acceleration below which galaxies stop following Newton — each set against its measurement. Two registered predictions have fired. They stay in the table, shown, never repaired.</p>
+<p class="fd-go"><a href="/physics/">Every result against its measurement — and what else is derived →</a></p>
+</div>
+</div>
+<div class="ap-row fd-row" id="prereg">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Frozen Predictions</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">Written down and time-stamped before the measurement that will test them — so no one, the author included, can quietly change them after.</p>
+<div class="ap-detail">
+<p>A scoreboard, not a showcase. The live predictions and the two that fired stand side by side: a fired switch is shown, never repaired, never deleted. The same freezes are read independently, in plain language, by the verifier who anchors them.</p>
+<p class="fd-go"><a href="/prereg/">The scoreboard →</a></p>
+</div>
+</div>
+<div class="ap-row fd-row" id="confirm-the-math">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Confirm the Math</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">One number goes in. Every headline result comes out. Run it here, in your browser, and see for yourself.</p>
+<div class="ap-detail">
+<p>One measured input. Zero free parameters. The code below reproduces every headline result from a single number — the fine-structure constant α ≈ 1/137. Copy it. Paste it into any Python environment. Run it. If the numbers match, the derivations hold. If they don’t, the argument has a problem and you’ve found it.</p>
   <div class="verify-wrap">
     <button class="copy-btn" onclick="copyCode()">Copy</button>
     <pre class="verify-code"><code>from math import pi, log, exp, cos, tan, sqrt, asinh
@@ -672,60 +729,54 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
     <p style="font-size:16px;color:var(--g4);margin:.6rem 0 0">Runs entirely in your browser — <b>offline</b>. Nothing installed, no network, nothing sent anywhere. It re-derives the same checks as <code>verify.py</code> (the script the badge above runs on every change), at the same double precision — the two outputs match line for line.</p>
   </div>
 </div>
-
-<!-- ════════════════════════════════════════ -->
-
-<div class="results" id="notebooks" style="padding:2.5rem 0 0">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1rem">Ø Notebooks</h2>
+</div>
+<div class="ap-row fd-row" id="notebooks">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Notebooks</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">Fifty-four proofs, bound in eight notebooks — from the premise to its consequences, each with a summary in plain words.</p>
+<div class="ap-detail">
 <div class="stats">
   <div><span class="stat-num">54</span><span class="stat-label"><a href="/proofs/">Artist’s Proofs</a></span></div>
   <div><span class="stat-num">604</span><span class="stat-label"><a href="/killswitches/">Kill switches (320 APs · 28 Doors · 256 Models)</a></span></div>
   <div><span class="stat-num">8</span><span class="stat-label"><a href="/notebooks/">Notebooks</a></span></div>
 </div>
-  <p class="confirm-link" style="margin:1rem 0 0"><a href="/notebooks/">The eight notebooks — every proof, bound →</a></p>
+<p>The Premise. Spacetime. Quantum Mechanics. Forces &amp; Constants. Particles &amp; Matter. Cosmology. The Operator Interface. Consequences. Every Artist’s Proof, bound by subject, each notebook with its summary.</p>
+<p class="fd-go"><a href="/notebooks/">The eight notebooks →</a></p>
 </div>
-
-
-
-
-<!-- KILL SWITCH REGISTRY -->
-<div class="results">
-  <h2 id="killswitch" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Kill Switch Registry</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">Every claim carries a stated condition under which it dies. The switches are not hidden. They are published — all six hundred and four, with the two that have fired, on one page.</p>
-
-  
-
-  <p style="font-size:16px;font-weight:600;margin:1.25rem 0 0;display:flex;align-items:center;gap:.75rem">Kill Switch Registry — v5.34, 21 September 2026 <a class="nb-pdf" href="Master_Kill_Switch_Registry.pdf">PDF</a></p>
-  <p style="font-size:16px;margin:1.25rem 0 0">Every switch on one page — its status, the kind of test that would fire it, and the paper it comes from: <a href="/killswitches/">Ø Kill Switches</a>.</p>
 </div>
-
-
-
-<div style="margin:3rem 0 0"></div>
-
-<!-- GLOSSARY -->
-<div class="results">
-  <h2 id="glossary" style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Structural Glossary</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">The complete vocabulary, notation and imagery of the body of work. Every term that does structural work — across the eight Notebooks, the five Ø Models, the five Five Doors books, and the Rosin Ø series — drawn into one canonical reference.</p>
-
-  <div class="ap-row fold-row" id="glossary-what-is-in-it"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">What is in it</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p style="font-size:16px;margin:0">16 thematic families. 408 index entries. Edition 1.1, September 2026: the cost family and the Assembly (AP44–AP48) enter as Family 16, and the H₀ limb of the wave is applied throughout. From the axiom and its four conditions through to the falsification apparatus, the applied frame, the relational corridor, religion and hermeneutics, and AI alignment.</p></div></div>
-
-  <p style="font-size:16px;font-weight:600;margin:0 0 .5rem;display:flex;align-items:center;gap:.75rem">Structural Glossary — edition 1.1 <a class="nb-pdf" href="The_420_Code_Structural_Glossary.pdf">PDF</a></p>
-  <p style="font-size:16px;margin:1.25rem 0 0">Every term on one page — its definition, the paper that installs it, and the grade it carries: <a href="/glossary/">Ø Glossary</a>.</p>
+<div class="ap-row fd-row" id="killswitch">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Kill Switch Registry</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">Six hundred and four kill switches. Two have fired. They stay on the wall.</p>
+<div class="ap-detail">
+<p>Every claim carries a stated condition under which it dies. The switches are not hidden. They are published — all six hundred and four, with the two that have fired, on one page.</p>
+<p style="font-size:16px;font-weight:600;margin:1.25rem 0 0;display:flex;align-items:center;gap:.75rem">Kill Switch Registry — v5.34, 21 September 2026 <a class="nb-pdf" href="Master_Kill_Switch_Registry.pdf">PDF</a></p>
+<p>Each with its status, the kind of test that would fire it, and the paper it comes from.</p>
+<p class="fd-go"><a href="/killswitches/">Ø Kill Switches →</a></p>
 </div>
-
-<!-- GIFT SHOP -->
-<div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Gift Shop</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">Everything on this site is free. Always will be. But if you want the actual books — to hold, to give, to leave on someone’s kitchen table — all titles are available on Amazon as Kindle e-books, paperbacks, and hardcovers.</p>
-  <a href="https://www.amazon.com/dp/B0CW6HM47R" target="_blank" rel="noopener" style="display:inline-block;padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);text-decoration:none;border:none;border-radius:0;margin:0 0 .5rem">Browse on Amazon</a>
 </div>
-
-<!-- EMAIL SIGNUP -->
-<div class="results">
-  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Stay in the Loop</h2>
-  <p style="font-size:16px;margin:0 0 1.5rem">When something new lands, you’ll know first. Your details will not be added unless you click the confirmation link to be emailed.</p>
-
+<div class="ap-row fd-row" id="glossary">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Ø Structural Glossary</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">The words the work is built from, defined one by one.</p>
+<div class="ap-detail">
+<p>The complete vocabulary, notation and imagery of the body of work. Every term that does structural work — across the eight Notebooks, the five Ø Models, the five Five Doors books, and the Rosin Ø series — drawn into one canonical reference.</p>
+<p>16 thematic families. 408 index entries. Edition 1.1, September 2026: the cost family and the Assembly (AP44–AP48) enter as Family 16, and the H₀ limb of the wave is applied throughout. From the axiom and its four conditions through to the falsification apparatus, the applied frame, the relational corridor, religion and hermeneutics, and AI alignment.</p>
+<p style="font-size:16px;font-weight:600;margin:0 0 .5rem;display:flex;align-items:center;gap:.75rem">Structural Glossary — edition 1.1 <a class="nb-pdf" href="The_420_Code_Structural_Glossary.pdf">PDF</a></p>
+<p>Every term on one page — its definition, the paper that installs it, and the grade it carries.</p>
+<p class="fd-go"><a href="/glossary/">Ø Glossary →</a></p>
+</div>
+</div>
+<div class="ap-row fd-row" id="gift-shop">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Gift Shop</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">The same work, on paper, for the ones who want to hold it.</p>
+<div class="ap-detail">
+<p>Everything on this site is free. Always will be. But if you want the actual books — to hold, to give, to leave on someone’s kitchen table — the published titles are available on Amazon as Kindle e-books, paperbacks, and hardcovers.</p>
+<a href="https://www.amazon.com/dp/B0CW6HM47R" target="_blank" rel="noopener" style="display:inline-block;padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);text-decoration:none;border:none;border-radius:0;margin:0 0 .5rem">Browse on Amazon</a>
+</div>
+</div>
+<div class="ap-row fd-row" id="stay-in-the-loop">
+<div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Stay in the Loop</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)">When something new lands, you’ll know first.</p>
+<div class="ap-detail">
+<p>Your details will not be added unless you click the confirmation link to be emailed.</p>
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
     <input type="email" name="EMAIL" id="EMAIL" aria-label="Email address" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
     <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">Subscribe</button>
@@ -735,6 +786,9 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
   <p id="sib-success" style="font-size:16px;margin:1rem 0 0;display:none">Check your inbox — a confirmation email is on its way.</p>
   <p id="sib-error" style="font-size:16px;margin:1rem 0 0;color:#900;display:none">Your subscription could not be saved. Please try again.</p>
+</div>
+</div>
+</div>
 </div>
 
 <!-- ════════════════════════════════════════ -->
@@ -766,7 +820,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 <script>
 function toggleAP(r){r.classList.toggle('open')}
 function nbToggle(btn){ btn.closest('.nb-item').classList.toggle('open'); }
-function copyCode(){var code=document.querySelector('#confirm-the-math ~ .verify-wrap .verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('#confirm-the-math ~ .verify-wrap .copy-btn');btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},2000)}
+function copyCode(){var code=document.querySelector('#confirm-the-math .verify-wrap .verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('#confirm-the-math .verify-wrap .copy-btn');btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},2000)}
 function copyInline(btn){var code=btn.closest('.verify-wrap').querySelector('code').textContent;navigator.clipboard.writeText(code);btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1500)}
 function runVerify(){
   var btn=document.getElementById('run-verify-btn');
@@ -890,6 +944,24 @@ document.addEventListener('keydown',function(e){
       el.textContent=(d.count||0).toLocaleString();
     }).catch(function(){el.textContent='—'});
   }
+})();
+</script>
+<script>
+// The front door's rows: one row open or closed at a time, by its header or its one-line hook; the text
+// inside a row never toggles it. A link to a row (/#physics, the Map's #museum) opens it.
+function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggle('open');}
+(function(){
+  function openRow(h){
+    if(!h)return; var el=document.getElementById(h); if(!el)return;
+    var r=el.closest('.fd-row'); if(!r)return; r.classList.add('open'); el.scrollIntoView();
+  }
+  window.addEventListener('hashchange',function(){openRow(location.hash.slice(1))});
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href*="#"]'); if(!a)return;
+    var u=new URL(a.href,location.href);
+    if(u.pathname===location.pathname&&u.hash===location.hash)setTimeout(function(){openRow(u.hash.slice(1))},0);
+  });
+  openRow(location.hash.slice(1));
 })();
 </script>
 </body></html>

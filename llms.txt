@@ -123,7 +123,7 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 - Main site: https://the420code.org
 - About the artist, G: https://artist-g.global/about/
 - The front door, one page: https://the420code.org/what-is-the-420-code/
-- Independent reproduction, outside the site — a sceptic’s own program re-deriving the constants from scratch: https://github.com/ajgreyling/the420code-proof
+- The independent check, outside the site (external verification) — a sceptic’s own program re-deriving the constants from scratch: https://github.com/ajgreyling/the420code-proof
 - The method, step by step — why it is not numerology, with the picture: https://the420code.org/method/
 - Why 21 is forced — every step of the count, the switch on each, every other integer tried: https://the420code.org/why-21-is-forced/
 - The axiom — one record exists, and the four conditions: https://the420code.org/axiom/
