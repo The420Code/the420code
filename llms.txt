@@ -121,10 +121,17 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 ## Available Resources
 
 - Main site: https://the420code.org
+- About the artist, G: https://artist-g.global/about/
 - The front door, one page: https://the420code.org/what-is-the-420-code/
-- The independent check, outside the site: https://github.com/ajgreyling/the420code-proof
+- Independent reproduction, outside the site — a sceptic’s own program re-deriving the constants from scratch: https://github.com/ajgreyling/the420code-proof
 - The method, step by step — why it is not numerology, with the picture: https://the420code.org/method/
 - Why 21 is forced — every step of the count, the switch on each, every other integer tried: https://the420code.org/why-21-is-forced/
+- The axiom — one record exists, and the four conditions: https://the420code.org/axiom/
+- The physics — every result against its measurement, the two that fired, and what else is derived: https://the420code.org/physics/
+- The eight notebooks — all 54 proofs, bound, with a summary of each: https://the420code.org/notebooks/
+- The five doors — the five books, each a door into the same argument: https://the420code.org/five-doors/
+- The five Ø Models — the catalogue of the exhibition: https://the420code.org/models/
+- The exhibition — Rosin, and the Records: https://the420code.org/exhibition/
 - One awareness — the ethic derived, the is–ought switch pulled, and the second road: https://the420code.org/one-awareness/
 - Everything in a few pages: https://the420code.org/The_420_Code_in_a_few_pages.pdf
 - All 54 proofs: https://the420code.org/proofs/

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ø Physics — the 420 code</title>
+<meta name="description" content="One measured input, zero free parameters: every result against its measurement, the two that fired, and what else is derived.">
+<link rel="canonical" href="https://the420code.org/physics/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/physics/">
+<meta property="og:title" content="Ø Physics — the 420 code">
+<meta property="og:description" content="One measured input, zero free parameters: every result against its measurement, the two that fired, and what else is derived.">
+<meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="the 420 code">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ø Physics — the 420 code">
+<meta name="twitter:description" content="One measured input, zero free parameters: every result against its measurement, the two that fired, and what else is derived.">
+<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<meta name="author" content="G — Studio G">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#4a4a4a;--g5:#4a4a4a;--g6:#1a1a1a;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:17px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
+/* anchored headings rest 17px clear of the sticky nav (nav 119 desktop / 176 mobile) */
+html{scroll-padding-top:136px}
+@media(max-width:640px){html{scroll-padding-top:193px}}
+.nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+
+.section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+
+.hero{margin:2rem 0 3rem}
+.hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 2.5rem}
+.hero .lead{font-size:18px;font-style:italic;margin:0 0 .5rem}
+
+.steps{margin:1.5rem 0 2rem;padding:0;counter-reset:step}
+.steps li{list-style:none;padding:0 0 0 2rem;position:relative;margin:0 0 .35rem;font-size:16px}
+.steps li::before{counter-increment:step;content:counter(step)".";position:absolute;left:0;font-weight:700;color:var(--g4);font-size:16px}
+
+.doors{margin:2rem 0 0;padding:2rem 0}
+.doors h2{font-size:26px;font-weight:700;margin:0 0 .25rem}
+.doors .sub{font-size:16px;color:var(--g5);margin:0 0 2.5rem}
+.door{margin:0 0 3.5rem}
+.door h3{font-size:18px;font-weight:700;margin:0 0 .15rem}
+.door h3 a{text-decoration:none}
+.door h3 a:hover{text-decoration:underline}
+.door p{font-size:16px;color:var(--g6);margin:0 0 .25rem}
+.door .hint{font-size:16px;color:var(--g4);font-style:italic}
+.voices{margin:.75rem 0 0}
+.voice{margin:0 0 .4rem}
+.voice b{font-size:16px}
+.voice span{font-size:16px;color:var(--g5)}
+
+.read-block{margin:0 0 1.5rem;padding:2rem;border:1px solid var(--g2);background:var(--g1)}
+.read-block p{font-size:16px;font-style:italic;color:var(--g5);margin:0}
+
+.cat-section{margin:0 0 3.5rem}
+.cat-title{font-size:18px;font-weight:700;margin:0 0 .75rem}
+.cat-desc{font-size:16px;color:var(--g5);margin:0 0 1rem}
+.cat-hint{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 .75rem}
+.dl-list{margin:0;padding:0}
+.dl-list li{list-style:none;padding:.6rem 0;border-bottom:1px solid var(--g1);font-size:16px;display:flex;align-items:center;gap:.75rem}
+.dl-list li:last-child{border-bottom:none}
+.dl-list a{text-decoration:none;color:var(--bk);font-weight:600}
+.dl-list a:hover{text-decoration:underline}
+
+.spine{position:relative;padding-left:32px}
+.spine::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--bk)}
+.part{position:relative;margin:0 0 2.5rem}
+.part-dot{position:absolute;left:-32px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--bk);z-index:1}
+.part-header{cursor:pointer;user-select:none;padding:0 0 .5rem}
+.part-header:hover .part-name{text-decoration:underline}
+.part-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#5a5a5a;display:block;margin:0 0 1rem}
+.part-name{font-size:22px;font-weight:700;display:inline;line-height:1.2;flex:1}
+.part-name-row{display:flex;align-items:baseline;gap:.75rem}
+.part-desc{font-size:16px;color:var(--g5);font-style:italic;display:block;margin:1rem 0 0}
+.part-count{font-size:16px;color:#5a5a5a;margin:4px 0 0;display:block}
+.part-read{display:inline-block;margin-top:.5rem;font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--bk);text-decoration:none;border-bottom:1px solid var(--bk)}
+.part-read:hover{text-decoration:none;border-bottom-width:2px}
+.ap-list{margin:.75rem 0 0;overflow:hidden;transition:max-height .4s ease}
+.ap-list.collapsed{max-height:0!important;margin:0}
+.ap-row{border-top:1px solid var(--g2)}
+.ap-row:last-child{border-bottom:1px solid var(--g2)}
+.ap-header{display:flex;align-items:baseline;gap:.75rem;padding:.6rem 0;cursor:pointer;user-select:none;transition:background .1s}
+.ap-header:hover{background:var(--g1);margin:0 -.5rem;padding-left:.5rem;padding-right:.5rem}
+.ap-number{font-size:16px;font-weight:700;color:#5a5a5a;min-width:32px;flex-shrink:0}
+.ap-title{font-size:16px;font-weight:700;flex:1}
+.ap-tag{font-size:16px;color:var(--g5);border:1px solid var(--g2);padding:1px 8px;border-radius:2px;white-space:nowrap;flex-shrink:0}
+.ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
+.ap-row.open .ap-arrow{transform:rotate(90deg)}
+.ap-detail{display:none;padding:0 0 1rem;padding-left:32px}
+.ap-row.open .ap-detail{display:block}
+.ap-detail p{font-size:16px;line-height:1.6;margin:0 0 .5rem;color:var(--g6)}
+.ap-detail .ap-essay{margin-top:1.5rem}
+.ap-detail .ap-essay p{margin:0 0 1rem;line-height:1.75}
+.ap-detail .ap-essay .sub{font-weight:700}
+.ap-detail .ap-essay .ks{background:var(--g1);border-left:3px solid #8B6914;padding:16px 20px;margin:24px 0;font-size:16px;color:#3a3a3a;line-height:1.6}
+.ap-detail .ap-essay .breath{text-align:center;font-style:italic;color:var(--g5);padding:40px 0;font-size:17px;margin:0}
+.ap-detail .ap-essay .bc{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-detail .ap-essay .bl{display:inline-block;font-size:16px;letter-spacing:1px;padding:3px 8px;border-radius:3px;margin-right:4px;background:var(--g2);color:var(--g6)}
+.ap-meta{font-size:16px;color:var(--g4);display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0 0}
+.ap-meta a{color:#383838}
+
+.stats{display:flex;flex-wrap:wrap;gap:2rem;margin:0 0 0}
+.stat-num{font-size:36px;font-weight:700;line-height:1;display:block}
+.stat-label{font-size:16px;color:var(--g5);display:block;margin-top:2px}
+.stat-label a{color:inherit;text-decoration:none;border-bottom:1px solid var(--g3)}
+.stat-label a:hover{color:#8B6914;border-color:#8B6914}
+.stat-toggle{cursor:pointer}.stat-toggle:hover .stat-label{text-decoration:underline}
+.debts-panel{max-height:0;overflow:hidden;transition:max-height .2s ease;margin:0 0 2rem}
+.debts-panel.open{max-height:300px}
+.debts-list{padding:1.25rem 0 0;margin:0;list-style:none}
+.debts-list li{font-size:16px;color:var(--g6);padding:.35rem 0;border-bottom:1px solid var(--g1)}
+
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
+.entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
+.entry-card:hover{background:var(--bk);color:var(--wh)}
+.entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
+.entry-card-desc{font-size:16px;display:block;opacity:.7}
+.jump-card{position:relative}
+.jump-card .entry-card-label{font-size:16px;font-weight:700;color:#5a5a5a;position:absolute;bottom:4px;right:8px;margin:0}
+.jump-card .entry-card-desc{font-size:16px;font-weight:700;display:block;opacity:1}
+
+.physics{margin:2.5rem 0 0;padding:2.5rem 0}
+.physics h2{font-size:26px;font-weight:700;margin:0 0 1.5rem}
+.physics-intro{font-size:18px;font-weight:700;margin:0 0 .5rem}
+.physics-sub{font-size:16px;color:var(--g5);margin:0 0 2rem}
+.physics-grid{display:grid;grid-template-columns:1fr;gap:0;margin:0 0 2rem}
+.physics-card{display:flex;align-items:baseline;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--g1);gap:1rem}
+.physics-card:last-child{border-bottom:none}
+.p-name{font-size:16px;font-weight:700;flex:1}
+.p-error{font-size:22px;font-weight:700;white-space:nowrap}
+.p-detail{font-size:16px;color:var(--g5);margin:2px 0 0}
+.p-source{font-size:16px;color:var(--g4)}
+.formula{font-size:16px;margin:0 0 .75rem;padding:.5rem 0;font-style:italic;color:var(--g6)}
+.three-constants{font-size:16px;font-weight:700;margin:1.5rem 0;padding:1rem 0;border-top:1px solid var(--g2);border-bottom:1px solid var(--g2)}
+.also-derived{margin:1.5rem 0}
+.also-derived p{font-size:16px;font-weight:700;margin:0 0 .5rem}
+.also-derived ul{list-style:none;padding:0}
+.also-derived li{font-size:16px;color:var(--g6);padding:.2rem 0 .2rem 1rem;position:relative}
+.also-derived li::before{content:"·";position:absolute;left:0;font-weight:700}
+.confirm-link{margin:2rem 0 0;font-size:18px}
+.confirm-link a{font-weight:700;text-underline-offset:3px}
+@media(max-width:600px){.physics-card{flex-wrap:wrap;gap:.25rem}.p-error{font-size:18px}}
+.verify-wrap{position:relative;margin:1.5rem 0 0}
+.verify-code{background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:200px;font-size:16px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
+.copy-btn{position:absolute;top:8px;right:8px;padding:8px 16px;font-family:var(--f);font-size:16px;font-weight:700;line-height:1.2;letter-spacing:.03em;background:#8B6914;color:#fff;border:1px solid #8B6914;border-radius:0;cursor:pointer;box-sizing:border-box}
+.copy-btn:hover{background:#6f5310;border-color:#6f5310}
+.verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:16px}
+.verify-table th{text-align:left;font-weight:700;padding:.6rem .5rem;border-bottom:2px solid var(--bk);font-size:16px;letter-spacing:.04em;color:var(--g5)}
+.verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
+.verify-table td:last-child{color:var(--g5)}
+.verify-table td.claim{font-weight:700}
+.verify-table tr.grp>td{padding-top:13px}
+.verify-table tr.grp-label>td{padding-top:13px;padding-bottom:.15rem;font-size:16px;font-weight:700;letter-spacing:.04em;color:#8B6914;border-bottom:none}
+.results{margin:0;padding:2rem 0}
+.results-title{font-size:16px;font-weight:700;letter-spacing:.06em;margin:0 0 1.25rem}
+.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.35rem 0;font-size:16px;border-bottom:1px solid var(--g1)}
+.result-row:last-child{border-bottom:none}
+.result-label{color:var(--g5)}
+.result-value{font-weight:700;text-align:right}
+
+.constraint{margin:2rem 0;padding:1.5rem 0}
+.constraint p{font-size:16px;margin:0 0 .25rem}
+
+.footer{margin:3rem 0 0;padding:2rem 0 0;font-size:16px;color:var(--g4)}
+.footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+
+@media(max-width:600px){
+  .c{padding:2rem 1rem 3rem}
+  .hero h1{font-size:28px}
+  .stats{gap:1.5rem}
+  .stat-num{font-size:28px}
+  .ap-header{flex-wrap:wrap;gap:.25rem .5rem}
+  .ap-tag{order:3;margin-left:32px}
+  .entry-grid{grid-template-columns:1fr 1fr}
+  .nav{gap:.75rem;padding:.75rem 0}
+}
+/* Brevo overrides */
+.sib-form,.sib-form *{font-family:'Atkinson Hyperlegible',sans-serif!important;color:var(--bk)!important;background:transparent!important;border-radius:0!important}
+.sib-form .entry__field input{border:1px solid var(--bk)!important;padding:10px 12px!important;font-size:16px!important}
+.sib-form .sib-form-block__button{background:var(--bk)!important;color:var(--wh)!important;padding:10px 24px!important;font-size:16px!important;font-weight:700!important;letter-spacing:.06em!important;border:none!important}
+.sib-form .sib-form-block__button:hover{opacity:.85}
+[id*="sib-container"]{padding:0!important;background:transparent!important}
+.sib-form__declaration,.sib-form .entry__label,a[href*="brevo"],a[href*="sendinblue"]{display:none!important}
+/* 1 Axiom section */
+.dated{background:#f3f3ed;border-left:5px solid #8B6914;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.7}
+.dated b{font-weight:700;color:#8B6914}
+.axiom-display{text-align:center;font-size:32px;font-weight:700;letter-spacing:.04em;padding:2.5rem 1rem;margin:2rem 0;border-top:2px solid var(--bk);border-bottom:2px solid var(--bk);line-height:1.3}
+.axiom-display .epsilon{font-style:italic}
+.axiom-display .at-as{font-weight:400;font-size:24px}
+.section-1{}
+@media(max-width:600px){.axiom-display{font-size:22px}.axiom-display .at-as{font-size:17px}}
+/* ===== BEGIN NOTEBOOK ACCORDION CSS — copy this into the <style> of index.html AND proofs/index.html ===== */
+.nb-list{margin-top:2rem}
+.nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.65rem 0}
+.nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
+.nb-head{display:flex;align-items:flex-start;gap:1rem}
+.nb-num{font-size:16px;font-weight:700;letter-spacing:.06em;color:#5a5a5a;display:block;margin:0 0 .5rem}
+.nb-name{font-size:18px;font-weight:700;display:block;line-height:1.2;color:#111;text-decoration:none}
+a.nb-name:hover{text-decoration:underline}
+.nb-pdf,.nb-pdf:link,.nb-pdf:visited{margin-left:auto;flex-shrink:0;font-size:16px;font-weight:700;color:#fff!important;text-decoration:none!important;letter-spacing:.03em;background:#8B6914;border:1px solid #8B6914;padding:3px 10px;border-radius:3px;transition:all .15s}
+.nb-pdf:hover{color:#8B6914!important;background:#fff;border-color:#8B6914}
+.nb-hook{font-size:16px;color:#4a4a4a;margin:.85rem 0 .65rem}
+.nb-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:none;cursor:pointer;font-family:inherit;font-size:16px;font-weight:700;color:#1a1a1a;padding:0}
+.nb-toggle:hover{color:#8B6914}
+.nb-arrow{display:inline-block;font-size:16px;color:#4a4a4a;transition:transform .2s}
+.nb-item.open .nb-arrow{transform:rotate(90deg)}
+.nb-toggle .lbl-open{display:none}
+.nb-item.open .nb-toggle .lbl-open{display:inline}
+.nb-item.open .nb-toggle .lbl-closed{display:none}
+.nb-summary{display:none;margin:1.25rem 0 .25rem}
+.nb-item.open .nb-summary{display:block}
+.nb-summary p{font-size:16px;line-height:1.75;margin:0 0 1rem;color:#1a1a1a}
+.nb-summary .lab{font-weight:700;color:#111}
+.nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.6}
+.nb-summary .breath{text-align:center;font-style:italic;color:#4a4a4a;font-size:17px;padding:40px 0 8px;margin:0}
+/* Proofs-page variant: the summary block is nested as the first child of an
+   existing .ap-list, so it must not carry the top/bottom hairlines. */
+.nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
+/* ===== END NOTEBOOK ACCORDION CSS ===== */
+/* Unavailable PDF links */
+.pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
+
+/* Ø Map — the directory at the door */
+.map{padding:0;margin:3rem 0 3.5rem}
+.map h2{font-size:26px;font-weight:700;margin:0 0 .35rem}
+.map-intro{font-size:17px;color:var(--g5);margin:0 0 1.4rem}
+.map-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
+.map-door{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .6rem;padding:.62rem 0;text-decoration:none;color:var(--bk)}
+.map-door:nth-child(-n+2){padding-top:0}
+.map-door:hover .d-name{border-bottom-color:var(--bk)}
+.map-door:hover .d-tag{color:var(--bk)}
+.d-name{font-size:18px;font-weight:700;border-bottom:1px solid transparent}
+.d-tag{font-size:16.5px;color:var(--g5)}
+.d-tag::before{content:"— ";color:var(--g3)}
+.map-note{font-size:16px;color:var(--g5);font-style:italic;margin:1.4rem 0 0}
+@media(max-width:640px){.map-grid{grid-template-columns:1fr;gap:0}.map-door:nth-child(2){padding-top:.62rem}.d-name{font-size:17px}.d-tag{font-size:16px}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#4a4a4a;--g5:#4a4a4a;--g6:#1a1a1a;--gold:#8B6914;--fire:#8B1A1A;--live:#2f5233;--f:'Atkinson Hyperlegible',sans-serif;--mw:760px}
+body{font-family:var(--f);font-size:18px;line-height:1.65;color:#1a1a1a;background:var(--wh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.c{max-width:var(--mw);margin:0 auto;padding:3rem 1.5rem 4rem}
+a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+
+/* ── the header's base, as the home page has it ── */
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem;line-height:1.65}
+html{scroll-padding-top:86px}
+@media(max-width:640px){html{scroll-padding-top:126px}}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+@media(max-width:600px){.nav{gap:.75rem;padding:.75rem 0}}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
+/* ── end of the header's base ── */
+
+.section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
+.hero{margin:1rem 0 2rem}
+.hero h1{font-size:36px;font-weight:700;line-height:1.15;margin:0 0 1rem}
+.hero .lead{font-size:20px;font-style:italic;color:var(--g5);margin:0 0 .5rem}
+.en-note{font-size:16px;line-height:1.7;color:var(--g6);background:var(--g1);border-left:5px solid var(--gold);padding:1.1rem 1.25rem;margin:1.25rem 0 0}
+
+h2{font-size:26px;font-weight:700;margin:3rem 0 1rem}
+h3{font-size:18px;font-weight:700;margin:2rem 0 .5rem}
+h4{font-size:16px;font-weight:700;margin:1.5rem 0 .35rem}
+p{margin:0 0 1rem}
+ul,ol{margin:0 0 1rem 1.25rem}
+li{margin:0 0 .35rem}
+blockquote{margin:1rem 0;padding:.75rem 1.25rem;border-left:3px solid var(--gold);background:var(--g1);font-weight:700}
+hr{border:none;border-top:1px solid var(--g2);margin:2.5rem 0}
+code,pre{font-family:'Courier New',Courier,monospace}
+.mono-block{font-size:16px;background:var(--g1);border:1px solid var(--g2);padding:1rem 1.25rem;overflow-x:auto;white-space:pre;font-size:16px;line-height:1.55;margin:0 0 1.25rem;tab-size:2}
+
+/* tables — reuse the site's verify-table look */
+.tbl-wrap{overflow-x:auto;margin:0 0 1.5rem}
+table.data{width:100%;border-collapse:collapse;font-size:16px}
+table.data th{text-align:left;font-weight:700;padding:.5rem .6rem;border-bottom:2px solid var(--bk);font-size:16px;letter-spacing:.03em;color:var(--g5);white-space:nowrap;vertical-align:bottom}
+table.data td{padding:.5rem .6rem;border-bottom:1px solid var(--g1);vertical-align:top}
+table.data tr:last-child td{border-bottom:none}
+
+/* scoreboard */
+.scoreboard th, .scoreboard td{white-space:nowrap}
+.scoreboard td.wrap{white-space:normal;min-width:180px}
+.badge{display:inline-block;font-size:16px;font-weight:700;letter-spacing:.04em;padding:2px 9px;border-radius:2px;white-space:nowrap}
+.badge.fired{background:var(--fire);color:#fff}
+.badge.live{background:#fff;color:var(--live);border:1px solid var(--live)}
+.badge.sup{background:#fff;color:var(--g5);border:1px solid var(--g3)}
+.mono{font-family:'Courier New',Courier,monospace}
+.sig-fire,table.verify-table td.sig-fire{color:var(--fire);font-weight:700}
+.span-table td:first-child{white-space:normal;min-width:140px}
+
+/* confirm-the-math code block */
+.verify-wrap{position:relative;margin:1.5rem 0}
+.verify-code{font-size:16px;background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:340px;font-size:16px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
+.copy-btn{position:absolute;top:8px;right:8px;padding:8px 16px;font-family:var(--f);font-size:16px;font-weight:700;line-height:1.2;letter-spacing:.03em;background:var(--gold);color:#fff;border:1px solid var(--gold);border-radius:0;cursor:pointer}
+.copy-btn:hover{background:#6f5310;border-color:#6f5310}
+.run-btn{display:inline-block;box-sizing:border-box;font-family:var(--f);font-size:16px;font-weight:700;line-height:1.2;padding:8px 16px;border:1px solid var(--gold);border-radius:0;background:var(--gold);color:#fff;cursor:pointer;margin:0 .5rem .5rem 0}
+.run-btn:hover{background:#6f5310;border-color:#6f5310}
+.run-btn:disabled{opacity:.6;cursor:default}
+.run-status{font-size:16px;color:var(--g4);margin:.5rem 0 .25rem;font-style:italic;display:none}
+.run-out{display:none;max-height:none;margin:.25rem 0 1rem}
+
+.doc-list{list-style:none;margin:0 0 1rem;padding:0}
+.doc-list li{padding:.55rem 0;border-bottom:1px solid var(--g1);font-size:16px}
+.doc-list li:last-child{border-bottom:none}
+.doc-list a{font-weight:700;text-decoration:none}
+.doc-list a:hover{text-decoration:underline}
+.doc-list .desc{font-size:16px;color:var(--g5);display:block;font-size:16px;font-weight:400;margin-top:2px}
+
+.footer{margin:4rem 0 0;padding:2rem 0 0;font-size:16px;color:var(--g4);border-top:1px solid var(--g2)}
+.footer p{margin:0 0 .25rem}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--bk);color:var(--wh);padding:10px 24px;font-size:16px;font-weight:700;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+@media(max-width:600px){.c{padding:2rem 1rem 3rem}.hero h1{font-size:28px}h2{font-size:22px}}
+.verify-table{width:100%;border-collapse:collapse;margin:1.5rem 0 0;font-size:16px}
+.verify-table th{text-align:left;font-weight:700;padding:.6rem .5rem;border-bottom:2px solid var(--bk);font-size:16px;letter-spacing:.04em;color:var(--g5)}
+.verify-table td{padding:.5rem .5rem;border-bottom:1px solid var(--g1)}
+.verify-table td:last-child{color:var(--g5)}
+.sig-in,table.verify-table td.sig-in{color:var(--live);font-weight:700}
+
+/* the four commentary blocks, told apart */
+.sigma-note{font-size:16px;line-height:1.7;color:var(--g6);background:var(--g1);border-left:5px solid var(--g3);padding:1.1rem 1.25rem;margin:1.25rem 0 0}
+.sigma-note p{margin:0 0 .7rem}.sigma-note p:last-child{margin:0}
+.sigma-note ul{margin:0 0 .7rem 1.35rem}.sigma-note li{margin:0 0 .45rem}
+.sigma-note .kind{display:block;font-size:16px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin:0 0 .7rem}
+.note-read{border-left-color:var(--gold)}        .note-read .kind{color:var(--gold)}
+.note-arg{border-left-color:var(--gold)}         .note-arg .kind{color:var(--gold)}
+.note-result{border-left-color:var(--gold)}      .note-result .kind{color:var(--gold)}
+.raw{font-size:16px;color:var(--g5)}
+
+.oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem}
+@media(max-width:700px){.oneness{font-size:18px}}
+
+.constraint{margin:2rem 0;padding:1.5rem 0}
+.constraint p{font-size:16px;margin:0 0 .25rem}
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
+.nav a.nav-room{display:none}
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
+  font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+@media(max-width:400px){.nav{gap:.6rem}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
+@media(max-width:700px){
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav a.nav-door{line-height:1.25}
+  .nav a.nav-door{font-size:16px}
+}
+/* rows with a title visible and the content under it — the same component as the proofs page and the front door */
+.fold-row{border-top:1px solid var(--g2)}.fold-row:last-child{border-bottom:1px solid var(--g2)}
+.fold-row .ap-header{padding:.8rem 0}.fold-row .ap-header:hover{background:none;margin:0;padding-left:0;padding-right:0}
+.fold-row .ap-header:hover .ap-title{color:#8B6914}.fold-row .ap-title{font-size:17px}
+.fold-row .ap-detail{padding:.25rem 0 1.25rem}
+.fold-row .ap-detail .cat-section{margin:1.5rem 0 2rem}.fold-row .ap-detail .cat-section:last-child{margin-bottom:.5rem}
+.physics-folds{margin:1.25rem 0 0}.physics-folds .ap-detail p.formula{padding:.35rem 0}
+.also-rows .ap-header{padding:.7rem 0}.also-rows .ap-header:hover{background:none;margin:0;padding-left:0;padding-right:0}
+.also-rows .ap-header:hover .ap-title{color:#8B6914}.also-rows .ap-tag{color:#8B6914;border-color:var(--g3)}
+.also-rows .ap-detail{padding:0 0 .75rem}.also-rows .ap-detail p{font-size:16px;line-height:1.7;color:#1a1a1a}
+.also-rows .ap-row:last-child{border-bottom:1px solid var(--g2)}
+@media(max-width:600px){.also-rows .ap-header{flex-wrap:wrap}.also-rows .ap-tag{order:3;margin-left:0}}
+/* a moved section's own page: the page is a room, and the section inside it renders as it
+   did on the home page -- the two home rules the rooms' sheet overrides, scoped to it */
+.section-page{margin:0 0 1rem;font-size:17px}
+.section-page .verify-table td{padding:.4rem .5rem;border-bottom:1px solid var(--g1)}
+</style>
+</head>
+<body>
+<div class="c">
+
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Reproduction</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø The Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/physics/" class="nav-lang" hreflang="en" lang="en" aria-current="page"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+  </div>
+</nav>
+
+<div class="hero">
+<h1>Ø Physics</h1>
+<p class="lead">One measured input. Zero free parameters. Everything else derived, unless stated otherwise.</p>
+</div>
+
+<div class="section-page">
+<div class="physics" id="physics">
+  
+  
+  <p class="physics-sub">The fine-structure constant α ≈ 1/137 is the one number measured from experiment. Every theory of physics takes measured inputs — the Standard Model takes at least nineteen. This one takes one. From that single input and the four conditions, the following results are derived — not fitted, not adjusted, not tuned.</p>
+
+  <div class="tbl-wrap" style="overflow-x:auto"><table class="verify-table" style="margin-top:0">
+    <thead><tr><th>Claim</th><th>Predicted</th><th>Measured</th><th>σ</th><th>Error</th><th>Paper</th></tr></thead>
+    <tbody>
+      <tr class="grp-label first"><td colspan="6">The proton</td></tr>
+      <tr><td class="claim">Proton mass ratio — the series closed</td><td>1836.152673445</td><td>1836.152673426(32)</td><td>+0.59σ</td><td>10.3 ppt</td><td><a href="/proofs/#ap49" onclick="event.preventDefault();window.location.href='/proofs/#ap49'">AP49</a></td></tr>
+      <tr class="grp-label"><td colspan="6">The gravitational constant</td></tr>
+      <tr><td class="claim">Gravitational constant G, realised — against atom interferometry</td><td>6.6719 × 10⁻¹¹</td><td>6.67191(99) × 10⁻¹¹ (LENS 2014)</td><td>+0.01σ</td><td>+1 ppm</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
+      <tr><td class="claim">Gravitational constant G, realised — against CODATA</td><td>6.6719 × 10⁻¹¹</td><td>6.67430(15) × 10⁻¹¹</td><td>−16σ</td><td>−0.036%</td><td><a href="/proofs/#ap44" onclick="event.preventDefault();window.location.href='/proofs/#ap44'">AP44</a></td></tr>
+      <tr class="grp-label"><td colspan="6">The neutron-proton mass difference</td></tr>
+      <tr><td class="claim">Neutron-proton mass diff, realised</td><td>2.53098857035 mₑ</td><td>2.530988574(74) mₑ</td><td>−0.005σ</td><td>−1.4 ppb</td><td><a href="/proofs/#ap47" onclick="event.preventDefault();window.location.href='/proofs/#ap47'">AP47</a></td></tr>
+      <tr><td class="claim">Neutron-proton mass diff, bare row</td><td>2.53099393 mₑ</td><td>2.530988574(74) mₑ</td><td>+7.24σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">FIRED</span></td><td>+2.1 ppm</td><td><a href="/proofs/#ap30" onclick="event.preventDefault();window.location.href='/proofs/#ap30'">AP30</a></td></tr>
+      <tr class="grp-label"><td colspan="6">The age of the universe</td></tr>
+      <tr><td class="claim">Age of the universe, one cycle</td><td>13.830 Gyr</td><td>13.787 ± 0.020 Gyr</td><td>+2.1σ</td><td>+0.31% · window 13.17–14.49</td><td><a href="/proofs/#ap46" onclick="event.preventDefault();window.location.href='/proofs/#ap46'">AP46</a></td></tr>
+      <tr class="grp-label"><td colspan="6">The expansion rate, and what follows from it</td></tr>
+      <tr><td class="claim">Expansion rate H₀, the closure</td><td>67.45 km/s/Mpc</td><td>67.4 ± 0.5 (Planck)</td><td>+0.1σ</td><td>+0.07% · window 64.4–70.8</td><td><a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48</a></td></tr>
+      <tr><td class="claim">Hubble constant from the floor inverted</td><td>74.3 ± 1.2</td><td>67.45 (the corpus’s own rate)</td><td>+5.7σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">FIRED</span></td><td>+10.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr><td class="claim">MOND acceleration a₀ (at H₀ = 67.45)</td><td>1.089 × 10⁻¹⁰</td><td>1.20 ± 0.24 × 10⁻¹⁰ (syst.)</td><td>−0.46σ</td><td>−9.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr class="grp-label"><td colspan="6">What the universe is made of</td></tr>
+      <tr><td class="claim">Dark energy</td><td>68.85%</td><td>68.89 ± 0.56%</td><td>−0.07σ</td><td>−0.06%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
+      <tr><td class="claim">Dark matter</td><td>26.39%</td><td>26.07 ± 0.38%</td><td>+0.8σ</td><td>+1.2%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
+      <tr><td class="claim">Visible matter</td><td>4.76%</td><td>≈ 4.885 ± 0.05%</td><td>−2.46σ</td><td>−2.5%</td><td><a href="/proofs/#ap41" onclick="event.preventDefault();window.location.href='/proofs/#ap41'">AP41</a></td></tr>
+    </tbody>
+  </table></div>
+  <div class="physics-folds"><div class="ap-row fold-row" id="physics-how-to-read"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">How to read the σ column</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="sigma-note" style="font-size:16px;color:var(--g5);margin:0;line-height:1.6"><p style="margin:0 0 .5rem"><b>How to read the σ column.</b> Every measurement comes with a bar: one standard deviation, σ, the experimenters’ own statement of how far their number might sit from the truth. The σ column divides the gap between prediction and measurement by that bar. The sign says which side: + above the measurement, − below. The Error column gives the same gap in the number’s own units. The odds below are the chance of landing <i>at least</i> that far from the truth by chance alone, counting both directions.</p>
+    <ul style="margin:0 0 .5rem 1.25rem;padding:0">
+      <li><b>Under 1σ</b> — inside the bar. Agreement: about two honest measurements in three land this close, and one in three lands further out by chance alone.</li>
+      <li><b>2σ</b> — tension. One in twenty-two. Worth watching, not yet a verdict.</li>
+      <li><b>3σ</b> — evidence of a real gap. One in 370.</li>
+      <li><b>5σ</b> — the discovery standard of particle physics. One in 1.7 million (one in 3.5 million if only one direction counts, as the discovery convention usually reads it). Each switch names its kill threshold in advance. Past it, the row is dead by the work’s own rule.</li>
+      <li><b>Above 5σ</b> — dead. The two corpses on this page sit at 7.24σ and 5.7σ. They are shown, never repaired.</li>
+    </ul></div></div></div><div class="ap-row fold-row" id="physics-three-caveats"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Three caveats</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="sigma-note" style="font-size:16px;color:var(--g5);margin:0;line-height:1.6"><p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both rows are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA row reads dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. There is one value of G. AP28’s first reading, +0.69%, was wrong: it omitted the arena’s holding of the break, which AP44 priced. It is withdrawn, superseded by the realised value on the author’s ruling of 21 September 2026, and kept on the record, dated (<a href="/prereg/doc/2026-09-04-G-KS-CCC.3-NOTE-2026-09-21.html">the dated note</a>). The neutron’s fired row exposed the omission, and its consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p></div></div></div><div class="ap-row fold-row" id="physics-two-failed"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title" style="color:#8B1A1A">Two predictions have failed and are shown</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p style="font-size:16px;color:#8B1A1A;margin:0">Two predictions have failed and are shown. KS-NPP.1, the bare neutron–proton row, fired on 2026-08-02 at 7.24σ. KS-45.1, the Hubble constant 74.3 ± 1.2 from the floor inverted, fired on 2026-09-03 on the corpus’s own derived rate. Neither is repaired. See the <a href="/prereg/">pre-registration</a>.</p></div></div><div class="ap-row fold-row" id="physics-one-relation"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">One relation links a₀ and H₀</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p style="font-size:16px;color:var(--g4);margin:0;font-style:italic">One relation links a₀ and H₀ with a parameter-free coefficient — not two independent predictions. The corpus’s expansion rate is now AP48’s closure, 67.45 km/s/Mpc (window 64.4–70.8), on the relic glow’s side of the Hubble tension; at that rate the floor sits 9.2% below the measured scale — 0.46σ once the ±0.24 systematic the paper had omitted is restored. The floor’s earlier inversion, H₀ = 74.3 ± 1.2 (KS-45.1), fired on 2026-09-03 on the corpus’s own rate and is shown as a corpse, never repaired. The Cepheid ladder’s 73 is stated as not the expansion rate; if it is confirmed, AP48 dies on KS-ASM.1.</p></div></div><div class="ap-row fold-row" id="physics-equations"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The equations</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p class="formula">m<sub>p</sub>/m<sub>e</sub> = 21² × 4 + 21 × 3 + 3² + α × 21 × (1 − 1/(84π)) + 21α × r/(1 − r), &nbsp; r = 16α/1836</p>
+  <p class="formula">G = α<sup>21</sup> × (1 + 1/π) / (1 + α) × ℏc/m<sub>e</sub>²   — AP44; without the /(1 + α), AP28’s first reading, withdrawn</p>
+  <p class="formula">Δ<sub>n−p</sub> = [3(1 − 1/2π) + α(1 + 1/2π)] / (1 + α²/8π) = 2.53098857 m<sub>e</sub>   (AP47)</p>
+  <p class="formula">t<sub>cycle</sub> = (21/18) · α<sup>−18</sup> · ℏ/(m<sub>e</sub>c²) = 13.830 Gyr;   H₀ = 0.954 / t<sub>cycle</sub> = 67.45 km/s/Mpc   (AP46, AP48)</p>
+  <p class="formula">a₀ = C_S² · c · H₀ / (2π)   where C_S² = 2 ln(sec ½ + tan ½) ≈ 1.0445 — not the fine-structure constant</p>
+  </div></div><div class="ap-row fold-row" id="physics-integer"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The integer sixteen — and why twenty-one cannot move</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p class="p-detail">The integer 16 in the α² term was pinned by measurement — 336 = 21 × 16, a 0.33 % constraint — and its structural decomposition was paid by AP49 The Hold on 6 September 2026. The frozen pre-registration, including the conditions under which the proton result dies, is at <a href="/prereg/">/prereg/</a>. The twenty-one is a count, not a fit: <a href="/method/">every step of the count</a>, and <a href="/prereg/#numerology">why 21 cannot move</a> — one step in the integer changes G by a factor of 137.</p></div></div></div>
+  <p class="three-constants" style="margin-bottom:0">Three constants, three axioms: c ↔ Constraint · ℏ ↔ Break · G ↔ Record</p>
+</div>
+
+<!-- ALSO DERIVED -->
+<div class="results" id="also-derived" style="padding:2.5rem 0 0">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Also Derived</h2>
+  <div class="also-rows">
+<div class="ap-row" id="also-n-3-spatial-dimensions">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">N = 3 spatial dimensions</span><span class="ap-tag">the four conditions</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From the four conditions.</b> Up and down, left and right, forward and back. Physics assumes three and never asks why. Here the number is derived. Four conditions give four directions a record can differ in. One is the direction the record history flows from now — time. Three remain. Those are space. <a href="/proofs/#ap10">AP10</a>.</p></div>
+</div>
+<div class="ap-row" id="also-einsteins-field-equations">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Einstein’s field equations</span><span class="ap-tag">Record and Constraint</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From Record and Constraint.</b> What has landed holds, and it holds somewhere. So the landscape — every grain that has already landed — bends where the next grain can fall. That bending is gravity, and Einstein’s equations are its mathematics: the equations behind GPS and black holes. Here they are derived. The sheet and the grains are the same record. <a href="/proofs/#ap08">AP08</a>.</p></div>
+</div>
+<div class="ap-row" id="also-the-born-rule">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The Born rule</span><span class="ap-tag">one record, many windows</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From one record, read at many windows.</b> In quantum mechanics you do not get the odds of an outcome directly. You get a number, and the odds are that number times itself. Physics has used that rule for a century without a reason. Here it is derived. Every window reads the same record, so their readings must agree, and times-itself is the only way to count the odds so that they agree. The strangest rule in physics is what agreement between windows looks like. <a href="/proofs/#ap25">AP25</a>.</p></div>
+</div>
+<div class="ap-row" id="also-standard-model-gauge-group-su-3-su-2-u-1">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Standard Model gauge group SU(3) × SU(2) × U(1)</span><span class="ap-tag">the Break</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From the Break.</b> Electromagnetism runs electricity, magnets and light. The strong force holds the middle of an atom together. The weak force lets a star burn. Physics measured how each one works and never explained why. Here each comes from the break. Electricity and light are a record refusing to let go of its substrate. The middle of the atom holds because the break is free to point in any direction. The weak force works one way round and not the other — measured in 1956, unexplained since — because a break has a direction. <a href="/proofs/#ap15">AP15</a>, <a href="/proofs/#ap16">AP16</a>, <a href="/proofs/#ap19">AP19</a>, <a href="/proofs/#ap27">AP27</a>. The group is derived at the structural register; the hypercharges, the three generations and electroweak breaking are open debts, each named: <a href="/killswitches/#ks-65">KS-65</a>, <a href="/killswitches/#ks-66">KS-66</a>, <a href="/killswitches/#ks-67">KS-67</a>.</p></div>
+</div>
+<div class="ap-row" id="also-chiral-coupling-unexplained-since-1956-now-derived">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Chiral coupling — unexplained since 1956, derived at the structural register</span><span class="ap-tag">the Break</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From the Break.</b> The weak force works one way round and not the other — measured in 1956, unexplained since — because a break has a direction. <a href="/proofs/#ap16">AP16</a>. The formal coupling theorem is the work’s principal open problem, and its switch says so: <a href="/killswitches/#ks-63">KS-63</a>.</p></div>
+</div>
+<div class="ap-row" id="also-flat-rotation-curves-without-dark-matter-particles">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Flat rotation curves without dark matter particles</span><span class="ap-tag">the flow, −α</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From the flow — the inward half of it.</b> In a galaxy the outer stars go round as fast as the inner ones. Add up everything you can see, and there is not enough pull to hold them. They should fly off. They do not. Physics fixes this with dark matter: a new kind of matter, never found. Here there is only sand. The sand is under tension, and the tension supplies the pull. The curves come out flat on their own. Where the table says dark matter, it is not a stuff. It is black holes swallowing the landscape and returning it to the dark side — the −α in the line. Dark matter is a verb. <a href="/proofs/#ap17">AP17</a>, <a href="/proofs/#ap18">AP18</a>, <a href="/proofs/#ap42">AP42</a>.</p></div>
+</div>
+<div class="ap-row" id="also-bell-inequality-s-2-2-from-structure">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Bell inequality S = 2√2 from structure</span><span class="ap-tag">the Break, at the now</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From the Break, at the now.</b> Two particles actualised together, sent to opposite ends of the world. Measure one, and the other matches. Einstein called it spooky. Here it is not. Before the fall there is no distance: the two are one wave. The fall writes one record with two ends. Nothing travels between them, because there is no between. How closely the two ends can agree — Bell’s number — comes out of the structure alone. <a href="/proofs/#ap23">AP23</a>.</p></div>
+</div>
+<div class="ap-row" id="also-special-relativitys-kinematics-and-the-sign-of-the-signature">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Special relativity’s kinematics, and the sign of the signature</span><span class="ap-tag">Constraint, through the windows</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From Constraint, read through the windows.</b> Nothing can go faster than light, and the faster a clock travels, the slower it ticks. Here it comes from the windows. Every window keeps its own count of ticks. There is no master clock. Distance is what light writes between windows, so the speed of light is the ruler, not a speed limit somebody found. And “now” is the grain still falling. No window can read its own, so no two windows can ever share one reading of it. The now they read is one. Every view is relative. None is the right one. <a href="/proofs/#ap52">AP52</a>.</p></div>
+</div>
+<div class="ap-row" id="also-the-equivalence-principle-and-the-landscapes-curvature">
+<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The equivalence principle and the landscape’s curvature</span><span class="ap-tag">the neck</span><span class="ap-arrow">▸</span></div>
+<div class="ap-detail"><p><b class="hl">From the neck.</b> Gravity is the neck. The equivalence principle and the curvature of the landscape, derived at the structural register. <a href="/proofs/#ap53">AP53</a>.</p></div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p style="margin:.75rem 0">Why only G? Because who made it is irrelevant: <span class="nw">The 420 Code</span> stands on its own, and every step is on the page to be checked. It is signed G so that it is judged by what it says, not by who says it. <a href="https://artist-g.global/about/" target="_blank" rel="noopener">More about the artist →</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The I Am in me is the I Am in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+
+</div>
+
+<script>
+function toggleAP(r){r.classList.toggle('open')}
+function nbToggle(btn){ btn.closest('.nb-item').classList.toggle('open'); }
+function copyCode(){var code=document.querySelector('#confirm-the-math ~ .verify-wrap .verify-code code').textContent;navigator.clipboard.writeText(code);var btn=document.querySelector('#confirm-the-math ~ .verify-wrap .copy-btn');btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},2000)}
+function copyInline(btn){var code=btn.closest('.verify-wrap').querySelector('code').textContent;navigator.clipboard.writeText(code);btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1500)}
+function runVerify(){
+  var btn=document.getElementById('run-verify-btn');
+  var status=document.getElementById('run-verify-status');
+  var out=document.getElementById('run-verify-output');
+  status.style.display='block';status.style.color='var(--g4)';
+  status.textContent='Computing…';
+  out.style.display='none';
+  setTimeout(function(){
+    try{
+      if(typeof VERIFY_MAIN!=='function')throw new Error('verifier failed to load');
+      var res=VERIFY_MAIN();
+      out.textContent=res.out;out.style.display='block';
+      out.style.borderColor=res.ok?'#1a7f37':'#b00';
+      status.textContent=res.ok?'Verified live in your browser — every derivation holds.':'Finished — see the output below.';
+      status.style.color=res.ok?'#1a7f37':'var(--g4)';
+      btn.textContent='▸ Run it again';
+    }catch(err){
+      status.style.color='#b00';
+      status.textContent='Could not run ('+err.message+'). You can still run verify.py on your machine via the link.';
+    }
+  },20);
+}
+function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
+function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
+
+// Download counter
+(function(){
+  var counter='/.netlify/functions/download-counter';
+  var el=document.getElementById('dl-count');
+
+  fetch(counter).then(function(r){return r.json()}).then(function(d){
+    el.textContent=d.count.toLocaleString();
+  }).catch(function(){el.textContent='0'});
+
+  var toast=document.createElement('div');
+  toast.className='toast';
+  toast.textContent='Publishing Soon';
+  document.body.appendChild(toast);
+  var toastTimer;
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href$=".pdf"]');
+    if(!a) a=e.target.closest('.ap-meta a, .dl-list a');
+    if(!a) return;
+    var href=a.getAttribute('href');
+    if(!href||href==='#'){
+      e.preventDefault();
+      e.stopPropagation();
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
+      return;
+    }
+    // Extract filename from href
+    var filename=href.split('/').pop();
+    // Force immediate download
+    if(!a.hasAttribute('download')) a.setAttribute('download','');
+    // Increment counter with per-file tracking
+    fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})}).then(function(r){return r.json()}).then(function(d){
+      el.textContent=d.count.toLocaleString();
+    });
+  },true);
+})();
+</script>
+<script>
+// Mark unavailable PDF links as pending (50% opacity)
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){
+    a.classList.add('pdf-pending');
+  });
+});
+</script>
+<script>(function(){var t=document.querySelectorAll('[onclick]');for(var i=0;i<t.length;i++){var el=t[i],oc=el.getAttribute('onclick')||'';if(/toggle(AP|Part)|nbToggle/.test(oc)&&el.tagName!=='BUTTON'&&el.tagName!=='A'){if(!el.hasAttribute('role'))el.setAttribute('role','button');if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});}}})();</script>
+<script id="visit-counter">
+// One visit is one browser session, not one page load: a reload does not count
+// again, so the number keeps meaning something. Counted from every page.
+(function(){
+  var api='/.netlify/functions/visit-counter';
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  var el=document.getElementById('visit-count');
+  if(el){
+    fetch(api).then(function(r){return r.json()}).then(function(d){
+      el.textContent=(d.count||0).toLocaleString();
+    }).catch(function(){el.textContent='—'});
+  }
+})();
+</script>
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+</body></html>

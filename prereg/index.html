@@ -209,19 +209,19 @@ tr.reg-detail td{background:var(--g1);font-size:16px;line-height:1.6;color:var(-
   <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
   <div class="nav-menu">
     <a href="/#museum" class="nav-room">Ø Museum</a>
-    <a href="/#five-doors" class="nav-room">Ø Five Doors</a>
-    <a href="/#models" class="nav-room">Ø Models</a>
-    <a href="/#exhibition" class="nav-room">Ø Exhibition</a>
-    <a href="/#axiom" class="nav-room">1 Axiom</a>
-    <a href="/#physics" class="nav-room">Ø Physics</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
     <a href="/prereg/" class="nav-room">Ø Predictions</a>
-    <a href="/#notebooks" class="nav-room">Ø Notebooks</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
     <a href="/proofs/" class="nav-room">Ø Proofs</a>
     <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
     <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
     <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
     <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
-    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Reproduction</a>
     <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
     <a href="/method/" class="nav-room">Ø The Method</a>
     <a href="/glossary/" class="nav-room">Ø Glossary</a>
@@ -320,7 +320,7 @@ point; a registry checked only by its author is a registry checked by nobody.</p
     <li><b>Under 1σ</b> — inside the bar. Agreement: about two honest measurements in three land this close, and one in three lands further out by chance alone.</li>
     <li><b>2σ</b> — tension. One in twenty-two. Worth watching, not yet a verdict.</li>
     <li><b>3σ</b> — evidence of a real gap. One in 370.</li>
-    <li><b>5σ</b> — the discovery standard of particle physics. One in 1.7 million (one in 3.5 million if only one direction counts, as the discovery convention usually reads it). At 5σ a prediction is either confirmed or dead; there is no third reading.</li>
+    <li><b>5σ</b> — the discovery standard of particle physics. One in 1.7 million (one in 3.5 million if only one direction counts, as the discovery convention usually reads it). Each switch names its kill threshold in advance. Past it, the row is dead by the work’s own rule.</li>
     <li><b>Above 5σ</b> — dead. The two corpses on this page sit at 7.24σ and 5.7σ. They are shown, never repaired.</li>
   </ul>
   <p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both rows are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA row reads dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. There is one value of G. AP28’s first reading, +0.69%, was wrong: it omitted the arena’s holding of the break, which AP44 priced. It is withdrawn, superseded by the realised value on the author’s ruling of 21 September 2026, and kept on the record, dated (<a href="doc/2026-09-04-G-KS-CCC.3-NOTE-2026-09-21.html">the dated note</a>). The neutron’s fired row exposed the omission, and its consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p>
@@ -686,7 +686,8 @@ resid = D_CLOSED - MP_ME                       # = +1.895e-8 = +10.3 ppt
 
 <div class="constraint" id="about">
   <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
-  <p><b>Artist:</b> <a href="https://artist-g.global" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p style="margin:.75rem 0">Why only G? Because who made it is irrelevant: <span class="nw">The 420 Code</span> stands on its own, and every step is on the page to be checked. It is signed G so that it is judged by what it says, not by who says it. <a href="https://artist-g.global/about/" target="_blank" rel="noopener">More about the artist →</a></p>
   <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
   <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
   <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>

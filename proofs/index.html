@@ -323,19 +323,19 @@ a.nb-name:hover{text-decoration:underline}
   <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
   <div class="nav-menu">
     <a href="/#museum" class="nav-room">Ø Museum</a>
-    <a href="/#five-doors" class="nav-room">Ø Five Doors</a>
-    <a href="/#models" class="nav-room">Ø Models</a>
-    <a href="/#exhibition" class="nav-room">Ø Exhibition</a>
-    <a href="/#axiom" class="nav-room">1 Axiom</a>
-    <a href="/#physics" class="nav-room">Ø Physics</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
     <a href="/prereg/" class="nav-room">Ø Predictions</a>
-    <a href="/#notebooks" class="nav-room">Ø Notebooks</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
     <a href="/proofs/" class="nav-room">Ø Proofs</a>
     <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
     <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
     <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
     <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
-    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Reproduction</a>
     <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
     <a href="/method/" class="nav-room">Ø The Method</a>
     <a href="/glossary/" class="nav-room">Ø Glossary</a>
@@ -947,10 +947,10 @@ a.nb-name:hover{text-decoration:underline}
 <p>Hold a die. It has six faces. You can orient it any way you like — the physics does not change. Every orientation is equivalent.</p>
 <p>The manifold has three spatial faces: C, S, B. The break happens along one of them. But which one?</p>
 <p>Paper D proves the three spatial axioms are independent. No axiom is derivable from the others. All three faces are structurally equivalent. The break could go along any of them.</p>
-<p>That equivalence is a gauge freedom. And the group of rotations in face-space is SU(3). This is the gauge group of the strong force. The last piece of the Standard Model.</p>
+<p>That equivalence is a gauge freedom. Face-space is not the three directions of space — it is an internal index, like isospin — and the orientation is quantum: its state is complex, ℂ³, the Hilbert space of AP09, not the real ℝ³ of a rotation. So the freedom is unitary, U(3), and with the global phase removed — the Born-rule redundancy of AP09 — it is SU(3), not SO(3). Eight generators. This is the gauge group of the strong force. The last piece of the Standard Model.</p>
 <p>Colour charge is orientation. A quark’s “colour” — red, green, blue — is which face of the manifold the break is currently oriented along.</p>
 <p>Not a substance. Not a thing the quark has. A direction the quark points in. The way “north” is not a substance a compass has.</p>
-<p>Gluons are the gauge bosons. Eight of them — matching the eight generators of SU(3). They carry colour charge themselves, because rotations in face-space affect the rotation field.</p>
+<p>Gluons are the gauge bosons. Eight of them — matching the eight generators of SU(3). They carry colour charge themselves, because SU(3) is non-Abelian: its generators do not commute, so the gauge bosons interact with each other (AP19 §5).</p>
 <p>This is why the strong force is so different from electromagnetism. Photons do not carry electric charge. Gluons do carry colour. The mediator is itself charged.</p>
 <p>Confinement follows from isotropy. The manifold must be isotropic on large scales — no preferred direction.</p>
 <p>A free quark would be a permanent preferred orientation. The substrate forbids it. The energy cost of maintaining a non-isotropic region grows with distance.</p>
@@ -1002,12 +1002,12 @@ a.nb-name:hover{text-decoration:underline}
 <p>The standard approach sums over all possible paths through a continuum. Uncountably many paths. The sum diverges.</p>
 <p>That is not a physics problem. It is a counting error. You tried to add up an uncountable set and got infinity. Of course you did.</p>
 <p>The record monoid is not a continuum. Records are discrete events. Each one irreversible. The set is countable — you can list them.</p>
-<p>A list is different from a smear. When you sum over a countable set, the mathematics converges.</p>
+<p>A list is different from a smear. And this list has ends. The minimum record — one unit of action, ℏ (Axiom B) — sets the ultraviolet cutoff. Bounded propagation (Axiom C) sets the infrared one. At one loop the sum has a bounded number of bounded terms, and a sum like that is finite.</p>
 <p>The path sum — every possible way the break could have unfolded — falls out of structures already derived.</p>
 <p>The Hilbert space from AP09. The propagator from Stone’s theorem. The Born rule from AP25. The monoid basis from Axiom R. No new axioms. No new imports.</p>
 <p>Just the completeness of what was already built. The quantum correction to gravity was always there. It was waiting for someone to count the records.</p>
 <p>Three results.</p>
-<p><span class="sub">Result 1.</span> The one-loop correction to G is a finite sum over virtual records. Finiteness is a theorem, not a hope. The monoid is countable. The sum converges. No renormalisation needed.</p>
+<p><span class="sub">Result 1.</span> The one-loop correction to G is a finite sum over virtual records. Finiteness is a theorem, not a hope: a bounded number of bounded terms, the ultraviolet cutoff from Axiom B and the infrared cutoff from Axiom C, neither imposed by hand. No renormalisation needed.</p>
 <p><span class="sub">Result 2.</span> The correction has the form G<sub>eff</sub> = G(1 + γ ℓ<sub>p</sub>²/L²). At everyday scales, ℓ<sub>p</sub>²/L² is about 10⁻⁷⁰. The correction is there. You will never see it.</p>
 <p>But it is finite. That is the point. The number exists. It does not blow up. It does not need to be swept under a rug.</p>
 <p><span class="sub">Structural conjecture.</span> No higher-order curvature terms appear in the effective geometry. Records produce only the Einstein tensor. Virtual records are the same algebraic objects. Lovelock applies.</p>
@@ -1015,7 +1015,7 @@ a.nb-name:hover{text-decoration:underline}
 <p>Gravity and quantum mechanics are not enemies. They are not even separate theories that need reconciling.</p>
 <p>They are one axiom set, read from two sides. The correction is what happens when the two readings talk to each other. The conversation is finite. It always was.</p>
 <div class="ks"><strong>Three kill switches. All live.</strong> <span class="bl">LIVE</span> KS-25 — if the one-loop amplitude or coefficient is wrong, the computation fails. <span class="bl">LIVE</span> KS-26 — if the monoid combinatorics at one loop do not produce the claimed structure, the derivation fails. <span class="bl">LIVE</span> KS-27 — if the structural extension to higher loops fails, the finiteness claim is limited to one loop. Three live.</div>
-<p class="breath">The hardest problem in physics was a counting error. A list is not a smear. The sum converges.</p>
+<p class="breath">The hardest problem in physics was a counting error. A list is not a smear, and this one has ends.</p>
 </div><div class="ap-meta"><span>Requires: AP08, AP09, AP12</span><a href="/killswitches/#ap14" onclick="event.stopPropagation()">Its 4 kill switches</a><a href="../AP14_The_Correction.pdf" style="margin-left:auto" onclick="event.stopPropagation()">PDF</a></div></div></div>
 <div class="ap-row" id="ap28" onclick="toggleAP(this)"><div class="ap-header"><span class="ap-number">AP28</span><span class="ap-title">The Constant</span><span class="ap-tag">Gravity</span><a class="ap-pdf" href="../AP28_The_Constant.pdf" onclick="event.stopPropagation()">PDF</a><span class="ap-arrow">▸</span></div><div class="ap-detail"><p>G = α²¹ × (1 + 1/π) × ℏc/mₑ². Hierarchy dissolved. Within 0.69% of CODATA — a first reading, withdrawn on 21 September 2026 and superseded by AP44’s realised value, −0.036%. <b>Three dated notes of 7 September 2026</b> are appended after §12 — the realised G; what the scatter reading has and has not been tested against, quoting KS-CCC.4a and KS-CCC.4b word for word (the marginal finding is Tier 1’s, and Tier 2’s blind coding has not been run); and the removal of one decorative character from the Artist’s Note as dress. The locked body is left exactly as written.</p><div class="ap-essay">
 <p>A refrigerator magnet defeats the gravitational pull of the entire planet. Electromagnetism is roughly 10⁴² times stronger than gravity. A one followed by forty-two zeros.</p>
@@ -1776,7 +1776,8 @@ a.nb-name:hover{text-decoration:underline}
 
 <div class="constraint" id="about">
   <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="../StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
-  <p><b>Artist:</b> <a href="https://artist-g.global" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p style="margin:.75rem 0">Why only G? Because who made it is irrelevant: <span class="nw">The 420 Code</span> stands on its own, and every step is on the page to be checked. It is signed G so that it is judged by what it says, not by who says it. <a href="https://artist-g.global/about/" target="_blank" rel="noopener">More about the artist →</a></p>
   <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
   <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
   <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
