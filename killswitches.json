@@ -4,7 +4,7 @@
  "author": "G",
  "licence": "Copyleft. Free to download, print, share and distribute; not to alter the source.",
  "registry": {
-  "version": "v5.34",
+  "version": "v5.35",
   "date": "2026-09-21",
   "title": "Master Kill Switch Registry",
   "pdf": "https://the420code.org/Master_Kill_Switch_Registry.pdf",
@@ -614,7 +614,7 @@
    "labels": [
     "KS-NPP.1"
    ],
-   "description": "Two-component decomposition (neutron-proton mass). FIRED 2 August 2026 at 7.24σ: predicted 2.53099393 mₑ against 2.530988574(74) mₑ, an offset of 2.12 ppm on a 0.288 ppm bar. No repair offered — the required correction is negative, every term is positive. Shown; AP47’s KS-FLIP.1 (Δ_real = Δ_bare/(1 + α²/8π), −0.005σ) is the new structural limb frozen beside the corpse. KS-NPP.2 and KS-NPP.3 (the structural limbs) unaffected. Two-component decomposition (neutron–proton mass difference). Predicted 2.53099393 mₑ; measured 2.530988574(74) mₑ (CODATA 2022); offset 2.12 ppm against a 0.288 ppm bar — 7.24σ. No repair: the required correction is negative, every term of the bare formula is positive. AP47’s realised row, Δ_real = Δ_bare/(1 + α²/8π) = 2.53098857035 (−0.005σ), is frozen beside the corpse as KS-FLIP.1. FIRED 2 August 2026 at 7.24σ (see AP30); AP47’s KS-FLIP.1 frozen beside the corpse.",
+   "description": "Two-component decomposition (neutron-proton mass). FIRED 2 August 2026 at 7.24σ: predicted 2.53099393 mₑ against 2.53098857(74) mₑ, an offset of 2.12 ppm on a 0.288 ppm bar. No repair offered — the required correction is negative, every term is positive. Shown; AP47’s KS-FLIP.1 (Δ_real = Δ_bare/(1 + α²/8π), −0.005σ) is the new structural limb frozen beside the corpse. KS-NPP.2 and KS-NPP.3 (the structural limbs) unaffected. Two-component decomposition (neutron–proton mass difference). Predicted 2.53099393 mₑ; measured 2.53098857(74) mₑ (CODATA 2022); offset 2.12 ppm against a 0.288 ppm bar — 7.24σ. No repair: the required correction is negative, every term of the bare formula is positive. AP47’s realised row, Δ_real = Δ_bare/(1 + α²/8π) = 2.53098857035 (−0.005σ), is frozen beside the corpse as KS-FLIP.1. FIRED 2 August 2026 at 7.24σ (see AP30); AP47’s KS-FLIP.1 frozen beside the corpse.",
    "status": "fired",
    "status_raw": "FIRED — 2 August 2026",
    "status_qualifier": "2 August 2026",
@@ -649,7 +649,7 @@
    "labels": [
     "KS-45.1"
    ],
-   "description": "Hubble prediction, as registered: H₀ = 2πa₀/(αc) = 74.3 ± 1.2 km s⁻¹ Mpc⁻¹, the floor inverted. Fired by AP48 on the corpus’s own derived rate, 67.45 (window 64.4–70.8): 5.7σ on the registered width, about two sigma on the corpus’s window, as AP46 §9 pre-registered; by the desk’s ruling on the author’s delegation and the author’s own word. Erratum beside the corpse (3 September 2026): the registered width omitted the ±0.24 × 10⁻¹⁰ m s⁻² systematic on the empirical acceleration scale; on the honest width, 74.3 ± 14.9, the floor’s relation survives at 0.46σ and KS-45 stands live. The corpus’s H₀ entry is KS-ASM.1 (AP48). FIRED 3 September 2026 by AP48 on the corpus’s own derived rate, 67.45 (window 64.4–70.8): 5.7σ on the registered width, about two sigma on the corpus’s window, as AP46 §9 pre-registered; the desk’s ruling on the author’s delegation, confirmed in his own word. Shown, never repaired.",
+   "description": "Hubble prediction, as registered: H₀ = 2πa₀/(C_S²c) = 74.3 ± 1.2 km s⁻¹ Mpc⁻¹ (C_S² ≈ 1.0445, AP18’s coefficient, not the fine-structure constant), the floor inverted. Fired by AP48 on the corpus’s own derived rate, 67.45 (window 64.4–70.8): 5.7σ on the registered width, about two sigma on the corpus’s window, as AP46 §9 pre-registered; by the author’s word. Erratum beside the corpse (3 September 2026): the registered width omitted the ±0.24 × 10⁻¹⁰ m s⁻² systematic on the empirical acceleration scale; on the honest width, 74.3 ± 14.9, the floor’s relation survives at 0.46σ and KS-45 stands live. The corpus’s H₀ entry is KS-ASM.1 (AP48). FIRED 3 September 2026 by AP48 on the corpus’s own derived rate, 67.45 (window 64.4–70.8): 5.7σ on the registered width, about two sigma on the corpus’s window, as AP46 §9 pre-registered; by the author’s word. Shown, never repaired.",
    "status": "fired",
    "status_raw": "FIRED — 3 September 2026",
    "status_qualifier": "3 September 2026",
@@ -9308,7 +9308,7 @@
    "labels": [
     "KS-FLIP.2"
    ],
-   "description": "Forced structure. Fires if any element of the construction — the order (α²), the divisor (8π), the scope, the quotient form, the process claim of §4 — is ever shown to have been selected by comparison with measurement rather than by the stated structural argument. Binding on author and desks; the chain’s true order is on the record (words first; the pair described before any count; the elimination afterward, as elimination).",
+   "description": "Forced structure. Fires if any element of the construction — the order (α²), the divisor (8π), the scope, the quotient form, the process claim of §4 — is ever shown to have been selected by comparison with measurement rather than by the stated structural argument. Binding on everyone who built it, the author first; the chain’s true order is on the record (words first; the pair described before any count; the elimination afterward, as elimination).",
    "status": "live",
    "status_raw": "LIVE — METHODOLOGICAL",
    "status_qualifier": "METHODOLOGICAL",
@@ -9496,7 +9496,7 @@
    "labels": [
     "KS-HOLD.1"
    ],
-   "description": "The closed form. m_p/mₑ = 1836 + 21α·(1 − 1/(84π)) + 21α·r/(1 − r), r = 16α/1836: D_closed = 1836.152673444951, the third-order coefficient c₃ = +21·16²/1836² = +1.595 × 10⁻³ with its sign stated in advance, all higher orders summed, with no free parameter. Supersedes the corpus’s registered D of 2 August 2026 by reference to its digest, beside it and not in its place. Test: dies at 3σ once the proton-to-electron mass ratio is measured to 3.4 parts per trillion with the present central value unchanged — about five times today’s precision — and at 5σ at 2.1 parts per trillion; the third-order term itself is resolved at about fifty times today’s. Fires in either direction. No negative term exists in the chain with which to repair a growing negative residual, and none will be offered. Recovery: the sixteen and its reading (§3) stand on the second-order data; the chain’s rule (§4) retires; AP30’s formula returns to its truncated form with KS-30.3 re-opened.",
+   "description": "The closed form. m_p/mₑ = 1836 + 21α·(1 − 1/(84π)) + 21α·r/(1 − r), r = 16α/1836: D_closed = 1836.152673444951, the third-order coefficient c₃ = +21·16²/1836² = +1.595 × 10⁻³ with its sign stated in advance, all higher orders summed, with no free parameter. Supersedes the corpus’s registered D of 2 August 2026 by reference to its frozen record, beside it and not in its place. Test: dies at 3σ once the proton-to-electron mass ratio is measured to 3.4 parts per trillion with the present central value unchanged — about five times today’s precision — and at 5σ at 2.1 parts per trillion; the third-order term itself is resolved at about fifty times today’s. Fires in either direction. No negative term exists in the chain with which to repair a growing negative residual, and none will be offered. Recovery: the sixteen and its reading (§3) stand on the second-order data; the chain’s rule (§4) retires; AP30’s formula returns to its truncated form with KS-30.3 re-opened.",
    "status": "live",
    "status_raw": "LIVE — EMPIRICAL",
    "status_qualifier": "EMPIRICAL",

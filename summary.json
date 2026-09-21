@@ -90,7 +90,7 @@
       {
         "claim": "Neutron-proton mass diff, realised",
         "predicted": "2.53098857035 mₑ",
-        "measured": "2.530988574(74) mₑ",
+        "measured": "2.53098857(74) mₑ",
         "sigma": "−0.005σ",
         "error": "−1.4 ppb",
         "paper": "AP47",
@@ -99,7 +99,7 @@
       {
         "claim": "Neutron-proton mass diff, bare row",
         "predicted": "2.53099393 mₑ",
-        "measured": "2.530988574(74) mₑ",
+        "measured": "2.53098857(74) mₑ",
         "sigma": "+7.24σ",
         "error": "+2.1 ppm",
         "paper": "AP30",
@@ -219,7 +219,7 @@
       "live": 584,
       "paid": 1
     },
-    "registry": "v5.34, 2026-09-21",
+    "registry": "v5.35, 2026-09-21",
     "every_switch": "https://the420code.org/killswitches/",
     "as_data": "https://the420code.org/killswitches.json"
   },
