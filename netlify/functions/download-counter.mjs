@@ -42,6 +42,10 @@ export default async (req, context) => {
       if (body.file) {
         // Sanitize: take only the filename, strip path components
         filename = body.file.replace(/.*\//, "").replace(/[^a-zA-Z0-9_.\-()]/g, "_");
+        // The Ø Models short editions, 22 September 2026. /models/dissolutions.pdf and the
+        // original /Dissolutions.pdf differ only by case, so the short editions are kept
+        // under their folder's name and the two never read as one.
+        if (/^(dissolutions|resolutions|applications|horizons)\.pdf$/.test(filename)) filename = "models/" + filename;
       }
     } catch (e) {
       // If no body or invalid JSON, still increment total

@@ -117,9 +117,24 @@ def shell(title, body, book, depth, description='', path='/', book_first=False):
 {body}
 <footer class="colophon">
 <p class="editions">This is the short edition of {esc(book["title"])} — a summary. Where a step is compressed here, the original carries it in full. <a href="{book["original"]}">The original book (PDF)</a> · <a href="{book["pdf"]}">This edition (PDF)</a> · <a href="/models/{book["slug"]}/">Read this edition online</a></p>
-<p><a href="https://the420code.org/">The 420 Code</a> · <a href="/models/">Ø Models</a> · {esc(book["title"])} · G · Studio G · Strand, Cape Town</p>
-<p>This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+<p><a href="https://the420code.org/">The 420 Code</a> · <a href="/models/">Ø Models</a> · {esc(book["title"])}</p>
 </footer>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The I Am in me is the I Am in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
 </div>
 <script src="{rel}reader.js"></script>
 </body>
@@ -295,7 +310,7 @@ def render_book(book):
             inner += f'<h3>{esc(h)}</h3>' + ''.join(para_html(p) for p in ps)
         if cite:
             inner += f'<p class="source">{esc(cite)}</p>'
-        front_html += details(head, inner, open_=(head == 'The Axiom'))
+        front_html += details(head, inner, open_=False)
     tagline = book['tagline'].replace('. The short edition', '').rstrip('.')
     body = f'''{strap(book, '')}
 <p class="eyebrow">The 420 Code · Ø Models</p>
@@ -394,6 +409,14 @@ footer.colophon{margin-top:3rem;font-size:1rem;color:var(--mute);letter-spacing:
 footer.colophon a{color:var(--ink-2);text-decoration:none}
 footer.colophon .editions{font-size:1rem;color:var(--ink);border-top:1px solid var(--rule);padding-top:1rem;margin-bottom:.8rem}
 footer.colophon .editions a{color:var(--accent-ink);text-decoration:underline}
+/* The site's footer, as on every page of the420code.org. Measured on /models/, 22 September 2026. */
+.constraint{margin:2rem 0;padding:1.5rem 0;color:#1a1a1a}
+.constraint p{font-size:16px;line-height:1.65;margin:0 0 .25rem;max-width:none}
+.oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem;max-width:none;color:#1a1a1a}
+.footer{margin:4rem 0 0;padding:2rem 0 0;font-size:16px;line-height:1.65;color:#4a4a4a;border-top:1px solid #e8e8e8}
+.footer p{margin:0 0 .25rem;max-width:none}
+@media (min-width:701px){.footer{padding-bottom:1rem}}
+@media (max-width:700px){.oneness{font-size:18px}}
 @media (max-width:520px){details.toc ol{columns:1}.ks{padding-left:0;text-indent:0}.ks-id{display:block;width:auto}ol.chapters a{grid-template-columns:1fr}ol.chapters .num{grid-row:auto}}
 '''
 
@@ -405,6 +428,23 @@ JS = '''(function(){
   // a link to #section-or-switch opens the section that holds it
   function reveal(){var h=location.hash&&document.getElementById(location.hash.slice(1));if(!h)return;var d=h.closest('details');while(d){d.open=true;d=d.parentElement&&d.parentElement.closest('details')}h.scrollIntoView()}
   window.addEventListener('hashchange',reveal);reveal();
+})();
+// Counted as on every page of the site: one visit per browser session (a reload does not count
+// again), and every click on a PDF, by its file name.
+(function(){
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch('/.netlify/functions/visit-counter',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(!a)return;
+    fetch('/.netlify/functions/download-counter',{method:'POST',keepalive:true,headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({file:a.getAttribute('href').split('/').pop()})}).catch(function(){});
+  },true);
 })();
 '''
 

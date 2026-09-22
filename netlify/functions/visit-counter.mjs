@@ -36,15 +36,23 @@ const langOf = (path) => {
 // /wp-admin/ never inflates the figure, and the handful of probe paths written
 // while this was being built drop out of the count without deleting anything.
 // Applied when reading, so it is retroactive.
-const PAGES = new Set(["/", "/what-is-the-420-code/", "/proofs/", "/prereg/",
-                       ...LANGS.map(l => `/${l}/`)]);
+//
+// 22 September 2026: every page that posts a visit is in the list. The rooms added since
+// 10 September (the registry, the glossary, the method, the six sections' own pages) and
+// the twelve editions' front doors were posting and being dropped here. And the Ø Models
+// library, whose book pages, chapters and epilogues are matched by their shape.
+const ROOMS = ["/", "/what-is-the-420-code/", "/proofs/", "/proofs/instruments/", "/prereg/",
+               "/killswitches/", "/glossary/", "/method/", "/why-21-is-forced/", "/one-awareness/",
+               "/five-doors/", "/models/", "/exhibition/", "/axiom/", "/physics/", "/notebooks/"];
+const PAGES = new Set([...ROOMS, ...LANGS.flatMap(l => [`/${l}/`, `/${l}/what-is-the-420-code/`])]);
+const LIBRARY = /^\/models\/(dissolutions|resolutions|applications|horizons)\/((\d\d(-5)?-[a-z0-9-]+|epilogue)\/)?$/;
 const normalise = (p) => {
   if (!p || p === "") return "/";
   p = p.replace(/index\.html$/, "");
   if (!p.endsWith("/")) p += "/";
   return p;
 };
-const isRealPage = (p) => PAGES.has(normalise(p));
+const isRealPage = (p) => PAGES.has(normalise(p)) || LIBRARY.test(normalise(p));
 
 async function readBase(store) {
   const raw = await store.get(BASE);
@@ -115,7 +123,7 @@ export default async (req, context) => {
     try {
       const body = await req.json();
       if (typeof body.path === "string") {
-        path = body.path.split("?")[0].split("#")[0].slice(0, 64)
+        path = body.path.split("?")[0].split("#")[0].slice(0, 160)
                         .replace(/[^a-zA-Z0-9/_.\-]/g, "");
         if (!path.startsWith("/")) path = "/" + path;
       }

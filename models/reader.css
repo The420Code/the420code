@@ -71,4 +71,12 @@ footer.colophon{margin-top:3rem;font-size:1rem;color:var(--mute);letter-spacing:
 footer.colophon a{color:var(--ink-2);text-decoration:none}
 footer.colophon .editions{font-size:1rem;color:var(--ink);border-top:1px solid var(--rule);padding-top:1rem;margin-bottom:.8rem}
 footer.colophon .editions a{color:var(--accent-ink);text-decoration:underline}
+/* The site's footer, as on every page of the420code.org. Measured on /models/, 22 September 2026. */
+.constraint{margin:2rem 0;padding:1.5rem 0;color:#1a1a1a}
+.constraint p{font-size:16px;line-height:1.65;margin:0 0 .25rem;max-width:none}
+.oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem;max-width:none;color:#1a1a1a}
+.footer{margin:4rem 0 0;padding:2rem 0 0;font-size:16px;line-height:1.65;color:#4a4a4a;border-top:1px solid #e8e8e8}
+.footer p{margin:0 0 .25rem;max-width:none}
+@media (min-width:701px){.footer{padding-bottom:1rem}}
+@media (max-width:700px){.oneness{font-size:18px}}
 @media (max-width:520px){details.toc ol{columns:1}.ks{padding-left:0;text-indent:0}.ks-id{display:block;width:auto}ol.chapters a{grid-template-columns:1fr}ol.chapters .num{grid-row:auto}}
