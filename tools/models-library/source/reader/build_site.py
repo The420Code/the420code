@@ -363,8 +363,8 @@ a{color:var(--accent-ink)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .strap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding-block:1rem;border-bottom:1px solid var(--rule);font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
 .strap .book a{text-decoration:none;color:var(--ink)}
-.modes{display:flex;gap:.4rem;margin:0;padding:0;list-style:none}
-.modes a,.modes span{display:inline-block;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
+.modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
+.modes a,.modes span{display:inline-block;white-space:nowrap;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
 .modes .on{border-color:var(--accent);color:var(--accent-ink)}
 .modes .soon{opacity:.6}
 figure.hero{margin:2.2rem 0 1.4rem}
