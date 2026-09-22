@@ -158,14 +158,15 @@ def shell(title, body, book, depth, description='', path='/', book_first=False):
 '''
 
 def strap(book, crumb, current='read'):
+    # 22 September 2026, G: "remove listen - soon for now". When a chapter has audio, add a
+    # 'listen' mode here as a link and put its <li> back between Read and Download.
     modes = {
         'read': '<span class="on">Read</span>',
-        'listen': '<span class="soon">Listen — soon</span>',
         'download': f'<a href="{book["pdf"]}">Download</a>',
     }
     return (f'<header class="strap"><div class="book"><a href="/models/{book["slug"]}/"><b>{esc(book["title"])}</b></a>'
             f' · the short edition{crumb}</div>'
-            f'<ul class="modes"><li>{modes["read"]}</li><li>{modes["listen"]}</li><li>{modes["download"]}</li></ul></header>')
+            f'<ul class="modes"><li>{modes["read"]}</li><li>{modes["download"]}</li></ul></header>')
 
 def hero(book, slug, caption):
     img = os.path.join(ROOT, 'images', book['slug'], slug + '.jpg')
@@ -366,7 +367,6 @@ a{color:var(--accent-ink)}
 .modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
 .modes a,.modes span{display:inline-block;white-space:nowrap;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
 .modes .on{border-color:var(--accent);color:var(--accent-ink)}
-.modes .soon{opacity:.6}
 figure.hero{margin:2.2rem 0 1.4rem}
 figure.hero img,figure.hero svg{display:block;width:100%;max-width:100%;height:auto}
 figure.hero figcaption{font-size:1rem;color:var(--mute);letter-spacing:.06em;text-transform:uppercase;margin-top:.6rem}
