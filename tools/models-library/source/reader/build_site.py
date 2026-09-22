@@ -168,6 +168,11 @@ def strap(book, crumb, current='read'):
             f' · the short edition{crumb}</div>'
             f'<ul class="modes"><li>{modes["read"]}</li><li>{modes["download"]}</li></ul></header>')
 
+def up(book=None):
+    """The way back, on every page, between Previous and Next: the book's contents and Ø Models."""
+    to_book = f'<a href="/models/{book["slug"]}/">{esc(book["title"])}</a>' if book else ''
+    return f'<div class="up"><small>Back to</small>{to_book}<a href="/models/">Ø Models</a></div>'
+
 # ---------- parse a book ----------
 def load_book(book):
     d = os.path.join(SRC, book['slug'])
@@ -271,8 +276,8 @@ def render_chapter(book, i):
     crumb = f' · {esc(c["num"])}' if book['slug'] == 'resolutions' else f' · {esc(c["num"])} of {of_word}'
     prev_c = book['chapters'][i - 1] if i > 0 else None
     next_c = book['chapters'][i + 1] if i + 1 < n else None
-    prev_html = (f'<a href="/models/{book["slug"]}/{prev_c["slug"]}/"><small>Previous</small>{esc(prev_c["question"])}</a>'
-                 if prev_c else f'<a href="/models/{book["slug"]}/"><small>Back</small>{esc(book["title"])}</a>')
+    prev_html = (f'<a class="p" href="/models/{book["slug"]}/{prev_c["slug"]}/"><small>Previous</small>{esc(prev_c["question"])}</a>'
+                 if prev_c else '')
     next_html = (f'<a class="r" href="/models/{book["slug"]}/{next_c["slug"]}/"><small>Next</small>{esc(next_c["question"])}</a>'
                  if next_c else f'<a class="r" href="/models/{book["slug"]}/epilogue/"><small>Next</small>{esc(book["epilogue"]["title"])}</a>')
 
@@ -290,7 +295,7 @@ def render_chapter(book, i):
 {die_html}
 {coda_html}
 <p class="source">{src_html}</p>
-<nav class="pn">{prev_html}{next_html}</nav>'''
+<nav class="pn">{prev_html}{up(book)}{next_html}</nav>'''
     return shell(c['question'], body, book, 2, oneline, path=f'/models/{book["slug"]}/{c["slug"]}/')
 
 def render_book(book):
@@ -319,7 +324,8 @@ def render_book(book):
 <h2 class="lh">The chapters</h2>
 <ol class="chapters">{rows}</ol>
 <p class="ep"><a href="/models/{book["slug"]}/epilogue/">{esc(book['epilogue']['title'])}</a></p>
-<p class="reg">Every kill switch in this book is filed in the <a href="{REGISTRY}">registry</a>. The book on the wall: <a href="/models/">Ø Models</a>.</p>'''
+<p class="reg">Every kill switch in this book is filed in the <a href="{REGISTRY}">registry</a>. The book on the wall: <a href="/models/">Ø Models</a>.</p>
+<nav class="pn solo">{up()}</nav>'''
     return shell(book['subtitle'], body, book, 1, f'{book["title"]} — {book["subtitle"]}. The short edition, read online.', path=f'/models/{book["slug"]}/', book_first=True)
 
 def render_epilogue(book):
@@ -330,8 +336,7 @@ def render_epilogue(book):
 <h1>{esc(e['title'].partition(' — ')[2] or e['title'])}</h1>
 <section class="opening">{''.join(para_html(p) for p in e['paras'])}</section>
 <p class="source">{esc(e['source'])}</p>
-<nav class="pn"><a href="/models/{book["slug"]}/{last["slug"]}/"><small>Previous</small>{esc(last["question"])}</a>
-<a class="r" href="/models/{book["slug"]}/"><small>Back to</small>{esc(book["title"])}</a></nav>'''
+<nav class="pn"><a class="p" href="/models/{book["slug"]}/{last["slug"]}/"><small>Previous</small>{esc(last["question"])}</a>{up(book)}</nav>'''
     return shell(e['title'], body, book, 2, f'{book["title"]} — {e["title"]}', path=f'/models/{book["slug"]}/epilogue/')
 
 CSS = '''/* Ø Models reader — one stylesheet for every book and chapter. Colours and face are the site's. */
@@ -379,9 +384,13 @@ details.die summary{color:var(--accent-ink)}
 .tools button:hover{color:var(--accent-ink)}
 .source{margin:1.6rem 0 0;font-size:1rem;color:var(--mute);font-style:italic}
 .source a{color:inherit}
-nav.pn{display:flex;justify-content:space-between;gap:1rem;margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:1rem}
-nav.pn a{text-decoration:none;max-width:48%}
-nav.pn a.r{text-align:right;margin-left:auto}
+nav.pn{display:grid;grid-template-columns:1fr auto 1fr;gap:1.2rem 1.5rem;align-items:start;margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:1rem}
+nav.pn a{text-decoration:none}
+nav.pn a.p{grid-column:1}
+nav.pn .up{grid-column:2;text-align:center}
+nav.pn .up a{display:block}
+nav.pn a.r{grid-column:3;text-align:right}
+@media (max-width:600px){nav.pn{grid-template-columns:1fr 1fr}nav.pn a.r{grid-column:2}nav.pn .up{grid-column:1/-1;grid-row:2}nav.pn.solo .up{grid-row:1}}
 nav.pn small{display:block;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
 details.toc{margin:1.2rem 0 0;font-size:1rem}
 details.toc summary{cursor:pointer;color:var(--ink-2);letter-spacing:.06em;text-transform:uppercase;font-size:1rem}
