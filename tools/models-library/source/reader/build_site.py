@@ -8,7 +8,8 @@ Output: site/models/<book>/index.html, site/models/<book>/<slug>/index.html, sit
 Every chapter page has the same structure:
   strap · image · question · one line · opening (open) · sections (expand) · where it would die (expand, IDs link to the registry) · source · prev/next
 """
-import re, os, json, html, glob, shutil
+import re, os, sys, json, html, glob, shutil
+sys.dont_write_bytecode = True
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, '..')
@@ -17,6 +18,17 @@ REGISTRY = 'https://the420code.org/killswitches/'
 WALL = 'https://the420code.org/what-is-the-420-code/#where-it-would-die'
 
 SITE = 'https://the420code.org'
+
+# The site's header, 22 September 2026 (G: "all pages must ideally have the same sticky menu at the top").
+# Built by the site's own header.py, with the rooms block taken verbatim from the English front door, as
+# every English-only room is built (WC/tools/room_shell.py). After any change to the menu, rebuild.
+REPO = os.path.abspath(os.path.join(ROOT, '..', '..', '..', '..'))
+sys.path.insert(0, os.path.join(REPO, 'i18n', 'frontdoor'))
+import header as H  # noqa: E402
+_door = open(os.path.join(REPO, 'what-is-the-420-code', 'index.html'), encoding='utf-8').read()
+_i = _door.index('  <div class="nav-menu">')
+ROOMS_MENU = _door[_i:_door.index('  </div>', _i) + len('  </div>')]
+assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 17, 'the front door\'s rooms block'
 BOOKS = [
     dict(slug='dissolutions', title='Ø Dissolutions', prefix='PZ', pdf='/models/dissolutions.pdf', original='/Dissolutions.pdf', original_pages=369, edition='v1.0'),
     dict(slug='resolutions', title='Ø Resolutions', prefix='RES', pdf='/models/resolutions.pdf', original='/Resolutions.pdf', original_pages=547, edition='v1.0'),
@@ -111,9 +123,12 @@ def shell(title, body, book, depth, description='', path='/', book_first=False):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 <link rel="stylesheet" href="{rel}reader.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
 </head>
 <body>
-<div class="wrap">
+<div class="c">
+{H.english_header(ROOMS_MENU, "en-only", path)}
 {body}
 <footer class="colophon">
 <p class="editions">This is the short edition of {esc(book["title"])} — a summary. Where a step is compressed here, the original carries it in full. <a href="{book["original"]}">The original book (PDF)</a> · <a href="{book["pdf"]}">This edition (PDF)</a> · <a href="/models/{book["slug"]}/">Read this edition online</a></p>
@@ -137,6 +152,7 @@ def shell(title, body, book, depth, description='', path='/', book_first=False):
 </div>
 </div>
 <script src="{rel}reader.js"></script>
+{H.JS}
 </body>
 </html>
 '''
@@ -337,11 +353,12 @@ def render_epilogue(book):
     return shell(e['title'], body, book, 2, f'{book["title"]} — {e["title"]}', path=f'/models/{book["slug"]}/epilogue/')
 
 CSS = '''/* Ø Models reader — one stylesheet for every book and chapter. Colours and face are the site's. */
-:root{--bg:#ffffff;--surface:#f3f3ed;--ink:#1a1a1a;--ink-2:#4a4a4a;--mute:#4a4a4a;--rule:#d5d5d0;--accent:#8B6914;--accent-ink:#6f5310}
+:root{--bg:#ffffff;--surface:#f3f3ed;--ink:#1a1a1a;--ink-2:#4a4a4a;--mute:#4a4a4a;--rule:#d5d5d0;--accent:#8B6914;--accent-ink:#6f5310;--bk:#111;--g1:#f3f3ed;--g3:#d5d5d0;--g5:#4a4a4a;--edge:#8a8a8a}
 *{box-sizing:border-box}
 html{background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.65;padding-block:0 3rem;padding-inline:16px}
-.wrap{max-width:40rem;margin:0 auto}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.65;padding:0}
+.c{max-width:760px;margin:0 auto;padding:3rem 1.5rem 4rem}
+@media (max-width:600px){.c{padding:2rem 1rem 3rem}}
 a{color:var(--accent-ink)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .strap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding-block:1rem;border-bottom:1px solid var(--rule);font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
@@ -415,10 +432,11 @@ footer.colophon .editions a{color:var(--accent-ink);text-decoration:underline}
 .oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem;max-width:none;color:#1a1a1a}
 .footer{margin:4rem 0 0;padding:2rem 0 0;font-size:16px;line-height:1.65;color:#4a4a4a;border-top:1px solid #e8e8e8}
 .footer p{margin:0 0 .25rem;max-width:none}
-@media (min-width:701px){.footer{padding-bottom:1rem}}
 @media (max-width:700px){.oneness{font-size:18px}}
 @media (max-width:520px){details.toc ol{columns:1}.ks{padding-left:0;text-indent:0}.ks-id{display:block;width:auto}ol.chapters a{grid-template-columns:1fr}ol.chapters .num{grid-row:auto}}
 '''
+
+CSS += H.BASE_CSS + '\n' + H.CSS + '\n'
 
 JS = '''(function(){
   var all=document.querySelectorAll('details.sec');
