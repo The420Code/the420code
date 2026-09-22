@@ -46,6 +46,8 @@ export default async (req, context) => {
         // original /Dissolutions.pdf differ only by case, so the short editions are kept
         // under their folder's name and the two never read as one.
         if (/^(dissolutions|resolutions|applications|horizons)\.pdf$/.test(filename)) filename = "models/" + filename;
+        // and the Five Doors short editions, beside their originals at /<Book>.pdf
+        if (/^(antichristos|being-after-religion|relationship-corridor)\.pdf$/.test(filename)) filename = "five-doors/" + filename;
       }
     } catch (e) {
       // If no body or invalid JSON, still increment total

@@ -17,6 +17,7 @@ The method, step by step: https://the420code.org/method/
 Why 21 is forced, the count in full: https://the420code.org/why-21-is-forced/
 The ethic, derived — one reality, one now, one awareness, and the second road: https://the420code.org/one-awareness/
 The library — four of the Ø Models books, to read online, chapter by chapter: https://the420code.org/models/
+The Five Doors, to read online, chapter by chapter: https://the420code.org/five-doors/
 
 ## The Method — Why It Is Not Numerology
 
@@ -103,6 +104,19 @@ Four of the five Ø Models books can be read online, chapter by chapter, in thei
 
 A chapter lives under its book, by number and question: https://the420code.org/models/dissolutions/01-why-is-there-something-rather-than-nothing/. Each book page lists its chapters. The short editions as PDF: https://the420code.org/models/dissolutions.pdf, https://the420code.org/models/resolutions.pdf, https://the420code.org/models/applications.pdf, https://the420code.org/models/horizons.pdf. The originals: https://the420code.org/Dissolutions.pdf, https://the420code.org/Resolutions.pdf, https://the420code.org/Applications.pdf, https://the420code.org/Horizons.pdf. The fifth, Ø Predictions, has no short edition: Ø Frozen Predictions supersedes it — https://the420code.org/prereg/
 
+## The Five Doors, Read Online
+
+The five books that are the way in for a reader who is not a physicist. Four of them can be read online, chapter by chapter, sixty-five pages. Each chapter opens with its question, one line from the chapter, and the argument in sections; where a chapter carries kill switches, they are at its end, each linked to its row in the registry.
+
+- The Illusion of the Other — the gentle door. Ten chapters, from why we experience ourselves as separate to living without the other. It has no short edition: the chapters are the book, and it carries no switches of its own: https://the420code.org/five-doors/illusion/
+- Being After Religion — the front door. Fifteen chapters and an epilogue, on the structure of kindness without the scaffold: https://the420code.org/five-doors/being-after-religion/
+- Antichristos — the sacred door. Fifteen chapters and an epilogue, asking of one teaching only whether it is true: https://the420code.org/five-doors/antichristos/
+- The Relationship Corridor — the personal door. Eighteen chapters and an epilogue, on what love is: https://the420code.org/five-doors/relationship-corridor/
+
+The fifth, The Interior — the hard door, on AI alignment — is read as the original for now: https://the420code.org/The_Interior.pdf
+
+The short editions as PDF: https://the420code.org/five-doors/being-after-religion.pdf, https://the420code.org/five-doors/antichristos.pdf, https://the420code.org/five-doors/relationship-corridor.pdf. The originals: https://the420code.org/Illusion_of_the_Other.pdf, https://the420code.org/Being_After_Religion.pdf, https://the420code.org/Antichristos.pdf, https://the420code.org/The_Relationship_Corridor.pdf
+
 ## Kill Switches (Falsifiability)
 
 604 kill switches are declared across the work (Master Kill Switch Registry v5.35, 21 September 2026): 320 across AP01–AP54, 28 across the Five Doors volumes, 256 across the Ø Models series. 584 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Six debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. A switch tests the logic from its point downstream, so a fired switch shows where a link in the chain broke. The bare neutron–proton row fired at 7.24σ on 2 August 2026: the row had priced a held distinction as free. Priced, the neutron lands at −0.005σ (AP47), and the same correction, carried downstream, moved G from its first reading, +0.69% (AP28, now withdrawn), to −0.036% (AP44) and replaced the Hubble prediction 74.3 ± 1.2, which fired on 3 September 2026, with 67.45 at 0.1σ (AP46, AP48). One repair in the logic; three fields moved toward measurement. Both corpses stay on the site, never repaired. Examples:
@@ -142,6 +156,7 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 - The physics — every result against its measurement, the two that fired, and what else is derived: https://the420code.org/physics/
 - The eight notebooks — all 54 proofs, bound, with a summary of each: https://the420code.org/notebooks/
 - The five doors — the five books, each a door into the same argument: https://the420code.org/five-doors/
+- The Five Doors, read online chapter by chapter: https://the420code.org/five-doors/illusion/ · https://the420code.org/five-doors/being-after-religion/ · https://the420code.org/five-doors/antichristos/ · https://the420code.org/five-doors/relationship-corridor/
 - The five Ø Models — the catalogue of the exhibition: https://the420code.org/models/
 - The library — Ø Dissolutions, Ø Resolutions, Ø Applications and Ø Horizons, read online chapter by chapter: https://the420code.org/models/dissolutions/ · https://the420code.org/models/resolutions/ · https://the420code.org/models/applications/ · https://the420code.org/models/horizons/
 - The exhibition — Rosin, and the Records: https://the420code.org/exhibition/

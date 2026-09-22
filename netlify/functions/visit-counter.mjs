@@ -46,13 +46,14 @@ const ROOMS = ["/", "/what-is-the-420-code/", "/proofs/", "/proofs/instruments/"
                "/five-doors/", "/models/", "/exhibition/", "/axiom/", "/physics/", "/notebooks/"];
 const PAGES = new Set([...ROOMS, ...LANGS.flatMap(l => [`/${l}/`, `/${l}/what-is-the-420-code/`])]);
 const LIBRARY = /^\/models\/(dissolutions|resolutions|applications|horizons)\/((\d\d(-5)?-[a-z0-9-]+|epilogue)\/)?$/;
+const FIVE_DOORS = /^\/five-doors\/(illusion|being-after-religion|antichristos|relationship-corridor)\/((\d\d-[a-z0-9-]+|epilogue)\/)?$/;
 const normalise = (p) => {
   if (!p || p === "") return "/";
   p = p.replace(/index\.html$/, "");
   if (!p.endsWith("/")) p += "/";
   return p;
 };
-const isRealPage = (p) => PAGES.has(normalise(p)) || LIBRARY.test(normalise(p));
+const isRealPage = (p) => PAGES.has(normalise(p)) || LIBRARY.test(normalise(p)) || FIVE_DOORS.test(normalise(p));
 
 async function readBase(store) {
   const raw = await store.get(BASE);

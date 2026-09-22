@@ -1,0 +1,59 @@
+# Twelve — Kill Switches
+
+## What a kill switch is
+
+Architecture A hides its weaknesses and calls them mysteries.
+
+Architecture B publishes them and calls them kill switches.
+
+A kill switch is a condition written down before any test. Specific. External. Testable. Not a consequence of failure — a condition of falsification.
+
+If this is demonstrated, that falls. The condition is stated in advance, in public, so that anyone who can trigger it can end the claim.
+
+That is the whole instrument. It is not a gesture of humility. It is the difference between a claim you can check and a claim you cannot.
+
+## Why this book carries them
+
+An institution that cannot be wrong cannot be corrected. That is the structural fault at the centre of Architecture A. Not cruelty — cruelty is downstream. The fault is unfalsifiability. A claim that cannot fail cannot be tested, so the only way to settle a dispute about it is authority, and authority sorts.
+
+The scaffold did not sort because its members were bad people. It sorted because it had no other mechanism. When the claim cannot be tested, the only question left is who is allowed to say what it means.
+
+A book that carries kill switches has another mechanism. It can be corrected by anyone, without permission, from outside.
+
+## The seven
+
+This book carries seven, and they sit where their claims live. All seven are live. In order:
+
+KS-AC.1, in Chapter Seven. The historical argument. Fires if an unambiguous exclusivity use of the formula is found in a securely dated source earlier than John.
+
+KS-AC.2, in Chapter Six. The connection to the burning bush. Fires if the two words carried no divine-name weight for first-century Jewish readers.
+
+KS-AC.3, in Chapter Ten. The mapping. Fires on any mapping that needs a premise present in neither the teaching nor the derivation.
+
+KS-AC.4, in Chapter Seven. The Thomas precedent. Fires if the Thomas sayings are shown to derive from John rather than from an independent stream.
+
+KS-AC.5, in Chapter Seven. The internal evidence. Fires if the three internal verses can be read coherently as exclusivity rather than universality.
+
+KS-AC.6, below. The master switch. Fires if Architecture B produces the same sorting behaviour as Architecture A in any tested domain.
+
+KS-AC.7, in Chapter Fourteen. The verse-level method. Fires verse by verse, on any assignment that survives or fails the four conditions the wrong way.
+
+## What the switches are not
+
+They are not a promise that the book is right. They are a promise that the book can be shown to be wrong, by a named route, without asking my permission.
+
+They are also not a shield. A book does not earn credit for publishing conditions nobody can reach. Six of these seven are reachable by ordinary scholarship — a manuscript find, a dating argument, a reading of three verses, a check on a mapping.
+
+The seventh, the master switch, is not reachable that way, and I will not pretend it is. It fires on what Architecture B does in the world, not on what a scholar finds in a library. It is reachable, but only by watching — and the watching takes years, and anyone can do it, which is the point.
+
+I do not enjoy publishing these. I enjoy what they prove: that this book is not religion. These are the weapons I hand to anyone who wants to destroy the argument. I hand them willingly. If the argument cannot survive them, it should not survive.
+
+Architecture A says believe or be damned. Architecture B says test and see.
+
+## Where it would die
+
+KS-AC.6 — If Architecture B produces the same sorting behaviour as Architecture A in any tested domain, the structural distinction between them collapses and this book's whole argument fails. Architecture B must not sort. If it sorts, it is the scaffold wearing different clothes. This is the master switch of the book. An individual reader behaving badly does not fire it; a demonstration that the structure itself sorts does. If the geometry produces the same cruelty the scaffold produced, the geometry is no improvement and this book has failed.
+
+Seven kill switches. All live. All external. All testable. Every one is filed in the registry at the420code.org, with its status, beside every other switch in the work.
+
+> This chapter is the short edition of Chapter Twelve of Antichristos. The original prints all seven switches in one place, in full.
