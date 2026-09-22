@@ -383,10 +383,42 @@ table.data tr:last-child td{border-bottom:none}
 .nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
 .nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
 .nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+/* the search, in the header: one field, and the whole work answers (G, 22 September 2026) */
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.nav-search{position:relative;flex:1 1 170px;min-width:0;max-width:340px;margin:0}
+.nav-q{width:100%;font-family:inherit;font-size:16px;line-height:1.2;color:#1a1a1a;background:#fff;
+  border:1px solid var(--edge);border-radius:3px;padding:6px 11px;-webkit-appearance:none;appearance:none}
+.nav-q::placeholder{color:var(--g5);opacity:1}
+.nav-q:focus{outline:none;border-color:#8B6914}
+.nav-search-btn{display:none;align-items:center;background:none;border:1px solid var(--edge);border-radius:3px;
+  color:#1a1a1a;padding:6px 9px;cursor:pointer;line-height:1;flex-shrink:0}
+.nav-search-btn:hover,.nav.search-open .nav-search-btn{border-color:#8B6914;color:#8B6914}
+.nav-results{display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;max-height:min(70vh,560px);
+  overflow-y:auto;background:#fff;border:1px solid var(--edge);border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);z-index:200;text-align:left}
+.nav-results.on{display:block}
+.nav .nav-results a{display:block;padding:.6rem 1rem;border-bottom:1px solid var(--g2);
+  text-decoration:none;color:#1a1a1a;font-size:16px;line-height:1.45}
+.nav .nav-results a:last-child{border-bottom:0}
+.nav .nav-results a:hover,.nav .nav-results a.on{background:var(--g1);text-decoration:none}
+.nr-t{display:block;font-weight:700}
+.nr-k{display:block;color:var(--g5)}
+.nr-s{display:block;color:var(--g5);margin-top:.1rem}
+.nav-results mark{background:none;color:#8B6914;font-weight:700}
+.nr-note{margin:0;padding:.7rem 1rem;font-size:16px;color:var(--g5)}
 @media(max-width:400px){.nav{gap:.6rem}}
+/* on a small phone the work's name takes the first row and the three buttons the second, so the
+   name is never squeezed to a column of letters by the magnifier beside it */
+@media(max-width:470px){.nav{flex-wrap:wrap;row-gap:.5rem}.nav a.nav-door{flex:1 0 calc(100% - 4rem)}
+  .nav-search-btn{margin-left:auto}.nav-toggle{margin-left:0}}
 @media(max-width:359px){.nav .nw{white-space:normal}}
 @media(max-width:700px){
   .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav-search{display:none;position:absolute;top:100%;left:0;right:0;max-width:none;background:#fff;
+    border-bottom:1px solid var(--g3);padding:.65rem 0 .8rem}
+  .nav.search-open .nav-search{display:block}
+  .nav-search-btn{display:inline-flex}
+  .nav-results{position:static;border:0;box-shadow:none;margin-top:.55rem;max-height:min(60vh,420px)}
   .nav a.nav-door{line-height:1.25}
   .nav a.nav-door{font-size:16px}
 }
@@ -420,6 +452,8 @@ table.data tr:last-child td{border-bottom:none}
 <nav class="nav">
   <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
   <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
   <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
   <div class="nav-menu">
     <a href="/#museum" class="nav-room">Ø Museum</a>
@@ -751,5 +785,80 @@ document.addEventListener('keydown',function(e){
   n.classList.remove('open','lang-open');
   n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
 });
+</script>
+<script id="nav-search">
+// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
+// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
+// and kept for the session. Every term must be present; the last one matches as a prefix, so results
+// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
 </script>
 </body></html>

@@ -121,10 +121,42 @@ html{scroll-padding-top:86px}
 .nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
 .nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
 .nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+/* the search, in the header: one field, and the whole work answers (G, 22 September 2026) */
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.nav-search{position:relative;flex:1 1 170px;min-width:0;max-width:340px;margin:0}
+.nav-q{width:100%;font-family:inherit;font-size:16px;line-height:1.2;color:#1a1a1a;background:#fff;
+  border:1px solid var(--edge);border-radius:3px;padding:6px 11px;-webkit-appearance:none;appearance:none}
+.nav-q::placeholder{color:var(--g5);opacity:1}
+.nav-q:focus{outline:none;border-color:#8B6914}
+.nav-search-btn{display:none;align-items:center;background:none;border:1px solid var(--edge);border-radius:3px;
+  color:#1a1a1a;padding:6px 9px;cursor:pointer;line-height:1;flex-shrink:0}
+.nav-search-btn:hover,.nav.search-open .nav-search-btn{border-color:#8B6914;color:#8B6914}
+.nav-results{display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;max-height:min(70vh,560px);
+  overflow-y:auto;background:#fff;border:1px solid var(--edge);border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);z-index:200;text-align:left}
+.nav-results.on{display:block}
+.nav .nav-results a{display:block;padding:.6rem 1rem;border-bottom:1px solid var(--g2);
+  text-decoration:none;color:#1a1a1a;font-size:16px;line-height:1.45}
+.nav .nav-results a:last-child{border-bottom:0}
+.nav .nav-results a:hover,.nav .nav-results a.on{background:var(--g1);text-decoration:none}
+.nr-t{display:block;font-weight:700}
+.nr-k{display:block;color:var(--g5)}
+.nr-s{display:block;color:var(--g5);margin-top:.1rem}
+.nav-results mark{background:none;color:#8B6914;font-weight:700}
+.nr-note{margin:0;padding:.7rem 1rem;font-size:16px;color:var(--g5)}
 @media(max-width:400px){.nav{gap:.6rem}}
+/* on a small phone the work's name takes the first row and the three buttons the second, so the
+   name is never squeezed to a column of letters by the magnifier beside it */
+@media(max-width:470px){.nav{flex-wrap:wrap;row-gap:.5rem}.nav a.nav-door{flex:1 0 calc(100% - 4rem)}
+  .nav-search-btn{margin-left:auto}.nav-toggle{margin-left:0}}
 @media(max-width:359px){.nav .nw{white-space:normal}}
 @media(max-width:700px){
   .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav-search{display:none;position:absolute;top:100%;left:0;right:0;max-width:none;background:#fff;
+    border-bottom:1px solid var(--g3);padding:.65rem 0 .8rem}
+  .nav.search-open .nav-search{display:block}
+  .nav-search-btn{display:inline-flex}
+  .nav-results{position:static;border:0;box-shadow:none;margin-top:.55rem;max-height:min(60vh,420px)}
   .nav a.nav-door{line-height:1.25}
   .nav a.nav-door{font-size:16px}
 }
