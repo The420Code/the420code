@@ -12,9 +12,6 @@ a{color:var(--accent-ink)}
 .modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
 .modes a,.modes span{display:inline-block;white-space:nowrap;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
 .modes .on{border-color:var(--accent);color:var(--accent-ink)}
-figure.hero{margin:2.2rem 0 1.4rem}
-figure.hero img,figure.hero svg{display:block;width:100%;max-width:100%;height:auto}
-figure.hero figcaption{font-size:1rem;color:var(--mute);letter-spacing:.06em;text-transform:uppercase;margin-top:.6rem}
 .eyebrow{font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:1.6rem 0 .5rem}
 h1{font-weight:700;font-size:clamp(1.8rem,5.5vw,2.5rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 1.2rem;text-wrap:balance}
 h1.bt{font-size:clamp(2.4rem,8vw,3.2rem)}

@@ -6,7 +6,7 @@ Output: site/models/<book>/index.html, site/models/<book>/<slug>/index.html, sit
         site/models/reader.css, site/models/reader.js, site/models/models-snippet.html
 
 Every chapter page has the same structure:
-  strap · image · question · one line · opening (open) · sections (expand) · where it would die (expand, IDs link to the registry) · source · prev/next
+  strap · question · one line · opening · sections (closed) · where it would die (closed, IDs link to the registry) · source · prev/next
 """
 import re, os, sys, json, html, glob, shutil
 sys.dont_write_bytecode = True
@@ -96,7 +96,7 @@ def split_sections(body, level='## '):
 
 def details(heading, body_html, cls='sec', extra='', open_=None):
     if open_ is None:
-        open_ = 'die' not in cls
+        open_ = False   # every row arrives closed, G's word, 22 September 2026
     o = ' open' if open_ else ''
     return (f'<details class="{cls}"{o}><summary><span class="tri" aria-hidden="true"></span>{esc(heading)}{extra}</summary>'
             f'<div class="sec-body">{body_html}</div></details>')
@@ -167,24 +167,6 @@ def strap(book, crumb, current='read'):
     return (f'<header class="strap"><div class="book"><a href="/models/{book["slug"]}/"><b>{esc(book["title"])}</b></a>'
             f' · the short edition{crumb}</div>'
             f'<ul class="modes"><li>{modes["read"]}</li><li>{modes["download"]}</li></ul></header>')
-
-def hero(book, slug, caption):
-    img = os.path.join(ROOT, 'images', book['slug'], slug + '.jpg')
-    if os.path.exists(img):
-        os.makedirs(os.path.join(OUT, book['slug'], slug), exist_ok=True)
-        shutil.copy(img, os.path.join(OUT, book['slug'], slug, 'image.jpg'))
-        src = 'image.jpg'
-        return f'<figure class="hero"><img src="{src}" alt="{esc(caption)}"><figcaption>{esc(caption)}</figcaption></figure>'
-    return f'''<figure class="hero placeholder">
-<svg viewBox="0 0 640 260" role="img" aria-label="Two identical circles, one grain in the left one">
-  <rect width="640" height="260" fill="#f3f3ed"/>
-  <circle cx="200" cy="130" r="86" fill="none" stroke="#8a8a8a" stroke-width="1.2"/>
-  <circle cx="440" cy="130" r="86" fill="none" stroke="#8a8a8a" stroke-width="1.2"/>
-  <circle cx="226" cy="152" r="3.2" fill="#8B6914"/>
-  <line x1="320" y1="40" x2="320" y2="220" stroke="#d5d5d0" stroke-width="1" stroke-dasharray="2 6"/>
-</svg>
-<figcaption>{esc(caption)}</figcaption>
-</figure>'''
 
 # ---------- parse a book ----------
 def load_book(book):
@@ -296,7 +278,6 @@ def render_chapter(book, i):
 
     body = f'''{strap(book, crumb)}
 <details class="toc"><summary>In this book</summary><ol>{toc}</ol></details>
-{hero(book, c['slug'], 'Image to come')}
 <p class="eyebrow">Chapter {esc(c['num'])}</p>
 <h1>{esc(c['question'])}</h1>
 <p class="oneline">{esc(oneline)}</p>
@@ -367,9 +348,6 @@ a{color:var(--accent-ink)}
 .modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
 .modes a,.modes span{display:inline-block;white-space:nowrap;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
 .modes .on{border-color:var(--accent);color:var(--accent-ink)}
-figure.hero{margin:2.2rem 0 1.4rem}
-figure.hero img,figure.hero svg{display:block;width:100%;max-width:100%;height:auto}
-figure.hero figcaption{font-size:1rem;color:var(--mute);letter-spacing:.06em;text-transform:uppercase;margin-top:.6rem}
 .eyebrow{font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:1.6rem 0 .5rem}
 h1{font-weight:700;font-size:clamp(1.8rem,5.5vw,2.5rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 1.2rem;text-wrap:balance}
 h1.bt{font-size:clamp(2.4rem,8vw,3.2rem)}
