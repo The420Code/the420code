@@ -1,0 +1,74 @@
+/* Ø Models reader — one stylesheet for every book and chapter. Colours and face are the site's. */
+:root{--bg:#ffffff;--surface:#f3f3ed;--ink:#1a1a1a;--ink-2:#4a4a4a;--mute:#4a4a4a;--rule:#d5d5d0;--accent:#8B6914;--accent-ink:#6f5310}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.65;padding-block:0 3rem;padding-inline:16px}
+.wrap{max-width:40rem;margin:0 auto}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.strap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding-block:1rem;border-bottom:1px solid var(--rule);font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.strap .book a{text-decoration:none;color:var(--ink)}
+.modes{display:flex;gap:.4rem;margin:0;padding:0;list-style:none}
+.modes a,.modes span{display:inline-block;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
+.modes .on{border-color:var(--accent);color:var(--accent-ink)}
+.modes .soon{opacity:.6}
+figure.hero{margin:2.2rem 0 1.4rem}
+figure.hero img,figure.hero svg{display:block;width:100%;max-width:100%;height:auto}
+figure.hero figcaption{font-size:1rem;color:var(--mute);letter-spacing:.06em;text-transform:uppercase;margin-top:.6rem}
+.eyebrow{font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:1.6rem 0 .5rem}
+h1{font-weight:700;font-size:clamp(1.8rem,5.5vw,2.5rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 1.2rem;text-wrap:balance}
+h1.bt{font-size:clamp(2.4rem,8vw,3.2rem)}
+.oneline{font-size:1.25rem;line-height:1.4;font-style:italic;color:var(--ink);border-left:2px solid var(--accent);padding-left:1rem;margin:0 0 1.2rem}
+.edition{font-size:1rem;color:var(--ink-2);margin:0 0 2rem}
+.opening{margin:0 0 .6rem}
+.opening h2,h2.lh{font-weight:700;font-size:1.15rem;margin:0 0 .6rem}
+h2.lh{margin:2.4rem 0 .8rem}
+h3{font-weight:700;font-size:1rem;margin:1.2rem 0 .4rem}
+p{margin:0 0 1rem;max-width:65ch}
+details.sec{border-top:1px solid var(--rule)}
+details.sec:last-of-type{border-bottom:1px solid var(--rule)}
+details.sec summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:.7rem;padding:.9rem 0;font-size:1.15rem;font-weight:700;color:var(--ink)}
+details.sec summary::-webkit-details-marker{display:none}
+.tri{display:inline-block;width:1rem;color:var(--accent);font-size:1rem;line-height:1;transition:transform .18s ease;flex:none;transform-origin:40% 50%}
+.tri::before{content:"\25B8"}
+details[open]>summary .tri{transform:rotate(90deg)}
+@media (prefers-reduced-motion:reduce){.tri{transition:none}}
+.sec-body{padding:.2rem 0 1rem 1.2rem}
+.count{margin-left:auto;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:400}
+details.die summary{color:var(--accent-ink)}
+.coda{margin:1.4rem 0 0}
+.ks{padding-left:7rem;text-indent:-7rem}
+.ks-id{display:inline-block;width:7rem;text-indent:0;font-size:1rem;letter-spacing:.04em;text-decoration:none;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.ks-id:hover{text-decoration:underline}
+.reg{font-size:1rem;color:var(--mute)}
+.tools{display:flex;gap:1.2rem;justify-content:flex-start;padding:0 0 .8rem;font-size:1rem;letter-spacing:.06em;text-transform:uppercase}
+.tools button{background:none;border:0;color:var(--ink-2);font:inherit;cursor:pointer;padding:0;letter-spacing:inherit;text-transform:inherit}
+.tools button:hover{color:var(--accent-ink)}
+.source{margin:1.6rem 0 0;font-size:1rem;color:var(--mute);font-style:italic}
+.source a{color:inherit}
+nav.pn{display:flex;justify-content:space-between;gap:1rem;margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:1rem}
+nav.pn a{text-decoration:none;max-width:48%}
+nav.pn a.r{text-align:right;margin-left:auto}
+nav.pn small{display:block;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+details.toc{margin:1.2rem 0 0;font-size:1rem}
+details.toc summary{cursor:pointer;color:var(--ink-2);letter-spacing:.06em;text-transform:uppercase;font-size:1rem}
+details.toc ol{list-style:none;margin:.6rem 0 0;padding:0;columns:2;column-gap:2rem}
+details.toc li{display:flex;gap:.6rem;padding:.2rem 0;break-inside:avoid;color:var(--ink-2)}
+details.toc li a{color:inherit;text-decoration:none}
+details.toc li.here a{color:var(--accent-ink)}
+details.toc .num{width:6.2rem;color:var(--mute);flex:none;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;padding-top:.15rem}
+ol.chapters{list-style:none;margin:0;padding:0}
+ol.chapters li{border-top:1px solid var(--rule)}
+ol.chapters li:last-child{border-bottom:1px solid var(--rule)}
+ol.chapters a{display:grid;grid-template-columns:6.8rem 1fr;gap:.2rem 1rem;padding:1rem 0;text-decoration:none;color:var(--ink)}
+ol.chapters .num{grid-row:span 2;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);padding-top:.35rem}
+ol.chapters .q{font-size:1.2rem;font-weight:700;line-height:1.2}
+ol.chapters .line{font-size:1rem;color:var(--ink-2);font-style:italic}
+ol.chapters a:hover .q{color:var(--accent-ink)}
+.ep{margin:1.2rem 0}
+.ep a{font-size:1.1rem;font-weight:700;text-decoration:none}
+footer.colophon{margin-top:3rem;font-size:1rem;color:var(--mute);letter-spacing:.03em}
+footer.colophon a{color:var(--ink-2);text-decoration:none}
+footer.colophon .editions{font-size:1rem;color:var(--ink);border-top:1px solid var(--rule);padding-top:1rem;margin-bottom:.8rem}
+footer.colophon .editions a{color:var(--accent-ink);text-decoration:underline}
+@media (max-width:520px){details.toc ol{columns:1}.ks{padding-left:0;text-indent:0}.ks-id{display:block;width:auto}ol.chapters a{grid-template-columns:1fr}ol.chapters .num{grid-row:auto}}

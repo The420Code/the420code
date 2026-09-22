@@ -1,0 +1,147 @@
+# Twelve — The Measurement Problem
+
+## The closed hand
+
+Flip a coin and catch it without looking.
+
+By the time you open your hand, something has already happened. Heads or tails was written by the spin, the air, the skin of your palm. Opening your hand does not make it heads. It shows you what was written.
+
+Quantum mechanics presents a case that looks nothing like the coin. Before measurement a system is in superposition — not a hidden answer waiting, but open across several outcomes at once. Measure it and one outcome is registered. The others go nowhere. Here, opening the hand seems to make the answer.
+
+What separates a measurement from any other interaction? Why does the wavefunction resolve here and not there? That has stood open since the 1920s.
+
+This is the fourth gap. Observer on one side. Observed on the other. Measurement as the bridge.
+
+There is no bridge, because there were never two sides.
+
+## Two dynamics
+
+Quantum mechanics works. Its predictions are the best tested in the history of science. What it does not say is what its mathematics means.
+
+Before measurement, a wavefunction carries every outcome, each with a weight. It evolves smoothly, deterministically, by the Schrödinger equation.
+
+At measurement it collapses. One outcome. The others gone. Not smooth. Not by the equation.
+
+Two dynamics in one formalism, and nothing that says what flips the switch.
+
+Copenhagen made measurement a primitive. A classical apparatus meets a quantum system, and collapse happens. What makes an apparatus classical, and why that collapses anything, is not said. It has been the working position of physicists for ninety years. It is a way of working, not an account.
+
+Many worlds denies collapse. Every outcome happens, each in its own branch. You are on one. The cost is a universe multiplied without limit.
+
+Hidden variables say the randomness hides a determined process. Bell’s theorem, and the experiments since, ruled out the local versions. The non-local ones remain, at the price of structure the rest of physics does not produce.
+
+The reformulations — relational, objective collapse, the Bayesian reading — each close part of it and open something else.
+
+A century on, it is the most famous open problem in physics.
+
+## The forcing function
+
+One piece of vocabulary, implicit since Four, named here.
+
+At any site the operator is coupled to an environment that presents branching trajectories. At each moment it commits to one. What forces the commitment is the forcing function.
+
+A forcing function is what any coupling of sufficient capacity does to the trajectories it meets. It forces non-optionality. The branches a system was carrying collapse to one — not because a mind looked, but because a coupling happened at a capacity that commits the system and no longer keeps the others open.
+
+That is what observation is.
+
+A photodetector forces non-optionality in the photon that hits it. A cosmic ray forces it in the lattice it crosses. A dust grain forces it in the vapour it disturbs. No mind in any of them. Each is an observer in the only sense the axiom has.
+
+The scientist reading a dial is also an observer — downstream. She reads a record of the forcing that already happened at the detector. Her reading is a later coupling, with the record.
+
+## Two positions, not two domains
+
+Past and future were two readings of one now. Observer and observed are two positions in one coupling.
+
+The one that forces. The one that is forced.
+
+Any configuration can occupy either position relative to any other. A quantum system meeting an apparatus forces the apparatus into one of its states. At the same moment the apparatus forces the system to commit. Each is observer to the other. Which is which depends on whose trajectory-space is being resolved.
+
+Once that is seen, the question what distinguishes measurement from other interactions shows its misdirection. It assumed measurement was a special event because it assumed observer and observed were special kinds of thing. Neither holds. Measurement is coupling forcing non-optionality, which is what coupling at capacity does whenever it happens. What the tradition called a measurement was the subset with a dial at the end.
+
+The coupling was already what it was before anyone read the dial.
+
+## Why the coin is settled
+
+If observation is only coupling at capacity, why does a coin have a definite face at all times, and not just when someone looks?
+
+Because the coin is being observed constantly by its own constituents. Its atoms are in thermal contact. Its electrons couple with the lattice. Photons scatter off it. Air molecules strike it at uncountable rates. Each is a coupling at capacity. By the time a narrator looks, no trajectory-space is left to resolve.
+
+Physics has known a version of this since the 1970s as decoherence. It fits here.
+
+The classical world is not a separate physics. It is the quantum world under continuous observation by environment and constituents. The forcing function running at every site, all the time, for as long as the object has existed.
+
+A quantum system in a laboratory is a system that has been isolated from that — cooled, shielded, in vacuum. Inside the isolation the trajectory-space survives. When the apparatus finally couples, the forcing runs, one branch commits, the record is written. What is special is not the measurement. It is the isolation before it.
+
+## One process, two readings
+
+The sharpest form of the problem is the two dynamics.
+
+They are two readings of one process, from two positions.
+
+Unitary evolution is how a trajectory-space changes when nothing at capacity is forcing it. All branches available. The equation tracks the space.
+
+Collapse is what happens at coupling. The forcing runs. One branch commits. The others do not propagate. The space is no longer what it was, and the mathematics updates to say so.
+
+No discontinuity in the process. A discontinuity in the description — because before-coupling and after-coupling are two different situations written in the same notation. The mathematics catches up with the structural update. No extra event occurs beyond the coupling.
+
+Same process. Two positions. The gap was never there.
+
+## Objections
+
+Copenhagen. What mechanism accomplishes the update? — The coupling is the mechanism. There is nothing beyond it. Copenhagen was right that something changes. It could not say why, because it held the two sides apart.
+
+Many worlds. You have given up pure unitarity. — Many worlds keeps unitarity by multiplying the universe. This keeps it where it belongs, before coupling, and supplies a mechanism at coupling. One now, one space, one commitment. The other branches were possibilities. They are not other worlds. The elegance is on this side.
+
+Hidden variables. What constrains which branch commits? — The complete coupling configuration at the site. It narrows the space. Seven holds that it does not close the space to a point, and this chapter holds the same. The configuration is not a local hidden variable, because the configuration at a site includes the state of the one now at that site, and Eleven established the now is singular. Configurations at different sites are not independent. Bell’s theorem needs local separability, and this does not supply it — which is a structural departure, not a small adjustment, and the physics papers carry the technical work. The dissolution needs no more than that.
+
+Consciousness causes collapse. — The narrator is downstream. Photons in the cosmic background were committed billions of years before any narrator existed to read them. The forcing happens. The reading is a later coupling with the record.
+
+Decoherence has already done this. — Decoherence explains how branches become effectively separate. It does not say why this branch. The forcing function does. Two layers. They close the problem together.
+
+## What the chapter did
+
+Copenhagen tracked that something changes. Many worlds tracked that the branching is real and picking a branch arbitrarily is wrong. Hidden variables tracked that randomness is not the whole story. The reformulations each held a part: readings are site-relative, collapse is real, what a narrator reads is a record of coupling, not a cause of it.
+
+Each kept. Each located.
+
+## Where the reach ends
+
+How the forcing function maps to Hilbert space, operators and projectors is the work of the formal papers.
+
+What minimum capacity makes a coupling observer-type, and where entanglement that preserves a space becomes coupling that commits, are open empirical questions.
+
+What each interpretation keeps and loses under this reading is engaged in the physics chapters.
+
+## The pupil
+
+You have been inside the measurement problem every moment of your life.
+
+Every photon that reached your retina today was in a trajectory-space until it coupled with a molecule in a rod or cone. The coupling forced it. A record was written into you. You did not measure it. The narrator got the record later.
+
+Every thermal interaction in your body is forcing trajectories at enormous rates. You are conscious of none of it.
+
+When the first experimenters asked what happens at measurement, the answer was happening in their own bodies while they asked.
+
+Coupling forces trajectories.
+
+The forcing is what observation is.
+
+Observer and observed are two readings of the one now.
+
+The pupil cannot see the pupil. Not because the pupil is hidden. Because seeing is what the pupil is doing.
+
+## Where it would die
+
+Five claims carry this chapter.
+
+PZ-12.1 — An observer is any coupling that forces non-optionality. Show that observation needs a feature beyond coupling capacity at resolution, and consciousness or the classical apparatus recovers its privilege.
+
+PZ-12.2 — Observer and observed are positions, not kinds. Show that the distinction must be between kinds of system, that a configuration cannot occupy either position, and the domains return.
+
+PZ-12.3 — No event at measurement beyond the coupling. Show that the discontinuity needs an extra physical event, or that the structural update cannot account for what the experimental record shows, and collapse returns as its own mechanism.
+
+PZ-12.4 — The forcing function is the process at coupling. Show measurement-type couplings committing trajectories with nothing that could honestly be called forcing, and the dissolution fails. This tests the claim made, not the determinism question the chapter declines.
+
+PZ-12.5 — The narrator is downstream. Show narrator observation causally prior to commitment, and consciousness takes the privileged position again.
+
+> Source: Ø Dissolutions, Chapter 12 — The Measurement Problem. Its kill switches: PZ-12.1 to PZ-12.5.

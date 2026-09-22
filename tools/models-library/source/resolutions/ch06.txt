@@ -1,0 +1,165 @@
+# Six — Motion and the Paradoxes of Zeno
+
+## The arrow
+
+In the fifth century BCE a philosopher argued that an arrow can never reach its target.
+
+At every instant the arrow is at a place. If it is at a place, it is not moving at that instant. A flight made of instants is made of non-movement. The arrow cannot arrive.
+
+The arrow arrives. Every archer has seen it.
+
+The paradox is not that the arrow fails. It is that the argument feels valid and the conclusion is false. Either the argument has a hidden flaw, or motion is not what we thought.
+
+Two and a half thousand years. Mathematicians showed how to compute the flight. Philosophers showed what the computation does not explain. The worry stayed.
+
+This is the first of this book’s four gaps — motion, persistence, life, death. In Dissolutions the four gaps were separations the axiom never made. Here they are transitions the axiom does make, misread as gaps needing a bridge.
+
+## Already moving
+
+You read the arrow arrives. The reading was a motion. The eye crossing the line. Meaning forming as the words landed. No instant at which the reading was complete and yet not moving.
+
+Try to deny motion. The denial is made by a moving hand, breath, blood, an eye. There is no ground from which motion can be denied without using it.
+
+## The now
+
+Two pieces from earlier chapters do the work. C, the bound on propagation. And the Actualization State — the now, the writing-edge where the axiom is executing.
+
+The substrate has one now. Not one global slice of simultaneity. Not a preferred frame. One structural execution. Not many independent acts of becoming — one actualising condition, read differently from different sites.
+
+The now is not a moment inside time. It is what produces time. Not one completed record in the sequence, but the operation that adds to the sequence.
+
+All four conditions are in it. S supplies the space across which change is distinguishable as change. B commits this configuration rather than that. R keeps the wake, so the past accumulates. C bounds the rate, so the now propagates rather than jumps.
+
+You have experienced it every moment of your life. Whatever else is true, the moment of writing is now. Anything actual becomes actual only at the writing-edge. Once actual, it is record.
+
+Two things the now is not.
+
+Not the psychological present. The felt moment is a reading of the now by an observer who is substrate. The substrate has the now. The observer experiences it.
+
+Not a frame-dependent slice. Observers in motion disagree about which distant events are simultaneous. That is true of their readings. The now is not one of those slices, nor the union of them. The frame-dependence is in the readings. The now is the writing.
+
+An ancient objection. The past is gone, the future has not come, and the present, if it had duration, would divide into both. When does anything exist? — The now is not a duration inside the manifold. It is the edge at which the manifold is written. It needs no duration, because it is not one moment among many.
+
+## The paradoxes
+
+Three came down from Zeno.
+
+The arrow. At each instant it is at a position, so at rest. Motion is made of instants. So motion is made of rest.
+
+Achilles. By the time he reaches where the tortoise was, the tortoise has moved. Again. And again. Infinitely many catch-ups. Infinity cannot be completed. He never overtakes.
+
+The stadium. Three rows, one still, two moving opposite ways at equal speed. A body passes two of the still row in the time it passes one of the other moving row. Zeno reads a contradiction in the relation between motion and time.
+
+Each rests on one assumption. Motion is the after-the-fact traversal of a completed continuum, decomposable into positions and instants.
+
+## What calculus did, and did not
+
+Calculus showed that an infinite series of shrinking intervals sums to a finite total. Achilles covers the finite distance in a finite time. The arrow’s velocity at an instant is well-defined as a limit.
+
+Correct, and it leaves the worry in place. Calculus describes how to compute the traversal. It does not say what the traversal is. It tells you what is true once the motion is complete. Zeno asked what the arrow is doing in flight.
+
+The right answer to the wrong question.
+
+## What the ancients reached for
+
+In the century after Zeno an answer was already close. Actual infinity — a completed totality of infinitely many items — against potential infinity, the unbounded possibility of further division. Achilles faces only the second. The running is finite. The unboundedness is in what reasoning can do to it.
+
+That is near the reading this chapter gives. What the ancient account left as a primitive was the source — something makes the potential actual, and the something was not named.
+
+The four conditions name it.
+
+## Motion is what C does at the one now
+
+The paradoxes assume a completed series of positions the arrow has traversed. The axiom denies the series.
+
+There is no completed series. There is the now, at which the arrow is coupling with the air at the rate C permits. The arrow at the now is not at a position waiting to move to the next. It is propagating. That is what the substrate is doing wherever propagation is what is happening.
+
+One precision. The chapter’s title sentence can sound as if C works alone. It does not. B commits the changing configuration at each writing. R keeps the wake so there is somewhere to propagate from. S makes change readable as motion rather than random replacement. Motion is C-forward. It is still all four running.
+
+What the reading from outside calls positions are readings of what the now did. The completed series appears once the motion is decomposed. It was never there as something the arrow had to traverse one position at a time.
+
+Zeno’s arguments are valid arguments from a false premise. Calculus could not contest the premise, because calculus is a mathematics of continua. The structural reading contests it directly.
+
+The continuum was the reading. The propagation was the running.
+
+## Velocity at an instant
+
+How can a particle have a velocity at an instant, when velocity is change over time and an instant has no duration?
+
+Laboratories infer instantaneous velocity every day — interferometry, detector tracks, femtosecond timing. The quantity is indispensable.
+
+Instantaneous velocity is the mathematical reading, at infinite resolution, of what the now is doing. The particle at the now is propagating. The propagation has a rate. The calculus reads that rate as a limit over vanishing intervals. No actual decomposition into static sub-instants is required. The reading is faithful. The running was the now propagating at the rate it was propagating at.
+
+## The arrow, dissolved
+
+There are no completed rest-instants out of which motion is assembled. There are coordinate instants in the reading. There are no static bricks in the running.
+
+At the now, the arrow can be assigned a position in a chosen frame. That assignment is not the whole event. Its being there is a propagating configuration, not a rest-state.
+
+Zeno’s form: at every instant of the after-the-fact reading, the reading shows a static position; therefore the running was static. The conclusion does not follow. The reading and the running are different things. The reading shows static positions because it is performed after the running wrote the records. The running was not static.
+
+The arrow reaches the target.
+
+## Achilles, dissolved
+
+The infinite series is a reading from outside of what the now did during the race. There was never an actual infinite sequence of catch-ups Achilles had to complete. There was the running, at the now, with propagation on both sides, ending with Achilles ahead.
+
+The infinity is in the reading, not in the running.
+
+The reader presses. If the reading is faithful, does the series not correspond to something real? — Yes and no. The reading faithfully describes what the running produced. But the running did not produce the series step by step. It produced records. The reading decomposes the records into positions and intervals, and the decomposition yields a series at any resolution. Producing the records and traversing the series are not the same operation.
+
+What Achilles ran and what the reading says he ran are connected. They are not identical. One is an execution. The other is a static structure describing it.
+
+## The stadium, dissolved
+
+Time to pass is relative, not absolute. The moving rows have twice the relative speed to each other that either has to the still row. No contradiction — what the structure imposes when motion is read at the relations that hold.
+
+Scholars often read the stadium as aimed at a stronger target: that space and time are made of indivisible minimal units, so that motion is a sequence of static jumps. The structural account does not need that. Even if physics finds minimal scales, Zeno is not solved by making motion a sequence of jumps between them. Any discretisation is a reading unless shown to be the execution itself. The running remains propagation at the now.
+
+## Relativity
+
+Surely frame-dependent simultaneity kills any one-now account.
+
+Relativity rules out one global slice — a single hyperplane every observer agrees is the present. The one now is not a slice. It is one structural execution. At any site the now is local: this coupling, this writing. Across sites, relativity prevents those local writings from being assembled into an observer-independent slice. Both spacelike-separated events are writings of the one now at their sites. Both are bounded by the same C.
+
+This is not presentism. Presentism says only the present exists. Here the past exists as record. The future does not yet exist as record. The now is the edge where record-future becomes record-past. Closer to a growing block, with the growing being what the four conditions do at the edge.
+
+The block-universe reader can keep the four-dimensional description as a description of the wake. What cannot be dropped is R, which makes the manifold a history rather than an unordered object. The paradoxes arise when the wake is mistaken for the act of writing.
+
+Frame-dependent quantities are not illusions. They are real relational readings of one invariant causal structure.
+
+## The reading and the running
+
+The chapter is not against the continuum. Calculus, differential equations, trajectory geometry are correct and indispensable. The substrate produces records that the reading faithfully describes as continuous positions and intervals.
+
+What the reading cannot do is replace the running.
+
+Zeno was right that the reading, taken as the running, generates contradictions. He was wrong to take the reading as the running.
+
+The arrow reaches the target because the now propagates it until its records and the target’s coincide. Achilles overtakes because his propagation is faster and both unfold within what C permits. The stadium resolves because relative speeds compose at the layer where motion lives.
+
+Two and a half thousand years of literature has been arguing about the wrong layer.
+
+## Where the reach ends
+
+The closed-form value of C, inherited from Four. Motion at the quantum layer — the physics papers. The precise geometric relation of the now to the manifold — open; what the now is not has been shown. The formal demonstration that no relativistic experiment can tell this reading from a pure block universe — owed in the relativity papers.
+
+## Where it would die
+
+Five claims carry this chapter.
+
+RES-6.1 — Finite motion needs an actual infinite execution. Show that the substrate itself, not a later reading, must execute an actually infinite ordered series of position-states before a motion completes, and the central move fails.
+
+RES-6.2 — Motion without C. Exhibit record-bearing motion that does not depend on a finite rate — unbounded propagation, outside any constraint — and C is not what motion requires.
+
+RES-6.3 — The now against Lorentz invariance. Show that the writing-edge needs a global slice relativity forbids, or must be abandoned to keep invariance, and the installation fails.
+
+RES-6.4 — A paradox beyond the four conditions. Exhibit a classical paradox of motion equivalent to Zeno’s whose closure needs resources the axiom does not produce, and the account is partial.
+
+RES-6.5 — The now needs a primitive. Show that the writing-edge cannot be derived from the four conditions — that it needs a metaphysical present, an observer’s moment, a temporal substance — and the foundation is incomplete.
+
+Motion is what C does at the one now. The continuum was the reading, not the running.
+
+The ship is moving. The wake is forming. The ocean is receiving. We are reading.
+
+> Source: Ø Resolutions, Chapter 6 — Motion and the Paradoxes of Zeno. Its kill switches: RES-6.1 to RES-6.5. Time at the corpus level: Ø Dissolutions, Chapter 11.

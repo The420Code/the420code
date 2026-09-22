@@ -1,0 +1,135 @@
+# Three — The Mind-Body Problem
+
+## Two things
+
+Your hand is moving as you hold this book.
+
+The hand moving is one event. Your awareness of it moving is another. So the problem says.
+
+The hand has weight, shape, a place. Anyone can see it move. The awareness has no weight and no shape. No scanner finds it. A scan shows what your brain is doing while you are aware. It does not show the awareness.
+
+Two things, apparently. One physical. One not.
+
+How are they joined?
+
+In 1641 Descartes drew the line. Extended stuff — the body. Thinking stuff — the mind. Two substances that share nothing, somehow meeting in a person. He saw the trouble at once. If the mind has no extension and the body no thought, how does deciding to lift your hand lift your hand? He proposed a gland. He was wrong about the gland. He was right that the bridge was the problem.
+
+Four hundred years. Still open.
+
+## Four ways to fail
+
+Bridge them. Keep two substances and find a clever join. A gland. Laws that run in parallel. God winding two clocks to strike together. Every join has to be mental or physical itself, and the problem reappears inside the join.
+
+Reduce mind to brain. Mental states are brain states. The mapping is real and it keeps getting better. What it never says is why any of that firing should feel like anything from inside. The map is complete and the fact it was meant to explain is untouched.
+
+Reduce matter to mind. The hand is an appearance in a mind. The problem turns round. Now you owe an account of why the appearance is so stable, so shared, and what holds it when nobody is looking.
+
+Declare it beyond us. The human mind is to consciousness as a dog is to quantum mechanics. Honest. But a sign saying do not enter is not a closing.
+
+Bridged. Reduced. Inverted. Fenced off.
+
+Not dissolved.
+
+## What they all assume
+
+All four accept the setup. Mind on one side. Matter on the other. What is the relation?
+
+The whole puzzle stands on the two-things premise. Descartes drew the line, and everyone since — even those denying the split — has accepted the line as the shape of the problem.
+
+The axiom does not produce two things.
+
+It produces records, under four conditions, at the now. No mental stuff. No physical stuff. Only what records do, at the resolution they do it.
+
+Stay with that.
+
+## Two readings
+
+Every coupling is selective. The electron pairs with some partners and not others. The cell lets some molecules in. The retina answers light, not sound. To couple is to respond to this and not that.
+
+Selectivity has a direction — what the coupling is oriented towards.
+
+A direction can be described from two sides.
+
+From outside, by another coupling looking on, the direction shows up as behaviour. What it pairs with. What it responds to. What it does. That is the description physics, chemistry and neuroscience produce.
+
+From inside — from the coupling’s own position, facing the way it faces — the direction shows up as what it is registering, from where it sits.
+
+Not two processes. One coupling, read from two positions.
+
+Every record in the universe has both readings. None has only an outside. None has only an inside. The two are what one coupling is.
+
+## What changes with resolution
+
+Most couplings do not read themselves.
+
+The electron couples. The inside reading exists — it is what the coupling is from its own position. Nothing is there to read it.
+
+The cell couples. It registers its own state and responds. Still nothing reads the registering.
+
+Then, at some resolution, an architecture starts feeding its own state back in as input. Its outputs loop through its inputs. It couples with what it has just written. It begins to register itself.
+
+Now there is a position from which the inside reading is being read.
+
+No new ingredient. Records couple with records, and self-coupling is the case where the records coupled with are the ones the architecture just wrote. It follows from the axiom directly.
+
+That is the threshold the word mind has always been pointing at. Not the point where mind is added to matter. The point where the inside, which was always there, starts being heard.
+
+## The dissolution
+
+Mind and matter were never two kinds of thing.
+
+Matter is coupling seen from outside. Mind is coupling seen from inside, at resolutions where the coupling reads itself. Same coupling. Same site. Two readings at once.
+
+There is no interaction problem, because nothing interacts with anything across a gap. The deciding and the lifting are one event. Read from inside it is a decision. Read from outside it is muscle and a rising hand.
+
+Nothing to bridge. Nothing was ever split.
+
+The neuroscientist presses. The reductive programme is working. Why complicate it? Because the map is an outside reading, and no outside reading can contain the inside one. To read another coupling’s inside from outside you would need a coupling that does not exist. The frame does not compete with neuroscience. It says what neuroscience is doing.
+
+The dualist presses from the other side. Mind has a first-person view. It is about things. Where does that come from?
+
+From the structure already on the table. First-person, because the break is what gives a record a position at all, and the inside reading is read from that position. About-something, because selectivity has direction, and direction towards something is what aboutness is before it wears a philosophical name. An architecture that couples with its own state-changes is, in the same act, about them.
+
+Then the zombie. A physical copy of you with no inside at all — conceivable, therefore mind is not physical. The reply is short. Selectivity without an inside direction is not coupling. So the copy is either a coupling, and has the inside reading, or it is not a coupling, and is not a physical copy. The zombie can be said. It cannot be built. Sayable is not possible.
+
+The mind-body problem is what it looks like when you try to glue together what was never split.
+
+## Your hand
+
+The hand. The page. Light reflecting to the eye. Cells firing. Signals travelling. The thought: I am holding a book.
+
+Every step is coupling. Every coupling has two readings.
+
+From outside: photons, pigments, neurons, cortex. Correct.
+
+From inside — you, reading this — the seeing, the recognising, the holding. The same chain, read from where you sit, at its highest-resolution end.
+
+You cannot step outside to check that the two readings are of one process. Stepping outside is a coupling, with its own two readings, needing its own check, without end. There is no position from which the split can be seen, because there is no split.
+
+You are not two things related by a problem.
+
+You are one thing read two ways.
+
+## Where the reach ends
+
+The chapter does not say which couplings produce which experiences — why red is red, why salt tastes as it does. That is for research done on couplings that read themselves.
+
+It does not say where in the chain self-reading begins. Only that the threshold exists, and that what changes at it is registration, not the arrival of an inside where there was none.
+
+It does not say why coupling feels like anything in particular. That is the hard problem, and it is the next chapter.
+
+## Where it would die
+
+Five claims carry this chapter.
+
+PZ-3.1 — The two readings are symmetric. Show that the outside reading depends on the inside one — that physical properties need the inside as a condition, not as a co-reading — and dualism’s asymmetry is real.
+
+PZ-3.2 — Mind is coupling read from inside. Show a system with mental states while its physical state is frozen — no registration, no change, no feedback anywhere — and mind exists apart from coupling.
+
+PZ-3.3 — Resolution, not emergence. Show a complexity threshold where a new property appears that is not coupling plus self-registration, and emergence has to be admitted as a separate move.
+
+PZ-3.4 — The zombie is incoherent. Build, without contradiction, a coupling with the outside reading and no inside — not imagine it, build it — and the account fails.
+
+PZ-3.5 — Two readings, not two processes. Show that mind and matter are two separate processes that merely keep step, and the dissolution weakens to a parallelism this chapter does not hold.
+
+> Source: Ø Dissolutions, Chapter 3 — The Mind-Body Problem. Its kill switches: PZ-3.1 to PZ-3.5.

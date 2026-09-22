@@ -1,0 +1,173 @@
+# Three — The Architecture of Governance
+
+## Who decides
+
+A shared river. A shared forest. A disease crossing a border.
+
+Who decides what happens next, and how is the decision binding on those who disagree?
+
+This chapter is neither technocracy nor tyranny. Technocracy imports expertise as authority. Tyranny imports authority as authority. Both import what the axiom does not state.
+
+Governance is the engineering of one boundary.
+
+Below it, what you do does not cross into the shared room at a cost others must carry. You are sovereign there.
+
+Above it, what you do does cross. The shared structure acts there.
+
+The corpus calls that line the boundary. The formal papers write it ε — not the ε of the axiom’s line — and this chapter does not use the letter again. It is where the data locate it. Not where a coalition would like it to be.
+
+This is a test. Not a constitution, an electoral programme or a blueprint for replacing anything. Drafting, elections, civil service, courts — each has its own work. The chapter says what that work must read.
+
+## Already inside
+
+Say governance is a matter for political theorists, and separate from all this.
+
+The roads you walk on. The water you drink. The air. The currency your labour is paid in. Each is a condition the shared structure has been writing across everyone inside it, including you.
+
+You have already been governed. Where the boundary was read honestly, your coupling was protected. Where it was read dishonestly — authority extracted below the line, or abandoned above it — your life was distorted at exactly that resolution.
+
+There is no neutral ground.
+
+## What this book inherits
+
+Property gave records. Law gave corrections. Governance is the structure within which records and corrections run.
+
+The operator's authority over the operator's own coupling holds below the line. The shared structure's responsibility holds above it. Governance reads the line.
+
+The ship writes a wake. Governance is what keeps the ocean able to receive the next one, by reading where wakes spill over and acting where the spill crosses the threshold.
+
+## Seven readings
+
+Authority from a divine source. Right that authority must be external to any one person's preference. Wrong to put the outside somewhere that cannot be tested.
+
+Authority from civic virtue. Right that the capacity to read the boundary honestly is load-bearing. Wrong to locate it in character rather than in procedure — transparency, contest, audit.
+
+Authority from consent. Right that the operator's authority comes first. Wrong to sign the contract at a site nobody stood in, and to bind those who never signed.
+
+Authority from the general will. Right that the commitments are about everyone, not a subset. Wrong to fuse everyone into one operator. The structure reads operators severally, each at their own site.
+
+Authority from procedure. Right that procedure matters. Wrong to make it the source. A clean procedure can still produce a parasitic outcome.
+
+Authority from deliberation. Right that reason-giving among the bound is often the only way transparency and contest can run. Wrong to make the talking the ground. Consensus on a parasitic commitment is still parasitic.
+
+Authority from the sovereign decision in crisis. Right that some decisions must be taken before the reading is complete. Wrong to make the decision the source. The structure has a place for underdetermined decisions — voting — and a discipline that stops them becoming permanent — audit.
+
+Seven readings. Each caught one feature. The chapter locates them all in the four conditions.
+
+## The boundary
+
+Below the line: what you eat, wear, believe, read, say where the saying harms nobody, do in spaces your own coupling made, and with whom you share your bed. None of it needs permission.
+
+Above the line: emissions that load the ground other bodies stand on. Pathogens moving through the shared network. Extractions that empty the reserves others run on. Commitments whose records enter other lives at a cost those lives did not agree to.
+
+A policy that acts below the line is extraction. Overreach.
+
+A policy that fails to act above the line is abdication. Parasitic coupling running unchecked under the name of freedom.
+
+Both fail the geometry.
+
+The line is not one number. It is a condition read at each site. Pathogens, emissions, speech, labour, water, finance, information — each has its own threshold and its own absorptive capacity. What is invariant is the test. Does this coupling cross into the shared room at a cost others must carry?
+
+## Sovereignty below the line
+
+The operator's authority over the operator's own coupling is not granted. It is derived from what an operator is — the architecture from which the shared room is read at all.
+
+It is not the libertarian isolate. You did not consent to the ground, the body, or the language you think in. Your authority below the line is authority inside a shared structure, not outside it.
+
+What it refuses is the structure reading you where your coupling does not cross.
+
+The structure may still maintain the background that lets below-the-line sovereignty run. Protection against fraud. Records. The dignity-floor. Child protection. Capacity protection. Those are above-the-line responsibilities, not interventions on you.
+
+Rights, in this reading, are protections around below-the-line authority and around the floor without which that authority cannot run. Not permissions. Safeguards against the structure's overreach and against other people's spill into your corridor.
+
+Speech is below the line while it is your own modelling and expression. It crosses when it becomes targeted threat, fraud, defamation, incitement to imminent harm, coordinated harassment, coercive institutional signal, or propagation at a scale that shrinks other people's conditions. The test is not whether it offends. It is whether the propagation contracts the room. Most speech is below the line.
+
+## The structure above the line
+
+Where a coupling crosses, the structure has authority to read it and correct it. That authority is not stipulated either. It is derived from the shared room being real and its contraction being readable.
+
+What it reads is the geometry from Chapter Two. The correction hierarchy. Minimum sufficient intervention.
+
+It is not the technocratic mandate to run every life at every resolution. Only the crossings. Where the coupling does not cross, the structure's capacity to regulate gives it no authority to.
+
+## The honest paragraph on the boundary
+
+Can the line be computed?
+
+In principle, yes, from interaction data. The full pathway is not complete.
+
+This is a different hiddenness from α, the fine-structure constant, the one measured input. α is hidden because the ship cannot measure the ship from inside its own frame. The boundary is hidden because the social data are high-dimensional, many-party and only partly visible from any one position. External, distributed, and more tractable as data and audit improve.
+
+Proxies exist now. Externalised health costs by class. Environmental load at the site of coupling. Rates of spread. Extraction differentials. Each is an approximation. Each is usable. The chapter names them as proxies and says where they disagree.
+
+Precise definition. Approximate measurement. Open computation. Description, not flexing, not hiding.
+
+## Voting, in its place
+
+The structure does not eliminate voting. It puts voting where it belongs.
+
+Some decisions the geometry determines. Vaccination during an outbreak. Emission limits where the substrate cannot absorb. Safety standards where failure would spread past recovery. The geometry rules out the parasitic options and names the required correction. A residual field of permitted choices usually remains.
+
+Some decisions the geometry underdetermines. Several corrections work. Several distributions keep the room open.
+
+There, and only there, voting is how the operators commit together to one permitted option. The vote does not constitute the decision. It resolves the choice among options the geometry permits.
+
+A vote that ratifies a parasitic commitment does not make it legitimate. A vote that overturns a required correction is parasitic at the same resolution. Where the structure cannot tell whether a decision is determined or not, the decision is treated as exposed — contested, time-limited, audited. Pretending certainty at that boundary is itself parasitic.
+
+## Not technocracy
+
+Technocracy makes the credential the authority. The structure makes the geometry the authority. An expert's reading matters if and only if it tracks the geometry. A credential correlates with fidelity. It does not confer it.
+
+So every reading must be transparent, contestable and bias-audited — the three conditions from Chapter Two. And where the credentialing itself fails the audit — excluding readers who can read, including readers who cannot, captured by interests other than the room — the credentialing is parasitic at its own site.
+
+This is not anti-expertise. Expertise is real. It is a condition, not a source.
+
+## The anti-capture protocol
+
+Five commitments stop the axiom being used as a weapon by anyone reading it for advantage.
+
+No side owns the axiom. Where a reading systematically favours the reader's coalition, it is parasitic however precise it looks. That includes the author. That includes you.
+
+Measurement must be inspectable. Inputs stated. Procedure auditable. Otherwise it is a different practice under a borrowed name.
+
+Inaction is also an act. Refusing to act at a crossing is a record with consequences. Neutrality is not available to the structure.
+
+Minimum intervention remains binding. Heavier than required is parasitic. Lighter than required is parasitic.
+
+After-action audit is mandatory. Every decision is open to review against what it actually did. The audit is how the structure's reading improves. Its absence is how capture and error compound unseen.
+
+## The boundary-decision protocol
+
+At any specific decision, seven questions.
+
+What coupling is being read. Whose lives the spill runs through, and how unevenly. What the aggregate load is at the shared resolution, even where each act looks small. Which proxies are in use and where they disagree. What the reading can and cannot honestly cover. What the lightest sufficient correction is. What audit the decision is bound to, fixed before it runs.
+
+Run all seven honestly and the reading is honest. Skip one and it has left the geometry.
+
+## Where the reach ends
+
+Which constitutions and procedures satisfy the test — many do, including customary and lineage-based traditions the modern state has been slow to see. How the line is read at several scales at once — a watershed is not a nation, a nation is not a planet. Decisions whose consequences outrun the structure's reading — Chapter Ten. What to do when the structure itself is the harm-doer — Chapters Eleven and Twelve. Operators whose authority is distinct — children, future operators, operators the institution has never registered, the non-human — the spine and Chapter Ten. Each is open.
+
+## Where it would die
+
+Five claims carry this chapter.
+
+APP-3.1 — Show that the boundary cannot be computed from interaction data in principle — not hidden, not hard, but underdetermined — and the installation fails.
+
+APP-3.2 — Exhibit two honest readings of the same decision, same data, explicit bounds, that produce incompatible verdicts no further reading, uncertainty analysis or residual vote can resolve, and the geometry does not bind. Honest disagreement under uncertainty does not fire this.
+
+APP-3.3 — Produce a class of decisions the geometry is silent on at every resolution, and the coverage is partial.
+
+APP-3.4 — Exhibit a capture or a systematic error the five commitments cannot identify or correct, and the protocol needs more.
+
+APP-3.5 — Show the underdetermined residual is so wide that the geometry's contribution to most decisions is negligible, and the claim is weak.
+
+Policy is not legitimate because it was voted. Where the geometry determines, the vote cannot launder a contraction. Where it underdetermines, the vote is how the people commit.
+
+Below the boundary, the operator is sovereign. Above it, the structure acts. The boundary is where the data put it.
+
+Governance is the shared structure reading itself honestly at the line where its people's lives spill into each other. Where it reads dishonestly, governance is the name for something else.
+
+The ship is moving. The wake is forming. The ocean is receiving. We are reading.
+
+> Source: Ø Applications, Chapter 3 — The Architecture of Governance. Its kill switches: APP-3.1 to APP-3.5.

@@ -1,0 +1,185 @@
+# Two — The Source of Mathematics
+
+## Three apples
+
+A child counts three apples on a table. The count comes out three.
+
+An astronomer, using equations written three hundred years ago, says where a comet will be in eleven years. The comet is there.
+
+Two events. One operation. A relation is read off a structure, and the reading works. The first you can do at a kitchen table. The second has libraries behind it. What the libraries describe is the same operation, refined and pointed at a harder target.
+
+What is that structure?
+
+The last chapter identified information with the record history. This chapter identifies mathematics with the language records produce when they are read at the layer their relations show.
+
+## Already counting
+
+You are reading these words in an order. First, second, third. You are tracking which came before which, which clause modifies which. You cannot stop without ceasing to read.
+
+That tracking is mathematics in its earliest form. Sequence. Succession. Before and after. To count three apples is to distinguish one, then another, then another, and to stop.
+
+Try to deny it. The denial is a sequence of words registering a sequence of distinctions. There is no ground from which mathematics can be denied without using it.
+
+## The floor
+
+Two jars on a table. The grain has fallen into the left one. S, B, R, C, in one image.
+
+From those four, the floor of mathematics is visible.
+
+Logic falls out of the break being binary. Algebra falls out of records composing. Geometry falls out of bounded propagation. Sets and counting fall out of the symmetry being available at many sites at once. The steps are not on this page. They are in the original, Chapter Two, and in the formal papers on the wall. Check them there.
+
+None of the four works alone. Each branch names the condition doing the characteristic work.
+
+That is the dissolution to be earned.
+
+## Where the question came from
+
+The Pythagoreans found that harmonious strings stood in small whole-number ratios. A relation in the world matched a relation in the mind. They concluded number was the substance of things. The discovery was real. The conclusion was a frame, and it stuck for two thousand years.
+
+Calculus described planets, fluids and cooling bodies to as many decimals as instruments could read. In 1960 Wigner asked why mathematics was so unreasonably effective. The effectiveness was a fact. The unreasonableness was a confession.
+
+## Five partial readings
+
+Platonism. Numbers are real in a realm of their own. It captures universality and the feeling that theorems are found. It imports a second realm with no account of where it is.
+
+Formalism. Symbols moved by rules, about nothing. It captures the discipline of proof. It cannot say why a game never asked to track anything tracks the comet.
+
+Logicism. Mathematics is logic in disguise. It could not reduce everything, and left logic unexplained. The problem moved one step.
+
+Intuitionism. Mathematics is constructed. Right that it is something done. Wrong about where. The constructing is what records do. The mind is one site where it reads itself.
+
+Fictionalism. Useful fictions. It cannot say why force equals mass times acceleration is a fiction physics cannot do without, and Sherlock Holmes is one it does not need.
+
+Five captures. None at the layer the structure lives.
+
+## Two faces
+
+The puzzle has two faces, and conflating them kept it open.
+
+What is mathematics? What kind of thing is a number?
+
+Why does it work? Why does the squiggle predict the comet?
+
+Each reading answers one face. The dissolution answers both at once.
+
+Mathematics is the relational reading of records. The language records produce when their structural relations are read at the layer those relations are visible. That is what it is. And it works because records have the structure they have, and reading that structure is what the language does.
+
+## The language of relations
+
+A relation between records is a fact about how they sit together. Which came first. Which is composed of which. Which constrains which. Relations are not added to records. They are what records, taken together, are.
+
+The marks on a mathematician’s page are records. What makes them mathematics rather than scribbles is that the relations between them mirror the relations between other records. The mirroring is not a coincidence. It is what relational reading does — recovering the relations one set of records has by writing them across another set whose relations can be examined.
+
+Sometimes that compresses. Sometimes it does not — a category-theoretic statement can be longer than what it abstracts. Always relational.
+
+Not a realm. Not a game. Not a fiction. What the relations between records look like when read.
+
+## Logic from the break
+
+The break is binary. The grain is in the left jar or it is not. No half-state.
+
+True and false are the statement-layer reading of a committed distinction. P or not-P is what the break is, named at the layer of statements. Not both P and not-P is the same fact from the other side. Excluded middle and non-contradiction are not posits. They are the binary break, registered.
+
+Many-valued, fuzzy, intuitionistic, probabilistic logics all exist. They are not counter-examples. They are policies above the floor. Degrees are finer distinctions. A constructive proof is a chain of distinctions. There is no logic without distinction and no distinction without break. The richer logics extend the floor. They do not remove it. The full derivation is in the formal papers.
+
+## Algebra from composition
+
+The grain landed. Water was displaced. The jar’s centre of gravity shifted. Three records from one event. Any two make a composite. All three make a record of the whole.
+
+Where the composition is the same regardless of bracketing, the operation is associative. R supports that wherever the history of assembly is not itself part of what is being studied.
+
+From associative composition the algebraic structures fall out in layers. A monoid: associative composition with an identity. A group: every element has an inverse. A ring: two compositions related by distribution. A field: multiplication invertible. Each asks what kind of records are being composed and what their compositions satisfy.
+
+Non-associative structures — Lie algebras, octonions — are cases where bracketing is itself a record-feature. And a formal inverse is not an unwriting of R. It says what returns a symbol to identity inside the system, not that history was undone. The system can carry inverses because the record of the operation is preserved.
+
+## Geometry from constraint
+
+The grain landed. A ripple spread from the point of impact, at the rate the water permitted, not everywhere at once.
+
+That is geometry in miniature. A circle is what bounded propagation from a point is. A radius is rate times time. A metric is what C produces when it has been propagating for an interval.
+
+Bounded propagation gives neighbourhood — which sites are close. With rate, scale and invariance added, it gives metric — how close. With the metric varying across the substrate, it gives curvature.
+
+Euclidean geometry is C at low resolution, where curvature is small enough to ignore. Riemannian and Lorentzian geometry are C where curvature matters. Topology is C read where only connectivity matters. Einstein’s equations and the dimensionality belong to the formal papers. What is installed here is the source. Geometry is what C is, named where its consequences are visible.
+
+## Counting from distinguishability
+
+Put more jars on the table. Each is a site where a grain may or may not have fallen, each distinguishable from the others. S makes that possible across all sites at once.
+
+A set is a collection of distinguishable records, and is itself a record of which records belong together. Counting pairs the members with the numbers — one grain beside the first jar, two beside the second, until the laying-out stops. It works because S makes each member distinguishable and R makes the laying-out persist.
+
+Zero is the unbroken state inside a domain available for counting — not Ø, the pre-state before any configuration. One is one recorded break. n is n recorded breaks under a successor policy. The Peano axioms are that iteration written down. The transfinite is a policy above the floor.
+
+## The ship, the wake, the ocean
+
+A ship moves on an ocean.
+
+The ship is the now — the Actualization State, the edge where the next distinction is being made. Not a thing in addition to the records. The active edge of the writing. One ship, everywhere coupling is happening. It moves forward. That is all it does.
+
+Behind it, a wake. The wake is the record history. Read it and you recover where the ship has been, how fast, which way it turned.
+
+The wake is not the ship. That is the load-bearing distinction. Measurement receives the wake — what has already been committed. From any point with access to the wake, the ship has already moved on. The wake is yesterday. Now is not in the wake.
+
+Beneath both, the ocean. It receives the wake as the wake fades and becomes the substrate the next ship moves through. Fading is not unwriting. The pattern dissolves as recoverable form; the fact that the ship passed remains in the total record. The ocean is Ø — the pre-state every ship moves through and every wake returns to.
+
+Mathematics is the language of the wake.
+
+Any ship in deep water leaves a wedge with a half-angle just under twenty degrees. A rowing boat. A tanker. A swan. Why an angle? C — waves travel at a finite speed and fall behind. Why this angle? Geometry — the ship’s speed against the speeds of waves of different lengths. The mathematics describes what C is doing. The wake shows it in water.
+
+## There is no ideal
+
+Platonism adds a fourth thing. Above the ocean, an ideal ship the real ship is striving to copy.
+
+There is no ideal ship. The ship is the actualising. There is no more-actualised ship somewhere else. The wake is R, not a degraded copy of a purer record. The ocean is the substrate, not an approximation of an ideal one.
+
+The Platonist saw the universality and reached, rightly, for something more than the particular record. He put it in the wrong place. The relations records have are real, universal, independent of any one instance — and they are in the records, read at the layer relations are visible.
+
+Three. Not four.
+
+## The life of Ø
+
+Records are configurations of Ø. A photon. An electron. A planet. A sentence. A moment of attention. The same substrate, distinguished differently at different sites.
+
+What the configurations share, beyond the substrate, is the relations the axiom permits between them. Conservation. Propagation. Composition. Distinction.
+
+Mathematics is the language to describe the life of Ø in its many configurations.
+
+That closes Wigner’s question. The effectiveness was unreasonable only on the assumption that mathematics was a human invention that happened to fit a non-mathematical world. Mathematics is not an invention. It is a reading. The world is a configuration of records, records have structure, and structure is what mathematics describes.
+
+There is no alignment to explain. One structure, read at two layers.
+
+## The grain
+
+The child counts three. The count is correct. Not a coincidence between a mental operation and a physical fact — a structural relation between three distinguishable records and the count that reads them, performed by an architecture that can register the relation.
+
+The architecture is itself a record. The child’s nervous system. The eye scanning the apples. Records reading records, in the language records produce.
+
+You are the grain, and you are the architecture that reads the grain. Both at once.
+
+We did not invent mathematics. We read it off the structure we are made of. The reading works because we are the structure doing the reading.
+
+## Where the reach ends
+
+The formal derivations of logic and of the Peano axioms are in the formal papers. The chapter shows the path.
+
+Infinity, the continuum hypothesis, large cardinals are policies over unbounded iteration, treated elsewhere. Category theory reads relations between record-architectures; the extension is clean and not worked through here.
+
+Incompleteness. Reading at sufficient richness produces records about the reading, and self-reference at that layer produces exactly Gödel’s limits. The language records produce is not required to be complete.
+
+## Where it would die
+
+Five claims carry this chapter.
+
+RES-2.1 — A record-free mathematical truth. Show a theorem whose content cannot be cashed out at any layer as a fact about records and their relations, and the identification is partial.
+
+RES-2.2 — A non-binary floor. Show that a three-valued or continuous logic is the structural floor and bivalence an artefact, and the derivation of logic skipped a step.
+
+RES-2.3 — Algebra beyond composition. Show a canonical algebraic operation whose content cannot be read as record-composition, transformation or policy at any layer, and the algebraic leg is partial.
+
+RES-2.4 — Locality without bounded propagation. Show a load-bearing geometry whose neighbourhood structure does not trace to bounded propagation or constrained relation, and C is not the source.
+
+RES-2.5 — A primitive the axiom cannot install. Show that choice or a load-bearing large cardinal axiom needs a primitive that is not a record-policy derivable from the four conditions, and the universal claim retreats to the floor. That is where this chapter is most testable.
+
+The ship is moving. The wake is forming. The ocean is receiving. We are reading.
+
+> Source: Ø Resolutions, Chapter 2 — The Source of Mathematics. Its kill switches: RES-2.1 to RES-2.5.

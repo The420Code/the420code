@@ -1,0 +1,151 @@
+# One — Why Is There Something Rather Than Nothing?
+
+## The oldest question
+
+You are reading this sentence.
+
+That is a record. Something is here rather than nothing. The reading proves it.
+
+So the question is already half answered. There is something. What is left is the other half.
+
+Why did nothing not hold?
+
+In 1714 Leibniz asked it in those words. Why is there something rather than nothing? His answer was God. Something that had to exist, holding up everything that did not have to.
+
+Two centuries later Heidegger called it the fundamental question of metaphysics. Every other question stands on it.
+
+Three hundred years. Nobody has closed it.
+
+## Four ways to fail
+
+Every answer so far has one of four shapes.
+
+Push it back. Something exists because something else caused it. The universe, because of the bang. The bang, because of a fluctuation. The fluctuation, because of the laws. The laws, because of — and the sentence trails off, or says God. Every answer of this shape makes a new thing that needs explaining. The question is not closed. It is moved one step back.
+
+Hand it to physics. Empty space is not empty, the argument goes. It seethes. Particles come out of it. But a vacuum with properties is not nothing. It is a very quiet something. The word nothing has been swapped for a small something, and the small something is then made to do the work.
+
+Refuse it. The universe is just there. Brute fact. Get on with life. There is honesty in that, and there is a cost. Hang a sign on the largest question saying do not approach, and every question under it gets harder.
+
+Notice the asker. We exist, so the universe must be the kind that allows us. True, and beside the point. It explains why the universe suits askers. It does not explain why there is a universe.
+
+Pushed back. Swapped. Refused. Side-stepped.
+
+Not dissolved.
+
+## What the question needs
+
+Look at what the question is asking for.
+
+Not what caused the universe. That is a smaller question, and every answer to it needs its own cause.
+
+Not why the universe is shaped this way. That is a smaller question too.
+
+It asks the largest thing there is. Two options were on the table. Something. Nothing. Why did this one win?
+
+For that to have any force, two things must hold. Nothing must be a real option — a state the world could have been in. And something must be the one that obtained, because someone is here asking.
+
+Hold on to the second one.
+
+The asker is inside the something.
+
+## No outside
+
+To compare two options you need a place to stand that is outside both.
+
+There is no such place.
+
+To ask, the asker must exist. To exist is to be something. So the asker stands on one side of the comparison, looking across at the other. Not a referee. One of the contestants.
+
+That does not make the question meaningless. It changes its direction.
+
+Asked forwards it says: given both options, why this one? That needs an outside view.
+
+Asked backwards it says: given that this one happened, what does that tell me about the other? That needs no outside view. It runs from inside the answer.
+
+Run it backwards.
+
+## What nothing would have to be
+
+For nothing to be a real option, you have to be able to say what it is.
+
+Try.
+
+No words — words are structure. No concepts — structure. No as opposed to — comparison is structure. No one watching — a watcher is structure.
+
+What is left is not nothing. It is a failed attempt. Every move you make to pin nothing down puts structure on the table, and structure is something.
+
+So nothing, in the full sense the question needs, is not a state. It is the absence of any state — including the state of being an option.
+
+Now the load-bearing step. Read it slowly.
+
+Take a state with no frame inside it and none outside it. Nothing registers it. Nothing could. Then there is no difference between this state holds and this state does not hold. No fact separates the two.
+
+At the level of the whole, unregistered is the same as not there.
+
+Nothing did not lose to something. Nothing was never in the running.
+
+There was no race.
+
+## The break
+
+Then where does the something come from?
+
+The Axiom named it. Perfect symmetry, one to one. Plus one break — ε — the smallest thing that can happen and still stay happened.
+
+The instinct is to ask what caused the break. That instinct was learned inside the world of things, where everything has a cause. It does not reach this far down. The axiom is not inside the world. It is what the world is. There is no earlier place a cause could come from.
+
+Watch what happens to the symmetry without the break.
+
+Two jars of water. Identical. Nothing to tell them apart. Nothing registered anywhere. From inside that balance — and there is no outside — nothing separates the balance holds from there is no balance at all.
+
+That is the test nothing just failed. A perfect symmetry with no break fails it too.
+
+So the break is not done to the symmetry from outside. The break is what the symmetry has to do to be anything at all. One grain in one jar, and now there is a fact.
+
+Asking what caused it is like asking what caused two and two to make four. Wrong category. Cause lives inside records. The break is what lets records exist.
+
+## The dissolution
+
+The question assumed nothing was an option. It was not. It was never the kind of thing that could be an option.
+
+So the question has no force in the shape it was asked. It set two things side by side and asked why one won. Only one of them was ever a thing.
+
+Is that brute fact in a better suit?
+
+No. Brute fact hangs a sign on the question and walks away. This opens the question, finds what it was asking for — a place to stand outside both options — and shows that no world can contain such a place. The first refuses. The second answers, by showing that the answer wanted was the wrong shape.
+
+One question survives. Why one to one at all? Why that balance to begin with?
+
+That cannot be answered from inside what the balance produces. Any answer would use the structure, and the structure comes from the axiom. That is the edge of what can be said. It is named here as the edge. The book stands inside it.
+
+## What it cost you
+
+You came for a sentence. The universe exists because of X.
+
+You did not get one. You got a demonstration that the sentence you wanted cannot be written by anyone, from anywhere.
+
+That is dissolution, not satisfaction.
+
+What you get instead is a sharper question. Not why something. Why this size of break — why ε is as small as it is. That one is not only philosophy. It is falsifiable in physics, and the physics books in this work go after it.
+
+Nothing did not hold. The reading is the proof.
+
+## Where it would die
+
+Six claims carry this chapter. Kill one and the dissolution weakens or falls.
+
+PZ-1.1 — The break is what makes the symmetry real. Show a perfect one-to-one balance that holds with no break and is still distinguishable from not existing, and the account of why nothing did not hold collapses.
+
+PZ-1.2 — Unregistered is non-existent, at the level of the whole. Show a state that exists with no frame, inside or outside, separating its existing from its not existing, and the load-bearing step fails.
+
+PZ-1.3 — Nothing cannot be specified. Show a well-formed category of nothing whose well-formedness is not itself structure, and the question gets its frame back.
+
+PZ-1.4 — The break needs no outside cause. Show that ε needs an explanation from outside the axiom, and the dissolution becomes a deferral.
+
+PZ-1.5 — The backwards move is structural, not verbal. Show that the asker exists is only a presupposition of speech and not evidence of the break, and the chapter stands on a frame it cannot defend.
+
+PZ-1.6 — The argument runs backwards. Show that it can only be sustained by running forwards — deriving that something exists from the impossibility of nothing — and the defence against brute fact collapses.
+
+Fire one and this page comes down.
+
+> Source: Ø Dissolutions, Chapter 1 — Why Is There Something Rather Than Nothing? Its kill switches: PZ-1.1 to PZ-1.6, per the Master Kill Switch Registry.

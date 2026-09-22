@@ -1,0 +1,151 @@
+# Four — Laws of Nature
+
+## Drop an apple
+
+Drop an apple. It falls.
+
+Drop it in another room, another continent, another century. It falls. The universe does not need to be persuaded to repeat itself.
+
+The repetition is the question.
+
+The fall is not a habit the universe might break. The fall is what happens. Whatever makes it what happens is what this chapter is about. The traditional name is a law of nature. The puzzle has been open for three hundred years.
+
+## Already inside
+
+You read the apple as falling. You did not wait to see whether this apple would, then check the next. The fall was part of the situation before the sentence ended.
+
+Try to deny that there are laws. The denial is a record made under structural conditions — by a hand whose motion is constrained, on a page held in place, read by a body whose breathing depends on the same structure. There is no ground from which laws can be denied without using them.
+
+## Two old answers
+
+Newton, 1687. Three laws of motion and one of gravitation, holding everywhere, always. The same equations for the moon and the apple, the tides and the planets. The puzzle of what such a law is became urgent.
+
+Two answers have dominated since.
+
+Regularity. Hume. A law is a pattern that has been seen to hold. Apples fall. Nothing more. This captures something real. Laws are read off the world. Nobody sees the necessity — we see one ball strike another and the second move, not the must. But regularity cannot say why the pattern continues, beyond so far so good. And it cannot tell apples fall from every coin in my pocket is silver. Both are patterns in the sample.
+
+Necessity. Laws are more than what we happened to notice. Armstrong: relations of necessitation between universals. Lewis: whatever the best systematisation of all the facts includes. This captures the directionality regularity misses — the second ball had to move. But it cannot say where the necessity lives, or it makes laws features of our descriptions rather than of the world.
+
+Regularity sees the reading and not the source. Necessity sees the source and not its location.
+
+## Laws are the four conditions read at resolution
+
+A law of nature is a constraint that the four conditions impose on every record, read at the resolution of the specific phenomenon.
+
+Not added to the world. What the world is.
+
+A building with load-bearing walls. The walls do not stand because a blueprint says they must and they obey. They stand because of what they are — these materials, this configuration, under these forces. The blueprint records what the walls do. If the blueprint says load-bearing and the wall is papier-mâché, the building falls. Not disobedience. The conditions were not met. The blueprint is downstream. The walls are upstream.
+
+A law is the same case. The universe does not consult the law before acting. The universe is the structure. The law is what we read when we examine what the structure does.
+
+Regularity was right: no imported necessity. Necessity was right: no mere coincidence. Both missed the layer beneath both. The structure imposes constraints, and the constraints read at resolution are what we have been calling laws.
+
+Three demonstrations.
+
+## Energy
+
+Energy is conserved. In every closed system the total does not change. Verified to extraordinary precision.
+
+Why? Noether’s theorem: time-translation symmetry — the laws being the same now as a moment ago — corresponds to a conserved quantity, and we call it energy. Rigorous and clean.
+
+One scope note. In general relativity a global conserved energy is not always definable. The claim is narrower: wherever a system carries stable time-translation structure, R and C are why conserved bookkeeping is possible.
+
+Go one layer down. Why does the symmetry hold where it does?
+
+R says records persist. C says propagation is bounded. Apply both at the resolution of dynamics. If energy accounting failed locally with no compensating record elsewhere, there would be record-change with no source or record-loss with no trace. That is what R and C forbid. A law that does not change merely because the record is later is what a stable record-rule looks like when R is applied uniformly across time.
+
+Noether says it in the language of symmetries and currents. The four conditions say it in theirs. Two faces of one fact. That is why conservation feels stubborn where it holds.
+
+## The speed of light
+
+Light travels at c. Exactly 299,792,458 metres per second — exactly, because since 1983 the metre is defined by it.
+
+The structural question is not the number. It is why the constraint exists and why it has the role it has.
+
+c is deeper than light. It is the invariant causal speed, the fastest that record-relevant influence can travel. Light is one carrier at that limit. Calling it the speed of light is historical. Structurally it is C, in chosen units.
+
+Why finite? Because C is what C is. Change the units and the number changes. The fact does not. That is why every observer in every frame measures the same value. C does not bend for the observer.
+
+The corpus carries one worked instance of a constant read from the structure: the strength of gravity, derived from α and a count of twenty-one channels, with zero free parameters. It is the model of what lawhood-as-structure produces, and it stands or falls on its own switches. The chapter does not rederive it. It uses it as the internal example.
+
+## The second law
+
+Entropy in a closed system never decreases. Heat flows hot to cold. Sugar dissolves and does not undissolve.
+
+The puzzle is that the underlying mechanics is time-symmetric. Newton, Maxwell, Schrödinger all run backwards as well as forwards. Film a frictionless pendulum and the reversed film obeys the same laws. The second law does not reverse.
+
+R does not replace the statistical account. It locates why the statistical account has an arrow.
+
+Microscopic dynamics may be symmetric. Macroscopic record-history is not. Mixing, heat flow, diffusion spread correlations across more degrees of freedom. To reverse them is not to run the equations backwards. It is to reconstruct an astronomically specific record-configuration. R names the one-way character of that.
+
+One precision. R alone does not deliver the quantities. A refrigerator lowers entropy locally by raising it more outside — a record-accounted transformation. What R forbids is unrecorded unwriting, a return to a prior state with no cost paid elsewhere. The quantities need coarse-graining and the past hypothesis. R is the arrow that gives them a direction at all.
+
+Three layers. The mechanics: what transformations are permitted. R: the arrow under which any transformation happens. Statistical mechanics: how the arrow shows up in macrostates. The second law is R, named at the entropy layer.
+
+## Two theories that were never two
+
+The physicists who built quantum mechanics and general relativity were not wrong to build them. The claim is about a framing. At the formal level the two remain distinct theories. At the structural level they are not separate. Each reads the four conditions at a different resolution.
+
+The twentieth century measured the constants brilliantly and treated them as givens — numbers to be inserted, never derived. A constant is a stable reading of the constraints the structure imposes at a resolution. Where a value has been derived, the derivation stands or falls on its switches. Where it has not, the debt is named.
+
+One piece of vocabulary. The actualisation rate is the rate at which possibility commits to actuality at coupling sites — how often a possible distinction becomes a recorded one. Distinct from the Actualization State, which is where the writing is happening now.
+
+The fine-structure constant, α, about one part in 137, is the actualisation rate at the electromagnetic layer. It governs how often electrons couple with photons, how tightly atoms bind, the shape of the periodic table. The corpus reads it as the rate at which the record actualises, set against the mass, gravity and resistance holding it at the now — and, seen from one side, as the strength of the coupling. It is the one measured input to the whole work, and every page that uses it says so.
+
+Quantum mechanics is the four conditions read at the layer of single coupling events. S is the indeterminate state before measurement — what the symmetry permits before the break commits. Measurement is B. The probabilities are S across many possible commitments. The discreteness is B’s binary character.
+
+General relativity is the same four read at the layer of C’s response to mass-energy. Curvature is what C does when the rate of propagation varies across a substrate carrying mass-energy records. R enforces the worldline: every observer’s history a continuous record.
+
+Two registers. One structure. The question of how to unify them is malformed. Any successful programme must reduce, in its limits, to what the four conditions produce. Programmes that import extra primitives are working harder than they need to. The unification was always the framing’s job. The universe was already one structure.
+
+## The honest paragraph on 1/137
+
+The strongest test of the one-structure claim is whether the constants that sit where the two theories meet can be derived from the axiom.
+
+What the corpus has. α is the actualisation rate at the electromagnetic layer. That is the claim, held without softening. α has been carefully identified and defined — what it is, where it sits, what it does. And the corpus has the gravity derivation as the worked model of what a structural derivation looks like.
+
+What it does not have. A derivation that goes from the four conditions to the value 1/137 in closed form. α is measured from outside — electron-photon coupling, atomic transitions, fine-structure splittings — and what is owed is why that value and no other. The roads walked towards it are on the wall. No value is printed. α is measured, not derived, and the work says so wherever it is used.
+
+The corpus’s present reading of why the road has not been reached is not modesty. It is structural. α is the rate at which the reading happens. The pupil cannot see the pupil. The grain doing the reading is still in the air. Measurement receives the wake, not the moving ship.
+
+A hostile reader will press: the gravity result does not entail that α is forced. Correct. The move rests on the broader commitment that the four conditions produce every fundamental constant, and that is exactly what RES-4.4 tests. A successful derivation must produce the value by the kind of reasoning that produces gravity, name which condition does the work, and yield observable constraints that separate a derivation from a coincidence. Whoever finds it closes work the corpus admits is open. Whoever shows it cannot be done fires the switch. The claim is sharp. The derivation is owed.
+
+## Counterfactuals without other worlds
+
+Laws support counterfactuals. If you had dropped the apple, it would have fallen. That is part of what separates a law from an accident. The apple in your pocket would fall. The coins in the other pocket might not all have been silver.
+
+One influential route analyses this through possible worlds — each counterfactual a real world sharing our laws. A heavy ontology.
+
+Not needed. A counterfactual is a recordable constraint on counterfactual trajectory-space. If you had dropped the apple records that, under that variation, the falling trajectories are open and the rest foreclosed. The constraint is real because the same four conditions that govern the actual trajectory-space govern any variation the substrate could carry. C does not bend in the counterfactual. R does not fail. The apple drops because the same axiom is running.
+
+Not every grammatical counterfactual is well-formed. If you had dropped the apple varies what the axiom permits. If 2 had been odd varies what the axiom forces. Counting invariants do not vary. The test is whether the variation respects what is forced and only moves what is permitted. Chapter Eight carries the full account.
+
+## Where the reach ends
+
+The derivation of α. Open, named above.
+
+The other Standard Model constants — the masses, the weak and strong couplings, the Higgs sector. Not derived. The claim is that each is a constraint at some layer. Most of the programme is open.
+
+Cosmology. The matter-antimatter asymmetry is the most reachable: perfectly symmetric break-statistics would have annihilated to nothing, and records exist. Its magnitude is open work. The expansion rate is on the wall. A first prediction of it fired on 3 September 2026 and is shown, not hidden. That switch belongs to the physics papers, not to this chapter. The closure prediction stands, live, with the window in which it must land and the condition under which it dies.
+
+## Where it would die
+
+Five claims carry this chapter.
+
+RES-4.1 — A law with no structural source. Show a canonical law with lawlike force that needs a primitive not expressible as symmetry, break, record, constraint or their compositions — a binding force, a separate realm — and the account is partial.
+
+RES-4.2 — A governing regularity with no constraint. Show a regularity that holds across every counterfactual variation, supports prediction, governs rather than describes, and has no structural constraint at any resolution, and lawhood needs more than the axiom.
+
+RES-4.3 — Different primitives. Show that quantum mechanics needs a primitive not reducible to the four conditions that relativity does not share, or the reverse, and the unity fails. A complete quantum-gravity theory is not required. Non-divergent primitives are.
+
+RES-4.4 — Two values of the rate. Show that the axiom as stated permits two distinct values of α, or of any constant claimed structurally forced, with no further constraint, and the rate is not forced. The honest paragraph is then rhetoric.
+
+RES-4.5 — Counterfactuals need worlds. Show a would-have-happened claim that needs possible worlds with their own standing, and the trajectory-space reading is partial.
+
+The universe is not governed by laws. It is the one-way accumulation of distinctions under four conditions, and the laws are those conditions read from inside.
+
+No law was issued. No rule was obeyed. The axiom was running. It is running now.
+
+The ship is moving. The wake is forming. The ocean is receiving. We are reading.
+
+> Source: Ø Resolutions, Chapter 4 — Laws of Nature. Its kill switches: RES-4.1 to RES-4.5.

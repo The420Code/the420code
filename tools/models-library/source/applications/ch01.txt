@@ -1,0 +1,155 @@
+# One — The Architecture of Property
+
+## A coin in the pocket
+
+A coin in the pocket. A field. A home. A company.
+
+Each is claimed by someone against others. The claim is honoured. The claim is enforced. The tradition called this property and spent three centuries arguing about where the right to it came from.
+
+This chapter says what property is, and gives one test that any holding must pass.
+
+Property is a durable claim-record. It names what is held — a capacity to act, access to some part of the world, the output of work. The holder may defend it. What bounds the defence is what the holding does to everyone else.
+
+The record is often portable. A coin, a deed, a balance, a patent, a file. The thing it names often is not. Land does not move. What moves is the claim. What is held is the site the claim points at.
+
+## Already inside
+
+Say property is settled and this chapter has nothing to add.
+
+The body saying it is surrounded by holdings. The device. The room. The clothes. The next meal. Tonight's bed. The account that your work has been writing into. Each is a claim some person holds against others.
+
+Your life has run on holdings from the start. There is no neutral ground. The question of what property is is the question of the structure your own life runs through.
+
+## What this book inherits
+
+Two words from the earlier books do the work here, and in every chapter after.
+
+An operator is a reader who can say no. A self-reading loop with override at the junctions where more than one path is open. You are one.
+
+The joint viable set is the room everyone has to move in. The set of paths every operator inside a shared structure can still run. The chapters of this book track one quantity, and this is it.
+
+A holding that widens or keeps that room, at a cost the shared structure can carry, is cooperative. A holding that shrinks it, or loads a cost onto others that they cannot carry, is parasitic. Those two words are the verdicts.
+
+The ship, the wake and the ocean run through this book too. The ship is the operator. The wake is the durable pattern the ship has written. The ocean is the shared structure every wake is written into.
+
+Property is a wake, held against the ocean.
+
+## Two questions
+
+Every holding must answer two questions.
+
+Provenance. Did the record track the holder's own capacity — labour done, risk taken, work made — or was it written over someone else's prior record?
+
+Propagation. What does the holding do, now, to the room everyone else has to move in?
+
+Pass both and the holding is cooperative. Fail either and it is parasitic. The verdict reads the worse of the two.
+
+The two are independent. Clean provenance can propagate parasitically. Failing provenance can propagate cooperatively. Where a holding is mixed across scales, the failure is read where it occurs and corrected there. Not flattened into one verdict on the whole.
+
+Legal status does not change the verdict. Law can ratify parasitic holdings, and often has. The structure distinguishes the two even when law cannot.
+
+This is a test. Not a policy. Not a legal procedure. Conveyancing, contract, tax, transitional justice — each has its own work, and this chapter replaces none of it. It says what that work must read at the site of the holding.
+
+## Six readings
+
+The seventeenth century said: mix your labour with what was held in common and it is yours. Right that labour writes into the world and the writing can be defended. Wrong that the common was empty. Much of it was already being read by others.
+
+The eighteenth century said: property is an agreement among the members of a society. Right that a holding is always a holding against others who are inside the same structure. Wrong to place the agreement at a starting point nobody ever stood in.
+
+The nineteenth century split. One side said what has long been honoured is thereby legitimate. Right that continuity is load-bearing. Wrong that a history justifies itself. A history can be parasitic at any point inside it.
+
+The other side said property is theft by structure. Right at exactly the site it was tracking — labour sold under conditions that could not be refused. No real alternative. Deprivation. Hidden information. Care that narrows refusal. There, the reading is parasitic. Wrong to generalise from those conditions to every holding as a class.
+
+The twentieth century said: just acquisition, just transfer, and rectification of past wrongs. Right about provenance, including the rectification. Silent on propagation. A holding can be clean all the way back and still shrink the room today.
+
+A second twentieth-century reading said: fairness is what everyone would agree to from behind a veil. Right that the shared conditions are where fairness must be read. Wrong to make the thought experiment the ground. The ground is the actual structure the four conditions produce.
+
+Six readings. Each caught one feature. None answered the question completely.
+
+## Land, labour, capital, data
+
+Land. Provenance reads at the prior state of the ground. Land nobody was reading passes cleanly. Land that others were reading — grazing, burying, naming, farming — fails at the taking, whether or not the taker's records had a category for it.
+
+That deserves its own line. Institutional non-recognition is not structural absence.
+
+A title can be perfect through every later transfer and still run forward from a failure the institution never registered. Time does not make the taking clean. But time does change the remedy. Present holders are operators too, with their own records written into the ground. The failure stays real. What correction restores the shared room now is separate work, read at the present site.
+
+Labour. Your labour is your own capacity. It runs cleanly through provenance. Propagation reads at what the work does. One clarification carries weight: a contract is not clean because it was signed. Where refusal was not a live path — housing, hunger, debt, dependants, papers — consent runs over compulsion, and the structure reads the compulsion.
+
+Capital. Accumulated records of past capacity, deployed to make more. Clean where the accumulation tracked the holder's own labour, risk and modelling. Failing where it tracked what others could not refuse. Propagation reads at what the capital does when it moves.
+
+Data. Records of a person's own actions, held by someone else. Provenance turns on whether the person could read what was being recorded, what would be inferred, where it would go, and whether it could be revoked. A clicked box settles none of that. Inferences the institution draws are mixed provenance. Data that reveals other people who never consented is harder still. Propagation reads at whether the holding is used to widen the person's room or to narrow it.
+
+## Patents, the worked case
+
+A patent is a claim-record over a made thing. Someone did the work. Often the provenance is clean.
+
+Often it is mixed. Public funding. Prior science. Trial participants. The public grant of monopoly that makes the invention portable at all. Where those inputs carried weight, the holder's authority is bounded by theirs.
+
+Propagation is where patents divide.
+
+A patent on something nobody needs to live is cooperative. The inventor recovers the cost. The lock expires. The room widens.
+
+A patent on something people need to live, priced past what those people can pay, is parasitic at the resolution of the bodies locked out.
+
+Same tool. Different propagation. Different verdict. The patent is not the verdict. The patent is what the verdict is run on.
+
+The test does not produce a redistribution programme. It installs what any redistribution must satisfy. A redistribution that shrinks the room is parasitic too, whatever the rhetoric around it. The account is symmetric.
+
+Copyright and trademark run the same two questions. The chapter does not walk them. You can.
+
+## Commons
+
+A common is not unowned. It is a holding whose provenance and propagation are carried by a group rather than a person. Pasture. Water. Fisheries. Language. Science. The air.
+
+Enclosure is not labour mixed with nothing. It is a transfer from joint holding to exclusive holding, and its provenance reads at whether that transfer kept or shrank the room the common was holding open.
+
+Commons are not innocent by form. They can be captured, mismanaged, closed to outsiders. They fail the test exactly as private holdings do. And the story that every common ends in tragedy is false at many sites. Under known conditions, communal holding propagates cooperatively.
+
+## The threshold
+
+When does a holding become parasitic by propagation?
+
+Not at inequality. Not at size. Not at envy.
+
+At the point where its continued exclusive running prevents other operators from keeping or widening paths the shared structure has reason to preserve — and what gives it reason is derived, not chosen: the original, Chapter One, walks it from the four conditions. And where that prevention is not needed for the holding to do its own cooperative work.
+
+A large holding can sit under the threshold. A small one can cross it through the pattern of its accumulation across many sites. A single source of something everyone needs crosses it the moment its price or its terms exclude those who need it.
+
+The structure does not fix the number in advance. It fixes what the number must answer to: contraction of others' paths, reversibility, and whether a cooperative alternative was available.
+
+## Inheritance
+
+Inheritance is provenance carried across the closing of one window into the corridor of another.
+
+It does not heal. A failing holding does not become clean by passing through a death. The heir's authority is bounded by what the dead holder's authority was.
+
+It is not refused. A person's authority over their own record extends to the people their life was written into.
+
+It is refused where the pattern of accumulation across generations itself crosses the threshold. That is read at the resolution of the present room, not the original gift.
+
+## Where the reach ends
+
+How the test is implemented in any jurisdiction. Very long-distance provenance, where the community taken from no longer exists as a readable line. Goods the current property forms cannot hold — the atmosphere, the ocean sink, the conditions of the digital commons — taken up in Chapters Ten and Twelve. Operators held at corridors so narrow that the architecture's own commitments are what the test would refuse. Holdings the chapter has not named. Each is open. You run the test on what the chapter left out.
+
+## Where it would die
+
+Five claims carry this chapter.
+
+APP-1.1 — A legitimate property form that cannot be expressed as clean provenance plus cooperative propagation, and the test is partial.
+
+APP-1.2 — Show the cooperative-parasitic distinction is unmeasurable in principle at the site of propagation — not contested, not hard, but underdetermined — and the second question fails.
+
+APP-1.3 — Show that inheritance structurally severs provenance, and the account of inheritance is wrong.
+
+APP-1.4 — A widely accepted property form whose legitimacy is real and cannot be read through any combination of the conditions installed, and the reading is partial.
+
+APP-1.5 — Show that the test ratifies the present distribution by default, and this is not a test. It is ratification in structural clothing.
+
+A holding that tracks the holder's own capacity and keeps the room open is valid. A holding written over another's record, or that shrinks the room, is parasitic, whatever the law says.
+
+The chapter has installed the test once. Every chapter after uses it.
+
+The ship is moving. The wake is forming. The ocean is receiving. The holding is what the wake is.
+
+> Source: Ø Applications, Chapter 1 — The Architecture of Property. Its kill switches: APP-1.1 to APP-1.5.

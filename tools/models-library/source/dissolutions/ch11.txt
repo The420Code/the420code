@@ -1,0 +1,147 @@
+# Eleven — The Problem of Induction and the Nature of Time
+
+## The railing
+
+You reached for the railing on the stairs and it held.
+
+You expected it to. You did not pause, calculate, or hedge. You reached, it held, and you took the next step.
+
+The cup held the water. The floor held your weight. The sun rose.
+
+Every one of those expectations was an induction — from what has been to what will be. It works almost without fail. And for three hundred years nobody has justified it without going in a circle.
+
+This chapter says the problem of induction and the problem of what time is are one problem. Both rest on the same premise: that past and future are two separate domains, with a gap between them that has to be bridged.
+
+This is the third of the four gaps. Same move as Six and Eight.
+
+## Two problems
+
+Hume, 1739. It has always happened does not entail it will happen. Fire has burned every time. Tomorrow it might not. No contradiction. The inference is a habit, and the habit cannot justify itself.
+
+Four replies. Make it probable — but the probability update is itself an induction. Make it pragmatic — we must use it to survive, which explains the use and not the warrant. Make it Bayesian — a formal apparatus that presupposes the very thing in question. Or admit defeat and live without a foundation.
+
+Goodman sharpened it in 1955. Call an emerald grue if it is green before some future date and blue after. Every emerald seen so far has been grue, exactly as it has been green. Why project green and not grue? His answer, entrenchment — we have always projected green — relocates the question without closing it.
+
+Behind induction sits time. Newton: a container, flowing uniformly, with events placed in it. Leibniz: not a container, an ordering of events. McTaggart, 1908: the moving now is incoherent, so time is unreal. Einstein, 1905: simultaneity is not absolute, so the container is not what Newton said. The block-universe reading takes that furthest — all events laid out in four dimensions, no privileged now — and is the closest the tradition has come. It is still a container. Four-dimensional instead of three.
+
+Every version treats time as prior to events. Events happen in time.
+
+The axiom inverts that.
+
+## The now
+
+The axiom is 1:1 + 1×ε @ AS. Written out as the cycle it runs, 1:1 + 1×ε @ AS [+α | −α].
+
+Two operations, both running always. The break — held, irreducible, what keeps the symmetry from closing back into nothing. The flow — out as records are written, back as records release into potential. Balanced. Net zero. The break does not cycle. The flow does, around it.
+
+A reader at any site is on the writing side of the flow. That is what reading is.
+
+The Actualization State is the totality of what the axiom produces, read as one. The now. Not a local configuration at your site. The one now the structure has, of which every site is a local reading.
+
+Three things follow.
+
+The now is singular. One, not one per site. What each site reads is a cross-section of it, at the resolution the site can reach.
+
+What has been written is in the now, as its record-structure. Not held in a container behind you.
+
+What can next be written is in the now, as the trajectory-space it permits. Not waiting in a container ahead of you.
+
+That is the hinge.
+
+The past is what the third condition has preserved. Records written and not undone. Reading the past is reading what the now carries.
+
+The future is what the now permits. The couplings available at this site given what has propagated so far. Reading the future is reading what the now allows next.
+
+Two readings of one now. No gap between them, because they were never two places.
+
+They are not symmetric. The past reading finds what is written and cannot be unwritten. The future reading finds what is permitted and not yet determined. That asymmetry is what the third condition produces, and it is why induction runs forward. The past is fixed because holding fixed it. The future is open because it has not been written yet. Philosophy called that the direction of time and treated it as a separate problem. It is the same fact.
+
+## Time is what holding is
+
+The perfect symmetry before the break contains no record of itself. No before, no after. Nothing to order.
+
+The break produces records. Records are irreversible and carry the direction of their writing. A record being written is what makes before and after distinguishable at all.
+
+Time is the direction the third condition preserves. Not a dimension records are placed along. The direction of writing, read from the one now.
+
+Events are not in time. Events, irreversibly written, are what produces the thing the narrator reads as time.
+
+The container is a narrator-layer model. Real as an experience. Not what time is.
+
+Why does the now feel privileged? Because it is where the reading happens. The only place it can happen.
+
+Why does the past feel behind? Because it is the record-structure the self-model has already accumulated. Why does the future feel ahead? Because it is what the self-model projects.
+
+Why does time feel like sliding? Because every new record the self-model writes turns the previous reading into an earlier record. The sliding is the self-model accumulating earlier-records at each reading, under holding. Not movement through a container. Writing, with direction preserved, at the single now.
+
+## Induction is constraint reading
+
+Now the problem changes shape.
+
+Classically, induction was a leap from one domain to another, and the leap needed a justification the framing could not supply.
+
+There is no leap.
+
+The regularities of the past are not patterns that happened to hold some number of times. They are consequences of the four conditions. Matter behaves as matter because what matter is — a stable coupling under the four conditions — constrains what it can do next. Fire burns because what fire is constrains what it does when it meets fuel.
+
+Induction is the narrator reading those constraints at its site and projecting what the now permits next under them. When you expect fire to burn tomorrow you are not jumping a gap. You are registering that fire goes on being what the conditions make it.
+
+When induction succeeds, the constraints held. When it fails, induction did not fail as a method. The narrator’s model of the constraints was too coarse. The structure was doing something at a finer grain than the reading caught.
+
+The justification the tradition wanted is not available, because it was looking at the wrong layer. What is available is the fact: the conditions produce regularities, and induction reads them.
+
+## Three objections
+
+The regress. That the conditions will hold tomorrow is itself an induction. — No. The four conditions are not a pattern seen many times. They are what must be true for any record to exist, derived from the one record in hand. Tomorrow’s records, when they exist, will satisfy them — not because tomorrow was inspected, but because any record anywhere is what the conditions produce. That is derivation from a record to its preconditions. It is not induction.
+
+Grue. Which regularities does the structure tell you to track? — The constraints govern specific quantities. Energy. Momentum. Charge. Spin. Coupling capacity at a resolution. Grue is not at that layer. It splices two conditions across a time-cut by narrator construction. The line is not natural against artificial. It is structurally governed against narrator-constructed. The test is sharp: a predicate is governed if it can be stated without a temporal or sectoral disjunction over what the conditions produce. Energy-before-T-and-momentum-after-T fails the test. Induction tracks energy. It tracks momentum. It does not track a disjunction with a date in it.
+
+The container. Time seems primary. Records are in time, not time in records. — The seeming is real, and it is a narrator reading. Relativity showed a century ago that the container cannot be absolute. The axiom goes one step further. The container is not a modified truth. It is a projection onto what holding produces, read from the now.
+
+## What the chapter did
+
+Hume was right at his layer. Past regularities, taken as premises for a leap, do not reach the future. What he could not see is that induction is not a leap. It is reading constraint at one site.
+
+Goodman was right that observation under-determines projection when predicates are unconstrained. He lacked the line between governed and constructed. The conditions supply it.
+
+Newton was right that time seems to flow uniformly. That is the narrator’s report of what holding does at the scale it reads.
+
+Leibniz was closer. Time is an ordering. What he missed is what it orders. Records.
+
+McTaggart was right that a moving now inside a container is incoherent. There is no container. The moving now is the narrator reading from the one now the structure has.
+
+Induction and time dissolve together because they rested on one premise, and the premise is not what the axiom produces.
+
+## Where the reach ends
+
+Why the four conditions give electromagnetism its couplings and the standard model its particles is the work of the formal papers.
+
+Why the now registers as a moving point rather than a single reading, why memory and anticipation feel so different, why time runs at different rates under different attention — phenomenology, treated elsewhere.
+
+Whether causation is prior to holding or runs inside it, and how the direction of holding connects to the thermodynamic arrow, are technical questions in the physics.
+
+What any site reads of the record-structure is partial. A cross-section of one now at the resolution the site can reach. That is the honest limit, and induction does not need more, because the constraints hold at every resolution the conditions produce.
+
+You are a window.
+
+You are reading the now from your site, and it is the only now there is.
+
+The past is what it carries. The future is what it permits.
+
+Both are present, now, in the one now you are a local reading of.
+
+## Where it would die
+
+Five claims carry this chapter.
+
+PZ-11.1 — Time is what holding is, read from the one now. Show that time needs a container the axiom does not produce, or a moving now the Actualization State does not contain, and the container is restored.
+
+PZ-11.2 — The now is singular. Show that it must be pluralised — one per site — or cannot be specified as one totality, and past and future are two domains again.
+
+PZ-11.3 — Induction is constraint reading. Show it needs a reasoning pattern above what reading the four conditions from a site can supply, and the dissolution fails.
+
+PZ-11.4 — The axiom is not an induction. Show that the conditions are a pattern inferred across instances rather than what any record’s existence requires, and Hume’s regress returns.
+
+PZ-11.5 — Governed and constructed predicates are distinguishable. Show that no principled line separates them, and grue returns.
+
+> Source: Ø Dissolutions, Chapter 11 — The Problem of Induction and the Nature of Time. Its kill switches: PZ-11.1 to PZ-11.5.

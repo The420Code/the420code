@@ -1,0 +1,149 @@
+# Twelve — The Architecture of Global Resource Allocation
+
+## Water, food, land, energy, knowledge
+
+Water. Food. Land. Energy. Knowledge.
+
+The ground is finite and the windows are many. Every civilisation has had to answer how to distribute. Every civilisation has answered partially. The answers produced empire, famine, market, plan, war and reform. The question has not closed.
+
+This chapter is neither planning nor market worship. Planning imports an authority the axiom does not produce. Market worship imports a sufficient mechanism it does not produce either. Nor is it redistribution by fiat.
+
+Allocation is the Ledger at planetary scale. The geometry produces a region of permissible distributions within which the room stays open. Departures from the region are parasitic accumulations. The corrective is not a decree. It is measurement, and the correction hierarchy's response.
+
+This is the chapter every other chapter was preparing for. It is a test. Not a development programme, a governance proposal or a blueprint.
+
+## Already inside
+
+Say allocation is for development specialists and economists.
+
+The breath you are drawing was made by plants on continents you have not visited. The water in you came through a cycle that began at sites you did not author. Your next meal was grown by people you will never meet, on ground you have never maintained.
+
+And you have been allocated. Your position in the planetary pattern has mattered at every coupling you have ever run. Some operators receive conditions that hold their lives at full width. Others receive corridors they did not choose. You are one of these. There is no neutral ground.
+
+## What this book inherits
+
+Everything. The joint viable set — allocation decides whose corridors are wide. The ripple, compounding across generations. Provenance and propagation — most present allocation records run on histories of empire, displacement and extraction, and the chapter does not flatten that. The hierarchy. The boundary. The Ledger, from the front of the book and from Chapter Four’s accounting, now at planetary scale. The substrate from Chapter Ten. And the finding from Chapter Eleven: an allocation failure that reaches the scale where force is the only correction left is a failure at every lower level that was not run honestly.
+
+Every transfer is a wake. The ocean receives them all. Some patterns of wake it can absorb with every ship still sailing. Some concentrate where the ocean cannot hold them.
+
+## Five readings
+
+Inheritance: distribute as the institution always has. Right that allocation records are durable and costly to revise. Wrong to make inheritance the source.
+
+Market: distribution emerges from exchange. Right that operators carry information no centre can aggregate. Wrong to reduce the test to what markets read. They read local prices and short loops well. They read long externalities, voiceless populations and unpriced ground badly.
+
+The collective at architecture scale. Right that populations without market voice have standing. Wrong, at times, to reach that standing through a central authority rather than through the room directly.
+
+Aggregate welfare. Right that the test runs across everyone. Wrong to make the sum the test. It is one approximation of the room.
+
+Price as information processing. Right that no centre can read what operators know at their own sites. That bound is real and the structure keeps it.
+
+Five readings. None installed the region.
+
+## The region
+
+Allocation is a region in distribution space, not a single vector. Inside it, the room stays open. Its boundaries are inherited.
+
+The dignity-floor at every operator, from the spine. Binding regardless of any further calculation.
+
+Substrate rates the ground can regenerate and absorb, from Chapter Ten.
+
+Accumulation thresholds past which the buffer must overflow, from Chapter Four. Concentrations the buffer cannot carry. Asymmetries that force slope correction. Record densities at which the structure can no longer read itself.
+
+And the joint condition: all three satisfied at once, at every class of operator.
+
+The region is approximate at present reading capacity. It runs through proxies with inspectable assumptions and explicit bounds. Better data will sharpen it.
+
+What it refuses categorically is concentration that contracts the room past what the structure can sustain. Some concentration is cooperative — real differences in capacity, prior cooperative coupling. Some is parasitic — provenance failure, propagation failure, captured advantage. The reading tells them apart where the difference lives.
+
+## Departures
+
+The Ledger reads the present pattern against the region.
+
+The reading is that the present planetary pattern has departed substantially, and has been departing for centuries. Capacity has accumulated at classes whose provenance runs on empire, displacement and extraction. New coupling continues to flow disproportionately to the historically advantaged. The divergence is structural, not incidental.
+
+The chapter does not ask you to take that by rhetoric. The verdict is supported by proxies already visible. Deprivation amid surplus. Hunger beside discarded food. Water scarcity next to discretionary overuse. Fossil benefit accumulating far from the people carrying its cost. Land concentration on histories the institution has itself registered as provenance-failing. Knowledge restricted at non-rival sites where the restriction tracks neither cost nor risk. The full empirical case belongs to the Ledger. The direction is already legible.
+
+The correction is the hierarchy at each departure site. Restitution where the concentration tracks identifiable harm. Restriction where it is propagating at rates the room cannot absorb. Separation, permanent separation, removal, in ascending cost. Minimum sufficient correction throughout.
+
+## Not planning
+
+Planning begins with an authority deciding a distribution and imposing it. The Ledger begins with consequence. A planner sets quotas. The Ledger reads the geometry.
+
+The structure does not refuse central institutions. It refuses the planner's commitment to specifying the distribution. Institutions may measure, correct at departure sites, and coordinate at scales no individual can. Those are implementations of the reading, not the planner's decree.
+
+Every institution that has claimed to plan has also been doing something else — party, army, security service, ideology — at scales far beyond the plan's nominal scope. The records show parasitic departure. They do not show planning running at fidelity to its own claim.
+
+And the planetary resolution does not erase the local. Hydrology known by water-users. Soil known by growers. Care needs known by households. Risk known at the site. So the reading requires subsidiarity of measurement: read at the lowest scale that can register the coupling, and aggregate upward only where the spill crosses what the local site can absorb. Subsidiarity is not deference to a local pattern that is parasitic at the wider scale. It is reading where the coupling lives.
+
+## Not market worship
+
+Markets read some things well and some badly. The structure keeps what they read and adds what they omit. Price is not abolished. It is relocated inside a wider Ledger. Markets become one input to the region, not its author.
+
+Every institution that has claimed to run free markets has also been running property, money, security and infrastructure at scales beyond the market's nominal scope. The records show parasitic departure. They do not show free markets running at fidelity to their own claim.
+
+## What this is
+
+The structure constrains distribution space. It identifies the region where allocation runs cooperatively, and the sites where the present pattern does not. The region can be measured — imperfectly now, better later. The correction is the smallest intervention that restabilises the geometry. No authority sets the region. No market alone discovers it. The Ledger reads it.
+
+The reading rules out specific patterns. It rules in no specific institution. Many can run it honestly.
+
+And it is not neutral. It produces verdicts on the present pattern's departures, and the register at which any proposal can be tested.
+
+## Five classes
+
+Water flows where hydrology, gravity, climate and infrastructure carry it. Need is where bodies are. Patterns that reconcile flow and need without degrading the cycle sit inside the region. Aquifers drained past recharge, rivers moved at rates the ground cannot sustain, systems contaminated past absorption — outside it. The present pattern is substantially outside.
+
+Food grows where soil and climate permit and is eaten where bodies are. Production concentrated where the soil cannot sustain it, soil depleted past regeneration, populations starving while others discard — outside. The present pattern is outside.
+
+Land is finite. Every human and non-human architecture runs on it. Concentration on provenance-failing histories, displacement, contraction of non-human conditions past sustainability — outside. The present pattern is outside.
+
+Energy is generated where physics permits and used where work happens. Coupling past absorptive capacity, access denied to those whose lives require it, cost pushed onto those the energy never served — outside. The present pattern is outside at the resolution Chapter Ten read.
+
+Knowledge is produced where conditions allow and propagates at C. It is non-rival at coupling: my reading does not shrink yours. Restriction that tracks neither production cost nor risk, access concentrated at historically advantaged classes, suppression that contracts the room without justification — outside.
+
+One clarification on knowledge. Non-rival at coupling does not mean free to produce or open at every site. Production cost is real. Safety risk, privacy, dual use and cultural authority are real. Restriction that tracks those is cooperative. Restriction that blocks coupling while tracking none of them is parasitic.
+
+Finance is not a sixth class here because Chapter Four worked it. At planetary scale it allocates access to future capacity. Where it widens cooperative coupling, cooperative. Where it locks the already-narrowed out of the future while concentrating buffer at the already-wide, parasitic.
+
+Medicines, shelter, minerals, digital infrastructure, transport — the same test by the same geometry. You run it.
+
+None of these flows was invented by an authority. Each is substrate plus coupling. Align with the flow and the room widens. Oppose it and the room narrows.
+
+## Anti-capture, legitimacy, transition
+
+The five commitments from Chapters Three and Eleven run at planetary scale. No side owns the axiom. Measurement inspectable. Inaction is an act. Minimum intervention. Audit at the long timescale.
+
+Planetary correction does not bypass legitimacy. The Ledger is approximated by institutions, not possessed by an oracle. So corrections require transparency, contest, audit, and representation of the people carrying the transition at the correction site itself. A right direction implemented over the heads of those it costs is parasitic governance at planetary scale. Where representation is incomplete, correction is not refused. It is read at the representation that exists, with widening it part of the correction.
+
+And correction has transition cost. It may not be paid by narrowing the corridors already narrowed by the departure. Transition burdens are routed first to the accumulation sites and the provenance-failing records that produced the departure, with the dignity-floor of every affected operator binding throughout. A correction that breaks the floor anywhere is parasitic at the correction site, whatever its purpose.
+
+## Where the reach ends
+
+Building the data infrastructure the full reading needs. Coordination between sovereign, transnational and sub-state architectures at the scale the region runs at — later work. The standing of future operators. The standing of non-human architectures. The tension between planetary correction and the operator's authority below the line. And AI coupling architectures — new allocators of computational capacity, of trained representations, of output at scales no person can run. The same test applies: provenance of what they were trained on, propagation of what they produce, departures from the region, the floor at every operator they touch. How the structure's reading capacity is extended to them is open.
+
+## Where it would die
+
+Six claims carry this chapter.
+
+APP-12.1 — Show the region is so underdetermined that it rules out no actual pattern, and the installation fails.
+
+APP-12.2 — Exhibit a substrate on which the region itself produces destabilisation, and the installation fails.
+
+APP-12.3 — Show the correction is incoherent without central fiat the chapter has refused, and the distinction from planning is false.
+
+APP-12.4 — Produce a class of resource on which the reading is silent at every resolution, and the coverage is partial.
+
+APP-12.5 — Re-describe the reading, without remainder, as one existing economic tradition, and this is relabelling.
+
+APP-12.6 — Show that not-planning, not-market conceals a third position carrying the same authority structure as one of them under another name, and the disarm has failed.
+
+Twelve chapters have closed.
+
+Five chapters at the centre did one thing. They read the body at five scales. The body is where the axiom is most directly tested by every operator. That is the book's heart, and its weight is there.
+
+The structure is already there. What is missing is the commitment to read it.
+
+The ship is moving. The wake is forming. The ocean is receiving. The reading continues.
+
+> Source: Ø Applications, Chapter 12 — The Architecture of Global Resource Allocation. Its kill switches: APP-12.1 to APP-12.6.
