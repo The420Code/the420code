@@ -1,6 +1,8 @@
-# AP31 The Alignment — Dated notes
+# Dated notes in AP31 The Alignment — 23 September 2026
 
-Filed 23 September 2026. The paper's PDF on the wall carries these notes as its Dated notes section; the body is unchanged.
+**The 420 Code · Studio G · the notes are carried in the paper itself, from page 38 of the republished PDF (sha256 `8bcc0e17…`); this file is their plain-text record. The body of the paper is unchanged.**
+
+---
 
 23 September 2026. Four matters of record since the lock. None alters the body above.
 

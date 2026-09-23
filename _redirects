@@ -38,3 +38,10 @@
 /pt/index.html.bak3      /pt/      301
 /ru/index.html.bak3      /ru/      301
 /zh/index.html.bak3      /zh/      301
+
+# A per-paper instruments folder is a record, not a page: it has no index, and since
+# 23 September 2026 the registry prints one of these addresses as the place a derivation
+# stands (KS-31.2 -> /proofs/instruments/AP31/). An address that ends at the folder now
+# lands on the room that lists that paper's files, instead of nothing. Real files under
+# the folder are served as they always were; a redirect only fires where nothing is.
+/proofs/instruments/:ap/   /proofs/instruments/   302
