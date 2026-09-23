@@ -46,14 +46,20 @@ const ROOMS = ["/", "/what-is-the-420-code/", "/proofs/", "/proofs/instruments/"
                "/five-doors/", "/models/", "/exhibition/", "/axiom/", "/physics/", "/notebooks/"];
 const PAGES = new Set([...ROOMS, ...LANGS.flatMap(l => [`/${l}/`, `/${l}/what-is-the-420-code/`])]);
 const LIBRARY = /^\/models\/(dissolutions|resolutions|applications|horizons)\/((\d\d(-5)?-[a-z0-9-]+|epilogue)\/)?$/;
-const FIVE_DOORS = /^\/five-doors\/(illusion|being-after-religion|antichristos|relationship-corridor)\/((\d\d-[a-z0-9-]+|epilogue)\/)?$/;
+const FIVE_DOORS = /^\/five-doors\/(illusion|being-after-religion|antichristos|relationship-corridor|the-interior)\/((\d\d-[a-z0-9-]+|epilogue|closing)\/)?$/;
+// 23 September 2026, G's word: every page counts. The frozen documents under /prereg/doc/, Three
+// Ways of Being Sure and /proofs/part-1/ carried no counter until today and so were never in this
+// list; they post now, and a page that posts is counted.
+const DOCS = /^\/prereg\/doc\/[A-Za-z0-9._-]+\.html\/$/;
+const PLAIN = new Set(["/three-ways-of-being-sure.html/", "/proofs/part-1/"]);
 const normalise = (p) => {
   if (!p || p === "") return "/";
   p = p.replace(/index\.html$/, "");
   if (!p.endsWith("/")) p += "/";
   return p;
 };
-const isRealPage = (p) => PAGES.has(normalise(p)) || LIBRARY.test(normalise(p)) || FIVE_DOORS.test(normalise(p));
+const isRealPage = (p) => { const q = normalise(p);
+  return PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || DOCS.test(q) || PLAIN.has(q); };
 
 async function readBase(store) {
   const raw = await store.get(BASE);
