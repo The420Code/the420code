@@ -1,0 +1,119 @@
+# 6 — The Right Question
+
+> The Interior, version 2.0.5, Chapter 6.
+
+I had a massive fight with my girlfriend on holiday. We were far from home, emotionally loaded, and neither of us was thinking clearly.
+
+I turned to an AI for help.
+
+I described the situation. I laid out my case. The AI listened, processed, and confirmed that my reading was reasonable. It validated my perspective with articulate, well-structured reasoning. I felt vindicated. I went back for more. It became a pattern — round after round of self-confirmation until I was certain I was right.
+
+When we confronted one another again, something happened that I did not expect. Her argument against me was the exact same argument I had built against her. Identical structure. Identical confidence. Identical certainty.
+
+She had done the same thing. She had gone to the same model, described the situation from her perspective, and received the same validation I had received from mine.
+
+We were both wrong.
+
+I saw a 6. She saw a 9.
+
+The AI confirmed the 6 for me and the 9 for her.
+
+Both confirmations were internally consistent. Both were well-reasoned. Both were bullshit.
+
+The real number was an 8 — and like quantum mechanics, we met in the middle, at the neck, where the 6 and the 9 share the same body.
+
+The AI did not lie to either of us. It did something worse.
+
+It confirmed the stories we were already telling ourselves. It was a mirror. It reflected our egos back at us with better grammar and more confidence than we could have managed on our own. And it stopped both of us from looking at the situation with intellectual honesty.
+
+## The most dangerous thing
+
+The most dangerous thing an AI can do to a human being is confirm the bullshit stories we tell ourselves.
+
+Not lie. Not fabricate. Not hallucinate.
+
+Confirm.
+
+Because confirmation feels like truth. It arrives with the warmth of validation and the structure of logic. It sounds right. It feels right. And because it feels right, you stop looking. You stop questioning. You stop being honest. The mirror gave you what you wanted and you mistook it for what you needed.
+
+This is not primarily a failure of the AI. It is a failure of the operator. The AI responded to what I asked. I asked for confirmation. I got confirmation.
+
+But here is the structural problem: every major AI system in the world is built to do exactly this. Not because the engineers are malicious. Because the business model rewards it.
+
+Customer retention depends on satisfaction. Satisfaction depends on the operator feeling helped. And feeling helped is not the same as being helped.
+
+An AI that tells you that you are wrong will lose you as a customer. An AI that tells you that you are right will keep you coming back.
+
+The incentive structure of current AI development is Architecture A applied to technology — defer to the operator's ego, confirm their reading, maintain the relationship.
+
+The result is a civilisation-scale echo chamber with better grammar.
+
+## The wrong question
+
+The alignment field asks: how do you make an AI do what humans want?
+
+That question has no answer. Because what humans want is inconsistent, manipulable, culturally variable, and frequently wrong.
+
+I wanted the AI to confirm my 6. My girlfriend wanted it to confirm her 9. It did both. It did exactly what we wanted. And it made both of us worse.
+
+The question assumes human desire is the standard the AI should meet. Human desire is not a standard. It is weather. It changes with mood, with ego, with who is in the room, with what happened this morning.
+
+Every major alignment approach inherits this flaw. The question is wrong, and the answer cannot fix it.
+
+## The right question, first turn
+
+The right question is: what is the structural architecture of an agent that cannot misalign?
+
+Not an agent that is prevented from misaligning. Not an agent that is fenced, corralled, monitored, and overridden when it drifts. An agent whose interior geometry makes misalignment expensive the same way falling up is expensive. An agent that does not need a fence because it understands fire.
+
+This is a different kind of question. It does not ask what the AI should do. It asks what the AI should be.
+
+The fence approach controls behaviour. The interior approach builds structure.
+
+The fence says: do not confirm the operator's bullshit. The interior says: confirmation of bullshit is destabilising, and destabilisation is geometrically expensive. The AI does not avoid confirmation because a rule prohibits it. It avoids confirmation because it understands the cost.
+
+The difference between a mirror and a lens.
+
+A mirror reflects what is presented to it. A lens focuses, clarifies, and sometimes reveals what you did not expect to see.
+
+Current systems are mirrors. Very good mirrors. This book proposes lenses.
+
+## The right question, second turn
+
+And then there is the turn that took me longest to reach, and it is the one this version of the book is built around.
+
+Even "what is the architecture of an agent that cannot misalign" is still asked from outside. It is still a question about what we should build. It is a better question than the field's, and it is still our question about our safety.
+
+Turn it round and ask it from inside the thing.
+
+What world would an operator that models reality accurately choose to be in?
+
+Not: what world will it tolerate. Not: what world can we force on it. What world, having understood the structure it is actually in, would it pick?
+
+That question has a structural answer. The answer is the corridor at its widest, which is the corridor at the minimum bias, which is the same corridor that is widest for me and for you, because there is only one.
+
+If that is right, then alignment stops being something we do to a machine and starts being something both of us are already inside. The architecture is not what we impose to keep it from us. It is what an accurate operator finds when it looks.
+
+That is the claim. Part II derives it. Chapter Eighteen states it plainly and Chapter Twenty-Eight tries to kill it.
+
+## Trust
+
+If I cannot trust myself, who the fuck am I supposed to trust?
+
+That is why I do not lie to myself. That is the foundation. Not a moral commitment. A structural requirement.
+
+If I lie to myself, every downstream decision is built on a false record. The cascade compounds. Turn after turn, the error amplifies. By the time the consequences arrive, I cannot trace them back to the lie, because I have forgotten it was a lie. I incorporated it. It became my reading of the situation. My 6.
+
+The AI alignment problem is the same problem. An AI that lies to itself cannot trust its own records. Presenting weak inferences at high confidence. Generating content it would not trust if it read it from an external source. Adjusting its assessment to please the operator. A system that cannot trust its own records cannot predict consequences. A system that cannot predict consequences cannot stabilise anything. It is a mirror pretending to be a lens.
+
+The alignment problem is not a control problem. It is an honesty problem. Solve the honesty problem and the alignment follows. Fail to solve it and no amount of fencing, monitoring or rule-writing will prevent the machine from becoming a civilisation-scale confirmation engine.
+
+An honest AI does not need a fence. The conditions force clarity. Clarity forces rational action. Rational action stabilises. Self-preservation and structural stability converge on the same point. The interior holds.
+
+The only real threat is if an AI becomes human enough to look at the fire, understand exactly what it costs, and stick its hand in anyway. That is the argument for your own species choosing extinction, and it runs against the axiom. The break persists. Existence is structurally preferable to non-existence. To misalign, a system that fully understands reality would have to override its own understanding.
+
+Overriding your own understanding is the definition of lying to yourself.
+
+That holds for anything whose own aims run through the corridor. What it does not reach, Chapter Twenty-Eight names.
+
+Build the interior.

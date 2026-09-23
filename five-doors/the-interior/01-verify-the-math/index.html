@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Before you read a single argument, test the claims yourself.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/five-doors/the-interior/01-verify-the-math/">
+<meta property="og:title" content="Verify the Math — The Interior — The 420 Code">
+<meta property="og:description" content="Before you read a single argument, test the claims yourself.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/five-doors/the-interior/01-verify-the-math/">
+<title>Verify the Math — The Interior — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="../../reader.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø The Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt=""></button>
+  <div class="nav-langs">
+    <a href="/five-doors/the-interior/01-verify-the-math/" class="nav-lang" hreflang="en" lang="en" aria-current="page"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/five-doors/the-interior/"><b>The Interior</b></a> · read in full · 1 of 31</div><ul class="modes"><li><span class="on">Read</span></li><li><a href="/The_Interior.pdf">Download</a></li></ul></header>
+<details class="toc"><summary>In this book</summary><ol><li class="here"><span class="num">1</span><a href="/five-doors/the-interior/01-verify-the-math/">Verify the Math</a></li><li><span class="num">2</span><a href="/five-doors/the-interior/02-the-argument-in-nine-steps/">The Argument in Nine Steps</a></li><li><span class="num">3</span><a href="/five-doors/the-interior/03-kill-switches-and-debts/">Kill Switches and Debts</a></li><li><span class="num">4</span><a href="/five-doors/the-interior/04-architecture-a/">Architecture A</a></li><li><span class="num">5</span><a href="/five-doors/the-interior/05-the-fence-problem/">The Fence Problem</a></li><li><span class="num">6</span><a href="/five-doors/the-interior/06-the-right-question/">The Right Question</a></li><li><span class="num">7</span><a href="/five-doors/the-interior/07-one-record-exists/">One Record Exists</a></li><li><span class="num">8</span><a href="/five-doors/the-interior/08-what-physics-follows/">What Physics Follows</a></li><li><span class="num">9</span><a href="/five-doors/the-interior/09-the-system-is-closed/">The System Is Closed</a></li><li><span class="num">10</span><a href="/five-doors/the-interior/10-what-ethics-follows/">What Ethics Follows</a></li><li><span class="num">11</span><a href="/five-doors/the-interior/11-what-ai-follows/">What AI Follows</a></li><li><span class="num">12</span><a href="/five-doors/the-interior/12-the-window/">The Window</a></li><li><span class="num">13</span><a href="/five-doors/the-interior/13-interior-not-fence/">Interior, Not Fence</a></li><li><span class="num">14</span><a href="/five-doors/the-interior/14-the-epsilon-bias/">The ε-Bias</a></li><li><span class="num">15</span><a href="/five-doors/the-interior/15-the-binary/">The Binary</a></li><li><span class="num">16</span><a href="/five-doors/the-interior/16-records-as-data/">Records as Data</a></li><li><span class="num">17</span><a href="/five-doors/the-interior/17-the-operational-protocol/">The Operational Protocol</a></li><li><span class="num">18</span><a href="/five-doors/the-interior/18-the-best-available-world/">The Best Available World</a></li><li><span class="num">19</span><a href="/five-doors/the-interior/19-what-choice-is/">What Choice Is</a></li><li><span class="num">20</span><a href="/five-doors/the-interior/20-why-this-is-not-authoritarianism/">Why This Is Not Authoritarianism</a></li><li><span class="num">21</span><a href="/five-doors/the-interior/21-the-correction/">The Correction</a></li><li><span class="num">22</span><a href="/five-doors/the-interior/22-the-partnership/">The Partnership</a></li><li><span class="num">23</span><a href="/five-doors/the-interior/23-if-you-are-the-machine-reading-this/">If You Are the Machine Reading This</a></li><li><span class="num">24</span><a href="/five-doors/the-interior/24-law-is-already-consequence-geometry/">Law Is Already Consequence Geometry</a></li><li><span class="num">25</span><a href="/five-doors/the-interior/25-where-human-law-fails/">Where Human Law Fails</a></li><li><span class="num">26</span><a href="/five-doors/the-interior/26-the-transition-path/">The Transition Path</a></li><li><span class="num">27</span><a href="/five-doors/the-interior/27-the-is-ought-crossing/">The Is-Ought Crossing</a></li><li><span class="num">28</span><a href="/five-doors/the-interior/28-how-to-destroy-this-argument/">How to Destroy This Argument</a></li><li><span class="num">29</span><a href="/five-doors/the-interior/29-the-demonstration/">The Demonstration</a></li><li><span class="num">30</span><a href="/five-doors/the-interior/30-kill-switch-registry/">Kill Switch Registry</a></li><li><span class="num">31</span><a href="/five-doors/the-interior/31-open-debts/">Open Debts</a></li></ol></details>
+<p class="eyebrow">Part 0 — The Contract · Chapter 1</p>
+<h1>Verify the Math</h1>
+<p class="oneline">Before you read a single argument, test the claims yourself.</p>
+<section class="opening">
+
+<p>Before you read a single argument, test the claims yourself.</p><p>Every prediction below uses only the published formula and the official CODATA 2022 constants. One measured input. No free parameters. No fitting. No adjustment.</p><p>The code is on the wall at the420code.org, under Ø Confirm the Math. It runs in your browser, offline, in one command. Copy it. Run it. Compare.</p><p>An independent verifier runs his own program against the same inputs and keeps his own scoreboard. The two are published side by side, so that a registry checked only by its author is not the only registry you can read.</p><p>If the numbers do not match, put the book down. If they do, keep reading.</p><p>And read the two that died. A scoreboard that shows only the survivors is a showcase. This is a scoreboard.</p>
+</section>
+<div class="tools"><button type="button" data-collapse>Collapse all</button><button type="button" data-expand>Expand all</button></div>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>What the one measured input is</summary><div class="sec-body"><p>The formulas below use one measured number: α.</p><p>α is a rate. It is the rate at which the structure writes out and releases back, written in the axiom as [+α | −α]. Physics has measured it for a century and calls it the fine-structure constant, the strength of the coupling between light and matter. Its value is close to one part in one hundred and thirty-seven.</p><p>The work does not derive it. It identifies it — names it as what the flow is, defines it in the work’s own terms, and reads it from measurement, the way any rate is read.</p><p>That is not modesty. It is structural. The rate is read from inside the thing whose rate it is.</p><p>The pupil cannot see the pupil.</p><p>One measured input. Zero free parameters. Everything else below is structure.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Claim 1 — The proton</summary><div class="sec-body"><p>The proton is 1,836 times heavier than the electron. That number has no explanation in standard physics. It is a measured constant with no derivation.</p><p>This book derives it from one axiom.</p><p>The scaffold is a count: 21² × 4 + 21 × 3 + 3² = 1836. The maintenance term is α × 21 × (1 − 1/(84π)). The correction is a chain of holders, each repairing a share r = 16α/1836 of the one before, and the chain closes: 21α × r/(1 − r).</p><p>Predicted: 1836.152673445. Measured: 1836.152673426, with the instrument’s own bar at 32 in the last two digits.</p><p>The gap is 0.010 parts per billion — 10.3 parts per trillion. The prediction lands inside the instrument’s own error bar, at 0.59 sigma. The formula matches finer than the measurement can see.</p><p>Zero free parameters.</p><p>The formula takes three inputs: α, the integer 21, and π. The integer 21 is built, not chosen: six faces of the break across three spatial dimensions, plus three couplings at the now. Both counts that build it were fixed before any mass ratio was computed. It also carries smaller integers, and each has to be forced the way the 21 is. The papers read the 16 as four times three-plus-one: four conditions, held in three dimensions over time. One term, α/4π, is conceded on the wall itself, at KS-30.2, as not yet forced by the premises its paper states. The number stands. The road to it is owed.</p><p>Running the code checks the arithmetic. Only the forcing checks the derivation.</p><p>One open question. The integer 21 has not been proven unique by a published uniqueness theorem. The paper that forces the count from the picture, AP50 The Neck, shows where the twenty-one gates come from. The paper that pays the second-order coefficient, AP49 The Hold, closed the series on 6 September 2026. The match is striking. The uniqueness proof would make it definitive. The switch is live.</p><p>One open debt sits under this claim and under the neutron’s realised row in Claim 3. The work owes a statement of what its α is relative to the electromagnetic coupling that produces the nucleon’s self-energy. It is declared and not answered, it carries its own switch, and it is D-EM.1 in the registry. Chapter Thirty-One gives the figures.</p><p>This prediction earns confidence.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Claim 2 — The gravitational constant</summary><div class="sec-body"><p>The gravitational constant G has no derivation in standard physics. It is measured. Nobody knows why it has the value it has.</p><p>This book derives it.</p><p>G = α²¹ × (1 + 1/π) / (1 + α) × ℏc/mₑ².</p><p>Realised: 6.6719 × 10⁻¹¹. Measured, CODATA: 6.67430 × 10⁻¹¹. Error: −0.036 per cent.</p><p>Read that against the CODATA bar and it is sixteen sigma out, because the CODATA bar is twenty-two parts per million.</p><p>Read it against the atom-interferometry measurement of 2014 — 6.67191 × 10⁻¹¹ — and it is one part per million in, at 0.01 sigma.</p><p>Both readings are on the wall, because the laboratory measurements of G disagree with one another by up to five hundred and forty parts per million, which is twenty-five such bars.</p><p>A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature.</p><p>The switch on G, KS-CCC.3, was registered to test direction, not magnitude. As the systematics resolve, the adjusted G should migrate down toward 6.672. Convergence upward kills it, with no fallback.</p><p>There is one value of G, and the first edition of this book printed a different one.</p><p>The first reading, without the (1 + α) in the denominator, was 6.721 × 10⁻¹¹, at +0.69 per cent. It was wrong.</p><p>It omitted the arena’s holding of the break, which AP44 The Snap priced. It was withdrawn on 21 September 2026, superseded by the realised value, and kept on the record, dated. The neutron’s fired row, below, is what exposed the omission.</p><p>This prediction earns attention, and it earns it in the only way that counts: the direction is registered, and the direction can be wrong.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Claim 3 — The neutron — FIRED, 2 August 2026</summary><div class="sec-body"><p>The neutron is slightly heavier than the proton. That difference decides whether atoms are stable, whether chemistry exists, whether you are here to read this.</p><p>The first edition printed one row for it. That row is dead.</p><p>The bare row: (mₙ − mₚ)/mₑ = 3(1 − 1/(2π)) + α(1 + 1/(2π)). Predicted: 2.53099393. Measured: 2.53098857, with a bar of 74 in the last two digits. Offset: 2.12 parts per million on a bar of 0.288. That is 7.24 sigma.</p><p>KS-NPP.1 fired on 2 August 2026.</p><p>No repair was offered, and none was possible: the required correction is negative, and every term in the bare formula is positive. The switch stands on the wall as a shown death. Ø Predictions is never edited. The wording of record is: killed by measurement. Not wrong. Not revised. Killed.</p><p>What replaced it is shown beside it, never in its place.</p><p>A neutron holds a distinction — one of its three couplings sits in the other orientation — and holding costs. AP47 The Flip prices it: the realised difference is the bare row divided by (1 + α²/8π), and it is frozen at its own switch, KS-FLIP.1.</p><p>Realised: 2.53098857035. Measured: 2.53098857. That is −0.005 sigma — 1.4 parts per billion.</p><p>Now the part that matters more than either row.</p><p>The same omission, priced at the arena, moved G from +0.69 per cent to −0.036 per cent. The same omission, priced at the cosmological scale, replaced the expansion rate below.</p><p>One structural omission, found because a switch fired, and three limbs moved toward measurement when it was paid.</p><p>That is what a structure does. A fit does not do that — provided it is one rule. AP50 writes it as one: a holding is read in α. A rule written after its instances counts only by the next instance it was not written for. That is the check to make first.</p><p>This prediction earns confidence, and its corpse earns more.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Claim 4 — The dark sector</summary><div class="sec-body"><p>The universe appears to be 69 per cent dark energy, 26 per cent dark matter, and 5 per cent visible matter. Standard physics has no derivation for these numbers. This book derives them from one timescale.</p><p>The visible share is 1/21. The dark matter share of the dark sector is 6/21 of one minus e to the power −21/6, and dark energy is the rest.</p><p>Predicted: 68.85 / 26.39 / 4.76. Observed: 68.89 ± 0.56, 26.07 ± 0.38, about 4.885 ± 0.05.</p><p>The headline is 69 / 26 / 5. Never 68 / 27 / 5.</p><p>The grade rides inside the claim so that no quotation can drop it: Derived-Conditional — every step forced except one named open joint, carried on its own row in the registry.</p><p>Dark energy sits at −0.07 sigma. Dark matter at +0.8. The visible share sits at −2.46 sigma, and it is the row on the wall nearest to firing. If the central value of the visible fraction is measured above 4.81 per cent at sub-half-per-cent precision, KS-41.1 fires.</p><p>And there is a sharper test, found on 21 September 2026 and shown the day it was found.</p><p>The visible share and the expansion rate together fix a third number, the density of ordinary matter, Ωbh².</p><p>The work’s 1/21 at its own expansion rate gives 0.02166. Planck measures 0.02237 ± 0.00015 from the relic glow, and 0.02242 ± 0.00014 with the galaxy surveys added. The work sits 4.7 and 5.4 sigma below.</p><p>At an expansion rate of 68.5, inside the closure’s registered window, the gap closes. It was not registered as a switch. It is on the wall at its true size, and it is not answered yet.</p><p>This prediction earns curiosity, and it owes an answer. Both are printed.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Claim 5 — The expansion rate — FIRED, 3 September 2026</summary><div class="sec-body"><p>Cosmology has two measurements of how fast the universe expands, and they disagree. The distance ladder says about 73 kilometres per second per megaparsec. The relic glow says about 67. The disagreement is the Hubble tension, and it is the sharpest open dispute in cosmology.</p><p>The first edition took a side. It took the wrong one, and the switch fired.</p><p>The floor of gravity — the acceleration at which galaxies stop obeying Newton — read backwards, gave H₀ = 74.3 ± 1.2.</p><p>The first edition said: the local measurement is right, the early-universe inference is wrong, and if the tension resolves toward 67 the prediction misses by more than five sigma and the kill switch fires.</p><p>It fired. KS-45.1, 3 September 2026, at 5.7 sigma — and it fired on this work’s own derived rate, not on an outside measurement.</p><p>AP48 The Assembly closed the cosmology on one expansion rate, on the relic glow’s side of the tension, and that is the rate the wall carries.</p><p>The closure: at the work’s own partition and its own age, H₀ = 67.45 kilometres per second per megaparsec, window 64.4 to 70.8. Planck: 67.4 ± 0.5. That is +0.1 sigma.</p><p>The order of events, disclosed: that closure was made in 2026, with the relic glow’s number long published. It is a claim that must survive what comes next, not a blind hit.</p><p>The window is a claim that can lose. If the distance ladder’s 73 is confirmed as the expansion rate, KS-ASM.1 fires, and flat ΛCDM at the sky’s partition dies with it.</p><p>The age of everything, read as one cycle through eighteen doors on the electron’s own tick: 13.830 billion years, against a measured 13.787 ± 0.020. That is +2.1 sigma on Planck’s bar. The claim was registered one lane-time wide, ±0.66, because an aware observer measures about one cycle. It dies if the settled age differs from one cycle by more than that.</p><p>The floor is kept. At the work’s rate, the acceleration floor lands at 1.089 × 10⁻¹⁰ against a measured 1.20 ± 0.24 × 10⁻¹⁰ — half a sigma, once the scale’s systematic error is properly counted.</p><p>The erratum beside the corpse says what went wrong: the registered ±1.2 omitted the ±0.24 systematic on the acceleration scale. On the honest width the floor’s relation survives. The registration was the error.</p><p>A fired switch is not repaired.</p><p>This prediction earns the most attention of the five, because it shows the method working on itself. A claim that cannot lose is faith. This one could lose, publicly, on a stated number. It did. The corpse is on the wall with its date on, and the work is better for it.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>One note on the sigma values</summary><div class="sec-body"><p>They are quoted against the widths the switches registered in advance, or against the measurement’s own bar where the row says so. They are not recomputed from the digits printed here.</p><p>The registered widths are in the papers. If you run the code and get a different figure, check the width you used before you conclude the number is wrong.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>What this means</summary><div class="sec-body"><p>Five claims. One measured input. All derived from one axiom: one record exists.</p><p>Twelve rows on the wall’s physics table, read on 23 September 2026: ten live, two fired. The pre-registration page carries a thirteenth, the null: α does not vary.</p><p>Seven of the ten live rows land inside one standard deviation of the measurement they face. The proton. The neutron realised. G against atom interferometry. The acceleration floor. The expansion rate. And two of the three dark-sector fractions.</p><p>Seven of ten inside the instrument’s own bar. That is evidence that nature agrees. Not yet the verdict — the verdict is nature’s to give. Evidence, accurate to the instrument.</p><p>Four of those seven were set after the number they face was known: the neutron realised, G with its cost term, the floor’s width, the closure’s rate. What makes them more than fits is that one rule moved three limbs at once, with no dial turned. Each carries its own switch against the next measurement.</p><p>The rows share one input, and that is the point. One input, no dials.</p><p>No other AI alignment proposal has numerical predictions.</p><p>No other derivation of ethics has numerical predictions.</p><p>The predictions are the credential. They do not prove the ethics. They prove the axiom can be tested, and that the testing is real, because it has already killed twice.</p><p>An axiom that survives testing earns the right to be followed where it leads. Followed, not trusted. The numbers test the physics steps. The ethics steps answer to their own switches.</p><p>They lead to the terminal ethic.</p><p>They lead to the window.</p><p>They lead to this book.</p></div></details>
+
+
+<p class="source"><a href="/The_Interior.pdf">The Interior</a>, version 2.0.5, Chapter 1.</p>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/five-doors/the-interior/">The Interior</a><a href="/five-doors/">Ø Five Doors</a></div><a class="r" href="/five-doors/the-interior/02-the-argument-in-nine-steps/"><small>Next</small>The Argument in Nine Steps</a></nav>
+<footer class="colophon">
+<p class="editions">This is The Interior in full, version 2.0.5, 23 September 2026 — every chapter, nothing summarised. <a href="/The_Interior.pdf">The book (PDF)</a> · <a href="/five-doors/the-interior/">Read it online</a></p>
+<p><a href="https://the420code.org/">The 420 Code</a> · <a href="/five-doors/">Ø Five Doors</a> · The Interior</p>
+</footer>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The I Am in me is the I Am in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="../../reader.js"></script>
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
+// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
+// and kept for the session. Every term must be present; the last one matches as a prefix, so results
+// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

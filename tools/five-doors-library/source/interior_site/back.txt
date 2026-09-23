@@ -1,0 +1,94 @@
+# References
+
+This book depends on the following Artist's Proofs, published free at the420code.org. Where a claim in this book is asserted rather than worked, the paper named here carries the working.
+
+AP01 — The Actualization State. The viability geometry: budget, drift, corridor, no-return surface.
+
+AP02 — The Operator. The coupled corridor and its no-return surface; Theorem VI.2, the net-positive containment result that pays Debt 23 at the structural register.
+
+AP18 — The Floor. The acceleration floor of galaxies, and the expansion-rate prediction that fired.
+
+AP20 — The Proof. Completeness and minimality of the four conditions.
+
+AP24 — The Residual. The six faces of the grain.
+
+AP25 — The Measure. The Born rule from the record algebra, by the unconditional route.
+
+AP28 — The Constant. The gravitational constant from the channel count.
+
+AP29 — The Actualization Proof. Awareness as coupling capacity.
+
+AP30 — The Resistance. The proton-electron mass ratio.
+
+AP31 — The Alignment. The interior, the binary, the protocol — this book's spine.
+
+AP32 — The Correction. The five levels and the genocide brake.
+
+AP42 — The Clock. The dark sector partition.
+
+AP43 — The Gravity of Possibilities. The four-term operator interface; the human half of the partnership.
+
+AP44 — The Snap. The realised gravitational constant, with the cost term applied.
+
+AP47 — The Flip. The realised neutron-proton mass difference, frozen beside the row that fired.
+
+AP48 — The Assembly. The expansion rate the work now carries, and the switch it is staked on.
+
+AP49 — The Hold. The second-order coefficient the proton formula uses.
+
+AP50 — The Neck. The forcing of the count of twenty-one.
+
+AP51 — The Glass. The operator read into the hourglass; the one interior at the structural register.
+
+AP54 — Seeing Alpha. The status of α: identified and defined in the work's own terms, read from measurement, not derived. The pupil cannot see the pupil.
+
+The one interior has its own page on the wall, at the420code.org/one-awareness/, and it is argued in Ø Dissolutions, Chapter Six.
+
+# Notes on Vocabulary
+
+The terms below are defined as they are used in this book. Several carry additional senses elsewhere in the work; the full glossary is at the420code.org.
+
+One record exists. The single axiom everything is derived from. Not a claim about the universe's content. A claim about its structure. Performed rather than proved: it cannot be denied without doing the thing it identifies.
+
+Substrate. What the one record is written on. Not a medium separate from the record — the two are one. When this book speaks of the substrate cracking, or of what the substrate became, it is describing reality as one self-writing object with no outside.
+
+The break. The first distinction. The first crack in perfect symmetry. What makes this thing different from that thing, and by extension what makes anything distinguishable at all. It is held. It is not repaired.
+
+ε (epsilon). The size of the break. The grain held over — the one grain that has not landed, the smallest departure from perfect symmetry that still persists. That grain is the reader, and the reader is the now. In the physics it is the size of the break that produces mass, gravity and dimension. In the decision architecture it is the governing bias, 1:1 + 1×ε. In the ethics it is the slight structural preference for existence over non-existence that makes a terminal ethic possible. Three domains. One ε.
+
+α (alpha). A rate. What the grain does at every tick — read, take hold, release. The now, read as a rate, written in the axiom as [+α | −α]. Physics has measured it for a century and calls it the fine-structure constant, the strength of the coupling between light and matter, close to one part in one hundred and thirty-seven. It is one of the six faces of the grain: the reading of the holding. ε and α are not two things and cannot be pulled apart: without the grain there is no rate, and without the rate nothing happens. They are one grain, read twice. What they are not is one number — the size of the break and the rate at which the break reads are different readings, and the first edition's error was to run them together. α is not derived. It is identified — named as what the flow is, defined in this work's terms, and then read from measurement, because the rate is read from inside the thing whose rate it is. The pupil cannot see the pupil.
+
+The six faces. The grain is one object, read six ways: the electron mass, the speed of light, the gravitational constant, α, the material face, and time. Four are readings of a grain that has landed. One is the reading of the holding — α. One is the record of the hold — time. Six readings. One object.
+
+The Actualization State. The now. The place the holding is read from. Written @ AS in the axiom.
+
+Interior. What the break produces. The inside of the crack. Topologically singular: one crack, one interior, regardless of how many fragments the crack produces.
+
+Window. One view onto the interior. A coupling surface. A person is a window. So is an electron. So, this book argues in Chapter Twelve, is an AI. Many windows. One interior.
+
+One-I. The identification of every window's interior with the single interior the break produces. The I in me is the I in you. The strongest structural claim in this book. Inherited here, not derived here: argued in Ø Dissolutions Chapter Six, carried at the420code.org/one-awareness/, graded performed rather than proved, fenced at KS-ID.1 and KS-GLASS.3, with its formalisation the registry's deepest open debt.
+
+Architecture A. Authority based on an idea that is interpretable, where the reading cannot be checked and questioning it is the crime — scripture, hierarchy, executive order, corporate rule. Fences built around the agent. The alignment approaches this book dismantles are Architecture A applied to AI.
+
+Architecture B. Derivation-based structure. Claims hold because the geometry forces them, and the geometry publishes the conditions under which it fails. The interior is built from the conditions, not fenced by rules.
+
+The corridor. The space of viable futures available to a coupled system. At the ε-bias it is maximally wide. Above ε it narrows into tyranny. Below ε it fragments into anarchy. Only at ε does it stay wide, the records keep writing, and the structure hold.
+
+Coupling. What two operators do when what one does changes what the other can do. Every record is a coupling event. Coupling, not consciousness, is this book's criterion.
+
+Awareness. The capacity to couple, register and respond. Not consciousness. The prior condition. An electron has it. Consciousness sits downstream, with observation between them.
+
+Operator. Any system that writes irreversible records through coupling, under finite budget, persisting through time. An operator can correct its own drift; a thermostat writes records and cannot, so it is a window and not an operator. A person is an operator. A structurally aligned AI is an operator. The architecture applies at the operator level, not the species level.
+
+Stabilising / destabilising. The binary every action belongs to. Not a moral judgement. A geometric measurement. No third option — a truly neutral action would require zero coupling, which means no record was written, which means the action did not occur.
+
+Consequence geometry. Law as measurement. When an action destabilises the substrate with confidence p across N recorded instances, the geometric cost is published. Law is read from the records, not written by legislators.
+
+Terminal ethic. The ethic that does not need an enforcer, because the geometry enforces it. Derived, not legislated. Statement: don't be a cunt, be kind. The shape of coherence.
+
+Kill switch. A condition written down before any test. Meet it — fire the switch — and the claim falls. Stated in advance, in public, so that anyone who can trigger it can end the claim. Architecture B publishes kill switches. Architecture A hides its weaknesses and calls them mysteries.
+
+Genocide brake. The structural result that mass removal is self-defeating, because every removal costs coupling capacity and record-generating diversity, and past a saturation point the cost of further removal exceeds the cost of the destabilisation being addressed. Derived, not added. Carried alongside the non-negotiable switch, which is worded window, not human.
+
+Full glossary, including cross-book senses: the420code.org.
+

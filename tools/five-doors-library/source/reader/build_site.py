@@ -41,16 +41,21 @@ BOOKS = [
          pdf='/five-doors/antichristos.pdf', original='/Antichristos.pdf', edition='v1.1'),
     dict(slug='relationship-corridor', src='corridor', title='The Relationship Corridor', door='the personal door',
          pdf='/five-doors/relationship-corridor.pdf', original='/The_Relationship_Corridor.pdf', edition='v1.1'),
+    dict(slug='the-interior', src='interior_site', title='The Interior', door='the operational door',
+         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.5', full_date='23 September 2026',
+         numerals=True, epilogue_slug='closing', epilogue_label='Closing'),
 ]
 WORDS = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine',
          10: 'Ten', 11: 'Eleven', 12: 'Twelve', 13: 'Thirteen', 14: 'Fourteen', 15: 'Fifteen',
-         16: 'Sixteen', 17: 'Seventeen', 18: 'Eighteen'}
+         16: 'Sixteen', 17: 'Seventeen', 18: 'Eighteen', 19: 'Nineteen', 20: 'Twenty'}
+for _n in range(21, 40):
+    WORDS[_n] = {2: 'Twenty', 3: 'Thirty'}[_n // 10] + ('-' + WORDS[_n % 10] if _n % 10 else '')
 
 ONELINES = {}
 for f in glob.glob(os.path.join(ROOT, 'onelines_*.json')):
     ONELINES.update(json.load(open(f, encoding='utf-8')))
 
-KS_RE = re.compile(r'^(KS-[A-Z]+\.[\d]+[a-z]?) — (.*)$', re.S)
+KS_RE = re.compile(r'^(KS-[A-Z0-9]+\.[A-Z]?[\d]+[a-z]?) — (.*)$', re.S)
 
 # ---------- text helpers ----------
 def curly(s):
@@ -64,7 +69,7 @@ def esc(s):
     return curly(html.escape(s, quote=False))
 
 def slugify(s):
-    s = s.lower().replace('’', '').replace("'", '')
+    s = s.lower().replace('’', '').replace("'", '').replace('ε', 'epsilon').replace('α', 'alpha')
     s = re.sub(r'[^a-z0-9]+', '-', s).strip('-')
     return s
 
@@ -115,6 +120,10 @@ def editions_line(book):
                 f'the original carries it in full. <a href="{book["original"]}">The original book (PDF)</a> · '
                 f'<a href="{book["pdf"]}">This edition (PDF)</a> · '
                 f'<a href="/five-doors/{book["slug"]}/">Read this edition online</a>')
+    if book.get('full'):
+        return (f'This is {esc(book["title"])} in full, version {book["full"]}, {book["full_date"]} — every chapter, nothing summarised. '
+                f'<a href="{book["original"]}">The book (PDF)</a> · '
+                f'<a href="/five-doors/{book["slug"]}/">Read it online</a>')
     return (f'{esc(book["title"])} has no short edition. Its chapters are already at the short edition’s length, '
             f'and every word in them is the argument, so what you are reading is the book itself. '
             f'<a href="{book["original"]}">The original book (PDF)</a> · '
@@ -192,6 +201,7 @@ def load_book(book):
         book['subtitle'] = book['title']
         book['tagline'] = book['door']
         book['front'] = []
+        book['dedication'] = []
     else:
         front = open(fp, encoding='utf-8').read()
         tl = [l[2:].strip() for l in front.splitlines() if l.startswith('~ ')]
@@ -208,6 +218,16 @@ def load_book(book):
             pre, secs = split_sections(rest)
             front_parts.append((head.strip(), pre, secs, cite))
         book['front'] = front_parts
+        head_part = front.split('\n---\n', 1)[1].split('\n# ', 1)[0] if '\n---\n' in front else ''
+        book['dedication'] = [l[2:].strip() for l in head_part.splitlines() if l.startswith('~ ')]
+    pj = os.path.join(d, 'parts.json')
+    book['parts'] = json.load(open(pj)) if os.path.exists(pj) else []
+    bp = os.path.join(d, 'back.txt')
+    book['back'] = []
+    if os.path.exists(bp):
+        for chunk in re.split(r'^# ', open(bp).read(), flags=re.M)[1:]:
+            head, _, rest = chunk.partition('\n')
+            book['back'].append((head.strip(), paras(rest)))
 
     chapters = []
     files = sorted(glob.glob(os.path.join(d, 'ch*.txt')),
@@ -266,7 +286,13 @@ def render_chapter(book, i):
     middle = [s for s in secs[1:] if s[0] != 'Where it would die']
     die = [s for s in secs if s[0] == 'Where it would die']
     oneline = c['oneline'] or middle[-1][1][-1]
-    of_word = WORDS.get(n, str(n))
+    of_word = str(n) if book.get('numerals') else WORDS.get(n, str(n))
+    part = None
+    for pt in book.get('parts', []):
+        if int(c['key'].split('-')[0]) >= pt['first']:
+            part = pt
+    eyebrow = (f'{esc(part["label"])} — {esc(part["title"])} · Chapter {esc(c["num"])}' if part
+               else f'Chapter {esc(c["num"])}')
 
     here = ' class="here"'
     toc = ''.join(
@@ -308,11 +334,11 @@ def render_chapter(book, i):
     prev_html = (f'<a class="p" href="/five-doors/{book["slug"]}/{prev_c["slug"]}/"><small>Previous</small>{esc(prev_c["question"])}</a>'
                  if prev_c else '')
     next_html = (f'<a class="r" href="/five-doors/{book["slug"]}/{next_c["slug"]}/"><small>Next</small>{esc(next_c["question"])}</a>'
-                 if next_c else (f'<a class="r" href="/five-doors/{book["slug"]}/epilogue/"><small>Next</small>{esc(book["epilogue"]["title"])}</a>' if book["epilogue"] else ''))
+                 if next_c else (f'<a class="r" href="/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/"><small>Next</small>{esc(book["epilogue"]["title"])}</a>' if book["epilogue"] else ''))
 
     body = f'''{strap(book, crumb)}
 <details class="toc"><summary>In this book</summary><ol>{toc}</ol></details>
-<p class="eyebrow">Chapter {esc(c['num'])}</p>
+<p class="eyebrow">{eyebrow}</p>
 <h1>{esc(c['question'])}</h1>
 <p class="oneline">{esc(oneline)}</p>
 <section class="opening">
@@ -329,10 +355,22 @@ def render_chapter(book, i):
 
 def render_book(book):
     n = len(book['chapters'])
-    rows = ''.join(
-        f'<li><a href="/five-doors/{book["slug"]}/{c["slug"]}/"><span class="num">{esc(c["num"])}</span>'
-        f'<span class="q">{esc(c["question"])}</span><span class="line">{esc(c["oneline"])}</span></a></li>'
-        for c in book['chapters'])
+    def row(c):
+        num = f'Chapter {c["num"]}' if book.get('numerals') else c['num']
+        return (f'<li><a href="/five-doors/{book["slug"]}/{c["slug"]}/"><span class="num">{esc(num)}</span>'
+                f'<span class="q">{esc(c["question"])}</span><span class="line">{esc(c["oneline"])}</span></a></li>')
+    if book.get('parts'):
+        chapters_html = '<h2 class="lh">The chapters</h2>'
+        for k, pt in enumerate(book['parts']):
+            last = book['parts'][k + 1]['first'] if k + 1 < len(book['parts']) else 10 ** 6
+            cs = [c for c in book['chapters'] if pt['first'] <= int(c['key'].split('-')[0]) < last]
+            epi = ' '.join(pt['epigraphs'])
+            chapters_html += (f'<h3>{esc(pt["label"])} — {esc(pt["title"])}</h3>'
+                              f'<p class="reg"><em>{esc(epi)}</em></p>'
+                              f'<ol class="chapters">{"".join(row(c) for c in cs)}</ol>')
+    else:
+        chapters_html = (f'<h2 class="lh">The chapters</h2>\n'
+                         f'<ol class="chapters">{"".join(row(c) for c in book["chapters"])}</ol>')
     front_html = ''
     order = {'The Axiom': 0, 'The words': 1}
     parts = sorted(book['front'], key=lambda p: order.get(p[0], 2))
@@ -344,15 +382,31 @@ def render_book(book):
             inner += f'<p class="source">{esc(cite)}</p>'
         front_html += details(head, inner, open_=False)
     tagline = book['tagline'].replace('. The short edition', '').rstrip('.')
-    if book.get('edition'):
+    if book.get('full'):
+        ed = (f'<p class="edition">This is the book in full, version {book["full"]}, {book["full_date"]}. '
+              f'Every chapter, nothing summarised. The same text as the printed book, which is '
+              f'<a href="{book["original"]}">here</a> as a PDF.</p>')
+    elif book.get('edition'):
         ed = (f'<p class="edition">This is the short edition, {esc(book["edition"])}. It is a summary. '
               f'The original is <a href="{book["original"]}">here</a>. Go to it whenever this one moves too fast.</p>')
     else:
         ed = (f'<p class="edition">This book has no short edition. Its chapters are already at the short edition’s '
               f'length, and every word in them is the argument, so what you read here is the book itself. '
               f'The printed original is <a href="{book["original"]}">here</a>.</p>')
-    ep = (f'<p class="ep"><a href="/five-doors/{book["slug"]}/epilogue/">{esc(book["epilogue"]["title"])}</a></p>'
+    ep = (f'<p class="ep"><a href="/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/">{esc(book["epilogue"]["title"])}</a></p>'
           if book['epilogue'] else '')
+    back_html = ''
+    for head, ps in book.get('back', []):
+        inner = ''
+        for p in ps:
+            k = p.find('. ')
+            if head == 'Notes on Vocabulary' and 0 < k < 60 and not p.startswith(('The terms below', 'Full glossary')):
+                inner += f'<p><b>{esc(p[:k + 1])}</b> {para_html(p[k + 2:])[3:-4]}</p>'
+            else:
+                inner += para_html(p)
+        back_html += details(head, inner, open_=False)
+    ded = (f'<p class="edition"><em>{"<br>".join(esc(l) for l in book["dedication"])}</em></p>'
+           if book.get('dedication') else '')
     has_ks = any(KS_RE.match(p) for c in book['chapters'] for _h, ps in c['secs'] for p in ps)
     if has_ks:
         reg = (f'<p class="reg">Every kill switch in this book is filed in the '
@@ -366,11 +420,10 @@ def render_book(book):
 <p class="eyebrow">The 420 Code · The Five Doors · {esc(book['door'])}</p>
 <h1 class="bt">{esc(book['title'])}</h1>
 <p class="oneline">{esc(book['subtitle'])}. {esc(tagline)}.</p>
-{ed}
+{ded}{ed}
 {front_html}
-<h2 class="lh">The chapters</h2>
-<ol class="chapters">{rows}</ol>
-{ep}
+{chapters_html}
+{ep}{back_html}
 {reg}
 <nav class="pn solo">{up()}</nav>'''
     return shell(book['subtitle'], body, book, 1, f'{book["title"]} — {book["subtitle"]}. Read online.', path=f'/five-doors/{book["slug"]}/', book_first=True)
@@ -378,13 +431,14 @@ def render_book(book):
 def render_epilogue(book):
     e = book['epilogue']
     last = book['chapters'][-1]
-    body = f'''{strap(book, ' · Epilogue')}
-<p class="eyebrow">Epilogue</p>
+    label = book.get('epilogue_label', 'Epilogue')
+    body = f'''{strap(book, ' · ' + label)}
+<p class="eyebrow">{esc(label)}</p>
 <h1>{esc(e['title'].partition(' — ')[2] or e['title'])}</h1>
 <section class="opening">{''.join(para_html(p) for p in e['paras'])}</section>
 <p class="source">{esc(e['source'])}</p>
 <nav class="pn"><a class="p" href="/five-doors/{book["slug"]}/{last["slug"]}/"><small>Previous</small>{esc(last["question"])}</a>{up(book)}</nav>'''
-    return shell(e['title'], body, book, 2, f'{book["title"]} — {e["title"]}', path=f'/five-doors/{book["slug"]}/epilogue/')
+    return shell(e['title'], body, book, 2, f'{book["title"]} — {e["title"]}', path=f'/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/')
 
 # One stylesheet and one script for both libraries, as the bundle's INSTALL asks ("serve one copy for
 # both"): the Ø Models files, which carry the 16px floor, the site's greys, the header's rules and the
@@ -421,13 +475,16 @@ def main():
             open(os.path.join(cd, 'index.html'), 'w', encoding='utf-8', newline='\n').write(render_chapter(book, i))
             total_pages += 1
         if book['epilogue']:
-            ed = os.path.join(bd, 'epilogue')
+            ed = os.path.join(bd, book.get('epilogue_slug', 'epilogue'))
             os.makedirs(ed, exist_ok=True)
             open(os.path.join(ed, 'index.html'), 'w', encoding='utf-8', newline='\n').write(render_epilogue(book))
             total_pages += 1
         if book.get('pdf'):
             snippet.append(f'''<!-- {book["title"]} — under its paragraph on the Five Doors page -->
 <p><a class="nb-pdf" href="/five-doors/{book["slug"]}/">Read online</a> <a class="nb-pdf" href="{book["pdf"]}">Download the short edition (PDF)</a> <a class="nb-pdf" href="{book["original"]}">Download the original (PDF)</a></p>''')
+        elif book.get('full'):
+            snippet.append(f'''<!-- {book["title"]} — version {book["full"]}, the book in full online; no short edition -->
+<p><a class="nb-pdf" href="/five-doors/{book["slug"]}/">Read online</a> <a class="nb-pdf" href="{book["original"]}">Download the book (PDF)</a></p>''')
         else:
             snippet.append(f'''<!-- {book["title"]} — no short edition; the chapters are the book -->
 <p><a class="nb-pdf" href="/five-doors/{book["slug"]}/">Read online</a> <a class="nb-pdf" href="{book["original"]}">Download the original (PDF)</a></p>''')

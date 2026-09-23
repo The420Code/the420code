@@ -1,8 +1,8 @@
-# The Five Doors online library — bundle v4
+# The Five Doors online library — bundle v11
 
-22 September 2026. Four books, sixty-five pages, one stylesheet.
+23 September 2026. Five books, ninety-eight pages, one stylesheet. Supersedes v1 to v10.
 
-Read INSTALL.md first. It has the paths, the snippet, and the two checks after deploy. Nothing needs checking by hand before it.
+Read INSTALL.md first. It has the paths, the snippet, and the checks before deploy. WALL_UPDATE.md has the part that is not the library: AP31's republish and the two registry entries.
 
 `source/` carries the text the pages are generated from, and the generator. The HTML is disposable; the text files are the artefact. Edit the text, rebuild, redeploy.
 
@@ -10,8 +10,12 @@ Read INSTALL.md first. It has the paths, the snippet, and the two checks after d
     source/bar/               Being After Religion — short edition v1.1
     source/antichristos/      Antichristos — short edition v1.1
     source/corridor/          The Relationship Corridor — short edition v1.1
+    source/interior/          The Interior 2.0.5 — the book's own text, as typeset
+    source/interior_site/     the same text split into chapters for the generator (made by split_interior_site.py)
     source/reader/            the generator and the chapter one-lines
 
-The Interior is not in this bundle. Its short edition waits on the author's rewrite of the original, which is in hand. When that lands, its folder is added to the BOOKS list in the generator and the bundle grows by one book without touching the other four.
+    site-root/The_Interior.pdf   The Interior 2.0.5, the printed book, 270 pages
+    site-root/AP31_The_Alignment.pdf   AP31 with its dated notes of 23 September 2026
+    site-root/proofs/instruments/AP31/   the instruments folder: dated copy, notes, the Debt 20 derivation, its script
 
 Copyleft. Free. Forever.

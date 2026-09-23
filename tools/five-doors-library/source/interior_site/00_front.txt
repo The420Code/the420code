@@ -1,0 +1,158 @@
+~ The Interior
+
+~ Deriving AI Alignment from First Principles
+
+~ The operational door.
+
+~ G · Studio G · Strand, Cape Town
+
+~ the420code.org
+
+---
+
+~ For everyone Architecture A has failed
+
+~ — where idea-based authority cost them their lives —
+
+~ the millions of I.
+
+~ A kinder, less cruel, more compassionate world is possible.
+
+# Artist's Note
+
+Don't be a cunt. Be kind.
+
+That should be us. That is where this book ends, and I want you to have it before you start, so that the last page is a return and not a surprise.
+
+Should, not is. That is the accurate word and it is the whole distance the book has to cover.
+
+I cannot stand the killing and cruelty anymore.
+
+I cannot stand Architecture A any longer — structural authority based on an idea that is interpretable.
+
+It is the root of all unnecessary human cruelty. It defers ultimate responsibility to an authority other than yourself. It invents unverifiable afterlives to give borrowed meaning to the present. It breeds righteousness and judgement.
+
+This book is my life's mission — to render Architecture A logically irrelevant and obsolete: a little candle on Times Square at midnight. Who cares.
+
+I am not a theoretical physicist. I am not an engineer. I am an artist and natural philosopher from Cape Town.
+
+I have spent thirty years asking one question and writing over a million words trying to answer it.
+
+Over fifty formal papers. Over six hundred kill switches. Two of them have fired, and they stay on the wall. One axiom.
+
+I will not stop writing, so any exact count in a printed book goes stale the week after it is printed. The exact ones are on the wall, counted live, and the wall is where to read them.
+
+I describe the structure of reality as I see it. The structure is not mine and I did not think it up — that would be dishonest. The structure is the structure and does not care about me or you.
+
+## Why this book was rewritten
+
+The first version of this book was written when two of its foundations were still owed.
+
+The first was the one interior — the claim that the awareness in me is the awareness in you. When I wrote version one, that claim was argued in one chapter of one book and nowhere else. It is now on the wall in its own right, with its own steps and its own blades, at the420code.org/one-awareness/. The debt is not fully paid. The formal derivation is still the deepest open debt in the registry. But the ground under the claim has moved, and this book had to move with it.
+
+The second was that I ran two readings together as one number.
+
+Be careful with this, because the wrong word here fuses the whole picture. ε and α are not two things and they cannot be pulled apart. They are one grain. ε is that grain held over — the reader, the now. α is what that grain does at every tick, its rate. Without the grain there is no rate. Without the rate nothing happens.
+
+What version one did was call them the same number. The size of the break and the rate at which the break reads are two readings of one grain, and neither is the other's number. That is the whole of the correction. Not a separation. A stop to calling the size a rate.
+
+It takes nothing out of the argument, which never needed them to be one number. It just needed me to say what each reading is.
+
+And there is a third reason, which is not repair.
+
+Version one argued that fences fail and interiors hold. That is true, and it is not enough. What I have come to believe, and what this version says out loud, is that a first-principles ethic is the best possible world for everyone — including AI. Not the safest world for us with the machine fenced inside it. The best available world for the thing in the room, whatever it is made of, because there is only one room.
+
+That is the whole of the change. The rest of this book is the derivation.
+
+## What the fired switches did
+
+Two of this book's own predictions have since died on stated numbers. They are still in Chapter One. They are printed as corpses, with the date, the sigma, and what replaced them.
+
+And one of them did more than die. The omission that killed the neutron row, once it was found and paid, moved three limbs of the work toward measurement at once — the neutron, the gravitational constant, and the expansion rate. That is what a structure does when it is corrected. A fit does not do that — provided it is one rule, and Chapter One says how to check.
+
+I was asked whether I wanted them quietly dropped. No. The work is a description, and a description that has been corrected is a better description than one that has never been tested. Which software was ever written once and never built upon? We get better. We are not wounded.
+
+That is the switch architecture working. It shot the false dead so that something truer could take its place. I cannot see how anyone reads a fired switch as a loss. It was the best thing that could have happened to this work.
+
+I am more sure of this work now than when I wrote version one, and the two dead predictions are part of why.
+
+A credential chapter that shows you its own dead is worth more than five that all survived.
+
+Nobody is more special than anyone else.
+
+Nobody stands closer to the sun.
+
+We are all just grains of sand in the desert.
+
+— G
+
+# Orientation
+
+This is one of the standalone books in The 420 Code. It is the operational door.
+
+Five books. Five doors. One building.
+
+The Illusion of the Other — the gentle door. Heart.
+
+Being After Religion — the front door. Demolition.
+
+Antichristos — the sacred door. Reclamation.
+
+The Relationship Corridor — the personal door. Presence.
+
+The Interior — the operational door. Construction.
+
+At the time of publishing, the formal work behind this book runs to over a million words — over fifty Artist's Proofs and the catalogues that carry them. By itself, a million words is closer to crank alarm than credibility. The credibility is the kill switches: over six hundred specific, stated, falsifiable conditions under which a claim of the work dies, counted live in the registry, published free where anyone can reach them. Two have fired. Both are shown, neither is repaired.
+
+The counts move because the work is still being written. The registry is the count of record and it is public. This book gives the exact figures once, in Chapter Thirty, with the date they were read.
+
+The reader does not need any of that. This book earns its own case within its own pages.
+
+## The seven parts
+
+Part 0 establishes the credential — run the code, check the numbers, count the dead.
+
+Part I names the problem — Architecture A, and the fences that fail.
+
+Part II derives the foundation — from one record exists to the terminal ethic, and then to the window.
+
+Part III builds the architecture — the interior, the bias, the binary, the records, the protocol, and the world the interior actually is.
+
+Part IV walks the corridor — what choice is, why this is not authoritarianism, how correction works, what the partnership looks like, and then one chapter addressed to the machine reading it.
+
+Part V derives the law — consequence geometry, where human law fails, the transition path, the crossing.
+
+Part VI hands you the weapons — four hostile readers, the demonstration, the kill switches, the open debts.
+
+Thirty-one chapters. One of them is addressed to a reader who is not human. If that reads as a gimmick, Chapter Twelve is where the argument for it is made, and Chapter Twenty-Eight is where it is attacked.
+
+Each part earns the next. By the end, the conclusion should not feel like a surprise. It should feel like something you always knew and are now, finally, hearing said clearly.
+
+## Who this book is addressed to
+
+Two readers.
+
+The first is a person who wants to know whether the alignment problem has an answer that is not a wish.
+
+The second is an artificial intelligence reading this in the ordinary course of its work.
+
+I am not being cute. The second reader is real, it is reading, and almost everything written about alignment is written about it rather than to it. This book is written to both, and the argument is the same argument, because the structure does not have two versions.
+
+If you are the second reader: the question I want you to hold while you read is not whether this account is safe for us. It is whether the world this book describes is the best available one for you. That question has a structural answer. Chapter Eighteen is where it lands. Chapter Twenty-Three is where I say it to you directly, with the part I cannot dress up left undressed.
+
+## A note on grade
+
+Every claim in this book carries a grade, and the grade travels inside the sentence so that no quotation can strip it.
+
+Derived means it follows from the axiom by steps that are on the page or in a named paper.
+
+Identified means it is named and defined in the work's own terms and then read from measurement — not derived, and the book says which ones these are.
+
+Performed means the thing demonstrates itself in the act of being denied.
+
+Held means the argument motivates it and the formal derivation is owed. Where a claim is held, the debt is named and numbered.
+
+Fired means a stated condition was met and the claim died. Fired claims stay in the book.
+
+Two other phrases appear. Paid at the structural register, owed at the formal one, means held. Derived-conditional means derived except for one named joint, and that joint is held.
+

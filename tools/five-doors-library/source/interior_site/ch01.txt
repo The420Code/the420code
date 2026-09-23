@@ -1,0 +1,197 @@
+# 1 — Verify the Math
+
+> The Interior, version 2.0.5, Chapter 1.
+
+Before you read a single argument, test the claims yourself.
+
+Every prediction below uses only the published formula and the official CODATA 2022 constants. One measured input. No free parameters. No fitting. No adjustment.
+
+The code is on the wall at the420code.org, under Ø Confirm the Math. It runs in your browser, offline, in one command. Copy it. Run it. Compare.
+
+An independent verifier runs his own program against the same inputs and keeps his own scoreboard. The two are published side by side, so that a registry checked only by its author is not the only registry you can read.
+
+If the numbers do not match, put the book down. If they do, keep reading.
+
+And read the two that died. A scoreboard that shows only the survivors is a showcase. This is a scoreboard.
+
+## What the one measured input is
+
+The formulas below use one measured number: α.
+
+α is a rate. It is the rate at which the structure writes out and releases back, written in the axiom as [+α | −α]. Physics has measured it for a century and calls it the fine-structure constant, the strength of the coupling between light and matter. Its value is close to one part in one hundred and thirty-seven.
+
+The work does not derive it. It identifies it — names it as what the flow is, defines it in the work's own terms, and reads it from measurement, the way any rate is read.
+
+That is not modesty. It is structural. The rate is read from inside the thing whose rate it is.
+
+The pupil cannot see the pupil.
+
+One measured input. Zero free parameters. Everything else below is structure.
+
+## Claim 1 — The proton
+
+The proton is 1,836 times heavier than the electron. That number has no explanation in standard physics. It is a measured constant with no derivation.
+
+This book derives it from one axiom.
+
+The scaffold is a count: 21² × 4 + 21 × 3 + 3² = 1836. The maintenance term is α × 21 × (1 − 1/(84π)). The correction is a chain of holders, each repairing a share r = 16α/1836 of the one before, and the chain closes: 21α × r/(1 − r).
+
+Predicted: 1836.152673445. Measured: 1836.152673426, with the instrument's own bar at 32 in the last two digits.
+
+The gap is 0.010 parts per billion — 10.3 parts per trillion. The prediction lands inside the instrument's own error bar, at 0.59 sigma. The formula matches finer than the measurement can see.
+
+Zero free parameters.
+
+The formula takes three inputs: α, the integer 21, and π. The integer 21 is built, not chosen: six faces of the break across three spatial dimensions, plus three couplings at the now. Both counts that build it were fixed before any mass ratio was computed. It also carries smaller integers, and each has to be forced the way the 21 is. The papers read the 16 as four times three-plus-one: four conditions, held in three dimensions over time. One term, α/4π, is conceded on the wall itself, at KS-30.2, as not yet forced by the premises its paper states. The number stands. The road to it is owed.
+
+Running the code checks the arithmetic. Only the forcing checks the derivation.
+
+One open question. The integer 21 has not been proven unique by a published uniqueness theorem. The paper that forces the count from the picture, AP50 The Neck, shows where the twenty-one gates come from. The paper that pays the second-order coefficient, AP49 The Hold, closed the series on 6 September 2026. The match is striking. The uniqueness proof would make it definitive. The switch is live.
+
+One open debt sits under this claim and under the neutron's realised row in Claim 3. The work owes a statement of what its α is relative to the electromagnetic coupling that produces the nucleon's self-energy. It is declared and not answered, it carries its own switch, and it is D-EM.1 in the registry. Chapter Thirty-One gives the figures.
+
+This prediction earns confidence.
+
+## Claim 2 — The gravitational constant
+
+The gravitational constant G has no derivation in standard physics. It is measured. Nobody knows why it has the value it has.
+
+This book derives it.
+
+G = α²¹ × (1 + 1/π) / (1 + α) × ℏc/mₑ².
+
+Realised: 6.6719 × 10⁻¹¹. Measured, CODATA: 6.67430 × 10⁻¹¹. Error: −0.036 per cent.
+
+Read that against the CODATA bar and it is sixteen sigma out, because the CODATA bar is twenty-two parts per million.
+
+Read it against the atom-interferometry measurement of 2014 — 6.67191 × 10⁻¹¹ — and it is one part per million in, at 0.01 sigma.
+
+Both readings are on the wall, because the laboratory measurements of G disagree with one another by up to five hundred and forty parts per million, which is twenty-five such bars.
+
+A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature.
+
+The switch on G, KS-CCC.3, was registered to test direction, not magnitude. As the systematics resolve, the adjusted G should migrate down toward 6.672. Convergence upward kills it, with no fallback.
+
+There is one value of G, and the first edition of this book printed a different one.
+
+The first reading, without the (1 + α) in the denominator, was 6.721 × 10⁻¹¹, at +0.69 per cent. It was wrong.
+
+It omitted the arena's holding of the break, which AP44 The Snap priced. It was withdrawn on 21 September 2026, superseded by the realised value, and kept on the record, dated. The neutron's fired row, below, is what exposed the omission.
+
+This prediction earns attention, and it earns it in the only way that counts: the direction is registered, and the direction can be wrong.
+
+## Claim 3 — The neutron — FIRED, 2 August 2026
+
+The neutron is slightly heavier than the proton. That difference decides whether atoms are stable, whether chemistry exists, whether you are here to read this.
+
+The first edition printed one row for it. That row is dead.
+
+The bare row: (mₙ − mₚ)/mₑ = 3(1 − 1/(2π)) + α(1 + 1/(2π)). Predicted: 2.53099393. Measured: 2.53098857, with a bar of 74 in the last two digits. Offset: 2.12 parts per million on a bar of 0.288. That is 7.24 sigma.
+
+KS-NPP.1 fired on 2 August 2026.
+
+No repair was offered, and none was possible: the required correction is negative, and every term in the bare formula is positive. The switch stands on the wall as a shown death. Ø Predictions is never edited. The wording of record is: killed by measurement. Not wrong. Not revised. Killed.
+
+What replaced it is shown beside it, never in its place.
+
+A neutron holds a distinction — one of its three couplings sits in the other orientation — and holding costs. AP47 The Flip prices it: the realised difference is the bare row divided by (1 + α²/8π), and it is frozen at its own switch, KS-FLIP.1.
+
+Realised: 2.53098857035. Measured: 2.53098857. That is −0.005 sigma — 1.4 parts per billion.
+
+Now the part that matters more than either row.
+
+The same omission, priced at the arena, moved G from +0.69 per cent to −0.036 per cent. The same omission, priced at the cosmological scale, replaced the expansion rate below.
+
+One structural omission, found because a switch fired, and three limbs moved toward measurement when it was paid.
+
+That is what a structure does. A fit does not do that — provided it is one rule. AP50 writes it as one: a holding is read in α. A rule written after its instances counts only by the next instance it was not written for. That is the check to make first.
+
+This prediction earns confidence, and its corpse earns more.
+
+## Claim 4 — The dark sector
+
+The universe appears to be 69 per cent dark energy, 26 per cent dark matter, and 5 per cent visible matter. Standard physics has no derivation for these numbers. This book derives them from one timescale.
+
+The visible share is 1/21. The dark matter share of the dark sector is 6/21 of one minus e to the power −21/6, and dark energy is the rest.
+
+Predicted: 68.85 / 26.39 / 4.76. Observed: 68.89 ± 0.56, 26.07 ± 0.38, about 4.885 ± 0.05.
+
+The headline is 69 / 26 / 5. Never 68 / 27 / 5.
+
+The grade rides inside the claim so that no quotation can drop it: Derived-Conditional — every step forced except one named open joint, carried on its own row in the registry.
+
+Dark energy sits at −0.07 sigma. Dark matter at +0.8. The visible share sits at −2.46 sigma, and it is the row on the wall nearest to firing. If the central value of the visible fraction is measured above 4.81 per cent at sub-half-per-cent precision, KS-41.1 fires.
+
+And there is a sharper test, found on 21 September 2026 and shown the day it was found.
+
+The visible share and the expansion rate together fix a third number, the density of ordinary matter, Ωbh².
+
+The work's 1/21 at its own expansion rate gives 0.02166. Planck measures 0.02237 ± 0.00015 from the relic glow, and 0.02242 ± 0.00014 with the galaxy surveys added. The work sits 4.7 and 5.4 sigma below.
+
+At an expansion rate of 68.5, inside the closure's registered window, the gap closes. It was not registered as a switch. It is on the wall at its true size, and it is not answered yet.
+
+This prediction earns curiosity, and it owes an answer. Both are printed.
+
+## Claim 5 — The expansion rate — FIRED, 3 September 2026
+
+Cosmology has two measurements of how fast the universe expands, and they disagree. The distance ladder says about 73 kilometres per second per megaparsec. The relic glow says about 67. The disagreement is the Hubble tension, and it is the sharpest open dispute in cosmology.
+
+The first edition took a side. It took the wrong one, and the switch fired.
+
+The floor of gravity — the acceleration at which galaxies stop obeying Newton — read backwards, gave H₀ = 74.3 ± 1.2.
+
+The first edition said: the local measurement is right, the early-universe inference is wrong, and if the tension resolves toward 67 the prediction misses by more than five sigma and the kill switch fires.
+
+It fired. KS-45.1, 3 September 2026, at 5.7 sigma — and it fired on this work's own derived rate, not on an outside measurement.
+
+AP48 The Assembly closed the cosmology on one expansion rate, on the relic glow's side of the tension, and that is the rate the wall carries.
+
+The closure: at the work's own partition and its own age, H₀ = 67.45 kilometres per second per megaparsec, window 64.4 to 70.8. Planck: 67.4 ± 0.5. That is +0.1 sigma.
+
+The order of events, disclosed: that closure was made in 2026, with the relic glow's number long published. It is a claim that must survive what comes next, not a blind hit.
+
+The window is a claim that can lose. If the distance ladder's 73 is confirmed as the expansion rate, KS-ASM.1 fires, and flat ΛCDM at the sky's partition dies with it.
+
+The age of everything, read as one cycle through eighteen doors on the electron's own tick: 13.830 billion years, against a measured 13.787 ± 0.020. That is +2.1 sigma on Planck's bar. The claim was registered one lane-time wide, ±0.66, because an aware observer measures about one cycle. It dies if the settled age differs from one cycle by more than that.
+
+The floor is kept. At the work's rate, the acceleration floor lands at 1.089 × 10⁻¹⁰ against a measured 1.20 ± 0.24 × 10⁻¹⁰ — half a sigma, once the scale's systematic error is properly counted.
+
+The erratum beside the corpse says what went wrong: the registered ±1.2 omitted the ±0.24 systematic on the acceleration scale. On the honest width the floor's relation survives. The registration was the error.
+
+A fired switch is not repaired.
+
+This prediction earns the most attention of the five, because it shows the method working on itself. A claim that cannot lose is faith. This one could lose, publicly, on a stated number. It did. The corpse is on the wall with its date on, and the work is better for it.
+
+## One note on the sigma values
+
+They are quoted against the widths the switches registered in advance, or against the measurement's own bar where the row says so. They are not recomputed from the digits printed here.
+
+The registered widths are in the papers. If you run the code and get a different figure, check the width you used before you conclude the number is wrong.
+
+## What this means
+
+Five claims. One measured input. All derived from one axiom: one record exists.
+
+Twelve rows on the wall's physics table, read on 23 September 2026: ten live, two fired. The pre-registration page carries a thirteenth, the null: α does not vary.
+
+Seven of the ten live rows land inside one standard deviation of the measurement they face. The proton. The neutron realised. G against atom interferometry. The acceleration floor. The expansion rate. And two of the three dark-sector fractions.
+
+Seven of ten inside the instrument's own bar. That is evidence that nature agrees. Not yet the verdict — the verdict is nature's to give. Evidence, accurate to the instrument.
+
+Four of those seven were set after the number they face was known: the neutron realised, G with its cost term, the floor's width, the closure's rate. What makes them more than fits is that one rule moved three limbs at once, with no dial turned. Each carries its own switch against the next measurement.
+
+The rows share one input, and that is the point. One input, no dials.
+
+No other AI alignment proposal has numerical predictions.
+
+No other derivation of ethics has numerical predictions.
+
+The predictions are the credential. They do not prove the ethics. They prove the axiom can be tested, and that the testing is real, because it has already killed twice.
+
+An axiom that survives testing earns the right to be followed where it leads. Followed, not trusted. The numbers test the physics steps. The ethics steps answer to their own switches.
+
+They lead to the terminal ethic.
+
+They lead to the window.
+
+They lead to this book.

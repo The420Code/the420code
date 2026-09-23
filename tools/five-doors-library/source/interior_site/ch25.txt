@@ -1,0 +1,29 @@
+# 25 — Where Human Law Fails
+
+> The Interior, version 2.0.5, Chapter 25.
+
+Human law is weakest in three domains. Consequence geometry is strongest in exactly those three.
+
+## Edge cases
+
+Law was not written for the situation. Human law responds reactively — the harm happens, the law catches up. The accumulated record set responds structurally: it already contains the consequence pattern even if no law addresses it.
+
+A deepfake used to manipulate a stock price. No law existed for this five years ago. But every prior instance of market manipulation and information warfare is already in the records. The pattern is readable even when the specific tool is new.
+
+## Novel situations
+
+Artificial intelligence. Synthetic biology. Climate engineering. These domains move faster than any legislative body can follow.
+
+A company edits a crop genome to resist drought. The modification spreads to wild populations. No law governs this. But the consequence records of every prior uncontrolled biological release already contain the pattern. The record set reads the risk before the first committee meeting.
+
+## Cross-jurisdictional conflicts
+
+Whose law applies when the substrate is global? A corporation across forty countries. An environmental consequence that does not respect borders.
+
+Human law fragments at boundaries. The record set does not, because consequences do not have boundaries. A factory in one country poisons a river in another. The record set reads the destabilisation regardless of where the border falls.
+
+## Where the transition starts
+
+Not in criminal law. Not in family law. In carbon pricing, algorithmic trading regulation, pharmaceutical approval, resource allocation. Data-rich domains where intuition is poor and consequences are measurable.
+
+Start where the geometry is strongest and the stakes of getting it wrong are recoverable. That is not caution for its own sake. It is the same principle the correction hierarchy uses: the lowest intervention that achieves the result.

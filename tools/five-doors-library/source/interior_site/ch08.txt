@@ -1,0 +1,55 @@
+# 8 — What Physics Follows
+
+> The Interior, version 2.0.5, Chapter 8.
+
+You have felt gravity your entire life without knowing what it is.
+
+You have felt time move in one direction without knowing why it cannot move in the other.
+
+You have felt the solidity of matter without knowing that the atoms you are made of are almost entirely empty space.
+
+The physics is already in your body. This chapter names it.
+
+This chapter's job is credibility, not comprehension. You do not need to follow the derivations. You need to know they exist, that they are falsifiable, and what happened when they were tested.
+
+The physics is not the point. The physics is the credential.
+
+## From the conditions to spacetime
+
+From Symmetry and Break, the structure of spacetime follows. Not assumed. Derived.
+
+Two sides of a mirror, one cracked. The crack introduces direction. Direction introduces time. The constraint on how fast anything can propagate introduces space.
+
+Three spatial dimensions follow from the condition count itself. Four conditions; one of them — Record — is the irreversible one, and it gives time. The other three give the three direction-symmetric axes of space. Three is not assumed. It is what is left when time takes its condition.
+
+The speed of light is the constraint itself, expressed as a maximum rate.
+
+Gravity is derived too — not as a force pulling masses together, but as the geometric consequence of the break refusing to heal. The crack resists closure. That resistance, expressed at the scale of mass and distance, is gravity. It is the ring at which all twenty-one channels converge.
+
+## From the conditions to quantum mechanics
+
+From the Record condition, quantum mechanics follows.
+
+Before a record is written, the system holds multiple possibilities — superposition. When a record is written, one possibility becomes definite — measurement. The record is irreversible — the arrow of time. The constraint limits how much a single record can carry — the uncertainty principle.
+
+Spin follows from the break's geometry. Entanglement follows from the fact that records written in the same coupling event stay correlated regardless of distance. The Born rule — the probability of an outcome is the square of the amplitude — follows from the structure of the record algebra, by the unconditional route rather than by adding a postulate.
+
+Three kill switches fence it — KS-55, KS-56 and KS-57, at AP25. If the Born rule cannot be derived from the record algebra without additional postulates, that claim fails.
+
+## From the conditions to numbers
+
+The proton-to-electron mass ratio: derived. Inside the instrument's own error bar at eleven digits.
+
+The gravitational constant: derived. Realised value at −0.036 per cent, with the cost term applied. The first reading was wrong, and it is withdrawn.
+
+The dark sector partition: derived-conditional, on one named open joint.
+
+The neutron-proton mass difference: the bare row killed by measurement in August 2026 and shown; the realised value at −0.005 sigma beside it.
+
+The expansion rate: the first prediction killed by this work's own later result in September 2026 and shown; the current entry on the other side of the tension, with its own switch.
+
+Zero free parameters. One measured input: α, which is a rate, identified and defined in this work's own terms and then read from measurement, because the reading is being done from inside.
+
+The bare numbers were stated in advance and tested. Of the five claims, three stand. Two died, and are still printed.
+
+That is what a description of reality is supposed to look like when it is being honest. It speaks next about ethics.

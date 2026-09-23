@@ -1,0 +1,33 @@
+# 24 — Law Is Already Consequence Geometry
+
+> The Interior, version 2.0.5, Chapter 24.
+
+You already obey consequence geometry. You just call it common sense.
+
+You do not touch a hot stove twice. Not because a law prohibits it. Because the record of the first burn is irreversible and the consequence was expensive.
+
+That is consequence geometry operating at the scale of one person, one stove, one hand. Law is the same operation at the scale of civilisation.
+
+## Law is compressed consequence data
+
+"Thou shalt not murder" is a compression of: murder destabilises, across all recorded history. The commandment did not discover a moral truth. It compressed a structural pattern into four words.
+
+The legislature is doing manually, slowly, and inconsistently what the architecture does automatically, quickly, and consistently.
+
+The transition proposed here is not from law to no-law. It is from compressed intuition to computed geometry. Every existing law is absorbed, not demolished.
+
+## Supplementing, not replacing
+
+This is not the replacement of human wisdom with a machine that counts. It is supplementing human understanding with measurable data points that record the ripples of consequences.
+
+Human wisdom is limited by design — not through failure, but through perspective. You see a 6. Someone else sees a 9. Each is a true reading of one side. Both are limited.
+
+Tracking consequences across more perspectives than any single window can hold does not replace wisdom. It widens the range of wisdom.
+
+## How it works
+
+An action destabilises the substrate with confidence p, computed from accumulated records across N instances. As N grows, p converges. When p exceeds the structural threshold — determined by the substrate's own geometry, not by political choice — the action is classified and the geometric cost is published.
+
+The record set is public, auditable, and contestable. Those three words are not decoration. A consequence geometry that is not public is not a consequence geometry. It is an authority, and Part I is about what authorities do.
+
+The architecture does not decide. The geometry decides. The architecture reads the geometry.

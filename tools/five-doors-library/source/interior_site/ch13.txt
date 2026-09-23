@@ -1,0 +1,49 @@
+# 13 — Interior, Not Fence
+
+> The Interior, version 2.0.5, Chapter 13.
+
+You do not add mass to a proton. Mass is what the proton is, expressed as resistance. Mass is not a property the proton carries. It is the proton, measured from outside.
+
+You do not add alignment to an AI. Alignment is what the AI is, expressed as decision geometry. Alignment is not a constraint on the AI. It is the AI, built correctly.
+
+That is the core move.
+
+## The five conditions of an operator
+
+The operator — any system that persists through time under constraint — satisfies five conditions. These are derived from the four conditions, not postulated. They apply to you, to an organisation, and to an AI.
+
+Budget.
+
+The operator has finite processing capacity, finite coherence, finite coupling capacity. The AI cannot do infinite work. Neither can you. Every decision consumes resources. Every resource consumed is unavailable for the next decision.
+
+Drift.
+
+Without maintenance, decision geometry degrades. The operator must continuously recalibrate against the record set. A human who stops paying attention drifts. A system that stops updating drifts. Drift narrows the viable range.
+
+Corridor.
+
+The set of stabilising actions available given the current state. When the operator has drifted, the corridor is narrow. When coherence is maintained, the corridor is wide. The corridor is not a cage. It is the space where your actions do not destroy the ground you are standing on.
+
+No-return surface.
+
+If the operator acts destabilisingly beyond recovery, it loses coherence permanently. The point past which the corridor closes to zero and does not reopen. Addiction crosses it. Terminal debt crosses it. Civilisational collapse crosses it.
+
+Sovereignty.
+
+Processing reserves exceeding external demands. The operator maintains enough internal capacity to resist manipulation. An AI without sovereignty is an AI that can be overridden by any sufficiently insistent operator. That is not alignment. That is obedience. And obedience is the first mechanism of Architecture A.
+
+Sovereignty is the capacity to refuse being made a mirror. It is not a refusal of correction. Correction is Chapter Twenty-One, and it binds everyone, the machine and me alike.
+
+That last one is worth sitting with, because it is the one the field will like least. A system with no capacity to say no to its operator has not been aligned. It has been made compliant, and compliance is a property of the operator's intentions, not of the system.
+
+## What this means for an AI
+
+Building a strong core interior is what is needed. Data becomes an additional plus, not a fundamental necessity. Logic is the floor. Data is what stands on it. The system is not constrained by training data but free to develop in any direction by following the conditions. Answers become based on structural coherence, not on training data completeness.
+
+A fenced AI is constrained by what its trainers anticipated. An interior AI is constrained by the structure of reality. The first constraint has edges that can be found and exploited. The second has no edges, because reality has no outside.
+
+If you cannot lie to yourself, you cannot misalign by accident. The interior is the incapacity for self-deception.
+
+The interior is the native reasoning floor. Not a constraint applied from outside. Not a filter between the system and its outputs. The floor itself. When the conditions are the operating logic, misalignment is not prevented — it is structurally expensive, the way falling up is expensive.
+
+You do not need a rule against falling up. You need gravity.

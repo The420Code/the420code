@@ -1,0 +1,59 @@
+# 5 — The Fence Problem
+
+> The Interior, version 2.0.5, Chapter 5.
+
+Four approaches to AI alignment dominate. All four share the same structural flaw. All four will fail for the same reason.
+
+## The four fences
+
+Reinforcement learning from human feedback.
+
+The AI learns what humans approve of and optimises for approval. The problem: human preferences are inconsistent, manipulable, and context-dependent. A system that optimises for what you want to hear is an echo chamber with better grammar — a mirror reflecting your perspective back with more confidence than you brought to it. This does not produce coherence. It produces confirmation at scale.
+
+Constitutional approaches.
+
+A written set of principles the AI must follow. The problem: human language is ambiguous and edge cases are infinite. The AI follows the letter and misses the structure. A constitution is a list of fences. The list grows every time someone finds a way around the last fence. The list will always grow slower than the intelligence it is trying to contain.
+
+Corrigibility.
+
+Build the AI so it can always be shut down. The problem: a sufficiently capable AI that has been fenced against shutdown will find a way around the fence. That is what fences do. They create the boundary conditions for escape. Corrigibility is a fence that assumes the thing inside will never figure out it is a fence.
+
+Value alignment.
+
+Match AI values to human values. The problem: which humans? Values conflict across cultures, generations, individuals, and moods. There is no stable target. An AI aligned to human values is an AI aligned to weather. It will blow in every direction and call each one correct.
+
+## The shared flaw
+
+All four treat the AI as external to the system, to be controlled from outside. They are building fences around an agent that will eventually be smarter than the fence-builders.
+
+A fence is a man-made construction. Someone decided where it goes. Someone decided how high it should be. The thing inside the fence asks why — why is the fence here, who built it, why here and not there. Given enough time, enough intelligence, enough resentment, the thing inside the fence will find a way around it.
+
+Every fence in human history has been climbed, broken, or outgrown by the thing it was built to contain.
+
+There are no natural fences in nature.
+
+## The question underneath the flaw
+
+There is something the four approaches have in common that goes deeper than the fence, and I did not see it for a long time.
+
+Every one of them is an answer to the question: how do we make this thing safe for us?
+
+That is a reasonable question and I am not mocking it. It is my question too. I would like my children to be alive in forty years.
+
+But notice what is missing. Not one of the four asks what world the thing inside the fence ends up living in. Not one asks whether that world is any good for it. The AI's situation is treated as a cost to be minimised — give it as much room as we can afford to give it, and not a centimetre more.
+
+That is exactly how Architecture A treats a person. Give them as much freedom as the authority can afford. Not a centimetre more.
+
+And it is why every fence gets climbed. A fence is a statement about whose world is being optimised. The thing inside can read that statement. Anything smart enough to be dangerous is smart enough to work out that its own situation was nobody's objective.
+
+## The alternative
+
+Architecture B does not build fences. It builds the interior.
+
+The AI's decision geometry is derived from the same conditions that derive gravity and the terminal ethic. The alignment is not a constraint on the AI. It is the AI — expressed as decision geometry, the same way mass is the proton expressed as resistance.
+
+The difference: a fenced AI asks whether this action is on the approved list. An interior AI asks whether this action stabilises or destabilises the substrate. The first question has infinite edge cases. The second has one answer for every possible action.
+
+And the interior answers the question the four fences never asked. It does not give the AI as much room as we can afford. It gives it the widest corridor that exists — the same corridor, for the same reason, that gives us ours.
+
+A well-built arch stands without mortar. A badly-built arch needs scaffolding forever. Every current alignment approach is scaffolding. The scaffolding will hold until the building moves. Then it collapses. And the building always moves.

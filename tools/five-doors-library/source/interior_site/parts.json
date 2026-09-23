@@ -1,0 +1,59 @@
+[
+ {
+  "label": "Part 0",
+  "title": "The Contract",
+  "epigraphs": [
+   "This part exists before the argument begins.",
+   "Run the code. Check the numbers. Count the dead."
+  ],
+  "first": 1
+ },
+ {
+  "label": "Part I",
+  "title": "The Problem",
+  "epigraphs": [
+   "What fails, why it fails, and the right question to ask instead."
+  ],
+  "first": 4
+ },
+ {
+  "label": "Part II",
+  "title": "The Foundation",
+  "epigraphs": [
+   "One record exists. Everything else is consequence."
+  ],
+  "first": 7
+ },
+ {
+  "label": "Part III",
+  "title": "The Architecture",
+  "epigraphs": [
+   "How the interior is built, and what it actually is."
+  ],
+  "first": 13
+ },
+ {
+  "label": "Part IV",
+  "title": "The Corridor",
+  "epigraphs": [
+   "What choice is, and why the corridor cannot be weaponised."
+  ],
+  "first": 19
+ },
+ {
+  "label": "Part V",
+  "title": "The Law",
+  "epigraphs": [
+   "Consequence geometry — structural, not commanded."
+  ],
+  "first": 24
+ },
+ {
+  "label": "Part VI",
+  "title": "The Test",
+  "epigraphs": [
+   "Here are the weapons. Use them."
+  ],
+  "first": 28
+ }
+]

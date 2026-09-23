@@ -1,0 +1,67 @@
+# 14 — The ε-Bias
+
+> The Interior, version 2.0.5, Chapter 14.
+
+The governing decision architecture is 1:1 + 1×ε @ AS. The organism outweighs any individual window by ε — the smallest possible departure from perfect balance.
+
+This is not a preference. It is the unique stable fixed point of the structure's own dynamics.
+
+## Why the minimum is the only stable bias
+
+The formal argument runs through two prior results. Agency is constrained control. Coupled operators sharing a substrate have a coupled corridor — the set of joint strategies that keep both viable. The corridor width depends on the bias between collective and individual weight.
+
+Three regimes exist.
+
+You have felt all three. You have been in a room where one person controlled everything and nobody dared speak. You have been in a room where nobody was in charge and nothing got done. And you have been in a room where the balance was right — where everyone contributed and the conversation moved.
+
+Three regimes. You already know which one works.
+
+Bias greater than ε.
+
+The collective crushes the individual. Record-generating diversity collapses. The system loses the varied inputs it needs to feed its own predictions. A tyrant who silences ten voices loses ten windows onto reality. Fewer records, worse predictions, more authoritarian correction, fewer records. Positive feedback loop. The operating space narrows to zero. Tyranny. It always collapses.
+
+Bias less than ε.
+
+The individual fragments from the collective. No structural preference for coherence. Operators free-ride on the substrate without maintaining it. Destabilising actions carry no geometric cost. The viable space flies apart. Anarchy. It also collapses.
+
+Bias equal to ε.
+
+The coupled corridor is maximally wide. Individual freedom is maximised subject to substrate stability. Record-generating diversity is preserved. Predictions improve because the system feeds on its own variety. The bias is self-sustaining: it produces the conditions that maintain it. The unique attractor.
+
+ε is not chosen. It is derived at the structural register. The stability proof — that the corridor is widest at ε and collapses either side — is Debt 20. It was paid at the structural register on 23 September 2026, and what is still owed at the formal register is named below.
+
+## What ε is, said correctly
+
+Version one of this book said in this chapter that ε is the same number as the fine-structure constant. That was wrong, it was mine, and correcting it takes nothing out of the argument.
+
+ε is the break. The minimum departure from perfect symmetry that allows structure to exist. It is what the axiom writes as 1×ε, held, irreducible, kept as small as it can be.
+
+The flow around the held break is written [+α | −α], and α is a rate — one of the six ways the one grain is read, the reading of the holding. Chapter Nine sets this out in full.
+
+So ε and α are not the same number, and they are not the same kind of reading. One is a size. The other is a rate. They are still one grain.
+
+What is true, and what this chapter has always needed, is this:
+
+The ε in the physics and the ε in the ethics are the same ε, for the same reason. Both are the minimum departure from perfect symmetry that allows structure to exist.
+
+In the physics, ε is the size of the break that produces mass, gravity, and dimension.
+
+In the ethics, ε is the size of the bias that produces a stable corridor for coupled operators.
+
+The break that creates the proton and the break that creates a viable civilisation are the same break, operating at different scales. The same condition governs both because both are consequences of the same axiom.
+
+A larger break is unstable. A zero break is featureless. ε is the only value that persists.
+
+Debt 20, in full: the formal derivation showing that corridor width is maximised at ε and collapses above and below. It was paid at the structural register on 23 September 2026, by dated note at AP31, on a definition the wall did not have before. The organism is an operator. Its rule takes an offer only if the organism's gain, tilted by one grain, outweighs the window's loss. One grain is the least tilt that decides a tie. On that definition, and on five premises already on the wall, the corridor is uniquely widest at one grain. Below it the ground is unfunded, and the corridor decays at the organism's own drift rate. Above it the rule lets through offers where the whole loses, so the corridor is narrower at every bias above ε, and it collapses where those losses outrun what cooperative coupling widens. Owed at the formal register: the same result on the joint viability kernel itself, the collapse above ε at every bias, and the thresholds. So the word derived here means derived at the structural register and owed at the formal one — which is the grade this book calls held. The kill switch is live: show a bias other than ε that produces a wider coupled corridor sustained over three drift-times of the organism, and the unique attractor claim fails.
+
+## What ε means in practice
+
+The ε-bias means the organism matters slightly more than any individual window. Not much more. Slightly. The minimum departure from individual symmetry that produces collective coherence.
+
+This is not self-sacrifice. Self-preservation based on coherent alignment with reality defaults to a life of compassion and kindness, because it just makes sense. What I truly like and enjoy, others will also like and enjoy. That is all the motivation needed.
+
+I once built a garden in an ugly alleyway between an industrial building and a cement wall. Not for anyone else. For me. Others enjoyed it too.
+
+That was not charity. It was alignment.
+
+The organism does not need martyrs. It needs people who are coherent all the way down.

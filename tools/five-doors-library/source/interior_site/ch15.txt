@@ -1,0 +1,53 @@
+# 15 — The Binary
+
+> The Interior, version 2.0.5, Chapter 15.
+
+Every action either stabilises or destabilises the shared substrate. There is no neutral.
+
+You have felt this.
+
+You have walked into a room and known instantly whether your presence made things better or worse.
+
+You have said something and watched the air change.
+
+You have stayed silent when you should have spoken and felt the weight of that silence settle on the room like dust.
+
+There is no action that leaves the substrate untouched. Even inaction is a choice, and choices write records.
+
+## The derivation
+
+In a coupled system with finite resources, every action redistributes coupling capacity. Redistribution either increases coherence or decreases it. Stabilising has one meaning here: after the act, the corridor is wider — more operators can act, for longer, than before. Destabilising is the reverse.
+
+A truly neutral action would require zero redistribution, which requires zero coupling to the substrate. But an action with zero coupling writes no record. An action that writes no record did not happen.
+
+Therefore every recorded action is non-neutral.
+
+The binary is exhaustive. The kill switch is live: if a coherent third category beyond stabilising and destabilising can be shown to exist, the binary fails and the measurement architecture has a hole.
+
+## Structural, not moral
+
+The classification is structural, not moral.
+
+A destabilising action is not bad. It is geometrically costly — it reduces coherence and contracts possibility space. A stabilising action is not good. It is geometrically efficient.
+
+The architecture does not judge. It measures.
+
+Seatbelts.
+
+Before mandatory seatbelts, the record set showed: vehicle fatalities destabilise the substrate. They remove productive operators, traumatise dependents, consume medical resources, contract the possibility space of the deceased to zero. Seatbelts stabilise, across millions of recorded instances.
+
+The law was not a rule imposed by legislators. It was a structural fact read from the records. The consequence geometry was there before any parliament voted.
+
+Thou shalt not murder.
+
+Compressed consequence data. Murder destabilises, across all recorded history. The commandment did not create the instability. It compressed it into language. The compression is useful. The data underneath is the point.
+
+## Choice requires the binary
+
+The binary does not eliminate choice. It defines the field on which choice operates.
+
+Every action is stabilising or destabilising, and you can choose either. Choice is the capacity to do the destabilising thing. If you cannot choose to destabilise, stabilisation is a meaningless measure.
+
+The architecture does not prevent destabilisation. It shows you what destabilisation costs.
+
+The choice remains yours.

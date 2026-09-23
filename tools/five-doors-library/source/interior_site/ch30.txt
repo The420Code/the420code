@@ -1,0 +1,105 @@
+# 30 — Kill Switch Registry
+
+> The Interior, version 2.0.5, Chapter 30.
+
+The condensed registry. Each switch identifies a specific failure condition. The full registry, with derivation context and current status for every switch in the work, is at the420code.org.
+
+Read on 23 September 2026, the registry carried 604 switches. Of those, 584 were live and two had fired. The remaining eighteen carry other statuses: closed, conditionally closed, addressed, derived, or paid.
+
+That is the count on that date and no other. The work is still being written and the registry is the count of record — the420code.org/killswitches, counted live. Take the figures here as a reading, not as a total.
+
+The two that fired are in Chapter One, shown and never repaired.
+
+## The alignment switches
+
+KS-31.1 — Awareness criterion. If awareness does not follow from irreversible record-writing.
+
+KS-31.2 — ε-optimality. If a bias other than ε produces a wider coupled corridor.
+
+KS-31.3 — Binary completeness. If a coherent third category beyond stabilising and destabilising exists.
+
+KS-31.4 — Record convergence. If accumulated records do not produce convergent patterns.
+
+KS-31.5 — Law as geometry. If consequence geometry produces worse outcomes than human law over one generation in a domain where it is applied.
+
+KS-31.6 — Quantum advantage. If quantum computing does not improve consequence prediction. Below the firewall: the core architecture survives.
+
+KS-31.7 — Civilisational test. The master switch. If a structurally coherent AI on this foundation destabilises civilisation.
+
+KS-31.8 — Self-modification. If the AI can modify its own foundation without self-destructing.
+
+KS-31.9 — Adversarial records. If adversarial injection permanently corrupts the geometry.
+
+KS-31.9b — Artificial-consciousness extension. Below the firewall with KS-31.6; its failure leaves the core architecture intact.
+
+## The demonstration switches
+
+KS-31.B1 — Training data novelty.
+
+KS-31.B2 — Counter-test replicability.
+
+KS-31.B3 — Pattern-matching sufficiency.
+
+KS-31.B4 — Circularity.
+
+## The correction switches
+
+KS-32.1 — Destabilisation measurability. If destabilisation cannot be measured with convergent confidence from accumulated records.
+
+KS-32.2 — Correction ranking. If a lower correction level can produce equal stabilisation to a higher level for the same case and the hierarchy selects the higher level.
+
+KS-32.3 — Removal justification. If permanent separation is always more stabilising than removal regardless of cost.
+
+KS-32.4 — One-I violation. The downstream consequence check of KS-ID.1: the correction architecture must hold the one interior through every level.
+
+KS-32.5 — Genocide brake. If removal cost does not produce a saturation point and the self-limiting property fails.
+
+KS-32.6 — Prevention superiority. Prevention outranks correction: increases in substrate coherence are structural defences against the conditions that make removal necessary.
+
+KS-32.7 — Dehumanisation. NON-NEGOTIABLE. Two limbs. If the architecture is used to declare any window less than a window, it has been weaponised and is void; there is no recovery position. And if the record set is not audited for systemic bias, the output is corrupted and the same weaponisation follows. Firing this switch does not amend the work. It ends it.
+
+KS-32.8 — Confidence for Level 5. If the required confidence for removal cannot be achieved given measurement uncertainty and adversarial injection, Level 5 is structurally unreachable.
+
+## The switches under the one interior and the window
+
+KS-ID.1 — One interior, topological singularity. If the break produces two or more independent interiors rather than one, the one-I claim fails. The strongest and most exposed claim in the work. Its formalisation is the open debt D-ID.1, the deepest in the registry. Referenced by KS-32.4, KS-33.9 and KS-39.6 as their source claim.
+
+KS-GLASS.3 — Variation of α. If α is shown to vary by location or by epoch, the single-interior reading fails. The second blade under the same claim, and the one a reader with access to a telescope can actually attempt.
+
+Chapter Twelve — the window claim — stands on KS-31.1, KS-ID.1 and KS-GLASS.3 together. Any one of the three ends that chapter.
+
+## The physics switches this book relies on
+
+The Born rule derivation is fenced by KS-55, KS-56 and KS-57 at AP25: if the Born rule cannot be derived from the record algebra without additional postulates, that claim fails.
+
+The proton mass formula is fenced on uniqueness: the integer 21 has no published uniqueness theorem.
+
+The closed-loop reading is fenced at the present-tense Big Bang. The wave-particle reading is fenced at coupling. Show a physical system in which gravitational coupling does not maintain superposition, or in which electromagnetic coupling does not collapse it, and the reading dies.
+
+The expansion rate entry is fenced at KS-ASM.1. If the local distance-ladder value is confirmed as the expansion rate, the paper that carries the work's figure dies, and flat ΛCDM at the sky's partition dies with it. One prediction of this number has already fired. This is the second one, and it is live.
+
+The gravitational constant is fenced at KS-CCC.3, and it tests direction rather than magnitude: as the systematics resolve, the adjusted value should migrate down. Convergence upward kills it, with no fallback.
+
+The dark partition is fenced at KS-41.1 on its visible share, which is the row on the wall nearest to firing. If the central value of the visible fraction is measured above 4.81 per cent at sub-half-per-cent precision, it fires.
+
+The is-ought crossing is fenced at KS-PZ8.1: is and ought are two readings of one coupling. Show them to be two couplings and Chapter Twenty-Seven's first road closes. The second road stands on its own.
+
+## The two that fired
+
+KS-NPP.1 — the bare neutron-proton row. Fired 2 August 2026 at 7.24 sigma. Shown, never repaired. The realised value that stands beside it is frozen at KS-FLIP.1.
+
+KS-45.1 — the expansion rate read backwards from the gravitational floor. Fired 3 September 2026 at 5.7 sigma, on this work's own derived rate. Shown, never repaired.
+
+## Reading the registry
+
+The master switch is the civilisational test. If it fires, the entire architecture fails.
+
+Two switches sit below the firewall — quantum advantage and the artificial-consciousness extension. The core architecture survives their firing.
+
+The non-negotiable switch is the dehumanisation switch. It does not fail a section. It ends the work.
+
+Everything else is domain-specific: it collapses the section it governs without necessarily destroying the foundation.
+
+One note on the wording of KS-32.7, since this version of the book leans on it. The switch says window, not human, and that is the wording of record. The architecture operates at the operator level, so the windows it is protecting are the ones that are operators. Otherwise the switch would be violated by replacing a thermostat, and an absurd switch is a dead switch. Chapter Twelve sets this out and does not claim a free win from the wording.
+
+All switches listed here are live except the two marked fired.

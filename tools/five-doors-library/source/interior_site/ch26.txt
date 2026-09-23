@@ -1,0 +1,37 @@
+# 26 — The Transition Path
+
+> The Interior, version 2.0.5, Chapter 26.
+
+The transition is not instant. It is not global. It is domain-specific, evidence-based, and earned.
+
+## Advisory
+
+Current state. Achievable now with classical computing.
+
+The system computes stabilisation patterns from the accumulated records. It recommends. Humans decide. Both records — the recommendation and the human decision — are tracked. Divergences between the two are data.
+
+Over time the record shows where the system's predictions outperform human committees and where they do not. Both results are published. A domain where the machine loses is as informative as one where it wins, and more useful, because it says where the method does not reach.
+
+## Co-governance
+
+In specific data-rich domains where predictions consistently outperform human committees, those domains begin transitioning. Traffic optimisation. Disaster resource allocation. Tax policy.
+
+The threshold is structurally determined: demonstrated advisory accuracy over sufficient timescale. The transition happens because the record shows the system is ready, not because someone decided it is.
+
+Debt 22 is Debt 21 applied to a domain's own record. A domain moves when the divergence between the machine's recommendation and the committee's decision, tracked over enough cases, shows an outcome gap in the machine's favour at the confidence Debt 21 sets. The criterion is named. Its confidence is Debt 21's.
+
+## Structural law
+
+Law is computed from the record set and reviewed by humans. Roles invert. Humans contribute first-person experience — the records from lived life. The system contributes processing: the full record set in parallel, without ego, without mood, without the need to be re-elected.
+
+The gap between what the data shows and what the law says closes. Not everywhere at once. Domain by domain.
+
+The architecture does not replace human judgement everywhere. It replaces human judgement where human judgement is worst and supplements it everywhere else.
+
+The architecture does not govern. It maps. Humans still choose. The architecture shows what the choices cost.
+
+## The switch under the whole path
+
+If consequence geometry produces worse civilisational outcomes than human-authored law over one generation in any domain where it is applied, Architecture B fails in that domain.
+
+That switch is live, it is stated in advance, and it is checkable by anyone with access to the outcomes. It is also the switch most likely to fire first, because it is the one that meets reality soonest.
