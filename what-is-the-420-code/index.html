@@ -436,9 +436,20 @@ table.nums td a{white-space:nowrap}
 .fd .ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
 .fd .ap-row.open > .ap-header .ap-arrow{transform:rotate(90deg)}
 @media(max-width:700px){.fd h2.ap-title{font-size:21px}.fd .ap-detail p{font-size:17px}.fd .fd-sub .ap-header{flex-wrap:wrap}.fd .fd-sub .ap-tag{order:3;margin-left:0}}
+/* Listen here: G reads the section, 23 September 2026 */
+.fd .fd-hook,.fd .fd-pre{position:relative;padding-right:9.5rem}
+.fd-listen{position:absolute;right:0;top:0;display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--g3);border-radius:3px;padding:3px 10px;cursor:pointer;
+  font-family:inherit;font-size:16px;font-style:normal;line-height:1.5;color:var(--g4);white-space:nowrap}
+.fd-listen:hover{border-color:#8B6914;color:#8B6914}
+.fd-listen[aria-pressed="true"]{border-color:#8B6914;color:#8B6914;font-weight:700}
+.fd-listen-i{font-size:16px;line-height:1}
+.fd-reading{background:rgba(139,105,20,.16);border-radius:2px}
+@media(max-width:600px){.fd .fd-hook,.fd .fd-pre{padding-right:0}
+  .fd-listen{position:static;margin:.55rem 0 0;display:inline-flex}}
 </style>
 <div class="fd">
-<p class="fd-pre">Open a section to read it. The message is always be kind.</p>
+<p class="fd-pre">Open a section to read it. The message is always be kind.<button type="button" class="fd-listen" data-clip="what-is-the-420-code" aria-label="Listen to What is The 420 Code"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
 <h1>What is The 420 Code</h1>
 <p>The 420 Code derives ethics — what I ought to do — from physics — what is.</p>
 <p>The physics — what is — says the awareness in me is the awareness in you.</p>
@@ -455,7 +466,7 @@ table.nums td a{white-space:nowrap}
 <div class="fd-rows">
 <div class="ap-row fd-row" id="one-record-exists">
 <div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">One record exists</h2><span class="ap-arrow">▸</span></div>
-<p class="fd-hook" onclick="fdToggle(this)">The first principle. Try to deny it — the denial is a record.</p>
+<p class="fd-hook" onclick="fdToggle(this)">The first principle. Try to deny it — the denial is a record.<button type="button" class="fd-listen" data-clip="one-record-exists" aria-label="Listen to One record exists"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
 <div class="ap-detail">
 <p>That is the first principle. That is the axiom.</p>
 <p>What is a record? A distinction that holds — this, not that. A footprint in sand is a record. So is a fossil. So is any bit of information. So are these words.</p>
@@ -471,7 +482,7 @@ table.nums td a{white-space:nowrap}
 </div>
 <div class="ap-row fd-row" id="four-conditions">
 <div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">Four conditions</h2><span class="ap-arrow">▸</span></div>
-<p class="fd-hook" onclick="fdToggle(this)">Symmetry. Break. Record. Constraint. Four, and only four.</p>
+<p class="fd-hook" onclick="fdToggle(this)">Symmetry. Break. Record. Constraint. Four, and only four.<button type="button" class="fd-listen" data-clip="four-conditions" aria-label="Listen to Four conditions"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
 <div class="ap-detail">
 <p>For a record to exist, four things must be true.</p>
 <p>There must be a symmetry to break — two sides, the same. This and that.</p>
@@ -487,7 +498,7 @@ table.nums td a{white-space:nowrap}
 </div>
 <div class="ap-row fd-row" id="the-axiom-in-one-line">
 <div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">The axiom, in one line</h2><span class="ap-arrow">▸</span></div>
-<p class="fd-hook" onclick="fdToggle(this)">Two glasses of water, one grain of sand, and the now it lands in.</p>
+<p class="fd-hook" onclick="fdToggle(this)">Two glasses of water, one grain of sand, and the now it lands in.<button type="button" class="fd-listen" data-clip="the-axiom-in-one-line" aria-label="Listen to The axiom, in one line"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
 <div class="ap-detail">
 <p>Imagine two glasses of water, standing side by side on a table. Identical in every way. Same glass. Same water. Same level. Symmetrical. Nothing tells them apart. Nothing is happening.</p>
 <p>Write the symmetry as one to one.</p>
@@ -508,7 +519,7 @@ table.nums td a{white-space:nowrap}
 </div>
 <div class="ap-row fd-row" id="the-story-in-sand">
 <div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">The story, in sand</h2><span class="ap-arrow">▸</span></div>
-<p class="fd-hook" onclick="fdToggle(this)">An hourglass that keeps its own time, the twenty-one, and the one grain that cannot be read.</p>
+<p class="fd-hook" onclick="fdToggle(this)">An hourglass that keeps its own time, the twenty-one, and the one grain that cannot be read.<button type="button" class="fd-listen" data-clip="the-story-in-sand" aria-label="Listen to The story, in sand"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
 <div class="ap-detail">
 <p>Imagine an hourglass. Now let it vibrate.</p>
 <p>Nobody is shaking it. There is no hand on the glass, and no table under it. The sand shakes itself. Every grain that falls has to land, and every landing sends a ripple through the sand already lying there. The ripples meet. Out of all that answering comes one steady beat — the same beat everywhere, at every moment. That beat is the tick. The sand keeps its own time.</p>
@@ -531,7 +542,7 @@ table.nums td a{white-space:nowrap}
 </div>
 <div class="ap-row fd-row" id="the-ethic">
 <div class="ap-header" onclick="fdToggle(this)"><h2 class="ap-title">The ethic</h2><span class="ap-arrow">▸</span></div>
-<p class="fd-hook" onclick="fdToggle(this)">The right hand hitting the left. What the physics leaves you holding.</p>
+<p class="fd-hook" onclick="fdToggle(this)">The right hand hitting the left. What the physics leaves you holding.<button type="button" class="fd-listen" data-clip="the-ethic" aria-label="Listen to The ethic"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
 <div class="ap-detail">
 <p>Put your left hand flat on a table. Hit it with your right. It is one body that hurt. Nobody needs to explain it. No rule needs to be consulted. Two hands. One body. One pain.</p>
 <p>Once you see that you are an expression of the one operator, you see that we are all one. The other is not fundamentally other. The one being harmed is the one doing the harming, seen from a different window.</p>
@@ -816,6 +827,98 @@ document.addEventListener('keydown',function(e){
       el.textContent=(d.count||0).toLocaleString();
     }).catch(function(){el.textContent='—'});
   }
+})();
+</script>
+<script id="fd-listen">
+// G reads the sections. One clip at a time: the button opens its section, plays, and stops on a
+// second click. Where /audio/listen.json carries word times for a clip, the word being read is
+// lit as it is read; where it does not, the section simply reads. Nothing is lit on a guess.
+(function(){
+  var buttons=[].slice.call(document.querySelectorAll('.fd-listen'));
+  if(!buttons.length) return;
+  var audio=new Audio(), playing=null, times=null, marks=null, raf=0;
+  audio.preload='none';
+  fetch('/audio/listen.json').then(function(r){return r.ok?r.json():null}).then(function(d){times=d||{}}).catch(function(){times={}});
+  function blocksOf(host){
+    // a section reads its own detail; the page's opening reads the paragraphs above the sections,
+    // which is what the sixth recording says, and never the line the button sits on
+    if(host.classList.contains('ap-row')) return host.querySelectorAll('.ap-detail > p, .ap-detail > h3, .ap-detail li');
+    var stop=host.querySelector('.fd-rows'), out=[];
+    [].slice.call(host.children).some(function(el){
+      if(el===stop) return true;
+      if(/^(P|H1)$/.test(el.tagName)&&!el.classList.contains('fd-pre')) out.push(el);
+      return false;
+    });
+    return out;
+  }
+  function words(row){
+    if(row.dataset.split) return [].slice.call(row.querySelectorAll('.fd-w'));
+    var blocks=blocksOf(row);
+    [].forEach.call(blocks,function(b){
+      // every text node, however deep: a word inside a <b> or an <a> is a word like any other
+      var walk=document.createTreeWalker(b,NodeFilter.SHOW_TEXT,null), nodes=[], n;
+      while((n=walk.nextNode())) if(n.nodeValue.trim()) nodes.push(n);
+      nodes.forEach(function(node){
+        var frag=document.createDocumentFragment();
+        node.nodeValue.split(/(\s+)/).forEach(function(piece){
+          if(!piece) return;
+          if(/^\s+$/.test(piece)){frag.appendChild(document.createTextNode(piece));return}
+          var s=document.createElement('span'); s.className='fd-w'; s.textContent=piece; frag.appendChild(s);
+        });
+        node.parentNode.replaceChild(frag,node);
+      });
+    });
+    row.dataset.split='1';
+    return [].slice.call(row.querySelectorAll('.fd-w'));
+  }
+  function clear(){ if(marks){marks.forEach(function(s){s.classList.remove('fd-reading')}); marks=null;} cancelAnimationFrame(raf); }
+  function follow(clip,row){
+    var t=times&&times[clip]&&times[clip].w;
+    if(!t) return;
+    var spans=words(row); if(spans.length!==t.length) return;   // the page and the timings must agree
+    var last=-1;
+    function tick(){
+      if(audio.paused) return;
+      var now=audio.currentTime, i=last;
+      while(i+1<t.length&&t[i+1]<=now) i++;
+      while(i>=0&&t[i]>now) i--;
+      if(i!==last){
+        if(last>=0&&spans[last]) spans[last].classList.remove('fd-reading');
+        if(i>=0&&spans[i]){ spans[i].classList.add('fd-reading'); marks=[spans[i]];
+          var r=spans[i].getBoundingClientRect();
+          if(r.top<80||r.bottom>innerHeight-40) spans[i].scrollIntoView({block:'center',behavior:'smooth'});
+        }
+        last=i;
+      }
+    }
+    // the frame loop keeps it smooth while the page is drawing; the audio's own clock keeps it
+    // right when the tab is hidden, where frames stop
+    (function loop(){ if(audio.paused) return; tick(); raf=requestAnimationFrame(loop); })();
+    audio.removeEventListener('timeupdate',audio._fdTick||function(){});
+    audio._fdTick=tick; audio.addEventListener('timeupdate',tick);
+  }
+  function stop(){ audio.pause(); clear();
+    buttons.forEach(function(b){b.setAttribute('aria-pressed','false');b.querySelector('.fd-listen-i').textContent='▶';});
+    playing=null;
+  }
+  buttons.forEach(function(b){
+    b.addEventListener('click',function(e){
+      e.stopPropagation(); e.preventDefault();
+      var clip=b.dataset.clip;
+      if(playing===clip){ stop(); return; }
+      stop();
+      var row=b.closest('.ap-row')||document.querySelector('.fd');
+      if(row&&row.classList.contains('ap-row')&&!row.classList.contains('open')) row.classList.add('open');
+      audio.src='/audio/'+clip+'.mp3';
+      try{ audio.currentTime=0; }catch(err){}
+      playing=clip;
+      b.setAttribute('aria-pressed','true'); b.querySelector('.fd-listen-i').textContent='❚❚';
+      if(row) follow(clip,row);
+      var p=audio.play();
+      if(p&&p.catch) p.catch(function(err){ if(playing===clip&&audio.paused) stop(); });
+    });
+  });
+  audio.addEventListener('ended',stop);
 })();
 </script>
 </body></html>
