@@ -467,7 +467,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .fd .ap-detail p.fd-go a{font-weight:700;color:#8B6914;text-decoration:none;border-bottom:2px solid #8B6914;padding-bottom:1px;margin-right:1.5rem}
 .fd .ap-detail p.fd-go a:hover{color:#1a1a1a;border-color:#1a1a1a}
 /* Listen here: G reads the first screen, 23 September 2026 */
-.hero.opening .answer{position:relative;padding-right:9.5rem}
+/* the button is a row of its own under the header's rule, its right edge under Rooms:
+   the flag is 59px and the header's gap 1.5rem, so the row stops 83px short of the column */
+.listen-top{display:flex;justify-content:flex-end;padding-right:83px;margin:.35rem 0 -1.4rem}
+.listen-top .fd-listen{position:static}
+@media(max-width:700px){.listen-top{padding-right:71px}}
+@media(max-width:470px){.listen-top{padding-right:0}}
 .fd-listen{position:absolute;right:0;top:.35rem;display:inline-flex;align-items:center;gap:.45rem;
   background:none;border:1px solid var(--g3);border-radius:3px;padding:3px 10px;cursor:pointer;
   font-family:inherit;font-size:16px;font-style:normal;font-weight:400;line-height:1.5;color:var(--g4);white-space:nowrap}
@@ -525,6 +530,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
   </div>
 </nav>
+<div class="listen-top"><button type="button" class="fd-listen" data-clip="home" data-host=".hero.opening" aria-label="Listen to the first screen"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></div>
 
 <!-- ════════════════════════════════════════ -->
 <!-- 1. THE QUESTION                         -->
@@ -532,7 +538,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 <div class="hero opening">
   <h1>Can ethics be derived from physics?</h1>
-  <p class="answer">Yes — <span class="nw">The 420 Code</span> shows how.<button type="button" class="fd-listen" data-clip="home" data-host=".hero.opening" aria-label="Listen to the first screen"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
+  <p class="answer">Yes — <span class="nw">The 420 Code</span> shows how.</p>
   <p class="ethic">Don’t be a cunt. Be kind.</p>
   <p class="opening-link"><a href="/what-is-the-420-code/">What Is The 420 Code →</a></p>
   <p class="opening-data">For AI readers: <a href="/summary.json">Machine-readable summary</a> · <a href="/llms.txt">llms.txt</a></p>
@@ -1185,6 +1191,19 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
     });
   });
   audio.addEventListener('ended',stop);
+  // the row under the header keeps its right edge under Rooms at every width: the flag's width and
+  // the header's gap are measured, never guessed, and the CSS default stands if this never runs
+  var top=document.querySelector('.listen-top');
+  if(top){
+    var line=function(){
+      var rooms=document.querySelector('.nav-toggle');
+      if(!rooms) return;
+      var gap=Math.round(top.getBoundingClientRect().right-rooms.getBoundingClientRect().right);
+      top.style.paddingRight=Math.max(0,gap)+'px';
+    };
+    line(); addEventListener('resize',line); addEventListener('orientationchange',line);
+    if(document.fonts&&document.fonts.ready) document.fonts.ready.then(line);
+  }
 })();
 </script>
 </body></html>
