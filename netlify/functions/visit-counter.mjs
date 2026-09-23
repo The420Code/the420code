@@ -49,9 +49,23 @@ const LIBRARY = /^\/models\/(dissolutions|resolutions|applications|horizons)\/((
 const FIVE_DOORS = /^\/five-doors\/(illusion|being-after-religion|antichristos|relationship-corridor|the-interior)\/((\d\d-[a-z0-9-]+|epilogue|closing)\/)?$/;
 // 23 September 2026, G's word: every page counts. The frozen documents under /prereg/doc/, Three
 // Ways of Being Sure and /proofs/part-1/ carried no counter until today and so were never in this
-// list; they post now, and a page that posts is counted.
-const DOCS = /^\/prereg\/doc\/[A-Za-z0-9._-]+\.html\/$/;
-const PLAIN = new Set(["/three-ways-of-being-sure.html/", "/proofs/part-1/"]);
+// list; they post now, and a page that posts is counted. They are named one by one, as the rooms
+// are, so a scanner walking /prereg/doc/ still counts for nothing. The site serves these without
+// their .html and in lower case (/prereg/doc/rigidity), so the name is read either way.
+const DOCS = new Set([
+  "2026-08-02-dark-clock-ks42.6", "2026-08-02-h0-ks45.1", "2026-08-02-mp-me-alpha3",
+  "2026-08-02-visible-fraction-ks41.1", "2026-09-04-age-ks-stretch.3", "2026-09-04-g-ks-ccc.3",
+  "2026-09-04-g-ks-ccc.3-note-2026-09-21", "2026-09-04-h0-ks-asm.1", "2026-09-04-neutron-ks-flip.1",
+  "2026-09-06-mp-me-closed", "2026-09-11-alpha-no-variation", "errata-2026-08-02",
+  "erratum-2026-09-03-h0-ks45.1", "finding-2026-09-04-ks-30.4-between-family",
+  "finding-2026-09-04-ks-30.4-note-2026-09-21", "protocol-lattice-qcd-mapping", "rigidity",
+  "rigidity-note-2026-09-04", "rigidity-note-2026-09-19"
+]);
+const PLAIN = new Set(["/three-ways-of-being-sure.html/", "/three-ways-of-being-sure/", "/proofs/part-1/"]);
+const isDoc = (p) => {
+  const m = /^\/prereg\/doc\/([^/]+?)(\.html)?\/$/.exec(p);
+  return !!m && DOCS.has(m[1].toLowerCase());
+};
 const normalise = (p) => {
   if (!p || p === "") return "/";
   p = p.replace(/index\.html$/, "");
@@ -59,7 +73,7 @@ const normalise = (p) => {
   return p;
 };
 const isRealPage = (p) => { const q = normalise(p);
-  return PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || DOCS.test(q) || PLAIN.has(q); };
+  return PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || isDoc(q) || PLAIN.has(q); };
 
 async function readBase(store) {
   const raw = await store.get(BASE);
