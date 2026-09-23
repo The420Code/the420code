@@ -10,10 +10,17 @@ against the published paper's own Contents block and sets them aside.
 | | |
 |---|---|
 | Published PDF | `/AP31_The_Alignment.pdf` |
-| sha256 | `0bfc7103b14164938ffc752faf1ec27b5de8b06ed289f6da8083b0c09921a8c7` |
+| sha256 | `089c984b202908df04c6c60f4c87783a3bacbe53de9023ccad11758cbc5e1944` |
 | Source of record | `AP31_The_Alignment_FINAL_v3.docx` |
 | Found in | Formatted |
 | Paragraphs compared | 287 |
+
+**Republished 23 September 2026** with four dated notes, on its own page after "What This Establishes
+and What Remains Open". The verification above is of the **body**, which the republish does not touch:
+the source of record is the same file, and the paper without its notes is kept beside this one at
+`AP31_The_Alignment_published_to_2026-09-23.pdf`, `0bfc7103…`, 42 pages, which is the file that digest
+was taken from. The published file is now 43 pages. The notes' own text is
+`DATED_NOTES_2026-09-23.md`, and what moved is `NOTE_REPUBLISH_2026-09-23.md`, both beside this file.
 
 Harvest from this file. If the published PDF is replaced, this note and the
 digest are re-verified at that republish.
