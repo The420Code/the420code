@@ -466,6 +466,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .fd .ap-detail p.fd-go{font-size:17px;margin:1.6rem 0 .25rem;line-height:1.9}
 .fd .ap-detail p.fd-go a{font-weight:700;color:#8B6914;text-decoration:none;border-bottom:2px solid #8B6914;padding-bottom:1px;margin-right:1.5rem}
 .fd .ap-detail p.fd-go a:hover{color:#1a1a1a;border-color:#1a1a1a}
+/* Listen here: G reads the first screen, 23 September 2026 */
+.hero.opening .answer{position:relative;padding-right:9.5rem}
+.fd-listen{position:absolute;right:0;top:.35rem;display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--g3);border-radius:3px;padding:3px 10px;cursor:pointer;
+  font-family:inherit;font-size:16px;font-style:normal;font-weight:400;line-height:1.5;color:var(--g4);white-space:nowrap}
+.fd-listen:hover{border-color:#8B6914;color:#8B6914}
+.fd-listen[aria-pressed="true"]{border-color:#8B6914;color:#8B6914;font-weight:700}
+.fd-listen-i{font-size:16px;line-height:1}
+.fd-reading{background:rgba(139,105,20,.16);border-radius:2px}
+@media(max-width:600px){.hero.opening .answer{padding-right:0}
+  .fd-listen{position:static;margin:.55rem 0 0;display:inline-flex}}
 </style>
 </head>
 <body>
@@ -521,7 +532,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 <div class="hero opening">
   <h1>Can ethics be derived from physics?</h1>
-  <p class="answer">Yes — <span class="nw">The 420 Code</span> shows how.</p>
+  <p class="answer">Yes — <span class="nw">The 420 Code</span> shows how.<button type="button" class="fd-listen" data-clip="home" data-host=".hero.opening" aria-label="Listen to the first screen"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
   <p class="ethic">Don’t be a cunt. Be kind.</p>
   <p class="opening-link"><a href="/what-is-the-420-code/">What Is The 420 Code →</a></p>
   <p class="opening-data">For AI readers: <a href="/summary.json">Machine-readable summary</a> · <a href="/llms.txt">llms.txt</a></p>
@@ -1078,6 +1089,102 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
     if(u.pathname===location.pathname&&u.hash===location.hash)setTimeout(function(){openRow(u.hash.slice(1))},0);
   });
   openRow(location.hash.slice(1));
+})();
+</script>
+<script id="fd-listen">
+// G reads the sections. One clip at a time: the button opens its section, plays, and stops on a
+// second click. Where /audio/listen.json carries word times for a clip, the word being read is
+// lit as it is read; where it does not, the section simply reads. Nothing is lit on a guess.
+(function(){
+  var buttons=[].slice.call(document.querySelectorAll('.fd-listen'));
+  if(!buttons.length) return;
+  var audio=new Audio(), playing=null, times=null, marks=null, raf=0;
+  audio.preload='none';
+  fetch('/audio/listen.json').then(function(r){return r.ok?r.json():null}).then(function(d){times=d||{}}).catch(function(){times={}});
+  function blocksOf(host){
+    // a section reads its own detail; the page's opening reads the paragraphs above the sections,
+    // which is what the sixth recording says, and never the line the button sits on
+    if(host.classList.contains('ap-row')) return host.querySelectorAll('.ap-detail > p, .ap-detail > h3, .ap-detail li');
+    if(host.classList.contains('hero')) return [].slice.call(host.children).filter(function(el){
+      // the first screen, as the recording reads it: not the line for AI readers, not the few-pages line
+      return /^(H1|P)$/.test(el.tagName)&&!el.classList.contains('opening-data')&&!el.classList.contains('opening-pdf');
+    });
+    var stop=host.querySelector('.fd-rows'), out=[];
+    [].slice.call(host.children).some(function(el){
+      if(el===stop) return true;
+      if(/^(P|H1)$/.test(el.tagName)&&!el.classList.contains('fd-pre')) out.push(el);
+      return false;
+    });
+    return out;
+  }
+  function words(row){
+    if(row.dataset.split) return [].slice.call(row.querySelectorAll('.fd-w'));
+    var blocks=blocksOf(row);
+    [].forEach.call(blocks,function(b){
+      // every text node, however deep: a word inside a <b> or an <a> is a word like any other
+      var walk=document.createTreeWalker(b,NodeFilter.SHOW_TEXT,null), nodes=[], n;
+      while((n=walk.nextNode())) if(n.nodeValue.trim()&&!(n.parentNode.closest&&n.parentNode.closest('.fd-listen'))) nodes.push(n);
+      nodes.forEach(function(node){
+        var frag=document.createDocumentFragment();
+        node.nodeValue.split(/(\s+)/).forEach(function(piece){
+          if(!piece) return;
+          if(/^\s+$/.test(piece)){frag.appendChild(document.createTextNode(piece));return}
+          var s=document.createElement('span'); s.className='fd-w'; s.textContent=piece; frag.appendChild(s);
+        });
+        node.parentNode.replaceChild(frag,node);
+      });
+    });
+    row.dataset.split='1';
+    return [].slice.call(row.querySelectorAll('.fd-w'));
+  }
+  function clear(){ if(marks){marks.forEach(function(s){s.classList.remove('fd-reading')}); marks=null;} cancelAnimationFrame(raf); }
+  function follow(clip,row){
+    var t=times&&times[clip]&&times[clip].w;
+    if(!t) return;
+    var spans=words(row); if(spans.length!==t.length) return;   // the page and the timings must agree
+    var last=-1;
+    function tick(){
+      if(audio.paused) return;
+      var now=audio.currentTime, i=last;
+      while(i+1<t.length&&t[i+1]<=now) i++;
+      while(i>=0&&t[i]>now) i--;
+      if(i!==last){
+        if(last>=0&&spans[last]) spans[last].classList.remove('fd-reading');
+        if(i>=0&&spans[i]){ spans[i].classList.add('fd-reading'); marks=[spans[i]];
+          var r=spans[i].getBoundingClientRect();
+          if(r.top<80||r.bottom>innerHeight-40) spans[i].scrollIntoView({block:'center',behavior:'smooth'});
+        }
+        last=i;
+      }
+    }
+    // the frame loop keeps it smooth while the page is drawing; the audio's own clock keeps it
+    // right when the tab is hidden, where frames stop
+    (function loop(){ if(audio.paused) return; tick(); raf=requestAnimationFrame(loop); })();
+    audio.removeEventListener('timeupdate',audio._fdTick||function(){});
+    audio._fdTick=tick; audio.addEventListener('timeupdate',tick);
+  }
+  function stop(){ audio.pause(); clear();
+    buttons.forEach(function(b){b.setAttribute('aria-pressed','false');b.querySelector('.fd-listen-i').textContent='▶';});
+    playing=null;
+  }
+  buttons.forEach(function(b){
+    b.addEventListener('click',function(e){
+      e.stopPropagation(); e.preventDefault();
+      var clip=b.dataset.clip;
+      if(playing===clip){ stop(); return; }
+      stop();
+      var row=b.closest('.ap-row')||document.querySelector(b.dataset.host||'.fd');
+      if(row&&row.classList.contains('ap-row')&&!row.classList.contains('open')) row.classList.add('open');
+      audio.src='/audio/'+clip+'.mp3';
+      try{ audio.currentTime=0; }catch(err){}
+      playing=clip;
+      b.setAttribute('aria-pressed','true'); b.querySelector('.fd-listen-i').textContent='❚❚';
+      if(row) follow(clip,row);
+      var p=audio.play();
+      if(p&&p.catch) p.catch(function(err){ if(playing===clip&&audio.paused) stop(); });
+    });
+  });
+  audio.addEventListener('ended',stop);
 })();
 </script>
 </body></html>

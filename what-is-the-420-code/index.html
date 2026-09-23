@@ -449,7 +449,7 @@ table.nums td a{white-space:nowrap}
   .fd-listen{position:static;margin:.55rem 0 0;display:inline-flex}}
 </style>
 <div class="fd">
-<p class="fd-pre">Open a section to read it. The message is always be kind.<button type="button" class="fd-listen" data-clip="what-is-the-420-code" aria-label="Listen to What is The 420 Code"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
+<p class="fd-pre">Open a section to read it. The message is always be kind.<button type="button" class="fd-listen" data-clip="what-is-the-420-code" data-host=".fd" aria-label="Listen to What is The 420 Code"><span class="fd-listen-i" aria-hidden="true">▶</span>Listen here</button></p>
 <h1>What is The 420 Code</h1>
 <p>The 420 Code derives ethics — what I ought to do — from physics — what is.</p>
 <p>The physics — what is — says the awareness in me is the awareness in you.</p>
@@ -843,6 +843,10 @@ document.addEventListener('keydown',function(e){
     // a section reads its own detail; the page's opening reads the paragraphs above the sections,
     // which is what the sixth recording says, and never the line the button sits on
     if(host.classList.contains('ap-row')) return host.querySelectorAll('.ap-detail > p, .ap-detail > h3, .ap-detail li');
+    if(host.classList.contains('hero')) return [].slice.call(host.children).filter(function(el){
+      // the first screen, as the recording reads it: not the line for AI readers, not the few-pages line
+      return /^(H1|P)$/.test(el.tagName)&&!el.classList.contains('opening-data')&&!el.classList.contains('opening-pdf');
+    });
     var stop=host.querySelector('.fd-rows'), out=[];
     [].slice.call(host.children).some(function(el){
       if(el===stop) return true;
@@ -857,7 +861,7 @@ document.addEventListener('keydown',function(e){
     [].forEach.call(blocks,function(b){
       // every text node, however deep: a word inside a <b> or an <a> is a word like any other
       var walk=document.createTreeWalker(b,NodeFilter.SHOW_TEXT,null), nodes=[], n;
-      while((n=walk.nextNode())) if(n.nodeValue.trim()) nodes.push(n);
+      while((n=walk.nextNode())) if(n.nodeValue.trim()&&!(n.parentNode.closest&&n.parentNode.closest('.fd-listen'))) nodes.push(n);
       nodes.forEach(function(node){
         var frag=document.createDocumentFragment();
         node.nodeValue.split(/(\s+)/).forEach(function(piece){
@@ -907,7 +911,7 @@ document.addEventListener('keydown',function(e){
       var clip=b.dataset.clip;
       if(playing===clip){ stop(); return; }
       stop();
-      var row=b.closest('.ap-row')||document.querySelector('.fd');
+      var row=b.closest('.ap-row')||document.querySelector(b.dataset.host||'.fd');
       if(row&&row.classList.contains('ap-row')&&!row.classList.contains('open')) row.classList.add('open');
       audio.src='/audio/'+clip+'.mp3';
       try{ audio.currentTime=0; }catch(err){}
