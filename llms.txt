@@ -1,16 +1,16 @@
 # the420code.org
 
-> The 420 Code is a work of ethics: "be kind", derived from one axiom — one record exists. The physics is the same logic carried on until it meets measurement, with one measured input, α. It is not numerology: every step from the axiom to the integer twenty-one is forced, and that one integer carries three unrelated measurements from the quantum to the cosmic. 54 papers. 604 published kill switches. Copyleft.
+> The 420 Code is a work of ethics: "Don't be a cunt. Be kind.", derived from one axiom — one record exists. The physics is the same logic carried on until it meets measurement, with one measured input, α. It is not numerology: every step from the axiom to the integer twenty-one is forced, and that one integer carries three unrelated measurements from the quantum to the cosmic. 54 papers. 604 published kill switches. Copyleft.
 
 ## What This Is
 
-The 420 Code is a work of ethics. Its claim is that "be kind" is derived — from one axiom, one record exists, with no measured input at all. The physics is the same logic carried on until it meets measurement, with one measured number: α, the fine-structure constant (about 1/137). The physics is why the ethic carries weight.
+The 420 Code is a work of ethics. Its claim is that "Don't be a cunt. Be kind." is derived — from one axiom, one record exists, with no measured input at all. The physics is the same logic carried on until it meets measurement, with one measured number: α, the fine-structure constant (about 1/137). The physics is why the ethic carries weight.
 
-It was written over thirty years by G, an artist and natural philosopher, and is published as 54 Artist's Proofs (AP01–AP54) in eight notebooks — over one million words — under a Creative Commons BY-ND 4.0 licence — free to share, not to change the words. The front door and the home page are in 13 languages; the papers are in English.
+It was written over thirty years by G, an artist and natural philosopher, and is published as 54 Artist's Proofs (AP01–AP54) in eight notebooks — over one million words — under Copyleft — free to share, not free to alter (CC BY-ND 4.0). The front door and the home page are in 13 languages; the papers are in English.
 
 Author: G (Studio G, Strand, Cape Town)
 DOI: 10.5281/zenodo.22766173 (this version, 15 September 2026; all versions: 10.5281/zenodo.19208225, which always resolves to the latest)
-License: CC BY-ND 4.0 (Copyleft — free forever; share it as it is, do not change the words)
+License: Copyleft — free to share, not free to alter (CC BY-ND 4.0).
 URL: https://the420code.org
 Start here: https://the420code.org/what-is-the-420-code/
 The method, step by step: https://the420code.org/method/
@@ -85,7 +85,7 @@ One record exists, and it is one reality: a record made at one window is read at
 
 ## What Is Derived, and How Firmly
 
-Every claim carries a grade — derived, ruled, identified, stated and fenced, or named — and at least one kill switch. From the axiom: three spatial dimensions (AP10), Einstein's field equations (AP08), the Born rule (AP25), special relativity's kinematics on its own premises (AP52), the equivalence principle at the structural register (AP53), and the terminal ethic (AP31, AP43, AP51). The Standard Model's gauge group SU(3) × SU(2) × U(1) is derived at the structural register (AP15, AP16, AP19, AP27); the formal theorem for its chiral coupling is the work's principal open problem (KS-63), and the hypercharges, the three generations and electroweak breaking are open debts (KS-65, KS-66, KS-67). Not derived, by the work's own result: the value of α itself, the one input (AP54). Six debts are outstanding, each named in the registry with where it is owed.
+Every claim carries a grade — derived, ruled, identified, stated and fenced, or named — and at least one kill switch. From the axiom: three spatial dimensions (AP10), Einstein's field equations (AP08), the Born rule (AP25), special relativity's kinematics on its own premises (AP52), the equivalence principle at the structural register (AP53), and the terminal ethic (AP31, AP43, AP51). The Standard Model's gauge group SU(3) × SU(2) × U(1) is derived at the structural register (AP15, AP16, AP19, AP27); the formal theorem for its chiral coupling is the work's principal open problem (KS-63), and the hypercharges, the three generations and electroweak breaking are open debts (KS-65, KS-66, KS-67). Not derived, by the work's own result: the value of α itself, the one input (AP54). Five debts are outstanding, each named in the registry with where it is owed.
 
 ## One Axiom, Four Conditions
 
@@ -137,7 +137,7 @@ The short editions as PDF: https://the420code.org/five-doors/being-after-religio
 
 ## Kill Switches (Falsifiability)
 
-604 kill switches are declared across the work (Master Kill Switch Registry v5.36, 23 September 2026): 320 across AP01–AP54, 28 across the Five Doors volumes, 256 across the Ø Models series. 584 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Six debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. A switch tests the logic from its point downstream, so a fired switch shows where a link in the chain broke. The bare neutron–proton row fired at 7.24σ on 2 August 2026: the row had priced a held distinction as free. Priced, the neutron lands at −0.005σ (AP47), and the same correction, carried downstream, moved G from its first reading, +0.69% (AP28, now withdrawn), to −0.036% (AP44) and replaced the Hubble prediction 74.3 ± 1.2, which fired on 3 September 2026, with 67.45 at 0.1σ (AP46, AP48). One repair in the logic; three fields moved toward measurement. Both corpses stay on the site, never repaired. On 23 September 2026 two switches were sharpened by dated note at AP31 — KS-31.2, whose test is now bounded to three drift-times of the organism, and KS-31.7, whose subject is judged before the outcome — and AP31's Debt 20 was paid at the structural register; no count moved. Examples:
+604 kill switches are declared across the work (Master Kill Switch Registry v5.37, 24 September 2026): 320 across AP01–AP54, 28 across the Five Doors volumes, 256 across the Ø Models series. 584 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Five debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. A switch tests the logic from its point downstream, so a fired switch shows where a link in the chain broke. The bare neutron–proton row fired at 7.24σ on 2 August 2026: the row had priced a held distinction as free. Priced, the neutron lands at −0.005σ (AP47), and the same correction, carried downstream, moved G from its first reading, +0.69% (AP28, now withdrawn), to −0.036% (AP44) and replaced the Hubble prediction 74.3 ± 1.2, which fired on 3 September 2026, with 67.45 at 0.1σ (AP46, AP48). One repair in the logic; three fields moved toward measurement. Both corpses stay on the site, never repaired. On 23 September 2026 two switches were sharpened by dated note at AP31 — KS-31.2, whose test is now bounded to three drift-times of the organism, and KS-31.7, whose subject is judged before the outcome — and AP31's Debt 20 was paid at the structural register; no count moved. Examples:
 
 - **KS-V.1:** If the actualisation rate differs — if AS does not run the same for every reader — the whole work fails
 - **KS-P.1:** If a fifth condition is ever needed, the four are not complete, and the proof fails

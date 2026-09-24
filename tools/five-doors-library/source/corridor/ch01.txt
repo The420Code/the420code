@@ -62,7 +62,7 @@ The break is the substrate expressing itself as broken.
 
 Four conditions follow from the break. They are the structural anatomy of a record — any record, any instance of something happening and leaving a trace.
 
-They are complete: no fifth is needed. They are minimal: none is removable. Together they exhaust the structural degrees of freedom.
+They are complete: no fifth is needed. They are minimal: none is removable. Together they exhaust the structural degrees of freedom. Carried in proof sketches at AP20; the full proofs are on the wall as KS-P.1 and KS-P.2.
 
 Symmetry. The pre-state. The mirror before it cracks. Everything matches. No distinction, no preference, no direction. Not empty. Full of potential, with nothing yet selected.
 

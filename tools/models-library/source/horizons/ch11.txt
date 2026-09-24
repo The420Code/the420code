@@ -30,7 +30,7 @@ If the holding could hold indefinitely, no break would ever occur. No structure.
 
 Returning to the symmetric condition does not mean entering a condition with stronger holding. It means returning to the same one. Restored, it carries the same finite limit. The holding fails again. The next cycle runs.
 
-This is a conditional derivation inside the corpus, not an independent cosmological proof. It rests on the prior installation of Ø, holding, break and residue.
+This is a conditional derivation inside the work, not an independent cosmological proof. It rests on the prior installation of Ø, holding, break and residue.
 
 ## End equals origin
 
@@ -104,7 +104,7 @@ The loop is one cyclic cosmology among several. Two mainstream neighbours are cl
 
 The loop shares with both: cyclicity, no fundamental beginning, no terminal heat death. It differs in mechanism — defragmentation of records back into the symmetric state, not rescaling, not collision. Different mechanism, so the signatures should differ in principle.
 
-Whether they differ at current measurement: not yet determined. The corpus has not derived predictions at the scale of the microwave background or gravitational waves that would tell the loop from its neighbours. This chapter relies on no detection. The structural claim stands. The distinguishability is open work, in the same status as the derivation of α. The chapter says so, without retreating into the claim that the readings are equivalent.
+Whether they differ at current measurement: not yet determined. The work has not derived predictions at the scale of the microwave background or gravitational waves that would tell the loop from its neighbours. This chapter relies on no detection. The structural claim stands. The distinguishability is open work, in the same status as the derivation of α. The chapter says so, without retreating into the claim that the readings are equivalent.
 
 ## What the loop is for the architecture inside it
 
@@ -126,7 +126,7 @@ Five claims carry this chapter.
 
 HOR-11.1 — Show the finite holding limit is assumed rather than derived — that existence-implies-holding-failure is circular or imports premises outside the axiom — and the loop's ground is incomplete. Being conditional on the axiom does not fire it.
 
-HOR-11.2 — Show the cycle's end is structurally distinguishable from its origin at the level of the topology of the condition, with the corpus's own resources, and end-equals-origin fails. Grain variation does not fire it unless it preserves records or breaks the symmetry.
+HOR-11.2 — Show the cycle's end is structurally distinguishable from its origin at the level of the topology of the condition, with the work's own resources, and end-equals-origin fails. Grain variation does not fire it unless it preserves records or breaks the symmetry.
 
 HOR-11.3 — Derive predictions that distinguish the loop from a cyclic alternative and have observation decide against the loop, and the commitment fails empirically. The current absence of derived distinguishability does not fire it.
 

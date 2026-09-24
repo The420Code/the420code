@@ -5,7 +5,7 @@ The 420 Code — verification suite.
 One measured input: the fine-structure constant alpha (CODATA 2022).
 Zero free parameters.
 
-This script re-derives the headline results the corpus stands behind at the
+This script re-derives the headline results the work stands behind at the
 wave of September 2026 and checks each against measurement, within the
 tolerance published at https://the420code.org. It prints a scorecard, then the
 two corpses — the switches that fired, shown and never repaired — and asserts
@@ -106,16 +106,16 @@ H0_meas = 67.4                                    # Planck 2018 (TT,TE,EE+lowE+l
 checks.append(("Expansion rate H0, the closure", "AP48",
                f"{H0_pred:.2f} km/s/Mpc", f"{H0_meas:.1f} km/s/Mpc", abs(H0_pred - H0_meas), "km/s/Mpc", 3.1))
 corpses.append(("Hubble constant from the floor inverted", "AP18 / KS-45.1", "2026-09-03",
-                "74.30 km/s/Mpc (+/- 1.2 as registered)", f"{H0_pred:.2f} km/s/Mpc (the corpus's own rate)",
+                "74.30 km/s/Mpc (+/- 1.2 as registered)", f"{H0_pred:.2f} km/s/Mpc (the work's own rate)",
                 abs(74.3 - H0_pred) / 1.2))
 
-# ── CLAIM 7: MOND acceleration scale a0 at the corpus's rate (AP18 / AP48) ──
+# ── CLAIM 7: MOND acceleration scale a0 at the work's rate (AP18 / AP48) ──
 CS2     = 2 * log(1 / cos(0.5) + tan(0.5))        # C_S^2 ~ 1.0445 (not the fine-structure constant)
 H0_si   = H0_pred / KM_PER_MPC                    # s^-1
 a0_pred = CS2 * C * H0_si / (2 * pi)
 a0_meas = 1.20e-10                                # m/s^2 (McGaugh 2016; Lelli 2017)
 a0_unc  = sqrt(0.02e-10**2 + 0.24e-10**2)         # random (+/-0.02) and systematic (+/-0.24), honestly
-checks.append(("MOND acceleration a0 at the corpus's H0", "AP18",
+checks.append(("MOND acceleration a0 at the work's H0", "AP18",
                f"{a0_pred:.4e}", f"{a0_meas:.4e} +/- {a0_unc:.2e}", abs(a0_pred - a0_meas) / a0_unc, "sigma", 3.0))
 
 checks.append(("Dark energy fraction", "AP42",

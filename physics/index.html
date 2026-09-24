@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en-GB"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ø Physics — the 420 code</title>
@@ -9,7 +9,7 @@
 <meta property="og:url" content="https://the420code.org/physics/">
 <meta property="og:title" content="Ø Physics — the 420 code">
 <meta property="og:description" content="One measured input, zero free parameters: every result against its measurement, the two that fired, and what else is derived.">
-<meta property="og:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta property="og:image" content="https://the420code.org/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="the 420 code">
@@ -17,11 +17,12 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ø Physics — the 420 code">
 <meta name="twitter:description" content="One measured input, zero free parameters: every result against its measurement, the two that fired, and what else is derived.">
-<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
+<meta name="twitter:image" content="https://the420code.org/og-card.png">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
 <meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
 <link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
 <meta name="author" content="G — Studio G">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -444,6 +445,14 @@ table.data tr:last-child td{border-bottom:none}
 .also-lead{font-size:16px;color:var(--g4);font-style:italic;margin:0 0 1.25rem}
 .also-rows .ap-detail p{margin:0 0 1rem}
 .also-rows .ap-detail p.src{font-size:16px;color:var(--g4);font-style:italic;margin:1.25rem 0 .25rem}
+
+/* 24 September 2026, the brief's 6.4: a closed row is hidden by the attribute where the browser
+   can search inside it (hidden="until-found"), not by display, so find-in-page reaches the words
+   and the row opens itself. The attribute is only ever set where beforematch exists, so a browser
+   without it never meets this rule. !important because the closed state is written in several
+   nested rules and this one has to win over all of them. */
+.ap-detail[hidden="until-found"]{display:block!important;content-visibility:hidden;
+  padding:0!important;margin:0!important;border:0!important}
 </style>
 </head>
 <body>
@@ -474,21 +483,21 @@ table.data tr:last-child td{border-bottom:none}
     <a href="/method/" class="nav-room">Ø The Method</a>
     <a href="/glossary/" class="nav-room">Ø Glossary</a>
   </div>
-  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt=""></button>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
   <div class="nav-langs">
-    <a href="/physics/" class="nav-lang" hreflang="en" lang="en" aria-current="page"><img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="">English</a>
-    <a href="/es/" class="nav-lang" hreflang="es" lang="es"><img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="">Español</a>
-    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr"><img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="">Français</a>
-    <a href="/de/" class="nav-lang" hreflang="de" lang="de"><img src="https://flagcdn.com/w40/de.png" width="20" height="15" alt="">Deutsch</a>
-    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt"><img src="https://flagcdn.com/w40/br.png" width="20" height="15" alt="">Português</a>
-    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl"><img src="https://flagcdn.com/w40/nl.png" width="20" height="15" alt="">Nederlands</a>
-    <a href="/it/" class="nav-lang" hreflang="it" lang="it"><img src="https://flagcdn.com/w40/it.png" width="20" height="15" alt="">Italiano</a>
-    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh"><img src="https://flagcdn.com/w40/cn.png" width="20" height="15" alt="">中文</a>
-    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="20" height="15" alt="">日本語</a>
-    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko"><img src="https://flagcdn.com/w40/kr.png" width="20" height="15" alt="">한국어</a>
-    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru"><img src="https://flagcdn.com/w40/ru.png" width="20" height="15" alt="">Русский</a>
-    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="20" height="15" alt="">العربية</a>
-    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi"><img src="https://flagcdn.com/w40/in.png" width="20" height="15" alt="">हिंदी</a>
+    <a href="/physics/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
   </div>
 </nav>
 
@@ -518,7 +527,7 @@ table.data tr:last-child td{border-bottom:none}
       <tr><td class="claim">Age of the universe, one cycle</td><td>13.830 Gyr</td><td>13.787 ± 0.020 Gyr</td><td>+2.1σ</td><td>+0.31% · window 13.17–14.49</td><td><a href="/proofs/#ap46" onclick="event.preventDefault();window.location.href='/proofs/#ap46'">AP46</a></td></tr>
       <tr class="grp-label"><td colspan="6">The expansion rate, and what follows from it</td></tr>
       <tr><td class="claim">Expansion rate H₀, the closure</td><td>67.45 km/s/Mpc</td><td>67.4 ± 0.5 (Planck)</td><td>+0.1σ</td><td>+0.07% · window 64.4–70.8</td><td><a href="/proofs/#ap48" onclick="event.preventDefault();window.location.href='/proofs/#ap48'">AP48</a></td></tr>
-      <tr><td class="claim">Hubble constant from the floor inverted</td><td>74.3 ± 1.2</td><td>67.45 (the corpus’s own rate)</td><td>+5.7σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">FIRED</span></td><td>+10.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
+      <tr><td class="claim">Hubble constant from the floor inverted</td><td>74.3 ± 1.2</td><td>67.45 (the work’s own rate)</td><td>+5.7σ · <span style="display:inline-block;background:#8B1A1A;color:#fff;font-size:16px;font-weight:700;letter-spacing:.04em;padding:1px 7px;border-radius:2px;vertical-align:middle">FIRED</span></td><td>+10.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
       <tr><td class="claim">MOND acceleration a₀ (at H₀ = 67.45)</td><td>1.089 × 10⁻¹⁰</td><td>1.20 ± 0.24 × 10⁻¹⁰ (syst.)</td><td>−0.46σ</td><td>−9.2%</td><td><a href="/proofs/#ap18" onclick="event.preventDefault();window.location.href='/proofs/#ap18'">AP18</a></td></tr>
       <tr class="grp-label"><td colspan="6">What the universe is made of</td></tr>
       <tr><td class="claim">Dark energy</td><td>68.85%</td><td>68.89 ± 0.56%</td><td>−0.07σ</td><td>−0.06%</td><td><a href="/proofs/#ap42" onclick="event.preventDefault();window.location.href='/proofs/#ap42'">AP42</a></td></tr>
@@ -526,19 +535,19 @@ table.data tr:last-child td{border-bottom:none}
       <tr><td class="claim">Visible matter</td><td>4.76%</td><td>≈ 4.885 ± 0.05%</td><td>−2.46σ</td><td>−2.5%</td><td><a href="/proofs/#ap41" onclick="event.preventDefault();window.location.href='/proofs/#ap41'">AP41</a></td></tr>
     </tbody>
   </table></div>
-  <div class="physics-folds"><div class="ap-row fold-row" id="physics-how-to-read"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">How to read the σ column</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="sigma-note" style="font-size:16px;color:var(--g5);margin:0;line-height:1.6"><p style="margin:0 0 .5rem"><b>How to read the σ column.</b> Every measurement comes with a bar: one standard deviation, σ, the experimenters’ own statement of how far their number might sit from the truth. The σ column divides the gap between prediction and measurement by that bar. The sign says which side: + above the measurement, − below. The Error column gives the same gap in the number’s own units. The odds below are the chance of landing <i>at least</i> that far from the truth by chance alone, counting both directions.</p>
+  <div class="physics-folds"><div class="ap-row fold-row" id="physics-how-to-read"><div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">How to read the σ column</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="sigma-note" style="font-size:16px;color:var(--g5);margin:0;line-height:1.6"><p style="margin:0 0 .5rem"><b>How to read the σ column.</b> Every measurement comes with a bar: one standard deviation, σ, the experimenters’ own statement of how far their number might sit from the truth. The σ column divides the gap between prediction and measurement by that bar. The sign says which side: + above the measurement, − below. The Error column gives the same gap in the number’s own units. The odds below are the chance of landing <i>at least</i> that far from the truth by chance alone, counting both directions.</p>
     <ul style="margin:0 0 .5rem 1.25rem;padding:0">
       <li><b>Under 1σ</b> — inside the bar. Agreement: about two honest measurements in three land this close, and one in three lands further out by chance alone.</li>
       <li><b>2σ</b> — tension. One in twenty-two. Worth watching, not yet a verdict.</li>
       <li><b>3σ</b> — evidence of a real gap. One in 370.</li>
       <li><b>5σ</b> — the discovery standard of particle physics. One in 1.7 million (one in 3.5 million if only one direction counts, as the discovery convention usually reads it). Each switch names its kill threshold in advance. Past it, the row is dead by the work’s own rule.</li>
       <li><b>Above 5σ</b> — dead. The two corpses on this page sit at 7.24σ and 5.7σ. They are shown, never repaired.</li>
-    </ul></div></div></div><div class="ap-row fold-row" id="physics-three-caveats"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Three caveats</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="sigma-note" style="font-size:16px;color:var(--g5);margin:0;line-height:1.6"><p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both rows are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA row reads dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. There is one value of G. AP28’s first reading, +0.69%, was wrong: it omitted the arena’s holding of the break, which AP44 priced. It is withdrawn, superseded by the realised value on the author’s ruling of 21 September 2026, and kept on the record, dated (<a href="/prereg/doc/2026-09-04-G-KS-CCC.3-NOTE-2026-09-21.html">the dated note</a>). The neutron’s fired row exposed the omission, and its consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p></div></div></div><div class="ap-row fold-row" id="physics-two-failed"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title" style="color:#8B1A1A">Two predictions have failed and are shown</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p style="font-size:16px;color:#8B1A1A;margin:0">Two predictions have failed and are shown. KS-NPP.1, the bare neutron–proton row, fired on 2026-08-02 at 7.24σ. KS-45.1, the Hubble constant 74.3 ± 1.2 from the floor inverted, fired on 2026-09-03 on the corpus’s own derived rate. Neither is repaired. See the <a href="/prereg/">pre-registration</a>.</p></div></div><div class="ap-row fold-row" id="physics-baryon-density"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The baryon density — shown the day it was found</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="dated" style="margin:0"><b>Dated note, 21 September 2026 — the baryon density.</b> The visible share and the expansion rate are two rows of this table, and together they fix a third number: the density of ordinary matter, Ω<sub>b</sub>h². The work’s 1/21 at its own H₀, 67.45, gives 0.02166. Planck measures 0.02237 ± 0.00015 from the relic glow, and 0.02242 ± 0.00014 with the galaxy surveys added: the work sits 4.7σ and 5.4σ below. That is the sharpest test the visible share faces — sharper than the −2.46σ in its own row, because Planck measures Ω<sub>b</sub>h² more tightly than it measures Ω<sub>b</sub>. At an expansion rate of 68.5, inside the closure’s registered window of 64.4–70.8, the gap closes. It was not registered as a switch. It is shown here, at its true size, the day it was found, and it is not answered yet.</div></div></div><div class="ap-row fold-row" id="physics-one-relation"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">One relation links a₀ and H₀</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p style="font-size:16px;color:var(--g4);margin:0;font-style:italic">One relation links a₀ and H₀ with a parameter-free coefficient — not two independent predictions. The corpus’s expansion rate is now AP48’s closure, 67.45 km/s/Mpc (window 64.4–70.8), on the relic glow’s side of the Hubble tension; at that rate the floor sits 9.2% below the measured scale — 0.46σ once the ±0.24 systematic the paper had omitted is restored. The floor’s earlier inversion, H₀ = 74.3 ± 1.2 (KS-45.1), fired on 2026-09-03 on the corpus’s own rate and is shown as a corpse, never repaired. The Cepheid ladder’s 73 is stated as not the expansion rate; if it is confirmed, AP48 dies on KS-ASM.1.</p></div></div><div class="ap-row fold-row" id="physics-equations"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The equations</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p class="formula">m<sub>p</sub>/m<sub>e</sub> = 21² × 4 + 21 × 3 + 3² + α × 21 × (1 − 1/(84π)) + 21α × r/(1 − r), &nbsp; r = 16α/1836</p>
+    </ul></div></div></div><div class="ap-row fold-row" id="physics-three-caveats"><div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">Three caveats</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="sigma-note" style="font-size:16px;color:var(--g5);margin:0;line-height:1.6"><p style="margin:0">Three caveats, because σ is measured against the experiment’s bar and the bar is not the same for every number. <b>G:</b> the same realised value reads −16σ against CODATA and +0.01σ against atom interferometry, and both rows are in the table so the reader can see the issue. CODATA’s bar on G is 22 parts per million, so a 360-ppm gap reads 16σ; the laboratory measurements of G disagree with one another by up to 540 ppm, twenty-five such bars, and the atom-interferometry value (LENS 2014, 6.67191 ± 0.00099 × 10⁻¹¹) sits 1 ppm from the realised value. A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature. On the scale above the CODATA row reads dead; the switch on G, KS-CCC.3, was registered to test direction — whether the consensus migrates down toward 6.672 as systematics close, within AP28’s one-per-cent bar — not magnitude against CODATA, and it stays live on those terms. There is one value of G. AP28’s first reading, +0.69%, was wrong: it omitted the arena’s holding of the break, which AP44 priced. It is withdrawn, superseded by the realised value on the author’s ruling of 21 September 2026, and kept on the record, dated (<a href="/prereg/doc/2026-09-04-G-KS-CCC.3-NOTE-2026-09-21.html">the dated note</a>). The neutron’s fired row exposed the omission, and its consequences reached three derivations, revised at the wave (AP44, AP47, AP48). <b>The age:</b> +2.1σ on Planck’s bar, but the claim was registered one lane-time wide, ±0.66 Gyr, because an aware observer measures <i>about</i> one cycle. <b>The switches</b> fire on their registered conditions, not on 5σ by default: KS-45.1 registered ±1.2 and fired at 5.7σ on that width; on the honest ±14.9 it would have read 0.46σ. The registration was the error, and a fired switch is not repaired.</p></div></div></div><div class="ap-row fold-row" id="physics-two-failed"><div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title" style="color:#8B1A1A">Two predictions have failed and are shown</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p style="font-size:16px;color:#8B1A1A;margin:0">Two predictions have failed and are shown. KS-NPP.1, the bare neutron–proton row, fired on 2026-08-02 at 7.24σ. KS-45.1, the Hubble constant 74.3 ± 1.2 from the floor inverted, fired on 2026-09-03 on the work’s own derived rate. Neither is repaired. See the <a href="/prereg/">pre-registration</a>.</p></div></div><div class="ap-row fold-row" id="physics-baryon-density"><div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">The baryon density — shown the day it was found</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><div class="dated" style="margin:0"><b>Dated note, 21 September 2026 — the baryon density.</b> The visible share and the expansion rate are two rows of this table, and together they fix a third number: the density of ordinary matter, Ω<sub>b</sub>h². The work’s 1/21 at its own H₀, 67.45, gives 0.02166. Planck measures 0.02237 ± 0.00015 from the relic glow, and 0.02242 ± 0.00014 with the galaxy surveys added: the work sits 4.7σ and 5.4σ below. That is the sharpest test the visible share faces — sharper than the −2.46σ in its own row, because Planck measures Ω<sub>b</sub>h² more tightly than it measures Ω<sub>b</sub>. At an expansion rate of 68.5, inside the closure’s registered window of 64.4–70.8, the gap closes. It was not registered as a switch. It is shown here, at its true size, the day it was found, and it is not answered yet.</div></div></div><div class="ap-row fold-row" id="physics-one-relation"><div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">One relation links a₀ and H₀</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p style="font-size:16px;color:var(--g4);margin:0;font-style:italic">One relation links a₀ and H₀ with a parameter-free coefficient — not two independent predictions. The work’s expansion rate is now AP48’s closure, 67.45 km/s/Mpc (window 64.4–70.8), on the relic glow’s side of the Hubble tension; at that rate the floor sits 9.2% below the measured scale — 0.46σ once the ±0.24 systematic the paper had omitted is restored. The floor’s earlier inversion, H₀ = 74.3 ± 1.2 (KS-45.1), fired on 2026-09-03 on the work’s own rate and is shown as a corpse, never repaired. The Cepheid ladder’s 73 is stated as not the expansion rate; if it is confirmed, AP48 dies on KS-ASM.1.</p></div></div><div class="ap-row fold-row" id="kill-next"><div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">What would kill it next — and when</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p style="font-size:16px;margin:0 0 .8rem">The proton. The count meets the measurement at ten parts in a trillion. When the laboratories tighten their bar to 3.4 parts in a trillion with the central value unchanged — expected within three to five years — the row dies at three sigma. Frozen as mp-me-closed.</p><p style="font-size:16px;margin:0 0 .8rem">Gravity. The realised value sits three hundred parts per million below the adopted average. If the adopted value settles upward as the laboratories’ systematics close, the prediction of G dies outright, with no fallback. <a href="/killswitches/#ks-ccc-3">KS-CCC.3</a>.</p><p style="font-size:16px;margin:0 0 .8rem">The expansion rate. The closure took a side in the Hubble tension. If the rate, as the data settle it, lands outside 64.4–70.8 either way, the closure dies. <a href="/killswitches/#ks-asm-1">KS-ASM.1</a>.</p><p style="font-size:16px;margin:0 0 .8rem">The visible share. Nearest to firing. If the visible fraction settles above 4.81% at better than half a per cent precision — expected within about five years — the row dies. <a href="/killswitches/#ks-41-1">KS-41.1</a>.</p><p style="font-size:16px;margin:0 0 .8rem">The one interior. If the fine-structure constant is shown to vary by place or age, at the discovery standard, by two independent methods, the strongest claim in the work dies. <a href="/killswitches/#ks-glass-3">KS-GLASS.3</a>.</p><p style="font-size:16px;margin:0 0 .8rem">Every one of these was frozen with a date, in public, before the measurement. The full register, with every document and script: <a href="/prereg/">Ø Frozen Predictions</a>.</p></div></div><div class="ap-row fold-row" id="physics-equations"><div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">The equations</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p class="formula">m<sub>p</sub>/m<sub>e</sub> = 21² × 4 + 21 × 3 + 3² + α × 21 × (1 − 1/(84π)) + 21α × r/(1 − r), &nbsp; r = 16α/1836</p>
   <p class="formula">G = α<sup>21</sup> × (1 + 1/π) / (1 + α) × ℏc/m<sub>e</sub>²   — AP44; without the /(1 + α), AP28’s first reading, withdrawn</p>
   <p class="formula">Δ<sub>n−p</sub> = [3(1 − 1/2π) + α(1 + 1/2π)] / (1 + α²/8π) = 2.53098857 m<sub>e</sub>   (AP47)</p>
   <p class="formula">t<sub>cycle</sub> = (21/18) · α<sup>−18</sup> · ℏ/(m<sub>e</sub>c²) = 13.830 Gyr;   H₀ = 0.954 / t<sub>cycle</sub> = 67.45 km/s/Mpc   (AP46, AP48)</p>
   <p class="formula">a₀ = C_S² · c · H₀ / (2π)   where C_S² = 2 ln(sec ½ + tan ½) ≈ 1.0445 — not the fine-structure constant</p>
-  </div></div><div class="ap-row fold-row" id="physics-integer"><div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The integer sixteen — and why twenty-one cannot move</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p class="p-detail">The integer 16 in the α² term was pinned by measurement — 336 = 21 × 16, a 0.33 % constraint — and its structural decomposition was paid by AP49 The Hold on 6 September 2026. The frozen pre-registration, including the conditions under which the proton result dies, is at <a href="/prereg/">/prereg/</a>. The twenty-one is a count, not a fit: <a href="/method/">every step of the count</a>, and <a href="/prereg/#numerology">why 21 cannot move</a> — one step in the integer changes G by a factor of 137.</p></div></div></div>
+  </div></div><div class="ap-row fold-row" id="physics-integer"><div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">The integer sixteen — and why twenty-one cannot move</span><span class="ap-arrow">▸</span></div><div class="ap-detail"><p class="p-detail">The integer 16 in the α² term was pinned by measurement — 336 = 21 × 16, a 0.33 % constraint — and its structural decomposition was paid by AP49 The Hold on 6 September 2026. The frozen pre-registration, including the conditions under which the proton result dies, is at <a href="/prereg/">/prereg/</a>. The twenty-one is a count, not a fit: <a href="/method/">every step of the count</a>, and <a href="/prereg/#numerology">why 21 cannot move</a> — one step in the integer changes G by a factor of 137.</p></div></div></div>
   <p class="three-constants" style="margin-bottom:0">Three constants, three conditions: c ↔ Constraint · ℏ ↔ Break · G ↔ Record</p>
 </div>
 
@@ -548,7 +557,7 @@ table.data tr:last-child td{border-bottom:none}
   <p class="also-lead">Nine more, from the same four conditions. Open one: what it is, what physics does with it, how it comes out here, what is still owed, and what would kill it.</p>
   <div class="also-rows">
 <div class="ap-row" id="also-n-3-spatial-dimensions">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">N = 3 spatial dimensions</span><span class="ap-tag">the four conditions</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">N = 3 spatial dimensions</span><span class="ap-tag">the four conditions</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From the four conditions.</b> Up and down, left and right, forward and back. You have never been anywhere else. Not two directions. Not four. Three. And the three carries weight. The twenty-one is six readings held in each of the three directions, plus the now once in each (AP28, AP50). Move the three and the twenty-one moves with it.</p>
 <p>Physics measures three and builds on it. It has asked why. In 1917 Paul Ehrenfest showed that with a fourth, planets could not hold their orbits. That says three works. It does not say where three comes from. No accepted theory derives the number.</p>
@@ -559,7 +568,7 @@ table.data tr:last-child td{border-bottom:none}
 </div>
 </div>
 <div class="ap-row" id="also-einsteins-field-equations">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Einstein’s field equations</span><span class="ap-tag">Record and Constraint</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">Einstein’s field equations</span><span class="ap-tag">Record and Constraint</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From Record and Constraint.</b> What has landed holds, and it holds somewhere. So the landscape — every grain that has already landed — bends where the next grain can fall. That bending is gravity, and Einstein’s equations are its mathematics: the equations behind GPS and black holes. A clock on a GPS satellite ticks faster than the one on your wrist.</p>
 <p>Physics has tested the equations for a century. They pass. And it has a theorem for their shape. In 1971 and 1972 the mathematician David Lovelock proved that in three directions of space and one of time, only one equation of this kind keeps a short list of rules. Einstein’s, with room for one spare constant. The theorem is pure mathematics. The rules and the four dimensions go in. It does not say where they come from.</p>
@@ -570,18 +579,18 @@ table.data tr:last-child td{border-bottom:none}
 </div>
 </div>
 <div class="ap-row" id="also-the-born-rule">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The Born rule</span><span class="ap-tag">one record, many windows</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">The Born rule</span><span class="ap-tag">one record, many windows</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From one record, read at many windows.</b> In quantum mechanics you do not get the odds of an outcome directly. You get a number that points, like the hand of a clock. The odds are its length, squared. Not the length. Not the cube. The square. That is the Born rule, and every quantum experiment is read through it.</p>
 <p>Max Born wrote it down in 1926. It has never failed. Most textbooks still give it as a postulate — a rule to start from, not a result. But physics has reasons. In 1957 Andrew Gleason proved that wherever a question has three or more answers that exclude each other — if an outcome’s odds do not depend on what else is asked beside it, and the odds of exclusive outcomes add up — the square is the only rule left. Later routes, from decision theory and symmetry, each start from something assumed. AP25 builds on Gleason.</p>
-<p>Here it is derived. Gleason’s conditions come from the conditions of a record. A record is definite — this, not that. A mixed state, only a list of odds over other states, splits into such lists in endless ways and says no one thing. So a record is written from one pure state. That is Record. One break writes one record, and it holds two things: the state and the outcome. Every window reads through its own set of questions. The set is the window’s, not the record’s. It is not an event. So the odds cannot depend on it. That is Break and Record. And one break gives one outcome, so the odds of this or that are the two added. That is Symmetry, Break and Record together. Gleason’s theorem does the rest. The strangest rule in physics is what agreement between windows looks like.</p>
+<p>Here it is derived. Gleason’s conditions come from the conditions of a record. A record is definite — this, not that. A mixed state, only a list of odds over other states, splits into such lists in endless ways and says no one thing. So a record is written from one pure state. That is Record. One crossing writes one record, and it holds two things: the state and the outcome. Every window reads through its own set of questions. The set is the window’s, not the record’s. It is not an event. So the odds cannot depend on it. That is Break and Record. And one crossing gives one outcome, so the odds of this or that are the two added. That is Symmetry, Break and Record together. Gleason’s theorem does the rest. The strangest rule in physics is what agreement between windows looks like.</p>
 <p>Derived, with one outside input, and it is mathematics: Gleason’s theorem. With only two answers, nothing locks the odds, and other rules fit. That is not the three of space. A particle can be in endless places, so its full space has endless dimensions. A two-answer spin inherits the rule from it. The quantum space comes from AP09, and the step that builds it is still live: <a href="/killswitches/#ks-q-7">KS-Q.7</a>. “The record holds two things” leans on the four conditions being complete. That proof is still owed. Its switch says so: <a href="/killswitches/#ks-p-1">KS-P.1</a>.</p>
 <p>It dies if an outcome’s odds change with what is asked beside it, beyond what quantum mechanics predicts: KS-55. It dies if any system breaks the square: KS-56. It dies if a record is written from a mixed state: KS-57. The contextuality already measured is something else — answers held before the asking, which Record denies anyway. All three are live.</p>
 <p class="src">Proved in: <a href="/proofs/#ap25">AP25</a> The Measure. Kill switches: <a href="/killswitches/#ks-55">KS-55</a>, <a href="/killswitches/#ks-56">KS-56</a>, <a href="/killswitches/#ks-57">KS-57</a>.</p>
 </div>
 </div>
 <div class="ap-row" id="also-standard-model-gauge-group-su-3-su-2-u-1">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Standard Model gauge group SU(3) × SU(2) × U(1)</span><span class="ap-tag">the Break</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">Standard Model gauge group SU(3) × SU(2) × U(1)</span><span class="ap-tag">the Break</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From the Break.</b> Electromagnetism runs electricity, magnets and light. The strong force holds the middle of an atom together. The weak force lets a star burn. Physics measured how each one works and never explained why.</p>
 <p>It has the rule behind all three. A gauge group is a freedom to relabel something without changing anything you can measure. Where the label can change from place to place, something must keep neighbours in step. That something is a force (Weyl, 1929; Yang and Mills, 1954). U(1) turns one dial, and SU(2) turns a pair. Together they give the weak force and light, which part when the symmetry breaks. SU(3) turns three, called colours: the strong force. The Standard Model writes SU(3) × SU(2) × U(1) and takes it as given. It never says why these three.</p>
@@ -592,7 +601,7 @@ table.data tr:last-child td{border-bottom:none}
 </div>
 </div>
 <div class="ap-row" id="also-chiral-coupling-unexplained-since-1956-now-derived">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Chiral coupling — unexplained since 1956, argued at the structural register</span><span class="ap-tag">the Break</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">Chiral coupling — unexplained since 1956, argued at the structural register</span><span class="ap-tag">the Break</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From the Break.</b> The weak force works one way round and not the other. Your hands are mirror images, and a left glove will not fit the right. Physics long believed nature could not tell them apart: whatever happens, its mirror image could happen too. That mirror rule is called parity. Light keeps it. The strong force keeps it. The weak force does not.</p>
 <p>In 1956 Tsung-Dao Lee and Chen-Ning Yang saw that nobody had ever tested it in the weak force. Chien-Shiung Wu and her team ran the test over the turn of 1956 into 1957. They chilled cobalt-60 almost to absolute zero, lined up its nuclei and counted the electrons thrown off. More went one way than the other. In a mirror, the count reverses. Nature can tell left from right. The part of the weak force that turns one particle into another touches only left-handed particles and right-handed antiparticles. For a particle near light speed, left-handed means spinning one way about its direction of travel. Every neutrino ever caught is left-handed. The Standard Model writes this in by hand. It has never said why.</p>
@@ -603,7 +612,7 @@ table.data tr:last-child td{border-bottom:none}
 </div>
 </div>
 <div class="ap-row" id="also-flat-rotation-curves-without-dark-matter-particles">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Flat rotation curves without dark matter particles</span><span class="ap-tag">the flow, −α</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">Flat rotation curves without dark matter particles</span><span class="ap-tag">the flow, −α</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From the flow — the inward half of it.</b> In a galaxy the outer stars go round about as fast as those further in, when by Kepler they should be much slower. Add up everything you can see, and there is not enough pull to hold them. They should fly off. They do not. Vera Rubin and Kent Ford measured it in the 1970s.</p>
 <p>Physics fixes this with dark matter: a new kind of matter, never found. The ripples in the Big Bang’s afterglow fit the standard picture only with it. Clusters of galaxies bend light more than their visible mass can. In the Bullet Cluster, after a collision, the bending follows the galaxies, not the hot gas that holds most of the ordinary mass. In 1983 Mordehai Milgrom proposed that the extra pull switches on below one small acceleration, a₀. He read it off the data.</p>
@@ -614,7 +623,7 @@ table.data tr:last-child td{border-bottom:none}
 </div>
 </div>
 <div class="ap-row" id="also-bell-inequality-s-2-2-from-structure">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Bell’s test, and the quantum ceiling S = 2√2</span><span class="ap-tag">the Break, at the now</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">Bell’s test, and the quantum ceiling S = 2√2</span><span class="ap-tag">the Break, at the now</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From the Break, at the now.</b> Two particles made together, in one state, sent to opposite ends of the world. Measure one, and the other answers it. Along the same direction, always the opposite: one up, one down, like the two halves of a broken plate. At an angle, only partly — by an amount the angle sets. Einstein called it spooky. Here it is not.</p>
 <p>In 1964 John Bell found a test. If each particle carried its answers from the start, and nothing passed between them, a score called S could never pass 2. That is Bell’s line, in the form experiments use: the CHSH inequality of 1969. Quantum mechanics goes past it, to 2√2, about 2.83, and no further. That ceiling is not Bell’s. Boris Tsirelson proved it in 1980. Stuart Freedman and John Clauser saw the line crossed in 1972. Alain Aspect crossed it in 1982, changing the settings while the particles flew. The tests of 2015 closed the two main loopholes at once. None has gone above 2√2. The 2022 Nobel Prize in physics went to this work.</p>
@@ -625,7 +634,7 @@ table.data tr:last-child td{border-bottom:none}
 </div>
 </div>
 <div class="ap-row" id="also-special-relativitys-kinematics-and-the-sign-of-the-signature">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">Special relativity’s kinematics, and the sign of the signature</span><span class="ap-tag">Constraint and Record, through the windows</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">Special relativity’s kinematics, and the sign of the signature</span><span class="ap-tag">Constraint and Record, through the windows</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From Constraint and Record, read through the windows.</b> Nothing can go faster than light, and the faster a clock travels, the slower it ticks. Cosmic rays make particles high in the air that should mostly die before reaching the ground. They arrive. In our reading, their clocks run slow.</p>
 <p>Einstein built special relativity in 1905 on two rules taken as given. From 1910, Ignatowsky and others showed plainer starting points do most of the work: no observer special, space and time alike everywhere, space alike in every direction, views that combine consistently. They leave three possible worlds. Galileo’s, with no top speed. One where time turns into space, like a map being turned. And Einstein’s. Measurement picks Einstein’s. The turning world is ruled out by one more demand: a cause comes before its effect.</p>
@@ -636,7 +645,7 @@ table.data tr:last-child td{border-bottom:none}
 </div>
 </div>
 <div class="ap-row" id="also-the-equivalence-principle-and-the-landscapes-curvature">
-<div class="ap-header" onclick="toggleAP(this.parentNode)"><span class="ap-title">The equivalence principle and the landscape’s curvature</span><span class="ap-tag">the neck</span><span class="ap-arrow">▸</span></div>
+<div class="ap-header" onclick="toggleAP(this.parentNode)" tabindex="0" role="button" aria-expanded="false"><span class="ap-title">The equivalence principle and the landscape’s curvature</span><span class="ap-tag">the neck</span><span class="ap-arrow">▸</span></div>
 <div class="ap-detail">
 <p><b class="hl">From the neck.</b> Gravity is the neck. Cut the cable of a lift and you float. Inside, falling and floating in empty space feel the same. Stand on the floor and it pushes. Inside, a pile pulling you down and a rocket pushing you up feel the same. Those are the two halves of what Einstein called the equivalence principle. And everything falls alike: on the Moon in 1971, a hammer and a feather, dropped together, landed together. Einstein built general relativity on it as a postulate: assumed, then tested — now to about one part in a thousand trillion.</p>
 <p>The neck is the waist of the hourglass, where a grain passes from what could happen to what has happened. Gravity depends on all twenty-one of its gates at once. It is not a force that moves things. It keeps them in place. Gravity keeps the whole pile from sliding. Weight is that keeping, felt against the resistance you are made of.</p>
@@ -859,6 +868,47 @@ document.addEventListener('keydown',function(e){
     else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
   });
   document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+
+<script id="kbd-open">
+// 24 September 2026, the brief's 6.4. Every header that opens a row is a button: reachable by tab,
+// named as a button, and saying whether its row is open. Enter and Space fire the page's own click,
+// so the opening itself stays where it was written.
+(function(){
+  var SEL='.ap-header[role="button"],.fd-hook[role="button"],.part-header[role="button"]';
+  function isOpen(el){
+    if(el.classList.contains('part-header')){
+      var n=el.nextElementSibling; return !!(n&&!n.classList.contains('collapsed'));
+    }
+    var r=el.closest('.ap-row'); return !!(r&&r.classList.contains('open'));
+  }
+  var findable=('onbeforematch' in document.documentElement);
+  function sync(){
+    document.querySelectorAll(SEL).forEach(function(el){
+      el.setAttribute('aria-expanded',isOpen(el)?'true':'false');
+    });
+    if(!findable)return;
+    document.querySelectorAll('.ap-row > .ap-detail').forEach(function(d){
+      var r=d.parentElement;
+      if(r.classList.contains('open')) d.removeAttribute('hidden');
+      else d.setAttribute('hidden','until-found');
+    });
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Enter'&&e.key!==' '&&e.key!=='Spacebar')return;
+    var el=e.target.closest&&e.target.closest(SEL); if(!el)return;
+    if(e.target.closest('a')||e.target.closest('button')||e.target.closest('input'))return;
+    e.preventDefault(); el.click();
+  });
+  document.addEventListener('click',function(){setTimeout(sync,0)});
+  window.addEventListener('hashchange',function(){setTimeout(sync,0)});
+  document.addEventListener('beforematch',function(e){
+    var r=e.target&&e.target.closest&&e.target.closest('.ap-row');
+    while(r){r.classList.add('open');r=r.parentElement&&r.parentElement.closest('.ap-row')}
+    setTimeout(sync,0);
+  });
+  sync();
 })();
 </script>
 </body></html>

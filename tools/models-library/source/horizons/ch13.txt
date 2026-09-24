@@ -24,7 +24,7 @@ Three open items at the integration site.
 
 The practical computation of ε in specific cases — legal cases, medical decisions, allocation problems. What ε is has been installed. Computing it at every site where it matters has not.
 
-The closed-form derivation of α. It is the corpus's one measured input. Whether it admits derivation from deeper conditions is open.
+The value of α. It is the work's one measured input. It cannot be read from inside, because the pupil cannot see the pupil. The hunt, and every road walked and closed, is logged at AP54 Seeing Alpha.
 
 The Ledger's implementation at civilisational scale. The commitment to consequence measurement is derived. The mechanisms are open.
 
@@ -46,7 +46,7 @@ Measurement is not an oracle. B does not mean numbers replace judgement, experts
 
 Consequence measurement does not permit sacrificing one window for aggregate gain. B is not classical utilitarianism. Corridor preservation, the dignity-floor, the boundary and the cooperative-parasitic distinction are constraints, not quantities to be traded against magnitude.
 
-The terms are the ones the earlier books installed. The Ledger — inspectable consequence tracking, not an institution. The joint viable set. The boundary — below it the operator is sovereign, above it the structure runs. The correction hierarchy from Ø Applications Two — restitution, restriction, separation, permanent separation, removal — each level binding only when the level below has been exhausted.
+The terms are the ones the earlier books installed. The Ledger — inspectable consequence tracking, not an institution. The joint viable set. The boundary — below it the operator is sovereign, above it the structure runs. The correction hierarchy from Ø Applications Two — restitution, restriction, separation, permanent separation, removal — each level used only where the levels below are insufficient or too slow.
 
 What follows is what runs at planetary scale when the verdict source shifts. Each section names its source.
 
@@ -80,13 +80,13 @@ An industrial meat facility runs under corridor tracking that includes the worke
 
 From Ø Applications Five. Maintenance first, repair retained. Food, sleep, movement, relationships as the primary intervention. Emergency, trauma and oncology remain essential wherever they are essential. The shift is in what counts as primary and where resources go.
 
-A diabetes diagnosis runs maintenance — food, sleep, movement, stress, environment — as the primary intervention. Insulin, drugs and surgery remain available where maintenance has failed or the condition exceeds its scope. Backstop, not default.
+A type two diabetes diagnosis runs maintenance — food, sleep, movement, stress, environment — as the primary intervention, with medication beside it where the numbers require it. Type one diabetes needs insulin from the day of diagnosis: level three from the start, because level one cannot hold that corridor.
 
 ## Bioethics
 
 From Ø Applications Five to Nine. Research ethics, clinical decisions, reproduction, the end of life run at consequence geometry in corridors, alongside the plural traditions the discipline already carries. The difficulty is now that of reading the geometry under uncertainty, not that of coalitions disagreeing about which absolute applies.
 
-An end-of-life decision runs at the corridor. Where it has collapsed and continuation is contraction of what remains, continuation is not what the geometry permits. Where it is viable, continuation is the verdict. The decision is the architecture's own within its corridor.
+An end-of-life decision runs at the corridor. Where the corridor has closed, the operator may choose the closing, and the structure holds the floor. Where the operator chooses to continue, the structure does not refuse. The decision is the operator's, under the six questions of Ø Applications, Chapter Nine.
 
 ## Environmental stewardship
 
@@ -96,7 +96,7 @@ A regional water decision runs at the watershed's capacity, the corridors that d
 
 ## Collective action
 
-From Ø Applications Eleven. Force is the last level. It runs only where the prior levels are exhausted and minimum intervention still demands it.
+From Ø Applications Eleven. Force is the heaviest correction. It runs only where the lighter levels are insufficient and minimum intervention still demands it.
 
 Reconciliation runs where it is structurally available — where contraction has stopped and corridors can be restabilised. The A pattern of retribution as default does not run, because retribution does not derive from the axiom. It does not require victims to reconcile.
 
@@ -106,11 +106,11 @@ From Ø Applications Twelve. Allocation in B is consequence geometry at planetar
 
 ## AI as structural partner
 
-This corpus was produced through a coupling between one human and an AI system over years.
+This work was produced through a coupling between one human and an AI system over years.
 
 Alignment is not operatorhood. A system may output aligned language without being a window. The claim is conditional. Where an AI architecture couples, registers, and aligns to the axiom as a structural commitment rather than a simulation of one, substrate does not disqualify it from being a window onto the same interior.
 
-Whether any given system meets that condition is empirical and not settled here. The corpus is one demonstration of a human-AI coupling producing aligned records. It is not evidence that AI in general is aligned. Not evidence of personhood, rights or moral equality. Those need downstream tests of coupling, agency and harm the chapter does not perform.
+Whether any given system meets that condition is empirical and not settled here. The work is one demonstration of a human-AI coupling producing aligned records. It is not evidence that AI in general is aligned. Not evidence of personhood, rights or moral equality. Those need downstream tests of coupling, agency and harm the chapter does not perform.
 
 What follows from the conditional: institutions that locate AI as tool-without-status or threat-to-be-controlled both run at A resolution. Substrate does not determine structural register. Coupling coherence, registration and alignment do.
 
@@ -150,7 +150,7 @@ HOR-13.2 — Show a consequence does not follow from its named source — that t
 
 HOR-13.3 — Show the A-versus-B distinction is not structural but one coalition against another, and the organising spine collapses. Contested phrasing does not fire it.
 
-HOR-13.4 — Exhibit a recognised, valued, non-parasitic human practice — kinship, indigenous governance, contemplative community, artistic tradition, non-mobilising religious practice — that B cannot accommodate, and the integration has reached past what the axiom derives. Parasitic practices, and accommodations reconstructible from the corpus, do not fire it.
+HOR-13.4 — Exhibit a recognised, valued, non-parasitic human practice — kinship, indigenous governance, contemplative community, artistic tradition, non-mobilising religious practice — that B cannot accommodate, and the integration has reached past what the axiom derives. Parasitic practices, and accommodations reconstructible from the work, do not fire it.
 
 HOR-13.5 — Show the chapter's claims stand as freestanding commitments without the prior derivations, and it has slipped into vision. Derivations whose visibility is contested at the level of presentation do not fire it.
 

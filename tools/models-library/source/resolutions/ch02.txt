@@ -108,7 +108,7 @@ Put more jars on the table. Each is a site where a grain may or may not have fal
 
 A set is a collection of distinguishable records, and is itself a record of which records belong together. Counting pairs the members with the numbers — one grain beside the first jar, two beside the second, until the laying-out stops. It works because S makes each member distinguishable and R makes the laying-out persist.
 
-Zero is the unbroken state inside a domain available for counting — not Ø, the pre-state before any configuration. One is one recorded break. n is n recorded breaks under a successor policy. The Peano axioms are that iteration written down. The transfinite is a policy above the floor.
+Zero is the unbroken state inside a domain available for counting — not Ø, the pre-state before any configuration. One is one recorded crossing. n is n recorded crossings under a successor policy. The break is one; each grain that crosses the neck writes one record. The Peano axioms are that iteration written down. The transfinite is a policy above the floor.
 
 ## The ship, the wake, the ocean
 

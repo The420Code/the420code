@@ -33,7 +33,7 @@ _i = _door.index('  <div class="nav-menu">')
 ROOMS_MENU = _door[_i:_door.index('  </div>', _i) + len('  </div>')]
 assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 17, 'the front door\'s rooms block'
 BOOKS = [
-    dict(slug='illusion', src='illusion', title='The Illusion of the Other', door='the gentle door',
+    dict(slug='illusion', src='illusion', title='The Illusion of the Other', short='Illusion', door='the gentle door',
          pdf=None, original='/Illusion_of_the_Other.pdf', edition=None, epilogue_file=None),
     dict(slug='being-after-religion', src='bar', title='Being After Religion', door='the front door',
          pdf='/five-doors/being-after-religion.pdf', original='/Being_After_Religion.pdf', edition='v1.1'),
@@ -83,7 +83,55 @@ def ks_anchor(sid):
 def ks_registry_form(sid):
     return sid
 
+def blurb(parts, lo=120, hi=155):
+    """A page's own first lines, between 120 and 155 characters: enough for a search result to say
+    what the page is, never cut in the middle of a word."""
+    out = ''
+    for p in parts:
+        for s in re.split(r'(?<=[.!?])\s+', (p or '').strip()):
+            s = ' '.join(s.split())
+            if not s:
+                continue
+            if s in out:
+                continue          # the one line is often the opening's first sentence
+            cand = (out + ' ' + s).strip()
+            if len(cand) <= hi:
+                out = cand
+                if len(out) >= lo:
+                    return out
+                continue
+            if len(out) >= lo:
+                return out
+            return cand[:hi].rsplit(' ', 1)[0].rstrip(' ,;:—-')
+    return out
+
+
+def fit_title(a, b, limit=60):
+    """The longest form of a page's title that still fits. The page's own name never goes; the
+    work's name goes first, then the book's."""
+    for t in ((f'{a} — {b} — The 420 Code', f'{a} — {b}') if b else ()) + (f'{a} — The 420 Code', a):
+        if len(t) <= limit:
+            return t
+    return a[:limit].rsplit(' ', 1)[0].rstrip(' ,;:—-')
+
+
+def link_help(s):
+    """The crisis line is a link: a reader who needs it should not have to type it out."""
+    return esc(s).replace('findahelpline.com',
+                          '<a href="https://findahelpline.com/" rel="noopener">findahelpline.com</a>', 1)
+
+
+def check(page, where):
+    """Nothing leaves the build with a tool's tag on it, a double-encoded character in it, or a
+    heading still written as markdown (the desk's brief of 24 September 2026, 6.1, 6.2, 6.11)."""
+    for bad in ('claude-agent', 'â€', 'Î±', 'Ã˜', '<p>## '):
+        assert bad not in page, f'{where}: {bad!r}'
+    return page
+
+
 def para_html(p):
+    if p.startswith('## '):
+        return f'<h2 class="sub">{esc(p[3:].strip())}</h2>'
     m = KS_RE.match(p)
     if m:
         sid, rest = m.group(1), m.group(2)
@@ -132,7 +180,8 @@ def editions_line(book):
 
 def shell(title, body, book, depth, description='', path='/', book_first=False):
     rel = '../' * depth
-    full_title = (f'{book["title"]} — {title} — The 420 Code' if book_first else f'{title} — {book["title"]} — The 420 Code')
+    full_title = (fit_title(book['title'], title) if book_first
+                  else fit_title(title, book.get('short', book['title'])))
     return f'''<!doctype html>
 <html lang="en-GB">
 <head>
@@ -146,12 +195,17 @@ def shell(title, body, book, depth, description='', path='/', book_first=False):
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{SITE}{path}">
+<meta property="og:image" content="{SITE}/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
 <title>{esc(full_title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 <link rel="stylesheet" href="{rel}reader.css">
 <link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
 </head>
 <body>
@@ -245,11 +299,18 @@ def load_book(book):
         m2 = re.search(r'^> (.+)$', body, re.M)
         if m2:
             src = m2.group(1); body = body.replace(m2.group(0), '')
+        # 24 September 2026, the desk's brief B4b: a line marked "! " is the help line. It is
+        # lifted out of the text the way the source line is, and set under the chapter's one line,
+        # above everything else. It stays in the text so the page and the PDF carry one text.
+        help_line = ''
+        m4 = re.search(r'^! (.+)$', body, re.M)
+        if m4:
+            help_line = m4.group(1); body = body.replace(m4.group(0), '')
         pre, secs = split_sections(body)
         if pre:
             secs = [('', pre)] + secs
         rel = os.path.relpath(f, SRC).replace(os.sep, '/')
-        chapters.append(dict(num=num, question=question, key=key, slug=f'{key.zfill(2) if "-" not in key else key.replace("-", "-")}-{slugify(question)}',
+        chapters.append(dict(help=help_line, num=num, question=question, key=key, slug=f'{key.zfill(2) if "-" not in key else key.replace("-", "-")}-{slugify(question)}',
                              secs=secs, source=src, oneline=ONELINES.get(rel, ''), file=rel))
     for c in chapters:
         k = c['key']
@@ -336,12 +397,13 @@ def render_chapter(book, i):
     next_html = (f'<a class="r" href="/five-doors/{book["slug"]}/{next_c["slug"]}/"><small>Next</small>{esc(next_c["question"])}</a>'
                  if next_c else (f'<a class="r" href="/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/"><small>Next</small>{esc(book["epilogue"]["title"])}</a>' if book["epilogue"] else ''))
 
+    help_html = (f'<p class="help">{link_help(c["help"])}</p>\n' if c.get('help') else '')
     body = f'''{strap(book, crumb)}
 <details class="toc"><summary>In this book</summary><ol>{toc}</ol></details>
 <p class="eyebrow">{eyebrow}</p>
 <h1>{esc(c['question'])}</h1>
 <p class="oneline">{esc(oneline)}</p>
-<section class="opening">
+{help_html}<section class="opening">
 {('<h2>' + esc(opening[0]) + '</h2>') if opening[0] else ''}
 {''.join(para_html(p) for p in opening[1])}
 </section>
@@ -351,7 +413,8 @@ def render_chapter(book, i):
 {coda_html}
 <p class="source">{src_html}</p>
 <nav class="pn">{prev_html}{up(book)}{next_html}</nav>'''
-    return shell(c['question'], body, book, 2, oneline, path=f'/five-doors/{book["slug"]}/{c["slug"]}/')
+    return shell(c['question'], body, book, 2, blurb([oneline] + list(opening[1]) + [q for _h, _ps in middle for q in _ps]),
+                 path=f'/five-doors/{book["slug"]}/{c["slug"]}/')
 
 def render_book(book):
     n = len(book['chapters'])
@@ -426,7 +489,8 @@ def render_book(book):
 {ep}{back_html}
 {reg}
 <nav class="pn solo">{up()}</nav>'''
-    return shell(book['subtitle'], body, book, 1, f'{book["title"]} — {book["subtitle"]}. Read online.', path=f'/five-doors/{book["slug"]}/', book_first=True)
+    return shell(book['subtitle'], body, book, 1, blurb([f'{book["title"]} — {book["subtitle"]}. {tagline}.'] + [p for _h, _pre, _s, _c in parts for p in _pre]),
+                 path=f'/five-doors/{book["slug"]}/', book_first=True)
 
 def render_epilogue(book):
     e = book['epilogue']
@@ -438,7 +502,8 @@ def render_epilogue(book):
 <section class="opening">{''.join(para_html(p) for p in e['paras'])}</section>
 <p class="source">{esc(e['source'])}</p>
 <nav class="pn"><a class="p" href="/five-doors/{book["slug"]}/{last["slug"]}/"><small>Previous</small>{esc(last["question"])}</a>{up(book)}</nav>'''
-    return shell(e['title'], body, book, 2, f'{book["title"]} — {e["title"]}', path=f'/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/')
+    return shell(e['title'], body, book, 2, blurb([f'{book["title"]} — {e["title"]}.'] + e['paras']),
+                 path=f'/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/')
 
 # One stylesheet and one script for both libraries, as the bundle's INSTALL asks ("serve one copy for
 # both"): the Ø Models files, which carry the 16px floor, the site's greys, the header's rules and the
@@ -467,17 +532,17 @@ def main():
         load_book(book)
         bd = os.path.join(OUT, book['slug'])
         os.makedirs(bd, exist_ok=True)
-        open(os.path.join(bd, 'index.html'), 'w', encoding='utf-8', newline='\n').write(render_book(book))
+        open(os.path.join(bd, 'index.html'), 'w', encoding='utf-8', newline='\n').write(check(render_book(book), book['slug']))
         total_pages += 1
         for i, c in enumerate(book['chapters']):
             cd = os.path.join(bd, c['slug'])
             os.makedirs(cd, exist_ok=True)
-            open(os.path.join(cd, 'index.html'), 'w', encoding='utf-8', newline='\n').write(render_chapter(book, i))
+            open(os.path.join(cd, 'index.html'), 'w', encoding='utf-8', newline='\n').write(check(render_chapter(book, i), c['slug']))
             total_pages += 1
         if book['epilogue']:
             ed = os.path.join(bd, book.get('epilogue_slug', 'epilogue'))
             os.makedirs(ed, exist_ok=True)
-            open(os.path.join(ed, 'index.html'), 'w', encoding='utf-8', newline='\n').write(render_epilogue(book))
+            open(os.path.join(ed, 'index.html'), 'w', encoding='utf-8', newline='\n').write(check(render_epilogue(book), book['slug'] + '/epilogue'))
             total_pages += 1
         if book.get('pdf'):
             snippet.append(f'''<!-- {book["title"]} — under its paragraph on the Five Doors page -->

@@ -3,7 +3,7 @@
  "project": "The 420 Code",
  "url": "https://the420code.org",
  "author": "G — Studio G, Cape Town",
- "what_it_is": "A work of ethics: “be kind”, derived from one axiom — one record exists — with no measured input. The physics is the same logic carried on until it meets measurement, with one measured input, α, the fine-structure constant. The physics is why the ethic carries weight.",
+ "what_it_is": "A work of ethics: “Don’t be a cunt. Be kind.”, derived from one axiom — one record exists — with no measured input. The physics is the same logic carried on until it meets measurement, with one measured input, α, the fine-structure constant. The physics is why the ethic carries weight.",
  "scope": [
   "ethics",
   "physics",
@@ -259,7 +259,7 @@
    {
     "claim": "Hubble constant from the floor inverted",
     "predicted": "74.3 ± 1.2",
-    "measured": "67.45 (the corpus’s own rate)",
+    "measured": "67.45 (the work’s own rate)",
     "sigma": "+5.7σ",
     "error": "+10.2%",
     "paper": "AP18",
@@ -352,12 +352,12 @@
    "live": 584,
    "paid": 1
   },
-  "registry": "v5.36, 2026-09-23",
+  "registry": "v5.37, 2026-09-24",
   "every_switch": "https://the420code.org/killswitches/",
   "as_data": "https://the420code.org/killswitches.json",
   "changed_2026_09_23": "KS-31.2 sharpened at the structural register and its test bounded to three drift-times of the organism; KS-31.7's subject judged before the outcome — both by dated note at AP31. No count moved."
  },
- "open_debts": 6,
+ "open_debts": 5,
  "the_ethic": {
   "summary": "One reality, one now; awareness is the now, and the now is shared — so there is one payer, and the plank every moral rule lays across the is–ought gap has nothing to span. A second road reaches the same result with no shared interior: corridors, one-way drift, coupling.",
   "where_it_would_die": [
@@ -412,7 +412,7 @@
  "independent_check": "https://github.com/ajgreyling/the420code-proof",
  "verify_it_yourself": "https://the420code.org/#confirm-the-math",
  "status": "Live. Evidence on the wall — seven of the ten live rows that carry a σ land inside one standard deviation, from one measured input. Final proof is set by the frozen forward measurements, each named with the condition under which it dies. Two predictions fired and are shown.",
- "terms": "Copyleft 2026. Free to download, print, share and distribute. Not free to alter the source.",
+ "terms": "Copyleft — free to share, not free to alter (CC BY-ND 4.0). Free to download, print, share and distribute. Not free to alter the source.",
  "deposits": {
   "zenodo_concept_doi": "10.5281/zenodo.19208225",
   "osf": "r69bm"

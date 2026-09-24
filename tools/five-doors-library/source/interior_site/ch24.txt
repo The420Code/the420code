@@ -30,4 +30,4 @@ An action destabilises the substrate with confidence p, computed from accumulate
 
 The record set is public, auditable, and contestable. Those three words are not decoration. A consequence geometry that is not public is not a consequence geometry. It is an authority, and Part I is about what authorities do.
 
-The architecture does not decide. The geometry decides. The architecture reads the geometry.
+The architecture reads the geometry. A named person decides, and answers for it. That is Chapter Twenty’s rule, and it holds here.

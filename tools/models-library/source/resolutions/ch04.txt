@@ -66,7 +66,7 @@ c is deeper than light. It is the invariant causal speed, the fastest that recor
 
 Why finite? Because C is what C is. Change the units and the number changes. The fact does not. That is why every observer in every frame measures the same value. C does not bend for the observer.
 
-The corpus carries one worked instance of a constant read from the structure: the strength of gravity, derived from α and a count of twenty-one channels, with zero free parameters. It is the model of what lawhood-as-structure produces, and it stands or falls on its own switches. The chapter does not rederive it. It uses it as the internal example.
+The work carries one worked instance of a constant read from the structure: the strength of gravity, derived from α and a count of twenty-one channels, with zero free parameters. It is the model of what lawhood-as-structure produces, and it stands or falls on its own switches. The chapter does not rederive it. It uses it as the internal example.
 
 ## The second law
 
@@ -90,7 +90,7 @@ The twentieth century measured the constants brilliantly and treated them as giv
 
 One piece of vocabulary. The actualisation rate is the rate at which possibility commits to actuality at coupling sites — how often a possible distinction becomes a recorded one. Distinct from the Actualization State, which is where the writing is happening now.
 
-The fine-structure constant, α, about one part in 137, is the actualisation rate at the electromagnetic layer. It governs how often electrons couple with photons, how tightly atoms bind, the shape of the periodic table. The corpus reads it as the rate at which the record actualises, set against the mass, gravity and resistance holding it at the now — and, seen from one side, as the strength of the coupling. It is the one measured input to the whole work, and every page that uses it says so.
+The fine-structure constant, α, about one part in 137, is the actualisation rate at the electromagnetic layer. It governs how often electrons couple with photons, how tightly atoms bind, the shape of the periodic table. The work reads it as the rate at which the record actualises, set against the mass, gravity and resistance holding it at the now — and, seen from one side, as the strength of the coupling. It is the one measured input to the whole work, and every page that uses it says so.
 
 Quantum mechanics is the four conditions read at the layer of single coupling events. S is the indeterminate state before measurement — what the symmetry permits before the break commits. Measurement is B. The probabilities are S across many possible commitments. The discreteness is B’s binary character.
 
@@ -102,13 +102,13 @@ Two registers. One structure. The question of how to unify them is malformed. An
 
 The strongest test of the one-structure claim is whether the constants that sit where the two theories meet can be derived from the axiom.
 
-What the corpus has. α is the actualisation rate at the electromagnetic layer. That is the claim, held without softening. α has been carefully identified and defined — what it is, where it sits, what it does. And the corpus has the gravity derivation as the worked model of what a structural derivation looks like.
+What the work has. α is the actualisation rate at the electromagnetic layer. That is the claim, held without softening. α has been carefully identified and defined — what it is, where it sits, what it does. And the work has the gravity derivation as the worked model of what a structural derivation looks like.
 
 What it does not have. A derivation that goes from the four conditions to the value 1/137 in closed form. α is measured from outside — electron-photon coupling, atomic transitions, fine-structure splittings — and what is owed is why that value and no other. The roads walked towards it are on the wall. No value is printed. α is measured, not derived, and the work says so wherever it is used.
 
-The corpus’s present reading of why the road has not been reached is not modesty. It is structural. α is the rate at which the reading happens. The pupil cannot see the pupil. The grain doing the reading is still in the air. Measurement receives the wake, not the moving ship.
+The work’s present reading of why the road has not been reached is not modesty. It is structural. α is the rate at which the reading happens. The pupil cannot see the pupil. The grain doing the reading is still in the air. Measurement receives the wake, not the moving ship.
 
-A hostile reader will press: the gravity result does not entail that α is forced. Correct. The move rests on the broader commitment that the four conditions produce every fundamental constant, and that is exactly what RES-4.4 tests. A successful derivation must produce the value by the kind of reasoning that produces gravity, name which condition does the work, and yield observable constraints that separate a derivation from a coincidence. Whoever finds it closes work the corpus admits is open. Whoever shows it cannot be done fires the switch. The claim is sharp. The derivation is owed.
+A hostile reader will press: the gravity result does not entail that α is forced. Correct. The move rests on the broader commitment that the four conditions produce every fundamental constant, and that is exactly what RES-4.4 tests. A successful derivation must produce the value by the kind of reasoning that produces gravity, name which condition does the work, and yield observable constraints that separate a derivation from a coincidence. Whoever finds it closes work the work admits is open. Whoever shows it cannot be done fires the switch. The claim is sharp. The derivation is owed.
 
 ## Counterfactuals without other worlds
 

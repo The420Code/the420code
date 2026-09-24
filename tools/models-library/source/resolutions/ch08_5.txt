@@ -68,7 +68,7 @@ The residual is not like a coin flip, where the outcome is computable in princip
 
 The quantum ceiling and the override residual share a form. Weighted space before commitment. Definite record after. A residual where the prior record does not fix a single outcome.
 
-This is not a quantum-consciousness claim. Decoherence removes interference between macroscopically distinct alternatives at brain scale, and the chapter does not need coherent superposition in the brain. It needs only the form. One commits, the others close, and the commitment is not derivable from the record. The corpus predicts a deeper account will derive both residuals from one architecture. The derivation is not done here.
+This is not a quantum-consciousness claim. Decoherence removes interference between macroscopically distinct alternatives at brain scale, and the chapter does not need coherent superposition in the brain. It needs only the form. One commits, the others close, and the commitment is not derivable from the record. The work predicts a deeper account will derive both residuals from one architecture. The derivation is not done here.
 
 ## Neuroscience and recovery
 
@@ -116,7 +116,7 @@ The geometry is real. The override is real. The override is not the geometry.
 
 Hard determinism mistakes the gradient’s reality for its totality. Libertarianism sees the operator is not the gradient and grounds it in an uncaused cause — override needs none; it is cause mediated by modelling. Classical compatibilism reduces override to desires that are themselves on the gradient. Higher-order compatibilism grounds it in desires about desires. Evitability compatibilism names a property without naming what has it.
 
-What unites them is an imported competition — override or gradient — resolved by reducing one to the other. The sixth position: override is what a self-registering architecture has by being one. Not the gradient. Not an uncaused cause. Not desires. Not a property with no bearer. This is not compatibilism. Compatibilism puts free will inside the gradient. The override is its own structural fact.
+What unites them is an imported competition — override or gradient — resolved by reducing one to the other. The sixth position: override is what a self-registering architecture has by being one. Not the gradient. Not an uncaused cause. Not desires. Not a property with no bearer. This is not compatibilism. Compatibilism puts free will inside the gradient. The override is its own structural fact. Seven said the coupling is the choice. That holds. The coupling has two layers: the gradient it computes, and the self-model that can commit against it. Both are inside the coupling.
 
 ## Choice and ethics
 

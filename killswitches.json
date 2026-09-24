@@ -4,8 +4,8 @@
  "author": "G",
  "licence": "Copyleft. Free to download, print, share and distribute; not to alter the source.",
  "registry": {
-  "version": "v5.36",
-  "date": "2026-09-23",
+  "version": "v5.37",
+  "date": "2026-09-24",
   "title": "Master Kill Switch Registry",
   "pdf": "https://the420code.org/Master_Kill_Switch_Registry.pdf",
   "room": "https://the420code.org/killswitches/"
@@ -42,11 +42,11 @@
   {
    "debt": "D-ID.1",
    "home": "AP43 §9",
-   "state_raw": "PAID at the structural register; the topological formalisation REMAINING",
-   "state": "paid_partial",
-   "outstanding": true,
-   "owed": "AP51 §2 derives the one interior from three things already on the record — awareness as coupling capacity (AP29), coupling forced (AP50 §5), the hourglass one — on the author’s rule and by construction. What remains is what AP43 §9 named: the formal topological derivation. KS-ID.1 stays live and fires on one thing, a second neck. Dated note of 18 September 2026 beside KS-ID.1: the claim’s standing is the floor, performed as the axiom is; the debt is its formal statement, not its standing.",
-   "closed_date": null,
+   "state_raw": "CLOSED on the author’s ruling of 24 September 2026",
+   "state": "closed",
+   "outstanding": false,
+   "owed": "Closed on the author’s ruling of 24 September 2026. The one interior is the floor, performed as the axiom is: a record made at one window is read at another, and the denial uses it. AP51 §2 derives it at the structural register from what is already on the record. The formal topological statement AP43 §9 named is not owed; what is performed is not formalised before it stands. KS-ID.1 stays live and fires on one thing, a second neck. Until v5.36 this row read: AP51 §2 derives the one interior from three things already on the record — awareness as coupling capacity (AP29), coupling forced (AP50 §5), the hourglass one — on the author’s rule and by construction; what remains is the formal topological derivation.",
+   "closed_date": "2026-09-24",
    "source": {
     "table": 115,
     "row": 2
@@ -58,7 +58,7 @@
    "state_raw": "OPEN",
    "state": "open",
    "outstanding": true,
-   "owed": "What the corpus’s α-dependence is relative to the electromagnetic coupling that produces the nucleon’s self-energy. AP50 §10 specifies which α — α(0) — and does not say what the dependence means. Declared at the Museum round of 7 September 2026, not answered. KS-30.5 stands beside it.",
+   "owed": "What the work’s α-dependence is relative to the electromagnetic coupling that produces the nucleon’s self-energy. AP50 §10 specifies which α — α(0) — and does not say what the dependence means. Declared at the Museum round of 7 September 2026, not answered. KS-30.5 stands beside it.",
    "closed_date": null,
    "source": {
     "table": 115,
@@ -583,7 +583,7 @@
    "labels": [
     "KS-STRETCH.4"
    ],
-   "description": "The era surface. Registered by AP46 for AP48 (REGISTERED, the first instance): the storm’s tail must reproduce the two known era-forms, their transition, the first minutes’ nuclei and the relic glow. MET by AP48 §9 (4 September 2026): the shapes on the corpus’s thinning counts, the handover with its input named, the rates on AP08’s count. CLOSED, contingent on KS-ASM.2: if KS-ASM.2 fires, this switch re-opens and fires with it and AP46’s standing returns to the dock. Registered by AP46 for AP48; met by AP48 §9 (a ∝ t^½, a ∝ t^⅔, the handover at the recorded epoch, the nuclei, the relic glow — every line pass).",
+   "description": "The era surface. Registered by AP46 for AP48 (REGISTERED, the first instance): the storm’s tail must reproduce the two known era-forms, their transition, the first minutes’ nuclei and the relic glow. MET by AP48 §9 (4 September 2026): the shapes on the work’s thinning counts, the handover with its input named, the rates on AP08’s count. CLOSED, contingent on KS-ASM.2: if KS-ASM.2 fires, this switch re-opens and fires with it and AP46’s standing returns to the dock. Registered by AP46 for AP48; met by AP48 §9 (a ∝ t^½, a ∝ t^⅔, the handover at the recorded epoch, the nuclei, the relic glow — every line pass).",
    "status": "closed",
    "status_raw": "CLOSED — contingent on KS-ASM.2",
    "status_qualifier": "contingent on KS-ASM.2",
@@ -649,7 +649,7 @@
    "labels": [
     "KS-45.1"
    ],
-   "description": "Hubble prediction, as registered: H₀ = 2πa₀/(C_S²c) = 74.3 ± 1.2 km s⁻¹ Mpc⁻¹ (C_S² ≈ 1.0445, AP18’s coefficient, not the fine-structure constant), the floor inverted. Fired by AP48 on the corpus’s own derived rate, 67.45 (window 64.4–70.8): 5.7σ on the registered width, about two sigma on the corpus’s window, as AP46 §9 pre-registered; by the author’s word. Erratum beside the corpse (3 September 2026): the registered width omitted the ±0.24 × 10⁻¹⁰ m s⁻² systematic on the empirical acceleration scale; on the honest width, 74.3 ± 14.9, the floor’s relation survives at 0.46σ and KS-45 stands live. The corpus’s H₀ entry is KS-ASM.1 (AP48). FIRED 3 September 2026 by AP48 on the corpus’s own derived rate, 67.45 (window 64.4–70.8): 5.7σ on the registered width, about two sigma on the corpus’s window, as AP46 §9 pre-registered; by the author’s word. Shown, never repaired.",
+   "description": "Hubble prediction, as registered: H₀ = 2πa₀/(C_S²c) = 74.3 ± 1.2 km s⁻¹ Mpc⁻¹ (C_S² ≈ 1.0445, AP18’s coefficient, not the fine-structure constant), the floor inverted. Fired by AP48 on the work’s own derived rate, 67.45 (window 64.4–70.8): 5.7σ on the registered width, about two sigma on the work’s window, as AP46 §9 pre-registered; by the author’s word. Erratum beside the corpse (3 September 2026): the registered width omitted the ±0.24 × 10⁻¹⁰ m s⁻² systematic on the empirical acceleration scale; on the honest width, 74.3 ± 14.9, the floor’s relation survives at 0.46σ and KS-45 stands live. The work’s H₀ entry is KS-ASM.1 (AP48). FIRED 3 September 2026 by AP48 on the work’s own derived rate, 67.45 (window 64.4–70.8): 5.7σ on the registered width, about two sigma on the work’s window, as AP46 §9 pre-registered; by the author’s word. Shown, never repaired.",
    "status": "fired",
    "status_raw": "FIRED — 3 September 2026",
    "status_qualifier": "3 September 2026",
@@ -3747,7 +3747,7 @@
    "labels": [
     "KS-39"
    ],
-   "description": "a₀ numerical value. At the corpus’s derived rate, 67.45 km s⁻¹ Mpc⁻¹ (AP48), AP18’s floor gives 1.089 × 10⁻¹⁰ m s⁻²: 9.2% below the empirical scale 1.20 ± 0.02 (random) ± 0.24 (systematic) × 10⁻¹⁰, 0.46σ on the honest error — within the scale’s own systematic. Dated note, 4 September 2026: the former “5.8% at H₀ = 70 (<1% at H₀ = 74)” rested on the fired KS-45.1; AP17’s first-order floor is the mechanism, AP18’s coefficient the headline.",
+   "description": "a₀ numerical value. At the work’s derived rate, 67.45 km s⁻¹ Mpc⁻¹ (AP48), AP18’s floor gives 1.089 × 10⁻¹⁰ m s⁻²: 9.2% below the empirical scale 1.20 ± 0.02 (random) ± 0.24 (systematic) × 10⁻¹⁰, 0.46σ on the honest error — within the scale’s own systematic. Dated note, 4 September 2026: the former “5.8% at H₀ = 70 (<1% at H₀ = 74)” rested on the fired KS-45.1; AP17’s first-order floor is the mechanism, AP18’s coefficient the headline.",
    "status": "live",
    "status_raw": "LIVE — EMPIRICAL",
    "status_qualifier": "EMPIRICAL",
@@ -3906,7 +3906,7 @@
    "labels": [
     "KS-45"
    ],
-   "description": "2π geometric factor. The coefficient a₀/(cH₀) = α/(2π) ≈ 0.1662 (α here C_S² ≈ 1.0445). Stands at 0.46σ against the sky’s a₀/(cH₀) = 0.183 ± 0.037 at the corpus’s rate 67.45 (erratum of 3 September 2026: the ±0.24 systematic restored).",
+   "description": "2π geometric factor. The coefficient a₀/(cH₀) = α/(2π) ≈ 0.1662 (α here C_S² ≈ 1.0445). Stands at 0.46σ against the sky’s a₀/(cH₀) = 0.183 ± 0.037 at the work’s rate 67.45 (erratum of 3 September 2026: the ±0.24 systematic restored).",
    "status": "live",
    "status_raw": "LIVE — EMPIRICAL",
    "status_qualifier": "EMPIRICAL",
@@ -5555,7 +5555,7 @@
    "labels": [
     "KS-30.5"
    ],
-   "description": "The α-accounting. Claim: the corpus’s α-terms in the nucleon formulas are related, by a stated rule, to the electromagnetic self-energy QED computes from the same α. The rule has never been stated. The corpus’s whole α-dependence is +4.3 keV at the neutron–proton difference and +78 keV at the proton; lattice QCD+QED decomposes m_n − m_p as QCD +2.52(17)(24) MeV and QED −1.00(07)(14) MeV, and the proton’s electromagnetic self-energy is of order a mega-electronvolt — nature’s α-part is negative and two hundred times larger. Test: fires if, once the rule is stated, it is inconsistent with that decomposition or with the proton’s electromagnetic self-energy. Two statements are available and neither has been made: that the static counts already are what QED calls electromagnetic self-energy, counted as configuration at the actual α and therefore α-independent in count — which then owes the reason the corpus’s response to a change in α is a dozen times smaller than QED’s; or that the corpus’s α is the leakage rate and not the coupling — which then owes what carries the mega-electronvolt. Choosing between them now, to fit the number, is what KS-CCC.1 forbids; the obligation is declared as D-EM.1 instead. The totals are not in question: every switch on the proton and the neutron is on the totals, and the totals stand. Registered 9 September 2026 on the objection filed against AP30 (Museum, E3). Recovery: the α in the mass formulas is not the electromagnetic coupling, and every place the corpus reads it as one is restated.",
+   "description": "The α-accounting. Claim: the work’s α-terms in the nucleon formulas are related, by a stated rule, to the electromagnetic self-energy QED computes from the same α. The rule has never been stated. The work’s whole α-dependence is +4.3 keV at the neutron–proton difference and +78 keV at the proton; lattice QCD+QED decomposes m_n − m_p as QCD +2.52(17)(24) MeV and QED −1.00(07)(14) MeV, and the proton’s electromagnetic self-energy is of order a mega-electronvolt — nature’s α-part is negative and two hundred times larger. Test: fires if, once the rule is stated, it is inconsistent with that decomposition or with the proton’s electromagnetic self-energy. Two statements are available and neither has been made: that the static counts already are what QED calls electromagnetic self-energy, counted as configuration at the actual α and therefore α-independent in count — which then owes the reason the work’s response to a change in α is a dozen times smaller than QED’s; or that the work’s α is the leakage rate and not the coupling — which then owes what carries the mega-electronvolt. Choosing between them now, to fit the number, is what KS-CCC.1 forbids; the obligation is declared as D-EM.1 instead. The totals are not in question: every switch on the proton and the neutron is on the totals, and the totals stand. Registered 9 September 2026 on the objection filed against AP30 (Museum, E3). Recovery: the α in the mass formulas is not the electromagnetic coupling, and every place the work reads it as one is restated.",
    "status": "live",
    "status_raw": "LIVE — STRUCTURAL",
    "status_qualifier": "STRUCTURAL",
@@ -8840,7 +8840,7 @@
    "labels": [
     "KS-CCC.1"
    ],
-   "description": "Forced structure. Every structural choice entering the commitment — count, placement, boundary, magnitude — is forced from the axiom and locked results, or is a disclosed selection with its eliminations on the public record (PROV-CCC.1–6). Binds the corpus’s claim (the zero-free-parameters flag on G), never its author. Fires on any refinement of the commitment standing in canon whose selection depended on comparison with measured G and whose history is undisclosed.",
+   "description": "Forced structure. Every structural choice entering the commitment — count, placement, boundary, magnitude — is forced from the axiom and locked results, or is a disclosed selection with its eliminations on the public record (PROV-CCC.1–6). Binds the work’s claim (the zero-free-parameters flag on G), never its author. Fires on any refinement of the commitment standing in canon whose selection depended on comparison with measured G and whose history is undisclosed.",
    "status": "live",
    "status_raw": "LIVE — METHODOLOGICAL (binds the order of events in AP50 §2)",
    "status_qualifier": "METHODOLOGICAL (binds the order of events in AP50 §2)",
@@ -9244,7 +9244,7 @@
    "labels": [
     "KS-STRETCH.3"
    ],
-   "description": "The age chain. One cycle is (21/18)·α⁻¹⁸·τ_C = 13.830 Gyr (CODATA-2022 α and mₑ; three ruled structural choices — the eighteen, the twenty-one over eighteen, the reduced tick), and an aware observer measures about one cycle. Width fixed at the lock from the chain’s own atom: one lane-time, 0.66 Gyr, either side — the window 13.17 to 14.49 Gyr; the measured age 13.787 ± 0.020 sits inside. Fires if the age, as the data settle it, leaves the window in either direction (an early-dark-energy age near 12.9 fires it). The H₀ seam AP46 §9 opened is closed by AP48 by adjudication: the age survives, the previous rate does not; if the Cepheid ladder’s 73 is confirmed as the expansion rate, the age at the corpus’s partition is 12.78 Gyr and this switch fires as pre-registered. Recovery: the chain reverts to a candidate; the joint and the mechanism stand.",
+   "description": "The age chain. One cycle is (21/18)·α⁻¹⁸·τ_C = 13.830 Gyr (CODATA-2022 α and mₑ; three ruled structural choices — the eighteen, the twenty-one over eighteen, the reduced tick), and an aware observer measures about one cycle. Width fixed at the lock from the chain’s own atom: one lane-time, 0.66 Gyr, either side — the window 13.17 to 14.49 Gyr; the measured age 13.787 ± 0.020 sits inside. Fires if the age, as the data settle it, leaves the window in either direction (an early-dark-energy age near 12.9 fires it). The H₀ seam AP46 §9 opened is closed by AP48 by adjudication: the age survives, the previous rate does not; if the Cepheid ladder’s 73 is confirmed as the expansion rate, the age at the work’s partition is 12.78 Gyr and this switch fires as pre-registered. Recovery: the chain reverts to a candidate; the joint and the mechanism stand.",
    "status": "live",
    "status_raw": "LIVE — STRUCTURAL and EMPIRICAL",
    "status_qualifier": "STRUCTURAL and EMPIRICAL",
@@ -9402,7 +9402,7 @@
    "labels": [
     "KS-ASM.1"
    ],
-   "description": "The rate. The expansion rate is 0.954 times the cycle’s inverse: 67.45 km s⁻¹ Mpc⁻¹, window 64.4 to 70.8 (one lane-time either side of the cycle) — a closure of AP42’s partition and AP46’s cycle under the balance. There is one expansion rate, and the Cepheid ladder’s 73 is not it. Test: the resolution of the Hubble tension — larger JWST samples on every ladder, the red-giant and JAGB ladders, gravitational-wave sirens, time-delay lenses. Fires if the expansion rate, as the data settle it, lands outside the window in either direction, including if the Cepheid ladder is confirmed as the expansion rate; on that upper edge this switch and flat ΛCDM at the sky’s partition die together, and the corpus claims no advantage there. Recovery: the form, the counts and the corpse of §7 stand; KS-STRETCH.3 fires as pre-registered and AP46’s chain reverts to a candidate.",
+   "description": "The rate. The expansion rate is 0.954 times the cycle’s inverse: 67.45 km s⁻¹ Mpc⁻¹, window 64.4 to 70.8 (one lane-time either side of the cycle) — a closure of AP42’s partition and AP46’s cycle under the balance. There is one expansion rate, and the Cepheid ladder’s 73 is not it. Test: the resolution of the Hubble tension — larger JWST samples on every ladder, the red-giant and JAGB ladders, gravitational-wave sirens, time-delay lenses. Fires if the expansion rate, as the data settle it, lands outside the window in either direction, including if the Cepheid ladder is confirmed as the expansion rate; on that upper edge this switch and flat ΛCDM at the sky’s partition die together, and the work claims no advantage there. Recovery: the form, the counts and the corpse of §7 stand; KS-STRETCH.3 fires as pre-registered and AP46’s chain reverts to a candidate.",
    "status": "live",
    "status_raw": "LIVE — EMPIRICAL",
    "status_qualifier": "EMPIRICAL",
@@ -9496,7 +9496,7 @@
    "labels": [
     "KS-HOLD.1"
    ],
-   "description": "The closed form. m_p/mₑ = 1836 + 21α·(1 − 1/(84π)) + 21α·r/(1 − r), r = 16α/1836: D_closed = 1836.152673444951, the third-order coefficient c₃ = +21·16²/1836² = +1.595 × 10⁻³ with its sign stated in advance, all higher orders summed, with no free parameter. Supersedes the corpus’s registered D of 2 August 2026 by reference to its frozen record, beside it and not in its place. Test: dies at 3σ once the proton-to-electron mass ratio is measured to 3.4 parts per trillion with the present central value unchanged — about five times today’s precision — and at 5σ at 2.1 parts per trillion; the third-order term itself is resolved at about fifty times today’s. Fires in either direction. No negative term exists in the chain with which to repair a growing negative residual, and none will be offered. Recovery: the sixteen and its reading (§3) stand on the second-order data; the chain’s rule (§4) retires; AP30’s formula returns to its truncated form with KS-30.3 re-opened.",
+   "description": "The closed form. m_p/mₑ = 1836 + 21α·(1 − 1/(84π)) + 21α·r/(1 − r), r = 16α/1836: D_closed = 1836.152673444951, the third-order coefficient c₃ = +21·16²/1836² = +1.595 × 10⁻³ with its sign stated in advance, all higher orders summed, with no free parameter. Supersedes the work’s registered D of 2 August 2026 by reference to its frozen record, beside it and not in its place. Test: dies at 3σ once the proton-to-electron mass ratio is measured to 3.4 parts per trillion with the present central value unchanged — about five times today’s precision — and at 5σ at 2.1 parts per trillion; the third-order term itself is resolved at about fifty times today’s. Fires in either direction. No negative term exists in the chain with which to repair a growing negative residual, and none will be offered. Recovery: the sixteen and its reading (§3) stand on the second-order data; the chain’s rule (§4) retires; AP30’s formula returns to its truncated form with KS-30.3 re-opened.",
    "status": "live",
    "status_raw": "LIVE — EMPIRICAL",
    "status_qualifier": "EMPIRICAL",
@@ -9528,7 +9528,7 @@
    "labels": [
     "KS-HOLD.2"
    ],
-   "description": "The reading. A second-order support count in the corpus is its object through the four dimensional expressions: the proton’s channels, 21 × 4; the neutron’s pair, 2 × 4; the hold’s conditions, 4 × 4. Test: fires if any second-order count in the family — at the neutron, at G, or at a site not yet written — is found to require its object squared, or its object through three dimensions, or any count not of this form. Recovery: the sixteen stands on the measurement as a carried count; its reading retires to STATED; KS-30.3 re-opens on its first limb.",
+   "description": "The reading. A second-order support count in the work is its object through the four dimensional expressions: the proton’s channels, 21 × 4; the neutron’s pair, 2 × 4; the hold’s conditions, 4 × 4. Test: fires if any second-order count in the family — at the neutron, at G, or at a site not yet written — is found to require its object squared, or its object through three dimensions, or any count not of this form. Recovery: the sixteen stands on the measurement as a carried count; its reading retires to STATED; KS-30.3 re-opens on its first limb.",
    "status": "live",
    "status_raw": "LIVE — STRUCTURAL",
    "status_qualifier": "STRUCTURAL",
@@ -9777,7 +9777,7 @@
    "labels": [
     "KS-GLASS.3"
    ],
-   "description": "The shape. The six constraints are the same at every site and every tick; only the reading is relative to position. Carries P-GLASS.1: no variation of α(0) across the record history. Fires on a constraint shown to depend on the site’s position — a confirmed variation of α(0) with place or epoch, at the corpus’s own bar for dead, by two independent methods, standing after the systematics have been reviewed. Recovery: universality fails, P-GLASS.1 dies and is shown, AP50 §3’s sorting stands or falls on its own.",
+   "description": "The shape. The six constraints are the same at every site and every tick; only the reading is relative to position. Carries P-GLASS.1: no variation of α(0) across the record history. Fires on a constraint shown to depend on the site’s position — a confirmed variation of α(0) with place or epoch, at the work’s own bar for dead, by two independent methods, standing after the systematics have been reviewed. Recovery: universality fails, P-GLASS.1 dies and is shown, AP50 §3’s sorting stands or falls on its own.",
    "status": "live",
    "status_raw": "LIVE — STRUCTURAL; EMPIRICAL through P-GLASS.1",
    "status_qualifier": "STRUCTURAL; EMPIRICAL through P-GLASS.1",
@@ -9871,7 +9871,7 @@
    "labels": [
     "KS-REL.3"
    ],
-   "description": "No third count. A site’s time is its own record count; two sites, two counts; no count from no site. The record’s one order is not such a count, because no site reads it. Fires on a count shown that adjudicates two sites’ counts from no site — an absolute time. Recovery: §4 fails, dilation loses its reading, and the theorem stands as mathematics without the corpus’s premise.",
+   "description": "No third count. A site’s time is its own record count; two sites, two counts; no count from no site. The record’s one order is not such a count, because no site reads it. Fires on a count shown that adjudicates two sites’ counts from no site — an absolute time. Recovery: §4 fails, dilation loses its reading, and the theorem stands as mathematics without the work’s premise.",
    "status": "live",
    "status_raw": "LIVE — STRUCTURAL",
    "status_qualifier": "STRUCTURAL",
@@ -10028,7 +10028,7 @@
    "labels": [
     "KS-ALPHA.1"
    ],
-   "description": "The side/front switch. Claim: the two views of one now — countless windows face-on, one neck and one grain edge-on — read one cut fraction and differ by exactly one grain, the pupil, and by nothing more. Test, structural: fires if the number of windows firing at one now moves the cut fraction, or if the front-face event read as a whole differs from the side-view event by anything other than that one grain. Empirical limb, PROVISIONAL: in a laboratory the window count is the local density of matter — depth of potential is deliberately excluded from the proxy, because potential depth is a function of position and position belongs to P-GLASS.1. Attribution fixed before any measurement: one datum does not fire two switches, and a firing is assigned here only if the dependence tracks density or multiplicity rather than location in the record. Registered without a design: the terrestrial-atom against white-dwarf comparison, at parts in a hundred thousand, varies density and position together and fires neither. The limb becomes live the day an observation varies density materially at one position. Armed at the lock on the author’s word. The switch does not know 137. Recovery: AP54 §3 falls; §2’s definition survives as a per-window statement; the corpus is unaffected.",
+   "description": "The side/front switch. Claim: the two views of one now — countless windows face-on, one neck and one grain edge-on — read one cut fraction and differ by exactly one grain, the pupil, and by nothing more. Test, structural: fires if the number of windows firing at one now moves the cut fraction, or if the front-face event read as a whole differs from the side-view event by anything other than that one grain. Empirical limb, PROVISIONAL: in a laboratory the window count is the local density of matter — depth of potential is deliberately excluded from the proxy, because potential depth is a function of position and position belongs to P-GLASS.1. Attribution fixed before any measurement: one datum does not fire two switches, and a firing is assigned here only if the dependence tracks density or multiplicity rather than location in the record. Registered without a design: the terrestrial-atom against white-dwarf comparison, at parts in a hundred thousand, varies density and position together and fires neither. The limb becomes live the day an observation varies density materially at one position. Armed at the lock on the author’s word. The switch does not know 137. Recovery: AP54 §3 falls; §2’s definition survives as a per-window statement; the work is unaffected.",
    "status": "live",
    "status_raw": "LIVE — STRUCTURAL",
    "status_qualifier": "STRUCTURAL",
@@ -10795,12 +10795,12 @@
    "labels": [
     "KS-ID.1"
    ],
-   "description": "One-I / topological singularity of the interior. If the break produces multiple independent interiors rather than one, the one-I claim fails. D-ID.1 PAID at the structural register, 11 September 2026, by AP51 §2 — awareness as coupling capacity (AP29), coupling forced (AP50 §5), the hourglass one — on the author’s rule and by construction; the topological formalisation remains, in AP43 §9’s own words. The test is narrowed on the author’s ruling of 11 September 2026 and fires on one thing: a second neck, a sequence of writing not reducible to the one. The two neighbouring counterexamples fire where they were already written — a capacity that differs between sites is KS-GLASS.3’s test, a capacity that attaches to the reader’s configuration rather than to the grain is KS-GLASS.1’s. One claim, one switch. Referenced by KS-32.4, KS-33.9, KS-39.6 as their source claim. Dated note, 18 September 2026 (author’s ruling; MKSR v5.33): the standing of the claim moves from held as a claim to the floor — one reality, one now, one interior, one awareness — performed in the act, as the axiom is: a record made at one site is read at another, and every attempt to find a second now is made now. The test is unchanged: a second neck. The neighbours are unchanged: the rate at KS-GLASS.3 (P-GLASS.1), the reader’s configuration at KS-GLASS.1. A description that circulated in the master book’s source — every window has to read the same now; two honest readings of that now, disagreeing beyond the instruments — was never this switch’s condition and cannot be run (no site reads any now: KS-GLASS.2, AP52); it is withdrawn from the book. D-ID.1 unchanged: the formal statement of the floor is owed, as the axiom’s is paid at AP20. No count moves.",
+   "description": "One-I / topological singularity of the interior. If the break produces multiple independent interiors rather than one, the one-I claim fails. D-ID.1 PAID at the structural register, 11 September 2026, by AP51 §2 — awareness as coupling capacity (AP29), coupling forced (AP50 §5), the hourglass one — on the author’s rule and by construction. The test is narrowed on the author’s ruling of 11 September 2026 and fires on one thing: a second neck, a sequence of writing not reducible to the one. The two neighbouring counterexamples fire where they were already written — a capacity that differs between sites is KS-GLASS.3’s test, a capacity that attaches to the reader’s configuration rather than to the grain is KS-GLASS.1’s. One claim, one switch. Referenced by KS-32.4, KS-33.9, KS-39.6 as their source claim. Dated note, 18 September 2026 (author’s ruling; MKSR v5.33): the standing of the claim moves from held as a claim to the floor — one reality, one now, one interior, one awareness — performed in the act, as the axiom is: a record made at one site is read at another, and every attempt to find a second now is made now. The test is unchanged: a second neck. The neighbours are unchanged: the rate at KS-GLASS.3 (P-GLASS.1), the reader’s configuration at KS-GLASS.1. A description that circulated in the master book’s source — every window has to read the same now; two honest readings of that now, disagreeing beyond the instruments — was never this switch’s condition and cannot be run (no site reads any now: KS-GLASS.2, AP52); it is withdrawn from the book. D-ID.1 unchanged: the formal statement of the floor is owed, as the axiom’s is paid at AP20. No count moves. Dated note, 24 September 2026 (author’s ruling): D-ID.1 is CLOSED. The one interior is the floor, performed as the axiom is: a record made at one window is read at another, and the denial uses it. AP51 §2 derives it at the structural register from what is already on the record. The formal topological statement AP43 §9 named is not owed; what is performed is not formalised before it stands. This switch stays live and fires on one thing, a second neck. It supersedes the sentence above that booked the formal statement as owed. No count moves.",
    "status": "live",
-   "status_raw": "LIVE — DEBT (paid at the structural register; the formalisation outstanding)",
-   "status_qualifier": "DEBT (paid at the structural register; the formalisation outstanding)",
+   "status_raw": "LIVE — STRUCTURAL (D-ID.1 closed at the structural register, 24 September 2026)",
+   "status_qualifier": "STRUCTURAL (D-ID.1 closed at the structural register, 24 September 2026)",
    "registers": [
-    "debt"
+    "structural"
    ],
    "section": "II",
    "origins": [
@@ -10813,7 +10813,7 @@
     "global": false,
     "master": false,
     "non_negotiable": false,
-    "open_debt": true,
+    "open_debt": false,
     "superseded_as_value": false
    }
   },
@@ -14670,7 +14670,7 @@
    "labels": [
     "KS-APP5.2"
    ],
-   "description": "Show that coupling-capacity projection cannot be computed without age or ability bias.",
+   "description": "Show that coupling-capacity projection cannot be computed without age or ability bias. Sharpened by dated note of 24 September 2026, on the author’s ruling on Ø Applications Five’s triage line, which now reads the corridor the intervention can restore — never the person’s standing, relationships or usefulness to others: show that coupling-capacity projection cannot be computed without age, ability or social-role bias built into its form, and the allocation reading is wrong. Status unchanged.",
    "status": "live",
    "status_raw": "LIVE",
    "registers": [

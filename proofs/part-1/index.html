@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-padding-top:56px">
+<html lang="en-GB" style="scroll-padding-top:56px">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The 420 Code — Part I: The Premise</title>
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -28,12 +32,21 @@
   .nav a:hover { color: #8B6914; }
   .bc { display: inline-block; font-size: 16px; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-right: 4px; background: #e8f5e9; color: #2e7d32; }
   .bl { display: inline-block; font-size: 16px; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-right: 4px; background: #e3f2fd; color: #1565c0; }
+
+/* 24 September 2026, the brief's 6.4: a closed row is hidden by the attribute where the browser
+   can search inside it (hidden="until-found"), not by display, so find-in-page reaches the words
+   and the row opens itself. The attribute is only ever set where beforematch exists, so a browser
+   without it never meets this rule. !important because the closed state is written in several
+   nested rules and this one has to win over all of them. */
+.ap-detail[hidden="until-found"]{display:block!important;content-visibility:hidden;
+  padding:0!important;margin:0!important;border:0!important}
 </style>
+<link rel="icon" href="/favicon.ico" sizes="any">
 </head>
 <body>
 <nav class="nav"><a href="#ap40">AP40</a><a href="#ap01">AP01</a><a href="#ap20">AP20</a></nav>
 <div class="container">
-<div class="part-header">
+<div class="part-header" tabindex="0" role="button" aria-expanded="false">
   <div class="part-label">Part I</div>
   <div class="part-title">The Premise</div>
   <div class="part-subtitle">One record exists. Everything else is consequence.</div>
@@ -41,7 +54,7 @@
 
 <!-- ==================== AP40 ==================== -->
 <div class="ap-section" id="ap40">
-<div class="ap-header">
+<div class="ap-header" tabindex="0" role="button" aria-expanded="false">
   <div class="ap-number">Artist's Proof 40</div>
   <div class="ap-title">The Irrational</div>
 </div>
@@ -100,7 +113,7 @@
 
 <!-- ==================== AP01 ==================== -->
 <div class="ap-section" id="ap01">
-<div class="ap-header">
+<div class="ap-header" tabindex="0" role="button" aria-expanded="false">
   <div class="ap-number">Artist's Proof 01</div>
   <div class="ap-title">The Actualization State</div>
 </div>
@@ -163,7 +176,7 @@
 
 <!-- ==================== AP20 ==================== -->
 <div class="ap-section" id="ap20">
-<div class="ap-header">
+<div class="ap-header" tabindex="0" role="button" aria-expanded="false">
   <div class="ap-number">Artist's Proof 20</div>
   <div class="ap-title">The Proof</div>
 </div>
@@ -270,6 +283,47 @@
       el.textContent=(d.count||0).toLocaleString();
     }).catch(function(){el.textContent='—'});
   }
+})();
+</script>
+
+<script id="kbd-open">
+// 24 September 2026, the brief's 6.4. Every header that opens a row is a button: reachable by tab,
+// named as a button, and saying whether its row is open. Enter and Space fire the page's own click,
+// so the opening itself stays where it was written.
+(function(){
+  var SEL='.ap-header[role="button"],.fd-hook[role="button"],.part-header[role="button"]';
+  function isOpen(el){
+    if(el.classList.contains('part-header')){
+      var n=el.nextElementSibling; return !!(n&&!n.classList.contains('collapsed'));
+    }
+    var r=el.closest('.ap-row'); return !!(r&&r.classList.contains('open'));
+  }
+  var findable=('onbeforematch' in document.documentElement);
+  function sync(){
+    document.querySelectorAll(SEL).forEach(function(el){
+      el.setAttribute('aria-expanded',isOpen(el)?'true':'false');
+    });
+    if(!findable)return;
+    document.querySelectorAll('.ap-row > .ap-detail').forEach(function(d){
+      var r=d.parentElement;
+      if(r.classList.contains('open')) d.removeAttribute('hidden');
+      else d.setAttribute('hidden','until-found');
+    });
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Enter'&&e.key!==' '&&e.key!=='Spacebar')return;
+    var el=e.target.closest&&e.target.closest(SEL); if(!el)return;
+    if(e.target.closest('a')||e.target.closest('button')||e.target.closest('input'))return;
+    e.preventDefault(); el.click();
+  });
+  document.addEventListener('click',function(){setTimeout(sync,0)});
+  window.addEventListener('hashchange',function(){setTimeout(sync,0)});
+  document.addEventListener('beforematch',function(e){
+    var r=e.target&&e.target.closest&&e.target.closest('.ap-row');
+    while(r){r.classList.add('open');r=r.parentElement&&r.parentElement.closest('.ap-row')}
+    setTimeout(sync,0);
+  });
+  sync();
 })();
 </script>
 </body>

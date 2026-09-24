@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """The site header's two drop-downs, as every page with the drop-down header carries it.
 
-Rooms, then the language: a button showing the flag of the language being read, the
-same kind of button as Rooms, with the same arrow, opening a list of all thirteen.
-A flag takes the reader to the same page in that language wherever the page exists
-in it -- a front door to a front door, a home page to a home page, the Proofs page to
-that edition's proofs room. A page that exists only in English (Predictions, its frozen
+Rooms, then the language: a button carrying the name of the language being read,
+in that language's own script, the same kind of button as Rooms, with the same arrow,
+opening a list of all thirteen. Since 24 September 2026 there are no flags: a flag is a
+nation, not a language, and one of them carried a creed. An entry takes the reader to the
+same page in that language wherever the page exists in it -- a front door to a front door,
+a home page to a home page, the Proofs page to that edition's proofs room. A page that exists only in English (Predictions, its frozen
 documents, Three Ways of Being Sure) sends each other language to its edition's home.
 
 One row at every width: the logo and both buttons keep their size, and the door's name
@@ -14,9 +15,8 @@ wraps inside its own box when a phone is narrow, never splitting "The 420 Code".
 Used by build.py for the twelve editions, and for every English page that carries the
 header, so all of them are made by the same code."""
 
-FLAGCDN = "https://flagcdn.com/w40/{}.png"
-
 #          code  flag  the language's own name   "Language", in that language
+# the flag column is kept for the record and is no longer used anywhere (24 September 2026)
 LANGS = [("en", "gb", "English",    "Language"),
          ("es", "es", "Español",    "Idioma"),
          ("fr", "fr", "Français",   "Langue"),
@@ -68,9 +68,9 @@ def rooms_button(label):
 
 
 def flag_button(lang):
-    flag, name, word = BY_CODE[lang]
+    _flag, name, word = BY_CODE[lang]
     return (f'<button class="nav-flag" aria-expanded="false" aria-label="{word}: {name}" '
-            f'onclick="{_toggle("lang-open")}"><img src="{FLAGCDN.format(flag)}" width="20" height="15" alt=""></button>')
+            f'onclick="{_toggle("lang-open")}">{name}</button>')
 
 
 def lang_menu(lang, kind, here=None):
@@ -78,7 +78,7 @@ def lang_menu(lang, kind, here=None):
     for code, flag, name, _ in LANGS:
         cur = ' aria-current="page"' if code == lang else ""
         rows.append(f'<a href="{target(code, kind, here)}" class="nav-lang" hreflang="{code}" lang="{code}"{cur}>'
-                    f'<img src="{FLAGCDN.format(flag)}" width="20" height="15" alt="">{name}</a>')
+                    f'{name}</a>')
     return '<div class="nav-langs">\n    ' + "\n    ".join(rows) + "\n  </div>"
 
 

@@ -81,16 +81,16 @@
     checks.push(["Expansion rate H0, the closure", "AP48",
       H0_pred.toFixed(2) + " km/s/Mpc", H0_meas.toFixed(1) + " km/s/Mpc", Math.abs(H0_pred - H0_meas), "km/s/Mpc", 3.1]);
     corpses.push(["Hubble constant from the floor inverted", "AP18 / KS-45.1", "2026-09-03",
-      "74.30 km/s/Mpc (+/- 1.2 as registered)", H0_pred.toFixed(2) + " km/s/Mpc (the corpus's own rate)",
+      "74.30 km/s/Mpc (+/- 1.2 as registered)", H0_pred.toFixed(2) + " km/s/Mpc (the work's own rate)",
       Math.abs(74.3 - H0_pred) / 1.2]);
 
-    // CLAIM 7: MOND acceleration scale a0 at the corpus's rate (AP18 / AP48)
+    // CLAIM 7: MOND acceleration scale a0 at the work's rate (AP18 / AP48)
     var CS2 = 2 * log(1 / cos(0.5) + tan(0.5));
     var H0_si = H0_pred / KM_PER_MPC;
     var a0_pred = CS2 * C * H0_si / (2 * pi);
     var a0_meas = 1.20e-10;
     var a0_unc = sqrt(Math.pow(0.02e-10, 2) + Math.pow(0.24e-10, 2));
-    checks.push(["MOND acceleration a0 at the corpus's H0", "AP18",
+    checks.push(["MOND acceleration a0 at the work's H0", "AP18",
       a0_pred.toExponential(4), a0_meas.toExponential(4) + " +/- " + a0_unc.toExponential(2), Math.abs(a0_pred - a0_meas) / a0_unc, "sigma", 3.0]);
 
     checks.push(["Dark energy fraction", "AP42",

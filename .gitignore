@@ -7,3 +7,14 @@ node_modules/
 .env.*
 !.env.example
 *.secret
+
+# The Museum stages here. Out of the deploy until G says ship.
+museum/build/out/
+museum/__pycache__/
+
+# The libraries' generators write their pages here before they are copied to /models/ and
+# /five-doors/. Build output, never served, and it must not be walked as if it were the site.
+tools/*/source/reader/site/
+
+# Python's bytecode, from the site's own scripts. Never served.
+__pycache__/
