@@ -8,7 +8,9 @@
 // counters, a different key, so nothing already counted moves.
 import { getStore } from "@netlify/blobs";
 
-const LABELS = new Set(["subscribe", "support-card", "support-open"]);
+// "subscribe" was here until 24 September 2026, when Ø Stay in the Loop came off the
+// site. It counted nothing in the hours it stood: no page can send that label now.
+const LABELS = new Set(["support-card", "support-open"]);
 
 export default async (req, context) => {
   const store = getStore("counters");
