@@ -31,7 +31,9 @@ import header as H  # noqa: E402
 _door = open(os.path.join(REPO, 'what-is-the-420-code', 'index.html'), encoding='utf-8').read()
 _i = _door.index('  <div class="nav-menu">')
 ROOMS_MENU = _door[_i:_door.index('  </div>', _i) + len('  </div>')]
-assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 17, 'the front door\'s rooms block'
+# 17 -> 18 on 24 September 2026: Ø The Films joins the menu (films_menu.py). Rebuild this
+# library after any menu change, or its pages carry a menu the rest of the site has left.
+assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 18, 'the front door\'s rooms block'
 BOOKS = [
     dict(slug='illusion', src='illusion', title='The Illusion of the Other', short='Illusion', door='the gentle door',
          pdf=None, original='/Illusion_of_the_Other.pdf', edition=None, epilogue_file=None),

@@ -28,7 +28,9 @@ import header as H  # noqa: E402
 _door = open(os.path.join(REPO, 'what-is-the-420-code', 'index.html'), encoding='utf-8').read()
 _i = _door.index('  <div class="nav-menu">')
 ROOMS_MENU = _door[_i:_door.index('  </div>', _i) + len('  </div>')]
-assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 17, 'the front door\'s rooms block'
+# 17 -> 18 on 24 September 2026: Ø The Films joins the menu (films_menu.py). Rebuild this
+# library after any menu change, or its pages carry a menu the rest of the site has left.
+assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 18, 'the front door\'s rooms block'
 BOOKS = [
     dict(slug='dissolutions', title='Ø Dissolutions', prefix='PZ', pdf='/models/dissolutions.pdf', original='/Dissolutions.pdf', original_pages=370, edition='v1.0'),
     dict(slug='resolutions', title='Ø Resolutions', prefix='RES', pdf='/models/resolutions.pdf', original='/Resolutions.pdf', original_pages=548, edition='v1.0'),
