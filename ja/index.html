@@ -1073,6 +1073,25 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="font-size:16px;color:var(--g4);margin:.5rem 0 0"><a href="Master_Kill_Switch_Registry_JA.pdf" download="" style="text-decoration:none;font-weight:700">キルスイッチ登録簿の完全版をダウンロード — <span class="fmt">PDF</span></a> — 本言語版の翻訳は v4.0、2026年3月であり、42のアーティスト・プルーフにわたるキルスイッチ258個を収める。現行のレジストリは v5.37、2026年9月21日、キルスイッチ604個——すぐ上にある英語の正本のキルスイッチ・レジストリがそれである（本ページの件数は v5.37 に従う）</p>
 </div>
 
+<!-- SUPPORT THE WORK -->
+<div class="results" id="support-the-work">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø この仕事を支える</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">作品は無料です。費用は無料ではありません。</p>
+  <p style="font-size:16px;margin:0 0 1rem">420 Code は無料です。これからも無料です。永遠に。</p>
+  <p style="font-size:16px;margin:0 0 1rem">すべての論文。すべての本。すべての録音。全文を公開しています。読むために。聴くために。ペイウォールはありません。</p>
+  <p style="font-size:16px;margin:0 0 1rem">作品は無料です。費用は無料ではありません。</p>
+  <p style="font-size:16px;margin:0 0 1rem">サーバーには毎月費用がかかります。訪れる人が増えるほど、その費用は大きくなります。時間も現実のものです。420 Code に費やす時間は、他の場所で稼がない時間です。</p>
+  <p style="font-size:16px;margin:0 0 1rem">この仕事は独立しています。資金提供はありません。背後に立つ機関もありません。</p>
+  <p style="font-size:16px;margin:0 0 1rem">この仕事があなたにとって意味を持つなら、支えることができます。</p>
+  <p style="font-size:16px;margin:0 0 1rem">あなたの支援は三つのことをします。420 Code を永遠に無料に保ちます。芸術家が制約なく自由に働けるようにします。そして 420 Code の管理者、支援者、制作者、開発者を支えます。</p>
+  <p style="font-size:16px;margin:0 0 1rem">すべての支援は Studio G Global に渡ります。Studio G Global は 420 Code の制作元であり管理者です。</p>
+  <p style="font-size:16px;margin:0 0 1rem">支援は何も買いません。アクセスも。影響力も。作品は誰にとっても同じままです。</p>
+  <p style="font-size:16px;margin:0 0 1rem">Studio G Global は登録された慈善団体ではありません。寄付は税控除の対象になりません。</p>
+  <p style="font-size:16px;margin:0 0 1rem">どんな金額でも助けになります。ありがとうございます。</p>
+  <p id="support-card" style="font-size:16px;margin:1.5rem 0 1rem"><b>カードで支援する</b><br>カード決済ページは 2026年9月25日に開きます。</p>
+  <p style="font-size:16px;margin:0 0 1rem"><b>銀行振込をご希望ですか？</b><br><a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a> までご連絡ください。振込先をお送りします。</p>
+</div>
+
 <!-- EMAIL SIGNUP -->
 <div class="results">
   <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">最新情報を受け取る</h2>
@@ -1080,7 +1099,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
     <input type="email" name="EMAIL" id="EMAIL" aria-label="メールアドレス" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
-    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">購読する</button>
+    <button type="submit" data-count="subscribe" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">購読する</button>
     <input type="text" name="email_address_check" value="" style="display:none">
     <input type="hidden" name="locale" value="en">
   </form>
@@ -1347,6 +1366,22 @@ document.addEventListener('keydown',function(e){
     else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
   });
   document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+
+<script id="click-counter">
+// 24 September 2026, G's word: "we must just see if anyone ever clicked on it." A click on a
+// button marked data-count sends its label and nothing else. No address, no identity, no page,
+// no time. The button's own work is untouched; the count goes beside it and is never waited for.
+(function(){
+  document.addEventListener('click',function(e){
+    var el=e.target.closest&&e.target.closest('[data-count]'); if(!el) return;
+    try{
+      fetch('/.netlify/functions/click-counter',{method:'POST',keepalive:true,
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({label:el.getAttribute('data-count')})}).catch(function(){});
+    }catch(err){}
+  },true);
 })();
 </script>
 </body></html>

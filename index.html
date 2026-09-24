@@ -851,6 +851,25 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 <a href="https://www.amazon.com/dp/B0CW6HM47R" target="_blank" rel="noopener" style="display:inline-block;padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);text-decoration:none;border:none;border-radius:0;margin:0 0 .5rem">Browse on Amazon</a>
 </div>
 </div>
+<div class="ap-row fd-row" id="support-the-work">
+<div class="ap-header" onclick="fdToggle(this)" tabindex="0" role="button" aria-expanded="false"><h2 class="ap-title">Ø Support the Work</h2><span class="ap-arrow">▸</span></div>
+<p class="fd-hook" onclick="fdToggle(this)" tabindex="0" role="button" aria-expanded="false">The work is free. The cost is not.</p>
+<div class="ap-detail">
+<p>The 420 Code is free. It will stay free. Forever.</p>
+<p>Every paper. Every book. Every recording. Published in full. To read. To hear. No paywall.</p>
+<p>The work is free. The cost is not.</p>
+<p>The servers cost money every month. As more people come, that cost grows. The hours are real too. Time given to the 420 Code is time not spent earning elsewhere.</p>
+<p>The work is independent. It has no funding. No institution stands behind it.</p>
+<p>If the work matters to you, you can help carry it.</p>
+<p>Your support does three things. It keeps the 420 Code free, forever. It lets the artist work freely, without constraint. And it supports the custodians, the supporters, the builders and the developers of the 420 Code.</p>
+<p>All support goes to Studio G Global. Studio G Global is the production house and custodian of the 420 Code.</p>
+<p>Support buys nothing. Not access. Not influence. The work stays the same for everyone.</p>
+<p>Studio G Global is not a registered charity. Contributions are not tax-deductible.</p>
+<p>Any amount helps. Thank you.</p>
+<p id="support-card"><b>Support by card</b><br>The card page opens on 25 September 2026.</p>
+<p><b>Prefer a bank transfer?</b><br>Write to <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a>. We will send the banking details.</p>
+</div>
+</div>
 <div class="ap-row fd-row" id="stay-in-the-loop">
 <div class="ap-header" onclick="fdToggle(this)" tabindex="0" role="button" aria-expanded="false"><h2 class="ap-title">Ø Stay in the Loop</h2><span class="ap-arrow">▸</span></div>
 <p class="fd-hook" onclick="fdToggle(this)" tabindex="0" role="button" aria-expanded="false">When something new lands, you’ll know first.</p>
@@ -858,7 +877,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 <p>Your details will not be added unless you click the confirmation link to be emailed.</p>
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
     <input type="email" name="EMAIL" id="EMAIL" aria-label="Email address" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
-    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">Subscribe</button>
+    <button type="submit" data-count="subscribe" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">Subscribe</button>
     <input type="text" name="email_address_check" value="" style="display:none">
     <input type="hidden" name="locale" value="en">
   </form>
@@ -1266,6 +1285,22 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
     setTimeout(sync,0);
   });
   sync();
+})();
+</script>
+
+<script id="click-counter">
+// 24 September 2026, G's word: "we must just see if anyone ever clicked on it." A click on a
+// button marked data-count sends its label and nothing else. No address, no identity, no page,
+// no time. The button's own work is untouched; the count goes beside it and is never waited for.
+(function(){
+  document.addEventListener('click',function(e){
+    var el=e.target.closest&&e.target.closest('[data-count]'); if(!el) return;
+    try{
+      fetch('/.netlify/functions/click-counter',{method:'POST',keepalive:true,
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({label:el.getAttribute('data-count')})}).catch(function(){});
+    }catch(err){}
+  },true);
 })();
 </script>
 </body></html>

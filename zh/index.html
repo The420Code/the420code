@@ -1104,6 +1104,25 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="font-size:16px;font-weight:600;margin:0 0 .5rem;display:flex;align-items:center;gap:.75rem">结构词汇表 <a class="nb-pdf" href="The_420_Code_Structural_Glossary_ZH.pdf">PDF</a></p>
 </div>
 
+<!-- SUPPORT THE WORK -->
+<div class="results" id="support-the-work">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø 支持这项工作</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">作品是免费的。成本不是。</p>
+  <p style="font-size:16px;margin:0 0 1rem">420 Code 是免费的。它将永远免费。</p>
+  <p style="font-size:16px;margin:0 0 1rem">每一篇论文。每一本书。每一段录音。全文发布。可读。可听。没有付费墙。</p>
+  <p style="font-size:16px;margin:0 0 1rem">作品是免费的。成本不是。</p>
+  <p style="font-size:16px;margin:0 0 1rem">服务器每个月都要花钱。来的人越多，这笔费用就越高。时间也是实实在在的。投入 420 Code 的时间，就是没有在别处赚取的时间。</p>
+  <p style="font-size:16px;margin:0 0 1rem">这项工作是独立的。它没有任何资助。没有机构在背后支持它。</p>
+  <p style="font-size:16px;margin:0 0 1rem">如果这项工作对你有意义，你可以帮忙承担它。</p>
+  <p style="font-size:16px;margin:0 0 1rem">你的支持做三件事。它让 420 Code 永远免费。它让艺术家自由地工作，不受约束。它支持 420 Code 的守护者、支持者、建设者和开发者。</p>
+  <p style="font-size:16px;margin:0 0 1rem">所有支持都归 Studio G Global。Studio G Global 是 420 Code 的制作方与守护者。</p>
+  <p style="font-size:16px;margin:0 0 1rem">支持买不到任何东西。买不到访问权。买不到影响力。作品对每个人都是一样的。</p>
+  <p style="font-size:16px;margin:0 0 1rem">Studio G Global 不是注册慈善机构。捐款不可抵税。</p>
+  <p style="font-size:16px;margin:0 0 1rem">任何金额都有帮助。谢谢。</p>
+  <p id="support-card" style="font-size:16px;margin:1.5rem 0 1rem"><b>用银行卡支持</b><br>银行卡支付页面将于 2026 年 9 月 25 日开放。</p>
+  <p style="font-size:16px;margin:0 0 1rem"><b>更愿意银行转账？</b><br>请写信到 <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a>。我们会发送银行信息。</p>
+</div>
+
 <!-- EMAIL SIGNUP -->
 <div class="results">
   <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">保持关注</h2>
@@ -1111,7 +1130,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
     <input type="email" name="EMAIL" id="EMAIL" aria-label="电子邮箱地址" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
-    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">订阅</button>
+    <button type="submit" data-count="subscribe" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">订阅</button>
     <input type="text" name="email_address_check" value="" style="display:none">
     <input type="hidden" name="locale" value="en">
   </form>
@@ -1378,6 +1397,22 @@ document.addEventListener('keydown',function(e){
     else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
   });
   document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+
+<script id="click-counter">
+// 24 September 2026, G's word: "we must just see if anyone ever clicked on it." A click on a
+// button marked data-count sends its label and nothing else. No address, no identity, no page,
+// no time. The button's own work is untouched; the count goes beside it and is never waited for.
+(function(){
+  document.addEventListener('click',function(e){
+    var el=e.target.closest&&e.target.closest('[data-count]'); if(!el) return;
+    try{
+      fetch('/.netlify/functions/click-counter',{method:'POST',keepalive:true,
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({label:el.getAttribute('data-count')})}).catch(function(){});
+    }catch(err){}
+  },true);
 })();
 </script>
 </body></html>

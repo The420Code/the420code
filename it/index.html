@@ -1095,6 +1095,25 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="font-size:16px;color:var(--g4);margin:.5rem 0 0"><a href="Master_Kill_Switch_Registry_IT.pdf" download="" style="text-decoration:none;font-weight:700">Scarica il Registro completo degli Interruttori Letali — <span class="fmt">PDF</span></a> — La traduzione in questa lingua è della v4.0, marzo 2026: 258 kill switch su 42 Prove d’Artista. Il registro attuale è la v5.37, 21 settembre 2026: 604 kill switch, in inglese, nel link qui sopra (i conteggi in questa pagina seguono la v5.37)</p>
 </div>
 
+<!-- SUPPORT THE WORK -->
+<div class="results" id="support-the-work">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Sostieni l’Opera</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">L’opera è gratuita. Il costo no.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Il 420 Code è gratuito. Resterà gratuito. Per sempre.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Ogni articolo. Ogni libro. Ogni registrazione. Pubblicato per intero. Da leggere. Da ascoltare. Nessun paywall.</p>
+  <p style="font-size:16px;margin:0 0 1rem">L’opera è gratuita. Il costo no.</p>
+  <p style="font-size:16px;margin:0 0 1rem">I server costano denaro ogni mese. Più persone arrivano, più quel costo cresce. Anche le ore sono reali. Il tempo dato al 420 Code è tempo non guadagnato altrove.</p>
+  <p style="font-size:16px;margin:0 0 1rem">L’opera è indipendente. Non ha finanziamenti. Nessuna istituzione la sostiene.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Se l’opera conta per te, puoi aiutare a portarla.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Il tuo sostegno fa tre cose. Mantiene il 420 Code gratuito, per sempre. Permette all’artista di lavorare liberamente, senza vincoli. E sostiene i custodi, i sostenitori, i costruttori e gli sviluppatori del 420 Code.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Tutto il sostegno va a Studio G Global. Studio G Global è la casa di produzione e la custode del 420 Code.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Il sostegno non compra nulla. Né accesso. Né influenza. L’opera resta la stessa per tutti.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Studio G Global non è un ente benefico registrato. I contributi non sono deducibili dalle tasse.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Qualsiasi importo aiuta. Grazie.</p>
+  <p id="support-card" style="font-size:16px;margin:1.5rem 0 1rem"><b>Sostieni con carta</b><br>La pagina per il pagamento con carta apre il 25 settembre 2026.</p>
+  <p style="font-size:16px;margin:0 0 1rem"><b>Preferisci un bonifico bancario?</b><br>Scrivi a <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a>. Ti invieremo le coordinate bancarie.</p>
+</div>
+
 <!-- EMAIL SIGNUP -->
 <div class="results">
   <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Resta aggiornato</h2>
@@ -1102,7 +1121,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
     <input type="email" name="EMAIL" id="EMAIL" aria-label="Indirizzo email" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
-    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">Iscriviti</button>
+    <button type="submit" data-count="subscribe" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">Iscriviti</button>
     <input type="text" name="email_address_check" value="" style="display:none">
     <input type="hidden" name="locale" value="en">
   </form>
@@ -1369,6 +1388,22 @@ document.addEventListener('keydown',function(e){
     else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
   });
   document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+
+<script id="click-counter">
+// 24 September 2026, G's word: "we must just see if anyone ever clicked on it." A click on a
+// button marked data-count sends its label and nothing else. No address, no identity, no page,
+// no time. The button's own work is untouched; the count goes beside it and is never waited for.
+(function(){
+  document.addEventListener('click',function(e){
+    var el=e.target.closest&&e.target.closest('[data-count]'); if(!el) return;
+    try{
+      fetch('/.netlify/functions/click-counter',{method:'POST',keepalive:true,
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({label:el.getAttribute('data-count')})}).catch(function(){});
+    }catch(err){}
+  },true);
 })();
 </script>
 </body></html>

@@ -1093,6 +1093,25 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
   <p style="font-size:16px;color:var(--g4);margin:.5rem 0 0"><a href="Master_Kill_Switch_Registry_FR.pdf" style="text-decoration:none;font-weight:700">Télécharger le Registre complet des Clauses de Mort — <span class="fmt">PDF</span></a> — Traduction française de la v5.25, juin 2026 : 560 clauses de mort, dont 277 répartis sur 43 Épreuves d’Artiste. Le registre faisant foi est la v5.37, 21 septembre 2026, 604 clauses — le lien en anglais ci-dessus (les comptes de cette page suivent la v5.37)</p>
 </div>
 
+<!-- SUPPORT THE WORK -->
+<div class="results" id="support-the-work">
+  <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Ø Soutenir l’Œuvre</h2>
+  <p style="font-size:16px;margin:0 0 1.5rem">L’œuvre est gratuite. Son coût ne l’est pas.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Le 420 Code est gratuit. Il le restera. Pour toujours.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Chaque article. Chaque livre. Chaque enregistrement. Publié en entier. À lire. À écouter. Sans péage.</p>
+  <p style="font-size:16px;margin:0 0 1rem">L’œuvre est gratuite. Son coût ne l’est pas.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Les serveurs coûtent de l’argent chaque mois. Plus il vient de monde, plus ce coût augmente. Les heures aussi sont réelles. Le temps donné au 420 Code est du temps qui n’est pas gagné ailleurs.</p>
+  <p style="font-size:16px;margin:0 0 1rem">L’œuvre est indépendante. Elle n’a aucun financement. Aucune institution ne la soutient.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Si l’œuvre compte pour vous, vous pouvez aider à la porter.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Votre soutien fait trois choses. Il garde le 420 Code gratuit, pour toujours. Il permet à l’artiste de travailler librement, sans contrainte. Et il soutient les gardiens, les soutiens, les bâtisseurs et les développeurs du 420 Code.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Tout le soutien va à Studio G Global. Studio G Global est la maison de production et la gardienne du 420 Code.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Le soutien n’achète rien. Ni accès. Ni influence. L’œuvre reste la même pour tous.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Studio G Global n’est pas une association caritative enregistrée. Les contributions ne sont pas déductibles des impôts.</p>
+  <p style="font-size:16px;margin:0 0 1rem">Tout montant aide. Merci.</p>
+  <p id="support-card" style="font-size:16px;margin:1.5rem 0 1rem"><b>Soutenir par carte</b><br>La page de paiement par carte ouvre le 25 septembre 2026.</p>
+  <p style="font-size:16px;margin:0 0 1rem"><b>Vous préférez un virement bancaire ?</b><br>Écrivez à <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a>. Nous vous enverrons les coordonnées bancaires.</p>
+</div>
+
 <!-- EMAIL SIGNUP -->
 <div class="results">
   <h2 style="font-size:26px;font-weight:700;margin:0 0 1.25rem">Reste informé</h2>
@@ -1100,7 +1119,7 @@ print("Copy this code. Run it. Confirm it yourself.")</code></pre>
 
   <form id="sib-form" method="POST" action="https://4d58dc4e.sibforms.com/serve/MUIFAIkt5yDjVBacBHmPb6L8dgINprYx4_YfWykwoVOMnttCW2lb0r7OT-lQWeUUwGLqoVEYVnYo4tLWTuDVF2obFavhzQLV_D56xHLeJ-ZeKuQ2_Sq-jp9HqzQ74Z7rBIOu0WtQ6apZMOQF2mioqsyqo6hRkfF-PaPKWIrasClAyVBCraTXj3DbO4aS1GFSaxYndYOYLmWYFYJ2Vg==" style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;max-width:540px" novalidate="true">
     <input type="email" name="EMAIL" id="EMAIL" aria-label="Adresse e-mail" placeholder="your@email.com" required="" style="flex:1;min-width:200px;padding:10px 12px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;border:1px solid var(--bk);background:var(--wh);color:var(--bk);border-radius:0;outline:none">
-    <button type="submit" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">S’abonner</button>
+    <button type="submit" data-count="subscribe" style="padding:10px 24px;font-family:'Atkinson Hyperlegible',sans-serif;font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);border:none;border-radius:0;cursor:pointer">S’abonner</button>
     <input type="text" name="email_address_check" value="" style="display:none">
     <input type="hidden" name="locale" value="en">
   </form>
@@ -1367,6 +1386,22 @@ document.addEventListener('keydown',function(e){
     else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
   });
   document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+
+<script id="click-counter">
+// 24 September 2026, G's word: "we must just see if anyone ever clicked on it." A click on a
+// button marked data-count sends its label and nothing else. No address, no identity, no page,
+// no time. The button's own work is untouched; the count goes beside it and is never waited for.
+(function(){
+  document.addEventListener('click',function(e){
+    var el=e.target.closest&&e.target.closest('[data-count]'); if(!el) return;
+    try{
+      fetch('/.netlify/functions/click-counter',{method:'POST',keepalive:true,
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({label:el.getAttribute('data-count')})}).catch(function(){});
+    }catch(err){}
+  },true);
 })();
 </script>
 </body></html>
