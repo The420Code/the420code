@@ -406,7 +406,7 @@
     "films": 30,
     "url": "https://the420code.org/films/the-axiom-and-the-front-door/",
     "whole_chain": {
-     "url": "https://media.the420code.org/chains/a.mp4",
+     "url": "https://media.the420code.org/chains/a-v2.mp4",
      "minutes": 19
     }
    },
@@ -415,14 +415,14 @@
     "films": 30,
     "url": "https://the420code.org/films/why-21-is-forced-the-method-the-kill-switches/",
     "whole_chain": {
-     "url": "https://media.the420code.org/chains/b.mp4",
+     "url": "https://media.the420code.org/chains/b-v2.mp4",
      "minutes": 25
     }
    }
   ],
   "media": "https://media.the420code.org",
   "trailer": {
-   "url": "https://media.the420code.org/chains/trailer.mp4",
+   "url": "https://media.the420code.org/chains/trailer-v2.mp4",
    "minutes": 1.8
   }
  },
