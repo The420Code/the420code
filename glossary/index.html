@@ -1263,6 +1263,17 @@ published PDF was built from is beside it at
   }
 })();
 </script>
+<script id="download-counter">
+// Every PDF on this page is counted when it is clicked, by its file name, as on every other page.
+// This page shows no running total, so the script only posts; the pages that show one keep their own.
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href$=".pdf"]');
+  if(!a)return;
+  fetch('/.netlify/functions/download-counter',{method:'POST',keepalive:true,
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({file:a.getAttribute('href').split('/').pop()})}).catch(function(){});
+},true);
+</script>
 <script id="nav-menu-close">
 // A choice in either list closes it and lets the link do its work; a click anywhere
 // outside the header's drop-downs, or Escape, closes whichever is open.

@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ø Kill Switches — the 420 code">
 <meta name="twitter:description" content="604 published conditions under which a claim here fails. Two have already been met.">
-<meta name="twitter:image" content="https://the420code.org/og-card.png">
+<meta name="twitter:image" content="https://the420code.org/Eye_of_the_Universe.jpg">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111111">
 <meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
@@ -1611,6 +1611,17 @@ beside it at <a href="/proofs/instruments/">Ø Instruments</a>. The words are de
     }).catch(function(){el.textContent='—'});
   }
 })();
+</script>
+<script id="download-counter">
+// Every PDF on this page is counted when it is clicked, by its file name, as on every other page.
+// This page shows no running total, so the script only posts; the pages that show one keep their own.
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href$=".pdf"]');
+  if(!a)return;
+  fetch('/.netlify/functions/download-counter',{method:'POST',keepalive:true,
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({file:a.getAttribute('href').split('/').pop()})}).catch(function(){});
+},true);
 </script>
 <script id="nav-menu-close">
 // A choice in either list closes it and lets the link do its work; a click anywhere
