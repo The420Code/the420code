@@ -135,6 +135,15 @@ The five books that are the way in for a reader who is not a physicist. All five
 
 The short editions as PDF: https://the420code.org/five-doors/being-after-religion.pdf, https://the420code.org/five-doors/antichristos.pdf, https://the420code.org/five-doors/relationship-corridor.pdf. The originals: https://the420code.org/Illusion_of_the_Other.pdf, https://the420code.org/Being_After_Religion.pdf, https://the420code.org/Antichristos.pdf, https://the420code.org/The_Relationship_Corridor.pdf, https://the420code.org/The_Interior.pdf (version 2.0.6, 24 September 2026; 2.0.5 is kept at https://the420code.org/proofs/instruments/books/The_Interior_2.0.5.pdf and the first edition at https://the420code.org/The_Interior_1.0.pdf)
 
+## Ø The Films
+
+Short films, one claim each, for the people who would rather watch than read: three chains, seventy-seven films. The drawing draws itself, and G’s words write themselves as his own voice says them. The films add G’s voice and the drawing, not a new claim. They come in chains, each an argument in order, and every line a film says is on its chain’s page as text, in the order it is said — so a chain reads whole with nothing playing, and a reader that cannot decode a film loses nothing. The films themselves are served from media.the420code.org.
+
+- The first seventeen — seventeen films: https://the420code.org/films/the-first-seventeen/
+- The axiom and the front door — thirty films, and the whole chain as one film of nineteen minutes: https://the420code.org/films/the-axiom-and-the-front-door/
+- Why 21 is forced, the method, the kill switches — thirty films, and the whole chain as one film of twenty-five minutes: https://the420code.org/films/why-21-is-forced-the-method-the-kill-switches/
+- The trailer — three films in one, the axiom, then you, then be kind: https://the420code.org/films/#the-trailer
+
 ## Kill Switches (Falsifiability)
 
 604 kill switches are declared across the work (Master Kill Switch Registry v5.37, 24 September 2026): 320 across AP01–AP54, 28 across the Five Doors volumes, 256 across the Ø Models series. 584 are live, 13 closed, and two have fired and are shown as corpses, never repaired. Five debts are outstanding, each named in the registry. Each switch names a specific, testable condition that would falsify one or more claims. A switch tests the logic from its point downstream, so a fired switch shows where a link in the chain broke. The bare neutron–proton row fired at 7.24σ on 2 August 2026: the row had priced a held distinction as free. Priced, the neutron lands at −0.005σ (AP47), and the same correction, carried downstream, moved G from its first reading, +0.69% (AP28, now withdrawn), to −0.036% (AP44) and replaced the Hubble prediction 74.3 ± 1.2, which fired on 3 September 2026, with 67.45 at 0.1σ (AP46, AP48). One repair in the logic; three fields moved toward measurement. Both corpses stay on the site, never repaired. On 23 September 2026 two switches were sharpened by dated note at AP31 — KS-31.2, whose test is now bounded to three drift-times of the organism, and KS-31.7, whose subject is judged before the outcome — and AP31's Debt 20 was paid at the structural register; no count moved. Examples:
@@ -193,5 +202,6 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 - Every kill switch as DATA, for machines: https://the420code.org/killswitches.json (the same parse the room is built from: 604 rows, each with the registry’s own text, status, register, origin, notebook and dates; the registry PDF is the authority where they differ)
 - Structural Glossary (edition 1.3, 24 September 2026): https://the420code.org/The_420_Code_Structural_Glossary.pdf
 - Every glossary entry, one per term, filterable: https://the420code.org/glossary/
+- The films — short films in G’s voice, the argument in chains, every line on the page as text: https://the420code.org/films/
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi
 - DOI: 10.5281/zenodo.22766173 (this version); 10.5281/zenodo.19208225 (all versions)

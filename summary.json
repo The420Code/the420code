@@ -390,6 +390,42 @@
    "The Interior — the operational door": "https://the420code.org/five-doors/the-interior/"
   }
  },
+ "the_films": {
+  "what_it_is": "Short films, one claim each, in G’s own voice, for the people who would rather watch than read. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
+  "shape": "Chains only: each chain is an argument in order, one row per film, every line the film says in the page as text, and the whole chain as one film at the head of its page where it has one.",
+  "where": "https://the420code.org/films/",
+  "films": 77,
+  "chains": [
+   {
+    "name": "The first seventeen",
+    "films": 17,
+    "url": "https://the420code.org/films/the-first-seventeen/"
+   },
+   {
+    "name": "The axiom and the front door",
+    "films": 30,
+    "url": "https://the420code.org/films/the-axiom-and-the-front-door/",
+    "whole_chain": {
+     "url": "https://media.the420code.org/chains/a.mp4",
+     "minutes": 19
+    }
+   },
+   {
+    "name": "Why 21 is forced, the method, the kill switches",
+    "films": 30,
+    "url": "https://the420code.org/films/why-21-is-forced-the-method-the-kill-switches/",
+    "whole_chain": {
+     "url": "https://media.the420code.org/chains/b.mp4",
+     "minutes": 25
+    }
+   }
+  ],
+  "media": "https://media.the420code.org",
+  "trailer": {
+   "url": "https://media.the420code.org/chains/trailer.mp4",
+   "minutes": 1.8
+  }
+ },
  "ai_alignment": {
   "paper": "AP31 The Alignment",
   "reading_path": [
@@ -417,5 +453,5 @@
   "zenodo_concept_doi": "10.5281/zenodo.19208225",
   "osf": "r69bm"
  },
- "summary_built": "2026-09-23"
+ "summary_built": "2026-09-24"
 }

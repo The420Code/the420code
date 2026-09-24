@@ -18,3 +18,9 @@ tools/*/source/reader/site/
 
 # Python's bytecode, from the site's own scripts. Never served.
 __pycache__/
+
+# The films are served from media.the420code.org and are never in the repo. Netlify publishes the
+# whole repo, the two whole-chain films are over GitHub's 100 MB per-file limit, and one stray copy
+# is a two-gigabyte repository.
+*.mp4
+*.mov

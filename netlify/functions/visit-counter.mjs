@@ -41,12 +41,18 @@ const langOf = (path) => {
 // 10 September (the registry, the glossary, the method, the six sections' own pages) and
 // the twelve editions' front doors were posting and being dropped here. And the Ø Models
 // library, whose book pages, chapters and epilogues are matched by their shape.
+// 24 September 2026: Ø The Films. The room's own page is named here; its chain pages are
+// matched by their shape below, as the two libraries are. Without both, a films visit is
+// written to a blob and then dropped on every read, and the total quietly reads low.
 const ROOMS = ["/", "/what-is-the-420-code/", "/proofs/", "/proofs/instruments/", "/prereg/",
                "/killswitches/", "/glossary/", "/method/", "/why-21-is-forced/", "/one-awareness/",
-               "/five-doors/", "/models/", "/exhibition/", "/axiom/", "/physics/", "/notebooks/"];
+               "/five-doors/", "/models/", "/exhibition/", "/axiom/", "/physics/", "/notebooks/",
+               "/films/"];
 const PAGES = new Set([...ROOMS, ...LANGS.flatMap(l => [`/${l}/`, `/${l}/what-is-the-420-code/`])]);
 const LIBRARY = /^\/models\/(dissolutions|resolutions|applications|horizons)\/((\d\d(-5)?-[a-z0-9-]+|epilogue)\/)?$/;
 const FIVE_DOORS = /^\/five-doors\/(illusion|being-after-religion|antichristos|relationship-corridor|the-interior)\/((\d\d-[a-z0-9-]+|epilogue|closing)\/)?$/;
+// one segment under /films/ is a chain page; /films/ itself is in ROOMS above
+const FILMS = /^\/films\/[a-z0-9-]+\/$/;
 // 23 September 2026, G's word: every page counts. The frozen documents under /prereg/doc/, Three
 // Ways of Being Sure and /proofs/part-1/ carried no counter until today and so were never in this
 // list; they post now, and a page that posts is counted. They are named one by one, as the rooms
@@ -73,7 +79,8 @@ const normalise = (p) => {
   return p;
 };
 const isRealPage = (p) => { const q = normalise(p);
-  return PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || isDoc(q) || PLAIN.has(q); };
+  return PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || FILMS.test(q)
+         || isDoc(q) || PLAIN.has(q); };
 
 async function readBase(store) {
   const raw = await store.get(BASE);
