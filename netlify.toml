@@ -45,3 +45,18 @@
   for = "/*.woff2"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# The orphan of Part I, retired 25 September 2026 (see _redirects for the whole reason). Forced,
+# so it fires even if the file ever comes back; the fragment lands the reader on AP20, where that
+# text stands now.
+[[redirects]]
+  from = "/proofs/part-1/"
+  to = "/proofs/#ap20"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/proofs/part-1"
+  to = "/proofs/#ap20"
+  status = 301
+  force = true

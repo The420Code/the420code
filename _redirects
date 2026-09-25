@@ -45,3 +45,10 @@
 # lands on the room that lists that paper's files, instead of nothing. Real files under
 # the folder are served as they always were; a redirect only fires where nothing is.
 /proofs/instruments/:ap/   /proofs/instruments/   302
+
+# The orphan of Part I, retired 25 September 2026. /proofs/part-1/ was an older copy of the Part I
+# text that now lives on /proofs/ itself: no chrome, no terms line, no licence, no canonical, and
+# the only English page left saying the word the author ruled out on 24 September. Nothing linked
+# to it and the sitemap carried it, so machines found it. The page is gone from the repo and the
+# address lands on the text: see [[redirects]] in netlify.toml, which is where this one lives,
+# because the _redirects parser reads a "#" as a comment and would drop the fragment.
