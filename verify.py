@@ -38,6 +38,12 @@ DELTA_U  = 7.4e-7                  # 1-sigma bar on m_n/m_e - m_p/m_e (0.29 ppm)
 KM_PER_MPC = 3.0857e19             # km in a megaparsec
 GYR      = 365.25 * 86400 * 1e9    # seconds in a gigayear (Julian)
 
+# NATURE READS THE INTEGER TWICE - before any formula, and with nothing constructed between
+# them. Two ends of physics, counted in alpha, both land beside twenty-one. Printed, not checked:
+# these are readings of the measurements themselves, not predictions of the work.
+prot_in_alpha = (RATIO_PE - 1836) / ALPHA                       # the proton's mass above its scaffold
+grav_exponent = log(G_MEAS * M_E**2 / (HBAR * C)) / log(ALPHA)  # gravity's weakness in powers of alpha
+
 # Each check is (name, paper, predicted_str, measured_str, error_value, unit, tolerance).
 # A check passes when error_value <= tolerance.
 checks = []
@@ -164,6 +170,15 @@ def main():
         print(f"        against   : {meas}")
         print(f"        offset    : {err:.2f} {unit}")
         print()
+
+    print("-" * 72)
+    print("NATURE READS THE INTEGER TWICE - readings of the measurements. Not checks.")
+    print("-" * 72)
+    print("[READ] The proton's mass above its scaffold of 1836, counted in alpha")
+    print(f"        (m_p/m_e - 1836) / alpha              = {prot_in_alpha:.2f}")
+    print("[READ] Gravity's weakness, counted in powers of alpha")
+    print(f"        log(G m_e^2 / (hbar c)) / log(alpha)  = {grav_exponent:.2f}")
+    print()
 
     print("=" * 72)
     if failures == 0:

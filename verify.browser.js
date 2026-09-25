@@ -23,6 +23,10 @@
     var KM_PER_MPC = 3.0857e19, GYR = 365.25 * 86400 * 1e9;
 
     function rel_pct(pred, meas) { return Math.abs(pred - meas) / meas * 100.0; }
+    // NATURE READS THE INTEGER TWICE - readings of the measurements, printed, never checked.
+    var prot_in_alpha = (RATIO_PE - 1836) / ALPHA;
+    var grav_exponent = log(G_MEAS * M_E ** 2 / (HBAR * C)) / log(ALPHA);
+
     var checks = [], corpses = [], withdrawn = [];
 
     // CLAIM 1: Proton-electron mass ratio — the series closed (AP49)
@@ -138,6 +142,14 @@
       out.push("        offset    : " + w[5].toFixed(2) + " " + w[6]);
       out.push("");
     }
+    out.push(dash);
+    out.push("NATURE READS THE INTEGER TWICE - readings of the measurements. Not checks.");
+    out.push(dash);
+    out.push("[READ] The proton's mass above its scaffold of 1836, counted in alpha");
+    out.push("        (m_p/m_e - 1836) / alpha              = " + prot_in_alpha.toFixed(2));
+    out.push("[READ] Gravity's weakness, counted in powers of alpha");
+    out.push("        log(G m_e^2 / (hbar c)) / log(alpha)  = " + grav_exponent.toFixed(2));
+    out.push("");
     out.push(bar);
     if (fails === 0) out.push("ALL " + checks.length + " CHECKS PASSED. The published derivations hold. " + corpses.length + " fired switches shown.");
     else out.push(fails + " of " + checks.length + " CHECKS FAILED - a derivation drifted past tolerance.");

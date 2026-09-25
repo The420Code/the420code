@@ -63,7 +63,7 @@ The work ran the test numerology never runs on itself. It searched every formula
 
 ## The Numbers on the Wall
 
-Nine numbers, from one measured input, from the quantum to the cosmic. Seven land inside one standard deviation of the measurement they face. That is evidence. It is not yet final proof: each row names the measurement that would kill it.
+Nine numbers, from one measured input, from the quantum to the cosmic. Seven land inside one standard deviation of the measurement they face. That is evidence. It is not yet final proof: each row names the measurement that would kill it. Of the five first predictions, two were killed by measurement, two were corrected by the work itself with the old row kept beside the new, and one stands as printed.
 
 | Claim | Predicted | Measured | σ | Paper |
 |-------|-----------|----------|---|-------|
@@ -85,7 +85,7 @@ One record exists, and it is one reality: a record made at one window is read at
 
 ## What Is Derived, and How Firmly
 
-Every claim carries a grade — derived, ruled, identified, stated and fenced, or named — and at least one kill switch. From the axiom: three spatial dimensions (AP10), Einstein's field equations (AP08), the Born rule (AP25), special relativity's kinematics on its own premises (AP52), the equivalence principle at the structural register (AP53), and the terminal ethic (AP31, AP43, AP51). The Standard Model's gauge group SU(3) × SU(2) × U(1) is derived at the structural register (AP15, AP16, AP19, AP27); the formal theorem for its chiral coupling is the work's principal open problem (KS-63), and the hypercharges, the three generations and electroweak breaking are open debts (KS-65, KS-66, KS-67). Not derived, by the work's own result: the value of α itself, the one input (AP54). Five debts are outstanding, each named in the registry with where it is owed.
+Every claim carries a grade — derived, ruled, identified, stated and fenced, or named — and at least one kill switch. From the axiom: three spatial dimensions (AP10, on one live condition), Einstein's field equations — the form (AP08), the Born rule — with one outside theorem (AP25), special relativity's kinematics on its own premises (AP52), the equivalence principle at the structural register (AP53), and the terminal ethic (AP31, AP43, AP51). The Standard Model's gauge group SU(3) × SU(2) × U(1) is derived at the structural register (AP15, AP16, AP19, AP27); the formal theorem for its chiral coupling is the work's principal open problem (KS-63), and the hypercharges, the three generations and electroweak breaking are open debts (KS-65, KS-66, KS-67). Not derived, by the work's own result: the value of α itself, the one input (AP54). Five debts are outstanding, each named in the registry with where it is owed.
 
 ## One Axiom, Four Conditions
 
@@ -150,7 +150,7 @@ Short films, one claim each, for the people who would rather watch than read: th
 
 - **KS-V.1:** If the actualisation rate differs — if AS does not run the same for every reader — the whole work fails
 - **KS-P.1:** If a fifth condition is ever needed, the four are not complete, and the proof fails
-- **KS-P.3:** If a different definition of "record" yields different axioms, the proof fails
+- **KS-P.3:** Exhibit a formalisation of "record" that diverges from this one on one number or one ethic; the burden is the divergence, not the alternative
 - **KS-B.1:** If a smooth bounce explains the CMB better than the junction formulation, the cosmological component fails
 - **KS-D.1:** If the break has more or fewer than six residual faces, the confirmatory dimensionality argument fails
 
