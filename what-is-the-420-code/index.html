@@ -118,6 +118,11 @@ html{scroll-padding-top:86px}
 
 .entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
 .entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
+/* the two book buttons under Ø Support the Work: the site's own outlined card, the one
+   Ø Proofs uses — a hairline of ink that fills on hover, never a filled block */
+.book-btn{display:inline-block;border:1px solid var(--bk);padding:.5rem 1.1rem;margin:0 .6rem .5rem 0;font-size:16px;font-weight:700;letter-spacing:.02em;text-decoration:none;color:var(--bk);background:none;transition:background .15s,color .15s}
+.book-btn:hover,.book-btn:focus-visible{background:var(--bk);color:var(--wh)}
+
 .entry-card:hover{background:var(--bk);color:var(--wh)}
 .entry-card-label{font-size:16px;font-weight:700;display:block;margin:0 0 2px}
 .entry-card-desc{font-size:16px;display:block;opacity:.7}
@@ -683,7 +688,7 @@ table.nums td a{white-space:nowrap}
 <p>Any amount helps. Thank you.</p>
 <p><b>Prefer a bank transfer?</b><br>Write to <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a>. We will send the banking details.</p>
 <p><b>Or hold it in your hands.</b><br>Everything here is free to read. The books are also on paper, for the ones who want to hold them, give them, leave them on someone’s kitchen table. On Amazon as Kindle, paperback and hardcover. Or a signed copy from the artist, direct from Studio G. That is the one thing your support can buy: the same work, on paper.</p>
-<a href="https://www.amazon.com/dp/B0CW6HM47R" target="_blank" rel="noopener" style="display:inline-block;padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);text-decoration:none;border:none;border-radius:0;margin:0 0 .5rem">Buy on Amazon</a> <a href="https://studiog.global/#books" target="_blank" rel="noopener" style="display:inline-block;padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.06em;background:var(--bk);color:var(--wh);text-decoration:none;border:none;border-radius:0;margin:0 0 .5rem">A signed copy from Studio G</a>
+<a href="https://www.amazon.com/dp/B0CW6HM47R" target="_blank" rel="noopener" class="book-btn">Buy on Amazon</a> <a href="https://studiog.global/#books" target="_blank" rel="noopener" class="book-btn">A signed copy from Studio G</a>
 </div>
 </div>
 </div>
