@@ -32,10 +32,10 @@ ROOMS_MENU = _door[_i:_door.index('  </div>', _i) + len('  </div>')]
 # library after any menu change, or its pages carry a menu the rest of the site has left.
 assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 18, 'the front door\'s rooms block'
 BOOKS = [
-    dict(slug='dissolutions', title='Ø Dissolutions', prefix='PZ', pdf='/models/dissolutions.pdf', original='/Dissolutions.pdf', original_pages=370, edition='v1.0'),
-    dict(slug='resolutions', title='Ø Resolutions', prefix='RES', pdf='/models/resolutions.pdf', original='/Resolutions.pdf', original_pages=548, edition='v1.0'),
-    dict(slug='applications', title='Ø Applications', prefix='APP', pdf='/models/applications.pdf', original='/Applications.pdf', original_pages=549, edition='v1.0'),
-    dict(slug='horizons', title='Ø Horizons', prefix='HOR', pdf='/models/horizons.pdf', original='/Horizons.pdf', original_pages=494, edition='v1.0'),
+    dict(slug='dissolutions', title='Ø Dissolutions', prefix='PZ', pdf='/models/dissolutions.pdf', original='/Dissolutions.pdf', original_pages=370, edition='v1.1'),
+    dict(slug='resolutions', title='Ø Resolutions', prefix='RES', pdf='/models/resolutions.pdf', original='/Resolutions.pdf', original_pages=548, edition='v1.1'),
+    dict(slug='applications', title='Ø Applications', prefix='APP', pdf='/models/applications.pdf', original='/Applications.pdf', original_pages=549, edition='v1.1'),
+    dict(slug='horizons', title='Ø Horizons', prefix='HOR', pdf='/models/horizons.pdf', original='/Horizons.pdf', original_pages=494, edition='v1.1'),
 ]
 WORDS = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine',
          10: 'Ten', 11: 'Eleven', 12: 'Twelve', 13: 'Thirteen'}
@@ -150,13 +150,6 @@ def details(heading, body_html, cls='sec', extra='', open_=None):
     o = ' open' if open_ else ''
     return (f'<details class="{cls}"{o}><summary><span class="tri" aria-hidden="true"></span>{esc(heading)}{extra}</summary>'
             f'<div class="sec-body">{body_html}</div></details>')
-
-# 24 September 2026: the pages carry the author's corrections of that day and the short
-# edition's PDF, set by the desk that typesets it, does not yet. The book page says so until
-# it does (WC/tools/stale_pdf_note_0924.py --off).
-STALE_PDF = ('<p class="edition"><b>Dated note, 24 September 2026.</b> This edition’s PDF was set '
-             'before the author’s corrections of 24 September and does not carry them yet; the '
-             'pages here do. It is being reset. Nothing on this page waits for it.</p>')
 
 # ---------- page shell ----------
 def shell(title, body, book, depth, description='', path='/', book_first=False):
@@ -391,7 +384,7 @@ def render_book(book):
 <p class="eyebrow">The 420 Code · Ø Models</p>
 <h1 class="bt">{esc(book['title'])}</h1>
 <p class="oneline">{esc(book['subtitle'])}. {esc(tagline)}.</p>
-{STALE_PDF}<p class="edition">This is the short edition, {esc(book['edition'])}. It is a summary. The original is <a href="{book['original']}">here</a>. Go to it whenever this one moves too fast.</p>
+<p class="edition">This is the short edition, {esc(book['edition'])}. It is a summary. The original is <a href="{book['original']}">here</a>. Go to it whenever this one moves too fast.</p>
 {front_html}
 <h2 class="lh">The chapters</h2>
 <ol class="chapters">{rows}</ol>

@@ -38,13 +38,13 @@ BOOKS = [
     dict(slug='illusion', src='illusion', title='The Illusion of the Other', short='Illusion', door='the gentle door',
          pdf=None, original='/Illusion_of_the_Other.pdf', edition=None, epilogue_file=None),
     dict(slug='being-after-religion', src='bar', title='Being After Religion', door='the front door',
-         pdf='/five-doors/being-after-religion.pdf', original='/Being_After_Religion.pdf', edition='v1.1'),
+         pdf='/five-doors/being-after-religion.pdf', original='/Being_After_Religion.pdf', edition='v1.2'),
     dict(slug='antichristos', src='antichristos', title='Antichristos', door='the sacred door',
-         pdf='/five-doors/antichristos.pdf', original='/Antichristos.pdf', edition='v1.1'),
+         pdf='/five-doors/antichristos.pdf', original='/Antichristos.pdf', edition='v1.2'),
     dict(slug='relationship-corridor', src='corridor', title='The Relationship Corridor', door='the personal door',
-         pdf='/five-doors/relationship-corridor.pdf', original='/The_Relationship_Corridor.pdf', edition='v1.1'),
+         pdf='/five-doors/relationship-corridor.pdf', original='/The_Relationship_Corridor.pdf', edition='v1.2'),
     dict(slug='the-interior', src='interior_site', title='The Interior', door='the operational door',
-         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.6', full_date='24 September 2026',
+         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.7', full_date='25 September 2026',
          numerals=True, epilogue_slug='closing', epilogue_label='Closing'),
 ]
 WORDS = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine',
@@ -162,13 +162,6 @@ def details(heading, body_html, cls='sec', extra='', open_=None):
     o = ' open' if open_ else ''
     return (f'<details class="{cls}"{o}><summary><span class="tri" aria-hidden="true"></span>{esc(heading)}{extra}</summary>'
             f'<div class="sec-body">{body_html}</div></details>')
-
-# 24 September 2026: the pages carry the author's corrections of that day and the short
-# edition's PDF, set by the desk that typesets it, does not yet. The book page says so until
-# it does (WC/tools/stale_pdf_note_0924.py --off).
-STALE_PDF = ('<p class="edition"><b>Dated note, 24 September 2026.</b> This edition’s PDF was set '
-             'before the author’s corrections of 24 September and does not carry them yet; the '
-             'pages here do. It is being reset. Nothing on this page waits for it.</p>')
 
 # ---------- page shell ----------
 def editions_line(book):
@@ -459,7 +452,7 @@ def render_book(book):
               f'Every chapter, nothing summarised. The same text as the printed book, which is '
               f'<a href="{book["original"]}">here</a> as a PDF.</p>')
     elif book.get('edition'):
-        ed = (STALE_PDF + f'<p class="edition">This is the short edition, {esc(book["edition"])}. It is a summary. '
+        ed = (f'<p class="edition">This is the short edition, {esc(book["edition"])}. It is a summary. '
               f'The original is <a href="{book["original"]}">here</a>. Go to it whenever this one moves too fast.</p>')
     else:
         ed = (f'<p class="edition">This book has no short edition. Its chapters are already at the short edition’s '
