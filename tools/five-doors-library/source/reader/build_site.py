@@ -209,6 +209,7 @@ def shell(title, body, book, depth, description='', path='/', book_first=False):
 <link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
 </head>
 <body>
 <div class="c">

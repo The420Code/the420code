@@ -69,7 +69,7 @@ Nine numbers, from one measured input, from the quantum to the cosmic. Seven lan
 |-------|-----------|----------|---|-------|
 | Proton–electron mass ratio | 1836.152673445 | 1836.152673426(32) | +0.59 | AP49 |
 | Gravitational constant G, realised | 6.6719 × 10⁻¹¹ | 6.67191(99) × 10⁻¹¹ (atom interferometry) | +0.01 | AP44 |
-| Neutron–proton mass difference, realised | 2.53098857035 mₑ | 2.530988574(74) mₑ | −0.005 | AP47 |
+| Neutron–proton mass difference, realised | 2.53098857035 mₑ | 2.53098857(74) mₑ | −0.005 | AP47 |
 | Age of the universe, one cycle | 13.830 Gyr | 13.787 ± 0.020 Gyr | +2.1 | AP46 |
 | Expansion rate H₀, the closure | 67.45 km/s/Mpc | 67.4 ± 0.5 (Planck) | +0.1 | AP48 |
 | Galactic acceleration floor a₀ | 1.089 × 10⁻¹⁰ m/s² | 1.20 ± 0.24 × 10⁻¹⁰ | −0.46 | AP18 |
@@ -200,7 +200,7 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 - Every kill switch, one per row, filterable: https://the420code.org/killswitches/
 - The whole work as structured DATA, for machines: https://the420code.org/summary.json
 - Every kill switch as DATA, for machines: https://the420code.org/killswitches.json (the same parse the room is built from: 604 rows, each with the registry’s own text, status, register, origin, notebook and dates; the registry PDF is the authority where they differ)
-- Structural Glossary (edition 1.3, 24 September 2026): https://the420code.org/The_420_Code_Structural_Glossary.pdf
+- Structural Glossary (edition 1.4, 25 September 2026): https://the420code.org/The_420_Code_Structural_Glossary.pdf
 - Every glossary entry, one per term, filterable: https://the420code.org/glossary/
 - The films — short films in G’s voice, the argument in chains, every line on the page as text: https://the420code.org/films/
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi
