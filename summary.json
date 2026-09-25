@@ -394,8 +394,38 @@
   "what_it_is": "Short films, one claim each, in G’s own voice, for the people who would rather watch than read. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
   "shape": "Chains only: each chain is an argument in order, one row per film, every line the film says in the page as text, and the whole chain as one film at the head of its page where it has one.",
   "where": "https://the420code.org/films/",
-  "films": 77,
+  "films": 86,
   "chains": [
+   {
+    "name": "The heart and the philosophy",
+    "films": 9,
+    "url": "https://the420code.org/films/the-heart-and-the-philosophy/",
+    "parts": [
+     {
+      "name": "The heart",
+      "films": 5
+     },
+     {
+      "name": "The philosophy",
+      "films": 4
+     }
+    ],
+    "opens": {
+     "The gentle door": "https://the420code.org/five-doors/illusion/",
+     "The front door": "https://the420code.org/five-doors/being-after-religion/",
+     "The sacred door": "https://the420code.org/five-doors/antichristos/",
+     "The personal door": "https://the420code.org/five-doors/relationship-corridor/",
+     "The operational door": "https://the420code.org/five-doors/the-interior/",
+     "Ø Dissolutions": "https://the420code.org/models/dissolutions/",
+     "Ø Resolutions": "https://the420code.org/models/resolutions/",
+     "Ø Horizons": "https://the420code.org/models/horizons/",
+     "Ø Applications": "https://the420code.org/models/applications/"
+    },
+    "whole_chain": {
+     "url": "https://media.the420code.org/chains/heart-philosophy.mp4",
+     "minutes": 7
+    }
+   },
    {
     "name": "The first seventeen",
     "films": 17,
