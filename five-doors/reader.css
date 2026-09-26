@@ -12,6 +12,12 @@ a{color:var(--accent-ink)}
 .modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
 .modes a,.modes span{display:inline-block;white-space:nowrap;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
 .modes .on{border-color:var(--accent);color:var(--accent-ink)}
+/* 26 September 2026, G: the page's film, one bronze button right-aligned under the strap. The same dress
+   as the two leads on /models/ (Read online, Watch online), so a lead looks the same wherever it stands. */
+.watch{margin:1.2rem 0 0;text-align:right;max-width:none}
+.watch a{display:inline-flex;align-items:baseline;gap:.6rem;font-size:18px;font-weight:700;letter-spacing:.03em;color:#fff;background:#8B6914;border:1px solid #8B6914;padding:6px 16px;border-radius:3px;text-decoration:none;transition:all .15s}
+.watch a:hover{color:#8B6914;background:#fff}
+.watch .t{font-weight:400}
 .eyebrow{font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:1.6rem 0 .5rem}
 h1{font-weight:700;font-size:clamp(1.8rem,5.5vw,2.5rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 1.2rem;text-wrap:balance}
 h1.bt{font-size:clamp(2.4rem,8vw,3.2rem)}

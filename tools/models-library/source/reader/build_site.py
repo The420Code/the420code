@@ -44,6 +44,13 @@ ONELINES = {}
 for f in glob.glob(os.path.join(ROOT, 'onelines_*.json')):
     ONELINES.update(json.load(open(f, encoding='utf-8')))
 
+# 26 September 2026, G's ruling: every chapter page gets "Watch the chapter", right-aligned, and each
+# book its films. films_models.json is written from the films room's own chains.json by
+# WC/tools/films_models_map_0926.py, keyed by the page's path, so a page only ever points at a film
+# row the room really has. A page with no entry carries no button.
+_fm = os.path.join(ROOT, 'films_models.json')
+FILMS = json.load(open(_fm, encoding='utf-8')) if os.path.isfile(_fm) else {}
+
 KS_RE = re.compile(r'^([A-Z]+-[\d.]+) — (.*)$', re.S)
 
 # ---------- text helpers ----------
@@ -225,6 +232,19 @@ def strap(book, crumb, current='read'):
             f' · the short edition{crumb}</div>'
             f'<ul class="modes"><li>{modes["read"]}</li><li>{modes["download"]}</li></ul></header>')
 
+def watch(path, label):
+    """The page's film, one right-aligned button under the strap: 'Watch online' on a book's page (its
+    chain of films), 'Watch the chapter' on a chapter's, 'Watch the epilogue' on the epilogue's, with
+    the film's length where the button leads to one film. Nothing when the page has no film."""
+    f = FILMS.get(path)
+    if not f:
+        return ''
+    t = ''
+    if f.get('seconds'):
+        s = int(round(float(f['seconds'])))
+        t = f'<span class="t">{s // 60}:{s % 60:02d}</span>'
+    return f'<p class="watch"><a href="{f["href"]}">{esc(label)}{t}</a></p>\n'
+
 def up(book=None):
     """The way back, on every page, between Previous and Next: the book's contents and Ø Models."""
     to_book = f'<a href="/models/{book["slug"]}/">{esc(book["title"])}</a>' if book else ''
@@ -348,7 +368,7 @@ def render_chapter(book, i):
     help_html = (f'<p class="help">{link_help(c["help"])}</p>\n' if c.get('help') else '')
     body = f'''{strap(book, crumb)}
 <details class="toc"><summary>In this book</summary><ol>{toc}</ol></details>
-<p class="eyebrow">Chapter {esc(c['num'])}</p>
+{watch(f'/models/{book["slug"]}/{c["slug"]}/', 'Watch the chapter')}<p class="eyebrow">Chapter {esc(c['num'])}</p>
 <h1>{esc(c['question'])}</h1>
 <p class="oneline">{esc(oneline)}</p>
 {help_html}<section class="opening">
@@ -382,7 +402,7 @@ def render_book(book):
         front_html += details(head, inner, open_=False)
     tagline = book['tagline'].replace('. The short edition', '').rstrip('.')
     body = f'''{strap(book, '')}
-<p class="eyebrow">The 420 Code · Ø Models</p>
+{watch(f'/models/{book["slug"]}/', 'Watch online')}<p class="eyebrow">The 420 Code · Ø Models</p>
 <h1 class="bt">{esc(book['title'])}</h1>
 <p class="oneline">{esc(book['subtitle'])}. {esc(tagline)}.</p>
 <p class="edition">This is the short edition, {esc(book['edition'])}. It is a summary. The original is <a href="{book['original']}">here</a>. Go to it whenever this one moves too fast.</p>
@@ -399,7 +419,7 @@ def render_epilogue(book):
     e = book['epilogue']
     last = book['chapters'][-1]
     body = f'''{strap(book, ' · Epilogue')}
-<p class="eyebrow">Epilogue</p>
+{watch(f'/models/{book["slug"]}/epilogue/', 'Watch the epilogue')}<p class="eyebrow">Epilogue</p>
 <h1>{esc(e['title'].partition(' — ')[2] or e['title'])}</h1>
 <section class="opening">{''.join(para_html(p) for p in e['paras'])}</section>
 <p class="source">{esc(e['source'])}</p>
@@ -421,6 +441,12 @@ a{color:var(--accent-ink)}
 .modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
 .modes a,.modes span{display:inline-block;white-space:nowrap;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
 .modes .on{border-color:var(--accent);color:var(--accent-ink)}
+/* 26 September 2026, G: the page's film, one bronze button right-aligned under the strap. The same dress
+   as the two leads on /models/ (Read online, Watch online), so a lead looks the same wherever it stands. */
+.watch{margin:1.2rem 0 0;text-align:right;max-width:none}
+.watch a{display:inline-flex;align-items:baseline;gap:.6rem;font-size:18px;font-weight:700;letter-spacing:.03em;color:#fff;background:#8B6914;border:1px solid #8B6914;padding:6px 16px;border-radius:3px;text-decoration:none;transition:all .15s}
+.watch a:hover{color:#8B6914;background:#fff}
+.watch .t{font-weight:400}
 .eyebrow{font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:1.6rem 0 .5rem}
 h1{font-weight:700;font-size:clamp(1.8rem,5.5vw,2.5rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 1.2rem;text-wrap:balance}
 h1.bt{font-size:clamp(2.4rem,8vw,3.2rem)}
@@ -544,11 +570,15 @@ def main():
         os.makedirs(ed, exist_ok=True)
         open(os.path.join(ed, 'index.html'), 'w', encoding='utf-8', newline='\n').write(check(render_epilogue(book), book['slug'] + '/epilogue'))
         total_pages += 1
+        # 26 September 2026, G: four buttons — Read online, Watch online, then the two downloads,
+        # resized down: Original PDF and Short edition PDF, in the lighter dress (.nb-dl).
+        _w = FILMS.get(f'/models/{book["slug"]}/')
+        _watch = f' <a class="nb-pdf nb-lead" href="{_w["href"]}">Watch online</a>' if _w else ''
         snippet.append(f'''<!-- {book["title"]} — under the cat-desc paragraph of its cat-section on /models/ -->
-<p><a class="nb-pdf" href="/models/{book["slug"]}/">Read online</a> <a class="nb-pdf" href="{book["pdf"]}">Download the short edition (PDF)</a> <a class="nb-pdf" href="{book["original"]}">Download the original (PDF)</a></p>''')
+<p class="lib-doors"><a class="nb-pdf nb-lead" href="/models/{book["slug"]}/">Read online</a>{_watch} <a class="nb-pdf nb-dl" href="{book["original"]}">Original PDF</a> <a class="nb-pdf nb-dl" href="{book["pdf"]}">Short edition PDF</a></p>''')
         print(book['title'], len(book['chapters']), 'chapters', [c['slug'] for c in book['chapters']][:2], '…')
     snippet.append('''<!-- Ø Predictions — no short edition; it is a table and derivations, not chapters -->
-<p><a class="nb-pdf" href="/prereg/">Read the predictions page</a> <a class="nb-pdf" href="/Predictions.pdf">Download the original (PDF)</a></p>''')
+<p class="lib-doors"><a class="nb-pdf nb-lead" href="/prereg/">Read the predictions page</a> <a class="nb-pdf nb-dl" href="/Predictions.pdf">Original PDF</a></p>''')
     open(os.path.join(OUT, 'models-snippet.html'), 'w', encoding='utf-8', newline='\n').write('\n\n'.join(snippet) + '\n')
     print('pages:', total_pages)
 
