@@ -135,7 +135,7 @@ The five books that are the way in for a reader who is not a physicist. All five
 
 The short editions as PDF: https://the420code.org/five-doors/being-after-religion.pdf, https://the420code.org/five-doors/antichristos.pdf, https://the420code.org/five-doors/relationship-corridor.pdf. The originals: https://the420code.org/Illusion_of_the_Other.pdf, https://the420code.org/Being_After_Religion.pdf, https://the420code.org/Antichristos.pdf, https://the420code.org/The_Relationship_Corridor.pdf, https://the420code.org/The_Interior.pdf (version 2.0.6, 24 September 2026; 2.0.5 is kept at https://the420code.org/proofs/instruments/books/The_Interior_2.0.5.pdf and the first edition at https://the420code.org/The_Interior_1.0.pdf)
 
-## Ø The Films
+## Ø Films
 
 Films in G’s voice, for the people who would rather watch than read: eight chains, one hundred and forty films. Most are short, one claim each; a chapter’s film carries the chapter’s whole argument, in four to eight minutes. The drawing draws itself, and G’s words write themselves as his own voice says them. The films add G’s voice and the drawing, not a new claim. They come in chains, each an argument in order, and every line a film says is on its chain’s page as text, in the order it is said — so a chain reads whole with nothing playing, and a reader that cannot decode a film loses nothing. The films themselves are served from media.the420code.org.
 
@@ -207,6 +207,6 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 - Every kill switch as DATA, for machines: https://the420code.org/killswitches.json (the same parse the room is built from: 604 rows, each with the registry’s own text, status, register, origin, notebook and dates; the registry PDF is the authority where they differ)
 - Structural Glossary (edition 1.4, 25 September 2026): https://the420code.org/The_420_Code_Structural_Glossary.pdf
 - Every glossary entry, one per term, filterable: https://the420code.org/glossary/
-- The films — short films in G’s voice, the argument in chains, every line on the page as text: https://the420code.org/films/
+- Films — films in G’s voice, in chains, every line on the page as text: https://the420code.org/films/
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi
 - DOI: 10.5281/zenodo.22766173 (this version); 10.5281/zenodo.19208225 (all versions)
