@@ -57,6 +57,13 @@ ONELINES = {}
 for f in glob.glob(os.path.join(ROOT, 'onelines_*.json')):
     ONELINES.update(json.load(open(f, encoding='utf-8')))
 
+# 26 September 2026, G: "put the four buttons on the five doors page too". Each book has its film — its
+# door film in The heart and the philosophy. films_fivedoors.json is written from the films room's own
+# chains.json by WC/tools/films_fivedoors_map_0926.py, keyed by the book page's path, as the Ø Models
+# library reads films_models.json. A page with no entry carries no button.
+_fm = os.path.join(ROOT, 'films_fivedoors.json')
+FILMS = json.load(open(_fm, encoding='utf-8')) if os.path.isfile(_fm) else {}
+
 KS_RE = re.compile(r'^(KS-[A-Z0-9]+\.[A-Z]?[\d]+[a-z]?) — (.*)$', re.S)
 
 # ---------- text helpers ----------
@@ -241,6 +248,16 @@ def shell(title, body, book, depth, description='', path='/', book_first=False):
 </body>
 </html>
 '''
+
+def watch(path, label):
+    """The book's film, one right-aligned button under the strap — the Ø Models library's own button and
+    rule (reader.css .watch, which this library shares), with the film's length. Nothing without a film."""
+    f = FILMS.get(path)
+    if not f:
+        return ''
+    s = int(round(float(f['seconds'])))
+    return (f'<p class="watch"><a href="{f["href"]}">{esc(label)}'
+            f'<span class="t">{s // 60}:{s % 60:02d}</span></a></p>\n')
 
 def strap(book, crumb, current='read'):
     dl = f'<a href="{book["pdf"]}">Download</a>' if book.get('pdf') else f'<a href="{book["original"]}">Download</a>'
@@ -483,7 +500,7 @@ def render_book(book):
                f'companion volumes and filed in the <a href="{REGISTRY}">registry</a>. '
                f'The five books: <a href="/five-doors/">The Five Doors</a>.</p>')
     body = f'''{strap(book, '')}
-<p class="eyebrow">The 420 Code · The Five Doors · {esc(book['door'])}</p>
+{watch(f'/five-doors/{book["slug"]}/', 'Watch online')}<p class="eyebrow">The 420 Code · The Five Doors · {esc(book['door'])}</p>
 <h1 class="bt">{esc(book['title'])}</h1>
 <p class="oneline">{esc(book['subtitle'])}. {esc(tagline)}.</p>
 {ded}{ed}
@@ -547,15 +564,21 @@ def main():
             os.makedirs(ed, exist_ok=True)
             open(os.path.join(ed, 'index.html'), 'w', encoding='utf-8', newline='\n').write(check(render_epilogue(book), book['slug'] + '/epilogue'))
             total_pages += 1
+        # 26 September 2026, G: the four buttons, as on /models/ — Read online and Watch online lead; the
+        # downloads follow, resized down (.nb-dl). A book with no short edition has three; The Interior's
+        # one PDF is the whole book at its version, so it says so.
+        _w = FILMS.get(f'/five-doors/{book["slug"]}/')
+        _lead = (f'<a class="nb-pdf nb-lead" href="/five-doors/{book["slug"]}/">Read online</a>'
+                 + (f' <a class="nb-pdf nb-lead" href="{_w["href"]}">Watch online</a>' if _w else ''))
         if book.get('pdf'):
             snippet.append(f'''<!-- {book["title"]} — under its paragraph on the Five Doors page -->
-<p><a class="nb-pdf" href="/five-doors/{book["slug"]}/">Read online</a> <a class="nb-pdf" href="{book["pdf"]}">Download the short edition (PDF)</a> <a class="nb-pdf" href="{book["original"]}">Download the original (PDF)</a></p>''')
+<p class="lib-doors">{_lead} <a class="nb-pdf nb-dl" href="{book["original"]}">Original PDF</a> <a class="nb-pdf nb-dl" href="{book["pdf"]}">Short edition PDF</a></p>''')
         elif book.get('full'):
             snippet.append(f'''<!-- {book["title"]} — version {book["full"]}, the book in full online; no short edition -->
-<p><a class="nb-pdf" href="/five-doors/{book["slug"]}/">Read online</a> <a class="nb-pdf" href="{book["original"]}">Download the book (PDF)</a></p>''')
+<p class="lib-doors">{_lead} <a class="nb-pdf nb-dl" href="{book["original"]}">Book PDF</a></p>''')
         else:
             snippet.append(f'''<!-- {book["title"]} — no short edition; the chapters are the book -->
-<p><a class="nb-pdf" href="/five-doors/{book["slug"]}/">Read online</a> <a class="nb-pdf" href="{book["original"]}">Download the original (PDF)</a></p>''')
+<p class="lib-doors">{_lead} <a class="nb-pdf nb-dl" href="{book["original"]}">Original PDF</a></p>''')
         print(book['title'], len(book['chapters']), 'chapters', [c['slug'] for c in book['chapters']][:2], '…')
     open(os.path.join(OUT, 'five-doors-snippet.html'), 'w', encoding='utf-8', newline='\n').write('\n\n'.join(snippet) + '\n')
     print('pages:', total_pages)

@@ -1,0 +1,27 @@
+{
+ "/five-doors/illusion/": {
+  "href": "/films/the-heart-and-the-philosophy/#f-i01",
+  "seconds": 50.2,
+  "film": "I01"
+ },
+ "/five-doors/being-after-religion/": {
+  "href": "/films/the-heart-and-the-philosophy/#f-i02",
+  "seconds": 49.8,
+  "film": "I02"
+ },
+ "/five-doors/antichristos/": {
+  "href": "/films/the-heart-and-the-philosophy/#f-i03",
+  "seconds": 40.4,
+  "film": "I03"
+ },
+ "/five-doors/relationship-corridor/": {
+  "href": "/films/the-heart-and-the-philosophy/#f-i04",
+  "seconds": 63.4,
+  "film": "I04"
+ },
+ "/five-doors/the-interior/": {
+  "href": "/films/the-heart-and-the-philosophy/#f-i05",
+  "seconds": 55.7,
+  "film": "I05"
+ }
+}

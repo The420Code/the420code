@@ -1198,7 +1198,7 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
       stop();
       var row=b.closest('.ap-row')||document.querySelector(b.dataset.host||'.fd');
       if(row&&row.classList.contains('ap-row')&&!row.classList.contains('open')) row.classList.add('open');
-      audio.src='/audio/'+clip+'.mp3';
+      audio.src='/audio/'+clip+'.mp3?v=20260926';
       try{ audio.currentTime=0; }catch(err){}
       playing=clip;
       b.setAttribute('aria-pressed','true'); b.querySelector('.fd-listen-i').textContent='❚❚';
