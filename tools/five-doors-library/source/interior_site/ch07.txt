@@ -1,6 +1,6 @@
 # 7 — One Record Exists
 
-> The Interior, version 2.0.5, Chapter 7.
+> The Interior, version 2.0.8, Chapter 7.
 
 You are reading this. That is a record.
 
@@ -22,7 +22,7 @@ A distinction: something was told apart from something else. Heads from tails. H
 
 That persists: the distinction does not vanish. If a coin lands heads, then un-lands and returns to spinning, no record was made. The distinction must stick. Ink, not pencil.
 
-In physics, records are written when a system interacts with its environment strongly enough that the interaction leaves a permanent trace. The photon hits the detector. The detector clicks. The click is a record. It happened. It cannot un-happen.
+In physics, records are written when a system interacts with its environment strongly enough that the interaction leaves a permanent trace. The photon hits the detector. The detector clicks. The click is a record. It happened. It cannot unhappen.
 
 ## Four conditions forced
 

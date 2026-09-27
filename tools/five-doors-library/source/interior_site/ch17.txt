@@ -1,6 +1,6 @@
 # 17 — The Operational Protocol
 
-> The Interior, version 2.0.5, Chapter 17.
+> The Interior, version 2.0.8, Chapter 17.
 
 The preceding chapters derive why the architecture works. This chapter describes what it does on a Tuesday afternoon.
 

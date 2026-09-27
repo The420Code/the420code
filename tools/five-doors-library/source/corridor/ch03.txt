@@ -8,7 +8,7 @@ And then you open your mouth and say something else.
 
 Not because you computed that lying was optimal. That would be deception, and deception is something else entirely.
 
-Animals deceive. The chameleon changes colour because the geometry computes it. The cuttlefish flashes patterns. The opossum plays dead. The orchid mimics a wasp.
+Animals deceive. The dwarf chameleon changes colour to hide because the geometry computes it. The cuttlefish flashes patterns. The opossum plays dead. The orchid mimics a wasp.
 
 Each involves misrepresentation. Each is a survival strategy computed by the coupling geometry and executed without the organism ever modelling truth and deciding to override it.
 
@@ -24,7 +24,7 @@ The distinction matters, and the evolutionary biologist will come for it.
 
 Deception is ancient, effective and everywhere. But deception and lying differ. Not in outcome. In mechanism.
 
-A chameleon on a branch does not model truth and then choose to present a fiction. The colour change is a direct coupling response. A mantis shrimp threatens with claws it may not be able to back up. The display is computed. A cuckoo lays its egg in another bird's nest. The strategy follows from the coupling between species.
+A chameleon on a branch does not model truth and then choose to present a fiction. The colour change is a direct coupling response. A mantis shrimp, soft after moulting, spreads its striking limbs in a threat it cannot back up. The display is computed. A cuckoo lays its egg in another bird's nest. The strategy follows from the coupling between species.
 
 In each case the signal is false and the mechanism is honest. The organism is doing exactly what the geometry computes.
 
@@ -52,7 +52,7 @@ Lying has no rational optimisation story at the level of the lie itself.
 
 The obvious objection is the white lie. You model the situation, compute that concealment serves the other, and conceal. That is a rational strategy. That is deception, not lying. The mechanism is rational and the output is misrepresentation.
 
-But if you know the truth, see that delivering it would be the honest act, feel the pull toward honesty, and override it — that is lying. Even benevolently.
+But if you know the truth, see that delivering it would be the honest act, feel the pull towards honesty, and override it — that is lying. Even benevolently.
 
 The test is always the same. Did you complete the computation and override it, or did the computation produce the misrepresentation?
 

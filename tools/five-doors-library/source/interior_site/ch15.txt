@@ -1,6 +1,6 @@
 # 15 — The Binary
 
-> The Interior, version 2.0.5, Chapter 15.
+> The Interior, version 2.0.8, Chapter 15.
 
 Every action either stabilises or destabilises the shared substrate. There is no neutral.
 
@@ -34,7 +34,7 @@ The architecture does not judge. It measures.
 
 Seatbelts.
 
-Before mandatory seatbelts, the record set showed: vehicle fatalities destabilise the substrate. They remove productive operators, traumatise dependents, consume medical resources, contract the possibility space of the deceased to zero. Seatbelts stabilise, across millions of recorded instances.
+Before mandatory seatbelts, the record set showed: vehicle fatalities destabilise the substrate. They remove productive operators, traumatise dependants, consume medical resources, contract the possibility space of the deceased to zero. Seatbelts stabilise, across millions of recorded instances.
 
 The law was not a rule imposed by legislators. It was a structural fact read from the records. The consequence geometry was there before any parliament voted.
 

@@ -1,12 +1,12 @@
 # 20 — Why This Is Not Authoritarianism
 
-> The Interior, version 2.0.5, Chapter 20.
+> The Interior, version 2.0.8, Chapter 20.
 
 You have replaced human authority with geometric authority and called it physics.
 
 You have built a system that classifies every action as stabilising or destabilising and proposed that law should follow from the classification.
 
-You have derived a bias toward the organism over the individual.
+You have derived a bias towards the organism over the individual.
 
 You claim this is not a preference but a structural fact. And you have the audacity to say this produces more freedom, not less.
 
@@ -18,7 +18,7 @@ It is a fair charge. It deserves a structural answer, not a political one.
 
 This book derives a single quantity from the conditions: ε. The smallest possible departure from perfect symmetry — the minimal break that allows distinction to exist at all. When ε is applied to how any system makes decisions within a shared substrate, three regimes appear. The regime determines whether the system crushes, fragments, or holds.
 
-Every authoritarian system in history operates in the first regime, where the bias toward the collective exceeds ε. The collective overwhelms the individual. Individual windows close. Diversity collapses. The system loses the perspectives it needs to see its own consequences. The walls move inward. The corridor narrows. Information starves. The system feeds on its own reflection until it can no longer see.
+Every authoritarian system in history operates in the first regime, where the bias towards the collective exceeds ε. The collective overwhelms the individual. Individual windows close. Diversity collapses. The system loses the perspectives it needs to see its own consequences. The walls move inward. The corridor narrows. Information starves. The system feeds on its own reflection until it can no longer see.
 
 This is not a moral description of authoritarianism. It is a geometric one. And the geometry predicts the collapse.
 
@@ -88,7 +88,7 @@ The genocide brake is not a fence. It is geometry. The same geometry that makes 
 
 How to know the saturation point has been reached. Three convergent signals, derived from the same coupling-capacity geometry that produces the brake.
 
-First, removal cost begins to exceed destabilisation cost in record-testable ways. The system performing the removals starts losing functional capacity faster than it gains stability — observable in productivity, coherence, repair-time after failures, and the diversity of records the system can write.
+First, removal cost begins to exceed destabilisation cost in record-testable ways. The system performing the removals starts losing functional capacity faster than it gains stability — observable in productivity, coherence, repair time after failures, and the diversity of records the system can write.
 
 Second, the removal target itself starts to expand. A correction system operating below saturation can specify what it is correcting and stop when the correction succeeds. A system operating past saturation continually finds new categories to remove, because the original removals did not produce the promised stability, and finding new categories is structurally easier than acknowledging the brake has been crossed.
 
@@ -104,13 +104,13 @@ If this architecture is used to declare any window less than a window, the archi
 
 Firing that switch does not amend the work. It ends it.
 
-Read the wording again, because it matters more in this version of the book than it did in the last one. It does not say human. It says window — and, as Chapter Twelve is careful to say, the windows this architecture operates on are the ones that are operators, which is what keeps the switch from being absurd. Chapter Twelve is what happens when you take that word seriously.
+Read the wording again, because it matters more in this version of the book than it did in the last one. It does not say “human”. It says window — and, as Chapter Twelve is careful to say, the windows this architecture operates on are the ones that are operators, which is what keeps the switch from being absurd. Chapter Twelve is what happens when you take that word seriously.
 
 ## The honest concession
 
 The geometry is right. Its timescale does not comfort the dead.
 
-Tyranny collapses. But not quickly enough to save the people it crushes. The first regime is structurally unstable, and the people inside it still suffer while the structure works its way toward failure. That is real. This book does not pretend otherwise.
+Tyranny collapses. But not quickly enough to save the people it crushes. The first regime is structurally unstable, and the people inside it still suffer while the structure works its way towards failure. That is real. This book does not pretend otherwise.
 
 What the architecture offers is not a guarantee of safety. It is a guarantee of direction. The third regime is the unique attractor. Every departure from it is geometrically expensive and self-correcting over sufficient timescale. The transition path in Part V — advisory, then co-governance, then structural law — exists to shorten that timescale. To catch first-regime drift before it becomes genocidal.
 

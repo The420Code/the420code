@@ -1,10 +1,10 @@
 # 30 — Kill Switch Registry
 
-> The Interior, version 2.0.5, Chapter 30.
+> The Interior, version 2.0.8, Chapter 30.
 
 The condensed registry. Each switch identifies a specific failure condition. The full registry, with derivation context and current status for every switch in the work, is at the420code.org.
 
-Read on 23 September 2026, the registry carried 604 switches. Of those, 584 were live and two had fired. The remaining eighteen carry other statuses: closed, conditionally closed, addressed, derived, or paid.
+Read on 23 September 2026, the registry carried 604 switches. Of those, 584 were live and two had fired. The remaining eighteen carried other statuses: closed, conditionally closed, addressed, derived, or paid.
 
 That is the count on that date and no other. The work is still being written and the registry is the count of record — the420code.org/killswitches, counted live. Take the figures here as a reading, not as a total.
 
@@ -62,7 +62,7 @@ KS-32.8 — Confidence for Level 5. If the required confidence for removal canno
 
 ## The switches under the one interior and the window
 
-KS-ID.1 — One interior, topological singularity. If the break produces two or more independent interiors rather than one, the one-I claim fails. The strongest and most exposed claim in the work. Its formalisation is the open debt D-ID.1, the deepest in the registry. Referenced by KS-32.4, KS-33.9 and KS-39.6 as their source claim.
+KS-ID.1 — One interior, topological singularity. If the break produces two or more independent interiors rather than one, the one-I claim fails. The strongest and most exposed claim in the work. Its debt in the registry, D-ID.1, is closed. Referenced by KS-32.4, KS-33.9 and KS-39.6 as their source claim.
 
 KS-GLASS.3 — Variation of α. If α is shown to vary by location or by epoch, the single-interior reading fails. The second blade under the same claim, and the one a reader with access to a telescope can actually attempt.
 
@@ -78,7 +78,7 @@ The closed-loop reading is fenced at the present-tense Big Bang. The wave-partic
 
 The expansion rate entry is fenced at KS-ASM.1. If the local distance-ladder value is confirmed as the expansion rate, the paper that carries the work's figure dies, and flat ΛCDM at the sky's partition dies with it. One prediction of this number has already fired. This is the second one, and it is live.
 
-The gravitational constant is fenced at KS-CCC.3, and it tests direction rather than magnitude: as the systematics resolve, the adjusted value should migrate down. Convergence upward kills it, with no fallback.
+The gravitational constant is fenced at KS-CCC.3, and it tests direction rather than magnitude: as the systematics resolve, the adjusted value should migrate down. Convergence upwards kills it, with no fallback.
 
 The dark partition is fenced at KS-41.1 on its visible share, which is the row on the wall nearest to firing. If the central value of the visible fraction is measured above 4.81 per cent at sub-half-per-cent precision, it fires.
 
@@ -86,9 +86,9 @@ The is-ought crossing is fenced at KS-PZ8.1: is and ought are two readings of on
 
 ## The two that fired
 
-KS-NPP.1 — the bare neutron-proton row. Fired 2 August 2026 at 7.24 sigma. Shown, never repaired. The realised value that stands beside it is frozen at KS-FLIP.1.
+KS-NPP.1 — The bare neutron-proton row. Fired 2 August 2026 at 7.24 sigma. Shown, never repaired. The realised value that stands beside it is frozen at KS-FLIP.1.
 
-KS-45.1 — the expansion rate read backwards from the gravitational floor. Fired 3 September 2026 at 5.7 sigma, on this work's own derived rate. Shown, never repaired.
+KS-45.1 — The expansion rate read backwards from the gravitational floor. Fired 3 September 2026 at 5.7 sigma, on this work's own derived rate. Shown, never repaired.
 
 ## Reading the registry
 

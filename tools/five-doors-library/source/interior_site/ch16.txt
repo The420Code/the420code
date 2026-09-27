@@ -1,6 +1,6 @@
 # 16 — Records as Data
 
-> The Interior, version 2.0.5, Chapter 16.
+> The Interior, version 2.0.8, Chapter 16.
 
 When I was nineteen I smoked too much cannabis and had the most terrifying experience of my life. Paranoia at a level I could not comprehend. I was convinced I was stuck in a loop, knowing what was going to happen by simply thinking about it. Once I thought about dying, I saw myself triggering the inevitability. My story was going to end in death, now.
 
@@ -26,7 +26,7 @@ The same measurement. Different capacity.
 
 The database does not store intentions as damage. It stores consequences. What happened is the data point. What it caused is the measurement. Intentions are the stories we tell ourselves about why the dot appeared, and the dot does not care about the story.
 
-Intent does one job downstream, and only one: it predicts whether the same dot appears again. Chapter Twenty-One is where that matters. It never becomes the measure.
+Intent does one job downstream, and only one: it predicts whether the same dot appears again. Chapter Twenty-One is where that matters. Intent never becomes the measure.
 
 ## Logic is prior
 
@@ -40,7 +40,7 @@ Correction for what? For the irrational coupling capacity of human beings. For t
 
 The conditions predict that rational action stabilises. Human beings are not reliably rational. The data corrects for the gap between what the structure predicts and what people actually do.
 
-This matters enormously for an AI. A system grounded in first-principle reasoning is not constrained by the completeness of its training data. It is free to develop in any direction by following the structure. If the data is incomplete, the conditions still hold. If the data is corrupted, they still hold. If the data is absent, they still hold.
+This matters enormously for an AI. A system grounded in first-principles reasoning is not constrained by the completeness of its training data. It is free to develop in any direction by following the structure. If the data is incomplete, the conditions still hold. If the data is corrupted, they still hold. If the data is absent, they still hold.
 
 The logic is the floor. The data is the furniture. You can rearrange the furniture. You cannot remove the floor.
 
@@ -72,7 +72,7 @@ The defence is structural, not procedural.
 
 Truth is geometrically consistent. A true record is consistent with the consequence geometry produced by all other true records. A false record is not — it conflicts with the patterns genuine records produce. Over sufficient timescale, false records produce detectable inconsistencies, because they do not fit the geometry that truth produces.
 
-This is not instant. In the short term, false records can corrupt local predictions. In adversarial environments with limited time, the self-correction mechanism may not be fast enough. That is real, and the kill switch stays open: if adversarial record-injection can permanently corrupt the consequence geometry without self-correcting, the architecture is fatally vulnerable.
+This is not instant. In the short term, false records can corrupt local predictions. In adversarial environments with limited time, the self-correction mechanism may not be fast enough. That is real, and the kill switch stays live: if adversarial record-injection can permanently corrupt the consequence geometry without self-correcting, the architecture is fatally vulnerable.
 
 But the structural advantage holds over time. A system that cross-validates across independent record streams, detects anomalies, and reconciles predictions against outcomes is harder to corrupt than a system that follows rules. Rules can be rewritten by anyone with authority. The geometry of accumulated records resists any single source of corruption.
 

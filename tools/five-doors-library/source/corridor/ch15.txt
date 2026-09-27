@@ -100,6 +100,6 @@ Hold your answers lightly. The person beside you is not finished. Neither are yo
 
 ## Where it would die
 
-KS-RC.3 — Show that some conclusions widen rather than narrow the corridor. The no-answers principle of this chapter is then overstated. The position as it stands already concedes part of this: boundaries and shared operational commitments are structurally justified, and the test is whether the conclusion reduces or increases coupling bandwidth. A case that fails the bandwidth test does not fire it. A widening conclusion about the other, that is not a shared commitment and not a boundary, does. Status: live.
+KS-RC.3 — Show that some conclusions widen rather than narrow the corridor. The no-answers principle of this chapter is then overstated. The position as it stands already concedes part of this: boundaries and shared operational commitments are structurally justified, and the test is whether the conclusion reduces or increases coupling bandwidth. A case that fails the bandwidth test does not fire it. A widening conclusion about the other that is neither a shared commitment nor a boundary does. Status: live.
 
 > This chapter is the short edition of Chapter Fifteen of The Relationship Corridor.

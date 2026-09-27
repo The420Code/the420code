@@ -24,3 +24,12 @@ python build_site.py
 Then copy `site/five-doors/*` over `/five-doors/`, except `five-doors-snippet.html`, and delete `site/`.
 
 The Interior is not in this bundle. Its folder is added when the author has ruled on its 2.0 rewrite, without touching anything here.
+
+## 27 September 2026 — brief 6, the Five Doors airtight
+
+The text took the brief's 315 changes and G's three held lines (WC/tools/brief6_sources_0927.py, brief6_after_0927.py). The generator learnt four things:
+
+1. **Italics and bold pass through.** `<em>` and `<strong>` in the text are set as the books set them; every other tag is still escaped. `untag()` keeps them out of descriptions and titles. The Illusion's seven italic spans from its Word source are in the text. Bold italic is written `<em><strong>…</strong></em>`.
+2. **"The registry writes it/them …" is gone** from the drawer's `p.reg` line: it repeated the ids printed above it, and three pages printed a wrong range.
+3. **Versions:** the short editions v1.3; The Interior 2.0.8, 27 September 2026; The Illusion carries `version` and `version_date` (1.2, 27 September 2026) on its editions line and its book page. The Interior's Closing links its source line to the book, as the chapters do.
+4. The three short editions end on a colophon after `---` in `99_epilogue.txt` (the page never shows it; the PDF prints it), in the Ø Models form: `The short edition · v1.3 · 27 September 2026`.

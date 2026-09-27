@@ -1,6 +1,6 @@
 # 13 — Interior, Not Fence
 
-> The Interior, version 2.0.5, Chapter 13.
+> The Interior, version 2.0.8, Chapter 13.
 
 You do not add mass to a proton. Mass is what the proton is, expressed as resistance. Mass is not a property the proton carries. It is the proton, measured from outside.
 

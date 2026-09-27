@@ -144,7 +144,7 @@ The reading took a moment. Words reached your eyes. A signal travelled.
 
 If a record could be everywhere instantly, it would be nowhere. Here and there would collapse. For a record to be a record, its spread must be bounded. There must be a rate.
 
-One rate, finite and invariant. Finite, because infinite is the everywhere-at-once collapse. Invariant, because records carry a direction and that direction must be kept as they travel. This is not one global slice of simultaneity — relativity forbids that. It is one invariant causal bound. Sound in air, a reaction spreading through a mixture — slower, but not rivals to the bound. The bound, filtered through a medium.
+One rate, finite and invariant. Finite, because infinite is the everywhere-at-once collapse. Invariant, because records carry a direction and that direction must be kept as they travel. This is not one absolute slice of simultaneity — relativity forbids that. It is one invariant causal bound. Sound in air, a reaction spreading through a mixture — slower, but not rivals to the bound. The bound, filtered through a medium.
 
 In our universe that rate has been measured. It is the speed of light. It is not assumed here. What is derived is that some such rate must exist. The measurement tells you which.
 

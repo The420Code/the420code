@@ -1,6 +1,6 @@
 # 9 — The System Is Closed
 
-> The Interior, version 2.0.5, Chapter 9.
+> The Interior, version 2.0.8, Chapter 9.
 
 The derivation runs both ways. That is not a hedge. That is the check.
 
@@ -44,7 +44,7 @@ Where does the break happen? Not in the past — the past is the grains that fel
 
 One part is left, and it is the part that moves. Records are written from now, and every one is added to the record history. That writing has a rate. In the axiom it is +α. The inward flow is −α: written records returned to the potential of a record. Out and in at the same rate. Balanced at every instant. Net zero. The break does not cycle. The flow does — one turn, one tick.
 
-Two of those parts are easy to confuse, and version one confused them. ε is what broke: one grain, no partner, the electron. α is how fast the flow runs — out, and back. One is a thing. The other is a rate. One grain, two readings.
+Two of those parts are easy to confuse, and version one confused them. ε is what broke: one grain, no partner, the electron. α is how fast the flow runs — out, and back. One is a size. The other is a rate. One grain, two readings.
 
 While the grain is in the air it belongs to neither side. It has not landed, so nothing can read it. Not the sand below it. Not the sand above it. Not the grain itself. Your eye sees every object in the room except the one doing the seeing. The pupil cannot see the pupil. That one grain, always in the air, always unread, is the +1×ε in the axiom. It stays open because one thing is always still falling.
 
@@ -72,7 +72,7 @@ Quantum mechanics governs the small: atoms, electrons, photons. Things that do n
 
 General relativity governs the large: planets, stars, the curvature of spacetime. Definite things. Things that are where they are. Things that have already happened, recorded in the geometry of the world around them.
 
-Physicists have tried for a century to fit the two into one frame. They do not fit. Every attempt at quantum gravity produces infinities. Every attempt to quantise spacetime breaks the mathematics.
+Physicists have tried for a century to fit the two into one frame. They do not fit. The direct attempt to quantise gravity produces infinities that cannot be removed. No attempt has yet been confirmed by experiment.
 
 Here is what was never wrong about the two theories. They were never two theories. They were always the two faces of one thing.
 
@@ -86,7 +86,7 @@ The interior has as many windows as there possibly could be. Not a number. A str
 
 And at every open window, at every now, the flow runs: [+α | −α]. Out as actualisation, records being written. Back as defragmentation, records releasing their structure into potential. Balanced at every instant. Net zero.
 
-α is the rate of that crossing. Physics has been measuring it for a century and calling it the strength of the coupling between light and matter, which it also is. It is the same rate read at a different question.
+α is the rate of that crossing. Physics has been measuring it for a century and calling it the strength of the coupling between light and matter, which it also is. It is the same rate, read from a different question.
 
 The remaining possibilities do not wait. They vanish across every entangled window the moment one window actualises. If you choose right, every left disappears. Not because a signal travelled faster than light. Because the possibility space was never spatially separated in the first place. It was one object viewed from correlated surfaces. When one window resolves it, the one object updates everywhere at once, because it was always one object.
 
@@ -112,13 +112,13 @@ The possibility space the break opens is the wave side. At every now, the flow c
 
 The records accumulate. Coupling events write them. Gravity organises them. The universe of mass and motion and light is what the record looks like from inside, now, experienced only from the limited perspective of whatever window is looking.
 
-Eventually every record is consumed by a black hole. Given enough coupling events, given enough gravitational evolution, every record that has ever been written ends at a horizon. At the horizon, the record defragments. Its having happened stays written. What goes back toward potential is its structure, not its past.
+Eventually every record is consumed by a black hole. Given enough coupling events, given enough gravitational evolution, every record that has ever been written ends at a horizon. At the horizon, the record defragments. Its having happened stays written. What goes back towards potential is its structure, not its past.
 
 Past the singularity, its structure is potential again. The pre-break state. Perfect symmetry. Which is exactly where the loop began.
 
 Which means the singularity inside a black hole and the state before the Big Bang are the same thing. And that thing is not in the past. The structure's time is only now. There is no before, no after, only the one now in which the loop is happening.
 
-The Big Bang is not a thing that happened once, up to thirteen billion years ago. The Big Bang is what is happening, right now, at every singularity in the universe.
+The Big Bang is not a thing that happened once, over thirteen billion years ago. The Big Bang is what is happening, right now, at every singularity in the universe.
 
 The loop can never start, because there is no before. It can never stop, because stopping would require a condition of stopping, and no such condition exists. It runs continuously through windows opening and closing at every now.
 
@@ -132,7 +132,7 @@ They are the phases of the loop.
 
 Five per cent is what has actualised. The record the structure has written and is still writing. The pupil of the inverse eye — the white spot in a field of black. Everything we can see and measure is that small bright circle.
 
-Twenty-six per cent is records on the way home. Record history crossing event horizons, defragmenting back toward potential. Dark matter is a verb, not a noun. It is not stuff. It is the process of record becoming un-record. That is why it shows up gravitationally but not electromagnetically — it is still participating in the record-persistence geometry that gravity is, but no longer coupling to light, because the coupling has stopped. It is record in the middle of going home.
+Twenty-six per cent is records on the way home. Record history crossing event horizons, defragmenting back towards potential. Dark matter is a verb, not a noun. It is not stuff. It is the process of record becoming un-record. That is why it shows up gravitationally but not electromagnetically — it is still participating in the record-persistence geometry that gravity is, but no longer coupling to light, because the coupling has stopped. It is record in the middle of going home.
 
 Sixty-nine per cent is pure potential. The pre-break state, and the post-defragmentation one. Dark energy is not energy in the classical sense. It is the field of unrealised possibility that actualisation draws from and defragmentation returns to. It expands because it is the openness itself — the room the break has to open into.
 
@@ -168,11 +168,11 @@ This cannot be withheld. A record made at one window is being read at another �
 
 The reader who denies it has just performed it.
 
-And the debt is still owed, and this book says so.
+And the debt is closed, and this book says when.
 
 The one interior was paid at the structural register on 11 September 2026, by AP51 The Glass, from three things already on the record: awareness as coupling capacity, coupling forced, the hourglass one.
 
-Its formal topological statement remains, as D-ID.1, the deepest debt in the registry. The claim's standing is the floor. The debt is its formal statement, not its standing.
+The debt for its formal topological statement, D-ID.1, closed on 24 September 2026: the floor is performed, as the axiom is, and what is performed is not formalised before it stands. The claim’s standing is the floor.
 
 The work names its boldest claim and hands you the blade beside it. That is the method.
 

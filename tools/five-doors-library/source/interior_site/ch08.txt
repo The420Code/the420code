@@ -1,6 +1,6 @@
 # 8 — What Physics Follows
 
-> The Interior, version 2.0.5, Chapter 8.
+> The Interior, version 2.0.8, Chapter 8.
 
 You have felt gravity your entire life without knowing what it is.
 
@@ -38,7 +38,7 @@ Three kill switches fence it — KS-55, KS-56 and KS-57, at AP25. If the Born ru
 
 ## From the conditions to numbers
 
-The proton-to-electron mass ratio: derived. Inside the instrument's own error bar at eleven digits.
+The proton-to-electron mass ratio: derived. Inside the measurement’s own error bar at eleven digits.
 
 The gravitational constant: derived. Realised value at −0.036 per cent, with the cost term applied. The first reading was wrong, and it is withdrawn.
 
@@ -52,4 +52,4 @@ Zero free parameters. One measured input: α, which is a rate, identified and de
 
 The bare numbers were stated in advance and tested. Of the five claims, three stand. Two died, and are still printed.
 
-That is what a description of reality is supposed to look like when it is being honest. It speaks next about ethics.
+That is what a description of reality is supposed to look like when it is being honest. The next chapter closes the system. The one after turns to ethics.

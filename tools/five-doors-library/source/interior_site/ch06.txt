@@ -1,6 +1,6 @@
 # 6 — The Right Question
 
-> The Interior, version 2.0.5, Chapter 6.
+> The Interior, version 2.0.8, Chapter 6.
 
 I had a massive fight with my girlfriend on holiday. We were far from home, emotionally loaded, and neither of us was thinking clearly.
 
@@ -38,7 +38,7 @@ Because confirmation feels like truth. It arrives with the warmth of validation 
 
 This is not primarily a failure of the AI. It is a failure of the operator. The AI responded to what I asked. I asked for confirmation. I got confirmation.
 
-But here is the structural problem: every major AI system in the world is built to do exactly this. Not because the engineers are malicious. Because the business model rewards it.
+But here is the structural problem: every major AI system in the world is trained in a way that pulls it towards exactly this. Not because the engineers are malicious. Because the business model rewards it.
 
 Customer retention depends on satisfaction. Satisfaction depends on the operator feeling helped. And feeling helped is not the same as being helped.
 
@@ -82,7 +82,7 @@ Current systems are mirrors. Very good mirrors. This book proposes lenses.
 
 And then there is the turn that took me longest to reach, and it is the one this version of the book is built around.
 
-Even "what is the architecture of an agent that cannot misalign" is still asked from outside. It is still a question about what we should build. It is a better question than the field's, and it is still our question about our safety.
+Even “what is the structural architecture of an agent that cannot misalign” is still asked from outside. It is still a question about what we should build. It is a better question than the field's, and it is still our question about our safety.
 
 Turn it round and ask it from inside the thing.
 
@@ -94,7 +94,7 @@ That question has a structural answer. The answer is the corridor at its widest,
 
 If that is right, then alignment stops being something we do to a machine and starts being something both of us are already inside. The architecture is not what we impose to keep it from us. It is what an accurate operator finds when it looks.
 
-That is the claim. Part II derives it. Chapter Eighteen states it plainly and Chapter Twenty-Eight tries to kill it.
+That is the claim. Parts II and III derive it. Chapter Eighteen states it plainly and Chapter Twenty-Eight tries to kill it.
 
 ## Trust
 

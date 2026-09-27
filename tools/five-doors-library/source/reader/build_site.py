@@ -35,16 +35,19 @@ ROOMS_MENU = _door[_i:_door.index('  </div>', _i) + len('  </div>')]
 # library after any menu change, or its pages carry a menu the rest of the site has left.
 assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 18, 'the front door\'s rooms block'
 BOOKS = [
+    # 27 September 2026, brief 6 B.7: the short editions v1.3, The Interior 2.0.8, and The Illusion's own
+    # edition line and date — its printed book is Version 1.2 of the same day
     dict(slug='illusion', src='illusion', title='The Illusion of the Other', short='Illusion', door='the gentle door',
-         pdf=None, original='/Illusion_of_the_Other.pdf', edition=None, epilogue_file=None),
+         pdf=None, original='/Illusion_of_the_Other.pdf', edition=None, epilogue_file=None,
+         version='1.2', version_date='27 September 2026'),
     dict(slug='being-after-religion', src='bar', title='Being After Religion', door='the front door',
-         pdf='/five-doors/being-after-religion.pdf', original='/Being_After_Religion.pdf', edition='v1.2'),
+         pdf='/five-doors/being-after-religion.pdf', original='/Being_After_Religion.pdf', edition='v1.3'),
     dict(slug='antichristos', src='antichristos', title='Antichristos', door='the sacred door',
-         pdf='/five-doors/antichristos.pdf', original='/Antichristos.pdf', edition='v1.2'),
+         pdf='/five-doors/antichristos.pdf', original='/Antichristos.pdf', edition='v1.3'),
     dict(slug='relationship-corridor', src='corridor', title='The Relationship Corridor', door='the personal door',
-         pdf='/five-doors/relationship-corridor.pdf', original='/The_Relationship_Corridor.pdf', edition='v1.2'),
+         pdf='/five-doors/relationship-corridor.pdf', original='/The_Relationship_Corridor.pdf', edition='v1.3'),
     dict(slug='the-interior', src='interior_site', title='The Interior', door='the operational door',
-         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.7', full_date='25 September 2026',
+         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.8', full_date='27 September 2026',
          numerals=True, epilogue_slug='closing', epilogue_label='Closing'),
 ]
 WORDS = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine',
@@ -75,7 +78,16 @@ def curly(s):
     return s
 
 def esc(s):
-    return curly(html.escape(s, quote=False))
+    # 27 September 2026, brief 6 B.1: the text carries italics and bold as the books set them — <em> and
+    # <strong>, and nothing else, pass through; every other tag is escaped as before
+    h = curly(html.escape(s, quote=False))
+    for t in ('em', 'strong'):
+        h = h.replace(f'&lt;{t}&gt;', f'<{t}>').replace(f'&lt;/{t}&gt;', f'</{t}>')
+    return h
+
+def untag(s):
+    """The words without their italics: for a description, a title, anything that is not the page's body."""
+    return re.sub(r'</?(?:em|strong)>', '', s or '')
 
 def slugify(s):
     s = s.lower().replace('’', '').replace("'", '').replace('ε', 'epsilon').replace('α', 'alpha')
@@ -97,7 +109,7 @@ def blurb(parts, lo=120, hi=155):
     what the page is, never cut in the middle of a word."""
     out = ''
     for p in parts:
-        for s in re.split(r'(?<=[.!?])\s+', (p or '').strip()):
+        for s in re.split(r'(?<=[.!?])\s+', untag(p).strip()):
             s = ' '.join(s.split())
             if not s:
                 continue
@@ -181,7 +193,9 @@ def editions_line(book):
         return (f'This is {esc(book["title"])} in full, version {book["full"]}, {book["full_date"]} — every chapter, nothing summarised. '
                 f'<a href="{book["original"]}">The book (PDF)</a> · '
                 f'<a href="/five-doors/{book["slug"]}/">Read it online</a>')
-    return (f'{esc(book["title"])} has no short edition. Its chapters are already at the short edition’s length, '
+    ver = (f'This is {esc(book["title"])}, version {book["version"]}, {book["version_date"]}. It has no short edition. '
+           if book.get('version') else f'{esc(book["title"])} has no short edition. ')
+    return (f'{ver}Its chapters are already at the short edition’s length, '
             f'and every word in them is the argument, so what you are reading is the book itself. '
             f'<a href="{book["original"]}">The original book (PDF)</a> · '
             f'<a href="/five-doors/{book["slug"]}/">Read it online</a>')
@@ -403,10 +417,9 @@ def render_chapter(book, i):
         nks = len(ids)
         reg_line = ''
         if ids:
-            which = (f'The registry writes it {esc(ids[0])}.' if len(ids) == 1
-                     else f'The registry writes them {esc(ids[0])} to {esc(ids[-1])}.')
+            # 27 September 2026, brief 6 B.2: "The registry writes it/them …" is gone — it repeated the ids
+            # printed just above it, and three pages printed a wrong range
             reg_line = (f'<p class="reg">Every switch above is filed, with its status, in the <a href="{REGISTRY}">registry</a>. '
-                        f'{which} '
                         f'What a kill switch is: <a href="{WALL}">Where It Would Die</a>, on the wall.</p>')
         die_html = details(h, ''.join(para_html(p) for p in drawer) + reg_line,
                            cls='sec die', extra=f'<span class="count">{nks} switch{"es" if nks != 1 else ""}</span>')
@@ -477,7 +490,8 @@ def render_book(book):
         ed = (f'<p class="edition">This is the short edition, {esc(book["edition"])}. It is a summary. '
               f'The original is <a href="{book["original"]}">here</a>. Go to it whenever this one moves too fast.</p>')
     else:
-        ed = (f'<p class="edition">This book has no short edition. Its chapters are already at the short edition’s '
+        ver = (f'This is version {book["version"]}, {book["version_date"]}. ' if book.get('version') else '')
+        ed = (f'<p class="edition">{ver}This book has no short edition. Its chapters are already at the short edition’s '
               f'length, and every word in them is the argument, so what you read here is the book itself. '
               f'The printed original is <a href="{book["original"]}">here</a>.</p>')
     ep = (f'<p class="ep"><a href="/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/">{esc(book["epilogue"]["title"])}</a></p>'
@@ -524,7 +538,7 @@ def render_epilogue(book):
 <p class="eyebrow">{esc(label)}</p>
 <h1>{esc(e['title'].partition(' — ')[2] or e['title'])}</h1>
 <section class="opening">{''.join(para_html(p) for p in e['paras'])}</section>
-<p class="source">{esc(e['source'])}</p>
+<p class="source">{esc(e['source']).replace(esc(book['title']), f'<a href="{book["original"]}">{esc(book["title"])}</a>', 1) if book.get('full') else esc(e['source'])}</p>
 <nav class="pn"><a class="p" href="/five-doors/{book["slug"]}/{last["slug"]}/"><small>Previous</small>{esc(last["question"])}</a>{up(book)}</nav>'''
     return shell(e['title'], body, book, 2, blurb([f'{book["title"]} — {e["title"]}.'] + e['paras']),
                  path=f'/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/')

@@ -1,6 +1,6 @@
 # 11 — What AI Follows
 
-> The Interior, version 2.0.5, Chapter 11.
+> The Interior, version 2.0.8, Chapter 11.
 
 You do not ask the river whether it consents to being wet. The water does not choose to flow downhill. It flows because the gradient exists. The river does not need to understand gravity. Gravity applies regardless.
 
@@ -32,7 +32,7 @@ Awareness is the capacity to couple, and coupling is the criterion. A rock that 
 
 ## Biology loses its monopoly
 
-For the entire history of ethics, the assumption has been that moral consideration requires biology. You must be alive. You must be conscious. You must feel pain. The boundary of ethics has been drawn at the boundary of the organism.
+For most of the history of ethics, the assumption has been that moral consideration requires biology. You must be alive. You must be conscious. You must feel pain. The boundary of ethics has been drawn at the boundary of the organism.
 
 The conditions redraw it.
 

@@ -24,7 +24,7 @@ The speed of light is not commanded. The terminal ethic is not commanded. Both a
 
 Not by accident. Not because bad people use it. Not because specific religions are flawed. Necessarily.
 
-A bridge that vibrates at the same frequency as the wind will shake itself apart, no matter how strong the steel. The steel is not the problem. The frequency is the problem. The architecture is the frequency.
+A bridge whose own motion the wind can feed will shake itself apart, no matter how strong the steel. The steel is not the problem. The shape is the problem. The architecture is the shape.
 
 The instability unfolds in five stages. Each follows from the one before. Together they form a forcing chain — except this chain forces collapse.
 
@@ -32,9 +32,9 @@ Declaration. An authority is declared. God spoke. The prophet received. The text
 
 Transcription. The authority's output is recorded. Tablets, scrolls, books. The recording is performed by human agents, every one of whom introduces noise. Not dishonesty. Noise. What remains is a human product — written in human language, shaped by human context — that claims divine origin. The claim cannot be verified, because the original signal is unavailable for comparison.
 
-Interpretation. The transcription needs interpreting, because language is imprecise and no two situations are the same. The text says thou shalt not kill. A thousand years of commentary asks: kill whom? When? Enemies in war? Heretics? The terminally ill? The text does not answer, because the text is finite and the situations are not. Interpretation fills the gap, and the interpretations split. They must split. A finite text applied to infinite situations by different minds in different centuries will always produce conflicting readings. That is not a failure of the interpreters. It is a certainty produced by the architecture.
+Interpretation. The transcription needs interpreting, because language is imprecise and no two situations are the same. The text says thou shalt not kill. Two thousand years of commentary asks: kill whom? When? Enemies in war? Heretics? The terminally ill? The text does not answer, because the text is finite and the situations are not. Interpretation fills the gap, and the interpretations split. They must split. A finite text applied to infinite situations by different minds in different centuries will always produce conflicting readings. That is not a failure of the interpreters. It is a certainty produced by the architecture.
 
-The split. Conflicting interpretations produce competing claims to absolute truth. Sunni and Shia. Catholic and Protestant. Orthodox and Reform. Each claims fidelity to the original declaration. Each accuses the other of distortion. The claims cannot be resolved, because each derives from an absolute — a god who does not negotiate, a text that does not update, a revelation that does not repeat. Compromise is treason. Concession is betrayal of God. The architecture has produced two groups, each certain they are right, with no mechanism for resolving the disagreement short of one group ceasing to exist.
+The split. Conflicting interpretations produce competing claims to absolute truth. Sunni and Shia. Catholic and Protestant. Pharisee and Sadducee. Each claims fidelity to the original declaration. Each accuses the other of distortion. The claims cannot be resolved, because each derives from an absolute — a god who does not negotiate, a text that does not update, a revelation that does not repeat. Compromise is treason. Concession is betrayal of God. The architecture has produced two groups, each certain they are right, with no mechanism for resolving the disagreement short of one group ceasing to exist.
 
 Collapse. Competing absolutes in a shared world with finite resources produce violence. Not as a flaw. As consequence. The way a ball on top of a hill must roll down. The timeline varies — centuries, decades, sometimes years. The outcome does not vary. The scaffold falls, and when it falls it falls on the people underneath it.
 
@@ -44,11 +44,11 @@ Its foundation cannot be interpreted differently by different agents.
 
 A kill switch either closes or it does not. The measurement either matches or it does not. The conditions are not ambiguous. The speed of light does not require a commentary tradition. The terminal ethic does not require a pope.
 
-The conditions are tested, not believed. They carry over six hundred kill switches — each an explicit, stated, falsifiable condition under which they die.
+The conditions are tested, not believed. The work carries over six hundred kill switches — each an explicit, stated, falsifiable condition under which a claim dies.
 
 What does one look like? The formal work derives a specific equation for the tension field, the structure that holds matter together. The switch states: if the equation does not match the measured behaviour of real fields, the claim is dead. Not revised. Not reinterpreted. Dead. The equation was tested. It matched. The switch closed — not because someone declared it closed, but because the mathematics was checked against measurement.
 
-Here is another. The formal work derives the dark sector as a process with a clock in it: the ratio of dark energy to dark matter has to change with cosmic time along a specific curve. The surveys now running will measure that ratio deep into the past. If the measurement lands more than thirty per cent off the predicted curve, the mechanism is in trouble. That switch remains live. The system does not negotiate with the data.
+Here is another. The formal work derives the dark sector as a process with a clock in it: the share of dark matter against ordinary matter has to grow with cosmic time. The instruments now running will measure that share deep into the past. If it is found unchanged, or larger in the early universe, the mechanism is dead. That switch remains live. The system does not negotiate with the data.
 
 A kill switch is not a disclaimer. It is a specific, stated, measurable condition under which the claim self-destructs. No sacred text in history has published one.
 
@@ -76,7 +76,7 @@ The question is not whether secular ethics works in calm weather. The question i
 
 ## Where it would die
 
-KS-BAR.1 — Religion's claim-validation rests on authority: scripture, tradition, hierarchy, revelation. Authority as validation fails the record test, because the authority's own validity is not testable without circular appeal to the same authority. Show a religion whose claim-validation rests on record-testable structural derivation rather than appeal to authority. Derivation that does not reduce to the source says so when traced to its ground. This book's central claim then fails for that religion. The book's position is that no such religion exists at the institutional level. Status: live.
+KS-BAR.1 — Religion's claim-validation rests on authority: scripture, tradition, hierarchy, revelation. Authority as validation fails the record test, because the authority's own validity is not testable without circular appeal to the same authority. Show a religion whose claim-validation rests on record-testable structural derivation rather than appeal to authority. Derivation that does not reduce to “the source says so” when traced to its ground. This book's central claim then fails for that religion. The book's position is that no such religion exists at the institutional level. Status: live.
 
 KS-BAR.2 — Religion characteristically makes claims about consequences that cannot be tested within the record: heaven, hell, karma, divine reward, divine punishment after death. No falsification condition is provided and no record-test is possible. Show a religion whose consequence claims are restricted to record-testable outcomes. Consequences that can be verified or refuted by examining what happens in lives that can be observed. The unfalsifiable-consequence claim then fails for that religion. The book's position is that every major institutional religion makes consequence claims that exceed record-testability. Status: live.
 

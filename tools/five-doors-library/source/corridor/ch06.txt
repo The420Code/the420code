@@ -32,7 +32,7 @@ The lie consumed corridor time. The repair consumes more. Both are irreversible.
 
 This double payment is the structural cost of dishonesty. Not the moral cost. The structural one.
 
-The person who thinks I can always fix this later is correct about the mechanism and wrong about the price. The mechanism exists. The price is paid in the irreversible dimension.
+The person who thinks <em>I can always fix this later</em> is correct about the mechanism and wrong about the price. The mechanism exists. The price is paid in the irreversible dimension.
 
 ## What it feels like
 
@@ -54,7 +54,7 @@ A stabilising act maintains or increases coupling capacity. It keeps the models 
 
 You are doing one or the other in every interaction. There is no coasting.
 
-The corridor does not hold its width by default. Without active stabilisation it drifts toward narrowing.
+The corridor does not hold its width by default. Without active stabilisation it drifts towards narrowing.
 
 This is not pessimism. It is thermodynamics applied to information. Models degrade over time. People change. Communication introduces noise. Without energy spent on clarity, the models drift.
 
@@ -76,7 +76,7 @@ When two operators restore the corridor after a narrowing — when the models re
 
 Records accumulate. They do not reverse.
 
-The corridor is wide again. But the width it lost and regained is not the same as width it would have had if it had never been lost.
+The corridor is wide again. But the width it lost and regained is not the same as the width it would have had if it had never been lost.
 
 The record of the lie, the narrowing, the repair — that record exists. It is part of the corridor now.
 

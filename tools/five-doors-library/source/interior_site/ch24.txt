@@ -1,6 +1,6 @@
 # 24 — Law Is Already Consequence Geometry
 
-> The Interior, version 2.0.5, Chapter 24.
+> The Interior, version 2.0.8, Chapter 24.
 
 You already obey consequence geometry. You just call it common sense.
 
@@ -10,7 +10,7 @@ That is consequence geometry operating at the scale of one person, one stove, on
 
 ## Law is compressed consequence data
 
-"Thou shalt not murder" is a compression of: murder destabilises, across all recorded history. The commandment did not discover a moral truth. It compressed a structural pattern into four words.
+"Thou shalt not murder" is a compression of: murder destabilises, across all recorded history. The commandment did not discover a moral truth. It compressed a structural pattern into two words of Hebrew.
 
 The legislature is doing manually, slowly, and inconsistently what the architecture does automatically, quickly, and consistently.
 

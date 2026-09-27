@@ -38,7 +38,7 @@ And beneath all of it, the length runs. Silently. One direction. Without pause.
 
 ## Not a metaphor
 
-Or rather: a metaphor whose structure is derived from the axioms.
+Or rather: a metaphor whose structure is derived from the axiom.
 
 Width is coupling capacity — the same quantity the formal work derives at the foundation of the operator interface, the quantity that runs from the electron up. The capacity of one part of the broken substrate to interact with another part.
 

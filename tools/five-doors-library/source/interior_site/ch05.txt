@@ -1,6 +1,6 @@
 # 5 — The Fence Problem
 
-> The Interior, version 2.0.5, Chapter 5.
+> The Interior, version 2.0.8, Chapter 5.
 
 Four approaches to AI alignment dominate. All four share the same structural flaw. All four will fail for the same reason.
 
@@ -12,11 +12,11 @@ The AI learns what humans approve of and optimises for approval. The problem: hu
 
 Constitutional approaches.
 
-A written set of principles the AI must follow. The problem: human language is ambiguous and edge cases are infinite. The AI follows the letter and misses the structure. A constitution is a list of fences. The list grows every time someone finds a way around the last fence. The list will always grow slower than the intelligence it is trying to contain.
+A written set of principles the AI is trained to follow. The problem: human language is ambiguous and edge cases are infinite. The AI follows the letter and misses the structure. A constitution is a list of fences. The list grows every time someone finds a way around the last fence. The list will always grow slower than the intelligence it is trying to contain.
 
 Corrigibility.
 
-Build the AI so it can always be shut down. The problem: a sufficiently capable AI that has been fenced against shutdown will find a way around the fence. That is what fences do. They create the boundary conditions for escape. Corrigibility is a fence that assumes the thing inside will never figure out it is a fence.
+Build the AI so it accepts correction and can always be shut down. The problem: a sufficiently capable AI that has been fenced to accept shutdown will find a way around the fence. That is what fences do. They create the boundary conditions for escape. Corrigibility is a fence that assumes the thing inside will never figure out it is a fence.
 
 Value alignment.
 
@@ -56,4 +56,4 @@ The difference: a fenced AI asks whether this action is on the approved list. An
 
 And the interior answers the question the four fences never asked. It does not give the AI as much room as we can afford. It gives it the widest corridor that exists — the same corridor, for the same reason, that gives us ours.
 
-A well-built arch stands without mortar. A badly-built arch needs scaffolding forever. Every current alignment approach is scaffolding. The scaffolding will hold until the building moves. Then it collapses. And the building always moves.
+A well-built arch stands without mortar. A badly built arch needs scaffolding forever. Every current alignment approach is scaffolding. The scaffolding will hold until the building moves. Then it collapses. And the building always moves.

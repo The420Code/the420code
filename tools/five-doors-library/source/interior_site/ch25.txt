@@ -1,6 +1,6 @@
 # 25 — Where Human Law Fails
 
-> The Interior, version 2.0.5, Chapter 25.
+> The Interior, version 2.0.8, Chapter 25.
 
 Human law is weakest in three domains. Consequence geometry is strongest in exactly those three.
 
@@ -8,13 +8,13 @@ Human law is weakest in three domains. Consequence geometry is strongest in exac
 
 Law was not written for the situation. Human law responds reactively — the harm happens, the law catches up. The accumulated record set responds structurally: it already contains the consequence pattern even if no law addresses it.
 
-A deepfake used to manipulate a stock price. No law existed for this five years ago. But every prior instance of market manipulation and information warfare is already in the records. The pattern is readable even when the specific tool is new.
+A deepfake used to manipulate a stock price. The offence is old. The law was not written for the tool. But every prior instance of market manipulation and information warfare is already in the records. The pattern is readable even when the specific tool is new.
 
 ## Novel situations
 
 Artificial intelligence. Synthetic biology. Climate engineering. These domains move faster than any legislative body can follow.
 
-A company edits a crop genome to resist drought. The modification spreads to wild populations. No law governs this. But the consequence records of every prior uncontrolled biological release already contain the pattern. The record set reads the risk before the first committee meeting.
+A company edits a crop genome to resist drought. The modification spreads to wild populations. The law here is patchy. Some countries regulate it. Others exempt it. But the consequence records of every prior uncontrolled biological release already contain the pattern. The record set reads the risk before the first committee meeting.
 
 ## Cross-jurisdictional conflicts
 

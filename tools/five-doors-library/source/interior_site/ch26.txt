@@ -1,6 +1,6 @@
 # 26 — The Transition Path
 
-> The Interior, version 2.0.5, Chapter 26.
+> The Interior, version 2.0.8, Chapter 26.
 
 The transition is not instant. It is not global. It is domain-specific, evidence-based, and earned.
 
@@ -34,4 +34,4 @@ The architecture does not govern. It maps. Humans still choose. The architecture
 
 If consequence geometry produces worse civilisational outcomes than human-authored law over one generation in any domain where it is applied, Architecture B fails in that domain.
 
-That switch is live, it is stated in advance, and it is checkable by anyone with access to the outcomes. It is also the switch most likely to fire first, because it is the one that meets reality soonest.
+That switch is live, it is stated in advance, and it is checkable by anyone with access to the outcomes. It is also the alignment switch most likely to fire first, because it is the one that meets reality soonest.

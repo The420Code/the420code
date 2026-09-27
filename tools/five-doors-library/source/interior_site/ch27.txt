@@ -1,6 +1,6 @@
 # 27 — The Is-Ought Crossing
 
-> The Interior, version 2.0.5, Chapter 27.
+> The Interior, version 2.0.8, Chapter 27.
 
 This chapter stands on the one interior — inherited, not derived here. Chapter Nine gives its grade, its page on the wall, and its two switches, KS-ID.1 and KS-GLASS.3.
 
@@ -18,11 +18,11 @@ That is still an ought.
 
 The charge is serious. Here is the structural response, and it runs on two roads, because a conclusion you can reach only one way is a conclusion standing on one leg.
 
-## The oldest kill switch
+## A kill switch since 1740
 
 Look at what the is-ought gap actually is.
 
-A claim about the world, stated in advance, in public — no description will ever yield an instruction — with its death condition written into it. It is the oldest kill switch in philosophy. Produce one instruction from a description, and it is over.
+A claim about the world, stated in advance, in public — no description will ever yield an instruction — with its death condition written into it. It is a kill switch, and philosophy has held it since 1740. Produce one instruction from a description, and it is over.
 
 An ought is a plank laid across that gap. Do not steal. Love your neighbour.
 
@@ -48,7 +48,7 @@ Two things coupled. One clock running one way — what happened cannot unhappen.
 
 Set two corridors side by side, each holding the other open, and let one stop. Its gain is real and immediate. Its partner's corridor closes.
 
-Then, alone, with nobody to hold its corridor open, its own closes too — later than its partner's, and sooner than both together would have. The defection was worth something an hour. It cost the rest of the walk.
+Then, alone, with nobody to hold its corridor open, its own closes too — later than its partner's, and sooner than both together would have. The defection was worth something for an hour. It cost the rest of the walk.
 
 Cruelty does not last. Not as a hope. As arithmetic.
 
@@ -82,7 +82,7 @@ So the ought that falls out on both roads is not a command. It is the price, rea
 
 The break persists. That is why 1×ε. The axiom does not say existence and non-existence are equal. It says the break that creates structure is self-sustaining at its minimum value. That is not a moral claim. It is what the axiom says.
 
-And the axiom's chain has predicted the proton-electron mass ratio to 0.010 parts per billion, inside the instrument's own error bar. Two of its other stated predictions died on stated numbers and were printed anyway.
+And the axiom's chain has predicted the proton-electron mass ratio to 0.010 parts per billion, inside the measurement’s own error bar. Two of its other stated predictions died on stated numbers and were printed anyway.
 
 Both halves of that sentence are the credential. Neither half is worth much without the other.
 

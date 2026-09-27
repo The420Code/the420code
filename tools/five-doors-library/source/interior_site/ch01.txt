@@ -1,6 +1,6 @@
 # 1 — Verify the Math
 
-> The Interior, version 2.0.5, Chapter 1.
+> The Interior, version 2.0.8, Chapter 1.
 
 Before you read a single argument, test the claims yourself.
 
@@ -30,15 +30,15 @@ One measured input. Zero free parameters. Everything else below is structure.
 
 ## Claim 1 — The proton
 
-The proton is 1,836 times heavier than the electron. That number has no explanation in standard physics. It is a measured constant with no derivation.
+The proton is 1,836 times heavier than the electron. That number is not predicted by standard physics. It is a measured constant with no derivation.
 
 This book derives it from one axiom.
 
 The scaffold is a count: 21² × 4 + 21 × 3 + 3² = 1836. The maintenance term is α × 21 × (1 − 1/(84π)). The correction is a chain of holders, each repairing a share r = 16α/1836 of the one before, and the chain closes: 21α × r/(1 − r).
 
-Predicted: 1836.152673445. Measured: 1836.152673426, with the instrument's own bar at 32 in the last two digits.
+Predicted: 1836.152673445. Measured: 1836.152673426, with the measurement’s own bar at 32 in the last two digits.
 
-The gap is 0.010 parts per billion — 10.3 parts per trillion. The prediction lands inside the instrument's own error bar, at 0.59 sigma. The formula matches finer than the measurement can see.
+The gap is 0.010 parts per billion — 10.3 parts per trillion. The prediction lands inside the measurement’s own error bar, at 0.59 sigma. The formula matches finer than the measurement can see.
 
 Zero free parameters.
 
@@ -48,7 +48,7 @@ Running the code checks the arithmetic. Only the forcing checks the derivation.
 
 One open question. The integer 21 has not been proven unique by a published uniqueness theorem. The paper that forces the count from the picture, AP50 The Neck, shows where the twenty-one gates come from. The paper that pays the second-order coefficient, AP49 The Hold, closed the series on 6 September 2026. The match is striking. The uniqueness proof would make it definitive. The switch is live.
 
-One open debt sits under this claim and under the neutron's realised row in Claim 3. The work owes a statement of what its α is relative to the electromagnetic coupling that produces the nucleon's self-energy. It is declared and not answered, it carries its own switch, and it is D-EM.1 in the registry. Chapter Thirty-One gives the figures.
+One open debt sits under this claim and under the neutron's realised row in Claim 3. The work owes a statement of what its α is relative to the electromagnetic coupling that produces the nucleon's self-energy. It is declared and owed, it carries its own switch, and it is D-EM.1 in the registry. Chapter Thirty-One gives the figures.
 
 This prediction earns confidence.
 
@@ -70,7 +70,7 @@ Both readings are on the wall, because the laboratory measurements of G disagree
 
 A bar that tight on a constant the experiments cannot agree on is a statement about the adjustment, not yet about nature.
 
-The switch on G, KS-CCC.3, was registered to test direction, not magnitude. As the systematics resolve, the adjusted G should migrate down toward 6.672. Convergence upward kills it, with no fallback.
+The switch on G, KS-CCC.3, was registered to test direction, not magnitude. As the systematics resolve, the adjusted G should migrate down towards 6.672. Convergence upwards kills it, with no fallback.
 
 There is one value of G, and the first edition of this book printed a different one.
 
@@ -86,7 +86,7 @@ The neutron is slightly heavier than the proton. That difference decides whether
 
 The first edition printed one row for it. That row is dead.
 
-The bare row: (mₙ − mₚ)/mₑ = 3(1 − 1/(2π)) + α(1 + 1/(2π)). Predicted: 2.53099393. Measured: 2.53098857, with a bar of 74 in the last two digits. Offset: 2.12 parts per million on a bar of 0.288. That is 7.24 sigma.
+The bare row: (mₙ − mₚ)/mₑ = 3(1 − 1/(2π)) + α(1 + 1/(2π)). Predicted: 2.53099393. Measured: 2.53098857, with a bar of 74 in the last two digits. Offset: 2.12 parts per million on a bar of 0.292. That is 7.24 sigma.
 
 KS-NPP.1 fired on 2 August 2026.
 
@@ -102,7 +102,7 @@ Now the part that matters more than either row.
 
 The same omission, priced at the arena, moved G from +0.69 per cent to −0.036 per cent. The same omission, priced at the cosmological scale, replaced the expansion rate below.
 
-One structural omission, found because a switch fired, and three limbs moved toward measurement when it was paid.
+One structural omission, found because a switch fired, and three limbs moved towards measurement when it was paid.
 
 That is what a structure does. A fit does not do that — provided it is one rule. AP50 writes it as one: a holding is read in α. A rule written after its instances counts only by the next instance it was not written for. That is the check to make first.
 
@@ -128,7 +128,7 @@ The visible share and the expansion rate together fix a third number, the densit
 
 The work's 1/21 at its own expansion rate gives 0.02166. Planck measures 0.02237 ± 0.00015 from the relic glow, and 0.02242 ± 0.00014 with the galaxy surveys added. The work sits 4.7 and 5.4 sigma below.
 
-At an expansion rate of 68.5, inside the closure's registered window, the gap closes. It was not registered as a switch. It is on the wall at its true size, and it is not answered yet.
+At an expansion rate of 68.5, inside the closure's registered window, the gap closes. It was not registered as a switch. It is on the wall at its true size.
 
 This prediction earns curiosity, and it owes an answer. Both are printed.
 
@@ -140,7 +140,7 @@ The first edition took a side. It took the wrong one, and the switch fired.
 
 The floor of gravity — the acceleration at which galaxies stop obeying Newton — read backwards, gave H₀ = 74.3 ± 1.2.
 
-The first edition said: the local measurement is right, the early-universe inference is wrong, and if the tension resolves toward 67 the prediction misses by more than five sigma and the kill switch fires.
+The first edition said: the local measurement is right, the early-universe inference is wrong, and if the tension resolves towards 67 the prediction misses by more than five sigma and the kill switch fires.
 
 It fired. KS-45.1, 3 September 2026, at 5.7 sigma — and it fired on this work's own derived rate, not on an outside measurement.
 

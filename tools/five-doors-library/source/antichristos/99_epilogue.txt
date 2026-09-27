@@ -1,4 +1,4 @@
-# Epilogue — How to destroy this book
+# Epilogue — How to Destroy This Book
 
 This book is not asking to be believed. It is asking to be tested.
 
@@ -20,7 +20,7 @@ And the one that takes the whole book with it: show that Architecture B produces
 
 Seven routes. Six of them reachable by ordinary work — a manuscript, a dating argument, a reading, a check. The seventh by watching what Architecture B does over years, which anyone can do and nobody can hurry. None of them needs my permission, and none of them can be closed by argument from the book's own side.
 
-A reader who fires one has a legitimate target. A reader who cannot has a claim that stands until one is found.
+A reader who fires one has hit a legitimate target. A reader who cannot is left with a claim that stands until one is found.
 
 That is the whole difference between this and what was built on the hillside's back. The scaffold could not be wrong. This can.
 
@@ -43,3 +43,21 @@ AP40, The Irrational. Choice as irrational coupling capacity — the capacity th
 AP43, The Gravity of Possibilities. The terminal ethic derived; the nine in the sand.
 
 > Antichristos, the short edition. The original is published free at the420code.org, with the seven switches printed in full and filed in the registry.
+
+---
+
+~ Series The 420 Code
+
+~ Catalogue The Five Doors
+
+~ Title Antichristos
+
+~ Subtitle The Teaching, Free
+
+~ Artist G
+
+~ The short edition · v1.3 · 27 September 2026
+
+~ This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.
+
+~ the420code.org

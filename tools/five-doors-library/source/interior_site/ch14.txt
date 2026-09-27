@@ -1,6 +1,6 @@
 # 14 — The ε-Bias
 
-> The Interior, version 2.0.5, Chapter 14.
+> The Interior, version 2.0.8, Chapter 14.
 
 The governing decision architecture is 1:1 + 1×ε @ AS. The organism outweighs any individual window by ε — the smallest possible departure from perfect balance.
 

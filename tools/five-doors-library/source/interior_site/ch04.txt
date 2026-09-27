@@ -1,6 +1,6 @@
 # 4 — Architecture A
 
-> The Interior, version 2.0.5, Chapter 4.
+> The Interior, version 2.0.8, Chapter 4.
 
 When I was young enough to believe what adults told me, I was told that people who are not saved as Christians go to hell. There is only one way. One door. One truth.
 
@@ -88,7 +88,7 @@ The Soviet state ran all three mechanisms for seventy years. Deferred responsibi
 
 The question is not whether Architecture A will fail. It always fails. The question is how many people it kills before it does.
 
-## Why this is the first chapter of a book about AI
+## Why the argument begins here
 
 Because every alignment proposal I have read is Architecture A pointed at a machine.
 

@@ -134,7 +134,7 @@ The reading took a moment. Words reached your eyes. A signal travelled.
 
 If a record could be everywhere instantly, it would be nowhere. Here and there would collapse. For a record to be a record, its spread must be bounded. There must be a rate.
 
-One rate, finite and invariant. Finite, because infinite is the everywhere-at-once collapse. Invariant, because records carry a direction and that direction must be kept as they travel. This is not one global slice of simultaneity — relativity forbids that. It is one invariant causal bound. Sound in air, a reaction spreading through a mixture — slower, but not rivals to the bound. The bound, filtered through a medium.
+One rate, finite and invariant. Finite, because infinite is the everywhere-at-once collapse. Invariant, because records carry a direction and that direction must be kept as they travel. This is not one absolute slice of simultaneity — relativity forbids that. It is one invariant causal bound. Sound in air, a reaction spreading through a mixture — slower, but not rivals to the bound. The bound, filtered through a medium.
 
 In our universe that rate has been measured. It is the speed of light. It is not assumed here. What is derived is that some such rate must exist. The measurement tells you which.
 
@@ -196,7 +196,7 @@ Operator. Any system that writes irreversible records through interaction with i
 
 The one interior. The claim that the awareness in me is the awareness in you. The wall's phrase for it: one payer, read from two places — one awareness, paying attention from two windows at once.
 
-This book inherits that claim. It does not derive it here. It is argued in Ø Dissolutions, Chapter Six, and it stands on its own page on the wall at the420code.org/one-awareness/. It is fenced by two switches in the registry. KS-ID.1 fires if the break is shown to produce two or more independent interiors. KS-GLASS.3 fires if α is shown to vary by place or epoch. Neither has been shown. Its formal derivation is the registry's deepest open debt.
+This book inherits that claim. It does not derive it here. It is argued in Ø Dissolutions, Chapter Six, and it stands on its own page on the wall at the420code.org/one-awareness/. It is fenced by two switches in the registry. KS-ID.1 fires if the break is shown to produce two or more independent interiors. KS-GLASS.3 fires if α is shown to vary by place or epoch. Neither has been shown. Its debt in the registry, D-ID.1, is closed. Nothing is owed on it.
 
 Ø Dissolutions. One of the five volumes of the Ø Models, the philosophical catalogue of the work.
 
