@@ -3,7 +3,22 @@
  "project": "The 420 Code",
  "url": "https://the420code.org",
  "author": "G — Studio G, Cape Town",
- "what_it_is": "A work of ethics: “Don’t be a cunt. Be kind.”, derived from one axiom — one record exists — with no measured input. The physics is the same logic carried on until it meets measurement, with one measured input, α, the fine-structure constant. The physics is why the ethic carries weight.",
+ "what_it_is": "A work of ethics. It asks one question — how should I live? — and answers it: “Don’t be a cunt. Be kind.” The answer is derived, not commanded, from one axiom — one record exists — with no measured input at all. The physics fell out of the same record — the same logic carried on until it meets measurement, with one measured input, α, the fine-structure constant. It was never the point. It gives the ethic its weight.",
+ "the_question": "How should I live?",
+ "the_road": [
+  "Why? Why be kind, rather than right? Why kindness, before truth, before authenticity, before freedom? And why take any of this seriously? The work is there for one reason: to answer the question why.",
+  "It starts with the only thing you can know for certain. One record exists. Try to deny it. The denial is a record.",
+  "From that one record, the rest follows by logic, step by step. There is one shared reality. The awareness in me is the awareness in you. The one you harm is you, seen from another perspective.",
+  "Therefore: Don’t be a cunt. Be kind."
+ ],
+ "nothing_compels": "Nothing here compels you. You can be cruel. Logical necessity does not change anything about reality — or you or me. It only shows you what is left. What is left is the price, and reality audits it.",
+ "if_you_read_one_thing": {
+  "title": "The Illusion of the Other",
+  "why": "There is no physics in it. If it lands, nothing further is required.",
+  "online": "https://the420code.org/five-doors/illusion/",
+  "films": "https://the420code.org/films/illusion/"
+ },
+ "the_physics": "The physics fell out of the same record. It was never the point. It gives the ethic its weight.",
  "scope": [
   "ethics",
   "physics",
@@ -662,5 +677,5 @@
   "zenodo_concept_doi": "10.5281/zenodo.19208225",
   "osf": "r69bm"
  },
- "summary_built": "2026-09-24"
+ "summary_built": "2026-09-27"
 }
