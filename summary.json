@@ -394,7 +394,7 @@
   "what_it_is": "Films in G’s own voice, for the people who would rather watch than read. Most are short, one claim each; a chapter’s film carries the chapter’s whole argument, in four to eight minutes. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
   "shape": "Chains only: each chain is an argument in order, one row per film, every line the film says in the page as text, and the whole chain as one film at the head of its page where it has one.",
   "where": "https://the420code.org/films/",
-  "films": 140,
+  "films": 150,
   "chains": [
    {
     "name": "The heart and the philosophy",
@@ -424,6 +424,39 @@
     "whole_chain": {
      "url": "https://media.the420code.org/chains/heart-philosophy.mp4",
      "minutes": 7
+    }
+   },
+   {
+    "name": "The Illusion of the Other",
+    "films": 11,
+    "url": "https://the420code.org/films/illusion/",
+    "book": "https://the420code.org/five-doors/illusion/",
+    "parts": [
+     {
+      "name": "The book",
+      "films": 1
+     },
+     {
+      "name": "The chapters",
+      "films": 10
+     }
+    ],
+    "whole_chain": {
+     "url": "https://media.the420code.org/chains/illusion.mp4",
+     "minutes": 60
+    },
+    "opens": {
+     "The gentle door": "https://the420code.org/five-doors/illusion/",
+     "The line in the sand": "https://the420code.org/five-doors/illusion/01-why-we-experience-ourselves-as-separate/",
+     "Harm without feeling harmful": "https://the420code.org/five-doors/illusion/02-the-cost-of-the-other/",
+     "Not elsewhere": "https://the420code.org/five-doors/illusion/03-how-god-became-external/",
+     "You came out of it": "https://the420code.org/five-doors/illusion/04-god-and-the-universe/",
+     "The grain and the desert": "https://the420code.org/five-doors/illusion/05-unity-multiplicity-and-the-illusion-of-division/",
+     "A window, not the building": "https://the420code.org/five-doors/illusion/06-what-a-person-is/",
+     "Expressed in a new way": "https://the420code.org/five-doors/illusion/07-free-will-power-and-responsibility/",
+     "The body is one": "https://the420code.org/five-doors/illusion/08-why-compassion-is-rational/",
+     "The clearing": "https://the420code.org/five-doors/illusion/09-meaning-without-dogma/",
+     "The desert is still one": "https://the420code.org/five-doors/illusion/10-living-without-the-other/"
     }
    },
    {

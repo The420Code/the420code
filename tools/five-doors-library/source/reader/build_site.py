@@ -255,9 +255,13 @@ def watch(path, label):
     f = FILMS.get(path)
     if not f:
         return ''
-    s = int(round(float(f['seconds'])))
-    return (f'<p class="watch"><a href="{f["href"]}">{esc(label)}'
-            f'<span class="t">{s // 60}:{s % 60:02d}</span></a></p>\n')
+    # 27 September 2026: a book with its own chain leads to the chain, which has no single length — the
+    # length is shown where the button leads to one film (the Ø Models rule, word for word)
+    t = ''
+    if f.get('seconds'):
+        s = int(round(float(f['seconds'])))
+        t = f'<span class="t">{s // 60}:{s % 60:02d}</span>'
+    return f'<p class="watch"><a href="{f["href"]}">{esc(label)}{t}</a></p>\n'
 
 def strap(book, crumb, current='read'):
     dl = f'<a href="{book["pdf"]}">Download</a>' if book.get('pdf') else f'<a href="{book["original"]}">Download</a>'
@@ -420,7 +424,7 @@ def render_chapter(book, i):
     help_html = (f'<p class="help">{link_help(c["help"])}</p>\n' if c.get('help') else '')
     body = f'''{strap(book, crumb)}
 <details class="toc"><summary>In this book</summary><ol>{toc}</ol></details>
-<p class="eyebrow">{eyebrow}</p>
+{watch(f'/five-doors/{book["slug"]}/{c["slug"]}/', 'Watch the chapter')}<p class="eyebrow">{eyebrow}</p>
 <h1>{esc(c['question'])}</h1>
 <p class="oneline">{esc(oneline)}</p>
 {help_html}<section class="opening">

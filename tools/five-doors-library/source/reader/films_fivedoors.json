@@ -1,8 +1,56 @@
 {
  "/five-doors/illusion/": {
-  "href": "/films/the-heart-and-the-philosophy/#f-i01",
-  "seconds": 50.2,
-  "film": "I01"
+  "href": "/films/illusion/"
+ },
+ "/five-doors/illusion/01-why-we-experience-ourselves-as-separate/": {
+  "href": "/films/illusion/#f-p01",
+  "seconds": 379.0,
+  "film": "P01"
+ },
+ "/five-doors/illusion/02-the-cost-of-the-other/": {
+  "href": "/films/illusion/#f-p02",
+  "seconds": 307.9,
+  "film": "P02"
+ },
+ "/five-doors/illusion/03-how-god-became-external/": {
+  "href": "/films/illusion/#f-p03",
+  "seconds": 338.2,
+  "film": "P03"
+ },
+ "/five-doors/illusion/04-god-and-the-universe/": {
+  "href": "/films/illusion/#f-p04",
+  "seconds": 412.5,
+  "film": "P04"
+ },
+ "/five-doors/illusion/05-unity-multiplicity-and-the-illusion-of-division/": {
+  "href": "/films/illusion/#f-p05",
+  "seconds": 382.4,
+  "film": "P05"
+ },
+ "/five-doors/illusion/06-what-a-person-is/": {
+  "href": "/films/illusion/#f-p06",
+  "seconds": 364.8,
+  "film": "P06"
+ },
+ "/five-doors/illusion/07-free-will-power-and-responsibility/": {
+  "href": "/films/illusion/#f-p07",
+  "seconds": 374.4,
+  "film": "P07"
+ },
+ "/five-doors/illusion/08-why-compassion-is-rational/": {
+  "href": "/films/illusion/#f-p08",
+  "seconds": 403.4,
+  "film": "P08"
+ },
+ "/five-doors/illusion/09-meaning-without-dogma/": {
+  "href": "/films/illusion/#f-p09",
+  "seconds": 312.6,
+  "film": "P09"
+ },
+ "/five-doors/illusion/10-living-without-the-other/": {
+  "href": "/films/illusion/#f-p10",
+  "seconds": 348.6,
+  "film": "P10"
  },
  "/five-doors/being-after-religion/": {
   "href": "/films/the-heart-and-the-philosophy/#f-i02",
