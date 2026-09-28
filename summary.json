@@ -407,10 +407,10 @@
   }
  },
  "the_films": {
-  "what_it_is": "Films in G’s own voice, for the people who would rather watch than read. Most are short, one claim each; a chapter’s film carries the chapter’s whole argument, in four to eight minutes. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
+  "what_it_is": "Films in G’s own voice, for the people who would rather watch than read. Most are short, one claim each; a chapter’s film carries the chapter’s whole argument, in four to nine minutes. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
   "shape": "Chains only: each chain is an argument in order, one row per film, every line the film says in the page as text, and the whole chain as one film at the head of its page where it has one.",
   "where": "https://the420code.org/films/",
-  "films": 150,
+  "films": 166,
   "chains": [
    {
     "name": "The heart and the philosophy",
@@ -473,6 +473,45 @@
      "The body is one": "https://the420code.org/five-doors/illusion/08-why-compassion-is-rational/",
      "The clearing": "https://the420code.org/five-doors/illusion/09-meaning-without-dogma/",
      "The desert is still one": "https://the420code.org/five-doors/illusion/10-living-without-the-other/"
+    }
+   },
+   {
+    "name": "Being After Religion",
+    "films": 17,
+    "url": "https://the420code.org/films/being-after-religion/",
+    "book": "https://the420code.org/five-doors/being-after-religion/",
+    "parts": [
+     {
+      "name": "The book",
+      "films": 1
+     },
+     {
+      "name": "The chapters",
+      "films": 16
+     }
+    ],
+    "whole_chain": {
+     "url": "https://media.the420code.org/chains/being-after-religion.mp4",
+     "minutes": 100
+    },
+    "opens": {
+     "The front door": "https://the420code.org/five-doors/being-after-religion/",
+     "When I breathe": "https://the420code.org/five-doors/being-after-religion/01-the-unnoticed-leap/",
+     "The Universe is also I": "https://the420code.org/five-doors/being-after-religion/02-god-inside-the-world/",
+     "No better view of the sun": "https://the420code.org/five-doors/being-after-religion/03-one-thing-many-forms/",
+     "Both sides of the skin": "https://the420code.org/five-doors/being-after-religion/04-why-kindness-is-structural/",
+     "A system that cannot admit error": "https://the420code.org/five-doors/being-after-religion/05-the-architecture/",
+     "The blade in the text": "https://the420code.org/five-doors/being-after-religion/06-the-blade-in-the-text/",
+     "The line becomes holy": "https://the420code.org/five-doors/being-after-religion/07-the-mechanism/",
+     "Tens of millions of windows": "https://the420code.org/five-doors/being-after-religion/08-the-record/",
+     "The authority changed": "https://the420code.org/five-doors/being-after-religion/09-the-counter-test/",
+     "Is the belief worth the body": "https://the420code.org/five-doors/being-after-religion/10-are-you-certain/",
+     "What grows in the clearing": "https://the420code.org/five-doors/being-after-religion/11-meaning-without-dogma/",
+     "The crack in the mirror": "https://the420code.org/five-doors/being-after-religion/12-the-terminal-ethic/",
+     "The lowest level that stabilises": "https://the420code.org/five-doors/being-after-religion/13-correction-without-righteousness/",
+     "The body is the compass": "https://the420code.org/five-doors/being-after-religion/14-the-body-as-compass/",
+     "Already after the scaffold": "https://the420code.org/five-doors/being-after-religion/15-living-without-the-other/",
+     "Nine routes": "https://the420code.org/five-doors/being-after-religion/epilogue/"
     }
    },
    {

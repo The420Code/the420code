@@ -53,9 +53,87 @@
   "film": "P10"
  },
  "/five-doors/being-after-religion/": {
-  "href": "/films/the-heart-and-the-philosophy/#f-i02",
-  "seconds": 49.8,
-  "film": "I02"
+  "href": "/films/being-after-religion/"
+ },
+ "/five-doors/being-after-religion/01-the-unnoticed-leap/": {
+  "href": "/films/being-after-religion/#f-q01",
+  "seconds": 394.7,
+  "film": "Q01"
+ },
+ "/five-doors/being-after-religion/02-god-inside-the-world/": {
+  "href": "/films/being-after-religion/#f-q02",
+  "seconds": 339.2,
+  "film": "Q02"
+ },
+ "/five-doors/being-after-religion/03-one-thing-many-forms/": {
+  "href": "/films/being-after-religion/#f-q03",
+  "seconds": 354.0,
+  "film": "Q03"
+ },
+ "/five-doors/being-after-religion/04-why-kindness-is-structural/": {
+  "href": "/films/being-after-religion/#f-q04",
+  "seconds": 383.0,
+  "film": "Q04"
+ },
+ "/five-doors/being-after-religion/05-the-architecture/": {
+  "href": "/films/being-after-religion/#f-q05",
+  "seconds": 411.5,
+  "film": "Q05"
+ },
+ "/five-doors/being-after-religion/06-the-blade-in-the-text/": {
+  "href": "/films/being-after-religion/#f-q06",
+  "seconds": 397.1,
+  "film": "Q06"
+ },
+ "/five-doors/being-after-religion/07-the-mechanism/": {
+  "href": "/films/being-after-religion/#f-q07",
+  "seconds": 402.4,
+  "film": "Q07"
+ },
+ "/five-doors/being-after-religion/08-the-record/": {
+  "href": "/films/being-after-religion/#f-q08",
+  "seconds": 504.4,
+  "film": "Q08"
+ },
+ "/five-doors/being-after-religion/09-the-counter-test/": {
+  "href": "/films/being-after-religion/#f-q09",
+  "seconds": 369.8,
+  "film": "Q09"
+ },
+ "/five-doors/being-after-religion/10-are-you-certain/": {
+  "href": "/films/being-after-religion/#f-q10",
+  "seconds": 386.1,
+  "film": "Q10"
+ },
+ "/five-doors/being-after-religion/11-meaning-without-dogma/": {
+  "href": "/films/being-after-religion/#f-q11",
+  "seconds": 316.7,
+  "film": "Q11"
+ },
+ "/five-doors/being-after-religion/12-the-terminal-ethic/": {
+  "href": "/films/being-after-religion/#f-q12",
+  "seconds": 478.0,
+  "film": "Q12"
+ },
+ "/five-doors/being-after-religion/13-correction-without-righteousness/": {
+  "href": "/films/being-after-religion/#f-q13",
+  "seconds": 397.7,
+  "film": "Q13"
+ },
+ "/five-doors/being-after-religion/14-the-body-as-compass/": {
+  "href": "/films/being-after-religion/#f-q14",
+  "seconds": 331.9,
+  "film": "Q14"
+ },
+ "/five-doors/being-after-religion/15-living-without-the-other/": {
+  "href": "/films/being-after-religion/#f-q15",
+  "seconds": 346.0,
+  "film": "Q15"
+ },
+ "/five-doors/being-after-religion/epilogue/": {
+  "href": "/films/being-after-religion/#f-q16",
+  "seconds": 302.7,
+  "film": "Q16"
  },
  "/five-doors/antichristos/": {
   "href": "/films/the-heart-and-the-philosophy/#f-i03",
