@@ -219,9 +219,102 @@
   "film": "R16"
  },
  "/five-doors/relationship-corridor/": {
-  "href": "/films/the-heart-and-the-philosophy/#f-i04",
-  "seconds": 63.4,
-  "film": "I04"
+  "href": "/films/relationship-corridor/"
+ },
+ "/five-doors/relationship-corridor/01-the-irrational/": {
+  "href": "/films/relationship-corridor/#f-s01",
+  "seconds": 362.2,
+  "film": "S01"
+ },
+ "/five-doors/relationship-corridor/02-the-override/": {
+  "href": "/films/relationship-corridor/#f-s02",
+  "seconds": 401.1,
+  "film": "S02"
+ },
+ "/five-doors/relationship-corridor/03-the-lie/": {
+  "href": "/films/relationship-corridor/#f-s03",
+  "seconds": 406.1,
+  "film": "S03"
+ },
+ "/five-doors/relationship-corridor/04-trust/": {
+  "href": "/films/relationship-corridor/#f-s04",
+  "seconds": 409.5,
+  "film": "S04"
+ },
+ "/five-doors/relationship-corridor/05-the-corridor/": {
+  "href": "/films/relationship-corridor/#f-s05",
+  "seconds": 310.0,
+  "film": "S05"
+ },
+ "/five-doors/relationship-corridor/06-width/": {
+  "href": "/films/relationship-corridor/#f-s06",
+  "seconds": 347.0,
+  "film": "S06"
+ },
+ "/five-doors/relationship-corridor/07-length/": {
+  "href": "/films/relationship-corridor/#f-s07",
+  "seconds": 303.4,
+  "film": "S07"
+ },
+ "/five-doors/relationship-corridor/08-the-asymmetry/": {
+  "href": "/films/relationship-corridor/#f-s08",
+  "seconds": 369.9,
+  "film": "S08"
+ },
+ "/five-doors/relationship-corridor/09-the-interior-corridor/": {
+  "href": "/films/relationship-corridor/#f-s09",
+  "seconds": 367.9,
+  "film": "S09"
+ },
+ "/five-doors/relationship-corridor/10-betrayal/": {
+  "href": "/films/relationship-corridor/#f-s10",
+  "seconds": 417.1,
+  "film": "S10"
+ },
+ "/five-doors/relationship-corridor/11-the-unsigned-contract/": {
+  "href": "/films/relationship-corridor/#f-s11",
+  "seconds": 431.3,
+  "film": "S11"
+ },
+ "/five-doors/relationship-corridor/12-restoration/": {
+  "href": "/films/relationship-corridor/#f-s12",
+  "seconds": 377.9,
+  "film": "S12"
+ },
+ "/five-doors/relationship-corridor/13-conclusions-that-kill/": {
+  "href": "/films/relationship-corridor/#f-s13",
+  "seconds": 378.4,
+  "film": "S13"
+ },
+ "/five-doors/relationship-corridor/14-maximum-honesty/": {
+  "href": "/films/relationship-corridor/#f-s14",
+  "seconds": 333.3,
+  "film": "S14"
+ },
+ "/five-doors/relationship-corridor/15-no-answers/": {
+  "href": "/films/relationship-corridor/#f-s15",
+  "seconds": 334.9,
+  "film": "S15"
+ },
+ "/five-doors/relationship-corridor/16-time-respect/": {
+  "href": "/films/relationship-corridor/#f-s16",
+  "seconds": 314.7,
+  "film": "S16"
+ },
+ "/five-doors/relationship-corridor/17-the-terminal-ethic/": {
+  "href": "/films/relationship-corridor/#f-s17",
+  "seconds": 275.4,
+  "film": "S17"
+ },
+ "/five-doors/relationship-corridor/18-what-is-love/": {
+  "href": "/films/relationship-corridor/#f-s18",
+  "seconds": 455.6,
+  "film": "S18"
+ },
+ "/five-doors/relationship-corridor/epilogue/": {
+  "href": "/films/relationship-corridor/#f-s19",
+  "seconds": 316.6,
+  "film": "S19"
  },
  "/five-doors/the-interior/": {
   "href": "/films/the-heart-and-the-philosophy/#f-i05",
