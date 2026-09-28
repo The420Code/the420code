@@ -136,9 +136,87 @@
   "film": "Q16"
  },
  "/five-doors/antichristos/": {
-  "href": "/films/the-heart-and-the-philosophy/#f-i03",
-  "seconds": 40.4,
-  "film": "I03"
+  "href": "/films/antichristos/"
+ },
+ "/five-doors/antichristos/01-antichristos/": {
+  "href": "/films/antichristos/#f-r01",
+  "seconds": 390.4,
+  "film": "R01"
+ },
+ "/five-doors/antichristos/02-the-teaching/": {
+  "href": "/films/antichristos/#f-r02",
+  "seconds": 424.8,
+  "film": "R02"
+ },
+ "/five-doors/antichristos/03-the-stories/": {
+  "href": "/films/antichristos/#f-r03",
+  "seconds": 286.7,
+  "film": "R03"
+ },
+ "/five-doors/antichristos/04-what-he-did-and-what-he-didnt-say/": {
+  "href": "/films/antichristos/#f-r04",
+  "seconds": 381.3,
+  "film": "R04"
+ },
+ "/five-doors/antichristos/05-the-capture/": {
+  "href": "/films/antichristos/#f-r05",
+  "seconds": 412.4,
+  "film": "R05"
+ },
+ "/five-doors/antichristos/06-the-name-before-the-name/": {
+  "href": "/films/antichristos/#f-r06",
+  "seconds": 334.8,
+  "film": "R06"
+ },
+ "/five-doors/antichristos/07-the-evidence/": {
+  "href": "/films/antichristos/#f-r07",
+  "seconds": 457.6,
+  "film": "R07"
+ },
+ "/five-doors/antichristos/08-the-seven-doors/": {
+  "href": "/films/antichristos/#f-r08",
+  "seconds": 334.0,
+  "film": "R08"
+ },
+ "/five-doors/antichristos/09-the-derivation/": {
+  "href": "/films/antichristos/#f-r09",
+  "seconds": 344.1,
+  "film": "R09"
+ },
+ "/five-doors/antichristos/10-the-mapping/": {
+  "href": "/films/antichristos/#f-r10",
+  "seconds": 358.8,
+  "film": "R10"
+ },
+ "/five-doors/antichristos/11-where-they-diverge/": {
+  "href": "/films/antichristos/#f-r11",
+  "seconds": 322.2,
+  "film": "R11"
+ },
+ "/five-doors/antichristos/12-kill-switches/": {
+  "href": "/films/antichristos/#f-r12",
+  "seconds": 329.6,
+  "film": "R12"
+ },
+ "/five-doors/antichristos/13-living-without-the-scaffold/": {
+  "href": "/films/antichristos/#f-r13",
+  "seconds": 176.0,
+  "film": "R13"
+ },
+ "/five-doors/antichristos/14-five-verses-tested/": {
+  "href": "/films/antichristos/#f-r14",
+  "seconds": 391.3,
+  "film": "R14"
+ },
+ "/five-doors/antichristos/15-the-teaching-free/": {
+  "href": "/films/antichristos/#f-r15",
+  "seconds": 171.8,
+  "film": "R15"
+ },
+ "/five-doors/antichristos/epilogue/": {
+  "href": "/films/antichristos/#f-r16",
+  "seconds": 215.5,
+  "film": "R16"
  },
  "/five-doors/relationship-corridor/": {
   "href": "/films/the-heart-and-the-philosophy/#f-i04",

@@ -407,10 +407,10 @@
   }
  },
  "the_films": {
-  "what_it_is": "Films in G’s own voice, for the people who would rather watch than read. Most are short, one claim each; a chapter’s film carries the chapter’s whole argument, in four to nine minutes. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
+  "what_it_is": "Films in G’s own voice, for the people who would rather watch than read. Most are short, one claim each; a chapter’s film carries the chapter’s whole argument, in two to nine minutes. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
   "shape": "Chains only: each chain is an argument in order, one row per film, every line the film says in the page as text, and the whole chain as one film at the head of its page where it has one.",
   "where": "https://the420code.org/films/",
-  "films": 166,
+  "films": 182,
   "chains": [
    {
     "name": "The heart and the philosophy",
@@ -512,6 +512,45 @@
      "The body is the compass": "https://the420code.org/five-doors/being-after-religion/14-the-body-as-compass/",
      "Already after the scaffold": "https://the420code.org/five-doors/being-after-religion/15-living-without-the-other/",
      "Nine routes": "https://the420code.org/five-doors/being-after-religion/epilogue/"
+    }
+   },
+   {
+    "name": "Antichristos",
+    "films": 17,
+    "url": "https://the420code.org/films/antichristos/",
+    "book": "https://the420code.org/five-doors/antichristos/",
+    "parts": [
+     {
+      "name": "The book",
+      "films": 1
+     },
+     {
+      "name": "The chapters",
+      "films": 16
+     }
+    ],
+    "whole_chain": {
+     "url": "https://media.the420code.org/chains/antichristos.mp4",
+     "minutes": 87
+    },
+    "opens": {
+     "The sacred door": "https://the420code.org/five-doors/antichristos/",
+     "The replacement": "https://the420code.org/five-doors/antichristos/01-antichristos/",
+     "Watch the switch": "https://the420code.org/five-doors/antichristos/02-the-teaching/",
+     "The father runs": "https://the420code.org/five-doors/antichristos/03-the-stories/",
+     "The wrong tables": "https://the420code.org/five-doors/antichristos/04-what-he-did-and-what-he-didnt-say/",
+     "The face on the lock": "https://the420code.org/five-doors/antichristos/05-the-capture/",
+     "The name is a verb": "https://the420code.org/five-doors/antichristos/06-the-name-before-the-name/",
+     "Before Abraham was": "https://the420code.org/five-doors/antichristos/07-the-evidence/",
+     "Seven doors, one room": "https://the420code.org/five-doors/antichristos/08-the-seven-doors/",
+     "From one record to the Sermon": "https://the420code.org/five-doors/antichristos/09-the-derivation/",
+     "Two columns": "https://the420code.org/five-doors/antichristos/10-the-mapping/",
+     "Not as you": "https://the420code.org/five-doors/antichristos/11-where-they-diverge/",
+     "Test and see": "https://the420code.org/five-doors/antichristos/12-kill-switches/",
+     "Keep the room": "https://the420code.org/five-doors/antichristos/13-living-without-the-scaffold/",
+     "Keep what survives": "https://the420code.org/five-doors/antichristos/14-five-verses-tested/",
+     "It always was": "https://the420code.org/five-doors/antichristos/15-the-teaching-free/",
+     "Seven routes": "https://the420code.org/five-doors/antichristos/epilogue/"
     }
    },
    {
