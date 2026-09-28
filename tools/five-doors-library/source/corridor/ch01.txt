@@ -48,7 +48,7 @@ The axiom exceeds its own products.
 
 A comparison may help.
 
-Every mathematical system rests on axioms that cannot be proved inside the system. Euclid's geometry rests on five postulates, and two thousand years of mathematicians failed to prove the fifth from the first four. Gödel showed that any consistent formal system rich enough to contain arithmetic holds truths it cannot prove.
+Every mathematical system rests on axioms that are assumed, not proven. Euclid's geometry rests on five postulates, and two thousand years of mathematicians failed to prove the fifth from the first four. Gödel showed that any consistent formal system rich enough to contain arithmetic holds truths it cannot prove.
 
 This axiom is more radical still. It is not an unprovable truth inside the system. It is prior to the system. The system is the axiom's product.
 

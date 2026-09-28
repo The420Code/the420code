@@ -8,7 +8,7 @@ And then you open your mouth and say something else.
 
 Not because you computed that lying was optimal. That would be deception, and deception is something else entirely.
 
-Animals deceive. The dwarf chameleon changes colour to hide because the geometry computes it. The cuttlefish flashes patterns. The opossum plays dead. The orchid mimics a wasp.
+Animals deceive. Organisms deceive. The dwarf chameleon changes colour to hide because the geometry computes it. The cuttlefish flashes patterns. The opossum plays dead. The orchid mimics a wasp.
 
 Each involves misrepresentation. Each is a survival strategy computed by the coupling geometry and executed without the organism ever modelling truth and deciding to override it.
 
