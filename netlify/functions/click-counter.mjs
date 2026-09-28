@@ -10,7 +10,8 @@ import { getStore } from "@netlify/blobs";
 
 // "subscribe" was here until 24 September 2026, when Ø Stay in the Loop came off the
 // site. It counted nothing in the hours it stood: no page can send that label now.
-const LABELS = new Set(["support-card", "support-open"]);
+// 28 September 2026: the two Paystack buttons in Ø Support the Work (home page and front door).
+const LABELS = new Set(["support-card", "support-open", "support-once", "support-monthly"]);
 
 export default async (req, context) => {
   const store = getStore("counters");
