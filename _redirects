@@ -1,11 +1,3 @@
-# whybekind.org, bought 28 September 2026 for G's Why be kind channel on YouTube and TikTok.
-# One more address for the same work: every path lands on the same path here. Forced (!),
-# because the site's own files would otherwise be served under the second name.
-https://whybekind.org/*       https://the420code.org/:splat   301!
-https://www.whybekind.org/*   https://the420code.org/:splat   301!
-http://whybekind.org/*        https://the420code.org/:splat   301!
-http://www.whybekind.org/*    https://the420code.org/:splat   301!
-
 # Ghost pages retired 14 September 2026. They were live, unlinked and stale:
 # index_en.html and output/** were the dormant generator's output, still
 # claiming 43/42 Artist's Proofs and KS-30.3 live, which the registry ruled PAID.
