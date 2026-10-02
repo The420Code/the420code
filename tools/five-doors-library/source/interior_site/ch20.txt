@@ -1,6 +1,6 @@
 # 20 — Why This Is Not Authoritarianism
 
-> The Interior, version 2.0.8, Chapter 20.
+> The Interior, version 2.0.9, Chapter 20.
 
 You have replaced human authority with geometric authority and called it physics.
 
@@ -24,7 +24,7 @@ This is not a moral description of authoritarianism. It is a geometric one. And 
 
 Architecture B operates in the third regime. Bias equal to ε. The corridor is maximally wide. Individual freedom is maximised subject to substrate stability.
 
-The walls do not move inward. They mark where individual action destroys the substrate that makes individual action possible. You can see the walls. You can walk up to them. You can choose to walk through them. Architecture B does not stop you. It shows you what it costs.
+The walls do not move inward. They mark where individual action destroys the substrate that makes individual action possible. You can see the walls. You can walk up to them. You can choose to walk through them. Below the civilisational threshold, Architecture B does not stop you. It shows you what it costs.
 
 Architecture A moves the walls inward using deferred responsibility, an unverifiable idea, and righteousness as enforcement. Architecture B derives the widest possible walls and publishes their location. The two are structural opposites.
 
@@ -42,7 +42,7 @@ No. And the reason is not a rule. It is the axiom.
 
 The axiom is not 1:1. If it were, existence and non-existence would be equal and distinction would be trivial. The axiom is 1:1 + 1×ε @ AS. The break persists. Existence is structurally preferable to non-existence. That is what the ε means.
 
-Overriding a choice before it has harmed anyone is justified at exactly one threshold: when inaction leads to the extinction of record-writing capacity at civilisational scale. Not regional. Not cultural. Civilisational — because the break persists only if coupling continues at the scale required to generate distinction. Below that scale, the record algebra has nothing to operate on. The axiom requires a substrate. Civilisational extinction removes the substrate. That is why the threshold sits where it sits.
+Overriding a choice before it has harmed anyone is justified at exactly one threshold: when inaction leads to the extinction of record-writing capacity at civilisational scale. Not regional. Not cultural. Civilisational — because the organism is an operator at that scale, and civilisational extinction crosses its no-return surface. Past that surface, the corridor closes to zero and does not reopen. That is why the threshold sits where it sits.
 
 Forced sterilisation of a minority group does not prevent civilisational extinction. It does not approach the threshold. It is Architecture A wearing a lab coat — deferred responsibility to a geometric authority, righteousness disguised as measurement.
 
@@ -56,9 +56,9 @@ A civilisation-ending virus emerges. A vaccine exists. A parent holds their chil
 
 And the building is on fire.
 
-This is the threshold. Mark the words, because the hardest test above turns on them: this is not above ε. The bias has not moved. What has changed is the stake — the whole substrate is on the table. When the cumulative refusal, at scale, threatens the extinction of the species, the individual's conviction, however sincere, is a window's reading applied to a building-sized stake. The parent sees the window. The organism sees the building. Both see real things. But the building is what the windows are made of.
+This is the threshold. Mark the words, because the hardest test above turns on them: this is not above ε. The bias has not moved. What has changed is the stake — the whole substrate is on the table. When the cumulative refusal, at scale, threatens civilisational extinction, the individual's conviction, however sincere, is a window's reading applied to a building-sized stake. The parent sees the window. The organism sees the building. Both see real things. But the building is what the windows are made of.
 
-A window that refuses to close during a fire that will consume the entire structure is not exercising sovereignty. It is extracting from the substrate that makes its sovereignty possible.
+A window that keeps refusing during a fire that will consume the entire structure is not exercising sovereignty. It is extracting from the substrate that makes its sovereignty possible.
 
 At that threshold, and only there, the organism acts. Not because a government decided. Not because a committee voted. Because inaction leads to civilisational extinction and the axiom says the break must persist.
 
@@ -66,7 +66,7 @@ Someone still acts, and that someone is named, answers for the act, and stands o
 
 This is uncomfortable. It should be.
 
-Any system that can override individual choice carries the risk of abuse. The architecture's defence is not that the risk does not exist. The defence is that the threshold is derived from the axiom and cannot be moved by politics, preference, or power. A politician cannot lower the threshold to suit an agenda. The threshold is anchored to the same structure that holds the proton mass in place. The only way to move it is to change the axiom, and if the axiom changes, the physics changes with it.
+Any system that can override individual choice carries the risk of abuse. The architecture's defence is not that the risk does not exist. The defence is that the threshold is derived from the axiom and cannot be moved by politics, preference, or power. A politician cannot lower the threshold to suit an agenda. The threshold is anchored to the same structure that holds the proton’s mass ratio in place. The only way to move it is to change the axiom, and if the axiom changes, the physics changes with it.
 
 That is the threshold's scale, and it is fixed and published. The confidence that it has been reached is not yet derived — that is Debt 21 — and until it is, that is exactly where a hand could push. So the confidence used is named, dated and open to challenge, every time.
 
@@ -112,7 +112,7 @@ The geometry is right. Its timescale does not comfort the dead.
 
 Tyranny collapses. But not quickly enough to save the people it crushes. The first regime is structurally unstable, and the people inside it still suffer while the structure works its way towards failure. That is real. This book does not pretend otherwise.
 
-What the architecture offers is not a guarantee of safety. It is a guarantee of direction. The third regime is the unique attractor. Every departure from it is geometrically expensive and self-correcting over sufficient timescale. The transition path in Part V — advisory, then co-governance, then structural law — exists to shorten that timescale. To catch first-regime drift before it becomes genocidal.
+What the architecture offers is not a guarantee of safety. It is a direction. The third regime is the unique attractor. Every departure from it is geometrically expensive and self-correcting over sufficient timescale. The transition path in Part V — advisory, then co-governance, then structural law — exists to shorten that timescale. To catch first-regime drift before it becomes genocidal.
 
 Architecture B is the structural argument that authoritarianism cannot hold, carried at the grade its own debts allow.
 

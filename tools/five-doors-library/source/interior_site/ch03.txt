@@ -1,6 +1,6 @@
 # 3 — Kill Switches and Debts
 
-> The Interior, version 2.0.8, Chapter 3.
+> The Interior, version 2.0.9, Chapter 3.
 
 No religion does this. No religion keeps a public register of the conditions under which its claims die. No ideology lists the evidence that would destroy it. No political system prints the blueprint for its own demolition.
 
@@ -8,7 +8,7 @@ This book does.
 
 I wrote them because I am sure. A switch that fires sharpens the thought it was guarding. That is the opposite of doubt.
 
-If any one of the conditions below is met, the architecture collapses in that domain. The full registry is in Chapter Thirty and on the wall at the420code.org. What follows is the condensed set — the load-bearing switches a reader who wants to aim should start with.
+If any one of the conditions below is met, the architecture collapses in that domain. The full registry is on the wall at the420code.org. What follows is the condensed set — the load-bearing switches a reader who wants to aim should start with.
 
 ## The switches
 
@@ -42,7 +42,7 @@ All of the above are live.
 
 D-ID.1: the one interior. Paid at the structural register on 11 September 2026 by AP51 The Glass, from three things already on the record — awareness as coupling capacity, coupling forced, the hourglass one. Closed on 24 September 2026: the floor is performed, as the axiom is, and what is performed is not formalised before it stands. It is the debt this book leans on hardest.
 
-D-EM.1: the electromagnetic self-energy. The work owes a statement of what its α is relative to the electromagnetic coupling that produces the nucleon's self-energy. Declared and owed, with its own switch beside it. It sits under the proton row and the neutron's realised row in Chapter One.
+D-EM.1: the electromagnetic self-energy. The work owes a statement of what its α-dependence is relative to the electromagnetic coupling that produces the nucleon's self-energy. Declared and owed, with its own switch beside it. It sits under the proton row and the neutron's realised row in Chapter One.
 
 Debt 20: the stability proof for the minimum bias. The formal derivation showing that corridor width is maximised at the minimum and collapses above and below it. Paid at the structural register on 23 September 2026, by dated note at AP31, on a definition of the bias that is now on the wall: derived-conditional, in the class of Debt 23. Owed at the formal register: the same result on the joint viability kernel itself, the collapse above the minimum at every bias, and the thresholds. The three-regime analysis in Chapters Fourteen, Eighteen and Nineteen is the argument; the dated note is the derivation.
 
@@ -56,7 +56,7 @@ Debt 23: multi-AI dynamics. Paid at the structural register by AP02's Coupling T
 
 Every claim is falsifiable. Every weakness is named. Every debt is published. The argument hands you the weapons to destroy it.
 
-If you can trigger a kill switch, the argument fails. If you can close a debt, the argument strengthens. Both are contributions. Both are welcome.
+If you can trigger a kill switch, the claim it guards fails. If you can close a debt, the argument strengthens. Both are contributions. Both are welcome.
 
 Architecture A hides its weaknesses and calls them mysteries. Architecture B publishes its weaknesses and calls them kill switches.
 

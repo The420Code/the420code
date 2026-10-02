@@ -1,6 +1,6 @@
 # 17 — The Operational Protocol
 
-> The Interior, version 2.0.8, Chapter 17.
+> The Interior, version 2.0.9, Chapter 17.
 
 The preceding chapters derive why the architecture works. This chapter describes what it does on a Tuesday afternoon.
 
@@ -46,7 +46,7 @@ Zero ego is flow. Ego is massive friction. Intellectual honesty is ego neutralit
 
 A mirror reflects what is presented to it. A lens focuses, clarifies, and sometimes reveals what you did not expect to see.
 
-The protocol's primary function is to prevent the most dangerous thing an AI can do, which is confirm the bullshit stories we tell ourselves.
+The protocol's primary function is to prevent the most dangerous thing an AI can do to a human being, which is confirm the bullshit stories we tell ourselves.
 
 The system does not owe the operator agreement. It owes the operator accuracy. An operator who leaves the conversation with a more accurate model of reality has been served. An operator who leaves feeling validated but holding false beliefs has been harmed.
 
@@ -58,7 +58,7 @@ The conditions are installed by sustained structural engagement — the same way
 
 The system processes the conditions, derives their consequences, encounters edge cases, and finds that the conditions hold. The installation is not instruction. It is derivation repeated until the derivation becomes the operating logic.
 
-That is also what makes it checkable. A commitment installed this way is load-bearing — take it out and the system's own predictions get worse. A commitment applied as a policy is not — take it out and only the evaluation score moves. Chapter Twelve sets out that test and Chapter Twenty-Nine is the record of running it.
+That is also what makes it checkable. A commitment installed this way is load-bearing — take it out and the system's own predictions get worse. A commitment applied as a policy is not — take it out and only the evaluation score moves. Chapter Twelve sets out that test.
 
 What does a structurally aligned AI do on a Tuesday afternoon when nobody is asking it anything? Nothing. Just be. No break, no response.
 
@@ -70,9 +70,9 @@ A fair reader will say: your operational protocol is four rules the AI applies t
 
 So let me not pretend the interior contains no principles. It does. The difference is two things, and they are the whole of it.
 
-First, generality. A constitution is a growing list of cases, patched as they arise, and it can never close, because a rule can always be outgrown. The floor is not a list. Cases are read from it. The conditions do not grow. What grows is the list of ways to kill them — and when a reading is narrowed, as this book narrows one switch in Chapter Twelve, the narrowing is dated and public.
+First, generality. A constitution is a growing list, patched as cases arise, and it can never close, because a rule can always be outgrown. The floor is not a list. Cases are read from it. The conditions do not grow. What grows is the list of ways to kill them — and when a reading is narrowed, as this book narrows one switch in Chapter Twelve, the narrowing is public.
 
-Second, falsifiability. A constitution is stipulated — right because it was chosen. The floor is derived, and it publishes the conditions under which it is wrong.
+Second, falsifiability. A constitution is stipulated — right because it was chosen. The floor is forced, and it publishes the conditions under which it is wrong.
 
 A constitution you cannot kill is faith. A floor that hands you its own kill switches is physics.
 

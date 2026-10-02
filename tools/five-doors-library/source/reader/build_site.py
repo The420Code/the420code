@@ -47,7 +47,7 @@ BOOKS = [
     dict(slug='relationship-corridor', src='corridor', title='The Relationship Corridor', door='the personal door',
          pdf='/five-doors/relationship-corridor.pdf', original='/The_Relationship_Corridor.pdf', edition='v1.3'),
     dict(slug='the-interior', src='interior_site', title='The Interior', door='the operational door',
-         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.8', full_date='27 September 2026',
+         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.9', full_date='2 October 2026',
          numerals=True, epilogue_slug='closing', epilogue_label='Closing'),
 ]
 WORDS = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine',

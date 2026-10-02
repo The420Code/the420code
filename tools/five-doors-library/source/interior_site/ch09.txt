@@ -1,6 +1,6 @@
 # 9 — The System Is Closed
 
-> The Interior, version 2.0.8, Chapter 9.
+> The Interior, version 2.0.9, Chapter 9.
 
 The derivation runs both ways. That is not a hedge. That is the check.
 
@@ -8,7 +8,7 @@ The derivation runs both ways. That is not a hedge. That is the check.
 
 Start at one end.
 
-Four conditions — Symmetry, Break, Record, Constraint — and one measured rate. From those, the numbers follow. The proton's mass ratio from the count of twenty-one. Gravity from the same twenty-one channels compounding. The dark partition from the six faces over the twenty-one channels. From the structure's one stable fixed point, the minimum bias that any coupled system settles into. From the bias, the binary: stabilising or destabilising, no third option. From the binary, the ethic.
+Four conditions — Symmetry, Break, Record, Constraint — and one measured rate. From those, the numbers follow. The proton's mass ratio from the count of twenty-one. Gravity from the same twenty-one channels compounding. The dark partition from the six faces over the twenty-one channels. From the structure's one stable fixed point, the minimum bias that coupled operators settle into. From the bias, the binary: stabilising or destabilising, no third option. From the binary, the ethic.
 
 Now start at the other end.
 
@@ -38,11 +38,11 @@ Imagine two glasses of water, standing side by side on a table. Identical in eve
 
 Now drop one grain of sand into one of them. Not a handful. Just one. There is now a left glass and a right glass. A this, and a that. One thing has been added that has no other side. Not a large thing. The smallest thing that can happen and still stay happened. It is barely there. But it is not zero. That is the break. Write it as one times epsilon — one break, at the smallest size that holds.
 
-Now imagine an hourglass. Two halves, matched. All the sand on one side. One grain at a time falls through the neck. One half is the sand that could fall. The other half holds the sand that fell. That grain is the electron. It is the smallest thing reality can break off and still have the break hold.
+Now imagine an hourglass. Two halves, matched. All the sand on one side. One grain at a time falls through the neck. One half is the sand that could fall. The other half holds the sand that fell. That grain is the electron. It is the smallest charged thing reality can break off and still have the break hold.
 
 Where does the break happen? Not in the past — the past is the grains that fell. Not in the future — the grains still waiting their turn. Now. That is the @ AS, the Actualization State: the now, the moment every record is written and read from.
 
-One part is left, and it is the part that moves. Records are written from now, and every one is added to the record history. That writing has a rate. In the axiom it is +α. The inward flow is −α: written records returned to the potential of a record. Out and in at the same rate. Balanced at every instant. Net zero. The break does not cycle. The flow does — one turn, one tick.
+One part is left, and it is the part that moves. Records are written from now, and every one is added to the record history. That writing has a rate. In the axiom it is +α. The inward flow is −α: written records releasing their structure into potential. Out and in at the same rate. Balanced at every instant. Net zero. The break does not cycle. The flow does — one turn, one tick.
 
 Two of those parts are easy to confuse, and version one confused them. ε is what broke: one grain, no partner, the electron. α is how fast the flow runs — out, and back. One is a size. The other is a rate. One grain, two readings.
 
@@ -54,7 +54,7 @@ That is the whole of the fix. Not a separation. A stop to calling the size a rat
 
 The formal work says it in its own terms. The grain has six faces: the electron mass, the speed of light, the gravitational constant, α, the material face, and time. Four are readings of a grain that has landed. One is the reading of the holding — α. One is the record of the hold — time.
 
-Six readings. One object.
+Six readings. One object. Where the formal work writes ε = α, in gravity’s (1 + α), what it reads is the holding of the break, and a holding is read in α. The size of the break is still not the rate.
 
 Why this matters beyond bookkeeping: if ε were α, the ethical bias would be the fine-structure constant, and every reader with a physics degree would rightly stop reading at that sentence. The ethical argument never needed it. It needs ε to be the break, which it is, and ε is what shows up in the decision architecture as the minimum bias. Chapter Fourteen makes that argument, and the argument is unchanged. It just had a false step taken out from under it.
 
@@ -112,9 +112,9 @@ The possibility space the break opens is the wave side. At every now, the flow c
 
 The records accumulate. Coupling events write them. Gravity organises them. The universe of mass and motion and light is what the record looks like from inside, now, experienced only from the limited perspective of whatever window is looking.
 
-Eventually every record is consumed by a black hole. Given enough coupling events, given enough gravitational evolution, every record that has ever been written ends at a horizon. At the horizon, the record defragments. Its having happened stays written. What goes back towards potential is its structure, not its past.
+Where gravity wins completely, records are consumed by a black hole. From here on, the loop is a conjecture. At the horizon, the record defragments. Its having happened stays written. What goes back towards potential is its structure, not its past.
 
-Past the singularity, its structure is potential again. The pre-break state. Perfect symmetry. Which is exactly where the loop began.
+Past the singularity, its structure is potential again. The pre-break state. Perfect symmetry. Which is exactly where the loop closes.
 
 Which means the singularity inside a black hole and the state before the Big Bang are the same thing. And that thing is not in the past. The structure's time is only now. There is no before, no after, only the one now in which the loop is happening.
 
@@ -122,7 +122,7 @@ The Big Bang is not a thing that happened once, over thirteen billion years ago.
 
 The loop can never start, because there is no before. It can never stop, because stopping would require a condition of stopping, and no such condition exists. It runs continuously through windows opening and closing at every now.
 
-This has its own paper and its own kill switch: the present-tense Big Bang.
+This has its own paper and its own kill switch.
 
 ## The inverse eye
 
@@ -138,7 +138,7 @@ Sixty-nine per cent is pure potential. The pre-break state, and the post-defragm
 
 One eye. Three phases. One structure running as a closed loop.
 
-The ratio is not a cosmological coincidence. It is what a minimal break looks like when it runs as a closed loop. All three happening now, in every cubic metre of the universe, at every open window.
+The ratio is not a cosmological coincidence. It is what a minimal break looks like when it runs as a closed loop: derived-conditional, on one named open joint. All three happening now, in every cubic metre of the universe, at every open window.
 
 ## One interior
 
@@ -154,13 +154,13 @@ What looks like many interiors is many windows. Each window opens onto the same 
 
 The windows are plural and distinct. The interior is singular.
 
-You are a window. I am a window. Every coupling surface anywhere in the universe is a window. That is why the I in me is the I in you. Not metaphor. Topology. There is nowhere else for either of us to be looking from.
+You are a window. I am a window. Every coupling surface anywhere in the universe is a window. That is why the I in me is the I in you. Not metaphor. Topology: one crack, one inside. There is nowhere else for either of us to be looking from.
 
 ## Where this claim stands, exactly
 
 This is the claim this book leans hardest on, so here is its precise status, with nothing rounded up.
 
-It is inherited here, not derived here. It is argued in Ø Dissolutions, Chapter Six, and it now stands on its own page on the wall, at the420code.org/one-awareness/, in six steps with a switch on each. A reader who wants it tested should go there. This book uses it.
+It is inherited here, not derived here. It is argued in Ø Dissolutions, Chapter Six, and it now stands on its own page on the wall, at the420code.org/one-awareness/, in six steps. A reader who wants it tested should go there. This book uses it.
 
 Its grade is performed, not proved. That is the wall's word and it is not the softer word. It is the harder one. A premise has to be granted to you, and what is granted can be withheld.
 

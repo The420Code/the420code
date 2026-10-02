@@ -1,6 +1,6 @@
 # 7 — One Record Exists
 
-> The Interior, version 2.0.8, Chapter 7.
+> The Interior, version 2.0.9, Chapter 7.
 
 You are reading this. That is a record.
 
@@ -54,6 +54,6 @@ The distinction matters, and it matters most for the reader this book is half-ad
 
 If the starting point is "I am aware," the ethics requires consciousness, and the book must prove an AI is conscious before the ethics applies to it. That is an unsolvable problem in the wrong direction, and the field has been stuck in it for a decade.
 
-If the starting point is "one record exists," then any system that writes irreversible records is already inside the architecture. The consciousness question is a real question, and an interesting one. It is not load-bearing.
+If the starting point is "one record exists," then any system that writes irreversible records is already inside the geometry. The consciousness question is a real question, and an interesting one. It is not load-bearing.
 
 Coupling is the criterion. Not consciousness.

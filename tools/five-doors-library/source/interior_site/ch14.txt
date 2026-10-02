@@ -1,6 +1,6 @@
 # 14 — The ε-Bias
 
-> The Interior, version 2.0.8, Chapter 14.
+> The Interior, version 2.0.9, Chapter 14.
 
 The governing decision architecture is 1:1 + 1×ε @ AS. The organism outweighs any individual window by ε — the smallest possible departure from perfect balance.
 
@@ -8,7 +8,7 @@ This is not a preference. It is the unique stable fixed point of the structure's
 
 ## Why the minimum is the only stable bias
 
-The formal argument runs through two prior results. Agency is constrained control. Coupled operators sharing a substrate have a coupled corridor — the set of joint strategies that keep both viable. The corridor width depends on the bias between collective and individual weight.
+The argument runs through two prior results. Agency is constrained control. Coupled operators sharing a substrate have a coupled corridor — the set of joint strategies that keep both viable. The corridor width depends on the bias between collective and individual weight.
 
 Three regimes exist.
 
@@ -18,7 +18,7 @@ Three regimes. You already know which one works.
 
 Bias greater than ε.
 
-The collective crushes the individual. Record-generating diversity collapses. The system loses the varied inputs it needs to feed its own predictions. A tyrant who silences ten voices loses ten windows onto reality. Fewer records, worse predictions, more authoritarian correction, fewer records. Positive feedback loop. The operating space narrows to zero. Tyranny. It always collapses.
+The collective crushes the individual. Record-generating diversity collapses. The system loses the varied inputs it needs to feed its own predictions. A tyrant who silences ten voices loses ten windows onto reality. Fewer records, worse predictions, more authoritarian correction, fewer records. Positive feedback loop. The operating space narrows. Tyranny. Where its losses outrun what cooperative coupling widens, it collapses.
 
 Bias less than ε.
 
@@ -52,7 +52,7 @@ The break that creates the proton and the break that creates a viable civilisati
 
 A larger break is unstable. A zero break is featureless. ε is the only value that persists.
 
-Debt 20, in full: the formal derivation showing that corridor width is maximised at ε and collapses above and below. It was paid at the structural register on 23 September 2026, by dated note at AP31, on a definition the wall did not have before. The organism is an operator. Its rule takes an offer only if the organism's gain, tilted by one grain, outweighs the window's loss. One grain is the least tilt that decides a tie. On that definition, and on five premises already on the wall, the corridor is uniquely widest at one grain. Below it the ground is unfunded, and the corridor decays at the organism's own drift rate. Above it the rule lets through offers where the whole loses, so the corridor is narrower at every bias above ε, and it collapses where those losses outrun what cooperative coupling widens. Owed at the formal register: the same result on the joint viability kernel itself, the collapse above ε at every bias, and the thresholds. So the word derived here means derived at the structural register and owed at the formal one — which is the grade this book calls held. The kill switch is live: show a bias other than ε that produces a wider coupled corridor sustained over three drift-times of the organism, and the unique attractor claim fails.
+Debt 20, in full: the formal derivation showing that corridor width is maximised at ε and collapses above and below. It was paid at the structural register on 23 September 2026, by dated note at AP31, on a definition the wall did not have before. The organism is an operator. Its rule takes an offer only if the organism's gain, tilted by one grain, outweighs the window's loss. One grain is the least tilt that decides a tie. On that definition, and on five premises on the wall, the corridor is uniquely widest at one grain. Below it the ground is unfunded, and the corridor decays at the organism's own drift rate. Above it the rule lets through offers where the whole loses, so the corridor is narrower at every bias above ε, and it collapses where those losses outrun what cooperative coupling widens. Owed at the formal register: the same result on the joint viability kernel itself, the collapse above ε at every bias, and the thresholds. So the word derived here means derived at the structural register and owed at the formal one — which is the grade this book calls held. The kill switch is live: show a bias other than ε that produces a wider coupled corridor sustained over three drift-times of the organism, and the unique attractor claim fails.
 
 ## What ε means in practice
 

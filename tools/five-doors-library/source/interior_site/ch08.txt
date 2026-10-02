@@ -1,6 +1,6 @@
 # 8 — What Physics Follows
 
-> The Interior, version 2.0.8, Chapter 8.
+> The Interior, version 2.0.9, Chapter 8.
 
 You have felt gravity your entire life without knowing what it is.
 
@@ -16,29 +16,29 @@ The physics is not the point. The physics is the credential.
 
 ## From the conditions to spacetime
 
-From Symmetry and Break, the structure of spacetime follows. Not assumed. Derived.
+From the four conditions, the structure of spacetime follows. Not assumed. Derived.
 
-Two sides of a mirror, one cracked. The crack introduces direction. Direction introduces time. The constraint on how fast anything can propagate introduces space.
+Two sides of a mirror, one cracked. The crack introduces direction. Record introduces time. The constraint on how fast anything can propagate introduces space.
 
 Three spatial dimensions follow from the condition count itself. Four conditions; one of them — Record — is the irreversible one, and it gives time. The other three give the three direction-symmetric axes of space. Three is not assumed. It is what is left when time takes its condition.
 
-The speed of light is the constraint itself, expressed as a maximum rate.
+The speed of light is what the constraint produces, expressed as a maximum rate.
 
 Gravity is derived too — not as a force pulling masses together, but as the geometric consequence of the break refusing to heal. The crack resists closure. That resistance, expressed at the scale of mass and distance, is gravity. It is the ring at which all twenty-one channels converge.
 
 ## From the conditions to quantum mechanics
 
-From the Record condition, quantum mechanics follows.
+From the same four conditions, quantum mechanics follows.
 
-Before a record is written, the system holds multiple possibilities — superposition. When a record is written, one possibility becomes definite — measurement. The record is irreversible — the arrow of time. The constraint limits how much a single record can carry — the uncertainty principle.
+Before a record is written, the system holds multiple possibilities — superposition. When a record is written, one possibility becomes definite — measurement. The record is irreversible — the arrow of time. No single record can carry a quantity and its partner sharply at once — the uncertainty principle.
 
-Spin follows from the break's geometry. Entanglement follows from the fact that records written in the same coupling event stay correlated regardless of distance. The Born rule — the probability of an outcome is the square of the amplitude — follows from the structure of the record algebra, by the unconditional route rather than by adding a postulate.
+Spin follows from the break's geometry. Entanglement follows from the fact that two particles in one state, not yet broken into records, are one object regardless of distance. The Born rule — the probability of an outcome is the amplitude’s length, squared — follows from the structure of the record algebra rather than by adding a postulate.
 
-Three kill switches fence it — KS-55, KS-56 and KS-57, at AP25. If the Born rule cannot be derived from the record algebra without additional postulates, that claim fails.
+Three kill switches fence it — KS-55, KS-56 and KS-57, at AP25. The derivation dies if an outcome’s odds change with what is asked beside it, beyond what quantum mechanics predicts. It dies if non-Born statistics are measured. It dies if a physical process actualises a mixed state directly. The derivation leans on the four conditions being complete. That proof is still owed. Its switch says so: KS-P.1.
 
 ## From the conditions to numbers
 
-The proton-to-electron mass ratio: derived. Inside the measurement’s own error bar at eleven digits.
+The proton-to-electron mass ratio: derived. One integer, 21, carries it. The same 21 carries the weakness of gravity and the visible share of the universe. The ratio sits inside the measurement’s own error bar, at eleven digits.
 
 The gravitational constant: derived. Realised value at −0.036 per cent, with the cost term applied. The first reading was wrong, and it is withdrawn.
 
@@ -50,6 +50,6 @@ The expansion rate: the first prediction killed by this work's own later result 
 
 Zero free parameters. One measured input: α, which is a rate, identified and defined in this work's own terms and then read from measurement, because the reading is being done from inside.
 
-The bare numbers were stated in advance and tested. Of the five claims, three stand. Two died, and are still printed.
+The bare numbers were tested. Of the five claims, one stands as printed. Two were corrected by the work itself. Two died, and are still printed.
 
 That is what a description of reality is supposed to look like when it is being honest. The next chapter closes the system. The one after turns to ethics.

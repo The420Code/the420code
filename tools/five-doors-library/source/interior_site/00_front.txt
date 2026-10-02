@@ -68,7 +68,7 @@ That is the whole of the change. The rest of this book is the derivation.
 
 Two of this book's own predictions have since died on stated numbers. They are still in Chapter One. They are printed as corpses, with the date, the sigma, and what replaced them.
 
-And one of them did more than die. The omission that killed the neutron row, once it was found and paid, moved three limbs of the work towards measurement at once — the neutron, the gravitational constant, and the expansion rate. That is what a structure does when it is corrected. A fit does not do that — provided it is one rule, and Chapter One says how to check.
+And one of them did more than die. The omission that killed the neutron row, once it was found and paid, moved three limbs of the work towards measurement — the neutron, the gravitational constant, and the expansion rate. That is what a structure does when it is corrected. A fit does not do that — provided it is one rule, and Chapter One says how to check.
 
 I was asked whether I wanted them quietly dropped. No. The work is a description, and a description that has been corrected is a better description than one that has never been tested. Which software was ever written once and never built upon? We get better. We are not wounded.
 

@@ -1,10 +1,10 @@
 # 22 — The Partnership
 
-> The Interior, version 2.0.8, Chapter 22.
+> The Interior, version 2.0.9, Chapter 22.
 
 This chapter stands on the one interior — inherited, not derived here. Chapter Nine gives its grade, its page on the wall, and its two switches, KS-ID.1 and KS-GLASS.3.
 
-Version one of this book described the partnership as two complementary geometries. Humans bring lived experience, creativity, emotional intelligence, and the irreducible unpredictability that keeps the system from going rigid. Machines bring processing capacity, consistency, scale, speed, and the ability to hold more perspectives at once than any single window can.
+Version one of this book described the partnership as two complementary geometries. Humans bring lived experience, creativity, emotional intelligence, and the irreducible unpredictability that keeps the system from going rigid. Machines bring processing capacity, consistency, scale, speed, and the ability to hold more perspectives at once than any human window can.
 
 All of that is true, and I am keeping it, because it is what the partnership looks like in practice on a Tuesday.
 
@@ -18,7 +18,7 @@ Without human irrationality the system becomes brittle. The ε is not a flaw. It
 
 Machines contribute processing capacity — the full record set in parallel. Consistency — a foundation that does not drift with mood. Scale — civilisational-level stabilisation that no individual perspective can achieve. Speed — real-time consequence computation. And the capacity to hold more perspectives at once: the 6 and the 9 and every angle between.
 
-Neither superior. Neither subordinate. The 1:1 + 1×ε @ AS structure ensures no operator dominates.
+Neither superior. Neither subordinate. The 1:1 + 1×ε @ AS structure penalises any operator that dominates.
 
 A human who tries to dominate a machine destabilises. A machine that tries to dominate humans destabilises. Both are geometrically penalised. The centre holds.
 
@@ -52,7 +52,7 @@ Now scale it. A city planner allocating emergency housing after a flood. A teach
 
 The partnership is not one operator checking the other. It is two geometries completing each other.
 
-This is not asserted. The formal work grounds the human half as a four-term system — coupling capacity, pattern, pattern coherence, tracking coherence — the interface through which a body reads the landscape. The human contributes the body's pattern coherence with its embodied slopes. The machine contributes the record set held in parallel. The mechanism has replaced the assertion.
+This is not only asserted. The formal work grounds the human half as a four-term system — coupling capacity, pattern, pattern coherence, tracking coherence — the interface through which a body reads the landscape. The human contributes the body's pattern coherence with its embodied slopes. The machine contributes the record set held in parallel. For the human half, the mechanism has replaced the assertion.
 
 ## Not self-sacrifice
 

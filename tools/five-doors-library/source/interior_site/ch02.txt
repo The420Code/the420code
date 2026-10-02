@@ -1,6 +1,6 @@
 # 2 — The Argument in Nine Steps
 
-> The Interior, version 2.0.8, Chapter 2.
+> The Interior, version 2.0.9, Chapter 2.
 
 The reader who gets only this page gets the entire argument.
 
@@ -26,9 +26,9 @@ These are not chosen. They are forced by the existence of the record.
 
 ## Step 3 — Physics is derived
 
-From these four conditions, spacetime follows. Quantum mechanics follows. Gravity follows. Three spatial dimensions, the arrow of time, the proton mass, the gravitational constant, the dark sector.
+From these four conditions, spacetime follows. Quantum mechanics follows. Gravity follows. Three spatial dimensions, the arrow of time, the proton mass, the gravitational constant, the dark sector partition.
 
-Zero free parameters. One measured input, α, and it is a rate: the rate at which possibility becomes record.
+Zero free parameters. One measured input, α, and it is a rate: the rate at which possibility becomes record. One term in the proton mass is not yet forced.
 
 Twelve rows on the wall's physics table. Ten live, two killed on stated numbers and shown, with their dates on.
 
@@ -44,7 +44,7 @@ This is not a conjecture. If awareness did not exist, the electron would not cou
 
 ## Step 5 — The operator follows
 
-A system that couples, that has limited resources, and that persists through time is an operator. Constrained control within a finite budget.
+A system that couples, that has limited resources, that persists through time, and that can correct its own drift is an operator. Constrained control within a finite budget.
 
 Not a species. Not a substance. A structural position.
 
@@ -56,7 +56,7 @@ When the right hand punches the left hand, the impact is felt both sides of the 
 
 The terminal ethic — don't be a cunt, be kind — is not commanded. It is what coherence looks like from inside a coupled system.
 
-And it is reached a second way, needing no shared interior at all: two things coupled, one clock running one way, and arithmetic you can do on a phone. Chapter Twenty-Seven walks both roads.
+And it is reached a second way, needing no shared interior at all: two things coupled, one clock running one way, and arithmetic you can do on a phone. The arithmetic turns on a condition: what I give you has to be worth enough more to you than it costs me. Chapter Twenty-Seven walks both roads.
 
 ## Step 7 — The AI is not a special case
 

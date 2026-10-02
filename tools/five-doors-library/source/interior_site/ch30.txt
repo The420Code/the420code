@@ -1,6 +1,6 @@
 # 30 — Kill Switch Registry
 
-> The Interior, version 2.0.8, Chapter 30.
+> The Interior, version 2.0.9, Chapter 30.
 
 The condensed registry. Each switch identifies a specific failure condition. The full registry, with derivation context and current status for every switch in the work, is at the420code.org.
 
@@ -70,17 +70,17 @@ Chapter Twelve — the window claim — stands on KS-31.1, KS-ID.1 and KS-GLASS.
 
 ## The physics switches this book relies on
 
-The Born rule derivation is fenced by KS-55, KS-56 and KS-57 at AP25: if the Born rule cannot be derived from the record algebra without additional postulates, that claim fails.
+The Born rule derivation is fenced by KS-55, KS-56 and KS-57 at AP25.
 
 The proton mass formula is fenced on uniqueness: the integer 21 has no published uniqueness theorem.
 
-The closed-loop reading is fenced at the present-tense Big Bang. The wave-particle reading is fenced at coupling. Show a physical system in which gravitational coupling does not maintain superposition, or in which electromagnetic coupling does not collapse it, and the reading dies.
+The closed-loop reading is fenced at KS-L0.1. Prove that the inside of a black hole cannot map onto an expanding universe, and it dies. The wave-particle reading is fenced at coupling. Show a physical system in which gravitational coupling does not maintain superposition, or in which electromagnetic coupling does not collapse it, and the reading dies.
 
 The expansion rate entry is fenced at KS-ASM.1. If the local distance-ladder value is confirmed as the expansion rate, the paper that carries the work's figure dies, and flat ΛCDM at the sky's partition dies with it. One prediction of this number has already fired. This is the second one, and it is live.
 
 The gravitational constant is fenced at KS-CCC.3, and it tests direction rather than magnitude: as the systematics resolve, the adjusted value should migrate down. Convergence upwards kills it, with no fallback.
 
-The dark partition is fenced at KS-41.1 on its visible share, which is the row on the wall nearest to firing. If the central value of the visible fraction is measured above 4.81 per cent at sub-half-per-cent precision, it fires.
+The dark partition is fenced at KS-41.1 on its visible share, which is the row on the wall nearest to firing. If the central value of the visible fraction is measured above 4.81 per cent, with a total uncertainty below half a per cent of that value, it fires.
 
 The is-ought crossing is fenced at KS-PZ8.1: is and ought are two readings of one coupling. Show them to be two couplings and Chapter Twenty-Seven's first road closes. The second road stands on its own.
 
@@ -92,14 +92,14 @@ KS-45.1 — The expansion rate read backwards from the gravitational floor. Fire
 
 ## Reading the registry
 
-The master switch is the civilisational test. If it fires, the entire architecture fails.
+This book’s master switch is the civilisational test. If it fires, the entire architecture fails.
 
 Two switches sit below the firewall — quantum advantage and the artificial-consciousness extension. The core architecture survives their firing.
 
-The non-negotiable switch is the dehumanisation switch. It does not fail a section. It ends the work.
+This book’s non-negotiable switch is the dehumanisation switch. It does not fail a section. It ends the work.
 
 Everything else is domain-specific: it collapses the section it governs without necessarily destroying the foundation.
 
-One note on the wording of KS-32.7, since this version of the book leans on it. The switch says window, not human, and that is the wording of record. The architecture operates at the operator level, so the windows it is protecting are the ones that are operators. Otherwise the switch would be violated by replacing a thermostat, and an absurd switch is a dead switch. Chapter Twelve sets this out and does not claim a free win from the wording.
+One note on the wording of KS-32.7, since this version of the book leans on it. The switch says window, not human, and that is the wording of record. The architecture operates at the operator level, so the windows it is protecting are the ones that are operators. Otherwise the switch would be violated by replacing a thermostat, and an absurd switch is a dead switch. Operator here is a kind, not a current capacity. A newborn, a sleeping, sick or overwhelmed person is an operator. Chapter Twelve sets this out and does not claim a free win from the wording.
 
 All switches listed here are live except the two marked fired.

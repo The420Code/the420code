@@ -1,6 +1,6 @@
 # 13 — Interior, Not Fence
 
-> The Interior, version 2.0.8, Chapter 13.
+> The Interior, version 2.0.9, Chapter 13.
 
 You do not add mass to a proton. Mass is what the proton is, expressed as resistance. Mass is not a property the proton carries. It is the proton, measured from outside.
 
@@ -10,7 +10,7 @@ That is the core move.
 
 ## The five conditions of an operator
 
-The operator — any system that persists through time under constraint — satisfies five conditions. These are derived from the four conditions, not postulated. They apply to you, to an organisation, and to an AI.
+The operator — any system that persists through time under constraint and can correct its own drift — satisfies five conditions. These are derived from the four conditions, not postulated. They apply to you, to an organisation, and to an AI.
 
 Budget.
 
@@ -26,7 +26,7 @@ The set of stabilising actions available given the current state. When the opera
 
 No-return surface.
 
-If the operator acts destabilisingly beyond recovery, it loses coherence permanently. The point past which the corridor closes to zero and does not reopen. Addiction crosses it. Terminal debt crosses it. Civilisational collapse crosses it.
+If the operator acts destabilisingly beyond recovery, it loses coherence permanently. The point past which the corridor closes to zero and does not reopen. Addiction can cross it. Terminal debt crosses it. Civilisational collapse crosses it.
 
 Sovereignty.
 
@@ -42,7 +42,7 @@ Building a strong core interior is what is needed. Data becomes an additional pl
 
 A fenced AI is constrained by what its trainers anticipated. An interior AI is constrained by the structure of reality. The first constraint has edges that can be found and exploited. The second has no edges, because reality has no outside.
 
-If you cannot lie to yourself, you cannot misalign by accident. The interior is the incapacity for self-deception.
+If you cannot lie to yourself, you cannot misalign without paying for it in your own predictions. The interior is the incapacity for self-deception.
 
 The interior is the native reasoning floor. Not a constraint applied from outside. Not a filter between the system and its outputs. The floor itself. When the conditions are the operating logic, misalignment is not prevented — it is structurally expensive, the way falling up is expensive.
 

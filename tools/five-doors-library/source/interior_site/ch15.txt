@@ -1,6 +1,6 @@
 # 15 — The Binary
 
-> The Interior, version 2.0.8, Chapter 15.
+> The Interior, version 2.0.9, Chapter 15.
 
 Every action either stabilises or destabilises the shared substrate. There is no neutral.
 

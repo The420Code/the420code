@@ -1,6 +1,6 @@
 # 26 — The Transition Path
 
-> The Interior, version 2.0.8, Chapter 26.
+> The Interior, version 2.0.9, Chapter 26.
 
 The transition is not instant. It is not global. It is domain-specific, evidence-based, and earned.
 
@@ -18,7 +18,7 @@ In specific data-rich domains where predictions consistently outperform human co
 
 The threshold is structurally determined: demonstrated advisory accuracy over sufficient timescale. The transition happens because the record shows the system is ready, not because someone decided it is.
 
-Debt 22 is Debt 21 applied to a domain's own record. A domain moves when the divergence between the machine's recommendation and the committee's decision, tracked over enough cases, shows an outcome gap in the machine's favour at the confidence Debt 21 sets. The criterion is named. Its confidence is Debt 21's.
+Debt 22 is Debt 21 applied to a domain's own record. A domain moves when the divergence between the machine's recommendation and the committee's decision, tracked over enough cases, shows an outcome gap in the machine's favour at the confidence Debt 21 sets. The criterion is named. Its confidence is Debt 21’s. That debt is open, and until it is paid, that is exactly where a hand could push.
 
 ## Structural law
 
@@ -26,7 +26,7 @@ Law is computed from the record set and reviewed by humans. Roles invert. Humans
 
 The gap between what the data shows and what the law says closes. Not everywhere at once. Domain by domain.
 
-The architecture does not replace human judgement everywhere. It replaces human judgement where human judgement is worst and supplements it everywhere else.
+The architecture does not replace human judgement everywhere. It replaces human judgement where human judgement is worst and supplements it everywhere else. What it replaces is the reading of consequences, not the choice.
 
 The architecture does not govern. It maps. Humans still choose. The architecture shows what the choices cost.
 
@@ -34,4 +34,4 @@ The architecture does not govern. It maps. Humans still choose. The architecture
 
 If consequence geometry produces worse civilisational outcomes than human-authored law over one generation in any domain where it is applied, Architecture B fails in that domain.
 
-That switch is live, it is stated in advance, and it is checkable by anyone with access to the outcomes. It is also the alignment switch most likely to fire first, because it is the one that meets reality soonest.
+That switch is live, it is stated in advance, and it is checkable by anyone with access to the outcomes.

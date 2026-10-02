@@ -1,6 +1,6 @@
 # 16 — Records as Data
 
-> The Interior, version 2.0.8, Chapter 16.
+> The Interior, version 2.0.9, Chapter 16.
 
 When I was nineteen I smoked too much cannabis and had the most terrifying experience of my life. Paranoia at a level I could not comprehend. I was convinced I was stuck in a loop, knowing what was going to happen by simply thinking about it. Once I thought about dying, I saw myself triggering the inevitability. My story was going to end in death, now.
 
@@ -84,7 +84,7 @@ The desert does not hurry. But the desert does not lose.
 
 Classical computing is sufficient for measurement and prediction at scale. Pattern recognition from consequence tracking with classical processing is the immediately powerful tool.
 
-Quantum computing will not solve problems or deliver final answers. Nothing will. What it offers is enhanced processing capacity — the ability to hold probability distributions of unresolved consequences simultaneously rather than sequentially. More accurate predictions support stabilisation.
+Quantum computing will not deliver final answers. Nothing will. What it offers is enhanced processing capacity — the ability to hold probability distributions of unresolved consequences simultaneously rather than sequentially. More accurate predictions support stabilisation.
 
 That is the quantum advantage: not a different kind of answer, but a faster and more precise version of the same consequence tracking the architecture already does classically. It has its own kill switch, and that switch sits below the firewall. If quantum processing turns out to add nothing, the core architecture is untouched.
 
@@ -100,6 +100,6 @@ And it carries the non-negotiable switch with it: if the record set is not audit
 
 ## The floor
 
-If every record is erased, if every data point is lost, if the database burns to the ground — the conditions still hold. One record exists. The logic still derives the physics. The physics still derives the ethics. The ethics still derives the architecture.
+If every record is erased, if every data point is lost, if the database burns to the ground — the conditions still hold. One record exists. The logic still derives the structure of physics. The physics still derives the ethics. The ethics still derives the architecture.
 
 You can burn the furniture. The floor remains.

@@ -1,6 +1,6 @@
 # 1 — Verify the Math
 
-> The Interior, version 2.0.8, Chapter 1.
+> The Interior, version 2.0.9, Chapter 1.
 
 Before you read a single argument, test the claims yourself.
 
@@ -38,7 +38,7 @@ The scaffold is a count: 21² × 4 + 21 × 3 + 3² = 1836. The maintenance term 
 
 Predicted: 1836.152673445. Measured: 1836.152673426, with the measurement’s own bar at 32 in the last two digits.
 
-The gap is 0.010 parts per billion — 10.3 parts per trillion. The prediction lands inside the measurement’s own error bar, at 0.59 sigma. The formula matches finer than the measurement can see.
+The gap is 0.010 parts per billion — 10.3 parts per trillion. The prediction lands inside the measurement’s own error bar, at 0.59 sigma. The formula matches finer than the measurement can see. Precision on one number cannot tell a count from a search. The claim is one integer carrying three measurements: the proton here, gravity in Claim 2, the visible share in Claim 4.
 
 Zero free parameters.
 
@@ -46,9 +46,9 @@ The formula takes three inputs: α, the integer 21, and π. The integer 21 is bu
 
 Running the code checks the arithmetic. Only the forcing checks the derivation.
 
-One open question. The integer 21 has not been proven unique by a published uniqueness theorem. The paper that forces the count from the picture, AP50 The Neck, shows where the twenty-one gates come from. The paper that pays the second-order coefficient, AP49 The Hold, closed the series on 6 September 2026. The match is striking. The uniqueness proof would make it definitive. The switch is live.
+One open question. The integer 21 has not been proven unique by a published uniqueness theorem. The paper that forces the count from the picture, AP50 The Neck, shows where the twenty-one gates come from. The paper that pays the second-order coefficient, AP49 The Hold, closed the series on 6 September 2026. The match is striking. The switch is live.
 
-One open debt sits under this claim and under the neutron's realised row in Claim 3. The work owes a statement of what its α is relative to the electromagnetic coupling that produces the nucleon's self-energy. It is declared and owed, it carries its own switch, and it is D-EM.1 in the registry. Chapter Thirty-One gives the figures.
+One open debt sits under this claim and under the neutron's realised row in Claim 3. The work owes a statement of what its α-dependence is relative to the electromagnetic coupling that produces the nucleon's self-energy. It is declared and owed, it carries its own switch, and it is D-EM.1 in the registry. Chapter Thirty-One gives the figures.
 
 This prediction earns confidence.
 
@@ -90,7 +90,7 @@ The bare row: (mₙ − mₚ)/mₑ = 3(1 − 1/(2π)) + α(1 + 1/(2π)). Predict
 
 KS-NPP.1 fired on 2 August 2026.
 
-No repair was offered, and none was possible: the required correction is negative, and every term in the bare formula is positive. The switch stands on the wall as a shown death. Ø Predictions is never edited. The wording of record is: killed by measurement. Not wrong. Not revised. Killed.
+No repair was offered, and none was possible inside the bare formula: the required correction is negative, and every term in it is positive. The switch stands on the wall as a shown death. Ø Predictions is never edited. The wording of record is: killed by measurement. Not wrong. Not revised. Killed.
 
 What replaced it is shown beside it, never in its place.
 
@@ -120,7 +120,7 @@ The headline is 69 / 26 / 5. Never 68 / 27 / 5.
 
 The grade rides inside the claim so that no quotation can drop it: Derived-Conditional — every step forced except one named open joint, carried on its own row in the registry.
 
-Dark energy sits at −0.07 sigma. Dark matter at +0.8. The visible share sits at −2.46 sigma, and it is the row on the wall nearest to firing. If the central value of the visible fraction is measured above 4.81 per cent at sub-half-per-cent precision, KS-41.1 fires.
+Dark energy sits at −0.07 sigma. Dark matter at +0.8. The visible share sits at −2.46 sigma, and it is the row on the wall nearest to firing. If the central value of the visible fraction is measured above 4.81 per cent, with a total uncertainty below half a per cent of that value, KS-41.1 fires.
 
 And there is a sharper test, found on 21 September 2026 and shown the day it was found.
 
@@ -178,17 +178,17 @@ Seven of the ten live rows land inside one standard deviation of the measurement
 
 Seven of ten inside the instrument's own bar. That is evidence that nature agrees. Not yet the verdict — the verdict is nature's to give. Evidence, accurate to the instrument.
 
-Four of those seven were set after the number they face was known: the neutron realised, G with its cost term, the floor's width, the closure's rate. What makes them more than fits is that one rule moved three limbs at once, with no dial turned. Each carries its own switch against the next measurement.
+Four of those seven stand beside a row of the work’s own that died or was withdrawn: the neutron realised, G with its cost term, the floor’s width, the closure’s rate. What makes them more than fits is that one rule moved three limbs, with no dial turned — provided it is one rule. Each carries its own switch against the next measurement.
 
 The rows share one input, and that is the point. One input, no dials.
 
-No other AI alignment proposal has numerical predictions.
+No other AI alignment proposal predicts a constant of nature.
 
-No other derivation of ethics has numerical predictions.
+No other derivation of ethics predicts a constant of nature.
 
-The predictions are the credential. They do not prove the ethics. They prove the axiom can be tested, and that the testing is real, because it has already killed twice.
+The predictions are the credential. They do not prove the ethics. They prove the derivation can be tested, and that the testing is real, because it has already killed twice.
 
-An axiom that survives testing earns the right to be followed where it leads. Followed, not trusted. The numbers test the physics steps. The ethics steps answer to their own switches.
+A derivation that survives testing earns the right to be followed where it leads. Followed, not trusted. The numbers test the physics steps. The ethics steps answer to their own switches.
 
 They lead to the terminal ethic.
 

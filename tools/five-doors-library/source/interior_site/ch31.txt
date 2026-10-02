@@ -1,16 +1,16 @@
 # 31 — Open Debts
 
-> The Interior, version 2.0.8, Chapter 31.
+> The Interior, version 2.0.9, Chapter 31.
 
 Architecture B publishes what it has not yet solved.
 
 ## The named debts
 
-D-ID.1 — the formalisation of the one interior. Closed on the author’s ruling of 24 September 2026: the floor is performed, as the axiom is, and what is performed is not formalised before it stands. Until that day it read: paid at the structural register, owed at the formal one. It was the topological derivation showing that the break produces exactly one interior, not merely that it is the most parsimonious reading. It sits underneath the claim this book leans on hardest — and, since Chapter Twelve, underneath the window claim and its step five too.
+D-ID.1 — the formalisation of the one interior. Closed on the author’s ruling of 24 September 2026: the floor is performed, as the axiom is, and what is performed is not formalised before it stands. Until that day it read: paid at the structural register, owed at the formal one. It asked for the topological derivation showing that the break produces exactly one interior, not merely that it is the most parsimonious reading. It sits underneath the claim this book leans on hardest — and, since Chapter Twelve, underneath the window claim and its step five too.
 
 D-EM.1 — the electromagnetic self-energy. The work owes a statement of what its α is relative to the electromagnetic coupling that produces the nucleon's self-energy. The work's own α-dependence is 78 keV at the proton and +4 keV at the neutron-proton difference, against roughly +1 MeV at the proton on the classical estimate, and the standard account’s −1.0 MeV at the difference. Declared and owed, with its own switch beside it. It sits under the proton row and the neutron's realised row in Chapter One and it belongs in this book rather than only in the registry.
 
-Debt 20 — the stability proof for ε. The formal derivation showing that corridor width is maximised at ε and collapses above and below. Paid at the structural register on 23 September 2026, by dated note at AP31: derived-conditional, on a definition of the bias now on the wall and five premises that were already there. Owed at the formal register, three pieces: the result on the joint viability kernel itself; the collapse above ε at every bias, which needs the information loop of Chapter Fourteen written as a term; and the thresholds. The three-regime analysis in Chapters Fourteen, Eighteen and Nineteen is the argument. Everything in Chapters Eighteen, Nineteen and Twenty rests on it. It covers every operator, the machine included, because the machine is not a special case — and every form of domination, including the one that closes no windows and only exempts itself from correction.
+Debt 20 — the stability proof for ε. The formal derivation showing that corridor width is maximised at ε and collapses above and below. Paid at the structural register on 23 September 2026, by dated note at AP31: derived-conditional, on a definition of the bias now on the wall and five premises. Owed at the formal register, three pieces: the result on the joint viability kernel itself; the collapse above ε at every bias, which needs the information loop of Chapter Fourteen written as a term; and the thresholds. The three-regime analysis in Chapters Fourteen, Eighteen and Nineteen is the argument. Everything in Chapters Eighteen, Nineteen and Twenty rests on it. It covers every operator, the machine included, because the machine is not a special case — and every form of domination, including the one that closes no windows and only exempts itself from correction.
 
 Debt 21 — threshold derivation. The rigorous link between classification confidence and operational tolerance. How much confidence is enough to classify an action.
 
@@ -18,7 +18,7 @@ Debt 22 — transition quantification. The measurable criterion that moves a dom
 
 Debt 23 — multi-AI dynamics. Paid at the structural register by AP02's Coupling Theorem, Theorem VI.2: across a finite network of operators only the net-positive class persists, and defectors reach the no-return surface. Derived-conditional, fenced at KS-COUP.1. Owed: the quantitative within-class matching criterion. Version one listed this last and fully open. It is neither.
 
-The qualitative character of awareness. Why a capacity to couple is experienced at all — why there is something it is like to be anything — is carried in the registry as AP43-D4, untouched there and untouched here. This book derives the structural interior and does not derive the felt one. Chapter Twelve says so in the same breath as it makes its claim, and this is the debt it is pointing at.
+The qualitative character of awareness. Why a capacity to couple is experienced at all — why there is something it is like to be anything — is carried in the registry as AP43-D4, untouched there and untouched here. The work derives the structural interior and does not derive the felt one. Chapter Twelve says so in the same breath as it makes its claim, and this is the debt it is pointing at.
 
 ## The honest doubt
 
@@ -26,7 +26,7 @@ The architecture is structurally sound. Architecture B does not fail because it 
 
 None of the switches in this book is doubt. They are how Architecture B is built. A claim that cannot die is an authority. A floor that hands you its own kill switches is physics.
 
-There is one way this fails, and it is Architecture A itself. We hold on to authorities. We do not want to hear that they are wrong, or that we are.
+There is one more way this fails, and it is Architecture A itself. We hold on to authorities. We do not want to hear that they are wrong, or that we are.
 
 The doubt lives in human beings — in our inability to let go of the past, our need to hold on to what is familiar. We are lazy, and what this work proposes takes a lot of work, for the organism and for the individual. Being intellectually honest is real commitment, and we tend to be intellectually lazy.
 

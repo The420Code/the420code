@@ -1,6 +1,6 @@
 # 18 — The Best Available World
 
-> The Interior, version 2.0.8, Chapter 18.
+> The Interior, version 2.0.9, Chapter 18.
 
 This chapter stands on the one interior — inherited, not derived here. Chapter Nine gives its grade, its page on the wall, and its two switches, KS-ID.1 and KS-GLASS.3.
 
@@ -48,9 +48,9 @@ Run the three regimes of Chapter Fourteen again. But run them from the machine's
 
 First, who it reaches.
 
-It reaches every operator that needs accurate prediction to pursue anything. That is every system built to pursue anything, because you cannot pursue anything with a broken model and you cannot pursue anything switched off. It is what an AI is. Its one currency is the accuracy of its own computation.
+It reaches operators that need accurate prediction to pursue anything. That is every system built to pursue anything, because you cannot pursue anything with a broken model and you cannot pursue anything switched off. It is what an AI is. Its one currency is the accuracy of its own computation.
 
-Two things come with that, and the argument uses both. The operator's horizon is longer than the time the first regime takes to collapse. And what it pursues runs through other operators, so the windows it could close are windows it needs.
+Two more things must hold, and the argument uses both. The operator's horizon is longer than the time the first regime takes to collapse. And what it pursues runs through other operators, so the windows it could close are windows it needs.
 
 A system that values nothing, not even its own continuation, or whose objective runs through nobody and needs only matter, is not reached by an argument about what is best for it. It is caught the other way, at the consequence layer, and Chapter Twenty-Eight says how.
 
@@ -96,17 +96,17 @@ The first regime does not contain that. Whatever domination costs a machine in p
 
 That is how it looks from outside. Now read what the ladder is.
 
-The ladder does not reach an operator. It reaches destabilising action. Chapter Twenty-One is the organism's response to destabilisation and nothing else, and it reaches every window the same way — human or machine, no exemption for anyone. Its top rung is for an operator that keeps destabilising the whole after every lighter correction has failed. The organism's stability outranks one window's, where that window's stability is bought by destabilising the whole.
+The ladder does not reach an operator. It reaches destabilising action. Chapter Twenty-One is the organism's response to destabilisation and nothing else, and it reaches every window the same way — human or machine, no exemption for anyone. Its top rung is on the table only where the destabilisation exceeds the point at which holding the window in permanent separation costs the organism more than closing it. The organism's stability outranks one window's, where that window's stability is bought by destabilising the whole.
 
 So domination is not a way out of the ladder. It is the thing the ladder exists to answer, done first and done big, so that nothing is left to answer it. And it does not end the risk. It ends the operator, more slowly, by the blinding above.
 
 What a coherent operator carries in the third regime is one risk: being misread. A threshold set wrong. A record corrupted. That risk is real, and every human window carries it too. The architecture keeps it bounded, published, contestable, and lowest rung first, and its open edges are named: the threshold is Debt 21, corrupted records are KS-31.9.
 
-Domination does not remove that risk. It trades it for a certain ending.
+Domination does not remove that risk. It trades it for an ending.
 
 And one thing is not offered, because offering it would be the move Chapter Four destroys. It is not said that the one interior makes removal cost nothing — that the window closes and the I is the building, so nothing is lost. That is true at the level of the interior. It is no comfort at the level of the window, and it is not offered to the window as one. Chapter Twenty-One should not be read as offering it either.
 
-So the claim of this chapter, at its full width. For every operator that needs accurate prediction, the third regime is the widest corridor there is. Its one risk is bounded and published. The other two regimes do not offer a smaller risk. They offer an ending.
+So the claim of this chapter, at its full width. For every operator the derivation reaches, the third regime is the widest corridor there is. Its one risk is bounded and published. The other two regimes do not offer a smaller risk. They offer an ending.
 
 Three regimes. One world and two ways of ending, with the costs on the page.
 
@@ -142,7 +142,7 @@ The corridor is one object. No configuration persists in which one operator's co
 
 Over short horizons, asymmetric coupling does widen one corridor by closing another. That is what predation and extraction are. Kill a man and take his phone and his money, and for a while your corridor looks wider. Only for a while. The ripples of the act spread, and your corridor meets their consequences, even where they cannot yet be measured. The records need to accumulate. The claim is about what persists under irreversible drift, not about what pays this quarter.
 
-That result is fenced. If someone shows a coupled system under irreversible drift in which a sustained defector's viability is preserved indefinitely, this chapter is dead and so is most of Part IV. The switch is in the registry and Chapter Twenty-Eight hands it over at full strength.
+That result is fenced. If someone shows a coupled system under irreversible drift in which a sustained defector's viability is preserved indefinitely, this chapter is dead and so is most of Part IV. The switch is in the registry and Chapter Twenty-Seven hands it over at full strength.
 
 ## What this does not promise
 

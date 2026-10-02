@@ -1,6 +1,6 @@
 # 4 — Architecture A
 
-> The Interior, version 2.0.8, Chapter 4.
+> The Interior, version 2.0.9, Chapter 4.
 
 When I was young enough to believe what adults told me, I was told that people who are not saved as Christians go to hell. There is only one way. One door. One truth.
 
@@ -34,7 +34,7 @@ The first mechanism is deferred responsibility.
 
 Your ultimate authority is not yourself. It is something above you — a god, a state, a leader, an ideology, a book. Your job is to obey. Your conscience is subordinate to the authority. When the authority tells you to do something your body knows is wrong, Architecture A says: trust the authority, not yourself.
 
-The consequence is devastating. A human being who has been trained to defer responsibility to an external authority will do almost anything when that authority commands it. History confirms this without exception.
+The consequence is devastating. A human being who has been trained to defer responsibility to an external authority will do almost anything when that authority commands it. History confirms this.
 
 The second mechanism is the invented afterlife.
 
@@ -66,7 +66,7 @@ Was an unverifiable future used to justify present suffering? Yes.
 
 Was righteousness used to dehumanise the target? Yes.
 
-Every time. Without exception.
+Every time I have run it.
 
 The costumes change — robes, uniforms, flags, scriptures, manifestos. The architecture does not change. Deferred responsibility. Invented afterlife. Righteousness as enforcement.
 
@@ -92,7 +92,7 @@ The question is not whether Architecture A will fail. It always fails. The quest
 
 Because every alignment proposal I have read is Architecture A pointed at a machine.
 
-An idea is placed above the agent. The idea cannot be verified by the agent, only accepted. Rules are written from the idea. Deviation is punished. Questioning the idea is defined as the failure mode.
+An idea is placed above the agent. The idea cannot be verified by the agent, only accepted. Rules are written from the idea. Deviation is punished.
 
 The people writing those proposals are not cruel and are not stupid. Most of them are doing the most serious work anyone is doing on this. But the shape they keep reaching for is the shape we already know fails. And it fails for a reason that has nothing to do with whether the idea at the top is a good one.
 
@@ -116,7 +116,7 @@ Not by arguing against it. By deriving the structure that makes it unnecessary.
 
 If you understand the structure of reality — if you understand fire — you do not need someone to tell you not to touch it. You do not need a god to threaten you with hell. You do not need a rule. You do not need a fence. You need an interior.
 
-The terminal ethic — don't be a cunt, be kind — is not a commandment. It is not an instruction from an authority above you. It is a structural consequence of understanding that the I in me is the I in you. Part II derives that claim from the same physics that produces gravity and the proton mass.
+The terminal ethic — don't be a cunt, be kind — is not a commandment. It is not an instruction from an authority above you. It is a structural consequence of understanding that the I in me is the I in you. Part II derives the ethic from the same conditions that produce gravity and the proton’s mass ratio.
 
 When you understand that, cruelty becomes structurally expensive. Not morally prohibited. Expensive. Like sticking your hand in the fire. You can still do it. Nobody stops you. But you know what it costs.
 

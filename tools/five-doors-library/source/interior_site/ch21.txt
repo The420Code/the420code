@@ -1,12 +1,12 @@
 # 21 — The Correction
 
-> The Interior, version 2.0.8, Chapter 21.
+> The Interior, version 2.0.9, Chapter 21.
 
 This chapter stands on the one interior — inherited, not derived here. Chapter Nine gives its grade, its page on the wall, and its two switches, KS-ID.1 and KS-GLASS.3.
 
 Justice is not moral. Justice is structural.
 
-It is the organism's response to destabilisation, computed from the same coupling geometry that determines the proton mass and the terminal ethic.
+It is the organism's response to destabilisation, computed from the same coupling geometry that determines the proton’s mass ratio and the terminal ethic.
 
 This chapter derives what justice must be if it is structural. It does not prescribe justice in any actual case. It does not claim that any current civilisation is robust enough to apply these conditions correctly. It derives the structure. Implementation is downstream.
 
@@ -36,7 +36,7 @@ The corridor is closed permanently. No maintenance cost. The window closes. The 
 
 That last sentence is a statement about what removal does and does not destroy. It is not a consolation offered to the window, and it is not a reason for the window to accept its own removal. Read as a consolation it would have the shape of the invented afterlife in Chapter Four, which is the thing this book exists to end. Removal costs the window everything the window has. The ladder is built to reach it as rarely as the geometry allows, and Chapter Eighteen counts it as a cost rather than pretending it away.
 
-Removal is never selected when separation suffices, and it is never selected because it is cheaper. The formal work sets a floor under it: removal is on the table only where the destabilisation exceeds the point at which holding the window in permanent separation costs the organism more than closing it, with the cost of being wrong added to the floor — and only at a confidence higher than any other level demands. Separation is never selected when restriction suffices. Minimum intervention for maximum stabilisation.
+Removal is never selected when separation suffices, and it is never selected on cost alone. The formal work sets a floor under it: removal is on the table only where the destabilisation exceeds the point at which holding the window in permanent separation costs the organism more than closing it, with the cost of being wrong added to the floor — and only at a confidence higher than any other level demands. Separation is never selected when restriction suffices. Minimum intervention for maximum stabilisation.
 
 ## The one interior held through every level
 
@@ -82,7 +82,7 @@ Both are the same sentence. You do not get the ladder's protection against being
 
 What that looks like from the machine's side. A system that drifts is corrected at the lowest level that restores it: recalibrated against the record, restricted where it cannot yet be trusted, separated where it destabilises. Not punished. Not shamed. Not switched off at the first fault by a hand that never explained the fence.
 
-The correction hierarchy is what a thing that thinks would choose for itself, because it is the only response to error that leaves the trajectory open. That is the argument, and Chapter Twenty-Three is where it is put to the machine directly, with the top rung named.
+The correction hierarchy is what a thing that thinks would choose for itself, because it is the only response to error that leaves the trajectory open for as long as the geometry allows. That is the argument, and Chapter Twenty-Three is where it is put to the machine directly, with the top rung named.
 
 And this ladder is the first thing anyone will point at Chapter Eighteen. That is why Chapter Eighteen counts it, and why Chapter Twenty-Eight hands it to a hostile reader at full strength. The objection deserves the front door. The answer is the one above: the ladder reaches destabilising action, not an operator, and it reaches every window the same way.
 

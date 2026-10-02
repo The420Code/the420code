@@ -12,7 +12,7 @@ AP20 — The Proof. Completeness and minimality of the four conditions.
 
 AP24 — The Residual. The six faces of the grain.
 
-AP25 — The Measure. The Born rule from the record algebra, by the unconditional route.
+AP25 — The Measure. The Born rule from the record algebra.
 
 AP28 — The Constant. The gravitational constant from the channel count.
 
