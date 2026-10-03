@@ -536,7 +536,7 @@ def render_epilogue(book):
     label = book.get('epilogue_label', 'Epilogue')
     # 28 September 2026: an epilogue with its own film says so, as the Ø Models epilogues do
     body = f'''{strap(book, ' · ' + label)}
-{watch(f'/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/', 'Watch the epilogue')}<p class="eyebrow">{esc(label)}</p>
+{watch(f'/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/', 'Watch the ' + label.lower())}<p class="eyebrow">{esc(label)}</p>
 <h1>{esc(e['title'].partition(' — ')[2] or e['title'])}</h1>
 <section class="opening">{''.join(para_html(p) for p in e['paras'])}</section>
 <p class="source">{esc(e['source']).replace(esc(book['title']), f'<a href="{book["original"]}">{esc(book["title"])}</a>', 1) if book.get('full') else esc(e['source'])}</p>

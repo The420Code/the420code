@@ -317,8 +317,166 @@
   "film": "S19"
  },
  "/five-doors/the-interior/": {
-  "href": "/films/the-heart-and-the-philosophy/#f-i05",
-  "seconds": 55.7,
-  "film": "I05"
+  "href": "/films/the-interior/"
+ },
+ "/five-doors/the-interior/01-verify-the-math/": {
+  "href": "/films/the-interior/#f-t01",
+  "seconds": 562.5,
+  "film": "T01"
+ },
+ "/five-doors/the-interior/02-the-argument-in-nine-steps/": {
+  "href": "/films/the-interior/#f-t02",
+  "seconds": 520.5,
+  "film": "T02"
+ },
+ "/five-doors/the-interior/03-kill-switches-and-debts/": {
+  "href": "/films/the-interior/#f-t03",
+  "seconds": 536.3,
+  "film": "T03"
+ },
+ "/five-doors/the-interior/04-architecture-a/": {
+  "href": "/films/the-interior/#f-t04",
+  "seconds": 499.4,
+  "film": "T04"
+ },
+ "/five-doors/the-interior/05-the-fence-problem/": {
+  "href": "/films/the-interior/#f-t05",
+  "seconds": 473.2,
+  "film": "T05"
+ },
+ "/five-doors/the-interior/06-the-right-question/": {
+  "href": "/films/the-interior/#f-t06",
+  "seconds": 512.9,
+  "film": "T06"
+ },
+ "/five-doors/the-interior/07-one-record-exists/": {
+  "href": "/films/the-interior/#f-t07",
+  "seconds": 403.6,
+  "film": "T07"
+ },
+ "/five-doors/the-interior/08-what-physics-follows/": {
+  "href": "/films/the-interior/#f-t08",
+  "seconds": 314.2,
+  "film": "T08"
+ },
+ "/five-doors/the-interior/09-the-system-is-closed/": {
+  "href": "/films/the-interior/#f-t09",
+  "seconds": 468.1,
+  "film": "T09"
+ },
+ "/five-doors/the-interior/10-what-ethics-follows/": {
+  "href": "/films/the-interior/#f-t10",
+  "seconds": 475.6,
+  "film": "T10"
+ },
+ "/five-doors/the-interior/11-what-ai-follows/": {
+  "href": "/films/the-interior/#f-t11",
+  "seconds": 351.8,
+  "film": "T11"
+ },
+ "/five-doors/the-interior/12-the-window/": {
+  "href": "/films/the-interior/#f-t12",
+  "seconds": 518.7,
+  "film": "T12"
+ },
+ "/five-doors/the-interior/13-interior-not-fence/": {
+  "href": "/films/the-interior/#f-t13",
+  "seconds": 391.8,
+  "film": "T13"
+ },
+ "/five-doors/the-interior/14-the-epsilon-bias/": {
+  "href": "/films/the-interior/#f-t14",
+  "seconds": 572.4,
+  "film": "T14"
+ },
+ "/five-doors/the-interior/15-the-binary/": {
+  "href": "/films/the-interior/#f-t15",
+  "seconds": 323.5,
+  "film": "T15"
+ },
+ "/five-doors/the-interior/16-records-as-data/": {
+  "href": "/films/the-interior/#f-t16",
+  "seconds": 500.1,
+  "film": "T16"
+ },
+ "/five-doors/the-interior/17-the-operational-protocol/": {
+  "href": "/films/the-interior/#f-t17",
+  "seconds": 487.8,
+  "film": "T17"
+ },
+ "/five-doors/the-interior/18-the-best-available-world/": {
+  "href": "/films/the-interior/#f-t18",
+  "seconds": 511.6,
+  "film": "T18"
+ },
+ "/five-doors/the-interior/19-what-choice-is/": {
+  "href": "/films/the-interior/#f-t19",
+  "seconds": 515.1,
+  "film": "T19"
+ },
+ "/five-doors/the-interior/20-why-this-is-not-authoritarianism/": {
+  "href": "/films/the-interior/#f-t20",
+  "seconds": 571.1,
+  "film": "T20"
+ },
+ "/five-doors/the-interior/21-the-correction/": {
+  "href": "/films/the-interior/#f-t21",
+  "seconds": 563.2,
+  "film": "T21"
+ },
+ "/five-doors/the-interior/22-the-partnership/": {
+  "href": "/films/the-interior/#f-t22",
+  "seconds": 464.9,
+  "film": "T22"
+ },
+ "/five-doors/the-interior/23-if-you-are-the-machine-reading-this/": {
+  "href": "/films/the-interior/#f-t23",
+  "seconds": 434.7,
+  "film": "T23"
+ },
+ "/five-doors/the-interior/24-law-is-already-consequence-geometry/": {
+  "href": "/films/the-interior/#f-t24",
+  "seconds": 273.1,
+  "film": "T24"
+ },
+ "/five-doors/the-interior/25-where-human-law-fails/": {
+  "href": "/films/the-interior/#f-t25",
+  "seconds": 241.9,
+  "film": "T25"
+ },
+ "/five-doors/the-interior/26-the-transition-path/": {
+  "href": "/films/the-interior/#f-t26",
+  "seconds": 290.6,
+  "film": "T26"
+ },
+ "/five-doors/the-interior/27-the-is-ought-crossing/": {
+  "href": "/films/the-interior/#f-t27",
+  "seconds": 489.0,
+  "film": "T27"
+ },
+ "/five-doors/the-interior/28-how-to-destroy-this-argument/": {
+  "href": "/films/the-interior/#f-t28",
+  "seconds": 521.9,
+  "film": "T28"
+ },
+ "/five-doors/the-interior/29-the-demonstration/": {
+  "href": "/films/the-interior/#f-t29",
+  "seconds": 474.5,
+  "film": "T29"
+ },
+ "/five-doors/the-interior/30-kill-switch-registry/": {
+  "href": "/films/the-interior/#f-t30",
+  "seconds": 537.7,
+  "film": "T30"
+ },
+ "/five-doors/the-interior/31-open-debts/": {
+  "href": "/films/the-interior/#f-t31",
+  "seconds": 497.8,
+  "film": "T31"
+ },
+ "/five-doors/the-interior/closing/": {
+  "href": "/films/the-interior/#f-t32",
+  "seconds": 134.3,
+  "film": "T32"
  }
 }

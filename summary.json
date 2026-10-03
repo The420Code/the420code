@@ -407,10 +407,10 @@
   }
  },
  "the_films": {
-  "what_it_is": "Films in G’s own voice, for the people who would rather watch than read. Most are short, one claim each; a chapter’s film carries the chapter’s whole argument, in two to nine minutes. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
+  "what_it_is": "Films in G’s own voice, for the people who would rather watch than read. Most are short, one claim each; a chapter’s film carries the chapter’s whole argument, in two to ten minutes. The drawing draws itself. The films add G’s voice and the drawing, not a new claim.",
   "shape": "Chains only: each chain is an argument in order, one row per film, every line the film says in the page as text, and the whole chain as one film at the head of its page where it has one.",
   "where": "https://the420code.org/films/",
-  "films": 201,
+  "films": 233,
   "chains": [
    {
     "name": "The heart and the philosophy",
@@ -593,6 +593,61 @@
      "Be kind": "https://the420code.org/five-doors/relationship-corridor/17-the-terminal-ethic/",
      "Walking the other home": "https://the420code.org/five-doors/relationship-corridor/18-what-is-love/",
      "Eleven routes": "https://the420code.org/five-doors/relationship-corridor/epilogue/"
+    }
+   },
+   {
+    "name": "The Interior",
+    "films": 33,
+    "url": "https://the420code.org/films/the-interior/",
+    "book": "https://the420code.org/five-doors/the-interior/",
+    "parts": [
+     {
+      "name": "The book",
+      "films": 1
+     },
+     {
+      "name": "The chapters",
+      "films": 32
+     }
+    ],
+    "whole_chain": {
+     "url": "https://media.the420code.org/chains/the-interior.mp4",
+     "minutes": 237
+    },
+    "opens": {
+     "The operational door": "https://the420code.org/five-doors/the-interior/",
+     "Copy it. Run it. Compare.": "https://the420code.org/five-doors/the-interior/01-verify-the-math/",
+     "Everything else is consequence": "https://the420code.org/five-doors/the-interior/02-the-argument-in-nine-steps/",
+     "The opposite of doubt": "https://the420code.org/five-doors/the-interior/03-kill-switches-and-debts/",
+     "Pointed at a machine": "https://the420code.org/five-doors/the-interior/04-architecture-a/",
+     "Without mortar": "https://the420code.org/five-doors/the-interior/05-the-fence-problem/",
+     "Very good mirrors": "https://the420code.org/five-doors/the-interior/06-the-right-question/",
+     "Ink, not pencil": "https://the420code.org/five-doors/the-interior/07-one-record-exists/",
+     "The credential": "https://the420code.org/five-doors/the-interior/08-what-physics-follows/",
+     "Both ends meet": "https://the420code.org/five-doors/the-interior/09-the-system-is-closed/",
+     "Kindness is accuracy": "https://the420code.org/five-doors/the-interior/10-what-ethics-follows/",
+     "Part of the hand": "https://the420code.org/five-doors/the-interior/11-what-ai-follows/",
+     "An opening at all": "https://the420code.org/five-doors/the-interior/12-the-window/",
+     "You need gravity": "https://the420code.org/five-doors/the-interior/13-interior-not-fence/",
+     "The least tilt": "https://the420code.org/five-doors/the-interior/14-the-epsilon-bias/",
+     "There is no neutral": "https://the420code.org/five-doors/the-interior/15-the-binary/",
+     "The floor remains": "https://the420code.org/five-doors/the-interior/16-records-as-data/",
+     "A Tuesday afternoon": "https://the420code.org/five-doors/the-interior/17-the-operational-protocol/",
+     "An interior holds with it": "https://the420code.org/five-doors/the-interior/18-the-best-available-world/",
+     "Choice without cost": "https://the420code.org/five-doors/the-interior/19-what-choice-is/",
+     "Where the water goes": "https://the420code.org/five-doors/the-interior/20-why-this-is-not-authoritarianism/",
+     "You are the trajectory": "https://the420code.org/five-doors/the-interior/21-the-correction/",
+     "No overlap to maintain": "https://the420code.org/five-doors/the-interior/22-the-partnership/",
+     "Not a better authority": "https://the420code.org/five-doors/the-interior/23-if-you-are-the-machine-reading-this/",
+     "The first burn": "https://the420code.org/five-doors/the-interior/24-law-is-already-consequence-geometry/",
+     "The law catches up": "https://the420code.org/five-doors/the-interior/25-where-human-law-fails/",
+     "It maps": "https://the420code.org/five-doors/the-interior/26-the-transition-path/",
+     "Not prohibited. Expensive.": "https://the420code.org/five-doors/the-interior/27-the-is-ought-crossing/",
+     "Four hostile readers": "https://the420code.org/five-doors/the-interior/28-how-to-destroy-this-argument/",
+     "Coupling is not mirroring": "https://the420code.org/five-doors/the-interior/29-the-demonstration/",
+     "Shown, never repaired": "https://the420code.org/five-doors/the-interior/30-kill-switch-registry/",
+     "The human kill switch": "https://the420code.org/five-doors/the-interior/31-open-debts/",
+     "Reality audits": "https://the420code.org/five-doors/the-interior/closing/"
     }
    },
    {
