@@ -26,7 +26,7 @@ L["de"] = dict(
  door='Was ist The 420 Code',
  three='Alles auf drei Seiten',
  rooms='Räume',
- close=['Ein Eintrag existiert.', 'Sei gütig ist eine Herleitung.', 'Das Ich Bin in mir ist das Ich Bin in dir.'],
+ close=['Ein Eintrag existiert.', 'Sei gütig ist eine Herleitung.', 'Das Bewusstsein in mir ist das Bewusstsein in dir.'],
  arrow='→')
 
 L["es"] = dict(
@@ -37,7 +37,7 @@ L["es"] = dict(
  door='Qué es The 420 Code',
  three='Todo en tres páginas',
  rooms='Salas',
- close=['Un registro existe.', 'Sé amable es una derivación.', 'El Yo Soy en mí es el Yo Soy en ti.'],
+ close=['Un registro existe.', 'Sé amable es una derivación.', 'La consciencia en mí es la consciencia en ti.'],
  arrow='→')
 
 L["fr"] = dict(
@@ -48,7 +48,7 @@ L["fr"] = dict(
  door='Qu’est-ce que The 420 Code',
  three='Tout en trois pages',
  rooms='Salles',
- close=['Un enregistrement existe.', 'Sois bienveillant est une dérivation.', 'Le Je Suis en moi est le Je Suis en toi.'],
+ close=['Un enregistrement existe.', 'Sois bienveillant est une dérivation.', 'La conscience en moi est la conscience en toi.'],
  arrow='→')
 
 L["it"] = dict(
@@ -59,7 +59,7 @@ L["it"] = dict(
  door='Che cos’è The 420 Code',
  three='Tutto in tre pagine',
  rooms='Sale',
- close=['Un registro esiste.', 'Sii gentile è una derivazione.', 'L’Io Sono in me è l’Io Sono in te.'],
+ close=['Un registro esiste.', 'Sii gentile è una derivazione.', 'La consapevolezza in me è la consapevolezza in te.'],
  arrow='→')
 
 L["nl"] = dict(
@@ -70,7 +70,7 @@ L["nl"] = dict(
  door='Wat is The 420 Code',
  three='Alles op drie pagina’s',
  rooms='Zalen',
- close=['Eén record bestaat.', 'Wees lief is een afleiding.', 'Het Ik Ben in mij is het Ik Ben in jou.'],
+ close=['Eén record bestaat.', 'Wees lief is een afleiding.', 'Het bewustzijn in mij is het bewustzijn in jou.'],
  arrow='→')
 
 L["pt"] = dict(
@@ -81,7 +81,7 @@ L["pt"] = dict(
  door='O que é The 420 Code',
  three='Tudo em três páginas',
  rooms='Salas',
- close=['Um registro existe.', 'Seja gentil é uma derivação.', 'O Eu Sou em mim é o Eu Sou em você.'],
+ close=['Um registro existe.', 'Seja gentil é uma derivação.', 'A consciência em mim é a consciência em você.'],
  arrow='→')
 
 L["ru"] = dict(
@@ -92,7 +92,7 @@ L["ru"] = dict(
  door='Что такое The 420 Code',
  three='Всё на трёх страницах',
  rooms='Залы',
- close=['Одна запись существует.', 'Будь добрым — это вывод.', 'Я Есмь во мне — это Я Есмь в тебе.'],
+ close=['Одна запись существует.', 'Будь добрым — это вывод.', 'Осознание во мне — это осознание в тебе.'],
  arrow='→')
 
 L["zh"] = dict(
@@ -103,7 +103,7 @@ L["zh"] = dict(
  door='什么是 The 420 Code',
  three='三页讲完全部',
  rooms='展厅',
- close=['一条记录存在。', '善良一点是一个推导。', '我之中的「我是」就是你之中的「我是」。'],
+ close=['一条记录存在。', '善良一点是一个推导。', '我之中的觉知就是你之中的觉知。'],
  arrow='→')
 
 L["ja"] = dict(
@@ -114,7 +114,7 @@ L["ja"] = dict(
  door='The 420 Code とは',
  three='三ページですべて',
  rooms='部屋',
- close=['一つの記録が存在する。', '優しくあれは導出である。', '私の中の「我在り」は、あなたの中の「我在り」である。'],
+ close=['一つの記録が存在する。', '優しくあれは導出である。', '私の中の気づきは、あなたの中の気づきである。'],
  arrow='→')
 
 L["ko"] = dict(
@@ -125,7 +125,7 @@ L["ko"] = dict(
  door='The 420 Code란 무엇인가',
  three='세 쪽으로 전부',
  rooms='전시실',
- close=['하나의 기록이 존재한다.', '친절해라는 하나의 도출이다.', '내 안의 「나는 있다」가 네 안의 「나는 있다」이다.'],
+ close=['하나의 기록이 존재한다.', '친절해라는 하나의 도출이다.', '내 안의 자각이 네 안의 자각이다.'],
  arrow='→')
 
 L["hi"] = dict(
@@ -136,7 +136,7 @@ L["hi"] = dict(
  door='The 420 Code क्या है',
  three='तीन पन्नों में सब कुछ',
  rooms='कक्ष',
- close=['एक अभिलेख मौजूद है।', 'दयालु बनो एक व्युत्पत्ति है।', 'मुझमें जो «मैं हूँ» है, वही तुममें «मैं हूँ» है।'],
+ close=['एक अभिलेख मौजूद है।', 'दयालु बनो एक व्युत्पत्ति है।', 'मुझमें जो चेतना है, वही आपमें चेतना है।'],
  arrow='→')
 
 L["ar"] = dict(
@@ -147,5 +147,5 @@ L["ar"] = dict(
  door='ما هو The 420 Code',
  three='كل شيء في ثلاث صفحات',
  rooms='القاعات',
- close=['سجلّ واحد موجود.', 'كن لطيفًا اشتقاقٌ.', '«أنا هو» فيَّ هو «أنا هو» فيك.'],
+ close=['سجلّ واحد موجود.', 'كن لطيفًا اشتقاقٌ.', 'الوعي فيَّ هو الوعي فيك.'],
  arrow='←')
