@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Ein Wort ist ein wiederverwendbares Kompressionstoken. Bedeutung ist das Eintragsmuster, auf das das Token verweist, gehalten in gemeinsamer Struktur zwischen Sprechern.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/de/models/horizons/05-language-and-the-compression-of-records/">
+<meta property="og:title" content="Sprache und die Kompression von Einträgen — Ø Horizons">
+<meta property="og:description" content="Ein Wort ist ein wiederverwendbares Kompressionstoken. Bedeutung ist das Eintragsmuster, auf das das Token verweist, gehalten in gemeinsamer Struktur zwischen Sprechern.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/de/models/horizons/05-language-and-the-compression-of-records/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Auge des Universums">
+<title>Sprache und die Kompression von Einträgen — Ø Horizons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/models/reader.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/de/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a> <a href="/de/what-is-the-420-code/" class="nav-door">Was ist <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Das Werk durchsuchen</label><input id="nav-q" class="nav-q" type="search" placeholder="Das Werk durchsuchen" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Suchergebnisse"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Suche" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Räume" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Räume</button>
+  <div class="nav-menu">
+    <a href="/de/#museum" class="nav-room">Ø Museum</a> <a href="/de/five-doors/" class="nav-room">Ø Fünf Türen</a> <a href="/de/models/" class="nav-room">Ø Modelle</a> <a href="/de/exhibition/" class="nav-room">Ø Ausstellung</a> <a href="/de/films/" class="nav-room">Ø Filme</a> <a href="/de/axiom/" class="nav-room">1 Axiom</a> <a href="/de/physics/" class="nav-room">Ø Physik</a> <a href="/de/prereg/" class="nav-room">Ø Präregistrierung</a> <a href="/de/notebooks/" class="nav-room">Ø Notizbücher</a> <a href="/de/proofs/" class="nav-room">Ø Beweise</a> <a href="/de/why-21-is-forced/" class="nav-room">Ø Warum 21 zwingend ist</a> <a href="/de/one-awareness/" class="nav-room">Ø Ein Bewusstsein</a> <a href="/de/proofs/instruments/" class="nav-room">Ø Beweisakten</a> <a href="/de/#confirm-the-math" class="nav-room">Ø Überprüfe die Mathematik</a> <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Unabhängige Prüfung</a> <a href="/de/killswitches/" class="nav-room">Ø Kill Switches</a> <a href="/de/method/" class="nav-room">Ø Methode</a> <a href="/de/glossary/" class="nav-room">Ø Glossar</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Sprache: Deutsch" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">Deutsch</button>
+  <div class="nav-langs">
+    <a href="/models/horizons/05-language-and-the-compression-of-records/" class="nav-lang" hreflang="en" lang="en">English</a> <a href="/es/" class="nav-lang" hreflang="es" lang="es">Español</a> <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr">Français</a> <a href="/de/models/horizons/05-language-and-the-compression-of-records/" class="nav-lang" hreflang="de" lang="de" aria-current="page">Deutsch</a> <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt">Português</a> <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a> <a href="/it/" class="nav-lang" hreflang="it" lang="it">Italiano</a> <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh">中文</a> <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja">日本語</a> <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko">한국어</a> <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru">Русский</a> <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar">العربية</a> <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/de/models/horizons/"><b>Ø Horizons</b></a> · die kurze Ausgabe · Fünf von dreizehn</div><ul class="modes"><li><span class="on">Lesen</span></li><li><a href="/models/horizons.pdf">Herunterladen</a></li></ul></header>
+<details class="toc"><summary>In diesem Buch</summary><ol><li><span class="num">Eins</span><a href="/de/models/horizons/01-the-nature-of-beauty-and-aesthetics/">Das Wesen der Schönheit und die Ästhetik</a></li><li><span class="num">Zwei</span><a href="/de/models/horizons/02-music-and-harmonic-structure/">Musik und harmonische Struktur</a></li><li><span class="num">Drei</span><a href="/de/models/horizons/03-the-nature-of-play-and-games/">Das Wesen des Spiels und der Spiele</a></li><li><span class="num">Vier</span><a href="/de/models/horizons/04-the-nature-of-narrative-and-story/">Das Wesen von Erzählung und Geschichte</a></li><li class="here"><span class="num">Fünf</span><a href="/de/models/horizons/05-language-and-the-compression-of-records/">Sprache und die Kompression von Einträgen</a></li><li><span class="num">Sechs</span><a href="/de/models/horizons/06-the-operator-without-a-narrator/">Der Operator ohne Erzähler</a></li><li><span class="num">Sieben</span><a href="/de/models/horizons/07-animals-and-the-variable-narrator/">Tiere und der variable Erzähler</a></li><li><span class="num">Acht</span><a href="/de/models/horizons/08-the-problem-of-transcendence/">Das Problem der Transzendenz</a></li><li><span class="num">Neun</span><a href="/de/models/horizons/09-the-ethics-of-cosmic-expansion/">Die Ethik der kosmischen Expansion</a></li><li><span class="num">Zehn</span><a href="/de/models/horizons/10-the-multiverse-and-the-singular-actualization-state/">Das Multiversum und der singuläre Aktualisierungszustand</a></li><li><span class="num">Elf</span><a href="/de/models/horizons/11-eschatology-without-religion/">Eschatologie ohne Religion</a></li><li><span class="num">Zwölf</span><a href="/de/models/horizons/12-the-sacred-without-the-supernatural/">Das Heilige ohne das Übernatürliche</a></li><li><span class="num">Dreizehn</span><a href="/de/models/horizons/13-a-world-aligned-with-the-axiom/">Eine am Axiom ausgerichtete Welt</a></li></ol></details>
+<p class="watch"><a href="/de/films/horizons/#f-g09">Das Kapitel ansehen<span class="t">6:17</span></a></p>
+<p class="eyebrow">Kapitel fünf</p>
+<h1>Sprache und die Kompression von Einträgen</h1>
+<p class="oneline">Ein Wort ist ein wiederverwendbares Kompressionstoken. Bedeutung ist das Eintragsmuster, auf das das Token verweist, gehalten in gemeinsamer Struktur zwischen Sprechern.</p>
+<section class="opening">
+<h2>Ein Mensch spricht ein Wort</h2>
+<p>Ein Mensch spricht ein Wort. Ein anderer, anderswo, bewegt sich.</p><p>Der Erste sagte Feuer und der Zweite rannte. Etwas überquerte den Raum zwischen ihnen, und etwas auf der anderen Seite veränderte sich.</p><p>Wie bedeutet ein Wort, was es bedeutet?</p><p>Dies ist die fünfte Projektion, und eine Auflösung. Ein Wort ist ein wiederverwendbares Kompressionstoken. Bedeutung ist das Eintragsmuster, auf das das Token verweist, gehalten in gemeinsamer Struktur zwischen Sprechern. Kompression, nicht Kopie. Gemeinsame Struktur, nicht private Tatsache.</p>
+</section>
+<div class="tools"><button type="button" data-collapse>Alle einklappen</button><button type="button" data-expand>Alle ausklappen</button></div>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Vor jeder Theorie</summary><div class="sec-body"><p>Ein Sprecher gibt Laute von sich. Sie erreichen einen Hörer. Die Architektur des Hörers wird auf eine Weise verändert, die nicht davon abhing, dass die Laute akustisch bemerkenswert waren. Der Hörer handelt.</p><p>Die Laute allein sind zu dünn, um das zu bewirken. Eine Druckwelle mit der spektralen Signatur von Feuer erzeugt, physikalisch betrachtet, kein Rennen. Das Rennen entsteht, weil Sprecher und Hörer eine gemeinsame Struktur teilen, über die die Laute sie koppeln, aufgebaut durch frühere Kopplungen miteinander und mit ihrer Gemeinschaft.</p><p>Sprechen ist der einfachste Fall, nicht das Ganze der Sprache. Wo das Kapitel Laut sagt, lies Zeichen, Markierung oder Geste.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Ein Wort ist ein Kompressionstoken</summary><div class="sec-body"><p>Wiederverwendbar. Derselbe Griff über tausend Tage und tausend Orte hinweg.</p><p>Ein Griff. Das Wort ist nicht das, was mitgeteilt wird. Es ist das, was die Mitteilung in Gang bringt.</p><p>Verweist auf ein Eintragsmuster. Feuer verweist auf das Muster der Feuer-Kopplungen — was Feuer ist, tut, bedroht, wärmt, was vor ihm davonläuft. Das Wort ist nicht das Muster. Es ist der Index, mit dem der Hörer den Bereich seines eigenen Musters erreicht, den die Situation braucht.</p><p>Das ganze Muster ist zu groß, um es zu senden. Das Token aktiviert das vorgebaute Muster des Hörers, kalibriert durch den Kontext. Beide Architekturen haben mit ähnlichen Feuern in ähnlichen Kontexten gekoppelt. Die Überlappung leistet die Arbeit. Nichts wird kopiert.</p><p>Die Zuordnung ist an der Oberfläche willkürlich und in der Tiefe eingeschränkt. Dog, chien, perro können auf überlappende Muster verweisen. Nicht willkürlich ist die Einschränkung des Musters durch die Kopplung mit der Welt. Selbst eine willkürliche Neuprägung muss durch gemeinsamen Gebrauch stabilisiert werden, bevor sie verlässlich irgendetwas aktiviert.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Komposition</summary><div class="sec-body"><p>Eine Sprache ist nicht nur ein Vorrat an Token. Sie ist eine Menge von Operationen, um sie zu kombinieren. Der Hörer hat die meisten Sätze nie zuvor gehört. Sie kommen trotzdem an.</p><p>Reich das Salz sind nicht drei Bedeutungen nebeneinander. Es ist eine Handlungsarchitektur, zusammengesetzt unter den Bedingungen des Raums. Grammatik ist der Eintrag der Kompositionsoperationen einer Gemeinschaft. Syntax, Morphologie, Tempus, Prosodie sind keine Dekoration. Sie sagen der empfangenden Architektur, wie sie zusammensetzen soll.</p><p>Endlich viele Token, endlich viele Operationen, unbegrenzt viele Kompositionen. Das ist Kompositionalität.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Bedeutung lebt in gemeinsamer Struktur</summary><div class="sec-body"><p>Der zentrale Zug des Kapitels.</p><p>Nicht im Wort. Zwei Hörer mit verschiedenen Geschichten aktivieren aus demselben Laut verschiedene Muster. Wörter sind zu dünn.</p><p>Nicht im Sprecher. Der mentale Zustand des Sprechers erschöpft die Bedeutung nicht. Was Feuer Feuer bedeuten lässt, ist das, was aktiviert wird, wenn es ankommt.</p><p>Nicht im Hörer. Zwei Hörer können das Wort verschieden erleben und beide richtig reagieren. Erleben ist zu dünn.</p><p>In der gemeinsamen Struktur. Sprecher, Hörer und Gemeinschaft haben durch parallele Kopplungsgeschichten überlappende Muster aufgebaut. Das Wort aktiviert das gemeinsame Muster an beiden Enden. Die Bedeutung ist das, was im Muster abläuft, wenn es aktiviert wird.</p><p>Gemeinsame Struktur lässt sich operationalisieren. Konvergenz der Handlungen, die dasselbe Token auslöst. Konvergenz der inferentiellen Vervollständigungen. Konvergenz des Zustands, den ein Token aktiviert, in welcher Auflösung er sich auch messen lässt.</p><p>Die gemeinsame Struktur wird durch wiederholten gekoppelten Gebrauch aufgebaut — geteilte Aufmerksamkeit, Korrektur, Nachahmung, Reparatur.</p><p>Die Absicht des Sprechers ist real und nicht souverän. Sie bestimmt die Bedeutung nicht allein, weil das Token noch durch die gemeinsame Struktur laufen und ankommen muss.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Privatsprache</summary><div class="sec-body"><p>Die Mitte des zwanzigsten Jahrhunderts argumentierte, dass eine streng private Sprache — gegründet allein auf innere Empfindung, ohne äußere Prüfung — nicht existieren könne. Der Sprecher könnte nie prüfen, ob derselbe Ausdruck zweimal dasselbe bedeutete.</p><p>Dieses Argument ist die Lesart dieses Kapitels. Bedeutung erfordert gemeinsame Struktur. Ein privates Token hat nichts, worauf es verweisen könnte, das irgendjemand anderes aktivieren könnte, und nichts, was der Sprecher prüfen könnte, weil die Prüfung selbst einen gemeinsamen Anker braucht. Die Darstellung übersteht das Paradox nicht. Sie leitet es her.</p><p>Idiolekt ist keine Privatsprache. Persönliche Kurzschrift und private Witze sind aus früherer gemeinsamer Struktur aufgebaut und können an den eigenen stabilen Einträgen des Sprechers geprüft und wieder in öffentliche Erklärung eingebracht werden.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Die Einwände</summary><div class="sec-body"><p>Indexikalische Ausdrücke. Ich, hier, jetzt, dies. Token, deren Muster eine Kontextstelle enthält, die bei der Aktivierung gefüllt wird. Ich verweist auf den, der die Sprecherposition einnimmt. Das Muster ist dasselbe. Der Inhaber wechselt.</p><p>Mehrdeutigkeit. Feuer kann Flamme, Entlassung, Schüsse bedeuten. Ein Token verweist auf eine Familie von Mustern, und der Kontext wählt unter ihnen aus. Polysemie ist effiziente Kompression. Mehrdeutigkeit wird nur dort zum Versagen, wo die gemeinsame Struktur nicht mit genügend Genauigkeit auswählen kann.</p><p>Nicht-referierende Sprache. Mathematik, Logik, Modalität, Fiktion, Moral, Ausruf. Token, die auf Muster verweisen, die keine Kopplungen mit der äußeren Welt sind. Zwei verweist auf keinen Gegenstand. Es verweist auf ein gemeinsames Muster von Paarungsoperationen, aufgebaut aus Äpfeln und Takten und aus Mathematikern, die einander lehren. Logische Operatoren verweisen auf Schlussmuster. Modalausdrücke auf den Trajektorienraum. Fiktive Namen auf Knoten in narrativen Arenen. Moralische Prädikate auf Konsequenzgeometrie. Ausrufe auf affektive Zustände. Keines davon entscheidet die Metaphysik seines Bereichs. Realisten und Antirealisten können beide die Bedeutungsoperation akzeptieren und weiter über die Ontologie uneins sein.</p><p>Negation, Metapher, Ironie. Operationen, die auf der grundlegenden Architektur laufen, keine Ausnahmen. Nicht ist ein Token, dessen Muster die Umkehrung ist. Die Metapher benutzt die Token eines Bereichs, um eine strukturelle Ähnlichkeit in einem anderen zu aktivieren, und kommt nur dort an, wo die gemeinsame Struktur die Zuordnung trägt. Ironie setzt ein Oberflächenmuster ein, während die gemeinsame Struktur das Metamuster trägt, dass es umgekehrt ist. Ironie braucht mehr gemeinsame Struktur als wörtliche Rede, nicht weniger.</p><p>Sprechakte. Ich verspreche. Schuldig. Sie verändern die gemeinsame Struktur, wenn sie aus einer autorisierten Position unter anerkannten Bedingungen gesprochen werden. Token, Autorität, Aufnahme, Institution und Anerkennung treffen sich, und sie alle leben in der gemeinsamen Struktur.</p><p>Aufgeladene Token. Ein Schimpfwort ist nicht schädlich, weil sein Klang besonders ist. Es verweist auf ein Muster sozialer Kontraktion und setzt es beim Empfänger ein. Ob ein Gebrauch schadet, zitiert, zurückerobert oder entschärft, hängt von Sprecher, Kontext, Geschichte und Aufnahme ab. Wo das Token unter den tatsächlichen Bedingungen eine Kontraktion am Korridor des Empfängers aktiviert, ist Schaden eingetreten, beabsichtigt oder nicht.</p><p>Schweigen. Bedeutungsvoll, wo die gemeinsame Struktur das Fehlen lesbar macht. Verweigerung, Zustimmung, Trauer.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Wo Sprache versagt</summary><div class="sec-body"><p>Manipulative Sprache installiert Muster, die der Empfänger nicht revidieren kann. Propaganda, Gaslighting, Sektensprache. Parasitärer Einsatz der Maschinerie gegen eine Architektur, die ihren Korridor auf der Auflösung der Bedeutung nicht verteidigen kann.</p><p>Leere Sprache aktiviert Muster, die an nichts jenseits des Einsatzes gekoppelt sind. Rede ohne Bindung an die eine oder die andere Wahrheit. Die Operation läuft hohl.</p><p>Geschlossene Sprache hat ihre gemeinsame Struktur so eingeschränkt, dass Außenstehende sie nicht aufbauen können. Jargon, eingesetzt, um auszuschließen. Die Operation läuft mit künstlicher Geschlossenheit, wo Sprache Offenheit verlangt.</p><p>Keine Randfälle. Stellen, an denen die Lesart unterscheidet.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Kielwasser, Missverständnis, Übersetzung</summary><div class="sec-body"><p>Sprache ist Kielwassermuster, das andere Architekturen lesen können. In der Rede ist das Kielwasser akustisch. In der Schrift sichtbares Zeichen. In der Gebärde Geste. Die Schrift verlängert die Beständigkeit des Kielwassers. Die Operation hat sich nicht geändert. Das Substrat schon.</p><p>Missverständnis ist Fehlausrichtung der gemeinsamen Struktur. Das Token kommt an und aktiviert ein anderes Muster oder dasselbe Muster unter anderen Bedingungen. Dialekt, missverstandener Sarkasmus, Jargon über Disziplinen hinweg.</p><p>Übersetzung ist nicht das Hinüberkopieren von Bedeutung. Das ist unmöglich, weil die gemeinsamen Strukturen sich unterscheiden. Sie ist der Bau einer Brücke — das Finden von Tokens und Operationen in der empfangenden Struktur, die ein hinreichend ähnliches Muster aktivieren. Deshalb ist perfekte Übersetzung selten und brauchbare Übersetzung häufig.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Die Reichweite des Inneren</summary><div class="sec-body"><p>Die meisten Kopplungen beginnen beim Kontakt. Spiel braucht die Körper in der Arena. Erzählung braucht einen Empfänger, der empfängt.</p><p>Auch andere Kopplungen breiten sich aus — Sternenlicht, Aufnahmen, Diagramme. Was Sprache auszeichnet, ist die Kombination. Wiederverwendbare Tokens. Komposition. Indexierung der gemeinsamen Struktur. Andere sich ausbreitende Kopplungen tragen die lokale Form des Originals. Sprache trägt Griffe zu Mustern, die der Empfänger unabhängig aufgebaut hat. Der Sender überträgt keinen Inhalt.</p><p>Sprache ist das, was das Innere eine andere Architektur erreichen lässt, ob sie anwesend ist oder nicht — und am stärksten, wenn sie es nicht ist.</p><p>Darum schließt sie das Trio ab. Spiel trainierte das Override in physischen Arenen. Erzählung trainierte es in komprimierter Geometrie. Sprache ist, wie die Geometrien geteilt, gelehrt und vererbt werden, von Architekturen, die einander nie begegnet sind. Ein Kind lernt von einem Lehrer, der seit zwei Jahrhunderten tot ist.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Stromaufwärts</summary><div class="sec-body"><p>Sinn und Bedeutung — das gemeinsame Muster und die Weltkopplung, mit der es manchmal verbunden ist. Signifikant und Signifikat in einem Feld von Differenzen — das Token, eingebettet in ein gemustertes Feld von Kontrasten, das die gemeinsame Struktur trägt. Zeichen, Objekt, Interpretant — der Interpretant ist das Muster, das sich in einer gekoppelten Architektur aktiviert. Oberflächengrammatik gegen logische Form — die Tiefenstruktur ist das gemeinsame Muster, das die Tokens indexieren. Bedeutung als Gebrauch — Gebrauch ist die Operation, die die gemeinsame Struktur aufbaut und erhält, nicht für sich allein der Sitz der Bedeutung. Performative — Kraft, verortet in den Autoritätsbedingungen der gemeinsamen Struktur. Triangulation von Sprecher, Hörer und Welt — die gemeinsame Struktur selbst. Kausale Ketten der Referenz — eine Seite dessen, wie die gemeinsame Struktur aufgebaut wird. Das Kooperationsprinzip — Erhaltung der gemeinsamen Struktur, die wie Negation und Ironie auf der Basis läuft. Distributionelle und komputationelle Semantik — das Lesen der Seite der Architektur an der gemeinsamen Struktur in hoher Auflösung.</p><p>Jede Tradition las etwas Wirkliches. Die Struktur liest die Stelle, auf die sie zeigten.</p><p>Die Grammatik ist der Formalismus. Die Pause, in der die Bedeutung ankommt, ist die Erfahrung. Die Lesart ist, was beides hervorbringt.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Reich das Salz</summary><div class="sec-body"><p>Drei Tokens. Salz aktiviert das Salzmuster. Das aktiviert wähle-die-bestimmte-Instanz und verbindet sich damit. Reich aktiviert physische Übergabe und verbindet sich damit. Eine komponierte Handlungsarchitektur, nicht drei Bedeutungen. Der Imperativ wird erkannt. Die Küche, das sichtbare Salz, die greifende Hand werden integriert. Der Körper handelt. Das Salz wird gereicht.</p><p>Vier Zehntelsekunden Klang. Tausende Stunden gemeinsamer Struktur. Nichts wurde kopiert. Das ist es, was Sprache jedes Mal tut, wenn sie funktioniert.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Wo die Reichweite endet</summary><div class="sec-body"><p>Warum bestimmte Sprachen bestimmte Strukturen haben. Formale Semantik auf ihrer eigenen Ebene. Wie Kinder die gemeinsame Struktur aufbauen. Ob die Sprache, die du sprichst, prägt, wie du denkst. Alles empirisch. Alles offen. Die Lesart liegt ihnen allen voraus und ersetzt keine davon.</p></div></details>
+<details class="sec die"><summary><span class="tri" aria-hidden="true"></span>Wo es sterben würde<span class="count">5 Switches</span></summary><div class="sec-body"><p>Fünf Behauptungen tragen dieses Kapitel.</p><p class="ks" id="ks-hor5-1"><a class="ks-id" href="https://the420code.org/de/killswitches/#ks-hor5-1" title="Dieser Switch im Register">HOR-5.1</a>Weise eine Klasse nicht-referierender Sprache auf, für die auf keiner Auflösung und bei keiner Erweiterung der gemeinsamen Struktur ein Eintragsmuster angegeben werden kann, während ihre Bedeutsamkeit bestehen bleibt, und die Darstellung ist unvollständig. Uneinigkeit über die Metaphysik eines Bereichs löst ihn nicht aus.</p><p class="ks" id="ks-hor5-2"><a class="ks-id" href="https://the420code.org/de/killswitches/#ks-hor5-2" title="Dieser Switch im Register">HOR-5.2</a>Zeige, dass die Darstellung über gemeinsame Muster, konsequent angewandt, ein streng privates bedeutungsbestimmendes Element erfordert, und sie ist in das Paradox kollabiert, das sie auflöst. Idiolekte und Kurzschrift, aufgebaut aus öffentlicher Struktur, lösen ihn nicht aus.</p><p class="ks" id="ks-hor5-3"><a class="ks-id" href="https://the420code.org/de/killswitches/#ks-hor5-3" title="Dieser Switch im Register">HOR-5.3</a>Weise ein anerkanntes sprachliches Phänomen auf, das nachweislich nicht durch Kompression, Komposition, gemeinsame Aktivierung, Kontextauswahl, autorisierten Sprechakt, Übersetzungsbrücke oder eine geschichtete pragmatische Operation erfasst werden kann, und der Apparat ist unvollständig. Phänomene, die eine aufwendigere gemeinsame Struktur brauchen, lösen ihn nicht aus.</p><p class="ks" id="ks-hor5-4"><a class="ks-id" href="https://the420code.org/de/killswitches/#ks-hor5-4" title="Dieser Switch im Register">HOR-5.4</a>Zeige Kontextabhängigkeit, die strukturell jenseits der Reichweite der gemeinsamen Struktur liegt und eine eigene Semantik braucht, und die Darstellung ist unvollständig. Nicht charakterisierte gemeinsame Struktur löst ihn nicht aus.</p><p class="ks" id="ks-hor5-5"><a class="ks-id" href="https://the420code.org/de/killswitches/#ks-hor5-5" title="Dieser Switch im Register">HOR-5.5</a>Weise eine Tradition auf, in der neue Äußerungen ohne gemeinsame Kopplungsgeschichte ankommen oder in der identische Tokens in identischem Kontext systematisch verschiedene Muster hervorbringen, die sich nicht auf Kontextstellen zurückführen lassen, und die Darstellung scheitert. Oder weise eine auf, in der Bedeutung ohne nachweisbare Überlappung zwischen Architekturen läuft. Auch dort scheitert sie.</p><p class="reg">Jeder Switch oben ist mit seinem Status im <a href="https://the420code.org/de/killswitches/">Register</a> abgelegt. Das Register schreibt sie KS-HOR5.1 bis KS-HOR5.5. Was ein Kill Switch ist: <a href="https://the420code.org/de/what-is-the-420-code/#where-it-would-die">Wo es sterben würde</a>, an der Wand.</p></div></details>
+<section class="coda"><p>Sprache ist die allgemeinste Technologie des Inneren, um seine Reichweite zu erweitern.</p><p>Ein Wort ist ein wiederverwendbares Kompressionstoken. Es breitet sich über alles aus, was das Substrat trägt. Der Empfänger, bei dem die gemeinsame Struktur bereits vorhanden ist, führt es aus. Die Bedeutung läuft. Zwei Architekturen, die einander nie begegnet sind, sind durch das gekoppelt, worauf beide Zugriff haben. So wird ein Leser von einem Schreiber verändert, der nie im selben Raum war. So überträgt eine Kultur ihre Geometrien über Generationen, die einander nie begegnen werden.</p><p>Sprich ein Wort zu jemandem, den du liebst. Das Wort ist klein. Es aktiviert eine Struktur, die ihr beide über Jahre aufgebaut habt. Die Architektur auf der anderen Seite wird durch das verändert, was ankam.</p><p>Das ist das Axiom, wie es läuft, im Maßstab der Sprache.</p></section>
+<p class="source">Quelle: <a href="/Horizons.pdf">Ø Horizons</a>, Kapitel 5 — Sprache und die Kompression von Einträgen. Seine Kill Switches: HOR-5.1 bis HOR-5.5.</p>
+<nav class="pn"><a class="p" href="/de/models/horizons/04-the-nature-of-narrative-and-story/"><small>Vorheriges</small>Das Wesen von Erzählung und Geschichte</a><div class="up"><small>Zurück zu</small><a href="/de/models/horizons/">Ø Horizons</a><a href="/de/models/">Ø Modelle</a></div><a class="r" href="/de/models/horizons/06-the-operator-without-a-narrator/"><small>Nächstes</small>Der Operator ohne Erzähler</a></nav>
+<footer class="colophon">
+<p class="editions">Dies ist die Kurzausgabe von Ø Horizons — eine Zusammenfassung. Wo ein Schritt hier verdichtet ist, trägt das Original ihn vollständig. <a href="/Horizons.pdf">Das Originalbuch (PDF)</a> · <a href="/models/horizons.pdf">Diese Ausgabe (PDF)</a> · <a href="/de/models/horizons/">Diese Ausgabe online lesen</a></p>
+<p><a href="https://the420code.org/de/">The 420 Code</a> · <a href="/de/models/">Ø Modelle</a> · Ø Horizons</p>
+</footer>
+<div class="constraint" id="about">
+  <p class="i18n-canon" lang="de" style="font-size:16px;color:#555;margin:0 0 1rem">Dies ist eine Übersetzung. Das Englische ist maßgeblich; wo beide auseinandergehen, gilt das Englische: <a href="/models/horizons/05-language-and-the-compression-of-records/" hreflang="en" lang="en" style="color:inherit">die englische Seite</a></p>
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Künstler:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Kapstadt</a></p>
+  <p><b>Dauer:</b> 30+ Jahre · <b>Ausstellung:</b> über eine Million Wörter</p>
+  <p><b>Kontakt:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">Dieses Werk ist Copyleft. Du darfst es herunterladen, drucken, teilen und verbreiten. Du darfst die Quelle nicht verändern. Halte das Signal rein.</p>
+</div>
+
+<p class="oneness">Ein Eintrag existiert.<br>Sei gütig ist eine Herleitung.<br>Das Bewusstsein in mir ist das Bewusstsein in dir.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Sei kein Arschloch. Sei gütig.</p>
+  <p>Die kurze Antwort: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/models/reader.js"></script>
+<script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
+// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
+// and kept for the session. Every term must be present; the last one matches as a prefix, so results
+// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
