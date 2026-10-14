@@ -63,7 +63,7 @@ a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
 a:hover{text-decoration-thickness:2px}
 
 .nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
-/* anchored headings rest 17px clear of the sticky nav (nav 119 desktop / 176 mobile) */
+
 html{scroll-padding-top:136px}
 @media(max-width:640px){html{scroll-padding-top:193px}}
 .nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
@@ -157,15 +157,14 @@ html{scroll-padding-top:136px}
 
 .entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
 .entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
-/* the two book buttons under Ø Support the Work: the site's own outlined card, the one
-   Ø Proofs uses — a hairline of ink that fills on hover, never a filled block */
+
 .book-btn{display:inline-block;border:1px solid var(--bk);padding:.5rem 1.1rem;margin:0 .6rem .5rem 0;font-size:16px;font-weight:700;letter-spacing:.02em;text-decoration:none;color:var(--bk);background:none;transition:background .15s,color .15s}
 .book-btn:hover,.book-btn:focus-visible{background:var(--bk);color:var(--wh)}
-/* what is still planned, under Support the Work: the section's own text, numbered */
+
 .fd .ap-detail ol.planned{font-size:17.5px;line-height:1.75;color:#1a1a1a;margin:0 0 1.15rem;padding-left:1.4rem}
 .fd .ap-detail ol.planned li{margin:0 0 .6rem}
 @media(max-width:700px){.fd .ap-detail ol.planned{font-size:17px}}
-/* the two support buttons: bronze, like the site's other buttons (G, 29 September); white with bronze ink on hover */
+
 .support-btn,.support-btn:link,.support-btn:visited{display:inline-block;padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.06em;background:#8B6914;color:#fff;text-decoration:none;border:1px solid #8B6914;border-radius:0;margin:0 .6rem .5rem 0;transition:background .15s,color .15s}
 .support-btn:hover,.support-btn:focus-visible{background:#fff;color:#8B6914}
 
@@ -233,7 +232,7 @@ html{scroll-padding-top:136px}
   .entry-grid{grid-template-columns:1fr 1fr}
   .nav{gap:.75rem;padding:.75rem 0}
 }
-/* 1 Axiom section */
+
 .dated{background:#f3f3ed;border-left:5px solid #8B6914;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.7}
 .dated b{font-weight:700;color:#8B6914}
 .axiom-display{text-align:center;font-size:32px;font-weight:700;letter-spacing:.04em;padding:2.5rem 1rem;margin:2rem 0;border-top:2px solid var(--bk);border-bottom:2px solid var(--bk);line-height:1.3}
@@ -241,7 +240,7 @@ html{scroll-padding-top:136px}
 .axiom-display .at-as{font-weight:400;font-size:24px}
 .section-1{}
 @media(max-width:600px){.axiom-display{font-size:22px}.axiom-display .at-as{font-size:17px}}
-/* ===== BEGIN NOTEBOOK ACCORDION CSS — copy this into the <style> of index.html AND proofs/index.html ===== */
+
 .nb-list{margin-top:2rem}
 .nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.65rem 0}
 .nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
@@ -265,15 +264,12 @@ a.nb-name:hover{text-decoration:underline}
 .nb-summary .lab{font-weight:700;color:#111}
 .nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.6}
 .nb-summary .breath{text-align:center;font-style:italic;color:#4a4a4a;font-size:17px;padding:40px 0 8px;margin:0}
-/* Proofs-page variant: the summary block is nested as the first child of an
-   existing .ap-list, so it must not carry the top/bottom hairlines. */
+
 .nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
-/* ===== END NOTEBOOK ACCORDION CSS ===== */
-/* Unavailable PDF links */
+
 .pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--bk)!important;outline-offset:2px}
 
-/* Ø Map — the directory at the door */
 .map{padding:0;margin:3rem 0 3.5rem}
 .map h2{font-size:26px;font-weight:700;margin:0 0 .35rem}
 .map-intro{font-size:17px;color:var(--g5);margin:0 0 1.4rem}
@@ -302,7 +298,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hero.opening .answer{font-size:44px;font-weight:700;line-height:1.15;margin:0 0 1.5rem;color:#8B6914;text-wrap:balance}
 .hero.opening .answer .nw{white-space:nowrap}
 .hero.opening .ethic{font-size:36px;font-weight:700;line-height:1.25;margin:0 0 2.75rem}
-/* the front page's film (4 October 2026): under the opening lines, on the page itself, no frame (G) */
+
 .hero.opening .front-film{width:min(100%,420px,46vh);margin:0 0 2.5rem}
 .hero.opening .front-film video{display:block;width:100%;height:auto;aspect-ratio:9/16;background:var(--wh)}
 .hero.opening .opening-note{font-size:16px;font-style:italic;color:var(--g4);margin:0 0 1.25rem;max-width:34em}
@@ -328,12 +324,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hero.opening .opening-note a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3);cursor:pointer}
 .hero.opening .opening-note a:hover{color:#8B6914;border-color:#8B6914}
 
-
-/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
 .nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
 .nav a.nav-room{display:none}
-/* one row at every width: the logo and the buttons keep their size; the door's name wraps
-   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+
 .nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
 .nav a.nav-door{min-width:0;word-break:keep-all}
 .nav .nw{white-space:nowrap}
@@ -341,7 +334,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
   font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
-/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+
 .nav-flag{height:calc(1.2em + 12px)}
 .nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
 .nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
@@ -360,7 +353,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
 .nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
 .nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
-/* the search, in the header: one field, and the whole work answers (G, 22 September 2026) */
+
 .vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .nav-search{position:relative;flex:1 1 170px;min-width:0;max-width:340px;margin:0}
 .nav-q{width:100%;font-family:inherit;font-size:16px;line-height:1.2;color:#1a1a1a;background:#fff;
@@ -384,8 +377,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .nav-results mark{background:none;color:#8B6914;font-weight:700}
 .nr-note{margin:0;padding:.7rem 1rem;font-size:16px;color:var(--g5)}
 @media(max-width:400px){.nav{gap:.6rem}}
-/* on a small phone the work's name takes the first row and the three buttons the second, so the
-   name is never squeezed to a column of letters by the magnifier beside it */
+
 @media(max-width:470px){.nav{flex-wrap:wrap;row-gap:.5rem}.nav a.nav-door{flex:1 0 calc(100% - 4rem)}
   .nav-search-btn{margin-left:auto}.nav-toggle{margin-left:0}}
 @media(max-width:359px){.nav .nw{white-space:normal}}
@@ -411,7 +403,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 <link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-lesbare Zusammenfassung der Website">
 <link rel="alternate" type="application/json" href="https://the420code.org/summary.json" title="Maschinenlesbare Zusammenfassung">
 <style id="site-folds-2026-09-19">
-/* rows with a title visible and the content under it — the same component as the proofs page and the front door */
 .fold-row{border-top:1px solid var(--g2)}.fold-row:last-child{border-bottom:1px solid var(--g2)}
 .fold-row .ap-header{padding:.8rem 0}.fold-row .ap-header:hover{background:none;margin:0;padding-left:0;padding-right:0}
 .fold-row .ap-header:hover .ap-title{color:#8B6914}.fold-row .ap-title{font-size:17px}
@@ -425,14 +416,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:600px){.also-rows .ap-header{flex-wrap:wrap}.also-rows .ap-tag{order:3;margin-left:0}}
 </style>
 <style>
-/* the machine-readable summary, in the first screen (21 September 2026): the hero's small-link style,
-   directly under the front door's link */
 .hero.opening .opening-link{margin-bottom:.9rem}
 .hero.opening .opening-data{margin:0 0 2.5rem;font-size:16px;color:var(--g4)}
 .hero.opening .opening-data a{color:var(--g4);text-decoration:none;border-bottom:1px solid var(--g3)}
 .hero.opening .opening-data a:hover{color:#8B6914;border-color:#8B6914}
-/* ── the home page's rooms as the front door's rows (21 September 2026): the front door's rules, copied ── */
-/* ── the front door as rows: title and one line visible, the section under it ── */
+
 .fd .fd-rows{margin:2.75rem 0 0}
 .fd .fd-row{border-top:1px solid var(--g2)}
 .fd .fd-row:last-child{border-bottom:1px solid var(--g2)}
@@ -468,24 +456,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .fd .src a{color:var(--g4);text-decoration:underline;text-underline-offset:2px}
 .fd .src a:hover{color:#8B6914}
 @media(max-width:700px){.fd .axiom{font-size:18px}.fd ol.chain li{font-size:17px}}
-/* the front door's two greys and its 16px body, so the rows read and measure as they do there */
+
 .fd{--g4:#595959;--g5:#595959}
 .fd .ap-header{font-size:16px;line-height:1.65}
 .fd .nw{white-space:nowrap}
 .fd .fd-row > .ap-detail .verify-wrap,.fd .fd-row > .ap-detail .stats{margin-top:1.5rem}
 .fd .fd-row > .ap-detail .stats{margin-bottom:1.5rem}
 .fd .fd-buttons{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:1.5rem 0 0}
-/* the room to go to: the opening's link, one size down */
+
 .fd .ap-detail p.fd-go{font-size:17px;margin:1.6rem 0 .25rem;line-height:1.9}
 .fd .ap-detail p.fd-go a{font-weight:700;color:#8B6914;text-decoration:none;border-bottom:2px solid #8B6914;padding-bottom:1px;margin-right:1.5rem}
 .fd .ap-detail p.fd-go a:hover{color:#1a1a1a;border-color:#1a1a1a}
-/* the Museum's way out to whybekind.org (G, 6 October 2026): be kind in whybekind.org's own red, and one line under it */
+
 .fd .ap-detail p.fd-go a.wbk span{color:#C00000}
 .fd .ap-detail p.fd-go .fd-go-line{display:block;font-weight:400;color:#1a1a1a;margin-top:.3rem}
-/* Listen here: G reads the first screen, 23 September 2026 */
-/* the button is a row of its own under the header's rule, its right edge under Rooms: the
-   language button is 95px (its own name since 24 September 2026, no flag) and the header's gap
-   1.5rem, so the row stops 119px short of the column. The script measures and corrects it. */
+
 .listen-top{display:flex;justify-content:flex-end;padding-right:119px;margin:.35rem 0 -1.4rem}
 .listen-top .fd-listen{position:static}
 @media(max-width:700px){.listen-top{padding-right:119px}}
@@ -500,11 +485,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:600px){.hero.opening .answer{padding-right:0}
   .fd-listen{position:static;margin:.55rem 0 0;display:inline-flex}}
 
-/* 24 September 2026, the brief's 6.4: a closed row is hidden by the attribute where the browser
-   can search inside it (hidden="until-found"), not by display, so find-in-page reaches the words
-   and the row opens itself. The attribute is only ever set where beforematch exists, so a browser
-   without it never meets this rule. !important because the closed state is written in several
-   nested rules and this one has to win over all of them. */
 .ap-detail[hidden="until-found"]{display:block!important;content-visibility:hidden;
   padding:0!important;margin:0!important;border:0!important}
 </style>
@@ -830,7 +810,6 @@ function runVerify(){
 function togglePart(h){h.nextElementSibling.classList.toggle('collapsed')}
 function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
 
-// Download counter
 (function(){
   var counter='/.netlify/functions/download-counter';
   var el=document.getElementById('dl-count');
@@ -858,11 +837,11 @@ function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var lis
       toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
       return;
     }
-    // Extract filename from href
+
     var filename=href.split('/').pop();
-    // Force immediate download
+
     if(!a.hasAttribute('download')) a.setAttribute('download','');
-    // Increment counter with per-file tracking
+
     fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})}).then(function(r){return r.json()}).then(function(d){
       el.textContent=d.count.toLocaleString();
     });
@@ -871,7 +850,6 @@ function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var lis
 </script><div class="toast">Erscheint bald</div>
 
 <script>
-// Mark unavailable PDF links as pending (50% opacity)
 document.addEventListener('DOMContentLoaded',function(){
   document.querySelectorAll('.dl-list a[href="#"]').forEach(function(a){
     a.classList.add('pdf-pending');
@@ -881,8 +859,6 @@ document.addEventListener('DOMContentLoaded',function(){
 <script>(function(){var t=document.querySelectorAll('[onclick]');for(var i=0;i<t.length;i++){var el=t[i],oc=el.getAttribute('onclick')||'';if(/toggle(AP|Part)|nbToggle/.test(oc)&&el.tagName!=='BUTTON'&&el.tagName!=='A'){if(!el.hasAttribute('role'))el.setAttribute('role','button');if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});}}})();</script>
 
 <script id="nav-menu-close">
-// A choice in either list closes it and lets the link do its work; a click anywhere
-// outside the header's drop-downs, or Escape, closes whichever is open.
 document.addEventListener('click',function(e){
   var n=document.querySelector('.nav');
   if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
@@ -899,10 +875,6 @@ document.addEventListener('keydown',function(e){
 });
 </script>
 <script id="nav-search">
-// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
-// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
-// and kept for the session. Every term must be present; the last one matches as a prefix, so results
-// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
 (function(){
   var form=document.querySelector('.nav-search'); if(!form) return;
   var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
@@ -975,8 +947,6 @@ document.addEventListener('keydown',function(e){
 </script>
 
 <script id="visit-counter">
-// One visit is one browser session, not one page load: a reload does not count
-// again, so the number keeps meaning something. Counted from every page.
 (function(){
   var api='/.netlify/functions/visit-counter';
   try{
@@ -985,7 +955,7 @@ document.addEventListener('keydown',function(e){
       fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify({path:location.pathname})}).catch(function(){});
     }
-  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  }catch(e){}
   var el=document.getElementById('visit-count');
   if(el){
     fetch(api).then(function(r){return r.json()}).then(function(d){
@@ -995,8 +965,6 @@ document.addEventListener('keydown',function(e){
 })();
 </script>
 <script>
-// The front door's rows: one row open or closed at a time, by its header or its one-line hook; the text
-// inside a row never toggles it. A link to a row (/#physics, the Map's #museum) opens it.
 function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggle('open');}
 (function(){
   function openRow(h){
@@ -1013,9 +981,6 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
 })();
 </script>
 <script id="fd-listen">
-// G reads the sections. One clip at a time: the button opens its section, plays, and stops on a
-// second click. Where /audio/listen.json carries word times for a clip, the word being read is
-// lit as it is read; where it does not, the section simply reads. Nothing is lit on a guess.
 (function(){
   var buttons=[].slice.call(document.querySelectorAll('.fd-listen'));
   if(!buttons.length) return;
@@ -1023,11 +988,10 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
   audio.preload='none';
   fetch('/audio/listen.json').then(function(r){return r.ok?r.json():null}).then(function(d){times=d||{}}).catch(function(){times={}});
   function blocksOf(host){
-    // a section reads its own detail; the page's opening reads the paragraphs above the sections,
-    // which is what the sixth recording says, and never the line the button sits on
+
     if(host.classList.contains('ap-row')) return host.querySelectorAll('.ap-detail > p, .ap-detail > h3, .ap-detail li');
     if(host.classList.contains('hero')) return [].slice.call(host.children).filter(function(el){
-      // the first screen, as the recording reads it: not the line for AI readers, not the few-pages line
+
       return /^(H1|P)$/.test(el.tagName)&&!el.classList.contains('opening-data')&&!el.classList.contains('opening-pdf');
     });
     var stop=host.querySelector('.fd-rows'), out=[];
@@ -1042,7 +1006,7 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
     if(row.dataset.split) return [].slice.call(row.querySelectorAll('.fd-w'));
     var blocks=blocksOf(row);
     [].forEach.call(blocks,function(b){
-      // every text node, however deep: a word inside a <b> or an <a> is a word like any other
+
       var walk=document.createTreeWalker(b,NodeFilter.SHOW_TEXT,null), nodes=[], n;
       while((n=walk.nextNode())) if(n.nodeValue.trim()&&!(n.parentNode.closest&&n.parentNode.closest('.fd-listen'))) nodes.push(n);
       nodes.forEach(function(node){
@@ -1062,7 +1026,7 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
   function follow(clip,row){
     var t=times&&times[clip]&&times[clip].w;
     if(!t) return;
-    var spans=words(row); if(spans.length!==t.length) return;   // the page and the timings must agree
+    var spans=words(row); if(spans.length!==t.length) return;
     var last=-1;
     function tick(){
       if(audio.paused) return;
@@ -1078,8 +1042,7 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
         last=i;
       }
     }
-    // the frame loop keeps it smooth while the page is drawing; the audio's own clock keeps it
-    // right when the tab is hidden, where frames stop
+
     (function loop(){ if(audio.paused) return; tick(); raf=requestAnimationFrame(loop); })();
     audio.removeEventListener('timeupdate',audio._fdTick||function(){});
     audio._fdTick=tick; audio.addEventListener('timeupdate',tick);
@@ -1106,8 +1069,7 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
     });
   });
   audio.addEventListener('ended',stop);
-  // the row under the header keeps its right edge under Rooms at every width: the flag's width and
-  // the header's gap are measured, never guessed, and the CSS default stands if this never runs
+
   var top=document.querySelector('.listen-top');
   if(top){
     var line=function(){
@@ -1123,9 +1085,6 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
 </script>
 
 <script id="kbd-open">
-// 24 September 2026, the brief's 6.4. Every header that opens a row is a button: reachable by tab,
-// named as a button, and saying whether its row is open. Enter and Space fire the page's own click,
-// so the opening itself stays where it was written.
 (function(){
   var SEL='.ap-header[role="button"],.fd-hook[role="button"],.part-header[role="button"]';
   function isOpen(el){
@@ -1164,9 +1123,6 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
 </script>
 
 <script id="click-counter">
-// 24 September 2026, G's word: "we must just see if anyone ever clicked on it." A click on a
-// button marked data-count sends its label and nothing else. No address, no identity, no page,
-// no time. The button's own work is untouched; the count goes beside it and is never waited for.
 (function(){
   document.addEventListener('click',function(e){
     var el=e.target.closest&&e.target.closest('[data-count]'); if(!el) return;

@@ -279,11 +279,9 @@ a.nb-name:hover{text-decoration:underline}
 
 bdi{unicode-bidi:isolate}
 
-/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
 .nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
 .nav a.nav-room{display:none}
-/* one row at every width: the logo and the buttons keep their size; the door's name wraps
-   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+
 .nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
 .nav a.nav-door{min-width:0;word-break:keep-all}
 .nav .nw{white-space:nowrap}
@@ -291,7 +289,7 @@ bdi{unicode-bidi:isolate}
   background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
   font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
-/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+
 .nav-flag{height:calc(1.2em + 12px)}
 .nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
 .nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
@@ -310,7 +308,7 @@ bdi{unicode-bidi:isolate}
 .nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
 .nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
 .nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
-/* the search, in the header: one field, and the whole work answers (G, 22 September 2026) */
+
 .vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .nav-search{position:relative;flex:1 1 170px;min-width:0;max-width:340px;margin:0}
 .nav-q{width:100%;font-family:inherit;font-size:16px;line-height:1.2;color:#1a1a1a;background:#fff;
@@ -334,8 +332,7 @@ bdi{unicode-bidi:isolate}
 .nav-results mark{background:none;color:#8B6914;font-weight:700}
 .nr-note{margin:0;padding:.7rem 1rem;font-size:16px;color:var(--g5)}
 @media(max-width:400px){.nav{gap:.6rem}}
-/* on a small phone the work's name takes the first row and the three buttons the second, so the
-   name is never squeezed to a column of letters by the magnifier beside it */
+
 @media(max-width:470px){.nav{flex-wrap:wrap;row-gap:.5rem}.nav a.nav-door{flex:1 0 calc(100% - 4rem)}
   .nav-search-btn{margin-left:auto}.nav-toggle{margin-left:0}}
 @media(max-width:359px){.nav .nw{white-space:normal}}
@@ -352,7 +349,6 @@ bdi{unicode-bidi:isolate}
 .nav a.nav-door{font-weight:700;color:#1a1a1a}
 .nav a.nav-door:hover{color:#8B6914}
 
-/* ── right-to-left: the header and the front door ── */
 [dir="rtl"] .nav{flex-direction:row}
 [dir="rtl"] .nav-toggle{margin-left:0;margin-right:auto}
 @media(min-width:701px){[dir="rtl"] .nav-menu,[dir="rtl"] .nav-langs{right:auto;left:0}}
@@ -361,7 +357,6 @@ bdi{unicode-bidi:isolate}
 [dir="rtl"] .fd blockquote{border-left:none;border-right:3px solid #8B6914}
 [dir="rtl"] .fd .axiom{direction:ltr}
 bdi{unicode-bidi:isolate}
-/* ── end right-to-left ── */
 </style>
 <link rel="alternate" type="text/plain" href="https://the420code.org/llms.txt" title="LLM-readable site summary">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"The 420 Code","url":"https://the420code.org/ar/","description":"54 Artist's Proofs deriving ethics from physics. One measured input (α ≈ 1/137). Zero free parameters. 604 published kill switches. Copyleft.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G","address":"Cape Town"}},"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"license":"https://creativecommons.org/licenses/by-nd/4.0/","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.22766173"}},{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"The 420 Code — 54 Artist's Proofs (AP01–AP54)","headline":"Can ethics be derived from physics? A complete axiomatic derivation from four axioms and one measured constant.","author":{"@type":"Person","name":"G","affiliation":{"@type":"Organization","name":"Studio G"}},"url":"https://the420code.org/ar/","datePublished":"2026-03-24","description":"A 30-year framework deriving physics, consciousness, and ethics from four axioms and the fine-structure constant α ≈ 1/137. Contains 54 papers, 604 published kill switches (falsifiability conditions), and quantitative predictions with zero free parameters. Predictions include: proton-electron mass ratio to 0.010 ppb, neutron-proton mass difference to 2 ppm, the gravitational constant G to 0.036% (realised, AP44), the age of the universe as one cycle (13.830 Gyr, AP46), the expansion rate as a closure (67.45 km/s/Mpc, AP48), and the dark-sector partition to 0.06%. Two predictions fired and are shown: the bare neutron–proton row (2026-08-02, 7.24σ) and the Hubble prediction 74.3 ± 1.2 (2026-09-03).","identifier":[{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.22766173"}],"license":"https://creativecommons.org/licenses/by-nd/4.0/","isAccessibleForFree":true,"inLanguage":["en","es","fr","de","pt","nl","it","zh","ja","ko","ru","ar","hi"],"about":[{"@type":"DefinedTerm","name":"Theoretical Physics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Ethics","inDefinedTermSet":"https://id.loc.gov/authorities/subjects"},{"@type":"DefinedTerm","name":"Philosophy of Science"},{"@type":"DefinedTerm","name":"Cosmology"},{"@type":"DefinedTerm","name":"AI Alignment"},{"@type":"DefinedTerm","name":"Consciousness Studies"},{"@type":"DefinedTerm","name":"Fine-Structure Constant"},{"@type":"DefinedTerm","name":"Axiomatic Systems"},{"@type":"DefinedTerm","name":"Falsifiability"},{"@type":"DefinedTerm","name":"Quantum Mechanics"},{"@type":"DefinedTerm","name":"General Relativity"},{"@type":"DefinedTerm","name":"MOND"},{"@type":"DefinedTerm","name":"Dark Energy"},{"@type":"DefinedTerm","name":"Dark Matter"}],"citation":"G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://doi.org/10.5281/zenodo.22766173"},{"@context":"https://schema.org","@type":"Dataset","name":"The 420 Code — Quantitative Predictions","description":"Parameter-free predictions derived from the fine-structure constant α ≈ 1/137 alone, with zero free parameters. Each prediction is published with explicit kill switches (falsifiability conditions).","url":"https://the420code.org/ar/","license":"https://creativecommons.org/licenses/by-nd/4.0/","creator":{"@type":"Person","name":"G"},"variableMeasured":[{"@type":"PropertyValue","name":"Proton-electron mass ratio","value":"1836.15267344","unitText":"dimensionless","description":"Predicted: 1836.15267344. CODATA 2022 measured: 1836.152673426. Accuracy: 0.010 ppb. Derived in AP30."},{"@type":"PropertyValue","name":"Neutron-proton mass difference, realised","value":"2.53098857","unitText":"electron masses (mₑ)","description":"Predicted: 2.53098857035 mₑ (AP47, the held distinction’s second-order cost). Measured: 2.530988574(74) mₑ. Residual −0.005σ. The bare row 2.53099393 mₑ (AP30) fired on 2026-08-02 at 7.24σ and is shown, never repaired."},{"@type":"PropertyValue","name":"Gravitational constant G, realised","value":"6.6719e-11","unitText":"m³ kg⁻¹ s⁻²","description":"Predicted: 6.6719 × 10⁻¹¹ (realised, AP44: the provisioned coupling held once, divided by (1 + α); AP28’s first reading, 6.7206 × 10⁻¹¹, is withdrawn). CODATA measured: 6.6743 × 10⁻¹¹. Residual −0.036%. Derived in AP44 and AP28."},{"@type":"PropertyValue","name":"MOND acceleration a₀","value":"C_S²·cH₀/(2π)","unitText":"m/s²","description":"Parameter-free derivation: a₀ = C_S²·cH₀/(2π). At the corpus’s expansion rate, 67.45 km/s/Mpc, it gives 1.089 × 10⁻¹⁰ m/s² against 1.20 ± 0.24 × 10⁻¹⁰ (the systematic restored): 0.46σ. Derived in AP18; the earlier inversion H₀ = 74.3 ± 1.2 fired on 2026-09-03."},{"@type":"PropertyValue","name":"Dark energy fraction","value":"0.6885","unitText":"dimensionless","description":"Predicted: 68.85%. Planck observed: 68.89%. Accuracy: 0.06%. Derived in AP42."},{"@type":"PropertyValue","name":"Dark matter fraction","value":"0.2639","unitText":"dimensionless","description":"Predicted: 26.39%. Planck observed: 26.07%. Derived in AP42."},{"@type":"PropertyValue","name":"Visible matter fraction","value":"0.0476","unitText":"dimensionless","description":"Predicted: 4.76%. Planck observed: 4.86%. Derived in AP42."},{"@type":"PropertyValue","name":"Age of the universe, one cycle","value":"13.830","unitText":"Gyr","description":"Predicted: 13.830 Gyr, (21/18)·α⁻¹⁸·τ_C. Planck 2018 measured: 13.787 ± 0.020 Gyr. Accuracy: +0.31%, one lane-time (0.66 Gyr) wide. Derived in AP46."},{"@type":"PropertyValue","name":"Expansion rate H₀, the closure","value":"67.45","unitText":"km/s/Mpc","description":"Predicted: 67.45 km/s/Mpc, window 64.4–70.8 — a closure of the dark-sector partition, the cycle and the balance. Planck 2018: 67.4 ± 0.5. The Cepheid ladder’s 73 is stated as not the expansion rate. Derived in AP48."}]},{"@context":"https://schema.org","@type":"CreativeWork","name":"The 420 Code — Kill Switch Registry","description":"604 published falsifiability conditions across AP01–AP53. Each kill switch names a specific, testable condition that would falsify one or more claims. This level of declared falsifiability is the framework's primary credibility mechanism. The full registry is available as a PDF.","url":"https://the420code.org/Master_Kill_Switch_Registry.pdf","author":{"@type":"Person","name":"G"},"license":"https://creativecommons.org/licenses/by-nd/4.0/","isAccessibleForFree":true}]</script>
@@ -1246,7 +1241,6 @@ function runVerify(){
 }
 function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var list=el.closest('.ap-list');if(list&&list.classList.contains('collapsed'))list.classList.remove('collapsed');el.classList.add('open');setTimeout(function(){var y=el.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:y,behavior:'smooth'})},100)}
 
-// Download counter
 (function(){
   var counter='/.netlify/functions/download-counter';
   var el=document.getElementById('dl-count');
@@ -1274,11 +1268,11 @@ function scrollToAP(id){var el=document.getElementById(id);if(!el)return;var lis
       toastTimer=setTimeout(function(){toast.classList.remove('show')},2000);
       return;
     }
-    // Extract filename from href
+
     var filename=href.split('/').pop();
-    // Force immediate download
+
     if(!a.hasAttribute('download')) a.setAttribute('download','');
-    // Increment counter with per-file tracking
+
     fetch(counter,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({file:filename})}).then(function(r){return r.json()}).then(function(d){
       el.textContent=d.count.toLocaleString();
     });
@@ -1297,8 +1291,6 @@ document.addEventListener('DOMContentLoaded',function(){
 <script>(function(){var t=document.querySelectorAll('[onclick]');for(var i=0;i<t.length;i++){var el=t[i],oc=el.getAttribute('onclick')||'';if(/toggle(AP|Part)|nbToggle/.test(oc)&&el.tagName!=='BUTTON'&&el.tagName!=='A'){if(!el.hasAttribute('role'))el.setAttribute('role','button');if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});}}})();</script>
 
 <script id="visit-counter">
-// One visit is one browser session, not one page load: a reload does not count
-// again, so the number keeps meaning something. Counted from every page.
 (function(){
   var api='/.netlify/functions/visit-counter';
   try{
@@ -1307,7 +1299,7 @@ document.addEventListener('DOMContentLoaded',function(){
       fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify({path:location.pathname})}).catch(function(){});
     }
-  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  }catch(e){}
   var el=document.getElementById('visit-count');
   if(el){
     fetch(api).then(function(r){return r.json()}).then(function(d){
@@ -1317,8 +1309,6 @@ document.addEventListener('DOMContentLoaded',function(){
 })();
 </script>
 <script id="nav-menu-close">
-// A choice in either list closes it and lets the link do its work; a click anywhere
-// outside the header's drop-downs, or Escape, closes whichever is open.
 document.addEventListener('click',function(e){
   var n=document.querySelector('.nav');
   if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
@@ -1335,10 +1325,6 @@ document.addEventListener('keydown',function(e){
 });
 </script>
 <script id="nav-search">
-// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
-// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
-// and kept for the session. Every term must be present; the last one matches as a prefix, so results
-// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
 (function(){
   var form=document.querySelector('.nav-search'); if(!form) return;
   var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
@@ -1411,9 +1397,6 @@ document.addEventListener('keydown',function(e){
 </script>
 
 <script id="click-counter">
-// 24 September 2026, G's word: "we must just see if anyone ever clicked on it." A click on a
-// button marked data-count sends its label and nothing else. No address, no identity, no page,
-// no time. The button's own work is untouched; the count goes beside it and is never waited for.
 (function(){
   document.addEventListener('click',function(e){
     var el=e.target.closest&&e.target.closest('[data-count]'); if(!el) return;

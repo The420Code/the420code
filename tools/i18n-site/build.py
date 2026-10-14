@@ -199,6 +199,9 @@ def main():
         return
     n_en = english_menu(lang, pages)
     n_sm = sitemap(lang, pages)
+    # nothing published but the work's words: the comments of the pages' styles and scripts out (tools/scrub_public.py)
+    r = subprocess.call([sys.executable, os.path.join(SITE, "tools", "scrub_public.py")])
+    assert r == 0, "tools/scrub_public.py failed"
     print(lang, len(pages), "pages and llms.txt written;", n_en, "English pages point their", NATIVE[lang], "link at the twin;", n_sm, "added to the sitemap")
 
 

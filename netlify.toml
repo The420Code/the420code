@@ -60,3 +60,112 @@
   to = "/proofs/#ap20"
   status = 301
   force = true
+
+# Working files are not pages (14 October 2026). The repository is the site, so every file in it can be asked for;
+# these are the tools and notes the work is made with, linked from no page, and they are not served. The public
+# record stays served: the predictions (/prereg/), the proofs and their instruments, the freezes, the verifiers.
+[[redirects]]
+  from = "/tools/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/i18n/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/reports/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/scripts/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/.github/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/README.md"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/_do_tags.sh"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/_do_titles.sh"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/_patch_jsonld.sh"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/_wire_ap22_23.sh"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/_zenodo_draft.json"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/fix_cycle.py"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/update_all_langs.py"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/update_killswitch_counts.py"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/package.json"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/package-lock.json"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/.env.example"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/.gitignore"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/.netlifyignore"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/404"
+  status = 404
+  force = true

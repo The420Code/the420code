@@ -1,4 +1,4 @@
-/* Ø Models reader — one stylesheet for every book and chapter. Colours and face are the site's. */
+
 :root{--bg:#ffffff;--surface:#f3f3ed;--ink:#1a1a1a;--ink-2:#4a4a4a;--mute:#4a4a4a;--rule:#d5d5d0;--accent:#8B6914;--accent-ink:#6f5310;--bk:#111;--g1:#f3f3ed;--g3:#d5d5d0;--g5:#4a4a4a;--edge:#8a8a8a}
 *{box-sizing:border-box}
 html{background:var(--bg)}
@@ -12,8 +12,7 @@ a{color:var(--accent-ink)}
 .modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
 .modes a,.modes span{display:inline-block;white-space:nowrap;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:2px;text-decoration:none;color:var(--ink-2)}
 .modes .on{border-color:var(--accent);color:var(--accent-ink)}
-/* 26 September 2026, G: the page's film, one bronze button right-aligned under the strap. The same dress
-   as the two leads on /models/ (Read online, Watch online), so a lead looks the same wherever it stands. */
+
 .watch{margin:1.2rem 0 0;text-align:right;max-width:none}
 .watch a{display:inline-flex;align-items:baseline;gap:.6rem;font-size:18px;font-weight:700;letter-spacing:.03em;color:#fff;background:#8B6914;border:1px solid #8B6914;padding:6px 16px;border-radius:3px;text-decoration:none;transition:all .15s}
 .watch a:hover{color:#8B6914;background:#fff}
@@ -78,7 +77,7 @@ footer.colophon{margin-top:3rem;font-size:1rem;color:var(--mute);letter-spacing:
 footer.colophon a{color:var(--ink-2);text-decoration:none}
 footer.colophon .editions{font-size:1rem;color:var(--ink);border-top:1px solid var(--rule);padding-top:1rem;margin-bottom:.8rem}
 footer.colophon .editions a{color:var(--accent-ink);text-decoration:underline}
-/* The site's footer, as on every page of the420code.org. Measured on /models/, 22 September 2026. */
+
 .constraint{margin:2rem 0;padding:1.5rem 0;color:#1a1a1a}
 .constraint p{font-size:16px;line-height:1.65;margin:0 0 .25rem;max-width:none}
 .oneness{font-size:19px;font-weight:700;text-align:center;line-height:1.5;margin:3.5rem 0 1rem;max-width:none;color:#1a1a1a}
@@ -86,7 +85,7 @@ footer.colophon .editions a{color:var(--accent-ink);text-decoration:underline}
 .footer p{margin:0 0 .25rem;max-width:none}
 @media (max-width:700px){.oneness{font-size:18px}}
 @media (max-width:520px){details.toc ol{columns:1}.ks{padding-left:0;text-indent:0}.ks-id{display:block;width:auto}ol.chapters a{grid-template-columns:1fr}ol.chapters .num{grid-row:auto}}
-/* ── the header's base, as the home page has it ── */
+
 .nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem;line-height:1.65}
 html{scroll-padding-top:86px}
 @media(max-width:640px){html{scroll-padding-top:126px}}
@@ -95,12 +94,10 @@ html{scroll-padding-top:86px}
 @media(max-width:600px){.nav{gap:.75rem;padding:.75rem 0}}
 .nav a.nav-door{font-weight:700;color:#1a1a1a}
 .nav a.nav-door:hover{color:#8B6914}
-/* ── end of the header's base ── */
-/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+
 .nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
 .nav a.nav-room{display:none}
-/* one row at every width: the logo and the buttons keep their size; the door's name wraps
-   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+
 .nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
 .nav a.nav-door{min-width:0;word-break:keep-all}
 .nav .nw{white-space:nowrap}
@@ -108,7 +105,7 @@ html{scroll-padding-top:86px}
   background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
   font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
-/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+
 .nav-flag{height:calc(1.2em + 12px)}
 .nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
 .nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
@@ -127,7 +124,7 @@ html{scroll-padding-top:86px}
 .nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
 .nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
 .nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
-/* the search, in the header: one field, and the whole work answers (G, 22 September 2026) */
+
 .vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .nav-search{position:relative;flex:1 1 170px;min-width:0;max-width:340px;margin:0}
 .nav-q{width:100%;font-family:inherit;font-size:16px;line-height:1.2;color:#1a1a1a;background:#fff;
@@ -151,8 +148,7 @@ html{scroll-padding-top:86px}
 .nav-results mark{background:none;color:#8B6914;font-weight:700}
 .nr-note{margin:0;padding:.7rem 1rem;font-size:16px;color:var(--g5)}
 @media(max-width:400px){.nav{gap:.6rem}}
-/* on a small phone the work's name takes the first row and the three buttons the second, so the
-   name is never squeezed to a column of letters by the magnifier beside it */
+
 @media(max-width:470px){.nav{flex-wrap:wrap;row-gap:.5rem}.nav a.nav-door{flex:1 0 calc(100% - 4rem)}
   .nav-search-btn{margin-left:auto}.nav-toggle{margin-left:0}}
 @media(max-width:359px){.nav .nw{white-space:normal}}

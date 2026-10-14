@@ -114,8 +114,6 @@
 </div>
 <script src="../../reader.js"></script>
 <script id="nav-menu-close">
-// A choice in either list closes it and lets the link do its work; a click anywhere
-// outside the header's drop-downs, or Escape, closes whichever is open.
 document.addEventListener('click',function(e){
   var n=document.querySelector('.nav');
   if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
@@ -132,10 +130,6 @@ document.addEventListener('keydown',function(e){
 });
 </script>
 <script id="nav-search">
-// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
-// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
-// and kept for the session. Every term must be present; the last one matches as a prefix, so results
-// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
 (function(){
   var form=document.querySelector('.nav-search'); if(!form) return;
   var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');

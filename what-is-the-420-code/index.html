@@ -23,7 +23,7 @@ a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
 a:hover{text-decoration-thickness:2px}
 
 .nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem}
-/* anchored headings rest ~17px clear of the sticky nav (nav 69 desktop / 109 mobile) */
+
 html{scroll-padding-top:86px}
 @media(max-width:640px){html{scroll-padding-top:126px}}
 .nav-title{font-size:16px;font-weight:400;letter-spacing:.08em;text-transform:lowercase;margin-right:auto;text-decoration:none}
@@ -118,15 +118,14 @@ html{scroll-padding-top:86px}
 
 .entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin:0 0 2rem}
 .entry-card{border:1px solid var(--bk);padding:.55rem 1rem;cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:block;position:relative}
-/* the two book buttons under Ø Support the Work: the site's own outlined card, the one
-   Ø Proofs uses — a hairline of ink that fills on hover, never a filled block */
+
 .book-btn{display:inline-block;border:1px solid var(--bk);padding:.5rem 1.1rem;margin:0 .6rem .5rem 0;font-size:16px;font-weight:700;letter-spacing:.02em;text-decoration:none;color:var(--bk);background:none;transition:background .15s,color .15s}
 .book-btn:hover,.book-btn:focus-visible{background:var(--bk);color:var(--wh)}
-/* what is still planned, under Support the Work: the section's own text, numbered */
+
 .fd .ap-detail ol.planned{font-size:17.5px;line-height:1.75;color:#1a1a1a;margin:0 0 1.15rem;padding-left:1.4rem}
 .fd .ap-detail ol.planned li{margin:0 0 .6rem}
 @media(max-width:700px){.fd .ap-detail ol.planned{font-size:17px}}
-/* the two support buttons: bronze, like the site's other buttons (G, 29 September); white with bronze ink on hover */
+
 .support-btn,.support-btn:link,.support-btn:visited{display:inline-block;padding:10px 24px;font-family:var(--f);font-size:16px;font-weight:700;letter-spacing:.06em;background:#8B6914;color:#fff;text-decoration:none;border:1px solid #8B6914;border-radius:0;margin:0 .6rem .5rem 0;transition:background .15s,color .15s}
 .support-btn:hover,.support-btn:focus-visible{background:#fff;color:#8B6914}
 
@@ -191,20 +190,20 @@ html{scroll-padding-top:86px}
   .entry-grid{grid-template-columns:1fr 1fr}
   .nav{gap:.75rem;padding:.75rem 0}
 }
-/* 1 Axiom section */
+
 .axiom-display{text-align:center;font-size:32px;font-weight:700;letter-spacing:.04em;padding:2.5rem 1rem;margin:2rem 0;border-top:2px solid var(--bk);border-bottom:2px solid var(--bk);line-height:1.3}
 .axiom-display .epsilon{font-style:italic}
 .axiom-display .at-as{font-weight:400;font-size:24px}
 .section-1{}
 @media(max-width:600px){.axiom-display{font-size:22px}.axiom-display .at-as{font-size:17px}}
-/* Unavailable PDF links */
+
 .pdf-pending,.pdf-pending *{opacity:.5!important;cursor:default;pointer-events:none}
 </style>
 <style>
 .lang-sel a{text-decoration:none;opacity:.5;transition:opacity .15s;line-height:1}
 .lang-sel a:hover{opacity:1}
 .lang-sel a.active{opacity:1}
-/* ===== BEGIN NOTEBOOK ACCORDION CSS — copy this into the <style> of index.html AND proofs/index.html ===== */
+
 .nb-list{margin-top:2rem}
 .nb-list .nb-item{border-top:1px solid #e8e8e8;padding:1.65rem 0}
 .nb-list .nb-item:last-of-type{border-bottom:1px solid #e8e8e8}
@@ -228,10 +227,9 @@ a.nb-name:hover{text-decoration:underline}
 .nb-summary .lab{font-weight:700;color:#111}
 .nb-summary .ks{background:#f3f3ed;border-left:3px solid #8B6914;border-radius:0;padding:16px 20px;margin:1.5rem 0;font-size:16px;color:#3a3a3a;line-height:1.6}
 .nb-summary .breath{text-align:center;font-style:italic;color:#595959;font-size:17px;padding:40px 0 8px;margin:0}
-/* Proofs-page variant: the summary block is nested as the first child of an
-   existing .ap-list, so it must not carry the top/bottom hairlines. */
+
 .nb-item--proofs{border:none!important;padding:0!important;margin:0 0 1.25rem}
-/* ===== END NOTEBOOK ACCORDION CSS ===== */
+
 .ap-header .ap-pdf{font-size:16px;font-weight:700;color:var(--g4);margin-left:6px;text-decoration:none;letter-spacing:.03em}.ap-header .ap-pdf:hover{color:var(--bk);text-decoration:underline}</style>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the420code.org/what-is-the-420-code/">
@@ -323,14 +321,9 @@ a.nb-name:hover{text-decoration:underline}
 .nav a.nav-door{font-weight:700;color:#1a1a1a}
 .nav a.nav-door:hover{color:#8B6914}
 
-
-
-
-/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
 .nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
 .nav a.nav-room{display:none}
-/* one row at every width: the logo and the buttons keep their size; the door's name wraps
-   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+
 .nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
 .nav a.nav-door{min-width:0;word-break:keep-all}
 .nav .nw{white-space:nowrap}
@@ -338,7 +331,7 @@ a.nb-name:hover{text-decoration:underline}
   background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
   font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
-/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+
 .nav-flag{height:calc(1.2em + 12px)}
 .nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
 .nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
@@ -357,7 +350,7 @@ a.nb-name:hover{text-decoration:underline}
 .nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
 .nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
 .nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
-/* the search, in the header: one field, and the whole work answers (G, 22 September 2026) */
+
 .vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .nav-search{position:relative;flex:1 1 170px;min-width:0;max-width:340px;margin:0}
 .nav-q{width:100%;font-family:inherit;font-size:16px;line-height:1.2;color:#1a1a1a;background:#fff;
@@ -381,8 +374,7 @@ a.nb-name:hover{text-decoration:underline}
 .nav-results mark{background:none;color:#8B6914;font-weight:700}
 .nr-note{margin:0;padding:.7rem 1rem;font-size:16px;color:var(--g5)}
 @media(max-width:400px){.nav{gap:.6rem}}
-/* on a small phone the work's name takes the first row and the three buttons the second, so the
-   name is never squeezed to a column of letters by the magnifier beside it */
+
 @media(max-width:470px){.nav{flex-wrap:wrap;row-gap:.5rem}.nav a.nav-door{flex:1 0 calc(100% - 4rem)}
   .nav-search-btn{margin-left:auto}.nav-toggle{margin-left:0}}
 @media(max-width:359px){.nav .nw{white-space:normal}}
@@ -415,7 +407,6 @@ table.nums td a{white-space:nowrap}
 </style>
 
 <style>
-/* ── the front door as rows: title and one line visible, the section under it ── */
 .fd .fd-rows{margin:2.75rem 0 0}
 .fd .fd-row{border-top:1px solid var(--g2)}
 .fd .fd-row:last-child{border-bottom:1px solid var(--g2)}
@@ -444,7 +435,7 @@ table.nums td a{white-space:nowrap}
 .fd .ap-arrow{font-size:16px;color:var(--g4);transition:transform .2s;flex-shrink:0}
 .fd .ap-row.open > .ap-header .ap-arrow{transform:rotate(90deg)}
 @media(max-width:700px){.fd h2.ap-title{font-size:21px}.fd .ap-detail p{font-size:17px}.fd .fd-sub .ap-header{flex-wrap:wrap}.fd .fd-sub .ap-tag{order:3;margin-left:0}}
-/* Listen here: G reads the section, 23 September 2026 */
+
 .fd .fd-hook,.fd .fd-pre{position:relative;padding-right:9.5rem}
 .fd-listen{position:absolute;right:0;top:0;display:inline-flex;align-items:center;gap:.45rem;
   background:none;border:1px solid var(--g3);border-radius:3px;padding:3px 10px;cursor:pointer;
@@ -456,11 +447,6 @@ table.nums td a{white-space:nowrap}
 @media(max-width:600px){.fd .fd-hook,.fd .fd-pre{padding-right:0}
   .fd-listen{position:static;margin:.55rem 0 0;display:inline-flex}}
 
-/* 24 September 2026, the brief's 6.4: a closed row is hidden by the attribute where the browser
-   can search inside it (hidden="until-found"), not by display, so find-in-page reaches the words
-   and the row opens itself. The attribute is only ever set where beforematch exists, so a browser
-   without it never meets this rule. !important because the closed state is written in several
-   nested rules and this one has to win over all of them. */
 .ap-detail[hidden="until-found"]{display:block!important;content-visibility:hidden;
   padding:0!important;margin:0!important;border:0!important}
 </style>
@@ -726,8 +712,6 @@ table.nums td a{white-space:nowrap}
 <p class="fd-take"><a href="/The_420_Code_in_a_few_pages.pdf">Everything in a few pages</a> · <a href="/summary.json">Machine-readable summary</a> · <a href="/llms.txt">llms.txt</a></p>
 </div>
 <script id="front-door-rows">
-// One row open or closed at a time, by its header or its one-line hook; the text inside a row
-// never toggles it. A link to a row (#the-numbers) or to a derived item (#d-the-proton-s-mass) opens it.
 function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggle('open');}
 (function(){
   function openHash(){
@@ -763,8 +747,6 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
 </div>
 
 <script id="nav-menu-close">
-// A choice in either list closes it and lets the link do its work; a click anywhere
-// outside the header's drop-downs, or Escape, closes whichever is open.
 document.addEventListener('click',function(e){
   var n=document.querySelector('.nav');
   if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
@@ -781,10 +763,6 @@ document.addEventListener('keydown',function(e){
 });
 </script>
 <script id="nav-search">
-// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
-// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
-// and kept for the session. Every term must be present; the last one matches as a prefix, so results
-// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
 (function(){
   var form=document.querySelector('.nav-search'); if(!form) return;
   var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
@@ -857,10 +835,6 @@ document.addEventListener('keydown',function(e){
 </script>
 
 <script id="download-counter">
-// The three PDFs this page points at count like every other download on the site:
-// same endpoint, same payload, same forced download, so a paper clicked here and the
-// same paper clicked on the home page are one number. This page has no counter to
-// display, so nothing is read back - it only reports.
 (function(){
   var counter='/.netlify/functions/download-counter';
   document.addEventListener('click',function(e){
@@ -876,8 +850,6 @@ document.addEventListener('keydown',function(e){
 </script>
 
 <script id="visit-counter">
-// One visit is one browser session, not one page load: a reload does not count
-// again, so the number keeps meaning something. Counted from every page.
 (function(){
   var api='/.netlify/functions/visit-counter';
   try{
@@ -886,7 +858,7 @@ document.addEventListener('keydown',function(e){
       fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify({path:location.pathname})}).catch(function(){});
     }
-  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  }catch(e){}
   var el=document.getElementById('visit-count');
   if(el){
     fetch(api).then(function(r){return r.json()}).then(function(d){
@@ -896,9 +868,6 @@ document.addEventListener('keydown',function(e){
 })();
 </script>
 <script id="fd-listen">
-// G reads the sections. One clip at a time: the button opens its section, plays, and stops on a
-// second click. Where /audio/listen.json carries word times for a clip, the word being read is
-// lit as it is read; where it does not, the section simply reads. Nothing is lit on a guess.
 (function(){
   var buttons=[].slice.call(document.querySelectorAll('.fd-listen'));
   if(!buttons.length) return;
@@ -906,11 +875,10 @@ document.addEventListener('keydown',function(e){
   audio.preload='none';
   fetch('/audio/listen.json').then(function(r){return r.ok?r.json():null}).then(function(d){times=d||{}}).catch(function(){times={}});
   function blocksOf(host){
-    // a section reads its own detail; the page's opening reads the paragraphs above the sections,
-    // which is what the sixth recording says, and never the line the button sits on
+
     if(host.classList.contains('ap-row')) return host.querySelectorAll('.ap-detail > p, .ap-detail > h3, .ap-detail li');
     if(host.classList.contains('hero')) return [].slice.call(host.children).filter(function(el){
-      // the first screen, as the recording reads it: not the line for AI readers, not the few-pages line
+
       return /^(H1|P)$/.test(el.tagName)&&!el.classList.contains('opening-data')&&!el.classList.contains('opening-pdf');
     });
     var stop=host.querySelector('.fd-rows'), out=[];
@@ -925,7 +893,7 @@ document.addEventListener('keydown',function(e){
     if(row.dataset.split) return [].slice.call(row.querySelectorAll('.fd-w'));
     var blocks=blocksOf(row);
     [].forEach.call(blocks,function(b){
-      // every text node, however deep: a word inside a <b> or an <a> is a word like any other
+
       var walk=document.createTreeWalker(b,NodeFilter.SHOW_TEXT,null), nodes=[], n;
       while((n=walk.nextNode())) if(n.nodeValue.trim()&&!(n.parentNode.closest&&n.parentNode.closest('.fd-listen'))) nodes.push(n);
       nodes.forEach(function(node){
@@ -945,7 +913,7 @@ document.addEventListener('keydown',function(e){
   function follow(clip,row){
     var t=times&&times[clip]&&times[clip].w;
     if(!t) return;
-    var spans=words(row); if(spans.length!==t.length) return;   // the page and the timings must agree
+    var spans=words(row); if(spans.length!==t.length) return;
     var last=-1;
     function tick(){
       if(audio.paused) return;
@@ -961,8 +929,7 @@ document.addEventListener('keydown',function(e){
         last=i;
       }
     }
-    // the frame loop keeps it smooth while the page is drawing; the audio's own clock keeps it
-    // right when the tab is hidden, where frames stop
+
     (function loop(){ if(audio.paused) return; tick(); raf=requestAnimationFrame(loop); })();
     audio.removeEventListener('timeupdate',audio._fdTick||function(){});
     audio._fdTick=tick; audio.addEventListener('timeupdate',tick);
@@ -993,9 +960,6 @@ document.addEventListener('keydown',function(e){
 </script>
 
 <script id="kbd-open">
-// 24 September 2026, the brief's 6.4. Every header that opens a row is a button: reachable by tab,
-// named as a button, and saying whether its row is open. Enter and Space fire the page's own click,
-// so the opening itself stays where it was written.
 (function(){
   var SEL='.ap-header[role="button"],.fd-hook[role="button"],.part-header[role="button"]';
   function isOpen(el){
@@ -1033,9 +997,6 @@ document.addEventListener('keydown',function(e){
 })();
 </script>
 <script id="click-counter">
-// 24 September 2026, G's word: "we must just see if anyone ever clicked on it." A click on a
-// button marked data-count sends its label and nothing else. No address, no identity, no page,
-// no time. The button's own work is untouched; the count goes beside it and is never waited for.
 (function(){
   document.addEventListener('click',function(e){
     var el=e.target.closest&&e.target.closest('[data-count]'); if(!el) return;

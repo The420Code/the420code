@@ -40,7 +40,6 @@ body{font-family:var(--f);font-size:18px;line-height:1.65;color:#1a1a1a;backgrou
 a{color:var(--bk);text-decoration:underline;text-underline-offset:2px}
 a:hover{text-decoration-thickness:2px}
 
-/* ── the header's base, as the home page has it ── */
 .nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem;line-height:1.65}
 html{scroll-padding-top:86px}
 @media(max-width:640px){html{scroll-padding-top:126px}}
@@ -49,7 +48,6 @@ html{scroll-padding-top:86px}
 @media(max-width:600px){.nav{gap:.75rem;padding:.75rem 0}}
 .nav a.nav-door{font-weight:700;color:#1a1a1a}
 .nav a.nav-door:hover{color:#8B6914}
-/* ── end of the header's base ── */
 
 .section-label{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--g4);margin:0 0 .75rem;padding:4rem 0 0}
 .hero{margin:1rem 0 2rem}
@@ -68,14 +66,12 @@ hr{border:none;border-top:1px solid var(--g2);margin:2.5rem 0}
 code,pre{font-family:'Courier New',Courier,monospace}
 .mono-block{font-size:16px;background:var(--g1);border:1px solid var(--g2);padding:1rem 1.25rem;overflow-x:auto;white-space:pre;font-size:16px;line-height:1.55;margin:0 0 1.25rem;tab-size:2}
 
-/* tables — reuse the site's verify-table look */
 .tbl-wrap{overflow-x:auto;margin:0 0 1.5rem}
 table.data{width:100%;border-collapse:collapse;font-size:16px}
 table.data th{text-align:left;font-weight:700;padding:.5rem .6rem;border-bottom:2px solid var(--bk);font-size:16px;letter-spacing:.03em;color:var(--g5);white-space:nowrap;vertical-align:bottom}
 table.data td{padding:.5rem .6rem;border-bottom:1px solid var(--g1);vertical-align:top}
 table.data tr:last-child td{border-bottom:none}
 
-/* scoreboard */
 .scoreboard th, .scoreboard td{white-space:nowrap}
 .scoreboard td.wrap{white-space:normal;min-width:180px}
 .badge{display:inline-block;font-size:16px;font-weight:700;letter-spacing:.04em;padding:2px 9px;border-radius:2px;white-space:nowrap}
@@ -86,7 +82,6 @@ table.data tr:last-child td{border-bottom:none}
 .sig-fire,table.verify-table td.sig-fire{color:var(--fire);font-weight:700}
 .span-table td:first-child{white-space:normal;min-width:140px}
 
-/* confirm-the-math code block */
 .verify-wrap{position:relative;margin:1.5rem 0}
 .verify-code{font-size:16px;background:var(--g1);border:1px solid var(--g2);padding:1.25rem;overflow-x:auto;overflow-y:auto;max-height:340px;font-size:16px;line-height:1.55;font-family:'Courier New',Courier,monospace;white-space:pre;tab-size:4;color:var(--bk)}
 .copy-btn{position:absolute;top:8px;right:8px;padding:8px 16px;font-family:var(--f);font-size:16px;font-weight:700;line-height:1.2;letter-spacing:.03em;background:var(--gold);color:#fff;border:1px solid var(--gold);border-radius:0;cursor:pointer}
@@ -115,7 +110,6 @@ table.data tr:last-child td{border-bottom:none}
 .verify-table td:last-child{color:var(--g5)}
 .sig-in,table.verify-table td.sig-in{color:var(--live);font-weight:700}
 
-/* the four commentary blocks, told apart */
 .sigma-note{font-size:16px;line-height:1.7;color:var(--g6);background:var(--g1);border-left:5px solid var(--g3);padding:1.1rem 1.25rem;margin:1.25rem 0 0}
 .sigma-note p{margin:0 0 .7rem}.sigma-note p:last-child{margin:0}
 .sigma-note ul{margin:0 0 .7rem 1.35rem}.sigma-note li{margin:0 0 .45rem}
@@ -130,11 +124,10 @@ table.data tr:last-child td{border-bottom:none}
 
 .constraint{margin:2rem 0;padding:1.5rem 0}
 .constraint p{font-size:16px;margin:0 0 .25rem}
-/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+
 .nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
 .nav a.nav-room{display:none}
-/* one row at every width: the logo and the buttons keep their size; the door's name wraps
-   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+
 .nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
 .nav a.nav-door{min-width:0;word-break:keep-all}
 .nav .nw{white-space:nowrap}
@@ -142,7 +135,7 @@ table.data tr:last-child td{border-bottom:none}
   background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
   font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
 .nav-toggle{margin-left:auto}
-/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+
 .nav-flag{height:calc(1.2em + 12px)}
 .nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
 .nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
@@ -161,7 +154,7 @@ table.data tr:last-child td{border-bottom:none}
 .nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
 .nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
 .nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
-/* the search, in the header: one field, and the whole work answers (G, 22 September 2026) */
+
 .vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .nav-search{position:relative;flex:1 1 170px;min-width:0;max-width:340px;margin:0}
 .nav-q{width:100%;font-family:inherit;font-size:16px;line-height:1.2;color:#1a1a1a;background:#fff;
@@ -185,8 +178,7 @@ table.data tr:last-child td{border-bottom:none}
 .nav-results mark{background:none;color:#8B6914;font-weight:700}
 .nr-note{margin:0;padding:.7rem 1rem;font-size:16px;color:var(--g5)}
 @media(max-width:400px){.nav{gap:.6rem}}
-/* on a small phone the work's name takes the first row and the three buttons the second, so the
-   name is never squeezed to a column of letters by the magnifier beside it */
+
 @media(max-width:470px){.nav{flex-wrap:wrap;row-gap:.5rem}.nav a.nav-door{flex:1 0 calc(100% - 4rem)}
   .nav-search-btn{margin-left:auto}.nav-toggle{margin-left:0}}
 @media(max-width:359px){.nav .nw{white-space:normal}}
@@ -200,7 +192,7 @@ table.data tr:last-child td{border-bottom:none}
   .nav a.nav-door{line-height:1.25}
   .nav a.nav-door{font-size:16px}
 }
-/* Ø Map — the directory at the door */
+
 .map{padding:0;margin:3rem 0 3.5rem}
 .map h2{font-size:26px;font-weight:700;margin:0 0 .35rem}
 .map-intro{font-size:17px;color:var(--g5);margin:0 0 1.4rem}
@@ -214,13 +206,12 @@ table.data tr:last-child td{border-bottom:none}
 .d-tag::before{content:"— ";color:var(--g3)}
 .map-note{font-size:16px;color:var(--g5);font-style:italic;margin:1.4rem 0 0}
 @media(max-width:640px){.map-grid{grid-template-columns:1fr;gap:0}.map-door:nth-child(2){padding-top:.62rem}.d-name{font-size:17px}.d-tag{font-size:16px}}
-/* its entries are sentences, so one column, as the Map itself is on a phone */
+
 .map-grid{grid-template-columns:1fr}.map-door:nth-child(2){padding-top:.62rem}
-/* the gap under the contents is the page's 48px, like every other; on a phone its heading
-   is the size of the section headings under it */
+
 .map{margin-bottom:3rem}
 @media(max-width:600px){.map h2{font-size:22px}}
-/* /method/ — its own few rules; every size here is at or above the 16px floor */
+
 .lead-p{font-size:18px;line-height:1.6;margin:0 0 1rem}
 ol.chain{margin:0 0 1rem 1.4rem}
 ol.chain li{margin:0 0 .7rem;padding-left:.2rem}
@@ -377,8 +368,6 @@ p.land{font-size:20px;margin:1.5rem 0}
 </div>
 
 <script id="visit-counter">
-// One visit is one browser session, not one page load: a reload does not count
-// again, so the number keeps meaning something. Counted from every page.
 (function(){
   var api='/.netlify/functions/visit-counter';
   try{
@@ -387,7 +376,7 @@ p.land{font-size:20px;margin:1.5rem 0}
       fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify({path:location.pathname})}).catch(function(){});
     }
-  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  }catch(e){}
   var el=document.getElementById('visit-count');
   if(el){
     fetch(api).then(function(r){return r.json()}).then(function(d){
@@ -397,8 +386,6 @@ p.land{font-size:20px;margin:1.5rem 0}
 })();
 </script>
 <script id="nav-menu-close">
-// A choice in either list closes it and lets the link do its work; a click anywhere
-// outside the header's drop-downs, or Escape, closes whichever is open.
 document.addEventListener('click',function(e){
   var n=document.querySelector('.nav');
   if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
@@ -415,10 +402,6 @@ document.addEventListener('keydown',function(e){
 });
 </script>
 <script id="nav-search">
-// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
-// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
-// and kept for the session. Every term must be present; the last one matches as a prefix, so results
-// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
 (function(){
   var form=document.querySelector('.nav-search'); if(!form) return;
   var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
@@ -490,8 +473,6 @@ document.addEventListener('keydown',function(e){
 })();
 </script>
 <script id="download-counter">
-// Every PDF on this page is counted when it is clicked, by its file name, as on every other page.
-// This page shows no running total, so the script only posts; the pages that show one keep their own.
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('a[href$=".pdf"]');
   if(!a)return;
