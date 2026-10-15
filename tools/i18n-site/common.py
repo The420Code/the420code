@@ -46,7 +46,7 @@ def page_order(paths):
 def en_pages():
     """Every English page, as a path from the site's root (index.html, killswitches/index.html, ...). The sitemap is
     not the list: it leaves out eleven of the frozen predictions' documents under prereg/doc/, which /prereg/ links."""
-    out = ["index.html"] + [f for f in os.listdir(SITE) if f.endswith(".html") and f != "index.html"]
+    out = ["index.html"] + [f for f in os.listdir(SITE) if f.endswith(".html") and f != "index.html" and not f.startswith("yandex_")]
     for top in ORDER[1:]:
         if os.path.isdir(os.path.join(SITE, top)):
             out += [x.replace(os.sep, "/") for x in glob.glob(top + "/**/*.html", root_dir=SITE, recursive=True)]
