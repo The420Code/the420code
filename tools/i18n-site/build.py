@@ -74,7 +74,8 @@ def link_rewriter(lang, path, pages):
 
 def rewrite_links(html, fix):
     """href/src/poster in the page's tags; the bodies of scripts and styles are left as they are."""
-    parts = re.split(r"(<script\b.*?</script>|<style\b.*?</style>)", html, flags=re.S)
+    # (a page's own hreflang alternates are addresses of record: the English page stays the English page, never its twin)
+    parts = re.split(r"(<script\b.*?</script>|<style\b.*?</style>|<link\b[^>]*\bhreflang=[^>]*>)", html, flags=re.S)
     for i in range(0, len(parts), 2):
         parts[i] = re.sub(r'(\s(?:href|src|poster)=")([^"]*)(")', lambda m: m.group(1) + fix(m.group(2)) + m.group(3), parts[i])
     # the script tags' own src
@@ -199,6 +200,10 @@ def main():
         return
     n_en = english_menu(lang, pages)
     n_sm = sitemap(lang, pages)
+    # the sitemap's addresses are each page's canonical, and every English page and its twin carry the same en/<lang>/
+    # x-default alternates (sitemap_hreflang.py), so the pair is reciprocal without editing an English page
+    r = subprocess.call([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "sitemap_hreflang.py"), lang])
+    assert r == 0, "sitemap_hreflang.py failed"
     # nothing published but the work's words: the comments of the pages' styles and scripts out (tools/scrub_public.py)
     r = subprocess.call([sys.executable, os.path.join(SITE, "tools", "scrub_public.py")])
     assert r == 0, "tools/scrub_public.py failed"
