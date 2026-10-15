@@ -69,7 +69,7 @@ code, and twelve language editions.
 
 ## License
 
-This work is **Copyleft** (CC BY-ND 4.0). You are free to download, print, share,
+This work is **free to share, never to alter** ([CC BY-ND 4.0](LICENSE)). You are free to download, print, share,
 and distribute. You are not free to alter the source. Keep the signal clean.
 
 ---
