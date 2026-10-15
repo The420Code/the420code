@@ -227,6 +227,7 @@ def shell(title, body, book, depth, description='', path='/', book_first=False):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 <link rel="stylesheet" href="{rel}reader.css">
+<link rel="stylesheet" href="/assets/lang-flags.css">
 <link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">

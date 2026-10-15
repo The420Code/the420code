@@ -1,0 +1,24 @@
+.nav.lang-open .nav-langs a.nav-lang[hreflang]{display:flex;align-items:center;justify-content:space-between;gap:1.2rem}
+[dir=rtl] .nav-langs a.nav-lang[hreflang]{flex-direction:row-reverse}
+.nav-langs a.nav-lang[hreflang]::after{content:"";flex:0 0 auto;width:20px;height:15px;border-radius:2px;background:center/cover no-repeat;box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+.nav-langs a.nav-lang[hreflang=en]::after{background-image:url(/assets/flags/gb.svg)}
+.nav-langs a.nav-lang[hreflang=es]::after{background-image:url(/assets/flags/es.svg)}
+.nav-langs a.nav-lang[hreflang=fr]::after{background-image:url(/assets/flags/fr.svg)}
+.nav-langs a.nav-lang[hreflang=de]::after{background-image:url(/assets/flags/de.svg)}
+.nav-langs a.nav-lang[hreflang=pt]::after{background-image:url(/assets/flags/br.svg)}
+.nav-langs a.nav-lang[hreflang=nl]::after{background-image:url(/assets/flags/nl.svg)}
+.nav-langs a.nav-lang[hreflang=it]::after{background-image:url(/assets/flags/it.svg)}
+.nav-langs a.nav-lang[hreflang=zh]::after{background-image:url(/assets/flags/cn.svg)}
+.nav-langs a.nav-lang[hreflang=ja]::after{background-image:url(/assets/flags/jp.svg)}
+.nav-langs a.nav-lang[hreflang=ko]::after{background-image:url(/assets/flags/kr.svg)}
+.nav-langs a.nav-lang[hreflang=ru]::after{background-image:url(/assets/flags/ru.svg)}
+.nav-langs a.nav-lang[hreflang=ar]::after{background-image:url(/assets/flags/eg.svg)}
+.nav-langs a.nav-lang[hreflang=hi]::after{background-image:url(/assets/flags/in.svg)}
+.nav-langs a.nav-lang[hreflang=id]::after{background-image:url(/assets/flags/id.svg)}
+.nav-langs a.nav-lang[hreflang=bn]::after{background-image:url(/assets/flags/bd.svg)}
+.nav-langs a.nav-lang[hreflang=sw]::after{background-image:url(/assets/flags/tz.svg)}
+.nav-langs a.nav-lang[hreflang=ur]::after{background-image:url(/assets/flags/pk.svg)}
+.nav-langs a.nav-lang[hreflang=th]::after{background-image:url(/assets/flags/th.svg)}
+.nav-langs a.nav-lang[hreflang=vi]::after{background-image:url(/assets/flags/vn.svg)}
+.nav-langs a.nav-lang[hreflang=tr]::after{background-image:url(/assets/flags/tr.svg)}
+.nav-langs a.nav-lang[hreflang=af]::after{background-image:url(/assets/flags/za.svg)}
