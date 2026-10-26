@@ -1,4 +1,5 @@
 import { getStore } from "@netlify/blobs";
+import { recordWhere, whereTally, whereHTML } from "../where.mjs";
 
 // A visit is one browser session, not one page load. The page guards on
 // sessionStorage before it posts, so a reload does not count again and the
@@ -138,6 +139,14 @@ export default async (req, context) => {
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers });
 
   if (req.method === "GET") {
+    const want = url.searchParams.get("where");
+    if (want !== null) {   // where the readers are: a private page, behind its own key; see ../where.mjs
+      const key = (globalThis.Netlify && Netlify.env.get("WHERE_KEY")) || process.env.WHERE_KEY || "";
+      if (!key || want !== key) return new Response("Not found", { status: 404 });
+      const a = await whereTally();
+      if (url.searchParams.get("format") === "json") return new Response(JSON.stringify(a), { headers });
+      return new Response(whereHTML("the420code.org", a), { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
+    }
     const stats = url.searchParams.get("stats") === "1";
     const t = await tally(store, stats);
     const body = stats
@@ -147,9 +156,10 @@ export default async (req, context) => {
   }
 
   if (req.method === "POST") {
-    let path = "/";
+    let path = "/", ref = "";
     try {
       const body = await req.json();
+      if (typeof body.ref === "string") ref = body.ref.slice(0, 300);
       if (typeof body.path === "string") {
         path = body.path.split("?")[0].split("#")[0].slice(0, 160)
                         .replace(/[^a-zA-Z0-9/_.\-]/g, "");
@@ -161,6 +171,7 @@ export default async (req, context) => {
     const key = PREFIX + Date.now().toString(36) + "-" +
                 Math.random().toString(36).slice(2, 10);
     await store.set(key, JSON.stringify({ path, t: Date.now() }));
+    if (isRealPage(path)) await recordWhere(req, context, normalise(path), ref, "the420code.org");
 
     return new Response(JSON.stringify({ ok: true }), { headers });
   }

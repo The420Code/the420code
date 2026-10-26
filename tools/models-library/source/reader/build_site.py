@@ -537,7 +537,7 @@ JS = '''(function(){
     if(!sessionStorage.getItem('v420')){
       sessionStorage.setItem('v420','1');
       fetch('/.netlify/functions/visit-counter',{method:'POST',headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+        body:JSON.stringify({path:location.pathname,ref:document.referrer})}).catch(function(){});
     }
   }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
   document.addEventListener('click',function(e){

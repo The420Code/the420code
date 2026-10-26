@@ -1404,7 +1404,7 @@ function fdToggle(el){var r=el.closest('.ap-row');if(!r)return;r.classList.toggl
     if(!sessionStorage.getItem('v420')){
       sessionStorage.setItem('v420','1');
       fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({path:location.pathname})}).catch(function(){});
+        body:JSON.stringify({path:location.pathname,ref:document.referrer})}).catch(function(){});
     }
   }catch(e){}
   var el=document.getElementById('visit-count');
