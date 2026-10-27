@@ -6,6 +6,7 @@
 // When the loose list grows long, the older ones are folded into one base of counts, and the points for the map.
 
 import { getStore } from "@netlify/blobs";
+import { LAND } from "./land.mjs";
 
 const PREFIX = "w/";
 const BASE = "base";
@@ -164,21 +165,21 @@ function table(title, obj, limit = 100, byKey = false) {
 
 export function whereHTML(site, a) {
   const pts = Object.entries(a.points).map(([k, n]) => { const [lat, lon] = k.split(",").map(Number); return { lat, lon, n }; });
-  const dots = pts.map((p) => `<circle cx="${(p.lon + 180).toFixed(2)}" cy="${(90 - p.lat).toFixed(2)}" r="${Math.min(4, 1 + Math.log2(p.n)).toFixed(2)}"><title>${p.n}</title></circle>`).join("");
+  const dots = pts.map((p) => `<circle cx="${(p.lon + 180).toFixed(2)}" cy="${(90 - p.lat).toFixed(2)}" r="${Math.min(5, 1.6 + 1.2 * Math.log2(p.n)).toFixed(2)}"><title>${p.n}</title></circle>`).join("");
   const grid = [];
   for (let x = 0; x <= 360; x += 30) grid.push(`<line x1="${x}" y1="0" x2="${x}" y2="180"/>`);
   for (let y = 0; y <= 180; y += 30) grid.push(`<line x1="0" y1="${y}" x2="360" y2="${y}"/>`);
   const since = a.first ? new Date(a.first).toISOString().slice(0, 10) : "—";
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>Where the readers are · ${esc(site)}</title><style>
+<meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light"><title>Where the readers are · ${esc(site)}</title><style>
 body{margin:0;padding:24px 16px 60px;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#fff;color:#111;max-width:980px;margin-inline:auto}
 h1{font-size:28px;margin:0 0 4px}p.sub{color:#555;margin:0 0 20px}h2{font-size:18px;margin:28px 0 8px;border-bottom:1px solid #ddd;padding-bottom:4px}
 table{border-collapse:collapse;width:100%}td{padding:4px 6px;border-bottom:1px solid #f0f0f0;vertical-align:top}td:last-child{text-align:right;white-space:nowrap;width:5em}
-.map{width:100%;height:auto;background:#f6f6f6;border:1px solid #e5e5e5}.map line{stroke:#e2e2e2;stroke-width:.3}.map circle{fill:#c00000;fill-opacity:.8}
+.map{width:100%;height:auto;background:#dcebf5;border:1px solid #c9dbe8;display:block}.map .land{fill:#d2d2cc;stroke:#a9a9a2;stroke-width:.15;stroke-linejoin:round}.map line{stroke:#ffffff;stroke-opacity:.5;stroke-width:.2}.map circle{fill:#e00000;fill-opacity:.9;stroke:#fff;stroke-width:.25}
 .grid{display:grid;grid-template-columns:1fr;gap:0 32px}@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}.none{color:#888}
 </style></head><body><h1>Where the readers are</h1>
 <p class="sub">${esc(site)} · ${a.visits.toLocaleString("en-GB")} visits recorded with their place, since ${since}. Each red dot is a city a page was read from.</p>
-<svg class="map" viewBox="0 0 360 180" role="img" aria-label="The world, with a red dot for every city a page was read from">${grid.join("")}${dots}</svg>
+<svg class="map" viewBox="0 0 360 180" role="img" aria-label="The world, with a red dot for every city a page was read from"><path class="land" d="${LAND}"/>${grid.join("")}${dots}</svg>
 <div class="grid"><div>${table("Countries", a.countries)}${table("Cities", a.cities, 60)}</div>
 <div>${table("Where the click came from", a.sources)}${table("Organisations (the network's owner)", a.orgs, 60)}</div></div>
 ${table("Pages", a.pages, 60)}${table("Days", a.days, 90, true)}
