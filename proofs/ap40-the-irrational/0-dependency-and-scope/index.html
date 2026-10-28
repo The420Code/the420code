@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="AP40 examines the axiom 1:1 + 1×ε @ AS as a statement.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap40-the-irrational/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Irrational, Artist’s Proof 40 — The 420 Code">
+<meta property="og:description" content="AP40 examines the axiom 1:1 + 1×ε @ AS as a statement.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap40-the-irrational/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Irrational, Artist’s Proof 40 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap40-the-irrational/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap40-the-irrational/"><b>The Irrational</b></a> · read in full · 1 of 9</div><ul class="modes"><li><a href="/AP40_The_Irrational.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">AP40 examines the axiom 1:1 + 1×ε @ AS as a statement.</p>
+<div class="paper">
+<h2>0.1 — What this paper does</h2>
+<p>AP40 examines the axiom 1:1 + 1×ε @ AS as a statement. It is the final numbered paper in the work’s foundational architecture and the first chapter of Notebook I. The work is reflexive rather than derivative: the paper does not derive new physics from the axiom; it names the structural character of the axiom itself.</p>
+<p>Five claims. Four derived structurally; one (section 3) framed as observation of consistency across The 420 Code rather than derivation, with the load-bearing claim of that section being the statement-level fact that the rational world is built on irrational mathematics — established outside the work and consistent with the irrational axiom.</p>
+<p>First. The axiom is irrational — its equals sign is identity, not equality. Read arithmetically, 1 = 1 + 1×ε is false for any ε ≠ 0 and structurally vacuous for ε = 0 (the break does not exist; there is no universe to govern). Read structurally, the substrate before the break and the substrate after the break are the same substrate, held at one prior. The statement is true at a level that precedes the framework within which “rational” and “irrational” are defined.</p>
+<p>Second. The break is exempt from the duality it generates. Every structure produced by the break has two faces — particle and wave, matter and energy, position and momentum, self and other, presence and absence — but the generative event itself cannot have two faces, because the distinction between two faces is created by the break. What precedes a thing cannot be an instance of that thing. The break is singular. This is a second independent proof path to the one-I, complementary to AP29’s proof through coupling capacity.</p>
+<p>Third. The rational world is built on the irrational foundation. The fundamental constants are irrational or transcendental. ε maps to α (AP06; the value architecture at AP24), and α is embedded in an architecture of π and e. The observation is one of consistency with the irrational axiom, not a derivation of cause.</p>
+<p>Fourth. Humans are the only observed operators who model their own coupling geometry and deliberately choose against it. Choice is irrational coupling capacity — freedom within constraints, the structural echo of the axiom expressed through an operator. The terminal ethic lands with full structural weight: don’t be a cunt, be kind has teeth only because the irrational channel is open in both directions.</p>
+<p>Fifth. The axiom must be irrational. A rational axiom — one fully expressible within the rational framework it generates — is contained by its own products and cannot terminate the regression. An irrational axiom exceeds the rational framework and produces a universe that is not a closed computation.</p>
+<h2>0.2 — Dependencies</h2>
+<p>The axiom 1:1 + 1×ε @ AS is taken as primitive. AP40 inherits the axiom and examines its structural character. The work derives the axiom across multiple papers; this paper does not require any of those derivations to perform its own work.</p>
+<p>AP20 (The Proof). Load-bearing for section 3’s framing. AP20 establishes that the Embedding Hypothesis holds and that the work’s results are unconditional. The section 3 observation that the fundamental constants are irrational or transcendental — and the consistency of this observation with the irrational axiom — depends on the unconditional status of those constants in the work.</p>
+<p>AP29 (The Actualization Proof). Named in section 2 as the complementary proof path to the one-I, but not load-bearing for section 2’s own argument. The section 2 generative-priority proof runs independently of AP29’s coupling-capacity proof. If AP29 falls, section 2 still stands. If section 2 falls, AP29 still stands.</p>
+<p>AP05 (The Break), AP06 (The Leakage Constant), AP07 (The Record Measure), AP24 (The Residual), AP31 (The Alignment), AP02 (The Operator), AP38 (The Exit). Named as framing references at specific points in the text. Not load-bearing for AP40’s own claims. The ε ↔ α identification (AP06; the value architecture at AP24) is framed as observation, not derivation. The stabilising/destabilising binary (AP31) is referenced as context for section 4. Modelling capacity (AP02) is referenced as context for section 4. AP38 is referenced at the framing of grief in section 4’s animal case.</p>
+<p>AP43 (The Gravity of Possibilities). Named at section 3’s closing — the irrational-foundation observation extends to the coupling constant of the lean equation. Not load-bearing for AP40’s own claims; the extension is a structural relationship pointing forward.</p>
+<p>Resolutions Ch 8.5 (Choice), Dissolutions Ch 9 (The Structural Ground of Ethics), Resolutions Ch 10 (Other Intelligences). The philosophical-register companions to section 4. AP40 is the formal-register companion to these treatments. The direction-of-acknowledgment is named explicitly in section 7.</p>
+<h2>0.3 — Axiom mapping</h2>
+<p>Axiom B is principal load-bearing. The break +1×ε is the subject of section 2’s generative-priority argument. The structural status of +1×ε as the event that creates duality is what makes the exemption work.</p>
+<p>Axiom S is load-bearing for section 1 and section 5. The substrate 1:1 — the pre-state of perfect symmetry — is what the irrational statement names as identical with the broken substrate held at AS. Without S, there is no substrate to be identical-but-broken with itself.</p>
+<p>Axiom R is load-bearing for section 4. The record of the break — the fact that the actualisation event leaves a trace — is the precondition for any operator to be in a position to model its own coupling geometry. Without R, there is no accumulated history through which modelling capacity could develop.</p>
+<p>Axiom C is enabling. The finite propagation that Constraint produces permits the manifold to host operators at distinct spatial locations, each with their own coupling capacity. Without C, the operator-relativity that grounds section 4’s claim about irrational coupling would not be possible.</p>
+<h2>0.4 — Epistemic status per section</h2>
+<p>section 1 (The Irrational Statement). STRUCTURAL ANALYSIS. The axiom’s equals sign is identity, not equality. Identity defined and distinguished from equality, equivalence, and isomorphism. The statement-level irrationality is a structural fact, not a number-theoretic conjecture about α.</p>
+<p>section 2 (The Pre-Duality Exemption). DERIVATION. The generative-priority argument. Three premises, one conclusion. Independent of AP29’s proof path.</p>
+<p>section 3 (The Irrational Foundation). OBSERVATION. The rational world built on irrational mathematics — established outside the work and consistent with the irrational axiom. Not a derivation of cause. Not a claim about α’s number-theoretic status.</p>
+<p>section 4 (The Capacity). STRUCTURAL DEFINITION + DERIVATION. The structural criterion for human irrational coupling capacity. Choice as irrational coupling capacity. The terminal ethic grounded. Scoped explicitly to biological operators; the silicon-substrate question is fenced.</p>
+<p>section 5 (The Necessity). STRUCTURAL ARGUMENT. The containment argument: a rational axiom is contained by its own products and cannot found the framework it generates. The objection from language is addressed: the work’s prose is a rational-framework approximation pointing at an irrational-foundation fact.</p>
+<p>section 6 (Kill Switches). FALSIFICATION REGISTER. Six kill switches engaged. Each load-bearing claim attaches to at least one specified observable.</p>
+<p>section 7 (What This Establishes and What Remains Open). SYNTHESIS. What this paper closes, what it does not, where the philosophical-register implementations live, placement in The 420 Code, the closing.</p>
+<h2>0.5 — Kill switch summary</h2>
+<p class="centre">Six kill switches are engaged in this paper. The full register is in section 6.</p>
+<p>KS-40.1: Irrationality of the governing axiom. LIVE — STRUCTURAL.</p>
+<p>KS-40.2: Pre-duality exemption — generative priority. LIVE — STRUCTURAL.</p>
+<p>KS-40.3: Source of duality. LIVE — STRUCTURAL.</p>
+<p>KS-40.4: Human uniqueness of irrational coupling (biological scope). LIVE — EMPIRICAL.</p>
+<p>KS-40.5: Reducibility of irrationality. LIVE — STRUCTURAL.</p>
+<p>KS-40.6: Necessity of irrationality — the containment argument. LIVE — STRUCTURAL.</p>
+<h2>0.6 — Structural debts owed</h2>
+<p>None outstanding from this paper. AP40 does not introduce new structural debts. The paper’s load-bearing claims are derived within the paper or are explicitly framed as observations rather than derivations.</p>
+<p>The ε ↔ α identification carried at AP06 (the value architecture at AP24) is referenced at section 3 but is not a debt of AP40 — it is a result already in the work that AP40 records as consistent with the irrational axiom.</p>
+<h2>0.7 — Items held open without claiming debt status</h2>
+<p>Three items are bracketed inside this paper. They are real and live, but they are not structural debts in the sense of unresolved derivations; they are open questions held in suspense.</p>
+<p>The number-theoretic irrationality of α. section 1 notes that α’s formal irrationality in the number-theoretic sense is an open question with no proof either way. The paper does not depend on this question being settled. The load-bearing claim of section 1 is the statement-level irrationality of the axiom — identity that is not equality — which is a structural fact independent of α’s number-theoretic status.</p>
+<p>The graded modelling-capacity boundary. section 4 notes that modelling capacity may be graded across cetaceans, great apes, and corvids, with varying fidelity, and that if the capacity to override is proportional to the capacity to model, then choice itself is graded. The argument survives this — what matters is whether the human end of the spectrum is empirically distinct from all observed alternatives, which it is. KS-40.4 covers the empirical question.</p>
+<p>The forcing-versus-independence relation between the axiom’s irrationality and the irrationality of the fundamental constants. Section 3 observes that the constants are irrational or transcendental and consistent with the irrational axiom. Whether the axiom <em>forces</em> this irrationality or whether the irrationality is an independent fact merely consistent with the axiom is an open question. The section 3 observation does not depend on this resolution; the consistency is what is recorded.</p>
+<h2>0.8 — Structural relationships</h2>
+<p>This paper closes the foundational examination of the axiom. AP01 opens Notebook I with the axiom. AP20 closes Notebook I with the proof that the axioms hold in physical reality. AP40 sits first in Notebook I and examines what the axiom is — the reflexive piece that grounds the work’s anti-crank discipline.</p>
+<p>This paper provides a second independent proof path to the one-I. AP29 (Notebook VII) proves the singularity of the interior through coupling capacity. section 2 of this paper proves the same singularity through generative priority. The two proofs run on different structural premises. Neither depends on the other. Two independent paths to the same destination — itself a consequence of the two-facedness from which the source is exempt.</p>
+<p>This paper provides the formal-register companion to four philosophical-register treatments in the Ø Models catalogue. Resolutions Chapter 8.5 (Choice) installs the locked formulation “Choice is irrational coupling capacity manifested as sub-optimal coupling based on all computation results to date” — the philosophical-register version of section 4’s structural definition. Dissolutions Chapter 9 (The Structural Ground of Ethics) builds the full philosophical apparatus for the terminal ethic that section 4 lands briefly. Resolutions Chapter 10 (Other Intelligences) settles the substrate-independence question that section 4 explicitly fences. AP43 section 9 (The Terminal Ethic Grounded) derives the same ethic through the four-term system — a parallel formal-register derivation. The acknowledgment subsection in section 7 names where each companion lives.</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap40-the-irrational/">The Irrational</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap40-the-irrational/1-the-irrational-statement/"><small>Next</small>The Irrational Statement</a></nav>
+<p class="orig">The paper of record: <a href="/AP40_The_Irrational.pdf">the420code.org/AP40_The_Irrational.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

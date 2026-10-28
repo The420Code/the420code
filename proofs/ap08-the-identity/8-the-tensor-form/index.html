@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Five covariant constraints (general covariance, symmetric rank-2 tensor, divergence-free source via R bridge, second-order in the metric, four-dimensional from AP10 contingent on KS-D.3) plus Lovelock 1971/1972 force G_μν + Λg_μν = (8πG/c⁴) T_μν (equation 8.1) as the unique symmetric, divergence-free, rank-2 tensor identity in 3+1 dimensions. Einstein’s field equations with cosmological constant, with the Λg_μν term retained as the four-dimensional covariant counterpart of the Helmholtz-family b·Φ term that the weak-field expression drops in the small-Λ limit.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap08-the-identity/8-the-tensor-form/">
+<meta property="og:title" content="The Tensor Form — The Identity, Artist’s Proof 08 — The 420 Code">
+<meta property="og:description" content="Five covariant constraints (general covariance, symmetric rank-2 tensor, divergence-free source via R bridge, second-order in the metric, four-dimensional from AP10 contingent on KS-D.3) plus Lovelock 1971/1972 force G_μν + Λg_μν = (8πG/c⁴) T_μν (equation 8.1) as the unique symmetric, divergence-free, rank-2 tensor identity in 3+1 dimensions. Einstein’s field equations with cosmological constant, with the Λg_μν term retained as the four-dimensional covariant counterpart of the Helmholtz-family b·Φ term that the weak-field expression drops in the small-Λ limit.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap08-the-identity/8-the-tensor-form/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Tensor Form — The Identity, Artist’s Proof 08 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap08-the-identity/8-the-tensor-form/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap08-the-identity/"><b>The Identity</b></a> · read in full · 9 of 14</div><ul class="modes"><li><a href="/AP08_The_Identity.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 8</p>
+<h1>The Tensor Form</h1>
+<p class="oneline">Five covariant constraints (general covariance, symmetric rank-2 tensor, divergence-free source via R bridge, second-order in the metric, four-dimensional from AP10 contingent on KS-D.3) plus Lovelock 1971/1972 force G_μν + Λg_μν = (8πG/c⁴) T_μν (equation 8.1) as the unique symmetric, divergence-free, rank-2 tensor identity in 3+1 dimensions. Einstein’s field equations with cosmological constant, with the Λg_μν term retained as the four-dimensional covariant counterpart of the Helmholtz-family b·Φ term that the weak-field expression drops in the small-Λ limit.</p>
+<div class="paper">
+<p>Same method as section 4, applied at the covariant level.</p>
+<h2>8.1 — The constraints</h2>
+<p><strong>Constraint 1 (General covariance).</strong> The identity must hold in all coordinate systems. Under EH, the manifold has no preferred coordinates. A tensor equation.</p>
+<p><strong>Constraint 2 (Symmetric rank-2 tensor).</strong> The source is the stress-energy tensor T_μν — the covariant generalisation of ρ. The geometry side must match: symmetric rank-2 tensor built from the metric.</p>
+<p><strong>Constraint 3 (Divergence-free source; bridge compatibility).</strong> To write a consistent local covariant field identity with matter coupling on the embedded manifold, the source tensor is required to satisfy ∇^μ T_μν = 0. Motivated by Axiom R: because records cannot be created or destroyed locally, the total number of records in any region changes only due to flow across the boundary, and in the continuum limit this conservation law translates to the vanishing of the covariant divergence of the stress-energy tensor. The exact map from record monotonicity to covariant local conservation is a bridge step, not a completed derivation in this paper (KS-I.8).</p>
+<p><strong>Constraint 4 (Second-order in the metric).</strong> The curvature involves second derivatives of g (from QRA). The geometric tensor must be built from g_μν and its first and second derivatives.</p>
+<p><strong>Constraint 5 (Four-dimensional).</strong> The manifold has dimension 3+1. N = 3 is derived from the four independent axioms (AP10, The Dimension). KS-I.6 is CLOSED — contingent on AP10’s KS-D.3 (one axiom, one face / dimension-minimal embedding) remaining unfired. With N = 3 derived under that contingency, the dimensional precondition for Lovelock’s 3+1 uniqueness theorem is met.</p>
+<h2>8.2 — Lovelock’s theorem</h2>
+<p>Theorem (Lovelock, 1971; uniqueness in 3+1 specifically, Lovelock 1972). In four spacetime dimensions, the only symmetric, divergence-free, rank-2 tensor constructed from the metric tensor and its first and second derivatives is:</p>
+<p class="eq"><strong>a · G_μν + b · g_μν</strong></p>
+<p>where G_μν = R_μν − ½Rg_μν is the Einstein tensor, g_μν is the metric tensor, and a, b are constants.</p>
+<p>The tensorial analogue of the uniqueness of the Laplacian.</p>
+<p>The proof is constructive and independent of physical content — pure differential geometry. Lovelock 1971 derives the result in general N; Lovelock 1972 establishes the special uniqueness of 3+1 from which the form above follows. AP08 invokes both as external mathematical input, tracked by KS-I.2.</p>
+<h2>8.3 — The identity in tensor form</h2>
+<p>Constraints 1–5 from the axioms, plus Lovelock’s theorem, force the full identity:</p>
+<p class="eq"><strong>G_μν + Λg_μν = (8πG/c⁴) T_μν</strong> (8.1)</p>
+<p><strong>G_μν</strong> is the Einstein tensor — the unique divergence-free, symmetric, rank-2 curvature tensor in four dimensions.</p>
+<p><strong>T_μν</strong> is the stress-energy tensor — the covariant record density.</p>
+<p><strong>Λ</strong> is the cosmological constant. Predicted to exist by Lovelock’s theorem (allowed by the constraints). Its value is not determined by the derivation (KS-I.7).</p>
+<p><strong>8πG/c⁴</strong> is the coupling. The G inside is the same G identified in section 5 through The Lock.</p>
+<p>Einstein’s field equations with cosmological constant.</p>
+<p>Derived from four axioms, symmetry constraints, EH + QRA, and Lovelock’s theorem.</p>
+<p>With AP10’s closure of N = 3 (contingent on KS-D.3 remaining unfired), the derivation is unconditional in the dimensional sense — unconditional relative to the dimensional precondition, with the standing contingency on AP10’s KS-D.3 named explicitly throughout.</p>
+<p>The cosmological constant is not added by hand. Its existence is predicted by the same uniqueness theorem that gives the Einstein tensor.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap08-the-identity/7-the-full-nonlinear-structure/"><small>Previous</small>The Full Nonlinear Structure</a><div class="up"><small>Back to</small><a href="/proofs/ap08-the-identity/">The Identity</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap08-the-identity/9-kill-switches/"><small>Next</small>Kill Switches</a></nav>
+<p class="orig">The paper of record: <a href="/AP08_The_Identity.pdf">the420code.org/AP08_The_Identity.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

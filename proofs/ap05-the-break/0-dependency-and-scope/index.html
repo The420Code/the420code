@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Contract with the reader. Dependencies, axiom mapping ({S, B, R, C} ↔ 1:1 + 1×ε @ AS, with empirical premise P sitting separately), epistemic status per section, kill switch summary, structural debts owed, items held open, structural relationships.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap05-the-break/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Break, Artist’s Proof 05 — The 420 Code">
+<meta property="og:description" content="Contract with the reader. Dependencies, axiom mapping ({S, B, R, C} ↔ 1:1 + 1×ε @ AS, with empirical premise P sitting separately), epistemic status per section, kill switch summary, structural debts owed, items held open, structural relationships.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap05-the-break/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Break, Artist’s Proof 05 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap05-the-break/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap05-the-break/"><b>The Break</b></a> · read in full · 1 of 9</div><ul class="modes"><li><a href="/AP05_The_Break.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">Contract with the reader. Dependencies, axiom mapping ({S, B, R, C} ↔ 1:1 + 1×ε @ AS, with empirical premise P sitting separately), epistemic status per section, kill switch summary, structural debts owed, items held open, structural relationships.</p>
+<div class="paper">
+<p>AP05 is the second chapter of Notebook II. Before the body, this section names what AP05 does, what it depends on, where its postulates map onto the canonical axioms {S, B, R, C}, what epistemic status each section holds, what kill switches are engaged, what structural debts remain, and how AP05 stands in relation to the rest of The 420 Code. The contract with the reader is named at the door.</p>
+<h2>0.1 — What this paper does</h2>
+<p>AP05 walks the canonical axiom 1:1 + 1×ε @ AS forward through seven structural steps, each step depending only on the previous step and on the bridges declared in this paper. The chain runs from perfect symmetry (no records possible) to the structural ground for obligation (a conscious agent recognising the shared origin of two readings).</p>
+<p>AP05 also reformulates the cosmological identity introduced in AP04 — the geometric relation between the collapsing and expanding descriptions of one structure — as Israel junction conditions on the completion boundary Σ. The junction formulation commits only to boundary data and produces a falsifiable, junction-specific signature in the post-expansion perturbation spectrum that distinguishes it from dynamical bounce cosmologies.</p>
+<p>The contribution is three structural claims plus one open problem. Claim B1 (Scope): all structure in the architecture — physical, cosmological, ethical — follows from the axiom, the four declared bridges B1–B4, and the declared empirical premise P (observer plurality). Conditions J1, J2: the cosmological identity is the pair [γ_ab] = 0 and [K_ab] = (ε/ ℓ_Σ) · h_ab on Σ, with h_ab the dimensionless pullback of AP04’s perturbation tensor and ℓ_Σ the curvature scale of the completion surface. Open Problem B-JP: whether the ECSK field equations on the Kantowski-Sachs interior admit a completion across Σ with [γ] = 0 and controlled [K].</p>
+<h2>0.2 — Dependencies</h2>
+<p>AP05 is a chain-walking paper. Its dependencies are explicit at every step. They are listed here in compact form so the load-bearing imports are visible at the door.</p>
+<p>The axioms {S, B, R, C} (formal statement carried at AP20 section 3.3; completeness and minimality obligations fenced at KS-P.1 / KS-P.2). AP05 was originally written before the canonical formalisation; the mapping from AP05’s axiom (and the four bridges) onto the canonical axioms is made explicit in section 0.3 below. Axiom S (Symmetry) grounds 1:1 (perfect balance, distinction-capable substrate). Axiom B grounds 1×ε (the minimal break). Axiom R grounds the no-return character of B-1 (the no-erasure theorem). Axiom C (Constraint — locality) grounds the bounded propagation that scopes the bridges.</p>
+<p>AP01 (The Actualization State). Load-bearing for the four declared bridges. Bridge B1 (record algebra) discharges into AP01 Paper A. Bridge B2 (bounded capacity) discharges into AP01 Paper C, the viability geometry. Bridge B3 (definite outcomes) discharges into AP01 Paper B, the selection dynamics. The Geometric Exclusion Principle invoked at step B-4 is AP01 Paper D section D1.3. The hierarchy/cooperation/deterrence triad of step B-5 is AP01 Paper D sections D4.3–D4.4. Each step’s discharge into AP01 is named where the step is stated.</p>
+<p>Empirical Premise P (observer plurality). Load-bearing for steps B-4 through B-6. Our universe contains many simultaneous observers; this is an empirical fact about the physical instantiation of the architecture, not a structural consequence of the axiom. P is declared here alongside the bridges because B-5’s cooperative and deterrent components require <em>mutual</em> record externalities between simultaneous agents, and B-6’s obligation is recognised between agents who exist at the same time. Without P, B-5’s hierarchy reduces to one-way dominance between sequential record states, B-5’s cooperation and deterrence are unavailable, and B-6’s obligation has no second agent to be recognised toward. P is empirical rather than formal: the chain depends on the empirical fact and does not derive it. P is held separately from the four formal bridges to preserve the formal/empirical distinction.</p>
+<p>AP04 (The Loop Hypothesis). Load-bearing for section 3. AP04 carries the cosmological identity as a global metric relation; AP05 section 3 is the boundary-data formulation of the same identity on the completion surface Σ. AP05 section 3 inherits AP04’s conjecture L7 (the global pullback) and reformulates it as boundary conditions on Σ.</p>
+<p>AP20 (The Proof). Load-bearing for the unconditional status of the chain. AP20 proves the Embedding Hypothesis, which makes AP01’s viability geometry unconditional. With AP20 in place, the manifold the chain walks through is proven to exist in physical reality. AP05 does not need AP20 to walk the chain (the chain is independent of EH at the level of mechanics); AP05 needs AP20 to claim that the chain walks through reality and not through a structure of merely formal existence.</p>
+<p>AP03 (The Ratio). Load-bearing for the structural setting. AP03 establishes that c and G inherit from ε. AP05 walks the axiom forward across a substrate whose constants are themselves outputs of the same break the axiom names. The cross-reference is geometric, not derivational: AP05 does not import c or G as inputs, but the manifold AP05’s junction conditions sit on is the manifold AP03 derives.</p>
+<p>AP08 (The Identity). Load-bearing for the field equations in which section 3 is stated. AP08 derives the Einstein field equations from the record algebra; the junction conditions of AP05 section 3 are stated in the ECSK extension of those equations. AP05 does not derive the ECSK extension — it uses the standard Arkuszewski et al. 1975 form as a structural input.</p>
+<h2>0.3 — Axiom mapping</h2>
+<p>AP05 was originally written with axiom-prior vocabulary that AP20’s Paper D later formalised as the canonical four conditions {S, B, R, C}. The mapping is explicit below. The four declared bridges B1–B4 are separate from this mapping: they are imports from AP01 (B1–B3) and a declared cost for the ethics step (B4). The axiom proper maps onto {S, B, R, C} directly; the bridges discharge into AP01 content downstream.</p>
+<p><strong>Axiom S (Symmetry) ↔ The 1:1 in the axiom statement</strong>. S is the two-sector base condition — identity under exchange, the precondition for distinction to be meaningful. The 1:1 specifies a structure that supports distinction once perturbed: two values held against each other, no orientation, no preferred reading. Unperturbed, the 1:1 is operationally indistinguishable from ∅ (step B-0). Perturbed, it becomes distinguishable (step B-1). Axiom S is the standing condition under which the 1:1 can be a substrate at all.</p>
+<p><strong>Axiom B (Unique break) ↔ The 1×ε in the axiom statement.</strong> B requires that exactly one minimal break occurs. The 1×ε specifies a count: one break applied to the symmetric state. Not two breaks. Not a continuous parameter being tuned. One. AP20’s forcing proof on Axiom B is what makes this counting structural rather than stipulative. The axiom names the break; AP20 shows it cannot be otherwise.</p>
+<p><strong>Axiom R (Record persistence) ↔ The irreversibility at step B-1.</strong> R requires that records, once formed, persist. The no-return theorem invoked at step B-1 (AP01 Paper A Theorem T2) is the operational expression of R: once ε &gt; 0 has produced distinguishable record sectors with positive weight, no local erasure can return the system to the symmetric prior. Axiom R is what makes the chain run forward and not unwind.</p>
+<p><strong>Axiom C (Constraint — locality; bounded capacity is what it produces here) ↔ The boundedness of B2 in the bridge list.</strong> C is Constraint — locality: a record is somewhere, not everywhere; on the chain it produces finite propagation and finite capacity. Bridge B2 — bounded capacity — is the discharge of Axiom C into the chain at step B-3 (agency as the normalised reachable viability volume). Without Axiom C, the reachable set would not be bounded and agency would not be a well-defined number between 0 and 1.</p>
+<p><strong>AS (Actualization State) ↔ The @ AS in the axiom statement.</strong> AS is the actualizing prior at which the substrate is held and the break is processed. AP20’s keystone correction made AS explicit at the level of the axiom: 1:1 + 1×ε @ AS is the canonical form. Without AS, the axiom is a description of a balance and a crack with no agent and no time at which any of it could occur. With AS, the axiom is something that happens. The prior is named in the foundation so that nothing downstream has to smuggle it in.</p>
+<p>Three further symbols carry structural roles. ε is the breaking amplitude (axiom B); The 420 Code identifies ε numerically as the electromagnetic fine-structure constant α ≈ 1/137 (AP06, AP24), but the axiom does not depend on the identification. The Actualization State quantity AS = H({p_i})/log N (AP01 Paper A Definition A.2) is the formal measure of the prior named in the axiom. The viability kernel and reach (AP01 Paper C) are the geometric objects on which step B-3’s agency formula is defined.</p>
+<p>Empirical premise P sits separately from the canonical axioms {S, B, R, C}. The four axioms are structural — each is a condition the architecture asserts must hold for any actualised structure to exist. P is empirical — the fact that our universe, in addition to satisfying the four axioms, contains many simultaneous observers. The axioms force two readings of one structure; they do not force two ontologically distinct agents who modify each other’s records in real time. The move from representational duality (two readings) to interactive plurality (two simultaneous agents) requires the empirical fact P. P is declared at the door so the empirical input is visible; it does not enter the axiom mapping.</p>
+<h2>0.4 — Epistemic status per section</h2>
+<p>Each section carries an explicit status — derivation, declaration, formal block, or synthesis — so the reader knows what kind of weight each carries.</p>
+<p>Section 1 (The Axiom). DECLARATION + STRUCTURAL ARGUMENT. The axiom 1:1 + 1×ε @ AS is the declared starting point; the rotational-ring picture is structural illustration; Claim B1 (Scope) is the load-bearing scope statement; KS-B.0 names the universal generator condition.</p>
+<p>Section 2 (The Chain). DERIVATION CHAIN. Seven steps, each labelled by its dependency. Step B-0 is from the axiom alone. Step B-1 is from B-0 plus Bridge B1. Step B-2 is from B-1 plus Bridge B3. Step B-3 is from B-2 plus Bridge B2; the agency formula ℳ(x) = μ(Reach(x) ∩ Viab(R)) / μ(Viab(R)) is equation (2.1). Step B-4 is from B-3 plus the declared empirical premise P (observer plurality). Step B-5 is from B-4 alone (geometry of coupled viability, with B-5’s cooperative and deterrent components requiring P’s simultaneity for mutuality). Step B-6 is from B-5 plus Bridge B4. Each step’s dependency declaration is part of the formal block at the step itself.</p>
+<p>Section 3 (The Boundary). DERIVATION + STRUCTURAL ALTERNATIVE + OPEN PROBLEM. Conditions J1, J2 are formal definitions on the completion surface Σ. The relation to AP04 is the boundary-data version of AP04’s global pullback. Open Problem B-JP is named with status LIVE — STAGED (the central open problem of the junction formulation).</p>
+<p>Section 4 (Kill Switches). FORMAL FALSIFICATION REGISTER. Five kill switches engaged: KS-B.0 through KS-B.4.</p>
+<p>Section 5 (What This Establishes and What Remains Open). SYNTHESIS. What the chain closes, what it does not close, where the philosophical-register companions sit, structural relationships to subsequent work, and the closing.</p>
+<h2>0.5 — Kill switch summary</h2>
+<p>Five kill switches are engaged in this paper. The full register is in section 4.</p>
+<p>KS-B.0: Universal generator failure. If the expanding universe requires initial conditions not derivable from the terminal conditions of a collapsing description, the axiom is not a generator. LIVE — HARD (pending Open Problem B-JP; staged for EMPIRICAL once B-JP is solved).</p>
+<p>KS-B.1: Bounce superior. If the CMB power spectrum is best explained by smooth dynamical evolution through a bounce — continuous correlations across the transition — the junction formulation is falsified. LIVE — EMPIRICAL.</p>
+<p>KS-B.2: Spectrum mismatch. If a completed junction solution together with a derived mapping from [K] on Σ to the post-expansion curvature perturbation spectrum P_ℛ(k) predicts a spectrum inconsistent with observations, the junction formulation makes wrong predictions. LIVE — STAGED (becomes operational once B-JP is solved).</p>
+<p>KS-B.3: No junction solution. If the Israel junction conditions modified by ECSK torsion do not admit a solution with [γ] = 0 and controlled [K], the junction formulation does not exist. LIVE — HARD.</p>
+<p>KS-B.4: Chain break. If any step in the derivation chain (B-0 through B-6) requires an assumption not contained in the axiom, the bridges B1–B4, and the declared empirical premise P, the scope claim B1 is falsified. LIVE — HARD.</p>
+<h2>0.6 — Structural debts owed</h2>
+<p>Two structural debts are named explicitly. These are unresolved derivations tied to specific structural claims, tracked at the registry level.</p>
+<p>Open Problem B-JP (registry-level, AP05-specific). Whether the Einstein-Cartan-Sciama-Kibble field equations on the Kantowski-Sachs interior admit a completion across the boundary Σ with induced metric continuity [γ] = 0 and controlled extrinsic curvature mismatch [K] = (ε/ℓ_Σ) · h_ab. The boundary-value problem is well-posed in standard terms: Israel junction conditions (Israel 1966) are well-established; ECSK extensions (Arkuszewski et al. 1975) are well-established; the question is whether a solution exists in the specific geometry the cosmological identity requires. Without a solution, the junction formulation of section 3 is a structural sketch, not a derivation. With a solution, KS-B.0 and KS-B.2 migrate from STAGED to operational empirical status. B-JP is the central open problem of AP05. The 420 Code invites contributions from any reader equipped to make the attempt.</p>
+<p><strong>Bridge B4 (declared cost).</strong> The step from structural ground to obligation (step B-6) requires Bridge B4: conscious recognition of structural facts can generate normative identification. B4 is not a theorem of the axiom; it is the declared cost of extending the chain into ethics. The chain through B-5 carries the structural ground (destroying another’s viability while sharing a constraint environment contracts the shared viability domain — geometry); B4 is the perspectival step that converts the structural fact into a normative claim. B4 is named in the front matter and stated again at step B-6. It is not hidden, and the obligation does not exceed the bridge.</p>
+<h2>0.7 — Items held open without claiming debt status</h2>
+<p>Two items are bracketed inside this paper. They are real and live, but they are not structural debts in the same sense as B-JP and B4.</p>
+<p><strong>Open Problem B-JP’s observational mapping</strong>. Even with B-JP solved (a completed junction solution), the mapping from the boundary data [K] = (ε/ ℓ_Σ) · h_ab on Σ to the post-expansion curvature perturbation spectrum P_ ℛ(k) is itself an open derivation. KS-B.2 is staged on this mapping. Until the mapping is derived, KS-B.2 cannot be operationally tested. Open derivation work; held without claiming a separate debt because it is downstream of B-JP and tracked through KS-B.2’s staging.</p>
+<p><strong>B4’s status in physical reality.</strong> The chain through B-5 is structural and runs on the axioms, the bridges, and the declared empirical premise P. Step B-6 adds B4 as a declared cost on top of P. Whether B4 is itself a theorem of some deeper structural fact — whether conscious recognition is itself forced by the architecture rather than declared — is open work. The 420 Code holds B4 as a transparently declared cost rather than a hidden theorem. If a derivation of B4 from the axioms can be exhibited, step B-6 becomes unconditional. Held open at the door.</p>
+<h2>0.8 — Structural relationships</h2>
+<p>AP05 is the second chapter of Notebook II. The chapter sequence runs AP03 → AP05 → AP10 → AP08. AP03 derives the constants (c, G) as outputs of ε; AP05 walks the axiom across the broken substrate AP03 establishes; AP10 derives N = 3 spatial dimensions on the manifold the chain occupies; AP08 closes Notebook II by deriving the Einstein field equations in which AP05’s junction conditions are stated.</p>
+<p>AP01 (Notebook I) is the source of the bridges B1–B3 and of the geometric content invoked at steps B-2 through B-5 (the record algebra, selection dynamics, viability geometry, coupled viability theorems). AP04 (Notebook V) is the source of the cosmological identity that section 3 reformulates as junction conditions. AP20 (Notebook I) is the source of the keystone correction that made AS explicit in the axiom, and the proof that makes AP01’s viability geometry unconditional.</p>
+<p>Downstream, AP05’s junction conditions feed AP08’s field equations as boundary data, AP05’s chain feeds the entire ethics catalogue (Resolutions Ø Chapter 6 on coupling, Chapter 7 on agency, Chapter 8 on obligation), and AP05’s structural account of cosmology feeds Predictions Ø Part V (the post-expansion perturbation spectrum signatures distinguishing junction from bounce).</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap05-the-break/">The Break</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap05-the-break/1-the-axiom/"><small>Next</small>The Axiom</a></nav>
+<p class="orig">The paper of record: <a href="/AP05_The_Break.pdf">the420code.org/AP05_The_Break.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

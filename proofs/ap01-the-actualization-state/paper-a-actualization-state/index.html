@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Five core definitions (D1–D5). Theorem T1 (monotonicity of AS under decohering dynamics) with rate corollary T1a and converse T1b. Theorem T2 (operator horizon — no-return as an inequality). No-return surfaces and operational irreversibility (D6–D10, P3.3). Quantum-mechanical instantiation (D11–D16, postulate P, postulate G, P4.1). Seven falsifiers: F0 (global, KS-V.1), F1–F3 (selection postulate, KS-V.2–V.4), G1–G3 (gravitational, KS-V.5–V.7). Optional turn module (A6) and appendices.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap01-the-actualization-state/paper-a-actualization-state/">
+<meta property="og:title" content="Actualization State — The Actualization State, Artist’s Proof 01 — The 420 Code">
+<meta property="og:description" content="Five core definitions (D1–D5). Theorem T1 (monotonicity of AS under decohering dynamics) with rate corollary T1a and converse T1b. Theorem T2 (operator horizon — no-return as an inequality). No-return surfaces and operational irreversibility (D6–D10, P3.3). Quantum-mechanical instantiation (D11–D16, postulate P, postulate G, P4.1). Seven falsifiers: F0 (global, KS-V.1), F1–F3 (selection postulate, KS-V.2–V.4), G1–G3 (gravitational, KS-V.5–V.7). Optional turn module (A6) and appendices.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap01-the-actualization-state/paper-a-actualization-state/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Actualization State — The Actualization State, Artist’s Proof 01 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap01-the-actualization-state/paper-a-actualization-state/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap01-the-actualization-state/"><b>The Actualization State</b></a> · read in full · 3 of 9</div><ul class="modes"><li><a href="/AP01_The_Actualization_State.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Paper A</p>
+<h1>Actualization State</h1>
+<p class="oneline">Five core definitions (D1–D5). Theorem T1 (monotonicity of AS under decohering dynamics) with rate corollary T1a and converse T1b. Theorem T2 (operator horizon — no-return as an inequality). No-return surfaces and operational irreversibility (D6–D10, P3.3). Quantum-mechanical instantiation (D11–D16, postulate P, postulate G, P4.1). Seven falsifiers: F0 (global, KS-V.1), F1–F3 (selection postulate, KS-V.2–V.4), G1–G3 (gravitational, KS-V.5–V.7). Optional turn module (A6) and appendices.</p>
+<div class="paper">
+<p><strong>Actualization State: An Operational Measure of Record-Structured Irreversibility</strong></p>
+<p><em>Reference Document · Canonical</em></p>
+<h2>A0 — Front Matter</h2>
+<h2>A0.1 — Title Block and Abstract</h2>
+<p><strong>Title.</strong> Actualization State (AS): An Operational Measure of Record-Structured Irreversibility.</p>
+<p>You are reading this sentence. That is a record. Photons hit your retina, neurons fired, a pattern was recognised. The event cannot unhappen.</p>
+<p>This paper builds a tool to measure how far that process has gone — and proves that, under the right conditions, it can only go in one direction.</p>
+<p><strong>Abstract.</strong></p>
+<p>Actualization State (AS) is an operational measure of irreversible record formation in quantum systems. It is defined relative to physically realisable coarse-grainings induced by system–environment interactions, and it quantifies the degree to which mutually exclusive classical alternatives have become durably encoded.</p>
+<p>Irreversibility here is not about entropy. It is about reachability — the boundary beyond which you cannot get back, no matter what you do.</p>
+<p>The paper establishes criteria under which AS is well defined, operationally invariant, and falsifiable. The proof shows that AS is monotonic under decohering, record-forming dynamics within a precisely delimited scope. A domain-neutral no-return theorem then shows that bounded maintenance capacity generically induces irreversible loss of reachability, independent of quantum mechanics or gravity.</p>
+<p>Together these results provide a falsifiable, interpretation-agnostic framework that isolates irreversible record formation as a measurable physical process — independent of collapse, gravity, or consciousness. You need no interpretation of quantum mechanics to use this tool. You need only the measurements.</p>
+<p>No collapse mechanism, gravitational hypothesis, or cosmological assumption is invoked. The argument isolates the definitional and theorem layers required for any subsequent theory of selection or definiteness.</p>
+<h2>A0.2 — What This Paper Does and Does Not Do</h2>
+<p><strong>It does:</strong></p>
+<ul class="plain"><li>Define AS as a physically meaningful measure of irreversible record formation.</li><li>Prove AS increases under decohering dynamics (Theorem T1).</li><li>Establish no-return surfaces from bounded capacity (Theorem T2).</li><li>Require operational invariance — and die if that requirement fails (Kill Switch F0).</li></ul>
+<p><strong>It does not:</strong></p>
+<ul class="plain"><li>Propose a collapse mechanism.</li><li>Derive the Born rule.</li><li>Appeal to gravity or cosmology.</li><li>Solve the measurement problem.</li><li>Explain consciousness.</li></ul>
+<p>Sections A0–A3 are self-contained. Sections A4–A5 add independently falsifiable postulates. If A4–A5 fail, A0–A3 are untouched.</p>
+<h2>A1 — Problem Statement</h2>
+<h2>A1.1 — The Actualization Problem</h2>
+<p>You have never experienced a superposition. Every moment of your life has been definite — this room, this chair, this sentence.</p>
+<p>Yet quantum mechanics says that before measurement, systems exist in superpositions of all possible outcomes. Something bridges the gap between <em>all possible</em> and <em>one actual</em>. That bridge is the subject of this paper.</p>
+<p>Quantum theory describes closed systems by unitary evolution in Hilbert space. Experiments report records: mutually exclusive, persistent, classical facts. Between these descriptions lies a structural gap.</p>
+<p>Standard measurement language tries to bridge the gap with observers, projections, or epistemic updates. None of these specifies a physical transition. They describe when an agent updates a description, not when a system becomes unable to support alternatives.</p>
+<p>Decoherence explains the suppression of interference. By itself it does not quantify how much irreversible structure has formed, nor does it specify when alternative histories cease to be operationally recoverable.</p>
+<p>What is missing is a quantity that refers only to physically accessible degrees of freedom, distinguishes loss of coherence from mere ignorance, and measures the accumulation of durable record structure prior to any claim about outcome definiteness.</p>
+<p>That quantity is Actualization State (AS).</p>
+<p>The argument is intentionally minimal. It does not ask why the universe permits records. It asks when records become irreversible. It does not explain the <em>feltness</em> of outcomes. It explains the structural conditions under which multiple outcomes cease to be simultaneously accessible.</p>
+<p>By isolating the transition from quantum coherence to classical record, the paper provides a shared phenomenological target for any deeper theory of definite outcomes.</p>
+<h2>A1.2 — What Is New: Positioning Relative to Existing Notions</h2>
+<p>Actualization State is not a redefinition of decoherence, entropy, or thermodynamic irreversibility. The distinctions are structural, and they matter.</p>
+<p><strong>AS vs. Decoherence.</strong> Decoherence is a dynamical process that suppresses interference between alternatives. AS is an operational quantity that measures the extent of record-structured commitment resulting from such decoherence.</p>
+<p>The two are distinct. Decoherence can occur without significant growth of AS, and AS can increase even when total entropy change is negligible. A concrete demonstration of their independence is given in the worked comparison below.</p>
+<p><strong>AS vs. Entropy.</strong> Entropy quantifies total uncertainty or mixedness, including contributions from unobserved degrees of freedom. AS deliberately discards such contributions and tracks only inter-sector branching relative to the physically realizable record algebra.</p>
+<p>A system may have high entropy and low AS, or low entropy and high AS. The von Neumann entropy comparison below makes this independence explicit.</p>
+<p><strong>AS vs. Quantum Darwinism.</strong> Quantum Darwinism (Zurek) quantifies the redundancy with which information is imprinted in environmental fragments. AS measures the informational richness of committed classical branching, not the number of copies of that information.</p>
+<p>The two quantities are operationally independent. Each can be maximized or minimized independently of the other. The worked comparison below demonstrates exactly this.</p>
+<p><strong>AS vs. Consistent Histories.</strong> The history-based representation ASₕ (Section A2.4) is restricted to single-time record histories under complete decoherence. This is a deliberate narrowing relative to the full consistent-histories framework.</p>
+<p>The full framework permits multi-time, multi-branching history sets. ASₕ does not. ASₕ serves as an equivalence bridge to the primary definition, not as a replacement for consistent histories.</p>
+<h2>Worked Comparison: Where AS and Quantum Darwinism Redundancy Diverge</h2>
+<p>The preceding distinctions are structural. Their force is best seen in a concrete system where AS and Quantum Darwinism redundancy move independently. The two cases below share identical quantum dynamics; they differ only in the number of environmental fragments and the number of pointer sectors.</p>
+<p><strong>Case 1: High redundancy, zero AS.</strong></p>
+<p>A qubit S with pointer basis 𝓞 = {|0⟩⟨0|, |1⟩⟨1|} is prepared in the pure pointer state |0⟩. The environment consists of N = 1000 fragments, each independently recording that the system is in sector |0⟩.</p>
+<p>The Quantum Darwinism redundancy is R𝛿 ≈ 1000. The classical information <em>the system is in |0</em>⟩ is broadcast across a thousand environmental fragments. Any small fraction of the environment suffices to determine the system state.</p>
+<p>The sector weights, however, are p₀ = 1, p₁ = 0. The Shannon entropy H({pᵢ}) = 0 and therefore AS = 0. No branching exists.</p>
+<p>The environment has recorded a single, definite outcome with extreme redundancy. There is no record-structured irreversibility to measure.</p>
+<p><strong>Case 2: Zero redundancy, maximal AS.</strong></p>
+<p>A four-level system S with pointer basis 𝓞 = {Π₁, Π₂, Π₃, Π₄} is prepared in an equal superposition and then fully dephased by coupling to a single environmental fragment E.</p>
+<p>The sector weights are pᵢ = 1/4 for all i. Quantum Darwinism redundancy is R𝛿 = 1: only one fragment carries the classical information, and loss of that fragment destroys access.</p>
+<p>But AS = H({1/4, 1/4, 1/4, 1/4}) / log 4 = log 4 / log 4 = 1. Maximal record-structured branching exists across four mutually exclusive alternatives.</p>
+<p>In Case 1, the system is classically definite and robustly broadcast — but it has no actualisation structure. In Case 2, the system is maximally branched but fragile in the Darwinist sense.</p>
+<p>AS and redundancy are not merely different in definition. They are operationally independent quantities that can be maximized or minimized independently of each other.</p>
+<p><strong>AS vs. von Neumann entropy.</strong> A similar divergence arises with respect to the von Neumann entropy S(ρ).</p>
+<p>Consider a single pointer sector Π₁ of rank dᵢ = 100, with the system state confined entirely to that sector in a maximally mixed intra-sector state. The von Neumann entropy is S(ρ) = log 100 — large. But AS = H({1}) / log 1 = 0, since all weight resides in one sector.</p>
+<p>Conversely, a two-sector system with rank-1 projectors and equal weights p₀ = p₁ = 1/2 has S(ρ) = log 2 and AS = 1.</p>
+<p>Von Neumann entropy tracks total uncertainty, including intra-sector degeneracy. AS tracks only inter-sector branching. They answer different questions.</p>
+<p><strong>Operator Horizon vs. the Second Law.</strong></p>
+<p>The Second Law expresses the typical growth of entropy under macroscopic dynamics. The Operator Horizon introduced in Section A3 instead defines irreversibility as a boundary of operational accessibility — a geometric limit in state space beyond which recovery is impossible given bounded control capacity.</p>
+<p>Irreversibility here is not a statement about likelihood or typicality. It is a statement about reachability under admissible operations.</p>
+<p>The notion applies equally to quantum, classical, and abstract control systems, and it is independent of thermodynamic assumptions.</p>
+<h2>A1.3 — Scope Clarification</h2>
+<p>The paper does not propose a mechanism of collapse, derive the Born rule, or assume any cosmological or gravitational hypothesis.</p>
+<p>It isolates the minimal definitional and theorem-level structure required to make irreversible record formation a well-defined, operationally testable concept.</p>
+<p>Any subsequent theory of outcome selection or definiteness must be built on this foundation — or fail against it.</p>
+<h2>A2 — Definitions</h2>
+<p>What follows are the tools. Each definition names a specific thing and says exactly what it does.</p>
+<p>If you lose track, come back here. The definitions do not move.</p>
+<h2>A2.1 — D1: Physically Realizable Coarse-Graining 𝓞</h2>
+<p>Let ℋₛ be the system Hilbert space and ℋₑ its environment.</p>
+<p><strong>Definition D1</strong>. A physically realizable coarse-graining 𝓞 is a finite set of mutually orthogonal projectors 𝓞 = {Πᵢ} satisfying all of the following:</p>
+<ul class="plain"><li>The projectors are orthogonal and complete on the support of the reduced state.</li><li>The set is selected by the physics of system–environment coupling, not by observer choice.</li><li>The associated dephasing map is approximately stable under accessible Hamiltonian evolution within tolerance ε.</li></ul>
+<p>The critical point: 𝓞 is not your choice. It is nature’s choice. The physics of the interaction determines what gets measured. You do not pick the basis. The coupling picks it for you.</p>
+<p><strong>Computability remark.</strong> In practice, the physically realizable coarse-graining is identified as the stable algebra generated by the interaction Hamiltonian’s pointer observables — for instance, via the predictability sieve (Zurek, 1993) or stability analysis under the system–environment coupling.</p>
+<p>Definition D5 (Operational Invariance) then tests robustness across any co-admissible candidates that survive this selection.</p>
+<p>The identification of the pointer algebra for a given Hamiltonian is a research problem, not a closed algorithm. D5 converts this openness into a falsifiable condition rather than leaving it as an ambiguity.</p>
+<h2>A2.2 — D2: Dephasing Map Δ𝓞</h2>
+<p><strong>Definition D2</strong>. Given a density matrix ρ on ℋₛ, the dephasing map relative to 𝓞 is</p>
+<p>Δ𝓞(ρ) ≡ Σᵢ Πᵢ ρ Πᵢ.</p>
+<p>Δ𝓞 removes quantum interference between record sectors while preserving classical probabilities.</p>
+<p><strong>Critical clarification.</strong> Pay attention to this. It is where most confusion enters.</p>
+<p>Δ𝓞 does not measure ignorance. It enforces projection onto the record algebra, isolating entropy attributable to irreversible branching rather than lack of knowledge.</p>
+<p>This step prevents conflating classical uncertainty with physical actualisation.</p>
+<h2>A2.3 — D3: Actualization State — Primary Definition</h2>
+<p><strong>Statement of the Definition.</strong></p>
+<p>Let ρ be the reduced density matrix of a system after tracing over inaccessible degrees of freedom. Let 𝓞 = {Πᵢ} be a physically realizable coarse-graining selected by system–environment interaction (Definition D1).</p>
+<p>Define the dephasing map relative to this record algebra: Δ𝓞(ρ) ≡ Σᵢ Πᵢ ρ Πᵢ.</p>
+<p>The Actualization State is defined as</p>
+<p><strong>AS(ρ; 𝓞) ≡ S_eff(ρ; 𝓞) / log d</strong>𝓞</p>
+<p>where S_eff is the effective record entropy defined below and d𝓞 is the total record-algebra dimension.</p>
+<p><strong>Notation note (work-wide reading).</strong> The abbreviation AS is used in two related but distinct senses across The 420 Code, and you are asked to keep them apart.</p>
+<p>In the foundational axiom 1:1 + 1×ε @ AS (P0.2), AS names the actualizing structural prior — the now at which actualisation happens, the dimension along which records are written.</p>
+<p>In Paper A, AS denotes the Actualization State as defined here: the operational measure of how far along that dimension a system has progressed, normalized to the interval [0, 1].</p>
+<p>The two readings are not in conflict. They refer to different aspects of the same structure. AS-the-prior is the dimension. AS-the-quantity, defined here, measures progress along it. Where context makes the distinction load-bearing, the text disambiguates explicitly.</p>
+<p><strong>Effective Entropy.</strong></p>
+<p>When record sectors Πᵢ have rank greater than one, the dephased entropy decomposes as</p>
+<p class="eq">S(Δ𝓞(ρ)) = H({pᵢ}) + Σᵢ pᵢ S(σᵢ),</p>
+<p>where pᵢ = Tr(Πᵢ ρ) and σᵢ is the normalised intra-sector state.</p>
+<p>AS tracks inter-sector branching only. What happens inside each sector is invisible to AS — deliberately so.</p>
+<p>The effective entropy entering AS is defined as</p>
+<p><strong>S_eff(ρ; 𝓞) ≡ H({pᵢ</strong>}),</p>
+<p>with intra-sector entropy discarded by construction. For rank-1 sectors, S(Δ𝓞(ρ)) = H({pᵢ}) and no distinction arises. A formal derivation is given in Appendix A.</p>
+<p><strong>Rank-1 Simplification.</strong></p>
+<p>For rank-1 sectors (pure pointer states), the definition simplifies to</p>
+<p class="eq">AS(ρ; 𝓞) = H({pᵢ}) / log N,</p>
+<p>where H is the Shannon entropy and N = |𝓞| is the number of record sectors.</p>
+<p><strong>Normalization and Physical Bounds.</strong></p>
+<p>Let 𝓞 = {Πᵢ} be the physically realizable record algebra, with total record-algebra dimension d𝓞 ≡ Σᵢ rank(Πᵢ).</p>
+<p>The maximum effective entropy achievable for a state confined to 𝓞 is S_eff^max = log d𝓞 (uniform distribution over the record algebra). Therefore AS(ρ; 𝓞) ∈ [0, 1] for all admissible ρ.</p>
+<p><strong>Interpretation: The AS Inversion.</strong></p>
+<p>You should expect, from background, that "more actualized" means "more definite." It does not. The convention is the opposite, and the reason is structural.</p>
+<p>AS = 0 when one record sector carries all the weight. The system is completely definite with respect to 𝓞.</p>
+<p>AS = 1 when the weight is distributed maximally across all record sectors. The system is maximally branched.</p>
+<p>The reason for this convention: AS measures <em>capacity for branching that has been committed</em>. Definiteness is the absorption of that capacity into a single sector. Branching is the active state in which all sectors remain operationally distinguishable.</p>
+<p>You do not lose information when AS = 1. You hold maximum record-structured multiplicity. Selection — Paper B’s territory — is what reduces AS by collapsing branching into definiteness.</p>
+<p><strong>Why Dephasing-Relative Entropy (and Not Purity Alone).</strong></p>
+<p>Purity, Tr(ρ²), measures total mixedness. It cannot distinguish a system mixed across record sectors (genuinely branched) from a system mixed within a single sector (intra-sector ignorance).</p>
+<p>The dephasing map removes the intra-sector contribution by construction. The Shannon entropy of the resulting sector weights is what counts.</p>
+<p>If you used purity, you would be measuring something the framework explicitly excludes.</p>
+<p><strong>Normalization Discipline.</strong></p>
+<p>The denominator log d𝓞 is fixed by the record algebra, not by ρ. The normalization is independent of the state. AS values for different states are directly comparable when computed against the same 𝓞.</p>
+<p>When 𝓞 changes, you change the denominator. The kill switch F0 (D5) is what enforces consistency across choices of 𝓞.</p>
+<p><strong>Operational Meaning.</strong></p>
+<p>AS quantifies the informational richness of the committed record structure. High AS means many distinguishable alternatives have been written. Low AS means few have. The branching is what the environment has actually committed to recording.</p>
+<p>Read this against your experience. Before a coin lands, the world is in superposition over outcomes — but the record algebra has not yet resolved. After it lands, AS is 0 with respect to the head/tail algebra: definiteness is achieved. During the moment of falling, when both possibilities are still operationally live in the environment, AS is high.</p>
+<p><strong>Scope and Kill-Switch.</strong></p>
+<p>AS is well defined whenever 𝓞 is identified by D1. Where 𝓞 is ambiguous — where two co-admissible coarse-grainings exist and yield different AS values beyond tolerance — Kill Switch F0 (D5) fires. The framework dies cleanly.</p>
+<p>This is intentional. AS is operationally meaningful only when the physics has selected the record algebra. Where the physics is silent, the framework refuses to invent an answer.</p>
+<p><strong>Worked Example: Two-Qubit Dephasing.</strong></p>
+<p>Two qubits S₁, S₂. Pointer basis 𝓞 = {|00⟩⟨00|, |01⟩⟨01|, |10⟩⟨10|, |11⟩⟨11|}. Initial state |ψ⟩ = (|00⟩ + |11⟩)/√2 (Bell state). Reduced state on the joint system: ρ = |ψ⟩⟨ψ|.</p>
+<p>After dephasing in 𝓞: Δ𝓞(ρ) = ½|00⟩⟨00| + ½|11⟩⟨11|. Sector weights: p_00 = ½, p_01 = 0, p_10 = 0, p_11 = ½.</p>
+<p class="eq">H({pᵢ}) = log 2. Normalization: log d𝓞 = log 4 = 2 log 2.</p>
+<p class="eq left">Therefore AS = log 2 / (2 log 2) = ½.</p>
+<p>Two of the four record sectors carry weight; the AS reading reflects half-occupied branching.</p>
+<h2>A2.4 — D4: History-Based Representation of AS (ASₕ)</h2>
+<p><strong>Definition D4.</strong> Let D be a set of consistent histories indexed by α, with weights w(α) and decoherence functional D(α, β). Define the history-based AS as</p>
+<p><strong>ASₕ(D) ≡ H({w(α)}) / log |D|</strong></p>
+<p class="centre">where H is the Shannon entropy and |D| is the cardinality of the history set.</p>
+<p><strong>Conventions on Approximation and Operational Criteria.</strong></p>
+<p>The dephasing condition D(α, β) ≈ 0 for α ≠ β is taken to hold within operational tolerance ε &gt; 0 — the same ε used throughout the paper for finite-resolution measurements. Effective orthogonality, inaccessibility, and recoverability are all defined relative to ε.</p>
+<p>Where the histories correspond one-to-one with the record sectors of D1 at a single time slice and decoherence is complete within ε, AS(ρ; 𝓞) and ASₕ(D) coincide. The equivalence is proved in Appendix A.</p>
+<p>ASₕ is provided as a bridge for readers fluent in the consistent-histories framework. The primary definition is AS(ρ; 𝓞).</p>
+<h2>A2.5 — D5: Operational Invariance Test (Kill Switch F0)</h2>
+<p><strong>Setup.</strong></p>
+<p>Let 𝓞₁ and 𝓞₂ be two physically realizable coarse-grainings selected by the same system–environment coupling. Both must satisfy D1.</p>
+<p><strong>Definition D5 (Operational Invariance Requirement).</strong></p>
+<p>For any system ρ admitting more than one physically realizable coarse-graining {𝓞ₖ},</p>
+<p>|AS(ρ; 𝓞ₖ) − AS(ρ; 𝓞ₖ′)| ≤ δ_exp</p>
+<p>for all admissible pairs (𝓞ₖ, 𝓞ₖ′), where δ_exp is the experimental tolerance set by the precision of the apparatus.</p>
+<p><strong>Falsifier F0 (Global Kill Switch).</strong></p>
+<p>If, in any laboratory implementation, two co-admissible coarse-grainings 𝓞ₖ, 𝓞ₖ′ yield AS values differing persistently beyond δ_exp, then AS as defined here is not an operationally invariant quantity. The entire framework of Paper A fails.</p>
+<p>This is the global kill switch. F0 is non-negotiable. AS is meaningful only if the value is the same regardless of which valid coarse-graining you use to compute it.</p>
+<p><strong>Notes on Scope.</strong></p>
+<p>F0 does not require that every mathematically possible coarse-graining yield the same AS. It requires that all co-admissible coarse-grainings — those satisfying D1 for the same physical coupling — agree within experimental tolerance.</p>
+<p>If two coarse-grainings disagree because one fails D1 (it is not physically selected by the coupling), F0 has not fired. F0 has fired only when two valid candidates persistently disagree beyond δ_exp.</p>
+<p><strong>Worked Example: Operational Invariance in Circuit QED.</strong></p>
+<p>A flux-tunable transmon coupled to a microwave cavity. The coupling Hamiltonian selects two co-admissible pointer bases at different operating points: charge-basis {|0⟩, |1⟩} at one tuning, and flux-basis {|+⟩, |−⟩} at another.</p>
+<p>Compute AS in both bases for a calibration state. If the values agree within the experimental noise floor, F0 has not fired and the framework survives this test. If they persistently disagree by more than the calibration uncertainty, F0 fires.</p>
+<p>R0 in Section A5.2 is the explicit test programme. It is the first test to run, because if F0 fires, no further test is meaningful.</p>
+<h2>A3 — Theorems: Irreversibility and No-Return</h2>
+<p>The definitions are set. Now the proofs.</p>
+<p>What follows cannot be argued with. It can only be tested.</p>
+<h2>A3.1 — Theorem T1: Monotonicity of AS Under Decohering Dynamics</h2>
+<p><strong>Setup.</strong></p>
+<p>Let ρ(t) be the reduced state of a system evolving under a completely positive trace-preserving (CPTP) dynamical semigroup {ℰₜ}ₜ≥0 with generator ℒ. Let 𝓞 = {Πᵢ} be a physically realizable record algebra (Definition D1), and let Δ𝓞(ρ) denote the associated dephasing map.</p>
+<p><strong>Theorem T1 (Statement).</strong></p>
+<p>Here is the central result of Paper A. Everything before it was preparation. Everything after it is consequence.</p>
+<p>The result says: under three precisely stated conditions, the branching can only grow. The coin cannot un-land. The ink cannot un-dry. The record cannot un-write.</p>
+<p>Possibility becomes fact, and the transition is one-way. Not because physics prohibits reversal — but because the conditions that create records are the conditions that make the inequality hold.</p>
+<p>Actualization State is monotonic nondecreasing along the evolution ρ(t) provided the following minimal sufficient conditions hold:</p>
+<p><strong>(1) Decoherence relative to the record algebra.</strong> Interference between record sectors is not regenerated:</p>
+<p>(d/dt) C𝓞(ρ(t)) ≤ 0,</p>
+<p>where C𝓞 is any coherence monotone that vanishes on Δ𝓞(ρ). Equivalently, off-diagonal terms in the 𝓞-basis decay monotonically.</p>
+<p><strong>(2) Closure of the record algebra.</strong></p>
+<p class="eq">Δ𝓞 ∘ ℰₜ = ℰₜ ∘ Δ𝓞 for all t ≥ 0.</p>
+<p>This ensures that populations in the record sectors evolve autonomously once decohered.</p>
+<p><strong>(3) Unital (mixing) dynamics on the record algebra.</strong> The sector weights pᵢ(t) = Tr(Πᵢ ρ(t)) evolve under a doubly stochastic map:</p>
+<p class="eq left">p(t) = M(t) p(0),</p>
+<p>where M preserves the uniform distribution.</p>
+<p>In plain language: the mixing is fair. No sector is favoured. The dynamics spread probability out, not funnel it in.</p>
+<p><strong>Conclusion.</strong></p>
+<p>Under conditions (1)–(3),</p>
+<p>(<strong>d/dt) AS(ρ(t); 𝓞) ≥ 0</strong>.</p>
+<p>That is, Actualization State is monotonic along decohering, record-forming dynamics.</p>
+<p><strong>Scope of the theorem.</strong></p>
+<p>T1 is a conditional statement. Its domain of applicability is exactly the set of dynamics satisfying conditions (1)–(3).</p>
+<p>Dynamics outside this domain — including dissipative, non-unital, or feedback-controlled evolution — may cause AS to decrease. This does not contradict the theorem. It indicates the dynamics are not purely record-forming in the sense defined above.</p>
+<p>The explicit scope boundary and converse are given below.</p>
+<p><strong>Note on novelty and scope.</strong></p>
+<p>Conditions (1)–(3) are sufficient but not necessary. The monotonicity of Shannon entropy under doubly stochastic mixing is a standard result (Schur convexity), and this paper does not claim otherwise.</p>
+<p class="centre">What is new is not the mathematical inequality. It is the physical application:</p>
+<ul class="plain"><li>The identification of conditions under which doubly stochastic mixing is the correct effective description of decoherence in a physically realized record algebra.</li><li>The isolation of inter-sector branching entropy (via the dephasing map Δ𝓞) from thermodynamic entropy.</li><li>The explicit rate bound (T1a) and converse (T1b) that turn the monotonicity into a diagnostic tool for identifying record-forming dynamics.</li></ul>
+<p>The theorem is a known inequality applied in a new physical context. The contribution is the context, not the inequality.</p>
+<p>You are seeing a known mathematical tool applied to a new physical question — and the answer it gives is decisive.</p>
+<p><strong>Lemma T1.1 (Doubly stochastic mixing).</strong></p>
+<p>Under conditions (2) and (3), the sector weights p(t) evolve under a doubly stochastic matrix M(t) for all t ≥ 0.</p>
+<p><strong>Proof</strong>. By condition (2), Δ𝓞 ∘ ℰₜ = ℰₜ ∘ Δ𝓞, so the evolution commutes with dephasing. Therefore the diagonal elements evolve autonomously: there exists a linear map M(t) such that p(t) = M(t) p(0).</p>
+<p>The map is stochastic because ℰₜ is trace-preserving: Σᵢ pᵢ(t) = 1 for all t.</p>
+<p>Unitality (condition 3) means ℰₜ(I/d) = I/d. Applying Δ𝓞 to both sides and using condition (2):</p>
+<p class="eq">Δ𝓞(ℰₜ(I/d)) = ℰₜ(Δ𝓞(I/d)) = ℰₜ(I/d) = I/d.</p>
+<p>In terms of sector weights, the uniform distribution is fixed: M(t)(1/N, …, 1/N)ᵀ = (1/N, …, 1/N)ᵀ.</p>
+<p>A stochastic matrix that preserves the uniform distribution is doubly stochastic.</p>
+<p>The lemma is short. Its consequence is not.</p>
+<p>Once you know the mixing is doubly stochastic, Shannon’s inequality does the rest. With Lemma T1.1 established, the monotonicity of Shannon entropy under doubly stochastic mixing is a standard result (Schur-convexity of −H). The theorem follows.</p>
+<p>The proof is standard mathematics applied to a new physical context. What is new is the recognition that record-forming dynamics satisfy exactly the conditions that make the inequality hold.</p>
+<p><strong>Interpretation.</strong></p>
+<p>When interference between record-distinguishable alternatives is suppressed, the record algebra is dynamically closed, and record-sector probabilities mix without coherent backflow, the informational richness of committed classical branching cannot decrease.</p>
+<p>This monotonic increase defines the arrow of actualisation.</p>
+<p>You have lived inside this arrow your entire life. Every moment has been forward. Every record has been permanent. The theorem says why: under the conditions that create records, the branching can only grow.</p>
+<p><strong>Explicit Scope Boundary.</strong></p>
+<p>Outside these three conditions, the guarantee is void. AS may decrease under cooling, decay, relaxation, feedback control, or any dynamics that funnel probability into fewer sectors.</p>
+<p>The theorem does not claim universality. It claims precision. These cases do not contradict T1; they lie outside its scope by construction.</p>
+<p><strong>Why the Scope Is Exact.</strong></p>
+<p>Pay attention to this. It is the difference between a real theorem and a hand-wave.</p>
+<p>AS measures branching, not definiteness. Decoherence creates branching — AS increases. Selection resolves branching — AS decreases. T1 applies only to the creation phase.</p>
+<p>The theorem is not claiming that AS always increases everywhere forever. It is claiming something much more precise: under exactly these three conditions, AS cannot decrease. Violate the conditions and the guarantee is void.</p>
+<p>The conditions are not technicalities. They are the physics. And the physics is testable.</p>
+<p><strong>Quantitative Sharpening: Rate Bounds and Converse.</strong></p>
+<p>T1 establishes monotonicity but does not quantify the rate at which AS approaches its equilibrium value, nor does it characterize conditions under which AS must decrease. The two results below sharpen T1 in both directions.</p>
+<p><strong>Corollary T1a (Rate of convergence).</strong></p>
+<p>Under conditions (1)–(3), let the induced classical dynamics on the sector weights be governed by a continuous-time doubly stochastic rate matrix W, so that dp/dt = Wp. Let λ₂ &lt; 0 denote the second-largest eigenvalue of W (the spectral gap). Then the deviation of AS from its equilibrium value AS_eq = 1 satisfies</p>
+<p>|AS(t) − 1| ≤ C · exp(λ₂ t),</p>
+<p>where C depends on the initial condition.</p>
+<p><em>Derivation.</em> For any initial distribution p(0), the deviation from uniformity satisfies ‖p(t) − π‖₁ ≤ √N · exp(λ₂ t) (by standard contraction bounds for reversible Markov chains).</p>
+<p>The Shannon entropy H(p) is Lipschitz in the L₁ norm on the probability simplex: |H(p) − H(q)| ≤ ‖p − q‖₁ · log N (continuity bound for entropy; Cover and Thomas 2006).</p>
+<p>Therefore |AS(t) − 1| = |H(p(t)) − log N| / log N ≤ ‖p(t) − π‖₁ ≤ √N · exp(λ₂ t), where the constant C = √N absorbs the dimension dependence.</p>
+<p>The rate of convergence to maximal branching is controlled by the spectral gap of the mixing dynamics, not by any property intrinsic to the AS definition.</p>
+<p>For the symmetric d-sector model with uniform inter-sector mixing rate w, the spectral gap is λ₂ = −dw, and the convergence time to AS ≈ 1 scales as τ ∼ 1/(dw).</p>
+<p>This connects AS growth directly to the physical decoherence rate of the record algebra.</p>
+<p>The faster the environment records the system, the faster AS climbs. You can measure this. The spectral gap is a physical quantity. The convergence rate is a prediction.</p>
+<p><strong>Proposition T1b (Converse: conditions for AS decrease).</strong></p>
+<p>If condition (3) is violated — specifically, if the induced classical dynamics on sector weights are governed by a stochastic matrix M that is not doubly stochastic, with stationary distribution π ≠ uniform — then there exist initial distributions p(0) for which AS is strictly decreasing.</p>
+<p>In particular, if p(0) majorizes π, the Shannon entropy H(p(t)) may increase, but if π majorizes p(0), then H(p(t)) can decrease toward H(π) &lt; log d.</p>
+<p>Physically, T1b corresponds to dissipative dynamics that preferentially funnel population into a subset of record sectors — for example, amplitude damping or spontaneous decay into a ground-state sector. Such dynamics violate the unital condition (3) and drive AS downward.</p>
+<p>The converse confirms that condition (3) is not merely a technical convenience. It is a physical requirement: monotonicity of AS is a signature of symmetric, environment-driven mixing, not of dissipative relaxation.</p>
+<p>When AS decreases, something is funnelling probability into fewer branches — cooling, decay, relaxation. When AS increases, the environment is writing records. The direction tells you which process is dominant.</p>
+<p><strong>Summary.</strong></p>
+<p>T1, T1a, and T1b together establish that AS monotonicity is the exact fingerprint of doubly stochastic record-forming dynamics. T1 gives the direction. T1a gives the rate. T1b gives the converse. No further characterization of the monotonicity is needed or claimed.</p>
+<h2>A3.2 — The Operator Horizon: No-Return as an Inequality</h2>
+<p><strong>Setup.</strong></p>
+<p>Let x(t) ≥ 0 be a scalar variable representing the degree of maintained structure of a system — displacement from its unmaintained equilibrium baseline.</p>
+<p>Assume deterministic dynamics:</p>
+<p class="eq left">dx/dt = −a x + u, u(t) ∈ [0, u_max],</p>
+<p>where a &gt; 0 is an intrinsic decay/drift rate toward equilibrium, u is a control/maintenance input, and u_max ≥ 0 is a hard upper bound on control capacity.</p>
+<p><strong>Theorem T2 (Operator Horizon).</strong></p>
+<p>You have felt this theorem in your body. Every system with limited resources — every body, every business, every civilisation — has a point beyond which no strategy can save it.</p>
+<p>The theorem names that point.</p>
+<p>Define the operator horizon</p>
+<p><strong>xₕ ≡ u_max / a.</strong></p>
+<p>If at some time t₀ the system satisfies x(t₀) &gt; xₕ, then for all admissible controls u(t),</p>
+<p><strong>dx/dt &lt; 0 whenever x &gt; xₕ,</strong></p>
+<p>and x(t) decreases monotonically toward xₕ.</p>
+<p>Once you cross the horizon, x(t) decreases no matter what you do. Maximum effort slows the decline but cannot reverse it. Recovery is impossible by control alone.</p>
+<p><strong>Proof.</strong></p>
+<p class="eq left">From the dynamics, dx/dt = −a x + u ≤ −a x + u_max.</p>
+<p>If x &gt; u_max/a, then −a x + u_max &lt; 0, hence dx/dt &lt; 0. At x = xₕ, maximal control yields dx/dt = 0; continuity implies monotone approach to xₕ from above.</p>
+<p><strong>Interpretation.</strong></p>
+<p>xₕ is a capacity boundary, not a physical wall. It is the maximum sustainable structure given maximum maintenance effort.</p>
+<p>Beyond xₕ, the system decays toward the horizon regardless of strategy. Irreversibility arises from insufficiency of admissible control, not from prohibition of reverse dynamics.</p>
+<p><strong>Generalizations.</strong></p>
+<p><em>Nonlinear decay.</em> If dx/dt = −g(x) + u with g(0) = 0 and g(x) increasing, the horizon is implicitly defined by g(xₕ) = u_max.</p>
+<p>Your body operates under nonlinear decay — the maintenance cost of health increases with age, and the horizon shifts. The qualitative no-return result is unchanged.</p>
+<p><em>Time-dependent capacity.</em> If a(t) or u_max(t) varies, xₕ(t) = u_max(t)/a(t) defines a time-dependent horizon. Exceeding the instantaneous horizon for sufficient time yields practical no-return behavior.</p>
+<p>You know this. You have watched a garden become overgrown past the point where you could maintain it. You have watched debt compound past the point where income could service it. You have watched a body deteriorate past the point where medicine could restore it.</p>
+<p>The mathematics is confirming what your experience already knows. There is a line, and once you cross it, effort is not enough.</p>
+<p><em>Classical analogy.</em> Consider a leaking bucket with a bounded refill rate. The horizon is the maximum fill level sustainable at maximum pumping. Once above it, the bucket drains regardless of effort.</p>
+<h2>A3.3 — No-Return Surfaces and Operational Irreversibility</h2>
+<p><strong>Setup.</strong></p>
+<p>The scalar horizon is the simple case. Real systems have many dimensions. The generalisation uses viability theory (Aubin, 1991) — the mathematics of survival under constraint.</p>
+<p><strong>Definition D6: State Space and Admissible Dynamics.</strong> Let X ⊆ ℝⁿ be the state space. Let admissible controls satisfy u(t) ∈ U, where U is compact. Dynamics: dx/dt = f(x, u), with f locally Lipschitz in x. Let R ⊂ X be the recoverable (safe) set.</p>
+<p><strong>Definition D7: Viability Kernel.</strong></p>
+<p>Viab(R) ≡ { x₀ ∈ R | ∃ u(·) ∈ U such that x(t; x₀, u) ∈ R for all t ≥ 0 }.</p>
+<p>States from which the system can be kept inside R indefinitely using admissible control.</p>
+<p><strong>Definition D8: Capture Basin.</strong></p>
+<p>Cap(R) ≡ { x₀ ∈ X | ∀ u(·) ∈ U, ∃ t ≥ 0 such that x(t; x₀, u) ∉ R }.</p>
+<p>States from which exit from R is inevitable under all admissible controls.</p>
+<p><strong>Definition D9: No-Return Surface.</strong></p>
+<p>Σₕ ≡ ∂ Viab(R).</p>
+<p>This is the geometric generalization of the scalar horizon xₕ.</p>
+<p><strong>Proposition P3.3.</strong></p>
+<p>Assume the standard viability conditions (local Lipschitz continuity of f, compact U). Then:</p>
+<p>(1) Viab(R) consists of states from which at least one admissible control avoids loss indefinitely. Cap(R) consists of states from which all admissible controls lead to loss in finite time.</p>
+<p>(2) Crossing Σₕ transfers the system from a region where recovery is reachable to a region where it is not.</p>
+<p><em>Caveat.</em> Viab(R) and Cap(R) partition X up to the boundary Σₕ. Boundary states may be marginal.</p>
+<p><strong>Definition D10: Operational Irreversibility (Quantified).</strong></p>
+<p>A state x₀ is operationally irreversible with respect to R iff x₀ ∉ Viab(R). The reverse transition to R does not exist under admissible controls.</p>
+<p>Operational irreversibility depends on reachability under constraints, not on microscopic time-reversal symmetry. The distinction matters.</p>
+<p>A shattered vase is not irreversible because physics forbids reassembly. It is irreversible because you do not have the resources, precision, or time to reassemble it. Irreversibility is about what you can do. Not about what nature prohibits.</p>
+<p><strong>Consistency with A3.2.</strong></p>
+<p class="centre">A3.2 is recovered as the special case n = 1, f(x, u) = −ax + u, R = [0, xₕ].</p>
+<p>Then Viab(R) = [0, xₕ] and Σₕ = {xₕ}. The scalar horizon is exactly the one-dimensional no-return surface.</p>
+<p>You now have the complete no-return geometry. The scalar horizon (T2) is the simple case. The viability kernel (D7) is the general case. The no-return surface (D9) is the boundary between where you can still recover and where you cannot.</p>
+<p>Every system you have ever cared about — your body, your relationships, your work — has this geometry. The mathematics names what your experience already knows.</p>
+<p><strong>Robustness Notes.</strong></p>
+<p>With stochastic forcing, replace viability by almost-sure or probabilistic viability; Σₕ becomes a probabilistic boundary. The concept is unchanged; only the quantifier changes. Viab(R) and Σₕ are computable via Hamilton–Jacobi reachability methods.</p>
+<h2>A4 — Quantum Mechanical Instantiation</h2>
+<p>Sections A0–A3 are complete. They stand alone. What follows adds independently falsifiable postulates — each one an invitation to destroy a specific claim.</p>
+<p>If any postulate in this section falls, everything above it survives. You lose the extension, not the foundation.</p>
+<p>Sections A0–A3 establish definitions and theorems that are self-contained: they depend only on operational definitions, standard quantum mechanics, and viability theory. Nothing in A0–A3 requires the content of A4 or A5.</p>
+<p>This section introduces postulates that extend the argument to address selection and gravitational rate constraints. These postulates are independently falsifiable. Each has explicit conditions under which it fails (F1–F3, G1–G3). Failure of any postulate here does not invalidate the definitions, theorems, or irreversibility results of A0–A3.</p>
+<p>The transition from theorem to postulate is marked explicitly at each point of introduction.</p>
+<h2>A4.1 — Operational Irreversibility in Open Quantum Systems</h2>
+<p>The viability geometry of Section A3 now meets quantum mechanics. The abstract becomes concrete. You will recognise the structure.</p>
+<p><strong>Setup: Accessible Dynamics.</strong></p>
+<p>You have access to the system but not the environment. That restriction is the source of irreversibility.</p>
+<p>Let the total Hilbert space factor as ℋ = ℋₛ ⊗ ℋₑ, with joint state evolving unitarily under Hₛₑ.</p>
+<p>The accessible system state — the one you can actually measure — is</p>
+<p class="eq left">ρₛ(t) = Trₑ[U(t) ρₛₑ(0) U†(t)].</p>
+<p>Admissible operations are restricted to system-local CPTP maps — the operations you can actually perform on the system without accessing the environment:</p>
+<p class="eq">Λ: ℬ(ℋₛ) → ℬ(ℋₛ),</p>
+<p>optionally employing fresh ancilla, but with no access to the original environment E.</p>
+<p><strong>Definition D11: Coherence-Recoverable States.</strong></p>
+<p>A system state ρₛ is coherence-recoverable relative to 𝓞 iff there exists an admissible CPTP map Λ such that</p>
+<p>‖Λ(ρₛ) − ρ_coh‖₁ ≤ ε,</p>
+<p>for some state ρ_coh satisfying Δ𝓞(ρ_coh) ≠ ρ_coh, and for fixed operational tolerance ε &gt; 0.</p>
+<p><strong>Definition D12: Recoverable Set and Viability Kernel.</strong></p>
+<p>Kε(𝓞) ≡ { ρₛ | ρₛ is coherence-recoverable relative to 𝓞 }.</p>
+<p>Kε(𝓞) is the viability kernel of coherence under admissible control. States outside Kε(𝓞) are operationally irreversible with respect to 𝓞.</p>
+<p><strong>Mapping to viability theory (D6–D9).</strong></p>
+<p>The abstract viability framework of Section A3.3 instantiates in the quantum setting as follows.</p>
+<ul class="plain"><li><em>State space X</em>: the convex set of density operators on ℋₛ, equipped with the trace-norm topology.</li><li><em>Admissible controls</em>: the set of system-local CPTP maps (optionally with fresh ancilla), representing all operations an agent can perform on S alone.</li><li><em>Dynamics f(x, u)</em>: the discrete-time or continuous-time evolution generated by applying admissible operations.</li><li><em>Recoverable set R</em>: the set of states from which coherence between record sectors can be restored (Definition D11).</li><li><em>Viability kernel Viab(R</em>): exactly Kε(𝓞) — the set of states for which there exists an admissible control strategy that maintains coherence-recoverability indefinitely.</li><li><em>Capture basin Cap(R)</em>: the set of states from which, under any admissible control strategy, the system eventually becomes operationally irreversible.</li><li><em>No-return surface Σₕ</em>: the boundary ∂Kε(𝓞), separating recoverable from irreversibly decohered states.</li></ul>
+<p>The scalar horizon xₕ = u_max/a of T2 is the one-dimensional special case of this general geometric construction.</p>
+<p><strong>Proposition P4.1: Tracing Induces Loss of Recoverability.</strong></p>
+<p>If system–environment interaction produces correlations such that distinct record sectors become correlated with orthogonal (or trace-distance-separated) environment states, then for sufficiently small ε,</p>
+<p>ρₛ(t) ∉ Kε(𝓞).</p>
+<p>Once which-record information is encoded in inaccessible degrees of freedom, no admissible operation on S alone can restore coherence between record sectors.</p>
+<p>You have felt this. Once the words leave your mouth, you cannot un-say them. The environment has recorded them — in the other person’s memory, in the vibrations of the air, in the electromagnetic radiation that left the room at the speed of light. No operation on your mouth alone can undo what the environment now holds.</p>
+<p><em>Proof sketch</em>. Orthogonality of environment states implies non-injectivity of the reduced dynamics on ℋₛ. Multiple globally distinct states map to the same ρₛ, and no CPTP map on S can reconstruct the lost phase information.</p>
+<p><strong>Definition D13: Operational No-Return Surface (Quantum).</strong></p>
+<p>The operational no-return surface relative to 𝓞 is the boundary ∂Kε(𝓞).</p>
+<p>Crossing this boundary transfers the system from a region where coherence is recoverable to a region where it is not.</p>
+<p>Irreversibility is identified with loss of reachability. Not with energy dissipation. Not with entropy increase. Not with violation of microscopic reversibility. With the fact that you cannot get back.</p>
+<p><strong>Interpretation.</strong></p>
+<p>Operational irreversibility in quantum mechanics arises not from non-unitarity, but from restricted access. Tracing over inaccessible degrees of freedom removes states from the recoverable set Kε, producing a no-return surface in state space exactly analogous to the operator horizons of Section A3.</p>
+<p>Irreversibility is a geometric property of admissible control. It is not a statement about time reversal at the microscopic level.</p>
+<h2>A4.2 — Objective Actualization Channels and Selection Dynamics</h2>
+<p class="centre"><strong>Impossibility of Deterministic Selection by Linear CPTP Dynamics.</strong></p>
+<p><strong>Proposition.</strong> No deterministic, linear CPTP map acting on the system state can transform a diagonal mixture over record sectors into a single realized sector in individual runs.</p>
+<p>Linear CPTP evolution preserves convex mixtures: ℰ(Σᵢ pᵢ ρᵢ) = Σᵢ pᵢ ℰ(ρᵢ). Any linear CPTP map that acts identically on each component preserves the mixture structure and cannot yield single-outcome definiteness in individual realizations.</p>
+<p>Any mechanism that resolves a decohered mixture — any mechanism that produces the definiteness you experience — into a single realized branch must involve either a stochastic unraveling or an explicitly nonlinear effective evolution at the level of single trajectories.</p>
+<p>Read that again. Standard quantum mechanics — linear, deterministic, trace-preserving — cannot produce definiteness in individual runs. Something else is required. The proof is not complicated. Linear maps preserve mixtures. If you feed a mixture in, you get a mixture out. Something nonlinear or stochastic must intervene for one outcome to become THE outcome.</p>
+<p><strong>Definition D14: Decoherence vs. Selection.</strong></p>
+<p>Decoherence suppresses interference between record-distinguishable alternatives and yields a stable diagonal mixture in the record algebra 𝓞.</p>
+<p>Selection is the further transition from a diagonal mixture to a single realized branch.</p>
+<p>Decoherence is sufficient for irreversibility. Selection is required for definiteness.</p>
+<p>You live in a definite world. Something selects.</p>
+<p>Decoherence and selection are distinct processes. You experience them as distinct. The formalism confirms your experience.</p>
+<p><strong>Operational Meaning of "Realized Branch."</strong></p>
+<p>A branch i is realized iff, for all subsequent times and for any sequence of admissible operations confined to ℋₛ, the accessible state behaves as if it had been prepared in the conditional state</p>
+<p>ρᵢ ≡ (Πᵢ ρₛ Πᵢ) / pᵢ</p>
+<p>at the onset of selection — in the sense that for all admissible POVMs M on S,</p>
+<p>|Tr(M ρₛ(t)) − Tr(M ρᵢ)| ≤ ε</p>
+<p>for operational tolerance ε.</p>
+<p>Decoherence separates the branches. Selection picks one. You have felt both — the moment when the options became clear (decoherence) and the moment when one became actual (selection). The physics mirrors the experience.</p>
+<p><strong>Postulate P: Objective Actualization Channel.</strong></p>
+<p>The paper posits an objective actualisation channel acting on the reduced state after decoherence has established operational irreversibility.</p>
+<p>The ensemble evolution of the reduced state is written schematically as</p>
+<p class="eq">dρₛ/dt = ℒ_unitary(ρₛ) + D𝓞(ρₛ) + A𝓞(ρₛ),</p>
+<p>where D𝓞 is the standard pointer-dephasing channel and A𝓞 is a selection channel responsible for definiteness.</p>
+<p>The master equation governs ensemble dynamics. Single-run definiteness requires a stochastic or nonlinear unraveling of A𝓞.</p>
+<p><strong>Structural Requirements on the Selection Channel.</strong></p>
+<p>(<strong>S0) Activation Condition</strong>. A𝓞 ≈ 0 until the decoherence condition (D13) holds within tolerance ε. Selection activates only after branches are operationally distinct.</p>
+<p>(<strong>S1) Record-algebra locality</strong>. A𝓞(ρₛ) = A𝓞(Δ𝓞(ρₛ)). Selection never creates interference.</p>
+<p>(<strong>S2) Sector fixed points</strong>. A𝓞(Πᵢ ρₛ Πᵢ) = 0 for all i. Once a branch is realized, dynamics cease.</p>
+<p><strong>(S3) Contractivity (single-run resolution).</strong> Under the stochastic unraveling, the Shannon entropy H({pᵢ}) is a supermartingale: it decreases along individual trajectories almost surely.</p>
+<p><strong>(S4) Born boundary condition.</strong> For an ensemble of identical preparations at the onset of selection, the distribution of realized branches converges to {pᵢ}.</p>
+<p>S4 is a boundary condition, not a derivation.</p>
+<p>Notice what S4 does and does not say. It does not explain <em>why</em> the Born rule holds. It says: whatever selection is, it must produce Born statistics at the ensemble level. The constraint is structural. The explanation is someone else’s problem.</p>
+<p>Five structural requirements. Not a mechanism — an interface. Whatever selection IS, it must satisfy these five constraints. The constraints are testable. The mechanism is nature’s business.</p>
+<p>Observational consequence. Any selection channel satisfying S0–S4 produces, at the single-trajectory level, dynamics that are not reproducible by any linear CPTP map acting on ℋₛ. This is the empirical signature of selection: post-decoherence statistics that violate linearity.</p>
+<p>Concretely, monitoring a single system through the selection process should reveal either diffusive wandering or discrete jumps in sector weights — neither of which is consistent with a Lindblad master equation applied after dephasing is complete. This prediction is the target of test R5 (A5.2).</p>
+<p><strong>Toy Model: Stochastic Selection on a Qubit.</strong></p>
+<p>Abstract requirements are convincing only when you can see them work in a concrete case. Here is the simplest possible example — a single qubit. Watch how all five requirements are satisfied simultaneously.</p>
+<p>The structural requirements S0–S4 constrain the selection channel but do not uniquely determine it. To demonstrate that the requirements are jointly satisfiable and to anchor the postulate in a concrete mathematical object, exhibit a minimal toy model: diffusive selection on a single qubit.</p>
+<p><em>Setup</em>. Let the system be a qubit with pointer basis 𝓞 = {|0⟩⟨0|, |1⟩⟨1|}. After decoherence is complete, the reduced state is ρₛ = diag(p, 1−p), with p ∈ [0, 1]. The selection channel acts on the single free parameter p via the Itô stochastic differential equation</p>
+<p class="eq left">dp = √γ · p(1 − p) · dW(t),</p>
+<p>where W(t) is a standard Wiener process and γ &gt; 0 is the selection rate parameter.</p>
+<p>The diffusion coefficient σ(p) = √γ · p(1 − p) vanishes at the boundaries p = 0 and p = 1, making both endpoints absorbing states.</p>
+<p><strong>Verification of S0–S4.</strong></p>
+<p><em>(S0) Activation condition.</em> γ is set to zero until the decoherence threshold (D13) is satisfied. Prior to activation, p evolves only under standard quantum dynamics.</p>
+<p><em>(S1) Record-algebra locality.</em> The SDE acts entirely on the diagonal sector weight p. No off-diagonal (coherence) terms are generated. The map is record-algebra local by construction.</p>
+<p><em>(S2) Sector fixed points.</em> At p = 0 and p = 1, the diffusion coefficient vanishes identically: σ(0) = σ(1) = 0. Both sector-pure states are absorbing. Once a branch is realized, dynamics cease.</p>
+<p><em>(S3) Contractivity (full Itô calculation).</em> Define H(p) = −p log p − (1−p) log(1−p). The selection SDE is dp = √γ · p(1−p) dW. Apply Itô’s formula: dH = H'(p) dp + ½ H''(p) (dp)².</p>
+<p>Compute: H'(p) = −log p + log(1−p) = log[(1−p)/p]. H''(p) = −1/p − 1/(1−p) = −1/[p(1−p)].</p>
+<p>The quadratic variation is (dp)² = γ p²(1−p)² dt. Substituting:</p>
+<p>dH = log[(1−p)/p] · √γ · p(1−p) dW + ½ · [−1/(p(1−p))] · γ p²(1−p)² dt.</p>
+<p>The drift term simplifies: ½ · [−1/(p(1−p))] · γ p²(1−p)² = −(γ/2) p(1−p). Therefore</p>
+<p class="eq left">dH = −(γ/2) p(1−p) dt + √γ · p(1−p) · log[(1−p)/p] dW.</p>
+<p>The drift term −(γ/2) p(1−p) is strictly negative for all p ∈ (0, 1), with equality only at the absorbing boundaries. The dW term is a martingale (zero expectation). Therefore E[dH] = −(γ/2) p(1−p) dt ≤ 0, establishing that H is a supermartingale.</p>
+<p>Shannon entropy decreases along individual trajectories almost surely, with rate proportional to γ.</p>
+<p>The mathematics just proved that the branching resolves. Not on average. Not in expectation. Along every single trajectory. The coin lands.</p>
+<p><em>(S4) Born boundary condition.</em> The process dp = √γ · p(1−p) dW is a martingale, since the drift term is zero: E[p(t)] = p(0) for all t.</p>
+<p>Because p converges almost surely to {0, 1}, the probability of absorption at p = 1 is exactly p(0), and absorption at p = 0 occurs with probability 1 − p(0).</p>
+<p>The ensemble statistics of realised branches reproduce the Born weights without any additional assumption. No extra postulate. No interpretation. The martingale property of the process — the same mathematics that governs fair games in probability theory — forces the Born rule.</p>
+<p>The universe plays fair.</p>
+<p><strong>Connection to the gravitational limiter.</strong> Postulate G (A4.3) constrains the selection rate: γ ≤ ΔE_G/ℏ.</p>
+<p>In the toy model, the mean time to absorption scales as τ ∼ 1/γ, so the gravitational bound imposes τ ≥ ℏ/ΔE_G. For gravitationally indistinguishable records (ΔE_G = 0), γ = 0 and no selection occurs.</p>
+<p><strong>What the toy model does not determine.</strong></p>
+<p>The diffusive form of the SDE is a choice, not a derivation. A jump (Poisson) unraveling would also satisfy S0–S4, as would other diffusion coefficients of the form σ(p) = f(p) with f(0) = f(1) = 0.</p>
+<p>The toy model demonstrates joint satisfiability of the structural requirements and provides a concrete anchor for falsification predictions — for example, the distinction between diffusive and jump statistics in R5. It does not claim to be the unique or correct selection dynamics.</p>
+<p class="centre">The postulate specifies an interface. The toy model is one implementation.</p>
+<p>You do not need to know which implementation nature uses. You need to know that any implementation satisfying S0–S4 reproduces what you observe.</p>
+<p>This underdetermination is a feature of the postulate’s generality, but it has experimental consequences. Diffusive unravelings predict continuous, Brownian-like wandering of sector weights before absorption, yielding a characteristic 1/f noise spectrum in single-trajectory monitoring. Jump unravelings predict sudden, discrete transitions between sector weights, yielding telegraph noise.</p>
+<p>These are operationally distinguishable in systems where single trajectories can be monitored — continuously measured superconducting qubits, fluorescence-monitored trapped ions. Test R5 is designed, among other things, to make this distinction. Until such data exist, the postulate correctly remains agnostic about which unraveling nature selects.</p>
+<p><strong>Explicit Distinction from Spontaneous Collapse Models.</strong></p>
+<p>Postulate P shares surface features with spontaneous collapse models such as GRW (Ghirardi, Rimini, Weber) and CSL (Continuous Spontaneous Localization), but it differs from them in structure, scope, and commitment. The distinctions are precise.</p>
+<p><em>Basis of collapse.</em> GRW and CSL collapse the wavefunction in the position basis by construction. The localization operators are spatial: they multiply the wavefunction by a Gaussian centered at a random point in physical space.</p>
+<p>The selection postulate instead acts on whatever record algebra 𝓞 is selected by the system–environment coupling.</p>
+<p>In systems where the pointer basis is not position — superconducting qubits, photon polarization, spin ensembles — GRW/CSL and Postulate P make different predictions. That is the content of falsifier F1 and test R1.</p>
+<p><em>Order of operations.</em> In GRW/CSL, collapse is a universal, always-on process that competes with unitary evolution at all times.</p>
+<p>The selection postulate requires an activation condition (S0): selection is negligible until decoherence has rendered record sectors operationally distinct. This ordering is falsifiable via test R5.</p>
+<p>If collapse signatures appear before decoherence is complete, the selection postulate fails. If they appear only after, GRW/CSL’s always-on character is unnecessarily strong.</p>
+<p><em>Rate structure.</em> GRW introduces a universal collapse rate λ (one collapse per particle per ~10¹⁶ seconds) and a localization width a ~ 10⁻⁷ m as free parameters. CSL replaces the discrete hits with continuous diffusion but retains the same two parameters.</p>
+<p>The selection postulate introduces no universal rate. Instead, the rate is bounded from above by the gravitational self-energy distinguishability of the record sectors (Postulate G). The selection rate is system-dependent and vanishes for gravitationally indistinguishable records — a prediction GRW/CSL do not make.</p>
+<p><em>Ontological commitment.</em> GRW/CSL modify the Schrödinger equation at the fundamental level. They add a stochastic, nonlinear term to the dynamical law governing all matter.</p>
+<p>The selection postulate does not modify quantum mechanics. It posits an additional channel that acts on the reduced state after decoherence, without specifying whether this channel is fundamental, emergent, or an effective description of deeper physics.</p>
+<p>The limitation is deliberate, not an oversight: the postulate specifies an interface, not an ontology.</p>
+<p><em>Summary of experimental discriminants.</em></p>
+<p>Three tests distinguish the selection postulate from GRW/CSL:</p>
+<ul class="plain"><li>(R1) whether selection targets the pointer basis or always position;</li><li>(R2) whether selection occurs between gravitationally indistinguishable records;</li><li>(R5) whether selection requires prior decoherence or operates independently of it.</li></ul>
+<p>Agreement on all three would be surprising and informative. Disagreement on any one is decisive.</p>
+<p><strong>Relation to Actualization State.</strong></p>
+<p>Selection reduces AS. Decoherence increases AS by creating record-structured branching (A3.1). Selection decreases AS by collapsing that branching into a single realized history.</p>
+<p>There is no contradiction. AS measures branching richness, not outcome definiteness.</p>
+<p>Decoherence opens the fan. Selection closes it. AS tracks the fan.</p>
+<p><strong>Falsifiability.</strong></p>
+<p><strong>F1 (Pointer failure</strong>). Selection does not respect the record algebra 𝓞.</p>
+<p><strong>F2 (Born violation).</strong> Ensemble statistics of realized branches deviate from {pᵢ}.</p>
+<p><strong>F3 (Context dependence).</strong> Selection depends on observer intervention rather than objective dynamics.</p>
+<p>Failure of the postulate does not invalidate AS, T1–T2, or A4.1.</p>
+<h2>A4.3 — Physical Constraints on Selection Rates (Gravity as Limiter)</h2>
+<p><strong>Definition D15: Gravitational Self-Energy Distinguishability.</strong></p>
+<p>Let two decohered record sectors i and j correspond to mass–energy densities ρᵢ(x) and ρⱼ(x). Define the gravitational self-energy difference</p>
+<p>ΔE_G[i, j] ≡ (G/2) ∫∫ [ρᵢ(x) − ρⱼ(x)] [ρᵢ(y) − ρⱼ(y)] / |x − y| d³x d³y.</p>
+<p>ΔE_G = 0: the two records are gravitationally indistinguishable. Larger ΔE_G: stronger gravitational distinguishability.</p>
+<p><strong>Definition D16: Inter-Sector Selection Rate.</strong></p>
+<p>Let τᵢⱼ be the characteristic time for an individual realization to become operationally indistinguishable from the conditional state within tolerance ε. Define the inter-sector selection rate</p>
+<p>λᵢⱼ ≡ 1/τᵢⱼ.</p>
+<p><strong>Postulate G: Gravity-Limited Selection Rate.</strong></p>
+<p>The objective selection rate between two record sectors is bounded above by their gravitational distinguishability:</p>
+<p><strong>λᵢⱼ ≤ ΔE_G[i, j] / ℏ.</strong></p>
+<p>The bound is a limiting inequality, not an equality. Selection may be slower. Selection cannot be faster without invoking a coupling stronger than gravity.</p>
+<p><strong>Physical motivation.</strong></p>
+<p>This bound is not derived from first principles. It is a postulate. But it is not arbitrary.</p>
+<p>Two record sectors with distinct mass–energy distributions source distinct gravitational fields. If these sectors are in superposition, the gravitational field itself is in a superposition of distinguishable configurations.</p>
+<p>The gravitational self-energy difference ΔE_G quantifies the degree to which the two field configurations are distinguishable. It is the interaction energy of the difference mass distribution with itself.</p>
+<p>The energy–time relation ΔE · Δt ≥ ℏ then implies that the minimum time required for any physical process to resolve this distinguishability is Δt ∼ ℏ/ΔE_G.</p>
+<p>The bound λᵢⱼ ≤ ΔE_G/ℏ therefore says: selection cannot resolve two record sectors faster than the gravitational field configurations sourced by those sectors can be distinguished.</p>
+<p>The bound is not a derivation of gravitational collapse. It is a consistency constraint. Whatever mechanism performs selection, it cannot outrun gravitational distinguishability unless it couples to the system more strongly than gravity does.</p>
+<p>The bound is testable (R3). Its failure would indicate either that selection couples to a non-gravitational degree of freedom, or that the energy–time reasoning does not apply to the selection process.</p>
+<p>Think about what this means for everyday objects.</p>
+<p>A cat in a box has enormous gravitational self-energy difference between <em>alive</em> and <em>dead</em> configurations — different mass distributions, different gravitational fields. The bound says selection happens almost instantly. You never see a cat in superposition because gravity resolves it before you could notice.</p>
+<p>An electron spin has essentially zero gravitational self-energy difference between <em>up</em> and <em>down</em> — same mass, same distribution. The bound says selection is negligible. Electrons remain in superposition indefinitely.</p>
+<p>One inequality. Both the classical and the quantum world explained.</p>
+<p><strong>Distinction from Diósi–Penrose.</strong></p>
+<p>The Diósi–Penrose proposal argues that gravity <em>causes</em> collapse due to spacetime ambiguity in superposed mass configurations. The present framework makes a weaker claim: gravity <em>limits the rate</em> of selection.</p>
+<p>The mechanism of selection is not specified. Gravity provides only a ceiling on how fast it can proceed.</p>
+<p>This is the difference between <em>gravity collapses the wavefunction</em> and <em>whatever performs selection cannot do so faster than gravitational distinguishability allows</em>.</p>
+<p><strong>Special Cases.</strong></p>
+<p><em>Gravitationally indistinguishable records.</em> ΔE_G = 0 ⇒ λᵢⱼ = 0. Gravity forbids objective selection between them. A superposition of such records can persist indefinitely unless another interaction provides a limiter.</p>
+<p><em>Macroscopic spatial superpositions.</em> For spatially separated mass distributions, ΔE_G grows with mass and separation, yielding τᵢⱼ ≥ ℏ/ΔE_G. Macroscopic records resolve quickly but not instantaneously.</p>
+<p><strong>Falsifiability.</strong></p>
+<p><strong>G1.</strong> Selection occurs faster than ΔE_G/ℏ for gravitationally distinguishable records.</p>
+<p><strong>G2.</strong> Selection occurs between records with ΔE_G = 0.</p>
+<p><strong>G3.</strong> Selection rates scale universally with non-gravitational parameters across macroscopic records.</p>
+<p>Failure here invalidates only the gravitational-limiter hypothesis, not the selection postulate or prior results.</p>
+<h2>A5 — Experimental Regimes and Falsification Paths</h2>
+<h2>A5.1 — Orientation: Exclusions Before Fits</h2>
+<p>Up to A4.3, the argument specifies what must be true if the theory is correct. A5 specifies how it can fail, and how that failure would be observed.</p>
+<p>The principles are simple. Qualitative exclusions before quantitative fits. Absence tests before rate tests. Pointer-basis dependence before gravitational scaling. Operational signatures before interpretation.</p>
+<p>If any regime below fails, the corresponding theoretical component is dead — cleanly and locally.</p>
+<h2>A5.2 — Test Map (R0–R5)</h2>
+<p><strong>R0 — Operational Invariance of AS (Global Kill Switch).</strong></p>
+<p>Prepare a system with two physically realizable coarse-grainings 𝓞₁ and 𝓞₂. Compute AS(ρ; 𝓞₁) and AS(ρ; 𝓞₂).</p>
+<p>Prediction: |AS(ρ; 𝓞₁) − AS(ρ; 𝓞₂)| ≤ δ_exp.</p>
+<p>Falsifier F0: Persistent disagreement beyond tolerance → entire structure fails.</p>
+<p><strong>Priority ordering.</strong></p>
+<p>The tests are listed in order of logical dependency but should be executed in order of discriminatory power.</p>
+<p>R0 is the global kill switch and must be tested first. If R0 fails, the entire framework is dead and no further test is meaningful.</p>
+<p>If R0 passes, R2 (gravitational null case) is the most discriminating test of Postulate G, because it probes the sharpest prediction — zero selection rate for gravitationally indistinguishable records. R5 (order of operations) tests the selection postulate directly. R3 (rate bound) provides quantitative constraint. R1 and R4 test secondary predictions.</p>
+<p>In short: R0 first; if R0 passes, R2 and R5 next; then R3; then R1 and R4.</p>
+<p><strong>R1 — Pointer Basis vs. Position Basis.</strong></p>
+<p><em>Setup</em>. Systems where the environment-selected pointer algebra 𝓞 is not position. Concrete examples: superconducting qubits (e.g., flux-tunable transmons), cavity QED (e.g., circuit QED, Schuster et al. 2007), collective spin ensembles.</p>
+<p><em>Prediction</em>. Selection targets 𝓞, not position.</p>
+<p><em>Falsifier F1</em>. If definiteness consistently appears in position despite 𝓞 ≠ position, the selection postulate fails.</p>
+<p><strong>R2 — Gravitational Null Case (ΔE_G = 0).</strong></p>
+<p><em>Setup.</em> Decohered records that differ only by internal degrees of freedom with identical mass distributions. Candidates: nuclear spin states, photon polarization states, hyperfine states with identical spatial profiles.</p>
+<p><em>Prediction.</em> ΔE_G = 0 ⇒ λᵢⱼ = 0. No selection dynamics beyond standard decoherence.</p>
+<p><em>Falsifier G2.</em> Observation of objective selection between gravitationally indistinguishable records.</p>
+<p>This does not forbid decoherence between such states via other interactions (e.g., EM). It forbids only objective selection on gravitational timescales.</p>
+<p><strong>R3 — Upper-Bound Rate Test (Speed Limit).</strong></p>
+<p><em>Setup.</em> Mesoscopic/macroscopic superpositions with controlled mass distributions (levitated nanospheres, optomechanical resonators). Compute: ΔE_G ⇒ τ_min = ℏ/ΔE_G.</p>
+<p><em>Prediction.</em> τᵢⱼ ≥ τ_min.</p>
+<p><em>Falsifier G1.</em> Selection on timescales shorter than ℏ/ΔE_G — rates exceeding ΔE_G/ℏ.</p>
+<p><em>Concrete estimates.</em> For a spherical nanoparticle of radius R = 100 nm composed of a high-density material (tungsten, ρ ≈ 19 g/cm³), with two record sectors separated by Δx ∼ R, the gravitational self-energy scales as ΔE_G ∝ ρ²R⁵.</p>
+<p>This yields τ_min ∼ 1–10 seconds, within reach of current cryogenic optical/magnetic levitation platforms and proposed microgravity free-fall experiments.</p>
+<p>For comparison, silica nanoparticles (ρ ≈ 2 g/cm³) at the same radius give τ_min ∼ 10²–10³ seconds, pushing toward the boundary of current coherence times. High-density materials are therefore strongly preferred for near-term tests.</p>
+<p><strong>R4 — Born Boundary Condition.</strong></p>
+<p>Repeated preparations of identical decohered mixtures {pᵢ}.</p>
+<p><em>Prediction.</em> The final ensemble of realized branches converges to {pᵢ}. Intermediate-time biases allowed; only the asymptotic ensemble is constrained.</p>
+<p><em>Falsifier F2.</em> Systematic deviation from Born weights.</p>
+<p><strong>R5 — Order-of-Operations Test.</strong></p>
+<p class="centre">Continuously tune environmental coupling to control degree of decoherence.</p>
+<p><em>Prediction.</em> Selection is negligible until decoherence has rendered pointer sectors operationally distinct (D13).</p>
+<p><em>Falsifier F3.</em> Detection of selection signatures prior to operational irreversibility.</p>
+<p>This test kills models where collapse is invoked to <em>cause</em> decoherence.</p>
+<h2>A5.3 — Operational Signature of Selection</h2>
+<p>Selection corresponds to nonlinear or stochastic dynamics at the single-trajectory level after decoherence is complete, producing effects not reproducible by any linear CPTP map acting on ℋₛ.</p>
+<p>Detectable signatures include single-trajectory anomalies (jump or diffusion statistics inconsistent with any linear Lindbladian after dephasing), irreversible loss of interference-revival capacity even under idealized system-only control, and telegraph-like stabilization (once a branch is realized, subsequent measurements behave as if prepared in the conditional state within operational tolerance).</p>
+<h2>A5.4 — What Counts as Confirmation vs. Survival</h2>
+<p>Passing a test does not confirm the argument. It only allows it to survive. Confirmation would require joint success across multiple regimes — and even then, what is established is structure, not interpretation.</p>
+<p>Failure, by contrast, is immediate and final.</p>
+<h2>A5.5 — Timeline to Falsification</h2>
+<p>The estimates below reflect the state of experimental capability as of 2025. They are orientation, not prediction.</p>
+<p><strong>R0 (Operational Invariance).</strong> Near-term (0–2 years). Circuit QED platforms already produce systems with multiple co-admissible pointer bases. Verification of AS invariance across such bases requires only measurement and classical post-processing of existing data.</p>
+<p><strong>R1 (Pointer Basis vs. Position).</strong> Near-term (0–3 years). Superconducting qubit and cavity QED experiments routinely prepare states where the pointer basis is energy or charge, not position. Checking whether definiteness tracks the pointer basis requires monitoring which observable resolves first under controlled decoherence.</p>
+<p><strong>R5 (Order of Operations).</strong> Near-term to medium-term (1–5 years). Requires continuously tunable environmental coupling with single-trajectory readout. Superconducting qubits with adjustable coupling to engineered reservoirs are the most promising platform. The key observable is whether selection-like signatures (telegraph stabilization, non-Lindbladian statistics) appear only after decoherence is complete.</p>
+<p><strong>R4 (Born Boundary Condition).</strong> Medium-term (2–5 years). Requires large ensembles of identically prepared, fully decohered systems with high-fidelity single-shot readout. Trapped-ion and superconducting qubit arrays are approaching the required scale and fidelity.</p>
+<p><strong>R2 (Gravitational Null Case).</strong> Medium-term to long-term (3–10 years). Requires decohered records that differ only by gravitationally indistinguishable internal degrees of freedom — for example, nuclear spin states with identical spatial profiles. The challenge is isolating such systems from all non-gravitational decoherence sources long enough to confirm the absence of selection.</p>
+<p><strong>R3 (Upper-Bound Rate Test).</strong> Long-term (5–15 years). Requires maintaining spatial superpositions of high-density nanoparticles (∼100 nm, tungsten or osmium) for seconds in a decoherence-free environment, then measuring whether selection occurs faster than ℏ/ΔE_G. Cryogenic levitation and proposed space-based platforms (e.g., MAQRO mission concept) are plausible but not yet operational at the required scale.</p>
+<p><strong>Ordering logic.</strong> Tests are listed in order of experimental accessibility, not theoretical importance. R0 and R1 can be performed with existing hardware. R5 and R4 require modest extensions. R2 and R3 require dedicated experimental programs.</p>
+<p>A negative result on R0 terminates the entire framework before any other test is needed.</p>
+<h2>A5.6 — Stop Condition</h2>
+<p>Definitions are operational. You can measure every one of them. Theorems are scoped. Each tells you exactly where it applies and where it does not. Postulates are isolated. Kill one and the rest survive. Bounds are testable. You can check them with existing equipment. Falsifiers are explicit. You know exactly what would kill each claim.</p>
+<p>Nothing further can be settled by argument. The mathematics has spoken. The experiments are specified. The kill switches are published.</p>
+<p>What remains is nature’s answer.</p>
+<p>The argument has told you everything it can tell you. It has defined the measuring tool. It has proven the monotonicity. It has established the no-return surface. It has characterised selection. It has given the gravitational rate bound. It has named the operational signatures.</p>
+<p>Every claim is stated. Every kill switch is published. Every experiment is specified.</p>
+<p>What remains is nature’s answer. The argument cannot give you that. Only measurement can. Only contact with reality can determine whether the definitions are operationally invariant, whether the gravitational bound holds, whether selection respects the pointer basis, whether the Born statistics emerge.</p>
+<p>The argument waits. It has placed itself at the mercy of experiment.</p>
+<p>That is the only place an honest argument belongs.</p>
+<h2>A6 — Optional Module: The Turn</h2>
+<p><strong>Status.</strong> Optional module. Not load-bearing. Included for conceptual completeness; failure leaves the entire laboratory program intact.</p>
+<h2>A6.1 — Capacity Saturation</h2>
+<p>Let K be the viability kernel of maintainable structure (A3.3).</p>
+<p>Capacity saturation obtains when the accessible state space for creating new durable record sectors has measure zero under admissible controls.</p>
+<p>Operationally: further decoherence may occur, but no new independent records can be written.</p>
+<p>Capacity saturation corresponds to thermodynamic heat death in the limit where all free-energy gradients are exhausted. It is not identical to heat death in general. Saturation may occur locally or structurally before global thermal equilibrium.</p>
+<h2>A6.2 — Restoration Without Reversal</h2>
+<p>Any admissible Turn must satisfy:</p>
+<p><strong>(1) No reversal.</strong> Previously realized selections are not undone.</p>
+<p><strong>(2) No selection bypass.</strong> A4.2 remains valid locally.</p>
+<p><strong>(3) Capacity restoration.</strong> The effective record algebra regains room for new, independent branches.</p>
+<p>This is an interface specification, not a dynamical law.</p>
+<h2>A6.3 — Conformal Rescaling</h2>
+<p>At extreme dilution, dynamics become insensitive to absolute scale.</p>
+<p>A conformal identification can map a capacity-saturated configuration to an initial configuration with renewed branching capacity without reversing causal order.</p>
+<p>Existence proof, not assertion of actuality.</p>
+<p>The phrase <em>records are compressed, not erased</em> means: distinguishable record sectors at late times map to a lower-resolution effective record algebra under the conformal identification, preserving orthogonality relations and causal precedence while reducing accessible distinguishability.</p>
+<h2>A6.4 — Relation to Heat Death</h2>
+<p>Black holes are capacity sinks, not reset buttons. They localize saturation and demonstrate no-return boundaries (A3.3).</p>
+<p class="centre">Any global Turn, if it exists, must respect the same non-reversal constraint.</p>
+<h2>A6.5 — Why This Module Is Optional</h2>
+<p>The core program answers how irreversibility arises, how definiteness arises, and how fast definiteness may arise.</p>
+<p>Module T addresses only whether global capacity can ever be restored.</p>
+<p>Failure of Module T leaves the entire laboratory program intact.</p>
+<h2>Appendices</h2>
+<h2>Appendix E — Glossary of Terms and Notation</h2>
+<p><strong>Actualization State (AS).</strong> An operational scalar ∈ [0, 1] measuring the degree of inter-sector branching in the record algebra. AS = 0: all weight in one record sector. AS = 1: maximal branching across all record sectors. Defined in D3 (A2.3).</p>
+<p><strong>Admissible operation.</strong> A CPTP map acting on the accessible system, optionally with fresh ancilla, but with no access to the original environment. The set of admissible operations defines what an agent can do, and thereby what counts as operationally irreversible.</p>
+<p><strong>Capture basin, Cap(R).</strong> The set of states from which exit from the recoverable set R is inevitable under all admissible controls. Defined in D8 (A3.3).</p>
+<p><strong>Coherence-recoverable state.</strong> A system state from which coherence between record sectors can be restored by admissible operations within tolerance ε. Defined in D11 (A4.1).</p>
+<p><strong>Coarse-graining, physically realizable</strong> (𝓞). A finite set of mutually orthogonal projectors selected by the physics of system–environment coupling, not by observer choice. Defined in D1 (A2.1).</p>
+<p><strong>Dephasing map</strong>, Δ𝓞. The map Δ𝓞(ρ) ≡ Σᵢ Πᵢ ρ Πᵢ that removes quantum interference between record sectors while preserving classical probabilities. Defined in D2 (A2.2).</p>
+<p><strong>Effective entropy, S_eff.</strong> The Shannon entropy H({pᵢ}) of the sector weights, with intra-sector entropy discarded. The entropy entering the AS definition. Defined in A2.3.</p>
+<p><strong>Falsifier (F0, F1, F2, F3, G1, G2, G3).</strong> An experimentally observable condition whose occurrence would invalidate a specific component of the argument. F0 is global (kills AS itself); F1–F3 target the selection postulate; G1–G3 target the gravitational limiter. Listed in A5.2.</p>
+<p><strong>Gravitational self-energy distinguishability, ΔE_G.</strong> The Newtonian self-energy of the difference mass distribution between two record sectors. Defined in D15 (A4.3). Appendix C provides explicit forms.</p>
+<p><strong>No-return surface, Σₕ.</strong> The boundary of the viability kernel. States beyond this surface cannot return to the recoverable set under any admissible control. Defined in D9 (A3.3) and D13 (A4.1).</p>
+<p><strong>Operator horizon, xₕ.</strong> The scalar specialization of the no-return surface: xₕ ≡ u_max/a, the maximum sustainable structure given maximum maintenance effort. Defined in T2 (A3.2).</p>
+<p><strong>Operational invariance.</strong> The requirement that AS values computed from different physically realizable coarse-grainings of the same system agree within experimental tolerance. Defined in D5 (A2.5). Violation triggers the global kill switch F0.</p>
+<p><strong>Operational irreversibility.</strong> A state is operationally irreversible with respect to a recoverable set R iff it lies outside the viability kernel of R. Irreversibility is defined by loss of reachability under admissible control, not by entropy increase or violation of time-reversal symmetry. Defined in D10 (A3.3).</p>
+<p><strong>Record algebra</strong>. The algebra generated by the physically realizable coarse-graining 𝓞 = {Πᵢ}. States in this algebra are diagonal in the record basis. The record algebra defines what the environment can physically distinguish.</p>
+<p><strong>Selection.</strong> The transition from a diagonal mixture over record sectors (post-decoherence) to a single realized branch (definiteness). Distinguished from decoherence in D14 (A4.2). The mechanism is specified by Postulate P; the rate is bounded by Postulate G.</p>
+<p><strong>Viability kernel, Viab(R).</strong> The set of states from which the system can be kept inside the recoverable set R indefinitely using admissible control. Defined in D7 (A3.3).</p>
+<p><strong>ε (operational tolerance).</strong> A fixed positive parameter representing experimental resolution. All operational definitions (effective orthogonality, inaccessibility, recoverability) are quantified relative to ε. Defined in A2.4.</p>
+<h2>Appendix A — Equivalence of AS Representations</h2>
+<p><strong>A.1 Purpose.</strong></p>
+<p>This appendix establishes the precise conditions under which the primary AS(ρ; 𝓞) coincides with the history-based representation ASₕ(D). No equivalence is assumed in the main text.</p>
+<p><strong>A.2 Objects and Restrictions.</strong></p>
+<p>The histories {α} are taken to correspond one-to-one with the record sectors {Πᵢ} at a single time slice. No multi-time or branching-tree histories are included. Under this restriction: N = d𝓞.</p>
+<p>This restriction is explicit and intentional.</p>
+<p><strong>A.3–A.4 Decoherence Condition and Block Entropy.</strong></p>
+<p>Assume complete decoherence: D(α, β) ≈ 0 for α ≠ β. Under this condition, the dephased state has block form Δ𝓞(ρ) = Σᵢ pᵢ σᵢ.</p>
+<p>The von Neumann entropy decomposes exactly as</p>
+<p class="eq">S(Δ𝓞(ρ)) = H({pᵢ}) + Σᵢ pᵢ S(σᵢ).</p>
+<p>No assumption of maximal mixing within sectors is made.</p>
+<p><strong>A.5–A.6 Equivalence Statement.</strong></p>
+<p>Under the restriction of A.2 and the decoherence condition of A.3–A.4, ASₕ(D) = H({w(α)}) / log |D| with w(α) = pᵢ for the corresponding sector. AS uses S_eff(ρ; 𝓞) ≡ H({pᵢ}) with normalization AS(ρ; 𝓞) = H({pᵢ}) / log d𝓞.</p>
+<p>Where the histories are exactly the record sectors and decoherence is complete, the two normalizations coincide (since N = d𝓞), and ASₕ(D) = AS(ρ; 𝓞) by construction.</p>
+<p><strong>A.7 Non-Equivalence Regimes.</strong></p>
+<p>The equivalence fails when decoherence is incomplete, when histories span multiple time slices, or when one attempts to include intra-sector entropy as <em>actualisation</em>.</p>
+<p>In these regimes, AS(ρ; 𝓞) remains well-defined. ASₕ(D) ceases to be a faithful representation.</p>
+<p>AS(ρ; 𝓞) is preferred in all ambiguous cases because it requires only the reduced state and record algebra, not a full history space.</p>
+<h2>Appendix B — Viability Theory Background</h2>
+<p class="eq left">Dynamics: dx/dt = f(x, u), u ∈ U.</p>
+<p>Viability kernel: Viab(K) = {x₀ ∈ K | ∃ u(t): x(t) ∈ K ∀t ≥ 0}.</p>
+<p class="eq left">Capture basin: Cap(Kᶜ) = {x₀ | ∀ u(t), ∃ t: x(t) ∉ K}.</p>
+<p class="eq left">No-return surface: Σ_NR = ∂ Viab(K).</p>
+<p>The partition holds up to boundary sets of measure zero. For further background, see Aubin (1991), <em>Viability Theory</em>.</p>
+<h2>Appendix C — Gravitational Self-Energy</h2>
+<p><strong>C.1 Definition.</strong></p>
+<p>For two record sectors i, j with mass densities μᵢ(x), μⱼ(x):</p>
+<p>ΔE_G[i, j] ≡ (G/2) ∫∫ [μᵢ(x) − μⱼ(x)] [μᵢ(y) − μⱼ(y)] / |x − y| d³x d³y.</p>
+<p><strong>C.2 Weighted Multi-Sector Form.</strong></p>
+<p>For a multi-sector decomposition with weights pᵢ:</p>
+<p>ΔE_G^total ≡ Σᵢ&lt;ⱼ pᵢ pⱼ ΔE_G[i, j].</p>
+<p><strong>C.3 Special Cases.</strong></p>
+<p><em>Identical mass distributions.</em> ΔE_G = 0.</p>
+<p><em>Rigid sphere</em> (radius R, displacement Δx ≪ R). ΔE_G ∼ Gm²/R · (Δx/R)² (order estimate).</p>
+<p><strong>C.4 Positivity.</strong></p>
+<p>By construction, ΔE_G ≥ 0.</p>
+<h2>Appendix D — Experimental Feasibility Estimates</h2>
+<p><strong>D.1 High-Density Nanoparticle Regime.</strong></p>
+<p>Consider a spherical nanoparticle of radius R = 100 nm composed of a high-density material (tungsten or osmium, ρ ≈ 19–22 g/cm³). For comparison, silica has ρ ≈ 2 g/cm³.</p>
+<p>With two record sectors separated by Δx ∼ R, and using ΔE_G ∼ Gm²/Δx with m ∝ ρR³, the self-energy scales as ΔE_G ∝ ρ²R⁵.</p>
+<p>Tenfold density increase yields ∼100× increase in ΔE_G. Resulting timescale: τ_min ∼ ℏ/ΔE_G yields τ_min ∼ 1–10 s for R ∼ 100 nm high-density particles.</p>
+<p><strong>D.2 Experimental Platforms.</strong></p>
+<p>Timescales in the second-to-tens-of-seconds range are within reach of:</p>
+<ul class="plain"><li>Cryogenic optical or magnetic levitation of heavy nanoparticles (e.g., Delić et al., 2020; Tebbenjohanns et al., 2021).</li><li>Hybrid optomechanical traps with active feedback cooling (e.g., Aspelmeyer group, Vienna).</li><li>Space-based or microgravity proposals (long-coherence free-fall platforms, e.g., MAQRO mission concept).</li></ul>
+<p><strong>D.3 Interpretation.</strong></p>
+<p>The purpose of this estimate is to demonstrate that the relevant regime is experimentally accessible.</p>
+<p>Observation of selection faster than the bound falsifies the gravity-limiter hypothesis. Absence of selection constrains gravity’s relevance without undermining the core AS framework.</p>
+<h2>Appendix F — Worked Example: AS Calculation for a Dephasing Qubit</h2>
+<p>This appendix provides a complete, explicit AS calculation for the simplest nontrivial case, intended as a pedagogical anchor.</p>
+<p><strong>F.1 Setup.</strong></p>
+<p>System: a single qubit S with Hilbert space ℋₛ = ℂ², coupled to an environment E.</p>
+<p>Pointer basis (selected by coupling): 𝓞 = {|0⟩⟨0|, |1⟩⟨1|}.</p>
+<p>Record algebra dimension: d𝓞 = 2.</p>
+<p><strong>F.2 Initial State.</strong></p>
+<p class="eq left">|ψ(0)⟩ = (|0⟩ + |1⟩)/√2 ⊗ |E₀⟩.</p>
+<p>The system is in a coherent superposition. The reduced state is ρₛ(0) = |+⟩ ⟨+|.</p>
+<p>After dephasing: Δ𝓞(ρₛ(0)) = diag(½, ½). Sector weights: p₀ = p₁ = ½.</p>
+<p><strong>F.3 Before Decoherence.</strong></p>
+<p>Off-diagonal elements are present in ρₛ(0). However, for the purpose of computing AS, you apply Δ𝓞 first.</p>
+<p>S_eff = H({pᵢ}) = H(½, ½) = log 2. Normalization: S_max = log 2.</p>
+<p class="eq left">Therefore AS = log 2 / log 2 = 1.</p>
+<p>Even before decoherence is complete, the sector weights already distribute maximally. AS measures the branching structure of the dephased state, not whether decoherence has physically occurred.</p>
+<p><strong>F.4 After Decoherence.</strong></p>
+<p>Environment records which-path: |ψ⟩ → (|0⟩|E₀⟩ + |1⟩|E₁⟩)/√2 with ⟨E₀|E₁⟩ ≈ 0.</p>
+<p>Reduced state: ρₛ = diag(½, ½). Off-diagonals have been physically suppressed.</p>
+<p>AS = 1. Same numerical value, but now the system has crossed the no-return surface: coherence is not recoverable. Operational irreversibility has been established.</p>
+<p><strong>F.5 After Selection.</strong></p>
+<p>Selection resolves the mixture into sector |0⟩ (say). Now p₀ = 1, p₁ = 0. H = 0.</p>
+<p class="eq left">AS = 0.</p>
+<p>One story remains. The system has transitioned from maximal branching to definiteness.</p>
+<p><strong>F.6 Summary.</strong></p>
+<p>AS tracks branching richness, not definiteness. It rises during decoherence (branching phase) and falls during selection (definiteness phase).</p>
+<p>The worked example illustrates that AS ≈ 0 and AS ≈ 1 are both physically meaningful endpoints of different processes — not a hierarchy of <em>more actualized</em> vs. <em>less actualized</em>.</p>
+<p>Paper A — Canonical Reference. Locked · Execution-Complete.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap01-the-actualization-state/paper-0-foundations/"><small>Previous</small>Foundations</a><div class="up"><small>Back to</small><a href="/proofs/ap01-the-actualization-state/">The Actualization State</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap01-the-actualization-state/paper-b-selection-as-irreversible-exclusion/"><small>Next</small>Selection as Irreversible Exclusion</a></nav>
+<p class="orig">The paper of record: <a href="/AP01_The_Actualization_State.pdf">the420code.org/AP01_The_Actualization_State.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

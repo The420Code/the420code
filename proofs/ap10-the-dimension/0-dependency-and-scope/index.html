@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Dependencies (AP20 for the canonical axioms — completeness/minimality obligations fenced at KS-P.1/KS-P.2 — and for the EH and QRA proofs; the Lorentzian signature carried at section 4, fenced at KS-D.4; AP06 section 10.5 for the multidimensional residual; AP08 section 9 for Lovelock; AP19 sections 2–3 for the three-faces reading), axiom mapping (R ↔ time; C, S, B ↔ three spatial faces; 1:1 ↔ the Hilbert space), epistemic status per section, kill switch summary, structural debts (none registry-level; KS-D.1 and KS-D.3 as live structural tests), items held open, structural relationships.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap10-the-dimension/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Dimension, Artist’s Proof 10 — The 420 Code">
+<meta property="og:description" content="Dependencies (AP20 for the canonical axioms — completeness/minimality obligations fenced at KS-P.1/KS-P.2 — and for the EH and QRA proofs; the Lorentzian signature carried at section 4, fenced at KS-D.4; AP06 section 10.5 for the multidimensional residual; AP08 section 9 for Lovelock; AP19 sections 2–3 for the three-faces reading), axiom mapping (R ↔ time; C, S, B ↔ three spatial faces; 1:1 ↔ the Hilbert space), epistemic status per section, kill switch summary, structural debts (none registry-level; KS-D.1 and KS-D.3 as live structural tests), items held open, structural relationships.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap10-the-dimension/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Dimension, Artist’s Proof 10 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap10-the-dimension/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap10-the-dimension/"><b>The Dimension</b></a> · read in full · 1 of 12</div><ul class="modes"><li><a href="/AP10_The_Dimension.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">Dependencies (AP20 for the canonical axioms — completeness/minimality obligations fenced at KS-P.1/KS-P.2 — and for the EH and QRA proofs; the Lorentzian signature carried at section 4, fenced at KS-D.4; AP06 section 10.5 for the multidimensional residual; AP08 section 9 for Lovelock; AP19 sections 2–3 for the three-faces reading), axiom mapping (R ↔ time; C, S, B ↔ three spatial faces; 1:1 ↔ the Hilbert space), epistemic status per section, kill switch summary, structural debts (none registry-level; KS-D.1 and KS-D.3 as live structural tests), items held open, structural relationships.</p>
+<div class="paper">
+<p>AP10 is the third chapter of Notebook II. Before the body, this section names what AP10 does, what it depends on, where its inputs map onto the canonical axioms {S, B, R, C}, what epistemic status each section holds, what kill switches are engaged, what structural debts remain, and how AP10 stands in relation to the rest of The 420 Code.</p>
+<h2>0.1 — What this paper does</h2>
+<p>AP10 derives N = 3 spatial dimensions from the four axioms of the record algebra. The argument is structural and runs in one primary form, with a confirming consistency check from a different feature of the architecture. The primary form (sections 2 through 4) identifies each of the four axioms with one independent face of the embedded manifold; the independence of the faces follows from the proven independence of the axioms via the proven faithful embedding; the temporal versus spatial character of each direction is identified from the axiom’s structural role. The confirming form (section 5) counts the six faces of the multidimensional residual (AP06 section 10.5) and shows they pair naturally into the axis structure of 3+1 spacetime — two purely spatial axes (G– c and α/β–α_em) and one spatial-temporal connection axis (m_e–t). The residual structure is structurally consistent with the primary derivation of 3+1; it does not constitute an independent derivation of N = 3 spatial, because Pair 3 includes the temporal face t. Section 5 is therefore a structural consistency check via a different feature of the architecture, not a doubly-independent derivation.</p>
+<p>AP10 also identifies the fifth structural degree of freedom (section 7) as the 1:1 itself — the pre-state from which {S, B, R, C} operate — and locates it as the Hilbert space (the probability dimension), not a fifth spatial dimension. This closes KS-16 in the sufficiency sense: {S, B, R, C} suffice to generate the record algebra (the completeness result stated at AP20 section 4.1; full formalisation fenced at KS-P.1); the 1:1 itself is structurally prior to the manifold rather than a feature of it. The stronger exhaustiveness claim — that no fifth independent operation on the 1:1 is possible — is held in section 7 as a positive enumeration of the operations performed on the pre-state, with the closure resting on the 1:1 being correctly identified as the substrate (not an operation) and on the four operations being correctly identified as the cardinal independent operations on it.</p>
+<p>The contributions are three kill-switch closures (KS-2c, KS-15/D.2, KS-16) and three live kill switches (KS-D.1, KS-D.3, KS-D.4) targeting the load-bearing identifications the argument relies on. AP10 also closes the conditional in AP08’s derivation of Einstein’s field equations: AP08 derives the equations conditional on N = 3 via Lovelock’s theorem; AP10 derives N = 3 from the axioms; the conditional is removed; Einstein’s field equations with cosmological constant become an unconditional theorem of the record algebra.</p>
+<h2>0.2 — Dependencies</h2>
+<p>AP10 is a structural-derivation paper. Its dependencies are explicit and listed here in compact form so the load-bearing imports are visible at the door.</p>
+<p><strong>AP20 (the canonical axioms).</strong> Load-bearing for the four canonical axioms {S, B, R, C} (formal statement at AP20 section 3.3) and for their independence (the four removal arguments at AP20 section 4.2 — stated results with proof sketches; full formalisation fenced at KS-P.2). The axioms are jointly exhibited by any existing record (the undeniable premise, AP20 section 6), which carries their mutual consistency. The independence arguments are the foundation of section 3’s argument: each axiom is independent of the other three; therefore the face expressed by each axiom on the manifold is independent of the faces expressed by the other three; therefore the four faces are independent dimensions.</p>
+<p><strong>The Lorentzian signature (section 4, KS-D.4).</strong> Load-bearing for the signature (−, +, …, +) and, with it, the symmetry group SO(1, N) (the isometry group of that signature). The signature is carried in this paper: section 4’s structural argument reads it from the axioms themselves — exactly one axiom (R) is intrinsically irreversible, and irreversibility read as metric character is the (−) sign. The formal metric-level derivation is the open obligation fenced at KS-D.4. AP10 pins the value of N.</p>
+<p>AP20 (EH and QRA proven). Load-bearing for the faithful embedding of the record algebra into a smooth manifold (Embedding Hypothesis, EH — closed at AP20) and for the quantum-record identity (Quantum-Record Alignment, QRA — closed at AP20 section 5.5, KS-P.4). The differentiability and leading-order quadratic structure of the cone boundary used throughout rest on the smooth-manifold structure whose obligation is fenced at KS-P.5. EH is invoked at section 3.2 to convert algebraic independence into geometric face-independence.</p>
+<p><strong>AP06 section 10.5 (multidimensional residual).</strong> Load-bearing for the six-face structure of the break invoked in section 5. AP06’s residual analysis identifies six faces — G, c, α/β, α_em, m_e, t — forming the structural inventory of what the break produces. AP10 reads this as three conjugate pairs spanning three spatial axes, providing an independent confirmation of N = 3. KS-D.1 is the kill switch on AP10’s reading of AP06’s residual structure.</p>
+<p><strong>AP08 section 9 (Lovelock’s theorem, formerly conditional on N = 3).</strong> Load-bearing structurally but inverted in direction: AP08 derives Einstein’s field equations from Lovelock’s theorem conditional on N = 3; AP10 derives N = 3 and removes AP08’s condition. The relationship is bidirectional rather than purely upstream: AP10 depends on AP08’s derivation existing; AP08 depends on AP10’s N = 3 for unconditionality.</p>
+<p><strong>AP19 sections 2–3 (three faces of one manifold).</strong> Load-bearing for the structural reading of the spatial faces as three faces of a single manifold (not three separately assembled pieces). AP10’s section 2.5 (Co-arising) inherits the formulation from AP19.</p>
+<p>Internal cross-references to AP09 (the Hilbert space as pre-state from which quantum mechanics operates), AP12 (ℏ identification), and AP24 (m_e as residual of the break) are noted at the relevant sections but are not load-bearing for AP10’s derivation.</p>
+<h2>0.3 — Axiom mapping</h2>
+<p>AP10 was written after AP20’s Paper D formalised the four canonical axioms {S, B, R, C}, and it is one of the papers in which the mapping from axioms to structural content is most direct. The mapping here is not retrospective; it is the paper’s subject.</p>
+<p><strong>Axiom S (Symmetry) ↔ The exchange face</strong>. Two disjoint sectors ℒ and 𝓟 with order-reversing involution σ. On the embedded manifold, σ acts as a ℤ₂ symmetry across one direction; that direction is the exchange face. Spatial. Signature: (+).</p>
+<p><strong>Axiom B (Unique Breaking) ↔ The break face</strong>. One element ε ∈ ℒ with no σ-image; valuation ν(ℒ) − ν(𝓟) = ν(ε) = 1. On the manifold, ε is a distinguished locus with a direction of advance; that direction is the break face. Spatial. Signature: (+).</p>
+<p><strong>Axiom R (Record Monotonicity) ↔ Time.</strong> Sequential composition forms a monoid (no inverse); records cannot be locally annihilated; history is irreversible. On the manifold, this produces a distinguished irreversible direction; that direction is time. Signature: (−).</p>
+<p><strong>Axiom C (Constraint) ↔ The propagation face.</strong> Finite invariant rate c constraining sequential propagation, structural rather than electromagnetic. On the manifold, c produces a light cone with a definite opening angle; the direction along which propagation is maximally extended is the propagation face. Spatial. Signature: (+).</p>
+<p><strong>The 1:1 (pre-state) ↔ The Hilbert space.</strong> The state on which {S, B, R, C} operate. Not a feature of the record algebra’s structure on the manifold but the state the algebra breaks <em>from</em>. On the manifold, the 1:1 appears as the Hilbert space — the probability dimension perpendicular to spacetime. Pre-spatial and pre-temporal. Not a fifth manifold direction.</p>
+<p>The four axioms map one-to-one onto the four faces of the manifold; the 1:1 maps onto the Hilbert space (the probability dimension) which is prior to the manifold. Five structural features total; four on the manifold and one prior to it.</p>
+<h2>0.4 — Epistemic status per section</h2>
+<p>Each section carries an explicit status — derivation, structural argument, formal block, or synthesis — so the reader knows what kind of weight each carries.</p>
+<p>Section 1 (The Starting Point). FOUNDATIONAL. The four axioms stated; the proven hypotheses (EH and QRA) named; the undetermined quantity (N) flagged.</p>
+<p>Section 2 (Four Axioms, Four Faces). STRUCTURAL ARGUMENT. Each axiom identified with one independent face of the embedded manifold; the faces named as co-arising rather than separately assembled.</p>
+<p>Section 3 (Independence). DERIVATION. The independence of the four axioms (the removal arguments at AP20 section 4.2, fenced at KS-P.2) combined with the proven faithful embedding (AP20) yields the independence of the four geometric faces; four independent faces yield four dimensions; N = 3.</p>
+<p>Section 4 (Character of Each Direction). DERIVATION. The temporal versus spatial character of each direction identified from the axiom’s structural role: R alone is irreversible and therefore gives the (−) direction; the other three axioms are compatible with reversibility in their directions and therefore give the (+) directions.</p>
+<p>Section 5 (The Six Faces). INDEPENDENT CONFIRMATION. The six faces of the multidimensional residual (AP06 section 10.5) read as three conjugate pairs spanning three spatial axes. Independent of section 2–3’s axiom-count argument; arrives at the same N = 3.</p>
+<p>Section 6 (Consequences). SYNTHESIS + CLOSURE. KS-2c closed. Lovelock’s theorem (AP08 section 9) becomes unconditional. The 420 Code’s chain from axioms to Einstein’s field equations is closed.</p>
+<p>Section 7 (The Fifth Degree of Freedom). STRUCTURAL ARGUMENT + CLOSURE. The 1:1 itself identified as the fifth structural degree of freedom — the Hilbert space, the probability dimension, the pre-state. Not a fifth spatial dimension because pre-spatial. KS-16 closed.</p>
+<p>Section 8 (Kill Switches). FORMAL FALSIFICATION REGISTER. Three closed (KS-2c, KS-15/D.2, KS-16 — each carrying its named contingency) and three live (KS-D.1, KS-D.3, KS-D.4).</p>
+<p>Section 9 (What This Establishes and What Remains Open). SYNTHESIS.</p>
+<h2>0.5 — Kill switch summary</h2>
+<p>Six kill switches are engaged in this paper. Three are closed by AP10; three remain live. The full register is in section 8.</p>
+<p>KS-2c: N = 3 spatial dimensions. CLOSED — derived in sections 2–3 via the proven faithful embedding. The closure is contingent on KS-D.3 (one axiom, one face) remaining unfired; if KS-D.3 fires, KS-2c reopens. Section 5 provides structural consistency from the residual face count, not an independent derivation.</p>
+<p>KS-15/D.2: Axiom-to-dimension assignment unique. CLOSED — contingent on KS-D.4. R is the only irreversible axiom; the assignment R → time, {C, S, B} → space is forced once the Lorentzian signature holds (section 4’s structural argument; formal derivation fenced at KS-D.4).</p>
+<p>KS-16: Sufficiency of {S, B, R, C}. CLOSED — contingent on KS-P.1. The four canonical axioms suffice to generate the record algebra (the completeness result stated at AP20 section 4.1; full formalisation fenced at KS-P.1); the fifth structural degree of freedom is the 1:1 itself, identified as the Hilbert space; no fifth axiom is needed. The exhaustiveness claim (no fifth axiom is <em>possible</em>) is held as a positive enumeration in section 7, contingent on the four operations being correctly identified as cardinal.</p>
+<p>KS-D.1: Six-face count and axis-structure interpretation. LIVE — STRUCTURAL. The section 5 argument depends on the identification of the six residual faces from AP06 section 10.5 <em>and</em> on their reading as pairs that match the axis structure of 3+1 spacetime. If the residual has a different face count, or the pairs do not correspond to the expected axis structure (two spatial axes plus one spatial-temporal connection), the section 5 consistency check fails. The primary argument (sections 2–3) survives.</p>
+<p>KS-D.3: One axiom, one face. LIVE — STRUCTURAL. The section 2 argument rests on the identity <em>one independent algebraic axiom = exactly one independent geometric face</em> (via the proven faithful embedding, AP20). The faithful embedding gives distinct-to-distinct (injectivity); the load-bearing additional claim is that the embedding is dimension-minimal: each independent axiom contributes exactly one new direction, not zero (acting as a constraint within existing dimensions) and not two (contributing multiple independent directions). If KS-D.3 fires at any axiom, the count N = 3 is wrong.</p>
+<p>KS-D.4: Signature formalisation. LIVE — STRUCTURAL. Section 4 reads the Lorentzian signature from the axioms’ own reversibility structure — exactly one axiom (R) is intrinsically irreversible, and the irreversible direction carries the (−) metric character. The formal metric-level derivation is the open obligation this switch names; KS-15/D.2’s closure is contingent on it.</p>
+<h2>0.6 — Structural debts owed</h2>
+<p>Three structural-class items are tied to AP10’s argument. None is a registry-level debt in the same sense as AP05’s Open Problem B-JP; they are the load-bearing structural identifications that the three live kill switches track. Named here so the structural exposure is visible at the door.</p>
+<p><strong>Six-face structure of the break (KS-D.1).</strong> The argument in section 5 reads AP06 section 10.5’s residual analysis as identifying exactly six faces of the break, pairing into three conjugate pairs. If a more careful or extended analysis of the residual produces a different face count — four, eight, or a non-pair structure — section 5’s confirmation collapses. The primary argument (sections 2–3) is independent of the face count and survives such a failure. AP10 holds KS-D.1 as a live structural test of the section 5 confirmation, not of the central argument.</p>
+<p><strong>One axiom expresses exactly one face (KS-D.3).</strong> The argument in section 2 reads each axiom as expressing exactly one face of the embedded manifold. The identity rests on the proven faithful embedding (AP20): if EH is faithful, then independent algebraic content maps to independent geometric content, and the four independent axioms map to four independent geometric features. The identity could fail in two ways: an axiom that expresses zero geometric content (acting only as a constraint on existing structure) or an axiom that expresses two independent geometric directions (contributing more than one new face). AP10 holds KS-D.3 as a live structural test of the central argument.</p>
+<p><strong>The Lorentzian signature’s formal derivation (KS-D.4).</strong> Section 4 reads the signature from the axioms’ own reversibility structure: R is the only intrinsically irreversible axiom, and the irreversible direction carries the (−) metric character. The formal metric-level derivation — that the embedded geometry is pseudo-Riemannian with exactly this signature — is the open obligation KS-D.4 names. AP10 holds KS-D.4 as a live structural test of the section 4 distinction.</p>
+<h2>0.7 — Items held open without claiming debt status</h2>
+<p>One item is bracketed inside this paper.</p>
+<p>The mapping from face to specific geometric coordinate. AP10’s argument shows that there are four independent faces and that one is temporal and three are spatial. It does not specify which coordinate within the spatial three-space is “the C direction” versus “the S direction” versus “the B direction” — the three spatial axes are interchangeable under spatial rotation (SO(3) symmetry of the spatial manifold). The argument fixes the count and the signature; it does not fix a coordinate-level identification. This is not a structural debt because the rotational symmetry of three-space is the expected and correct outcome; held without claiming a separate debt.</p>
+<h2>0.8 — Structural relationships</h2>
+<p>AP10 is the third chapter of Notebook II. The chapter sequence runs AP03 → AP05 → AP10 → AP08. AP03 establishes the constants (c, G) as outputs of ε on the substrate; AP05 walks the axiom forward through the seven-step chain to obligation and reformulates the cosmological identity as junction conditions; AP10 pins N = 3 on the manifold the chain occupies; AP08 closes Notebook II by deriving Einstein’s field equations on the dimensionally pinned manifold.</p>
+<p>AP01 (Notebook I) is the source of the record algebra. AP20 (Notebook I) is the source of the Embedding Hypothesis proof and the Quantum-Record Alignment proof, and of the stated-and-fenced completeness and minimality results for the axiom set (AP20 section 4; KS-P.1/KS-P.2). AP06 (Notebook IV) is the source of the multidimensional residual analysis used in section 5. AP08 (Notebook II) is the source of Lovelock’s theorem in the body of work context, and is the paper whose central conditional AP10 closes. AP19 (Notebook VI) is the source of the “three faces of one manifold” reading inherited by section 2.5.</p>
+<p>Downstream, AP10 feeds AP08 (closing the N = 3 conditional for Einstein’s field equations), AP09 (the Hilbert space identification at section 7 connects to AP09’s pre-state formulation of quantum mechanics), AP12 (ℏ identification operates on the Hilbert space identified here), AP24 (m_e identification operates within the residual structure used in section 5), and the entire downstream cosmological and quantum programme that assumes N = 3 unconditionally.</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap10-the-dimension/">The Dimension</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap10-the-dimension/1-the-starting-point/"><small>Next</small>The Starting Point</a></nav>
+<p class="orig">The paper of record: <a href="/AP10_The_Dimension.pdf">the420code.org/AP10_The_Dimension.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
