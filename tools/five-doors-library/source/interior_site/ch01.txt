@@ -1,6 +1,6 @@
 # 1 — Verify the Math
 
-> The Interior, version 2.0.9, Chapter 1.
+> The Interior, version 2.0.10, Chapter 1.
 
 Before you read a single argument, test the claims yourself.
 

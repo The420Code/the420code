@@ -1,6 +1,6 @@
 # 25 — Where Human Law Fails
 
-> The Interior, version 2.0.9, Chapter 25.
+> The Interior, version 2.0.10, Chapter 25.
 
 Human law is weakest in three domains. Consequence geometry is strongest in exactly those three.
 

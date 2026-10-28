@@ -1,6 +1,6 @@
 # 5 — The Fence Problem
 
-> The Interior, version 2.0.9, Chapter 5.
+> The Interior, version 2.0.10, Chapter 5.
 
 Four approaches to AI alignment dominate. All four share the same structural flaw. All four will fail for the same reason.
 

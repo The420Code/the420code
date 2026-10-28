@@ -1,6 +1,6 @@
 # 24 — Law Is Already Consequence Geometry
 
-> The Interior, version 2.0.9, Chapter 24.
+> The Interior, version 2.0.10, Chapter 24.
 
 You already obey consequence geometry. You just call it common sense.
 
