@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="P = |ψ|² from Conditions 1–3 + Gleason (dim ≥ 3). σ ↔ conjugation proven unique (KS-Q.6 CLOSED). Conditionally closed (KS-Q.1) on KS-Q.7.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap09-the-break-empty-set/the-born-rule/">
+<meta property="og:title" content="The Born Rule — The Break — Empty Set, Artist’s Proof 09 — The 420 Code">
+<meta property="og:description" content="P = |ψ|² from Conditions 1–3 + Gleason (dim ≥ 3). σ ↔ conjugation proven unique (KS-Q.6 CLOSED). Conditionally closed (KS-Q.1) on KS-Q.7.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap09-the-break-empty-set/the-born-rule/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Born Rule — The Break — Empty Set, Artist’s Proof 09 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap09-the-break-empty-set/the-born-rule/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap09-the-break-empty-set/"><b>The Break — Empty Set</b></a> · read in full · 7 of 13</div><ul class="modes"><li><a href="/AP09_The_Break_Empty_Set.pdf">The paper (PDF)</a></li></ul></header>
+<h1>The Born Rule</h1>
+<p class="oneline">P = |ψ|² from Conditions 1–3 + Gleason (dim ≥ 3). σ ↔ conjugation proven unique (KS-Q.6 CLOSED). Conditionally closed (KS-Q.1) on KS-Q.7.</p>
+<div class="paper">
+<p>The Born rule states: the probability of obtaining a particular outcome when measuring a quantum system is the squared modulus of the amplitude associated with that outcome.</p>
+<p>P(outcome) = |ψ|² In standard quantum mechanics, this is a postulate.</p>
+<p>It is not derived from the other postulates. It is added by hand.</p>
+<p>Gleason’s theorem (1957) shows |ψ|² is the unique probability measure on a Hilbert space of dimension ≥ 3 — but Gleason assumes the Hilbert space structure.</p>
+<p>The deeper question remains: why |ψ|², and not |ψ|, or |ψ|³, or some other function?</p>
+<h2>The answer from the 1:1</h2>
+<p>The pre-state is the 1:1. Perfect symmetry.</p>
+<p>Axiom S: the involution σ reverses order, and extensive quantities match. Q(ℒ) = Q(𝒟). The two sectors are equal.</p>
+<p>When the break occurs — when the now distinguishes 0 from 1 — the outcome must respect the symmetry of the pre-state.</p>
+<p>The probability cannot favour one sector over the other, because the pre-state has no asymmetry to favour either.</p>
+<p>The measure must be invariant under the involution σ.</p>
+<p>The amplitude ψ is a complex number.</p>
+<p>The involution σ, lifted to the space of amplitudes on the Lorentzian manifold, acts as complex conjugation: σ(ψ) = ψ*.</p>
+<p>The identification is not assumed. It is forced by the structure.</p>
+<p>σ reverses order (Axiom S).</p>
+<p>On the Lorentzian manifold, the order σ reverses is the direction of time — the direction in which records accumulate (Axiom R).</p>
+<p>Complex conjugation reverses the direction of phase rotation: e^{iωt} → e^{−iωt}.</p>
+<p>Phase rotation encodes the time direction — the signature flip between time and space components of the manifold.</p>
+<p>Therefore σ, as an order-reversing involution on a Lorentzian manifold, acts on complex amplitudes as conjugation.</p>
+<p>The abstract algebraic involution and the complex conjugation are the same operation, read in different languages.</p>
+<p>You have just watched an abstract axiom become a concrete mathematical operation.</p>
+<p>The involution σ is complex conjugation. Not by choice. By proof.</p>
+<p><strong>Kill switch KS-Q.6</strong>. The identification σ ↔ complex conjugation is proven unique. ℂ has exactly two field automorphisms fixing ℝ pointwise — the identity and conjugation (any such automorphism sends i to ±i). σ is non-trivial — it exchanges the two sectors (Axiom S) — so σ ≠ identity. Therefore σ = conjugation. CLOSED.</p>
+<h2>Three conditions</h2>
+<p>A probability measure P(ψ) must satisfy three conditions.</p>
+<p>Each traces directly to the axioms.</p>
+<p><strong>Condition 1 — Symmetry.</strong> P(ψ) = P(σ(ψ)) = P(ψ*). The measure is invariant under the involution. Neither sector is favoured.</p>
+<p>This is Axiom S — the two sectors are equal.</p>
+<p>Any measure that favoured one over the other would violate the symmetry of the pre-state from which the break occurs.</p>
+<p><strong>Condition 2 — Additivity.</strong> For orthogonal states, P(ψ₁ + ψ₂) = P(ψ₁) + P(ψ₂). This follows from the structure of record-writing.</p>
+<p>Axiom B — the now writes exactly one record per actualisation event. One break, one ε, one distinction between 0 and 1 for that degree of freedom.</p>
+<p>Axiom R — records are discrete, countable elements of a monoid.</p>
+<p>For a degree of freedom with n distinguishable outcomes, the now writes one record from {r₁, …, rₙ}.</p>
+<p>Orthogonal states correspond to disjoint subsets of these possible records — outcomes that cannot co-occur.</p>
+<p class="centre">The now writes exactly one record, and that record is in one subset or the other, but not both.</p>
+<p>The probability of outcome in A ∪ B is the count of ways the now can write a record in A ∪ B.</p>
+<p>Since A and B are disjoint: no double-counting, no missing records. The count adds. The probability adds.</p>
+<p>Additivity of probabilities for orthogonal states is not an independent postulate.</p>
+<p>It is the structure of the break.</p>
+<p class="centre"><strong>Scope:</strong> the argument motivates additivity from the discrete structure of record-writing (B + R).</p>
+<p>The full uniqueness of |ψ|² as the probability measure relies on Gleason’s theorem (1957), which assumes the Hilbert space structure derived above (bridge construction + Schrödinger derivation).</p>
+<p>The axiom-derived motivation provides the physical ground for Gleason’s mathematical assumption — but the formal step from discrete record counting to continuous Hilbert-space measure theory is a bridge.</p>
+<p><strong>Condition 3 — Normalisation.</strong> Total probability equals 1. The break must produce some outcome — the empty set must split into 0 and 1.</p>
+<p>Something must happen. The total probability of all possible outcomes is certainty.</p>
+<p>Under σ-invariance (Condition 1) and the σ-additivity formalised by Gleason’s theorem for dim ≥ 3, the unique probability assignment compatible with Conditions 1–3 is:</p>
+<p class="eq">P(ψ) = ψ · ψ* = |ψ|²</p>
+<p>The Born rule.</p>
+<p>It is forced by the symmetry of the pre-state (Axiom S), the structure of the break (Axiom B), the discreteness of records (Axiom R), and the complex structure of the amplitudes (from Lorentzian signature under R + C).</p>
+<p><strong>Kill switch KS-Q.1.</strong> The Born rule derivation is conditional on the Hilbert space bridge construction (KS-Q.7) and Gleason’s σ-additivity premise being granted as the measure-theoretic form of record additivity. If the bridge fails, the uniqueness argument must be re-examined. CONDITIONALLY CLOSED (conditional on KS-Q.7).</p>
+<h2>The structural meaning</h2>
+<p>|ψ|² = ψ · ψ* is the amplitude multiplied by its mirror image.</p>
+<p>It is the Light sector times the Dark sector. It is ℒ · 𝒟.</p>
+<p>The probability of an outcome is the product of the two sectors — the degree to which they agree on that outcome.</p>
+<p>When both sectors point fully toward an outcome (|ψ| = 1), the probability is 1 — certainty.</p>
+<p>When one sector is orthogonal to the outcome (|ψ| = 0), the probability is 0 — impossibility.</p>
+<p><strong>The Born rule is the 1:1 voting.</strong></p>
+<p>Both sectors must agree. The probability is their product.</p>
+<p>Neither sector alone determines the outcome — the outcome is determined by the overlap between the two readings of the pre-state.</p>
+<p>That is why it is the square and not the amplitude itself.</p>
+<p>Because both sectors count.</p>
+<p class="centre">You have wondered why quantum probability is the square of the amplitude. Now you know.</p>
+<p>Both sides of the 1:1 must agree.</p>
+<h2>The full probability space</h2>
+<p>The Born rule gives |ψ|² for a given actualisation — the probability of a particular outcome when the now writes a record for a particular degree of freedom, in a particular cycle.</p>
+<p>This is the local probability.</p>
+<p>Within a single cycle, the written record constrains the probability landscape.</p>
+<p>Some possibilities are driven so close to zero that they are operationally impossible.</p>
+<p>The monoid accumulates. The record is heavy. The landscape tilts.</p>
+<p>But the structure loops. And across cycles, the probability space extends.</p>
+<p>At the loop point — when the cycle completes and the 1:1 restores — the records are defragmented. Not annihilated. Defragmented.</p>
+<p>The information survives as grains, carrying everything that was actualized, now available as probability and possibility rather than as fact.</p>
+<p class="centre">The next cycle’s probability landscape is shaped by the defragmented content of all prior cycles.</p>
+<p>The grains remember — not as history, but as weight.</p>
+<p>As the shape of what is likely and what is unlikely in this particular cycle.</p>
+<p><strong>Across infinite loops, every possibility that has nonzero probability in any cycle has certainty of eventual actualisation.</strong></p>
+<p>The impossible within one cycle becomes merely improbable across cycles, becomes inevitable given enough loops.</p>
+<p>The full probability space is not one cycle but all cycles.</p>
+<p>The only things that never actualize are things at exactly 0 — logical impossibilities, axiom violations, things that contradict the structure of 1:1 + 1×ε itself.</p>
+<p>Everything else — everything between 0 and 1 — is a potential possibility the defragmented record carries forward, and the loop guarantees will eventually actualize.</p>
+<p><strong>Status:</strong> structural extrapolation. The ergodic claim — that everything possible actualises across infinite loops — is structurally motivated by the loop and the defragmentation argument but is formally unproven.</p>
+<p><strong>Kill switch KS-Q.9.</strong> If the structural ergodicity across cycles can be shown inconsistent with the loop construction, the global guarantee fails. LIVE — HARD.</p>
+<p>The Born rule is the local law. The loop is the global guarantee.</p>
+<p>You are living inside one cycle. Everything you experience is weighted by the Born rule.</p>
+<p>But across all cycles, the loop ensures that everything possible — everything between 0 and 1 — eventually becomes actual.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap09-the-break-empty-set/entanglement/"><small>Previous</small>Entanglement</a><div class="up"><small>Back to</small><a href="/proofs/ap09-the-break-empty-set/">The Break — Empty Set</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap09-the-break-empty-set/the-wave-function/"><small>Next</small>The Wave Function</a></nav>
+<p class="orig">The paper of record: <a href="/AP09_The_Break_Empty_Set.pdf">the420code.org/AP09_The_Break_Empty_Set.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

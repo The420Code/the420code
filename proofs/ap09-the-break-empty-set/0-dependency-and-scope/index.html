@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="AP09 shows that quantum mechanics — superposition, measurement, entanglement, the Born rule, the Schrödinger equation — follows from the same four axioms {S, B, R, C} and bridge hypotheses (EH, QRA) that produce spacetime (AP10) and gravity (AP08).">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap09-the-break-empty-set/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Break — Empty Set, Artist’s Proof 09 — The 420 Code">
+<meta property="og:description" content="AP09 shows that quantum mechanics — superposition, measurement, entanglement, the Born rule, the Schrödinger equation — follows from the same four axioms {S, B, R, C} and bridge hypotheses (EH, QRA) that produce spacetime (AP10) and gravity (AP08).">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap09-the-break-empty-set/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Break — Empty Set, Artist’s Proof 09 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap09-the-break-empty-set/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap09-the-break-empty-set/"><b>The Break — Empty Set</b></a> · read in full · 1 of 13</div><ul class="modes"><li><a href="/AP09_The_Break_Empty_Set.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">AP09 shows that quantum mechanics — superposition, measurement, entanglement, the Born rule, the Schrödinger equation — follows from the same four axioms {S, B, R, C} and bridge hypotheses (EH, QRA) that produce spacetime (AP10) and gravity (AP08).</p>
+<div class="paper">
+<h2>What this paper does</h2>
+<p>AP09 shows that quantum mechanics — superposition, measurement, entanglement, the Born rule, the Schrödinger equation — follows from the same four axioms {S, B, R, C} and bridge hypotheses (EH, QRA) that produce spacetime (AP10) and gravity (AP08).</p>
+<p>The derivation proceeds through structural readings and mathematical derivations.</p>
+<p>Structural readings identify the pre-state with superposition, the break with measurement, and unbroken degrees of freedom with entanglement.</p>
+<p>Mathematical derivations produce linearity, the Born rule, and the Schrödinger equation via uniqueness theorems.</p>
+<p>Epistemic status is declared per section. Some results are derived. Some are structural readings. Some are bridge identifications. The distinction is maintained throughout.</p>
+<p>No part of the derivation assumes the postulates of quantum mechanics.</p>
+<h2>Dependencies</h2>
+<p>AP20 (The Proof): the axioms {S, B, R, C} — completeness (AP20 4.1, fenced KS-P.1), independence and minimality (AP20 4.2, fenced KS-P.2), joint consistency from the undeniable premise (AP20 6). Load-bearing.</p>
+<p>AP10 4 (The Dimension): Under EH + QRA, Lorentzian manifold (M, g) with signature (−,+,+,+) and symmetry group SO(1,N) — the signature read from the axioms’ reversibility structure, formal metric-level derivation fenced at KS-D.4. Load-bearing for complex amplitudes (the complex amplitudes derivation) and the Schrödinger equation (the Schrödinger derivation).</p>
+<p>AP06 (The Leakage Constant): ε &gt; 0 whenever c is finite. Referenced for entanglement (in the entanglement section) and the eye topology.</p>
+<p>AP08 (The Identity): Einstein’s field equations from the record algebra. Referenced for the gravity–quantum duality and conservation laws.</p>
+<p class="centre">AP20 (The Proof): EH and QRA proven. All results that depended on EH are now unconditional.</p>
+<p>The Lock (Edition 04): ε = electron. Load-bearing for the identification of the break element with a physical particle.</p>
+<h2>Epistemic status per phase</h2>
+<p>Foundational phase (empty set ontology, the break). Structural reading of the pre-state and break — ontological identification of {S, B} with the empty set splitting. Not a derivation; a reading that grounds the rest. KS-Q.10.</p>
+<p>Linearity construction (the bridge step). Bridge derivation. Linearity constructed from the record monoid (R) + complex scalars (Lorentzian signature) + faithful embedding (EH). Compatibility of monoid action with vector space operations. KS-Q.7.</p>
+<p>Complex amplitudes (the conditional derivation). Derivation conditional on reconstruction theorems. Complex amplitudes from the Lorentzian signature. KS-Q.4.</p>
+<p>Measurement. Structural reading. Measurement as the break. Irreversibility from Axiom R. The loop from the axiom structure. KS-Q.5.</p>
+<p>Entanglement. Structural reading. Entanglement as unbroken pre-state. The Bell correlation account is compatibility, not derivation. KS-Q.3.</p>
+<p>Born rule (the conditional derivation). Derivation. Born rule from Axiom S. σ ↔ conjugation proven unique (KS-Q.6 CLOSED). Conditionally closed (conditional on KS-Q.7). KS-Q.1, KS-Q.2.</p>
+<p>Ergodicity (the structural extrapolation). Everything possible actualises across infinite loops. Structurally motivated but formally unproven. KS-Q.9.</p>
+<p>Schrödinger equation (the strongest derivation). Derivation. Via Wigner + Stone applied to the derived Hilbert space. ℏ identified, not derived in this paper (KS-Q.8 — closed conditional on KS-L.4 by AP12).</p>
+<h2>Axiom mapping</h2>
+<p>Axiom S (Symmetry). The pre-state. The 1:1. Two sectors indistinguishable before the break. S is the superposition (read in the empty set and break sections). 0 and 1 co-existing.</p>
+<p>S provides the involution σ which, under the Born rule derivation (later in the paper), maps to complex conjugation.</p>
+<p class="centre">Axiom B (Break — unique). The measurement. One element ε with no σ-image. The first record.</p>
+<p>B is the act of distinguishing (read in the break section): superposition becomes definite outcome. Under The Lock, ε = electron.</p>
+<p>Axiom R (Record — monotone). Irreversibility. The monoid gives the arrow of time.</p>
+<p>R is what makes measurement irreversible (read in the measurement section). Once a record is written, it cannot be unwritten.</p>
+<p>R provides the Hilbert space structure through the monoid’s sequential composition.</p>
+<p>Axiom C (Constraint). No-signalling. The finite rate c prevents instantaneous correlation exploitation (in the no-signalling argument within the entanglement section).</p>
+<p>C provides the Lorentzian structure from which complex amplitudes are derived (in the complex amplitudes derivation).</p>
+<h2>Outstanding debts</h2>
+<p>D1 (Linearity bridge uniqueness). The construction of the pre-state as a complex vector space from monoid + ℂ + faithful embedding is motivated but not proven unique. KS-Q.7.</p>
+<p>D2 (Independent derivation of ℏ). The value of ℏ enters as an empirical input. Same status as G in AP08. KS-Q.8.</p>
+<p>Note: D2 is addressed by AP12’s forcing argument, which forces the identification of ℏ as the action-scale of the minimum record (closing KS-Q.8 conditional on KS-L.4).</p>
+<p>D3 (Bell correlations). The Bell correlation account in the entanglement section is a compatibility demonstration, not a derivation from axioms. KS-Q.3.</p>
+<p>D4 (Ergodicity across cycles). The claim that everything possible actualises across infinite loops is a structural extrapolation, not a theorem. KS-Q.9.</p>
+<p>D5 (Defragmentation). Formal proof that defragmentation preserves Axiom R’s intent is incomplete. KS-Q.5.</p>
+<h2>Kill switch summary</h2>
+<p>KS-Q.1 (Born rule derivation): CONDITIONALLY CLOSED (conditional on KS-Q.7).</p>
+<p>KS-Q.2 (Born rule empirical): LIVE — EMPIRICAL.</p>
+<p>KS-Q.3 (No-signalling / Bell): LIVE — EMPIRICAL.</p>
+<p>KS-Q.4 (Complex uniqueness): LIVE — HARD.</p>
+<p>KS-Q.5 (Loop/defragmentation): LIVE — HARD.</p>
+<p>KS-Q.6 (σ ↔ conjugation): CLOSED.</p>
+<p>KS-Q.7 (Linearity bridge): LIVE — HARD.</p>
+<p>KS-Q.8 (ℏ identification): LIVE — HARD in AP09. Addressed and closed (conditional on KS-L.4) by AP12’s forcing argument.</p>
+<p>KS-Q.9 (Ergodicity): LIVE — HARD.</p>
+<p>KS-Q.10 (Empty set ontology): LIVE — HARD.</p>
+<h2>Structural relationships</h2>
+<p>AP06 (The Leakage Constant): Theorem 3.1 (ε &gt; 0) is the leakage at the boundary. This paper reads the same structure from the quantum side — entanglement as unbroken pre-state.</p>
+<p>AP08 (The Identity): Gravity sector from the same axioms. This paper completes the duality — gravity = records, quantum = pre-state.</p>
+<p>AP10 (The Dimension): The Hilbert space is the fifth degree of freedom — the 1:1 itself, pre-spatial.</p>
+<p>AP11 (The Spin): The ℤ₂ of Axiom S read on the rotation group. Builds on this paper’s Hilbert space construction and σ ↔ time-reversal identification.</p>
+<p>AP12 (The Limit): Closes the ℏ identification of this paper’s Schrödinger derivation via a five-step forcing argument.</p>
+<p>AP13 (The Grain): Decoherence as the third regime of Axiom R. The environment is the accumulated record; environmental record-writing determines which superpositions decohere.</p>
+<p>AP15 (The Connection): Reads the U(1) of the Born rule as the connection that produces electromagnetism.</p>
+<p>AP20 (The Proof): Proves EH and QRA. All conditional results in this paper that depended on EH are now unconditional.</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap09-the-break-empty-set/">The Break — Empty Set</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap09-the-break-empty-set/the-empty-set/"><small>Next</small>The Empty Set</a></nav>
+<p class="orig">The paper of record: <a href="/AP09_The_Break_Empty_Set.pdf">the420code.org/AP09_The_Break_Empty_Set.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
