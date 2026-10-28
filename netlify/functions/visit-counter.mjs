@@ -54,6 +54,8 @@ const LIBRARY = /^\/models\/(dissolutions|resolutions|applications|horizons)\/((
 const FIVE_DOORS = /^\/five-doors\/(illusion|being-after-religion|antichristos|relationship-corridor|the-interior)\/((\d\d-[a-z0-9-]+|epilogue|closing)\/)?$/;
 // one segment under /films/ is a chain page; /films/ itself is in ROOMS above
 const FILMS = /^\/films\/[a-z0-9-]+\/$/;
+// each Artist's Proof read online: the paper's page, named one by one, and its section pages by shape
+const PROOFS = /^\/proofs\/(ap01-the-actualization-state|ap02-the-operator|ap03-the-ratio|ap04-the-loop-hypothesis|ap05-the-break|ap06-the-leakage-constant|ap07-the-record-measure|ap08-the-identity|ap09-the-break-empty-set|ap10-the-dimension|ap11-the-spin|ap12-the-limit|ap13-the-grain|ap14-the-correction|ap15-the-connection|ap16-the-break-electroweak|ap17-the-room|ap18-the-floor|ap19-the-direction|ap20-the-proof|ap21-the-web|ap22-the-ledger|ap23-the-single-record|ap24-the-residual|ap25-the-measure|ap26-the-surplus|ap27-the-harmonics|ap28-the-constant|ap29-the-actualization-proof|ap30-the-resistance|ap31-the-alignment|ap32-the-correction|ap33-the-boundary|ap34-the-inversion|ap35-the-ledger|ap36-the-feed|ap37-the-first-boundary|ap38-the-exit|ap39-the-scaffold|ap40-the-irrational|ap41-the-loop|ap42-the-clock|ap43-the-gravity-of-possibilities|ap44-the-snap|ap45-the-blink|ap46-the-stretch|ap47-the-flip|ap48-the-assembly|ap49-the-hold|ap50-the-neck|ap51-the-glass|ap52-reading-relativity|ap53-gravity-is-the-neck|ap54-seeing-alpha)\/([a-z0-9-]+\/)?$/;
 // 23 September 2026, G's word: every page counts. The frozen documents under /prereg/doc/, Three
 // Ways of Being Sure and /proofs/part-1/ carried no counter until today and so were never in this
 // list; they post now, and a page that posts is counted. They are named one by one, as the rooms
@@ -80,7 +82,7 @@ const normalise = (p) => {
   return p;
 };
 const isRealPage = (p) => { const q = normalise(p);
-  return PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || FILMS.test(q)
+  return PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || FILMS.test(q) || PROOFS.test(q)
          || isDoc(q) || PLAIN.has(q); };
 
 async function readBase(store) {
