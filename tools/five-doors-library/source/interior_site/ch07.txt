@@ -1,6 +1,6 @@
 # 7 — One Record Exists
 
-> The Interior, version 2.0.9, Chapter 7.
+> The Interior, version 2.0.10, Chapter 7.
 
 You are reading this. That is a record.
 

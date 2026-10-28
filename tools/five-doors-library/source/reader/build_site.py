@@ -47,7 +47,7 @@ BOOKS = [
     dict(slug='relationship-corridor', src='corridor', title='The Relationship Corridor', door='the personal door',
          pdf='/five-doors/relationship-corridor.pdf', original='/The_Relationship_Corridor.pdf', edition='v1.3'),
     dict(slug='the-interior', src='interior_site', title='The Interior', door='the operational door',
-         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.9', full_date='2 October 2026',
+         pdf=None, original='/The_Interior.pdf', edition=None, full='2.0.10', full_date='28 October 2026',
          numerals=True, epilogue_slug='closing', epilogue_label='Closing'),
 ]
 WORDS = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine',
@@ -547,19 +547,29 @@ def render_epilogue(book):
     return shell(e['title'], body, book, 2, blurb([f'{book["title"]} — {e["title"]}.'] + e['paras']),
                  path=f'/five-doors/{book["slug"]}/{book.get("epilogue_slug", "epilogue")}/')
 
-# One stylesheet and one script for both libraries, as the bundle's INSTALL asks ("serve one copy for
-# both"): the Ø Models files, which carry the 16px floor, the site's greys, the header's rules and the
-# visit and download counters. Read here so a patch to one can never leave the other behind.
-CSS = open(os.path.join(REPO, 'models', 'reader.css'), encoding='utf-8').read()
-JS = open(os.path.join(REPO, 'models', 'reader.js'), encoding='utf-8').read()
-assert '.c{max-width:760px' in CSS and H.BASE_CSS in CSS and 'visit-counter' in JS, 'the Ø Models stylesheet or script is not the patched one'
+def _scrubbed_css(s):
+    """The served stylesheets carry no comments (tools/scrub_public.py, 14 October 2026): compare the header's
+    base block in the same form."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('scrub_public', os.path.join(REPO, 'tools', 'scrub_public.py'))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    return m.css(s)
+
 
 # One stylesheet and one script for both libraries, as the bundle's INSTALL asks ("serve one copy for
 # both"): the Ø Models files, which carry the 16px floor, the site's greys, the header's rules and the
 # visit and download counters. Read here so a patch to one can never leave the other behind.
 CSS = open(os.path.join(REPO, 'models', 'reader.css'), encoding='utf-8').read()
 JS = open(os.path.join(REPO, 'models', 'reader.js'), encoding='utf-8').read()
-assert '.c{max-width:760px' in CSS and H.BASE_CSS in CSS and 'visit-counter' in JS, 'the Ø Models stylesheet or script is not the patched one'
+assert '.c{max-width:760px' in CSS and _scrubbed_css(H.BASE_CSS) in CSS and 'visit-counter' in JS, 'the Ø Models stylesheet or script is not the patched one'
+
+# One stylesheet and one script for both libraries, as the bundle's INSTALL asks ("serve one copy for
+# both"): the Ø Models files, which carry the 16px floor, the site's greys, the header's rules and the
+# visit and download counters. Read here so a patch to one can never leave the other behind.
+CSS = open(os.path.join(REPO, 'models', 'reader.css'), encoding='utf-8').read()
+JS = open(os.path.join(REPO, 'models', 'reader.js'), encoding='utf-8').read()
+assert '.c{max-width:760px' in CSS and _scrubbed_css(H.BASE_CSS) in CSS and 'visit-counter' in JS, 'the Ø Models stylesheet or script is not the patched one'
 
 
 def main():

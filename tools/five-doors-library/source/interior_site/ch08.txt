@@ -1,6 +1,6 @@
 # 8 — What Physics Follows
 
-> The Interior, version 2.0.9, Chapter 8.
+> The Interior, version 2.0.10, Chapter 8.
 
 You have felt gravity your entire life without knowing what it is.
 

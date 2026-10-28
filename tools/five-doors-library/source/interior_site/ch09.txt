@@ -1,6 +1,6 @@
 # 9 — The System Is Closed
 
-> The Interior, version 2.0.9, Chapter 9.
+> The Interior, version 2.0.10, Chapter 9.
 
 The derivation runs both ways. That is not a hedge. That is the check.
 

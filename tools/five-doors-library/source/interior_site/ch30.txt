@@ -1,6 +1,6 @@
 # 30 — Kill Switch Registry
 
-> The Interior, version 2.0.9, Chapter 30.
+> The Interior, version 2.0.10, Chapter 30.
 
 The condensed registry. Each switch identifies a specific failure condition. The full registry, with derivation context and current status for every switch in the work, is at the420code.org.
 
