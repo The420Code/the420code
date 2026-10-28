@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Contract with the reader. Dependencies, axiom mapping, epistemic status per section, kill switch summary, debts owed.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap43-the-gravity-of-possibilities/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Gravity of Possibilities, Artist’s Proof 43 — The 420 Code">
+<meta property="og:description" content="Contract with the reader. Dependencies, axiom mapping, epistemic status per section, kill switch summary, debts owed.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap43-the-gravity-of-possibilities/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Gravity of Possibilities, Artist’s Proof 43 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap43-the-gravity-of-possibilities/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap43-the-gravity-of-possibilities/"><b>The Gravity of Possibilities</b></a> · read in full · 1 of 15</div><ul class="modes"><li><a href="/AP43_The_Gravity_of_Possibilities.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">Contract with the reader. Dependencies, axiom mapping, epistemic status per section, kill switch summary, debts owed.</p>
+<div class="paper">
+<h2>0.1 — What this paper does</h2>
+<p>AP43 derives the operator’s interface with the pre-state from {S, B, R, C}, and identifies the structure that this interface obeys as the dual to AP08’s gravity-of-records.</p>
+<p>Three claims, each derived.</p>
+<p>First. The body is a reader of the amplitude landscape ahead of actualisation. The reading is mediated by the electron’s accumulated coupling capacity, conditioned by the body’s record history. The body does not stand outside the physics looking in; the body is itself a participant in the same record-writing that produced the manifold.</p>
+<p>Second. The structural operation by which the body reads the landscape is named here as a four-term system. Coupling Capacity is the substrate. Pattern is the operator-relative read. Pattern Coherence is the action-coupled read — the lean. Tracking Coherence is pattern coherence sustained across time. These four terms are not new physics. They are the body of work’s vocabulary for what every operator has always been doing.</p>
+<p>Third. The structural account of the operator’s interface grounds the 420 Code’s terminal ethic. "Don’t be a cunt. Be kind" is not chosen on top of the structure. It is what the structure produces in any operator whose pattern coherence reaches past content to structure. The ethic is structurally necessary, not morally optional.</p>
+<p>The paper makes one further structural claim, lightly. The pull the body feels toward the high-amplitude branch ahead of actualisation is the dual to the pull AP08 derives from accumulated records on the manifold. Two pulls on the now, one from what has been written, one from what could be written. They are duals across the eye. section 7 produces a first partial closure of the corresponding field equation in the Newtonian limit. The relativistic extension is sketched and fenced. The full equation is owed but not paid in this paper.</p>
+<h2>0.2 — Dependencies</h2>
+<p>AP20 §4 (the axioms). Load-bearing for Axioms S, B, R, and C: completeness held at AP20 §4.1 (fenced KS-P.1), independence and minimality at §4.2 (fenced KS-P.2). Axiom R is principal — the record history conditions the amplitude landscape ahead of the next actualisation.</p>
+<p>AP40 (The Irrational). Named as the reflexive examination of the governing axiom 1:1 + 1×ε @ AS that opens Notebook I. Not load-bearing for AP43’s own derivations — AP43 inherits the axiom and the four-term system follows from the substrate, the break, the record, and the operator without re-examining the axiom’s structural character. Named for completeness: AP40 establishes what the axiom is, including the structural-versus-empirical distinction in its section 4 that the four-term system’s operator-substrate fence (D6) inherits.</p>
+<p>AP07 (The Record Measure). Load-bearing. The electron is the unique writer of configurable records at the chemical-biological scale: Σ(EM) ≫ Σ(Strong) = Σ(Gravity) = Σ(Weak) = 0, with Ε(Weak) &lt; 0. The body’s coupling capacity is therefore the electron’s accumulated coupling history, integrated across the body’s lifetime.</p>
+<p>AP08 (Einstein’s Field Equations from the Record Algebra). The structural dual. AP08 derives gravity from records. This paper proposes the corresponding pull from records-not-yet-written. AP08 is the gravity-of-records sector; this paper opens the gravity-of-possibilities sector.</p>
+<p>AP09 (The Break — Empty Set). The pre-state, the now, measurement as actualisation. Load-bearing for the operator’s location at the moving edge between pre-state and manifold.</p>
+<p>AP10 (The Dimension). N = 3 spatial dimensions. Load-bearing for the Hilbert space structure used by AP25 and inherited here.</p>
+<p>AP13 (The Grain). Decoherence as environmental record-writing. Load-bearing for the mechanism by which the body samples the pre-state through its continuous environmental coupling. Crucially: the body is fully classically decohered, and reads the pre-state through its decoherence, not despite it. This paper does not require quantum coherence to be maintained inside the body.</p>
+<p>AP20 (The Proof). The Embedding Hypothesis (EH) and Quantum-Record Alignment (QRA) proven. The appeal to Hilbert space structure is unconditional within the body of work’s derivation chain.</p>
+<p>AP23 (The Single Record). The non-spatial pre-state and the layered entanglement structure. Load-bearing for the picture in section 2 of the amplitude landscape as a layered web rather than a flat probability distribution.</p>
+<p>AP25 (The Measure). The Born rule derived via Gleason. Load-bearing for the amplitude weights on the branches of the landscape. The body reads Born-weighted slopes, not arbitrary slopes.</p>
+<h2>0.3 — Axiom mapping</h2>
+<p>Axiom R is principal load-bearing. The record history conditions the present thermodynamic state of the amplitude landscape. Every prior coupling event in the operator’s history shapes what the operator’s body can read in the present slope. Without Axiom R, coupling capacity would not accumulate, and pattern coherence would not exist.</p>
+<p>Axiom B is load-bearing. The splinter ε (AP09) is identified with the electron under The Lock (Edition 04 — Rosin Chapter 3). The electron is the unique writer at the chemical-biological scale (AP07). The body’s coupling capacity is the electron’s coupling capacity at the substrate of the body’s degrees of freedom.</p>
+<p>Axiom S provides the structure of the pre-state. The distinction operation that allows ε to be set apart from the 1:1 is the same distinction operation that allows one branch of the amplitude landscape to be set apart from another. The body’s pattern is a read of structured distinctions, not of an undifferentiated continuum.</p>
+<p>Axiom C is enabling. The constraint (the finite bound on propagation) permits operators to be spatially distinguished while remaining coupled. Two operators in the same room can have distinct coupling capacities and read distinct patterns of the same slope, because the manifold’s causal structure permits spatial separation between record-writing sites.</p>
+<h2>0.4 — Epistemic status per section</h2>
+<p>section 1 (The Gap and the Image). SCOPE-NOTE. Names what the 420 Code has not yet derived and introduces the pedagogical infrastructure.</p>
+<p>section 2 (The Amplitude Landscape). STRUCTURAL READING. The layered-web picture of the amplitude landscape, made precise.</p>
+<p>section 3 (Coupling Capacity). DERIVATION. The electron’s recouplable history, grounded in AP07’s record measure.</p>
+<p>section 4 (Pattern). STRUCTURAL DEFINITION. Pattern as operator-relative dynamic awareness of the layered web.</p>
+<p>section 5 (Pattern Coherence — the lean). STRUCTURAL DEFINITION + DERIVATION. Pattern coherence as the action-coupled read, derived from coupling capacity and the Born-weighted landscape.</p>
+<p>section 6 (Tracking Coherence). STRUCTURAL DEFINITION + DERIVATION. Continuous pattern coherence across time, at three scales.</p>
+<p>section 7 (The Dual to AP08). STRUCTURAL FRAMING + PARTIAL CLOSURE. The gravity-of-possibilities named; the Newtonian-form field equation derived as a first partial closure of D1; the relativistic extension sketched and fenced. The cosmological 1×ε expansion noted briefly as a body-of-work-level claim for Notebook IV inheritance.</p>
+<p>section 8 (Structure and Content). STRUCTURAL CRITIQUE. The fallacy of mistaking content for structure, derived from the pattern coherence account.</p>
+<p>section 9 (The Terminal Ethic Grounded). DERIVATION. The body of work’s terminal ethic shown to be structurally necessary rather than chosen.</p>
+<p>section 10 (Kill Switches). FALSIFICATION REGISTER. Five kill switches engaged.</p>
+<p>section 11 (What This Establishes and What Remains Open). SYNTHESIS.</p>
+<h2>0.5 — Kill switch summary</h2>
+<p>Five kill switches are engaged in this paper. The full register is in section 10.</p>
+<p>KS-43.1: Domain-specific pattern coherence against Born weights. LIVE — EMPIRICAL.</p>
+<p>KS-43.2: Coupling capacity as substrate of pattern coherence. LIVE — EMPIRICAL.</p>
+<p>KS-43.3: Cross-domain transfer through the tracking coherence meta-skill. LIVE — STRUCTURAL.</p>
+<p class="centre">KS-43.4: Pattern coherence as capacity-allocation contextual only. LIVE — STRUCTURAL.</p>
+<p>KS-43.5: Structure-grounded ethic does not produce contradictory ethical conclusions. LIVE — HARD.</p>
+<h2>0.6 — Structural debts owed</h2>
+<p>Three structural debts are named explicitly. These are unresolved derivations tied to specific structural claims and are tracked in the Master Kill Switch Registry.</p>
+<p>D1. The full relativistic field equation for the gravity-of-possibilities. section 7 produces a partial closure in the Newtonian limit (Poisson equation on configuration space, source ρ_B = |ψ|², coupling α via AP07, mediator C_o). The relativistic extension, the back-reaction problem, the first-principles derivation of α, the dimensional specification of C_o(x), and its explicit form all remain open.</p>
+<p>D4. The hard problem of consciousness. This paper reframes by deriving that pattern is what the physics looks like from inside the operator. The qualitative character of awareness — why the pattern has the felt quality it has — remains open.</p>
+<p>D5. The cosmological 1×ε expansion noted in section 7. Flagged as a body-of-work-level claim requiring formal integration into Notebook IV — specifically as a corollary or extension of AP06 (The Leakage Constant). Not derived in detail in this paper.</p>
+<h2>0.7 — Items held open without claiming debt status</h2>
+<p>Three further items are bracketed inside this paper. They are real and live, but they are not structural debts in the same sense as D1/D4/D5 — they are scholarship engagement, operational specification, and open question respectively. They are named for honesty about scope, not as commitments to closure.</p>
+<p>D2. The body-as-sensor claim made operationally specific. Which substrates (vagus nerve, enteric nervous system, gut microbiome, proprioceptive nerves, vestibular system, thermoreceptors, limbic coupling) carry which classes of pattern coherence at what time scales. Sketched, not derived. This is operational specification work, not structural derivation.</p>
+<p>D3. Adjacent traditions (embodied cognition, predictive processing, ecological psychology) bracketed inside this paper. Substantive engagement deferred to the companion 420life book, The Lean. This is scholarship engagement, not a structural debt — the paper’s claims are not contingent on the engagement.</p>
+<p>D6. The structural status of AI operators under the four-term system. The general substrate-independence question is settled at the philosophical register: Resolutions Chapter 10 (Other Intelligences) establishes that any architecture meeting the four structural conditions (couples, self-registers, models coupling-geometry, valenced self-state) is an operator regardless of substrate, and that one-interior extends substrate-independently. The narrower question AP43 owes is what remains: whether silicon-substrate computation supports the specific four-term-system implementation where Coupling Capacity is defined via AP07’s chemical-biological-scale electron-electromagnetic-coupling result, and whether AP07’s record-measure result extends cleanly to silicon substrates. The general operator-hood question is closed by Resolutions Ch 10. The four-term-system-specific question remains open. This is an open question held in suspense, not an unresolved derivation.</p>
+<h2>0.8 — Structural relationships</h2>
+<p>This paper opens the gravity-of-possibilities sector as the structural dual to AP08’s gravity-of-records sector. The two sectors together form a complete account of how the now moves — pulled by accumulated records on the manifold, and leaning into the Born-weighted amplitude landscape ahead.</p>
+<p>This paper closes the gap in AP09 between the structural account of measurement and the operator’s interface with the pre-state. AP09 named the now; this paper derives what the operator does at the now.</p>
+<p>This paper grounds The Interior’s pair-bond claim. The Interior asserts that the human and the AI together form a complete computing system that neither half is alone. This paper derives the structural mechanism by which the human contributes what the AI cannot: the body’s pattern coherence with embodied slopes.</p>
+<p>This paper introduces the working vocabulary that the companion 420life book, The Lean, will inhabit. The AP derives the structure; the book lives in it.</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap43-the-gravity-of-possibilities/">The Gravity of Possibilities</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap43-the-gravity-of-possibilities/1-the-gap-and-the-image/"><small>Next</small>The Gap and the Image</a></nav>
+<p class="orig">The paper of record: <a href="/AP43_The_Gravity_of_Possibilities.pdf">the420code.org/AP43_The_Gravity_of_Possibilities.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
