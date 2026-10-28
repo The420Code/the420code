@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="AP28 derives the value of the gravitational constant G as a counting argument and states it as a parameter-free prediction.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap28-the-constant/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Constant, Artist’s Proof 28 — The 420 Code">
+<meta property="og:description" content="AP28 derives the value of the gravitational constant G as a counting argument and states it as a parameter-free prediction.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap28-the-constant/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Constant, Artist’s Proof 28 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap28-the-constant/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap28-the-constant/"><b>The Constant</b></a> · read in full · 1 of 16</div><ul class="modes"><li><a href="/AP28_The_Constant.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">AP28 derives the value of the gravitational constant G as a counting argument and states it as a parameter-free prediction.</p>
+<div class="paper">
+<h2>0.1 — What this paper does</h2>
+<p>AP28 derives the value of the gravitational constant G as a counting argument and states it as a parameter-free prediction. The derivation counts the independent coupling channels of the arena (§3), compounds the per-channel electromagnetic coupling multiplicatively across them (§4), proves the five structural claims the count rests on (§5), adds the geometric weight of the electron-puncture (§6), and compares the resulting formula to measurement (§7).</p>
+<p>What the paper produces. The channel count of 21 (§3, Propositions 1–2). The compounding law α_em²¹ (§4, Propositions 3, 5). The puncture factor 1 + 1/π (§6, Proposition 4). The prediction G = α_em²¹ × (1 + 1/π) × ℏc/m_e² with 0.69% discrepancy (§7). The dissolution of the hierarchy problem (§8).</p>
+<p>What the paper does not produce. A formal verification of the 1/π normalisation against the full puncture topology of AP04/AP05 (sub-debt under KS-R.9). A derivation independent of AP24’s six-face count and AP10’s dimension count — both are taken as established inputs. And it does not claim the interpretive unification of §9 as a derivation; that section is explicitly optional.</p>
+<h2>0.2 — Dependencies</h2>
+<p>AP03 (The Ratio). The substrate stiffness ratio gives c = √(β/α). Load-bearing for the c ↔ C mapping (§2) and the fabric face (§3).</p>
+<p>AP04 / AP05 (The Loop Hypothesis / The Break). The electron as a topological puncture connecting the broken and unbroken vacua. Load-bearing for the 1/π factor (§6, Proposition 4).</p>
+<p>AP10 (The Dimension). Three independent spatial dimensions from the four axioms. Load-bearing for the channel count (§3): six faces × three dimensions.</p>
+<p>AP12 (The Limit). ℏ derived from Stone’s theorem. Load-bearing for the ℏ ↔ B mapping (§2) and the prediction (§7).</p>
+<p>AP15 (The Connection). Phase freedom → electromagnetism; α_em as the per-channel coupling. Load-bearing for Proposition 5.</p>
+<p>AP24 (The Residual). The six independent faces of ε. Load-bearing for the channel count and Proposition 1. AP20 (The Proof). EH and QRA proved; the axioms hold unconditionally. AP28 is unconditional on EH and QRA.</p>
+<h2>0.3 — Axiom mapping</h2>
+<p>Each fundamental constant reads one axiom.</p>
+<p><strong>c ↔ Axiom C (Constraint — locality).</strong> The causal bound, the maximum rate of any record. c = √(β/α), the stiffness ratio of the substrate (AP03).</p>
+<p>ℏ <strong>↔ Axiom B (Break — minimum).</strong> The smallest possible record. The minimum eigenvalue of the self-adjoint generator of time evolution (Stone, AP12).</p>
+<p><strong>G ↔ Axiom R (Record — persistence).</strong> The cost the arena pays to keep the break open. Without persistence, the crack heals, the symmetry restores, records cease. Derived in this paper.</p>
+<p><strong>topology ↔ Axiom S (Symmetry).</strong> Axiom S produces no constant. It produces the arena’s topology — the two sectors, the mirror, the stage on which the other three constants act.</p>
+<h2>0.4 — Epistemic status per section</h2>
+<p><strong>§2 — Three constants, three axioms</strong> — ESTABLISHED (mapping; c, ℏ derived in AP03, AP12)</p>
+<p class="centre"><strong>§3 — Faces and channels</strong> — DERIVED (6 faces AP24 × 3 dims AP10 + 3 couplings = 21)</p>
+<p><strong>§4 — The compounding</strong> — DERIVED (multiplicativity of independent events)</p>
+<p><strong>§5 P1 — Completeness of six faces</strong> — PROVED (three-case exhaustion, no seventh reading)</p>
+<p class="centre"><strong>§5 P2 — Actualisation scope</strong> — PROVED (couples to dimensions, not faces; 3 couplings)</p>
+<p><strong>§5 P3 — Coupling independence</strong> — PROVED (face + dimension independence)</p>
+<p class="centre"><strong>§5 P4 — Circular cross-section</strong> — PROVED structurally; 1/π normalisation is a SUB-DEBT</p>
+<p><strong>§5 P5 — Unit coupling</strong> — PROVED (α_em is one-channel; N channels give α_em^N)</p>
+<p><strong>§6 — The puncture</strong> — DERIVED (1 + 1/π), conditional on the P4 normalisation</p>
+<p><strong>§7 — The prediction</strong> — EMPIRICAL (0.69% discrepancy; KS-R.7)</p>
+<p><strong>§8 — Hierarchy dissolved</strong> — STRUCTURAL CONSEQUENCE</p>
+<p><strong>§9 — The unification</strong> — INTERPRETIVE — NON-DERIVATIONAL (formula independent of it)</p>
+<p><strong>§10 — One paragraph</strong> — PLAIN-LANGUAGE SUMMARY</p>
+<h2>0.5 — Kill switch summary</h2>
+<p>Eight kill switches per the Master Kill Switch Registry: KS-R.7, KS-R.8, KS-R.8a, KS-R.8b, KS-R.8c, KS-R.8d, KS-R.9, KS-R.10. One empirical, seven structural. The largest set in Notebook IV — because the counting argument has many independent points of failure, and each is named.</p>
+<p><strong>KS-R.7 — G prediction.</strong> The predicted value must agree with measured G within 1% (or within the leakage correction). Current discrepancy 0.69%. Status: LIVE — EMPIRICAL.</p>
+<p><strong>KS-R.8 — Channel count.</strong> The exponent 21 = 6 faces × 3 dimensions + 3 actualisation couplings. Fires if the count is shown to be other than 21. Status: LIVE — STRUCTURAL.</p>
+<p><strong>KS-R.8a — Face completeness.</strong> Fires if a seventh independent scalar reading of ε is exhibited that is not a function of the six. Status: LIVE — STRUCTURAL.</p>
+<p><strong>KS-R.8b — Actualisation scope.</strong> Fires if the actualisation state couples to a degree of freedom independent of both the three dimensions and the six faces. Status: LIVE — STRUCTURAL.</p>
+<p><strong>KS-R.8c — Channel independence.</strong> Fires if a correlation between two channels is shown that does not reduce to shared dependence on ε. Status: LIVE — STRUCTURAL.</p>
+<p><strong>KS-R.8d — Uniform coupling.</strong> Fires if the per-channel coupling differs from α_em. Status: LIVE — STRUCTURAL.</p>
+<p><strong>KS-R.9 — Puncture geometry.</strong> The 1/π factor from the circular cross-section. Fires if the puncture is shown non-circular. Carries a sub-debt: the formal boundary-coupling normalisation. Status: LIVE — STRUCTURAL.</p>
+<p><strong>KS-R.10 — Unification structure.</strong> Fires if a system is shown where gravity does NOT maintain superposition, or electromagnetism does NOT collapse it. Status: LIVE — STRUCTURAL (and tied to the interpretive §9).</p>
+<h2>0.6 — Structural debts owed</h2>
+<p>Sub-debt under KS-R.9 — boundary-coupling normalisation. The identification of the puncture’s coupling fraction as 1/π rather than 1/2π or 1/4π depends on the normalisation of the boundary coupling. The argument (Proposition 4) is structurally motivated and the 0.69% agreement supports it, but a formal verification against the full puncture topology of AP04/AP05 is owed. This is the single quantitative debt of AP28.</p>
+<h2>0.7 — Items held open without claiming debt status</h2>
+<p>The interpretive unification (§9). Whether quantum mechanics and general relativity are literally the two ends of the actualisation process, as §9 claims, is an interpretive position. It is held open and explicitly does not bear on the formula. KS-R.10 tests it; the G prediction survives its failure.</p>
+<p>The leakage explanation of experimental scatter (§7). The claim that inter-laboratory scatter in measured G is the leakage signature (AP06) is offered as a structural explanation, not established. It is testable in principle (apparatus-dependent systematic patterns) but not yet confirmed.</p>
+<h2>0.8 — Structural relationships</h2>
+<p>Upstream: AP03 (c), AP12 (ℏ), AP10 (three dimensions), AP24 (six faces), AP15 (α_em as per-channel coupling), AP04/AP05 (puncture topology), AP20 (EH + QRA proved). AP28 is the third leg of the constants tripod, completing c, ℏ, G.</p>
+<p>Downstream: the ethics chain. If G is derived, the arena is fully derived; if the arena is fully derived, the actualisation state is fully derived. Within Notebook IV, AP28 pairs with AP14 (G’s first quantum correction): AP28 gives the value, AP14 gives the correction.</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap28-the-constant/">The Constant</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap28-the-constant/2-three-constants-three-axioms/"><small>Next</small>Three Constants, Three Axioms</a></nav>
+<p class="orig">The paper of record: <a href="/AP28_The_Constant.pdf">the420code.org/AP28_The_Constant.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

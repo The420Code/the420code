@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="§5.1: colour = orientation, anticolour = conjugate representation (DERIVED). §5.2: Proposition 2 (colour neutrality from isotropy + AP15 stiffness) STRUCTURAL — the energy functional is not yet computed (D1). §5.3: gluons as 8 gauge bosons of SU(3) (DERIVED). §5.4: Proposition 4 (ε = electron is SU(3) singlet because minimum break is necessarily isotropic) DERIVED.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap19-the-direction/5-colour/">
+<meta property="og:title" content="Colour — The Direction, Artist’s Proof 19 — The 420 Code">
+<meta property="og:description" content="§5.1: colour = orientation, anticolour = conjugate representation (DERIVED). §5.2: Proposition 2 (colour neutrality from isotropy + AP15 stiffness) STRUCTURAL — the energy functional is not yet computed (D1). §5.3: gluons as 8 gauge bosons of SU(3) (DERIVED). §5.4: Proposition 4 (ε = electron is SU(3) singlet because minimum break is necessarily isotropic) DERIVED.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap19-the-direction/5-colour/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Colour — The Direction, Artist’s Proof 19 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap19-the-direction/5-colour/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap19-the-direction/"><b>The Direction</b></a> · read in full · 6 of 14</div><ul class="modes"><li><a href="/AP19_The_Direction.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 5</p>
+<h1>Colour</h1>
+<p class="oneline">§5.1: colour = orientation, anticolour = conjugate representation (DERIVED). §5.2: Proposition 2 (colour neutrality from isotropy + AP15 stiffness) STRUCTURAL — the energy functional is not yet computed (D1). §5.3: gluons as 8 gauge bosons of SU(3) (DERIVED). §5.4: Proposition 4 (ε = electron is SU(3) singlet because minimum break is necessarily isotropic) DERIVED.</p>
+<div class="paper">
+<h2>5.1 — What colour is</h2>
+<p>A quark’s colour is how the manifold oriented around its break.</p>
+<p><strong>Red.</strong> The C-face aligned with the break.</p>
+<p><strong>Green.</strong> The S-face aligned with the break.</p>
+<p><strong>Blue.</strong> The B-face aligned with the break.</p>
+<p>These labels are arbitrary — the assignment of colour names to faces is a gauge choice. What matters is that there are three faces, they are distinct but linked, and the physics is symmetric under rotations among them. You could call them anything. The structure does not care about your labels. It cares about the number three.</p>
+<p>An antiquark’s anticolour is the conjugate orientation — the complex conjugate representation 3̄ of SU(3). Under the involution σ (Axiom S), the σ-image of a quark state maps to the anti-triplet: σ acts on the orientation state by complex conjugation of the amplitudes, giving the conjugate representation.</p>
+<p><em>[Why the electron — itself a localised break (AP09: ε = electron) — is an SU(3) singlet despite being a break event: see §5.4.]</em></p>
+<h2>5.2 — Colour neutrality</h2>
+<p>A colour-neutral state is one where no face is preferred. Isotropic orientation. No preferred alignment.</p>
+<p><strong>Proposition 2 (Colour neutrality — structural).</strong> The only stable macroscopic states are colour-neutral (isotropic in orientation).</p>
+<p>Proof. (1) The manifold is isotropic at macroscopic scales (AP10: three spatial dimensions from three axioms, no preferred direction). The ground state of the manifold. (2) The orientation of the manifold around the break is a degree of freedom of the manifold (§4). A macroscopic state with a preferred orientation (locked colour) would be a macroscopic anisotropy in the manifold. (3) The substrate resists macroscopic anisotropy with stiffness λ ≈ 2.15 × 10⁴⁶ (AP15). The energy cost of maintaining a macroscopic orientation anisotropy grows with the volume of the anisotropic region. (4) Therefore the ground state of the orientation at macroscopic scales is isotropic: all three faces equally represented, no preferred alignment. Colour neutrality. (5) Any state that is not colour-neutral at macroscopic scale carries an energy penalty proportional to the anisotropic volume × λ. Such states relax to colour-neutral configurations.</p>
+<p><em>[Note: structural proposition, not quantitative derivation. The precise energy functional and resulting string tension are not yet computed from the axioms — see D1.]</em></p>
+<p>Red + green + blue = white. All three faces equally represented in the orientation around the break. The ground state of the manifold.</p>
+<p>You see the pattern. The manifold insists on isotropy. Not because a law commands it, but because the substrate is stiff and anisotropy costs energy.</p>
+<p>A proton is three quarks — one red, one green, one blue — combined to make white. A meson is a quark-antiquark pair — colour plus anticolour — combined to make white. All observed hadrons are colour-neutral. An empirical fact — and a structural consequence of Proposition 2.</p>
+<h2>5.3 — Gluons</h2>
+<p>The gauge bosons of SU(3) are the gluons. There are 8 (from the 8 generators of SU(3)).</p>
+<p>A gluon is a quantum of the gauge field that rotates the manifold’s orientation around the break. It carries a colour-anticolour pair (e.g., red-antigreen). It mediates the strong force by exchanging orientation between quarks.</p>
+<p>Gluons are bosons (paired elements, σ-image exists, AP09). Gluons are massless (SU(3) is not broken; see §6.3). Gluons carry colour charge themselves (unlike photons, which are charge-neutral). SU(3) is non-Abelian: the generators do not commute. The gauge bosons interact with each other.</p>
+<h2>5.4 — Why the minimum break ε is an SU(3) singlet</h2>
+<p>Here is a question you should already be asking. The electron is ε — the minimum viable splinter (AP09, Edition 04: The Lock). The electron is a localised break. But the electron does not carry colour. Why?</p>
+<p><strong>Proposition 4 (Minimum break singlet).</strong> The minimum break ε is an SU(3) singlet. Its orientation state is isotropic (colour-neutral).</p>
+<p><strong>Proof.</strong> (1) ε is the minimum viable splinter (Axiom B). It is the lowest possible energy state in which a break can exist (AP09: “the smallest possible piece the fabric could release”). (2) Colour is a preferred orientation of the manifold around the break in face-space (§5.1). A “red” state has the C-face aligned; a “blue” state has the B-face aligned. Any state with a preferred face-alignment is anisotropic. (3) Anisotropy costs energy (Proposition 2, §5.2). The substrate resists anisotropy with stiffness λ ≈ 2.15 × 10⁴⁶ (AP15). Any state with a preferred orientation has higher energy than the isotropic (colour-neutral) state. (4) The minimum energy break must therefore be isotropic. A coloured state would not be the minimum — it would carry additional energy from the anisotropy. The minimum break has no preferred face-alignment. (5) An isotropic orientation state is invariant under SU(3). It is a singlet.</p>
+<p><strong>The electron is colour-neutral because it is the ground state of the break. Not a different kind of object from a quark. Both are localised breaks. But the electron is the minimum break — the lowest energy configuration — and the lowest energy orientation is isotropic. Quarks are higher-energy excitations that sustain an anisotropic orientation (a colour charge).</strong></p>
+<p><em>[Scope: this is a claim about colour orientation only — isotropic (the electron, an SU(3) singlet) versus anisotropic (a quark, carrying colour). It carries no implication about electric charge. Why the electron carries charge −1 while quarks carry ±1/3 or ±2/3 is a separate matter — the structure of electric charge, including quark fractional charge, is handled in AP24 (the six faces of ε), not here. “The same kind of object” means same kind of break, not same charge.]</em></p>
+<p>The mass gap between the electron (∼0.511 MeV) and the lightest quark (up quark, ∼2.2 MeV) is consistent: the quark carries additional energy from its colour anisotropy.</p>
+<p><em>[No contradiction: AP09 identifies ε = electron as a localised break, yet the electron carries no colour. The resolution is that colour requires anisotropy, and anisotropy requires energy above the minimum. The minimum break is necessarily isotropic. No import required — follows from Axiom B (minimum) + Proposition 2 (anisotropy costs energy).]</em></p>
+<p>You see what happened. The same argument that explains why hadrons are white also explains why the electron is colourless. One mechanism. Two consequences.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap19-the-direction/4-the-gauge-freedom/"><small>Previous</small>The Gauge Freedom</a><div class="up"><small>Back to</small><a href="/proofs/ap19-the-direction/">The Direction</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap19-the-direction/6-confinement/"><small>Next</small>Confinement</a></nav>
+<p class="orig">The paper of record: <a href="/AP19_The_Direction.pdf">the420code.org/AP19_The_Direction.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

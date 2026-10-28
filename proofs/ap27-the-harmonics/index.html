@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Harmonics. Artist’s Proof 27. The electroweak gauge group from the two-sector axiom">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap27-the-harmonics/">
+<meta property="og:title" content="The Harmonics — The electroweak gauge group from the two-sector axiom — The 420 Code">
+<meta property="og:description" content="The Harmonics. Artist’s Proof 27. The electroweak gauge group from the two-sector axiom">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap27-the-harmonics/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Harmonics — The electroweak gauge group from the two-sector axiom — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap27-the-harmonics/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap27-the-harmonics/"><b>The Harmonics</b></a> · read in full</div><ul class="modes"><li><a href="/AP27_The_Harmonics.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">The 420 Code · Ø Proofs · Artist’s Proof 27</p>
+<h1 class="bt">The Harmonics</h1>
+<p class="oneline">Artist’s Proof 27. The electroweak gauge group from the two-sector axiom</p>
+<p class="edition">This is the paper in full, as published at the420code.org. Every section, nothing summarised. The same text as the PDF.</p>
+<p class="btns"><a class="btn fill" href="/proofs/ap27-the-harmonics/0-dependency-and-scope/">Read it online</a><a class="btn line" href="/AP27_The_Harmonics.pdf">The paper (PDF)</a></p>
+<div class="tools"><button type="button" data-collapse>Collapse all</button><button type="button" data-expand>Expand all</button></div>
+<details class="sec" open><summary><span class="tri" aria-hidden="true"></span>Artist’s Note</summary><div class="sec-body"><p>What this paper does — and why.</p>
+<p>This is Artist’s Proof 27 of The 420 Code. It is the third chapter of Notebook IV (Forces and Constants). AP15 derived U(1) electromagnetism from the Born rule’s phase symmetry. AP19 derives SU(3) colour from spatial-orientation freedom. AP27 takes the next step: it derives the remaining factor of the Standard Model’s gauge group, SU(2) × U(1)_Y, from the two-sector structure of Axiom S.</p>
+<p>The argument is a single move. Axiom S provides two sectors ℒ and 𝒫, connected by the involution σ. The break ε is the boundary between them. When ε propagates on the manifold as a quantum field, it necessarily carries an internal state encoding its relationship to each sector. That state lives in a two-dimensional complex Hilbert space ℋ_EW ≅ ℂ² (Lemma 1). The choice of basis on ℋ_EW is unphysical — only inner products are observable — so demanding consistency under local basis changes forces a gauge connection with structure group U(2) (Lemma 2). U(2) decomposes uniquely as SU(2) × U(1)_Y (Proposition 1). The SU(2) factor is weak isospin; the U(1)_Y factor is hypercharge.</p>
+<p>Three structural results are derived: Lemma 1 (the state space exists and is ℂ²), Lemma 2 (the gauge freedom forces U(2)), and Proposition 1 (U(2) factorises as SU(2) × U(1)_Y with the standard generators of weak isospin and hypercharge). A fourth result, Proposition 2 (Chiral Coupling Selection), is physically motivated and consistent with all data but is presented as structural rather than derived: the formal coupling theorem is the paper’s principal open problem. Axiom R’s arrow of time and the CPT identification (AP22) give the structural reading; the formal step from those inputs to the doublet/singlet representation split is not yet exhibited.</p>
+<p>Seven kill switches engage: KS-61 (state-space existence), KS-62 (gauge-group overcounting), KS-63 (chiral coupling derivation), KS-64 (SU(2)_weak ≠ SU(2)_spin) are LIVE — STRUCTURAL with KS-63 carrying the paper’s principal debt. KS-65 (hypercharge assignments), KS-66 (generations), KS-67 (AP15/AP27 EWSB consistency) are OPEN DEBT — named items the paper does not address. The Standard Model’s gauge structure SU(3) × SU(2) × U(1) is now derived across three chapters: AP15 (U(1) from phase freedom), AP19 (SU(3) from orientation freedom), AP27 (SU(2) × U(1)_Y from sector-relationship freedom). Three gauge groups from three structural freedoms of ε.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Orientation</summary><div class="sec-body"><h2>Where AP27 fits</h2>
+<p>The 420 Code is organised across eight bound Notebooks. AP27 is the third chapter of Notebook IV (Forces and Constants), following AP06 (The Leakage Constant) and AP15 (The Connection). AP15 derived the first of the Standard Model’s three gauge groups (U(1) from phase freedom). AP19 derives the second (SU(3) from spatial-orientation freedom). AP27 derives the third (SU(2) × U(1)_Y from the relationship of ε to the two-sector structure).</p>
+<p>AP27 depends on Notebook I (Premise) for the axioms {S, B, R, C}; on Notebook II (Spacetime) for AP05 (The Break) and AP10 (D = 4); on Notebook III (Quantum Mechanics) for AP09 (The Break — Empty Set — the complex Hilbert space structure that the break’s internal state inherits), AP11 (The Spin — spin-½ from the SU(2) cover of SO(3), needed to distinguish weak SU(2) from spin SU(2)), and AP25 (The Measure — Born rule and the inner product as physical); on AP15 (The Connection) within Notebook IV for U(1) gauge structure as the post-breaking remnant; on AP19 (The Direction) for the SU(3) construction by the same mechanism applied to spatial orientation; and on AP22 (The Ledger) for the CPT identification used in the chiral coupling argument.</p>
+<p>AP27 feeds the rest of Notebook IV and onward. AP16 (Electroweak Break) treats the symmetry-breaking mechanism that takes U(1)_Y + SU(2)_L to U(1)_EM at the electroweak scale (KS-67 EWSB consistency lives there). The hypercharge-assignment and three-generations questions (KS-65, KS-66) remain open for later treatment in the matter sector (Notebook V).</p>
+<h2>Reading order within AP27</h2>
+<p>Front to back. Section 1 sets the stakes: two gauge groups already derived (U(1), SU(3)); one remaining; the structural feature not yet exploited for gauge purposes is Axiom S’s two-sector structure. Section 2 derives the internal state space ℋ_EW ≅ ℂ² (Lemma 1). Section 3 derives the gauge freedom and its structure group U(2) (Lemma 2). Section 4 decomposes U(2) into SU(2) × U(1)_Y and identifies weak isospin and hypercharge (Proposition 1). Section 5 presents the structural argument for chiral coupling selection (Proposition 2, STRUCTURAL — the paper’s principal open problem). Section 6 names the deeper pattern: three gauge groups, three structural freedoms, one axiom set. Section 7 lists the kill switches. Section 8 concludes.</p>
+<h2>How to read this paper</h2>
+<p>The paper carries two voices. The structural narrative speaks directly — the central fact (the Standard Model’s three gauge groups arise from three structural freedoms of ε) is stated plainly and held visible. The formal sections speak in precision. Formal blocks open with a bold label (Lemma, Proposition, Definition, Kill Switch) and close with the box mark ■. Where the argument depends on a result derived elsewhere in the corpus, the provenance is named at the point of use.</p>
+<p>One subsection is structurally distinct from the others. Section 5 (Chiral Coupling Selection) is tagged STRUCTURAL throughout. The argument is physically motivated and consistent with all known data, and the structural inputs (Axiom R’s arrow of time, AP22’s CPT identification) are derived corpus results. But the formal step from those inputs to the doublet/singlet representation split is not yet exhibited. KS-63 is LIVE — STRUCTURAL and is the paper’s principal open problem. Sections 1–4 stand independently of section 5; the electroweak gauge group is derived regardless of whether the chiral coupling pattern is formally derived or structurally identified.</p>
+<h2>A note on notation</h2>
+<p>ℒ and 𝒫 are the two sectors of Axiom S, connected by the involution σ: ℒ ↔ 𝒫. ε is the break — the minimal asymmetry, the boundary between sectors, the object that writes records on the manifold (Axiom R). ℋ_EW is the internal electroweak state space of ε: ℋ_EW ≅ ℂ². It is distinct from spin space (AP11), colour space (AP19), and the overall phase (AP15). |ℒ⟩ and |𝒫⟩ form a basis for ℋ_EW — abstract internal labels, not spacetime directions.</p>
+<p>U(2) is the group of 2×2 unitary matrices, the full gauge group on ℋ_EW before decomposition. SU(2) is the traceless (relative-orientation) part of U(2), candidate for weak isospin with generators T¹, T², T³ (the Pauli matrices). U(1)_Y is the determinant part of U(2), candidate for hypercharge with generator Y. U(1)_EM is the post-breaking electromagnetic remnant (AP15): Q = T³ + Y/2. Chirality is a Lorentz property of spinor fields; left-chiral ψ_L and right-chiral ψ_R are eigenstates of γ⁵ obtained via the projectors P_L = ½(1 − γ⁵) and P_R = ½(1 + γ⁵).</p></div></details>
+<h2 class="lh">The sections</h2>
+<ol class="chapters"><li><a href="/proofs/ap27-the-harmonics/0-dependency-and-scope/"><span class="num">Section 0</span><span class="q">Dependency and Scope</span><span class="line">AP27 derives the electroweak gauge group SU(2) × U(1)_Y from Axiom S.</span></a></li><li><a href="/proofs/ap27-the-harmonics/1-the-missing-group/"><span class="num">Section 1</span><span class="q">The Missing Group</span><span class="line">Statement of where AP27 fits within the Standard Model’s gauge structure. Two factors already derived (U(1), SU(3)); one remaining; the structural feature not yet exploited is Axiom S’s two-sector structure.</span></a></li><li><a href="/proofs/ap27-the-harmonics/2-the-internal-state-space/"><span class="num">Section 2</span><span class="q">The Internal State Space</span><span class="line">Lemma 1: the break ε carries an internal state on the manifold encoding its relationship to each sector; the space of internal states is ℋ_EW ≅ ℂ². The two-sector count gives the dimension; the bridge from Axiom B (no σ-image) to a two-component state is interpretive and is guarded by KS-61.</span></a></li><li><a href="/proofs/ap27-the-harmonics/3-gauge-freedom/"><span class="num">Section 3</span><span class="q">Gauge Freedom</span><span class="line">Lemma 2: the local basis on ℋ_EW is unphysical; demanding consistency under local basis changes forces a gauge connection with structure group U(2).</span></a></li><li><a href="/proofs/ap27-the-harmonics/4-the-electroweak-decomposition/"><span class="num">Section 4</span><span class="q">The Electroweak Decomposition</span><span class="line">Proposition 1: U(2) ≅ SU(2) × U(1)_Y; SU(2) is weak isospin with generators T¹, T², T³ (Pauli matrices); U(1)_Y is hypercharge with generator Y.</span></a></li><li><a href="/proofs/ap27-the-harmonics/5-chiral-coupling-selection/"><span class="num">Section 5</span><span class="q">Chiral Coupling Selection</span><span class="line">Proposition 2: the gauge connection on ℋ_EW couples to left-chiral fermion fields as doublets and to right-chiral fermion fields as singlets. Physically motivated, consistent with all data; formal coupling theorem not exhibited. KS-63 LIVE.</span></a></li><li><a href="/proofs/ap27-the-harmonics/6-the-deeper-point/"><span class="num">Section 6</span><span class="q">The Deeper Point</span><span class="line">Three freedoms → three gauge groups → one axiom set. The Standard Model’s gauge structure is the axioms’ internal geometry projected onto the manifold.</span></a></li><li><a href="/proofs/ap27-the-harmonics/7-kill-switches/"><span class="num">Section 7</span><span class="q">Kill Switches</span><span class="line">Seven kill switches engage in AP27. Identifiers per the Master Kill Switch Registry (global numbering).</span></a></li><li><a href="/proofs/ap27-the-harmonics/8-what-this-establishes/"><span class="num">Section 8</span><span class="q">What This Establishes and What Remains Open</span><span class="line">Closure of three structural questions; principal debt at KS-63; open debts at KS-65, KS-66, KS-67; corpus placement and forward reading.</span></a></li><li><a href="/proofs/ap27-the-harmonics/9-conclusion/"><span class="num">Section 9</span><span class="q">Conclusion</span><span class="line">The Standard Model’s gauge structure SU(3) × SU(2) × U(1) is now derived across three chapters: AP15, AP19, AP27.</span></a></li><li><a href="/proofs/ap27-the-harmonics/conditionality-footer/"><span class="num">The grades</span><span class="q">Claim Summary · Conditionality Footer</span><span class="line">Every section graded. Every dependency named.</span></a></li><li><a href="/proofs/ap27-the-harmonics/notation-reference/"><span class="num"></span><span class="q">Notation Reference</span><span class="line">ℒ, 𝒫 — The two sectors of Axiom S, connected by the involution σ: ℒ ↔ 𝒫.</span></a></li></ol>
+<h2 class="lh">The kill switches</h2>
+<h3>KS-61 — Internal state space existence</h3>
+<p>Claim. Lemma 1 derives the internal electroweak state space ℋ_EW ≅ ℂ² from Axiom S’s two-sector structure.</p>
+<p>Test. Show that no well-defined internal ε-state space can be constructed from Axiom S.</p>
+<p>Failure. Lemma 1 fails and AP27 collapses.</p>
+<h3>KS-62 — Gauge group overcounting</h3>
+<p>Claim. Lemma 2 identifies the structure group of the local basis freedom as U(2). Proposition 1 decomposes U(2) into SU(2) × U(1)_Y.</p>
+<p>Test. Show that the local basis freedom generates a group other than U(2) — larger or smaller.</p>
+<p>Failure. Lemma 2 and Proposition 1 fail.</p>
+<h3>KS-63 — Chiral coupling derivation (principal debt)</h3>
+<p>Claim. Proposition 2 identifies the chiral coupling pattern — left-chiral fields as doublets, right-chiral fields as singlets — through Axiom R’s arrow of time and the CPT identification (AP22). The coupling theorem is STRUCTURAL: physically motivated, consistent with all data, but not yet formally proved.</p>
+<p>Test. (a) Demonstrate that the chiral coupling pattern cannot be formally derived from Axiom R, the Lorentz structure, and the CPT identification — in which case the paper derives the gauge group but not the representation content. (b) Independently: if experiment showed parity conservation in the weak interaction (contradicting Wu 1957 and all subsequent data), the chiral pattern itself would fail.</p>
+<h3>KS-64 — SU(2)_weak ≠ SU(2)_spin conflation</h3>
+<p>Claim. Lemma 1 explicitly constructs ℋ_EW as an internal space distinct from spin space. The SU(2) derived in AP27 acts on ℋ_EW and is the weak isospin group, separate from the Lorentz spin SU(2) of AP11.</p>
+<p>Test. Demonstrate that the derived SU(2) on ℋ_EW is identical to the Lorentz spin SU(2) of AP11.</p>
+<p>Failure. the paper has derived the wrong group.</p>
+<h3>KS-65 — Hypercharge assignments</h3>
+<p>Claim. Proposition 1 identifies U(1)_Y as hypercharge but does not derive specific hypercharge values for each fermion species.</p>
+<p>Test. Derive the specific Y values for each fermion species from {S, B, R, C} and the AP27 structure. Until done, KS-65 stands.</p>
+<p class="status">Status (registry v5.35). OPEN DEBT.</p>
+<h3>KS-66 — Generations</h3>
+<p>Claim. The Standard Model has three generations of fermions. AP27 does not derive why.</p>
+<p>Test. Derive the three-generation structure from {S, B, R, C}. Until done, KS-66 stands.</p>
+<p class="status">Status (registry v5.35). OPEN DEBT.</p>
+<h3>KS-67 — AP15/AP27 EWSB consistency</h3>
+<p>Claim. AP15’s U(1)_EM and AP27’s U(1)_Y are structurally distinct (post-breaking remnant vs pre-breaking hypercharge). Their relationship requires electroweak symmetry breaking: Q = T³ + Y/2.</p>
+<p>Test. Derive the EWSB mechanism that takes SU(2)_L × U(1)_Y to U(1)_EM from {S, B, R, C} and the AP27 structure. Until done, KS-67 stands.</p>
+<p class="status">Status (registry v5.35). OPEN DEBT.</p>
+<p class="reg">Every kill switch in this paper is filed in the registry, on the420code.org: <a href="/killswitches/#ap27">the420code.org/killswitches/</a></p>
+<h2 class="lh">The debts</h2>
+<p>Principal debt (KS-63 — chiral coupling derivation). Proposition 2 is STRUCTURAL: the argument from Axiom R and the CPT identification (AP22) to the doublet/singlet representation split is physically motivated and consistent with all data, but the formal coupling theorem is not yet exhibited. The work to convert STRUCTURAL into DERIVED has three steps named in section 5: (a) define the covariant derivative D_μ on the tensor product bundle (spinor ⊗ ℋ_EW); (b) show the coupling to P_LΨ is non-trivial (full ℂ²) while the coupling to P_RΨ vanishes (reduces to Abelian U(1)); (c) derive this from Axiom R, the Lorentz structure (AP05, AP11), and the CPT identification (AP22) without importing the Standard Model’s chiral coupling pattern. Steps (a) and (b) are well-defined mathematical problems. Step (c) is the hard part. [AP27 scope: not closed]</p>
+<p class="source">Dependencies. Framework: the four axioms {S, B, R, C} from Notebook I; AP05 (The Break — Lorentzian manifold and ε’s structural role); AP09 (The Break — Empty Set — complex Hilbert space structure); AP10 (D = 4); AP11 (The Spin — spin-½ from SU(2) cover of SO(3)); AP15 (The Connection — U(1)_EM as post-breaking remnant); AP17 (manifold context); AP19 (The Direction — SU(3) from orientation freedom); AP22 (The Ledger — CPT identification); AP25 (The Measure — Born rule and inner product physical).</p>
+<p class="source">Conditional on: Nothing. EH and QRA proved in AP20. All other dependencies are derived corpus results. The axioms themselves are unconditional.</p>
+<p class="orig">The same paper on the420code.org: <a href="/proofs/">the420code.org/proofs/</a> · The paper (PDF): <a href="/AP27_The_Harmonics.pdf">the420code.org/AP27_The_Harmonics.pdf</a></p>
+<nav class="pn solo"><div class="up"><small>Back to</small><a href="/proofs/">Ø Proofs</a></div></nav>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
