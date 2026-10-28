@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Definiteness reframed as operational individual-realization status. Nonlinearity requirement and selection cost made operational (δ_sel formalised in B2.3, B2.4). Six structural requirements on selection dynamics (B3.1–B3.6). Universal rate constraints with gravity as candidate limiter (B4). Five experimental regimes (BT1–BT5). Kill switch B2 (KS-V.8) on pre-irreversibility selection. Programmatic closure: no further progress on selection can be made by argument alone; the remaining uncertainty is empirical.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap01-the-actualization-state/paper-b-selection-as-irreversible-exclusion/">
+<meta property="og:title" content="Selection as Irreversible Exclusion — The Actualization State, Artist’s Proof 01 — The 420 Code">
+<meta property="og:description" content="Definiteness reframed as operational individual-realization status. Nonlinearity requirement and selection cost made operational (δ_sel formalised in B2.3, B2.4). Six structural requirements on selection dynamics (B3.1–B3.6). Universal rate constraints with gravity as candidate limiter (B4). Five experimental regimes (BT1–BT5). Kill switch B2 (KS-V.8) on pre-irreversibility selection. Programmatic closure: no further progress on selection can be made by argument alone; the remaining uncertainty is empirical.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap01-the-actualization-state/paper-b-selection-as-irreversible-exclusion/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Selection as Irreversible Exclusion — The Actualization State, Artist’s Proof 01 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap01-the-actualization-state/paper-b-selection-as-irreversible-exclusion/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap01-the-actualization-state/"><b>The Actualization State</b></a> · read in full · 4 of 9</div><ul class="modes"><li><a href="/AP01_The_Actualization_State.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Paper B</p>
+<h1>Selection as Irreversible Exclusion</h1>
+<p class="oneline">Definiteness reframed as operational individual-realization status. Nonlinearity requirement and selection cost made operational (δ_sel formalised in B2.3, B2.4). Six structural requirements on selection dynamics (B3.1–B3.6). Universal rate constraints with gravity as candidate limiter (B4). Five experimental regimes (BT1–BT5). Kill switch B2 (KS-V.8) on pre-irreversibility selection. Programmatic closure: no further progress on selection can be made by argument alone; the remaining uncertainty is empirical.</p>
+<div class="paper">
+<p><strong>Selection as Irreversible Exclusion</strong></p>
+<p><em>Rates, Costs, and Constraints on Definiteness</em></p>
+<p><em>Depends on Paper A</em></p>
+<p>Paper A measured the branching. It proved the branching can only grow under the right conditions. It established the point of no return.</p>
+<p>But it left one question unanswered — the question that haunts every interpretation of quantum mechanics.</p>
+<p>If definiteness occurs in individual runs — and it does, every experiment ever conducted says so — what must selection be?</p>
+<p>Not what <em>might</em> it be. What <em>must</em> it be.</p>
+<p>What structural requirements does any selection mechanism have to satisfy? What must it cost? How fast can it act? And is there a universal bound on that speed?</p>
+<p>No collapse mechanism is proposed here. No interpretation is invoked. No result of Paper A is rederived. All hypotheses introduced are independently falsifiable. Failure of any does not invalidate Paper A.</p>
+<h2>B0.1 — Dependency Statement</h2>
+<p>This paper is a strict continuation of Paper A. Everything in Paper A is assumed established and is not rederived.</p>
+<p>In particular, the following are taken as given:</p>
+<ul class="plain"><li>The operational definition and validity of Actualization State (AS).</li><li>Operational irreversibility as loss of reachability under admissible control.</li><li>The existence of no-return surfaces induced by bounded capacity.</li><li>The separation between branching (AS increase) and definiteness.</li></ul>
+<p>For reference: the record-sector algebra ℛ is the algebra generated by the projectors {Πᵢ} of a physically realizable coarse-graining 𝓞 (Paper A, Definition D1). It represents the set of operationally accessible record observables.</p>
+<p>All norms and maps in this paper that reference ℛ act on this algebra.</p>
+<h2>B0.2 — Purpose</h2>
+<p>Paper A establishes irreversibility without definiteness. After decoherence and loss of recoverability, multiple mutually exclusive record sectors can persist simultaneously in the reduced description.</p>
+<p>This paper addresses what is left:</p>
+<p><strong>If definiteness occurs, what must selection be, given the constraints already established?</strong></p>
+<p>A second question follows necessarily:</p>
+<p><strong>What physical resources must be expended to enforce such selection?</strong></p>
+<p>The argument does not claim that selection must exist. It characterizes the structure and constraints of selection if it exists at all.</p>
+<h2>B0.3 — Hard Non-Claims</h2>
+<p>This paper does not:</p>
+<ul class="plain"><li>Redefine Actualization State.</li><li>Propose a collapse mechanism.</li><li>Derive or assume the Born rule.</li><li>Invoke observers, consciousness, or epistemic update.</li><li>Introduce agency, decision-making, or control.</li><li>Claim gravity <em>causes</em> selection.</li></ul>
+<p>Failure of this paper does not invalidate Paper A.</p>
+<h2>B1 — The Definiteness Problem (Reframed)</h2>
+<h2>B1.1 — What Remains After Paper A</h2>
+<p>After Paper A, the following are established:</p>
+<p><strong>(1)</strong> Interference is suppressed between record-distinguishable alternatives (Paper A, T1).</p>
+<p><strong>(2)</strong> Recoverability is lost once record information is encoded in inaccessible degrees of freedom (Paper A, D13).</p>
+<p><strong>(3)</strong> Actualization State increases during the branching phase, quantifying record-structured multiplicity (Paper A, T1).</p>
+<p>None of these imply that, in an individual experimental trial, only one record persists.</p>
+<p>A diagonal reduced state of the form</p>
+<p class="eq left">ρ = Σᵢ pᵢ Πᵢ ρ Πᵢ,</p>
+<p>where {Πᵢ} are the record-sector projectors of D1 and {pᵢ} are the diagonal coefficients inherited from decoherence (no probabilistic interpretation assumed here), is fully consistent with all results of Paper A.</p>
+<p>You experience definiteness anyway. Every single time. The reduced description says branches persist. Your experience says only one obtained. The gap between these two is what this paper takes seriously.</p>
+<h2>B1.2 — Why Decoherence Is Not Definiteness</h2>
+<p>Decoherence explains why interference terms become inaccessible. It does not explain why alternatives are excluded.</p>
+<p>Operationally:</p>
+<ul class="plain"><li><em>Decoherence</em> answers: why alternatives cannot interfere.</li><li><em>Definiteness</em> asks: why alternatives are no longer reachable.</li></ul>
+<p>These are distinct constraints. Paper A resolves the first and intentionally stops there. Paper B picks up where Paper A stopped.</p>
+<h2>B1.3 — Individual Realizations (Operational Definition)</h2>
+<p>An <strong>individual realization</strong> (or individual run) is defined as a single experimental trial producing a definite, time-ordered record stream in the environment, which subsequently constrains all future accessible system behavior.</p>
+<p>This definition is purely operational. It refers only to record structure. No mention of consciousness. No mention of measurement. No mention of observers.</p>
+<p>A run is a record stream. Records constrain what comes next. That is all.</p>
+<h2>B1.4 — Selection as Irreversible Exclusion</h2>
+<p>If definiteness exists, it must correspond to a physical exclusion process acting after irreversibility is established. The reason is direct: all subsequent experimental outcomes in the record stream depend causally on which sector obtains (B1.3).</p>
+<p><strong>Definition (Selection).</strong></p>
+<p>Selection is the transition of the system state into a restricted reachable region of state space — under admissible control — in which only one record sector remains reachable.</p>
+<p>Equivalently: selection is the irreversible removal of alternative record sectors from operational accessibility in an individual realization.</p>
+<p>Once selection has occurred, no admissible system-local operation can restore reachability of excluded sectors.</p>
+<p>The branches do not vanish from the universe. They vanish from your access. That is the entire physical content of selection.</p>
+<h2>B1.5 — Consequence for Actualization State</h2>
+<p>Selection has a precise consequence for AS.</p>
+<p>Decoherence increases AS by creating record-structured branching (Paper A, T1).</p>
+<p>Selection reduces the <strong>accessible AS</strong> of an individual realization by restricting reachability to a single record sector.</p>
+<p>This does not imply erasure of environmental records. It reflects the collapse of future operational accessibility, not the destruction of past structure.</p>
+<p>The fan opens (decoherence). One blade is picked (selection). The other blades are still in the room — you just cannot reach them anymore.</p>
+<h2>B1.6 — Selection Cost (Foreshadowing)</h2>
+<p>Exclusion is not free.</p>
+<p>Any process that removes reachability of alternatives must expend physical resources to enforce that restriction. Call this the <strong>cost of selection</strong>: the minimal physical resource expenditure required to enforce irreversible exclusion.</p>
+<p>The cost need not be thermal energy. It may appear as time, interaction strength, or consumption of distinguishability capacity. Its precise form depends on the limiting interaction. Sections B2 and B4 quantify it.</p>
+<h2>B2 — The Nonlinearity Requirement and Selection Cost</h2>
+<h2>B2.1 — Linearity Constraint</h2>
+<p>Deterministic linear completely positive trace-preserving (CPTP) dynamics acting on the reduced system state preserve convex structure. Linear ensemble evolution cannot, by itself, enforce single-sector definiteness in individual realizations.</p>
+<p>Formally, for any deterministic linear CPTP map ℰ:</p>
+<p class="eq">ℰ(Σᵢ pᵢ ρᵢ) = Σᵢ pᵢ ℰ(ρᵢ).</p>
+<p>Linearity preserves convex mixtures. No such map can select a single component from a diagonal mixture in individual runs.</p>
+<p>This is a structural consequence of linearity and does not depend on interpretation.</p>
+<p>You feed a mixture in. You get a mixture out. The mixture cannot resolve itself by linear means alone.</p>
+<h2>B2.2 — Ensemble Linearity vs. Trajectory Resolution</h2>
+<p>The implication is precise.</p>
+<p>Ensemble-level evolution may remain linear and CPTP. Selection, if it occurs, must act at the trajectory level — resolving individual realizations via stochastic or effectively nonlinear dynamics.</p>
+<p>There is no contradiction with quantum linearity at the ensemble level.</p>
+<p>Average over many runs and you see linear evolution. Watch a single run and you see resolution. Both descriptions hold simultaneously, at different levels of the same physics.</p>
+<h2>B2.3 — Quantifying Selection Deviation</h2>
+<p>Selection is a trajectory-level phenomenon. Its signature is not a deviation of the ensemble state. Ensemble consistency is required (B3.5), and the ensemble state is preserved by construction.</p>
+<p>The signature of selection is that individual trajectories resolve to outcomes that no deterministic CPTP map could produce from the same initial state.</p>
+<p>Let ℰₑₙₛ denote the ensemble-level CPTP evolution acting on the reduced state.</p>
+<p>Let Φ denote a stochastic selection process that, for an initial state ρ, produces a random trajectory with realization-dependent final state ρ^ω(ρ) indexed by trajectory ω. Ensemble consistency (B3.5) requires 𝔼[ρ^ω] = ℰₑₙₛ(ρ).</p>
+<p>The quantity that distinguishes selection from deterministic CPTP evolution is not the ensemble mean. It is the trajectory spread.</p>
+<p>Define the <strong>selection deviation</strong>:</p>
+<p>δ_sel(ρ) ≡ 𝔼[ ‖ρ^ω − 𝔼[ρ^ω]‖²_ℛ ],</p>
+<p>where ‖·‖_ℛ is an operational norm restricted to the record-sector algebra ℛ.</p>
+<p>This is the expected squared deviation of individual trajectory outcomes from the ensemble mean, measured in the record algebra.</p>
+<p>For any deterministic CPTP map, all trajectories produce the same output, so δ_sel = 0. For selection, trajectories resolve to different record sectors, so δ_sel &gt; 0.</p>
+<p>All subsequent results hold for any choice of norm satisfying:</p>
+<p>(i) contractivity under admissible system-local CPTP maps, and</p>
+<p>(ii) sensitivity to distinguishability between record sectors.</p>
+<p><strong>Compatibility with ensemble consistency.</strong></p>
+<p>δ_sel measures the spread of trajectory outcomes, not the deviation of their mean. Ensemble consistency (B3.5) constrains the first moment: 𝔼[ρ^ω] = ℰₑₙₛ(ρ). The selection deviation constrains the second moment.</p>
+<p>These are independent. A process can have zero mean deviation and nonzero trajectory spread. Selection is precisely such a process.</p>
+<p><strong>Verification (qubit toy model).</strong></p>
+<p>For the selection SDE dp = √γ · p(1−p) dW (Paper A, Section A4.2), trajectories resolve to p = 0 or p = 1 with probabilities 1−p₀ and p₀ respectively.</p>
+<p>The ensemble mean is preserved: 𝔼[ρ^ω] = diag(p₀, 1−p₀). The trajectory variance is δ_sel = p₀(1−p₀) &gt; 0 for any nontrivial initial mixture, confirming that selection produces nonzero δ_sel while satisfying ensemble consistency.</p>
+<p>Selection requires δ_sel &gt; 0. If δ_sel = 0 for all accessible states, every trajectory produces the same output as the ensemble map, and no resolution to individual sectors has occurred.</p>
+<h2>B2.4 — Definition: Selection Cost</h2>
+<p>The <strong>cost of selection</strong> is defined as the minimal physical resource expenditure required to produce nonzero trajectory variance (δ_sel &gt; 0) sufficient to resolve individual realizations into single record sectors.</p>
+<p>The cost may be expressed as:</p>
+<ul class="plain"><li>A timescale (rate of exclusion).</li><li>A coupling strength to enforcing interactions.</li><li>A resource budget required to maintain exclusion.</li></ul>
+<p>Section B4 identifies universal constraints on this cost.</p>
+<h2>B2.5 — Falsifier B2: Pre-Irreversibility Selection</h2>
+<p>If exclusion signatures appear before the system has crossed the no-return surface (Paper A, D13), the entire selection model is dead.</p>
+<p>Selection must wait for irreversibility. If it does not wait, the model is wrong.</p>
+<p><strong>Selection cannot precede irreversibility.</strong></p>
+<h2>B3 — Structural Requirements on Selection Dynamics</h2>
+<p>Any admissible selection dynamics must satisfy a minimal set of structural requirements. These are implied jointly by Paper A and Sections B1–B2.</p>
+<p>The requirements are necessary, not sufficient. Failure of any requirement falsifies the selection hypothesis without affecting the irreversibility results of Paper A.</p>
+<h2>B3.1 — Post-Irreversibility Activation</h2>
+<p>Selection may act only after operational irreversibility is established.</p>
+<p>Let Kε(𝓞) denote the ε-recoverable set defined in Paper A (Definition D12). For all states ρ ∈ Kε(𝓞), admissible dynamics must satisfy</p>
+<p class="eq left"><strong>δ_sel(ρ) = 0.</strong></p>
+<p>No selection deviation is permitted while recovery remains reachable under admissible control. Selection dynamics may become active only once ρ ∉ Kε(𝓞).</p>
+<h2>B3.2 — Record-Algebra Locality</h2>
+<p>Selection must act only on degrees of freedom that distinguish record sectors, and only during active selection.</p>
+<p>Let Δ𝓞 denote the dephasing map onto the record algebra 𝓞. During active selection (i.e., after ρ ∉ Kε(𝓞)):</p>
+<p class="eq">Φ(ρ) = Φ(Δ𝓞(ρ)).</p>
+<p>This condition is consistent with B3.1: by the time selection activates, off-diagonal terms in the record basis are already operationally inaccessible.</p>
+<p>Selection may not generate or reintroduce interference. It may not act on unmonitored intra-sector degrees of freedom.</p>
+<h2>B3.3 — Absorbing Record Sectors</h2>
+<p>Selection is an absorbing process. Once a record sector Πᵢ is realized, sector membership must remain fixed under subsequent selection dynamics. Formally:</p>
+<p>Φ(Π<strong>ᵢ ρ Πᵢ / pᵢ) ⊆ Πᵢ ℬ (ℋ ₛ) Πᵢ</strong>,</p>
+<p>up to operational tolerance set by experimental resolution.</p>
+<p>This condition enforces irreversible confinement to the realized sector while allowing arbitrary intra-sector evolution.</p>
+<h2>B3.4 — Contractivity of Multiplicity</h2>
+<p>Selection resolves multiplicity. It must not amplify it.</p>
+<p>Let {pᵢ(t)} denote the diagonal coefficients of the reduced state in the record-sector basis, treated here as record weights. The Shannon entropy</p>
+<p class="eq left">H({pᵢ}) = − Σᵢ pᵢ log pᵢ</p>
+<p>is used strictly as a multiplicity measure, not as a thermodynamic or epistemic entropy.</p>
+<p>Any admissible selection dynamics must be such that, along individual trajectories generated by those dynamics, H({pᵢ(t)}) is a supermartingale:</p>
+<p>𝔼[<strong>H({pᵢ(t+dt)}) | ℱₜ] ≤ H({pᵢ(t</strong>)}),</p>
+<p>with strict decrease during active selection. The expectation is taken with respect to the trajectory measure induced by the selection dynamics.</p>
+<p>This is a requirement on the class of admissible dynamics, not a property derived from a specific generator. Any candidate selection process whose trajectories amplify multiplicity is excluded.</p>
+<p>No assumption about the Born rule is made here. H is used purely as a multiplicity measure.</p>
+<p>Contractivity of H along trajectories is a consequence of the trajectory-level character established in B2.2. The stochastic process Φ must resolve the mixture, and resolution requires H to decrease along individual realizations.</p>
+<h2>B3.5 — Ensemble Consistency</h2>
+<p>While individual trajectories resolve to single sectors, the ensemble description must remain consistent with linear evolution. Averaging over all trajectory realizations must reproduce the ensemble map:</p>
+<p class="eq">𝔼[ρ^ω] = ℰₑₙₛ(ρ).</p>
+<p>This requirement constrains the first moment of the trajectory distribution. It does not constrain the second moment. Trajectory spread (δ_sel &gt; 0, B2.3) is fully compatible with ensemble consistency.</p>
+<p>Selection is characterized by the combination of preserved ensemble mean and nonzero trajectory variance.</p>
+<h2>B3.6 — Boundary Condition on Outcomes (BC1)</h2>
+<p>This paper does not derive outcome statistics. Admissible selection dynamics must produce a well-defined distribution over realized record sectors.</p>
+<p>The analysis restricts to the class of selection dynamics that are <strong>Born-consistent</strong>: under the trajectory measure induced by the dynamics, the marginal distribution over realized sectors converges to the diagonal weights {pᵢ} inherited from decoherence.</p>
+<p>This is a defining constraint of the model class studied here, not a derived result. The existence and properties of Born-inconsistent selection dynamics are a separate question outside the present scope.</p>
+<p>Born-consistency is experimentally testable. Repeated preparations of identically decohered systems must yield realized-sector frequencies converging to {pᵢ}. Persistent deviation falsifies the Born-consistent class, not selection itself.</p>
+<h2>B3.7 — Summary of Structural Requirements</h2>
+<p>Selection dynamics, if they exist, must be:</p>
+<p><strong>Post-irreversibility</strong> — inactive while recovery remains reachable.</p>
+<p class="centre"><strong>Record-local</strong> — acting only on the record algebra during active selection.</p>
+<p class="centre"><strong>Absorbing</strong> — once a sector is realized, sector membership remains fixed.</p>
+<p><strong>Contractive</strong> — monotonically reducing multiplicity along trajectories.</p>
+<p><strong>Ensemble-consistent</strong> — preserving linear ensemble evolution.</p>
+<p>Any candidate process violating these conditions is not a physically admissible form of selection under the argument established by Paper A.</p>
+<p>Five requirements. Not a mechanism. An interface.</p>
+<h2>Worked Example: Structural Requirements Applied to Qubit Selection</h2>
+<p>Paper A (Section A4.2) defines a toy model of stochastic selection on a qubit with pointer basis 𝓞 = {|0⟩⟨0|, |1⟩⟨1|} and selection dynamics</p>
+<p class="eq left">dp = √γ · p(1−p) dW.</p>
+<p>The five structural requirements all hold for this toy model. Verification, in order.</p>
+<p><strong>B3.1 — Post-irreversibility activation</strong>. The selection rate γ is set to zero while the system remains within the recoverable set Kε(𝓞). The SDE activates only after decoherence has rendered pointer sectors operationally distinct. Prior to activation, δ_sel = 0 identically.</p>
+<p><strong>B3.2 — Record-algebra locality</strong>. The SDE acts entirely on the diagonal sector weight p. No off-diagonal coherence terms are generated or accessed. The process is record-algebra local by construction: Φ(ρ) = Φ(Δ𝓞(ρ)).</p>
+<p><strong>B3.3 — Absorbing sectors.</strong> At p = 0 and p = 1, the diffusion coefficient σ(p) = √γ · p(1−p) vanishes identically. Both sector-pure states are absorbing fixed points. Once realized, sector membership is permanent.</p>
+<p><strong>B3.4 — Contractivity.</strong> By the full Itô calculation (Paper A, A4.2, requirement S3):</p>
+<p class="eq left">dH = −(γ/2) p(1−p) dt + √γ · p(1−p) · log[(1−p)/p] dW.</p>
+<p>The drift term −(γ/2) p(1−p) is strictly negative for p ∈ (0, 1). H is a supermartingale with strict decrease during active selection, as required.</p>
+<p><strong>B3.5 — Ensemble consistency.</strong> The SDE dp = √γ · p(1−p) dW is a martingale: 𝔼[p(t)] = p(0) for all t. Averaging over trajectories reproduces the ensemble state ρₑₙₛ = diag(p(0), 1−p(0)) at all times. The ensemble map is linear and CPTP.</p>
+<p>The structural requirements B3.1–B3.5 are jointly satisfiable. The toy model is not the unique solution. It is a proof of existence.</p>
+<p>Any candidate selection dynamics must pass all five requirements to be admissible.</p>
+<h2>B4 — Universal Rate Constraints on Selection</h2>
+<p>Selection, if it exists, cannot occur arbitrarily fast.</p>
+<p>This section establishes necessary upper bounds on the rate at which admissible selection dynamics may act, without introducing new physics and without exceeding the scope of Paper A.</p>
+<h2>B4.1 — Selection Rate as an Operational Quantity</h2>
+<p>For two record sectors i and j, define the <strong>inter-sector selection time</strong> τᵢⱼ as the minimal duration required, in an individual realization, for the system’s accessible behavior to become operationally indistinguishable from confinement to sector i rather than j, within experimental tolerance.</p>
+<p>The corresponding selection rate is</p>
+<p><strong>λᵢⱼ ≡ 1/τᵢⱼ.</strong></p>
+<p>This rate is operationally measurable. It characterizes how rapidly exclusion is enforced between competing record sectors.</p>
+<h2>B4.2 — Requirements on a Universal Rate Limiter</h2>
+<p>Any candidate universal rate limiter on selection must satisfy three constraints.</p>
+<p><strong>Universality.</strong> The bound must apply across all macroscopic records, independent of composition or charge.</p>
+<p><strong>Context Independence.</strong> The bound must not depend on observer intervention, measurement choice, or apparatus-specific tuning.</p>
+<p><strong>Discriminatory Relevance.</strong> The bound must couple directly to the physical features that distinguish record sectors.</p>
+<p>These three constraints do not uniquely determine a limiter, but they strongly restrict admissible candidates.</p>
+<h2>B4.3 — Gravity as a Candidate Universal Limiter (Hypothesis)</h2>
+<p class="centre">Among known interactions, gravity satisfies all three requirements above.</p>
+<p>It is universal. It is unscreenable. It is directly sensitive to mass–energy configuration, which is exactly what distinguishes macroscopic records.</p>
+<p class="centre">The hypothesis: gravity provides a universal upper bound on selection rates.</p>
+<p>This is an empirical claim about known interactions. It is not a proof of uniqueness. It does not assert that gravity <em>causes</em> selection.</p>
+<h2>B4.4 — Gravitational Distinguishability of Record Sectors</h2>
+<p>The gravitational self-energy distinguishability ΔE_G between record sectors i and j is defined in Paper A (Definition D15, Appendix C). It measures the Newtonian self-energy of the difference mass distribution between two record sectors and is zero when the sectors are gravitationally indistinguishable.</p>
+<p>The definition, explicit integral form, and positivity proof are given in Paper A and are not repeated here.</p>
+<h2>B4.5 — Rate Inequality</h2>
+<p>The gravity-limited selection bound (Paper A, Postulate G) states</p>
+<p><strong>λᵢⱼ ≤ ΔE_G[i, j] / ℏ.</strong></p>
+<p>Paper A introduces this bound as a physical constraint. Here it is elevated to a candidate universal rate limiter by demonstrating that gravity satisfies the universality, context-independence, and discriminatory relevance requirements of B4.2 — requirements that were not articulated in Paper A.</p>
+<p>The experimental consequences of this elevation are developed in B5.</p>
+<p>The bound is limiting, not exact. Selection may be slower. Selection cannot be faster without invoking a coupling stronger than gravity to mass–energy distinguishability.</p>
+<h2>B4.6 — Null Case (Conditional)</h2>
+<p>Under the gravity-limited hypothesis, if two record sectors are gravitationally indistinguishable — ΔE_G[i, j] = 0 — then the gravity-constrained contribution to the selection rate vanishes:</p>
+<p class="eq left"><strong>λᵢⱼ = 0.</strong></p>
+<p>If no alternative limiter satisfying the requirements of B4.2 applies, such superpositions persist indefinitely. If a non-gravitational mechanism consistent with B4.2 exists, it would supply an independent rate bound not covered by the present hypothesis.</p>
+<p class="centre">This is a testable conditional prediction of the gravity-limited framework.</p>
+<h2>B4.7 — Consistency with Prior Results</h2>
+<p>The gravity-limited bound is consistent with all earlier sections.</p>
+<p>It applies only after operational irreversibility (B3.1). It constrains rates, not outcome statistics (B3.6). It preserves ensemble linearity (B3.5). It does not explain decoherence or branching (Paper A).</p>
+<p>Gravity here functions solely as a rate limiter, not a causal mechanism.</p>
+<h2>B4.8 — Falsifiers (Rate-Level)</h2>
+<p>The gravity-limited hypothesis is falsified if any of the following are observed.</p>
+<p><strong>F_G1.</strong> Selection occurs with λᵢⱼ &gt; ΔE_G/ℏ.</p>
+<p><strong>F_G2.</strong> Selection occurs between records with ΔE_G = 0 in the absence of any alternative limiter satisfying B4.2.</p>
+<p><strong>F_G3.</strong> Selection rates scale universally with non-gravitational parameters across macroscopic records.</p>
+<p>Failure here invalidates the limiter hypothesis only. It does not invalidate selection as defined in this paper, nor irreversibility as defined in Paper A.</p>
+<h2>B4.9 — Closing</h2>
+<p>If selection occurs, it is constrained by physical limits on how rapidly alternatives can be distinguished.</p>
+<p>Definiteness cannot emerge arbitrarily fast. It can emerge no faster than a universal interaction can discriminate between competing records.</p>
+<h2>B5 — Experimental Regimes and Discriminating Tests</h2>
+<p>This section translates the structural and rate constraints of B1–B4 into experimentally discriminable regimes.</p>
+<p>The aim is not parameter fitting. The aim is to specify what observations would count as confirmation, survival, or falsification of selection as defined in this paper.</p>
+<h2>B5.1 — Principle of Test Construction</h2>
+<p>Experiments testing selection must satisfy three criteria.</p>
+<p><strong>Post-Irreversibility Regime</strong>. Decoherence and loss of recoverability must already be established (Paper A). Tests conducted while the system remains within Kε(𝓞) are irrelevant to selection.</p>
+<p><strong>Trajectory Sensitivity.</strong> The experiment must probe single-run behavior or trajectory-level signatures, not ensemble averages alone.</p>
+<p><strong>Rate Sensitivity.</strong> The experiment must be capable of resolving timescales comparable to the predicted selection rate λᵢⱼ⁻¹.</p>
+<p>Only experiments satisfying all three can meaningfully constrain selection dynamics.</p>
+<p><strong>Test Map Summary.</strong></p>
+<p>The five tests below are ordered by what they target, not by experimental accessibility. Each test is independently meaningful.</p>
+<p><strong>BT1 — Order-of-Operations (B5.5).</strong></p>
+<p>Target: selection itself. Falsifies: selection as defined in B1.4. Method: continuously tune decoherence and check whether selection signatures appear before the system exits Kε(𝓞). Platform: superconducting qubits with tunable coupling to measurement cavity.</p>
+<p><strong>BT2 — Active Selection Signature (B5.2).</strong></p>
+<p>Target: existence of selection. Falsifies: selection is present in the tested regime. Method: compare single-trajectory statistics against all linear Lindblad models fitted to the same decoherence data. Observable: telegraph noise or diffusive wandering inconsistent with any CPTP unraveling. Platform: continuously monitored superconducting qubits or trapped ions with fluorescence readout.</p>
+<p><strong>BT3 — Null-Rate Regime (B5.3).</strong></p>
+<p>Target: gravity-limited hypothesis. Falsifies: F_G2. Method: prepare decohered superpositions with ΔE_G = 0 and monitor for selection. Observable: persistent multiplicity (no single-sector stabilization) versus rapid selection. Platform: nitrogen-vacancy centers in diamond, nuclear spin states with identical mass distributions.</p>
+<p><strong>BT4 — Rate-Bound Regime (B5.4).</strong></p>
+<p>Target: gravity-limited hypothesis. Falsifies: F_G1. Method: create spatial superpositions of mesoscopic masses, measure selection timescale, compare against τ_min = ℏ/ΔE_G. Observable: selection faster or slower than bound. Platform: levitated nanoparticles (tungsten, R ≈ 100 nm, τ_min ∼ 1–10 s) in cryogenic vacuum.</p>
+<p><strong>BT5 — Born Boundary Condition (B3.6).</strong></p>
+<p>Target: Born-consistency of selection. Falsifies: the Born-consistent model class. Method: large ensembles of identically prepared, fully decohered systems with single-shot readout. Observable: realized-sector frequencies deviating from {pᵢ} beyond statistical tolerance. Platform: trapped-ion arrays or superconducting qubit arrays.</p>
+<h2>B5.2 — Signature of Active Selection</h2>
+<p>Selection is operationally distinct from decoherence.</p>
+<p>An <strong>active selection signature</strong> is any trajectory-level behavior, occurring after operational irreversibility, that:</p>
+<p>(i) cannot be reproduced by any system-local linear CPTP evolution consistent with the independently characterized decoherence dynamics of the system, and</p>
+<p>(ii) enforces persistent confinement to a single record sector under all admissible system-local controls.</p>
+<p>Examples of admissible signatures include:</p>
+<ul class="plain"><li>Irreversible loss of interference revival capacity despite full system-only control.</li><li>Stochastic stabilization of record-sector behavior inconsistent with linear Lindblad dynamics fitted to the same decoherence data.</li><li>Telegraph-like trajectory behavior resolving into a single sector with no subsequent switching within accessible timescales.</li></ul>
+<p>Absence of such signatures implies absence of selection in the tested regime.</p>
+<h2>B5.3 — Null-Rate Regime (Gravitational Degeneracy)</h2>
+<p>Consider record sectors that are operationally decohered but gravitationally indistinguishable: ΔE_G = 0.</p>
+<p>Under the gravity-limited hypothesis, the gravity-constrained contribution to the selection rate vanishes. The argument therefore predicts one of two outcomes:</p>
+<p><strong>Persistent multiplicity.</strong> No selection signatures appear within experimentally accessible timescales.</p>
+<p><strong>Non-gravitational selection.</strong> Selection occurs at a slower rate governed by an alternative limiter satisfying the requirements of B4.2.</p>
+<p><strong>Concrete example: a nitrogen-vacancy (NV) center in diamond.</strong></p>
+<p>Prepare the NV centre in a superposition of spin states |mₛ = +1⟩ and |mₛ = −1⟩. These states have identical mass distributions (ΔE_G = 0) but are operationally distinguishable via microwave spectroscopy.</p>
+<p>After environmental decoherence has suppressed spin coherence, the reduced state is</p>
+<p class="eq left">ρ = ½|+1⟩⟨+1| + ½|−1⟩⟨−1|.</p>
+<p>Under the gravity-limited hypothesis, no gravitational contribution to selection exists.</p>
+<p>If single-trajectory monitoring reveals rapid stabilization to one spin state inconsistent with any Lindblad model of the decoherence dynamics, the gravity-limited hypothesis is falsified.</p>
+<p>Observation of rapid selection in this regime falsifies the gravity-limited hypothesis. Persistent multiplicity is consistent with it.</p>
+<h2>B5.4 — Rate-Bound Regime (Macroscopic Distinguishability)</h2>
+<p>For record sectors with significant gravitational distinguishability ΔE_G ≫ ℏ/T — where T is the duration over which the experiment maintains sensitivity to trajectory-level behavior — the gravity-limited hypothesis predicts an upper bound:</p>
+<p><strong>τᵢⱼ ≥ ℏ/ΔE_G.</strong></p>
+<p>Experiments in this regime can test whether observed selection times respect the bound (hypothesis survives), approach the bound (gravity-limited selection likely active), or violate the bound (hypothesis falsified).</p>
+<p><strong>Candidate systems and estimates.</strong></p>
+<p>A tungsten nanoparticle (R = 100 nm, ρ ≈ 19 g/cm³) in spatial superposition with separation Δx ∼ R yields ΔE_G ∼ Gm²/R, giving τ_min = ℏ/ΔE_G ∼ 1–10 seconds.</p>
+<p>This is within reach of cryogenic levitation experiments maintaining coherence for seconds (cf. Paper A, Appendix D).</p>
+<p>For silica (ρ ≈ 2 g/cm³), τ_min ∼ 10²–10³ seconds, at the boundary of current coherence times. High-density materials are strongly preferred for near-term tests.</p>
+<p>Observation of selection with τ &lt; τ_min falsifies the gravity-limited hypothesis (F_G1). Absence of selection within accessible timescales is consistent with the hypothesis but does not confirm it.</p>
+<h2>B5.5 — Order-of-Operations Test</h2>
+<p>Selection must not precede irreversibility.</p>
+<p>Experiments that continuously tune environmental coupling can test whether selection signatures appear only after the system exits the recoverable set Kε(𝓞).</p>
+<p>Specifically: if trajectory-level confinement to a single record sector is observed while the system remains within Kε(𝓞) as defined in Paper A (Definition D12), then selection as defined in B1.4 is falsified.</p>
+<p class="centre">This test targets selection itself, not merely the gravity-limited hypothesis.</p>
+<h2>B5.6 — Outcome Classification</h2>
+<p>Experimental outcomes partition cleanly:</p>
+<ul class="plain"><li><strong>No selection observed.</strong> Selection absent in the tested regime.</li><li><strong>Selection observed, rate indeterminate.</strong> Selection present; gravity-limited hypothesis neither confirmed nor falsified.</li><li><strong>Selection observed within bound.</strong> Selection present and consistent with the gravity-limited hypothesis.</li><li><strong>Selection observed faster than bound.</strong> Gravity-limited hypothesis falsified.</li><li><strong>Selection observed in null-rate regime without alternative limiter.</strong> Gravity-limited hypothesis falsified or incomplete.</li></ul>
+<p><strong>No outcome retroactively rescues the hypothesis.</strong></p>
+<h2>B5.7 — Scope Closure</h2>
+<p>This paper establishes what selection must be if it exists, what it must cost, how fast it may occur, and how it can be falsified.</p>
+<p>It does not determine whether selection actually occurs in nature.</p>
+<p>That question is empirical.</p>
+<h2>B6 — Conclusions and Program Status</h2>
+<p>This paper has treated selection as a physical exclusion process constrained by irreversibility, control limits, and rate bounds, without invoking interpretation, agency, or collapse mechanisms.</p>
+<p>The results can be summarised as follows.</p>
+<h2>B6.1 — What Has Been Established</h2>
+<p>If selection exists, it must satisfy all of the following.</p>
+<p><strong>1. Post-Irreversibility Constraint</strong>. Selection cannot act before operational irreversibility is established. Any exclusion prior to exit from Kε( 𝓞) falsifies selection as defined here.</p>
+<p><strong>2. Trajectory-Level Character.</strong> Selection must act at the level of individual realizations while preserving linear ensemble evolution.</p>
+<p><strong>3. Record-Algebra Locality.</strong> Selection may act only on degrees of freedom that distinguish record sectors and may not reintroduce interference.</p>
+<p><strong>4. Absorbing Dynamics.</strong> Once a record sector is realized, sector membership is fixed under subsequent selection dynamics.</p>
+<p><strong>5. Contractivity of Multiplicity.</strong> Selection must monotonically reduce record-sector multiplicity along individual trajectories.</p>
+<p><strong>6. Cost and Rate Constraints.</strong> Selection requires physical resources and cannot occur arbitrarily fast.</p>
+<p><strong>7. Universal Rate Limiter (Hypothesis).</strong> Gravity provides a candidate universal upper bound on selection rates, expressible through gravitational distinguishability ΔE_G, and is falsifiable by explicit rate tests.</p>
+<p>Each condition is necessary. None is assumed to be sufficient.</p>
+<h2>B6.2 — What Has Not Been Assumed</h2>
+<p>This paper has not:</p>
+<ul class="plain"><li>Assumed that selection must occur.</li><li>Derived outcome statistics or the Born rule.</li><li>Specified a concrete dynamical generator.</li><li>Invoked observers, consciousness, or epistemic update.</li><li>Claimed gravity <em>causes</em> selection.</li><li>Extended irreversibility beyond what is established in Paper A.</li></ul>
+<p>Failure of any hypothesis in this paper leaves the foundations of Paper A intact.</p>
+<h2>B6.3 — Status of the Gravity-Limited Hypothesis</h2>
+<p>The gravity-limited hypothesis introduced in B4 is empirically motivated, dimensionally consistent, and experimentally falsifiable.</p>
+<p>It stands or falls entirely on observation. Its failure would constrain the space of admissible selection mechanisms, not rescue them.</p>
+<h2>B6.4 — Programmatic Closure</h2>
+<p>Together with Paper A, this work completes the physics-level characterization of selection.</p>
+<p>Paper A establishes irreversibility without definiteness.</p>
+<p class="centre">Paper B establishes definiteness as costly, rate-limited exclusion, if it exists.</p>
+<p><strong>No further progress on selection can be made by argument alone. The remaining uncertainty is empirical.</strong></p>
+<h2>B6.5 — Forward Dependency</h2>
+<p>If selection is absent or constrained, the remaining question is not about definiteness. It is about structure.</p>
+<p>How does behavior unfold within a single realized record sector under irreversible constraint?</p>
+<p>That question concerns control under irreversibility, not the emergence of definiteness. It is addressed in Paper C, where agency is treated as constrained dynamics downstream of the physics established here.</p>
+<p>End of Paper B. Selection as Irreversible Exclusion. Locked · Execution-Complete.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap01-the-actualization-state/paper-a-actualization-state/"><small>Previous</small>Actualization State</a><div class="up"><small>Back to</small><a href="/proofs/ap01-the-actualization-state/">The Actualization State</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap01-the-actualization-state/paper-c-agency-as-constrained-control/"><small>Next</small>Agency as Constrained Control</a></nav>
+<p class="orig">The paper of record: <a href="/AP01_The_Actualization_State.pdf">the420code.org/AP01_The_Actualization_State.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

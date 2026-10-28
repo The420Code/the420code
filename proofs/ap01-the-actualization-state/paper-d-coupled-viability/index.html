@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Shared constraint environments with Geometric Exclusion Principle (D1.3). Composition of agency: non-additivity, impedance matching, anti-resonance (D2). Stable configurations under drift with necessary (D3.2a) and sufficient (D3.2b) conditions; cascade failure (D3.3). Emergent order without design: structural filtering (D4.2), hierarchy (D4.3), cooperation and deterrence as geometric outcomes (D4.4). Eleven falsifiers FD0–FD4.4b (KS-V.14–V.24). Structural closure with worked examples and Appendix E flagged as exploratory and non-load-bearing.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap01-the-actualization-state/paper-d-coupled-viability/">
+<meta property="og:title" content="Coupled Viability — The Actualization State, Artist’s Proof 01 — The 420 Code">
+<meta property="og:description" content="Shared constraint environments with Geometric Exclusion Principle (D1.3). Composition of agency: non-additivity, impedance matching, anti-resonance (D2). Stable configurations under drift with necessary (D3.2a) and sufficient (D3.2b) conditions; cascade failure (D3.3). Emergent order without design: structural filtering (D4.2), hierarchy (D4.3), cooperation and deterrence as geometric outcomes (D4.4). Eleven falsifiers FD0–FD4.4b (KS-V.14–V.24). Structural closure with worked examples and Appendix E flagged as exploratory and non-load-bearing.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap01-the-actualization-state/paper-d-coupled-viability/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Coupled Viability — The Actualization State, Artist’s Proof 01 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap01-the-actualization-state/paper-d-coupled-viability/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap01-the-actualization-state/"><b>The Actualization State</b></a> · read in full · 6 of 9</div><ul class="modes"><li><a href="/AP01_The_Actualization_State.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Paper D</p>
+<h1>Coupled Viability</h1>
+<p class="oneline">Shared constraint environments with Geometric Exclusion Principle (D1.3). Composition of agency: non-additivity, impedance matching, anti-resonance (D2). Stable configurations under drift with necessary (D3.2a) and sufficient (D3.2b) conditions; cascade failure (D3.3). Emergent order without design: structural filtering (D4.2), hierarchy (D4.3), cooperation and deterrence as geometric outcomes (D4.4). Eleven falsifiers FD0–FD4.4b (KS-V.14–V.24). Structural closure with worked examples and Appendix E flagged as exploratory and non-load-bearing.</p>
+<div class="paper">
+<p><strong>Coupled Viability</strong></p>
+<p><em>Structural Conditions for Multi-Agent Persistence Under Irreversible Dynamics</em></p>
+<p><em>Depends on Papers A, B, and C</em></p>
+<p>You have lived inside this paper your entire life.</p>
+<p>Every family. Every workplace. Every alliance, every rivalry, every marriage, every team. Every institution that has held together and every one that has fallen apart.</p>
+<p>What looked like sociology, or politics, or psychology — was geometry. The geometry of viability kernels overlapping in a shared environment, with drift that never stops and control budgets that deplete.</p>
+<p>Paper C measured agency as a number. Paper D extends that number to systems of agents. The configurations that persist are not the ones that are wisest, or fairest, or most intentional. They are the ones whose geometry permits persistence.</p>
+<p>Hierarchy. Cooperation. Deterrence. Cascade failure. Every structural feature you have ever encountered in human systems has a geometric definition in this paper. Not as a metaphor — as the actual claim.</p>
+<p>No new physics is introduced. The trilogy already supplied everything needed. Paper D is the four-paper spine completing itself.</p>
+<h2>D0 — Dependency, Scope, and Non-Overlap</h2>
+<h2>D0.1 — Dependency Statement</h2>
+<p>This paper depends explicitly and exclusively on the results of Papers A, B, and C.</p>
+<p>It assumes as given:</p>
+<ul class="plain"><li>Actualization State as an operational measure of record-structured irreversibility (Paper A).</li><li>Selection as costly, rate-limited exclusion to definiteness, if it exists (Paper B).</li><li>Agency as normalized reachable viability volume under constrained control within a single realized record sector (Paper C).</li></ul>
+<p>No construct from Papers A, B, or C is redefined or rederived here.</p>
+<p>Failure of Paper D does not invalidate any prior paper.</p>
+<h2>D0.2 — Purpose</h2>
+<p>Paper D addresses a single question:</p>
+<p><strong>Given multiple agents, each described by Paper C’s formalism, operating within shared constraint environments under irreversible physics, what are the structural conditions for persistent joint dynamics, and what forms of emergent order are admissible?</strong></p>
+<p>This is a question about the geometry of coupled viability kernels under drift.</p>
+<p>It is not a question about society, cooperation, or morality.</p>
+<h2>D0.3 — Positioning Relative to Existing Literature</h2>
+<p>Multi-agent viability theory exists. Aubin, Bayen, Saint-Pierre, and colleagues have developed the mathematics of viability kernels for coupled systems, differential games, and multi-agent control.</p>
+<p>The contribution of this paper is not in proving new viability theorems. It is in applying viability theory to the specific structure of irreversibility (Paper A), selection (Paper B), and agency (Paper C). The results are constraints derived from physical irreversibility and record structure, not abstract control theory.</p>
+<p>Paper D is not evolutionary game theory. It does not invoke fitness, replication, or selection pressure.</p>
+<p>Paper D is not multi-agent reinforcement learning. It does not invoke reward signals, policy gradients, or learning.</p>
+<p>Paper D is not mechanism design. It does not invoke incentive compatibility, revelation principles, or social welfare functions.</p>
+<p>Paper D is viability geometry applied to physically irreversible, record-structured, agency-bearing coupled systems.</p>
+<h2>D0.4 — Hard Non-Claims</h2>
+<p>This paper does not:</p>
+<ul class="plain"><li>Introduce new physical laws.</li><li>Modify or reinterpret quantum mechanics.</li><li>Invoke psychology, motivation, ethics, value, meaning, or consciousness.</li><li>Assume rationality, optimization, or fitness maximization.</li><li>Model communication, signaling, or strategic negotiation.</li><li>Derive evolutionary fitness.</li><li>Propose normative guidance or prescriptions.</li><li>Claim emergent structures are designed, intended, or purposeful.</li><li>Claim that social structures emerge from viability constraints alone.</li></ul>
+<p>Failure of Paper D does not invalidate Papers A, B, or C.</p>
+<h2>D0.5 — Loaded Terms: Geometric Definitions</h2>
+<p>Several terms in this paper carry normative or sociological connotations in ordinary language. Each receives a strict geometric definition at first appearance. No connotation beyond the definition is implied.</p>
+<p><strong>Cooperation.</strong> A geometric condition where mutual record externalities expand joint viability. No intention, reciprocity, or payoff implied.</p>
+<p><strong>Hierarchy.</strong> Asymmetric coupling where higher-capacity agents’ record externalities dominate the constraint landscape of lower-capacity agents. A consequence of scale asymmetry.</p>
+<p><strong>Deterrence.</strong> A coupling configuration where the cost of unilateral decoupling exceeds the cost of continued coupling for both agents. A viability geometry.</p>
+<p><strong>Impedance.</strong> The ratio of control authority to drift rate: Z = u_max / a. Two agents are impedance-matched when their operator horizons are comparable.</p>
+<p><strong>Resonance.</strong> Frequency and phase compatibility between coupled control strategies. Constructive resonance expands joint viability; destructive resonance contracts it.</p>
+<p>Read these definitions. The words do not mean what they normally mean. They mean exactly what is written here.</p>
+<h2>D1 — Shared Constraint Environments</h2>
+<h2>D1.1 — Shared Viability Domain</h2>
+<p>When multiple agents operate within a common physical environment, their individual viability kernels may overlap.</p>
+<p>The joint state space is the product of individual state spaces. The joint dynamics are defined by the individual drift fields, the individual control sets, and the coupling terms that transmit the effect of one agent’s actions onto another’s drift.</p>
+<p>The <strong>joint viability kernel</strong> is the set of joint states from which there exists a joint admissible control strategy that maintains all agents within their individual viability constraints for all future time.</p>
+<p>The <strong>shared viability domain</strong> is the projection of the joint viability kernel onto the shared constraint dimensions. It is the region of the common environment in which joint persistence is geometrically possible.</p>
+<p><strong>Structural assumption.</strong> Agents share constraint dimensions. They operate in a common physical environment whose state is affected by the actions of all agents. This is the defining condition for being in a shared constraint environment.</p>
+<p>If agents’ state spaces are fully orthogonal — no shared dimensions — they are uncoupled and Paper D does not apply.</p>
+<p>This assumption is not a theorem. It is a scope condition. The paper analyses systems that satisfy it.</p>
+<h2>D1.2 — Constraint Coupling</h2>
+<p>Paper C (C7) treats coupling as direct energy and control transfer between two systems. Paper D introduces a second coupling mode: <strong>constraint coupling</strong>.</p>
+<p>When Agent A’s actions modify the shared environment in a way that alters Agent B’s drift field, control set, or viability kernel, the agents are constraint-coupled. No direct energy exchange is required. The coupling operates through the shared constraint landscape.</p>
+<p><strong>Example.</strong> Robot A occupies the charging station. Robot B’s admissible trajectories contract — it cannot charge. No energy flowed from A to B. But B’s reachable set changed, because A’s action modified the shared environment.</p>
+<p>This is the everyday form of coupling. The seat someone takes. The lane someone occupies. The opportunity someone holds. None of it transfers energy. All of it modifies your viability kernel.</p>
+<p><strong>Scope.</strong> Pairwise coupling as the base analysis. Network effects modeled as cascades through pairwise links. Testable with three-agent systems (the minimal non-trivial network).</p>
+<h2>D1.3 — Record Externalities (Geometric Exclusion Principle)</h2>
+<p><strong>Definition (Record-Writing Action).</strong></p>
+<p>An irreversible action by Agent A whose recorded environmental change lies in the shared constraint coordinates (e), and which modifies B’s admissible dynamics f_B(·; e) or admissible control set R_B(e).</p>
+<p>The shared constraint coordinates are the dimensions of the environment state space that appear in B’s dynamics or constraints.</p>
+<p><strong>Geometric Exclusion Principle.</strong></p>
+<p>For coupled agents with K_A ∩ K_B ≠ ∅, if Agent A performs a record-writing action that changes the shared constraint coordinates on which B’s viability depends, then K_B changes, and μ(K_B) changes generically (Corollary D1.3).</p>
+<p><strong>Non-degeneracy assumption.</strong></p>
+<p>The map e ↦ K_B(e) is non-degenerate: the viability kernel boundary ∂K_B depends smoothly on e, and the constraint surface intersects the kernel boundary transversally. This excludes pathological cases where the environmental change lies entirely within the kernel interior, producing no boundary change.</p>
+<p><strong>Proof.</strong></p>
+<p>(1) A’s record-writing action irreversibly modifies the shared constraint coordinates e → e' (by definition of record-writing action and Paper B’s irreversibility).</p>
+<p>(2) B’s viability kernel is a function of the shared constraint coordinates: K_B = K_B(e). Since B’s admissible dynamics or control set depend on e (by definition), and the kernel boundary depends smoothly on e (by the non-degeneracy assumption), changing e changes the set of states from which B can persist.</p>
+<p>(3) Under the non-degeneracy assumption, K_B(e') ≠ K_B(e). The transversality condition ensures the boundary moves under perturbation of e.</p>
+<p>The change may be positive (expansion) or negative (contraction), depending on the direction of e → e' relative to B’s constraint surface.</p>
+<p>(4) <strong>Sign classification.</strong> If e' tightens B’s constraints (reduces B’s control set or increases B’s drift), K_B contracts — negative externality. If e' loosens B’s constraints, K_B expands — positive externality.</p>
+<p>(5) μ(K_B) changes generically: by the transversality theorem, the set of e' for which K_B(e') ≠ K_B(e) but μ(K_B(e')) = μ(K_B(e)) — volume-preserving deformations — has measure zero in the space of admissible environmental changes. This is the content of Corollary D1.3.</p>
+<p><strong>Corollary D1.3 (Genericity of Non-Neutrality).</strong></p>
+<p>In smooth families of coupling maps, the set of record-writing actions that produce exactly zero change in μ(K_B) has measure zero. Neutral externality requires parameter-level fine-tuning. This holds under the same non-degeneracy assumption stated above.</p>
+<p>In plain language. Almost every action you take in a shared environment changes your neighbour’s viability. Neutral actions are the exception, not the rule, and they are exceptional in the strict mathematical sense. The default condition of coupled life is non-neutrality.</p>
+<p><strong>Falsifier D1 (No Free Survival).</strong></p>
+<p>If Agent A exerts a negative record externality on Agent B (measured as decrease in μ(K_B)), and Agent B increases its agency ℳ_B (Paper C measure) without:</p>
+<p>(a) severing coupling,</p>
+<p>(b) increasing its control budget u_{B,max}, or</p>
+<p>(c) receiving compensating positive externalities from a third agent,</p>
+<p>the argument is falsified.</p>
+<p><strong>Scope boundary.</strong> The measure-zero neutrality result (Corollary D1.3) depends on smoothness of the coupling map and regularity (C²) of the viability kernel boundary. If the coupling map is non-smooth or the kernel boundary contains cusps, corners, or discontinuities, the transversality argument may fail and non-neutral actions could have positive measure.</p>
+<p>This is an explicit scope limitation: Paper D’s genericity claims apply to smooth families of coupling maps with regular kernel boundaries.</p>
+<p>A further exception arises in systems with continuous symmetries — rotational invariance, for instance — where record-writing actions correspond to symmetry operations that preserve the viable volume by construction. Outside of such symmetry-protected subspaces, non-neutrality is generic.</p>
+<h2>D2 — Composition of Agency</h2>
+<h2>D2.1 — Joint Agency and Non-Additivity</h2>
+<p>Paper C established that agency is non-conservative under coupling (C7.1). Paper D extends this to N agents.</p>
+<p><strong>Definition (Joint Agency).</strong></p>
+<p>Joint agency ℳ_joint is defined as the viability volume of the joint state space under joint admissible controls, normalized by the total joint viability kernel. The measure ℳ is inherited from Paper C’s definition, applied to the product state space X_1 × X_2 × … × X_N.</p>
+<p><strong>Proposition D2.1.</strong></p>
+<p><strong>Joint agency is non-additive: ℳ_joint ≠ Σ ℳ_i in general</strong>.</p>
+<p>The non-additivity term depends on (a) alignment of individual drift fields, and (b) compatibility of individual control sets.</p>
+<p>Joint agency is <strong>superadditive</strong> (ℳ_joint &gt; Σ ℳ_i) when drift fields are anti-aligned (agents face complementary threats) and control sets are compatible.</p>
+<p>Joint agency is <strong>subadditive</strong> (ℳ_joint &lt; Σ ℳ_i) when drift fields are co-aligned (agents face the same threat simultaneously) or control sets conflict.</p>
+<p><strong>Proof sketch (by construction).</strong></p>
+<p><em>Superadditive witness</em>. Two scalar systems, each with drift a = 1 and u_max = 1. Uncoupled, each has ℳ_i = viability volume of its individual kernel. Coupled cooperatively (Paper C, C7.1, cooperative example), shared control capacity yields effective u_max = 2 per system. The joint viability kernel expands: ℳ_joint &gt; ℳ_1 + ℳ_2. This is the cooperative coupling case from Paper C.</p>
+<p><em>Subadditive witness</em>. System A (a = 1, u_max = 2) coupled parasitically to system B (a = 3, u_max = 0). B diverts A’s control capacity. Effective u_max for A drops to 1. The joint viability kernel contracts: ℳ_joint &lt; ℳ_1 + ℳ_2. This is the parasitic coupling case from Paper C.</p>
+<p>Since both strict inequality directions are realizable, ℳ_joint ≠ Σ ℳ_i in general. The sign depends on drift alignment and control compatibility.</p>
+<p>Whether coupling creates agency or destroys it is not a question about intentions. It is a question about geometry — drift alignment and control compatibility. The geometry decides.</p>
+<h2>D2.2 — Impedance Matching</h2>
+<p><strong>Definition.</strong></p>
+<p>Impedance Z_i ≡ u_{i,max} / a_i, where u_{i,max} is maximum control authority and a_i is drift rate. This mirrors the operator horizon (Paper A, Theorem T2).</p>
+<p><strong>Drift timescale.</strong></p>
+<p>τ_i = 1/a_i. The characteristic time for Agent i’s drift to carry it a significant distance toward its no-return surface.</p>
+<p>When Z_i ≠ Z_j, three distinct failure modes arise.</p>
+<p><strong>Failure mode A (primary): Deadline mismatch.</strong></p>
+<p>The low-Z agent has short slack — small τ, little time-to-ruin. Help must arrive before the no-return surface is crossed.</p>
+<p>If the high-Z agent’s response delay exceeds the low-Z agent’s remaining slack, the help arrives after no-return. Control effort applied after no-return produces zero viability gain.</p>
+<p>This is the primary failure mode because no-return geometry makes time windows hard and asymmetric. Once missed, the effect is permanently zero.</p>
+<p>The help that comes too late is not partial help. It is no help. Every parent of a teenager, every doctor in an ER, every aid worker in a famine has met this geometry. The window closes. Effort applied after the window does not partially save what was lost.</p>
+<p><strong>Failure mode B: Absorption bottleneck.</strong></p>
+<p>Even if help arrives in time, the low-Z agent may not be able to convert it into viability. If the limiting constraint is u_max, then energy that does not increase u_max does not change Z. Resources delivered to a system whose bottleneck is not resources produce zero reachability gain.</p>
+<p><strong>Failure mode C (secondary): Budget drain on the high-Z agent.</strong></p>
+<p>To rescue a short-slack agent, the high-Z agent must accelerate its response. The high-Z agent’s budget drains faster.</p>
+<p>This is secondary because the drain is usually caused by failure mode A: the high-Z agent spends, but the effect arrives too late or cannot be converted.</p>
+<p><strong>Proposition D2.2 (qualitative).</strong></p>
+<p>Coupling efficiency between agents i and j degrades as impedance ratio |Z_i/Z_j| deviates from unity. Waste increases with mismatch. The primary waste mechanism is control effort applied outside the low-Z agent’s viable intervention window.</p>
+<p><strong>Conjecture D2.2 (quantitative).</strong></p>
+<p>For a minimal interface model with transfer delay τ, conversion factor κ, and slack s, coupling efficiency η is bounded by the fraction of control effort deliverable within the slack window. A candidate functional form is</p>
+<p>η ≤ 1 / (1 + |Z_i/Z_j − 1|).</p>
+<p>This requires derivation in the specific interface model and is not claimed as a universal result.</p>
+<h2>D2.3 — Resonance and Phase</h2>
+<p><strong>System class.</strong></p>
+<p>Linear periodically forced agents with scalar state x_i, symmetric pairwise coupling κ, identical drift a, and sinusoidal control u_i(t) = U sin(ω_i t + φ_i).</p>
+<p>Stability condition: a &gt; κ (drift exceeds coupling strength; if κ ≥ a the sum mode is unstable and both agents diverge regardless of phase).</p>
+<p><strong>Theorem D2.3 (Toy Model).</strong></p>
+<p>In the above system class, the measure of the joint viability set — the set of joint initial conditions from which both agents persist indefinitely — is maximized when ω_1 = ω_2 and φ_1 − φ_2 = 0 (in-phase resonance).</p>
+<p>The joint viability set contracts monotonically as |φ_1 − φ_2| increases from 0 to π.</p>
+<p><strong>Proof.</strong></p>
+<p>Dynamics: dx_i/dt = −a·x_i + u_i(t) + κ·x_j (i ≠ j), with viability constraint x_i(t) ≥ 0.</p>
+<p>For identical frequencies ω_1 = ω_2 = ω, define Δφ = φ_1 − φ_2. Define sum mode S = x_1 + x_2 and difference mode D = x_1 − x_2. These decouple.</p>
+<p>By trigonometric identities:</p>
+<p>sin(ωt + φ_1) + sin(ωt + φ_2) = 2·cos(Δφ/2)·sin(ωt + (φ_1+φ_2)/2),</p>
+<p>sin(ωt + φ_1) − sin(ωt + φ_2) = 2·cos(ωt + (φ_1+φ_2)/2)·sin(Δφ/2).</p>
+<p>The effective control amplitude on the sum mode is 2U·cos(Δφ/2). The effective control amplitude on the difference mode is 2U·|sin(Δφ/2)|.</p>
+<p>The viability constraint x_i ≥ 0 translates to S ≥ |D| — both components are non-negative if and only if their sum exceeds the absolute value of their difference.</p>
+<p>Joint viability therefore requires:</p>
+<p>(a) S remains large, which requires maximum control amplitude on the sum mode;</p>
+<p>(b) |D| remains small, which requires minimum forcing on the difference mode.</p>
+<p>Condition (a) is optimized when cos(Δφ/2) = 1, i.e., Δφ = 0. Condition (b) is optimized when sin(Δφ/2) = 0, i.e., Δφ = 0. Both conditions are simultaneously optimized at Δφ = 0 (in-phase resonance).</p>
+<p><strong>Monotonic contraction.</strong> As |Δφ| increases from 0 to π, cos(Δφ/2) decreases monotonically from 1 to 0 (sum-mode control weakens) and |sin(Δφ/2)| increases monotonically from 0 to 1 (difference-mode forcing strengthens). Both effects reduce the set of initial conditions from which both agents persist.</p>
+<p>At Δφ = π: cos(π/2) = 0 (zero sum-mode control) and |sin(π/2)| = 1 (maximum difference-mode forcing). This is the worst case.</p>
+<p>Anti-phase coupling does worse than no coupling. The trigonometry confirms what every coordinated team and every dysfunctional pair already knows. When you push as your partner pulls, the joint kernel collapses.</p>
+<p><strong>Conjecture D2.3 (General).</strong></p>
+<p>For broader classes of periodically controlled coupled agents, joint viability is generically maximized under frequency commensurability and phase alignment.</p>
+<p>The empirical signature: perturbing a persistent coupled system’s phase relationship should contract the joint viability margin (measured as minimum slack over one control cycle).</p>
+<p><strong>Falsifier for Conjecture D2.3.</strong></p>
+<p>If a persistent coupled system is shown to have maximum joint viability at anti-resonant phase (φ_1 − φ_2 = π) under standard coupling, the conjecture is falsified.</p>
+<h2>D3 — Stable Configurations Under Drift</h2>
+<h2>D3.1 — Compositional Equilibrium</h2>
+<p>A <strong>compositional equilibrium</strong> (CE) is a joint state-control configuration in which all agents maintain positive agency (ℳ_i &gt; 0 for all i) indefinitely, given their joint drift field and joint control constraints.</p>
+<p>CE does not invoke rationality. CE does not invoke payoff maximization.</p>
+<p>CE is a geometric fixed-point condition: the joint system remains within the interior of the joint viability kernel.</p>
+<p><strong>Mathematical obstacle.</strong> The two-agent sinusoidal proof above succeeds because the viability constraint is linear in the sum/difference decomposition and the control is purely periodic. The general case resists proof for three identified reasons.</p>
+<p>(i) Nonlinear coupling terms — multiplicative or saturating interactions — break the sum/difference decoupling that enables the trigonometric argument.</p>
+<p>(ii) Non-convexity of the joint viability kernel under general control policies means the viability volume does not decompose into independent modal contributions.</p>
+<p>(iii) For non-periodic control strategies, the phase relationship is not a well-defined scalar parameter, and the optimisation landscape may have local maxima at non-zero phase offset.</p>
+<p>Any proof of the general conjecture must either restrict the coupling class — to affine or monotone coupling, for example — or establish a variational principle on the joint viability volume that is monotone in phase alignment.</p>
+<p>Until such a proof exists, the conjecture is supported by the two-agent result and by the specified falsifier.</p>
+<h2>CE ≠ NE: The Operator-Required Charger</h2>
+<p>This is the load-bearing example of the entire paper. It demonstrates, with arithmetic only, that compositional equilibrium and Nash equilibrium are not the same configuration — that a unilateral local improvement can be a strict path to extinction.</p>
+<p class="centre"><strong>System.</strong> Two robots, each with battery b_i(t) ∈ [0, 100]. Ruin at b_i ≤ 10.</p>
+<p><strong>Drift.</strong> Battery drains at 12 units/hour (always on).</p>
+<p><strong>Coupling condition.</strong> To charge, the other robot must crank (operate the charger). Charging rate: +30 units/hour. Cranking cost: additional −4 units/hour (total −16/hour for the cranking robot). If no one cranks, no one charges.</p>
+<p><strong>Compositional Equilibrium: Alternation.</strong></p>
+<p class="centre">Hour 0–1: R1 charges, R2 cranks. R1: 100 → 100 (capped). R2: 100 → 84.</p>
+<p>Hour 1–2: R2 charges, R1 cranks. R2: 84 → 100 (capped). R1: 100 → 84.</p>
+<p>Cycle repeats. Both oscillate between 84 and 100. Both remain far above the ruin threshold (10). Persistence is indefinite. This is CE.</p>
+<p><strong>Nash-type defection: Refuse to crank.</strong></p>
+<p>At any cranking turn, defection costs only −12/hour instead of −16/hour. Net gain: +4 units/hour. Strict local improvement.</p>
+<p>If R1 defects every cranking turn but accepts cranking from R2:</p>
+<p>Hour 0–1: R1 charges, R2 cranks. R1: 100, R2: 84.</p>
+<p>Hour 1–2: R1 refuses. Nobody charges. R1: 88, R2: 72.</p>
+<p>Hour 2–3: R1 charges, R2 cranks. R1: 100, R2: 56.</p>
+<p>Hour 3–4: R1 refuses. R1: 88, R2: 44.</p>
+<p>Hour 4–5: R1 charges, R2 cranks. R1: 100, R2: 28.</p>
+<p>Hour 5–6: R1 refuses. R1: 88, R2: 16.</p>
+<p>Hour 6–6.375: R2 crosses ruin threshold while cranking. R2 dead.</p>
+<p>Hour 6.375–13.5: R1 cannot charge (no cranker). Drifts to ruin at 12/hr. R1 dead.</p>
+<p><strong>Result.</strong> CE (alternation) produces indefinite survival. The Nash move (refuse to crank) is a strict local improvement (+4/hour). The Nash move kills the partner at t ≈ 6.375 hours. Without a partner, the defector cannot charge and dies at t ≈ 13.5 hours.</p>
+<p><strong>Conclusion.</strong> CE is not Nash-stable under immediate-payoff incentives. The Nash-type unilateral improvement exits the joint viability kernel.</p>
+<p><strong>Viability ≠ utility. A rational agent can calculate its way into extinction by ignoring the operator horizon.</strong></p>
+<p>This is the paper’s most important sentence. It is also the most important sentence about coupled human systems that has ever been derived from physics.</p>
+<p>Every short-term optimisation that ignores the joint viability kernel ends here. Every relationship, every team, every institution that treats local improvement as the test of rationality is operating under a model that is provably wrong on contact with irreversible physics. The Nash move can be the dying move. The geometry is what it is.</p>
+<h2>D3.2a — Necessary Conditions for Persistence (under alignment)</h2>
+<p><strong>Assumption (Monotonic Alignment).</strong></p>
+<p>All agents face drift toward the same boundary of the viability kernel. No agent’s drift partially compensates another’s drift without control expenditure.</p>
+<p><strong>Assumption (Regularity).</strong></p>
+<p>The viability kernel boundary is smooth (C²). No agent’s state is exactly on a cusp or non-differentiable point of the kernel boundary.</p>
+<p><strong>Proposition D3.2a (Necessary Conditions).</strong></p>
+<p>Under the monotonic-alignment and regularity assumptions, a multi-agent configuration that persists indefinitely must satisfy:</p>
+<p><strong>(N1)</strong> Aggregate control capacity exceeds aggregate drift (joint operator horizon condition).</p>
+<p><strong>(N2)</strong> Impedance compatibility: agents’ drift timescales are close enough that help can arrive within the low-Z agent’s slack window.</p>
+<p><strong>(N3)</strong> No agent’s record externalities push another past its no-return surface faster than that agent can compensate (measured as: drift increase from externality ≤ compensating control authority).</p>
+<p><strong>(N4)</strong> Joint control budget is sufficient to maintain all agents above ruin (total energy expenditure ≤ total available budget over any finite horizon).</p>
+<p>Failure of any condition implies at least one agent reaches its no-return surface in finite time, under the stated assumptions.</p>
+<p><strong>Proof of necessity (sketch).</strong></p>
+<p><em>N1 violated</em> (aggregate drift exceeds aggregate control). Under monotonic alignment, all drift vectors point toward the same boundary. The joint system’s state moves toward Σ_NR at net rate Σ a_i − Σ u_{i,max} &gt; 0. Since the viability kernel has finite diameter, the boundary is reached in finite time bounded by diam(K) / (Σ a_i − Σ u_{i,max}). At least one agent exits.</p>
+<p><em>N2 violated</em> (impedance incompatibility). Under monotonic alignment, the low-Z agent’s drift carries it toward Σ_NR with slack s_low = d(x_low, Σ_NR) / a_low. If the high-Z agent’s minimum response delay τ_response &gt; s_low, the intervention arrives after no-return. By Paper A’s absorbing-state result, the low-Z agent cannot recover. Its survival time T is bounded by s_low.</p>
+<p><em>N3 violated</em> (externality exceeds compensation). Agent i’s record-writing action increases j’s effective drift by Δa_j. If Δa_j &gt; u_{j,max} − a_j (the remaining control margin), then j’s net drift becomes positive toward Σ_NR. By the same finite-diameter argument as N1, j reaches the boundary in finite time.</p>
+<p><em>N4 violated</em> (budget exhaustion). Each agent’s control expenditure rate is at least a_i (the maintenance cost from Paper C, Corollary C3.1a). If Σ a_i &gt; total budget rate, the aggregate budget depletes to zero in finite time. Once budget is exhausted, all agents are subject to uncontrolled drift and reach Σ_NR in finite time.</p>
+<p><strong>Scope of necessity.</strong></p>
+<p>Under non-aligned drift — where agents’ drift fields partially cancel — configurations may persist while violating N2, because natural cancellation reduces the effective impedance mismatch. The necessity claim is strictly conditional on the alignment assumption.</p>
+<h2>D3.2b — Sufficient Conditions for Persistence (without alignment)</h2>
+<p><strong>Proposition D3.2b (Sufficient Conditions).</strong></p>
+<p>The following are sufficient conditions for a multi-agent configuration to persist under irreversible drift, with no alignment assumption required:</p>
+<p><strong>(S1)</strong> Each agent independently satisfies its single-agent viability condition (Paper C): u_{i,max} &gt; a_i and budget &gt; maintenance cost.</p>
+<p><strong>(S2)</strong> All pairwise record externalities are non-negative (no agent’s actions contract any other agent’s kernel).</p>
+<p><strong>(S3)</strong> Coupling is impedance-compatible (D2.2).</p>
+<p><strong>(S4)</strong> Joint control budget exceeds joint maintenance cost.</p>
+<p>Under these conditions, all agents persist. No agent’s kernel contracts due to coupling, and each has sufficient resources to maintain itself.</p>
+<p><strong>Proof sketch.</strong></p>
+<p>By S1, each agent satisfies Paper C’s single-agent viability condition independently: u_{i,max} &gt; a_i and budget exceeds maintenance cost.</p>
+<p>By S2, no agent’s record externalities contract any other agent’s kernel, so coupling does not degrade any individual viability condition.</p>
+<p>By S3, coupling is impedance-compatible, so control transfers between agents arrive within viable intervention windows.</p>
+<p>By S4, the joint budget sustains the joint maintenance cost indefinitely.</p>
+<p>Each agent therefore remains within its individual viability kernel for all time, and the joint state remains within the joint viability kernel.</p>
+<p><strong>Note.</strong> D3.2a and D3.2b are categorically different claims.</p>
+<p>D3.2a tells you what persistent configurations <em>must</em> look like (under alignment). D3.2b tells you what configurations <em>will</em> definitely persist. Neither subsumes the other.</p>
+<p>A configuration can satisfy D3.2b without violating D3.2a. But violating D3.2a does not imply violating D3.2b, because D3.2a requires alignment assumptions that D3.2b does not.</p>
+<h2>D3.3 — Instability and Cascade Failure</h2>
+<p>When Agent i exits its viability kernel (ℳ_i = 0), and the coupling was such that i’s control actions were partially compensating j’s drift, then j’s effective drift increases by the lost coupling contribution.</p>
+<p><strong>Proposition D3.3.</strong></p>
+<p>Failure of Agent i propagates to Agent j if the removal of i’s control contribution increases j’s effective drift beyond j’s remaining control margin (u_{j,max}). If the new effective drift exceeds u_{j,max}, j is pushed beyond its operator horizon and cascades toward its own no-return surface.</p>
+<p><strong>Containment.</strong> Cascade stops at Agent j if j has sufficient slack (s_j from C8.1) to absorb the shock before the increased drift pushes it past Σ_NR.</p>
+<p><strong>Falsifiable test.</strong> Three-agent system: A coupled to B coupled to C. Terminate A. Measure survival times T_B and T_C.</p>
+<p>The cascade condition predicts: if removal of A’s contribution increases B’s drift past u_{B,max}, T_B is finite. If B’s failure increases C’s drift past u_{C,max}, T_C is finite. Propagation stops when the drift increase at an agent is less than that agent’s remaining control margin.</p>
+<p>You have watched this cascade. The supplier that fails. The institution that depended on it. The systems further down the chain that depended on the institution. Slack is what stops the wave. Without slack, the wave keeps going.</p>
+<h2>D4 — Emergent Order Without Design</h2>
+<h2>D4.1 — Null Model and Order Metric</h2>
+<p>Before claiming emergent order, the paper establishes what the absence of order looks like.</p>
+<p><strong>Null model.</strong></p>
+<p>A population of agents with random (uncorrelated) control policies under the same drift field, coupling topology, initial condition distribution, and environment noise. Only survivors are analyzed.</p>
+<p>The null model must match every confound except control policy coordination.</p>
+<p><strong>Order metric (Slack Correlation).</strong></p>
+<p>For surviving agents, measure individual slack s_i(t) = time-to-ruin if controls are frozen at time t. Compute pairwise cross-correlation</p>
+<p class="eq left"><strong>ρ_ij = corr(s_i(t), s_j(t))</strong></p>
+<p>over time.</p>
+<p>Random survivors: ρ ≈ 0 (independent fluctuations). Coordinating agents: ρ significantly positive (slack levels move together).</p>
+<p><strong>Statistical test.</strong></p>
+<p>Compute ρ̄_obs = mean pairwise correlation among survivors in the observed system. Build null distribution {ρ̄_null} from N simulation runs with random control policies and survivorship filtering. Compute empirical p-value:</p>
+<p class="eq left">p = (1 + #{null runs with ρ̄ ≥ ρ̄_obs}) / (1 + N).</p>
+<p>Declare order if p &lt; 0.05.</p>
+<p><strong>Structural precondition.</strong> Overlap ratio O(t) = μ(∩K_i) / μ(∪K_i) measures geometric capacity for coordination. Slack correlation measures actual coordination. Paper D uses both.</p>
+<p><strong>Falsifier D4 (Order Indistinguishable from Noise).</strong></p>
+<p>If observed persistent configurations cannot be statistically distinguished from the null (p ≥ 0.05 for empirical slack correlation), D4 is falsified. Observable: empirical p-value.</p>
+<h2>D4.2 — Structural Filtering of Configurations</h2>
+<p>Under irreversible drift, configurations that violate the necessary conditions of D3.2a — under the stated alignment and regularity assumptions — are eliminated.</p>
+<p>Survivors are biased toward configurations satisfying these conditions. Not because they were selected for. Because everything else exited the viability kernel.</p>
+<p><strong>Proposition D4.2.</strong></p>
+<p>Under irreversible drift and the monotonic-alignment and regularity assumptions of D3.2a, the long-run support of persistent multi-agent configurations is contained in the set of configurations satisfying the necessary conditions N1–N4. No optimization, fitness function, or teleology is required.</p>
+<p>The structure is what is left. That is the entire mechanism. There is no designer. There is no goal. There is only the geometry of what persists when irreversibility runs.</p>
+<p><strong>Conjecture D4.2.</strong></p>
+<p>Under additional assumptions (ergodicity, stationary drift, specified policy update process), the distribution of persistent configurations converges to the set of compositional equilibria.</p>
+<p>This conjecture requires explicit specification of the stochastic process and is not claimed as a theorem.</p>
+<h2>D4.3 — Hierarchy as Constraint Geometry</h2>
+<p>When agents have asymmetric capacity (different Z values), stable configurations generically exhibit hierarchical structure. Higher-capacity agents’ record externalities dominate the constraint landscape of lower-capacity agents.</p>
+<p><strong>Regularity assumption.</strong> The coupling map is smooth and the constraint surface is non-degenerate (as in D1.3). Agent impedances are distinct: Z_i ≠ Z_j.</p>
+<p><strong>Proposition D4.3.</strong></p>
+<p>In a coupled system with asymmetric agent impedances under the above regularity assumption, persistent configurations exhibit hierarchical coupling: the high-Z agent’s record externalities alter μ(K_j) for the low-Z agent more than the reverse.</p>
+<p><strong>Proof sketch.</strong></p>
+<p>The high-Z agent has a larger viability kernel. Higher u_max/a ratio means more reachable viable states, by Paper A’s operator horizon.</p>
+<p>Under the regularity assumption (smooth coupling, non-degenerate constraint surface), the kernel expansion projects non-trivially onto the shared constraint coordinates. The additional reachable states include states that differ in the shared dimensions, not only in private dimensions.</p>
+<p>A larger footprint in the shared constraint coordinates means that the high-Z agent’s record-writing actions generically — on a set of full measure in the space of coupling parameters — modify more of the shared constraint space than the low-Z agent’s actions.</p>
+<p>By the Geometric Exclusion Principle (D1.3), this produces larger changes in the partner’s kernel.</p>
+<p>The hierarchy is geometric, not intentional.</p>
+<p>Hierarchy is geometry. Not intention. Not malice. Not will. Geometry.</p>
+<p>The agent with the larger viability kernel projects more onto the shared constraint coordinates. Its actions reshape the joint environment more than the lower-Z agent’s actions can. This is the structural origin of hierarchy as a feature of coupled systems.</p>
+<p>It does not require any agent to want to dominate. It does not require any agent to mean to dominate. It happens because the impedances are asymmetric and the geometry follows.</p>
+<p><strong>Falsifier D4.3 (Hierarchy Inversion).</strong></p>
+<p>If, in a system with Z_i ≫ Z_j (impedance ratio &gt; 10:1) satisfying the regularity assumption, the low-Z agent’s record externalities dominate the constraint landscape of the high-Z agent — Δμ(K_i) from j’s actions &gt; Δμ(K_j) from i’s actions, measured over equivalent action magnitudes — D4.3 is falsified.</p>
+<p>Observable: Δμ(K_i) and Δμ(K_j) per unit record-writing action.</p>
+<h2>D4.4 — Cooperation and Deterrence as Structural Outcomes</h2>
+<p><strong>Proposition D4.4a (Cooperation).</strong></p>
+<p>Cooperative equilibria exist when mutual record externalities expand each agent’s viability kernel more than coupling cost contracts it. The operator-required charger (D3.1) is an instance.</p>
+<p>Observable: ℳ_joint &gt; Σ ℳ_i.</p>
+<p><strong>Falsifier D4.4a (Cooperation Nonexistence).</strong></p>
+<p>If, in every tested coupled system where mutual record externalities are positive (each agent’s actions expand the other’s kernel), ℳ_joint ≤ Σ ℳ_i (joint agency never exceeds the sum of individual agencies), D4.4a is falsified.</p>
+<p>Observable: ℳ_joint and Σ ℳ_i computed from the joint and individual viability kernels.</p>
+<p><strong>Proposition D4.4b (Deterrence).</strong></p>
+<p>Deterrence equilibria exist when unilateral decoupling cost exceeds continued coupling cost for both agents.</p>
+<p>Observable: for each agent, ℳ_i(coupled) &gt; ℳ_i(decoupled). Neither agent can improve its viability by exiting the coupling.</p>
+<p><strong>This is a geometric fixed-point, not a threat.</strong></p>
+<p>Deterrence in this paper does not require any agent to threaten anything. It does not require strategy or will. It requires that each agent’s viability kernel is larger inside the coupling than outside it. Once this geometric condition holds, neither agent benefits from leaving — and the configuration persists.</p>
+<p>What ordinary language calls deterrence — between rivals, between nations, between competitors — has this geometry whenever it persists. The threats are surface. The coupling-vs-decoupling viability calculation is the substrate.</p>
+<p><strong>Falsifier D4.4b (Deterrence Exit).</strong></p>
+<p>If an agent in a coupled system with ℳ_i(coupled) &gt; ℳ_i(decoupled) for all i can unilaterally decouple and increase its agency (ℳ_i(after decoupling) &gt; ℳ_i(coupled)), the characterization of the configuration as a deterrence equilibrium is falsified.</p>
+<p>Observable: ℳ_i before and after decoupling.</p>
+<p>Both are geometric. Neither is normative.</p>
+<h2>D5 — Experimental Instantiations and Falsifiers</h2>
+<h2>D5.1 — Worked Examples</h2>
+<p><strong>System 1: Microbial ecology (chemostat).</strong></p>
+<ul class="plain"><li><em>Shared viability domain.</em> Nutrient-population configuration space.</li><li><em>Record externalities.</em> Waste products altering pH/nutrient availability (irreversible environmental modification).</li><li><em>Impedance matching.</em> Metabolic rate compatibility between species.</li><li><em>Slack.</em> Time-to-washout at current dilution rate and population density.</li><li><em>Cascade failure.</em> Trophic coupling propagation.</li></ul>
+<p>Each construct maps to a measurable variable with a quantitative prediction.</p>
+<p><strong>System 2: Operator-required charger (two robots).</strong></p>
+<ul class="plain"><li><em>Shared viability domain.</em> Joint (position, battery) space with shared charging infrastructure.</li><li><em>Record externalities.</em> Station occupation.</li><li><em>Coupling condition.</em> Charging requires partner’s cranking.</li><li><em>Impedance matching.</em> Battery capacity and discharge rate compatibility.</li><li><em>Slack.</em> Time-to-ruin at current battery level and discharge rate.</li><li><em>CE ≠ NE demonstration.</em> D3.1.</li></ul>
+<p>Each construct maps to a measurable variable with a quantitative prediction.</p>
+<h2>D5.2 — Falsifiers</h2>
+<p><strong>Global Falsifier F0 (Kill Switch).</strong></p>
+<p>If a multi-agent system persists indefinitely (survival time T = ∞ for all agents) while violating <em>all</em> necessary conditions N1–N4 of D3.2a, under a configuration satisfying the monotonic-alignment and regularity assumptions, Paper D is falsified.</p>
+<p>Observable: survival time T for each agent; verification of N1–N4 violation; verification that alignment and regularity assumptions hold.</p>
+<p><strong>Falsifier D1 (No Free Survival</strong>). Defined in D1.3. Observable: μ(K_B) and ℳ_B before and after A’s record-writing action.</p>
+<p><strong>Falsifier D2.1 (Additivity Under Coupling</strong>). If joint agency equals the sum of individual agencies (ℳ_joint = Σ ℳ_i) in a coupled system with non-zero coupling terms (non-orthogonal shared constraint coordinates), D2.1 is falsified. Observable: ℳ_joint and Σ ℳ_i in coupled vs uncoupled configurations.</p>
+<p><strong>Falsifier D2.2 (Impedance-Independent Efficiency).</strong> If coupling efficiency (measured as viability transfer per unit control effort) does not degrade as impedance ratio |Z_i/Z_j| deviates from unity, D2.2 is falsified. Observable: viability transfer rate at impedance ratios 1:1, 2:1, 5:1, and 10:1 under matched conditions.</p>
+<p><strong>Falsifier D2.3 (Anti-Resonant Optimality).</strong> Defined in D2.3. Observable: joint viability margin at phase offsets 0, π/4, π/2, 3π/4, π.</p>
+<p><strong>Falsifier D3.3 (Cascade Non-Propagation).</strong> Defined in D3.3. Observable: survival times T_B and T_C after termination of A in a 3-agent chain.</p>
+<p><strong>Falsifier D4 (Order Indistinguishable from Noise).</strong> Defined in D4.1. Observable: empirical p-value for slack correlation. If p ≥ 0.05 for all candidate systems, D4 is falsified.</p>
+<p><strong>Falsifier D4.2 (Persistent Violators).</strong> If a multi-agent configuration persists indefinitely while violating one or more of N1–N4, under a system satisfying the monotonic-alignment and regularity assumptions, D4.2 is falsified.</p>
+<p>This differs from F0, which requires violation of <em>all four</em> conditions. D4.2 claims the long-run support is contained in the satisfying set; a single persistent violator of any condition falsifies it. Observable: persistence time T and verification of individual N1–N4 conditions for each surviving configuration.</p>
+<p><strong>Falsifier D4.3 (Hierarchy Inversion).</strong> Defined in D4.3. Observable: Δμ(K_i) and Δμ(K_j) per unit record-writing action in impedance-asymmetric systems.</p>
+<p><strong>Falsifier D4.4a (Cooperation Nonexistence</strong>). Defined in D4.4. Observable: ℳ_joint and Σ ℳ_i in systems with mutually positive externalities.</p>
+<p><strong>Falsifier D4.4b (Deterrence Exit</strong>). Defined in D4.4. Observable: ℳ_i before and after unilateral decoupling.</p>
+<p>Every proposition has at least one testable falsifier with a specified observable. Falsifiers are independent of A, B, C. Failure of any proposition leaves all prior papers intact.</p>
+<h2>D5.3 — Scope Closure</h2>
+<p>Paper D establishes:</p>
+<ul class="plain"><li>What multi-agent composition must look like under the trilogy’s constraints.</li><li>What persistent configurations require.</li><li>What destroys them.</li><li>How to test these claims.</li></ul>
+<p>It does not determine whether specific configurations are realized in nature. That question remains empirical.</p>
+<h2>D6 — Structural Closure</h2>
+<p><strong>Paper A.</strong> Irreversibility as loss of reachability. Independent of B, C, D.</p>
+<p><strong>Paper B.</strong> Selection as costly exclusion, if it exists. Depends on A. Independent of C, D.</p>
+<p><strong>Paper C.</strong> Agency as constrained control. Depends on A; uses outcome of B. Independent of D.</p>
+<p><strong>Paper D.</strong> Coupled viability under multi-agent constraint. Depends on A, B, C. Extends coupling (C7), introduces shared constraint environments, derives structural filtering, hierarchy, cooperation, and deterrence as geometric consequences.</p>
+<p>The one-way dependency is preserved. Failure of D does not invalidate C, B, or A.</p>
+<p>Each layer adds structure. None adds physics.</p>
+<p>Together, the four papers constitute the spine. The narrative of P0 is the intuition that motivated them; the spine itself stands without it.</p>
+<p>What you have just read is the geometry underneath every coupled human system you have ever lived inside. The terms changed — kernel for <em>room</em>, drift for <em>decay</em>, slack for <em>time</em>, ruin for <em>the moment after which nothing helps</em> — but the structure is the same. It was always geometry.</p>
+<p>Forward reference. Paper D treats binary and chained multi-agent couplings (D1 through D4). The structural account of multipartite dynamics — operations between three or more operators reading each other’s slopes simultaneously in shared viability domains — is open future work in The 420 Code. The higher-order dynamics inherit AP43’s four-term system (coupling capacity, pattern, pattern coherence, tracking coherence) and Paper D’s joint-viability apparatus. The structural account of teams operating at full resolution, of pair-bonds at high pattern coherence, of communities and institutions at operational scale, all sit inside the architecture this paper establishes and AP43 extends. The specific multipartite formalism is open.</p>
+<h2>Appendix E — Exploratory: Reclamation and Renewal (Non-Load-Bearing)</h2>
+<p>Paper A’s optional module (A6) addresses capacity saturation and restoration for single systems. This appendix extends that to coupled systems: joint saturation, partial reclamation, the multi-agent loop.</p>
+<p>It inherits the speculative status of A6. Explicitly non-load-bearing. No proposition in the main body depends on it. Included for structural completeness and intellectual honesty.</p>
+<p>End of Paper D. Coupled Viability. Locked · Execution-Complete.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap01-the-actualization-state/paper-c-agency-as-constrained-control/"><small>Previous</small>Agency as Constrained Control</a><div class="up"><small>Back to</small><a href="/proofs/ap01-the-actualization-state/">The Actualization State</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap01-the-actualization-state/6-kill-switches/"><small>Next</small>Kill Switches</a></nav>
+<p class="orig">The paper of record: <a href="/AP01_The_Actualization_State.pdf">the420code.org/AP01_The_Actualization_State.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

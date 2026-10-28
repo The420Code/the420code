@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Contract with the reader. Dependencies, axiom mapping, epistemic status per section, kill switch summary, debts owed.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap03-the-ratio/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Ratio, Artist’s Proof 03 — The 420 Code">
+<meta property="og:description" content="Contract with the reader. Dependencies, axiom mapping, epistemic status per section, kill switch summary, debts owed.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap03-the-ratio/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Ratio, Artist’s Proof 03 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap03-the-ratio/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap03-the-ratio/"><b>The Ratio</b></a> · read in full · 1 of 12</div><ul class="modes"><li><a href="/AP03_The_Ratio.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">Contract with the reader. Dependencies, axiom mapping, epistemic status per section, kill switch summary, debts owed.</p>
+<div class="paper">
+<h2>0.1 — What this paper does</h2>
+<p>AP03 derives the conjugacy of the two fundamental speed limits of physics — c and G — from a single symmetry-breaking event with amplitude ε. Both constants emerge from the same break. Neither is independent. Neither is fundamental on its own.</p>
+<p>Three claims, each derived or structurally forced.</p>
+<p>First. At the moment of symmetry breaking, only the breaking amplitude ε is available as a scale. No spacetime, no mass-energy, no pre-existing coupling — nothing has emerged yet. Both c and G must therefore inherit from ε. This is a structural argument from the bootstrap problem: you cannot use the rules of the house to explain how the house was built.</p>
+<p>Second. The minimal break produces exactly two sectors. The pre-state has ℤ₂ symmetry — the simplest non-trivial symmetry group. By the representation theory of ℤ₂ (section 8), the broken phase decomposes into exactly two irreducible sectors: a propagation sector (Mode 1) carrying c, and a resistance sector (Mode 0) carrying G. Not three. Not one. Two.</p>
+<p>Third. The cosmological origin and the black hole event horizon are the same marginal surface — the surface where ε locally returns to zero — traversed in opposite temporal directions. The Big Bang is the break opening; the event horizon is the break closing. Hawking radiation is the universe refusing to permit a permanent pocket of restored symmetry within a globally broken phase.</p>
+<p>The paper makes one further structural claim, qualitatively. The dark-to-visible energy ratio (~95:5) is a consequence of small ε: the smaller the break, the more content remains in Mode 0 (the resistance sector), the less spills into Mode 1 (the propagation sector that carries electromagnetic interaction). The qualitative direction is robust; the quantitative mapping requires a model of the initial fluctuation spectrum that is not derived here.</p>
+<h2>0.2 — Dependencies</h2>
+<p>The axioms {S, B, R, C} (formal statement carried at AP20 section 3.3; completeness and minimality obligations fenced at KS-P.1 / KS-P.2). AP03 was originally written before the canonical formalisation; the mapping from AP03’s postulates onto the canonical axioms is made explicit in section 0.3 below. Axiom S is Symmetry; AP03’s E0 specifies the minimal symmetry. Axiom B is the unique break; AP03’s E1 instantiates it as the spontaneous breaking ℤ₂ → trivial with amplitude ε. Axiom R is the persistence of the record; the broken vacuum is what persists. Axiom C is Constraint — locality; the bounded propagation it produces is why c is finite, G is positive, and ε is small and bounded.</p>
+<p>AP20 (The Proof). Load-bearing for the conjugacy upgrade. AP20’s Paper D proves Axiom B forces exactly one free parameter. With this proof in place, the AP03 conjecture E-G (G depends on ε) becomes a theorem consequence: G cannot be independent of ε, because if it were, the axioms would admit at least two free parameters. AP20 takes AP03’s central conjecture and makes it structurally necessary.</p>
+<p>AP06 (The Leakage Constant). Load-bearing for the numerical identification of ε. AP06 derives the cycle form 1:1 + 1×ε @ AS [+1/137 / −1/137] and identifies ε numerically with the fine-structure constant α ≈ 1/137. The gravitational hierarchy ke²/(G·m_e²) ≈ 10⁴²–10⁴³ verification in section 7.5 uses ε ≈ 1/137 from AP06.</p>
+<p>AP24 (The Residual). Provides the constraint Λ that pins the dependence of mₚ on ε through the relation mₚ ∝ √ε · √Λ. AP03 derives the proportionality mₚ ∝ √ε; AP24 fixes Λ so the relationship is dimensionally complete.</p>
+<p>AP08 (The Identity). Dependent on AP03, not the reverse. AP08 derives Einstein’s field equations from the record algebra; the gravitational coupling G that appears in AP08’s field equations is the same G that AP03 conjectures (and AP20 forces) to be determined by ε. The disclosed circularity in AP08’s G = 2κ/m_e² is structural debt D1 of The 420 Code, substantially reduced by the AP20 forcing proof + the section 7 derivation but not fully closed.</p>
+<h2>0.3 — Axiom mapping</h2>
+<p>AP03 was written before the canonical axiom set {S, B, R, C} was formalised. The mapping below shows how AP03’s postulates instantiate the four axioms.</p>
+<p><strong>Axiom S (Symmetry) ↔ Postulate E0.</strong> S is the two-sector base condition — identity under exchange, the precondition for distinction to be meaningful. E0 specifies the minimal symmetry of the pre-state: ℤ₂, the simplest non-trivial group. The pre-state whose existence Axiom S asserts is what E0 endows with the minimal symmetry capable of nontrivial breaking. AP03 chooses ℤ₂ by parsimony; the choice is tested via KS-R.2 (binary decomposition) — a richer pre-state symmetry would produce more than two irreducible representations, so any falsification of the binary decomposition is also a falsification of ℤ₂ minimality.</p>
+<p><strong>Axiom B (Exactly one break) ↔ Postulate E1.</strong> B requires exactly one irreducible symmetry-breaking event. E1 instantiates this as the spontaneous breaking ℤ₂ → trivial with amplitude ε. The minimality of ℤ₂ ensures the break is irreducible: there is no intermediate subgroup between ℤ₂ and the trivial group. AP20’s forcing proof on Axiom B is what upgrades AP03’s E-G conjecture (G depends on ε) to a theorem.</p>
+<p><strong>Axiom R (The record persists) ↔ The broken vacuum.</strong> R requires that the break leave a persistent record. In AP03, the broken vacuum with propagation speed c = √(β/α) and condensate energy density ρ₀ = ε²Λ⁴/(4λ) is the persistent record. The two sectors (Mode 0, Mode 1) persist because the broken vacuum is stable; stability is what makes the record a record.</p>
+<p><strong>Axiom C (Constraint) ↔ Finiteness of c and positivity of G.</strong> C requires that all quantities remain bounded. In AP03: c is finite (set by the substrate ratio β/α); G &gt; 0 (theorem from E-G: G = κ/(εΛ²)); ε itself is small and bounded.</p>
+<p>Note: AP03’s postulates are more specific than {S, B, R, C}. They choose a particular symmetry group (ℤ₂) and a particular mechanism (SSB of a scalar field). The axioms {S, B, R, C} are the abstract structure; AP03 is one specific instantiation.</p>
+<h2>0.4 — Epistemic status per section</h2>
+<p>section 1 (The Two Speed Limits). FRAMING. Names the two structural speed limits of physics and proposes they are siblings.</p>
+<p>section 2 (Before the Arena). STRUCTURAL ARGUMENT. The bootstrap problem and the forcing of ε as the only available scale at the moment of symmetry breaking. Claim E-Bootstrap.</p>
+<p>section 3 (The Minimal Break). DERIVATION. The ℤ₂ representation theorem applied to the broken phase. Postulate E0; Theorem 3.1 (proof in section 8); Claim E2 with KS-R.2.</p>
+<p>section 4 (The Conjugacy of c and G). DERIVATION + STRUCTURAL CRITIQUE. Planck units as evidence of conjugacy; the derivation of c from the pre-geometric action (Result A.1); Theorem E-G (G = κ/(εΛ²)) via AP20 forcing proof + the section 7 derivation; the dimensionless formulation as the correct quantitative target.</p>
+<p>section 5 (The Origin and the Horizon). DERIVATION. The structural identity Claim E-Identity: cosmological origin and event horizon as the same marginal surface, traversed in opposite directions.</p>
+<p>section 6 (The Dark Sector Connection). QUALITATIVE FRAMING. Conjecture E5 that the dark-to-visible energy ratio is determined by ε, qualitatively consistent but not quantitatively derived.</p>
+<p>section 7 (The Action Principle). FORMAL DERIVATION. The minimal ℤ₂-symmetric pre-geometric action; Result A.1 (Emergence of c); the form of G’s dependence on ε.</p>
+<p>section 8 (The ℤ₂ Representation Theorem). FORMAL PROOF. Theorem B.1 (the only two irreducible representations of ℤ₂ are the trivial and the sign representation).</p>
+<p>section 9 (Kill Switches). FORMAL FALSIFICATION REGISTER. Six kill switches engaged: KS-R.1 through KS-R.6.</p>
+<p>section 10 (What This Establishes and What Remains Open). SYNTHESIS.</p>
+<h2>0.5 — Kill switch summary</h2>
+<p>Six kill switches are engaged in this paper. The full register is in section 9.</p>
+<p>KS-R.1: Independent variability of c and G (gravitational conjugacy). LIVE — EMPIRICAL.</p>
+<p>KS-R.2: Non-binary origin. Universe requires more than two fundamental sectors. LIVE — EMPIRICAL.</p>
+<p>KS-R.3: Dark ratio independence (mechanism unrelated to c/G). LIVE — EMPIRICAL.</p>
+<p>KS-R.4: Horizon inequivalence (cosmological origin and black hole horizon structurally distinct). LIVE — HARD.</p>
+<p>KS-R.5: Planck scale mismatch (Planck onset incompatible with mₚ ∝ √ε). LIVE — EMPIRICAL.</p>
+<p>KS-R.6: Dimensionless scaling violation (α · α_G at fixed mass varies with ε, or α/α_G hierarchy is not consistent with α²). LIVE — HARD.</p>
+<h2>0.6 — Structural debts owed</h2>
+<p>Two structural debts are named explicitly. These are unresolved derivations tied to specific structural claims, tracked at the registry level.</p>
+<p><strong>D1 (registry-level, partially closed by AP08 + this paper).</strong> The first-principles derivation of G from the axioms without external scaffolding. AP08 derives Einstein’s field equations from the record algebra and identifies G through The Lock (G = 2κ/m_e²), with the disclosed structural circularity that κ is itself defined as Gm_e²/2. AP03 contributes by establishing that G cannot be independent of ε (via AP20’s forcing proof) and by deriving the explicit form G = κ/(εΛ²) from the structural condensate density of section 7. The induced-gravity calculation used in section 7.5 is named in the literature as Sakharov-Visser; it leans on the standard QFT cutoff structure. The 420 Code does not import that calculation as its source — the load-bearing inputs are the AP20 forcing proof and the structural condensate density, both internal to The 420 Code; the literature calculation is correspondence, confirming the same form from a different route. The closure is partial. The full first-principles derivation — G computed from {S, B, R, C} alone, with the structural coefficient κ derived from the broken vacuum response without any reliance on the standard cutoff machinery — remains open. This debt is registry-level, not AP03-specific; AP03’s contribution to the partial closure is recorded here.</p>
+<p>D-AP03.1. The substrate parameters α and β in the kinetic term ℒ = ½α(∂_τφ)² − ½β(∇φ)² − V(φ) are introduced but not derived from a more fundamental theory. Their ratio gives c² = β/α, but neither α nor β individually is computed from the axioms. This is the deepest open problem in AP03 — distinct from and prior to the G derivation. A truly pre-geometric formulation would derive the distinction between temporal and spatial coordinates from the axioms rather than presupposing it in the kinetic term.</p>
+<h2>0.7 — Items held open without claiming debt status</h2>
+<p>Two further items are bracketed inside this paper. They are real and live, but they are not structural debts in the same sense as D1 and D-AP03.1.</p>
+<p><strong>E5 quantitative.</strong> The dark-to-visible energy ratio as a function of ε. The paper establishes the qualitative direction (small ε → most content in Mode 0) but does not derive the quantitative mapping. Three issues need resolution before the connection becomes quantitative: the phenomenological distinction between dark matter (clusters gravitationally) and dark energy (does not) within Mode 0; the epoch-dependence of the 95:5 ratio over cosmological history; and the specific functional form linking ε to the partition. This is open derivation work; the qualitative claim stands.</p>
+<p><strong>E-Hawking sufficiency.</strong> Hawking radiation is structurally motivated in section 4 as the necessary consequence of imposing a global ε &gt; 0 condition on a locally ε → 0 region. The paper does not derive the Hawking spectrum from the AP03 action; it argues that the global condition forces leakage and identifies the spectrum derived elsewhere with that leakage. The empirical test of the connection rides on KS-R.4 (horizon inequivalence): if the cosmological origin and the black-hole horizon are shown to be structurally distinct, the structural account of Hawking radiation falls with it.</p>
+<h2>0.8 — Structural relationships</h2>
+<p>AP03 opens Notebook II of The 420 Code. AP05, AP10, and AP08 follow as the remaining chapters of Notebook II — the structure of space and time, the dimensional count, and Einstein’s field equations — all inheriting the structural setting AP03 establishes: c and G as conjugate outputs of a single break.</p>
+<p>AP20 (Notebook I) upgrades AP03’s conjecture E-G to a theorem via the forcing proof on Axiom B. With AP20 in place, the conditional claims (E4, E-Identity, E-Hawking) inherit the upgrade. AP03 returns the favour by giving AP20’s forcing proof its first quantitative payoff outside the foundational proof itself.</p>
+<p>AP06 (Notebook IV) identifies ε numerically with α ≈ 1/137. AP24 (Notebook IV) constrains Λ. Together they pin AP03’s scaling relations to specific numbers: the gravitational hierarchy ke²/(G·m_e²) ≈ 10⁴²–10⁴³, mₚ in terms of ε and Λ, the Planck scale as the scale of the break itself.</p>
+<p>AP17 (Notebook VI) relates the 0-pole / 1-pole structure of cosmological geometry to AP03’s Mode 0 / Mode 1 sectors. AP18 (Notebook VI) derives the MOND floor a₀ ≈ cH₀ from the axioms, downstream of the small ε.</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap03-the-ratio/">The Ratio</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap03-the-ratio/1-the-two-speed-limits/"><small>Next</small>The Two Speed Limits</a></nav>
+<p class="orig">The paper of record: <a href="/AP03_The_Ratio.pdf">the420code.org/AP03_The_Ratio.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Agency as operator-relative ratio of reachable-within-viability to viability (C1). Control authority approaching zero at no-return surfaces. Drift under irreversibility (C2). Necessary conditions for agency preservation (C3). No-return geometry within a realised sector (C4). Control budgets and fatigue (C5 with theorem C5.1). Noise and silence (C6). Coupling and rescue (C7). Slack and robustness (C8). Exit as control outcome (C9). Falsifiers FC1–FC5 (KS-V.9–V.13). Structural closure with experimental instantiation (bacterial chemotaxis, autonomous robotic navigation).">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap01-the-actualization-state/paper-c-agency-as-constrained-control/">
+<meta property="og:title" content="Agency as Constrained Control — The Actualization State, Artist’s Proof 01 — The 420 Code">
+<meta property="og:description" content="Agency as operator-relative ratio of reachable-within-viability to viability (C1). Control authority approaching zero at no-return surfaces. Drift under irreversibility (C2). Necessary conditions for agency preservation (C3). No-return geometry within a realised sector (C4). Control budgets and fatigue (C5 with theorem C5.1). Noise and silence (C6). Coupling and rescue (C7). Slack and robustness (C8). Exit as control outcome (C9). Falsifiers FC1–FC5 (KS-V.9–V.13). Structural closure with experimental instantiation (bacterial chemotaxis, autonomous robotic navigation).">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap01-the-actualization-state/paper-c-agency-as-constrained-control/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Agency as Constrained Control — The Actualization State, Artist’s Proof 01 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap01-the-actualization-state/paper-c-agency-as-constrained-control/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap01-the-actualization-state/"><b>The Actualization State</b></a> · read in full · 5 of 9</div><ul class="modes"><li><a href="/AP01_The_Actualization_State.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Paper C</p>
+<h1>Agency as Constrained Control</h1>
+<p class="oneline">Agency as operator-relative ratio of reachable-within-viability to viability (C1). Control authority approaching zero at no-return surfaces. Drift under irreversibility (C2). Necessary conditions for agency preservation (C3). No-return geometry within a realised sector (C4). Control budgets and fatigue (C5 with theorem C5.1). Noise and silence (C6). Coupling and rescue (C7). Slack and robustness (C8). Exit as control outcome (C9). Falsifiers FC1–FC5 (KS-V.9–V.13). Structural closure with experimental instantiation (bacterial chemotaxis, autonomous robotic navigation).</p>
+<div class="paper">
+<p><strong>Agency as Constrained Control</strong></p>
+<p><em>Depends on Papers A and B</em></p>
+<p>You are an agent. You make choices. You maintain yourself against decay. You navigate a space of possibilities that narrows with every irreversible step. You have a budget that depletes. You face drift that never stops.</p>
+<p>And somewhere ahead of you, invisible but real, is a boundary beyond which no choice you make can save you.</p>
+<p>Everything you just read is geometry. Not philosophy. Not metaphor. Geometry — measurable, computable, falsifiable.</p>
+<p>This paper strips the philosophy out of agency and replaces it with a number. The number measures the fraction of survivable states you can still reach from where you stand.</p>
+<p>That number is more honest than any definition philosophy has ever produced, because it does not care about your intentions. It cares about your position in the state space and the size of your control set.</p>
+<p>The rest is arithmetic.</p>
+<p><strong>Abstract.</strong></p>
+<p>This paper develops a control-theoretic account of agency under irreversible physics. Your agency, measured as a number.</p>
+<p>Building on Papers A and B, agency is defined as a geometric property: the fraction of survivable states reachable from where you currently stand, using whatever control you have, within the record sector you actually occupy.</p>
+<p>No new physical assumptions are introduced.</p>
+<p>The results: if you stop maintaining, agency decays. At the no-return boundary, agency hits zero. High-variance or misaligned strategies waste the budget faster than steady ones. None of this is surprising. All of it is now proven.</p>
+<p>Control fatigue, noise, coupling, and exit are defined as consequences of constrained reachability rather than psychological or normative phenomena. The paper establishes necessary conditions for persistence of controlled behavior under irreversibility and provides falsifiers for the control framework.</p>
+<p>What remains unresolved is empirical — and that is exactly as it should be. The geometry is proven. Which real systems instantiate it is nature’s answer.</p>
+<h2>C0 — Scope</h2>
+<h2>C0.1 — Dependency Statement</h2>
+<p>This paper depends explicitly and exclusively on the physical results established in <strong>Paper A</strong> and <strong>Paper B</strong>.</p>
+<p>It assumes as given:</p>
+<ul class="plain"><li>Irreversibility as loss of reachability under admissible control (Paper A).</li><li>The existence of no-return surfaces induced by bounded capacity (Paper A).</li><li>Selection, if it exists, as a costly, rate-limited exclusion process acting after irreversibility (Paper B).</li></ul>
+<p>Paper C requires only that selection produces confinement to a single record sector. It does not depend on the mechanism, rate, or statistics of selection.</p>
+<p>No physical construct is redefined or rederived here.</p>
+<p>Cross-reference note. The viability kernel Viab(R) used throughout this paper (Paper A, Definition D7) corresponds, in the quantum setting, to the recoverable set Kε(𝓞) (Paper A, Definition D12). Paper C operates entirely within a single realized record sector, so the relevant constraint set R is the set of states accessible to the system after selection, not the full quantum state space.</p>
+<h2>C0.2 — Purpose</h2>
+<p>Paper C addresses a question that is not physical in origin, but structural in consequence:</p>
+<p><strong>Given irreversible physics and costly definiteness, how can controlled behavior persist within a single realized record sector?</strong></p>
+<p>Agency is treated not as intention, belief, or choice, but as a control property — a number you can compute of a system evolving under irreversible constraints.</p>
+<h2>C0.3 — Hard Non-Claims</h2>
+<p>This paper does not:</p>
+<ul class="plain"><li>Introduce new physical laws.</li><li>Modify or reinterpret quantum mechanics.</li><li>Explain why selection occurs.</li><li>Invoke psychology, motivation, ethics, or meaning.</li><li>Provide prescriptions or normative guidance.</li></ul>
+<p>Failure of Paper C does not invalidate Papers A or B.</p>
+<h2>C1 — Agency as a Geometric Control Quantity</h2>
+<h2>C1.1 — Definition of Agency</h2>
+<p>Within a single realized record sector, define <strong>agency</strong> as the fraction of the viability kernel reachable from the current state under admissible control.</p>
+<p>Let x(t) denote the system state confined to a realized record sector. Let Viab(R) be the viability kernel defined in Paper A relative to admissible controls, and let Reach(x) be the set of states reachable from x under those controls. Define</p>
+<p>ℳ(<strong>x) ≡ μ(Reach(x) ∩ Viab(R)) / μ(Viab(R</strong>)),</p>
+<p>where μ is the natural volume measure induced by the state-space metric and Viab(R) has finite positive measure.</p>
+<p>The normalization ensures ℳ ∈ [0, 1]. ℳ = 1 when the entire viability kernel is reachable. ℳ = 0 at the no-return surface where no viable future remains.</p>
+<p>That is agency — measured.</p>
+<p><strong>Monotonicity and regularity assumptions</strong>. The measure μ is monotone with respect to set inclusion: if S₁ ⊆ S₂ then μ(S₁) ≤ μ(S₂). The analysis assumes Reach(x) varies continuously with x in the Hausdorff metric on compact subsets of the state space, ensuring ℳ is continuous. These are standard regularity conditions in viability theory (Aubin, 1991) and are not additional physical assumptions.</p>
+<h2>C1.2 — Control Authority</h2>
+<p>Let admissible controls u(t) ∈ U be bounded by physical and energetic constraints. Control authority is determined by three quantities:</p>
+<p><strong>Bandwidth.</strong> The maximal rate at which control can counteract irreversible drift.</p>
+<p><strong>Reachability.</strong> The remaining volume of Viab(R) accessible from x(t).</p>
+<p><strong>Slack.</strong> The time-to-boundary from x(t) under zero control. (Defined formally in C8.1.)</p>
+<p><strong>Limit condition.</strong> By definition of Σ_NR = ∂ Viab(R) and continuity of μ(Reach(·) ∩ Viab(R)) as a function of state (guaranteed by the Hausdorff regularity assumption above):</p>
+<p class="eq"><strong>lim_{x → Σ_NR} ℳ(x) = 0</strong>.</p>
+<p>At the boundary, only a single future trajectory remains.</p>
+<h2>C2 — Drift as a Consequence of Irreversibility</h2>
+<h2>C2.1 — Irreversible Drift</h2>
+<p>For open systems with nonzero irreversible drift, ordered states decay toward loss of structure in the absence of sustained control.</p>
+<p>This follows directly from bounded control capacity and the operator-horizon result of Paper A (Theorem T2). It is not an independent axiom.</p>
+<p>You have felt this. The garden untended. The body unrested. The relationship neglected. Drift is what reality does to structure when you stop maintaining it.</p>
+<h2>C2.2 — Baseline Dynamics</h2>
+<p>Absent control (u = 0), the system evolves as</p>
+<p class="eq left"><strong>dx/dt = f(x),</strong></p>
+<p>where f(x) is the irreversible drift field pointing toward an attractor of structural loss (equilibrium, failure, or saturation).</p>
+<p>The scalar decay model of Paper A (dx/dt = −ax + u) is a special case of this general form.</p>
+<p><strong>Proposition C2.1 (Agency decay under drift).</strong></p>
+<p>This is the mathematical expression of what you already know: everything falls apart without maintenance.</p>
+<p>Let x(t) evolve under dx/dt = f(x) + u with u(t) ∈ U, and suppose the drift field f points inward toward an attractor x <em>∉ Viab(R). If |f(x)| ≥ a‖x − x</em>‖ for some a &gt; 0 (linear lower bound on drift), and if μ(Reach(x) ∩ Viab(R)) is Lipschitz in x with constant L, then along any trajectory with |u(t)| ≤ u_max:</p>
+<p><strong><em>dℳ/dt ≤ L(u_max − a‖x − x</em></strong><strong>‖) / μ(Viab(R</strong>)).</p>
+<p>When the system is far from the attractor (‖x − x*‖ &gt; u_max/a), the right-hand side is strictly negative: agency decreases regardless of control.</p>
+<p>This reproduces the operator horizon result of Paper A (Theorem T2) in the agency framework and quantifies the rate of agency loss beyond the horizon.</p>
+<p><strong>Proof sketch.</strong></p>
+<p>dℳ/dt = (d/dt)[μ(Reach(x) ∩ Viab(R))] / μ(Viab(R)). By Lipschitz continuity, |Δμ| ≤ L|Δx|. The state velocity is |dx/dt| = |f(x) + u| ≤ |f(x)| + |u|.</p>
+<p>The drift pushes toward x (<em>reducing Reach), while control pushes away (expanding it). Net rate: dℳ/dt ≤ L(|u| − |f(x)|) / μ(Viab(R)) ≤ L(u_max − a‖x − x</em>‖) / μ(Viab(R)).</p>
+<h2>C3 — Necessary Conditions for Agency Preservation</h2>
+<h2>C3.1 — Continuous Control Cost</h2>
+<p>For open systems with f(x) ≠ 0 away from fixed points, maintaining distance from Σ_NR requires continuous expenditure of control effort.</p>
+<p>Except at exact fixed points of f, no finite intervention permanently arrests drift. Such fixed points, if they exist, may themselves lie outside Viab(R) or require sustained control to reach. Their existence does not generally provide a cost-free maintenance strategy.</p>
+<p>There is no rest. There is only steadier maintenance.</p>
+<h2>C3.2 — Variance-Conditioned Control Effectiveness</h2>
+<p><strong>Proposition C3.2 (conditional).</strong></p>
+<p>For admissible control systems in which instantaneous control cost c(u) is convex in |u|, low-variance control trajectories preserve ℳ(x) more effectively than high-variance or impulsive strategies with the same mean control effort.</p>
+<p><strong>Proof sketch.</strong> For convex c, Jensen’s inequality gives 𝔼[c(u)] ≥ c(𝔼[u]). Variable control with fixed mean effort therefore incurs greater cumulative cost than constant control at the mean level, depleting the control budget B(t) (defined in C5.1) more rapidly and thereby reducing reachable viability volume.</p>
+<p>Steady wins. Bursts cost more. The mathematics says exactly what every athlete, every operator, every long-distance runner already knows.</p>
+<p><strong>Corollary C3.1a (Maintenance condition).</strong></p>
+<p>For the scalar system dx/dt = −ax + u with a &gt; 0 and u ∈ [0, u_max], the agency ℳ(x) is maintained (dℳ/dt = 0) if and only if u = ax — control exactly balances drift.</p>
+<p>This requires x ≤ u_max/a = xₕ (the operator horizon). For x &gt; xₕ, no admissible control can maintain ℳ, and dℳ/dt &lt; 0 strictly.</p>
+<p>The maintenance condition is the agency-framework restatement of Paper A’s Theorem T2: the horizon is the boundary between maintainable and inevitably decaying agency.</p>
+<h2>C4 — No-Return Geometry Within a Realized Sector</h2>
+<h2>C4.1 — Horizon Geometry</h2>
+<p>The operator horizon from Paper A (Theorem T2, Definition D9) applies strictly within a realized record sector.</p>
+<p>Crossing this boundary removes states from Viab(R).</p>
+<h2>C4.2 — Ruin as Absorbing State</h2>
+<p><strong>Ruin</strong> is defined as</p>
+<p><strong>x ∉ Viab(R).</strong></p>
+<p>Once this occurs, recovery is impossible under admissible control. Ruin is a geometric property of state space, not a subjective condition.</p>
+<p>The word <em>ruin</em> is precise here. It does not mean failure. It does not mean despair. It means: the set of admissible trajectories that return you to viability is empty. You cannot get back from where you stand.</p>
+<h2>Worked Example: No-Return Geometry in a 2D Linear System</h2>
+<p>Consider a two-dimensional system with state x = (x₁, x₂) ∈ ℝ², drift f(x) = (−a₁x₁, −a₂x₂) with a₁, a₂ &gt; 0, and control u = (u₁, u₂) ∈ [0, u₁^max] × [0, u₂^max]. The constraint set is R = {x : x₁ ≥ 0, x₂ ≥ 0}.</p>
+<p>The viability kernel is the rectangle</p>
+<p><strong>Viab(R) = [0, x₁ₕ] × [0, x₂ₕ],</strong> where xᵢₕ = uᵢ^max / aᵢ is the per-axis operator horizon.</p>
+<p>The no-return surface Σ_NR is the boundary of this rectangle. Any state with x₁ &gt; x₁ₕ or x₂ &gt; x₂ₕ is in the capture basin and will be driven to the boundary regardless of control.</p>
+<p><strong>Agency computation.</strong></p>
+<p>For a state x = (x₁, x₂) inside Viab(R), the reachable set within Viab(R) is</p>
+<p>Reach(x) ∩ Viab(R) = [0, min(x₁ + u₁^max/a₁, x₁ₕ)] × [0, min(x₂ + u₂^max/a₂, x₂ₕ)] (for steady-state reachability).</p>
+<p>The normalized agency is ℳ(x) = μ(Reach(x) ∩ Viab(R)) / μ(Viab(R)).</p>
+<p>At the origin, ℳ = (u₁^max/a₁)(u₂^max/a₂) / (x₁ₕ · x₂ₕ) = 1. The full viability kernel is reachable.</p>
+<p>At the corner (x₁ₕ, x₂ₕ), Reach shrinks to the single point and ℳ → 0.</p>
+<p>The example illustrates three features. The no-return surface is axis-separable in the linear case. Agency varies continuously from 1 to 0 across the viability kernel. Position within Viab(R) determines how much future flexibility remains, independent of the system’s history.</p>
+<p>You can compute this for any system that admits the geometry. That is the entire claim.</p>
+<h2>C5 — Control Budgets and Fatigue</h2>
+<h2>C5.1 — Control Budget</h2>
+<p>Define the <strong>control budget</strong></p>
+<p class="eq left"><strong>B(t) = B₀ − ∫₀ᵗ c(u(s)) ds,</strong></p>
+<p>where c(u) is the instantaneous control cost and B₀ &gt; 0 is the initial budget. Admissible control requires B(t) ≥ 0.</p>
+<p>The budget is what you have. The cost is what you spend. When the budget reaches zero, control ceases. There is no controlled behavior on an empty tank.</p>
+<h2>C5.2 — Control Fatigue</h2>
+<p><strong>Control fatigue</strong> occurs as B(t) → 0. High-frequency or high-magnitude control accelerates depletion of B(t), reducing ℳ(x).</p>
+<p>By Proposition C3.2, impulsive strategies with convex cost deplete the budget strictly faster than steady control at the same mean effort.</p>
+<p><strong>Theorem C5.1 (Survival time bound).</strong></p>
+<p>Let x(t) evolve under dx/dt = f(x) + u with u(t) ∈ U and control cost c(u) ≥ c_min &gt; 0 for all u ≠ 0. Let B(t) = B₀ − ∫₀ᵗ c(u(s)) ds be the control budget.</p>
+<p>Define the survival time T as the first time at which either B(T) = 0 or x(T) ∉ Viab(R). Then</p>
+<p><strong>T ≤ B₀ / c_min.</strong></p>
+<p><strong>Proof.</strong> Since c(u) ≥ c_min for any nonzero control, the budget depletes at rate dB/dt = −c(u) ≤ −c_min whenever the system is actively controlled. If the system requires continuous control to remain in Viab(R) (i.e., f(x) points outward at x for all x on the trajectory), then control must be nonzero for the entire survival period, giving B(T) = B₀ − ∫₀ᵀ c(u) ds ≤ B₀ − c_min · T. Setting B(T) = 0 yields T ≤ B₀/c_min.</p>
+<p>The bound is tight for constant minimal-cost control.</p>
+<p>It establishes that finite budgets imply finite survival. No system with bounded resources can maintain agency indefinitely against persistent drift.</p>
+<p>The bound does not depend on the drift rate a, only on the control cost floor. Faster drift depletes the budget faster (higher u needed), but the absolute bound is set by the budget-to-cost ratio.</p>
+<p><strong>Worked example (scalar system).</strong></p>
+<p>For dx/dt = −ax + u with a = 1, u_max = 2, c(u) = u (linear cost), B₀ = 10, and initial state x₀ = 1.5 (inside Viab(R) = [0, 2]):</p>
+<ul class="plain"><li>Maintaining x = 1.5 requires u = ax = 1.5, costing c = 1.5 per unit time.</li><li>Survival time: T = B₀/c = 10/1.5 ≈ 6.67 time units.</li><li>After budget depletion, u = 0 and x decays exponentially toward 0. The system crosses into ruin when it can no longer reach any target within Viab(R).</li></ul>
+<h2>C6 — Noise and Silence</h2>
+<h2>C6.1 — Noise</h2>
+<p><strong>Noise</strong> is exogenous or stochastic input to the system dynamics that is not under admissible control and that consumes control bandwidth without increasing Reach(x) ∩ Viab(R).</p>
+<p>Formally, noise is any perturbation ξ(t) added to the drift field, f(x) → f(x) + ξ(t), where ξ is not an element of the admissible control set U.</p>
+<p><strong>Proposition C6.1 (Noise-induced agency decay).</strong></p>
+<p>Let the system evolve under dx/dt = f(x) + u + ξ(t) where ξ is a zero-mean stochastic forcing with 𝔼[ξ] = 0 and 𝔼[|ξ|²] = σ². If the system must expend additional control Δu to compensate for ξ, then the effective budget depletion rate increases:</p>
+<p><strong>dB/dt = −c(u + Δu) ≤ −c(u) − ασ²,</strong> for some α &gt; 0 depending on the convexity of c.</p>
+<p>Consequently, noise reduces survival time:</p>
+<p><strong>T_noisy ≤ B₀ / (c_min + ασ²) &lt; T_quiet.</strong></p>
+<p>Noise taxes the control budget without expanding reachable viability volume. Every distraction, every interruption, every forced response to something that wasn’t going to threaten you anyway — pure tax. Pure depletion with no expansion of what you can reach.</p>
+<h2>C6.2 — Silence</h2>
+<p>Withholding response (u(t) = 0) is an admissible control action.</p>
+<p>When the drift field f(x) is slow or favorable (directed away from Σ_NR), silence preserves control budget at no agency cost.</p>
+<p>This is not inaction in the colloquial sense. It is the optimal control policy when the marginal agency cost of intervention exceeds the agency cost of drift.</p>
+<p>Formally, silence is preferred when</p>
+<p class="eq"><strong>c(u) / |∂ℳ/∂u| &gt; |dℳ/dt|_{u=0</strong>},</p>
+<p>i.e., when the budget cost per unit of agency preservation exceeds the drift-induced agency loss rate.</p>
+<p>In noise-dominated regimes, silence may also prevent noise-amplifying feedback loops in which control effort introduces additional disturbance.</p>
+<p>The mathematics confirms what discipline already knew. Sometimes the best move is no move.</p>
+<h2>C7 — Coupling and Rescue</h2>
+<h2>C7.1 — Coupled Systems and Agency Transfer</h2>
+<p>When systems are coupled, their drift fields combine and control capacities load jointly.</p>
+<p><strong>Agency transfer</strong> occurs when, under coupled dynamics,</p>
+<p><strong>dℳ_A/dt &gt; 0 while dℳ_B/dt &lt; 0</strong>,</p>
+<p>indicating expansion of reachable viability for system A at the expense of system B.</p>
+<p>The total agency of the coupled system is not conserved.</p>
+<p>This is not an assumption. It follows from the geometry of Viab(R) under coupling.</p>
+<h2>C7.2 — Rescue Instability (Sufficient Condition)</h2>
+<p><em>Rescue</em> is coupling a stabilized system A to a divergent system B to offset B’s drift using A’s control capacity.</p>
+<p>Let |·| denote the norm induced by the coupled dynamics on the joint state space. A <strong>sufficient condition</strong> for joint loss of viability is</p>
+<p><strong>|f_A| + |f_B| &gt; |u_A|_max + |u_B|_max.</strong></p>
+<p>Under this condition, the total drift magnitude exceeds the total available control, and the coupled system approaches Σ_NR faster than either system in isolation.</p>
+<p>This is sufficient, not necessary. Directional alignment of drift and control fields may permit stability even when this scalar inequality holds.</p>
+<p><strong>Non-conservation: two examples.</strong></p>
+<p>(<em>1) Cooperative coupling</em>. Two scalar systems with drift a = 1, u_max = 1 each, coupled so that each contributes control to the other. If the coupling allows total control capacity to be shared: effective u_max per system = 2, xₕ doubles for both. ℳ_A + ℳ_B increases. Coupling creates agency.</p>
+<p>(<em>2) Parasitic coupling</em>. System A (a = 1, u_max = 2) is coupled to system B (a = 3, u_max = 0). B diverts A’s control capacity: effective u_max for A drops to 1, while B still cannot sustain itself (3 &gt; 1). Both systems lose agency: ℳ_A + ℳ_B decreases. Coupling destroys agency.</p>
+<p>These examples demonstrate that agency transfer is not zero-sum. The coupling topology and the relative drift-to-control ratios determine whether joint agency expands, contracts, or redistributes. No conservation law governs total agency.</p>
+<h2>C8 — Slack and Robustness</h2>
+<h2>C8.1 — Slack</h2>
+<p><strong>Slack</strong> is the minimum time to reach Σ_NR under zero control:</p>
+<p><strong>s(x) ≡ inf { t ≥ 0 : ϕₜ(x) ∈ Σ_NR },</strong></p>
+<p>where ϕₜ is the uncontrolled flow generated by f(x).</p>
+<p>Slack measures time-to-boundary, not Euclidean distance, and is the operationally relevant quantity for assessing control margin. Greater slack increases the time window available for corrective control and absorbs perturbations.</p>
+<p><strong>Proposition C8.1 (Scalar Slack-Agency Correspondence).</strong></p>
+<p>For the scalar system dx/dt = −ax + u with u ∈ [0, u_max], the slack s(x) = x/a (time to reach x = 0 under zero control) and the horizon xₕ = u_max/a satisfy:</p>
+<p>ℳ(<strong>x) is monotonically increasing in s(x) for x ∈ [0, xₕ</strong>].</p>
+<p>Greater slack implies greater agency.</p>
+<p>You have felt this — the difference between having three months of savings and having three days. The same drift, the same income, the same expenses. The slack is the entire difference between agency and emergency.</p>
+<p>At s = 0 (boundary), ℳ = 0. At s = xₕ/a (maximal slack at origin), ℳ = 1. Slack is the operationally measurable proxy for agency in systems where direct computation of Reach(x) ∩ Viab(R) is intractable.</p>
+<p>In higher dimensions or systems with non-convex constraints, slack is necessary but not sufficient for agency. A state may have large time-to-boundary under zero control yet be surrounded by regions from which no viable trajectory exists — geometric cul-de-sacs.</p>
+<h2>C8.2 — Redundancy</h2>
+<p>A system has <strong>redundancy r ≥ 1</strong> with respect to a target state x ∈ Viab(R) if there exist at least r distinct admissible control trajectories reaching x from the current state while remaining within Viab(R).</p>
+<p>Redundancy reduces sensitivity of viable trajectories to perturbations in f(x) and u(t). Higher redundancy increases robustness at the cost of efficiency, since maintaining multiple viable pathways consumes control capacity that could otherwise extend reachability.</p>
+<h2>C9 — Exit as a Control Outcome</h2>
+<h2>C9.1 — Withdrawal</h2>
+<p>When ℳ(x(t)) decreases monotonically under all admissible controls in a coupled system, decoupling preserves more reachable viability volume than continued coupling.</p>
+<p>This holds when the coupled drift exceeds the joint control capacity (C7.2), so that decoupling removes the excess drift load.</p>
+<p>Exit is therefore a control outcome implied by reachability geometry, not a prescription.</p>
+<h2>C9.2 — Agency-Dissipative Environments</h2>
+<p>An environment is <strong>agency-dissipative</strong> if, for all admissible controls,</p>
+<p>dℳ/dt &lt; 0.</p>
+<p>Persistence in such an environment strictly reduces reachable viability volume. This is a geometric characterization, not a recommendation.</p>
+<p><strong>Proposition C9.1 (Decoupling condition).</strong></p>
+<p>Let systems A and B be coupled with joint dynamics. Decoupling is agency-preserving for A if and only if the coupled drift acting on A exceeds A’s isolated drift:</p>
+<p><strong>|f_coupled,A(x)| &gt; |f_A(x)|.</strong></p>
+<p>Decoupling is preferred when the coupling increases the effective drift on A beyond what A experiences in isolation.</p>
+<p>You know this. The relationship that costs more energy to maintain than it provides is a relationship that increases your drift. The mathematics says: leave. Not because leaving is morally right. Because the geometry of your viability kernel contracts while you stay.</p>
+<p>This is a necessary and sufficient condition for decoupling to instantaneously increase dℳ_A/dt. It does not account for future recoupling opportunities or transient effects.</p>
+<h2>C10 — Falsifiability and Closure</h2>
+<h2>C10.1 — Falsifiers</h2>
+<p>Paper C is falsified if any of the following are observed.</p>
+<p><strong>F_C1</strong>. ℳ(x) increases without corresponding control expenditure (violates C5.1).</p>
+<p><strong>F_C2.</strong> Irreversible loss of reachability is reversed without external intervention violating the admissibility constraints of Paper A.</p>
+<p><strong>F_C3.</strong> Stable control persists beyond Σ_NR under admissible control (violates C4.2).</p>
+<p><strong>F_C4 (Free lunch</strong>). A system maintains ℳ(x) &gt; 0 indefinitely with B₀ finite and no external resource input, in the presence of persistent nonzero drift. Violates Theorem C5.1.</p>
+<p><strong>F_C5 (Resurrection</strong>). A system recovers ℳ(x) &gt; 0 after reaching ℳ = 0 (ruin) without external intervention that violates the admissibility constraints of Paper A. Violates C4.2.</p>
+<h2>C10.2 — Closure</h2>
+<p>Paper C introduces no new physics. It applies the irreversible and selective constraints of Papers A and B to controlled dynamics within a realized record sector.</p>
+<p>Identification of concrete systems instantiating these constraints — biological, engineered, or otherwise — is treated separately. No extension of this argument is possible without new physical assumptions.</p>
+<h2>Experimental Instantiation</h2>
+<p>The definitions and propositions of Paper C are abstract control-theoretic structures. They become empirically meaningful when instantiated in concrete systems.</p>
+<p>Two candidate systems are outlined below — one biological, one engineered — to demonstrate that the argument makes operationally testable predictions.</p>
+<h2>System 1: Bacterial chemotaxis</h2>
+<p>A bacterium navigating a nutrient gradient instantiates the scalar control model.</p>
+<ul class="plain"><li><strong>State.</strong> Nutrient concentration at cell location.</li><li><strong>Drift.</strong> Diffusion-driven nutrient depletion (a &gt; 0).</li><li><strong>Control.</strong> Flagellar motor switching (u ∈ {run, tumble}).</li><li><strong>Budget.</strong> Metabolic energy store (ATP).</li><li><strong>Viability kernel.</strong> Nutrient concentrations supporting growth.</li><li><strong>No-return surface.</strong> Starvation threshold below which metabolic shutdown is irreversible.</li></ul>
+<p><strong>Testable prediction.</strong> Survival time scales with initial metabolic reserve divided by maintenance metabolic rate (Theorem C5.1).</p>
+<p><strong>Noise.</strong> Brownian rotational diffusion acts as stochastic forcing ξ, taxing the control budget (Proposition C6.1). <strong>Observable:</strong> mean survival time decreases with increasing environmental noise, controlling for nutrient availability.</p>
+<p><strong>Falsifier (C10.1, F_C1).</strong> If a non-motile mutant (u_max = 0) maintains its position in the gradient without external intervention, agency as defined here is falsified — reach grew without control expenditure.</p>
+<p><strong>Falsifier (C10.1, F_C4).</strong> If a motile cell with finite ATP reserve persists indefinitely in a persistent nutrient gradient flow, the survival time bound (Theorem C5.1) is falsified.</p>
+<p>The experiments are within the capability of standard microfluidics laboratories. Every construct in Paper C — drift, control, horizon, budget, fatigue, noise, slack, ruin — maps to a measurable variable in this system.</p>
+<h2>System 2: Autonomous robotic navigation</h2>
+<p>A battery-powered robot avoiding obstacles instantiates the 2D control model.</p>
+<ul class="plain"><li><strong>State.</strong> (Position, battery level) ∈ ℝ² × ℝ₊.</li><li><strong>Drift.</strong> Gravitational or terrain slope.</li><li><strong>Control.</strong> Motor torque (u ∈ U, bounded by motor capacity).</li><li><strong>Budget.</strong> Battery charge (B₀).</li><li><strong>Viability kernel.</strong> States from which the robot can reach a charging station before battery depletion.</li><li><strong>No-return surface.</strong> States where remaining battery is insufficient to reach any charger under optimal control.</li></ul>
+<p><strong>Testable prediction.</strong> The robot’s reachable viable set shrinks monotonically as battery depletes (Proposition C2.1).</p>
+<p><strong>Slack.</strong> Time-to-boundary under zero motor input = coasting distance / terrain slope.</p>
+<p><strong>Observable.</strong> Optimal control policies should exploit silence (zero motor) on favorable slopes, consistent with C6.2.</p>
+<p>These instantiations are not metaphors. Each maps the abstract quantities (ℳ, B, s, Σ_NR) to physically measurable variables with quantitative predictions. Failure of the predictions in either system falsifies the corresponding propositions of Paper C.</p>
+<h2>C11 — Structural Closure</h2>
+<p>The trilogy establishes a layered, one-way dependency chain.</p>
+<p><strong>Paper A</strong> — irreversibility as loss of reachability under bounded control. Defines Actualization State, proves monotonicity under decohering dynamics, and establishes no-return surfaces. Independent of Papers B and C.</p>
+<p><strong>Paper B</strong> — selection as costly, rate-limited, irreversible exclusion of alternative record sectors, if it exists. Derives structural requirements and a falsifiable gravitational rate bound. Depends on Paper A. Independent of Paper C.</p>
+<p><strong>Paper C</strong> — agency as normalized reachable viability volume under constrained control within a single realized record sector. Establishes propositions on agency decay under drift (C2.1), survival time bounds (C5.1), noise-induced depletion (C6.1), non-conservation under coupling (C7), and slack-agency correspondence (C8.1). Provides worked examples and experimental instantiations in biological and engineered systems. Depends on Paper A. Uses the outcome of Paper B but not its mechanism.</p>
+<p>Failure of Paper C does not invalidate Paper B. Failure of Paper B does not invalidate Paper A. Each layer is independently falsifiable.</p>
+<p>What remains is empirical. Which systems realize these structures, and how closely.</p>
+<p>End of Paper C. Agency as Constrained Control. Locked · Execution-Complete.</p>
+<p>Forward reference. Paper C’s agency apparatus measures what the operator can do on the records-side of the now — the reach within the viability kernel, the control authority against drift, the no-return surface as absorbing boundary. AP43 (The Gravity of Possibilities) develops the structural dual on the pre-state side: the four-term system of coupling capacity, pattern, pattern coherence, and tracking coherence. AP43 reads what the body leans into ahead of actualisation; Paper C measures what the body has already accumulated as agency on what is written. The two are duals across the eye. AP43 opens Notebook VII of the work and inherits AP01’s apparatus as the records-side anchor for the operator-interface sector.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap01-the-actualization-state/paper-b-selection-as-irreversible-exclusion/"><small>Previous</small>Selection as Irreversible Exclusion</a><div class="up"><small>Back to</small><a href="/proofs/ap01-the-actualization-state/">The Actualization State</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap01-the-actualization-state/paper-d-coupled-viability/"><small>Next</small>Coupled Viability</a></nav>
+<p class="orig">The paper of record: <a href="/AP01_The_Actualization_State.pdf">the420code.org/AP01_The_Actualization_State.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
