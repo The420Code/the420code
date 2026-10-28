@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="This paper says what α is.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap54-seeing-alpha/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — Seeing Alpha, Artist’s Proof 54 — The 420 Code">
+<meta property="og:description" content="This paper says what α is.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap54-seeing-alpha/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — Seeing Alpha, Artist’s Proof 54 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap54-seeing-alpha/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap54-seeing-alpha/"><b>Seeing Alpha</b></a> · read in full · 1 of 17</div><ul class="modes"><li><a href="/AP54_Seeing_Alpha.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">This paper says what α is.</p>
+<div class="paper">
+<h2>0.1 — What this paper does</h2>
+<p>This paper says what α is. It reads α from the neck of the hourglass: the cut fraction, read once, the same at every window, inherited by every face of the grain. It says why the two readings of α — the break's share and the flow's rate — are one number. It records every road to α's value that has been walked inside the corpus — twelve closed, two open — with the reason for each. It refuses the value in advance and files the protocol under which a value would be sought. It changes no number. The corpus stands at one measured input, as AP24 §5.5 left it; this paper supplies the reasons.</p>
+<h2>0.2 — Dependencies</h2>
+<p>AP01 (The Actualization State), Paper B, Postulate G with D15–D16: the selection rate bounded by gravitational distinguishability, λ ≤ ΔE_G/ℏ. Load-bearing for §6.</p>
+<p>AP06 (The Leakage Constant) v2, §7 and §9: ε ≡ η by Identification 6.1, interpretive; ε &gt; 0 derived from finite c; the value measured, domain-dependent, 1/137 assigned to the electromagnetic boundary by The Lock. Load-bearing for §2 and §10.</p>
+<p>AP08 (The Identity) §5.1: κ is defined as Gmₑ²/2, and G = 2κ/mₑ² is tautological — the coefficient has been relabelled, not independently derived; KS-I.3 and KS-I.4. Load-bearing for §10 Road Four.</p>
+<p>AP10 (The Dimension) FINAL, §5.1: the six residual faces read as three conjugate pairs by axis — G with c, the substrate stiffness with α_em, mₑ with t — the residual's cross-check on 3+1, fenced by KS-D.1. Load-bearing for §10 Road Nine.</p>
+<p>AP15 (The Connection) v2, §5 and the honesty statement: symmetry, dimension and conservation fix the Maxwell action at leading derivative order up to a coupling constant, whose dimensionless strength is α_em; KS-4 LIVE — HARD, with the value named there as the work of AP24 and AP28. Load-bearing for §10's closing and §11.</p>
+<p>AP24 (The Residual): §2 the six faces; §3.1 the relations as dictionary entries; §5.4 determined, not derivable from within; §5.5 honest status; KS-35, KS-36; D1. Load-bearing throughout, with the dated notes of §13.</p>
+<p>AP28 and AP44: the twenty-one windows compounding as α²¹, the neck as the ring, G = α²¹(1+1/π)/(1+α)·ℏc/mₑ². Load-bearing for §6.</p>
+<p>AP45 (The Blink) FINAL v1.7, §6: the closing twelve and the arena's nine; the balance partition pairing mₑ with G, α with c, the substrate with τ; the overlay coincident on all eighteen; and the ruling that the channel counts are geometry, fenced from arithmetic, generating no fraction. Load-bearing for §10 Roads Two and Nine.</p>
+<p>AP46 (The Stretch) v1.5: §5 the tick as the reduced Compton time, ruled; §6 every door at α, the duty 18/21, the cycle (21/18)·α⁻¹⁸ ticks; §2 the pinned splinter; §8 the shed per grain. Load-bearing for §4, §5, §7 and §10.</p>
+<p>AP49 (The Hold): the chain of holders. Load-bearing for §10 Road Six.</p>
+<p>AP50 (The Neck): §2 the neck as the grain's own aperture; §3 why exactly one reading is dimensionless; §4 eighteen held and three written; §5 a window as a completed exchange worth α; §8 one grain uncoupled. Load-bearing throughout.</p>
+<p>AP51 (The Glass): the operators many, the awareness one; the pupil as the +1×ε; P-GLASS.1. AP52 (Reading Relativity): the now as the moment of writing and reading; a site's clock its own count. AP53 (Gravity Is the Neck): the neck as gravity; the source as what has landed. Load-bearing for §3, §5, §6 and §8.</p>
+<p>The Keys, Book 1 — The Hourglass: the picture. The Basic Story v0.2 §4: the six describings owed before this paper starts — the rope, the 137, the blink, the return, the leak, entropy — all given by 12 September 2026, entropy with one sentence owed (§9).</p>
+<p>No audit marks remain in this paper. Every locus above was read at the desk from the file of record; AP24 The Residual v2 was read at the desk on 12 September 2026 and every locus cited here and in §13 was checked against it.</p>
+<h2>0.3 — Axiom mapping</h2>
+<p><strong>S.</strong> Perfect symmetry, the 1:1, zero entropy — the full potential of entropy (§9). The push that keeps the break as small as possible.</p>
+<p class="centre"><strong>B.</strong> The break, the grain, ε; the one grain uncoupled at every now, the slack in the rope (§4, §5).</p>
+<p><strong>R.</strong> The record: the eighteen taut ropes on a held grain; writing and reading one action at the now (§5); the record readable only after the now (§2).</p>
+<p><strong>C.</strong> Propagation under the constraint of c; the material face's two stiffnesses whose ratio is c² (§2); no second reading of that face (§10).</p>
+<p>And α against each of the four, in the author's words. α as potential is the balanced, stable coupling — symmetry. α as the moment of the symmetry broken, now, relative to the held record history — the break. α as the record being reconfigured and held now, the coupling strength a relation of mass, resistance and gravity to one another and to the record history — the record. α constrained by c, in that the information that enables the writing and reading now propagates under c, and under gravity and resistance with it — the constraint. And α as the interaction between all of these happenings: the process of the happening, recorded. That last sentence is why α sits in the bracket of the axiom line and not on one of its four conditions. It is what the four do together, now.</p>
+<h2>0.4 — Epistemic status per section</h2>
+<p>§1 the axiom first — STATEMENT. §2 what α is — DEFINITION, on the author's rulings. §3 two views, one window — STRUCTURAL, switched (KS-ALPHA.1). §4 the rope and the rung — RULED. §5 the horse — DESCRIBING, in the author's words. §6 one number, two readings — IDENTIFICATION, inherited from AP06 and AP24, with the hourglass reading of it supplied here; the gravitational object an IDENTITY, caged. §7 what α is not — RULED. §8 the neck's reading — RULED as scope on AP24 §5.4. §9 entropy — DESCRIBING, complete. §10 what does not derive it — REGISTER, each route with its locus and its reason. Road Fourteen within it: DESCRIBING and RULING from the author; two no-go constructions STRUCTURAL, of the desk, caged; four internal closures CLOSED; the calibration pass CONSISTENCY, not a test; the comparison of 13 September a MISS, published. §11 the value — REFUSED. §12 switches. §13 dated notes.</p>
+<h2>0.5 — Kill switches</h2>
+<p>Inherited: KS-35 (self-consistency multiplicity) and KS-36 (wrong value), from AP24 — the value's switches since AP24 locked; this paper adds none for the value. KS-4 (α ≈ 1/137) stands where AP15 put it, LIVE — HARD, passed to AP24 for treatment through the six faces. Registered here, ARMED: KS-ALPHA.1, the side/front switch. Registered, not armed: KS-ALPHA.2, the uniqueness obligation, fireable only once a normalisation exists. P-GLASS.1 is cited, not re-registered. Full statements in §12.</p>
+<h2>0.6 — Debts</h2>
+<p>D1 (AP24) unchanged: the first-principles derivation of α. D-EM.1 unchanged: what the running means. Neither is paid, moved or narrowed by this paper.</p>
+<h2>0.7 — Items held open, not booked as debt</h2>
+<p>Which boundary's η is the structural one: AP06 §9 holds the relation between ε_gravity, ε_cosmo and the electromagnetic 1/137 open; this paper derives nothing at any boundary and owes one sentence on why the electromagnetic boundary's reading is the one read at the neck. Held open and not booked, on the author's ruling of 12 September 2026: it is not a debt in his eyes, and a debt is owed by a derivation, which this paper does not make.</p>
+<p>The three words for one object (§0.9).</p>
+<h2>0.8 — Refused, in advance and in §11</h2>
+<p>Any value for α. Any function of the counts (3, 4, 6, 16, 18, 21, 84, π) presented as α or near it. Any change to the partition, to G, to the proton or to the age. Any identification of the strong force with α or with the grab at the cut (the grab is AP53's neck; the strong force is one face, AP19). Any Planck normalisation α(m_P) = O(1) — under the Standard Model's one-loop running α is of order 1/100 at the Planck scale, not of order one. Any claim that readability, minimality or a balance selects the value: each is shown in §10 to close at every α.</p>
+<h2>0.9 — Vocabulary</h2>
+<p>One object, three words in locked papers: window (the front door, The Keys), gate (AP28, AP50), door (AP46). This paper says window throughout and reads the other two as the same. The material face is called resistance here, as the author rules; it is AP24's Face 5, the two stiffnesses whose ratio is c², and not AP30's title. α with no subscript is the fine-structure constant in this paper and nowhere collides with the stiffness ratio; where the stiffnesses are meant they are named as stiffnesses.</p>
+<p><strong>Two sixes, and they are different objects.</strong> The six readings of the grain — gravity, propagation, the coupling, mass, the material face and time — are the six that AP10 and AP24 fix, and through three dimensions they are the eighteen held. Separately, the gravity-and-resistance contest that AP46 §3 prices runs in each of three dimensions, giving six sites where a configuration snaps and reconnects. This paper calls the second the GR-six, on the author’s naming of 13 September 2026. The first keeps the name every locked paper gives it: the six readings. A matching label for it was declined, because the alternative proposed — record conditions — is already the name of the four, S, B, R and C, and a paper that has just reconciled window, gate and door should not mint a collision on the way out.</p>
+<p><strong>Bit, in two senses, and which is which.</strong> §9’s Landauer bound is the standard one, and the standard one is stated per bit — a binary distinction, the logarithm of two states. That is the first sense, and it is load-bearing where it sits. The author also uses it for the smallest unit of what light carries — what propagation delivers, as against what a configuration is. Both senses stand and neither is abandoned. Where this paper says bit it means the first. Where a describing beside it says bit it means the second, and says so there. A grain is neither: a grain is a configuration and a bit is not.</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap54-seeing-alpha/">Seeing Alpha</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap54-seeing-alpha/1-the-axiom-first/"><small>Next</small>The Axiom First</a></nav>
+<p class="orig">The paper of record: <a href="/AP54_Seeing_Alpha.pdf">the420code.org/AP54_Seeing_Alpha.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
