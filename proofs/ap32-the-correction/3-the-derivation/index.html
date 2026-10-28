@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Destabilisation is measurable (AP31); correction scales with it; five levels map to the viability corridor; Level 5 requires a fixed floor (with wrongful-removal cost) plus organism-relative scaling plus high confidence; the removal cost produces a saturation point — the genocide brake.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap32-the-correction/3-the-derivation/">
+<meta property="og:title" content="The Derivation — The Correction, Artist’s Proof 32 — The 420 Code">
+<meta property="og:description" content="Destabilisation is measurable (AP31); correction scales with it; five levels map to the viability corridor; Level 5 requires a fixed floor (with wrongful-removal cost) plus organism-relative scaling plus high confidence; the removal cost produces a saturation point — the genocide brake.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap32-the-correction/3-the-derivation/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Derivation — The Correction, Artist’s Proof 32 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap32-the-correction/3-the-derivation/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap32-the-correction/"><b>The Correction</b></a> · read in full · 4 of 15</div><ul class="modes"><li><a href="/AP32_The_Correction.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 3</p>
+<h1>The Derivation</h1>
+<p class="oneline">Destabilisation is measurable (AP31); correction scales with it; five levels map to the viability corridor; Level 5 requires a fixed floor (with wrongful-removal cost) plus organism-relative scaling plus high confidence; the removal cost produces a saturation point — the genocide brake.</p>
+<div class="paper">
+<h2>Step 1 — Destabilisation is measurable</h2>
+<p>AP31 establishes that every action is classified as stabilising or destabilising with confidence p computed from accumulated records. The geometric cost C is the coupling capacity reduction the action produces.</p>
+<p>For justice: given the total record set of a node’s actions, what is the net destabilisation produced, and what is the projected future destabilisation given the accumulated pattern?</p>
+<p>Past is measured. Future is predicted. Prediction tightens as records accumulate (Axiom R). A first offence has a wide prediction range. A tenth offence has a narrow one.</p>
+<p><strong>Record bias.</strong> Historical record sets are contaminated by systemic prejudice. Centuries of racialised policing, biased sentencing, and discriminatory enforcement are records. They are permanent (Axiom R). But records of a biased system encode the bias.</p>
+<p>The consequence geometry computed from biased records will reproduce the bias. The architecture requires auditing the record set for systemic bias before computing the geometry.</p>
+<p>Cleaning the input is a structural requirement, not an optional safeguard.</p>
+<p>KS-32.1: If destabilisation cannot be measured with convergent confidence from accumulated records. KS-32.7: If the architecture is turned against a group rather than a measured deed — or if the record set it depends on is not audited for systemic bias — the output is corrupted and the architecture is weaponised.</p>
+<h2>Step 2 — Correction scales with destabilisation</h2>
+<p>The organism’s response is correction: an action that restabilises. Optimal correction = maximum coherence restored per unit of correction cost. Minor destabilisation → minor correction. Catastrophic destabilisation → catastrophic correction.</p>
+<p>This is the distinction between structural justice and retribution. Retribution asks: how much should the offender suffer? Structural justice asks: what correction most efficiently restabilises the organism?</p>
+<p>A retributive system may under-correct (the offender suffers but remains destabilising) or over-correct (consuming resources that could stabilise elsewhere).</p>
+<h2>Step 3 — The correction hierarchy mapped to viability geometry</h2>
+<p>Each correction level corresponds to a position on the coupled viability corridor (AP01).</p>
+<p><strong>Level 1 —</strong> Restitution. The node remains within the corridor. Coupling restored directly by the destabiliser becoming the restabiliser. Maximum efficiency — no third-party resources consumed.</p>
+<p><strong>This includes restorative justice practices:</strong> victim-offender mediation, community reparation, transformative processes. The axioms do not merely permit these. They rank them as the most efficient correction where they work.</p>
+<p><strong>Level 2 —</strong> Restriction. The node’s corridor is narrowed but the node remains. Fines (reduced resource coupling), community service (directed stabilisation), probation (monitored coupling), restraining orders (specific pathways severed).</p>
+<p><strong>Level 3 —</strong> Separation. The node temporarily exits the corridor. Incarceration. The organism bears the maintenance cost. The node cannot destabilise because it cannot couple.</p>
+<p><strong>Level 4 —</strong> Permanent separation. The node is permanently outside the corridor. Indefinite maintenance cost. The window remains in the building but is sealed.</p>
+<p><strong>Level 5 —</strong> Removal. The node’s corridor is closed permanently. No maintenance cost. The window closes. The I does not die — the I is the building, not the window.</p>
+<p>The hierarchy selects the lowest level that achieves sufficient restabilisation. Removal is never selected when separation suffices. Separation is never selected when restriction suffices. Minimum intervention for maximum stabilisation.</p>
+<p>You have just watched five levels lay themselves out on one axis. The axis is efficiency. Not desert. Not emotion. Not revenge. Efficiency — measured in coherence restored per unit of cost.</p>
+<p>KS-32.2: If a lower level can produce equal stabilisation to a higher level for the same case, and the architecture selects the higher level, the ranking is wrong.</p>
+<h2>Step 4 — The removal threshold</h2>
+<p>Level 5 requires two conditions simultaneously.</p>
+<p><strong>Condition A —</strong> The fixed floor. The destabilisation D must exceed a minimum absolute threshold F. Let C_sep = maintenance cost of permanent separation per unit time. Let B_total = organism’s total coupling budget.</p>
+<p>The floor F is the destabilisation at which maintaining the node in permanent separation costs more than removal: F ≥ C_sep / B_total.</p>
+<p>Below this floor, Level 4 is always more efficient than Level 5 regardless of organism state.</p>
+<p>The floor must also incorporate the cost of wrongful removal. Removal is irreversible (Axiom R).</p>
+<p>If subsequent records reveal the measurement was wrong — misattributed destabilisation, faulty prediction, corrupted records — the window is permanently closed based on error.</p>
+<p>This permanent loss of the wrongly-removed node’s future stabilising potential must be factored into F. The irreversibility cost raises the floor, which makes removal rarer. This is structurally correct.</p>
+<p><strong>Condition B —</strong> Organism-relative scaling. The effective threshold adjusts with the organism’s current robustness R. A robust organism (high coherence, wide corridor, large reserves) has a higher effective threshold.</p>
+<p>A fragile organism (low coherence, narrow corridor) has a lower one. Candidate functional form: Threshold_eff = F × (R/R₀)^α, where R₀ is baseline robustness and α is a scaling exponent.</p>
+<p>The exact α is Debt 25. Linear (α=1): threshold scales directly. Sublinear (α&lt;1): threshold increases more slowly with robustness.</p>
+<p><strong>The confidence requirement.</strong> Because removal is irreversible and wrongful removal is permanent, the confidence threshold for Level 5 must be extraordinarily high — structurally higher than for any other level.</p>
+<p>If the required confidence cannot be achieved given measurement uncertainty and adversarial record-injection (AP31 KS-31.9), Level 5 is structurally unreachable.</p>
+<p>KS-32.3: If permanent separation is always more stabilising than removal regardless of cost, Level 5 is never justified.</p>
+<p>KS-32.8: If the confidence required for Level 5 cannot be achieved given measurement uncertainty and adversarial record-injection, Level 5 is structurally unreachable and should be removed from the hierarchy.</p>
+<h2>Step 5 — The structural genocide brake</h2>
+<p>This is the step that matters most. Read it slowly.</p>
+<p>A fragile organism that begins removing nodes becomes more fragile. Each removal costs coupling capacity (a window lost) and record-generating diversity (one fewer perspective). This loss is itself a destabilisation that enters the measurement.</p>
+<p>Each removal raises fragility, which lowers the threshold, which could enable more removals. This is the structural pathway to genocide.</p>
+<p>The geometry prevents it. Each removal’s cost (lost coupling capacity + lost diversity) is a destabilisation that raises the organism’s fragility, which changes the geometry.</p>
+<p>Beyond some number of removals, the cumulative cost of further removal exceeds the cost of the destabilisation it addresses. The architecture produces a natural saturation point: the removal curve is self-limiting.</p>
+<p>The organism cannot remove its way to stability because removal is itself destabilising. The saturation point is the structural genocide brake. It exists in the geometry.</p>
+<p>A civilisation that reaches the saturation point and continues removing is no longer following the derivation. It is overriding the geometry with ideology. KS-32.7 (dehumanisation) fires. The architecture has been weaponised.</p>
+<p>You have just watched the geometry build its own brake. No external authority imposes the limit. The coupling cost imposes the limit.</p>
+<p>The same way ε is the only stable break — not by decree but by geometry — the genocide brake is the only stable correction boundary.</p>
+<p>The architecture cannot be driven past the saturation point without self-destructing. That is the safety.</p>
+<p>KS-32.5: If the genocide brake does not engage — if the removal cost does not produce a saturation point — the self-limiting property fails and the hierarchy is structurally dangerous.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap32-the-correction/2-the-problem-with-current-justice/"><small>Previous</small>The Problem with Current Justice</a><div class="up"><small>Back to</small><a href="/proofs/ap32-the-correction/">The Correction</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap32-the-correction/4-the-compassion-in-the-severity/"><small>Next</small>The Compassion in the Severity</a></nav>
+<p class="orig">The paper of record: <a href="/AP32_The_Correction.pdf">the420code.org/AP32_The_Correction.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
