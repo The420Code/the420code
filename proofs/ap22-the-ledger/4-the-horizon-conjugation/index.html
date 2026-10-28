@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Theorem 1 (Horizon Conjugation). The event horizon is the macroscopic expression of the σ-boundary. The σ-involution, restricted to the horizon, implements CPT conjugation (up to spatial rotation about the radial axis).">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap22-the-ledger/4-the-horizon-conjugation/">
+<meta property="og:title" content="The Horizon Conjugation — The Ledger, Artist’s Proof 22 — The 420 Code">
+<meta property="og:description" content="Theorem 1 (Horizon Conjugation). The event horizon is the macroscopic expression of the σ-boundary. The σ-involution, restricted to the horizon, implements CPT conjugation (up to spatial rotation about the radial axis).">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap22-the-ledger/4-the-horizon-conjugation/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Horizon Conjugation — The Ledger, Artist’s Proof 22 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap22-the-ledger/4-the-horizon-conjugation/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap22-the-ledger/"><b>The Ledger</b></a> · read in full · 6 of 14</div><ul class="modes"><li><a href="/AP22_The_Ledger.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 4</p>
+<h1>The Horizon Conjugation</h1>
+<p class="oneline">Theorem 1 (Horizon Conjugation). The event horizon is the macroscopic expression of the σ-boundary. The σ-involution, restricted to the horizon, implements CPT conjugation (up to spatial rotation about the radial axis).</p>
+<div class="paper">
+<p><strong>Theorem 1 (Horizon Conjugation).</strong> The event horizon is the macroscopic expression of the σ-boundary. The σ-involution, restricted to the horizon, implements CPT conjugation (up to spatial rotation about the radial axis).</p>
+<p>Specifically: σ̂ = J, where J is the Tomita–Takesaki modular conjugation of the exterior algebra in the Hartle–Hawking vacuum, and J = CPT by the Bisognano–Wichmann theorem and its curved-spacetime generalisations (Sewell 1982, Summers–Verch).</p>
+<p>The proof has two parts. Part A shows the σ-boundary coincides with the event horizon. Part B shows σ̂ = CPT there.</p>
+<p>Between them, §4.2 addresses a critical geometric subtlety: the Bisognano–Wichmann theorem operates on the maximally extended four-region Kruskal geometry, but the axioms restrict the manifold to two sectors.</p>
+<p>This restriction is proved (Proposition 0). Its consequence for the commutant identification (Corollary) is a structural reading the axioms motivate, not a result delivered by the imported modular theory — standard theory maps a wedge to its causal complement (the opposite exterior), and the identification of the interior as the commutant is asserted on the two-sector topology, not derived from Sewell. This is the open step KS-46B holds (ADDRESSED, not closed).</p>
+<h2>4.1 — Part A: The σ-boundary is the event horizon</h2>
+<p>(A1) On the manifold (AP20, AS = manifold), the two sectors ℒ and 𝒫 must be expressed as two regions. The boundary between them is the σ-boundary: the surface where the sector character changes.</p>
+<p>(A2) AP17 identifies the sector characters: ℒ is the 1-condition (propagation — signals can escape to arbitrary distance). 𝒫 is the 0-condition (fold — Axiom C forces compactification; signals cannot escape).</p>
+<p>(A3) Axiom C imposes a finite propagation bound c. This creates the causal structure of the manifold (AP05, AP08). In particular, it creates surfaces beyond which no signal can propagate outward.</p>
+<p>In coordinate-invariant terms, the event horizon is defined as the boundary of the causal past of future null infinity (ℐ⁺): the surface separating the region from which signals can reach infinity from the region where they cannot.</p>
+<p>(A4) The 1-condition (outward propagation possible) holds in the exterior of the horizon. The 0-condition (outward propagation impossible, fold) holds in the interior. The transition between the two conditions occurs at the horizon.</p>
+<p>(A5) The σ-boundary separates the ℒ-sector (1-condition) from the 𝒫-sector (0-condition). The event horizon separates the region where outward propagation is possible from the region where it is not. These are the same surface.</p>
+<p>∴ <strong>The σ-boundary is the event horizon. (Part A</strong>)</p>
+<p>Epistemic note: This argument uses the coordinate-invariant definition of the event horizon (boundary of causal past of ℐ⁺), not Schwarzschild coordinates. It depends on AP17’s identification of 1-pole/0-pole with propagation/fold.</p>
+<p>If AP17’s identification is wrong, Part A is wrong. See Gap 5 (§4.4) for further discussion.</p>
+<h2>4.2 — The two-sector topology</h2>
+<p><strong>The Kruskal problem.</strong> The maximally extended Schwarzschild solution has four regions in the Kruskal–Szekeres diagram:</p>
+<p>Region I — exterior (the observable universe outside the horizon)</p>
+<p>Region II — black hole interior (future singularity — the collapse domain)</p>
+<p>Region III — white hole interior (past singularity — the expansion domain)</p>
+<p class="centre">Region IV — other exterior (a causally disconnected second exterior universe)</p>
+<p>The Bisognano–Wichmann theorem and its curved-spacetime generalisations operate on this four-region structure. The modular conjugation J maps Region I ↔ Region IV (the two exteriors).</p>
+<p>It does NOT map Region I → Region II (exterior → interior). The commutant of the exterior algebra 𝒶_I is the algebra 𝒶_IV of the other exterior, not the algebra of the interior.</p>
+<p class="centre">AP22 requires σ̂ to map Region I → Region II (exterior → black hole interior).</p>
+<p>If the manifold had the full four-region Kruskal structure, the uniqueness argument would fail: J and σ̂ would act on different targets.</p>
+<p class="centre"><strong>The resolution: the axioms restrict the manifold to two sectors, not four.</strong></p>
+<p><strong>Proposition 0 (Two-Sector Topology</strong>). The axioms {S, B, R, C} restrict the manifold to exactly two sectors: ℒ (exterior) and 𝒫 (interior).</p>
+<p>Regions III and IV of the maximally extended Schwarzschild solution do not exist on the manifold.</p>
+<p><strong>Proof.</strong> The argument proceeds in three steps.</p>
+<p><strong>Step 1 (Axiom R kills Region III).</strong> Region III is the white hole interior — the time-reversed black hole. In Region III, matter emerges from a past singularity and expands outward.</p>
+<p>This is a time-reversed process: it requires records to be unwritten, actualisations to be undone. Axiom R (irreversibility of records) prohibits this. White holes are structurally forbidden. Region III does not exist on the manifold.</p>
+<p><strong>Step 2 (Axiom S kills Region IV</strong>). Axiom S defines exactly one involution σ connecting exactly two sectors: ℒ and 𝒫. The involution is unique — there is one σ, not two.</p>
+<p>Region IV would be a second copy of ℒ — a second exterior. But σ connects one ℒ to one 𝒫.</p>
+<p>A second exterior would require either a second involution (violating Axiom S) or identification of Region IV with ℒ (making it the same region, not a new one).</p>
+<p>Region IV does not exist as an independent sector on the manifold.</p>
+<p><strong>Step 3 (The manifold is two-sector</strong>). With Regions III and IV eliminated, the black hole spacetime has exactly two regions: the exterior (Region I = ℒ) and the interior (Region II = 𝒫).</p>
+<p>The σ-boundary is the event horizon separating them.</p>
+<p>You have just watched two axioms — irreversibility and symmetry — kill half of general relativity’s maximally extended solution. White holes die because records cannot be unwritten. Parallel universes die because the involution is unique.</p>
+<p>What remains is what you observe: an outside and an inside, separated by a horizon.</p>
+<p><strong>Corollary (Commutant identification — structural reading). In the two-sector topology, the axioms motivate identifying the commutant of the exterior algebra 𝒶_ℒ with the interior algebra 𝒶_𝒫 — 𝒶′_ℒ = 𝒶_𝒫. This identification is the structural reading the axioms support; it is not delivered outright by the imported modular theory and is held open under KS-46B (see §4.4</strong>).</p>
+<p><strong>Structural reading</strong>. The two-sector topology motivates treating the exterior and interior as a bipartite system, ℋ ≈ ℋ_ℒ ⊗ ℋ_𝒫, in which the commutant of 𝒶_ℒ is 𝒶_𝒫 by the tensor-product commutation theorem. This bipartite factorisation is the structural assumption: the local algebras of the horizon are type III, for which no such factorisation holds in general and the modular commutant 𝒶′_ℒ is the algebra of the causal complement rather than of the interior.</p>
+<p>Identifying the two is the reading the axioms support; closing the gap requires either a split-property argument that delivers the factorisation across the horizon, or a direct construction of σ̂ on the type III algebra. This is what KS-46B holds open.</p>
+<p>Why this resolves the Kruskal mismatch. In the maximally extended Schwarzschild, J maps 𝒶_I → 𝒶_IV because the commutant of 𝒶_I is 𝒶_IV. In the two-sector topology, the commutant of 𝒶_ℒ is 𝒶_𝒫 (the interior).</p>
+<p>Therefore J maps 𝒶_ℒ → 𝒶_𝒫. The modular conjugation now targets the correct region.</p>
+<p>Note: The physical content of the two-sector topology is that black holes are formed by gravitational collapse from the exterior (AP21, direct vacuums), not extracted from an eternal Kruskal geometry.</p>
+<p>This is consistent with astrophysical reality: real black holes form by collapse; Regions III and IV are artefacts of the maximal analytic extension, not physical regions.</p>
+<p>See Gap 5 (§4.4) for the bifurcation tension this creates.</p>
+<h2>4.3 — Part B: σ = CPT at the horizon</h2>
+<p>The derivation has four stages: (1) show the derived QFT satisfies the conditions needed for modular theory at horizons, (2) apply the Bisognano–Wichmann / Sewell / Kay–Wald results to the Killing horizon, (3) show that σ̂ satisfies the same defining properties as J, (4) use uniqueness to conclude σ̂ = J = CPT.</p>
+<p><strong>Stage 1: The derived QFT satisfies the conditions for modular theory at horizons.</strong></p>
+<p>The Bisognano–Wichmann theorem (Minkowski space) requires the Wightman axioms.</p>
+<p>Its curved-spacetime generalisations (Sewell 1982; Kay–Wald 1991; Summers–Verch) require adapted conditions: global hyperbolicity, local commutativity (Einstein causality), existence of a suitable Hadamard/KMS state, and the cyclic/separating property for the wedge algebra.</p>
+<p>These conditions are met by the derived QFT:</p>
+<p>W1 — Local Lorentz covariance. The axioms derive Lorentzian spacetime (AP05) and the Einstein field equations (AP08). The Lorentzian signature gives local Lorentz structure in the tangent space at every point.</p>
+<p>Global Poincaré symmetry holds only asymptotically; the relevant condition for curved-spacetime AQFT is local Lorentz covariance, which is automatic from the derived metric structure.</p>
+<p>W2 — Spectral condition (energy bounded below). By AP21’s Energy–Measure Bridge (Lemma): all energy is a manifestation of the break ε. The 1:1 is the zero-energy ground state.</p>
+<p>Energy is proportional to the record measure μ, which is non-negative (it counts actualisations). The spectrum of the Hamiltonian is bounded below by zero.</p>
+<p>W3 — Existence and uniqueness of vacuum. The vacuum is the 1:1 state — the state with no records, no actualisations, perfect symmetry. It exists by the axiom structure (the 1:1 is the starting point).</p>
+<p>Its uniqueness follows from Axiom B: ε is the single generator of all departures from 1:1, so the path from vacuum to any excited state is through ε.</p>
+<p>The vacuum is the unique state annihilated by all lowering operators.</p>
+<p>W4 — Local commutativity (microcausality). Axiom C bounds propagation at c. Two regions separated by a spacelike interval cannot communicate. Therefore observables localised in spacelike-separated regions commute: [𝒶(O₁), 𝒶(O₂)] = 0 for O₁, O₂ spacelike.</p>
+<p>This is microcausality, forced by Axiom C.</p>
+<p>W5 — Completeness (cyclicity of vacuum). The Reeh–Schlieder theorem follows from the spectral condition (W2) and local commutativity (W4) in the AQFT framework.</p>
+<p>Since W1–W4 hold, the vacuum is cyclic and separating for local algebras.</p>
+<p>Caveat: The conditions above are stated in the language of the Wightman axioms for expository clarity. The rigorous curved-spacetime framework is algebraic QFT (Haag–Kastler nets with the microlocal spectrum / Hadamard condition).</p>
+<p class="centre">The physical content is the same; the formal packaging differs. See Gap 1 (§4.4).</p>
+<p>The derived QFT satisfies the conditions needed for modular theory at horizons. The Bisognano–Wichmann theorem and its curved-spacetime generalisations are available.</p>
+<p><strong>Stage 2: The modular conjugation at a Killing horizon.</strong></p>
+<p>Background (Tomita–Takesaki theory).</p>
+<p>For a von Neumann algebra 𝒶 with a cyclic and separating vector |Ω⟩, there exists a unique pair (J, Δ) where J is an anti-linear isometric involution (the modular conjugation) and Δ is a positive self-adjoint operator (the modular operator), determined by the polar decomposition of the Tomita operator S: a|Ω⟩ ↦ a*|Ω⟩.</p>
+<p>The key properties: J|Ω⟩ = |Ω⟩, J𝒶J = 𝒶′ (J maps the algebra to its commutant), and Δ^{it} generates the modular automorphism group.</p>
+<p>The Bisognano–Wichmann theorem (1975–76).</p>
+<p>For a relativistic QFT satisfying the Wightman axioms on Minkowski space, the modular conjugation J associated with a Rindler wedge algebra and the vacuum implements CPT (up to a spatial rotation by π about the edge of the wedge): J = Θ · R₁(π), where Θ is the CPT operator.</p>
+<p>The Sewell extension (1982). Sewell proved an analogue of Bisognano–Wichmann for quantum fields on spacetimes with bifurcate Killing horizons.</p>
+<p>In the Hartle–Hawking (KMS) state at the Hawking temperature, the modular flow is the Killing flow, and the modular conjugation implements a CRT-type transformation (charge conjugation × reflection × time reversal) across the horizon.</p>
+<p>This is the curved-spacetime result that identifies J = CPT at the horizon.</p>
+<p>Kay–Wald (1991). Kay and Wald established the uniqueness and thermal (KMS) properties of states on spacetimes with bifurcate Killing horizons under wedge-reflection isometry assumptions.</p>
+<p>Their results provide the state-theoretic foundation: the Hartle–Hawking vacuum is the unique KMS state at the Hawking temperature T_H = ℏc³/(8πGMk_B), and this KMS property is what makes the Tomita–Takesaki modular theory physically meaningful at the horizon.</p>
+<p>Application to the argument. AP08 derives the Schwarzschild solution. A Schwarzschild black hole has a bifurcate Killing horizon (the bifurcation 2-sphere in the maximally extended solution).</p>
+<p>The Hartle–Hawking vacuum is the unique KMS state at the Hawking temperature. By Stage 1, the derived QFT satisfies the conditions for modular theory.</p>
+<p>By §4.2, the topology is two-sector, so the commutant of 𝒶_ℒ is 𝒶_𝒫.</p>
+<p>Therefore the Sewell / Kay–Wald results apply: J maps 𝒶_ℒ → 𝒶_𝒫 and J = CPT (up to spatial rotation about the radial axis).</p>
+<p>Note on collapse-formed black holes. The black holes in this argument are formed by gravitational collapse (AP21, direct vacuums), not extracted from an eternal Kruskal geometry.</p>
+<p>A collapse-formed black hole has no past horizon and no bifurcation surface at early times.</p>
+<p>However, at late times after collapse, the near-horizon geometry approaches the stationary Schwarzschild geometry exponentially fast (the “peeling” property), and the physical Unruh state (appropriate for collapse) approaches the Hartle–Hawking KMS state in the exterior region.</p>
+<p>Sewell’s result then applies in this late-time regime: the modular structure of the exterior algebra converges to that of the stationary case, and J = CPT holds asymptotically.</p>
+<p>The segregation mechanism (§5) operates at late times — after the horizon has formed and the near-horizon geometry has settled — so this late-time applicability is sufficient.</p>
+<p><strong>Stage 3: σ̂ satisfies the defining properties of J.</strong></p>
+<p>(P1) σ̂ is an involution. σ² = id (Axiom S). Therefore σ̂² = 1.</p>
+<p>(P2) σ̂ is anti-linear. By Part A, σ maps ℒ (exterior) to 𝒫 (interior) at the horizon. The Killing vector field ∂/∂t is timelike in the exterior and spacelike in the interior.</p>
+<p>The modular flow Δ^{it} is generated by the Killing flow, which evolves forward in the exterior and has a qualitatively different character in the interior.</p>
+<p>The modular conjugation J, which interchanges the algebra with its commutant, is anti-linear by the Tomita–Takesaki construction (it arises from the anti-linear Tomita operator S via polar decomposition).</p>
+<p>Since σ̂ is to be identified with J, it must be anti-linear. More directly: σ̂ maps the exterior algebra to the interior algebra across the horizon, interchanging the two sectors.</p>
+<p>By Wigner’s theorem, any symmetry of quantum mechanics is either unitary or anti-unitary.</p>
+<p>A symmetry that interchanges a von Neumann algebra with its commutant while preserving the vacuum in a KMS state is necessarily anti-linear — this is a structural property of the Tomita–Takesaki construction, not a separate assumption.</p>
+<p>Formal proof of anti-linearity. The Tomita operator S for the pair (𝒶_ℒ, |Ω_HH⟩) is defined by S(a|Ω_HH⟩) = a*|Ω_HH⟩ for all a ∈ 𝒶_ℒ.</p>
+<p>S is anti-linear because the adjoint map a ↦ a is anti-linear: S(λ · a|Ω_HH⟩) = (λa)|Ω_HH⟩ = λ̄ · a*|Ω_HH⟩ = λ̄ · S(a|Ω_HH⟩).</p>
+<p>The polar decomposition S = JΔ^{1/2} gives J anti-linear (since S is anti-linear and Δ^{1/2} is a positive linear operator, J = SΔ^{−1/2} inherits the anti-linearity of S).</p>
+<p>Now: σ̂ satisfies the same defining properties as J — it is an involution (P1), maps 𝒶_ℒ to 𝒶′_ℒ (P3), and preserves |Ω_HH⟩ (P4).</p>
+<p>By the uniqueness of the Tomita–Takesaki modular conjugation (Stage 4), σ̂ = J. Since J is anti-linear by construction, σ̂ is anti-linear.</p>
+<p>The anti-linearity of σ̂ is therefore not an assumption but a consequence of the Tomita–Takesaki theorem applied to the pair (𝒶_ℒ, |Ω_HH⟩).</p>
+<p>(P3) σ̂ maps 𝒶_ℒ to 𝒶_𝒫. By Part A, σ maps ℒ (exterior) to 𝒫 (interior).</p>
+<p>On the manifold, σ̂ maps local observables in the exterior to local observables in the interior: σ̂ 𝒶_ℒ σ̂ = 𝒶_𝒫. By the Corollary of §4.2, 𝒶_𝒫 = 𝒶′_ℒ.</p>
+<p>Therefore σ̂ 𝒶_ℒ σ̂ = 𝒶′_ℒ, which is the defining property of a modular conjugation.</p>
+<p>(P4) σ̂ preserves the vacuum. The 1:1 is σ-invariant by construction: σ maps the 1:1 onto itself (perfect pairing under σ).</p>
+<p>The Hartle–Hawking vacuum |Ω_HH⟩ is the thermofield double state — a maximally entangled state across the two sectors that is symmetric under exchange of the tensor factors.</p>
+<p>This is precisely the σ-symmetric state: the state that looks the same from both sides of the horizon. Therefore σ̂|Ω_HH⟩ = |Ω_HH⟩.</p>
+<p><strong>Stage 4: Uniqueness → σ̂ = J.</strong></p>
+<p>By Tomita–Takesaki theory, the pair (J, Δ) is uniquely determined by the pair (𝒶, |Ω⟩) via the polar decomposition of the Tomita operator S.</p>
+<p>Given the algebra 𝒶_ℒ and the vector |Ω_HH⟩, there is exactly one anti-linear isometric involution satisfying J𝒶_ℒJ = 𝒶′_ℒ and J|Ω_HH⟩ = |Ω_HH⟩.</p>
+<p>σ̂ satisfies (P1)–(P4): it is an anti-linear involution that maps 𝒶_ℒ to 𝒶′_ℒ and preserves the vacuum. J satisfies the same properties and is uniquely determined.</p>
+<p><strong>Therefore σ̂ = J.</strong></p>
+<p>By the Sewell extension of the Bisognano–Wichmann theorem (Stage 2), J = CPT at the Killing horizon.</p>
+<p><strong>Therefore σ̂ = CPT at the horizon. (Part B)</strong></p>
+<p><strong>Interpretational note.</strong> The statement “σ̂ = CPT at the horizon” is a statement about the modular conjugation associated with the wedge algebra and the Hartle–Hawking / KMS state.</p>
+<p>It is an identification between operator-algebraic symmetries relating the two sector algebras. It is not a claim that an infalling proton dynamically transforms into an antiproton upon crossing the horizon.</p>
+<p>The CPT conjugation relates the description of states as seen from the exterior to the description of states in the interior.</p>
+<p>An infalling observer experiences nothing at the horizon — this is consistent with the equivalence principle and with Axiom C, which imposes the bound but does not create a local physical barrier.</p>
+<p>Theorem 1 stands as a structural result, not a closed proof. Part A (§4.1): the σ-boundary is the event horizon — derived. Part B (§4.3): σ̂ = J = CPT at the horizon — resting on the commutant identification (Corollary), which is a structural reading held open under KS-46B, not delivered by the imported modular theory.</p>
+<p>The two-sector topology (§4.2) ensures the modular conjugation maps exterior → interior. Five gaps are tagged below.</p>
+<p>You have just watched the axiom’s involution — the mirror built into reality at the deepest level — express itself as CPT at the event horizon. The mirror is not a metaphor.</p>
+<p>It is the Tomita–Takesaki modular conjugation, proved unique, proved anti-linear, proved to map matter to antimatter across the boundary between the two conditions of existence.</p>
+<h2>4.4 — Gap assessment</h2>
+<p>The following gaps are tagged for completeness. The derivation is presented as a theorem with tagged gaps, not as a conjecture.</p>
+<p><strong>Gap 1 (AQFT framework adaptation): SMALL.</strong> The verification in Stage 1 uses the language of the Wightman axioms for expository clarity.</p>
+<p>The Wightman axioms are formulated for Minkowski-space QFT (global Poincaré covariance, spectral condition tied to translations).</p>
+<p>On curved spacetime, the rigorous framework is algebraic QFT: Haag–Kastler nets with the microlocal spectrum condition (Hadamard condition) replacing the flat-space spectral condition.</p>
+<p>The physical conditions (energy bounded below, microcausality, cyclic/separating vacuum) transfer from the axioms to the AQFT setting. A fully rigorous treatment would restate Stage 1 in the Haag–Kastler language with the Hadamard condition explicitly verified.</p>
+<p>The weakest point is W3 (uniqueness of vacuum): the argument from “ε is the single generator” is correct in spirit but would benefit from a formal proof that the vacuum is the unique translation-invariant state in the relevant representation.</p>
+<p><strong>Gap 2 (Anti-linearity of σ̂): SMALL.</strong> The formal proof (Stage 3, property P2) shows that anti-linearity is not an assumption but a consequence of the Tomita–Takesaki construction: the Tomita operator S is anti-linear by definition (S(a|Ω⟩) = a*|Ω⟩, and the adjoint map is anti-linear); J inherits anti-linearity from S via the polar decomposition S = JΔ^{1/2}; σ̂ = J by uniqueness (Stage 4).</p>
+<p>The gap is now SMALL: the formal proof is exhibited, and the only remaining refinement would be a fully rigorous construction of the Tomita operator on the specific algebra (rather than importing it from standard AQFT).</p>
+<p>The supplementary Wigner theorem argument (σ̂ preserves transition probabilities and reverses Killing time, therefore anti-unitary) provides an independent physical route.</p>
+<p><strong>Gap 3 (Hartle–Hawking vacuum = σ-invariant state): SMALL.</strong> The identification is physically natural: the thermofield double is explicitly symmetric under exchange of the two tensor factors, which is what σ does.</p>
+<p>A formal proof would show that the KMS condition at the Hawking temperature follows from the axioms (via the periodicity of Euclidean time in the Killing structure derived in AP08) and that the resulting KMS state is the unique state with the thermofield double structure.</p>
+<p><strong>Gap 4 (Rotating black holes): MINOR.</strong> The derivation is for Schwarzschild (non-rotating). Real astrophysical black holes rotate (Kerr).</p>
+<p>The Sewell / Kay–Wald results extend to bifurcate Killing horizons in general, which includes Kerr, but the explicit verification for Kerr is not shown here.</p>
+<p><strong>Gap 5 (Bifurcation tension): CLOSED (via Sewell 1982).</strong> Proposition 0 eliminates Regions III and IV using Axioms R and S.</p>
+<p>The original tension: the Kay–Wald theorem (global version) assumes the full four-region Kruskal manifold, but the two-sector topology eliminates Regions III and IV.</p>
+<p>Resolution (via Sewell 1982). The relevant theorem is Sewell (1982), which generalises Bisognano–Wichmann to curved spacetimes. Sewell’s hypotheses are weaker than Kay–Wald’s global version.</p>
+<p>They require only: (1) globally hyperbolic spacetime, (2) a wedge region with a local bifurcate Killing horizon, (3) a KMS state with respect to the Killing flow.</p>
+<p>The axioms satisfy all three: (1) AP05 derives globally hyperbolic Lorentzian spacetime; (2) the exterior region (ℒ-sector) is a wedge bounded by a local bifurcate Killing horizon — this is a geometric property of the Schwarzschild solution near r = 2M, independent of the global extension; (3) the Hartle–Hawking state is, by definition, KMS with respect to the Killing flow at the Hawking temperature.</p>
+<p>Sewell’s conclusion: the algebra of observables for the wedge is a Type III₁ von Neumann factor, and the modular conjugation J implements CRT symmetry (charge × reflection × time reversal), which in this context is CPT.</p>
+<p>Therefore J = CPT. This result is obtained without any assumption about global manifold structure beyond the wedge — specifically, without assuming the existence of Regions III or IV.</p>
+<p>The remainder of the proof (σ̂ satisfies the defining properties of J → σ̂ = J by uniqueness) proceeds without modification.</p>
+<p>Note on standard imports: Sewell’s theorem assumes the Hadamard condition (microlocal spectrum condition) on the quantum state. This is a standard condition in curved-spacetime AQFT ensuring physical reasonableness of the state.</p>
+<p>The argument imports this as standard apparatus, at the same level as importing Gleason’s theorem (AP25) or Tomita–Takesaki theory. No new physical postulate is introduced. Gap 5 is CLOSED.</p>
+<p><strong>KS-46 status: ADDRESSED.</strong> The derivation is presented. The identification is no longer a bare conjecture — it is a theorem with five tagged gaps. KS-46 upgrades from LIVE—HARD to ADDRESSED, split as follows:</p>
+<p>KS-46A (Boundary identification): The σ-boundary = event horizon via AP17’s 1-pole/0-pole mapping. Depends on AP17. Status: DERIVED (AP17-dependent).</p>
+<p>KS-46B (AQFT bridge): The derived QFT must satisfy the conditions for modular theory on the two-sector horizon geometry. Gap 5 (bifurcation tension) CLOSED via Sewell (1982): the local theorem’s hypotheses are all satisfied.</p>
+<p>Late-time applicability for collapse-formed black holes addressed. Status: CLOSED. Hadamard condition imported as standard AQFT apparatus.</p>
+<p>KS-46C (Operator identification): σ̂ must equal J via Tomita–Takesaki uniqueness. Status: ADDRESSED (formal anti-linearity proof exhibited; uniqueness argument complete).</p>
+<p>Full closure requires: (a) formal discharge of the AQFT bridge conditions on the two-sector manifold (Gaps 1, 3 — both SMALL), (b) rigorous proof that the late-time near-horizon modular structure converges to the bifurcate-horizon result (physically established, not formally proved), (c) construction of σ̂ as a concrete Tomita operator on the specific algebra (formal anti-linearity proof exhibited; full construction uses standard AQFT apparatus).</p>
+<p>If any of these is shown to be impossible, the theorem reverts to a conjecture and the downstream results (§5.1, §6, Proposition 2) become conditional.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap22-the-ledger/3-two-kinds-of-antimatter/"><small>Previous</small>Two Kinds of Antimatter</a><div class="up"><small>Back to</small><a href="/proofs/ap22-the-ledger/">The Ledger</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap22-the-ledger/5-the-net-asymmetry/"><small>Next</small>The Net Asymmetry</a></nav>
+<p class="orig">The paper of record: <a href="/AP22_The_Ledger.pdf">the420code.org/AP22_The_Ledger.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
