@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Four steps. Each one forced. Watch the algebra lock into place.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap18-the-floor/3-the-derivation/">
+<meta property="og:title" content="The Derivation — The Floor, Artist’s Proof 18 — The 420 Code">
+<meta property="og:description" content="Four steps. Each one forced. Watch the algebra lock into place.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap18-the-floor/3-the-derivation/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Derivation — The Floor, Artist’s Proof 18 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap18-the-floor/3-the-derivation/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap18-the-floor/"><b>The Floor</b></a> · read in full · 4 of 12</div><ul class="modes"><li><a href="/AP18_The_Floor.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 3</p>
+<h1>The Derivation</h1>
+<p class="oneline">Four steps. Each one forced. Watch the algebra lock into place.</p>
+<div class="paper">
+<p>Four steps. Each one forced. Watch the algebra lock into place.</p>
+<h2>3.1 — The Widest Field Line</h2>
+<p>Consider the widest possible field line — the one you would draw if you wanted the gentlest possible curve — the one that extends to the maximum radius Rₕ before curving back. This line leaves the 1-pole (the matter, the galaxy, the visible). It propagates outward at c. It reaches Rₕ. At Rₕ, the expansion equals c. The line must curve back. It curves and returns to the 0-pole (the fold, the dark).</p>
+<p>The curvature of the line at its apex (at Rₕ) is κ_min = 1/Rₕ. This is the minimum curvature of any closing field line. Lines that close at smaller radii have larger curvature (tighter curves); the widest line has the gentlest curve, curvature 1/Rₕ. The gentlest curve in the universe. And it gives you the floor.</p>
+<h2>3.2 — The Apex Acceleration</h2>
+<p>The acceleration along a field line of curvature κ propagating at speed v is a = v²κ = v²/R. For the widest field line, propagating at c, with curvature 1/Rₕ:</p>
+<p class="eq left">a_apex = c²/Rₕ = c²/(c/H₀) = cH₀.</p>
+<p>This is the acceleration at the apex of the widest field line. It is the gentlest possible curving at the boundary of the observable manifold. It establishes the scale. The geometric correction follows.</p>
+<p><strong>Curvature–acceleration identification.</strong> Under AP20 (AS = manifold), the tension field’s curvature is the manifold’s curvature, which is the gravitational field. A field line’s curvature at a point is not merely analogous to gravitational acceleration — it is the gravitational acceleration, because the field line is a geodesic generator of the manifold itself. The formula a = v²κ therefore gives the gravitational acceleration directly, not by analogy. You are reading the manifold’s own curvature.</p>
+<h2>3.3 — The Dipole Topology (derived from {S, B, C})</h2>
+<p>Before computing the loop geometry, the topology of the tension field at galactic scales must be established. AP17 introduces the dipolar (eye) topology. Here it is derived from the axioms.</p>
+<p><strong>Step 1. One source, one sink</strong>. Axiom B provides exactly one break: ε ∈ ℒ with no σ-image in 𝒫. Valuation ν(ε) = 1 — the minimum viable splinter. At galactic scales, the galaxy is the localised concentration of the 1-state (matter, the visible). This is the source of the tension field: one 1-pole. Axiom S provides the involution σ exchanging ℒ and 𝒫. The σ-image of the 1-pole is the 0-pole (the fold, the dark). One source, one sink. Two poles.</p>
+<p><strong>Step 2. Two poles on a compact manifold.</strong> Axiom C requires boundedness. Under EH (proved AP20), the field lives on the manifold. At the galactic scale the radial structure separates from the angular: locally the field is approximately radial, and its angular component defines a vector field on the link of the source point. The link of a point in a 3-manifold is S², which is compact. Therefore the angular part of the tension field, viewed from the galactic source, lives on S², and the Poincaré–Hopf theorem applies to this S².</p>
+<p><strong>Step 3. Poincaré–Hopf forces the dipole.</strong> The Poincaré–Hopf theorem states: on a compact orientable manifold without boundary, the sum of the indices of the zeros of any vector field with isolated zeros equals the Euler characteristic. For S²: χ(S²) = 2. The angular field on the link S² has exactly two zeros — the two points where the dipole axis meets the sphere: one where field lines exit toward the 1-pole, one where they re-enter toward the 0-pole — each of index +1. Sum of indices = +1 + 1 = 2 = χ(S²). Poincaré–Hopf is satisfied with exactly these two zeros. The topology is locked. Could there be additional zeros? Additional zeros would need to come in cancelling pairs (e.g. a saddle of index −1 paired with a source of index +1) to preserve the Euler characteristic. But Axiom B provides one break with ν(ε) = 1 — the minimum viable splinter. There is one ε, one source; σ gives one sink. No additional zeros. [Scope: this exclusion applies within the single-break, single-source-sink galactic-scale model class. At multi-galactic scales or in systems with multiple localised ε-concentrations, additional zeros could appear in cancelling pairs without violating Poincaré–Hopf.] Two index-1 zeros with all field lines closing (Axiom S) on a compact manifold (Axiom C) is the definition of a dipolar field. The dipole topology is not assumed — it is forced by {S, B, C}. You did not choose it. The axioms chose it.</p>
+<p>Result: the tension field at galactic scales is dipolar. The loop circumference of a field line at radius R is 2πR. This was asserted in AP17; it is now derived from {S, B, C} via Poincaré–Hopf.</p>
+<h2>3.4 — The Loop Geometry</h2>
+<p>The field line does not just reach Rₕ and return along a radial path. It must complete a full closed loop — from the 1-pole, outward to Rₕ, back to the 0-pole, and through the interior back to the 1-pole. The topology is dipolar (3.3). The loop circumference is 2πRₕ regardless of the specific field-line geometry: the dipolar topology on a sphere of radius Rₕ forces a great-circle-scale closure. Any closed curve on S² that connects antipodal poles (source to sink) and returns via the complementary hemisphere traverses a path of length 2πR. The specific field-line shape (whether exactly semicircular, sinusoidal, or following r = R sin²θ) does not affect the total loop circumference — only the topology does.</p>
+<p>The time for the field line to complete one full loop at propagation speed c is T_loop = 2πRₕ/c = 2π/H₀. The coherence time of the manifold at the Hubble scale is τ = 1/H₀ — how long you have before expansion outruns propagation. The ratio of coherence time to loop time is τ/T_loop = (1/H₀)/(2π/H₀) = 1/(2π). Within one coherence time, only a fraction 1/(2π) of the full loop maintains causal connection. The field line propagates at c, traversing Rₕ = c/H₀ in one Hubble time — but the full loop requires 2πRₕ. Only the causally connected portion of the loop contributes to the effective gravitational acceleration at the apex.</p>
+<h2>3.5 — The Coherence Fraction (linear scaling from Axiom R)</h2>
+<p>A test mass in the sparse regime does not follow the field line at speed c. The test mass orbits at speed v ≪ c. The field line provides the acceleration; the star responds. From 3.2 the apex acceleration of the widest field line is cH₀; from 3.4 only the fraction τ/T = 1/(2π) of the loop is causally coherent at any moment. The question is whether the effective acceleration scales linearly with the coherent fraction.</p>
+<p><strong>Lemma 1 (Measure homomorphism</strong>). The monoid (ℳ, ·) admits a measure μ: ℳ → ℝ₊ satisfying μ(m₁ · m₂) = μ(m₁) + μ(m₂) for disjoint records.</p>
+<p><strong>Proof</strong>. (i) The monoid (ℳ, ·) accumulates records (Axiom R). Records are irreversible and each record is a distinct actualisation event — written once at a specific spacetime location. Distinct records occupy disjoint regions of the accumulated structure; you cannot double-count them. (ii) Under AP20 (AS = manifold), the monoid embeds into a smooth Riemannian manifold M. The embedding is injective: each actualisation event corresponds to a unique region of M. Each record m ∈ ℳ corresponds to a region of M, and the Riemannian volume measure provides a natural map μ: ℳ → ℝ₊ where μ(m) = vol(region of M corresponding to m). (iii) Since distinct records occupy disjoint regions, their volumes are additive: μ(m₁ · m₂) = vol(region₁ ∪ region₂) = vol(region₁) + vol(region₂) = μ(m₁) + μ(m₂).</p>
+<p><strong>Identification (from Lemma 1).</strong> Coherence at a point p on the manifold is taken proportional to μ(causally connected records at p) — linearity in the record measure is the minimal reading consistent with Lemma 1’s additivity (disjoint records contribute disjoint volume; coherence adds where volume adds), and it is the only reading used downstream. Since μ is additive, the coherence contribution of a fraction f of the causally connected loop is f times the total coherence of the full loop.</p>
+<p>Applying Lemma 1 to the widest field line: (iv) the gravitational acceleration at a point is the curvature of the manifold at that point (3.2, AP20), determined by the accumulated records causally connected to it. (v) At the apex of the widest field line (the minimum-curvature region) the tension per unit arc-length is approximately uniform — the gentlest, most diffuse part of the loop, and by the symmetry of the dipole the apex is the unique point of maximum distance from both poles, so the tension gradient vanishes to first order. The contribution to coherence from each arc-element is therefore approximately equal. The exact correction factor α = 2 ln(sec(½) + tan(½)) ≈ 1.0445 is derived in 3.6 (Propositions 2–3), closing D1′. (vi) The coherent fraction is f_coh = τ/T = 1/(2π) (3.4). By Lemma 1 and the Identification, the effective acceleration scales linearly with f_coh:</p>
+<p class="eq left">a₀ = α × cH₀ × f_coh = αcH₀/(2π), where α = 1 under D1′ (uniform-at-apex).</p>
+<p>The derivation chain: Axiom R (records form a monoid) → Lemma 1 (measure homomorphism: (ℳ,·) → (ℝ₊,+)) → AP20 (manifold = accumulated record) → coherence ∝ causally-connected record-measure → acceleration ∝ coherence → linear scaling with f_coh. No external physics imported. The linear scaling is a consequence of the disjointness of records and the additivity of volume. [The uniform-at-apex assumption (α = 1) is tightened in 3.6 below.]</p>
+<h2>3.6 — Closing D1′: The Exact Correction Factor α</h2>
+<p>The correction factor α accounts for the non-uniform tension along the coherent arc. The argument first establishes the general form, then derives the exact value from the axioms.</p>
+<p><strong>Proposition 1 (General form</strong>). Let T(s) be the tension per unit arc-length along the dipolar field line, where s is arc-length measured from the apex. Then: (a) T′(0) = 0 (the tension gradient vanishes at the apex). (b) T(s) = T₀(1 + κ₂s² + O(s⁴)) with κ₂ &gt; 0. (c) α = (1/ℓ) ∫ T(s)/T₀ ds over the coherent arc of length ℓ = Rₕ.</p>
+<p><strong>Proof.</strong> (a) The involution σ (Axiom S) exchanges the two poles, fixing the apex. The loop maps to itself with the two half-loops exchanged. Any σ-respecting function satisfies f(s) = f(−s) at the apex. Therefore T′(0) = 0. The tension gradient vanishes by the Z₂ symmetry of Axiom S. (b) Since T′(0) = 0 and the apex is a tension minimum, T′′(0) &gt; 0 and the Taylor expansion follows with κ₂ = T′′(0)/(2T₀) &gt; 0. (c) By definition.</p>
+<p>Proposition 1 gives the general form but leaves κ₂ undetermined. To fix κ₂, the tension profile must be derived from the axioms, which requires the geometry of the manifold at the Hubble scale.</p>
+<p><strong>Proposition 2 (S² dipole profile).</strong> On the manifold S²(Rₕ) (EH/AP20), the tension profile along a dipolar field line (meridian) is T(θ)/T_apex = 1/sinθ, where θ is the colatitude from the source pole. This gives κ₂ = 1/(2Rₕ²) and determines α exactly.</p>
+<p>Proof. Step 1 (Manifold geometry). By 3.3 Step 2, the angular part of the tension field lives on S²(Rₕ) (the link of the source point at the Hubble scale). The dipole field lives on this S². Step 2 (Axial symmetry). Axiom B provides one source (ν(ε) = 1); Axiom S provides one sink (σ-image). The source-sink axis is the unique distinguished direction. The axioms provide no mechanism to break rotational symmetry about this axis; therefore the tension field is axially symmetric. Step 3 (Field lines are meridians). On S² with axial symmetry, the unique divergence-free (Axiom S: closure ↔ ∇·B = 0 away from poles) vector field with one source and one sink consists of meridional field lines — great semicircles from source to sink. The full loop (source → sink → source via the complementary meridian) is a great circle of circumference 2πRₕ. [This confirms the topological claim of 3.4.] Step 4 (Tension from flux conservation). Consider a latitudinal band at colatitude θ of width dθ. Its circumference is 2πRₕ sinθ. All field lines pass through every latitudinal band (divergence-free: what enters must exit). The total flux Φ through every band is the same. The tension per unit transverse length is T(θ) = Φ/(2πRₕ sinθ). At the apex (equator, θ = π/2): T_apex = Φ/(2πRₕ). Therefore T(θ)/T_apex = 1/sinθ. This is derived from the geometry of S² (EH/AP20), the divergence-free condition (Axiom S), and the axial symmetry (Axioms B + S). No external physics imported.</p>
+<p><strong>Corollary (Exact κ₂).</strong> Near the apex, with φ = π/2 − θ and arc-length s = Rₕφ: T(s)/T₀ = 1/sin(π/2 − φ) = 1/cosφ = 1/cos(s/Rₕ). Taylor expansion: 1/cos(s/Rₕ) = 1 + s²/(2Rₕ²) + O(s⁴). Therefore κ₂ = 1/(2Rₕ²).</p>
+<p><strong>Proposition 3 (Exact α).</strong> The correction factor for the S² dipole is α = 2 ln(sec(½) + tan(½)) ≈ 1.0445.</p>
+<p><strong>Proof</strong>. The coherent arc of length ℓ = Rₕ is centred on the apex: the Z₂ involution σ (Axiom S) maps the two half-arcs onto each other, so the apex is the unique midpoint. The integration limits are therefore −Rₕ/2 to +Rₕ/2, or equivalently (by symmetry) 0 to Rₕ/2 doubled. From Proposition 1(c), α = (2/Rₕ) ∫₀^{Rₕ/2} [T(s)/T₀] ds. Substituting T(s)/T₀ = sec(s/Rₕ) and u = s/Rₕ: α = 2 ∫₀^{1/2} sec(u) du = 2[ln|sec(u) + tan(u)|]₀^{1/2} = 2 ln(sec(½) + tan(½)) − 2 ln(1) = 2 ln(1.1395 + 0.5463) = 2 ln(1.6858) = 2 × 0.52224 = 1.04448. That is the number. Derived from the geometry of a sphere, the flux conservation of the axioms, and an integral you can check by hand.</p>
+<p><strong>Cross-check (Proposition 1 quadratic).</strong> α ≈ 1 + κ₂Rₕ²/12 = 1 + 1/(2 × 12) = 1 + 1/24 = 1.04167. The quadratic approximation gives 1.042, the exact integral gives 1.045. Agreement within 0.3% between the quadratic approximation and the exact integral — a check on the Taylor expansion over the coherent arc, distinct from the empirical a₀ match in section 5.</p>
+<p>What the axioms determine. (i) The manifold geometry (S²(Rₕ), from EH/AP20). (ii) The tension profile (1/sinθ, from Axiom S + axial symmetry). (iii) The correction factor (α = 2 ln(sec(½) + tan(½)) ≈ 1.0445). (iv) No free parameters. No fitting. The axioms gave you a number, and that number is 1.0445. The value k = T_pole/T_apex = 1/sinθ_pole diverges for the point dipole, but the α integral converges and is exact; the Proposition 1 quadratic formalism is superseded by the exact computation.</p>
+<p><strong>Structural consequences.</strong> (i) α &gt; 1 — the average tension over the coherent arc exceeds the apex minimum; the correction pushes a₀ upward by 4.5%. This is not tuning; it is a structural consequence of the S² geometry and the 1/sinθ profile. (ii) α is modest (≈ 1.045) because the S² manifold tames the tension gradient: 1/cosφ grows slowly near φ = 0, with κ₂ = 1/(2Rₕ²). In flat space, a point dipole gives κ₂ = 9/(2Rₕ²) — nine times steeper; the manifold’s curvature is protective. (iii) The exact result is a₀ = 2 ln(sec(½) + tan(½)) × cH₀/(2π) ≈ 1.0445 × cH₀/(2π).</p>
+<p><strong>D1′ status: CLOSED.</strong> The correction factor α = 2 ln(sec(½) + tan(½)) ≈ 1.0445 is derived from the axioms with no free parameters. Proposition 2 provides the tension profile from {S, B} + EH/AP20; Proposition 3 computes the exact integral. No remaining sub-debt.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap18-the-floor/2-the-three-premises/"><small>Previous</small>The Three Premises</a><div class="up"><small>Back to</small><a href="/proofs/ap18-the-floor/">The Floor</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap18-the-floor/4-the-result/"><small>Next</small>The Result</a></nav>
+<p class="orig">The paper of record: <a href="/AP18_The_Floor.pdf">the420code.org/AP18_The_Floor.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
