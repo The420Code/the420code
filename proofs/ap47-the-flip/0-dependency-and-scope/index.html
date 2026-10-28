@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Contract with the reader. Dependencies, claims and refusals, the honesty box, epistemic status, switch summary, items held open, relationships, symbols.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap47-the-flip/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Flip, Artist’s Proof 47 — The 420 Code">
+<meta property="og:description" content="Contract with the reader. Dependencies, claims and refusals, the honesty box, epistemic status, switch summary, items held open, relationships, symbols.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap47-the-flip/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Flip, Artist’s Proof 47 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap47-the-flip/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap47-the-flip/"><b>The Flip</b></a> · read in full · 1 of 14</div><ul class="modes"><li><a href="/AP47_The_Flip.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">Contract with the reader. Dependencies, claims and refusals, the honesty box, epistemic status, switch summary, items held open, relationships, symbols.</p>
+<div class="paper">
+<h2>0.1 — What this paper does</h2>
+<p>AP47 prices the strained hold: what a configuration pays, at second order, to keep a difference open against its ground state. Three things, each at its stated grade.</p>
+<p>First. It derives the form and scope of the cost. A held distinction discounts the booking of the difference itself — a quotient, never a new term — and the cost is defined on flips: no flip, no cost, the ground excluded by definition.</p>
+<p>Second. It names the cost as one process — the window's leak — with a located rate (the substrate's, α, from AP30's own lemma), a located depth (the held grain's α-worth, carried with its conditional), and a located geometry (the pair's eight dimensional expressions under AP30's own construction, giving 1/(8π)).</p>
+<p>Third. It freezes one row against nature. Δ_real = Δ_bare/(1 + α²/8π) = 2.53098857035 at CODATA-2022 α, against the measured 2.530988574 ± 7.4×10⁻⁷ — a residual of −0.005σ where the bare row fired at 7.24σ — with the switches of section 10 armed on it.</p>
+<p>It also rules the bound neutron (the distinction is held against the structural alternative; binding closes the exit, not the window) and declares, rather than dresses, that the ruling carries no mass-face observable.</p>
+<h2>0.2 — Dependencies</h2>
+<p>AP30 (The Resistance): the dimensional-expression construction and its leakage lemma — the static count through the four spacetime dimensions, the isotropic 1/(count·π) normalisation, the substrate's rate ("the substrate speaks at α_em"), and the principle quoted at its own hedge: <em>"the leakage is normalised by the very structure it leaks through."</em> AP46 (The Stretch, v0.2): the mechanism in its exact words — <em>"holding is tension, and tension sheds"</em> — the pairs-balance ruling, and the thread ruling that fixes the family's one base rate. AP45 (The Blink, draft v0.2.1 — the version of record by the author's word; a draft awaiting his lock, and every inheritance from it says so): the toll's two faces, the spent clause, the no-new-energy-term refusal, the grain's denomination. AP44 (The Snap, locked): the ε = α_em selection, argued in its section 5, booked as D-CCC.4. AP06 (The Leakage Constant, published corpus): the domain field the selection was made among, held open at its section 0.7. WP-ROAD.1 v1.2: the family instrument. One measured comparator, CODATA 2022, lines named in section 6. No other inputs exist.</p>
+<h2>0.3 — Claimed, and refused</h2>
+<p>Claimed: that a configuration holding a distinction — an orientation differing from its ground state under the same grip — pays a continuous second-order cost on the booking of the difference itself; that the cost is one process, the window's leak, with a located rate, depth, and geometry; that its order is α² (the grain's worth times the substrate's rate) at the structural register, riders stated; that its divisor is 8π, derived by AP30's own construction at support two; that the realised difference is the expression Δ_bare/(1 + α²/8π) at CODATA-2022 α; that the bound neutron pays; and that the binding ruling carries no mass-face observable, under either answer, declared rather than dressed as an edge.</p>
+<p>Refused, in advance: any new term in any energy budget at any size; any identification of Δ_bare's terms with the standard electromagnetic/strong decomposition; any repair of the fired row KS-NPP.1; any third-order term; any claim on the bound neutron's mass face; any probability deviation; and any contact between the construction and standing measured numbers beyond those disclosed in this paper — the eliminations of section 5 and the proton check of section 7, where data killed candidates and generated none, and the single frozen comparison of section 6 — all made after the structure was described, in the order the record shows.</p>
+<h2>0.4 — The honesty box</h2>
+<p>The bare row fired at 7.24σ and is shown in full in section 7; this paper prices the structure the fired row was missing and never touches the corpse. The paper's central structural claim — AP30's maintenance mechanics read at a strained hold instead of a ground's upkeep — is STATED, located, and switch-guarded, not derived from anything deeper; every grade in this paper rides it in the open. The order carries three riders (T-b, a registered conjecture; D-CCC.1, the formalisation; the ε = α_em closure, DERIVED-CONDITIONAL-ON-AP45 via D-CCC.4) and the divisor inherits KS-30.2's isotropy assumption, live in its parent. The landing itself, at −0.005σ, is weak evidence by the family's own standard: the paper is worth having for the structure and the falsification surface, not for the number.</p>
+<h2>0.5 — Epistemic status per section</h2>
+<p>Section 1: the family seat, orientation. Section 2: DEFINITIONAL — the scope, ruled. Section 3: DERIVED-AT-THE-STRUCTURAL-REGISTER — the mechanism, inherited and read on the mass face. Section 4: the process STATED and located; the order α² DERIVED-AT-THE-STRUCTURAL-REGISTER with riders. Section 5: the divisor 8π DERIVED, wearing its clauses and inheritance. Section 6: EMPIRICAL — one frozen row, reported once, never evidence of the structure. Section 7: deaths, shown. Section 8: RULED, with a declared null. Section 9: the census, open and honest about its size.</p>
+<h2>0.6 — Kill switch summary</h2>
+<p>KS-FLIP.1 — the frozen row dies if measurement departs beyond the bar. KS-FLIP.2 — forced structure; fires on any element shown selected by comparison with measurement; binding on author and desks. KS-FLIP.3 — the truncation; the absent α³ term is a prediction, dated at ~20× better B_d metrology. KS-FLIP.4 — the scope; dies if a ground state requires the cost or a domain member escapes it. KS-30.2 — inherited isotropy; both divisors move together. KS-NPP.1 — fired 2 August 2026, shown forever. Full statements in section 10.</p>
+<h2>0.7 — Items held open without claiming debt status</h2>
+<p>The lifetime dynamics of the window's snap — the free neutron's decay clock, including the standing beam-versus-bottle tension in its measurement — forward-register, no claim made. The census of section 9. The α³ silence until metrology reaches it. The ROAD v1.2's AP45 state-table line, corrected at that instrument's next revision (a v0.3 is recorded there that does not exist in the author's archive; v0.2.1 is the version of record by his word; should a file answering that entry ever surface, its four fence clauses are re-read before anything relies on it).</p>
+<h2>0.8 — Structural relationships</h2>
+<p>AP30: parent of the construction; KS-30.2 shared; no locked value touched (WP-FLIP.1 section 9's independence sentence superseded as stated in section 5). AP46: source of the mechanism and the pairs-balance ruling, both quoted verbatim; the one-base-rate reconciliation runs on its own thread ruling. AP45 (draft): source of the toll clauses and the grain's denomination; every inheritance conditional on its lock. AP44: source of the ε = α_em selection; D-CCC.4 carries the closure. AP06: the domain field. AP40: the conceptual development of the structural imbalance this paper prices. AP42/AP28 and the cosmology: untouched. The Assembly (AP48, forthcoming): none of its content is load-bearing here, and none of this paper's rows move on its verdict. One line is filed to the record-algebra programme (D-CCC.1): the availability field recomputes structurally, blind to energetic accessibility — section 8's ruling is an axiom of that algebra. No new debt books: D-FLIP.1 was reserved for an underived divisor and is not needed.</p>
+<h2>0.9 — Symbols and numbers</h2>
+<p><strong>Δ_bare</strong> = 3(1 − 1/2π) + α(1 + 1/2π): the ideal neutron–proton difference in electron masses, the flip priced as free. <strong>Δ_real</strong> = Δ_bare/(1 + α²/8π): the realised difference, the claim of this paper. <strong>f</strong>₂ = α²/8π: the hold-cost fraction. <strong>α</strong> = 7.2973525643(11)×10⁻³, CODATA 2022. <strong>Δ_meas</strong> = 2.530988574, u = 7.4×10⁻⁷ (0.29 ppm) — CODATA 2022, the exact difference of m_n/m_e = 1838.68366200(74) and m_p/m_e = 1836.152673426(32), the uncertainty stated decade-safe because its parenthetical form caused one audited slip. <strong>The window:</strong> the held gap between a coupling's actual and ground orientations. <strong>The window's leak:</strong> the one process of section 4. <strong>ε, three postures:</strong> the arena's splinter (held forever), the Blink's slivers (spent per event), the flip's grain (held-and-leaking, terminally released at the snap-shut).</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap47-the-flip/">The Flip</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap47-the-flip/1-the-family-seat/"><small>Next</small>The Family Seat</a></nav>
+<p class="orig">The paper of record: <a href="/AP47_The_Flip.pdf">the420code.org/AP47_The_Flip.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

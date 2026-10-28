@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The standard derivation of the Lorentz group. Run once on the premises of §§1–5. Every step named to the sentence it stands on. Formulas, no numbers. The mathematics is Ignatowsky’s. The words are the sand’s.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap52-reading-relativity/appendix-a-the-argument-written-out/">
+<meta property="og:title" content="The Argument Written Out, in the Corpus’s Terms — Reading Relativity, Artist’s Proof 52 — The 420 Code">
+<meta property="og:description" content="The standard derivation of the Lorentz group. Run once on the premises of §§1–5. Every step named to the sentence it stands on. Formulas, no numbers. The mathematics is Ignatowsky’s. The words are the sand’s.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap52-reading-relativity/appendix-a-the-argument-written-out/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Argument Written Out, in the Corpus’s Terms — Reading Relativity, Artist’s Proof 52 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap52-reading-relativity/appendix-a-the-argument-written-out/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap52-reading-relativity/"><b>Reading Relativity</b></a> · read in full · 13 of 15</div><ul class="modes"><li><a href="/AP52_Reading_Relativity.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Appendix A</p>
+<h1>The Argument Written Out, in the Corpus’s Terms</h1>
+<p class="oneline">The standard derivation of the Lorentz group. Run once on the premises of §§1–5. Every step named to the sentence it stands on. Formulas, no numbers. The mathematics is Ignatowsky’s. The words are the sand’s.</p>
+<div class="paper">
+<p><em>The standard derivation of the Lorentz group. Run once on the premises of §§1–5. Every step named to the sentence it stands on. Formulas, no numbers. The mathematics is Ignatowsky’s. The words are the sand’s.</em></p>
+<p><strong>A.0 — What this appendix assumes and what it derives.</strong> It takes from the main text: distance as the crossing record (§3, ruled); time as a site’s own count (§4); uniform settling as the case (§5); no privileged site (§1); homogeneity and isotropy (§3, AP10); consistent composition (§7). From A.1 it takes that a distant time-count is a reading, made by a stated convention. It does not re-derive these. On them it derives the transformations, the sign and the signature. It does not derive that the record algebra’s own distance function, without §3’s ruling, is the crossing record. That identification is what remains of KS-D.4 at the formal register (A.9).</p>
+<p><strong>A.1 — Readings as coordinates, by the echo.</strong> Two sites, S and S′. S′ settles uniformly relative to S. Its place in S’s reading changes by a constant v per tick, with |v| &lt; 1 (§5). A site has, without convention, one thing of its own: its count (§4). To read a distant event — any event a grain can reach and return from — it sends a grain and receives the echo. Let the grain leave at the site’s count τ₋ and return at τ₊. The site assigns the event a crossing record x = (τ₊ − τ₋)/2, and a count t = (τ₊ + τ₋)/2. Along the line of settling, x is signed by the direction the grain went. That assignment is Einstein’s construction of 1905, written in the tick. It is a reading, not a fact of the record (§6). It is the only rule the record supplies, since the crossing rate is the one ruler; and it halves the round trip because the one-way rate is the same both ways, which is AP10’s isotropy, ruled (§3). The pair (t, x) so assigned is the site’s coordinates for the event, so called. The transverse faces are set aside until A.6. Along the line of settling one crossing record suffices. The appendix assumes what the standard argument assumes: the readings vary continuously, the maps between two sites’ readings are invertible, and they compose (§7, premise (iv)).</p>
+<p><strong>A.2 — Linearity, from homogeneity.</strong> No place in the landscape is privileged except by what has landed there (§3, second theorem). No count is privileged either. The tick is one in kind (AP50 §1; Axiom C). R is a monoid of sequential composition (AP20). So a translation along a site’s count is not a change of structure. The map from S’s reading of an event to S′’s reading of it therefore cannot depend on where or when the event is. It is the same map everywhere. That makes it affine. With the two sites’ origins taken at their one coincidence, it is linear: t′ = A t + B x, x′ = C t + D x, with A, B, C, D depending on v alone.</p>
+<p><strong>A.3 — The settling site’s own place.</strong> S′’s own place is x′ = 0. In S’s reading it is the place x = v t (§5). So C = − v D. Write D = γ(v). Then x′ = γ(v)(x − v t).</p>
+<p><strong>A.4 — Isotropy and no privileged site.</strong> Reversing the direction of settling reverses the sign of every crossing record (isotropy, AP10 §0.7). The map for −v is the map for v with x and x′ both reversed. So γ(−v) = γ(v), A(−v) = A(v), B(−v) = −B(v). No site is privileged (§1) and the landscape is isotropic (§3). S reads S′ as settling at v exactly as S′ reads S as settling at −v. So the map from S′ back to S is the map with −v. Composing the two is the identity. Working the composition through with A.3 gives A = γ(v) and B = −κ v γ(v). Here κ is some function of v with κ(−v) = κ(v). And γ(v) = 1/√(1 − κ v²). So: t′ = γ(v)(t − κ v x), x′ = γ(v)(x − v t).</p>
+<p><strong>A.5 — Composition, and the constant.</strong> A reading of a reading is a reading (§7, premise (iv), stated). So the map for a settling v₁, followed by the map for a settling v₂, each of the form of A.4, must again have that form, for some v₃. Written out: the product of the two maps has diagonal entries γ₁γ₂(1 + κ₂v₁v₂) and γ₁γ₂(1 + κ₁v₁v₂), and a map of A.4’s form has equal diagonal entries; so κ₁ = κ₂ whenever v₁v₂ ≠ 0, and the composed settling is v₃ = (v₁ + v₂)/(1 + κv₁v₂). So κ is one constant for all settlings. Three cases remain, by its sign.</p>
+<p><strong>A.6 — The sign, from C and R.</strong> κ = 0 is the Galilean case. t′ = t. No invariant speed. A site’s place could in principle change faster than any bound. It is excluded before this appendix, by §3 and §5. Distance is the crossing record at the tick. The crossing rate is the one ruler. A held site cannot go at the rate of the unheld (§5). κ &lt; 0 is the Euclidean case. With κ = − 1/w² the maps are rotations of the (t, x/w) plane, through an angle set by v. Rotations compose to any angle. Including angles at which a later count is read as an earlier one. An event read before a record it depends on. Axiom R forbids it. The record is written in one direction. It cannot be unwritten (AP20; AP50 §9). A reading is of held records only (AP51 §5). So κ &gt; 0. The Lorentzian case, with invariant speed 1/√κ. The one speed every site reads the same. That speed is the tick (§3). In the unit of this paper it is one. So κ = 1. Then t′ = γ(t − v x), x′ = γ(x − v t), γ = 1/√(1 − v²). Add the two transverse faces. They are unchanged by a settling along the line (isotropy, AP10). That gives the Lorentz transformations of the (3+1) reading.</p>
+<p><strong>A.7 — The invariant, and the signature.</strong> From A.6 directly: t′² − x′² = t² − x² for every v. Call that form I₀. I₀ is preserved. So is −I₀. AP10 named one of them: I = −t² + x². With the transverse faces, I = −t² + x² + y² + z². A quadratic form of signature (−, +, +, +). The form is Lorentzian: one direction carries the odd sign and three carry the other. That is structural. R fixes which direction carries the odd sign: the one that cannot be reversed and cannot be rotated into the others.</p>
+<p>The overall sign — I rather than I₀ — is a convention, and the paper writes it AP10’s way. That is the Lorentzian signature AP10 §1 claimed and KS-D.4 owed. Derived on the page from §§1–5, with the direction from R. Only I is used from here on.</p>
+<p><strong>A.8 — The consequences, named.</strong> Dilation. A site at rest in S′ holds, between two events at its own place, a count Δt′. S reads it as Δt = γ Δt′. S′ reads S’s count the same way. The reading is symmetric, and there is no third count to break the symmetry (§4). Which site holds fewer ticks between two meetings is set by which changed its settling. That is outside uniform settling (§5, §9). Contraction. Two sites at rest to each other, at crossing record L in their own reading, are read from a site settling past them at L/γ (§3). Composition of settlings. u′ = (u − v)/(1 − u v). It never leaves the interval from minus one to one. §5’s bound survives every composition. Simultaneity. Two events with Δt = 0 in S have Δt′ = − γ v Δx ≠ 0 in S′. That is §6’s sentence in the formula.</p>
+<p><strong>A.9 — What this appendix takes and what it derives.</strong> It takes from §3 that the crossing record is the distance. An operational identification, ruled by the author. It takes from §1, §5 and AP10 the premises A.2–A.5 stand on. It takes from A.1 that a distant time-count is a reading, not a fact. On those it derives the transformations, the sign and the signature. What it does not derive is that AP10’s record algebra, by its own structure and without §3’s ruling, has the crossing record as its distance function. That is the identification KS-D.4 remains live for at the formal register: the whole of the formal debt, named.</p>
+<p><em>The argument is a century old. Every line of it now stands on a sentence of the picture.</em></p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap52-reading-relativity/11-dated-notes-this-paper-triggers/"><small>Previous</small>Dated Notes This Paper Triggers</a><div class="up"><small>Back to</small><a href="/proofs/ap52-reading-relativity/">Reading Relativity</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap52-reading-relativity/conditionality-footer/"><small>Next</small>Claim Summary · Conditionality Footer</a></nav>
+<p class="orig">The paper of record: <a href="/AP52_Reading_Relativity.pdf">the420code.org/AP52_Reading_Relativity.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
