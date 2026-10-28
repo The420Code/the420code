@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="AP19 derives the SU(3) gauge symmetry of the strong force from the gauge freedom of the manifold’s orientation around the break.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap19-the-direction/0-dependency-and-scope/">
+<meta property="og:title" content="Dependency and Scope — The Direction, Artist’s Proof 19 — The 420 Code">
+<meta property="og:description" content="AP19 derives the SU(3) gauge symmetry of the strong force from the gauge freedom of the manifold’s orientation around the break.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap19-the-direction/0-dependency-and-scope/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Dependency and Scope — The Direction, Artist’s Proof 19 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap19-the-direction/0-dependency-and-scope/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap19-the-direction/"><b>The Direction</b></a> · read in full · 1 of 14</div><ul class="modes"><li><a href="/AP19_The_Direction.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 0</p>
+<h1>Dependency and Scope</h1>
+<p class="oneline">AP19 derives the SU(3) gauge symmetry of the strong force from the gauge freedom of the manifold’s orientation around the break.</p>
+<div class="paper">
+<h2>0.1 — What this paper does</h2>
+<p>AP19 derives the SU(3) gauge symmetry of the strong force from the gauge freedom of the manifold’s orientation around the break. The argument: the three axioms {C, S, B} each express one face of the spatial manifold (R expresses the temporal face); each face has a fixed functional identity (propagation, exchange, break) but no fixed geometric assignment; when ε breaks the 1:1, the manifold orients around the break, and which face aligns which way is undetermined; the non-derivability of {C, S, B} (AP20 §4.2, fenced KS-P.2) ensures no face is preferred; the per-event orientation promotes the global symmetry to a local one; the gauge group of a local unitary symmetry on ℂ³ is U(3); factoring out the orientation’s overall phase — unobservable by the Born rule (AP09) — leaves SU(3).</p>
+<p>The paper makes three structural identifications. First: colour is orientation — a quark’s colour is which face aligned with the break at its actualisation. Second: confinement is the manifold enforcing isotropy — the substrate stiffness λ (AP15) resists macroscopic anisotropy, so coloured states are confined into colour-neutral combinations. Third: ε (the electron) is an SU(3) singlet because the minimum break is necessarily isotropic (Proposition 4) — not a different kind of object from a quark but the ground state of the break.</p>
+<p>What the paper does not derive: the colour-flux-tube energy and string tension (D1); the generation mass hierarchy m_e : m_μ : m_τ (D2); the running coupling α_s(Q²) (D3). The paper offers structural explanations for confinement and asymptotic freedom from isotropy plus substrate stiffness; these are qualitatively grounded but not quantitatively computed from {S, B, R, C}. The three-generations identification of §9 is named explicitly as conjecture, not derivation.</p>
+<h2>0.2 — Dependencies</h2>
+<p>AP19 depends on the following derived results.</p>
+<p>Notebook I (Premise). The four axioms {S, B, R, C}. AP20 §4.2 (fenced KS-P.2): the independence of the four axioms — no one is derivable from the others. Load-bearing for the global symmetry of §4: non-derivability of the faces is what guarantees no face is preferred.</p>
+<p><strong>AP05 (The Break).</strong> Actualisation creates g, c, and time — the manifold and metric emerge from the break. Load-bearing context for §3.1: the break creates direction as a concept, not within a pre-existing geometric arena.</p>
+<p><strong>AP09 (The Break — Empty Set</strong>). The complex Hilbert space ℋ and the Born rule. Load-bearing for the Lemma in §4.2: the orientation state is in ℂ³ (not ℝ³), which forces SU(3) (not SO(3)).</p>
+<p><strong>AP10 (The Dimension).</strong> N = 3 spatial dimensions from the three independent axioms {C, S, B}. Load-bearing for the three-face structure of §2.</p>
+<p><strong>AP09 (The Break — Quantum Mechanics).</strong> The fermion/boson distinction; the identification of ε as the unique unpaired element. Load-bearing for the electron-as-minimum-break reading of §5.4.</p>
+<p><strong>AP11 (The Spin).</strong> The spin SU(2) from Z₂ = π₁(SO(3)) and the double cover — this is the spacetime spin SU(2), NOT the gauge SU(2) of the weak force. Context only for §7; the gauge structure assembled there draws the weak SU(2) × U(1)_Y from AP27 and the U(1) from AP15, not from AP11.</p>
+<p><strong>AP15 (The Connection).</strong> Two roles. (i) The gauge U(1) from the phase freedom of the complex Hilbert space — provides the U(1) factor of the assembled gauge structure in §7 (and note: the U(1) factored out of U(3) in Proposition 1 is the orientation’s own global phase, removed by Born-rule redundancy from AP09, NOT this electromagnetic U(1)). (ii) The substrate stiffness λ ≈ 2.15 × 10⁴⁶ — load-bearing for Proposition 2 (colour neutrality as the ground state) and §6 (confinement is isotropy enforced by stiffness).</p>
+<p><strong>AP27 (The Harmonics).</strong> The gauge SU(2) × U(1)_Y from the freedom in the sector relationship. Supplies the weak gauge factor of the full structure assembled in §7 — distinct from AP11’s spin SU(2).</p>
+<p><strong>AP16 (The Break — Electroweak).</strong> Higgs mechanism = Axiom B. Load-bearing context for Proposition 3: AP16 establishes that Axiom B breaks SU(2) × U(1)_Y → U(1)_em; AP19 establishes that the same axiom does not break SU(3). One axiom, two consequences.</p>
+<p><strong>AP20 (The Proof).</strong> The Embedding Hypothesis. Load-bearing for the identification of the algebraic orientation state with the manifold-level internal SU(3) index space.</p>
+<p><strong>The Lock (Edition 04).</strong> The identification of ε with the electron at the chemical-biological scale. Load-bearing for §5.4: the SU(3)-singlet status of ε explains why the electron is colourless.</p>
+<h2>0.3 — Axiom mapping</h2>
+<p>The four axioms map to AP19 as follows.</p>
+<p><strong>Axiom S</strong>. The two-sector structure (ℓ, 𝒫) and the involution σ. σ acts on the orientation state by complex conjugation, giving antiquarks the conjugate representation ℂ³̄. Provides the paired/unpaired distinction that underwrites the “three faces are interchangeable in spatial expression” claim of §3.4.</p>
+<p><strong>Axiom B</strong>. The break direction. ε breaks along one face; which face is the gauge freedom. Axiom B asserts ε ∈ ℓ with no σ-image and ν(ε) = 1, but contains no clause selecting a preferred face among {C, S, B}. This is what makes SU(3) exact (Proposition 3): B says “I exist,” not “I point this way.”</p>
+<p><strong>Axiom R.</strong> Time — the only irreversible axiom. Provides the temporal face (the − direction); not directly load-bearing for SU(3), which acts on the three spatial faces.</p>
+<p><strong>Axiom C.</strong> Finite propagation. One of the three spatial faces — the propagation face. Provides one of the three orientations in face-space {C, S, B} that SU(3) rotates among.</p>
+<h2>0.4 — Epistemic status per section</h2>
+<p><strong>§1.</strong> <em>SYNTHESIS.</em> The gauge programme so far. Recapitulates the gauge SU(2) × U(1)_Y (AP27), U(1) (AP15), the electroweak unification (AP16). Names SU(3) as the remaining piece.</p>
+<p><strong>§2.</strong> <em>DERIVED (AP10; independence at AP20 §4.2, fenced KS-P.2).</em> Three faces of one manifold: functional identity fixed by the generating axiom, geometric assignment free. Co-arising; not reducible.</p>
+<p><strong>§3.1–3.3.</strong> <em>DERIVED / SYNTHESIS.</em> The break creates direction as a concept. The manifold orients around the break. §3.3 is non-load-bearing synthesis.</p>
+<p><strong>§3.4.</strong> <em>DERIVED (AP09).</em> Two views of the same now. Before collapse: all orientations coexist (wave). After collapse: record history selects one orientation (particle). Load-bearing for §4’s quantum Lemma.</p>
+<p><strong>§4.</strong> <em>DERIVED.</em> Lemma: orientation state ∈ ℂ³ (from AP09). Proposition 1: gauge group is SU(3) (norm-preserving on ℂ³ is U(3); factor out the orientation’s global phase by Born-rule redundancy). Eight generators.</p>
+<p><strong>§5.1–5.3.</strong> <em>DERIVED / STRUCTURAL.</em> Colour = orientation (DERIVED). Proposition 2 (colour neutrality from isotropy + substrate stiffness): STRUCTURAL — the energy functional is not computed from {S, B, R, C} (D1). Gluons as gauge bosons of SU(3): DERIVED.</p>
+<p><strong>§5.4.</strong> <em>DERIVED.</em> Proposition 4: ε is an SU(3) singlet because the minimum break is necessarily isotropic. Closes the apparent paradox that ε = electron is colourless.</p>
+<p><strong>§6.</strong> <em>STRUCTURAL.</em> Confinement and asymptotic freedom explained qualitatively from isotropy + substrate stiffness. Proposition 3 (SU(3) is exact) DERIVED: Axiom B does not specify orientation; no Lagrangian term can break SU(3). The quantitative running coupling and string tension are open (D1, D3).</p>
+<p><strong>§7.</strong> <em>DERIVED.</em> Full Standard Model gauge structure SU(3) × SU(2) × U(1) assembled from this paper, AP27 (gauge SU(2) × U(1)_Y), and AP15 (U(1)). Lie algebra structure derived; global quotient not addressed here.</p>
+<p><strong>§8.</strong> <em>SYNTHESIS.</em> Derivation chain enumerated step by step.</p>
+<p><strong>§9.</strong> <em>CONJECTURE.</em> Three generations from three orientations of ε. Named explicitly as conjecture; mass ratios not computed (D2). Architecture provides the structural site only.</p>
+<p class="centre"><strong>§10.</strong> <em>REGISTER.</em> KS-48c, KS-49b, KS-50 in Claim/Test/Status/Recovery form.</p>
+<h2>0.5 — Kill switch summary</h2>
+<p>Three kill switches are engaged by AP19. Identifiers per the Master Kill Switch Registry: KS-48c and KS-49b carry the “c” and “b” suffixes to resolve collision with AP23 (which holds KS-48a Correlation timing, KS-48b No-signalling, KS-49a Hidden variables — Bell + Axiom R, CLOSED). The KS-48/49 identifiers in earlier AP19 drafts have been renumbered accordingly. KS-50 is unchanged.</p>
+<p><strong>KS-48c — Orientation = colour.</strong> LIVE — EMPIRICAL. The identification of internal SU(3) face-space orientation with colour charge.</p>
+<p><strong>KS-49b — Confinement from isotropy.</strong> LIVE — EMPIRICAL. Confinement is the manifold enforcing isotropy via substrate stiffness λ.</p>
+<p><strong>KS-50 — SU(3) from non-derivability.</strong> LIVE — HARD. The derivation rests on the independence of {C, S, B} (AP20 §4.2, fenced KS-P.2). To fire this switch you must defeat the independence of the axiom set.</p>
+<h2>0.6 — Structural debts owed</h2>
+<p>Three debts are named openly. None is claimed closed; each is testable; the paper provides the structural ground from which the quantitative computation should follow.</p>
+<p><strong>D1 — Quantitative confinement.</strong> Derive the colour-flux-tube energy and the string tension from {S, B, R, C} plus AP15 substrate stiffness. The structural mechanism (Proposition 2 + §6.1) is named; the energy functional has not been computed from axioms.</p>
+<p><strong>D2 — Generation mass hierarchy.</strong> Compute m_e : m_μ : m_τ from the three-face structure. The architecture of §9 provides the structural site (three orientations of ε) but not the ratios.</p>
+<p><strong>D3 — Running coupling.</strong> Derive α_s(Q²) from the stiffness/isotropy mechanism to reproduce asymptotic freedom quantitatively. The qualitative argument of §6.2 is structurally grounded; the negative β-function value has not been derived from axioms.</p>
+<h2>0.7 — Items held open without claiming debt status</h2>
+<p>The global structure of the Standard Model gauge group (SU(3) × SU(2) × U(1))/ℤ₆ is not addressed here. AP19 derives the Lie algebra structure su(3) ⊕ su(2) ⊕ u(1) (this paper plus AP27 plus AP15). The discrete quotient is a separate question; the corpus does not yet treat it. Downstream of AP24 (Residual) and the Notebook V matter sector.</p>
+<p>The detailed group-theoretic representation content of quarks (fundamental triplet) and antiquarks (conjugate triplet) is stated as a direct consequence of SU(3) acting on ℂ³ but the full embedding of quark flavour structure into the three-generations conjecture (§9) is held open as part of D2.</p>
+<h2>0.8 — Structural relationships</h2>
+<p>AP10 (The Dimension): N = 3 from three independent axioms {C, S, B}. Three faces of one manifold. AP19 takes the three faces and shows that the freedom to assign them to spatial directions is a gauge symmetry. SU(3) is the gauge group of that freedom.</p>
+<p>AP11 (The Spin): SU(2) from Z₂ = π₁(SO(3)) in N = 3 spatial dimensions and the double cover SU(2) → SO(3). This is the spacetime spin SU(2) — NOT the weak gauge SU(2). The weak gauge factor comes from AP27, and U(1) from AP15. AP19 adds SU(3) from orientation freedom; together with AP27 and AP15, the full Standard Model gauge group assembles.</p>
+<p>AP16 (The Break — Electroweak): Axiom B breaks SU(2) × U(1)_Y to U(1)_em. AP19 (Proposition 3) shows that Axiom B does NOT break SU(3). One axiom, two consequences: it breaks the symmetry of whether the sectors are distinguishable; it does not break the symmetry of how the manifold orients around the break.</p>
+<p>AP15 (The Connection): substrate stiffness λ. AP19 uses λ as the quantitative scale for isotropy enforcement (Proposition 2). Without λ, colour neutrality would have no energy scale; with λ, anisotropic configurations carry a quantifiable (though not yet computed) energy penalty.</p>
+</div>
+<nav class="pn"><div class="up"><small>Back to</small><a href="/proofs/ap19-the-direction/">The Direction</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap19-the-direction/1-the-problem/"><small>Next</small>The Problem</a></nav>
+<p class="orig">The paper of record: <a href="/AP19_The_Direction.pdf">the420code.org/AP19_The_Direction.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

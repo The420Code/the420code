@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Seven kill switches engage. Identifiers per the Master Kill Switch Registry.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap06-the-leakage-constant/kill-switches/">
+<meta property="og:title" content="Kill Switches — The Leakage Constant, Artist’s Proof 06 — The 420 Code">
+<meta property="og:description" content="Seven kill switches engage. Identifiers per the Master Kill Switch Registry.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap06-the-leakage-constant/kill-switches/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Kill Switches — The Leakage Constant, Artist’s Proof 06 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap06-the-leakage-constant/kill-switches/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap06-the-leakage-constant/"><b>The Leakage Constant</b></a> · read in full · 10 of 14</div><ul class="modes"><li><a href="/AP06_The_Leakage_Constant.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">The switches</p>
+<h1>Kill Switches</h1>
+<p class="oneline">Seven kill switches engage. Identifiers per the Master Kill Switch Registry.</p>
+<div class="paper">
+<p>Seven kill switches engage in AP06. Each is testable. Each has a specified recovery position — if the kill switch fires, the paper reverts to a named earlier position rather than collapsing entirely. Identifiers follow the Master Kill Switch Registry: KS-L.1 through KS-L.7.</p>
+<h3>KS-L.1 — Perfect absorber</h3>
+<p><strong>Claim.</strong> In the analysed channels of sections 1–2, the leakage ratio η is strictly positive whenever c and the relevant coupling constant are finite. Theorem 3.1.</p>
+<p><strong>Test.</strong> Demonstration of a physical absorber achieving η = 0 with finite c and finite coupling constant. Failure: Theorem 3.1 falls; Result C3 falls; Identification 6.1 loses its physical grounding via the dependent KS-L.3.</p>
+<p><strong>Status.</strong> LIVE — EMPIRICAL.</p>
+<p><strong>Recovery.</strong> If KS-L.1 fires, the Leakage Theorem fails in the analysed channels and the entire ε ≡ η reading collapses. The corpus retains ε as a postulate (the pre-AP06 status) and loses the physical grounding for ε’s value. Notebook IV’s measured-input claim (ε = α_em ≈ 1/137 as the physical leakage at the electromagnetic boundary) retreats to a framework-level identification without physical mechanism.</p>
+<h3>KS-L.2 — Sufficiency failure within AP06 class</h3>
+<p><strong>Claim.</strong> The conditions of Theorem 3.1 (finite c, finite coupling, valid leakage-ratio definition) are sufficient for η &gt; 0 in the AP06 class of near-perfect absorbers.</p>
+<p><strong>Test.</strong> Identification of an AP06-class near-perfect absorber (finite c, finite relevant coupling, valid leakage-ratio definition) that nonetheless achieves η = 0. Failure: Theorem 3.1 (scoped form) fails; the class definition is not sufficient.</p>
+<p><strong>Status.</strong> LIVE — EMPIRICAL.</p>
+<p>Recovery. If KS-L.2 fires, the AP06 class needs additional structural constraints beyond finite c and finite coupling. The Leakage Theorem retreats to a narrower statement scoped to specific channels; Identification 6.1 falls via KS-L.3. The corpus retains the Hawking and retinal cases as standalone results without the unifying structural-class claim.</p>
+<h3>KS-L.3 — Dependent on KS-L.1 / KS-L.2</h3>
+<p><strong>Claim.</strong> Identification 6.1 (ε ≡ η) depends on Theorem 3.1. If Theorem 3.1 fails, the identification falls automatically.</p>
+<p><strong>Test.</strong> Trigger KS-L.1 or KS-L.2. KS-L.3 fires by dependency.</p>
+<p><strong>Status.</strong> LIVE — DEPENDENT.</p>
+<p><strong>Recovery.</strong> If KS-L.3 fires, the corpus retreats to ε as a postulate (pre-AP06 status). Sections 1–5 remain unaffected as established physics; section 6’s Cosmological Corollary retreats to a structural acknowledgement without the leakage grounding; section 7’s identification falls; section 8’s conjectures retreat to their AP03 / AP08 antecedents.</p>
+<h3>KS-L.4 — Landauer violation</h3>
+<p><strong>Claim.</strong> Information erasure costs at minimum k_B T ln 2 per bit. Section 4. Without this floor, the three-channels-one-form claim in section 4.3 (C4) fails.</p>
+<p><strong>Test.</strong> Demonstration of information erasure at zero energy cost. Failure: Section 4 falls. Section 3 is unaffected.</p>
+<p><strong>Status.</strong> LIVE — EMPIRICAL.</p>
+<p><strong>Recovery.</strong> If KS-L.4 fires, the synthesis of section 4 (three channels, one thermodynamic form) collapses. Section 3 (the Leakage Theorem) and section 7 (the Epsilon Identification) are unaffected; AP06 retreats to a structural-isomorphism claim about three channels without the Landauer unification.</p>
+<h3>KS-L.5 — No shared structural parameterisation</h3>
+<p><strong>Claim.</strong> Non-load-bearing. A dimensionless parameterisation can be constructed that places gravitational greybody leakage and electromagnetic boundary leakage within a shared near-perfect-absorber family at the level of structural variables. Section 3.2.</p>
+<p><strong>Test.</strong> Demonstration that no such parameterisation can be constructed at the level of structural variables. Failure: section 3.2 heuristic falls; the cross-domain framing of section 8 weakens.</p>
+<p><strong>Status.</strong> LIVE — HARD. Non-load-bearing.</p>
+<p><strong>Recovery.</strong> If KS-L.5 fires, the cross-domain structural-family heuristic is lost. Section 3.1 (the structural isomorphism between the Hawking and retinal cases) and section 3.3 (the theorem itself in the two analysed channels) are unaffected. The paper retreats to a narrower claim scoped to the two analysed channels.</p>
+<h3>KS-L.6 — G independent of c</h3>
+<p><strong>Claim.</strong> G and c are not independent. G depends on c through ε (section 8.1). Structurally constrained by AP20’s forcing proof (Axiom B → one parameter).</p>
+<p><strong>Test.</strong> Framework or observation demonstrating that G can change without any corresponding change in c or the leakage structure. Failure: Section 8.1 falls; the proposed physical mechanism for AP03’s conjugacy weakens.</p>
+<p><strong>Status.</strong> LIVE — HARD. Structurally constrained by AP20.</p>
+<p><strong>Recovery.</strong> If KS-L.6 fires, section 8.1’s mechanism falls; AP20’s forcing proof still constrains G to depend on ε, but the specific leakage-mediated dependence is wrong. AP28’s channel-counting derivation of G (independent of the leakage mechanism) remains as an alternative route. The mechanism question reopens. Sections 1–7 are unaffected.</p>
+<h3>KS-L.7 — Poisson derivation</h3>
+<p><strong>Claim.</strong> When the Poisson derivation is completed (from the record algebra), the resulting G coefficient depends on c through the leakage ε. Section 8.1.</p>
+<p><strong>Test.</strong> The Poisson derivation, when completed, produces a G coefficient that does not depend on c through the leakage. Failure: the specific mechanism is wrong; conjugacy may hold via different means.</p>
+<p><strong>Status.</strong> LIVE — HARD.</p>
+<p>Recovery. If KS-L.7 fires, the specific leakage-mediated form of G = κ/(εΛ²) is wrong; the conjugacy of c and G may hold via a different mechanism. Partial reduction: AP43 section 7 derives the Newtonian-limit Poisson equation on configuration space, providing one route that does not depend on the leakage mechanism. AP28 derives G via channel-counting (independent of leakage). The corpus retains G ∼ (something) × ℏc/m_e² form (AP28) without the specific leakage factor.</p>
+<h2>What does not kill this paper</h2>
+<p>The numerical coincidence of leakage ratios across domains is not a claim. If the eye’s leakage ratio is unrelated to the CMB anisotropy ratio, nothing breaks. The structural isomorphism does not depend on numerical equality.</p>
+<h2>Why these seven and not more</h2>
+<p>The seven kill switches cover the load-bearing claims of the paper and the non-load-bearing conjectures. Each closure would force a different kind of retreat. KS-L.1 and KS-L.2 close the Leakage Theorem in the load-bearing direction; KS-L.3 propagates the consequence to the identification; KS-L.4 closes the Landauer synthesis; KS-L.5 closes the cross-domain structural-family heuristic; KS-L.6 and KS-L.7 close the non-load-bearing conjectures of section 8. Smaller claims throughout the paper — specific numerical estimates, illustrative parallels, the structural reading of three scales — are illustrative rather than load-bearing. If any single illustration turned out to be poorly chosen, the paper would still stand.</p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap06-the-leakage-constant/8-forward-direction-the-planck-constraint/"><small>Previous</small>Forward Direction: The Planck Constraint</a><div class="up"><small>Back to</small><a href="/proofs/ap06-the-leakage-constant/">The Leakage Constant</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap06-the-leakage-constant/what-this-establishes/"><small>Next</small>What This Establishes and What Remains Open</a></nav>
+<p class="orig">The paper of record: <a href="/AP06_The_Leakage_Constant.pdf">the420code.org/AP06_The_Leakage_Constant.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

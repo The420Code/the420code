@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Theorem 1: ε is charged. Theorem 2: ε forces non-trivial connection and curvature. Theorem 3: action principle from path sum. Corollary: Fμν ≠ 0 in regions containing ε. Maxwell’s equations as the unique gauge-invariant local action at leading derivative order.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap15-the-connection/4-electromagnetism/">
+<meta property="og:title" content="Electromagnetism — The Connection, Artist’s Proof 15 — The 420 Code">
+<meta property="og:description" content="Theorem 1: ε is charged. Theorem 2: ε forces non-trivial connection and curvature. Theorem 3: action principle from path sum. Corollary: Fμν ≠ 0 in regions containing ε. Maxwell’s equations as the unique gauge-invariant local action at leading derivative order.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap15-the-connection/4-electromagnetism/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>Electromagnetism — The Connection, Artist’s Proof 15 — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap15-the-connection/4-electromagnetism/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap15-the-connection/"><b>The Connection</b></a> · read in full · 5 of 13</div><ul class="modes"><li><a href="/AP15_The_Connection.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">Section 4</p>
+<h1>Electromagnetism</h1>
+<p class="oneline">Theorem 1: ε is charged. Theorem 2: ε forces non-trivial connection and curvature. Theorem 3: action principle from path sum. Corollary: Fμν ≠ 0 in regions containing ε. Maxwell’s equations as the unique gauge-invariant local action at leading derivative order.</p>
+<div class="paper">
+<p>The connection exists. The source exists. Now the algebra does what algebra does — it derives the field equations. And you will recognise them. They are Maxwell’s equations.</p>
+<h2>4.1 — The field strength</h2>
+<p>The connection Aμ is a 1-form on M. Its curvature is the 2-form:</p>
+<p class="eq"><em>Fμν = ∂μAν − ∂νAμ</em></p>
+<p>This is the electromagnetic field tensor. It encodes the electric and magnetic fields. Fμν is the curvature of the connection. It measures the extent to which the global phase, when transported around a closed loop on the manifold, returns to a different reading.</p>
+<p>If Fμν = 0 everywhere, the connection is flat and the global phase is read consistently everywhere. If Fμν ≠ 0, the presence of ε (the charged source that forces non-trivial curvature via the derived field equations) creates a discrepancy between the global truth and the local reading. The manifold’s geometry provides the arena; ε is the source. That discrepancy is the electromagnetic field. You feel it every time you touch a doorknob in winter.</p>
+<h2>4.2 — Gauge invariance</h2>
+<p>The global phase θ is not observable. Only probabilities are observable (Born rule, AP09 section 6). The connection Aμ can be shifted by Aμ → Aμ + ∂μλ(x) for any smooth function λ(x) without changing Fμν:</p>
+<p class="eq"><em>Fμν → ∂μ(Aν + ∂νλ) − ∂ν(Aμ + ∂μλ) = Fμν</em></p>
+<p>This is gauge invariance. It is not a postulate. It is the mathematical consequence of a principal bundle connection on a manifold with local charts.</p>
+<p>Once EH gives the manifold M with local coordinate patches (AP20), and the phase fiber S¹ at each point forms a U(1) principal bundle (section 3.1–3.2), local sections of this bundle parametrise how the global phase is read in local coordinates. Changes of local section are parametrised by smooth U(1)-valued functions λ(x) on overlaps — this is standard bundle mathematics, not a physical postulate.</p>
+<p>The transformation Aμ → Aμ + ∂μλ is the connection’s response to a change of local section: it is the dictionary’s response to a change of language. Local gauge redundancy is therefore not a “promotion” of global invariance; it is an automatic feature of expressing a global structure (the phase) through local coordinates (the manifold).</p>
+<p>Only the curvature of the connection — the electromagnetic field — is observable. The gauge freedom is the freedom in how you choose to read the unobservable global phase in local coordinates. Different gauges are different dictionaries. The physics is in Fμν, not in Aμ. You cannot measure the gauge. You can only measure the curvature.</p>
+<h2>4.3 — The source: ε</h2>
+<p>The electromagnetic field has a source. The source is ε — the break. The electron.</p>
+<p>ε is the one element with no σ-image (Axiom B). It breaks the 1:1. On the manifold, ε is a fermion (AP11 section 3.2), with spin ½ (AP11 section 4), mass m_e (The Lock). It is the minimum viable splinter.</p>
+<p><strong>Theorem 1 (ε is charged).</strong> ε carries non-zero U(1) charge.</p>
+<p><strong><em>Proof.</em></strong> <em>Axiom S gives the involution σ on the record algebra. σ is total on the paired sector: for every element a in the paired sector, σ(a) exists and σ(σ(a)) = a. ε lies outside the paired sector: Axiom B states that σ(ε) does not exist in the algebra. (σ is an involution on its domain; ε is not in that domain.)</em></p>
+<p><strong><em>Definition (charged).</em></strong> <em>In this framework, an element a of the record algebra is uncharged (q = 0) if and only if a is in the domain of σ and is σ-fixed: σ(a) = a. An element is charged (q ≠ 0) if it is not σ-fixed — either because σ(a) ≠ a, or because σ(a) does not exist (i.e. a is outside Dom(σ)).</em></p>
+<p><em>This definition is justified by the representation theory that follows: σ-fixed ⇒ q = 0 is proved below, and the contrapositive (not σ-fixed ⇒ q ≠ 0) is the direction used in Theorem 1.</em></p>
+<p><em>AP09 section 3.2 identifies σ with complex conjugation on ℋ: σ(ψ) = ψ*. For ψ = |ψ|e^{iφ}, complex conjugation reverses the phase: σ(ψ) = |ψ|e^{−iφ}. In the U(1) representation where a state with charge q transforms as ψ → e^{iqθ} ψ, its conjugate transforms as ψ* → e^{−iqθ}ψ*, i.e. with charge −q</em>.</p>
+<p><em>Therefore: if an element within Dom(σ) is σ-fixed (σ(a) = a), then it must carry charge q = −q, i.e. q = 0. Equivalently, by contrapositive: any element that is not σ-fixed carries q ≠ 0. (The converse — that q = 0 implies σ-fixed — is not required for this argument and is not claimed.) Elements outside Dom(σ) have no conjugate partner and therefore cannot be σ-fixed; they are charged by the Definition above.</em></p>
+<p><em>Now: ε is outside Dom(σ) (Axiom B: σ(ε) does not exist). By the Definition above, ε is not σ-fixed. Therefore ε is charged: q ≠ 0.</em></p>
+<p>The electron is charged because it has no mirror image. That is it. That is the entire reason.</p>
+<p><strong>Theorem 2 (ε forces non-trivial connection and curvature).</strong> The U(1) connection on M couples non-trivially to ε. In any region containing ε, Fμν ≠ 0.</p>
+<p><em>Proof by two complementary arguments, one algebraic and one dynamical.</em></p>
+<p><strong><em>(a) Algebraic argument (minimal coupling forced).</em></strong> <em>U(1) gauge invariance is derived (section 1, section 4.2). Under a gauge transformation, ψ → e^{iqθ} ψ. With q ≠ 0 (Theorem 1), the ordinary derivative ∂μψ is not gauge-covariant: ∂μ(e^{iqθ}ψ) = e^{iqθ}(∂μψ + iq(∂μθ)ψ) ≠ e^{iqθ}∂μψ. Gauge invariance of the theory requires the replacement ∂μ → Dμ = ∂μ − iqAμ, where Aμ transforms as Aμ → Aμ + ∂μθ. This is minimal coupling. It is not optional — it is forced by gauge invariance and q ≠ 0. You have no choice here. The algebra leaves no room. The connection Aμ must couple to ε.</em></p>
+<p><strong><em>(b) Dynamical argument (Fμν ≠ 0).</em></strong> <em>The action principle is derived from the path sum (Theorem 3, section 4.4). The unique gauge-invariant action at leading derivative order gives Maxwell’s equations ∂νF^{μν} = J^{μ} (section 4.4). The current Jμ ≠ 0 wherever ε-records are present (Definition below; Theorem 1). Therefore ∂νF^{μν} ≠ 0, which requires Fμν ≠ 0, in any region containing ε. [Note: this argument uses Theorem 3 and section 4.4, which appear below. The logical dependence is: Theorem 1 → Theorem 2(a) → Theorem 3 → Maxwell → Theorem 2(b). Part (b) is a corollary of the complete chain, not a prerequisite for it.]</em></p>
+<p><em>[Epistemic status: DERIVED. Theorem 1 uses Axiom S (σ as involution on paired sector), AP09 (σ = conjugation), and Axiom B (ε outside σ’s domain). Theorem 2(a) uses derived gauge invariance and Theorem 1. Theorem 2(b) uses Theorems 1, 2(a), 3, and the derived Maxwell equations. No external physical postulate is imported; standard mathematical reasoning (gauge theory, variational calculus) is applied on the derived manifold.]</em></p>
+<p>Correspondence: in the mathematics of fiber bundles, a connection with non-trivial holonomy around a source is exactly what a charged particle produces. The argument derives the source: ε, the one element with no σ-image (Axiom B). The break is the charge.</p>
+<p><strong>Definition.</strong> The current Jμ is the pushforward to M of the ε-record worldline. ε carries charge q ≠ 0 (Theorem 1); on the manifold it traces a timelike worldline γ (Axiom C). The 4-current Jμ(x) = qδ³(x − x_ε(t)) dx_ε^μ/dt is the density and flow of ε-charge at x. [Epistemic status: DEFINITION. The distributional form uses standard mathematical tools (delta measure, worldline parametrisation) applied to the derived manifold. The physical content — that ε carries charge and traces a worldline — is derived (Theorem 1, Axiom C).]</p>
+<p>The coupling strength — how strongly ε sources the connection — is the electric charge. That ε couples to Aμ is structural (ε breaks the 1:1; the connection must respond). The dimensionless strength of this coupling, the fine-structure constant α_em ≈ 1/137, is not derived (KS-4, OPEN). It is the coupling strength of one minimum element breaking one minimum symmetry.</p>
+<h2>4.4 — Maxwell’s equations</h2>
+<p>The dynamics of Aμ are determined by a uniqueness argument paralleling Lovelock.</p>
+<p><strong>Theorem 3 (Action principle from path sum).</strong> The action principle is contained in the path sum already derived from the axioms.</p>
+<p><strong><em>Proof.</em></strong> <em>AP09 section 5 derives the path sum K from the axioms: K assigns transition amplitudes between records by summing over all intermediate record sequences. AP09 section 4 derives the Schrödinger equation iℏ∂ψ/∂t = Ĥψ from the same axioms. The Schrödinger equation is the Euler–Lagrange equation of the action S = ∫(iℏψ∂ψ/∂t − ψĤψ) dt.</em></p>
+<p><em>The converse also holds: the path sum (AP14 section 2.3), which is a time-sliced product of transition matrix elements, has the form K = ∫Dψ exp(iS[ψ]/ℏ) in the EH representation (this is Feynman’s standard mathematical result: the time-slicing decomposition of quantum amplitudes reproduces the path integral weighted by exp(iS/ℏ); AP14 section 2.3 explicitly constructs the time-slicing from the record algebra, and the EH pushforward onto M yields the functional integral as a mathematical representation of the discrete sum — it does not reintroduce physical continuum microstructure below the record scale).</em></p>
+<p><em>Therefore the action principle is not an external import but is already contained in the path sum derived from the axioms via AP09.</em></p>
+<p><em>For the electromagnetic field specifically: the connection Aμ is determined by the record configuration (section 3.2); the path sum over records therefore implicitly includes a sum over connection configurations. The weight assigned to each configuration must be (i) gauge-invariant (U(1), section 1), (ii) Lorentz-invariant (AP20), (iii) local (Axiom C: finite causal bound means local interactions), and (iv) of mass dimension 4 (AP10, D = 4). The unique functional satisfying (i)–(iv) at leading derivative order is S_EM = −(1/4) ∫ FμνF^{μν} d⁴x. Uniqueness follows from the same Lovelock-type argument used for gravity (AP08): the constraints select a unique term at lowest derivative order. (Higher-order gauge-invariant terms are consistent with the symmetries but suppressed at low energy; this is a statement about the mathematical classification of local gauge-invariant operators by mass dimension, not an imported physical postulate.) ∎</em></p>
+<p><em>[Epistemic status: DERIVED. The action principle follows from the path sum (AP09) via the standard time-slicing representation (Feynman); the functional integral is the EH pushforward of the discrete time-sliced sum, not a reintroduction of continuum microstructure. The uniqueness of the Maxwell action uses derived symmetries (U(1), Lorentz, locality, D = 4) and the mathematical classification of gauge-invariant operators by mass dimension. No external physical postulate is imported; standard mathematical tools (variational calculus, operator classification) are applied on the derived manifold.]</em></p>
+<p>Current conservation: ∂μJμ = 0. This follows from gauge invariance of the action via Noether’s theorem: the action principle is derived from the path sum (Theorem 3), and U(1) symmetry gives a conserved current by Noether’s first theorem; that current is Jμ. Separately, Axiom R gives ∇μTμν = 0 for the stress-energy tensor (AP08); the two conservation laws are consistent but logically distinct.</p>
+<p>The Bianchi identity (a geometric identity on any 2-form):</p>
+<p class="eq"><em>∂λFμν + ∂μFνλ + ∂νFλμ = 0</em></p>
+<p>This is half of Maxwell’s equations. It is automatic — it follows from Fμν being the curl of Aμ. It gives Faraday’s law and the absence of magnetic monopoles. The other half — Gauss’s law and Ampère’s law — comes from the coupling of the connection to its source ε. The simplest action consistent with U(1) gauge invariance and Axiom R (conservation) on the 4D manifold (AP10) is:</p>
+<p class="eq"><em>S = −(1/4) ∫ FμνF^{μν} d⁴x + ∫ AμJ^μ d⁴x</em></p>
+<p>Variation with respect to Aμ gives:</p>
+<p class="eq"><em>∂νF^{μν} = J^μ</em></p>
+<p>These are Maxwell’s equations in covariant form. You just watched them emerge from four axioms and a uniqueness argument. [Derived: manifold existence (AP20) and action principle (Theorem 3, from path sum). Given these, the field equations are unique at leading derivative order.]</p>
+<p>The argument parallels Lovelock for gravity: given the symmetries (U(1) gauge invariance), the dimensionality (D = 4, AP10), and the conservation law (Axiom R), the action is unique at lowest derivative order, up to a coupling constant. (Higher-order gauge-invariant terms, e.g. (FμνF^{μν})², are consistent with the symmetries but suppressed at low energy by powers of E/Λ_UV; their absence at leading order follows from the mathematical classification of local gauge-invariant operators by mass dimension, not from an imported physical postulate.) The coupling constant is the electric charge. Its dimensionless strength is α_em.</p>
+<p><strong>Corollary (non-trivial curvature).</strong> In any region containing ε, Fμν ≠ 0.</p>
+<p><strong><em>Proof.</em></strong> <em>Maxwell’s equations (above) give ∂νF^{μν} = J^μ. The current J^μ ≠ 0 wherever ε is present (Theorem 1; Definition, section 4.3). Therefore ∂νF^{μν} ≠ 0, which requires Fμν ≠ 0. This completes Theorem 2(b). ∎</em></p>
+</div>
+<nav class="pn"><a class="p" href="/proofs/ap15-the-connection/3-the-connection/"><small>Previous</small>The Connection</a><div class="up"><small>Back to</small><a href="/proofs/ap15-the-connection/">The Connection</a><a href="/proofs/">Ø Proofs</a></div><a class="r" href="/proofs/ap15-the-connection/5-the-non-actualised/"><small>Next</small>The Non-actualised</a></nav>
+<p class="orig">The paper of record: <a href="/AP15_The_Connection.pdf">the420code.org/AP15_The_Connection.pdf</a></p>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

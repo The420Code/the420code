@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Connection. Artist’s Proof 15. Electromagnetism as non-disconnection on a local manifold">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap15-the-connection/">
+<meta property="og:title" content="The Connection — Electromagnetism as non-disconnection on a local manifold — The 420 Code">
+<meta property="og:description" content="The Connection. Artist’s Proof 15. Electromagnetism as non-disconnection on a local manifold">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap15-the-connection/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Connection — Electromagnetism as non-disconnection on a local manifold — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap15-the-connection/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap15-the-connection/"><b>The Connection</b></a> · read in full</div><ul class="modes"><li><a href="/AP15_The_Connection.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">The 420 Code · Ø Proofs · Artist’s Proof 15</p>
+<h1 class="bt">The Connection</h1>
+<p class="oneline">Artist’s Proof 15. Electromagnetism as non-disconnection on a local manifold</p>
+<p class="edition">This is the paper in full, as published at the420code.org. Every section, nothing summarised. The same text as the PDF.</p>
+<p class="btns"><a class="btn fill" href="/proofs/ap15-the-connection/0-dependency-and-scope/">Read it online</a><a class="btn line" href="/AP15_The_Connection.pdf">The paper (PDF)</a></p>
+<div class="tools"><button type="button" data-collapse>Collapse all</button><button type="button" data-expand>Expand all</button></div>
+<details class="sec" open><summary><span class="tri" aria-hidden="true"></span>Artist’s Note</summary><div class="sec-body"><p>What this paper does — and why.</p>
+<p>This is Artist’s Proof 15 of The 420 Code. It is the second chapter of Notebook IV (Forces and Constants). AP06 opened the Notebook by grounding the 420 Code’s ε in the leakage ratio η that finite c enforces at every boundary. AP15 takes the next step: it derives electromagnetism.</p>
+<p>The argument is a single move. The Born rule of quantum mechanics (derived in AP09 from the two-sector structure of Axiom S) is invariant under a phase rotation: |e^{iθ}ψ|² = |ψ|². The phase is U(1). The phase is global at the pre-state level — the 1:1 has no points, no “here” versus “there”, no structure across which the phase could vary. The phase is one number, everywhere. Then records are written. The manifold M emerges with locality (AP20). The phase, still one at the pre-state level, must now be read at each point of a manifold that has points. The connection Aμ is the field that does that reading. Its curvature Fμν is the electromagnetic field. The phase was always global. The manifold made it look local. The connection is what global looks like through local eyes.</p>
+<p>Five theorems and one corollary carry the derivation. Theorem 1 (ε is charged): the electron carries non-zero U(1) charge because Axiom B puts it outside the involution’s domain — the electron has no mirror image, that is the entire reason. Theorem 2 (ε forces non-trivial connection): gauge invariance plus q ≠ 0 forces minimal coupling ∂μ → Dμ; the field equations then force Fμν ≠ 0 wherever ε is present. Theorem 3 (action principle from path sum): the action principle is already inside the path sum derived in AP09. Theorem 4 (Phase Coherence Partition): the pre-state’s phase coherence partitions exhaustively into connection curvature on M and entanglement in ℋ, with ε as the sole transfer mechanism — the connection and entanglement are not two structures but two columns in one ledger. Theorem 5 (Charge Quantisation): U(1) is compact, Peter–Weyl gives integer representations, ε is the minimum element — charges are integer multiples of e.</p>
+<p>Four kill switches engage. KS-28 (phase-group uniqueness) and KS-29 (Maxwell uniqueness) are closed mathematically. KS-30 (phase globality) is LIVE — STRUCTURAL: divide the pre-state and the connection is not forced to exist. KS-31 (entanglement–connection identification) is held LIVE — STRUCTURAL: Theorem 4 establishes the partition by exhaustion and identifies ε as sole transfer mechanism, but does not exhibit a conserved balance equation between connection curvature and entanglement; the identification is a structural reading of strong correspondence, not a closed theorem with a commensurable conserved quantity. An existing corpus kill switch, KS-4 (α ≈ 1/137), remains LIVE — HARD: AP15 derives that ε couples to the connection with some strength; the numerical value of the coupling is the work of AP24 and AP28.</p>
+<p>All open gaps in AP15’s scope close in this paper. Gap A (the value of α_em) remains open, carried by KS-4 and addressed in subsequent NB IV chapters. Within AP15’s scope, the derivation of classical electromagnetism from the axioms is complete.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Orientation</summary><div class="sec-body"><h2>Where AP15 fits</h2>
+<p>The 420 Code is organised across eight bound Notebooks. AP15 is the second chapter of Notebook IV (Forces and Constants), following AP06 (The Leakage Constant) which opens the Notebook by grounding ε in the leakage ratio that finite c enforces.</p>
+<p>AP15 depends on Notebook I (Premise) for the axiom 1:1 + 1×ε @ AS and the four conditions {S, B, R, C}; on Notebook II (Spacetime) for the constants c and G, the manifold structure (AP08), and the spatial-dimension count (AP10 — D = 4); on Notebook III (Quantum Mechanics) for the complex Hilbert space ℋ, the Born rule, the Schrödinger evolution, the path sum (AP09), the fermion/boson distinction (AP11), the uncertainty principle and ℏ (AP12), and the decoherence apparatus (AP13); and on AP06 within Notebook IV for the Landauer bound and the leakage framework that the Theorem 4 partition closes against.</p>
+<p>AP15 feeds the rest of Notebook IV. The U(1) connection it derives is the canonical example of a gauge structure; AP27 extends the internal-state-space treatment; AP16 breaks U(1)×SU(2) at the electroweak scale; AP19 derives SU(3) colour from the gauge freedom of the break direction; AP24 formalises the multi-projection structure of ε that determines coupling constants; AP14 treats Planck-scale corrections; AP28 derives G via channel-counting using ε = α_em from the chemical-biological boundary AP06 grounds.</p>
+<h2>Reading order within AP15</h2>
+<p>Front to back. Section 1 establishes the phase as a derived consequence of the Born rule — U(1) is not imposed, it is already there. Section 2 names the central fact: the pre-state is one. Section 3 performs the central move: the connection is what global truth looks like through local language. Section 4 derives electromagnetism in the usual sense — field strength, gauge invariance, source, Maxwell’s equations. Section 5 derives the Phase Coherence Partition: connection and entanglement are two readings of one undivided pre-state. Section 6 treats charge and its quantisation. Section 7 derives the photon’s three core properties (boson, massless, propagates at c). Section 8 summarises the derivation chain.</p>
+<h2>How to read this paper</h2>
+<p>The paper carries two voices. The structural narrative speaks directly — the central facts (the pre-state is one; the connection is the non-disconnection; entanglement and field are two columns in one ledger) are stated in plain language and held visible across the paper. The formal sections speak in the precision the structure requires. Formal blocks open with a bold label (Theorem, Proposition, Definition, Corollary, Kill Switch) and close with the box mark ■. Where the argument depends on a result derived elsewhere in the corpus, the provenance is named at the point of use.</p>
+<h2>A note on notation</h2>
+<p>U(1) is the group of phase rotations e^{iθ} — the symmetry of a circle. ℋ is the complex Hilbert space derived in AP09. M is the Lorentzian manifold derived in AP20 with dimension D = 4 (AP10) and signature (−, +, +, +). Aμ is the U(1) gauge connection — the 1-form on M that encodes the pre-state’s phase coherence as read locally. Fμν = ∂μAν − ∂νAμ is the electromagnetic field tensor (the connection’s curvature). The covariant derivative Dμ = ∂μ − iqAμ. The current Jμ is the pushforward to M of the ε-record worldline.</p>
+<p>Two structural quantities carry corpus-wide meaning. ε is the unique unpaired element of Axiom B — in AP06 identified with the leakage ratio η, here identified as the source of the connection and (by The Lock, Edition 04) with the electron. σ is the involution of Axiom S — in AP09 section 3.2 identified with complex conjugation on ℋ. The phase rotation acts as ψ → e^{iqθ}ψ; the conjugate transforms as ψ* → e^{−iqθ}ψ* — with charge −q.</p></div></details>
+<h2 class="lh">The sections</h2>
+<ol class="chapters"><li><a href="/proofs/ap15-the-connection/0-dependency-and-scope/"><span class="num">Section 0</span><span class="q">Dependency and Scope</span><span class="line">AP15 derives electromagnetism from the axioms.</span></a></li><li><a href="/proofs/ap15-the-connection/1-the-phase/"><span class="num">Section 1</span><span class="q">The Phase</span><span class="line">U(1) is the gauge group from the Born rule’s phase freedom. Not imposed; derived from Axiom S via AP09.</span></a></li><li><a href="/proofs/ap15-the-connection/2-the-pre-state-is-one/"><span class="num">Section 2</span><span class="q">The Pre-state is One</span><span class="line">The pre-state is one. The phase is global. The path sum is globally U(1)-covariant (Proposition).</span></a></li><li><a href="/proofs/ap15-the-connection/3-the-connection/"><span class="num">Section 3</span><span class="q">The Connection</span><span class="line">Aμ is the U(1) principal bundle connection over M. The connection is the dictionary — it expresses the pre-state’s global phase as read locally.</span></a></li><li><a href="/proofs/ap15-the-connection/4-electromagnetism/"><span class="num">Section 4</span><span class="q">Electromagnetism</span><span class="line">Theorem 1: ε is charged. Theorem 2: ε forces non-trivial connection and curvature. Theorem 3: action principle from path sum. Corollary: Fμν ≠ 0 in regions containing ε. Maxwell’s equations as the unique gauge-invariant local action at leading derivative order.</span></a></li><li><a href="/proofs/ap15-the-connection/5-the-non-actualised/"><span class="num">Section 5</span><span class="q">The Non-actualised</span><span class="line">Theorem 4 (Phase Coherence Partition): the pre-state’s phase coherence partitions exhaustively into connection curvature on M and entanglement in ℋ, with ε as sole transfer mechanism. Gap D: structurally addressed by Theorem 4; formal conserved-balance theorem held open (KS-31 LIVE — STRUCTURAL).</span></a></li><li><a href="/proofs/ap15-the-connection/6-charge/"><span class="num">Section 6</span><span class="q">Charge</span><span class="line">Theorem 5 (Charge Quantisation): all U(1)_EM charges are integer multiples of ε’s charge. Compactness of U(1) + Peter–Weyl + ε is minimum (Axiom B). Gap E: CLOSED.</span></a></li><li><a href="/proofs/ap15-the-connection/7-the-photon/"><span class="num">Section 7</span><span class="q">The Photon</span><span class="line">Boson (AP11), massless (U(1) exact, gauge-invariant mass term forbidden), spin 1 (Aμ is a 1-form), propagates at c (Axiom C + Maxwell wave equation).</span></a></li><li><a href="/proofs/ap15-the-connection/8-summary-of-derivation/"><span class="num">Section 8</span><span class="q">Summary of Derivation</span><span class="line">Derivation chain from axioms to electromagnetism enumerated step by step.</span></a></li><li><a href="/proofs/ap15-the-connection/kill-switches/"><span class="num">The switches</span><span class="q">Kill Switches</span><span class="line">Four kill switches engage in AP15. One existing corpus kill switch (KS-4) is affected. Identifiers per the Master Kill Switch Registry.</span></a></li><li><a href="/proofs/ap15-the-connection/what-this-establishes/"><span class="num">What is open</span><span class="q">What This Establishes and What Remains Open</span><span class="line">AP15 closes the derivation of classical electromagnetism from the axioms.</span></a></li><li><a href="/proofs/ap15-the-connection/conditionality-footer/"><span class="num">The grades</span><span class="q">Claim Summary · Conditionality Footer</span><span class="line">Every section graded. Every dependency named.</span></a></li><li><a href="/proofs/ap15-the-connection/notation-reference/"><span class="num"></span><span class="q">Notation Reference</span><span class="line">the symbols used in this paper</span></a></li></ol>
+<h2 class="lh">The kill switches</h2>
+<h3>KS-28 — Phase-group uniqueness (U(1))</h3>
+<p>Claim. The argument derives U(1) as the gauge group from the phase freedom of ℋ. No larger group acts on the phase of a single complex amplitude.</p>
+<p>Test. Demonstrate that the complex Hilbert space admits a gauge symmetry larger than U(1) from the phase alone (before considering spin or colour).</p>
+<p>Failure. the derivation is overconstrained.</p>
+<p class="status">Status (registry v5.35). CLOSED.</p>
+<h3>KS-29 — Maxwell uniqueness</h3>
+<p>Claim. The Maxwell action S = −(1/4) ∫ FμνF^{μν} is the unique dimension-4 gauge-invariant local action (up to total derivatives) consistent with U(1) + conservation + D = 4, with the action principle derived from the path sum (Theorem 3).</p>
+<p>Test. Demonstrate another dimension-4 gauge-invariant local action with these properties that produces different field equations.</p>
+<p>Failure. the derivation is ambiguous.</p>
+<p class="status">Status (registry v5.35). CLOSED.</p>
+<h3>KS-30 — Phase globality</h3>
+<p>Claim. The derivation assumes the pre-state’s phase is globally coherent. The pre-state is the 1:1 — it has no internal structure across which the phase could vary.</p>
+<p>Test. Demonstrate that the pre-state can have phase discontinuities — that the white space can be internally divided.</p>
+<p>Failure. the connection is not forced to exist by the global-phase argument.</p>
+<h3>KS-31 — Entanglement–connection identification</h3>
+<p>Claim. Section 5 identifies the gauge connection and entanglement as two expressions of pre-state unity. They are not two separate structures; they are two columns in one ledger. The structural reading is: the purity of the pre-state (S = 0) entails a conservation relation between the two columns. The formal conserved-balance theorem — exhibiting a single quantity whose connection-curvature and entanglement-entropy components are commensurable and sum to a constant — is held open as the path to closure for this claim.</p>
+<p>Test. Theorem 4 (Phase Coherence Partition) proves the identification: the pre-state’s phase coherence partitions exhaustively into connection curvature (field) and entanglement (correlation), with ε as the sole transfer mechanism.</p>
+<p>Failure. identify a phase-coherent structure that is neither connection curvature nor entanglement.</p>
+<h3>KS-4 — α ≈ 1/137 (existing corpus kill switch, affected)</h3>
+<p>Claim. AP15 identifies the fine-structure constant α_em ≈ 1/137 as the coupling strength of ε to the connection (section 4.3). AP15 derives that this coupling exists; it does not derive the numerical value.</p>
+<p>Test. Derive the numerical value of α_em from {S, B, R, C} alone. Failure of the broader corpus to do so leaves KS-4 LIVE.</p>
+<p class="reg">Every kill switch in this paper is filed in the registry, on the420code.org: <a href="/killswitches/#ap15">the420code.org/killswitches/</a></p>
+<h2 class="lh">The debts</h2>
+<p>AP15 closes the structural debts within its scope. Gap A remains the one open item that AP15 does not close.</p>
+<p>Gap A (the value of α_em). AP15 derives that ε couples to the connection with some strength. It does not derive the numerical value ≈ 1/137. This is Open Problem 1 / KS-4. The path to closure runs through AP24 (the six-faces formalisation of ε’s multi-projection structure) and AP28 (the channel-counting derivation of G that uses ε = α_em). [AP15 scope: not closed]</p>
+<p class="source">Dependencies.</p>
+<p class="source">Framework: the four axioms {S, B, R, C} from Notebook I; AP05 (the structural derivation of ε); AP06 (the Landauer bound, AP06 section 4, and the leakage framework for ε ≡ η); AP08 (Einstein’s field equations and the Lovelock-type uniqueness argument); AP09 (complex Hilbert space, Born rule, Schrödinger equation, path sum, σ = complex conjugation); AP10 (D = 4); AP11 (fermion/boson distinction, spin); AP12 (uncertainty principle, ℏ); AP13 (decoherence, environment); AP14 (time-slicing of the path sum); The Lock (Edition 04; ε = electron at chemical-biological scale); AP20 (Embedding Hypothesis, Quantum–Records Algebra).</p>
+<p class="source">Conditional on: None. EH and QRA proved in AP20. All other dependencies are derived corpus results.</p>
+<p class="orig">The same paper on the420code.org: <a href="/proofs/">the420code.org/proofs/</a> · The paper (PDF): <a href="/AP15_The_Connection.pdf">the420code.org/AP15_The_Connection.pdf</a></p>
+<nav class="pn solo"><div class="up"><small>Back to</small><a href="/proofs/">Ø Proofs</a></div></nav>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>

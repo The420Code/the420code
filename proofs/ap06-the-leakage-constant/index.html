@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Leakage Constant. Artist’s Proof 06. c as the universal absorption limit — ε identified with the leakage enforced by finite c">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://the420code.org/proofs/ap06-the-leakage-constant/">
+<meta property="og:title" content="The Leakage Constant — c as the universal absorption limit — ε identified with the leakage enforced by finite c — The 420 Code">
+<meta property="og:description" content="The Leakage Constant. Artist’s Proof 06. c as the universal absorption limit — ε identified with the leakage enforced by finite c">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/proofs/ap06-the-leakage-constant/">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<title>The Leakage Constant — c as the universal absorption limit — ε identified with the leakage enforced by finite c — The 420 Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="/five-doors/reader.css">
+<link rel="stylesheet" href="/proofs/book.css">
+<link rel="apple-touch-icon" href="/Eye_of_the_Universe.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="stylesheet" href="/assets/lang-flags.css">
+</head>
+<body>
+<div class="c">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/proofs/ap06-the-leakage-constant/" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/#proofs" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/#proofs" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/#proofs" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/#proofs" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/#proofs" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/#proofs" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/#proofs" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/#proofs" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/#proofs" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/#proofs" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/#proofs" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/#proofs" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<header class="strap"><div class="book"><a href="/proofs/ap06-the-leakage-constant/"><b>The Leakage Constant</b></a> · read in full</div><ul class="modes"><li><a href="/AP06_The_Leakage_Constant.pdf">The paper (PDF)</a></li></ul></header>
+<p class="eyebrow">The 420 Code · Ø Proofs · Artist’s Proof 06</p>
+<h1 class="bt">The Leakage Constant</h1>
+<p class="oneline">Artist’s Proof 06. c as the universal absorption limit — ε identified with the leakage enforced by finite c</p>
+<p class="edition">This is the paper in full, as published at the420code.org. Every section, nothing summarised. The same text as the PDF.</p>
+<p class="btns"><a class="btn fill" href="/proofs/ap06-the-leakage-constant/0-dependency-and-scope/">Read it online</a><a class="btn line" href="/AP06_The_Leakage_Constant.pdf">The paper (PDF)</a></p>
+<div class="tools"><button type="button" data-collapse>Collapse all</button><button type="button" data-expand>Expand all</button></div>
+<details class="sec" open><summary><span class="tri" aria-hidden="true"></span>Artist’s Note</summary><div class="sec-body"><p>What this paper does — and why.</p>
+<p>This is Artist’s Proof 06 of The 420 Code. It opens Notebook IV (Forces and Constants). It identifies the speed of light c as the universal absorption limiter and, on that basis, identifies the 420 Code’s symmetry-breaking parameter ε with the leakage ratio η enforced by finite c at every physical absorbing boundary.</p>
+<p>The argument runs in two parts. The first part (sections 1–5) is published, established physics. Hawking radiation establishes that the gravitational absorbers we call black holes do not absorb perfectly — the surface gravity κ sets a temperature T_H = ℏc³/(8πk_BGM), nonzero for any finite M precisely because c is finite. Published retinal physics establishes that the human eye, the canonical near-perfect electromagnetic absorber, leaks η ≈ 10⁻⁶ to 10⁻⁵ of incident light back through the pupil, with the bound set by the fine-structure constant α = e²/(4πε₀ℏc). The CMB completes the third channel — the leakage at recombination, the boundary radiation of the last scattering surface. Three physically distinct systems, six structural features in common, c in the denominator of every leakage estimate.</p>
+<p>The second part (sections 6–8) is the framework move. Section 6 names the Cosmological Corollary that AP06 carries into Notebook IV: the cosmological channel of section 5 is the first observable historical record of leakage at a structural boundary, and the continued accumulation of unpaired 1×ε across actualization-state instants (AP43 D5) makes the cosmological leakage an ongoing structural process rather than a single epoch-bounded event. Section 7 identifies the 420 Code’s ε with the leakage ratio η — an interpretive identification, not a derivation forced by the physics of sections 1–5. Section 8 conjectures forward to the Planck constraint: if G depends on c through ε, the Planck scale is where the leakage becomes total.</p>
+<p>The central result is the Leakage Theorem (Theorem 3.1, scoped). In the analysed near-perfect-absorber channels of sections 1–2, the leakage ratio η is strictly positive whenever c and the relevant coupling constant are finite. AP06 advances the hypothesis that this holds for the broader class of physical absorbers; the hypothesis is debt D1 and remains open. The Identification ε ≡ η (Identification 6.1) is the interpretive bridge that connects the physics of sections 1–5 to the axiom and grounds Notebook IV’s one measured input: ε = α_em ≈ 1/137.</p>
+<p>Seven kill switches engage. Two are load-bearing (KS-L.1 and KS-L.2, targeting Theorem 3.1); the rest target the identification and the non-load-bearing conjectures of section 8. The paper imports no external physics beyond the published results it cites.</p></div></details>
+<details class="sec"><summary><span class="tri" aria-hidden="true"></span>Orientation</summary><div class="sec-body"><h2>Where AP06 fits</h2>
+<p>The 420 Code is organised across eight bound Notebooks. Each Notebook is a standalone book carrying one domain of the architecture; the eight together carry the corpus.</p>
+<p>AP06 opens Notebook IV (Forces and Constants). It depends on Notebook I (Premise) for the axiom 1:1 + 1×ε @ AS and the four conditions {S, B, R, C}; on Notebook II (Spacetime) for the constants c and G and the geometric apparatus (AP03 for the conjugacy c² = β/α, AP05 for the break, AP08 for Einstein’s field equations); and on Notebook III (Quantum Mechanics) for the quantum sector, the Born rule, and the measurement structure that connects section 4’s Landauer synthesis to the quantum sector’s record economy.</p>
+<p>AP06 feeds the rest of Notebook IV. Its identification ε ≡ η is the structural ground on which AP15 (Connection) builds U(1) electromagnetism, AP24 (Residual) formalises the six-faces structure of ε, and AP28 (Constant) derives Newton’s gravitational constant from the channel-counting argument. AP14 (Correction) uses AP06’s results when handling Planck-scale commutation corrections.</p>
+<h2>Reading order within AP06</h2>
+<p>Front to back. Section 1 establishes gravitational leakage (the Hawking channel). Section 2 establishes electromagnetic leakage (the retinal channel). Section 3 names the common structure as the Leakage Theorem. Section 4 synthesises the observation boundary through Landauer. Section 5 establishes the cosmological channel (CMB). Section 6 names the Cosmological Corollary the paper carries into Notebook IV. Section 7 performs the framework move: ε ≡ η. Section 8 conjectures forward to the Planck constraint.</p>
+<h2>How to read this paper</h2>
+<p>The paper alternates two voices as the material requires. Narrative passages — the structural readings, the felt sense of leakage across three scales, the cosmological framing — speak directly. Formal sections — the theorem statement, the proof, the identification, the kill switches — speak in the precision the structure requires. Where the gear changes, the change is signalled by the form: formal blocks open with a bold label (Theorem, Identification, Claim, Kill Switch) and close with the box mark ■.</p>
+<h2>A note on notation</h2>
+<p>Two notational items recur and are worth flagging at the door. The symbol κ carries different meanings in different sections. In section 1 it is the surface gravity of a Schwarzschild black hole, κ = c⁴/(4GM), with dimensions of acceleration; in section 7 it is the backreaction coupling that enters the parametrisation G = κ/(εΛ²) from AP03 (a scaling form superseded by AP28’s derived α_G = α_em²¹; see §8). The two κ’s are distinct quantities sharing one symbol; context disambiguates.</p>
+<p>The symbol ε carries one structural meaning throughout the corpus: the unique unpaired element of Axiom B (the break). In AP06 it acquires a physical reading via Identification 6.1: ε ≡ η, the leakage ratio at the relevant physical boundary, with domain-dependent values ε_gravity ≈ 10⁻¹⁷, ε_eye ≈ 10⁻⁶ to 10⁻⁵, ε_cosmo ≈ 10⁻⁵. The corpus-wide identification of the measured electromagnetic case as ε = α_em ≈ 1/137 sits at the chemical-biological scale.</p></div></details>
+<h2 class="lh">The sections</h2>
+<ol class="chapters"><li><a href="/proofs/ap06-the-leakage-constant/0-dependency-and-scope/"><span class="num">Section 0</span><span class="q">Dependency and Scope</span><span class="line">AP06 identifies the speed of light c as the universal absorption limiter and, on that basis, identifies the 420 Code’s symmetry-breaking parameter ε with the leakage ratio η enforced by finite c at every physical absorbing boundary.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/1-gravitational-leakage-the-hawking-channel/"><span class="num">Section 1</span><span class="q">Gravitational Leakage: The Hawking Channel</span><span class="line">Claim C1 (Established): gravitational absorbers exhibit six structural features; η &gt; 0 by Hawking radiation; c is the constraining constant.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/2-electromagnetic-leakage-the-retinal-channel/"><span class="num">Section 2</span><span class="q">Electromagnetic Leakage: The Retinal Channel</span><span class="line">Claim C2 (Established): electromagnetic absorbers exhibit the same six features; η ≈ 10⁻⁶ to 10⁻⁵; c constrains η via α.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/3-the-common-structure-the-leakage-theorem/"><span class="num">Section 3</span><span class="q">The Common Structure: The Leakage Theorem</span><span class="line">Theorem 3.1 (Derived — scoped): η &gt; 0 in the analysed channels when c and coupling are finite. Result C3 (Derived — scoped): perfect absorption not achieved in the two analysed channels.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/4-the-observation-boundary-landauer-at-every-measurement/"><span class="num">Section 4</span><span class="q">The Observation Boundary: Landauer at Every Measurement</span><span class="line">Claim C4 (Synthesis): leakage cost per bit = k_B T × O(1) in all three domains; same form, different magnitudes.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/5-the-cosmological-channel-cmb-as-boundary-radiation/"><span class="num">Section 5</span><span class="q">The Cosmological Channel: CMB as Boundary Radiation</span><span class="line">Claim C5 (Established): CMB exhibits all six structural features; anisotropy ∼10⁻⁵; boundary = last scattering surface.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/6-the-cosmological-corollary/"><span class="num">Section 6</span><span class="q">The Cosmological Corollary</span><span class="line">Claim C6a (Structural Corollary): the cosmological channel of section 5 and AP43 D5’s cosmological 1×ε integration are one structural process read at two boundaries.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/7-the-epsilon-identification/"><span class="num">Section 7</span><span class="q">The Epsilon Identification</span><span class="line">Identification 6.1 (Claim C6) [INTERPRETATION]: ε ≡ η. The axiom’s ε is the measured leakage ratio at every analysed boundary.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/8-forward-direction-the-planck-constraint/"><span class="num">Section 8</span><span class="q">Forward Direction: The Planck Constraint</span><span class="line">Section 8.1: G = κ/(εΛ²), G depends on c through ε. Section 8.4: Conjecture C7 (multidimensional residual). All constants as faces of one residual.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/kill-switches/"><span class="num">The switches</span><span class="q">Kill Switches</span><span class="line">Seven kill switches engage. Identifiers per the Master Kill Switch Registry.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/what-this-establishes/"><span class="num">What is open</span><span class="q">What This Establishes and What Remains Open</span><span class="line">AP06 closes the question of ε’s physical grounding in the analysed channels.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/conditionality-footer/"><span class="num">The grades</span><span class="q">Claim Summary · Conditionality Footer</span><span class="line">Every section graded. Every dependency named.</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/notation-reference/"><span class="num"></span><span class="q">Notation Reference</span><span class="line">the symbols used in this paper</span></a></li><li><a href="/proofs/ap06-the-leakage-constant/references/"><span class="num"></span><span class="q">References</span><span class="line">the published physics this paper cites</span></a></li></ol>
+<h2 class="lh">The kill switches</h2>
+<h3>KS-L.1 — Perfect absorber</h3>
+<p>Claim. In the analysed channels of sections 1–2, the leakage ratio η is strictly positive whenever c and the relevant coupling constant are finite. Theorem 3.1.</p>
+<p>Test. Demonstration of a physical absorber achieving η = 0 with finite c and finite coupling constant.</p>
+<p>Failure. Theorem 3.1 falls; Result C3 falls; Identification 6.1 loses its physical grounding via the dependent KS-L.3.</p>
+<h3>KS-L.2 — Sufficiency failure within AP06 class</h3>
+<p>Claim. The conditions of Theorem 3.1 (finite c, finite coupling, valid leakage-ratio definition) are sufficient for η &gt; 0 in the AP06 class of near-perfect absorbers.</p>
+<p>Test. Identification of an AP06-class near-perfect absorber (finite c, finite relevant coupling, valid leakage-ratio definition) that nonetheless achieves η = 0.</p>
+<p>Failure. Theorem 3.1 (scoped form) fails; the class definition is not sufficient.</p>
+<h3>KS-L.3 — Dependent on KS-L.1 / KS-L.2</h3>
+<p>Claim. Identification 6.1 (ε ≡ η) depends on Theorem 3.1. If Theorem 3.1 fails, the identification falls automatically.</p>
+<p>Test. Trigger KS-L.1 or KS-L.2. KS-L.3 fires by dependency.</p>
+<h3>KS-L.4 — Landauer violation</h3>
+<p>Claim. Information erasure costs at minimum k_B T ln 2 per bit. Section 4. Without this floor, the three-channels-one-form claim in section 4.3 (C4) fails.</p>
+<p>Test. Demonstration of information erasure at zero energy cost.</p>
+<p>Failure. Section 4 falls. Section 3 is unaffected.</p>
+<h3>KS-L.5 — No shared structural parameterisation</h3>
+<p>Claim. Non-load-bearing. A dimensionless parameterisation can be constructed that places gravitational greybody leakage and electromagnetic boundary leakage within a shared near-perfect-absorber family at the level of structural variables. Section 3.2.</p>
+<p>Test. Demonstration that no such parameterisation can be constructed at the level of structural variables.</p>
+<p>Failure. section 3.2 heuristic falls; the cross-domain framing of section 8 weakens.</p>
+<h3>KS-L.6 — G independent of c</h3>
+<p>Claim. G and c are not independent. G depends on c through ε (section 8.1). Structurally constrained by AP20’s forcing proof (Axiom B → one parameter).</p>
+<p>Test. Framework or observation demonstrating that G can change without any corresponding change in c or the leakage structure.</p>
+<p>Failure. Section 8.1 falls; the proposed physical mechanism for AP03’s conjugacy weakens.</p>
+<h3>KS-L.7 — Poisson derivation</h3>
+<p>Claim. When the Poisson derivation is completed (from the record algebra), the resulting G coefficient depends on c through the leakage ε. Section 8.1.</p>
+<p>Test. The Poisson derivation, when completed, produces a G coefficient that does not depend on c through the leakage.</p>
+<p>Failure. the specific mechanism is wrong; conjugacy may hold via different means.</p>
+<p class="reg">Every kill switch in this paper is filed in the registry, on the420code.org: <a href="/killswitches/#ap06">the420code.org/killswitches/</a></p>
+<h2 class="lh">The debts</h2>
+<p>D1 (Broader class). Theorem 3.1 is proven for two specific channels (gravitational and electromagnetic). The hypothesis that it extends to all physical near-perfect absorbers with finite c and finite coupling is advanced but not proven. [AP06-specific, load-bearing for the broader-class claim only]</p>
+<p>D2 (Numerical factor). The eye’s leakage ratio (∼10⁻⁵) and the CMB anisotropy (∼10⁻⁵) are numerically similar. The paper honestly states this is likely coincidental (section 5.4). Whether a deeper structural reason exists is an open question. [AP06-specific, non-load-bearing]</p>
+<p>D3 (Poisson derivation). The Poisson equation derivation with G depending on c through the leakage (KS-L.7) has not been completed. Until achieved, section 8’s claims about G’s dependence on c remain conjectural. [Shared with AP03 D1; partially reduced by AP43 section 7’s Newtonian-limit derivation in configuration space]</p>
+<p class="source">Dependencies.</p>
+<p class="source">Established physics: Hawking 1975; Bekenstein 1973; Hammer et al. 2022; Mordant et al. 2011; Penzias &amp; Wilson 1965; Planck 2020; Landauer 1961; Bérut et al. 2012; Smoot et al. 1992; Tolman 1934.</p>
+<p class="source">Framework: Axiom B (the break) from AP01; AP03 (the conjugacy c² = β/α and the scaling form G = κ/(εΛ²)); AP05 (structural derivation of the break); AP20 (the forcing proof: Axiom B → one parameter, constraining KS-L.6); AP43 D5 (the cosmological 1×ε integration carried as corollary in Section 6).</p>
+<p class="wall">On the wall: <a href="/proofs/instruments/AP06/DATED_NOTES_2026-09-14.md">Dated note, 14 Sep 2026</a></p>
+<p class="orig">The same paper on the420code.org: <a href="/proofs/">the420code.org/proofs/</a> · The paper (PDF): <a href="/AP06_The_Leakage_Constant.pdf">the420code.org/AP06_The_Leakage_Constant.pdf</a></p>
+<nav class="pn solo"><div class="up"><small>Back to</small><a href="/proofs/">Ø Proofs</a></div></nav>
+<div class="constraint" id="about">
+  <p style="margin:0 0 1rem"><a href="https://studiog.global" target="_blank" rel="noopener"><img src="/StudioG_Logo_Web.jpg" alt="Studio G" style="height:40px"></a></p>
+  <p><b>Artist:</b> <a href="https://artist-g.global/about/" target="_blank" rel="noopener" style="color:inherit">G</a> · <a href="https://studiog.global" target="_blank" rel="noopener" style="color:inherit">Studio G, Cape Town</a></p>
+  <p><b>Duration:</b> 30+ years · <b>Exhibition:</b> over a million words</p>
+  <p><b>Contact:</b> <a href="mailto:iam@the420code.org" style="color:inherit">iam@the420code.org</a></p>
+  <p style="margin-top:1rem">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div>
+
+<p class="oneness">One record exists.<br>Be kind is a derivation.<br>The awareness in me is the awareness in you.</p>
+
+<div class="footer">
+  <p style="text-align:center;margin:0 0 1rem"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:40px"></p>
+  <p style="font-weight:700">Don’t be a cunt. Be kind.</p>
+  <p>The short answer: <a href="https://whybekind.org/" target="_blank" rel="noopener" style="color:inherit">why<span style="color:#C00000">bekind</span>.org</a></p>
+  <p>The ethics, applied to AI: <a href="https://aiethics.global/" target="_blank" rel="noopener" style="color:inherit">ai<span style="color:#1F3F99">ethics</span>.global</a></p>
+  <p>the420code.org · Copyleft 2026</p>
+  <p>the lifestyle 1980-08-05 – 2025-12-25</p>
+</div>
+</div>
+<script src="/five-doors/reader.js"></script>
+<script id="nav-menu-close">
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+</body>
+</html>
