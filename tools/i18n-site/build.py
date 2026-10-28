@@ -47,7 +47,7 @@ def twin(lang, url):
 
 def link_rewriter(lang, path, pages):
     """A function that rewrites one link of the English page `path` for the language."""
-    base = posixpath.dirname("/" + path) + "/"
+    base = posixpath.dirname("/" + path).rstrip("/") + "/"
     urls = {page_url(p) for p in pages} | {page_url(p).rstrip("/") for p in pages}         | {page_url(p)[:-5] for p in pages if p.endswith(".html") and not p.endswith("index.html")}   # /x served as /x.html
 
     def fix(u):
