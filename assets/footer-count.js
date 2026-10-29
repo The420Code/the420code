@@ -15,7 +15,7 @@
           body: JSON.stringify({path: location.pathname, ref: document.referrer})}).catch(function () {});
       }
     } catch (e) {}
-    fill('visit-count', V);
   }
+  fill('visit-count', V);
   fill('dl-count', D);
 })();
