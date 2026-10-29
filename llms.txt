@@ -218,3 +218,12 @@ G. (2026). The 420 Code — 54 Artist's Proofs (AP01–AP54). Studio G. https://
 - Films — films in G’s voice, in chains, every line on the page as text: https://the420code.org/films/
 - Languages: English, Spanish, French, German, Portuguese, Dutch, Italian, Chinese, Japanese, Korean, Russian, Arabic, Hindi
 - DOI: 10.5281/zenodo.22766173 (this version); 10.5281/zenodo.19208225 (all versions)
+
+## The family
+
+- https://the420code.org/
+- https://whybekind.org/
+- https://aiethics.global/
+- https://bioethics.global/
+- https://appliedethics.global/
+- https://onereality.global/
