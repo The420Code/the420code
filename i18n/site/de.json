@@ -121718,5 +121718,141 @@
 "t": "Datierte Notiz vom 29. Oktober 2026: Die Beschreibung ist an Ø Applications, Kapitel 7, APP-7.1, angeglichen, den maßgeblichen Switch. Status unverändert.",
 "src": "patch",
 "b": "de__wc20261029"
+},
+"Dies if Ω_DM/Ω_b at z ≳ 4 matches the z = 0 value or was lower early, or a dark-matter particle is detected (KS-42.1)": {
+"t": "Stirbt, wenn Ω_DM/Ω_b bei z ≳ 4 dem Wert bei z = 0 entspricht oder früh niedriger war, oder wenn ein Dunkle-Materie-Teilchen nachgewiesen wird (KS-42.1)",
+"src": "patch"
+},
+"⟦a1⟧dark-clock-KS42.6⟦/a1⟧ ⟦span2⟧(⟦a3⟧raw⟦/a3⟧)⟦/span2⟧ · ⟦a4⟧erratum⟦/a4⟧ ⟦span5⟧(⟦a6⟧raw⟦/a6⟧)⟦/span5⟧": {
+"t": "⟦a1⟧dark-clock-KS42.6⟦/a1⟧ ⟦span2⟧(⟦a3⟧roh⟦/a3⟧)⟦/span2⟧ · ⟦a4⟧Erratum⟦/a4⟧ ⟦span5⟧(⟦a6⟧roh⟦/a6⟧)⟦/span5⟧",
+"src": "patch"
+},
+"τ/t_H = 6/21, and the direction: Ω_DM/Ω_b falls with time (erratum 2026-10-29).": {
+"t": "τ/t_H = 6/21, und die Richtung: Ω_DM/Ω_b fällt mit der Zeit (Erratum 2026-10-29).",
+"src": "patch"
+},
+"⟦a1⟧ERRATUM-2026-10-29-dark-clock-KS42.6.md⟦/a1⟧ ⟦span2⟧(⟦a3⟧raw⟦/a3⟧)⟦/span2⟧": {
+"t": "⟦a1⟧ERRATUM-2026-10-29-dark-clock-KS42.6.md⟦/a1⟧ ⟦span2⟧(⟦a3⟧roh⟦/a3⟧)⟦/span2⟧",
+"src": "patch"
+},
+"The erratum on the direction: Ω_DM/Ω_b falls with cosmic time. It was higher in the early universe than today. The frozen file is not edited.": {
+"t": "Das Erratum zur Richtung: Ω_DM/Ω_b fällt mit der kosmischen Zeit. Im frühen Universum war es höher als heute. Die eingefrorene Datei wird nicht bearbeitet.",
+"src": "patch"
+},
+"The ethics, applied to the body: ⟦a1⟧bio⟦span2⟧ethics⟦/span2⟧.global⟦/a1⟧": {
+"t": "Die Ethik, angewandt auf den Körper: ⟦a1⟧bio⟦span2⟧ethics⟦/span2⟧.global⟦/a1⟧",
+"src": "patch"
+},
+"The ethics, applied, field by field: ⟦a1⟧applied⟦span2⟧ethics⟦/span2⟧.global⟦/a1⟧": {
+"t": "Die Ethik, angewandt, Feld für Feld: ⟦a1⟧applied⟦span2⟧ethics⟦/span2⟧.global⟦/a1⟧",
+"src": "patch"
+},
+"The physics, from one sentence to the sky: ⟦a1⟧one⟦span2⟧reality⟦/span2⟧.global⟦/a1⟧": {
+"t": "Die Physik, von einem Satz bis zum Himmel: ⟦a1⟧one⟦span2⟧reality⟦/span2⟧.global⟦/a1⟧",
+"src": "patch"
+},
+"Erratum — the direction line in the dark-clock registration (2026-10-29)": {
+"t": "Erratum — die Richtungszeile in der Registrierung der dunklen Uhr (2026-10-29)",
+"src": "patch"
+},
+"Erratum — the direction line in the dark-clock registration (2026-10-29) Date: 2026-10-29 Author: G · Studio G · the420code.org Applies to:": {
+"t": "Erratum — die Richtungszeile in der Registrierung der dunklen Uhr (2026-10-29) Datum: 2026-10-29 Autor: G · Studio G · the420code.org Gilt für:",
+"src": "patch"
+},
+"Erratum — the direction line in the dark-clock registration (2026-10-29) — the 420 code": {
+"t": "Erratum — die Richtungszeile in der Registrierung der dunklen Uhr (2026-10-29) — the 420 code",
+"src": "patch"
+},
+"⟦strong1⟧Date:⟦/strong1⟧ 2026-10-29 ⟦strong2⟧Author:⟦/strong2⟧ G · Studio G · the420code.org ⟦strong3⟧Applies to:⟦/strong3⟧ ⟦code4⟧2026-08-02-dark-clock-KS42.6.md⟦/code4⟧ (frozen, never edited); AP54 §9 and its registry line, which repeat the frozen wording ⟦strong5⟧Paper of record:⟦/strong5⟧ AP42 ⟦em6⟧The Clock⟦/em6⟧, §4 and KS-42.2, unchanged ⟦strong7⟧Status:⟦/strong7⟧ frozen for commit. The commit hash is the timestamp.": {
+"t": "⟦strong1⟧Datum:⟦/strong1⟧ 2026-10-29 ⟦strong2⟧Autor:⟦/strong2⟧ G · Studio G · the420code.org ⟦strong3⟧Gilt für:⟦/strong3⟧ ⟦code4⟧2026-08-02-dark-clock-KS42.6.md⟦/code4⟧ (eingefroren, nie bearbeitet); AP54 §9 und seine Registerzeile, die den eingefrorenen Wortlaut wiederholen ⟦strong5⟧Maßgebliche Arbeit:⟦/strong5⟧ AP42 ⟦em6⟧Die Uhr⟦/em6⟧, §4 und KS-42.2, unverändert ⟦strong7⟧Status:⟦/strong7⟧ zum Commit eingefroren. Der Commit-Hash ist der Zeitstempel.",
+"src": "patch"
+},
+"1. What is wrong": {
+"t": "1. Was falsch ist",
+"src": "patch"
+},
+"The frozen file registers the direction as:": {
+"t": "Die eingefrorene Datei registriert die Richtung als:",
+"src": "patch"
+},
+"⟦strong1⟧Ω_DM / Ω_b increases with cosmic time.⟦/strong1⟧": {
+"t": "⟦strong1⟧Ω_DM / Ω_b nimmt mit der kosmischen Zeit zu.⟦/strong1⟧",
+"src": "patch"
+},
+"and its second kill condition reads:": {
+"t": "und ihre zweite Kill-Bedingung lautet:",
+"src": "patch"
+},
+"The arrow is backwards. The paper the file names as its scope says the opposite.": {
+"t": "Der Pfeil zeigt rückwärts. Die Arbeit, die die Datei als ihren Umfang nennt, sagt das Gegenteil.",
+"src": "patch"
+},
+"AP42 §4 gives the dark-sector composition at every epoch. The dark-matter share runs from most of the budget at z ≈ 5 to about a quarter now. The visible share is one channel in twenty-one at every epoch. So dark matter against visible matter falls as time runs forward. It was higher early.": {
+"t": "AP42 §4 gibt die Zusammensetzung des dunklen Sektors in jeder Epoche an. Der Anteil der Dunklen Materie reicht vom größten Teil des Budgets bei z ≈ 5 bis zu etwa einem Viertel heute. Der sichtbare Anteil ist in jeder Epoche ein Kanal von einundzwanzig. Also fällt Dunkle Materie gegenüber sichtbarer Materie, während die Zeit vorwärts läuft. Früh war sie höher.",
+"src": "patch"
+},
+"AP42 §4.1, in the paper's words: \"dark matter dominated early (most content was still in process), dark energy dominates late (most content has completed processing).\" AP42 §4.2: \"The defragmentation model predicts more dark matter at high redshift than ΛCDM.\" KS-42.2 tests exactly that curve, with DE/DM at z ≈ 2 as its handle.": {
+"t": "AP42 §4.1, in den Worten der Arbeit: „dark matter dominated early (most content was still in process), dark energy dominates late (most content has completed processing).“ AP42 §4.2: „The defragmentation model predicts more dark matter at high redshift than ΛCDM.“ KS-42.2 prüft genau diese Kurve, mit DE/DM bei z ≈ 2 als Handhabe.",
+"src": "patch"
+},
+"As frozen, the second kill condition would fire on the paper's own prediction. The clock would die for being right.": {
+"t": "So wie eingefroren, würde die zweite Kill-Bedingung bei der eigenen Vorhersage der Arbeit auslösen. Die Uhr würde dafür sterben, dass sie recht hat.",
+"src": "patch"
+},
+"2. Why the arrow reversed at the freeze": {
+"t": "2. Warum sich der Pfeil beim Einfrieren umkehrte",
+"src": "patch"
+},
+"The frozen file's §2 reasons from production: dark matter \"is being produced by a late-time process rather than inherited from the early universe\", so the ratio was taken to grow. That forgets what the ratio is measured against. The visible share is a fixed count, one in twenty-one, of the same whole. The whole grows as the leak compounds. Dark matter is the part of the dark twenty still in process. Early, nearly all of it was in process. Now most of it has finished and sits in the reservoir. The reservoir grows on a growing whole, which is what reads as the expansion speeding up. The share still in process falls. That is the compound-interest picture, and it is the one AP42 §3 and §4 compute.": {
+"t": "§2 der eingefrorenen Datei argumentiert von der Erzeugung her: Dunkle Materie „wird durch einen späten Prozess erzeugt, statt aus dem frühen Universum geerbt zu sein“, also wurde angenommen, dass das Verhältnis wächst. Das vergisst, woran das Verhältnis gemessen wird. Der sichtbare Anteil ist eine feste Zahl, einer von einundzwanzig, desselben Ganzen. Das Ganze wächst, während sich das Leck verzinst. Dunkle Materie ist der Teil der dunklen zwanzig, der noch im Prozess ist. Früh war fast alles davon im Prozess. Jetzt ist das meiste davon fertig und liegt im Reservoir. Das Reservoir wächst auf einem wachsenden Ganzen, und das ist es, was sich als die Beschleunigung der Expansion liest. Der Anteil, der noch im Prozess ist, fällt. Das ist das Bild des Zinseszinses, und es ist das, welches AP42 §3 und §4 berechnen.",
+"src": "patch"
+},
+"Ruled 2026-10-29: the visible share is a fixed share of what is, not a fixed amount of what was. With that, the paper's arrow is the only arrow.": {
+"t": "Entschieden am 2026-10-29: Der sichtbare Anteil ist ein fester Anteil dessen, was ist, nicht eine feste Menge dessen, was war. Damit ist der Pfeil der Arbeit der einzige Pfeil.",
+"src": "patch"
+},
+"3. What this erratum does": {
+"t": "3. Was dieses Erratum tut",
+"src": "patch"
+},
+"⟦strong1⟧The direction, corrected.⟦/strong1⟧ Ω_DM/Ω_b falls with cosmic time. It was higher in the early universe than today. This is AP42 §4, unchanged.": {
+"t": "⟦strong1⟧Die Richtung, korrigiert.⟦/strong1⟧ Ω_DM/Ω_b fällt mit der kosmischen Zeit. Im frühen Universum war es höher als heute. Das ist AP42 §4, unverändert.",
+"src": "patch"
+},
+"⟦strong1⟧The second kill condition, reversed.⟦/strong1⟧ Any credible determination that Ω_DM/Ω_b was ⟦em2⟧lower⟦/em2⟧ in the early universe than today kills the clock reading outright.": {
+"t": "⟦strong1⟧Die zweite Kill-Bedingung, umgekehrt.⟦/strong1⟧ Jede glaubwürdige Bestimmung, dass Ω_DM/Ω_b im frühen Universum ⟦em2⟧niedriger⟦/em2⟧ war als heute, tötet die Uhrablesung unmittelbar.",
+"src": "patch"
+},
+"⟦strong1⟧The first kill condition stands.⟦/strong1⟧ No evolution at z ≳ 4, at 3σ with systematics under control, kills it. That condition never carried a direction and does not move.": {
+"t": "⟦strong1⟧Die erste Kill-Bedingung steht.⟦/strong1⟧ Keine Entwicklung bei z ≳ 4, auf 3σ bei kontrollierten Systematiken, tötet sie. Diese Bedingung hat nie eine Richtung getragen und bewegt sich nicht.",
+"src": "patch"
+},
+"⟦strong1⟧Kill conditions three to five stand.⟦/strong1⟧ The particle, the ratio itself, and no curve-fitting later: unchanged.": {
+"t": "⟦strong1⟧Die Kill-Bedingungen drei bis fünf stehen.⟦/strong1⟧ Das Teilchen, das Verhältnis selbst und keine nachträgliche Kurvenanpassung: unverändert.",
+"src": "patch"
+},
+"⟦strong1⟧The curve stays unregistered.⟦/strong1⟧ The epoch table in AP42 §4 is the constant-feeding approximation. The formation-history convolution is still owed under D48, as the frozen file says. This erratum registers a sign, not a curve. No measurement has been compared with either.": {
+"t": "⟦strong1⟧Die Kurve bleibt unregistriert.⟦/strong1⟧ Die Epochentabelle in AP42 §4 ist die Näherung der konstanten Einspeisung. Die Faltung mit der Entstehungsgeschichte steht unter D48 noch aus, wie die eingefrorene Datei sagt. Dieses Erratum registriert ein Vorzeichen, keine Kurve. Keine Messung wurde mit einem von beiden verglichen.",
+"src": "patch"
+},
+"⟦strong1⟧AP54 §9 and its registry line⟦/strong1⟧ repeat the frozen wording, \"the dark-matter share rising against the baryons with time\". A dated note goes beside AP54 at its next republish. The paper is not edited.": {
+"t": "⟦strong1⟧AP54 §9 und seine Registerzeile⟦/strong1⟧ wiederholen den eingefrorenen Wortlaut, „the dark-matter share rising against the baryons with time“. Eine datierte Notiz kommt bei der nächsten Neuveröffentlichung neben AP54. Die Arbeit wird nicht bearbeitet.",
+"src": "patch"
+},
+"4. Why this is not a change of prediction after the fact": {
+"t": "4. Warum dies keine nachträgliche Änderung der Vorhersage ist",
+"src": "patch"
+},
+"No high-redshift determination of Ω_DM/Ω_b has been read against this switch. The paper the registration names as its scope carries the direction in its central section and in its own kill switch KS-42.2; its Orientation records the epoch table as preserved verbatim from the first version. This erratum corrects the freeze to the paper. It does not correct the paper to the data. The frozen file's own §3, condition five, forbids a curve produced after the data; a sign restored from the paper, before any data, is not that.": {
+"t": "Keine Bestimmung von Ω_DM/Ω_b bei hoher Rotverschiebung wurde gegen diesen Switch gelesen. Die Arbeit, die die Registrierung als ihren Umfang nennt, trägt die Richtung in ihrem zentralen Abschnitt und in ihrem eigenen Kill Switch KS-42.2; ihre Orientierung hält fest, dass die Epochentabelle wörtlich aus der ersten Version bewahrt ist. Dieses Erratum korrigiert das Einfrieren auf die Arbeit hin. Es korrigiert nicht die Arbeit auf die Daten hin. §3 der eingefrorenen Datei, Bedingung fünf, verbietet eine Kurve, die nach den Daten erzeugt wird; ein Vorzeichen, das vor allen Daten aus der Arbeit wiederhergestellt wird, ist das nicht.",
+"src": "patch"
+},
+"The frozen file stays as frozen. This erratum is dated beside it.": {
+"t": "Die eingefrorene Datei bleibt, wie sie eingefroren wurde. Dieses Erratum steht datiert neben ihr.",
+"src": "patch"
+},
+"⟦span1⟧The file this page renders⟦/span1⟧ ⟦span2⟧ERRATUM-2026-10-29-dark-clock-KS42.6.md⟦/span2⟧ · SHA-256 ⟦span3⟧75289ed75779f2921077efb2b41b899cb9fb4b69b6e158ba3b80f92003212a58⟦/span3⟧⟦br4⟧ This page is a rendering. The frozen file is the record: ⟦a5⟧open the raw document⟦/a5⟧. Frozen files are never edited; corrections supersede, dated, in the open.": {
+"t": "⟦span1⟧Die Datei, die diese Seite darstellt⟦/span1⟧ ⟦span2⟧ERRATUM-2026-10-29-dark-clock-KS42.6.md⟦/span2⟧ · SHA-256 ⟦span3⟧75289ed75779f2921077efb2b41b899cb9fb4b69b6e158ba3b80f92003212a58⟦/span3⟧⟦br4⟧ Diese Seite ist eine Darstellung. Die eingefrorene Datei ist der Eintrag: ⟦a5⟧das Rohdokument öffnen⟦/a5⟧. Eingefrorene Dateien werden nie bearbeitet; Korrekturen ersetzen, datiert, offen.",
+"src": "patch"
 }
 }
