@@ -853,5 +853,13 @@
   "zenodo_concept_doi": "10.5281/zenodo.19208225",
   "osf": "r69bm"
  },
- "summary_built": "2026-09-27"
+ "summary_built": "2026-09-27",
+ "family": [
+  "https://the420code.org/",
+  "https://whybekind.org/",
+  "https://aiethics.global/",
+  "https://bioethics.global/",
+  "https://appliedethics.global/",
+  "https://onereality.global/"
+ ]
 }
