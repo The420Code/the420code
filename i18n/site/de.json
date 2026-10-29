@@ -121854,5 +121854,13 @@
 "⟦span1⟧The file this page renders⟦/span1⟧ ⟦span2⟧ERRATUM-2026-10-29-dark-clock-KS42.6.md⟦/span2⟧ · SHA-256 ⟦span3⟧75289ed75779f2921077efb2b41b899cb9fb4b69b6e158ba3b80f92003212a58⟦/span3⟧⟦br4⟧ This page is a rendering. The frozen file is the record: ⟦a5⟧open the raw document⟦/a5⟧. Frozen files are never edited; corrections supersede, dated, in the open.": {
 "t": "⟦span1⟧Die Datei, die diese Seite darstellt⟦/span1⟧ ⟦span2⟧ERRATUM-2026-10-29-dark-clock-KS42.6.md⟦/span2⟧ · SHA-256 ⟦span3⟧75289ed75779f2921077efb2b41b899cb9fb4b69b6e158ba3b80f92003212a58⟦/span3⟧⟦br4⟧ Diese Seite ist eine Darstellung. Die eingefrorene Datei ist der Eintrag: ⟦a5⟧das Rohdokument öffnen⟦/a5⟧. Eingefrorene Dateien werden nie bearbeitet; Korrekturen ersetzen, datiert, offen.",
 "src": "patch"
+},
+"This work is Copyleft. Free forever. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.": {
+"t": "Dieses Werk ist Copyleft. Für immer kostenlos. Du darfst es herunterladen, drucken, teilen und verbreiten. Du darfst die Quelle nicht verändern. Halte das Signal sauber.",
+"src": "whybekind"
+},
+"⟦span1⟧—⟦/span1⟧ visits · ⟦span2⟧—⟦/span2⟧ downloads": {
+"t": "⟦span1⟧—⟦/span1⟧ Besuche · ⟦span2⟧—⟦/span2⟧ Downloads",
+"src": "patch"
 }
 }
