@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erratum — the direction line in the dark-clock registration (2026-10-29) — the 420 code</title>
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://the420code.org/prereg/doc/erratum-2026-10-29-dark-clock-ks42.6">
+<meta property="og:title" content="Erratum — the direction line in the dark-clock registration (2026-10-29)">
+<meta property="og:image" content="https://the420code.org/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 420 Code — Eye of the Universe">
+<meta name="description" content="Erratum — the direction line in the dark-clock registration (2026-10-29) Date: 2026-10-29 Author: G · Studio G · the420code.org Applies to:">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/jpeg" href="/Eye_of_the_Universe.jpg">
+<link rel="license" href="https://creativecommons.org/licenses/by-nd/4.0/">
+<link rel="canonical" href="https://the420code.org/prereg/doc/erratum-2026-10-29-dark-clock-ks42.6">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bk:#111;--wh:#fff;--g1:#f3f3ed;--g2:#e8e8e8;--g3:#d5d5d0;--edge:#8a8a8a;--g4:#4a4a4a;--g5:#4a4a4a;--g6:#1a1a1a;--gold:#8B6914;--fire:#8B1A1A;--live:#2f5233;--f:'Atkinson Hyperlegible',system-ui,sans-serif}
+body{font-family:var(--f);font-size:18px;line-height:1.75;color:var(--bk);background:var(--wh);-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:3rem 1.5rem 4rem}
+/* ── the header's base, as the home page has it ── */
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:100;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--g3);margin:0 0 3rem;line-height:1.65}
+html{scroll-padding-top:86px}
+@media(max-width:640px){html{scroll-padding-top:126px}}
+.nav a:not(.nav-title){font-size:16px;color:var(--g5);text-decoration:none}
+.nav a:not(.nav-title):hover{color:var(--bk);text-decoration:underline}
+@media(max-width:600px){.nav{gap:.75rem;padding:.75rem 0}}
+.nav a.nav-door{font-weight:700;color:#1a1a1a}
+.nav a.nav-door:hover{color:#8B6914}
+/* ── end of the header's base ── */
+a{color:var(--bk)}
+.crumb{font-size:16px;color:var(--g5);margin:0 0 .5rem;letter-spacing:.04em;text-transform:uppercase;font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:0 0 1rem}
+h2{font-size:25px;margin:2.5rem 0 .85rem;line-height:1.3}
+h3{font-size:20px;margin:2rem 0 .7rem}
+h4{font-size:18px;margin:1.5rem 0 .5rem}
+p{margin:0 0 1.1rem}
+ul,ol{margin:0 0 1.1rem 1.5rem} li{margin:0 0 .5rem}
+blockquote{border-left:4px solid var(--gold);background:var(--g1);padding:1rem 1.25rem;margin:0 0 1.2rem;font-size:18px}
+code{font-family:'Courier New',monospace;font-size:16.5px;background:var(--g1);padding:1px 5px;border-radius:2px}
+.doc-code{font-family:'Courier New',monospace;font-size:16px;line-height:1.6;background:var(--g1);padding:1rem 1.15rem;overflow-x:auto;margin:0 0 1.2rem;white-space:pre}
+.doc-tblwrap{overflow-x:auto;margin:0 0 1.4rem}
+.doc-table{width:100%;border-collapse:collapse;font-size:16.5px}
+.doc-table th{text-align:left;font-weight:700;padding:.6rem .65rem;border-bottom:2px solid var(--bk);font-size:16px}
+.doc-table td{padding:.55rem .65rem;border-bottom:1px solid var(--g2);vertical-align:top}
+hr{border:none;border-top:1px solid var(--g2);margin:2rem 0}
+.seal{border:1px solid var(--g2);background:var(--g1);padding:1.1rem 1.25rem;margin:2.5rem 0 0;font-size:16.5px;line-height:1.7}
+.seal .lbl{font-weight:700;letter-spacing:.05em;font-size:16px;text-transform:uppercase;color:var(--g5);display:block;margin-bottom:.4rem}
+.mono{font-family:'Courier New',monospace;word-break:break-all}
+.foot{margin:3rem 0 0;padding-top:1.25rem;border-top:1px solid var(--g2);font-size:16px;color:var(--g5)}
+@media(max-width:640px){body{font-size:17px}h1{font-size:28px}h2{font-size:22px}}
+@media(max-width:600px){.wrap{padding:2rem 1rem 3rem}}
+
+/* ── the header: one row, with the rooms and the languages behind two drop-downs ── */
+.nav{position:sticky;top:0;z-index:100;overflow:visible;flex-wrap:nowrap}
+.nav a.nav-room{display:none}
+/* one row at every width: the logo and the buttons keep their size; the door's name wraps
+   inside its own box instead, never splitting The 420 Code, never pushing a button down */
+.nav-logo,.nav-toggle,.nav-flag{flex-shrink:0}
+.nav a.nav-door{min-width:0;word-break:keep-all}
+.nav .nw{white-space:nowrap}
+.nav-toggle,.nav-flag{display:inline-flex;align-items:center;gap:.45rem;
+  background:none;border:1px solid var(--edge);border-radius:3px;font-family:inherit;
+  font-size:16px;font-weight:700;color:#1a1a1a;padding:5px 11px;cursor:pointer;line-height:1.2}
+.nav-toggle{margin-left:auto}
+/* the flag button is exactly as tall as Rooms: one 14px line, 10px padding, 2px border */
+.nav-flag{height:calc(1.2em + 12px)}
+.nav-flag img{display:block;width:20px;height:15px;border-radius:2px}
+.nav-toggle:hover,.nav-flag:hover{border-color:#8B6914;color:#8B6914}
+.nav-toggle::after,.nav-flag::after{content:"";display:inline-block;width:0;height:0;
+  border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid currentColor;transition:transform .15s}
+.nav.open .nav-toggle,.nav.lang-open .nav-flag{border-color:#8B6914;color:#8B6914}
+.nav.open .nav-toggle::after,.nav.lang-open .nav-flag::after{transform:rotate(180deg)}
+.nav-menu,.nav-langs{display:none;position:absolute;top:100%;right:0;min-width:270px;max-width:min(92vw,340px);
+  background:#fff;border:1px solid var(--edge);border-top:none;border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);padding:.65rem 0 .5rem;z-index:200}
+.nav.open .nav-menu,.nav.lang-open .nav-langs{display:block}
+.nav.open .nav-menu a.nav-room,.nav.lang-open .nav-langs a.nav-lang{display:block;padding:.42rem 1.15rem;font-size:16px;
+  text-decoration:none;color:#1a1a1a;white-space:nowrap}
+.nav.lang-open .nav-langs a.nav-lang{display:flex;align-items:center;gap:.7rem}
+.nav-langs a.nav-lang img{width:20px;height:15px;border-radius:2px;flex-shrink:0}
+.nav.open .nav-menu a.nav-room:hover,.nav.lang-open .nav-langs a.nav-lang:hover{background:var(--g1);color:#8B6914}
+.nav.lang-open .nav-langs a.nav-lang[aria-current]{font-weight:700;color:#8B6914}
+/* the search, in the header: one field, and the whole work answers (G, 22 September 2026) */
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.nav-search{position:relative;flex:1 1 170px;min-width:0;max-width:340px;margin:0}
+.nav-q{width:100%;font-family:inherit;font-size:16px;line-height:1.2;color:#1a1a1a;background:#fff;
+  border:1px solid var(--edge);border-radius:3px;padding:6px 11px;-webkit-appearance:none;appearance:none}
+.nav-q::placeholder{color:var(--g5);opacity:1}
+.nav-q:focus{outline:none;border-color:#8B6914}
+.nav-search-btn{display:none;align-items:center;background:none;border:1px solid var(--edge);border-radius:3px;
+  color:#1a1a1a;padding:6px 9px;cursor:pointer;line-height:1;flex-shrink:0}
+.nav-search-btn:hover,.nav.search-open .nav-search-btn{border-color:#8B6914;color:#8B6914}
+.nav-results{display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;max-height:min(70vh,560px);
+  overflow-y:auto;background:#fff;border:1px solid var(--edge);border-radius:0 0 4px 4px;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);z-index:200;text-align:left}
+.nav-results.on{display:block}
+.nav .nav-results a{display:block;padding:.6rem 1rem;border-bottom:1px solid var(--g2);
+  text-decoration:none;color:#1a1a1a;font-size:16px;line-height:1.45}
+.nav .nav-results a:last-child{border-bottom:0}
+.nav .nav-results a:hover,.nav .nav-results a.on{background:var(--g1);text-decoration:none}
+.nr-t{display:block;font-weight:700}
+.nr-k{display:block;color:var(--g5)}
+.nr-s{display:block;color:var(--g5);margin-top:.1rem}
+.nav-results mark{background:none;color:#8B6914;font-weight:700}
+.nr-note{margin:0;padding:.7rem 1rem;font-size:16px;color:var(--g5)}
+@media(max-width:400px){.nav{gap:.6rem}}
+/* on a small phone the work's name takes the first row and the three buttons the second, so the
+   name is never squeezed to a column of letters by the magnifier beside it */
+@media(max-width:470px){.nav{flex-wrap:wrap;row-gap:.5rem}.nav a.nav-door{flex:1 0 calc(100% - 4rem)}
+  .nav-search-btn{margin-left:auto}.nav-toggle{margin-left:0}}
+@media(max-width:359px){.nav .nw{white-space:normal}}
+@media(max-width:700px){
+  .nav-menu,.nav-langs{left:0;right:0;max-width:none;border-radius:0}
+  .nav-search{display:none;position:absolute;top:100%;left:0;right:0;max-width:none;background:#fff;
+    border-bottom:1px solid var(--g3);padding:.65rem 0 .8rem}
+  .nav.search-open .nav-search{display:block}
+  .nav-search-btn{display:inline-flex}
+  .nav-results{position:static;border:0;box-shadow:none;margin-top:.55rem;max-height:min(60vh,420px)}
+  .nav a.nav-door{line-height:1.25}
+  .nav a.nav-door{font-size:16px}
+}
+</style></head>
+<body><div class="wrap">
+<nav class="nav">
+  <a href="/" class="nav-logo"><img src="/Eye_of_the_Universe.jpg" alt="the 420 code" style="height:37px"></a>
+  <a href="/what-is-the-420-code/" class="nav-door">What Is <span class="nw">The 420 Code</span></a>
+  <form class="nav-search" role="search" onsubmit="return false"><label class="vh" for="nav-q">Search the work</label><input id="nav-q" class="nav-q" type="search" placeholder="Search the work" autocomplete="off" spellcheck="false"><div class="nav-results" role="listbox" aria-label="Search results"></div></form>
+  <button class="nav-search-btn" aria-expanded="false" aria-label="Search" onclick="var n=this.closest('.nav');n.classList.remove('open','lang-open');var o=!n.classList.contains('search-open');n.classList.toggle('search-open',o);this.setAttribute('aria-expanded',o?'true':'false');if(o){var q=n.querySelector('.nav-q');q.focus()}"><svg width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.8" y1="12.8" x2="18" y2="18" stroke-linecap="round"/></svg></button>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Rooms" onclick="var n=this.closest('.nav'),o=!n.classList.contains('open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('open');this.setAttribute('aria-expanded','true')}">Rooms</button>
+  <div class="nav-menu">
+    <a href="/#museum" class="nav-room">Ø Museum</a>
+    <a href="/five-doors/" class="nav-room">Ø Five Doors</a>
+    <a href="/models/" class="nav-room">Ø Models</a>
+    <a href="/exhibition/" class="nav-room">Ø Exhibition</a>
+    <a href="/films/" class="nav-room">Ø Films</a>
+    <a href="/axiom/" class="nav-room">1 Axiom</a>
+    <a href="/physics/" class="nav-room">Ø Physics</a>
+    <a href="/prereg/" class="nav-room">Ø Predictions</a>
+    <a href="/notebooks/" class="nav-room">Ø Notebooks</a>
+    <a href="/proofs/" class="nav-room">Ø Proofs</a>
+    <a href="/why-21-is-forced/" class="nav-room">Ø Why 21 Is Forced</a>
+    <a href="/one-awareness/" class="nav-room">Ø One Awareness</a>
+    <a href="/proofs/instruments/" class="nav-room">Ø Instruments</a>
+    <a href="/#confirm-the-math" class="nav-room">Ø Confirm the Math</a>
+    <a href="https://github.com/ajgreyling/the420code-proof" class="nav-room" target="_blank" rel="noopener">Ø Independent Check</a>
+    <a href="/killswitches/" class="nav-room">Ø Kill Switches</a>
+    <a href="/method/" class="nav-room">Ø Method</a>
+    <a href="/glossary/" class="nav-room">Ø Glossary</a>
+  </div>
+  <button class="nav-flag" aria-expanded="false" aria-label="Language: English" onclick="var n=this.closest('.nav'),o=!n.classList.contains('lang-open');n.classList.remove('open','lang-open');n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});if(o){n.classList.add('lang-open');this.setAttribute('aria-expanded','true')}">English</button>
+  <div class="nav-langs">
+    <a href="/prereg/doc/ERRATUM-2026-10-29-dark-clock-KS42.6.html" class="nav-lang" hreflang="en" lang="en" aria-current="page">English</a>
+    <a href="/es/" class="nav-lang" hreflang="es" lang="es">Español</a>
+    <a href="/fr/" class="nav-lang" hreflang="fr" lang="fr">Français</a>
+    <a href="/de/" class="nav-lang" hreflang="de" lang="de">Deutsch</a>
+    <a href="/pt/" class="nav-lang" hreflang="pt" lang="pt">Português</a>
+    <a href="/nl/" class="nav-lang" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="/it/" class="nav-lang" hreflang="it" lang="it">Italiano</a>
+    <a href="/zh/" class="nav-lang" hreflang="zh" lang="zh">中文</a>
+    <a href="/ja/" class="nav-lang" hreflang="ja" lang="ja">日本語</a>
+    <a href="/ko/" class="nav-lang" hreflang="ko" lang="ko">한국어</a>
+    <a href="/ru/" class="nav-lang" hreflang="ru" lang="ru">Русский</a>
+    <a href="/ar/" class="nav-lang" hreflang="ar" lang="ar">العربية</a>
+    <a href="/hi/" class="nav-lang" hreflang="hi" lang="hi">हिंदी</a>
+  </div>
+</nav>
+<p class="crumb">Ø Frozen Predictions · the document of record</p>
+<h1>Erratum — the direction line in the dark-clock registration (2026-10-29)</h1>
+<p><strong>Date:</strong> 2026-10-29 <strong>Author:</strong> G · Studio G · the420code.org <strong>Applies to:</strong> <code>2026-08-02-dark-clock-KS42.6.md</code> (frozen, never edited); AP54 §9 and its registry line, which repeat the frozen wording <strong>Paper of record:</strong> AP42 <em>The Clock</em>, §4 and KS-42.2, unchanged <strong>Status:</strong> frozen for commit. The commit hash is the timestamp.</p>
+<p>The registration of 2026-08-02 stands as written. It is not edited. This file stands beside it, in the house's way: corrections supersede, dated, in the open.</p>
+<hr>
+<h2>1. What is wrong</h2>
+<p>The frozen file registers the direction as:</p>
+<blockquote><strong>Ω_DM / Ω_b increases with cosmic time.</strong></blockquote>
+<p>and its second kill condition reads:</p>
+<blockquote><strong>KILL — the wrong sign.</strong> Any credible determination that Ω_DM/Ω_b was <em>higher</em> in the early universe than today kills it outright.</blockquote>
+<p>The arrow is backwards. The paper the file names as its scope says the opposite.</p>
+<p>AP42 §4 gives the dark-sector composition at every epoch. The dark-matter share runs from most of the budget at z ≈ 5 to about a quarter now. The visible share is one channel in twenty-one at every epoch. So dark matter against visible matter falls as time runs forward. It was higher early.</p>
+<p>AP42 §4.1, in the paper's words: "dark matter dominated early (most content was still in process), dark energy dominates late (most content has completed processing)." AP42 §4.2: "The defragmentation model predicts more dark matter at high redshift than ΛCDM." KS-42.2 tests exactly that curve, with DE/DM at z ≈ 2 as its handle.</p>
+<p>As frozen, the second kill condition would fire on the paper's own prediction. The clock would die for being right.</p>
+<h2>2. Why the arrow reversed at the freeze</h2>
+<p>The frozen file's §2 reasons from production: dark matter "is being produced by a late-time process rather than inherited from the early universe", so the ratio was taken to grow. That forgets what the ratio is measured against. The visible share is a fixed count, one in twenty-one, of the same whole. The whole grows as the leak compounds. Dark matter is the part of the dark twenty still in process. Early, nearly all of it was in process. Now most of it has finished and sits in the reservoir. The reservoir grows on a growing whole, which is what reads as the expansion speeding up. The share still in process falls. That is the compound-interest picture, and it is the one AP42 §3 and §4 compute.</p>
+<p>Ruled 2026-10-29: the visible share is a fixed share of what is, not a fixed amount of what was. With that, the paper's arrow is the only arrow.</p>
+<h2>3. What this erratum does</h2>
+<ol><li><strong>The direction, corrected.</strong> Ω_DM/Ω_b falls with cosmic time. It was higher in the early universe than today. This is AP42 §4, unchanged.</li><li><strong>The second kill condition, reversed.</strong> Any credible determination that Ω_DM/Ω_b was <em>lower</em> in the early universe than today kills the clock reading outright.</li><li><strong>The first kill condition stands.</strong> No evolution at z ≳ 4, at 3σ with systematics under control, kills it. That condition never carried a direction and does not move.</li><li><strong>Kill conditions three to five stand.</strong> The particle, the ratio itself, and no curve-fitting later: unchanged.</li><li><strong>The curve stays unregistered.</strong> The epoch table in AP42 §4 is the constant-feeding approximation. The formation-history convolution is still owed under D48, as the frozen file says. This erratum registers a sign, not a curve. No measurement has been compared with either.</li><li><strong>AP54 §9 and its registry line</strong> repeat the frozen wording, "the dark-matter share rising against the baryons with time". A dated note goes beside AP54 at its next republish. The paper is not edited.</li></ol>
+<h2>4. Why this is not a change of prediction after the fact</h2>
+<p>No high-redshift determination of Ω_DM/Ω_b has been read against this switch. The paper the registration names as its scope carries the direction in its central section and in its own kill switch KS-42.2; its Orientation records the epoch table as preserved verbatim from the first version. This erratum corrects the freeze to the paper. It does not correct the paper to the data. The frozen file's own §3, condition five, forbids a curve produced after the data; a sign restored from the paper, before any data, is not that.</p>
+<p>The frozen file stays as frozen. This erratum is dated beside it.</p>
+<hr>
+<p><em>Frozen files are never edited; corrections supersede, dated, in the open.</em> <em>Copyleft 2026. Don't be a cunt. Be kind.</em></p>
+<div class="seal">
+  <span class="lbl">The file this page renders</span>
+  <span class="mono">ERRATUM-2026-10-29-dark-clock-KS42.6.md</span> · SHA-256 <span class="mono">75289ed75779f2921077efb2b41b899cb9fb4b69b6e158ba3b80f92003212a58</span><br>
+  This page is a rendering. The frozen file is the record: <a href="../ERRATUM-2026-10-29-dark-clock-KS42.6.md">open the raw document</a>.
+  Frozen files are never edited; corrections supersede, dated, in the open.
+</div>
+<p class="foot"><a href="/prereg/">← back to Ø Frozen Predictions</a> · Copyleft 2026. Don’t be a cunt. Be kind.</p>
+<p class="foot">This work is Copyleft. You are free to download, print, share, and distribute. You are not free to alter the source. Keep the signal clean.</p>
+</div><script id="nav-menu-close">
+// A choice in either list closes it and lets the link do its work; a click anywhere
+// outside the header's drop-downs, or Escape, closes whichever is open.
+document.addEventListener('click',function(e){
+  var n=document.querySelector('.nav');
+  if(!n||!(n.classList.contains('open')||n.classList.contains('lang-open')))return;
+  var chose=e.target.closest('.nav-menu a,.nav-langs a');
+  if(!chose&&e.target.closest('.nav-menu,.nav-langs,.nav-toggle,.nav-flag'))return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Escape')return;
+  var n=document.querySelector('.nav'); if(!n)return;
+  n.classList.remove('open','lang-open');
+  n.querySelectorAll('.nav-toggle,.nav-flag').forEach(function(b){b.setAttribute('aria-expanded','false')});
+});
+</script>
+<script id="nav-search">
+// The search: /search-index.json holds one record per room, chapter, kill switch, glossary entry,
+// paper and frozen document. It is fetched when the reader first reaches for the field, not before,
+// and kept for the session. Every term must be present; the last one matches as a prefix, so results
+// arrive while the word is still being typed. Title hits weigh most, then the book or room it is in.
+(function(){
+  var form=document.querySelector('.nav-search'); if(!form) return;
+  var q=form.querySelector('.nav-q'), out=form.querySelector('.nav-results'), nav=form.closest('.nav');
+  var docs=null, state='', sel=-1, timer=0;
+  var W={room:3,book:2,chapter:1,epilogue:1,paper:2,'kill switch':1,glossary:1,'frozen document':1};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rx(t,last){var e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{return new RegExp('(^|[^\\p{L}\\p{N}])'+e+(last?'':'(?![\\p{L}\\p{N}])'),'giu')}
+    catch(err){return new RegExp('(^|[^a-z0-9])'+e,'gi')}}
+  function note(html){out.innerHTML='<p class="nr-note">'+html+'</p>';out.classList.add('on')}
+  function load(){
+    if(docs||load.busy) return; load.busy=true;
+    fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){
+      docs=d.docs; docs.forEach(function(x){x.tl=x.t.toLowerCase();x.xl=x.x.toLowerCase();x.bl=(x.b||'').toLowerCase()});
+      load.busy=false; if(q.value.trim()) run();
+    }).catch(function(){load.busy=false; note('The search could not load. Every room is in the menu beside this field.')});
+  }
+  function count(re,s){var n=0; re.lastIndex=0; while(re.exec(s)){n++; if(re.lastIndex>s.length||n>40)break} return n}
+  function run(){
+    var query=q.value.trim(); state=query;
+    if(query.length<2){out.classList.remove('on');out.innerHTML='';return}
+    if(!docs){load();note('Searching…');return}
+    var terms=query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean).slice(0,6);
+    if(!terms.length){out.classList.remove('on');return}
+    var res=[];
+    for(var i=0;i<docs.length;i++){
+      var d=docs[i], score=0, ok=true, first=-1;
+      for(var j=0;j<terms.length;j++){
+        var last=(j===terms.length-1), re=rx(terms[j],last);
+        var inT=count(re,d.tl), inB=count(re,d.bl), inX=count(re,d.xl);
+        if(!inT&&!inB&&!inX){ok=false;break}
+        score+=inT*14+inB*4+Math.min(inX,8);
+        if(first<0&&inX){re.lastIndex=0;var m=re.exec(d.xl); if(m) first=m.index}
+      }
+      if(!ok) continue;
+      score+=W[d.k]||0;
+      if(d.tl===query.toLowerCase()) score+=30;
+      res.push([score,d,first]);
+    }
+    res.sort(function(a,b){return b[0]-a[0]});
+    if(!res.length){note('Nothing for <b>'+esc(query)+'</b> yet.');return}
+    var html='', n=Math.min(res.length,12);
+    for(var k=0;k<n;k++){
+      var d=res[k][1], at=res[k][2], x=d.x;
+      var from=at<0?0:Math.max(0,x.lastIndexOf(' ',Math.max(0,at-70))+1);
+      var cut=esc(x.slice(from,from+190))+(from+190<x.length?'…':'');
+      var lead=(from>0?'…':'');
+      for(var j=0;j<terms.length;j++) cut=cut.replace(rx(terms[j],j===terms.length-1),function(m,p1){return p1+'<mark>'+m.slice(p1.length)+'</mark>'});
+      var where=d.b&&d.b!==d.t?esc(d.b)+' · '+esc(d.k):esc(d.k);
+      html+='<a href="'+d.u+'" role="option"><span class="nr-t">'+esc(d.t)+'</span><span class="nr-k">'+where+'</span><span class="nr-s">'+lead+cut+'</span></a>';
+    }
+    if(res.length>n) html+='<p class="nr-note">'+n+' of '+res.length+' places. Keep typing to narrow it.</p>';
+    out.innerHTML=html; out.classList.add('on'); sel=-1;
+  }
+  function move(step){
+    var as=out.querySelectorAll('a'); if(!as.length) return;
+    if(sel>=0&&as[sel]) as[sel].classList.remove('on');
+    sel=(sel+step+as.length)%as.length; as[sel].classList.add('on'); as[sel].scrollIntoView({block:'nearest'});
+  }
+  q.addEventListener('focus',load);
+  q.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,110)});
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();move(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}
+    else if(e.key==='Enter'){var as=out.querySelectorAll('a'); if(as.length){e.preventDefault();(as[sel>=0?sel:0]).click()}}
+    else if(e.key==='Escape'){out.classList.remove('on');q.blur();nav.classList.remove('search-open')}
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.nav-search')&&!e.target.closest('.nav-search-btn')) out.classList.remove('on') });
+})();
+</script>
+<script id="visit-counter">
+// One visit is one browser session, not one page load: a reload does not count
+// again, so the number keeps meaning something. Counted from every page.
+(function(){
+  var api='/.netlify/functions/visit-counter';
+  try{
+    if(!sessionStorage.getItem('v420')){
+      sessionStorage.setItem('v420','1');
+      fetch(api,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({path:location.pathname,ref:document.referrer})}).catch(function(){});
+    }
+  }catch(e){/* private windows and blocked storage: skip the count, never break the page */}
+  var el=document.getElementById('visit-count');
+  if(el){
+    fetch(api).then(function(r){return r.json()}).then(function(d){
+      el.textContent=(d.count||0).toLocaleString();
+    }).catch(function(){el.textContent='—'});
+  }
+})();
+</script>
+<script id="download-counter">
+// Every PDF on this page is counted when it is clicked, by its file name, as on every other page.
+// This page shows no running total, so the script only posts; the pages that show one keep their own.
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href$=".pdf"]');
+  if(!a)return;
+  fetch('/.netlify/functions/download-counter',{method:'POST',keepalive:true,
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({file:a.getAttribute('href').split('/').pop()})}).catch(function(){});
+},true);
+</script>
+</body></html>
