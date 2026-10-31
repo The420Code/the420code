@@ -81,8 +81,21 @@ const normalise = (p) => {
   if (!p.endsWith("/")) p += "/";
   return p;
 };
+// The site's own list of its pages, written each time it is published (tools/family-stats.mjs -> /pages.json).
+// A page on it is a page, so a new room counts from its first day (G, 31 October 2026: philosophy.global's
+// walk was going uncounted because this counter's list still named onereality's rooms). The shapes stay behind it.
+let KNOWN = null, KNOWN_AT = 0;
+async function loadKnown(origin) {
+  if (Date.now() - KNOWN_AT < 600e3) return;
+  KNOWN_AT = Date.now();
+  try {
+    const r = await fetch(origin + "/pages.json", { signal: AbortSignal.timeout(3000) });
+    if (r.ok) KNOWN = new Set(await r.json());
+  } catch (e) { /* the shapes still decide */ }
+}
+const known = (p) => !!KNOWN && (KNOWN.has(p) || KNOWN.has(p.toLowerCase()));
 const isRealPage = (p) => { const q = normalise(p);
-  return PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || FILMS.test(q) || PROOFS.test(q)
+  return known(q) || PAGES.has(q) || LIBRARY.test(q) || FIVE_DOORS.test(q) || FILMS.test(q) || PROOFS.test(q)
          || isDoc(q) || PLAIN.has(q); };
 
 async function readBase(store) {
@@ -128,6 +141,7 @@ async function tally(store, withBreakdown) {
 }
 
 export default async (req, context) => {
+  await loadKnown(new URL(req.url).origin);
   const store = getStore("counters");
   const url = new URL(req.url);
   const headers = {
