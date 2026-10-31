@@ -140,8 +140,22 @@ export function analyse(site, pages) {
   };
 }
 
+// every counted page's address, as the visit counters read a path: lower case, ending in "/", and a
+// page.html also as page (the sites serve both). Written beside stats.json as /pages.json, which the
+// site's visit counter reads: a page on it is counted, so a new room counts from its first day.
+export function addressesOf(pages) {
+  const out = new Set();
+  for (const p of pages) {
+    if (skip(p.html, p.address)) continue;
+    const a = p.address.toLowerCase();
+    for (const v of [a, a.replace(/\.html$/, "")]) out.add(v.endsWith("/") ? v : v + "/");
+  }
+  return [...out].sort();
+}
+
 // from a publish folder
-export function fromFolder(dir, site) {
+export const fromFolder = (dir, site) => analyse(site, readFolder(dir));
+function readFolder(dir) {
   const pages = [];
   const walk = d => {
     for (const e of fs.readdirSync(d, { withFileTypes: true })) {
@@ -152,7 +166,7 @@ export function fromFolder(dir, site) {
     }
   };
   walk(dir);
-  return analyse(site, pages);
+  return pages;
 }
 
 // from a live site's sitemap (the sites not built from GitHub)
@@ -188,9 +202,14 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const dir = a.find(x => !x.startsWith("--")) || ".";
   const site = a.includes("--site") ? a[a.indexOf("--site") + 1] : null;
   if (!site) { console.error("family-stats: give --site <address>"); process.exit(2); }
-  const s = a.includes("--crawl") ? await crawl(site) : fromFolder(dir, site);
-  if (!a.includes("--crawl")) fs.writeFileSync(path.join(dir, "stats.json"), JSON.stringify(s) + "\n");
-  else process.stdout.write(JSON.stringify(s) + "\n");
+  let s;
+  if (a.includes("--crawl")) { s = await crawl(site); process.stdout.write(JSON.stringify(s) + "\n"); }
+  else {
+    const pages = readFolder(dir);
+    s = analyse(site, pages);
+    fs.writeFileSync(path.join(dir, "stats.json"), JSON.stringify(s) + "\n");
+    fs.writeFileSync(path.join(dir, "pages.json"), JSON.stringify(addressesOf(pages)) + "\n");
+  }
   const tl = Object.values(s.words_by_lang).reduce((x, y) => x + y, 0);
   console.error(`family-stats: ${site}: ${s.pages} pages, ${s.words_en} English words, ${Object.keys(s.words_by_lang).length} other languages (${tl} words translated), ${s.links} family links, ${s.videos.length} videos`);
 }
