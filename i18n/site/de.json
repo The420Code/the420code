@@ -121863,8 +121863,8 @@
 "t": "⟦span1⟧—⟦/span1⟧ Besuche · ⟦span2⟧—⟦/span2⟧ Downloads",
 "src": "patch"
 },
-"The philosophy, a walk through the garden: ⟦a1⟧⟦span2⟧philosophy⟦/span2⟧.global⟦/a1⟧": {
-"t": "Die Philosophie, ein Gang durch den Garten: ⟦a1⟧⟦span2⟧philosophy⟦/span2⟧.global⟦/a1⟧",
+"The philosophy: ⟦a1⟧⟦span2⟧philosophy⟦/span2⟧.global⟦/a1⟧": {
+"t": "Die Philosophie: ⟦a1⟧⟦span2⟧philosophy⟦/span2⟧.global⟦/a1⟧",
 "src": "patch"
 }
 }
