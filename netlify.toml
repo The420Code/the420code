@@ -1,5 +1,7 @@
 [build]
   publish = "."
+  # All the stats: the site counts itself when it is published (tools/family-stats.mjs -> stats.json)
+  command = "node tools/family-stats.mjs . --site the420code.org"
 
 [[headers]]
   for = "/*"
