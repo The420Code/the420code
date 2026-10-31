@@ -9,7 +9,7 @@ switch ...), which every translator is given; terms inflect, so the gate checks 
     python lock.py prompt <lang>   the prompt for the one agent that fills WORK/lock/lock_<lang>.json
     python lock.py check [lang]    every lock file complete and sane
 
-The seeds are words already published in the language and are not re-translated: whybekind.org's lock table for the
+The seeds are words already published in the language and are not re-translated: whybekind.global's lock table for the
 language (the same five books, their chapters, the oneness line; github.com/The420Code/whybekind, i18n/), and the
 slogan as this site's own edition in that language prints it.
 """
@@ -147,7 +147,7 @@ def prompt(lang):
 
 {BRIEF[lang]}
 
-ALREADY SETTLED (published in {ENGLISH_NAME[lang]} already: whybekind.org's edition of the same books, and this site's own slogan; copy them EXACTLY):
+ALREADY SETTLED (published in {ENGLISH_NAME[lang]} already: whybekind.global's edition of the same books, and this site's own slogan; copy them EXACTLY):
 {seeded}
 
 WHAT THE KEYS ARE
@@ -158,7 +158,7 @@ WHAT THE KEYS ARE
 - Chapter titles are the chapters of the Five Doors and the Ø Models books: titles, short and strong.
 - Labels ("Read", "Download", "Collapse all", "Back to", "Artist:") are buttons, links and captions: short; keep a trailing colon.
 - "Don’t be a cunt. Be kind." is G's line, the hard one, on this site only: it is settled above and is never softened.
-- "The 420 Code", "G", "the420code.org", "whybekind.org", "AP", "KS" stay in English.
+- "The 420 Code", "G", "the420code.org", "whybekind.global", "AP", "KS" stay in English.
 
 THE TERMS (a glossary every translator will be given; give each its one rendering, the base form, as the work uses it: a technical term of the work, consistent with the settled lines above):
 {json.dumps(terms, ensure_ascii=False)}

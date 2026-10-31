@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Bring in what is already translated: whybekind.org carries the same five books (the Five Doors) and many of the
+"""Bring in what is already translated: whybekind.global carries the same five books (the Five Doors) and many of the
 same lines, translated into the same twelve languages and published (github.com/The420Code/whybekind, i18n/<lang>.json).
 Where a segment of this site is exactly the same English (the same words, the same markup tokens), its translation
 is taken over as it stands, marked src "whybekind". The gate checks it like every other translation.
@@ -37,7 +37,7 @@ def main():
         mem[key] = {"t": t, "src": "whybekind"}
         n += 1
     save_memory(lang, mem)
-    print(lang, n, "translations taken over from whybekind.org;", skipped, "left to translate afresh")
+    print(lang, n, "translations taken over from whybekind.global;", skipped, "left to translate afresh")
 
 
 if __name__ == "__main__":

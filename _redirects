@@ -53,7 +53,7 @@
 # address lands on the text: see [[redirects]] in netlify.toml, which is where this one lives,
 # because the _redirects parser reads a "#" as a comment and would drop the fragment.
 
-# whybekind.org speaks languages this site has no edition in yet; its pages in them link here.
+# whybekind.global speaks languages this site has no edition in yet; its pages in them link here.
 # Until an edition exists, the reader lands on the English page (temporary, so an edition can take the address).
 /af/*   /:splat   302
 /bn/*   /:splat   302

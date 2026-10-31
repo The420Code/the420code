@@ -21,7 +21,7 @@ const SOURCES = [
   [/(^|\.)reddit\.com$/, "Reddit"], [/whatsapp\.com$/, "WhatsApp"], [/(^|\.)telegram\.org$|^t\.me$/, "Telegram"],
   [/chatgpt\.com$|openai\.com$/, "ChatGPT"], [/perplexity\.ai$/, "Perplexity"], [/claude\.ai$/, "Claude"],
   [/gemini\.google\.com$/, "Gemini"], [/copilot\.microsoft\.com$/, "Copilot"],
-  [/(^|\.)the420code\.org$/, "the420code.org"], [/(^|\.)whybekind\.org$/, "whybekind.org"],
+  [/(^|\.)the420code\.org$/, "the420code.org"], [/(^|\.)whybekind\.(org|global)$/, "whybekind.global"],
   [/(^|\.)zenodo\.org$/, "Zenodo"], [/(^|\.)osf\.io$/, "OSF"], [/(^|\.)github\.com$/, "GitHub"], [/lucid\.rodeo$/, "lucid.rodeo"],
 ];
 
