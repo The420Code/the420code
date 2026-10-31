@@ -11,7 +11,7 @@ A page's address in a language is the English address with the language in front
 and every page under the site's rooms (ORDER); the museum's work folder and the language folders are not English
 pages.
 
-The engine is the one that put whybekind.org into twelve languages (github.com/The420Code/whybekind, tools/i18n),
+The engine is the one that put whybekind.global into twelve languages (github.com/The420Code/whybekind, tools/i18n),
 brought here and pointed at this site.
 """
 import glob, os
