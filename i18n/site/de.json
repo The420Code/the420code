@@ -23949,8 +23949,8 @@
 "src": "patch",
 "b": "de__g2b000"
 },
-"⟦a1⟧why⟦span2⟧bekind⟦/span2⟧.org →⟦/a1⟧⟦span3⟧The short answer.⟦/span3⟧": {
-"t": "⟦a1⟧why⟦span2⟧bekind⟦/span2⟧.org →⟦/a1⟧⟦span3⟧Die kurze Antwort.⟦/span3⟧",
+"⟦a1⟧why⟦span2⟧bekind⟦/span2⟧.global →⟦/a1⟧⟦span3⟧The short answer.⟦/span3⟧": {
+"t": "⟦a1⟧why⟦span2⟧bekind⟦/span2⟧.global →⟦/a1⟧⟦span3⟧Die kurze Antwort.⟦/span3⟧",
 "src": "patch",
 "b": "de__g2b000"
 },
@@ -24479,8 +24479,8 @@
 "src": "patch",
 "b": "de__g2b003"
 },
-"The short answer: ⟦a1⟧why⟦span2⟧bekind⟦/span2⟧.org⟦/a1⟧": {
-"t": "Die kurze Antwort: ⟦a1⟧why⟦span2⟧bekind⟦/span2⟧.org⟦/a1⟧",
+"The short answer: ⟦a1⟧why⟦span2⟧bekind⟦/span2⟧.global⟦/a1⟧": {
+"t": "Die kurze Antwort: ⟦a1⟧why⟦span2⟧bekind⟦/span2⟧.global⟦/a1⟧",
 "src": "patch",
 "b": "de__g2b003"
 },
