@@ -39,7 +39,7 @@ def main():
     run(sys.executable, os.path.join(REPO, "tools", "check_site.py"))
     run("git", "add", "site", "i18n", "netlify.toml", "netlify", "tools/i18n")
     names = ", ".join(ENGLISH_NAME[l] for l in langs)
-    msg = ("whybekind.org in %s: every page, in the language's own folder (10 October 2026)\n\n"
+    msg = ("whybekind.global in %s: every page, in the language's own folder (10 October 2026)\n\n"
            "Built by tools/i18n from the English pages and i18n/<lang>.json. The menu and the footer carry the languages "
            "built so far; every page has its hreflang links.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>") % names
     run("git", "-c", "user.name=G", "-c", "user.email=g@studiog.global", "commit", "-q", "-m", msg)

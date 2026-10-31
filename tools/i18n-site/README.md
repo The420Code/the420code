@@ -10,7 +10,7 @@ so at its foot, with a link to the English page. Numbers, codes (AP, KS, D, vers
 footer's art line "the lifestyle 1980-08-05 – 2025-12-25" are never changed. The frozen predictions' English files
 are never touched: their translations are new files under /<lang>/prereg/doc/.
 
-This engine is the one that put whybekind.org into twelve languages (github.com/The420Code/whybekind, tools/i18n),
+This engine is the one that put whybekind.global into twelve languages (github.com/The420Code/whybekind, tools/i18n),
 brought here. The Five Doors books are the same text on both sites, so their translations are shared
 (`seed_memory.py`).
 
@@ -27,9 +27,9 @@ committed: `i18n/site/<lang>.json` (English key => {"t": translation, "src": "pa
 2. `python lock.py seed <lang>`, then one agent with `python lock.py prompt <lang>`: the lock table, the names that
    read the same everywhere (the rooms, the 54 papers by number and title, the books, every chapter title, the
    slogan, the labels) and the glossary of the work's terms. Seeds are words already published in the language:
-   whybekind.org's lock table, this site's own edition's menu (room by room) and slogan, and the Ø Models titles
+   whybekind.global's lock table, this site's own edition's menu (room by room) and slogan, and the Ø Models titles
    where the edition keeps them in English. `python lock.py check <lang>`.
-3. `python seed_memory.py <lang>`: whybekind.org's published translation of every segment that is the same English
+3. `python seed_memory.py <lang>`: whybekind.global's published translation of every segment that is the same English
    (German: 5,219 segments, 113,000 words), except where this site's terms differ (German: "Kill Switch", as this
    site's edition prints it, never "Sollbruchstelle").
 4. `python batchize.py <lang>` (prints the generation and the count) and `python prompts.py write <lang>`: slices of

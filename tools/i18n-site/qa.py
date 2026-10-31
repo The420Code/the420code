@@ -48,7 +48,7 @@ def cjk_numerals(s):
 FUNCTION_WORDS = {"the", "a", "an", "of", "and", "is", "in", "to", "you", "it", "that", "this", "be", "are", "for",
                   "on", "with", "not", "or", "your", "one", "what", "by", "from"}
 # names that stay in Latin letters in every language; taken out before a segment is judged
-NAMES = ["The 420 Code", "the 420 code", "the420code.org", "whybekind.org", "media.the420code.org", "studiog.global", "artist-g.global",
+NAMES = ["The 420 Code", "the 420 code", "the420code.org", "whybekind.global", "media.the420code.org", "studiog.global", "artist-g.global",
          "Studio G Global", "Studio G", "Artist G", "TikTok", "YouTube", "Instagram", "Facebook", "why be kind",
          "iam@the420code.org", "CC BY-ND 4.0", "Antichristos", "lucid.rodeo", "Kill Switches", "Kill Switch",
          "the lifestyle 1980-08-05 – 2025-12-25", "Copyleft", "GitHub", "Zenodo", "OSF", "Rosin", "The Records"]
