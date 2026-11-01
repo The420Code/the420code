@@ -33,7 +33,8 @@ _i = _door.index('  <div class="nav-menu">')
 ROOMS_MENU = _door[_i:_door.index('  </div>', _i) + len('  </div>')]
 # 17 -> 18 on 24 September 2026: Ø The Films joins the menu (films_menu.py). Rebuild this
 # library after any menu change, or its pages carry a menu the rest of the site has left.
-assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 18, 'the front door\'s rooms block'
+# 18 -> 19 on 2 November 2026: Ø Three Ways of Being Sure joins the menu, after Ø Method.
+assert _door.count('  <div class="nav-menu">') == 1 and ROOMS_MENU.count('class="nav-room"') == 19, 'the front door\'s rooms block'
 BOOKS = [
     # 27 September 2026, brief 6 B.7: the short editions v1.3, The Interior 2.0.8, and The Illusion's own
     # edition line and date — its printed book is Version 1.2 of the same day
