@@ -22,7 +22,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-export const FAMILY = ["the420code.org", "whybekind.global", "philosophy.global", "onereality.global", "appliedethics.global",
+export const FAMILY = ["the420code.org", "whybekind.global", "knowing.global", "philosophy.global", "onereality.global", "appliedethics.global",
   "aiethics.global", "bioethics.global", "studiog.global", "artist-g.global", "studiog.co.za", "therosinbar.com"];
 const ALIASES = ["whybekind.org"];   // still forwards, page for page, to whybekind.global
 const HOSTS = new Set([...FAMILY, ...ALIASES].flatMap(h => [h, "www." + h]));
