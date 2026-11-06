@@ -3,7 +3,10 @@
 // The reader's address is used for the lookup and never stored. No cookie, no identity.
 //
 // Each visit is its own blob in the store "where", under a key that starts with its time, so nothing can be lost.
-// When the loose list grows long, the older ones are folded into one base of counts, and the points for the map.
+// When the loose list grows long, the older ones are folded into one base of counts, and the points for the map;
+// each visit folded is first kept in the log (log/...), one batch per fold, never changed after it is written.
+// The tally and the newest visits are kept ready (cache), so the family's map and the family page never wait on a
+// slow count. Only the live site writes; a preview only reads. (G, 6 November 2026.)
 
 import { getStore } from "@netlify/blobs";
 import { LAND } from "./land.mjs";
@@ -11,7 +14,15 @@ import { LAND } from "./land.mjs";
 const PREFIX = "w/";
 const BASE = "base";
 const FOLD_AT = 1500;
+const FOLD_MAX = 1000;
 const SETTLE = 5 * 60e3;
+const LOG = "log/";
+const CACHE = "cache";
+const FRESH = 5 * 60e3;
+const RECENT = 500;
+
+// only the live site changes what is stored; a deploy preview reads the same store and leaves it as it is
+export const live = (context) => !(context && context.deploy && context.deploy.context) || context.deploy.context === "production";
 
 const SOURCES = [
   [/(^|\.)google\./, "Google"], [/(^|\.)bing\.com$/, "Bing"], [/duckduckgo\.com$/, "DuckDuckGo"], [/(^|\.)yandex\./, "Yandex"],
@@ -129,30 +140,96 @@ function merge(a, b) {
   return out;
 }
 
-export async function whereTally() {
+export async function whereTally({ write = true, recent = 0 } = {}) {
   const store = getStore("where");
   let base = emptyAgg();
   try { const raw = await store.get(BASE); if (raw) base = { ...emptyAgg(), ...JSON.parse(raw) }; } catch (e) { /* start clean */ }
   const { blobs } = await store.list({ prefix: PREFIX });
-  const loose = blobs.filter((b) => timeOf(b.key) > base.through);
-  const bodies = await Promise.all(loose.map((b) => store.get(b.key).catch(() => null)));
-  const fresh = emptyAgg(), old = emptyAgg();
-  const cutoff = Date.now() - SETTLE;
-  let through = base.through;
-  const folded = [];
-  loose.forEach((b, i) => {
-    let r = null;
-    try { r = JSON.parse(bodies[i]); } catch (e) { /* unreadable */ }
-    const t = timeOf(b.key);
-    if (r) { addRec(fresh, r); if (t <= cutoff) addRec(old, r); }
-    if (t <= cutoff) { folded.push(b.key); through = Math.max(through, t); }
-  });
-  if (loose.length >= FOLD_AT && folded.length) {
-    const nb = merge(base, old); nb.through = through;
-    await store.set(BASE, JSON.stringify(nb));
-    for (const k of folded) { try { await store.delete(k); } catch (e) { /* skipped by through */ } }
+  let loose = blobs.filter((b) => timeOf(b.key) > base.through).sort((a, b) => (a.key < b.key ? -1 : 1));
+  const readAll = (list) => Promise.all(list.map((b) => store.get(b.key)
+    .then((raw) => { const r = JSON.parse(raw); if (!r || typeof r !== "object") return null; r.k = b.key; return r; }).catch(() => null)));
+  if (write && loose.length >= FOLD_AT) {
+    // fold the oldest settled visits, FOLD_MAX at a time, so a long list is folded over a few counts: the log first,
+    // then the base that names the time it covers, then the loose ones go. A step that fails part way loses nothing
+    // (a visit logged twice is read once, by its key). The cut never falls between two visits of the same moment.
+    const cutoff = Date.now() - SETTLE;
+    let settled = 0;
+    while (settled < loose.length && timeOf(loose[settled].key) <= cutoff) settled++;
+    let end = Math.min(settled, FOLD_MAX);
+    while (end > 0 && end < settled && timeOf(loose[end].key) === timeOf(loose[end - 1].key)) end++;
+    if (end > 0) {
+      const batch = loose.slice(0, end), kept = (await readAll(batch)).filter(Boolean), old = emptyAgg();
+      kept.forEach((r) => addRec(old, r));
+      const through = timeOf(batch[end - 1].key);
+      await store.set(LOG + through.toString(36).padStart(9, "0") + "-" + Math.random().toString(36).slice(2, 8), JSON.stringify(kept));
+      const nb = merge(base, old); nb.through = through;
+      await store.set(BASE, JSON.stringify(nb));
+      base = nb;
+      for (let i = 0; i < batch.length; i += 50) await Promise.all(batch.slice(i, i + 50).map((x) => store.delete(x.key).catch(() => {})));
+      loose = loose.slice(end);
+    }
   }
-  return merge(base, fresh);
+  const recs = (await readAll(loose)).filter(Boolean), fresh = emptyAgg();
+  recs.forEach((r) => addRec(fresh, r));
+  const out = merge(base, fresh);
+  if (recent) out.recent = await newest(store, recs, recent);
+  return out;
+}
+
+// the newest visits, newest first: the loose ones, then back through the log as far as it takes
+async function newest(store, recs, n) {
+  const seen = new Set(), out = [];
+  const take = (list) => {
+    for (const r of list.sort((a, b) => b.t - a.t)) {
+      if (out.length >= n) return;
+      if (!r || !r.k || seen.has(r.k)) continue;
+      seen.add(r.k); out.push(r);
+    }
+  };
+  take(recs.slice());
+  if (out.length < n) {
+    try {
+      const { blobs } = await store.list({ prefix: LOG });
+      const keys = blobs.map((b) => b.key).sort().reverse();
+      for (const key of keys) {
+        if (out.length >= n) break;
+        try { take(JSON.parse(await store.get(key)) || []); } catch (e) { /* an unreadable batch is skipped */ }
+      }
+    } catch (e) { /* the loose ones stand */ }
+  }
+  return out.map(({ k, ...r }) => r);
+}
+
+// the tally and the newest visits as last kept: a copy older than FRESH is answered at once and brought up to
+// date after the answer has gone; with no copy yet, it is counted now
+export async function whereCached(context) {
+  const store = getStore("where");
+  const write = live(context);
+  let c = null;
+  try { const raw = await store.get(CACHE); if (raw) c = JSON.parse(raw); } catch (e) { /* count it */ }
+  const refresh = async () => {
+    const fresh = { at: Date.now(), ...(await whereTally({ write, recent: RECENT })) };
+    if (write) await store.set(CACHE, JSON.stringify(fresh));
+    return fresh;
+  };
+  if (!c) return refresh();
+  if (write && Date.now() - c.at > FRESH && context && context.waitUntil) context.waitUntil(refresh().catch(() => {}));
+  return c;
+}
+
+// the dots for anyone to see: each place rounded to a tenth of a degree, with how many visits were read there,
+// and the countries; never a city's name, an organisation, a page or a time of day
+export function whereDots(a) {
+  const points = {};
+  for (const [k, n] of Object.entries(a.points || {})) {
+    const [lat, lon] = k.split(",").map(Number);
+    if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
+    const key = `${Math.round(lat * 10) / 10},${Math.round(lon * 10) / 10}`;
+    points[key] = (points[key] || 0) + n;
+  }
+  const countries = Object.keys(a.countries || {}).map((k) => (k.match(/\(([A-Z]{2})\)$/) || [])[1]).filter(Boolean).sort();
+  const placed = Object.values(points).reduce((x, y) => x + y, 0);
+  return { at: a.at || Date.now(), since: a.first ? new Date(a.first).toISOString().slice(0, 10) : null, placed, countries, points };
 }
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));

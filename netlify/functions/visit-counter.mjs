@@ -1,5 +1,5 @@
 import { getStore } from "@netlify/blobs";
-import { recordWhere, whereTally, whereHTML } from "../where.mjs";
+import { recordWhere, whereTally, whereHTML, whereCached, whereDots, live } from "../where.mjs";
 
 // A visit is one browser session, not one page load. The page guards on
 // sessionStorage before it posts, so a reload does not count again and the
@@ -155,11 +155,17 @@ export default async (req, context) => {
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers });
 
   if (req.method === "GET") {
+    if (url.searchParams.get("dots") !== null) {   // the family's map: places and countries only, for anyone; see ../where.mjs
+      return new Response(JSON.stringify(whereDots(await whereCached(context))), { headers: {
+        "Content-Type": "application/json", "Cache-Control": "public, max-age=0, must-revalidate",
+        "Netlify-CDN-Cache-Control": "public, durable, s-maxage=300, stale-while-revalidate=3600", "Access-Control-Allow-Origin": "*" } });
+    }
     const want = url.searchParams.get("where");
     if (want !== null) {   // where the readers are: a private page, behind its own key; see ../where.mjs
-      const key = (globalThis.Netlify && Netlify.env.get("WHERE_KEY")) || process.env.WHERE_KEY || "";
-      if (!key || want !== key) return new Response("Not found", { status: 404 });
-      const a = await whereTally();
+      const env = (k) => (globalThis.Netlify && Netlify.env.get(k)) || process.env[k] || "";
+      const own = env("WHERE_KEY"), family = env("FAMILY_WHERE_KEY");   // this site's own key, or the family page's
+      if (!((own && want === own) || (family && want === family))) return new Response("Not found", { status: 404 });
+      const a = url.searchParams.get("cached") ? await whereCached(context) : await whereTally({ write: live(context), recent: Math.min(2000, +url.searchParams.get("recent") || 0) });
       if (url.searchParams.get("format") === "json") return new Response(JSON.stringify(a), { headers });
       return new Response(whereHTML("the420code.org", a), { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
     }
